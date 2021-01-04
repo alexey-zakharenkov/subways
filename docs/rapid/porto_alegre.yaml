@@ -1,0 +1,167 @@
+
+routes: 
+  - 
+    type: subway
+    ref: 1
+    itineraries: 
+      r7875374: 
+        - Mercado (n5317023252)
+        - Rodoviária (n5317023250)
+        - São Pedro (n5317023249)
+        - Farrapos (n5317023248)
+        - Aeroporto (n5317023261)
+        - Anchieta (n5317023246)
+        - Niterói (n5317023247)
+        - Fátima (n5317023244)
+        - Canoas / La Salle (n5317023245)
+        - Mathias Velho (n5317023243)
+        - São Luís (n5317023242)
+        - Petrobras (n5320204169)
+        - Esteio (n5320204165)
+        - Luiz Pasteur (n5320204168)
+        - Sapucaia (n5320204171)
+        - Unisinos (n5317023241)
+        - São Leopoldo (n5317023240)
+        - Rio dos Sinos (n5317023239)
+        - Santo Afonso (n5320204170)
+        - Industrial / Tintas Killing (n5320204167)
+        - Fenac (n5320204166)
+        - Novo Hamburgo (n5317023262)
+
+      r7886190: 
+        - Mercado (n5317023252)
+        - Rodoviária (n5317023250)
+        - São Pedro (n5317023249)
+        - Farrapos (n5317023248)
+        - Aeroporto (n5317023261)
+        - Anchieta (n5317023246)
+        - Niterói (n5317023247)
+        - Fátima (n5317023244)
+        - Canoas / La Salle (n5317023245)
+        - Mathias Velho (n5317023243)
+        - São Luís (n5317023242)
+        - Petrobras (n5320204169)
+        - Esteio (n5320204165)
+        - Luiz Pasteur (n5320204168)
+        - Sapucaia (n5320204171)
+
+      r420335: 
+        - Novo Hamburgo (n5317023262)
+        - Fenac (n5320204166)
+        - Industrial / Tintas Killing (n5320204167)
+        - Santo Afonso (n5320204170)
+        - Rio dos Sinos (n5317023239)
+        - São Leopoldo (n5317023240)
+        - Unisinos (n5317023241)
+        - Sapucaia (n5320204171)
+        - Luiz Pasteur (n5320204168)
+        - Esteio (n5320204165)
+        - Petrobras (n5320204169)
+        - São Luís (n5317023242)
+        - Mathias Velho (n5317023243)
+        - Canoas / La Salle (n5317023245)
+        - Fátima (n5317023244)
+        - Niterói (n5317023247)
+        - Anchieta (n5317023246)
+        - Aeroporto (n5317023261)
+        - Farrapos (n5317023248)
+        - São Pedro (n5317023249)
+        - Rodoviária (n5317023250)
+        - Mercado (n5317023252)
+
+      r7886191: 
+        - Sapucaia (n5320204171)
+        - Luiz Pasteur (n5320204168)
+        - Esteio (n5320204165)
+        - Petrobras (n5320204169)
+        - São Luís (n5317023242)
+        - Mathias Velho (n5317023243)
+        - Canoas / La Salle (n5317023245)
+        - Fátima (n5317023244)
+        - Niterói (n5317023247)
+        - Anchieta (n5317023246)
+        - Aeroporto (n5317023261)
+        - Farrapos (n5317023248)
+        - São Pedro (n5317023249)
+        - Rodoviária (n5317023250)
+        - Mercado (n5317023252)
+
+
+    name: Linha 1
+    colour: '#000080'
+    station_count: 22
+    stations: 
+      - Sapucaia
+      - Luiz Pasteur
+      - Esteio
+      - Petrobras
+      - São Luís
+      - Mathias Velho
+      - Canoas / La Salle
+      - Fátima
+      - Niterói
+      - Anchieta
+      - Aeroporto (Trensurb)
+      - Farrapos
+      - São Pedro
+      - Rodoviária
+      - Mercado
+      - Unisinos
+      - São Leopoldo
+      - Rio dos Sinos
+      - Santo Afonso
+      - Industrial / Tintas Killing
+      - Fenac
+      - Novo Hamburgo
+
+  - 
+    type: subway
+    ref: Conexão Metrô-Aeroporto
+    itineraries: 
+      r7889061: 
+        - Aeroporto (n5317023261)
+        - Aeromóvel (n5317023255)
+
+      r5465620: 
+        - Aeromóvel (n5317023255)
+        - Aeroporto (n5317023261)
+
+
+    name: Conexão Metrô-Aeroporto
+    colour: '#000000'
+    station_count: 2
+    stations: 
+      - Aeromóvel
+      - Aeroporto (Aeromóvel)
+
+
+transfers: 
+  - 
+    - Aeroporto (Aeromóvel) (r7869553)
+    - Aeroporto (Trensurb) (r7869554)
+
+stations: 
+  - Aeromóvel (n5317023255)
+  - Aeroporto (n5317023261)
+  - Anchieta (n5317023246)
+  - Canoas / La Salle (n5317023245)
+  - Esteio (n5320204165)
+  - Farrapos (n5317023248)
+  - Fenac (n5320204166)
+  - Fátima (n5317023244)
+  - Industrial / Tintas Killing (n5320204167)
+  - Luiz Pasteur (n5320204168)
+  - Mathias Velho (n5317023243)
+  - Mercado (n5317023252)
+  - Niterói (n5317023247)
+  - Novo Hamburgo (n5317023262)
+  - Petrobras (n5320204169)
+  - Rio dos Sinos (n5317023239)
+  - Rodoviária (n5317023250)
+  - Santo Afonso (n5320204170)
+  - Sapucaia (n5320204171)
+  - São Leopoldo (n5317023240)
+  - São Luís (n5317023242)
+  - São Pedro (n5317023249)
+  - Unisinos (n5317023241)
+

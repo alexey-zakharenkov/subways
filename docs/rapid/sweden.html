@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Sweden</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Sweden</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="stockholm">
+<td class="bold color1">
+  Stockholm
+  <a href="stockholm.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="stockholm.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#stockholm" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 7 / 7</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 152 / 152</td>
+<td class="color1">int: 2 / 2</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+55 unused stations: <a href="https://www.openstreetmap.org/node/1354203309">n1354203309</a>, <a href="https://www.openstreetmap.org/node/1723333457">n1723333457</a>, <a href="https://www.openstreetmap.org/node/240364135">n240364135</a>, <a href="https://www.openstreetmap.org/node/245415815">n245415815</a>, <a href="https://www.openstreetmap.org/node/245415816">n245415816</a>, <a href="https://www.openstreetmap.org/node/245416833">n245416833</a>, <a href="https://www.openstreetmap.org/node/31493912">n31493912</a>, <a href="https://www.openstreetmap.org/node/31493940">n31493940</a>, <a href="https://www.openstreetmap.org/node/31494656">n31494656</a>, <a href="https://www.openstreetmap.org/node/31494680">n31494680</a>, <a href="https://www.openstreetmap.org/node/31494694">n31494694</a>, <a href="https://www.openstreetmap.org/node/31494703">n31494703</a>, <a href="https://www.openstreetmap.org/node/31494737">n31494737</a>, <a href="https://www.openstreetmap.org/node/31494789">n31494789</a>, <a href="https://www.openstreetmap.org/node/31495130">n31495130</a>, <a href="https://www.openstreetmap.org/node/31495467">n31495467</a>, <a href="https://www.openstreetmap.org/node/31495484">n31495484</a>, <a href="https://www.openstreetmap.org/node/31495501">n31495501</a>, <a href="https://www.openstreetmap.org/node/31495563">n31495563</a>, <a href="https://www.openstreetmap.org/node/31495675">n31495675</a>, ...
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

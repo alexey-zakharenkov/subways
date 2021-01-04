@@ -1,0 +1,216 @@
+
+routes: 
+  - 
+    type: monorail
+    ref: PST
+    itineraries: 
+      r4499553: 
+        - 44th Street (n1904374451)
+        - East Economy Parking (n1904374403)
+        - Terminal 4 (n5925549437)
+        - Terminal 3 (n2330192571)
+
+      r4499554: 
+        - Terminal 3 (n2330192571)
+        - Terminal 4 (n5925549437)
+        - East Economy Parking (n1904374403)
+        - 44th Street (n1904374451)
+
+
+    name: PHX Sky Train
+    colour: '#b0c4de'
+    station_count: 4
+    stations: 
+      - Terminal 3
+      - Terminal 4
+      - East Economy Parking
+      - PHX Sky Train Station
+
+  - 
+    type: light_rail
+    ref: VMLR
+    itineraries: 
+      r7728594: 
+        - 18718 (n6239618606)
+        - 18717 (n6239618609)
+        - 18603 (n3709249164)
+        - 18602 (n3709249163)
+        - 18601 (n3101300553)
+        - 18600 (n3101300552)
+        - 10028 (n1501731199)
+        - 10027 (n1501731192)
+        - 10026 (n1501649436)
+        - 10025 (n1501649435)
+        - 10024 (n1501649430)
+        - 10023 (n2671959114)
+        - Veterans Way/ College (n2671972515)
+        - 10021 (n2671972511)
+        - 10020 (n1498706864)
+        - 10019 (n1498706863)
+        - 18716 (n6239722907)
+        - 10018 (n1498706861)
+        - 10017 (n1498706860)
+        - 10029 (n1498706859)
+        - 10030 (n1502089336)
+        - 10031 (n1502089326)
+        - 10032 (n1502089308)
+        - Van Buren/Central Avenue (n1502089283)
+        - Roosevelt/Central (n1502089279)
+        - McDowell/Central (n1516023950)
+        - Central / Encanto (n1516023956)
+        - Central / Thomas (n1516023953)
+        - 10007 (n1615188524)
+        - 10006 (n1647214445)
+        - 10005 (n1647214428)
+        - Central Ave/ Camelback (n3091715124)
+        - 7th Avenue/Camelback (n1647214405)
+        - 19th Avenue/Camelback (n1647214402)
+        - 19th Avenue/Montebello (n1647214401)
+        - Glendale/19th Avenue (n3211251539)
+        - 18607 (n3211251540)
+        - 19th Avenue/Dunlap (n3211251538)
+
+      r7728595: 
+        - 19th Avenue/Dunlap (n3211251538)
+        - 18607 (n3211251540)
+        - Glendale/19th Avenue (n3211251539)
+        - 19th Avenue/Montebello (n1647214401)
+        - 19th Avenue/Camelback (n1647214402)
+        - 7th Avenue/Camelback (n1647214405)
+        - Central Ave/ Camelback (n3091715124)
+        - 10005 (n1647214428)
+        - 10006 (n1647214445)
+        - 10007 (n1615188524)
+        - Central / Thomas (n1516023953)
+        - Central / Encanto (n1516023956)
+        - McDowell/Central (n1516023950)
+        - Roosevelt/Central (n1502089279)
+        - Van Buren/First Avenue (n1502089301)
+        - 10013 (n1502089303)
+        - 10014 (n1502089311)
+        - 10015 (n1502089330)
+        - 10016 (n1498706858)
+        - 10017 (n1498706860)
+        - 10018 (n1498706861)
+        - 18716 (n6239722907)
+        - 10019 (n1498706863)
+        - 10020 (n1498706864)
+        - 10021 (n2671972511)
+        - Veterans Way/ College (n2671972515)
+        - 10023 (n2671959114)
+        - 10024 (n1501649430)
+        - 10025 (n1501649435)
+        - 10026 (n1501649436)
+        - 10027 (n1501731192)
+        - 10028 (n1501731199)
+        - 18600 (n3101300552)
+        - 18601 (n3101300553)
+        - 18602 (n3709249163)
+        - 18603 (n3709249164)
+        - 18717 (n6239618609)
+        - 18718 (n6239618606)
+
+
+    name: Light Rail
+    colour: '#89728e'
+    station_count: 43
+    stations: 
+      - Gilbert Road / Main Street
+      - Stapley/ Main St
+      - Mesa Dr/ Main St
+      - Center/ Main St
+      - Country Club/ Main St
+      - Alma School/ Main Street
+      - Sycamore/ Main St
+      - Price-101 Fwy/ Apache Blvd
+      - Smith-Martin/ Apache Blvd
+      - McClintock/ Apache Blvd
+      - Dorsey/ Apache Blvd
+      - University Dr / Rural Rd
+      - Veterans Way/ College
+      - Mill Ave/ 3rd St
+      - Center Pkwy/ Washington
+      - Priest Dr/ Washington
+      - 50th Street/ Washington
+      - 44th Street/Washington station
+      - 38th St/ Washington
+      - 24th St/ Jefferson
+      - 12th St/ Washington (N)
+      - 3rd St/ Washington
+      - Washington/ Central Ave
+      - Van Buren/ 1st Ave (W)
+      - Roosevelt/ Central Ave
+      - McDowell/ Central Ave
+      - Encanto/ Central Ave
+      - Thomas/ Central Ave
+      - Osborn/ Central Ave
+      - Indian School/ Central Ave
+      - Campbell/ Central Ave
+      - Central Ave/ Camelback
+      - 7th Ave/ Camelback
+      - 19th Ave/ Camelback
+      - 19th Ave/ Montebello
+      - Glendale/ 19th Ave
+      - Northern/ 19th Ave
+      - 19th Ave/ Dunlap
+      - Van Buren/ 1st Ave (E)
+      - Jefferson/ 1st Ave
+      - 3rd St/ Jefferson
+      - 12th St/ Washington (S)
+      - 24th St/ Jefferson
+
+
+transfers: 
+  - 
+    - 44th Street/Washington station (r10744353)
+    - PHX Sky Train Station (r10744352)
+
+stations: 
+  - 10005 (n1647214428)
+  - 10006 (n1647214445)
+  - 10007 (n1615188524)
+  - 10013 (n1502089303)
+  - 10014 (n1502089311)
+  - 10015 (n1502089330)
+  - 10016 (n1498706858)
+  - 10017 (n1498706860)
+  - 10018 (n1498706861)
+  - 10019 (n1498706863)
+  - 10020 (n1498706864)
+  - 10021 (n2671972511)
+  - 10023 (n2671959114)
+  - 10024 (n1501649430)
+  - 10025 (n1501649435)
+  - 10026 (n1501649436)
+  - 10027 (n1501731192)
+  - 10028 (n1501731199)
+  - 10029 (n1498706859)
+  - 10030 (n1502089336)
+  - 10031 (n1502089326)
+  - 10032 (n1502089308)
+  - 18600 (n3101300552)
+  - 18601 (n3101300553)
+  - 18602 (n3709249163)
+  - 18603 (n3709249164)
+  - 18607 (n3211251540)
+  - 18716 (n6239722907)
+  - 18717 (n6239618609)
+  - 18718 (n6239618606)
+  - 19th Avenue/Camelback (n1647214402)
+  - 19th Avenue/Dunlap (n3211251538)
+  - 19th Avenue/Montebello (n1647214401)
+  - 44th Street (n1904374451)
+  - 7th Avenue/Camelback (n1647214405)
+  - Central / Encanto (n1516023956)
+  - Central / Thomas (n1516023953)
+  - Central Ave/ Camelback (n3091715124)
+  - East Economy Parking (n1904374403)
+  - Glendale/19th Avenue (n3211251539)
+  - McDowell/Central (n1516023950)
+  - Roosevelt/Central (n1502089279)
+  - Terminal 3 (n2330192571)
+  - Terminal 4 (n5925549437)
+  - Van Buren/Central Avenue (n1502089283)
+  - Van Buren/First Avenue (n1502089301)
+  - Veterans Way/ College (n2671972515)
+

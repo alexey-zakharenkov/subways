@@ -1,0 +1,365 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Brazil</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Brazil</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="baixada_santista">
+<td class="bold color1">
+  Baixada Santista
+  <a href="baixada_santista.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="baixada_santista.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#baixada_santista" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 15 / 15</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="belo_horizonte">
+<td class="bold color1">
+  Belo Horizonte
+  <a href="belo_horizonte.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="belo_horizonte.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#belo_horizonte" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 19 / 19</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="braslia">
+<td class="bold color1">
+  Brasília
+  <a href="braslia.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="braslia.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#braslia" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 41 / 41</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+2 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/7966593360">n7966593360</a>, <a href="https://www.openstreetmap.org/node/7966593361">n7966593361</a>
+</div>
+</td></tr>
+
+<tr id="fortaleza">
+<td class="bold color1">
+  Fortaleza
+  <a href="fortaleza.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="fortaleza.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#fortaleza" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color1">st: 40 / 40</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Station in route is not a node (<a href="https://www.openstreetmap.org/way/233612429">way 233612429</a>, "Maracanaú")<br>Station in route is not a node (<a href="https://www.openstreetmap.org/way/409611076">way 409611076</a>, "Virgílio Távora")<br>Station in route is not a node (<a href="https://www.openstreetmap.org/way/409611076">way 409611076</a>, "Virgílio Távora")<br>Station in route is not a node (<a href="https://www.openstreetmap.org/way/233612429">way 233612429</a>, "Maracanaú")
+</div>
+</td></tr>
+
+<tr id="macei">
+<td class="bold color0">
+  Maceió
+  <a href="macei.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="macei.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#macei" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 16 / 16</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+Unknown member type for <a href="https://www.openstreetmap.org/way/792352904">way 792352904</a> in route (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/761962831">way 761962831</a> in route (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/613872524">way 613872524</a> in route (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/792352902">way 792352902</a> in route (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/792352902">way 792352902</a> in route (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/613872524">way 613872524</a> in route (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/761962831">way 761962831</a> in route (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")<br>Unknown member type for <a href="https://www.openstreetmap.org/way/792352904">way 792352904</a> in route (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")
+</div><div class="warnings">
+Hole in route rails near node <a href="https://www.openstreetmap.org/node/5807457165">n5807457165</a> (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Stop position "Mutange" (<a href="https://www.openstreetmap.org/node/5807457193">n5807457193</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/6636196">relation 6636196</a>, "VLT de Maceió: Lourenço de Albuquerque ⇒ Jaraguá")<br>Hole in route rails near node <a href="https://www.openstreetmap.org/node/6521986082">n6521986082</a> (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")<br>Stop position "Mutange" (<a href="https://www.openstreetmap.org/node/5807457193">n5807457193</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/6636197">relation 6636197</a>, "VLT de Maceió: Jaraguá ⇒ Lourenço de Albuquerque")<br>1 unused stations: <a href="https://www.openstreetmap.org/node/5807456324">n5807456324</a>
+</div>
+</td></tr>
+
+<tr id="natal">
+<td class="bold color0">
+  Natal
+  <a href="natal.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="natal.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#natal" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color0">st: 21 / 22</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+Untagged object in a route (<a href="https://www.openstreetmap.org/relation/9881790">relation 9881790</a>, "Linha Sul")<br>Untagged object in a route (<a href="https://www.openstreetmap.org/relation/1229613">relation 1229613</a>, "Linha Sul")<br>Found 21 stations in routes, expected 22
+</div><div class="warnings">
+3 unused stations: <a href="https://www.openstreetmap.org/node/317024128">n317024128</a>, <a href="https://www.openstreetmap.org/way/627458217">w627458217</a>, <a href="https://www.openstreetmap.org/way/647501402">w647501402</a>
+</div>
+</td></tr>
+
+<tr id="porto_alegre">
+<td class="bold color1">
+  Porto Alegre
+  <a href="porto_alegre.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="porto_alegre.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#porto_alegre" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 24 / 24</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Tracks seem to go in the opposite direction to stops (<a href="https://www.openstreetmap.org/relation/5465620">relation 5465620</a>, "Conexão Metrô-Aeroporto")
+</div>
+</td></tr>
+
+<tr id="recife">
+<td class="bold color1">
+  Recife
+  <a href="recife.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="recife.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#recife" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 3 / 3</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color1">st: 51 / 51</td>
+<td class="color1">int: 3 / 3</td>
+<td class="color0">e: 1</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Route "VLT Curado-Cajueiro Seco" has different ref from master "VLT Curado - Cajueiro Seco" (<a href="https://www.openstreetmap.org/relation/4510189">relation 4510189</a>, "VLT Curado --&gt; Cajueiro Seco")<br>Route "VLT Curado-Cajueiro Seco" has different ref from master "VLT Curado - Cajueiro Seco" (<a href="https://www.openstreetmap.org/relation/7945216">relation 7945216</a>, "VLT Cajueiro Seco --&gt; Curado")<br>Missing ref on a route (<a href="https://www.openstreetmap.org/relation/9699109">relation 9699109</a>, "VLT Cabo - Cajueiro Seco")<br>Route "3" has different ref from master "Sul" (<a href="https://www.openstreetmap.org/relation/7869373">relation 7869373</a>, "Linha Sul (Cajueiro Seco --&gt; Recife)")<br>Hole in route rails near node <a href="https://www.openstreetmap.org/node/3741593028">n3741593028</a> (<a href="https://www.openstreetmap.org/relation/4510097">relation 4510097</a>, "Linha Sul (Recife --&gt; Cajueiro Seco)")<br>Route "3" has different ref from master "Sul" (<a href="https://www.openstreetmap.org/relation/4510097">relation 4510097</a>, "Linha Sul (Recife --&gt; Cajueiro Seco)")<br>Found 1 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/8111720992">n8111720992</a><br>1 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/8111720992">n8111720992</a>
+</div>
+</td></tr>
+
+<tr id="rio_de_janeiro">
+<td class="bold color1">
+  Rio de Janeiro
+  <a href="rio_de_janeiro.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="rio_de_janeiro.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#rio_de_janeiro" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 3 / 3</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 52 / 52</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+3 unused stations: <a href="https://www.openstreetmap.org/node/4441995314">n4441995314</a>, <a href="https://www.openstreetmap.org/node/4463336905">n4463336905</a>, <a href="https://www.openstreetmap.org/node/4463336906">n4463336906</a>
+</div>
+</td></tr>
+
+<tr id="rio_de_janeiro_-_supervia">
+<td class="bold color1">
+  Rio de Janeiro - SuperVia
+  <a href="rio_de_janeiro_-_supervia.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="rio_de_janeiro_-_supervia.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#rio_de_janeiro_-_supervia" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 8 / 8</td>
+
+<td class="color1">st: 126 / 126</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Hole in route rails near node <a href="https://www.openstreetmap.org/node/1278184416">n1278184416</a> (<a href="https://www.openstreetmap.org/relation/1578818">relation 1578818</a>, "Linha Paracambi: Paracambi - Japeri")<br>29 unused stations: <a href="https://www.openstreetmap.org/node/1152120268">n1152120268</a>, <a href="https://www.openstreetmap.org/node/246126554">n246126554</a>, <a href="https://www.openstreetmap.org/node/2726866239">n2726866239</a>, <a href="https://www.openstreetmap.org/node/4441995314">n4441995314</a>, <a href="https://www.openstreetmap.org/node/4463336905">n4463336905</a>, <a href="https://www.openstreetmap.org/node/4463336906">n4463336906</a>, <a href="https://www.openstreetmap.org/node/5284484734">n5284484734</a>, <a href="https://www.openstreetmap.org/node/5362542035">n5362542035</a>, <a href="https://www.openstreetmap.org/node/5365436833">n5365436833</a>, <a href="https://www.openstreetmap.org/node/710950083">n710950083</a>, <a href="https://www.openstreetmap.org/node/712848988">n712848988</a>, <a href="https://www.openstreetmap.org/node/712848989">n712848989</a>, <a href="https://www.openstreetmap.org/node/712848991">n712848991</a>, <a href="https://www.openstreetmap.org/node/712848995">n712848995</a>, <a href="https://www.openstreetmap.org/node/712848997">n712848997</a>, <a href="https://www.openstreetmap.org/node/712848999">n712848999</a>, <a href="https://www.openstreetmap.org/node/712849000">n712849000</a>, <a href="https://www.openstreetmap.org/node/712849002">n712849002</a>, <a href="https://www.openstreetmap.org/node/712849005">n712849005</a>, <a href="https://www.openstreetmap.org/node/712849006">n712849006</a>, ...
+</div>
+</td></tr>
+
+<tr id="salvador">
+<td class="bold color1">
+  Salvador
+  <a href="salvador.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="salvador.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#salvador" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 20 / 20</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="so_paulo">
+<td class="bold color1">
+  São Paulo
+  <a href="so_paulo.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="so_paulo.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#so_paulo" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 5 / 5</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 92 / 92</td>
+<td class="color1">int: 9 / 9</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="so_paulo_-_cptm">
+<td class="bold color1">
+  São Paulo - CPTM
+  <a href="so_paulo_-_cptm.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="so_paulo_-_cptm.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#so_paulo_-_cptm" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 7 / 7</td>
+
+<td class="color1">st: 104 / 104</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Hole in route rails near node <a href="https://www.openstreetmap.org/node/7859944627">n7859944627</a> (<a href="https://www.openstreetmap.org/relation/2554053">relation 2554053</a>, "Linha 7 - Rubi: Francisco Morato ⇒ Brás")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/698129222">w698129222</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2554053">relation 2554053</a>, "Linha 7 - Rubi: Francisco Morato ⇒ Brás")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/698129221">w698129221</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2554053">relation 2554053</a>, "Linha 7 - Rubi: Francisco Morato ⇒ Brás")<br>Angle between stops around "Brás (CPTM)" is too narrow, 36 degrees (<a href="https://www.openstreetmap.org/relation/2554053">relation 2554053</a>, "Linha 7 - Rubi: Francisco Morato ⇒ Brás")<br>Multiple platforms for a station "Plataforma 3" (<a href="https://www.openstreetmap.org/way/445325269">w445325269</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2183694">relation 2183694</a>, "Linha 9 - Esmeralda: Osasco ⇒ Grajaú")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/228069530">w228069530</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2183694">relation 2183694</a>, "Linha 9 - Esmeralda: Osasco ⇒ Grajaú")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/446931399">w446931399</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2144048">relation 2144048</a>, "Linha 10 - Turquesa: Rio Grande da Serra ⇒ Brás")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/467681164">w467681164</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2144048">relation 2144048</a>, "Linha 10 - Turquesa: Rio Grande da Serra ⇒ Brás")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/467681156">w467681156</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/420129">relation 420129</a>, "Linha 10 - Turquesa: Brás ⇒ Rio Grande da Serra")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/467681155">w467681155</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/420129">relation 420129</a>, "Linha 10 - Turquesa: Brás ⇒ Rio Grande da Serra")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/228118621">w228118621</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/420129">relation 420129</a>, "Linha 10 - Turquesa: Brás ⇒ Rio Grande da Serra")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/467681158">w467681158</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/420129">relation 420129</a>, "Linha 10 - Turquesa: Brás ⇒ Rio Grande da Serra")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/453398885">w453398885</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2872092">relation 2872092</a>, "Linha 11 - Coral: Luz ⇒ Estudantes")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/261016304">w261016304</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/2872092">relation 2872092</a>, "Linha 11 - Coral: Luz ⇒ Estudantes")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/698129224">w698129224</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/419685">relation 419685</a>, "Linha 7 - Rubi: Brás ⇒ Francisco Morato")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/447931813">w447931813</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/419685">relation 419685</a>, "Linha 7 - Rubi: Brás ⇒ Francisco Morato")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/162288229">w162288229</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/419297">relation 419297</a>, "Linha 8 - Diamante: Itapevi ⇒ Júlio Prestes")<br>Multiple platforms for a station "Plataforma 3" (<a href="https://www.openstreetmap.org/way/445325269">w445325269</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/419411">relation 419411</a>, "Linha 9 - Esmeralda: Grajaú ⇒ Osasco")<br>Hole in route rails near node <a href="https://www.openstreetmap.org/node/7859944615">n7859944615</a> (<a href="https://www.openstreetmap.org/relation/2557150">relation 2557150</a>, "Linha 7 - Rubi: Jundiaí ⇒ Francisco Morato")<br>Route does not have a return direction (<a href="https://www.openstreetmap.org/relation/2554053">relation 2554053</a>, "Linha 7 - Rubi: Francisco Morato ⇒ Brás")<br>Route does not have a return direction (<a href="https://www.openstreetmap.org/relation/419685">relation 419685</a>, "Linha 7 - Rubi: Brás ⇒ Francisco Morato")<br>87 unused stations: <a href="https://www.openstreetmap.org/node/4117565742">n4117565742</a>, <a href="https://www.openstreetmap.org/node/4117571828">n4117571828</a>, <a href="https://www.openstreetmap.org/node/4119710093">n4119710093</a>, <a href="https://www.openstreetmap.org/node/4143583173">n4143583173</a>, <a href="https://www.openstreetmap.org/node/4170379232">n4170379232</a>, <a href="https://www.openstreetmap.org/node/4311073828">n4311073828</a>, <a href="https://www.openstreetmap.org/node/4311953410">n4311953410</a>, <a href="https://www.openstreetmap.org/node/4425010407">n4425010407</a>, <a href="https://www.openstreetmap.org/node/4432647540">n4432647540</a>, <a href="https://www.openstreetmap.org/node/4438460892">n4438460892</a>, <a href="https://www.openstreetmap.org/node/4443122951">n4443122951</a>, <a href="https://www.openstreetmap.org/node/4593556119">n4593556119</a>, <a href="https://www.openstreetmap.org/node/4861900294">n4861900294</a>, <a href="https://www.openstreetmap.org/node/4897835958">n4897835958</a>, <a href="https://www.openstreetmap.org/node/4922664269">n4922664269</a>, <a href="https://www.openstreetmap.org/node/4923069358">n4923069358</a>, <a href="https://www.openstreetmap.org/node/4924414397">n4924414397</a>, <a href="https://www.openstreetmap.org/node/4924472501">n4924472501</a>, <a href="https://www.openstreetmap.org/node/4924478010">n4924478010</a>, <a href="https://www.openstreetmap.org/node/4924500191">n4924500191</a>, ...
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

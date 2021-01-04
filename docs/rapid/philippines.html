@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Philippines</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Philippines</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="manila">
+<td class="bold color1">
+  Manila
+  <a href="manila.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="manila.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#manila" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color1">st: 40 / 40</td>
+<td class="color1">int: 3 / 3</td>
+<td class="color0">e: 6</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+2 unused stations: <a href="https://www.openstreetmap.org/node/5377269277">n5377269277</a>, <a href="https://www.openstreetmap.org/way/402882918">w402882918</a><br>Found 6 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/5556241171">n5556241171</a>, <a href="https://www.openstreetmap.org/node/5556241175">n5556241175</a>, <a href="https://www.openstreetmap.org/node/5556241179">n5556241179</a>, <a href="https://www.openstreetmap.org/node/5556241183">n5556241183</a>, <a href="https://www.openstreetmap.org/node/7475236671">n7475236671</a>, <a href="https://www.openstreetmap.org/node/7475238787">n7475238787</a><br>6 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/5556241171">n5556241171</a>, <a href="https://www.openstreetmap.org/node/5556241175">n5556241175</a>, <a href="https://www.openstreetmap.org/node/5556241179">n5556241179</a>, <a href="https://www.openstreetmap.org/node/5556241183">n5556241183</a>, <a href="https://www.openstreetmap.org/node/7475236671">n7475236671</a>, <a href="https://www.openstreetmap.org/node/7475238787">n7475238787</a><br>More than one network: LRT (2); Strong Republic Transit System (1)
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

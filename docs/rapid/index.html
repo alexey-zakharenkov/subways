@@ -1,0 +1,972 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results</h1>
+<p>Total good metro networks: 239 of 280.</p>
+<p><a href="render.html">View on the map</a></p>
+<table cellspacing="3" cellpadding="2" style="margin-bottom: 1em;">
+
+<tr><td colspan="9">&nbsp;</td></tr>
+<tr>
+<th>Continent</th>
+<th>Country</th>
+<th>Good Cities</th>
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Errors</th>
+<th>Warnings</th>
+</tr>
+<tr>
+<td colspan="2" class="bold color0">Africa</td>
+<td class="color0">9 / 10</td>
+<td class="color1">4 / 4</td>
+<td class="color1">29 / 29</td>
+<td class="color0">580 / 581</td>
+<td class="color1">8 / 8</td>
+<td class="color0">5</td>
+<td class="color0">79</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="algeria.html">Algeria</a></td>
+<td class="color0">0 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">19 / 19</td>
+<td class="color1">0 / 0</td>
+<td class="color0">5</td>
+<td class="color0">40</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="egypt.html">Egypt</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0 / 0</td>
+<td class="color1">68 / 68</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">1</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="ethiopia.html">Ethiopia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">2 / 2</td>
+<td class="color1">44 / 44</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="mauritius.html">Mauritius</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">1 / 1</td>
+<td class="color1">7 / 7</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">4</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="nigeria.html">Nigeria</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">2 / 2</td>
+<td class="color1">13 / 13</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="south-africa.html">South Africa</a></td>
+<td class="color1">4 / 4</td>
+<td class="color1">0 / 0</td>
+<td class="color1">17 / 17</td>
+<td class="color0">316 / 317</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color0">32</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="tunisia.html">Tunisia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">7 / 7</td>
+<td class="color1">113 / 113</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+
+<tr><td colspan="9">&nbsp;</td></tr>
+<tr>
+<th>Continent</th>
+<th>Country</th>
+<th>Good Cities</th>
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Errors</th>
+<th>Warnings</th>
+</tr>
+<tr>
+<td colspan="2" class="bold color0">America</td>
+<td class="color0">60 / 63</td>
+<td class="color1">138 / 138</td>
+<td class="color1">106 / 106</td>
+<td class="color0">4497 / 4500</td>
+<td class="color0">248 / 128</td>
+<td class="color0">13</td>
+<td class="color0">408</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="argentina.html">Argentina</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">6 / 6</td>
+<td class="color1">1 / 1</td>
+<td class="color1">114 / 114</td>
+<td class="color1">10 / 10</td>
+<td class="color1">0</td>
+<td class="color0">3</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="brazil.html">Brazil</a></td>
+<td class="color0">11 / 13</td>
+<td class="color1">19 / 19</td>
+<td class="color1">24 / 24</td>
+<td class="color0">621 / 622</td>
+<td class="color1">16 / 16</td>
+<td class="color0">11</td>
+<td class="color0">45</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="canada.html">Canada</a></td>
+<td class="color0">5 / 6</td>
+<td class="color1">10 / 10</td>
+<td class="color1">6 / 6</td>
+<td class="color0">300 / 301</td>
+<td class="color1">11 / 11</td>
+<td class="color0">2</td>
+<td class="color0">18</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="chile.html">Chile</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">7 / 7</td>
+<td class="color1">1 / 1</td>
+<td class="color1">146 / 146</td>
+<td class="color1">19 / 19</td>
+<td class="color1">0</td>
+<td class="color0">4</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="colombia.html">Colombia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0 / 0</td>
+<td class="color1">28 / 28</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="dominican-republic.html">Dominican Republic</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0 / 0</td>
+<td class="color1">34 / 34</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="mexico.html">Mexico</a></td>
+<td class="color1">3 / 3</td>
+<td class="color1">14 / 14</td>
+<td class="color1">5 / 5</td>
+<td class="color1">299 / 299</td>
+<td class="color1">35 / 35</td>
+<td class="color1">0</td>
+<td class="color0">78</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="panama.html">Panama</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0 / 0</td>
+<td class="color1">30 / 30</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color0">14</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="peru.html">Peru</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">26 / 26</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="usa.html">USA</a></td>
+<td class="color1">31 / 31</td>
+<td class="color1">71 / 71</td>
+<td class="color1">67 / 67</td>
+<td class="color0">2831 / 2832</td>
+<td class="color0">152 / 32</td>
+<td class="color1">0</td>
+<td class="color0">234</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="venezuela.html">Venezuela</a></td>
+<td class="color1">3 / 3</td>
+<td class="color1">4 / 4</td>
+<td class="color1">2 / 2</td>
+<td class="color1">68 / 68</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">12</td>
+</tr>
+
+
+<tr><td colspan="9">&nbsp;</td></tr>
+<tr>
+<th>Continent</th>
+<th>Country</th>
+<th>Good Cities</th>
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Errors</th>
+<th>Warnings</th>
+</tr>
+<tr>
+<td colspan="2" class="bold color0">Asia</td>
+<td class="color0">98 / 122</td>
+<td class="color0">355 / 344</td>
+<td class="color1">98 / 98</td>
+<td class="color0">8683 / 8700</td>
+<td class="color0">690 / 574</td>
+<td class="color0">315</td>
+<td class="color0">635</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="armenia.html">Armenia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">10 / 10</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="azerbaijan.html">Azerbaijan</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">0 / 0</td>
+<td class="color1">36 / 36</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">3</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="china.html">China</a></td>
+<td class="color0">30 / 40</td>
+<td class="color0">201 / 189</td>
+<td class="color1">25 / 25</td>
+<td class="color0">4503 / 4477</td>
+<td class="color0">394 / 342</td>
+<td class="color0">192</td>
+<td class="color0">374</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="india.html">India</a></td>
+<td class="color0">11 / 12</td>
+<td class="color1">27 / 27</td>
+<td class="color1">2 / 2</td>
+<td class="color0">573 / 574</td>
+<td class="color1">30 / 30</td>
+<td class="color0">7</td>
+<td class="color0">16</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="indonesia.html">Indonesia</a></td>
+<td class="color1">3 / 3</td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">33 / 33</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">3</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="iran.html">Iran</a></td>
+<td class="color0">4 / 5</td>
+<td class="color1">8 / 8</td>
+<td class="color1">5 / 5</td>
+<td class="color0">217 / 215</td>
+<td class="color1">15 / 15</td>
+<td class="color0">1</td>
+<td class="color0">5</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="japan.html">Japan</a></td>
+<td class="color0">32 / 36</td>
+<td class="color0">47 / 48</td>
+<td class="color1">43 / 43</td>
+<td class="color0">1429 / 1449</td>
+<td class="color0">114 / 112</td>
+<td class="color0">7</td>
+<td class="color0">59</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="kazakhstan.html">Kazakhstan</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">9 / 9</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="malaysia.html">Malaysia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">126 / 126</td>
+<td class="color1">9 / 9</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="north-korea.html">North Korea</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0 / 0</td>
+<td class="color1">16 / 16</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="pakistan.html">Pakistan</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">26 / 26</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="philippines.html">Philippines</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">40 / 40</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">4</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="qatar.html">Qatar</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0 / 0</td>
+<td class="color1">39 / 39</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="saudi-arabia.html">Saudi Arabia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">9 / 9</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="singapore.html">Singapore</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">6 / 6</td>
+<td class="color1">5 / 5</td>
+<td class="color1">197 / 197</td>
+<td class="color1">26 / 26</td>
+<td class="color1">0</td>
+<td class="color0">22</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="south-korea.html">South Korea</a></td>
+<td class="color0">2 / 8</td>
+<td class="color1">28 / 28</td>
+<td class="color1">7 / 7</td>
+<td class="color0">1003 / 1031</td>
+<td class="color0">77 / 15</td>
+<td class="color0">93</td>
+<td class="color0">101</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="taiwan.html">Taiwan</a></td>
+<td class="color1">3 / 3</td>
+<td class="color1">11 / 11</td>
+<td class="color1">2 / 2</td>
+<td class="color1">215 / 215</td>
+<td class="color1">9 / 9</td>
+<td class="color1">0</td>
+<td class="color0">15</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="thailand.html">Thailand</a></td>
+<td class="color0">2 / 3</td>
+<td class="color1">5 / 5</td>
+<td class="color1">0 / 0</td>
+<td class="color1">107 / 107</td>
+<td class="color1">2 / 2</td>
+<td class="color0">2</td>
+<td class="color0">16</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="united-arab-emirates.html">United Arab Emirates</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">1 / 1</td>
+<td class="color1">53 / 53</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">1</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="uzbekistan.html">Uzbekistan</a></td>
+<td class="color0">0 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">0 / 0</td>
+<td class="color0">42 / 38</td>
+<td class="color1">4 / 4</td>
+<td class="color0">13</td>
+<td class="color0">12</td>
+</tr>
+
+
+<tr><td colspan="9">&nbsp;</td></tr>
+<tr>
+<th>Continent</th>
+<th>Country</th>
+<th>Good Cities</th>
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Errors</th>
+<th>Warnings</th>
+</tr>
+<tr>
+<td colspan="2" class="bold color1">Australia</td>
+<td class="color1">2 / 2</td>
+<td class="color1">1 / 1</td>
+<td class="color1">12 / 12</td>
+<td class="color1">328 / 328</td>
+<td class="color1">5 / 5</td>
+<td class="color1">0</td>
+<td class="color0">7</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="australia.html">Australia</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">1 / 1</td>
+<td class="color1">12 / 12</td>
+<td class="color1">328 / 328</td>
+<td class="color1">5 / 5</td>
+<td class="color1">0</td>
+<td class="color0">7</td>
+</tr>
+
+
+<tr><td colspan="9">&nbsp;</td></tr>
+<tr>
+<th>Continent</th>
+<th>Country</th>
+<th>Good Cities</th>
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Errors</th>
+<th>Warnings</th>
+</tr>
+<tr>
+<td colspan="2" class="bold color0">Europe</td>
+<td class="color0">70 / 83</td>
+<td class="color0">234 / 235</td>
+<td class="color1">188 / 188</td>
+<td class="color0">8351 / 8358</td>
+<td class="color0">371 / 355</td>
+<td class="color0">63</td>
+<td class="color0">514</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="austria.html">Austria</a></td>
+<td class="color0">1 / 2</td>
+<td class="color1">5 / 5</td>
+<td class="color1">10 / 10</td>
+<td class="color0">391 / 397</td>
+<td class="color1">9 / 9</td>
+<td class="color0">8</td>
+<td class="color0">23</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="belarus.html">Belarus</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0 / 0</td>
+<td class="color1">33 / 33</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="belgium.html">Belgium</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">0 / 0</td>
+<td class="color1">92 / 92</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="bulgaria.html">Bulgaria</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">0 / 0</td>
+<td class="color1">57 / 57</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="czech-republic.html">Czech Republic</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0 / 0</td>
+<td class="color1">61 / 61</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="denmark.html">Denmark</a></td>
+<td class="color0">0 / 1</td>
+<td class="color1">4 / 4</td>
+<td class="color1">7 / 7</td>
+<td class="color0">235 / 234</td>
+<td class="color1">10 / 10</td>
+<td class="color0">1</td>
+<td class="color0">32</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="estonia.html">Estonia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">4 / 4</td>
+<td class="color1">69 / 69</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">22</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="finland.html">Finland</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">14 / 14</td>
+<td class="color1">238 / 238</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">21</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="france.html">France</a></td>
+<td class="color0">4 / 7</td>
+<td class="color1">27 / 27</td>
+<td class="color1">5 / 5</td>
+<td class="color0">828 / 830</td>
+<td class="color0">59 / 58</td>
+<td class="color0">27</td>
+<td class="color0">114</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="georgia.html">Georgia</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0 / 0</td>
+<td class="color1">23 / 23</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color0">2</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="germany.html">Germany</a></td>
+<td class="color0">12 / 16</td>
+<td class="color0">24 / 25</td>
+<td class="color1">83 / 83</td>
+<td class="color0">2301 / 2299</td>
+<td class="color0">33 / 32</td>
+<td class="color0">12</td>
+<td class="color0">110</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="greece.html">Greece</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0 / 0</td>
+<td class="color1">68 / 68</td>
+<td class="color1">4 / 4</td>
+<td class="color1">0</td>
+<td class="color1">0</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="hungary.html">Hungary</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">4 / 4</td>
+<td class="color1">5 / 5</td>
+<td class="color1">119 / 119</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">31</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="ireland.html">Ireland</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">0 / 0</td>
+<td class="color1">1 / 1</td>
+<td class="color1">31 / 31</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">1</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="italy.html">Italy</a></td>
+<td class="color0">8 / 9</td>
+<td class="color1">14 / 14</td>
+<td class="color1">5 / 5</td>
+<td class="color0">324 / 325</td>
+<td class="color1">13 / 13</td>
+<td class="color0">3</td>
+<td class="color0">34</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="netherlands.html">Netherlands</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">10 / 10</td>
+<td class="color1">0 / 0</td>
+<td class="color1">197 / 197</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">1</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="norway.html">Norway</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">5 / 5</td>
+<td class="color1">0 / 0</td>
+<td class="color1">164 / 164</td>
+<td class="color1">0 / 0</td>
+<td class="color1">0</td>
+<td class="color0">7</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="poland.html">Poland</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">2 / 2</td>
+<td class="color1">4 / 4</td>
+<td class="color1">106 / 106</td>
+<td class="color1">3 / 3</td>
+<td class="color1">0</td>
+<td class="color0">5</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="portugal.html">Portugal</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">4 / 4</td>
+<td class="color1">6 / 6</td>
+<td class="color1">200 / 200</td>
+<td class="color1">6 / 6</td>
+<td class="color1">0</td>
+<td class="color0">6</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="romania.html">Romania</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">5 / 5</td>
+<td class="color1">0 / 0</td>
+<td class="color1">68 / 68</td>
+<td class="color1">6 / 6</td>
+<td class="color1">0</td>
+<td class="color0">3</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="russia.html">Russia</a></td>
+<td class="color0">8 / 9</td>
+<td class="color1">26 / 26</td>
+<td class="color1">8 / 8</td>
+<td class="color0">495 / 496</td>
+<td class="color0">70 / 71</td>
+<td class="color0">2</td>
+<td class="color0">21</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="spain.html">Spain</a></td>
+<td class="color0">6 / 7</td>
+<td class="color1">39 / 39</td>
+<td class="color1">5 / 5</td>
+<td class="color1">797 / 797</td>
+<td class="color1">68 / 68</td>
+<td class="color0">3</td>
+<td class="color0">26</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="sweden.html">Sweden</a></td>
+<td class="color1">1 / 1</td>
+<td class="color1">7 / 7</td>
+<td class="color1">0 / 0</td>
+<td class="color1">152 / 152</td>
+<td class="color1">2 / 2</td>
+<td class="color1">0</td>
+<td class="color0">1</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="switzerland.html">Switzerland</a></td>
+<td class="color1">2 / 2</td>
+<td class="color1">1 / 1</td>
+<td class="color1">7 / 7</td>
+<td class="color1">131 / 131</td>
+<td class="color1">1 / 1</td>
+<td class="color1">0</td>
+<td class="color0">8</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="turkey.html">Turkey</a></td>
+<td class="color1">5 / 5</td>
+<td class="color1">17 / 17</td>
+<td class="color1">3 / 3</td>
+<td class="color1">316 / 316</td>
+<td class="color1">13 / 13</td>
+<td class="color1">0</td>
+<td class="color0">11</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color1"><a href="uk.html">UK</a></td>
+<td class="color1">3 / 3</td>
+<td class="color1">12 / 12</td>
+<td class="color1">20 / 20</td>
+<td class="color1">752 / 752</td>
+<td class="color0">50 / 37</td>
+<td class="color1">0</td>
+<td class="color0">9</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td class="bold color0"><a href="ukraine.html">Ukraine</a></td>
+<td class="color0">2 / 3</td>
+<td class="color1">7 / 7</td>
+<td class="color1">1 / 1</td>
+<td class="color1">103 / 103</td>
+<td class="color0">8 / 6</td>
+<td class="color0">7</td>
+<td class="color0">20</td>
+</tr>
+
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.
+See <a href="https://docs.google.com/spreadsheets/d/1-UHDzfBwHdeyFxgC5cE_MaNQotF3-Y0r1nW9IwpIEj8/edit?usp=sharing">this spreadsheet</a> for the reference metro statistics and
+<a href="https://en.wikipedia.org/wiki/List_of_metro_systems#List">this wiki page</a> for a list
+of all metro systems.</p>
+</body>
+</html>

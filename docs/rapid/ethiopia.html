@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Ethiopia</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Ethiopia</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="addis_ababa">
+<td class="bold color1">
+  Addis Ababa
+  <a href="addis_ababa.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="addis_ababa.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#addis_ababa" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color1">st: 44 / 44</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

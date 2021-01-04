@@ -1,0 +1,187 @@
+
+routes: 
+  - 
+    type: subway
+    ref: 1
+    itineraries: 
+      r2168102: 
+        - Garibaldi (n1757100177)
+        - Università (n1428260807)
+        - Municipio (n2552779115)
+        - Toledo (n1738657713)
+        - Dante (n434763027)
+        - Museo (n434763023)
+        - Materdei (n434763015)
+        - Salvator Rosa (n434763011)
+        - Quattro Giornate (n434763004)
+        - Vanvitelli (n434762989)
+        - Medaglie d'oro (n3036923663)
+        - Montedonzelli (n435104388)
+        - Rione Alto (n3036923656)
+        - Policlinico (n3036909913)
+        - Colli Aminei (n3036909925)
+        - Frullone (n1738657712)
+        - Chiaiano (n324415153)
+        - Piscinola (ANM) (n614419534)
+
+      r386098: 
+        - Piscinola (ANM) (n614419534)
+        - Chiaiano (n324415153)
+        - Frullone (n1738657712)
+        - Colli Aminei (n3036909925)
+        - Policlinico (n3036909913)
+        - Rione Alto (n3036923656)
+        - Montedonzelli (n435104388)
+        - Medaglie d'oro (n3036923663)
+        - Vanvitelli (n434762989)
+        - Quattro Giornate (n434763004)
+        - Salvator Rosa (n434763011)
+        - Materdei (n434763015)
+        - Museo (n434763023)
+        - Dante (n434763027)
+        - Toledo (n1738657713)
+        - Municipio (n2552779115)
+        - Università (n1428260807)
+        - Garibaldi (n1757100177)
+
+
+    name: Linea 1 (Piscinola → Garibaldi)
+    colour: '#000099'
+    station_count: 18
+    stations: 
+      - Piscinola (ANM)
+      - Chiaiano
+      - Frullone
+      - Colli Aminei
+      - Policlinico
+      - Rione Alto
+      - Montedonzelli
+      - Medaglie d'oro
+      - Vanvitelli
+      - Quattro Giornate
+      - Salvator Rosa
+      - Materdei
+      - Museo
+      - Dante
+      - Toledo
+      - Municipio
+      - Università
+      - Garibaldi
+
+  - 
+    type: train
+    ref: 2
+    itineraries: 
+      r2168103: 
+        - Napoli San Giovanni-Barra (n4459022870)
+        - Napoli Gianturco (n4459023928)
+        - Napoli Piazza Garibaldi (n6886777286)
+        - Piazza Cavour (n656149059)
+        - Montesanto (n3114747045)
+        - Piazza Amedeo (n499585572)
+        - Napoli Mergellina (n6536935424)
+        - Piazza Leopardi (n6817760441)
+        - Napoli Campi Flegrei (n6817740560)
+        - Bagnoli-Agnano Terme (n6817755819)
+        - Pozzuoli Solfatara (n6817792727)
+
+      r445980: 
+        - Pozzuoli Solfatara (n6817792727)
+        - Bagnoli-Agnano Terme (n6817755819)
+        - Napoli Campi Flegrei (n6817740560)
+        - Piazza Leopardi (n6817760441)
+        - Napoli Mergellina (n6536935424)
+        - Piazza Amedeo (n499585572)
+        - Montesanto (n3114747045)
+        - Piazza Cavour (n656149059)
+        - Napoli Piazza Garibaldi (n6886777286)
+        - Napoli Gianturco (n4459023928)
+        - Napoli San Giovanni-Barra (n4459022870)
+
+
+    name: Linea 2 (San Giovanni-Barra → Pozzuoli Solfatara)
+    colour: '#0000ff'
+    station_count: 11
+    stations: 
+      - Napoli San Giovanni-Barra
+      - Napoli Gianturco
+      - Napoli Piazza Garibaldi
+      - Piazza Cavour
+      - Montesanto
+      - Piazza Amedeo
+      - Napoli Mergellina
+      - Piazza Leopardi
+      - Napoli Campi Flegrei
+      - Bagnoli-Agnano Terme
+      - Pozzuoli Solfatara
+
+  - 
+    type: subway
+    ref: 6
+    itineraries: 
+      r446007: 
+        - Mostra (n434789470)
+        - Augusto (n663078056)
+        - Lala (n663077724)
+        - Mergellina (n663078054)
+
+      r2168104: 
+        - Mergellina (n663078054)
+        - Lala (n663077724)
+        - Augusto (n663078056)
+        - Mostra (n434789470)
+
+
+    name: Linea 6
+    colour: '#0099cc'
+    station_count: 4
+    stations: 
+      - Mergellina
+      - Lala
+      - Augusto
+      - Mostra
+
+
+transfers: 
+  - 
+    - Garibaldi (r7683111)
+    - Napoli Piazza Garibaldi (r10105977)
+  - 
+    - Mergellina (r7683071)
+    - Napoli Mergellina (r10105974)
+
+stations: 
+  - Augusto (n663078056)
+  - Bagnoli-Agnano Terme (n6817755819)
+  - Chiaiano (n324415153)
+  - Colli Aminei (n3036909925)
+  - Dante (n434763027)
+  - Frullone (n1738657712)
+  - Garibaldi (n1757100177)
+  - Lala (n663077724)
+  - Materdei (n434763015)
+  - Medaglie d'oro (n3036923663)
+  - Mergellina (n663078054)
+  - Montedonzelli (n435104388)
+  - Montesanto (n3114747045)
+  - Mostra (n434789470)
+  - Municipio (n2552779115)
+  - Museo (n434763023)
+  - Napoli Campi Flegrei (n6817740560)
+  - Napoli Gianturco (n4459023928)
+  - Napoli Mergellina (n6536935424)
+  - Napoli Piazza Garibaldi (n6886777286)
+  - Napoli San Giovanni-Barra (n4459022870)
+  - Piazza Amedeo (n499585572)
+  - Piazza Cavour (n656149059)
+  - Piazza Leopardi (n6817760441)
+  - Piscinola (ANM) (n614419534)
+  - Policlinico (n3036909913)
+  - Pozzuoli Solfatara (n6817792727)
+  - Quattro Giornate (n434763004)
+  - Rione Alto (n3036923656)
+  - Salvator Rosa (n434763011)
+  - Toledo (n1738657713)
+  - Università (n1428260807)
+  - Vanvitelli (n434762989)
+

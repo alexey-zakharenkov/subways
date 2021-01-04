@@ -1,0 +1,227 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Spain</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Spain</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="barcelona">
+<td class="bold color1">
+  Barcelona
+  <a href="barcelona.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="barcelona.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#barcelona" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 14 / 14</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 193 / 193</td>
+<td class="color1">int: 26 / 26</td>
+<td class="color0">e: 6</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Tracks seem to go in the opposite direction to stops (<a href="https://www.openstreetmap.org/relation/6699915">relation 6699915</a>, "L12: Sarrià - Reina Elisenda")<br>Found 6 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/3647004095">n3647004095</a>, <a href="https://www.openstreetmap.org/node/4682139408">n4682139408</a>, <a href="https://www.openstreetmap.org/node/6356113187">n6356113187</a>, <a href="https://www.openstreetmap.org/node/7546139439">n7546139439</a>, <a href="https://www.openstreetmap.org/node/7546139440">n7546139440</a>, <a href="https://www.openstreetmap.org/node/7546139454">n7546139454</a><br>6 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/3647004095">n3647004095</a>, <a href="https://www.openstreetmap.org/node/4682139408">n4682139408</a>, <a href="https://www.openstreetmap.org/node/6356113187">n6356113187</a>, <a href="https://www.openstreetmap.org/node/7546139439">n7546139439</a>, <a href="https://www.openstreetmap.org/node/7546139440">n7546139440</a>, <a href="https://www.openstreetmap.org/node/7546139454">n7546139454</a>
+</div>
+</td></tr>
+
+<tr id="bilbao">
+<td class="bold color1">
+  Bilbao
+  <a href="bilbao.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="bilbao.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#bilbao" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 3 / 3</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 61 / 61</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color0">e: 1</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Angle between stops around "Ariz" is too narrow, 29 degrees (<a href="https://www.openstreetmap.org/relation/6661418">relation 6661418</a>, "L2 Basauri → Kabiezes")<br>Angle between stops around "Ariz" is too narrow, 29 degrees (<a href="https://www.openstreetmap.org/relation/6727389">relation 6727389</a>, "L2 Kabiezes → Basauri")<br>Found 1 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/4904749312">n4904749312</a><br>1 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/4904749312">n4904749312</a>
+</div>
+</td></tr>
+
+<tr id="madrid">
+<td class="bold color0">
+  Madrid
+  <a href="madrid.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="madrid.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#madrid" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 13 / 13</td>
+<td class="color1">lr: 3 / 3</td>
+
+<td class="color1">st: 328 / 328</td>
+<td class="color1">int: 40 / 40</td>
+<td class="color0">e: 8</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+stop <a href="https://www.openstreetmap.org/node/8198700212">node 8198700212</a> is not connected to a station in route (<a href="https://www.openstreetmap.org/relation/7842126">relation 7842126</a>, "Línea 11: La Fortuna-Plaza Elíptica")<br>An under construction feature <a href="https://www.openstreetmap.org/way/881585940">w881585940</a> in route. Consider setting 'inactive' role or removing construction attributes (<a href="https://www.openstreetmap.org/relation/7842126">relation 7842126</a>, "Línea 11: La Fortuna-Plaza Elíptica")<br>An under construction feature <a href="https://www.openstreetmap.org/way/881585941">w881585941</a> in route. Consider setting 'inactive' role or removing construction attributes (<a href="https://www.openstreetmap.org/relation/56044">relation 56044</a>, "Línea 11: Plaza Elíptica-La Fortuna")
+</div><div class="warnings">
+Subway entrance is not a node (<a href="https://www.openstreetmap.org/way/323172618">way 323172618</a>, "Cañada del Santísimo")<br>Tracks seem to go in the opposite direction to stops (<a href="https://www.openstreetmap.org/relation/7840746">relation 7840746</a>, "Línea Ramal: Príncipe Pío-Ópera")<br>Angle between stops around "Aeropuerto T1-T2-T3" is too narrow, 41 degrees (<a href="https://www.openstreetmap.org/relation/62917">relation 62917</a>, "Línea 8: Nuevos Ministerios-Aeropuerto T4")<br>Tracks seem to go in the opposite direction to stops (<a href="https://www.openstreetmap.org/relation/61836">relation 61836</a>, "Línea Ramal: Ópera-Príncipe Pío")<br>Multiple platforms for a station "Avenida de América" (<a href="https://www.openstreetmap.org/way/497895098">w497895098</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/56791">relation 56791</a>, "Línea 6: Andén 2")<br>Multiple platforms for a station "Pacífico" (<a href="https://www.openstreetmap.org/way/660828654">w660828654</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/56791">relation 56791</a>, "Línea 6: Andén 2")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/497895101">w497895101</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/7840622">relation 7840622</a>, "Línea 7: Hospital del Henares-Pitis")<br>Angle between stops around "Aeropuerto T1-T2-T3" is too narrow, 41 degrees (<a href="https://www.openstreetmap.org/relation/7837168">relation 7837168</a>, "Línea 8: Aeropuerto T4-Nuevos Ministerios")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/660814632">w660814632</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/7842093">relation 7842093</a>, "Línea 6: Andén 1")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/497895099">w497895099</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/7842093">relation 7842093</a>, "Línea 6: Andén 1")<br>Only one route in route_master. Please check if it needs a return route (<a href="https://www.openstreetmap.org/relation/2325279">relation 2325279</a>, "Línea 12. Metrosur")<br>Only one route in route_master. Please check if it needs a return route (<a href="https://www.openstreetmap.org/relation/56791">relation 56791</a>, "Línea 6: Andén 2")<br>Found 8 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/3265360363">n3265360363</a>, <a href="https://www.openstreetmap.org/node/3265360364">n3265360364</a>, <a href="https://www.openstreetmap.org/node/3265360365">n3265360365</a>, <a href="https://www.openstreetmap.org/node/3265952297">n3265952297</a>, <a href="https://www.openstreetmap.org/node/7902537459">n7902537459</a>, <a href="https://www.openstreetmap.org/node/7902537460">n7902537460</a>, <a href="https://www.openstreetmap.org/node/8071133805">n8071133805</a>, <a href="https://www.openstreetmap.org/node/8078202660">n8078202660</a><br>8 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/3265360363">n3265360363</a>, <a href="https://www.openstreetmap.org/node/3265360364">n3265360364</a>, <a href="https://www.openstreetmap.org/node/3265360365">n3265360365</a>, <a href="https://www.openstreetmap.org/node/3265952297">n3265952297</a>, <a href="https://www.openstreetmap.org/node/7902537459">n7902537459</a>, <a href="https://www.openstreetmap.org/node/7902537460">n7902537460</a>, <a href="https://www.openstreetmap.org/node/8071133805">n8071133805</a>, <a href="https://www.openstreetmap.org/node/8078202660">n8078202660</a>
+</div>
+</td></tr>
+
+<tr id="mlaga">
+<td class="bold color1">
+  Málaga
+  <a href="mlaga.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="mlaga.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#mlaga" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 18 / 18</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Route "L1" has different ref from master "L2" (<a href="https://www.openstreetmap.org/relation/7781441">relation 7781441</a>, "Línea 1")<br>Route "L1" has different ref from master "L2" (<a href="https://www.openstreetmap.org/relation/4484360">relation 4484360</a>, "Línea 1")
+</div>
+</td></tr>
+
+<tr id="palma">
+<td class="bold color1">
+  Palma
+  <a href="palma.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="palma.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#palma" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 0 / 0</td>
+<td class="color1">lr: 2 / 2</td>
+
+<td class="color1">st: 19 / 19</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Stop position "Son Costa - Son Fortesa" (<a href="https://www.openstreetmap.org/node/1362173664">n1362173664</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/7781525">relation 7781525</a>, "Metro M1: UIB → Plaça d'Espanya")<br>Stop position "Jacint Verdaguer" (<a href="https://www.openstreetmap.org/node/1362180558">n1362180558</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/7781525">relation 7781525</a>, "Metro M1: UIB → Plaça d'Espanya")<br>Stop position "Son Costa - Son Fortesa" (<a href="https://www.openstreetmap.org/node/1362173664">n1362173664</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/4635401">relation 4635401</a>, "Metro M2: Plaça d'Espanya → Marratxí")
+</div>
+</td></tr>
+
+<tr id="seville">
+<td class="bold color1">
+  Seville
+  <a href="seville.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="seville.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#seville" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 21 / 21</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="valencia">
+<td class="bold color1">
+  Valencia
+  <a href="valencia.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="valencia.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#valencia" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 6 / 6</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 157 / 157</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

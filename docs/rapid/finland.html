@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Finland</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Finland</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="helsinki">
+<td class="bold color1">
+  Helsinki
+  <a href="helsinki.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="helsinki.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#helsinki" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 14 / 14</td>
+
+<td class="color1">st: 238 / 238</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358111">relation 358111</a>, "R Helsinki–Riihimäki–Tampere")<br>Stop position "Turenki" (<a href="https://www.openstreetmap.org/node/6042167988">n6042167988</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/358111">relation 358111</a>, "R Helsinki–Riihimäki–Tampere")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358140">relation 358140</a>, "T Helsinki–Riihimäki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7439174">relation 7439174</a>, "T Riihimäki–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358141">relation 358141</a>, "N Helsinki–Kerava")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7435652">relation 7435652</a>, "K Kerava–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358138">relation 358138</a>, "K Helsinki–Kerava")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7438872">relation 7438872</a>, "N Kerava–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7435585">relation 7435585</a>, "Z Lahti–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7439054">relation 7439054</a>, "R Tampere–Riihimäki–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7435092">relation 7435092</a>, "G Riihimäki - Lahti")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/357219">relation 357219</a>, "Y Helsinki–Siuntio")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358112">relation 358112</a>, "D Helsinki–Riihimäki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7433392">relation 7433392</a>, "D Riihimäki–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358115">relation 358115</a>, "Z Helsinki–Lahti")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/358139">relation 358139</a>, "I Helsinki–Tikkurila–Lentoasema–Huopalahti–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7442715">relation 7442715</a>, "Y Siuntio–Helsinki")<br>Missing colour on a route (<a href="https://www.openstreetmap.org/relation/7435093">relation 7435093</a>, "G Lahti - Riihimäki")<br>Only one route in route_master. Please check if it needs a return route (<a href="https://www.openstreetmap.org/relation/358139">relation 358139</a>, "I Helsinki–Tikkurila–Lentoasema–Huopalahti–Helsinki")<br>Only one route in route_master. Please check if it needs a return route (<a href="https://www.openstreetmap.org/relation/357191">relation 357191</a>, "P Helsinki–Huopalahti–Lentoasema–Tikkurila–Helsinki")<br>3 unused stations: <a href="https://www.openstreetmap.org/node/2178688186">n2178688186</a>, <a href="https://www.openstreetmap.org/node/299643789">n299643789</a>, <a href="https://www.openstreetmap.org/node/4248989440">n4248989440</a>
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

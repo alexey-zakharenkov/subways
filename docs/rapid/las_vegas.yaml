@@ -1,0 +1,49 @@
+
+routes: 
+  - 
+    type: monorail
+    ref: M
+    itineraries: 
+      r5936157: 
+        - SLS (n297854813)
+        - Westgate (n297854819)
+        - Las Vegas Convention Center (n297854831)
+        - Harrah's / The Linq (n297854849)
+        - Caesars Palace / Flamingo (n297854850)
+        - Bally's / Paris Las Vegas (n6573554392)
+        - MGM Grand (n6573554393)
+
+      r5936155: 
+        - MGM Grand (n6573554393)
+        - Bally's / Paris Las Vegas (n6573554392)
+        - Caesars Palace / Flamingo (n297854850)
+        - Harrah's / The Linq (n297854849)
+        - Las Vegas Convention Center (n297854831)
+        - Westgate (n297854819)
+        - SLS (n297854813)
+
+
+    name: Las Vegas Monorail
+    colour: '#133d8c'
+    station_count: 7
+    stations: 
+      - MGM Grand
+      - Bally's / Paris Las Vegas
+      - Caesars Palace / Flamingo
+      - Harrah's / The Linq
+      - Las Vegas Convention Center
+      - Westgate
+      - SLS
+
+
+transfers: 
+
+stations: 
+  - Bally's / Paris Las Vegas (n6573554392)
+  - Caesars Palace / Flamingo (n297854850)
+  - Harrah's / The Linq (n297854849)
+  - Las Vegas Convention Center (n297854831)
+  - MGM Grand (n6573554393)
+  - SLS (n297854813)
+  - Westgate (n297854819)
+

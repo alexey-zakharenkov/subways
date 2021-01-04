@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Chile</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Chile</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="santiago">
+<td class="bold color1">
+  Santiago
+  <a href="santiago.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="santiago.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#santiago" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 7 / 7</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 146 / 146</td>
+<td class="color1">int: 19 / 19</td>
+<td class="color0">e: 2</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Tracks seem to go in the opposite direction to stops (<a href="https://www.openstreetmap.org/relation/2193874">relation 2193874</a>, "Línea 3: Los Libertadores → Fernando Castillo Velasco")<br>16 unused stations: <a href="https://www.openstreetmap.org/node/2956545118">n2956545118</a>, <a href="https://www.openstreetmap.org/node/2956545306">n2956545306</a>, <a href="https://www.openstreetmap.org/node/3651219220">n3651219220</a>, <a href="https://www.openstreetmap.org/node/3988511775">n3988511775</a>, <a href="https://www.openstreetmap.org/node/3988525027">n3988525027</a>, <a href="https://www.openstreetmap.org/node/3988532179">n3988532179</a>, <a href="https://www.openstreetmap.org/node/3988544087">n3988544087</a>, <a href="https://www.openstreetmap.org/node/3988544088">n3988544088</a>, <a href="https://www.openstreetmap.org/node/3988557678">n3988557678</a>, <a href="https://www.openstreetmap.org/node/3988557679">n3988557679</a>, <a href="https://www.openstreetmap.org/node/4214749442">n4214749442</a>, <a href="https://www.openstreetmap.org/node/4214749443">n4214749443</a>, <a href="https://www.openstreetmap.org/node/573732528">n573732528</a>, <a href="https://www.openstreetmap.org/node/575514909">n575514909</a>, <a href="https://www.openstreetmap.org/node/6003266713">n6003266713</a>, <a href="https://www.openstreetmap.org/node/835432276">n835432276</a><br>Found 2 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/7505106294">n7505106294</a>, <a href="https://www.openstreetmap.org/node/7622754493">n7622754493</a><br>2 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/7505106294">n7505106294</a>, <a href="https://www.openstreetmap.org/node/7622754493">n7622754493</a>
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

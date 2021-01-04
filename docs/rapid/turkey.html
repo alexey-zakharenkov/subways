@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Turkey</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Turkey</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="adana">
+<td class="bold color1">
+  Adana
+  <a href="adana.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="adana.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#adana" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 13 / 13</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="ankara">
+<td class="bold color1">
+  Ankara
+  <a href="ankara.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="ankara.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#ankara" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 5 / 5</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 56 / 56</td>
+<td class="color1">int: 3 / 3</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+A stop or a platform <a href="https://www.openstreetmap.org/way/869098152">w869098152</a> belongs to multiple stations, might be correct<br>3 unused stations: <a href="https://www.openstreetmap.org/node/8231524673">n8231524673</a>, <a href="https://www.openstreetmap.org/node/8231524677">n8231524677</a>, <a href="https://www.openstreetmap.org/node/8231524680">n8231524680</a><br>8 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/8231524670">n8231524670</a>, <a href="https://www.openstreetmap.org/node/8231524671">n8231524671</a>, <a href="https://www.openstreetmap.org/node/8231524672">n8231524672</a>, <a href="https://www.openstreetmap.org/node/8231524674">n8231524674</a>, <a href="https://www.openstreetmap.org/node/8231524675">n8231524675</a>, <a href="https://www.openstreetmap.org/node/8231524676">n8231524676</a>, <a href="https://www.openstreetmap.org/node/8231524678">n8231524678</a>, <a href="https://www.openstreetmap.org/node/8231524679">n8231524679</a>
+</div>
+</td></tr>
+
+<tr id="bursa">
+<td class="bold color1">
+  Bursa
+  <a href="bursa.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="bursa.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#bursa" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 51 / 51</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="istanbul">
+<td class="bold color1">
+  Istanbul
+  <a href="istanbul.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="istanbul.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#istanbul" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 8 / 8</td>
+<td class="color1">lr: 3 / 3</td>
+
+<td class="color1">st: 179 / 179</td>
+<td class="color1">int: 10 / 10</td>
+<td class="color0">e: 7</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/506076028">w506076028</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/11344896">relation 11344896</a>, "T4: Mescid-i Selam → Topkapı")<br>Multiple platforms for a station "" (<a href="https://www.openstreetmap.org/way/506076028">w506076028</a>) in a route relation (<a href="https://www.openstreetmap.org/relation/7420264">relation 7420264</a>, "T4: Mescid-i Selam → Topkapı")<br>7 unused stations: <a href="https://www.openstreetmap.org/node/1184766547">n1184766547</a>, <a href="https://www.openstreetmap.org/node/251732729">n251732729</a>, <a href="https://www.openstreetmap.org/node/2676941381">n2676941381</a>, <a href="https://www.openstreetmap.org/node/2676941386">n2676941386</a>, <a href="https://www.openstreetmap.org/node/6762350269">n6762350269</a>, <a href="https://www.openstreetmap.org/node/7246055798">n7246055798</a>, <a href="https://www.openstreetmap.org/node/7977697236">n7977697236</a><br>Found 7 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/7635342570">n7635342570</a>, <a href="https://www.openstreetmap.org/node/7635342571">n7635342571</a>, <a href="https://www.openstreetmap.org/node/7635342572">n7635342572</a>, <a href="https://www.openstreetmap.org/node/7635342573">n7635342573</a>, <a href="https://www.openstreetmap.org/node/7635342574">n7635342574</a>, <a href="https://www.openstreetmap.org/node/7635342575">n7635342575</a>, <a href="https://www.openstreetmap.org/node/7820218141">n7820218141</a><br>8 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/7635342569">n7635342569</a>, <a href="https://www.openstreetmap.org/node/7635342570">n7635342570</a>, <a href="https://www.openstreetmap.org/node/7635342571">n7635342571</a>, <a href="https://www.openstreetmap.org/node/7635342572">n7635342572</a>, <a href="https://www.openstreetmap.org/node/7635342573">n7635342573</a>, <a href="https://www.openstreetmap.org/node/7635342574">n7635342574</a>, <a href="https://www.openstreetmap.org/node/7635342575">n7635342575</a>, <a href="https://www.openstreetmap.org/node/7820218141">n7820218141</a>
+</div>
+</td></tr>
+
+<tr id="izmir">
+<td class="bold color1">
+  İzmir
+  <a href="izmir.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="izmir.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#izmir" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 17 / 17</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Route "M1" has different ref from master "2" (<a href="https://www.openstreetmap.org/relation/7981826">relation 7981826</a>, "Evka 3 - Fahrettin Altay")<br>Route "M1" has different ref from master "2" (<a href="https://www.openstreetmap.org/relation/2707717">relation 2707717</a>, "Fahrettin Altay - Evka 3")<br>6 unused stations: <a href="https://www.openstreetmap.org/node/8119505127">n8119505127</a>, <a href="https://www.openstreetmap.org/node/8119505128">n8119505128</a>, <a href="https://www.openstreetmap.org/node/8119505129">n8119505129</a>, <a href="https://www.openstreetmap.org/node/8119505130">n8119505130</a>, <a href="https://www.openstreetmap.org/node/8119562132">n8119562132</a>, <a href="https://www.openstreetmap.org/node/8120942750">n8120942750</a>
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

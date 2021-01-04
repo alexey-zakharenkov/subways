@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: Romania</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for Romania</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="bucharest">
+<td class="bold color1">
+  Bucharest
+  <a href="bucharest.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="bucharest.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#bucharest" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 5 / 5</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 68 / 68</td>
+<td class="color1">int: 6 / 6</td>
+<td class="color0">e: 7</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+1 unused stations: <a href="https://www.openstreetmap.org/node/7237268457">n7237268457</a><br>Found 7 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/7931437730">n7931437730</a>, <a href="https://www.openstreetmap.org/node/7931437731">n7931437731</a>, <a href="https://www.openstreetmap.org/node/7931437732">n7931437732</a>, <a href="https://www.openstreetmap.org/node/8015734717">n8015734717</a>, <a href="https://www.openstreetmap.org/node/8015734718">n8015734718</a>, <a href="https://www.openstreetmap.org/node/8015734719">n8015734719</a>, <a href="https://www.openstreetmap.org/node/8015734731">n8015734731</a><br>49 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/5351714012">n5351714012</a>, <a href="https://www.openstreetmap.org/node/5351714728">n5351714728</a>, <a href="https://www.openstreetmap.org/node/5862994221">n5862994221</a>, <a href="https://www.openstreetmap.org/node/5862994222">n5862994222</a>, <a href="https://www.openstreetmap.org/node/5863065679">n5863065679</a>, <a href="https://www.openstreetmap.org/node/5863140527">n5863140527</a>, <a href="https://www.openstreetmap.org/node/610921679">n610921679</a>, <a href="https://www.openstreetmap.org/node/7117681834">n7117681834</a>, <a href="https://www.openstreetmap.org/node/7931246386">n7931246386</a>, <a href="https://www.openstreetmap.org/node/7931246387">n7931246387</a>, <a href="https://www.openstreetmap.org/node/7931246388">n7931246388</a>, <a href="https://www.openstreetmap.org/node/7931246389">n7931246389</a>, <a href="https://www.openstreetmap.org/node/7931290708">n7931290708</a>, <a href="https://www.openstreetmap.org/node/7931290709">n7931290709</a>, <a href="https://www.openstreetmap.org/node/7931290710">n7931290710</a>, <a href="https://www.openstreetmap.org/node/7931290711">n7931290711</a>, <a href="https://www.openstreetmap.org/node/7931290712">n7931290712</a>, <a href="https://www.openstreetmap.org/node/7931290713">n7931290713</a>, <a href="https://www.openstreetmap.org/node/7931290714">n7931290714</a>, <a href="https://www.openstreetmap.org/node/7931290715">n7931290715</a>, ...
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

@@ -1,0 +1,342 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Subway Validator: India</title>
+<meta charset="utf-8">
+
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+th {
+  font-size: 10pt;
+}
+.errors {
+  font-size: 10pt;
+  color: darkred;
+  margin-bottom: 1em;
+}
+.warnings {
+  font-size: 10pt;
+  color: darkblue;
+  margin-bottom: 1em;
+}
+.bold {
+  font-weight: bold;
+}
+.color0 {
+  background: pink;
+}
+.color1 {
+  background: lightgreen;
+}
+.hlink {
+  color: #888;
+  opacity: 0.5;
+}
+table {
+    max-width: 900px;
+}
+tr:hover td:nth-child(n+2) {
+    background: lightblue;
+}
+</style>
+
+</head>
+<body>
+<h1>Subway Validation Results for India</h1>
+<p><a href="index.html">Return to the countries list</a>.</p>
+<table cellspacing="3" cellpadding="2">
+<tr>
+<th>City</th>
+
+<th>Subway Lines</th>
+<th>Light Rail Lines</th>
+
+<th>Stations</th>
+<th>Interchanges</th>
+<th>Unused Entrances</th>
+</tr>
+
+<tr id="ahmedabad">
+<td class="bold color1">
+  Ahmedabad
+  <a href="ahmedabad.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="ahmedabad.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#ahmedabad" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 6 / 6</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="bangalore">
+<td class="bold color1">
+  Bangalore
+  <a href="bangalore.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="bangalore.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#bangalore" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 41 / 41</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="chennai">
+<td class="bold color1">
+  Chennai
+  <a href="chennai.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="chennai.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#chennai" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 52 / 52</td>
+<td class="color1">int: 2 / 2</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+More than one network: Chennai Metro (2); Chennai MRTS (1)
+</div>
+</td></tr>
+
+<tr id="delhi">
+<td class="bold color1">
+  Delhi
+  <a href="delhi.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="delhi.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#delhi" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 10 / 10</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 263 / 263</td>
+<td class="color1">int: 23 / 23</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Duplicate element in a stop area (<a href="https://www.openstreetmap.org/relation/9561649">relation 9561649</a>, "GTB Nagar")<br>Station in route is not a node (<a href="https://www.openstreetmap.org/way/824093230">way 824093230</a>, "Shaheed Sthal New Bus Adda")<br>Station in route is not a node (<a href="https://www.openstreetmap.org/way/824093230">way 824093230</a>, "Shaheed Sthal New Bus Adda")<br>21 unused stations: <a href="https://www.openstreetmap.org/node/4165777365">n4165777365</a>, <a href="https://www.openstreetmap.org/node/4165777371">n4165777371</a>, <a href="https://www.openstreetmap.org/node/4165777372">n4165777372</a>, <a href="https://www.openstreetmap.org/node/4165778689">n4165778689</a>, <a href="https://www.openstreetmap.org/node/4165778690">n4165778690</a>, <a href="https://www.openstreetmap.org/node/4165778691">n4165778691</a>, <a href="https://www.openstreetmap.org/node/4165778709">n4165778709</a>, <a href="https://www.openstreetmap.org/node/4165778734">n4165778734</a>, <a href="https://www.openstreetmap.org/node/4267913896">n4267913896</a>, <a href="https://www.openstreetmap.org/node/4267913913">n4267913913</a>, <a href="https://www.openstreetmap.org/node/4678434989">n4678434989</a>, <a href="https://www.openstreetmap.org/node/4678434990">n4678434990</a>, <a href="https://www.openstreetmap.org/node/4849443432">n4849443432</a>, <a href="https://www.openstreetmap.org/node/4849443434">n4849443434</a>, <a href="https://www.openstreetmap.org/node/4849447792">n4849447792</a>, <a href="https://www.openstreetmap.org/node/4950920120">n4950920120</a>, <a href="https://www.openstreetmap.org/node/4950923221">n4950923221</a>, <a href="https://www.openstreetmap.org/node/4950923222">n4950923222</a>, <a href="https://www.openstreetmap.org/node/4950923223">n4950923223</a>, <a href="https://www.openstreetmap.org/node/4950923224">n4950923224</a>, ...
+</div>
+</td></tr>
+
+<tr id="hyderabad">
+<td class="bold color1">
+  Hyderabad
+  <a href="hyderabad.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="hyderabad.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#hyderabad" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 3 / 3</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 60 / 60</td>
+<td class="color1">int: 3 / 3</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Stop position "Mahatma Gandhi Bus Station (Green Line)" (<a href="https://www.openstreetmap.org/node/7632550173">n7632550173</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/10692234">relation 10692234</a>, "Green Line (MGBS –-&gt; JBS)")<br>Stop position "Mahatma Gandhi Bus Station (Green Line)" (<a href="https://www.openstreetmap.org/node/7632550174">n7632550174</a>) is not on tracks (<a href="https://www.openstreetmap.org/relation/10692235">relation 10692235</a>, "Green Line (JBS –-&gt; MGBS)")
+</div>
+</td></tr>
+
+<tr id="jaipur">
+<td class="bold color1">
+  Jaipur
+  <a href="jaipur.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="jaipur.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#jaipur" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 11 / 11</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Route "#ff748c" has different colour from master "#0000ff" (<a href="https://www.openstreetmap.org/relation/7989307">relation 7989307</a>, "Pink Line (Badi Chaupar --&gt; Mansarovar)")<br>Route "#ff748c" has different colour from master "#0000ff" (<a href="https://www.openstreetmap.org/relation/5250264">relation 5250264</a>, "Pink Line (Mansarovar --&gt; Badi Chaupar)")
+</div>
+</td></tr>
+
+<tr id="kochi">
+<td class="bold color1">
+  Kochi
+  <a href="kochi.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="kochi.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#kochi" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 22 / 22</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color0">e: 1</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Found 1 entrances not used in routes or stop_areas: <a href="https://www.openstreetmap.org/node/7944635322">n7944635322</a><br>1 subway entrances are not in stop_area relations: <a href="https://www.openstreetmap.org/node/7944635322">n7944635322</a>
+</div>
+</td></tr>
+
+<tr id="kolkata">
+<td class="bold color1">
+  Kolkata
+  <a href="kolkata.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="kolkata.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#kolkata" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 31 / 31</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+<tr id="lucknow">
+<td class="bold color0">
+  Lucknow
+  <a href="lucknow.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="lucknow.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#lucknow" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color0">st: 20 / 21</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+Stop area has multiple stations (<a href="https://www.openstreetmap.org/relation/11753509">relation 11753509</a>, "Transport Nagar")<br>Stop area has multiple stations (<a href="https://www.openstreetmap.org/relation/11753510">relation 11753510</a>, "Amausi")<br>Stop area has multiple stations (<a href="https://www.openstreetmap.org/relation/11753510">relation 11753510</a>, "Amausi")<br>Stop area has multiple stations (<a href="https://www.openstreetmap.org/relation/11753509">relation 11753509</a>, "Transport Nagar")<br>Untagged object in a route (<a href="https://www.openstreetmap.org/relation/8299495">relation 8299495</a>, "Red Line (Chaudhary Charan Singh International Airport --&gt; Munshipulia)")<br>Untagged object in a route (<a href="https://www.openstreetmap.org/relation/8299495">relation 8299495</a>, "Red Line (Chaudhary Charan Singh International Airport --&gt; Munshipulia)")<br>Found 20 stations in routes, expected 21
+</div><div class="warnings">
+3 unused stations: <a href="https://www.openstreetmap.org/node/4977531262">n4977531262</a>, <a href="https://www.openstreetmap.org/node/8006089161">n8006089161</a>, <a href="https://www.openstreetmap.org/node/8006089162">n8006089162</a>
+</div>
+</td></tr>
+
+<tr id="mumbai">
+<td class="bold color1">
+  Mumbai
+  <a href="mumbai.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="mumbai.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#mumbai" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 1 / 1</td>
+
+<td class="color1">st: 29 / 29</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Route "#800080" has different colour from master "#0000ff" (<a href="https://www.openstreetmap.org/relation/3808111">relation 3808111</a>, "Mumbai Metro Line 1")<br>Route "#800080" has different colour from master "#0000ff" (<a href="https://www.openstreetmap.org/relation/7684032">relation 7684032</a>, "Mumbai Metro Line 1")<br>1 unused stations: <a href="https://www.openstreetmap.org/way/605163725">w605163725</a>
+</div>
+</td></tr>
+
+<tr id="nagpur">
+<td class="bold color1">
+  Nagpur
+  <a href="nagpur.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="nagpur.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#nagpur" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 2 / 2</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 17 / 17</td>
+<td class="color1">int: 1 / 1</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+Hole in route rails near node <a href="https://www.openstreetmap.org/node/7175548047">n7175548047</a> (<a href="https://www.openstreetmap.org/relation/9565725">relation 9565725</a>, "Orange Line: Khapri =&gt; Sitabuldi")
+</div>
+</td></tr>
+
+<tr id="noida">
+<td class="bold color1">
+  Noida
+  <a href="noida.yaml" class="hlink" title="Download YAML">Y</a>
+  <a href="noida.geojson" class="hlink" title="Download GeoJSON">J</a>
+  <a href="render.html#noida" class="hlink" title="View map" target="_blank">M</a>
+</td>
+
+<td class="color1">sub: 1 / 1</td>
+<td class="color1">lr: 0 / 0</td>
+
+<td class="color1">st: 21 / 21</td>
+<td class="color1">int: 0 / 0</td>
+<td class="color1">e: 0</td>
+</tr>
+<tr><td colspan="6">
+<div class="errors">
+
+</div><div class="warnings">
+
+</div>
+</td></tr>
+
+</table>
+<p>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on 04.01.2021 19:03.</p>
+</body>
+</html>

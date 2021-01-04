@@ -1,0 +1,523 @@
+
+routes: 
+  - 
+    type: train
+    ref: 10
+    itineraries: 
+      r2144048: 
+        - Rio Grande da Serra (n6625162134)
+        - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
+        - Guapituba (n5177348538)
+        - Mauá (n7004042564)
+        - Capuava (w170264832)
+        - 'Prefeito Celso Daniel - Santo André (n6671954743)'
+        - Prefeito Saladino (n6667105311)
+        - Utinga (n4441459870)
+        - 'São Caetano do Sul - Prefeito Walter Braido (n4580231040)'
+        - Tamanduateí (n4119710092)
+        - Ipiranga (n4124619036)
+        - 'Juventus - Mooca (n6684992821)'
+        - Brás (n4987808825)
+
+      r420129: 
+        - Brás (n4987808825)
+        - 'Juventus - Mooca (n6684992821)'
+        - Ipiranga (n4124619036)
+        - Tamanduateí (n4119710092)
+        - 'São Caetano do Sul - Prefeito Walter Braido (n4580231040)'
+        - Utinga (n4441459870)
+        - Prefeito Saladino (n6667105311)
+        - 'Prefeito Celso Daniel - Santo André (n6671954743)'
+        - Capuava (w170264832)
+        - Mauá (n7004042564)
+        - Guapituba (n5177348538)
+        - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
+        - Rio Grande da Serra (n6625162134)
+
+
+    name: 'Linha 10 - Turquesa'
+    colour: '#00ced1'
+    station_count: 13
+    stations: 
+      - Rio Grande da Serra
+      - 'Ribeirão Pires - Antônio Bespalec'
+      - Guapituba
+      - Mauá
+      - Capuava
+      - 'Prefeito Celso Daniel - Santo André'
+      - Prefeito Saladino
+      - Utinga
+      - São Caetano do Sul
+      - Tamanduateí (Linha 10)
+      - Ipiranga
+      - 'Juventus - Mooca'
+      - Brás (CPTM)
+
+  - 
+    type: train
+    ref: 11
+    itineraries: 
+      r2872092: 
+        - Luz (n5368677484)
+        - Brás (n4987808825)
+        - Tatuapé (n4424425022)
+        - Corinthians-Itaquera (n5370729520)
+        - Dom Bosco (n4580167464)
+        - José Bonifácio (n4580257954)
+        - Guaianases (n6666741370)
+        - Antonio Gianetti Neto (n4580265049)
+        - Ferraz de Vasconcelos (n4580278637)
+        - Poá (n4580282204)
+        - Calmon Viana (n4581523860)
+        - Suzano (n6666708467)
+        - Jundiapeba (n4975541725)
+        - Braz Cubas (n4975684337)
+        - Mogi das Cruzes (n4975735298)
+        - Estudantes (n4975769521)
+
+      r2875657: 
+        - Estudantes (n4975769521)
+        - Mogi das Cruzes (n4975735298)
+        - Braz Cubas (n4975684337)
+        - Jundiapeba (n4975541725)
+        - Suzano (n6666708467)
+        - Calmon Viana (n4581523860)
+        - Poá (n4580282204)
+        - Ferraz de Vasconcelos (n4580278637)
+        - Antonio Gianetti Neto (n4580265049)
+        - Guaianases (n6666741370)
+        - José Bonifácio (n4580257954)
+        - Dom Bosco (n4580167464)
+        - Corinthians-Itaquera (n5370729520)
+        - Tatuapé (n4424425022)
+        - Brás (n4987808825)
+        - Luz (n5368677484)
+
+
+    name: 'Linha 11 - Coral'
+    colour: '#ff7f50'
+    station_count: 16
+    stations: 
+      - Luz (CPTM)
+      - Brás (CPTM)
+      - Tatuapé
+      - Corinthians-Itaquera
+      - Dom Bosco
+      - José Bonifácio
+      - Guaianases
+      - Antonio Gianetti Neto
+      - Ferraz de Vasconcelos
+      - Poá
+      - Calmon Viana
+      - Suzano
+      - Jundiapeba
+      - Braz Cubas
+      - Mogi das Cruzes
+      - Estudantes
+
+  - 
+    type: train
+    ref: 12
+    itineraries: 
+      r2877632: 
+        - Calmon Viana (n4581523860)
+        - Aracaré (n4581539510)
+        - Itaquaquecetuba (n4581547752)
+        - Engenheiro Manoel Feio (n4693953605)
+        - Jardim Romano (n4693985640)
+        - Itaim Paulista (n4702146336)
+        - 'Jardim Helena - Vila Mara (n4728457160)'
+        - São Miguel Paulista (w421341833)
+        - Comendador Ermelino (n4728592796)
+        - USP Leste (w508241619)
+        - Engenheiro Goulart (n5039552221)
+        - Tatuapé (n4424425022)
+        - Brás (n4987808825)
+
+      r2877631: 
+        - Brás (n4987808825)
+        - Tatuapé (n4424425022)
+        - Engenheiro Goulart (n5039552221)
+        - USP Leste (w508241619)
+        - Comendador Ermelino (n4728592796)
+        - São Miguel Paulista (w421341833)
+        - 'Jardim Helena - Vila Mara (n4728457160)'
+        - Itaim Paulista (n4702146336)
+        - Jardim Romano (n4693985640)
+        - Engenheiro Manoel Feio (n4693953605)
+        - Itaquaquecetuba (n4581547752)
+        - Aracaré (n4581539510)
+        - Calmon Viana (n4581523860)
+
+
+    name: 'Linha 12 - Safira'
+    colour: '#1c146b'
+    station_count: 13
+    stations: 
+      - Brás (CPTM)
+      - Tatuapé
+      - Engenheiro Goulart
+      - USP Leste
+      - Comendador Ermelino
+      - São Miguel Paulista
+      - 'Jardim Helena - Vila Mara'
+      - Itaim Paulista
+      - Jardim Romano
+      - Engenheiro Manoel Feio
+      - Itaquaquecetuba
+      - Aracaré
+      - Calmon Viana
+
+  - 
+    type: train
+    ref: 13
+    itineraries: 
+      r8447459: 
+        - Engenheiro Goulart (n5039552221)
+        - Guarulhos-CECAP (n4396786298)
+        - Aeroporto-Guarulhos (n4396786293)
+
+      r8447458: 
+        - Aeroporto-Guarulhos (n4396786293)
+        - Guarulhos-CECAP (n4396786298)
+        - Engenheiro Goulart (n5039552221)
+
+
+    name: 'Linha 13 - Jade'
+    colour: '#2ca05a'
+    station_count: 3
+    stations: 
+      - Aeroporto-Guarulhos
+      - Guarulhos-CECAP
+      - Engenheiro Goulart
+
+  - 
+    type: train
+    ref: 7
+    itineraries: 
+      r2557151: 
+        - Francisco Morato (n4467119634)
+        - Botujuru (n4467131459)
+        - Campo Limpo Paulista (n4467131460)
+        - Várzea Paulista (n4467138660)
+        - Jundiaí (n6489284122)
+
+      r419685: 
+        - Brás (n4987808825)
+        - Luz (n5368677484)
+        - 'Palmeiras - Barra Funda (n4593540897)'
+        - Água Branca (n4449872481)
+        - Lapa (Linha 7) (n4449872455)
+        - Piqueri (n4449872456)
+        - Pirituba (n4449872457)
+        - Vila Clarice (n4170354060)
+        - Jaraguá (n6669966612)
+        - Vila Aurora (n4449870322)
+        - Praça Inácio Dias, 5 (n4449870324)
+        - Caieiras (n4465097829)
+        - Franco da Rocha (n6666778888)
+        - Baltazar Fidélis (n4465142886)
+        - Francisco Morato (n4467119634)
+
+      r2554053: 
+        - Baltazar Fidélis (n4465142886)
+        - Franco da Rocha (n6666778888)
+        - Caieiras (n4465097829)
+        - Praça Inácio Dias, 5 (n4449870324)
+        - Vila Aurora (n4449870322)
+        - Jaraguá (n6669966612)
+        - Vila Clarice (n4170354060)
+        - Pirituba (n4449872457)
+        - Piqueri (n4449872456)
+        - Lapa (Linha 7) (n4449872455)
+        - Água Branca (n4449872481)
+        - 'Palmeiras - Barra Funda (n4593540897)'
+        - Luz (n5368677484)
+        - Brás (n4987808825)
+        - Francisco Morato (n4467119634)
+
+      r2557150: 
+        - Jundiaí (n6489284122)
+        - Várzea Paulista (n4467138660)
+        - Campo Limpo Paulista (n4467131460)
+        - Botujuru (n4467131459)
+        - Francisco Morato (n4467119634)
+
+
+    name: 'Linha 7 - Rubi'
+    colour: '#a8034f'
+    station_count: 19
+    stations: 
+      - Baltazar Fidélis
+      - Franco da Rocha
+      - Caieiras
+      - Perus
+      - Vila Aurora
+      - Jaraguá
+      - Vila Clarice
+      - Pirituba
+      - Piqueri
+      - Lapa (Linha 7)
+      - Água Branca
+      - 'Palmeiras - Barra Funda (CPTM)'
+      - Luz (CPTM)
+      - Brás (CPTM)
+      - Francisco Morato
+      - Jundiaí
+      - Várzea Paulista
+      - Campo Limpo Paulista
+      - Botujuru
+
+  - 
+    type: train
+    ref: 8
+    itineraries: 
+      r419297: 
+        - Itapevi (n4593623418)
+        - Engenheiro Cardoso (n4676958580)
+        - Sagrado Coração (n4676959302)
+        - Jandira (n4676944087)
+        - Jardim Silveira (n4676923108)
+        - Jardim Belval (n4676923109)
+        - Barueri (n4691936386)
+        - Antônio João (n4676900470)
+        - Santa Terezinha (n4676900471)
+        - Carapicuíba (n4691931326)
+        - General Miguel Costa (n4692782496)
+        - Quitaúna (n6663080267)
+        - Comandante Sampaio (n4593692582)
+        - Osasco (n4427745672)
+        - Presidente Altino (n4427135151)
+        - Imperatriz Leopoldina (n4593586861)
+        - Domingos de Moraes (n4593577589)
+        - Lapa (Linha 8) (n4592396614)
+        - 'Palmeiras - Barra Funda (n4593540897)'
+        - Júlio Prestes (n4985618204)
+
+      r2886302: 
+        - Itapevi (n4593623418)
+        - Santa Rita (n4593637408)
+        - Amador Bueno (n6052939428)
+
+      r2108731: 
+        - Amador Bueno (n6052939428)
+        - Santa Rita (n4593637408)
+        - Itapevi (n4593623418)
+
+      r2174505: 
+        - Júlio Prestes (n4985618204)
+        - 'Palmeiras - Barra Funda (n4593540897)'
+        - Lapa (Linha 8) (n4592396614)
+        - Domingos de Moraes (n4593577589)
+        - Imperatriz Leopoldina (n4593586861)
+        - Presidente Altino (n4427135151)
+        - Osasco (n4427745672)
+        - Comandante Sampaio (n4593692582)
+        - Quitaúna (n6663080267)
+        - General Miguel Costa (n4692782496)
+        - Carapicuíba (n4691931326)
+        - Santa Terezinha (n4676900471)
+        - Antônio João (n4676900470)
+        - Barueri (n4691936386)
+        - Jardim Belval (n4676923109)
+        - Jardim Silveira (n4676923108)
+        - Jandira (n4676944087)
+        - Sagrado Coração (n4676959302)
+        - Engenheiro Cardoso (n4676958580)
+        - Itapevi (n4593623418)
+
+
+    name: 'Linha 8 - Diamante'
+    colour: '#808080'
+    station_count: 22
+    stations: 
+      - Parada Amador Bueno
+      - Parada Santa Rita
+      - Itapevi
+      - Engenheiro Cardoso
+      - Sagrado Coração
+      - Jandira
+      - Jardim Silveira
+      - Jardim Belval
+      - Barueri
+      - Antônio João
+      - Santa Terezinha
+      - Carapicuíba
+      - General Miguel Costa
+      - Quitaúna
+      - Comandante Sampaio
+      - Osasco
+      - Presidente Altino
+      - Imperatriz Leopoldina
+      - Domingos de Morais
+      - Lapa (Linha 8)
+      - 'Palmeiras - Barra Funda (CPTM)'
+      - Júlio Prestes
+
+  - 
+    type: train
+    ref: 9
+    itineraries: 
+      r419411: 
+        - Grajaú (n4144835344)
+        - 'Primavera - Interlagos (n4144661923)'
+        - Autódromo (n4144571601)
+        - Jurubatuba (n4144549789)
+        - Socorro (n4143953490)
+        - Santo Amaro (n4143583174)
+        - Granja Julieta (n4143554629)
+        - Morumbi (n4143521761)
+        - Berrini (n4143521759)
+        - Vila Olímpia (n4143521770)
+        - Cidade Jardim (n4128458354)
+        - 'Hebraica - Rebouças (n4143233251)'
+        - Pinheiros (n4143229056)
+        - Cidade Universitária (n4143229055)
+        - 'Villa Lobos - Jaguaré (n4142881339)'
+        - Ceasa (n4142881334)
+        - Presidente Altino (n4427135151)
+        - Osasco (n4427745672)
+
+      r2183694: 
+        - Osasco (n4427745672)
+        - Presidente Altino (n4427135151)
+        - Ceasa (n4142881334)
+        - 'Villa Lobos - Jaguaré (n4142881339)'
+        - Cidade Universitária (n4143229055)
+        - Pinheiros (n4143229056)
+        - 'Hebraica - Rebouças (n4143233251)'
+        - Cidade Jardim (n4128458354)
+        - Vila Olímpia (n4143521770)
+        - Berrini (n4143521759)
+        - Morumbi (n4143521761)
+        - Granja Julieta (n4143554629)
+        - Santo Amaro (n4143583174)
+        - Socorro (n4143953490)
+        - Jurubatuba (n4144549789)
+        - Autódromo (n4144571601)
+        - 'Primavera - Interlagos (n4144661923)'
+        - Grajaú (n4144835344)
+
+
+    name: 'Linha 9 - Esmeralda'
+    colour: '#00a88e'
+    station_count: 18
+    stations: 
+      - Osasco
+      - Presidente Altino
+      - Ceasa
+      - 'Villa Lobos - Jaguaré'
+      - Cidade Universitária
+      - Pinheiros
+      - 'Hebraica - Rebouças'
+      - Cidade Jardim
+      - Vila Olímpia
+      - Berrini
+      - Morumbi
+      - Granja Julieta
+      - Santo Amaro (CPTM)
+      - Socorro
+      - Jurubatuba
+      - Autódromo
+      - 'Primavera - Interlagos'
+      - Grajaú
+
+
+transfers: 
+
+stations: 
+  - Aeroporto-Guarulhos (n4396786293)
+  - Amador Bueno (n6052939428)
+  - Antonio Gianetti Neto (n4580265049)
+  - Antônio João (n4676900470)
+  - Aracaré (n4581539510)
+  - Autódromo (n4144571601)
+  - Baltazar Fidélis (n4465142886)
+  - Barueri (n4691936386)
+  - Berrini (n4143521759)
+  - Botujuru (n4467131459)
+  - Braz Cubas (n4975684337)
+  - Brás (n4987808825)
+  - Caieiras (n4465097829)
+  - Calmon Viana (n4581523860)
+  - Campo Limpo Paulista (n4467131460)
+  - Capuava (w170264832)
+  - Carapicuíba (n4691931326)
+  - Ceasa (n4142881334)
+  - Cidade Jardim (n4128458354)
+  - Cidade Universitária (n4143229055)
+  - Comandante Sampaio (n4593692582)
+  - Comendador Ermelino (n4728592796)
+  - Corinthians-Itaquera (n5370729520)
+  - Dom Bosco (n4580167464)
+  - Domingos de Moraes (n4593577589)
+  - Engenheiro Cardoso (n4676958580)
+  - Engenheiro Goulart (n5039552221)
+  - Engenheiro Manoel Feio (n4693953605)
+  - Estudantes (n4975769521)
+  - Ferraz de Vasconcelos (n4580278637)
+  - Francisco Morato (n4467119634)
+  - Franco da Rocha (n6666778888)
+  - General Miguel Costa (n4692782496)
+  - Grajaú (n4144835344)
+  - Granja Julieta (n4143554629)
+  - Guaianases (n6666741370)
+  - Guapituba (n5177348538)
+  - Guarulhos-CECAP (n4396786298)
+  - 'Hebraica - Rebouças (n4143233251)'
+  - Imperatriz Leopoldina (n4593586861)
+  - Ipiranga (n4124619036)
+  - Itaim Paulista (n4702146336)
+  - Itapevi (n4593623418)
+  - Itaquaquecetuba (n4581547752)
+  - Jandira (n4676944087)
+  - Jaraguá (n6669966612)
+  - Jardim Belval (n4676923109)
+  - 'Jardim Helena - Vila Mara (n4728457160)'
+  - Jardim Romano (n4693985640)
+  - Jardim Silveira (n4676923108)
+  - José Bonifácio (n4580257954)
+  - Jundiapeba (n4975541725)
+  - Jundiaí (n6489284122)
+  - Jurubatuba (n4144549789)
+  - 'Juventus - Mooca (n6684992821)'
+  - Júlio Prestes (n4985618204)
+  - Lapa (Linha 7) (n4449872455)
+  - Lapa (Linha 8) (n4592396614)
+  - Luz (n5368677484)
+  - Mauá (n7004042564)
+  - Mogi das Cruzes (n4975735298)
+  - Morumbi (n4143521761)
+  - Osasco (n4427745672)
+  - 'Palmeiras - Barra Funda (n4593540897)'
+  - Pinheiros (n4143229056)
+  - Piqueri (n4449872456)
+  - Pirituba (n4449872457)
+  - Poá (n4580282204)
+  - Praça Inácio Dias, 5 (n4449870324)
+  - 'Prefeito Celso Daniel - Santo André (n6671954743)'
+  - Prefeito Saladino (n6667105311)
+  - Presidente Altino (n4427135151)
+  - 'Primavera - Interlagos (n4144661923)'
+  - Quitaúna (n6663080267)
+  - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
+  - Rio Grande da Serra (n6625162134)
+  - Sagrado Coração (n4676959302)
+  - Santa Rita (n4593637408)
+  - Santa Terezinha (n4676900471)
+  - Santo Amaro (n4143583174)
+  - Socorro (n4143953490)
+  - Suzano (n6666708467)
+  - 'São Caetano do Sul - Prefeito Walter Braido (n4580231040)'
+  - São Miguel Paulista (w421341833)
+  - Tamanduateí (n4119710092)
+  - Tatuapé (n4424425022)
+  - USP Leste (w508241619)
+  - Utinga (n4441459870)
+  - Vila Aurora (n4449870322)
+  - Vila Clarice (n4170354060)
+  - Vila Olímpia (n4143521770)
+  - 'Villa Lobos - Jaguaré (n4142881339)'
+  - Várzea Paulista (n4467138660)
+  - Água Branca (n4449872481)
+
