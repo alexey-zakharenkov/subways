@@ -1,23 +1,26 @@
 
+stations: 
+  - Federal Circle (n277752415)
+  - Howard Beach (n277753014)
+  - Jamaica (n6624448793)
+  - Lefferts Boulevard (n277752592)
+  - Terminal 1 (n277752293)
+  - Terminal 2 (n277752292)
+  - Terminal 4 (n277752285)
+  - Terminal 5 (n277752210)
+  - Terminal 7 (n277752134)
+  - Terminal 8 (n277751536)
+
 routes: 
   - 
+    name: Howard Beach Route
+    station_count: 9
     type: light_rail
-    ref: JFK
-    itineraries: 
-      r7895591: 
-        - Terminal 1 (n277752293)
-        - Terminal 2 (n277752292)
-        - Terminal 4 (n277752285)
-        - Terminal 5 (n277752210)
-        - Terminal 7 (n277752134)
-        - Terminal 8 (n277751536)
-        - Terminal 1 (n277752293)
-
-
-    name: All Terminals Loop
     colour: '#0194d7'
-    station_count: 6
     stations: 
+      - Howard Beach (JFK)
+      - Lefferts Boulevard
+      - Federal Circle
       - Terminal 1
       - Terminal 2
       - Terminal 4
@@ -25,8 +28,6 @@ routes:
       - Terminal 7
       - Terminal 8
 
-  - 
-    type: light_rail
     ref: JFK
     itineraries: 
       r7895590: 
@@ -44,12 +45,38 @@ routes:
         - Howard Beach (n277753014)
 
 
-    name: Howard Beach Route
+  - 
+    name: All Terminals Loop
+    station_count: 6
+    type: light_rail
     colour: '#0194d7'
-    station_count: 9
     stations: 
-      - Howard Beach (JFK)
-      - Lefferts Boulevard
+      - Terminal 1
+      - Terminal 2
+      - Terminal 4
+      - Terminal 5
+      - Terminal 7
+      - Terminal 8
+
+    ref: JFK
+    itineraries: 
+      r7895591: 
+        - Terminal 1 (n277752293)
+        - Terminal 2 (n277752292)
+        - Terminal 4 (n277752285)
+        - Terminal 5 (n277752210)
+        - Terminal 7 (n277752134)
+        - Terminal 8 (n277751536)
+        - Terminal 1 (n277752293)
+
+
+  - 
+    name: Jamaica Station Route
+    station_count: 8
+    type: light_rail
+    colour: '#0194d7'
+    stations: 
+      - Jamaica (JFK)
       - Federal Circle
       - Terminal 1
       - Terminal 2
@@ -58,8 +85,6 @@ routes:
       - Terminal 7
       - Terminal 8
 
-  - 
-    type: light_rail
     ref: JFK
     itineraries: 
       r7895554: 
@@ -75,31 +100,6 @@ routes:
         - Jamaica (n6624448793)
 
 
-    name: Jamaica Station Route
-    colour: '#0194d7'
-    station_count: 8
-    stations: 
-      - Jamaica (JFK)
-      - Federal Circle
-      - Terminal 1
-      - Terminal 2
-      - Terminal 4
-      - Terminal 5
-      - Terminal 7
-      - Terminal 8
-
 
 transfers: 
-
-stations: 
-  - Federal Circle (n277752415)
-  - Howard Beach (n277753014)
-  - Jamaica (n6624448793)
-  - Lefferts Boulevard (n277752592)
-  - Terminal 1 (n277752293)
-  - Terminal 2 (n277752292)
-  - Terminal 4 (n277752285)
-  - Terminal 5 (n277752210)
-  - Terminal 7 (n277752134)
-  - Terminal 8 (n277751536)
 

@@ -1,7 +1,63 @@
 
+stations: 
+  - Adlerbrücke (n271135812)
+  - Alter Markt (n272694179)
+  - Bruch (n454042501)
+  - Campus Nord (n6708312340)
+  - Campus Süd (n1444302733)
+  - Eichlinghofen H-Bahn (n1444292627)
+  - Flughafen Bahnhof (n6709863535)
+  - Flughafen Parkhaus 4 (n6708283863)
+  - Flughafen Terminal A/B (n6708283865)
+  - Flughafen Terminal C (n6708283864)
+  - Hammerstein (n266775534)
+  - Kluse (n271135733)
+  - Landgericht (n272692299)
+  - Loher Brücke (n271135799)
+  - Oberbarmen Bahnhof (n6577517418)
+  - Ohligsmühle (n3125935756)
+  - Pestalozzistraße (n271135646)
+  - Robert-Daum-Platz (n271135683)
+  - Sonnborner Straße (n432883106)
+  - Technologiezentrum (n1444333080)
+  - Universität S (n6708312339)
+  - Varresbecker Straße (n380536713)
+  - Vohwinkel Schwebebahn (n6577465471)
+  - Völklinger Straße (n272692551)
+  - Werther Brücke (n271135862)
+  - Westende (n1609100922)
+  - Wupperfeld (n7150904245)
+  - Wuppertal Hauptbahnhof (n271135716)
+  - Zoo/Stadion (n6577465672)
+
 routes: 
   - 
+    name: Schwebebahn Wuppertal
+    station_count: 20
     type: monorail
+    colour: '#00ffff'
+    stations: 
+      - Schwebebahnstation Vohwinkel
+      - Bruch
+      - Hammerstein
+      - Sonnborner Straße
+      - Zoo/Stadion (monorail)
+      - Varresbecker Straße (monorail)
+      - Westende (monorail)
+      - Pestalozzistraße (monorail)
+      - Robert-Daum-Platz (monorail)
+      - Ohligsmühle
+      - Wuppertal Hauptbahnhof
+      - Kluse
+      - Landgericht
+      - Völklinger Straße
+      - Loher Brücke
+      - Adlerbrücke
+      - Alter Markt Schwebebahn
+      - Werther Brücke
+      - Wupperfeld
+      - Oberbarmen Bahnhof (monorail)
+
     ref: 60
     itineraries: 
       r2973510: 
@@ -49,79 +105,63 @@ routes:
         - Oberbarmen Bahnhof (n6577517418)
 
 
-    name: Schwebebahn Wuppertal
-    colour: '#00ffff'
-    station_count: 20
-    stations: 
-      - Schwebebahnstation Vohwinkel
-      - Bruch
-      - Hammerstein
-      - Sonnborner Straße
-      - Zoo/Stadion (monorail)
-      - Varresbecker Straße (monorail)
-      - Westende (monorail)
-      - Pestalozzistraße (monorail)
-      - Robert-Daum-Platz (monorail)
-      - Ohligsmühle
-      - Wuppertal Hauptbahnhof
-      - Kluse
-      - Landgericht
-      - Völklinger Straße
-      - Loher Brücke
-      - Adlerbrücke
-      - Alter Markt Schwebebahn
-      - Werther Brücke
-      - Wupperfeld
-      - Oberbarmen Bahnhof (monorail)
-
   - 
-    type: monorail
-    ref: H1
-    itineraries: 
-      r93947: 
-        - Eichlinghofen H-Bahn (n1444292627)
-        - Campus Süd (n1444302733)
-        - Universität S (n6708312339)
-        - Technologiezentrum (n1444333080)
-
-      r1901043: 
-        - Technologiezentrum (n1444333080)
-        - Universität S (n6708312339)
-        - Campus Süd (n1444302733)
-        - Eichlinghofen H-Bahn (n1444292627)
-
-
     name: Monorail H1
-    colour: '#c31313'
     station_count: 4
+    type: monorail
+    colour: '#c31313'
     stations: 
       - Eichlinghofen H-Bahn
       - Campus Süd
       - Universität S
       - Technologiezentrum
 
+    ref: H1
+    itineraries: 
+      r1901043: 
+        - Technologiezentrum (n1444333080)
+        - Universität S (n6708312339)
+        - Campus Süd (n1444302733)
+        - Eichlinghofen H-Bahn (n1444292627)
+
+      r93947: 
+        - Eichlinghofen H-Bahn (n1444292627)
+        - Campus Süd (n1444302733)
+        - Universität S (n6708312339)
+        - Technologiezentrum (n1444333080)
+
+
   - 
+    name: Monorail H2
+    station_count: 2
     type: monorail
+    colour: '#c31313'
+    stations: 
+      - Campus Nord
+      - Campus Süd
+
     ref: H2
     itineraries: 
-      r1901044: 
-        - Campus Süd (n1444302733)
-        - Campus Nord (n6708312340)
-
       r1901045: 
         - Campus Nord (n6708312340)
         - Campus Süd (n1444302733)
 
+      r1901044: 
+        - Campus Süd (n1444302733)
+        - Campus Nord (n6708312340)
 
-    name: Monorail H2
-    colour: '#c31313'
-    station_count: 2
-    stations: 
-      - Campus Süd
-      - Campus Nord
 
   - 
+    name: Skytrain
+    station_count: 4
     type: monorail
+    colour: '#ff0000'
+    stations: 
+      - Flughafen Bahnhof
+      - Flughafen Parkhaus 4
+      - Flughafen Terminal A/B
+      - Flughafen Terminal C
+
     ref: Skytrain
     itineraries: 
       r72578: 
@@ -137,46 +177,6 @@ routes:
         - Flughafen Terminal C (n6708283864)
 
 
-    name: Skytrain
-    colour: '#ff0000'
-    station_count: 4
-    stations: 
-      - Flughafen Terminal C
-      - Flughafen Terminal A/B
-      - Flughafen Parkhaus 4
-      - Flughafen Bahnhof
-
 
 transfers: 
-
-stations: 
-  - Adlerbrücke (n271135812)
-  - Alter Markt (n272694179)
-  - Bruch (n454042501)
-  - Campus Nord (n6708312340)
-  - Campus Süd (n1444302733)
-  - Eichlinghofen H-Bahn (n1444292627)
-  - Flughafen Bahnhof (n6709863535)
-  - Flughafen Parkhaus 4 (n6708283863)
-  - Flughafen Terminal A/B (n6708283865)
-  - Flughafen Terminal C (n6708283864)
-  - Hammerstein (n266775534)
-  - Kluse (n271135733)
-  - Landgericht (n272692299)
-  - Loher Brücke (n271135799)
-  - Oberbarmen Bahnhof (n6577517418)
-  - Ohligsmühle (n3125935756)
-  - Pestalozzistraße (n271135646)
-  - Robert-Daum-Platz (n271135683)
-  - Sonnborner Straße (n432883106)
-  - Technologiezentrum (n1444333080)
-  - Universität S (n6708312339)
-  - Varresbecker Straße (n380536713)
-  - Vohwinkel Schwebebahn (n6577465471)
-  - Völklinger Straße (n272692551)
-  - Werther Brücke (n271135862)
-  - Westende (n1609100922)
-  - Wupperfeld (n7150904245)
-  - Wuppertal Hauptbahnhof (n271135716)
-  - Zoo/Stadion (n6577465672)
 

@@ -1,35 +1,92 @@
 
+stations: 
+  - Allegheny (n7758163137)
+  - Arlington (n5106122209)
+  - Beagle (n4501868262)
+  - Belasco (n3076463527)
+  - Bethel Village (n5106118909)
+  - Boggs (n5103693073)
+  - Bon Air (n5108140288)
+  - Casswell (n5106122132)
+  - Castle Shannon (n7758163138)
+  - Dawn (n5106122373)
+  - Denise (n5108140302)
+  - Dorchester (n5106118898)
+  - Dormont Junction (n5106122220)
+  - Fallowfield (n5106122351)
+  - First Avenue (n7758163134)
+  - Gateway (n7758163135)
+  - Hampshire (n271210116)
+  - Highland (n5106122128)
+  - Hillcrest (n4501868423)
+  - Killarney (n5108140397)
+  - King's School (n4501868268)
+  - Library (n5107632393)
+  - Logan (n4501868276)
+  - Lytle (n1589832032)
+  - McNeilly (n5108140394)
+  - Memorial Hall (n5108140400)
+  - Mesta (n1589834489)
+  - Mt. Lebanon (n7774350441)
+  - Munroe (n4501868302)
+  - North Side (n7758163136)
+  - Overbrook Junction (n5106122199)
+  - Palm Garden (n271203170)
+  - Pennant (n5106122375)
+  - Poplar (n5106122211)
+  - Potomac (n5106122322)
+  - Sandy Creek (n5107632402)
+  - Sarah (n4501868280)
+  - Shiras (n5106122332)
+  - Smith Road (n5106122177)
+  - South Bank (n5108140309)
+  - South Hills Junction (n5104398635)
+  - South Hills Village (n7774325613)
+  - South Park (n1589834834)
+  - St. Anne's (n5106122197)
+  - Station Square (n5105282300)
+  - Steel Plaza (n6728188002)
+  - Stevenson (n5106122325)
+  - Washington Junction (n5106122145)
+  - West Library (n5107632398)
+  - Westfield (n5106122357)
+  - Willow (n5106122157)
+  - Wood Street (n5379947701)
+
 routes: 
   - 
+    name: PAT Blue Line
+    station_count: 24
     type: light_rail
+    colour: '#77b6e4'
+    stations: 
+      - Allegheny
+      - North Side
+      - Gateway
+      - Wood Street
+      - Steel Plaza
+      - First Avenue
+      - Station Square
+      - South Hills Junction
+      - Boggs
+      - Bon Air
+      - Denise
+      - South Bank
+      - McNeilly
+      - Killarney
+      - Memorial Hall
+      - Willow
+      - St. Anne's
+      - Smith Road
+      - Washington Junction
+      - Casswell
+      - Highland
+      - Bethel Village
+      - Dorchester
+      - South Hills Village
+
     ref: Blue
     itineraries: 
-      r7575515: 
-        - South Hills Village (n7774325613)
-        - Dorchester (n5106118898)
-        - Bethel Village (n5106118909)
-        - Highland (n5106122128)
-        - Casswell (n5106122132)
-        - Washington Junction (n5106122145)
-        - Smith Road (n5106122177)
-        - St. Anne's (n5106122197)
-        - Willow (n5106122157)
-        - Memorial Hall (n5108140400)
-        - Killarney (n5108140397)
-        - McNeilly (n5108140394)
-        - South Bank (n5108140309)
-        - Denise (n5108140302)
-        - Bon Air (n5108140288)
-        - Boggs (n5103693073)
-        - South Hills Junction (n5104398635)
-        - Station Square (n5105282300)
-        - First Avenue (n7758163134)
-        - Steel Plaza (n6728188002)
-        - Wood Street (n5379947701)
-        - Gateway (n7758163135)
-        - North Side (n7758163136)
-        - Allegheny (n7758163137)
-
       r7575517: 
         - Allegheny (n7758163137)
         - North Side (n7758163136)
@@ -56,27 +113,54 @@ routes:
         - Dorchester (n5106118898)
         - South Hills Village (n7774325613)
 
+      r7575515: 
+        - South Hills Village (n7774325613)
+        - Dorchester (n5106118898)
+        - Bethel Village (n5106118909)
+        - Highland (n5106122128)
+        - Casswell (n5106122132)
+        - Washington Junction (n5106122145)
+        - Smith Road (n5106122177)
+        - St. Anne's (n5106122197)
+        - Willow (n5106122157)
+        - Memorial Hall (n5108140400)
+        - Killarney (n5108140397)
+        - McNeilly (n5108140394)
+        - South Bank (n5108140309)
+        - Denise (n5108140302)
+        - Bon Air (n5108140288)
+        - Boggs (n5103693073)
+        - South Hills Junction (n5104398635)
+        - Station Square (n5105282300)
+        - First Avenue (n7758163134)
+        - Steel Plaza (n6728188002)
+        - Wood Street (n5379947701)
+        - Gateway (n7758163135)
+        - North Side (n7758163136)
+        - Allegheny (n7758163137)
 
-    name: PAT Blue Line
-    colour: '#77b6e4'
-    station_count: 24
+
+  - 
+    name: PAT Red Line
+    station_count: 32
+    type: light_rail
+    colour: '#ec1b24'
     stations: 
-      - South Hills Village
-      - Dorchester
-      - Bethel Village
-      - Highland
-      - Casswell
-      - Washington Junction
-      - Smith Road
-      - St. Anne's
-      - Willow
-      - Memorial Hall
-      - Killarney
-      - McNeilly
-      - South Bank
-      - Denise
-      - Bon Air
-      - Boggs
+      - Overbrook Junction
+      - Castle Shannon
+      - Arlington
+      - Poplar
+      - Mt. Lebanon
+      - Dormont Junction
+      - Potomac
+      - Stevenson
+      - Shiras
+      - Belasco
+      - Hampshire
+      - Fallowfield
+      - Pennant
+      - Dawn
+      - Palm Garden
       - South Hills Junction
       - Station Square
       - First Avenue
@@ -85,62 +169,18 @@ routes:
       - Gateway
       - North Side
       - Allegheny
+      - Westfield
+      - St. Anne's
+      - Smith Road
+      - Washington Junction
+      - Casswell
+      - Highland
+      - Bethel Village
+      - Dorchester
+      - South Hills Village
 
-  - 
-    type: light_rail
     ref: Red
     itineraries: 
-      r7574878: 
-        - Overbrook Junction (n5106122199)
-        - Castle Shannon (n7758163138)
-        - Arlington (n5106122209)
-        - Poplar (n5106122211)
-        - Mt. Lebanon (n7774350441)
-        - Dormont Junction (n5106122220)
-        - Potomac (n5106122322)
-        - Stevenson (n5106122325)
-        - Shiras (n5106122332)
-        - Belasco (n3076463527)
-        - Hampshire (n271210116)
-        - Fallowfield (n5106122351)
-        - Pennant (n5106122375)
-        - Dawn (n5106122373)
-        - Palm Garden (n271203170)
-        - South Hills Junction (n5104398635)
-        - Station Square (n5105282300)
-        - First Avenue (n7758163134)
-        - Steel Plaza (n6728188002)
-        - Wood Street (n5379947701)
-        - Gateway (n7758163135)
-        - North Side (n7758163136)
-        - Allegheny (n7758163137)
-
-      r7574879: 
-        - Allegheny (n7758163137)
-        - North Side (n7758163136)
-        - Gateway (n7758163135)
-        - Wood Street (n5379947701)
-        - Steel Plaza (n6728188002)
-        - First Avenue (n7758163134)
-        - Station Square (n5105282300)
-        - South Hills Junction (n5104398635)
-        - Palm Garden (n271203170)
-        - Dawn (n5106122373)
-        - Pennant (n5106122375)
-        - Westfield (n5106122357)
-        - Fallowfield (n5106122351)
-        - Hampshire (n271210116)
-        - Belasco (n3076463527)
-        - Shiras (n5106122332)
-        - Stevenson (n5106122325)
-        - Potomac (n5106122322)
-        - Dormont Junction (n5106122220)
-        - Mt. Lebanon (n7774350441)
-        - Poplar (n5106122211)
-        - Arlington (n5106122209)
-        - Castle Shannon (n7758163138)
-        - Overbrook Junction (n5106122199)
-
       r7575524: 
         - South Hills Village (n7774325613)
         - Dorchester (n5106118898)
@@ -150,6 +190,31 @@ routes:
         - Washington Junction (n5106122145)
         - Smith Road (n5106122177)
         - St. Anne's (n5106122197)
+        - Overbrook Junction (n5106122199)
+        - Castle Shannon (n7758163138)
+        - Arlington (n5106122209)
+        - Poplar (n5106122211)
+        - Mt. Lebanon (n7774350441)
+        - Dormont Junction (n5106122220)
+        - Potomac (n5106122322)
+        - Stevenson (n5106122325)
+        - Shiras (n5106122332)
+        - Belasco (n3076463527)
+        - Hampshire (n271210116)
+        - Fallowfield (n5106122351)
+        - Pennant (n5106122375)
+        - Dawn (n5106122373)
+        - Palm Garden (n271203170)
+        - South Hills Junction (n5104398635)
+        - Station Square (n5105282300)
+        - First Avenue (n7758163134)
+        - Steel Plaza (n6728188002)
+        - Wood Street (n5379947701)
+        - Gateway (n7758163135)
+        - North Side (n7758163136)
+        - Allegheny (n7758163137)
+
+      r7574878: 
         - Overbrook Junction (n5106122199)
         - Castle Shannon (n7758163138)
         - Arlington (n5106122209)
@@ -208,118 +273,38 @@ routes:
         - Dorchester (n5106118898)
         - South Hills Village (n7774325613)
 
+      r7574879: 
+        - Allegheny (n7758163137)
+        - North Side (n7758163136)
+        - Gateway (n7758163135)
+        - Wood Street (n5379947701)
+        - Steel Plaza (n6728188002)
+        - First Avenue (n7758163134)
+        - Station Square (n5105282300)
+        - South Hills Junction (n5104398635)
+        - Palm Garden (n271203170)
+        - Dawn (n5106122373)
+        - Pennant (n5106122375)
+        - Westfield (n5106122357)
+        - Fallowfield (n5106122351)
+        - Hampshire (n271210116)
+        - Belasco (n3076463527)
+        - Shiras (n5106122332)
+        - Stevenson (n5106122325)
+        - Potomac (n5106122322)
+        - Dormont Junction (n5106122220)
+        - Mt. Lebanon (n7774350441)
+        - Poplar (n5106122211)
+        - Arlington (n5106122209)
+        - Castle Shannon (n7758163138)
+        - Overbrook Junction (n5106122199)
 
-    name: PAT Red Line
-    colour: '#ec1b24'
-    station_count: 32
-    stations: 
-      - Allegheny
-      - North Side
-      - Gateway
-      - Wood Street
-      - Steel Plaza
-      - First Avenue
-      - Station Square
-      - South Hills Junction
-      - Palm Garden
-      - Dawn
-      - Pennant
-      - Westfield
-      - Fallowfield
-      - Hampshire
-      - Belasco
-      - Shiras
-      - Stevenson
-      - Potomac
-      - Dormont Junction
-      - Mt. Lebanon
-      - Poplar
-      - Arlington
-      - Castle Shannon
-      - Overbrook Junction
-      - St. Anne's
-      - Smith Road
-      - Washington Junction
-      - Casswell
-      - Highland
-      - Bethel Village
-      - Dorchester
-      - South Hills Village
 
   - 
-    type: light_rail
-    ref: Silver
-    itineraries: 
-      r7572383: 
-        - Library (n5107632393)
-        - West Library (n5107632398)
-        - Sandy Creek (n5107632402)
-        - Beagle (n4501868262)
-        - King's School (n4501868268)
-        - Logan (n4501868276)
-        - Sarah (n4501868280)
-        - Munroe (n4501868302)
-        - South Park (n1589834834)
-        - Mesta (n1589834489)
-        - Lytle (n1589832032)
-        - Hillcrest (n4501868423)
-        - Washington Junction (n5106122145)
-        - Smith Road (n5106122177)
-        - St. Anne's (n5106122197)
-        - Willow (n5106122157)
-        - Memorial Hall (n5108140400)
-        - Killarney (n5108140397)
-        - McNeilly (n5108140394)
-        - South Bank (n5108140309)
-        - Denise (n5108140302)
-        - Bon Air (n5108140288)
-        - Boggs (n5103693073)
-        - South Hills Junction (n5104398635)
-        - Station Square (n5105282300)
-        - First Avenue (n7758163134)
-        - Steel Plaza (n6728188002)
-        - Wood Street (n5379947701)
-        - Gateway (n7758163135)
-        - North Side (n7758163136)
-        - Allegheny (n7758163137)
-
-      r7572384: 
-        - Allegheny (n7758163137)
-        - North Side (n7758163136)
-        - Gateway (n7758163135)
-        - Wood Street (n5379947701)
-        - Steel Plaza (n6728188002)
-        - First Avenue (n7758163134)
-        - Station Square (n5105282300)
-        - South Hills Junction (n5104398635)
-        - Boggs (n5103693073)
-        - Bon Air (n5108140288)
-        - Denise (n5108140302)
-        - South Bank (n5108140309)
-        - McNeilly (n5108140394)
-        - Killarney (n5108140397)
-        - Memorial Hall (n5108140400)
-        - Willow (n5106122157)
-        - St. Anne's (n5106122197)
-        - Smith Road (n5106122177)
-        - Washington Junction (n5106122145)
-        - Hillcrest (n4501868423)
-        - Lytle (n1589832032)
-        - Mesta (n1589834489)
-        - South Park (n1589834834)
-        - Munroe (n4501868302)
-        - Sarah (n4501868280)
-        - Logan (n4501868276)
-        - King's School (n4501868268)
-        - Beagle (n4501868262)
-        - Sandy Creek (n5107632402)
-        - West Library (n5107632398)
-        - Library (n5107632393)
-
-
     name: PAT Silver Line
-    colour: '#bcbdc0'
     station_count: 31
+    type: light_rail
+    colour: '#bcbdc0'
     stations: 
       - Library
       - West Library
@@ -353,63 +338,78 @@ routes:
       - North Side
       - Allegheny
 
+    ref: Silver
+    itineraries: 
+      r7572384: 
+        - Allegheny (n7758163137)
+        - North Side (n7758163136)
+        - Gateway (n7758163135)
+        - Wood Street (n5379947701)
+        - Steel Plaza (n6728188002)
+        - First Avenue (n7758163134)
+        - Station Square (n5105282300)
+        - South Hills Junction (n5104398635)
+        - Boggs (n5103693073)
+        - Bon Air (n5108140288)
+        - Denise (n5108140302)
+        - South Bank (n5108140309)
+        - McNeilly (n5108140394)
+        - Killarney (n5108140397)
+        - Memorial Hall (n5108140400)
+        - Willow (n5106122157)
+        - St. Anne's (n5106122197)
+        - Smith Road (n5106122177)
+        - Washington Junction (n5106122145)
+        - Hillcrest (n4501868423)
+        - Lytle (n1589832032)
+        - Mesta (n1589834489)
+        - South Park (n1589834834)
+        - Munroe (n4501868302)
+        - Sarah (n4501868280)
+        - Logan (n4501868276)
+        - King's School (n4501868268)
+        - Beagle (n4501868262)
+        - Sandy Creek (n5107632402)
+        - West Library (n5107632398)
+        - Library (n5107632393)
+
+      r7572383: 
+        - Library (n5107632393)
+        - West Library (n5107632398)
+        - Sandy Creek (n5107632402)
+        - Beagle (n4501868262)
+        - King's School (n4501868268)
+        - Logan (n4501868276)
+        - Sarah (n4501868280)
+        - Munroe (n4501868302)
+        - South Park (n1589834834)
+        - Mesta (n1589834489)
+        - Lytle (n1589832032)
+        - Hillcrest (n4501868423)
+        - Washington Junction (n5106122145)
+        - Smith Road (n5106122177)
+        - St. Anne's (n5106122197)
+        - Willow (n5106122157)
+        - Memorial Hall (n5108140400)
+        - Killarney (n5108140397)
+        - McNeilly (n5108140394)
+        - South Bank (n5108140309)
+        - Denise (n5108140302)
+        - Bon Air (n5108140288)
+        - Boggs (n5103693073)
+        - South Hills Junction (n5104398635)
+        - Station Square (n5105282300)
+        - First Avenue (n7758163134)
+        - Steel Plaza (n6728188002)
+        - Wood Street (n5379947701)
+        - Gateway (n7758163135)
+        - North Side (n7758163136)
+        - Allegheny (n7758163137)
+
+
 
 transfers: 
   - 
     - Overbrook Junction (r6889872)
     - Willow (r6889902)
-
-stations: 
-  - Allegheny (n7758163137)
-  - Arlington (n5106122209)
-  - Beagle (n4501868262)
-  - Belasco (n3076463527)
-  - Bethel Village (n5106118909)
-  - Boggs (n5103693073)
-  - Bon Air (n5108140288)
-  - Casswell (n5106122132)
-  - Castle Shannon (n7758163138)
-  - Dawn (n5106122373)
-  - Denise (n5108140302)
-  - Dorchester (n5106118898)
-  - Dormont Junction (n5106122220)
-  - Fallowfield (n5106122351)
-  - First Avenue (n7758163134)
-  - Gateway (n7758163135)
-  - Hampshire (n271210116)
-  - Highland (n5106122128)
-  - Hillcrest (n4501868423)
-  - Killarney (n5108140397)
-  - King's School (n4501868268)
-  - Library (n5107632393)
-  - Logan (n4501868276)
-  - Lytle (n1589832032)
-  - McNeilly (n5108140394)
-  - Memorial Hall (n5108140400)
-  - Mesta (n1589834489)
-  - Mt. Lebanon (n7774350441)
-  - Munroe (n4501868302)
-  - North Side (n7758163136)
-  - Overbrook Junction (n5106122199)
-  - Palm Garden (n271203170)
-  - Pennant (n5106122375)
-  - Poplar (n5106122211)
-  - Potomac (n5106122322)
-  - Sandy Creek (n5107632402)
-  - Sarah (n4501868280)
-  - Shiras (n5106122332)
-  - Smith Road (n5106122177)
-  - South Bank (n5108140309)
-  - South Hills Junction (n5104398635)
-  - South Hills Village (n7774325613)
-  - South Park (n1589834834)
-  - St. Anne's (n5106122197)
-  - Station Square (n5105282300)
-  - Steel Plaza (n6728188002)
-  - Stevenson (n5106122325)
-  - Washington Junction (n5106122145)
-  - West Library (n5107632398)
-  - Westfield (n5106122357)
-  - Willow (n5106122157)
-  - Wood Street (n5379947701)
 

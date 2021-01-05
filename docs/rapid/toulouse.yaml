@@ -1,7 +1,69 @@
 
+stations: 
+  - Argoulets (n333113201)
+  - Arènes (n248533275)
+  - Bagatelle (n248533545)
+  - Balma-Gramont (n8196781157)
+  - Barrière de Paris (n286356966)
+  - Basso Cambo (n7681108802)
+  - Bellefontaine (n248534048)
+  - Borderouge (n231716614)
+  - Canal du Midi (n286356305)
+  - Capitole (n248533209)
+  - Carmes (n231747929)
+  - Compans-Caffarelli (n231709544)
+  - Empalot (n231747882)
+  - Esquirol (n248533272)
+  - Faculté de Pharmacie (n231747822)
+  - Fontaine Lestang (n248533388)
+  - François Verdier (n314565429)
+  - Jean Jaurès (n231747949)
+  - Jeanne d'Arc (n314563949)
+  - Jolimont (n7747861586)
+  - La Vache (n2798905591)
+  - Marengo-SNCF (n286474709)
+  - Mermoz (n248533539)
+  - 'Minimes - Claude Nougaro (n231709562)'
+  - Mirail-Université (n248533582)
+  - Palais de Justice (n298873524)
+  - Patte d'Oie (n2334762400)
+  - Ramonville (n231752329)
+  - Rangueil (n231747830)
+  - Reynerie (n248533979)
+  - Roseraie (n314282624)
+  - Saint-Agne SNCF (n231747856)
+  - Saint-Cyprien – République (n250291540)
+  - 'Saint-Michel - Marcel Langer (n314948432)'
+  - Saouzelong (n231747846)
+  - Trois Cocus (n231716610)
+  - Université Paul Sabatier (n231750682)
+
 routes: 
   - 
+    name: 'Métro A: Basso Cambo/Balma Gramont'
+    station_count: 18
     type: subway
+    colour: '#db001b'
+    stations: 
+      - Balma-Gramont
+      - Argoulets
+      - Roseraie
+      - Jolimont
+      - Marengo-SNCF
+      - Jean Jaurès A
+      - Capitole
+      - Esquirol
+      - 'Saint-Cyprien - République'
+      - Patte d'Oie
+      - Arènes
+      - Fontaine Lestang
+      - Mermoz
+      - Bagatelle
+      - Mirail-Université
+      - Reynerie
+      - Bellefontaine
+      - Basso Cambo
+
     ref: A
     itineraries: 
       r179515: 
@@ -45,31 +107,33 @@ routes:
         - Balma-Gramont (n8196781157)
 
 
-    name: 'Métro A: Basso Cambo/Balma Gramont'
-    colour: '#db001b'
-    station_count: 18
-    stations: 
-      - Basso Cambo
-      - Bellefontaine
-      - Reynerie
-      - Mirail-Université
-      - Bagatelle
-      - Mermoz
-      - Fontaine Lestang
-      - Arènes
-      - Patte d'Oie
-      - 'Saint-Cyprien - République'
-      - Esquirol
-      - Capitole
-      - Jean Jaurès A
-      - Marengo-SNCF
-      - Jolimont
-      - Roseraie
-      - Argoulets
-      - Balma-Gramont
-
   - 
+    name: 'Métro B: Borderouge/Ramonville'
+    station_count: 20
     type: subway
+    colour: '#ffd900'
+    stations: 
+      - Borderouge
+      - Trois Cocus
+      - La Vache
+      - Barrière de Paris
+      - 'Minimes - Claude Nougaro'
+      - Canal du Midi
+      - Compans-Caffarelli
+      - Jeanne d'Arc
+      - Jean Jaurès B
+      - François Verdier
+      - Carmes
+      - Palais de Justice
+      - 'Saint-Michel - Marcel Langer'
+      - Empalot
+      - Saint-Agne SNCF
+      - Saouzelong
+      - Rangueil
+      - Faculté de Pharmacie
+      - Université Paul Sabatier
+      - Ramonville
+
     ref: B
     itineraries: 
       r1557171: 
@@ -117,73 +181,9 @@ routes:
         - Ramonville (n231752329)
 
 
-    name: 'Métro B: Borderouge/Ramonville'
-    colour: '#ffd900'
-    station_count: 20
-    stations: 
-      - Ramonville
-      - Université Paul Sabatier
-      - Faculté de Pharmacie
-      - Rangueil
-      - Saouzelong
-      - Saint-Agne SNCF
-      - Empalot
-      - 'Saint-Michel - Marcel Langer'
-      - Palais de Justice
-      - Carmes
-      - François Verdier
-      - Jean Jaurès B
-      - Jeanne d'Arc
-      - Compans-Caffarelli
-      - Canal du Midi
-      - 'Minimes - Claude Nougaro'
-      - Barrière de Paris
-      - La Vache
-      - Trois Cocus
-      - Borderouge
-
 
 transfers: 
   - 
     - Jean Jaurès A (r7683769)
     - Jean Jaurès B (r7683764)
-
-stations: 
-  - Argoulets (n333113201)
-  - Arènes (n248533275)
-  - Bagatelle (n248533545)
-  - Balma-Gramont (n8196781157)
-  - Barrière de Paris (n286356966)
-  - Basso Cambo (n7681108802)
-  - Bellefontaine (n248534048)
-  - Borderouge (n231716614)
-  - Canal du Midi (n286356305)
-  - Capitole (n248533209)
-  - Carmes (n231747929)
-  - Compans-Caffarelli (n231709544)
-  - Empalot (n231747882)
-  - Esquirol (n248533272)
-  - Faculté de Pharmacie (n231747822)
-  - Fontaine Lestang (n248533388)
-  - François Verdier (n314565429)
-  - Jean Jaurès (n231747949)
-  - Jeanne d'Arc (n314563949)
-  - Jolimont (n7747861586)
-  - La Vache (n2798905591)
-  - Marengo-SNCF (n286474709)
-  - Mermoz (n248533539)
-  - 'Minimes - Claude Nougaro (n231709562)'
-  - Mirail-Université (n248533582)
-  - Palais de Justice (n298873524)
-  - Patte d'Oie (n2334762400)
-  - Ramonville (n231752329)
-  - Rangueil (n231747830)
-  - Reynerie (n248533979)
-  - Roseraie (n314282624)
-  - Saint-Agne SNCF (n231747856)
-  - Saint-Cyprien – République (n250291540)
-  - 'Saint-Michel - Marcel Langer (n314948432)'
-  - Saouzelong (n231747846)
-  - Trois Cocus (n231716610)
-  - Université Paul Sabatier (n231750682)
 

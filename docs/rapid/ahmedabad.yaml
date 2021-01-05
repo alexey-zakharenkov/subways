@@ -1,7 +1,26 @@
 
+stations: 
+  - Amraiwadi (n6432742906)
+  - Apparel Park (n5622701027)
+  - Nirant Cross Roads (n6432742908)
+  - Rabari Colony (n5622697516)
+  - Vastral (n6432742907)
+  - Vastral Gam (n6432742909)
+
 routes: 
   - 
+    name: East-West Corridor
+    station_count: 6
     type: subway
+    colour: '#0000ff'
+    stations: 
+      - Apparel Park
+      - Amraiwadi
+      - Rabari Colony
+      - Vastral
+      - Nirant Cross Roads
+      - Vastral Gam
+
     ref: 1
     itineraries: 
       r8312433: 
@@ -21,25 +40,6 @@ routes:
         - Vastral Gam (n6432742909)
 
 
-    name: East-West Corridor
-    colour: '#0000ff'
-    station_count: 6
-    stations: 
-      - Vastral Gam
-      - Nirant Cross Roads
-      - Vastral
-      - Rabari Colony
-      - Amraiwadi
-      - Apparel Park
-
 
 transfers: 
-
-stations: 
-  - Amraiwadi (n6432742906)
-  - Apparel Park (n5622701027)
-  - Nirant Cross Roads (n6432742908)
-  - Rabari Colony (n5622697516)
-  - Vastral (n6432742907)
-  - Vastral Gam (n6432742909)
 

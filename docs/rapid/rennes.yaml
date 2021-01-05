@@ -1,7 +1,40 @@
 
+stations: 
+  - Anatole France (n8261608356)
+  - Charles de Gaulle (n8261579025)
+  - Clemenceau (n8261582970)
+  - Gares (n8261579024)
+  - Henri Fréville (w80741011)
+  - Italie (n8261582987)
+  - J.F. Kennedy (n8261608361)
+  - Jacques Cartier (n8261582969)
+  - Pontchaillou (w81216471)
+  - République (n8261579029)
+  - Sainte-Anne (n8261579031)
+  - Triangle (n8261582991)
+  - 'Villejean - Université (n8261608358)'
+
 routes: 
   - 
+    name: Métro Rennes Ligne a
+    station_count: 13
     type: subway
+    colour: '#ed1c24'
+    stations: 
+      - Triangle
+      - Italie
+      - Henri Fréville
+      - Clemenceau
+      - Jacques Cartier
+      - Gares
+      - Charles de Gaulle
+      - République
+      - Sainte-Anne
+      - Anatole France
+      - Pontchaillou
+      - 'Villejean - Université'
+      - J.F. Kennedy
+
     ref: a
     itineraries: 
       r23518: 
@@ -35,39 +68,6 @@ routes:
         - J.F. Kennedy (n8261608361)
 
 
-    name: Métro Rennes Ligne a
-    colour: '#ed1c24'
-    station_count: 13
-    stations: 
-      - J.F. Kennedy
-      - 'Villejean - Université'
-      - Pontchaillou
-      - Anatole France
-      - Sainte-Anne
-      - République
-      - Charles de Gaulle
-      - Gares
-      - Jacques Cartier
-      - Clemenceau
-      - Henri Fréville
-      - Italie
-      - Triangle
-
 
 transfers: 
-
-stations: 
-  - Anatole France (n8261608356)
-  - Charles de Gaulle (n8261579025)
-  - Clemenceau (n8261582970)
-  - Gares (n8261579024)
-  - Henri Fréville (w80741011)
-  - Italie (n8261582987)
-  - J.F. Kennedy (n8261608361)
-  - Jacques Cartier (n8261582969)
-  - Pontchaillou (w81216471)
-  - République (n8261579029)
-  - Sainte-Anne (n8261579031)
-  - Triangle (n8261582991)
-  - 'Villejean - Université (n8261608358)'
 

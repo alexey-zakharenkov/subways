@@ -1,26 +1,49 @@
 
+stations: 
+  - Bay/Enterprise Square (n247678712)
+  - Belvedere (n2136199254)
+  - Central (n247678643)
+  - Century Park (n6799872965)
+  - Churchill (n3225243182)
+  - Clareview (n2061254572)
+  - Coliseum (n2136199336)
+  - Corona (n247678753)
+  - Grandin (n6501293444)
+  - Health Sciences/Jubilee (n4237213143)
+  - Kingsway/Royal Alex (n7317542150)
+  - MacEwan (n2448234427)
+  - McKernan/Belgravia (n2067535175)
+  - NAIT (w718989056)
+  - South Campus/Fort Edmonton Park (n2067529107)
+  - Southgate (n1813432369)
+  - Stadium (n4237411866)
+  - University (n2525716100)
+
 routes: 
   - 
+    name: Capital Line
+    station_count: 15
     type: light_rail
+    colour: '#3a59a9'
+    stations: 
+      - Clareview
+      - Belvedere
+      - Coliseum
+      - Stadium
+      - Churchill
+      - Central
+      - Bay/Enterprise Square
+      - Corona
+      - Grandin
+      - University
+      - Health Sciences/Jubilee
+      - McKernan/Belgravia
+      - South Campus/Fort Edmonton Park LRT Station
+      - Southgate LRT Station
+      - Century Park Transit Centre
+
     ref: 501
     itineraries: 
-      r1861588: 
-        - Clareview (n2061254572)
-        - Belvedere (n2136199254)
-        - Coliseum (n2136199336)
-        - Stadium (n4237411866)
-        - Churchill (n3225243182)
-        - Central (n247678643)
-        - Bay/Enterprise Square (n247678712)
-        - Corona (n247678753)
-        - Grandin (n6501293444)
-        - University (n2525716100)
-        - Health Sciences/Jubilee (n4237213143)
-        - McKernan/Belgravia (n2067535175)
-        - South Campus/Fort Edmonton Park (n2067529107)
-        - Southgate (n1813432369)
-        - Century Park (n6799872965)
-
       r9730135: 
         - Century Park (n6799872965)
         - Southgate (n1813432369)
@@ -38,15 +61,30 @@ routes:
         - Belvedere (n2136199254)
         - Clareview (n2061254572)
 
+      r1861588: 
+        - Clareview (n2061254572)
+        - Belvedere (n2136199254)
+        - Coliseum (n2136199336)
+        - Stadium (n4237411866)
+        - Churchill (n3225243182)
+        - Central (n247678643)
+        - Bay/Enterprise Square (n247678712)
+        - Corona (n247678753)
+        - Grandin (n6501293444)
+        - University (n2525716100)
+        - Health Sciences/Jubilee (n4237213143)
+        - McKernan/Belgravia (n2067535175)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - Southgate (n1813432369)
+        - Century Park (n6799872965)
 
-    name: Capital Line
-    colour: '#3a59a9'
-    station_count: 15
+
+  - 
+    name: Metro Line
+    station_count: 10
+    type: light_rail
+    colour: '#fc6357'
     stations: 
-      - Century Park Transit Centre
-      - Southgate LRT Station
-      - South Campus/Fort Edmonton Park LRT Station
-      - McKernan/Belgravia
       - Health Sciences/Jubilee
       - University
       - Grandin
@@ -54,13 +92,10 @@ routes:
       - Bay/Enterprise Square
       - Central
       - Churchill
-      - Stadium
-      - Coliseum
-      - Belvedere
-      - Clareview
+      - MacEwan LRT Station
+      - Kingsway/Royal Alex
+      - NAIT
 
-  - 
-    type: light_rail
     ref: 502
     itineraries: 
       r9730136: 
@@ -88,41 +123,6 @@ routes:
         - NAIT (w718989056)
 
 
-    name: Metro Line
-    colour: '#fc6357'
-    station_count: 10
-    stations: 
-      - Health Sciences/Jubilee
-      - University
-      - Grandin
-      - Corona
-      - Bay/Enterprise Square
-      - Central
-      - Churchill
-      - MacEwan LRT Station
-      - Kingsway/Royal Alex
-      - NAIT
-
 
 transfers: 
-
-stations: 
-  - Bay/Enterprise Square (n247678712)
-  - Belvedere (n2136199254)
-  - Central (n247678643)
-  - Century Park (n6799872965)
-  - Churchill (n3225243182)
-  - Clareview (n2061254572)
-  - Coliseum (n2136199336)
-  - Corona (n247678753)
-  - Grandin (n6501293444)
-  - Health Sciences/Jubilee (n4237213143)
-  - Kingsway/Royal Alex (n7317542150)
-  - MacEwan (n2448234427)
-  - McKernan/Belgravia (n2067535175)
-  - NAIT (w718989056)
-  - South Campus/Fort Edmonton Park (n2067529107)
-  - Southgate (n1813432369)
-  - Stadium (n4237411866)
-  - University (n2525716100)
 

@@ -1,7 +1,48 @@
 
+stations: 
+  - Basmane (n7729209165)
+  - Bornova (n7729209122)
+  - Bölge (n5388472397)
+  - Ege Üniversitesi (n7729209135)
+  - Evka 3 (n5388472400)
+  - Fahrettin Altay (n8021899044)
+  - Göztepe (n5388472386)
+  - Halkapınar (n5388472394)
+  - Hatay (n5388472387)
+  - Hilal (n5388472393)
+  - Konak (n5388472390)
+  - Poligon (n5388472385)
+  - Sanayi (n5388472396)
+  - Stadyum (n5388472395)
+  - Çankaya (n5388472391)
+  - Üçyol (n5388472389)
+  - İzmirspor (n5388472388)
+
 routes: 
   - 
+    name: Fahrettin Altay-Evka 3
+    station_count: 17
     type: subway
+    colour: '#0000ff'
+    stations: 
+      - Fahrettin Altay
+      - Poligon
+      - Göztepe
+      - Hatay
+      - İzmirspor
+      - Üçyol
+      - Konak
+      - Çankaya
+      - Basmane
+      - Hilal
+      - Halkapınar
+      - Stadyum
+      - Sanayi
+      - Bölge
+      - Bornova Metro Durağı
+      - Ege Üniversitesi
+      - Evka 3
+
     ref: 2
     itineraries: 
       r2707717: 
@@ -43,47 +84,6 @@ routes:
         - Fahrettin Altay (n8021899044)
 
 
-    name: Fahrettin Altay-Evka 3
-    colour: '#0000ff'
-    station_count: 17
-    stations: 
-      - Evka 3
-      - Ege Üniversitesi
-      - Bornova Metro Durağı
-      - Bölge
-      - Sanayi
-      - Stadyum
-      - Halkapınar
-      - Hilal
-      - Basmane
-      - Çankaya
-      - Konak
-      - Üçyol
-      - İzmirspor
-      - Hatay
-      - Göztepe
-      - Poligon
-      - Fahrettin Altay
-
 
 transfers: 
-
-stations: 
-  - Basmane (n7729209165)
-  - Bornova (n7729209122)
-  - Bölge (n5388472397)
-  - Ege Üniversitesi (n7729209135)
-  - Evka 3 (n5388472400)
-  - Fahrettin Altay (n8021899044)
-  - Göztepe (n5388472386)
-  - Halkapınar (n5388472394)
-  - Hatay (n5388472387)
-  - Hilal (n5388472393)
-  - Konak (n5388472390)
-  - Poligon (n5388472385)
-  - Sanayi (n5388472396)
-  - Stadyum (n5388472395)
-  - Çankaya (n5388472391)
-  - Üçyol (n5388472389)
-  - İzmirspor (n5388472388)
 

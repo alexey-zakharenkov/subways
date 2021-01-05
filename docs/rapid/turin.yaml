@@ -1,7 +1,56 @@
 
+stations: 
+  - Bernini (n332648606)
+  - Carducci-Molinette (n3253332071)
+  - Dante (n893193542)
+  - Fermi (n1481306407)
+  - Lingotto (n4076608590)
+  - Marche (n496268561)
+  - Marconi (n1622042729)
+  - Massaua (n496268560)
+  - Monte Grappa (n496268558)
+  - Nizza (n1621697594)
+  - Paradiso (n332648897)
+  - Porta Nuova (n254594415)
+  - Porta Susa (n432803701)
+  - Pozzo Strada (n496268559)
+  - Principi D'Acaja (n2081499942)
+  - Racconigi (n1095052533)
+  - Re Umberto (n254594416)
+  - Rivoli (n332648726)
+  - Spezia (n1621378603)
+  - Vinzaglio (n543360161)
+  - XVIII Dicembre (n432803698)
+
 routes: 
   - 
+    name: 'M1: Fermi - Lingotto'
+    station_count: 21
     type: subway
+    colour: '#ffff00'
+    stations: 
+      - Fermi
+      - Paradiso
+      - Marche
+      - Marche
+      - Pozzo Strada
+      - Monte Grappa
+      - Rivoli
+      - Racconigi
+      - Bernini
+      - Principi D'Acaja
+      - XVIII Dicembre
+      - Porta Susa
+      - Vinzaglio
+      - Re Umberto
+      - Porta Nuova
+      - Marconi
+      - Nizza
+      - Dante
+      - Carducci-Molinette
+      - Spezia
+      - Lingotto
+
     ref: M1
     itineraries: 
       r386242: 
@@ -51,55 +100,6 @@ routes:
         - Fermi (n1481306407)
 
 
-    name: 'M1: Fermi - Lingotto'
-    colour: '#ffff00'
-    station_count: 21
-    stations: 
-      - Fermi
-      - Paradiso
-      - Marche
-      - Marche
-      - Pozzo Strada
-      - Monte Grappa
-      - Rivoli
-      - Racconigi
-      - Bernini
-      - Principi D'Acaja
-      - XVIII Dicembre
-      - Porta Susa
-      - Vinzaglio
-      - Re Umberto
-      - Porta Nuova
-      - Marconi
-      - Nizza
-      - Dante
-      - Carducci-Molinette
-      - Spezia
-      - Lingotto
-
 
 transfers: 
-
-stations: 
-  - Bernini (n332648606)
-  - Carducci-Molinette (n3253332071)
-  - Dante (n893193542)
-  - Fermi (n1481306407)
-  - Lingotto (n4076608590)
-  - Marche (n496268561)
-  - Marconi (n1622042729)
-  - Massaua (n496268560)
-  - Monte Grappa (n496268558)
-  - Nizza (n1621697594)
-  - Paradiso (n332648897)
-  - Porta Nuova (n254594415)
-  - Porta Susa (n432803701)
-  - Pozzo Strada (n496268559)
-  - Principi D'Acaja (n2081499942)
-  - Racconigi (n1095052533)
-  - Re Umberto (n254594416)
-  - Rivoli (n332648726)
-  - Spezia (n1621378603)
-  - Vinzaglio (n543360161)
-  - XVIII Dicembre (n432803698)
 

@@ -1,7 +1,62 @@
 
+stations: 
+  - Acevedo (w363347844)
+  - Aguacatala (n1214397344)
+  - Alpujarra (n1214417209)
+  - Ayurá (n1214396495)
+  - Bello (w607681834)
+  - Caribe (w36836715)
+  - Cisneros (n1215434362)
+  - Envigado (w44685163)
+  - Estadio (n309027642)
+  - Exposiciones (n1214400199)
+  - Floresta (n309027653)
+  - Hospital (n1214422295)
+  - Industriales (n1214399891)
+  - Itagüí (w393886700)
+  - La Estrella (n3665674641)
+  - Madera (w607683610)
+  - Niquía (w363347843)
+  - Parque Berrío (n1214419507)
+  - Poblado (n1214399411)
+  - Prado (n1214420524)
+  - Sabaneta (n3665674642)
+  - San Antonio (n1214418069)
+  - San Javier (n3502845071)
+  - Santa Lucía (n309027658)
+  - Suramericana (n309027638)
+  - Tricentenario (w504572294)
+  - Universidad (n1214422296)
+
 routes: 
   - 
+    name: Metro Línea A
+    station_count: 21
     type: subway
+    colour: '#0000ff'
+    stations: 
+      - La Estrella
+      - Sabaneta
+      - Itagüí
+      - Envigado
+      - Ayurá
+      - Aguacatala
+      - Poblado
+      - Industriales (Metro)
+      - Exposiciones
+      - Alpujarra
+      - San Antonio
+      - Parque Berrío
+      - Prado
+      - Hospital (Metro)
+      - Universidad
+      - Caribe
+      - Tricentenario
+      - Acevedo
+      - Madera
+      - Bello
+      - Niquía
+
     ref: A
     itineraries: 
       r1502460: 
@@ -51,34 +106,20 @@ routes:
         - La Estrella (n3665674641)
 
 
-    name: Metro Línea A
-    colour: '#0000ff'
-    station_count: 21
-    stations: 
-      - Niquía
-      - Bello
-      - Madera
-      - Acevedo
-      - Tricentenario
-      - Caribe
-      - Universidad
-      - Hospital (Metro)
-      - Prado
-      - Parque Berrío
-      - San Antonio
-      - Alpujarra
-      - Exposiciones
-      - Industriales (Metro)
-      - Poblado
-      - Aguacatala
-      - Ayurá
-      - Envigado
-      - Itagüí
-      - Sabaneta
-      - La Estrella
-
   - 
+    name: Metro Línea B
+    station_count: 7
     type: subway
+    colour: '#ffa500'
+    stations: 
+      - San Antonio
+      - Cisneros (Metro)
+      - Suramericana
+      - Estadio
+      - Floresta
+      - Santa Lucía
+      - San Javier
+
     ref: B
     itineraries: 
       r1504096: 
@@ -100,50 +141,9 @@ routes:
         - San Antonio (n1214418069)
 
 
-    name: Metro Línea B
-    colour: '#ffa500'
-    station_count: 7
-    stations: 
-      - San Javier
-      - Santa Lucía
-      - Floresta
-      - Estadio
-      - Suramericana
-      - Cisneros (Metro)
-      - San Antonio
-
 
 transfers: 
   - 
     - San Antonio (r1501144)
     - San Antonio (r9608066)
-
-stations: 
-  - Acevedo (w363347844)
-  - Aguacatala (n1214397344)
-  - Alpujarra (n1214417209)
-  - Ayurá (n1214396495)
-  - Bello (w607681834)
-  - Caribe (w36836715)
-  - Cisneros (n1215434362)
-  - Envigado (w44685163)
-  - Estadio (n309027642)
-  - Exposiciones (n1214400199)
-  - Floresta (n309027653)
-  - Hospital (n1214422295)
-  - Industriales (n1214399891)
-  - Itagüí (w393886700)
-  - La Estrella (n3665674641)
-  - Madera (w607683610)
-  - Niquía (w363347843)
-  - Parque Berrío (n1214419507)
-  - Poblado (n1214399411)
-  - Prado (n1214420524)
-  - Sabaneta (n3665674642)
-  - San Antonio (n1214418069)
-  - San Javier (n3502845071)
-  - Santa Lucía (n309027658)
-  - Suramericana (n309027638)
-  - Tricentenario (w504572294)
-  - Universidad (n1214422296)
 

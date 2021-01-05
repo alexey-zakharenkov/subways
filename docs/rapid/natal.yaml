@@ -1,7 +1,49 @@
 
+stations: 
+  - Alecrim I (r9471196)
+  - Alecrim II (r9471192)
+  - Bom Pastor (n317024128)
+  - Ceará-Mirim (n6761532962)
+  - Cidade Esperança (n6080723226)
+  - Cidade Satélite (n6080723244)
+  - Estrela do Mar (n6080726309)
+  - Extremoz (n6698231201)
+  - Igapó (r9471183)
+  - Lagoa Grande (n6761501461)
+  - Massangana (r9471199)
+  - Natal (r9471190)
+  - Nordelândia (n6080726318)
+  - Nova Natal (n6080726319)
+  - Padre João Maria (w180048912)
+  - Pitimbu (n6680674500)
+  - Prómorar (w180006258)
+  - Quintas (n302592195)
+  - Raposa (n6761485860)
+  - Santa Catarina (w177239157)
+  - Soledade (n6977862963)
+
 routes: 
   - 
+    name: Linha Norte
+    station_count: 14
     type: light_rail
+    colour: '#0000ff'
+    stations: 
+      - Natal
+      - Alecrim I
+      - Quintas
+      - Igapó
+      - Santa Catarina
+      - Soledade
+      - Nova Natal
+      - Nordelândia
+      - Estrela do Mar
+      - Extremoz
+      - Raposa
+      - Massangana
+      - Lagoa Grande
+      - Ceará-Mirim
+
     ref: Norte
     itineraries: 
       r9881791: 
@@ -37,82 +79,44 @@ routes:
         - Ceará-Mirim (n6761532962)
 
 
-    name: Linha Norte
-    colour: '#0000ff'
-    station_count: 14
-    stations: 
-      - Natal
-      - Alecrim I
-      - Quintas
-      - Igapó
-      - Santa Catarina
-      - Soledade
-      - Nova Natal
-      - Nordelândia
-      - Estrela do Mar
-      - Extremoz
-      - Raposa
-      - Massangana
-      - Lagoa Grande
-      - Ceará-Mirim
-
   - 
-    type: light_rail
-    ref: Sul
-    itineraries: 
-      r9881790: 
-        - Natal (r9471190)
-        - Alecrim II (r9471192)
-        - Padre João Maria (w180048912)
-        - Cidade Esperança (n6080723226)
-        - Prómorar (w180006258)
-        - Pitimbu (n6680674500)
-        - Cidade Satélite (n6080723244)
-
-      r1229613: 
-        - Cidade Satélite (n6080723244)
-        - Pitimbu (n6680674500)
-        - Prómorar (w180006258)
-        - Cidade Esperança (n6080723226)
-        - Padre João Maria (w180048912)
-        - Alecrim II (r9471192)
-        - Natal (r9471190)
-
-
     name: Linha Sul
+    station_count: 8
+    type: light_rail
     colour: '#0000ff'
-    station_count: 7
     stations: 
       - Natal
       - Alecrim II
       - Padre João Maria
+      - Bom Pastor
       - Cidade Esperança
       - Prómorar
       - Pitimbu
       - Cidade Satélite
 
+    ref: Sul
+    itineraries: 
+      r1229613: 
+        - Cidade Satélite (n6080723244)
+        - Pitimbu (n6680674500)
+        - Prómorar (w180006258)
+        - Cidade Esperança (n6080723226)
+        - Bom Pastor (n317024128)
+        - Padre João Maria (w180048912)
+        - Alecrim II (r9471192)
+        - Natal (r9471190)
+
+      r9881790: 
+        - Natal (r9471190)
+        - Alecrim II (r9471192)
+        - Padre João Maria (w180048912)
+        - Bom Pastor (n317024128)
+        - Cidade Esperança (n6080723226)
+        - Prómorar (w180006258)
+        - Pitimbu (n6680674500)
+        - Cidade Satélite (n6080723244)
+
+
 
 transfers: 
-
-stations: 
-  - Alecrim I (r9471196)
-  - Alecrim II (r9471192)
-  - Ceará-Mirim (n6761532962)
-  - Cidade Esperança (n6080723226)
-  - Cidade Satélite (n6080723244)
-  - Estrela do Mar (n6080726309)
-  - Extremoz (n6698231201)
-  - Igapó (r9471183)
-  - Lagoa Grande (n6761501461)
-  - Massangana (r9471199)
-  - Natal (r9471190)
-  - Nordelândia (n6080726318)
-  - Nova Natal (n6080726319)
-  - Padre João Maria (w180048912)
-  - Pitimbu (n6680674500)
-  - Prómorar (w180006258)
-  - Quintas (n302592195)
-  - Raposa (n6761485860)
-  - Santa Catarina (w177239157)
-  - Soledade (n6977862963)
 

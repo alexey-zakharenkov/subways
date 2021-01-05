@@ -1,39 +1,23 @@
 
+stations: 
+  - Ballentine / Broad Creek Station WB (n6766890685)
+  - Civic Plaza Station WB (n6766842465)
+  - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
+  - Harbor Park Station (n6766842466)
+  - Ingleside Road (n5186963644)
+  - MacArthur Square Station WB (n6766842464)
+  - Military Highway Station (n6766890686)
+  - Monticello Station (n6766842463)
+  - NSU Station (n6754424666)
+  - Newtown Road (n941532061)
+  - York St/ Freemason Station WB (n6766842462)
+
 routes: 
   - 
-    type: light_rail
-    ref: Tide
-    itineraries: 
-      r6950523: 
-        - Newtown Road (n941532061)
-        - Military Highway Station (n6766890686)
-        - Ingleside Road (n5186963644)
-        - Ballentine / Broad Creek Station WB (n6766890685)
-        - NSU Station (n6754424666)
-        - Harbor Park Station (n6766842466)
-        - Civic Plaza Station WB (n6766842465)
-        - MacArthur Square Station WB (n6766842464)
-        - Monticello Station (n6766842463)
-        - York St/ Freemason Station WB (n6766842462)
-        - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
-
-      r6950524: 
-        - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
-        - York St/ Freemason Station WB (n6766842462)
-        - Monticello Station (n6766842463)
-        - MacArthur Square Station WB (n6766842464)
-        - Civic Plaza Station WB (n6766842465)
-        - Harbor Park Station (n6766842466)
-        - NSU Station (n6754424666)
-        - Ballentine / Broad Creek Station WB (n6766890685)
-        - Ingleside Road (n5186963644)
-        - Military Highway Station (n6766890686)
-        - Newtown Road (n941532061)
-
-
     name: The Tide
-    colour: '#004d9f'
     station_count: 11
+    type: light_rail
+    colour: '#004d9f'
     stations: 
       - Newtown Road
       - Military Highway Station
@@ -47,19 +31,35 @@ routes:
       - York Street/Freemason
       - EVMC/Fort Norfolk Station
 
+    ref: Tide
+    itineraries: 
+      r6950524: 
+        - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
+        - York St/ Freemason Station WB (n6766842462)
+        - Monticello Station (n6766842463)
+        - MacArthur Square Station WB (n6766842464)
+        - Civic Plaza Station WB (n6766842465)
+        - Harbor Park Station (n6766842466)
+        - NSU Station (n6754424666)
+        - Ballentine / Broad Creek Station WB (n6766890685)
+        - Ingleside Road (n5186963644)
+        - Military Highway Station (n6766890686)
+        - Newtown Road (n941532061)
+
+      r6950523: 
+        - Newtown Road (n941532061)
+        - Military Highway Station (n6766890686)
+        - Ingleside Road (n5186963644)
+        - Ballentine / Broad Creek Station WB (n6766890685)
+        - NSU Station (n6754424666)
+        - Harbor Park Station (n6766842466)
+        - Civic Plaza Station WB (n6766842465)
+        - MacArthur Square Station WB (n6766842464)
+        - Monticello Station (n6766842463)
+        - York St/ Freemason Station WB (n6766842462)
+        - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
+
+
 
 transfers: 
-
-stations: 
-  - Ballentine / Broad Creek Station WB (n6766890685)
-  - Civic Plaza Station WB (n6766842465)
-  - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
-  - Harbor Park Station (n6766842466)
-  - Ingleside Road (n5186963644)
-  - MacArthur Square Station WB (n6766842464)
-  - Military Highway Station (n6766890686)
-  - Monticello Station (n6766842463)
-  - NSU Station (n6754424666)
-  - Newtown Road (n941532061)
-  - York St/ Freemason Station WB (n6766842462)
 
