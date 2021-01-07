@@ -1,67 +1,9 @@
 
-stations: 
-  - Estación Angamos (n5309007967)
-  - Estación Arriola (n5308656759)
-  - Estación Atocongo (n5309165050)
-  - Estación Ayacucho (n5309082018)
-  - Estación Bayóvar (n5302585870)
-  - Estación Cabitos (n5309032527)
-  - Estación Caja de Agua (n5302564903)
-  - Estación El Ángel (n5308588785)
-  - Estación Gamarra (n4214598769)
-  - Estación Jorge Chávez (n5309119130)
-  - Estación La Cultura (n5308688295)
-  - Estación Los Jardines (n5047084994)
-  - Estación Los Postes (n5302565074)
-  - Estación María Auxiliadora (n5309211777)
-  - Estación Miguel Grau (n5308595101)
-  - Estación Parque Industrial (n5309284750)
-  - Estación Pirámide del Sol (n5302565067)
-  - Estación Presbítero Maestro (n5302541444)
-  - Estación Pumacahua (n5309271110)
-  - Estación San Borja Sur (n5308958331)
-  - Estación San Carlos (n2833979844)
-  - Estación San Juan (n5309190298)
-  - Estación San Martín (n2833979885)
-  - Estación Santa Rosa (n5307198412)
-  - Estación Villa El Salvador (n5309263907)
-  - Estación Villa María (n5309260996)
+transfers: 
 
 routes: 
   - 
-    name: Línea 1
-    station_count: 26
-    type: subway
     colour: '#228b22'
-    stations: 
-      - Estación "Villa El Salvador"
-      - Estación "Parque Industrial"
-      - Estación "Pumacahua"
-      - Estación "Villa María"
-      - Estación "María Auxiliadora"
-      - Estación "San Juan"
-      - Estación "Atocongo"
-      - Estación "Jorge Chávez"
-      - Estación "Ayacucho"
-      - Estación "Cabitos"
-      - Estación Angamos
-      - Estación "San Borja Sur"
-      - Estación "La Cultura"
-      - Estación "Arrola"
-      - Estación "Gamarra"
-      - Estación "Miguel Grau"
-      - Estación "El Ángel"
-      - Estación "Presbítero Maestro"
-      - Estación "Caja de Agua"
-      - Estación "Pirámide del Sol"
-      - Estación "Los Jardines"
-      - Estación "Los Postes"
-      - Estación "San Carlos"
-      - Estación "San Martín"
-      - Estación "Santa Rosa"
-      - Estación "Bayóvar"
-
-    ref: L1
     itineraries: 
       r1408101: 
         - Estación Villa El Salvador (n5309263907)
@@ -120,6 +62,64 @@ routes:
         - Estación Villa El Salvador (n5309263907)
 
 
+    name: Línea 1
+    stations: 
+      - Estación "Villa El Salvador"
+      - Estación "Parque Industrial"
+      - Estación "Pumacahua"
+      - Estación "Villa María"
+      - Estación "María Auxiliadora"
+      - Estación "San Juan"
+      - Estación "Atocongo"
+      - Estación "Jorge Chávez"
+      - Estación "Ayacucho"
+      - Estación "Cabitos"
+      - Estación Angamos
+      - Estación "San Borja Sur"
+      - Estación "La Cultura"
+      - Estación "Arrola"
+      - Estación "Gamarra"
+      - Estación "Miguel Grau"
+      - Estación "El Ángel"
+      - Estación "Presbítero Maestro"
+      - Estación "Caja de Agua"
+      - Estación "Pirámide del Sol"
+      - Estación "Los Jardines"
+      - Estación "Los Postes"
+      - Estación "San Carlos"
+      - Estación "San Martín"
+      - Estación "Santa Rosa"
+      - Estación "Bayóvar"
 
-transfers: 
+    ref: L1
+    type: subway
+    station_count: 26
+
+stations: 
+  - Estación Angamos (n5309007967)
+  - Estación Arriola (n5308656759)
+  - Estación Atocongo (n5309165050)
+  - Estación Ayacucho (n5309082018)
+  - Estación Bayóvar (n5302585870)
+  - Estación Cabitos (n5309032527)
+  - Estación Caja de Agua (n5302564903)
+  - Estación El Ángel (n5308588785)
+  - Estación Gamarra (n4214598769)
+  - Estación Jorge Chávez (n5309119130)
+  - Estación La Cultura (n5308688295)
+  - Estación Los Jardines (n5047084994)
+  - Estación Los Postes (n5302565074)
+  - Estación María Auxiliadora (n5309211777)
+  - Estación Miguel Grau (n5308595101)
+  - Estación Parque Industrial (n5309284750)
+  - Estación Pirámide del Sol (n5302565067)
+  - Estación Presbítero Maestro (n5302541444)
+  - Estación Pumacahua (n5309271110)
+  - Estación San Borja Sur (n5308958331)
+  - Estación San Carlos (n2833979844)
+  - Estación San Juan (n5309190298)
+  - Estación San Martín (n2833979885)
+  - Estación Santa Rosa (n5307198412)
+  - Estación Villa El Salvador (n5309263907)
+  - Estación Villa María (n5309260996)
 

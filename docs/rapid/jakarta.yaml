@@ -1,57 +1,10 @@
 
-stations: 
-  - ASEAN (n4695686975)
-  - Bendungan Hilir (n6196107722)
-  - Blok A (n6196107727)
-  - Blok M (n6196107726)
-  - Bundaran HI (n6196107719)
-  - Cipete Raya (n6196107729)
-  - Dukuh Atas (n6196107720)
-  - Fatmawati (n6577753462)
-  - Haji Nawi (n6196107728)
-  - Istora (n6196107723)
-  - Lebak Bulus (n6577753463)
-  - Senayan (n6196107724)
-  - Setiabudi (n6196107721)
+transfers: 
 
 routes: 
   - 
-    name: North-South Line
-    station_count: 13
-    type: subway
     colour: '#ce0037'
-    stations: 
-      - Bundaran HI
-      - Dukuh Atas
-      - Setiabudi
-      - Bendungan Hilir
-      - Istora
-      - Senayan
-      - ASEAN
-      - Blok M
-      - Blok A
-      - Haji Nawi
-      - Cipete Raya
-      - Fatmawati
-      - Lebak Bulus
-
-    ref: NS
     itineraries: 
-      r9677669: 
-        - Lebak Bulus (n6577753463)
-        - Fatmawati (n6577753462)
-        - Cipete Raya (n6196107729)
-        - Haji Nawi (n6196107728)
-        - Blok A (n6196107727)
-        - Blok M (n6196107726)
-        - ASEAN (n4695686975)
-        - Senayan (n6196107724)
-        - Istora (n6196107723)
-        - Bendungan Hilir (n6196107722)
-        - Setiabudi (n6196107721)
-        - Dukuh Atas (n6196107720)
-        - Bundaran HI (n6196107719)
-
       r9677670: 
         - Bundaran HI (n6196107719)
         - Dukuh Atas (n6196107720)
@@ -67,7 +20,54 @@ routes:
         - Fatmawati (n6577753462)
         - Lebak Bulus (n6577753463)
 
+      r9677669: 
+        - Lebak Bulus (n6577753463)
+        - Fatmawati (n6577753462)
+        - Cipete Raya (n6196107729)
+        - Haji Nawi (n6196107728)
+        - Blok A (n6196107727)
+        - Blok M (n6196107726)
+        - ASEAN (n4695686975)
+        - Senayan (n6196107724)
+        - Istora (n6196107723)
+        - Bendungan Hilir (n6196107722)
+        - Setiabudi (n6196107721)
+        - Dukuh Atas (n6196107720)
+        - Bundaran HI (n6196107719)
 
 
-transfers: 
+    name: North-South Line
+    stations: 
+      - Lebak Bulus
+      - Fatmawati
+      - Cipete Raya
+      - Haji Nawi
+      - Blok A
+      - Blok M
+      - ASEAN
+      - Senayan
+      - Istora
+      - Bendungan Hilir
+      - Setiabudi
+      - Dukuh Atas
+      - Bundaran HI
+
+    ref: NS
+    type: subway
+    station_count: 13
+
+stations: 
+  - ASEAN (n4695686975)
+  - Bendungan Hilir (n6196107722)
+  - Blok A (n6196107727)
+  - Blok M (n6196107726)
+  - Bundaran HI (n6196107719)
+  - Cipete Raya (n6196107729)
+  - Dukuh Atas (n6196107720)
+  - Fatmawati (n6577753462)
+  - Haji Nawi (n6196107728)
+  - Istora (n6196107723)
+  - Lebak Bulus (n6577753463)
+  - Senayan (n6196107724)
+  - Setiabudi (n6196107721)
 

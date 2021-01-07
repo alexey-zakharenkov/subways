@@ -1,62 +1,12 @@
 
-stations: 
-  - Baille (w420876794)
-  - Bougainville (w420028853)
-  - Castellane (w419323764)
-  - Chartreux (w421543446)
-  - Cinq Avenues Longchamp (w421543456)
-  - Colbert (w421354629)
-  - Désirée Clary (w420028857)
-  - 'Estrangin - Préfecture (r6259015)'
-  - Frais Vallon (n5423852350)
-  - Joliette (w419952870)
-  - Jules Guesde (w419952877)
-  - La Blancarde (w417386008)
-  - La Fourragère (w420359087)
-  - La Rose (w421630984)
-  - La Timone (w420876804)
-  - Louis Armand (w420622796)
-  - Malpassé (w421630988)
-  - Métro Gèze (w427074672)
-  - National (w420028890)
-  - Noailles (w419542830)
-  - Notre-Dame du Mont Cours Julien (w419542831)
-  - Périer (w419323817)
-  - Rond-Point du Prado (w419050016)
-  - 'Réformés - Canebière (w421543469)'
-  - Saint-Barnabé (w420371086)
-  - Saint-Charles (r6261852)
-  - Saint-Just (w421631063)
-  - Sainte-Marguerite Dromel (w419035089)
-  - Vieux Port (w421161746)
+transfers: 
+  - 
+    - Castellane — M1 (r7683732)
+    - Castellane — M2 (r7683731)
 
 routes: 
   - 
-    name: Métro 1
-    station_count: 18
-    type: subway
     colour: '#0075be'
-    stations: 
-      - La Rose
-      - Frais Vallon
-      - Malpassé
-      - 'Saint-Just - Hôtel de Région'
-      - Chartreux
-      - Cinq Avenues
-      - 'Réformés - Canebière'
-      - Gare de Marseille-Saint-Charles
-      - Colbert
-      - Vieux Port
-      - 'Estrangin - Préfecture'
-      - Castellane — M1
-      - Baille
-      - Métro La Timone
-      - Gare de Marseille-Blancarde
-      - Louis Armand
-      - Saint-Barnabé
-      - La Fourragère
-
-    ref: M1
     itineraries: 
       r6274531: 
         - La Rose (w421630984)
@@ -99,43 +49,33 @@ routes:
         - La Rose (w421630984)
 
 
-  - 
-    name: Metro 2
-    station_count: 13
-    type: subway
-    colour: '#e30513'
+    name: Métro 1
     stations: 
-      - Métro Gèze
-      - Bougainville
-      - National
-      - Désirée Clary
-      - Joliette
-      - Jules Guesde
+      - La Fourragère
+      - Saint-Barnabé
+      - Louis Armand
+      - Gare de Marseille-Blancarde
+      - Métro La Timone
+      - Baille
+      - Castellane — M1
+      - 'Estrangin - Préfecture'
+      - Vieux Port
+      - Colbert
       - Gare de Marseille-Saint-Charles
-      - 'Noailles - Canebière-Garibaldi'
-      - 'Notre-Dame-du-Mont - Cours Julien'
-      - Castellane — M2
-      - Prado-Périer
-      - Rond-Point du Prado
-      - Sainte-Marguerite Dromel
+      - 'Réformés - Canebière'
+      - Cinq Avenues
+      - Chartreux
+      - 'Saint-Just - Hôtel de Région'
+      - Malpassé
+      - Frais Vallon
+      - La Rose
 
-    ref: M2
+    ref: M1
+    type: subway
+    station_count: 18
+  - 
+    colour: '#e30513'
     itineraries: 
-      r6274532: 
-        - Métro Gèze (w427074672)
-        - Bougainville (w420028853)
-        - National (w420028890)
-        - Désirée Clary (w420028857)
-        - Joliette (w419952870)
-        - Jules Guesde (w419952877)
-        - Saint-Charles (r6261852)
-        - Noailles (w419542830)
-        - Notre-Dame du Mont Cours Julien (w419542831)
-        - Castellane (w419323764)
-        - Périer (w419323817)
-        - Rond-Point du Prado (w419050016)
-        - Sainte-Marguerite Dromel (w419035089)
-
       r6274533: 
         - Sainte-Marguerite Dromel (w419035089)
         - Rond-Point du Prado (w419050016)
@@ -151,10 +91,70 @@ routes:
         - Bougainville (w420028853)
         - Métro Gèze (w427074672)
 
+      r6274532: 
+        - Métro Gèze (w427074672)
+        - Bougainville (w420028853)
+        - National (w420028890)
+        - Désirée Clary (w420028857)
+        - Joliette (w419952870)
+        - Jules Guesde (w419952877)
+        - Saint-Charles (r6261852)
+        - Noailles (w419542830)
+        - Notre-Dame du Mont Cours Julien (w419542831)
+        - Castellane (w419323764)
+        - Périer (w419323817)
+        - Rond-Point du Prado (w419050016)
+        - Sainte-Marguerite Dromel (w419035089)
 
 
-transfers: 
-  - 
-    - Castellane — M1 (r7683732)
-    - Castellane — M2 (r7683731)
+    name: Metro 2
+    stations: 
+      - Sainte-Marguerite Dromel
+      - Rond-Point du Prado
+      - Prado-Périer
+      - Castellane — M2
+      - 'Notre-Dame-du-Mont - Cours Julien'
+      - 'Noailles - Canebière-Garibaldi'
+      - Gare de Marseille-Saint-Charles
+      - Jules Guesde
+      - Joliette
+      - Désirée Clary
+      - National
+      - Bougainville
+      - Métro Gèze
+
+    ref: M2
+    type: subway
+    station_count: 13
+
+stations: 
+  - Baille (w420876794)
+  - Bougainville (w420028853)
+  - Castellane (w419323764)
+  - Chartreux (w421543446)
+  - Cinq Avenues Longchamp (w421543456)
+  - Colbert (w421354629)
+  - Désirée Clary (w420028857)
+  - 'Estrangin - Préfecture (r6259015)'
+  - Frais Vallon (n5423852350)
+  - Joliette (w419952870)
+  - Jules Guesde (w419952877)
+  - La Blancarde (w417386008)
+  - La Fourragère (w420359087)
+  - La Rose (w421630984)
+  - La Timone (w420876804)
+  - Louis Armand (w420622796)
+  - Malpassé (w421630988)
+  - Métro Gèze (w427074672)
+  - National (w420028890)
+  - Noailles (w419542830)
+  - Notre-Dame du Mont Cours Julien (w419542831)
+  - Périer (w419323817)
+  - Rond-Point du Prado (w419050016)
+  - 'Réformés - Canebière (w421543469)'
+  - Saint-Barnabé (w420371086)
+  - Saint-Charles (r6261852)
+  - Saint-Just (w421631063)
+  - Sainte-Marguerite Dromel (w419035089)
+  - Vieux Port (w421161746)
 

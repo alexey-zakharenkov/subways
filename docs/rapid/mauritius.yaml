@@ -1,39 +1,10 @@
 
-stations: 
-  - Barkly (n7158546297)
-  - Beau Bassin (n7158546298)
-  - Coromandel (n7158546296)
-  - Port Louis Victoria (n7158546294)
-  - Rose Hill Central (n7158546299)
-  - St Louis (n7158546295)
-  - Vandermeersch (n7158546300)
+transfers: 
 
 routes: 
   - 
-    name: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
-    station_count: 7
-    type: light_rail
     colour: '#f44f0d'
-    stations: 
-      - Rose Hill
-      - Vandermeersch
-      - Beau Bassin
-      - Barkly
-      - Coromandel
-      - St Louis
-      - Port Louis Victoria
-
-    ref: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
     itineraries: 
-      r10567272: 
-        - Port Louis Victoria (n7158546294)
-        - St Louis (n7158546295)
-        - Coromandel (n7158546296)
-        - Barkly (n7158546297)
-        - Beau Bassin (n7158546298)
-        - Vandermeersch (n7158546300)
-        - Rose Hill Central (n7158546299)
-
       r10567271: 
         - Rose Hill Central (n7158546299)
         - Vandermeersch (n7158546300)
@@ -43,7 +14,36 @@ routes:
         - St Louis (n7158546295)
         - Port Louis Victoria (n7158546294)
 
+      r10567272: 
+        - Port Louis Victoria (n7158546294)
+        - St Louis (n7158546295)
+        - Coromandel (n7158546296)
+        - Barkly (n7158546297)
+        - Beau Bassin (n7158546298)
+        - Vandermeersch (n7158546300)
+        - Rose Hill Central (n7158546299)
 
 
-transfers: 
+    name: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
+    stations: 
+      - Port Louis Victoria
+      - St Louis
+      - Coromandel
+      - Barkly
+      - Beau Bassin
+      - Vandermeersch
+      - Rose Hill
+
+    ref: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
+    type: light_rail
+    station_count: 7
+
+stations: 
+  - Barkly (n7158546297)
+  - Beau Bassin (n7158546298)
+  - Coromandel (n7158546296)
+  - Port Louis Victoria (n7158546294)
+  - Rose Hill Central (n7158546299)
+  - St Louis (n7158546295)
+  - Vandermeersch (n7158546300)
 

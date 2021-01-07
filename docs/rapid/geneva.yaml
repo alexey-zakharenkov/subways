@@ -1,79 +1,9 @@
 
-stations: 
-  - Annecy (n5061961433)
-  - Annemasse (n3457256296)
-  - Bellegarde (n5066506648)
-  - Bonneville (w107781162)
-  - Bons-en-Chablais (n7093398419)
-  - Chambésy (n3053406948)
-  - Chêne-Bourg (n6044426065)
-  - Cluses (w105790666)
-  - Coppet (n3052044268)
-  - Creux-de-Genthod (n3053167578)
-  - Genthod-Bellevue (n3053406949)
-  - Genève (n4890696636)
-  - Genève-Champel (n6886690043)
-  - Genève-Eaux-Vives (n6044426066)
-  - Genève-Sécheron (n3053436437)
-  - Groisy-Thorens-La Caille (w113059854)
-  - La Plaine (n3059714407)
-  - La Roche-sur-Foron (w111117452)
-  - Lancy-Bachet (n6886527481)
-  - Lancy-Pont-Rouge (n3060828206)
-  - Les Tuileries (n3053406950)
-  - Machilly (n4290857020)
-  - Magland (w111630938)
-  - Marignier (w107350612)
-  - Meyrin (n3057742963)
-  - Mies (n3051986691)
-  - Perrignier (n3081154420)
-  - Pont-Céard (n3053167579)
-  - Pougny-Chancy (w64131444)
-  - Pringy (w62399202)
-  - Reignier (w80551727)
-  - Russin (n3059714408)
-  - 'Saint-Gervais-les-Bains - Le Fayet (n7092852440)'
-  - Saint-Pierre-en-Faucigny (w107967852)
-  - 'Sallanches - Combloux - Megeve (n7092816881)'
-  - Satigny (n3057789420)
-  - Tannay (n3051986692)
-  - Thonon-les-Bains (n7093398420)
-  - Vernier (n2754246079)
-  - Versoix (n3053167580)
-  - Zimeysa (n7073204960)
-  - Évian-les-Bains (n3081154460)
+transfers: 
 
 routes: 
   - 
-    name: Léman Express L1
-    station_count: 22
-    type: train
     colour: '#bf3527'
-    stations: 
-      - Gare d'Évian-les-Bains
-      - 'Gare de Thonon - Place des Arts'
-      - Gare de Perrignier
-      - Gare de Bons-en-Chablais
-      - Gare de Machilly
-      - Gare d'Annemasse
-      - Chêne-Bourg
-      - Genève-Eaux-Vives
-      - Genève-Champel
-      - Lancy-Bachet
-      - Lancy-Pont-Rouge (CFF)
-      - Genève
-      - Genève-Sécheron
-      - Chambésy
-      - Les Tuileries
-      - Genthod-Bellevue
-      - Creux-de-Genthod
-      - Versoix
-      - Pont-Céard
-      - Mies
-      - Tannay
-      - Coppet
-
-    ref: L1
     itineraries: 
       r10522691: 
         - Évian-les-Bains (n3081154460)
@@ -124,36 +54,36 @@ routes:
         - Évian-les-Bains (n3081154460)
 
 
-  - 
-    name: Léman Express L2
-    station_count: 22
-    type: train
-    colour: '#0085c4'
+    name: Léman Express L1
     stations: 
-      - Coppet
-      - Tannay
-      - Mies
-      - Pont-Céard
-      - Versoix
-      - Creux-de-Genthod
-      - Genthod-Bellevue
-      - Les Tuileries
-      - Chambésy
-      - Genève-Sécheron
-      - Genève
-      - Lancy-Pont-Rouge (CFF)
-      - Lancy-Bachet
-      - Genève-Champel
-      - Genève-Eaux-Vives
-      - Chêne-Bourg
+      - Gare d'Évian-les-Bains
+      - 'Gare de Thonon - Place des Arts'
+      - Gare de Perrignier
+      - Gare de Bons-en-Chablais
+      - Gare de Machilly
       - Gare d'Annemasse
-      - Gare de Reignier
-      - Gare de La Roche-sur-Foron
-      - Gare de Groisy-Thorens-La Caille
-      - Gare de Pringy
-      - Gare d'Annecy
+      - Chêne-Bourg
+      - Genève-Eaux-Vives
+      - Genève-Champel
+      - Lancy-Bachet
+      - Lancy-Pont-Rouge (CFF)
+      - Genève
+      - Genève-Sécheron
+      - Chambésy
+      - Les Tuileries
+      - Genthod-Bellevue
+      - Creux-de-Genthod
+      - Versoix
+      - Pont-Céard
+      - Mies
+      - Tannay
+      - Coppet
 
-    ref: L2
+    ref: L1
+    type: train
+    station_count: 22
+  - 
+    colour: '#0085c4'
     itineraries: 
       r10507303: 
         - Coppet (n3052044268)
@@ -204,40 +134,36 @@ routes:
         - Coppet (n3052044268)
 
 
-  - 
-    name: Léman Express L3
-    station_count: 26
-    type: train
-    colour: '#6c9d40'
+    name: Léman Express L2
     stations: 
-      - Coppet
-      - Tannay
-      - Mies
-      - Pont-Céard
-      - Versoix
-      - Creux-de-Genthod
-      - Genthod-Bellevue
-      - Les Tuileries
-      - Chambésy
-      - Genève-Sécheron
-      - Genève
-      - Lancy-Pont-Rouge (CFF)
-      - Lancy-Bachet
-      - Genève-Champel
-      - Genève-Eaux-Vives
-      - Chêne-Bourg
-      - Gare d'Annemasse
-      - Gare de Reignier
+      - Gare d'Annecy
+      - Gare de Pringy
+      - Gare de Groisy-Thorens-La Caille
       - Gare de La Roche-sur-Foron
-      - Gare de Saint-Pierre-en-Faucigny
-      - Gare de Bonneville
-      - Gare de Marignier
-      - Gare de Cluses
-      - Gare de Magland
-      - 'Gare de Sallanches - Combloux - Megeve'
-      - Gare de Saint-Gervais-les-Bains-Le Fayet
+      - Gare de Reignier
+      - Gare d'Annemasse
+      - Chêne-Bourg
+      - Genève-Eaux-Vives
+      - Genève-Champel
+      - Lancy-Bachet
+      - Lancy-Pont-Rouge (CFF)
+      - Genève
+      - Genève-Sécheron
+      - Chambésy
+      - Les Tuileries
+      - Genthod-Bellevue
+      - Creux-de-Genthod
+      - Versoix
+      - Pont-Céard
+      - Mies
+      - Tannay
+      - Coppet
 
-    ref: L3
+    ref: L2
+    type: train
+    station_count: 22
+  - 
+    colour: '#6c9d40'
     itineraries: 
       r10550084: 
         - Coppet (n3052044268)
@@ -296,11 +222,7 @@ routes:
         - Coppet (n3052044268)
 
 
-  - 
-    name: Léman Express L4
-    station_count: 17
-    type: train
-    colour: '#dc911b'
+    name: Léman Express L3
     stations: 
       - Coppet
       - Tannay
@@ -319,28 +241,22 @@ routes:
       - Genève-Eaux-Vives
       - Chêne-Bourg
       - Gare d'Annemasse
+      - Gare de Reignier
+      - Gare de La Roche-sur-Foron
+      - Gare de Saint-Pierre-en-Faucigny
+      - Gare de Bonneville
+      - Gare de Marignier
+      - Gare de Cluses
+      - Gare de Magland
+      - 'Gare de Sallanches - Combloux - Megeve'
+      - Gare de Saint-Gervais-les-Bains-Le Fayet
 
-    ref: L4
+    ref: L3
+    type: train
+    station_count: 26
+  - 
+    colour: '#dc911b'
     itineraries: 
-      r10460387: 
-        - Coppet (n3052044268)
-        - Tannay (n3051986692)
-        - Mies (n3051986691)
-        - Pont-Céard (n3053167579)
-        - Versoix (n3053167580)
-        - Creux-de-Genthod (n3053167578)
-        - Genthod-Bellevue (n3053406949)
-        - Les Tuileries (n3053406950)
-        - Chambésy (n3053406948)
-        - Genève-Sécheron (n3053436437)
-        - Genève (n4890696636)
-        - Lancy-Pont-Rouge (n3060828206)
-        - Lancy-Bachet (n6886527481)
-        - Genève-Champel (n6886690043)
-        - Genève-Eaux-Vives (n6044426066)
-        - Chêne-Bourg (n6044426065)
-        - Annemasse (n3457256296)
-
       r10460419: 
         - Annemasse (n3457256296)
         - Chêne-Bourg (n6044426065)
@@ -360,22 +276,51 @@ routes:
         - Tannay (n3051986692)
         - Coppet (n3052044268)
 
+      r10460387: 
+        - Coppet (n3052044268)
+        - Tannay (n3051986692)
+        - Mies (n3051986691)
+        - Pont-Céard (n3053167579)
+        - Versoix (n3053167580)
+        - Creux-de-Genthod (n3053167578)
+        - Genthod-Bellevue (n3053406949)
+        - Les Tuileries (n3053406950)
+        - Chambésy (n3053406948)
+        - Genève-Sécheron (n3053436437)
+        - Genève (n4890696636)
+        - Lancy-Pont-Rouge (n3060828206)
+        - Lancy-Bachet (n6886527481)
+        - Genève-Champel (n6886690043)
+        - Genève-Eaux-Vives (n6044426066)
+        - Chêne-Bourg (n6044426065)
+        - Annemasse (n3457256296)
 
-  - 
-    name: Léman Express L5
-    station_count: 7
-    type: train
-    colour: '#c72a80'
+
+    name: Léman Express L4
     stations: 
+      - Gare d'Annemasse
+      - Chêne-Bourg
+      - Genève-Eaux-Vives
+      - Genève-Champel
+      - Lancy-Bachet
+      - Lancy-Pont-Rouge (CFF)
       - Genève
-      - Gare de Vernier
-      - Gare de Meyrin
-      - Zimeysa
-      - Gare de Satigny
-      - Gare de Russin
-      - Gare de la Plaine
+      - Genève-Sécheron
+      - Chambésy
+      - Les Tuileries
+      - Genthod-Bellevue
+      - Creux-de-Genthod
+      - Versoix
+      - Pont-Céard
+      - Mies
+      - Tannay
+      - Coppet
 
-    ref: L5
+    ref: L4
+    type: train
+    station_count: 17
+  - 
+    colour: '#c72a80'
     itineraries: 
       r10443587: 
         - La Plaine (n3059714407)
@@ -396,11 +341,44 @@ routes:
         - La Plaine (n3059714407)
 
 
-  - 
-    name: Léman Express L6
-    station_count: 8
+    name: Léman Express L5
+    stations: 
+      - Genève
+      - Gare de Vernier
+      - Gare de Meyrin
+      - Zimeysa
+      - Gare de Satigny
+      - Gare de Russin
+      - Gare de la Plaine
+
+    ref: L5
     type: train
+    station_count: 7
+  - 
     colour: '#00b3b9'
+    itineraries: 
+      r10447938: 
+        - Genève (n4890696636)
+        - Vernier (n2754246079)
+        - Meyrin (n3057742963)
+        - Zimeysa (n7073204960)
+        - Satigny (n3057789420)
+        - Russin (n3059714408)
+        - Pougny-Chancy (w64131444)
+        - Bellegarde (n5066506648)
+
+      r10447939: 
+        - Bellegarde (n5066506648)
+        - Pougny-Chancy (w64131444)
+        - Russin (n3059714408)
+        - Satigny (n3057789420)
+        - Zimeysa (n7073204960)
+        - Meyrin (n3057742963)
+        - Vernier (n2754246079)
+        - Genève (n4890696636)
+
+
+    name: Léman Express L6
     stations: 
       - Genève
       - Gare de Vernier
@@ -412,28 +390,50 @@ routes:
       - Gare de Bellegarde
 
     ref: L6
-    itineraries: 
-      r10447939: 
-        - Bellegarde (n5066506648)
-        - Pougny-Chancy (w64131444)
-        - Russin (n3059714408)
-        - Satigny (n3057789420)
-        - Zimeysa (n7073204960)
-        - Meyrin (n3057742963)
-        - Vernier (n2754246079)
-        - Genève (n4890696636)
+    type: train
+    station_count: 8
 
-      r10447938: 
-        - Genève (n4890696636)
-        - Vernier (n2754246079)
-        - Meyrin (n3057742963)
-        - Zimeysa (n7073204960)
-        - Satigny (n3057789420)
-        - Russin (n3059714408)
-        - Pougny-Chancy (w64131444)
-        - Bellegarde (n5066506648)
-
-
-
-transfers: 
+stations: 
+  - Annecy (n5061961433)
+  - Annemasse (n3457256296)
+  - Bellegarde (n5066506648)
+  - Bonneville (w107781162)
+  - Bons-en-Chablais (n7093398419)
+  - Chambésy (n3053406948)
+  - Chêne-Bourg (n6044426065)
+  - Cluses (w105790666)
+  - Coppet (n3052044268)
+  - Creux-de-Genthod (n3053167578)
+  - Genthod-Bellevue (n3053406949)
+  - Genève (n4890696636)
+  - Genève-Champel (n6886690043)
+  - Genève-Eaux-Vives (n6044426066)
+  - Genève-Sécheron (n3053436437)
+  - Groisy-Thorens-La Caille (w113059854)
+  - La Plaine (n3059714407)
+  - La Roche-sur-Foron (w111117452)
+  - Lancy-Bachet (n6886527481)
+  - Lancy-Pont-Rouge (n3060828206)
+  - Les Tuileries (n3053406950)
+  - Machilly (n4290857020)
+  - Magland (w111630938)
+  - Marignier (w107350612)
+  - Meyrin (n3057742963)
+  - Mies (n3051986691)
+  - Perrignier (n3081154420)
+  - Pont-Céard (n3053167579)
+  - Pougny-Chancy (w64131444)
+  - Pringy (w62399202)
+  - Reignier (w80551727)
+  - Russin (n3059714408)
+  - 'Saint-Gervais-les-Bains - Le Fayet (n7092852440)'
+  - Saint-Pierre-en-Faucigny (w107967852)
+  - 'Sallanches - Combloux - Megeve (n7092816881)'
+  - Satigny (n3057789420)
+  - Tannay (n3051986692)
+  - Thonon-les-Bains (n7093398420)
+  - Vernier (n2754246079)
+  - Versoix (n3053167580)
+  - Zimeysa (n7073204960)
+  - Évian-les-Bains (n3081154460)
 

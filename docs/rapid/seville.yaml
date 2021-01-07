@@ -1,57 +1,9 @@
 
-stations: 
-  - 1º de Mayo (n500881217)
-  - Amate (n500881222)
-  - Blas Infante (n500885146)
-  - Cavaleri (n500890389)
-  - Ciudad Expo (n500890432)
-  - Cocheras (n500874342)
-  - Condequinto (n500873102)
-  - Europa (n719030091)
-  - Gran Plaza (n500881575)
-  - La Plata (n500881225)
-  - Montequinto (n6324446592)
-  - Nervión (n500884172)
-  - Olivar de Quintos (n719029933)
-  - Pablo de Olavide (n500873383)
-  - Parque de los Príncipes (n500884351)
-  - Plaza de Cuba (n500884352)
-  - Prado San Sebastián (n491286606)
-  - Puerta de Jerez (n491288266)
-  - San Bernardo (n500884175)
-  - San Juan Alto (n500889657)
-  - San Juan Bajo (n500887790)
+transfers: 
 
 routes: 
   - 
-    name: Línea 1
-    station_count: 21
-    type: subway
     colour: '#008000'
-    stations: 
-      - Olivar de Quintos
-      - Europa
-      - Condequinto
-      - Pablo de Olavide
-      - Cocheras
-      - La Plata
-      - Amate
-      - 1º de Mayo
-      - Gran Plaza
-      - Nervión
-      - San Bernardo
-      - Prado San Sebastián
-      - Puerta de Jerez
-      - Plaza de Cuba
-      - Parque de los Príncipes
-      - Blas Infante
-      - San Juan Bajo
-      - San Juan Alto
-      - Cavaleri
-      - Ciudad Expo
-      - Montequinto
-
-    ref: L1
     itineraries: 
       r255088: 
         - Ciudad Expo (n500890432)
@@ -99,6 +51,54 @@ routes:
         - Ciudad Expo (n500890432)
 
 
+    name: Línea 1
+    stations: 
+      - Olivar de Quintos
+      - Europa
+      - Condequinto
+      - Pablo de Olavide
+      - Cocheras
+      - La Plata
+      - Amate
+      - 1º de Mayo
+      - Gran Plaza
+      - Nervión
+      - San Bernardo
+      - Prado San Sebastián
+      - Puerta de Jerez
+      - Plaza de Cuba
+      - Parque de los Príncipes
+      - Blas Infante
+      - San Juan Bajo
+      - San Juan Alto
+      - Cavaleri
+      - Ciudad Expo
+      - Montequinto
 
-transfers: 
+    ref: L1
+    type: subway
+    station_count: 21
+
+stations: 
+  - 1º de Mayo (n500881217)
+  - Amate (n500881222)
+  - Blas Infante (n500885146)
+  - Cavaleri (n500890389)
+  - Ciudad Expo (n500890432)
+  - Cocheras (n500874342)
+  - Condequinto (n500873102)
+  - Europa (n719030091)
+  - Gran Plaza (n500881575)
+  - La Plata (n500881225)
+  - Montequinto (n6324446592)
+  - Nervión (n500884172)
+  - Olivar de Quintos (n719029933)
+  - Pablo de Olavide (n500873383)
+  - Parque de los Príncipes (n500884351)
+  - Plaza de Cuba (n500884352)
+  - Prado San Sebastián (n491286606)
+  - Puerta de Jerez (n491288266)
+  - San Bernardo (n500884175)
+  - San Juan Alto (n500889657)
+  - San Juan Bajo (n500887790)
 

@@ -1,33 +1,55 @@
 
-stations: 
-  - Centurion (n6983528224)
-  - Hatfield (n6983499376)
-  - Marlboro (n326083326)
-  - Midrand (n6983563278)
-  - O.R. Tambo International Airport (n6983349354)
-  - Park Station (n6983463551)
-  - Pretoria Gautrain Station (n6983501555)
-  - Rhodesfield (n6983349355)
-  - Rosebank (n6983544367)
-  - Sandton (n6983509221)
+transfers: 
 
 routes: 
   - 
-    name: North-South Commuter Line
-    station_count: 8
-    type: train
-    colour: '#ff0000'
+    colour: '#9d8b57'
+    itineraries: 
+      r10305561: 
+        - O.R. Tambo International Airport (n6983349354)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
+
+      r457029: 
+        - Sandton (n6983509221)
+        - Marlboro (n326083326)
+        - O.R. Tambo International Airport (n6983349354)
+
+
+    name: Airport Line
     stations: 
-      - Hatfield
-      - Pretoria
-      - Centurion
-      - Midrand
-      - Marlboro
       - Sandton
-      - Rosebank
-      - Park Station
+      - Marlboro
+      - O.R. Tambo International Airport
 
     ref: GAUTRAIN
+    type: train
+    station_count: 3
+  - 
+    colour: '#0000ff'
+    itineraries: 
+      r1694561: 
+        - Sandton (n6983509221)
+        - Marlboro (n326083326)
+        - Rhodesfield (n6983349355)
+
+      r10305544: 
+        - Rhodesfield (n6983349355)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
+
+
+    name: East-West Commuter Line
+    stations: 
+      - Sandton
+      - Marlboro
+      - Rhodesfield (Gautrain)
+
+    ref: GAUTRAIN
+    type: train
+    station_count: 3
+  - 
+    colour: '#ff0000'
     itineraries: 
       r1021770: 
         - Park Station (n6983463551)
@@ -50,52 +72,30 @@ routes:
         - Park Station (n6983463551)
 
 
-  - 
-    name: East-West Commuter Line
-    station_count: 3
-    type: train
-    colour: '#0000ff'
+    name: North-South Commuter Line
     stations: 
-      - Sandton
+      - Hatfield
+      - Pretoria
+      - Centurion
+      - Midrand
       - Marlboro
-      - Rhodesfield (Gautrain)
+      - Sandton
+      - Rosebank
+      - Park Station
 
     ref: GAUTRAIN
-    itineraries: 
-      r1694561: 
-        - Sandton (n6983509221)
-        - Marlboro (n326083326)
-        - Rhodesfield (n6983349355)
-
-      r10305544: 
-        - Rhodesfield (n6983349355)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
-
-
-  - 
-    name: Airport Line
-    station_count: 3
     type: train
-    colour: '#9d8b57'
-    stations: 
-      - Sandton
-      - Marlboro
-      - O.R. Tambo International Airport
+    station_count: 8
 
-    ref: GAUTRAIN
-    itineraries: 
-      r457029: 
-        - Sandton (n6983509221)
-        - Marlboro (n326083326)
-        - O.R. Tambo International Airport (n6983349354)
-
-      r10305561: 
-        - O.R. Tambo International Airport (n6983349354)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
-
-
-
-transfers: 
+stations: 
+  - Centurion (n6983528224)
+  - Hatfield (n6983499376)
+  - Marlboro (n326083326)
+  - Midrand (n6983563278)
+  - O.R. Tambo International Airport (n6983349354)
+  - Park Station (n6983463551)
+  - Pretoria Gautrain Station (n6983501555)
+  - Rhodesfield (n6983349355)
+  - Rosebank (n6983544367)
+  - Sandton (n6983509221)
 

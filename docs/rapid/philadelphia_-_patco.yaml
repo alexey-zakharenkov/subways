@@ -1,98 +1,10 @@
 
-stations: 
-  - 12th-13th & Locust (n471026103)
-  - 15th-16th & Locust (n469917297)
-  - 8th & Market (n7194028327)
-  - 9th-10th & Locust (n469917298)
-  - Ashland (n5365220679)
-  - Broadway (n326350578)
-  - City Hall (n469917199)
-  - Collingswood (n5358047192)
-  - Ferry Avenue (n5365213017)
-  - Haddonfield (n5358045789)
-  - Lindenwold (n5365225943)
-  - Westmont (n5358047210)
-  - Woodcrest (n5358314923)
+transfers: 
 
 routes: 
   - 
-    name: PATCO Speedline
-    station_count: 13
-    type: subway
     colour: '#db5450'
-    stations: 
-      - 15th-16th & Locust
-      - 12th-13th & Locust
-      - 8th & Market (PATCO)
-      - City Hall (PATCO)
-      - Broadway
-      - Ferry Avenue
-      - Collingswood
-      - Westmont
-      - Haddonfield
-      - Woodcrest
-      - Ashland
-      - Lindenwold (PATCO)
-      - 9th-10th & Locust
-
-    ref: PATCO
     itineraries: 
-      r10695601: 
-        - Lindenwold (n5365225943)
-        - Ashland (n5365220679)
-        - Woodcrest (n5358314923)
-        - Ferry Avenue (n5365213017)
-        - Broadway (n326350578)
-        - City Hall (n469917199)
-        - 8th & Market (n7194028327)
-        - 9th-10th & Locust (n469917298)
-        - 12th-13th & Locust (n471026103)
-        - 15th-16th & Locust (n469917297)
-
-      r206539: 
-        - 15th-16th & Locust (n469917297)
-        - 12th-13th & Locust (n471026103)
-        - 9th-10th & Locust (n469917298)
-        - 8th & Market (n7194028327)
-        - City Hall (n469917199)
-        - Broadway (n326350578)
-        - Ferry Avenue (n5365213017)
-        - Collingswood (n5358047192)
-        - Westmont (n5358047210)
-        - Haddonfield (n5358045789)
-        - Woodcrest (n5358314923)
-        - Ashland (n5365220679)
-        - Lindenwold (n5365225943)
-
-      r10695602: 
-        - 15th-16th & Locust (n469917297)
-        - 12th-13th & Locust (n471026103)
-        - 8th & Market (n7194028327)
-        - City Hall (n469917199)
-        - Broadway (n326350578)
-        - Ferry Avenue (n5365213017)
-        - Collingswood (n5358047192)
-        - Westmont (n5358047210)
-        - Haddonfield (n5358045789)
-        - Woodcrest (n5358314923)
-        - Ashland (n5365220679)
-        - Lindenwold (n5365225943)
-
-      r7939426: 
-        - Lindenwold (n5365225943)
-        - Ashland (n5365220679)
-        - Woodcrest (n5358314923)
-        - Haddonfield (n5358045789)
-        - Westmont (n5358047210)
-        - Collingswood (n5358047192)
-        - Ferry Avenue (n5365213017)
-        - Broadway (n326350578)
-        - City Hall (n469917199)
-        - 8th & Market (n7194028327)
-        - 9th-10th & Locust (n469917298)
-        - 12th-13th & Locust (n471026103)
-        - 15th-16th & Locust (n469917297)
-
       r10695600: 
         - Woodcrest (n5358314923)
         - Haddonfield (n5358045789)
@@ -120,7 +32,95 @@ routes:
         - 12th-13th & Locust (n471026103)
         - 15th-16th & Locust (n469917297)
 
+      r10695601: 
+        - Lindenwold (n5365225943)
+        - Ashland (n5365220679)
+        - Woodcrest (n5358314923)
+        - Ferry Avenue (n5365213017)
+        - Broadway (n326350578)
+        - City Hall (n469917199)
+        - 8th & Market (n7194028327)
+        - 9th-10th & Locust (n469917298)
+        - 12th-13th & Locust (n471026103)
+        - 15th-16th & Locust (n469917297)
+
+      r206539: 
+        - 15th-16th & Locust (n469917297)
+        - 12th-13th & Locust (n471026103)
+        - 9th-10th & Locust (n469917298)
+        - 8th & Market (n7194028327)
+        - City Hall (n469917199)
+        - Broadway (n326350578)
+        - Ferry Avenue (n5365213017)
+        - Collingswood (n5358047192)
+        - Westmont (n5358047210)
+        - Haddonfield (n5358045789)
+        - Woodcrest (n5358314923)
+        - Ashland (n5365220679)
+        - Lindenwold (n5365225943)
+
+      r7939426: 
+        - Lindenwold (n5365225943)
+        - Ashland (n5365220679)
+        - Woodcrest (n5358314923)
+        - Haddonfield (n5358045789)
+        - Westmont (n5358047210)
+        - Collingswood (n5358047192)
+        - Ferry Avenue (n5365213017)
+        - Broadway (n326350578)
+        - City Hall (n469917199)
+        - 8th & Market (n7194028327)
+        - 9th-10th & Locust (n469917298)
+        - 12th-13th & Locust (n471026103)
+        - 15th-16th & Locust (n469917297)
+
+      r10695602: 
+        - 15th-16th & Locust (n469917297)
+        - 12th-13th & Locust (n471026103)
+        - 8th & Market (n7194028327)
+        - City Hall (n469917199)
+        - Broadway (n326350578)
+        - Ferry Avenue (n5365213017)
+        - Collingswood (n5358047192)
+        - Westmont (n5358047210)
+        - Haddonfield (n5358045789)
+        - Woodcrest (n5358314923)
+        - Ashland (n5365220679)
+        - Lindenwold (n5365225943)
 
 
-transfers: 
+    name: PATCO Speedline
+    stations: 
+      - 15th-16th & Locust
+      - 12th-13th & Locust
+      - 9th-10th & Locust
+      - 8th & Market (PATCO)
+      - City Hall (PATCO)
+      - Broadway
+      - Ferry Avenue
+      - Collingswood
+      - Westmont
+      - Haddonfield
+      - Woodcrest
+      - Ashland
+      - Lindenwold (PATCO)
+
+    ref: PATCO
+    type: subway
+    station_count: 13
+
+stations: 
+  - 12th-13th & Locust (n471026103)
+  - 15th-16th & Locust (n469917297)
+  - 8th & Market (n7194028327)
+  - 9th-10th & Locust (n469917298)
+  - Ashland (n5365220679)
+  - Broadway (n326350578)
+  - City Hall (n469917199)
+  - Collingswood (n5358047192)
+  - Ferry Avenue (n5365213017)
+  - Haddonfield (n5358045789)
+  - Lindenwold (n5365225943)
+  - Westmont (n5358047210)
+  - Woodcrest (n5358314923)
 

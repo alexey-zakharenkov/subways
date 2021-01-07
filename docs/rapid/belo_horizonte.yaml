@@ -1,53 +1,9 @@
 
-stations: 
-  - Calafate (n5365398604)
-  - Carlos Prates (n5365396588)
-  - Central (n7773976736)
-  - Cidade Industrial (n5363031124)
-  - Eldorado (n5362545412)
-  - Floramar (n5365199766)
-  - Gameleira (n7774375164)
-  - Horto (n5365389740)
-  - José Cândido da Silveira (n5365386589)
-  - Lagoinha (n5365391312)
-  - Minas Shopping (n5365208176)
-  - Primeiro de Maio (n5365204649)
-  - Santa Efigênia (n5365392544)
-  - Santa Inês (n5365385309)
-  - Santa Tereza (n5365391617)
-  - São Gabriel (n5371461010)
-  - Vila Oeste (n4124563097)
-  - Vilarinho (n5365193658)
-  - Waldomiro Lobo (n5365202168)
+transfers: 
 
 routes: 
   - 
-    name: 'Linha 1 - Azul'
-    station_count: 19
-    type: subway
     colour: '#000080'
-    stations: 
-      - Estação Eldorado
-      - Estação Cidade Industrial
-      - Vila Oeste
-      - Estação Gameleira
-      - Estação Calafate
-      - Estação Carlos Prates
-      - Lagoinha
-      - Estação Central
-      - Santa Efigênia
-      - Estação Santa Tereza
-      - Estação Horto
-      - Estação Santa Inês
-      - Estação José Cândido da Silveira
-      - Minas Shopping
-      - Estação São Gabriel
-      - Estação Primeiro de Maio
-      - Estação Waldomiro Lobo
-      - Floramar
-      - Estação Vilarinho
-
-    ref: 1
     itineraries: 
       r6087652: 
         - Eldorado (n5362545412)
@@ -92,6 +48,50 @@ routes:
         - Eldorado (n5362545412)
 
 
+    name: 'Linha 1 - Azul'
+    stations: 
+      - Estação Eldorado
+      - Estação Cidade Industrial
+      - Vila Oeste
+      - Estação Gameleira
+      - Estação Calafate
+      - Estação Carlos Prates
+      - Lagoinha
+      - Estação Central
+      - Santa Efigênia
+      - Estação Santa Tereza
+      - Estação Horto
+      - Estação Santa Inês
+      - Estação José Cândido da Silveira
+      - Minas Shopping
+      - Estação São Gabriel
+      - Estação Primeiro de Maio
+      - Estação Waldomiro Lobo
+      - Floramar
+      - Estação Vilarinho
 
-transfers: 
+    ref: 1
+    type: subway
+    station_count: 19
+
+stations: 
+  - Calafate (n5365398604)
+  - Carlos Prates (n5365396588)
+  - Central (n7773976736)
+  - Cidade Industrial (n5363031124)
+  - Eldorado (n5362545412)
+  - Floramar (n5365199766)
+  - Gameleira (n7774375164)
+  - Horto (n5365389740)
+  - José Cândido da Silveira (n5365386589)
+  - Lagoinha (n5365391312)
+  - Minas Shopping (n5365208176)
+  - Primeiro de Maio (n5365204649)
+  - Santa Efigênia (n5365392544)
+  - Santa Inês (n5365385309)
+  - Santa Tereza (n5365391617)
+  - São Gabriel (n5371461010)
+  - Vila Oeste (n4124563097)
+  - Vilarinho (n5365193658)
+  - Waldomiro Lobo (n5365202168)
 
