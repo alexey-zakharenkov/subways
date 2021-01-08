@@ -1,18 +1,9 @@
 
-transfers: 
-  - 
-    - Florenc B (r2454067)
-    - Florenc C (r7644135)
-  - 
-    - Muzeum A (r7645672)
-    - Muzeum C (r8087302)
-  - 
-    - Můstek A (r7644143)
-    - Můstek B (r7645674)
-
 routes: 
   - 
-    colour: '#00a562'
+    name: 'Metro linka A: Depo Hostivař → Nemocnice Motol'
+    type: subway
+    ref: A
     itineraries: 
       r7772996: 
         - Depo Hostivař (n5460545196)
@@ -53,7 +44,6 @@ routes:
         - Depo Hostivař (n5460545196)
 
 
-    name: 'Metro linka A: Depo Hostivař → Nemocnice Motol'
     stations: 
       - Depo Hostivař
       - Skalka
@@ -73,11 +63,12 @@ routes:
       - Petřiny
       - Nemocnice Motol
 
-    ref: A
-    type: subway
+    colour: '#00a562'
     station_count: 17
   - 
-    colour: '#f8b322'
+    name: 'Metro linka B: Černý Most → Zličín'
+    type: subway
+    ref: B
     itineraries: 
       r7772995: 
         - Zličín (n5463105939)
@@ -132,7 +123,6 @@ routes:
         - Zličín (n5463105939)
 
 
-    name: 'Metro linka B: Černý Most → Zličín'
     stations: 
       - Černý Most
       - Rajská zahrada
@@ -159,34 +149,13 @@ routes:
       - Stodůlky
       - Zličín
 
-    ref: B
-    type: subway
+    colour: '#f8b322'
     station_count: 24
   - 
-    colour: '#cf003d'
+    name: 'Metro linka C: Letňany → Háje'
+    type: subway
+    ref: C
     itineraries: 
-      r7772994: 
-        - Háje (n5473344329)
-        - Opatov (n24570269)
-        - Chodov (n24570253)
-        - Roztyly (n24570180)
-        - Kačerov (n24570143)
-        - Budějovická (n24570126)
-        - Pankrác (n24570070)
-        - Pražského povstání (n6256535951)
-        - Vyšehrad (n24569983)
-        - I. P. Pavlova (n24569684)
-        - Muzeum (n5460590598)
-        - Hlavní nádraží (n24569897)
-        - Florenc (n5460580012)
-        - Vltavská (n5257756518)
-        - Nádraží Holešovice (n5257756517)
-        - Kobylisy (n24569759)
-        - Ládví (n5451432338)
-        - Střížkov (n263891378)
-        - Prosek (n263891381)
-        - Letňany (n263891398)
-
       r58898: 
         - Letňany (n263891398)
         - Prosek (n263891381)
@@ -209,33 +178,64 @@ routes:
         - Opatov (n24570269)
         - Háje (n5473344329)
 
+      r7772994: 
+        - Háje (n5473344329)
+        - Opatov (n24570269)
+        - Chodov (n24570253)
+        - Roztyly (n24570180)
+        - Kačerov (n24570143)
+        - Budějovická (n24570126)
+        - Pankrác (n24570070)
+        - Pražského povstání (n6256535951)
+        - Vyšehrad (n24569983)
+        - I. P. Pavlova (n24569684)
+        - Muzeum (n5460590598)
+        - Hlavní nádraží (n24569897)
+        - Florenc (n5460580012)
+        - Vltavská (n5257756518)
+        - Nádraží Holešovice (n5257756517)
+        - Kobylisy (n24569759)
+        - Ládví (n5451432338)
+        - Střížkov (n263891378)
+        - Prosek (n263891381)
+        - Letňany (n263891398)
 
-    name: 'Metro linka C: Háje → Letňany'
+
     stations: 
-      - Háje
-      - Opatov
-      - Chodov
-      - Roztyly
-      - Kačerov
-      - Budějovická
-      - Pankrác
-      - Pražského povstání
-      - Vyšehrad
-      - I. P. Pavlova
-      - Muzeum C
-      - Hlavní nádraží
-      - Florenc C
-      - Vltavská
-      - Nádraží Holešovice
-      - Kobylisy (Line C)
-      - Ládví
-      - Střížkov
-      - Prosek
       - Letňany
+      - Prosek
+      - Střížkov
+      - Ládví
+      - Kobylisy (Line C)
+      - Nádraží Holešovice
+      - Vltavská
+      - Florenc C
+      - Hlavní nádraží
+      - Muzeum C
+      - I. P. Pavlova
+      - Vyšehrad
+      - Pražského povstání
+      - Pankrác
+      - Budějovická
+      - Kačerov
+      - Roztyly
+      - Chodov
+      - Opatov
+      - Háje
 
-    ref: C
-    type: subway
+    colour: '#cf003d'
     station_count: 20
+
+transfers: 
+  - 
+    - Florenc B (r2454067)
+    - Florenc C (r7644135)
+  - 
+    - Muzeum A (r7645672)
+    - Muzeum C (r8087302)
+  - 
+    - Můstek A (r7644143)
+    - Můstek B (r7645674)
 
 stations: 
   - Anděl (n5463129256)

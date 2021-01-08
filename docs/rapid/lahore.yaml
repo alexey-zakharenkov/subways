@@ -1,38 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f7943a'
+    name: 'Orange Line: Ali Town ↔ Dera Gujran'
+    type: subway
+    ref: O
     itineraries: 
-      r11803498: 
-        - Dera Gujran (n5844883299)
-        - Islam Park (n5844883298)
-        - Salamatpura (n5844883297)
-        - Mahmood Booti (n5844883296)
-        - Pakistan Mint (n8060376238)
-        - Shalimar Gardens (n8060376259)
-        - Baghbanpura (n8058806340)
-        - U.E.T (n8058806348)
-        - Sultanpura (n8058806350)
-        - Railway Station (n8058806356)
-        - Lakshmi (n8058806357)
-        - G.P.O (n8058806361)
-        - Anarkali (n5752543097)
-        - Chauburji (n8060376252)
-        - Gulshan-e-Ravi (n5844879609)
-        - Samanabad (n5844879610)
-        - Bund Road (n5844879611)
-        - Salahudin Road (n5844889658)
-        - Shahnoor (n5844889657)
-        - Sabzazar (n5844889656)
-        - Awan Town (n5844889655)
-        - Wahdat Road (n5844889654)
-        - Hanjarwal (n5844889653)
-        - Canal View (n5844889652)
-        - Thokar Niaz Baig (n5844889651)
-        - Ali Town (n5844889650)
-
       r11803500: 
         - Ali Town (n5844889650)
         - Thokar Niaz Baig (n5844889651)
@@ -61,8 +33,35 @@ routes:
         - Islam Park (n5844883298)
         - Dera Gujran (n5844883299)
 
+      r11803498: 
+        - Dera Gujran (n5844883299)
+        - Islam Park (n5844883298)
+        - Salamatpura (n5844883297)
+        - Mahmood Booti (n5844883296)
+        - Pakistan Mint (n8060376238)
+        - Shalimar Gardens (n8060376259)
+        - Baghbanpura (n8058806340)
+        - U.E.T (n8058806348)
+        - Sultanpura (n8058806350)
+        - Railway Station (n8058806356)
+        - Lakshmi (n8058806357)
+        - G.P.O (n8058806361)
+        - Anarkali (n5752543097)
+        - Chauburji (n8060376252)
+        - Gulshan-e-Ravi (n5844879609)
+        - Samanabad (n5844879610)
+        - Bund Road (n5844879611)
+        - Salahudin Road (n5844889658)
+        - Shahnoor (n5844889657)
+        - Sabzazar (n5844889656)
+        - Awan Town (n5844889655)
+        - Wahdat Road (n5844889654)
+        - Hanjarwal (n5844889653)
+        - Canal View (n5844889652)
+        - Thokar Niaz Baig (n5844889651)
+        - Ali Town (n5844889650)
 
-    name: 'Orange Line: Ali Town ↔ Dera Gujran'
+
     stations: 
       - Dera Gujran
       - Islam Park
@@ -91,9 +90,10 @@ routes:
       - Thokar Niaz Baig
       - Ali Town
 
-    ref: O
-    type: subway
+    colour: '#f7943a'
     station_count: 26
+
+transfers: 
 
 stations: 
   - Ali Town (n5844889650)

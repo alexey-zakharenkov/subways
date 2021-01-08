@@ -1,36 +1,10 @@
 
-transfers: 
-  - 
-    - San Antonio (r1501144)
-    - San Antonio (r9608066)
-
 routes: 
   - 
-    colour: '#0000ff'
+    name: Metro Línea A
+    type: subway
+    ref: A
     itineraries: 
-      r1502510: 
-        - Niquía (w363347843)
-        - Bello (w607681834)
-        - Madera (w607683610)
-        - Acevedo (w363347844)
-        - Tricentenario (w504572294)
-        - Caribe (w36836715)
-        - Universidad (n1214422296)
-        - Hospital (n1214422295)
-        - Prado (n1214420524)
-        - Parque Berrío (n1214419507)
-        - San Antonio (n1214418069)
-        - Alpujarra (n1214417209)
-        - Exposiciones (n1214400199)
-        - Industriales (n1214399891)
-        - Poblado (n1214399411)
-        - Aguacatala (n1214397344)
-        - Ayurá (n1214396495)
-        - Envigado (w44685163)
-        - Itagüí (w393886700)
-        - Sabaneta (n3665674642)
-        - La Estrella (n3665674641)
-
       r1502460: 
         - La Estrella (n3665674641)
         - Sabaneta (n3665674642)
@@ -54,8 +28,30 @@ routes:
         - Bello (w607681834)
         - Niquía (w363347843)
 
+      r1502510: 
+        - Niquía (w363347843)
+        - Bello (w607681834)
+        - Madera (w607683610)
+        - Acevedo (w363347844)
+        - Tricentenario (w504572294)
+        - Caribe (w36836715)
+        - Universidad (n1214422296)
+        - Hospital (n1214422295)
+        - Prado (n1214420524)
+        - Parque Berrío (n1214419507)
+        - San Antonio (n1214418069)
+        - Alpujarra (n1214417209)
+        - Exposiciones (n1214400199)
+        - Industriales (n1214399891)
+        - Poblado (n1214399411)
+        - Aguacatala (n1214397344)
+        - Ayurá (n1214396495)
+        - Envigado (w44685163)
+        - Itagüí (w393886700)
+        - Sabaneta (n3665674642)
+        - La Estrella (n3665674641)
 
-    name: Metro Línea A
+
     stations: 
       - Niquía
       - Bello
@@ -79,21 +75,13 @@ routes:
       - Sabaneta
       - La Estrella
 
-    ref: A
-    type: subway
+    colour: '#0000ff'
     station_count: 21
   - 
-    colour: '#ffa500'
+    name: Metro Línea B
+    type: subway
+    ref: B
     itineraries: 
-      r1504257: 
-        - San Javier (n3502845071)
-        - Santa Lucía (n309027658)
-        - Floresta (n309027653)
-        - Estadio (n309027642)
-        - Suramericana (n309027638)
-        - Cisneros (n1215434362)
-        - San Antonio (n1214418069)
-
       r1504096: 
         - San Antonio (n1214418069)
         - Cisneros (n1215434362)
@@ -103,20 +91,32 @@ routes:
         - Santa Lucía (n309027658)
         - San Javier (n3502845071)
 
+      r1504257: 
+        - San Javier (n3502845071)
+        - Santa Lucía (n309027658)
+        - Floresta (n309027653)
+        - Estadio (n309027642)
+        - Suramericana (n309027638)
+        - Cisneros (n1215434362)
+        - San Antonio (n1214418069)
 
-    name: Metro Línea B
+
     stations: 
-      - San Javier
-      - Santa Lucía
-      - Floresta
-      - Estadio
-      - Suramericana
-      - Cisneros (Metro)
       - San Antonio
+      - Cisneros (Metro)
+      - Suramericana
+      - Estadio
+      - Floresta
+      - Santa Lucía
+      - San Javier
 
-    ref: B
-    type: subway
+    colour: '#ffa500'
     station_count: 7
+
+transfers: 
+  - 
+    - San Antonio (r1501144)
+    - San Antonio (r9608066)
 
 stations: 
   - Acevedo (w363347844)

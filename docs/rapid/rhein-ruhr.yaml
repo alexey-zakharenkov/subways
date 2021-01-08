@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#00ffff'
+    name: Schwebebahn Wuppertal
+    type: monorail
+    ref: 60
     itineraries: 
       r146380: 
         - Vohwinkel Schwebebahn (n6577465471)
@@ -50,34 +50,34 @@ routes:
         - Vohwinkel Schwebebahn (n6577465471)
 
 
-    name: Schwebebahn Wuppertal
     stations: 
-      - Schwebebahnstation Vohwinkel
-      - Bruch
-      - Hammerstein
-      - Sonnborner Straße
-      - Zoo/Stadion (monorail)
-      - Varresbecker Straße (monorail)
-      - Westende (monorail)
-      - Pestalozzistraße (monorail)
-      - Robert-Daum-Platz (monorail)
-      - Ohligsmühle
-      - Wuppertal Hauptbahnhof
-      - Kluse
-      - Landgericht
-      - Völklinger Straße
-      - Loher Brücke
-      - Adlerbrücke
-      - Alter Markt Schwebebahn
-      - Werther Brücke
-      - Wupperfeld
       - Oberbarmen Bahnhof (monorail)
+      - Wupperfeld
+      - Werther Brücke
+      - Alter Markt Schwebebahn
+      - Adlerbrücke
+      - Loher Brücke
+      - Völklinger Straße
+      - Landgericht
+      - Kluse
+      - Wuppertal Hauptbahnhof
+      - Ohligsmühle
+      - Robert-Daum-Platz (monorail)
+      - Pestalozzistraße (monorail)
+      - Westende (monorail)
+      - Varresbecker Straße (monorail)
+      - Zoo/Stadion (monorail)
+      - Sonnborner Straße
+      - Hammerstein
+      - Bruch
+      - Schwebebahnstation Vohwinkel
 
-    ref: 60
-    type: monorail
+    colour: '#00ffff'
     station_count: 20
   - 
-    colour: '#c31313'
+    name: Monorail H1
+    type: monorail
+    ref: H1
     itineraries: 
       r93947: 
         - Eichlinghofen H-Bahn (n1444292627)
@@ -92,38 +92,38 @@ routes:
         - Eichlinghofen H-Bahn (n1444292627)
 
 
-    name: Monorail H1
     stations: 
-      - Eichlinghofen H-Bahn
-      - Campus Süd
-      - Universität S
       - Technologiezentrum
+      - Universität S
+      - Campus Süd
+      - Eichlinghofen H-Bahn
 
-    ref: H1
-    type: monorail
+    colour: '#c31313'
     station_count: 4
   - 
-    colour: '#c31313'
+    name: Monorail H2
+    type: monorail
+    ref: H2
     itineraries: 
-      r1901045: 
-        - Campus Nord (n6708312340)
-        - Campus Süd (n1444302733)
-
       r1901044: 
         - Campus Süd (n1444302733)
         - Campus Nord (n6708312340)
 
+      r1901045: 
+        - Campus Nord (n6708312340)
+        - Campus Süd (n1444302733)
 
-    name: Monorail H2
+
     stations: 
       - Campus Nord
       - Campus Süd
 
-    ref: H2
-    type: monorail
+    colour: '#c31313'
     station_count: 2
   - 
-    colour: '#ff0000'
+    name: Skytrain
+    type: monorail
+    ref: Skytrain
     itineraries: 
       r72578: 
         - Flughafen Terminal C (n6708283864)
@@ -138,16 +138,16 @@ routes:
         - Flughafen Terminal C (n6708283864)
 
 
-    name: Skytrain
     stations: 
-      - Flughafen Bahnhof
-      - Flughafen Parkhaus 4
-      - Flughafen Terminal A/B
       - Flughafen Terminal C
+      - Flughafen Terminal A/B
+      - Flughafen Parkhaus 4
+      - Flughafen Bahnhof
 
-    ref: Skytrain
-    type: monorail
+    colour: '#ff0000'
     station_count: 4
+
+transfers: 
 
 stations: 
   - Adlerbrücke (n271135812)

@@ -1,25 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#00ced1'
+    name: 'Linha 10 - Turquesa'
+    type: train
+    ref: 10
     itineraries: 
-      r2144048: 
-        - Rio Grande da Serra (n6625162134)
-        - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
-        - Guapituba (n5177348538)
-        - Mauá (n7004042564)
-        - Capuava (w170264832)
-        - 'Prefeito Celso Daniel - Santo André (n6671954743)'
-        - Prefeito Saladino (n6667105311)
-        - Utinga (n4441459870)
-        - 'São Caetano do Sul - Prefeito Walter Braido (n4580231040)'
-        - Tamanduateí (n4119710092)
-        - Ipiranga (n4124619036)
-        - 'Juventus - Mooca (n6684992821)'
-        - Brás (n4987808825)
-
       r420129: 
         - Brás (n4987808825)
         - 'Juventus - Mooca (n6684992821)'
@@ -35,8 +20,22 @@ routes:
         - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
         - Rio Grande da Serra (n6625162134)
 
+      r2144048: 
+        - Rio Grande da Serra (n6625162134)
+        - 'Ribeirão Pires - Antônio Bespalec (w170264825)'
+        - Guapituba (n5177348538)
+        - Mauá (n7004042564)
+        - Capuava (w170264832)
+        - 'Prefeito Celso Daniel - Santo André (n6671954743)'
+        - Prefeito Saladino (n6667105311)
+        - Utinga (n4441459870)
+        - 'São Caetano do Sul - Prefeito Walter Braido (n4580231040)'
+        - Tamanduateí (n4119710092)
+        - Ipiranga (n4124619036)
+        - 'Juventus - Mooca (n6684992821)'
+        - Brás (n4987808825)
 
-    name: 'Linha 10 - Turquesa'
+
     stations: 
       - Rio Grande da Serra
       - 'Ribeirão Pires - Antônio Bespalec'
@@ -52,11 +51,12 @@ routes:
       - 'Juventus - Mooca'
       - Brás (CPTM)
 
-    ref: 10
-    type: train
+    colour: '#00ced1'
     station_count: 13
   - 
-    colour: '#ff7f50'
+    name: 'Linha 11 - Coral'
+    type: train
+    ref: 11
     itineraries: 
       r2875657: 
         - Estudantes (n4975769521)
@@ -95,46 +95,31 @@ routes:
         - Estudantes (n4975769521)
 
 
-    name: 'Linha 11 - Coral'
     stations: 
-      - Luz (CPTM)
-      - Brás (CPTM)
-      - Tatuapé
-      - Corinthians-Itaquera
-      - Dom Bosco
-      - José Bonifácio
-      - Guaianases
-      - Antonio Gianetti Neto
-      - Ferraz de Vasconcelos
-      - Poá
-      - Calmon Viana
-      - Suzano
-      - Jundiapeba
-      - Braz Cubas
-      - Mogi das Cruzes
       - Estudantes
+      - Mogi das Cruzes
+      - Braz Cubas
+      - Jundiapeba
+      - Suzano
+      - Calmon Viana
+      - Poá
+      - Ferraz de Vasconcelos
+      - Antonio Gianetti Neto
+      - Guaianases
+      - José Bonifácio
+      - Dom Bosco
+      - Corinthians-Itaquera
+      - Tatuapé
+      - Brás (CPTM)
+      - Luz (CPTM)
 
-    ref: 11
-    type: train
+    colour: '#ff7f50'
     station_count: 16
   - 
-    colour: '#1c146b'
+    name: 'Linha 12 - Safira'
+    type: train
+    ref: 12
     itineraries: 
-      r2877632: 
-        - Calmon Viana (n4581523860)
-        - Aracaré (n4581539510)
-        - Itaquaquecetuba (n4581547752)
-        - Engenheiro Manoel Feio (n4693953605)
-        - Jardim Romano (n4693985640)
-        - Itaim Paulista (n4702146336)
-        - 'Jardim Helena - Vila Mara (n4728457160)'
-        - São Miguel Paulista (w421341833)
-        - Comendador Ermelino (n4728592796)
-        - USP Leste (w508241619)
-        - Engenheiro Goulart (n5039552221)
-        - Tatuapé (n4424425022)
-        - Brás (n4987808825)
-
       r2877631: 
         - Brás (n4987808825)
         - Tatuapé (n4424425022)
@@ -150,66 +135,67 @@ routes:
         - Aracaré (n4581539510)
         - Calmon Viana (n4581523860)
 
+      r2877632: 
+        - Calmon Viana (n4581523860)
+        - Aracaré (n4581539510)
+        - Itaquaquecetuba (n4581547752)
+        - Engenheiro Manoel Feio (n4693953605)
+        - Jardim Romano (n4693985640)
+        - Itaim Paulista (n4702146336)
+        - 'Jardim Helena - Vila Mara (n4728457160)'
+        - São Miguel Paulista (w421341833)
+        - Comendador Ermelino (n4728592796)
+        - USP Leste (w508241619)
+        - Engenheiro Goulart (n5039552221)
+        - Tatuapé (n4424425022)
+        - Brás (n4987808825)
 
-    name: 'Linha 12 - Safira'
+
     stations: 
-      - Brás (CPTM)
-      - Tatuapé
-      - Engenheiro Goulart
-      - USP Leste
-      - Comendador Ermelino
-      - São Miguel Paulista
-      - 'Jardim Helena - Vila Mara'
-      - Itaim Paulista
-      - Jardim Romano
-      - Engenheiro Manoel Feio
-      - Itaquaquecetuba
-      - Aracaré
       - Calmon Viana
+      - Aracaré
+      - Itaquaquecetuba
+      - Engenheiro Manoel Feio
+      - Jardim Romano
+      - Itaim Paulista
+      - 'Jardim Helena - Vila Mara'
+      - São Miguel Paulista
+      - Comendador Ermelino
+      - USP Leste
+      - Engenheiro Goulart
+      - Tatuapé
+      - Brás (CPTM)
 
-    ref: 12
-    type: train
+    colour: '#1c146b'
     station_count: 13
   - 
-    colour: '#2ca05a'
+    name: 'Linha 13 - Jade'
+    type: train
+    ref: 13
     itineraries: 
-      r8447458: 
-        - Aeroporto-Guarulhos (n4396786293)
-        - Guarulhos-CECAP (n4396786298)
-        - Engenheiro Goulart (n5039552221)
-
       r8447459: 
         - Engenheiro Goulart (n5039552221)
         - Guarulhos-CECAP (n4396786298)
         - Aeroporto-Guarulhos (n4396786293)
 
+      r8447458: 
+        - Aeroporto-Guarulhos (n4396786293)
+        - Guarulhos-CECAP (n4396786298)
+        - Engenheiro Goulart (n5039552221)
 
-    name: 'Linha 13 - Jade'
+
     stations: 
-      - Aeroporto-Guarulhos
-      - Guarulhos-CECAP
       - Engenheiro Goulart
+      - Guarulhos-CECAP
+      - Aeroporto-Guarulhos
 
-    ref: 13
-    type: train
+    colour: '#2ca05a'
     station_count: 3
   - 
-    colour: '#a8034f'
+    name: 'Linha 7 - Rubi'
+    type: train
+    ref: 7
     itineraries: 
-      r2557150: 
-        - Jundiaí (n6489284122)
-        - Várzea Paulista (n4467138660)
-        - Campo Limpo Paulista (n4467131460)
-        - Botujuru (n4467131459)
-        - Francisco Morato (n4467119634)
-
-      r2557151: 
-        - Francisco Morato (n4467119634)
-        - Botujuru (n4467131459)
-        - Campo Limpo Paulista (n4467131460)
-        - Várzea Paulista (n4467138660)
-        - Jundiaí (n6489284122)
-
       r419685: 
         - Brás (n4987808825)
         - Luz (n5368677484)
@@ -244,9 +230,27 @@ routes:
         - Brás (n4987808825)
         - Francisco Morato (n4467119634)
 
+      r2557150: 
+        - Jundiaí (n6489284122)
+        - Várzea Paulista (n4467138660)
+        - Campo Limpo Paulista (n4467131460)
+        - Botujuru (n4467131459)
+        - Francisco Morato (n4467119634)
 
-    name: 'Linha 7 - Rubi'
+      r2557151: 
+        - Francisco Morato (n4467119634)
+        - Botujuru (n4467131459)
+        - Campo Limpo Paulista (n4467131460)
+        - Várzea Paulista (n4467138660)
+        - Jundiaí (n6489284122)
+
+
     stations: 
+      - Jundiaí
+      - Várzea Paulista
+      - Campo Limpo Paulista
+      - Botujuru
+      - Francisco Morato
       - Brás (CPTM)
       - Luz (CPTM)
       - 'Palmeiras - Barra Funda (CPTM)'
@@ -261,23 +265,14 @@ routes:
       - Caieiras
       - Franco da Rocha
       - Baltazar Fidélis
-      - Francisco Morato
-      - Jundiaí
-      - Várzea Paulista
-      - Campo Limpo Paulista
-      - Botujuru
 
-    ref: 7
-    type: train
+    colour: '#a8034f'
     station_count: 19
   - 
-    colour: '#808080'
+    name: 'Linha 8 - Diamante'
+    type: train
+    ref: 8
     itineraries: 
-      r2886302: 
-        - Itapevi (n4593623418)
-        - Santa Rita (n4593637408)
-        - Amador Bueno (n6052939428)
-
       r2174505: 
         - Júlio Prestes (n4985618204)
         - 'Palmeiras - Barra Funda (n4593540897)'
@@ -299,6 +294,16 @@ routes:
         - Sagrado Coração (n4676959302)
         - Engenheiro Cardoso (n4676958580)
         - Itapevi (n4593623418)
+
+      r2108731: 
+        - Amador Bueno (n6052939428)
+        - Santa Rita (n4593637408)
+        - Itapevi (n4593623418)
+
+      r2886302: 
+        - Itapevi (n4593623418)
+        - Santa Rita (n4593637408)
+        - Amador Bueno (n6052939428)
 
       r419297: 
         - Itapevi (n4593623418)
@@ -322,42 +327,37 @@ routes:
         - 'Palmeiras - Barra Funda (n4593540897)'
         - Júlio Prestes (n4985618204)
 
-      r2108731: 
-        - Amador Bueno (n6052939428)
-        - Santa Rita (n4593637408)
-        - Itapevi (n4593623418)
 
-
-    name: 'Linha 8 - Diamante'
     stations: 
-      - Júlio Prestes
-      - 'Palmeiras - Barra Funda (CPTM)'
-      - Lapa (Linha 8)
-      - Domingos de Morais
-      - Imperatriz Leopoldina
-      - Presidente Altino
-      - Osasco
-      - Comandante Sampaio
-      - Quitaúna
-      - General Miguel Costa
-      - Carapicuíba
-      - Santa Terezinha
-      - Antônio João
-      - Barueri
-      - Jardim Belval
-      - Jardim Silveira
-      - Jandira
-      - Sagrado Coração
-      - Engenheiro Cardoso
-      - Itapevi
-      - Parada Santa Rita
       - Parada Amador Bueno
+      - Parada Santa Rita
+      - Itapevi
+      - Engenheiro Cardoso
+      - Sagrado Coração
+      - Jandira
+      - Jardim Silveira
+      - Jardim Belval
+      - Barueri
+      - Antônio João
+      - Santa Terezinha
+      - Carapicuíba
+      - General Miguel Costa
+      - Quitaúna
+      - Comandante Sampaio
+      - Osasco
+      - Presidente Altino
+      - Imperatriz Leopoldina
+      - Domingos de Morais
+      - Lapa (Linha 8)
+      - 'Palmeiras - Barra Funda (CPTM)'
+      - Júlio Prestes
 
-    ref: 8
-    type: train
+    colour: '#808080'
     station_count: 22
   - 
-    colour: '#00a88e'
+    name: 'Linha 9 - Esmeralda'
+    type: train
+    ref: 9
     itineraries: 
       r419411: 
         - Grajaú (n4144835344)
@@ -400,7 +400,6 @@ routes:
         - Grajaú (n4144835344)
 
 
-    name: 'Linha 9 - Esmeralda'
     stations: 
       - Grajaú
       - 'Primavera - Interlagos'
@@ -421,9 +420,10 @@ routes:
       - Presidente Altino
       - Osasco
 
-    ref: 9
-    type: train
+    colour: '#00a88e'
     station_count: 18
+
+transfers: 
 
 stations: 
   - Aeroporto-Guarulhos (n4396786293)

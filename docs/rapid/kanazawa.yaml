@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#004ea2'
+    name: 横浜シーサイドライン金沢シーサイドライン
+    type: light_rail
+    ref: SL
     itineraries: 
       r5503503: 
         - 金沢八景 (n3741112689)
@@ -38,7 +38,6 @@ routes:
         - 金沢八景 (n3741112689)
 
 
-    name: 横浜シーサイドライン金沢シーサイドライン
     stations: 
       - 金沢八景 (シーサイドライン)
       - 野島公園
@@ -55,9 +54,10 @@ routes:
       - 南部市場
       - 新杉田
 
-    ref: SL
-    type: light_rail
+    colour: '#004ea2'
     station_count: 14
+
+transfers: 
 
 stations: 
   - 並木中央 (n3741112665)

@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Red Line
+    type: subway
+    ref: 1
     itineraries: 
       r8299495: 
         - Chaudhary Charan Singh International Airport (n8001538669)
@@ -52,7 +52,6 @@ routes:
         - Chaudhary Charan Singh International Airport (n8001538669)
 
 
-    name: Red Line
     stations: 
       - Chaudhary Charan Singh International Airport
       - Amausi
@@ -76,9 +75,10 @@ routes:
       - Indira Nagar
       - Munshipulia
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 21
+
+transfers: 
 
 stations: 
   - Alambagh (n3997322401)

@@ -1,28 +1,10 @@
 
-transfers: 
-  - 
-    - Harold Washington Library-State/Van Buren (r2575000)
-    - Jackson (r7785685)
-    - Jackson (r7793914)
-  - 
-    - Lake (r7785676)
-    - State/Lake (r2576288)
-    - Washington (r2588154)
-  - 
-    - Roosevelt (r2578285)
-    - Roosevelt (r9641008)
-
 routes: 
   - 
-    colour: '#fc0200'
+    name: Airport Transit System
+    type: light_rail
+    ref: ATS
     itineraries: 
-      r9452050: 
-        - Remote Parking (n111016242)
-        - Terminal 5 (n310334163)
-        - Terminal 3 (n5750470874)
-        - Terminal 2 (n5750470892)
-        - Terminal 1 (n5750470911)
-
       r9452035: 
         - Terminal 1 (n5750470911)
         - Terminal 2 (n5750470892)
@@ -30,20 +12,27 @@ routes:
         - Terminal 5 (n310334163)
         - Remote Parking (n111016242)
 
+      r9452050: 
+        - Remote Parking (n111016242)
+        - Terminal 5 (n310334163)
+        - Terminal 3 (n5750470874)
+        - Terminal 2 (n5750470892)
+        - Terminal 1 (n5750470911)
 
-    name: Airport Transit System
+
     stations: 
-      - Terminal 1
-      - Terminal 2
-      - Terminal 3
-      - Terminal 5
       - Remote Parking
+      - Terminal 5
+      - Terminal 3
+      - Terminal 2
+      - Terminal 1
 
-    ref: ATS
-    type: light_rail
+    colour: '#fc0200'
     station_count: 5
   - 
-    colour: '#00a1de'
+    name: Blue Line
+    type: subway
+    ref: Blue
     itineraries: 
       r2672369: 
         - O'Hare (n2088568846)
@@ -116,48 +105,69 @@ routes:
         - O'Hare (n2088568846)
 
 
-    name: Blue Line
     stations: 
-      - O'Hare
-      - Rosemont
-      - Cumberland
-      - Harlem
-      - Jefferson Park
-      - Montrose
-      - Irving Park
-      - Addison
-      - Belmont
-      - Logan Square
-      - California
-      - Western
-      - Damen
-      - Division
-      - Chicago
-      - Grand
-      - Clark/Lake
-      - Washington
-      - Monroe
-      - Jackson
-      - LaSalle
-      - Clinton
-      - UIC-Halsted
-      - Racine
-      - Illinois Medical District
-      - Western
-      - Kedzie-Homan
-      - Pulaski
-      - Cicero
-      - Austin
-      - Oak Park
-      - Harlem
       - Forest Park
+      - Harlem
+      - Oak Park
+      - Austin
+      - Cicero
+      - Pulaski
+      - Kedzie-Homan
+      - Western
+      - Illinois Medical District
+      - Racine
+      - UIC-Halsted
+      - Clinton
+      - LaSalle
+      - Jackson
+      - Monroe
+      - Washington
+      - Clark/Lake
+      - Grand
+      - Chicago
+      - Division
+      - Damen
+      - Western
+      - California
+      - Logan Square
+      - Belmont
+      - Addison
+      - Irving Park
+      - Montrose
+      - Jefferson Park
+      - Harlem
+      - Cumberland
+      - Rosemont
+      - O'Hare
 
-    ref: Blue
-    type: subway
+    colour: '#00a1de'
     station_count: 33
   - 
-    colour: '#62361b'
+    name: Ravenswood Branch
+    type: subway
+    ref: Brown
     itineraries: 
+      r120717: 
+        - Kimball (n4060919452)
+        - Kedzie (n4060919451)
+        - Francisco (n4060919450)
+        - Rockwell (n4060919453)
+        - Western (n4060919454)
+        - Damen (n7758336881)
+        - Montrose (n7758336880)
+        - Irving Park (n7758336879)
+        - Addison (n7758336878)
+        - Paulina (n4697817170)
+        - Southport (n7758320417)
+        - Belmont (n252683064)
+        - Wellington (n7758320418)
+        - Diversey (n7758320419)
+        - Fullerton (n389151453)
+        - Armitage (n252683073)
+        - Sedgwick (n7758428037)
+        - Chicago (n5349571275)
+        - Merchandise Mart (n5349574577)
+
       r2562970: 
         - Washington/Wells (n258940051)
         - Quincy (n258940052)
@@ -187,49 +197,8 @@ routes:
         - Kedzie (n4060919451)
         - Kimball (n4060919452)
 
-      r120717: 
-        - Kimball (n4060919452)
-        - Kedzie (n4060919451)
-        - Francisco (n4060919450)
-        - Rockwell (n4060919453)
-        - Western (n4060919454)
-        - Damen (n7758336881)
-        - Montrose (n7758336880)
-        - Irving Park (n7758336879)
-        - Addison (n7758336878)
-        - Paulina (n4697817170)
-        - Southport (n7758320417)
-        - Belmont (n252683064)
-        - Wellington (n7758320418)
-        - Diversey (n7758320419)
-        - Fullerton (n389151453)
-        - Armitage (n252683073)
-        - Sedgwick (n7758428037)
-        - Chicago (n5349571275)
-        - Merchandise Mart (n5349574577)
 
-
-    name: Ravenswood Branch
     stations: 
-      - Kimball
-      - Kedzie
-      - Francisco
-      - Rockwell
-      - Western
-      - Damen
-      - Montrose
-      - Irving Park
-      - Addison
-      - Paulina
-      - Southport
-      - Belmont
-      - Wellington
-      - Diversey
-      - Fullerton
-      - Armitage
-      - Sedgwick
-      - Chicago
-      - Merchandise Mart
       - Washington/Wells
       - Quincy
       - LaSalle/Van Buren
@@ -238,43 +207,33 @@ routes:
       - Washington/Wabash
       - State/Lake
       - Clark/Lake
+      - Merchandise Mart
+      - Chicago
+      - Sedgwick
+      - Armitage
+      - Fullerton
+      - Diversey
+      - Wellington
+      - Belmont
+      - Southport
+      - Paulina
+      - Addison
+      - Irving Park
+      - Montrose
+      - Damen
+      - Western
+      - Rockwell
+      - Francisco
+      - Kedzie
+      - Kimball
 
-    ref: Brown
-    type: subway
+    colour: '#62361b'
     station_count: 27
   - 
-    colour: '#009b3a'
+    name: Green Line
+    type: subway
+    ref: Green
     itineraries: 
-      r2613598: 
-        - Harlem/Lake (n7132430675)
-        - Oak Park (n7758320414)
-        - Ridgeland (n7758320413)
-        - Austin (n7758320415)
-        - Central (n7758320416)
-        - Laramie (n2043044695)
-        - Cicero (n2043012982)
-        - Pulaski (n2042977745)
-        - Conservatory-Central Park Drive (n2042959694)
-        - Kedzie (n2042812605)
-        - California (n3211876637)
-        - Ashland (n258942196)
-        - Morgan (n1762400891)
-        - Clinton (n258942193)
-        - Clark/Lake (n258940066)
-        - State/Lake (n258296349)
-        - Washington/Wabash (n5091005359)
-        - Adams/Wabash (n258940060)
-        - Roosevelt (n6509194108)
-        - Cermak-McCormick Place (n3341016000)
-        - 35th-Bronzeville-IIT (n259749423)
-        - Indiana (n706934719)
-        - 43rd (n7758205848)
-        - 47th (n706934717)
-        - 51st (n706934716)
-        - Garfield (n7758205847)
-        - King Drive (n7758205844)
-        - Cottage Grove (n7758205845)
-
       r2613597: 
         - Harlem/Lake (n7132430675)
         - Oak Park (n7758320414)
@@ -365,8 +324,37 @@ routes:
         - Oak Park (n7758320414)
         - Harlem/Lake (n7132430675)
 
+      r2613598: 
+        - Harlem/Lake (n7132430675)
+        - Oak Park (n7758320414)
+        - Ridgeland (n7758320413)
+        - Austin (n7758320415)
+        - Central (n7758320416)
+        - Laramie (n2043044695)
+        - Cicero (n2043012982)
+        - Pulaski (n2042977745)
+        - Conservatory-Central Park Drive (n2042959694)
+        - Kedzie (n2042812605)
+        - California (n3211876637)
+        - Ashland (n258942196)
+        - Morgan (n1762400891)
+        - Clinton (n258942193)
+        - Clark/Lake (n258940066)
+        - State/Lake (n258296349)
+        - Washington/Wabash (n5091005359)
+        - Adams/Wabash (n258940060)
+        - Roosevelt (n6509194108)
+        - Cermak-McCormick Place (n3341016000)
+        - 35th-Bronzeville-IIT (n259749423)
+        - Indiana (n706934719)
+        - 43rd (n7758205848)
+        - 47th (n706934717)
+        - 51st (n706934716)
+        - Garfield (n7758205847)
+        - King Drive (n7758205844)
+        - Cottage Grove (n7758205845)
 
-    name: Green Line
+
     stations: 
       - Cottage Grove
       - King Drive
@@ -396,15 +384,26 @@ routes:
       - Ridgeland
       - Oak Park
       - Harlem/Lake
-      - Halsted
       - Ashland/63rd
+      - Halsted
 
-    ref: Green
-    type: subway
+    colour: '#009b3a'
     station_count: 30
   - 
-    colour: '#f9461c'
+    name: Orange Line
+    type: subway
+    ref: Orange
     itineraries: 
+      r443974: 
+        - Midway (n7758297007)
+        - Pulaski (n7758297006)
+        - Kedzie (n7686073813)
+        - Western (n7758297005)
+        - 35th/Archer (n7758297004)
+        - Ashland (n5745254807)
+        - Halsted (n5745254805)
+        - Roosevelt (n6509194108)
+
       r2578311: 
         - Harold Washington Library-State/Van Buren (n258940057)
         - LaSalle/Van Buren (n258940056)
@@ -423,18 +422,7 @@ routes:
         - Pulaski (n7758297006)
         - Midway (n7758297007)
 
-      r443974: 
-        - Midway (n7758297007)
-        - Pulaski (n7758297006)
-        - Kedzie (n7686073813)
-        - Western (n7758297005)
-        - 35th/Archer (n7758297004)
-        - Ashland (n5745254807)
-        - Halsted (n5745254805)
-        - Roosevelt (n6509194108)
 
-
-    name: Orange Line
     stations: 
       - Midway
       - Pulaski
@@ -453,11 +441,12 @@ routes:
       - Washington/Wabash
       - Adams/Wabash
 
-    ref: Orange
-    type: subway
+    colour: '#f9461c'
     station_count: 16
   - 
-    colour: '#e27ea6'
+    name: Pink Line
+    type: subway
+    ref: Pink
     itineraries: 
       r443970: 
         - Clark/Lake (n258940066)
@@ -500,7 +489,6 @@ routes:
         - Clinton (n258942193)
 
 
-    name: Pink Line
     stations: 
       - 54th/Cermak
       - Cicero
@@ -525,32 +513,13 @@ routes:
       - Quincy
       - Washington/Wells
 
-    ref: Pink
-    type: subway
+    colour: '#e27ea6'
     station_count: 22
   - 
-    colour: '#522398'
+    name: Purple Line
+    type: subway
+    ref: Purple
     itineraries: 
-      r2400824: 
-        - Linden (n7758315717)
-        - Central (n249656713)
-        - Noyes (n2091745257)
-        - Foster (n3882686491)
-        - Davis (n2092506200)
-        - Dempster (n7758315715)
-        - Main (n7132414064)
-        - South Boulevard (n2092525316)
-        - Howard (n4060906740)
-        - Wilson (n734512771)
-        - Belmont (n252683064)
-        - Wellington (n7758320418)
-        - Diversey (n7758320419)
-        - Fullerton (n389151453)
-        - Armitage (n252683073)
-        - Sedgwick (n7758428037)
-        - Chicago (n5349571275)
-        - Merchandise Mart (n5349574577)
-
       r122552: 
         - Clark/Lake (n258940066)
         - State/Lake (n258296349)
@@ -579,9 +548,46 @@ routes:
         - Central (n249656713)
         - Linden (n7758315717)
 
+      r2400824: 
+        - Linden (n7758315717)
+        - Central (n249656713)
+        - Noyes (n2091745257)
+        - Foster (n3882686491)
+        - Davis (n2092506200)
+        - Dempster (n7758315715)
+        - Main (n7132414064)
+        - South Boulevard (n2092525316)
+        - Howard (n4060906740)
+        - Wilson (n734512771)
+        - Belmont (n252683064)
+        - Wellington (n7758320418)
+        - Diversey (n7758320419)
+        - Fullerton (n389151453)
+        - Armitage (n252683073)
+        - Sedgwick (n7758428037)
+        - Chicago (n5349571275)
+        - Merchandise Mart (n5349574577)
 
-    name: Purple Line
+
     stations: 
+      - Linden
+      - Central
+      - Noyes
+      - Foster
+      - Davis
+      - Dempster
+      - Main
+      - South Boulevard
+      - Howard
+      - Wilson
+      - Belmont
+      - Wellington
+      - Diversey
+      - Fullerton
+      - Armitage
+      - Sedgwick
+      - Chicago
+      - Merchandise Mart
       - Clark/Lake
       - State/Lake
       - Washington/Wabash
@@ -590,30 +596,13 @@ routes:
       - LaSalle/Van Buren
       - Quincy
       - Washington/Wells
-      - Merchandise Mart
-      - Chicago
-      - Sedgwick
-      - Armitage
-      - Fullerton
-      - Diversey
-      - Wellington
-      - Belmont
-      - Wilson
-      - Howard
-      - South Boulevard
-      - Main
-      - Dempster
-      - Davis
-      - Foster
-      - Noyes
-      - Central
-      - Linden
 
-    ref: Purple
-    type: subway
+    colour: '#522398'
     station_count: 26
   - 
-    colour: '#c60c30'
+    name: Red Line
+    type: subway
+    ref: Red
     itineraries: 
       r2584584: 
         - Howard (n4060906740)
@@ -686,69 +675,80 @@ routes:
         - Howard (n4060906740)
 
 
-    name: Red Line
     stations: 
-      - Howard
-      - Jarvis
-      - Morse
-      - Loyola
-      - Granville
-      - Thorndale
-      - Bryn Mawr
-      - Berwyn
-      - Argyle
-      - Lawrence
-      - Wilson
-      - Sheridan
-      - Addison
-      - Belmont
-      - Fullerton
-      - North/Clybourn
-      - Clark/Division
-      - Chicago
-      - Grand
-      - Lake
-      - Monroe
-      - Jackson
-      - Harrison
-      - Roosevelt
-      - Cermak-Chinatown
-      - Sox-35th
-      - 47th
-      - Garfield
-      - 63rd
-      - 69th
-      - 79th
-      - 87th
       - 95th/Dan Ryan
+      - 87th
+      - 79th
+      - 69th
+      - 63rd
+      - Garfield
+      - 47th
+      - Sox-35th
+      - Cermak-Chinatown
+      - Roosevelt
+      - Harrison
+      - Jackson
+      - Monroe
+      - Lake
+      - Grand
+      - Chicago
+      - Clark/Division
+      - North/Clybourn
+      - Fullerton
+      - Belmont
+      - Addison
+      - Sheridan
+      - Wilson
+      - Lawrence
+      - Argyle
+      - Berwyn
+      - Bryn Mawr
+      - Thorndale
+      - Granville
+      - Loyola
+      - Morse
+      - Jarvis
+      - Howard
 
-    ref: Red
-    type: subway
+    colour: '#c60c30'
     station_count: 33
   - 
-    colour: '#f9e300'
+    name: Yellow Line
+    type: subway
+    ref: Yellow
     itineraries: 
-      r92653: 
-        - Dempster-Skokie (n7758315716)
-        - Oakton (n2587095874)
-        - Howard (n4060906740)
-
       r2400823: 
         - Howard (n4060906740)
         - Oakton (n2587095874)
         - Dempster-Skokie (n7758315716)
         - Howard (n4060906740)
 
+      r92653: 
+        - Dempster-Skokie (n7758315716)
+        - Oakton (n2587095874)
+        - Howard (n4060906740)
 
-    name: Yellow Line
+
     stations: 
-      - Howard
-      - Oakton-Skokie
       - Dempster-Skokie
+      - Oakton-Skokie
+      - Howard
 
-    ref: Yellow
-    type: subway
+    colour: '#f9e300'
     station_count: 3
+
+transfers: 
+  - 
+    - Harold Washington Library-State/Van Buren (r2575000)
+    - Jackson (r7785685)
+    - Jackson (r7793914)
+  - 
+    - Lake (r7785676)
+    - State/Lake (r2576288)
+    - Washington (r2588154)
+  - 
+    - Roosevelt (r2578285)
+    - Roosevelt (r9641008)
 
 stations: 
   - 18th (n2080150506)

@@ -1,21 +1,9 @@
 
-transfers: 
-  - 
-    - Flaminio (r7647017)
-    - Flaminio — FC3 (r7683932)
-  - 
-    - Piramide (r7646955)
-    - Roma Porta San Paolo (r7715604)
-  - 
-    - San Giovanni (Linea A) (r7647008)
-    - San Giovanni (Linea C) (r7646953)
-  - 
-    - Termini A (r7646954)
-    - Termini B (r7647001)
-
 routes: 
   - 
-    colour: '#f68b1f'
+    name: Subway A
+    type: subway
+    ref: A
     itineraries: 
       r1720955: 
         - Anagnina (n471020361)
@@ -76,7 +64,6 @@ routes:
         - Anagnina (n471020361)
 
 
-    name: Subway A
     stations: 
       - Anagnina
       - Cinecittà
@@ -106,36 +93,13 @@ routes:
       - Cornelia
       - Battistini
 
-    ref: A
-    type: subway
+    colour: '#f68b1f'
     station_count: 27
   - 
-    colour: '#3783c6'
+    name: Subway B
+    type: subway
+    ref: B
     itineraries: 
-      r1720959: 
-        - Laurentina (n248973537)
-        - EUR Fermi (n252938414)
-        - EUR Palasport (n252935373)
-        - EUR Magliana (n1313285468)
-        - Marconi (n249506763)
-        - Basilica San Paolo (n1313285484)
-        - Garbatella (n248486493)
-        - Piramide (n247716803)
-        - Circo Massimo (n251896684)
-        - Colosseo (n297376921)
-        - Cavour (n251895414)
-        - Termini (n5216453777)
-        - Castro Pretorio (n295228835)
-        - Policlinico (n296397299)
-        - Bologna (n295228833)
-        - Tiburtina FS (n302319663)
-        - Quintiliani (n295228832)
-        - Monti Tiburtini (n295228831)
-        - Pietralata (n260971792)
-        - Santa Maria del Soccorso (n381567037)
-        - Ponte Mammolo (n260971089)
-        - Rebibbia (n260970268)
-
       r2172804: 
         - Jonio (n1788363341)
         - Conca d'Oro (n356699285)
@@ -156,27 +120,6 @@ routes:
         - EUR Palasport (n252935373)
         - EUR Fermi (n252938414)
         - Laurentina (n248973537)
-
-      r2172805: 
-        - Laurentina (n248973537)
-        - EUR Fermi (n252938414)
-        - EUR Palasport (n252935373)
-        - EUR Magliana (n1313285468)
-        - Marconi (n249506763)
-        - Basilica San Paolo (n1313285484)
-        - Garbatella (n248486493)
-        - Piramide (n247716803)
-        - Circo Massimo (n251896684)
-        - Colosseo (n297376921)
-        - Cavour (n251895414)
-        - Termini (n5216453777)
-        - Castro Pretorio (n295228835)
-        - Policlinico (n296397299)
-        - Bologna (n295228833)
-        - Sant'Agnese/Annibaliano (n1381077891)
-        - Libia (n623380963)
-        - Conca d'Oro (n356699285)
-        - Jonio (n1788363341)
 
       r207926: 
         - Rebibbia (n260970268)
@@ -202,8 +145,52 @@ routes:
         - EUR Fermi (n252938414)
         - Laurentina (n248973537)
 
+      r1720959: 
+        - Laurentina (n248973537)
+        - EUR Fermi (n252938414)
+        - EUR Palasport (n252935373)
+        - EUR Magliana (n1313285468)
+        - Marconi (n249506763)
+        - Basilica San Paolo (n1313285484)
+        - Garbatella (n248486493)
+        - Piramide (n247716803)
+        - Circo Massimo (n251896684)
+        - Colosseo (n297376921)
+        - Cavour (n251895414)
+        - Termini (n5216453777)
+        - Castro Pretorio (n295228835)
+        - Policlinico (n296397299)
+        - Bologna (n295228833)
+        - Tiburtina FS (n302319663)
+        - Quintiliani (n295228832)
+        - Monti Tiburtini (n295228831)
+        - Pietralata (n260971792)
+        - Santa Maria del Soccorso (n381567037)
+        - Ponte Mammolo (n260971089)
+        - Rebibbia (n260970268)
 
-    name: Subway B
+      r2172805: 
+        - Laurentina (n248973537)
+        - EUR Fermi (n252938414)
+        - EUR Palasport (n252935373)
+        - EUR Magliana (n1313285468)
+        - Marconi (n249506763)
+        - Basilica San Paolo (n1313285484)
+        - Garbatella (n248486493)
+        - Piramide (n247716803)
+        - Circo Massimo (n251896684)
+        - Colosseo (n297376921)
+        - Cavour (n251895414)
+        - Termini (n5216453777)
+        - Castro Pretorio (n295228835)
+        - Policlinico (n296397299)
+        - Bologna (n295228833)
+        - Sant'Agnese/Annibaliano (n1381077891)
+        - Libia (n623380963)
+        - Conca d'Oro (n356699285)
+        - Jonio (n1788363341)
+
+
     stations: 
       - Jonio
       - Conca d'Oro
@@ -232,11 +219,12 @@ routes:
       - Quintiliani
       - Tiburtina FS
 
-    ref: B
-    type: subway
+    colour: '#3783c6'
     station_count: 26
   - 
-    colour: '#008752'
+    name: Subway C
+    type: subway
+    ref: C
     itineraries: 
       r398053: 
         - San Giovanni (n3612947728)
@@ -287,51 +275,37 @@ routes:
         - San Giovanni (n3612947728)
 
 
-    name: Subway C
     stations: 
-      - 'Monte Compatri - Pantano'
-      - Graniti
-      - Finocchio
-      - Bolognetta
-      - Borghesiana
-      - 'Due Leoni - Fontana Candida'
-      - Grotte Celoni
-      - Torre Gaia
-      - Torre Angela
-      - Torrenova
-      - Giardinetti
-      - Torre Maura
-      - Torre Spaccata (metropolitana)
-      - Alessandrino
-      - Parco di Centocelle
-      - Mirti
-      - Gardenie
-      - Teano
-      - Malatesta
-      - Pigneto
-      - Lodi
       - San Giovanni (Linea C)
+      - Lodi
+      - Pigneto
+      - Malatesta
+      - Teano
+      - Gardenie
+      - Mirti
+      - Parco di Centocelle
+      - Alessandrino
+      - Torre Spaccata (metropolitana)
+      - Torre Maura
+      - Giardinetti
+      - Torrenova
+      - Torre Angela
+      - Torre Gaia
+      - Grotte Celoni
+      - 'Due Leoni - Fontana Candida'
+      - Borghesiana
+      - Bolognetta
+      - Finocchio
+      - Graniti
+      - 'Monte Compatri - Pantano'
 
-    ref: C
-    type: subway
+    colour: '#008752'
     station_count: 22
   - 
-    colour: '#fbbc09'
+    name: Train FC1
+    type: light_rail
+    ref: FC1
     itineraries: 
-      r391704: 
-        - Termini Laziali (n5190702112)
-        - Santa Bibiana (n5190702111)
-        - Porta Maggiore (n5190702110)
-        - Ponte Casilino (n5190702109)
-        - Sant'Elena (n5190702108)
-        - Villini (n5190702107)
-        - Alessi (n5190702106)
-        - Filarete (n5190702105)
-        - Torpignattara (n5190702104)
-        - Berardi (n5190702103)
-        - Balzani (n5190702102)
-        - Centocelle (n5190702101)
-
       r1721166: 
         - Centocelle (n5190702101)
         - Balzani (n5190702102)
@@ -346,27 +320,41 @@ routes:
         - Santa Bibiana (n5190702111)
         - Termini Laziali (n5190702112)
 
+      r391704: 
+        - Termini Laziali (n5190702112)
+        - Santa Bibiana (n5190702111)
+        - Porta Maggiore (n5190702110)
+        - Ponte Casilino (n5190702109)
+        - Sant'Elena (n5190702108)
+        - Villini (n5190702107)
+        - Alessi (n5190702106)
+        - Filarete (n5190702105)
+        - Torpignattara (n5190702104)
+        - Berardi (n5190702103)
+        - Balzani (n5190702102)
+        - Centocelle (n5190702101)
 
-    name: Train FC1
+
     stations: 
-      - Centocelle
-      - Balzani
-      - Berardi
-      - Torpignattara
-      - Filarete
-      - Alessi
-      - Villini
-      - Sant'Elena
-      - Ponte Casilino
-      - Porta Maggiore
-      - Santa Bibiana
       - Laziali
+      - Santa Bibiana
+      - Porta Maggiore
+      - Ponte Casilino
+      - Sant'Elena
+      - Villini
+      - Alessi
+      - Filarete
+      - Torpignattara
+      - Berardi
+      - Balzani
+      - Centocelle
 
-    ref: FC1
-    type: light_rail
+    colour: '#fbbc09'
     station_count: 12
   - 
-    colour: '#7eb9e6'
+    name: Train FC2
+    type: light_rail
+    ref: FC2
     itineraries: 
       r1721156: 
         - Cristoforo Colombo (n390841960)
@@ -399,45 +387,28 @@ routes:
         - Cristoforo Colombo (n390841960)
 
 
-    name: Train FC2
     stations: 
-      - Cristoforo Colombo
-      - Castel Fusano
-      - Stella Polare
-      - Lido Centro
-      - Lido Nord
-      - Ostia Antica
-      - Acilia
-      - 'Casal Bernocchi - Centro Giano'
-      - Vitinia
-      - Tor di Valle
-      - EUR Magliana
-      - Basilica San Paolo
       - Roma Porta San Paolo
+      - Basilica San Paolo
+      - EUR Magliana
+      - Tor di Valle
+      - Vitinia
+      - 'Casal Bernocchi - Centro Giano'
+      - Acilia
+      - Ostia Antica
+      - Lido Nord
+      - Lido Centro
+      - Stella Polare
+      - Castel Fusano
+      - Cristoforo Colombo
 
-    ref: FC2
-    type: light_rail
+    colour: '#7eb9e6'
     station_count: 13
   - 
-    colour: '#55b036'
+    name: FC3
+    type: light_rail
+    ref: FC3
     itineraries: 
-      r387417: 
-        - Flaminio (n1313285452)
-        - Euclide (n1313285464)
-        - Acqua Acetosa (n1313285439)
-        - Campi Sportivi (n1313285446)
-        - Monte Antenne (n1313285476)
-        - Tor di Quinto (n1158257603)
-        - Due Ponti (n1313285453)
-        - Grottarossa (n1313285480)
-        - Saxa Rubra (n1313285474)
-        - Centro RAI (n1313285461)
-        - Labaro (n1313285475)
-        - La Celsa (n1313285456)
-        - Prima Porta (r7810496)
-        - La Giustiniana (n1313285443)
-        - Montebello (n1313285483)
-
       r1721478: 
         - Montebello (n1313285483)
         - La Giustiniana (n1313285443)
@@ -455,28 +426,57 @@ routes:
         - Euclide (n1313285464)
         - Flaminio (n1313285452)
 
+      r387417: 
+        - Flaminio (n1313285452)
+        - Euclide (n1313285464)
+        - Acqua Acetosa (n1313285439)
+        - Campi Sportivi (n1313285446)
+        - Monte Antenne (n1313285476)
+        - Tor di Quinto (n1158257603)
+        - Due Ponti (n1313285453)
+        - Grottarossa (n1313285480)
+        - Saxa Rubra (n1313285474)
+        - Centro RAI (n1313285461)
+        - Labaro (n1313285475)
+        - La Celsa (n1313285456)
+        - Prima Porta (r7810496)
+        - La Giustiniana (n1313285443)
+        - Montebello (n1313285483)
 
-    name: FC3
+
     stations: 
-      - Flaminio — FC3
-      - Euclide
-      - Acqua Acetosa
-      - Campi Sportivi
-      - Monte Antenne
-      - Tor di Quinto
-      - Due Ponti
-      - Grottarossa
-      - Saxa Rubra
-      - Centro RAI
-      - Labaro
-      - La Celsa
-      - Prima Porta
-      - La Giustiniana
       - Montebello
+      - La Giustiniana
+      - Prima Porta
+      - La Celsa
+      - Labaro
+      - Centro RAI
+      - Saxa Rubra
+      - Grottarossa
+      - Due Ponti
+      - Tor di Quinto
+      - Monte Antenne
+      - Campi Sportivi
+      - Acqua Acetosa
+      - Euclide
+      - Flaminio — FC3
 
-    ref: FC3
-    type: light_rail
+    colour: '#55b036'
     station_count: 15
+
+transfers: 
+  - 
+    - Flaminio (r7647017)
+    - Flaminio — FC3 (r7683932)
+  - 
+    - Piramide (r7646955)
+    - Roma Porta San Paolo (r7715604)
+  - 
+    - San Giovanni (Linea A) (r7647008)
+    - San Giovanni (Linea C) (r7646953)
+  - 
+    - Termini A (r7646954)
+    - Termini B (r7647001)
 
 stations: 
   - Acilia (n298116120)

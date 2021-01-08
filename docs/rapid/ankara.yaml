@@ -1,33 +1,10 @@
 
-transfers: 
-  - 
-    - Atatürk Kültür Merkezi (M1) (r7982378)
-    - Atatürk Kültür Merkezi (M4) (r7982377)
-  - 
-    - Batıkent (M1) (r7982371)
-    - Batıkent (M3) (r11982245)
-  - 
-    - Kızılay (Ankaray) (r7877747)
-    - Kızılay (M1) (r7877772)
-    - Kızılay (M2) (r9705501)
-
 routes: 
   - 
-    colour: '#008000'
+    name: Ankaray
+    type: subway
+    ref: A
     itineraries: 
-      r456693: 
-        - Dikimevi (n2722447843)
-        - Kurtuluş (n2722447845)
-        - Kolej (n4540821444)
-        - Kızılay (n6554580491)
-        - Demirtepe (n4347223415)
-        - Maltepe (n4544835059)
-        - Anadolu (n2400068302)
-        - Beşevler (n1437395982)
-        - Bahçelievler (w231384806)
-        - Emek (n670252468)
-        - AŞTİ (n2722494903)
-
       r7877738: 
         - AŞTİ (n2722494903)
         - Emek (n670252468)
@@ -41,26 +18,39 @@ routes:
         - Kurtuluş (n2722447845)
         - Dikimevi (n2722447843)
 
+      r456693: 
+        - Dikimevi (n2722447843)
+        - Kurtuluş (n2722447845)
+        - Kolej (n4540821444)
+        - Kızılay (n6554580491)
+        - Demirtepe (n4347223415)
+        - Maltepe (n4544835059)
+        - Anadolu (n2400068302)
+        - Beşevler (n1437395982)
+        - Bahçelievler (w231384806)
+        - Emek (n670252468)
+        - AŞTİ (n2722494903)
 
-    name: Ankaray
+
     stations: 
-      - AŞTİ
-      - Emek
-      - Bahçelievler
-      - Beşevler
-      - Anadolu
-      - Maltepe
-      - Demirtepe
-      - Kızılay (Ankaray)
-      - Kolej
-      - Kurtuluş (Metro)
       - Dikimevi
+      - Kurtuluş (Metro)
+      - Kolej
+      - Kızılay (Ankaray)
+      - Demirtepe
+      - Maltepe
+      - Anadolu
+      - Beşevler
+      - Bahçelievler
+      - Emek
+      - AŞTİ
 
-    ref: A
-    type: subway
+    colour: '#008000'
     station_count: 11
   - 
-    colour: '#ff0000'
+    name: 'M1 Kızılay - Batıkent Metro Hattı'
+    type: subway
+    ref: M1
     itineraries: 
       r7877769: 
         - Batıkent (n5388669628)
@@ -91,7 +81,6 @@ routes:
         - Batıkent (n5388669628)
 
 
-    name: 'M1 Kızılay - Batıkent Metro Hattı'
     stations: 
       - Batıkent (M1)
       - Ostim
@@ -106,26 +95,13 @@ routes:
       - Sıhhiye
       - Kızılay (M1)
 
-    ref: M1
-    type: subway
+    colour: '#ff0000'
     station_count: 12
   - 
-    colour: '#ffff00'
+    name: M2 metro hattı
+    type: subway
+    ref: M2
     itineraries: 
-      r7877885: 
-        - Koru (n2715588478)
-        - Çayyolu (n7481815085)
-        - Ümitköy (n2715588436)
-        - Beytepe (n2715588455)
-        - Tarım Bakanlığı-Danıştay (n2715588517)
-        - Bilkent (n2715588449)
-        - Orta Doğu Teknik Üniversitesi (n2715588508)
-        - MTA (n2715588472)
-        - Söğütözü (n2715588418)
-        - Milli Kütüphane (n2715588469)
-        - Necatibey (n2715588427)
-        - Kızılay (n6554580491)
-
       r3604162: 
         - Kızılay (n6554580491)
         - Necatibey (n2715588427)
@@ -140,27 +116,41 @@ routes:
         - Çayyolu (n7481815085)
         - Koru (n2715588478)
 
+      r7877885: 
+        - Koru (n2715588478)
+        - Çayyolu (n7481815085)
+        - Ümitköy (n2715588436)
+        - Beytepe (n2715588455)
+        - Tarım Bakanlığı-Danıştay (n2715588517)
+        - Bilkent (n2715588449)
+        - Orta Doğu Teknik Üniversitesi (n2715588508)
+        - MTA (n2715588472)
+        - Söğütözü (n2715588418)
+        - Milli Kütüphane (n2715588469)
+        - Necatibey (n2715588427)
+        - Kızılay (n6554580491)
 
-    name: M2 metro hattı
+
     stations: 
-      - Koru
-      - Çayyolu
-      - Ümitköy
-      - Beytepe
-      - Tarım Bakanlığı-Danıştay
-      - Bilkent
-      - Orta Doğu Teknik Üniversitesi
-      - MTA
-      - Söğütözü
-      - Milli Kütüphane
-      - Necatibey
       - Kızılay (M2)
+      - Necatibey
+      - Milli Kütüphane
+      - Söğütözü
+      - MTA
+      - Orta Doğu Teknik Üniversitesi
+      - Bilkent
+      - Tarım Bakanlığı-Danıştay
+      - Beytepe
+      - Ümitköy
+      - Çayyolu
+      - Koru
 
-    ref: M2
-    type: subway
+    colour: '#ffff00'
     station_count: 12
   - 
-    colour: '#1e90ff'
+    name: M3 Batıkent-OSB/Törekent Metro Hattı
+    type: subway
+    ref: M3
     itineraries: 
       r7878077: 
         - OSB-Törekent (n5377342886)
@@ -191,26 +181,26 @@ routes:
         - OSB-Törekent (n5377342886)
 
 
-    name: M3 Batıkent-OSB/Törekent Metro Hattı
     stations: 
-      - OSB-Törekent
-      - GOP
-      - Fatih
-      - Harikalar Diyarı
-      - Devlet Mahallesi
-      - Eryaman 5
-      - Eryaman 1-2
-      - İstanbul Yolu
-      - Botanik
-      - Mesa
-      - Batı Merkezi
       - Batıkent (M3)
+      - Batı Merkezi
+      - Mesa
+      - Botanik
+      - İstanbul Yolu
+      - Eryaman 1-2
+      - Eryaman 5
+      - Devlet Mahallesi
+      - Harikalar Diyarı
+      - Fatih
+      - GOP
+      - OSB-Törekent
 
-    ref: M3
-    type: subway
+    colour: '#1e90ff'
     station_count: 12
   - 
-    colour: '#800080'
+    name: M4 Ankara Metrosu
+    type: subway
+    ref: M4
     itineraries: 
       r7981745: 
         - Şehitler (n4592030316)
@@ -235,21 +225,31 @@ routes:
         - Şehitler (n4592030316)
 
 
-    name: M4 Ankara Metrosu
     stations: 
-      - Şehitler
-      - Dutluk
-      - Kuyubaşı
-      - Mecidiye
-      - Belediye
-      - Meteoroloji
-      - Dışkapı
-      - ASKİ
       - Atatürk Kültür Merkezi (M4)
+      - ASKİ
+      - Dışkapı
+      - Meteoroloji
+      - Belediye
+      - Mecidiye
+      - Kuyubaşı
+      - Dutluk
+      - Şehitler
 
-    ref: M4
-    type: subway
+    colour: '#800080'
     station_count: 9
+
+transfers: 
+  - 
+    - Atatürk Kültür Merkezi (M1) (r7982378)
+    - Atatürk Kültür Merkezi (M4) (r7982377)
+  - 
+    - Batıkent (M1) (r7982371)
+    - Batıkent (M3) (r11982245)
+  - 
+    - Kızılay (Ankaray) (r7877747)
+    - Kızılay (M1) (r7877772)
+    - Kızılay (M2) (r9705501)
 
 stations: 
   - ASKİ (n4597987424)

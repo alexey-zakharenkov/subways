@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ed1c24'
+    name: Métro Rennes Ligne a
+    type: subway
+    ref: a
     itineraries: 
       r3889840: 
         - La Poterie (r6777483)
@@ -40,27 +40,27 @@ routes:
         - La Poterie (r6777483)
 
 
-    name: Métro Rennes Ligne a
     stations: 
-      - La Poterie
-      - Le Blosne
-      - Triangle
-      - Italie
-      - Henri Fréville
-      - Clemenceau
-      - Jacques Cartier
-      - Gares
-      - Charles de Gaulle
-      - République
-      - Sainte-Anne
-      - Anatole France
-      - Pontchaillou
-      - 'Villejean - Université'
       - J.F. Kennedy
+      - 'Villejean - Université'
+      - Pontchaillou
+      - Anatole France
+      - Sainte-Anne
+      - République
+      - Charles de Gaulle
+      - Gares
+      - Jacques Cartier
+      - Clemenceau
+      - Henri Fréville
+      - Italie
+      - Triangle
+      - Le Blosne
+      - La Poterie
 
-    ref: a
-    type: subway
+    colour: '#ed1c24'
     station_count: 15
+
+transfers: 
 
 stations: 
   - Anatole France (n8261608356)

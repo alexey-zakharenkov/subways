@@ -1,27 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#3a59a9'
+    name: Capital Line
+    type: light_rail
+    ref: 501
     itineraries: 
-      r9730135: 
-        - Century Park (n6799872965)
-        - Southgate (n1813432369)
-        - South Campus/Fort Edmonton Park (n2067529107)
-        - McKernan/Belgravia (n2067535175)
-        - Health Sciences/Jubilee (n4237213143)
-        - University (n2525716100)
-        - Grandin (n6501293444)
-        - Corona (n247678753)
-        - Bay/Enterprise Square (n247678712)
-        - Central (n247678643)
-        - Churchill (n3225243182)
-        - Stadium (n4237411866)
-        - Coliseum (n2136199336)
-        - Belvedere (n2136199254)
-        - Clareview (n2061254572)
-
       r1861588: 
         - Clareview (n2061254572)
         - Belvedere (n2136199254)
@@ -39,8 +22,24 @@ routes:
         - Southgate (n1813432369)
         - Century Park (n6799872965)
 
+      r9730135: 
+        - Century Park (n6799872965)
+        - Southgate (n1813432369)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - McKernan/Belgravia (n2067535175)
+        - Health Sciences/Jubilee (n4237213143)
+        - University (n2525716100)
+        - Grandin (n6501293444)
+        - Corona (n247678753)
+        - Bay/Enterprise Square (n247678712)
+        - Central (n247678643)
+        - Churchill (n3225243182)
+        - Stadium (n4237411866)
+        - Coliseum (n2136199336)
+        - Belvedere (n2136199254)
+        - Clareview (n2061254572)
 
-    name: Capital Line
+
     stations: 
       - Century Park Transit Centre
       - Southgate LRT Station
@@ -58,11 +57,12 @@ routes:
       - Belvedere
       - Clareview
 
-    ref: 501
-    type: light_rail
+    colour: '#3a59a9'
     station_count: 15
   - 
-    colour: '#fc6357'
+    name: Metro Line
+    type: light_rail
+    ref: 502
     itineraries: 
       r9730136: 
         - NAIT (w718989056)
@@ -89,7 +89,6 @@ routes:
         - NAIT (w718989056)
 
 
-    name: Metro Line
     stations: 
       - Health Sciences/Jubilee
       - University
@@ -102,9 +101,10 @@ routes:
       - Kingsway/Royal Alex
       - NAIT
 
-    ref: 502
-    type: light_rail
+    colour: '#fc6357'
     station_count: 10
+
+transfers: 
 
 stations: 
   - Bay/Enterprise Square (n247678712)

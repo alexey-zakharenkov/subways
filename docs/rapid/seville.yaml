@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#008000'
+    name: Línea 1
+    type: subway
+    ref: L1
     itineraries: 
       r255088: 
         - Ciudad Expo (n500890432)
@@ -51,7 +51,6 @@ routes:
         - Ciudad Expo (n500890432)
 
 
-    name: Línea 1
     stations: 
       - Olivar de Quintos
       - Europa
@@ -75,9 +74,10 @@ routes:
       - Ciudad Expo
       - Montequinto
 
-    ref: L1
-    type: subway
+    colour: '#008000'
     station_count: 21
+
+transfers: 
 
 stations: 
   - 1º de Mayo (n500881217)

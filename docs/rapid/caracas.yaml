@@ -1,40 +1,10 @@
 
-transfers: 
-  - 
-    - Capitolio ❶ (r5281775)
-    - El Silencio ❷ (C) (r5085917)
-  - 
-    - Plaza Venezuela ❶, ❷, ❸ (r5349527)
-    - Zona Rental ❷ (A-B) ❶, ❷, ❸ (r5231470)
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Metro, Línea 1
+    type: subway
+    ref: 1
     itineraries: 
-      r5130935: 
-        - Estación Propatria (n3513843487)
-        - Estación Pérez Bonalde ❶ (n3516191151)
-        - Estación Plaza Sucre (n3516234153)
-        - Estación Gato Negro (n3516269005)
-        - Estación Agua Salud (n3516446670)
-        - Estación Caño Amarillo (n3584842493)
-        - Estación Capitolio (n3594801542)
-        - Estación La Hoyada (n2055473614)
-        - Estación Parque Carabobo (n2389854086)
-        - Estación Bellas Artes (n3632292185)
-        - Estación Colegio de Ingenieros (n3638154421)
-        - Estación Plaza Venezuela (n1213265257)
-        - Estación Sabana Grande (n3646915549)
-        - Estación Chacaito (n3655087088)
-        - Estación Chacao (n3702040654)
-        - Estación Altamira (n3702063947)
-        - Estación Miranda (n3702066196)
-        - Estación Los Dos Caminos (n3942565881)
-        - Estación Los Cortijos (n3604203813)
-        - Estación La California (n3942584178)
-        - Estación Petare (n3083158092)
-        - Estación Palo Verde (n3942689068)
-
       r5130934: 
         - Estación Palo Verde (n3942689068)
         - Estación Petare (n3083158092)
@@ -59,70 +29,62 @@ routes:
         - Estación Pérez Bonalde ❶ (n3516191151)
         - Estación Propatria (n3513843487)
 
+      r5130935: 
+        - Estación Propatria (n3513843487)
+        - Estación Pérez Bonalde ❶ (n3516191151)
+        - Estación Plaza Sucre (n3516234153)
+        - Estación Gato Negro (n3516269005)
+        - Estación Agua Salud (n3516446670)
+        - Estación Caño Amarillo (n3584842493)
+        - Estación Capitolio (n3594801542)
+        - Estación La Hoyada (n2055473614)
+        - Estación Parque Carabobo (n2389854086)
+        - Estación Bellas Artes (n3632292185)
+        - Estación Colegio de Ingenieros (n3638154421)
+        - Estación Plaza Venezuela (n1213265257)
+        - Estación Sabana Grande (n3646915549)
+        - Estación Chacaito (n3655087088)
+        - Estación Chacao (n3702040654)
+        - Estación Altamira (n3702063947)
+        - Estación Miranda (n3702066196)
+        - Estación Los Dos Caminos (n3942565881)
+        - Estación Los Cortijos (n3604203813)
+        - Estación La California (n3942584178)
+        - Estación Petare (n3083158092)
+        - Estación Palo Verde (n3942689068)
 
-    name: Metro, Línea 1
+
     stations: 
-      - Palo Verde ❶
-      - Petare ❶
-      - La California ❶
-      - Los Cortijos ❶
-      - Los Dos Caminos ❶
-      - Miranda ❶
-      - Altamira ❶
-      - Chacao ❶
-      - Chacaito ❶
-      - Sabana Grande ❶
-      - Plaza Venezuela ❶, ❷, ❸
-      - Colegio de Ingenieros ❶
-      - Bellas Artes ❶
-      - Parque Carabobo ❶
-      - La Hoyada ❶
-      - Capitolio ❶
-      - Caño Amarillo ❶
-      - Agua Salud ❶
-      - Gato Negro ❶
-      - Plaza Sucre ❶
-      - Pérez Bonalde ❶
       - Propatria ❶
+      - Pérez Bonalde ❶
+      - Plaza Sucre ❶
+      - Gato Negro ❶
+      - Agua Salud ❶
+      - Caño Amarillo ❶
+      - Capitolio ❶
+      - La Hoyada ❶
+      - Parque Carabobo ❶
+      - Bellas Artes ❶
+      - Colegio de Ingenieros ❶
+      - Plaza Venezuela ❶, ❷, ❸
+      - Sabana Grande ❶
+      - Chacaito ❶
+      - Chacao ❶
+      - Altamira ❶
+      - Miranda ❶
+      - Los Dos Caminos ❶
+      - Los Cortijos ❶
+      - La California ❶
+      - Petare ❶
+      - Palo Verde ❶
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 22
   - 
-    colour: '#afc805'
+    name: Metro, Línea 2
+    type: subway
+    ref: 2
     itineraries: 
-      r3691848: 
-        - Estación Zona Rental (n3511529249)
-        - Estación Parque Central (n3564623826)
-        - Estación Nuevo Circo (n3509431914)
-        - Estación Teatros (n3509419796)
-        - Estación Capuchinos (n3506219462)
-        - Estación Maternidad (n3506203291)
-        - Estación Artigas (n3505264130)
-        - Estación La Paz (w208466169)
-        - Estación La Yaguara (w274424471)
-        - Estación Carapita (w343571784)
-        - Estación Antímano (w273089461)
-        - Estación Mamera (w286616496)
-        - Estación Ruíz Pineda (w273329121)
-        - Estación Las Adjuntas (w252707007)
-
-      r3640375: 
-        - Estación Las Adjuntas (w252707007)
-        - Estación Ruíz Pineda (w273329121)
-        - Estación Mamera (w286616496)
-        - Estación Antímano (w273089461)
-        - Estación Carapita (w343571784)
-        - Estación La Yaguara (w274424471)
-        - Estación La Paz (w208466169)
-        - Estación Artigas (n3505264130)
-        - Estación Maternidad (n3506203291)
-        - Estación Capuchinos (n3506219462)
-        - Estación Teatros (n3509419796)
-        - Estación Nuevo Circo (n3509431914)
-        - Estación Parque Central (n3564623826)
-        - Estación Zona Rental (n3511529249)
-
       r2772730: 
         - Estación Bello Monte (n4477696736)
         - Estación Zona Rental (n3511529249)
@@ -139,6 +101,22 @@ routes:
         - Estación Mamera (w286616496)
         - Estación Caricuao (w279923367)
         - Estación Zoológico (w279927555)
+
+      r3691848: 
+        - Estación Zona Rental (n3511529249)
+        - Estación Parque Central (n3564623826)
+        - Estación Nuevo Circo (n3509431914)
+        - Estación Teatros (n3509419796)
+        - Estación Capuchinos (n3506219462)
+        - Estación Maternidad (n3506203291)
+        - Estación Artigas (n3505264130)
+        - Estación La Paz (w208466169)
+        - Estación La Yaguara (w274424471)
+        - Estación Carapita (w343571784)
+        - Estación Antímano (w273089461)
+        - Estación Mamera (w286616496)
+        - Estación Ruíz Pineda (w273329121)
+        - Estación Las Adjuntas (w252707007)
 
       r2772696: 
         - Estación El Silencio (n3506370482)
@@ -165,33 +143,49 @@ routes:
         - Estación Zona Rental (n3511529249)
         - Estación Bello Monte (n4477696736)
 
+      r3640375: 
+        - Estación Las Adjuntas (w252707007)
+        - Estación Ruíz Pineda (w273329121)
+        - Estación Mamera (w286616496)
+        - Estación Antímano (w273089461)
+        - Estación Carapita (w343571784)
+        - Estación La Yaguara (w274424471)
+        - Estación La Paz (w208466169)
+        - Estación Artigas (n3505264130)
+        - Estación Maternidad (n3506203291)
+        - Estación Capuchinos (n3506219462)
+        - Estación Teatros (n3509419796)
+        - Estación Nuevo Circo (n3509431914)
+        - Estación Parque Central (n3564623826)
+        - Estación Zona Rental (n3511529249)
 
-    name: Metro, Línea 2
+
     stations: 
-      - El Silencio ❷ (C)
-      - Capuchinos ❷ (A-B-C)
-      - Bello Monte ❷ (A-B)
-      - Zona Rental ❷ (A-B) ❶, ❷, ❸
-      - Parque Central ❷ (A-B)
-      - Nuevo Circo ❷ (A-B)
-      - Teatros ❷ (A-B)
-      - Maternidad ❷ (A-B)
-      - Artigas ❷ (A-B)
-      - La Paz ❷ (A-B)
-      - La Yaguara ❷ (A-B)
-      - Carapita ❷ (A-B)
-      - Antímano ❷ (A-B)
-      - Mamera ❷ (A-B)
-      - Caricuao ❷ (B)
       - Zoológico ❷ (B)
-      - Ruíz Pineda ❷ (A)
+      - Caricuao ❷ (B)
+      - Mamera ❷ (A-B)
+      - Antímano ❷ (A-B)
+      - Carapita ❷ (A-B)
+      - La Yaguara ❷ (A-B)
+      - La Paz ❷ (A-B)
+      - Artigas ❷ (A-B)
+      - Maternidad ❷ (A-B)
+      - Capuchinos ❷ (A-B-C)
+      - Teatros ❷ (A-B)
+      - Nuevo Circo ❷ (A-B)
+      - Parque Central ❷ (A-B)
+      - Zona Rental ❷ (A-B) ❶, ❷, ❸
+      - Bello Monte ❷ (A-B)
       - Las Adjuntas ❷ (A)
+      - Ruíz Pineda ❷ (A)
+      - El Silencio ❷ (C)
 
-    ref: 2
-    type: subway
+    colour: '#afc805'
     station_count: 18
   - 
-    colour: '#0000ff'
+    name: Metro, Línea 3
+    type: subway
+    ref: 3
     itineraries: 
       r3395516: 
         - Estación La Rinconada (n2380707619)
@@ -216,7 +210,6 @@ routes:
         - Estación La Rinconada (n2380707619)
 
 
-    name: Metro, Línea 3
     stations: 
       - Plaza Venezuela ❶, ❷, ❸
       - Ciudad Universitaria (L3)
@@ -228,11 +221,12 @@ routes:
       - Mercado (L3)
       - La Rinconada (L3)
 
-    ref: 3
-    type: subway
+    colour: '#0000ff'
     station_count: 9
   - 
-    colour: '#0000ff'
+    name: Metro Los Teques, Línea 1
+    type: subway
+    ref: T1
     itineraries: 
       r4420866: 
         - Estación Las Adjuntas (w252707007)
@@ -245,16 +239,22 @@ routes:
         - Independencia (L2) (n3250354773)
 
 
-    name: Metro Los Teques, Línea 1
     stations: 
       - Las Adjuntas ❷ (A)
       - Alí Primera (L1)
       - Guaicaipuro (L2)
       - Independencia (L2)
 
-    ref: T1
-    type: subway
+    colour: '#0000ff'
     station_count: 4
+
+transfers: 
+  - 
+    - Capitolio ❶ (r5281775)
+    - El Silencio ❷ (C) (r5085917)
+  - 
+    - Plaza Venezuela ❶, ❷, ❸ (r5349527)
+    - Zona Rental ❷ (A-B) ❶, ❷, ❸ (r5231470)
 
 stations: 
   - Alí Primera (L1) (n5356266469)

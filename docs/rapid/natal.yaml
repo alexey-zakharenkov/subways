@@ -1,26 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    name: Linha Norte
+    type: light_rail
+    ref: Norte
     itineraries: 
-      r1229611: 
-        - Natal (r9471190)
-        - Alecrim I (r9471196)
-        - Quintas (n302592195)
-        - Igapó (r9471183)
-        - Santa Catarina (w177239157)
-        - Soledade (n6977862963)
-        - Nova Natal (n6080726319)
-        - Nordelândia (n6080726318)
-        - Estrela do Mar (n6080726309)
-        - Extremoz (n6698231201)
-        - Raposa (n6761485860)
-        - Massangana (r9471199)
-        - Lagoa Grande (n6761501461)
-        - Ceará-Mirim (n6761532962)
-
       r9881791: 
         - Ceará-Mirim (n6761532962)
         - Lagoa Grande (n6761501461)
@@ -37,8 +21,23 @@ routes:
         - Alecrim I (r9471196)
         - Natal (r9471190)
 
+      r1229611: 
+        - Natal (r9471190)
+        - Alecrim I (r9471196)
+        - Quintas (n302592195)
+        - Igapó (r9471183)
+        - Santa Catarina (w177239157)
+        - Soledade (n6977862963)
+        - Nova Natal (n6080726319)
+        - Nordelândia (n6080726318)
+        - Estrela do Mar (n6080726309)
+        - Extremoz (n6698231201)
+        - Raposa (n6761485860)
+        - Massangana (r9471199)
+        - Lagoa Grande (n6761501461)
+        - Ceará-Mirim (n6761532962)
 
-    name: Linha Norte
+
     stations: 
       - Ceará-Mirim
       - Lagoa Grande
@@ -55,11 +54,12 @@ routes:
       - Alecrim I
       - Natal
 
-    ref: Norte
-    type: light_rail
+    colour: '#0000ff'
     station_count: 14
   - 
-    colour: '#0000ff'
+    name: Linha Sul
+    type: light_rail
+    ref: Sul
     itineraries: 
       r1229613: 
         - Cidade Satélite (n6080723244)
@@ -82,20 +82,20 @@ routes:
         - Cidade Satélite (n6080723244)
 
 
-    name: Linha Sul
     stations: 
-      - Natal
-      - Alecrim II
-      - Padre João Maria
-      - Bom Pastor
-      - Cidade Esperança
-      - Prómorar
-      - Pitimbu
       - Cidade Satélite
+      - Pitimbu
+      - Prómorar
+      - Cidade Esperança
+      - Bom Pastor
+      - Padre João Maria
+      - Alecrim II
+      - Natal
 
-    ref: Sul
-    type: light_rail
+    colour: '#0000ff'
     station_count: 8
+
+transfers: 
 
 stations: 
   - Alecrim I (r9471196)

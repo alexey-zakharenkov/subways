@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#228b22'
+    name: Línea 1
+    type: subway
+    ref: L1
     itineraries: 
       r1408101: 
         - Estación Villa El Salvador (n5309263907)
@@ -62,7 +62,6 @@ routes:
         - Estación Villa El Salvador (n5309263907)
 
 
-    name: Línea 1
     stations: 
       - Estación "Villa El Salvador"
       - Estación "Parque Industrial"
@@ -91,9 +90,10 @@ routes:
       - Estación "Santa Rosa"
       - Estación "Bayóvar"
 
-    ref: L1
-    type: subway
+    colour: '#228b22'
     station_count: 26
+
+transfers: 
 
 stations: 
   - Estación Angamos (n5309007967)

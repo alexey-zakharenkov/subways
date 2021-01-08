@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    name: Pink Line
+    type: subway
+    ref: Pink Line
     itineraries: 
       r7989307: 
         - Badi Chopad (n8044083223)
@@ -32,7 +32,6 @@ routes:
         - Badi Chopad (n8044083223)
 
 
-    name: Pink Line
     stations: 
       - Manasarovar
       - New Aatish Market
@@ -46,9 +45,10 @@ routes:
       - Choti Chaupar
       - Badi Chopad
 
-    ref: Pink Line
-    type: subway
+    colour: '#0000ff'
     station_count: 11
+
+transfers: 
 
 stations: 
   - Badi Chopad (n8044083223)

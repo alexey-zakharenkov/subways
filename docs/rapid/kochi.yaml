@@ -1,34 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#7fffd4'
+    name: Kochi Metro Phase I
+    type: subway
+    ref: I
     itineraries: 
-      r7752157: 
-        - Aluva (n4903755238)
-        - Pulinchodu (n4903755250)
-        - Companypady (n4903755242)
-        - Ambattukavu (n4903755239)
-        - Muttom (n4903755247)
-        - Kalamassery Town (n4903755245)
-        - Cochin University (n4903755241)
-        - Pathadipalam (n4903755249)
-        - Edappally (n4903755243)
-        - Changampuzha Park (n4903755240)
-        - Palarivattom (n4903755248)
-        - JLN Stadium (n4903755244)
-        - Kaloor (n4903755246)
-        - Town Hall (n5242586672)
-        - M. G. Road (n4903755539)
-        - Maharaja's College (n5242586671)
-        - Ernakulam South (n6777772111)
-        - Kadavanthra (n6777772107)
-        - Elamkulam (n6777772108)
-        - Vyttila (n7673847483)
-        - Thykoodam (n6777772110)
-        - Pettah (n7883924233)
-
       r7834959: 
         - Pettah (n7883924233)
         - Thykoodam (n6777772110)
@@ -53,8 +29,31 @@ routes:
         - Pulinchodu (n4903755250)
         - Aluva (n4903755238)
 
+      r7752157: 
+        - Aluva (n4903755238)
+        - Pulinchodu (n4903755250)
+        - Companypady (n4903755242)
+        - Ambattukavu (n4903755239)
+        - Muttom (n4903755247)
+        - Kalamassery Town (n4903755245)
+        - Cochin University (n4903755241)
+        - Pathadipalam (n4903755249)
+        - Edappally (n4903755243)
+        - Changampuzha Park (n4903755240)
+        - Palarivattom (n4903755248)
+        - JLN Stadium (n4903755244)
+        - Kaloor (n4903755246)
+        - Town Hall (n5242586672)
+        - M. G. Road (n4903755539)
+        - Maharaja's College (n5242586671)
+        - Ernakulam South (n6777772111)
+        - Kadavanthra (n6777772107)
+        - Elamkulam (n6777772108)
+        - Vyttila (n7673847483)
+        - Thykoodam (n6777772110)
+        - Pettah (n7883924233)
 
-    name: Kochi Metro Phase I
+
     stations: 
       - Aluva
       - Pulinchodu
@@ -79,9 +78,10 @@ routes:
       - Thykoodam
       - Pettah
 
-    ref: I
-    type: subway
+    colour: '#7fffd4'
     station_count: 22
+
+transfers: 
 
 stations: 
   - Aluva (n4903755238)

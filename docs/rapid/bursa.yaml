@@ -1,32 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: BursaRay 1
+    type: subway
+    ref: B1
     itineraries: 
-      r7868620: 
-        - Emek (n5316433997)
-        - Korupark (n5316433984)
-        - Organize Sanayi (n5316437013)
-        - Hamitler/Fethiye (n5316451309)
-        - Bağlarbaşı/Esentepe (n5316452966)
-        - İhsaniye (n5316452957)
-        - Karaman (n5316422506)
-        - Bursaspor/Acemler (n5315511268)
-        - Paşa Çiftliği (n5315511279)
-        - Sırameşeler (n5315511285)
-        - Kültürpark (n5315484816)
-        - Merinos (n5315476895)
-        - Osmangazi (n5315476918)
-        - Şehreküstü (n5315476920)
-        - Demirtaşpaşa (n5315478129)
-        - Gökdere (n5315446884)
-        - Yıldırım/Davutdede (n5315444458)
-        - Duaçınarı (n7726391260)
-        - 152 Evler (n5315432299)
-        - Arabayatağı (n5315425255)
-
       r7868723: 
         - Arabayatağı (n5315425255)
         - 152 Evler (n5315432299)
@@ -49,35 +27,57 @@ routes:
         - Korupark (n5316433984)
         - Emek (n5316433997)
 
+      r7868620: 
+        - Emek (n5316433997)
+        - Korupark (n5316433984)
+        - Organize Sanayi (n5316437013)
+        - Hamitler/Fethiye (n5316451309)
+        - Bağlarbaşı/Esentepe (n5316452966)
+        - İhsaniye (n5316452957)
+        - Karaman (n5316422506)
+        - Bursaspor/Acemler (n5315511268)
+        - Paşa Çiftliği (n5315511279)
+        - Sırameşeler (n5315511285)
+        - Kültürpark (n5315484816)
+        - Merinos (n5315476895)
+        - Osmangazi (n5315476918)
+        - Şehreküstü (n5315476920)
+        - Demirtaşpaşa (n5315478129)
+        - Gökdere (n5315446884)
+        - Yıldırım/Davutdede (n5315444458)
+        - Duaçınarı (n7726391260)
+        - 152 Evler (n5315432299)
+        - Arabayatağı (n5315425255)
 
-    name: BursaRay 1
+
     stations: 
-      - Emek
-      - Korupark
-      - Organize Sanayi
-      - Hamitler/Fethiye
-      - Bağlarbaşı/Esentepe
-      - İhsaniye
-      - Karaman
-      - Bursaspor/Acemler
-      - Paşa Çiftliği
-      - Sırameşeler
-      - Kültürpark
-      - Merinos
-      - Osmangazi
-      - Şehreküstü
-      - Demirtaşpaşa
-      - Gökdere
-      - Yıldırım/Davutdede
-      - Duaçınarı
-      - Yüksek İhtisas
       - Arabayatağı
+      - Yüksek İhtisas
+      - Duaçınarı
+      - Yıldırım/Davutdede
+      - Gökdere
+      - Demirtaşpaşa
+      - Şehreküstü
+      - Osmangazi
+      - Merinos
+      - Kültürpark
+      - Sırameşeler
+      - Paşa Çiftliği
+      - Bursaspor/Acemler
+      - Karaman
+      - İhsaniye
+      - Bağlarbaşı/Esentepe
+      - Hamitler/Fethiye
+      - Organize Sanayi
+      - Korupark
+      - Emek
 
-    ref: B1
-    type: subway
+    colour: '#ff0000'
     station_count: 20
   - 
-    colour: '#000000'
+    name: BursaRay 2
+    type: subway
+    ref: B2
     itineraries: 
       r7869620: 
         - Kestel (n5315410781)
@@ -146,7 +146,6 @@ routes:
         - Kestel (n5315410781)
 
 
-    name: BursaRay 2
     stations: 
       - Kestel
       - Gürsu
@@ -180,9 +179,10 @@ routes:
       - Batıkent
       - Üniversite
 
-    ref: B2
-    type: subway
+    colour: '#000000'
     station_count: 31
+
+transfers: 
 
 stations: 
   - 152 Evler (n5315432299)

@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#c82127'
+    name: 신분당선
+    type: subway
+    ref: DX
     itineraries: 
       r6060963: 
         - 강남 (n5927529147)
@@ -36,7 +36,6 @@ routes:
         - 강남 (n5927529147)
 
 
-    name: 신분당선
     stations: 
       - 강남 (신분당)
       - 양재(서초구청)
@@ -52,9 +51,10 @@ routes:
       - 광교중앙
       - 광교역
 
-    ref: DX
-    type: subway
+    colour: '#c82127'
     station_count: 13
+
+transfers: 
 
 stations: 
   - 강남 (n5927529147)

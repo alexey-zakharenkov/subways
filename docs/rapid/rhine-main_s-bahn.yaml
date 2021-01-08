@@ -1,47 +1,10 @@
 
-transfers: 
-  - 
-    - Frankfurt (Main) Hauptbahnhof (r233704)
-    - Frankfurt Hbf (tief) (r1915166)
-
 routes: 
   - 
-    colour: '#0095da'
+    name: 'S1: Wiesbaden <=> Rödermark Ober-Roden'
+    type: train
+    ref: S1
     itineraries: 
-      r27605: 
-        - Wiesbaden Hauptbahnhof (n1693161658)
-        - Wiesbaden Ost (n428648266)
-        - Mainz-Kastel (n3175310453)
-        - Hochheim(Main) (n3175310450)
-        - Flörsheim(Main) (n2661523863)
-        - Eddersheim (n3175310446)
-        - Hattersheim (n670444678)
-        - Frankfurt am Main Sindlingen (n3933430468)
-        - Frankfurt-Höchst Farbwerke (n670397051)
-        - Frankfurt-Höchst (n1704683949)
-        - Nied (n29803394)
-        - Griesheim (n29803407)
-        - Hauptbahnhof (tief) (n677374148)
-        - Taunusanlage (n30622742)
-        - Hauptwache (n759424346)
-        - Konstablerwache (n778708666)
-        - Ostendstraße (n1506876414)
-        - Mühlberg (n616282318)
-        - Kaiserlei (n768717687)
-        - Ledermuseum (n677374158)
-        - Marktplatz (n604008399)
-        - Offenbach (Main) Ost (n34917586)
-        - Offenbach-Bieber (n2661523893)
-        - Waldhof (n8119502727)
-        - Obertshausen (n8119502726)
-        - Weiskirchen (n8132045736)
-        - Rodgau Hainhausen (n6692720022)
-        - Jügesheim (n5071034398)
-        - Dudenhofen (n8132045735)
-        - Nieder-Roden (n8132045734)
-        - Rollwald (n8132045733)
-        - Rödermark-Ober Roden (n34916806)
-
       r3413904: 
         - Rödermark-Ober Roden (n34916806)
         - Rollwald (n8132045733)
@@ -76,47 +39,81 @@ routes:
         - Wiesbaden Ost (n428648266)
         - Wiesbaden Hauptbahnhof (n1693161658)
 
+      r27605: 
+        - Wiesbaden Hauptbahnhof (n1693161658)
+        - Wiesbaden Ost (n428648266)
+        - Mainz-Kastel (n3175310453)
+        - Hochheim(Main) (n3175310450)
+        - Flörsheim(Main) (n2661523863)
+        - Eddersheim (n3175310446)
+        - Hattersheim (n670444678)
+        - Frankfurt am Main Sindlingen (n3933430468)
+        - Frankfurt-Höchst Farbwerke (n670397051)
+        - Frankfurt-Höchst (n1704683949)
+        - Nied (n29803394)
+        - Griesheim (n29803407)
+        - Hauptbahnhof (tief) (n677374148)
+        - Taunusanlage (n30622742)
+        - Hauptwache (n759424346)
+        - Konstablerwache (n778708666)
+        - Ostendstraße (n1506876414)
+        - Mühlberg (n616282318)
+        - Kaiserlei (n768717687)
+        - Ledermuseum (n677374158)
+        - Marktplatz (n604008399)
+        - Offenbach (Main) Ost (n34917586)
+        - Offenbach-Bieber (n2661523893)
+        - Waldhof (n8119502727)
+        - Obertshausen (n8119502726)
+        - Weiskirchen (n8132045736)
+        - Rodgau Hainhausen (n6692720022)
+        - Jügesheim (n5071034398)
+        - Dudenhofen (n8132045735)
+        - Nieder-Roden (n8132045734)
+        - Rollwald (n8132045733)
+        - Rödermark-Ober Roden (n34916806)
 
-    name: 'S1: Wiesbaden <=> Rödermark Ober-Roden'
+
     stations: 
-      - Wiesbaden Hbf
-      - Wiesbaden Ost
-      - Mainz-Kastel
-      - Hochheim(Main)
-      - Flörsheim(Main)
-      - Eddersheim
-      - Hattersheim(Main)
-      - Frankfurt am Main Sindlingen
-      - Frankfurt Höchst Farbwerke
-      - Frankfurt-Höchst
-      - Nied
-      - Griesheim
-      - Frankfurt Hbf (tief)
-      - Taunusanlage
-      - Frankfurt Hauptwache
-      - Konstablerwache
-      - Ostendstraße
-      - Frankfurt(M) Mühlberg
-      - Offenbach(Main) Kaiserlei
-      - Ledermuseum
-      - Offenbach Marktplatz
-      - Offenbach (Main) Ost
-      - Offenbach-Bieber
-      - Bahnhof Waldhof
-      - Bahnhof Obertshausen
-      - Bahnhof Weiskirchen
-      - Rodgau Hainhausen
-      - Bahnhof Jügesheim
-      - Bahnhof Dudenhofen
-      - Bahnhof Nieder-Roden
-      - Rollwald
       - Rödermark-Ober Roden
+      - Rollwald
+      - Bahnhof Nieder-Roden
+      - Bahnhof Dudenhofen
+      - Bahnhof Jügesheim
+      - Rodgau Hainhausen
+      - Bahnhof Weiskirchen
+      - Bahnhof Obertshausen
+      - Bahnhof Waldhof
+      - Offenbach-Bieber
+      - Offenbach (Main) Ost
+      - Offenbach Marktplatz
+      - Ledermuseum
+      - Offenbach(Main) Kaiserlei
+      - Frankfurt(M) Mühlberg
+      - Ostendstraße
+      - Konstablerwache
+      - Frankfurt Hauptwache
+      - Taunusanlage
+      - Frankfurt Hbf (tief)
+      - Griesheim
+      - Nied
+      - Frankfurt-Höchst
+      - Frankfurt Höchst Farbwerke
+      - Frankfurt am Main Sindlingen
+      - Hattersheim(Main)
+      - Eddersheim
+      - Flörsheim(Main)
+      - Hochheim(Main)
+      - Mainz-Kastel
+      - Wiesbaden Ost
+      - Wiesbaden Hbf
 
-    ref: S1
-    type: train
+    colour: '#0095da'
     station_count: 32
   - 
-    colour: '#ee1c23'
+    name: 'S2: Niedernhausen <=> Dietzenbach'
+    type: train
+    ref: S2
     itineraries: 
       r22986: 
         - Niedernhausen (Taunus) (n660667810)
@@ -177,41 +174,41 @@ routes:
         - Niedernhausen (Taunus) (n660667810)
 
 
-    name: 'S2: Niedernhausen <=> Dietzenbach'
     stations: 
-      - Niedernhausen(Ts)
-      - Niederjosbach
-      - Eppstein-Bremthal
-      - Eppstein
-      - Lorsbach
-      - Hofheim (Taunus)
-      - Kriftel
-      - Frankfurt-Zeilsheim
-      - Frankfurt Höchst Farbwerke
-      - Frankfurt-Höchst
-      - Nied
-      - Griesheim
-      - Frankfurt Hbf (tief)
-      - Taunusanlage
-      - Frankfurt Hauptwache
-      - Konstablerwache
-      - Ostendstraße
-      - Frankfurt(M) Mühlberg
-      - Offenbach(Main) Kaiserlei
-      - Ledermuseum
-      - Offenbach Marktplatz
-      - Offenbach (Main) Ost
-      - Offenbach-Bieber
-      - Heusenstamm
-      - Dietzenbach-Steinberg
-      - Dietzenbach Mitte
       - Dietzenbach Bahnhof
+      - Dietzenbach Mitte
+      - Dietzenbach-Steinberg
+      - Heusenstamm
+      - Offenbach-Bieber
+      - Offenbach (Main) Ost
+      - Offenbach Marktplatz
+      - Ledermuseum
+      - Offenbach(Main) Kaiserlei
+      - Frankfurt(M) Mühlberg
+      - Ostendstraße
+      - Konstablerwache
+      - Frankfurt Hauptwache
+      - Taunusanlage
+      - Frankfurt Hbf (tief)
+      - Griesheim
+      - Nied
+      - Frankfurt-Höchst
+      - Frankfurt Höchst Farbwerke
+      - Frankfurt-Zeilsheim
+      - Kriftel
+      - Hofheim (Taunus)
+      - Lorsbach
+      - Eppstein
+      - Eppstein-Bremthal
+      - Niederjosbach
+      - Niedernhausen(Ts)
 
-    ref: S2
-    type: train
+    colour: '#ee1c23'
     station_count: 27
   - 
-    colour: '#00a896'
+    name: 'S3: Bad Soden <=> Darmstadt'
+    type: train
+    ref: S3
     itineraries: 
       r1783012: 
         - Darmstadt Hauptbahnhof (n3175310444)
@@ -276,43 +273,43 @@ routes:
         - Darmstadt Hauptbahnhof (n3175310444)
 
 
-    name: 'S3: Bad Soden <=> Darmstadt'
     stations: 
-      - Darmstadt Hbf
-      - Darmstadt-Arheilgen
-      - Darmstadt-Wixhausen
-      - Erzhausen
-      - Egelsbach
-      - Langen (Hess)
-      - Langen Flugsicherung
-      - Dreieich-Buchschlag
-      - Neu Isenburg
-      - Frankfurt-Louisa
-      - Stresemannallee
-      - Frankfurt(Main) Süd
-      - Frankfurt(M)Lokalbahnhof
-      - Ostendstraße
-      - Konstablerwache
-      - Frankfurt Hauptwache
-      - Taunusanlage
-      - Frankfurt Hbf (tief)
-      - Galluswarte
-      - Frankfurt am Main Messe
-      - Frankfurt(Main)West
-      - Frankfurt-Rödelheim
-      - Eschborn Süd
-      - Eschborn
-      - Niederhöchstadt
-      - Schwalbach Nord
-      - Schwalbach Limes
-      - Sulzbach Nord
       - Bad Soden
+      - Sulzbach Nord
+      - Schwalbach Limes
+      - Schwalbach Nord
+      - Niederhöchstadt
+      - Eschborn
+      - Eschborn Süd
+      - Frankfurt-Rödelheim
+      - Frankfurt(Main)West
+      - Frankfurt am Main Messe
+      - Galluswarte
+      - Frankfurt Hbf (tief)
+      - Taunusanlage
+      - Frankfurt Hauptwache
+      - Konstablerwache
+      - Ostendstraße
+      - Frankfurt(M)Lokalbahnhof
+      - Frankfurt(Main) Süd
+      - Stresemannallee
+      - Frankfurt-Louisa
+      - Neu Isenburg
+      - Dreieich-Buchschlag
+      - Langen Flugsicherung
+      - Langen (Hess)
+      - Egelsbach
+      - Erzhausen
+      - Darmstadt-Wixhausen
+      - Darmstadt-Arheilgen
+      - Darmstadt Hbf
 
-    ref: S3
-    type: train
+    colour: '#00a896'
     station_count: 29
   - 
-    colour: '#fecb09'
+    name: 'S4: Kronberg <=> Langen'
+    type: train
+    ref: S4
     itineraries: 
       r2515407: 
         - Langen (Hess) (n981494588)
@@ -363,56 +360,37 @@ routes:
         - Langen (Hess) (n981494588)
 
 
-    name: 'S4: Kronberg <=> Langen'
     stations: 
-      - Kronberg
-      - Kronberg Süd
-      - Niederhöchstadt
-      - Eschborn
-      - Eschborn Süd
-      - Frankfurt-Rödelheim
-      - Frankfurt(Main)West
-      - Frankfurt am Main Messe
-      - Galluswarte
-      - Frankfurt Hbf (tief)
-      - Taunusanlage
-      - Frankfurt Hauptwache
-      - Konstablerwache
-      - Ostendstraße
-      - Frankfurt(M)Lokalbahnhof
-      - Frankfurt(Main) Süd
-      - Stresemannallee
-      - Frankfurt-Louisa
-      - Neu Isenburg
-      - Dreieich-Buchschlag
-      - Langen Flugsicherung
       - Langen (Hess)
+      - Langen Flugsicherung
+      - Dreieich-Buchschlag
+      - Neu Isenburg
+      - Frankfurt-Louisa
+      - Stresemannallee
+      - Frankfurt(Main) Süd
+      - Frankfurt(M)Lokalbahnhof
+      - Ostendstraße
+      - Konstablerwache
+      - Frankfurt Hauptwache
+      - Taunusanlage
+      - Frankfurt Hbf (tief)
+      - Galluswarte
+      - Frankfurt am Main Messe
+      - Frankfurt(Main)West
+      - Frankfurt-Rödelheim
+      - Eschborn Süd
+      - Eschborn
+      - Niederhöchstadt
+      - Kronberg Süd
+      - Kronberg
 
-    ref: S4
-    type: train
+    colour: '#fecb09'
     station_count: 22
   - 
-    colour: '#a52a2a'
+    name: 'S5: Friedrichsdorf <=> Frankfurt (Main) Süd'
+    type: train
+    ref: S5
     itineraries: 
-      r2515354: 
-        - Frankfurt (Main) Süd (n2553727757)
-        - Lokalbahnhof (n1506876412)
-        - Ostendstraße (n1506876414)
-        - Konstablerwache (n778708666)
-        - Hauptwache (n759424346)
-        - Taunusanlage (n30622742)
-        - Hauptbahnhof (tief) (n677374148)
-        - Frankfurt (Main) Galluswarte (n25601842)
-        - Frankfurt am Main Messe (n8132045737)
-        - Frankfurt (Main) West (n455278633)
-        - Frankfurt-Rödelheim (n4373239248)
-        - Weißkirchen/Steinbach (n4208627102)
-        - Stierstadt (n6712296345)
-        - Oberursel (n4208590193)
-        - Bad Homburg (n4203880589)
-        - Seulberg (n4203904324)
-        - Friedrichsdorf (n4203904323)
-
       r27778: 
         - Friedrichsdorf (n4203904323)
         - Seulberg (n4203904324)
@@ -432,34 +410,7 @@ routes:
         - Lokalbahnhof (n1506876412)
         - Frankfurt (Main) Süd (n2553727757)
 
-
-    name: 'S5: Friedrichsdorf <=> Frankfurt (Main) Süd'
-    stations: 
-      - Friedrichsdorf (Taunus)
-      - Seulberg
-      - Bad Homburg
-      - Oberursel Bahnhof
-      - Stierstadt
-      - Weißkirchen/Steinbach
-      - Frankfurt-Rödelheim
-      - Frankfurt(Main)West
-      - Frankfurt am Main Messe
-      - Galluswarte
-      - Frankfurt Hbf (tief)
-      - Taunusanlage
-      - Frankfurt Hauptwache
-      - Konstablerwache
-      - Ostendstraße
-      - Frankfurt(M)Lokalbahnhof
-      - Frankfurt(Main) Süd
-
-    ref: S5
-    type: train
-    station_count: 17
-  - 
-    colour: '#f57921'
-    itineraries: 
-      r27779: 
+      r2515354: 
         - Frankfurt (Main) Süd (n2553727757)
         - Lokalbahnhof (n1506876412)
         - Ostendstraße (n1506876414)
@@ -470,18 +421,41 @@ routes:
         - Frankfurt (Main) Galluswarte (n25601842)
         - Frankfurt am Main Messe (n8132045737)
         - Frankfurt (Main) West (n455278633)
-        - Frankfurt-Eschersheim (n3130992998)
-        - Frankfurt Frankfurter Berg (n3130992999)
-        - Frankfurt-Berkersheim (n8132045732)
-        - Bad Vilbel Süd (n3130992996)
-        - Bad Vilbel (n3130992997)
-        - Dortelweil (n3131693290)
-        - Groß Karben (n3131693291)
-        - Okarben (n3131693293)
-        - Nieder Wöllstadt (n3131693292)
-        - Bruchenbrücken (n3131693289)
-        - Friedberg (Hess) (n4238186252)
+        - Frankfurt-Rödelheim (n4373239248)
+        - Weißkirchen/Steinbach (n4208627102)
+        - Stierstadt (n6712296345)
+        - Oberursel (n4208590193)
+        - Bad Homburg (n4203880589)
+        - Seulberg (n4203904324)
+        - Friedrichsdorf (n4203904323)
 
+
+    stations: 
+      - Frankfurt(Main) Süd
+      - Frankfurt(M)Lokalbahnhof
+      - Ostendstraße
+      - Konstablerwache
+      - Frankfurt Hauptwache
+      - Taunusanlage
+      - Frankfurt Hbf (tief)
+      - Galluswarte
+      - Frankfurt am Main Messe
+      - Frankfurt(Main)West
+      - Frankfurt-Rödelheim
+      - Weißkirchen/Steinbach
+      - Stierstadt
+      - Oberursel Bahnhof
+      - Bad Homburg
+      - Seulberg
+      - Friedrichsdorf (Taunus)
+
+    colour: '#a52a2a'
+    station_count: 17
+  - 
+    name: 'S6: Friedberg <=> Frankfurt (Main) Süd'
+    type: train
+    ref: S6
+    itineraries: 
       r1880909: 
         - Friedberg (Hess) (n4238186252)
         - Bruchenbrücken (n3131693289)
@@ -505,8 +479,30 @@ routes:
         - Lokalbahnhof (n1506876412)
         - Frankfurt (Main) Süd (n2553727757)
 
+      r27779: 
+        - Frankfurt (Main) Süd (n2553727757)
+        - Lokalbahnhof (n1506876412)
+        - Ostendstraße (n1506876414)
+        - Konstablerwache (n778708666)
+        - Hauptwache (n759424346)
+        - Taunusanlage (n30622742)
+        - Hauptbahnhof (tief) (n677374148)
+        - Frankfurt (Main) Galluswarte (n25601842)
+        - Frankfurt am Main Messe (n8132045737)
+        - Frankfurt (Main) West (n455278633)
+        - Frankfurt-Eschersheim (n3130992998)
+        - Frankfurt Frankfurter Berg (n3130992999)
+        - Frankfurt-Berkersheim (n8132045732)
+        - Bad Vilbel Süd (n3130992996)
+        - Bad Vilbel (n3130992997)
+        - Dortelweil (n3131693290)
+        - Groß Karben (n3131693291)
+        - Okarben (n3131693293)
+        - Nieder Wöllstadt (n3131693292)
+        - Bruchenbrücken (n3131693289)
+        - Friedberg (Hess) (n4238186252)
 
-    name: 'S6: Friedberg <=> Frankfurt (Main) Süd'
+
     stations: 
       - Frankfurt(Main) Süd
       - Frankfurt(M)Lokalbahnhof
@@ -530,11 +526,12 @@ routes:
       - Bruchenbrücken
       - Friedberg (Hess)
 
-    ref: S6
-    type: train
+    colour: '#f57921'
     station_count: 21
   - 
-    colour: '#20543f'
+    name: 'S7: Riedstadt-Goddelau <=> Frankfurt (Main) Hbf'
+    type: train
+    ref: S7
     itineraries: 
       r91872: 
         - Riedstadt-Goddelau (n30343549)
@@ -561,56 +558,25 @@ routes:
         - Riedstadt-Goddelau (n30343549)
 
 
-    name: 'S7: Riedstadt-Goddelau <=> Frankfurt (Main) Hbf'
     stations: 
-      - Riedstadt-Goddelau Bahnsteige
-      - Wolfskehlen Bahnsteige
-      - Dornheim Bahnsteige
-      - Groß Gerau Dornberg
-      - Mörfelden
-      - Walldorf Bahnsteige
-      - Zeppelinheim Bahnsteige
-      - 'Frankfurt am Main - Stadion'
-      - Frankfurt-Niederrad
       - Frankfurt (Main) Hauptbahnhof
+      - Frankfurt-Niederrad
+      - 'Frankfurt am Main - Stadion'
+      - Zeppelinheim Bahnsteige
+      - Walldorf Bahnsteige
+      - Mörfelden
+      - Groß Gerau Dornberg
+      - Dornheim Bahnsteige
+      - Wolfskehlen Bahnsteige
+      - Riedstadt-Goddelau Bahnsteige
 
-    ref: S7
-    type: train
+    colour: '#20543f'
     station_count: 10
   - 
-    colour: '#d7df23'
+    name: 'S8: Wiesbaden <=> Hanau'
+    type: train
+    ref: S8
     itineraries: 
-      r3415069: 
-        - Hanau Hbf (n33640346)
-        - Steinheim/Main (Hanau) (n269403914)
-        - Mühlheim (Main)-Dietesheim (n269399955)
-        - Mühlheim (Main) (n269399951)
-        - Offenbach (Main) Ost (n34917586)
-        - Marktplatz (n604008399)
-        - Ledermuseum (n677374158)
-        - Kaiserlei (n768717687)
-        - Mühlberg (n616282318)
-        - Ostendstraße (n1506876414)
-        - Konstablerwache (n778708666)
-        - Hauptwache (n759424346)
-        - Taunusanlage (n30622742)
-        - Hauptbahnhof (tief) (n677374148)
-        - Frankfurt-Niederrad Hp (n3893518393)
-        - Frankfurt am Main Stadion (n656535241)
-        - Frankfurt-Gateway Gardens (n6919719639)
-        - Frankfurt am Main Flughafen Regionalbahnhof (n668982247)
-        - Kelsterbach (n676625175)
-        - Raunheim (n4505185596)
-        - Rüsselsheim (n108112922)
-        - Rüsselsheim Opelwerk (n30922188)
-        - Mainz-Bischofsheim (n4371485220)
-        - Mainz-Gustavsburg (n26773593)
-        - Mainz Römisches Theater (n30899311)
-        - Mainz Hbf (n7141879068)
-        - Mainz Nord (n30779411)
-        - Wiesbaden Ost (n428648266)
-        - Wiesbaden Hauptbahnhof (n1693161658)
-
       r22426: 
         - Wiesbaden Hauptbahnhof (n1693161658)
         - Wiesbaden Ost (n428648266)
@@ -642,8 +608,38 @@ routes:
         - Steinheim/Main (Hanau) (n269403914)
         - Hanau Hbf (n33640346)
 
+      r3415069: 
+        - Hanau Hbf (n33640346)
+        - Steinheim/Main (Hanau) (n269403914)
+        - Mühlheim (Main)-Dietesheim (n269399955)
+        - Mühlheim (Main) (n269399951)
+        - Offenbach (Main) Ost (n34917586)
+        - Marktplatz (n604008399)
+        - Ledermuseum (n677374158)
+        - Kaiserlei (n768717687)
+        - Mühlberg (n616282318)
+        - Ostendstraße (n1506876414)
+        - Konstablerwache (n778708666)
+        - Hauptwache (n759424346)
+        - Taunusanlage (n30622742)
+        - Hauptbahnhof (tief) (n677374148)
+        - Frankfurt-Niederrad Hp (n3893518393)
+        - Frankfurt am Main Stadion (n656535241)
+        - Frankfurt-Gateway Gardens (n6919719639)
+        - Frankfurt am Main Flughafen Regionalbahnhof (n668982247)
+        - Kelsterbach (n676625175)
+        - Raunheim (n4505185596)
+        - Rüsselsheim (n108112922)
+        - Rüsselsheim Opelwerk (n30922188)
+        - Mainz-Bischofsheim (n4371485220)
+        - Mainz-Gustavsburg (n26773593)
+        - Mainz Römisches Theater (n30899311)
+        - Mainz Hbf (n7141879068)
+        - Mainz Nord (n30779411)
+        - Wiesbaden Ost (n428648266)
+        - Wiesbaden Hauptbahnhof (n1693161658)
 
-    name: 'S8: Wiesbaden <=> Hanau'
+
     stations: 
       - Wiesbaden Hbf
       - Wiesbaden Ost
@@ -675,11 +671,12 @@ routes:
       - Steinheim/Main (Hanau)
       - Hanau Hbf
 
-    ref: S8
-    type: train
+    colour: '#d7df23'
     station_count: 29
   - 
-    colour: '#91268f'
+    name: 'S9: Wiesbaden <=> Hanau'
+    type: train
+    ref: S9
     itineraries: 
       r3415112: 
         - Hanau Hbf (n33640346)
@@ -738,7 +735,6 @@ routes:
         - Hanau Hbf (n33640346)
 
 
-    name: 'S9: Wiesbaden <=> Hanau'
     stations: 
       - Hanau Hbf
       - Steinheim/Main (Hanau)
@@ -767,9 +763,13 @@ routes:
       - Wiesbaden Ost
       - Wiesbaden Hbf
 
-    ref: S9
-    type: train
+    colour: '#91268f'
     station_count: 26
+
+transfers: 
+  - 
+    - Frankfurt (Main) Hauptbahnhof (r233704)
+    - Frankfurt Hbf (tief) (r1915166)
 
 stations: 
   - Bad Homburg (n4203880589)

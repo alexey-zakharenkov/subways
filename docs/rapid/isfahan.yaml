@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#008033'
+    name: خط ۱
+    type: light_rail
+    ref: 1
     itineraries: 
       r7705632: 
         - مترو صفه (n7712005418)
@@ -50,7 +50,6 @@ routes:
         - مترو صفه (n7712005418)
 
 
-    name: خط ۱
     stations: 
       - صفه
       - کوی امام
@@ -73,9 +72,10 @@ routes:
       - بهارستان
       - قدس
 
-    ref: 1
-    type: light_rail
+    colour: '#008033'
     station_count: 20
+
+transfers: 
 
 stations: 
   - آزادی (n7077111839)

@@ -1,12 +1,9 @@
 
-transfers: 
-  - 
-    - 南门兜 (r10458691)
-    - 南门兜 (r10458692)
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: 福州轨道交通一号线
+    type: subway
+    ref: 1
     itineraries: 
       r7895187: 
         - 福州火车南站 (n7076314532)
@@ -54,7 +51,6 @@ routes:
         - 福州火车南站 (n7076314532)
 
 
-    name: 福州轨道交通一号线
     stations: 
       - 象峰
       - 秀山
@@ -78,11 +74,12 @@ routes:
       - 福州火车南站
       - 南门兜
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 21
   - 
-    colour: '#00643a'
+    name: 福州轨道交通二号线
+    type: subway
+    ref: 2
     itineraries: 
       r6441135: 
         - 苏洋 (n7076285149)
@@ -132,7 +129,6 @@ routes:
         - 苏洋 (n7076285149)
 
 
-    name: 福州轨道交通二号线
     stations: 
       - 洋里站
       - 鼓山站
@@ -157,9 +153,13 @@ routes:
       - 沙堤
       - 苏洋
 
-    ref: 2
-    type: subway
+    colour: '#00643a'
     station_count: 22
+
+transfers: 
+  - 
+    - 南门兜 (r10458691)
+    - 南门兜 (r10458692)
 
 stations: 
   - 三叉街 (n4043025503)

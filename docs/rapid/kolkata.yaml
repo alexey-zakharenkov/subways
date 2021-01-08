@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#008000'
+    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
+    type: subway
+    ref: 1
     itineraries: 
       r8033916: 
         - Kavi Subhash (n5421533467)
@@ -58,38 +58,38 @@ routes:
         - Kavi Subhash (n5421533467)
 
 
-    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
     stations: 
-      - Noapara
-      - Dum Dum
-      - Belgachia
-      - Shyambazar
-      - Shobhabazar Sutanuti
-      - Girish Park
-      - Mahatma Gandhi Road
-      - Central
-      - Chandni Chowk
-      - Esplanade
-      - Park Street
-      - Maidan
-      - Rabindra Sadan
-      - Netaji Bhavan
-      - Jatin Das Park
-      - Kalighat
-      - Rabindra Sarobar
-      - Mahanayak Uttam Kumar
-      - Netaji
-      - Masterda Surya Sen
-      - Geetanjali
-      - Kavi Nazrul
-      - Shahid Khudiram
       - Kavi Subhash
+      - Shahid Khudiram
+      - Kavi Nazrul
+      - Geetanjali
+      - Masterda Surya Sen
+      - Netaji
+      - Mahanayak Uttam Kumar
+      - Rabindra Sarobar
+      - Kalighat
+      - Jatin Das Park
+      - Netaji Bhavan
+      - Rabindra Sadan
+      - Maidan
+      - Park Street
+      - Esplanade
+      - Chandni Chowk
+      - Central
+      - Mahatma Gandhi Road
+      - Girish Park
+      - Shobhabazar Sutanuti
+      - Shyambazar
+      - Belgachia
+      - Dum Dum
+      - Noapara
 
-    ref: 1
-    type: subway
+    colour: '#008000'
     station_count: 24
   - 
-    colour: '#ff0000'
+    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
+    type: subway
+    ref: 2
     itineraries: 
       r11720071: 
         - Phoolbagan (n7976140072)
@@ -110,7 +110,6 @@ routes:
         - Phoolbagan (n7976140072)
 
 
-    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
     stations: 
       - Salt Lake Sector V
       - Karunamoyee
@@ -120,9 +119,10 @@ routes:
       - Salt Lake Stadium
       - Phoolbagan
 
-    ref: 2
-    type: subway
+    colour: '#ff0000'
     station_count: 7
+
+transfers: 
 
 stations: 
   - Belgachia (n5421548359)

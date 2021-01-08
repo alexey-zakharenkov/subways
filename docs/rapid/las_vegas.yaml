@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#133d8c'
+    name: Las Vegas Monorail
+    type: monorail
+    ref: M
     itineraries: 
       r5936155: 
         - MGM Grand (n6573554393)
@@ -24,7 +24,6 @@ routes:
         - MGM Grand (n6573554393)
 
 
-    name: Las Vegas Monorail
     stations: 
       - SLS
       - Westgate
@@ -34,9 +33,10 @@ routes:
       - Bally's / Paris Las Vegas
       - MGM Grand
 
-    ref: M
-    type: monorail
+    colour: '#133d8c'
     station_count: 7
+
+transfers: 
 
 stations: 
   - Bally's / Paris Las Vegas (n6573554392)

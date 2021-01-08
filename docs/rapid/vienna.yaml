@@ -1,37 +1,9 @@
 
-transfers: 
-  - 
-    - Karlsplatz U1 (r7672136)
-    - Karlsplatz U2 (r7672143)
-    - Karlsplatz U4 (r7672141)
-  - 
-    - Landstraße U3 (r7672144)
-    - Landstraße U4 (r7672135)
-  - 
-    - Praterstern U1 (r7681742)
-    - Praterstern U2 (r7672134)
-  - 
-    - Schottenring U2 (r7672133)
-    - Schottenring U4 (r7672140)
-  - 
-    - Schwedenplatz U1 (r7672132)
-    - Schwedenplatz U4 (r7672147)
-  - 
-    - Spittelau U4 (r7672145)
-    - Spittelau U6 (r7672131)
-  - 
-    - Stephansplatz U1 (r7672142)
-    - Stephansplatz U3 (r7672130)
-  - 
-    - Volkstheater U2 (r7672129)
-    - Volkstheater U3 (r7672139)
-  - 
-    - Westbahnhof U3 (r7672128)
-    - Westbahnhof U6 (r7672127)
-
 routes: 
   - 
-    colour: '#e20613'
+    name: U1 Oberlaa <=> Leopoldau
+    type: subway
+    ref: U1
     itineraries: 
       r22494: 
         - Oberlaa (n2018072722)
@@ -86,38 +58,38 @@ routes:
         - Oberlaa (n2018072722)
 
 
-    name: U1 Oberlaa <=> Leopoldau
     stations: 
-      - Oberlaa
-      - Neulaa
-      - Alaudagasse
-      - Altes Landgut
-      - Troststraße
-      - Reumannplatz
-      - Keplerplatz
-      - Hauptbahnhof
-      - Taubstummengasse
-      - Karlsplatz U1
-      - Stephansplatz U1
-      - Schwedenplatz U1
-      - Nestroyplatz
-      - Praterstern U1
-      - Vorgartenstraße
-      - Donauinsel
-      - Kaisermühlen VIC
-      - Alte Donau
-      - Kagran
-      - Kagraner Platz
-      - Rennbahnweg
-      - Aderklaaer Straße
-      - Großfeldsiedlung
       - Leopoldau
+      - Großfeldsiedlung
+      - Aderklaaer Straße
+      - Rennbahnweg
+      - Kagraner Platz
+      - Kagran
+      - Alte Donau
+      - Kaisermühlen VIC
+      - Donauinsel
+      - Vorgartenstraße
+      - Praterstern U1
+      - Nestroyplatz
+      - Schwedenplatz U1
+      - Stephansplatz U1
+      - Karlsplatz U1
+      - Taubstummengasse
+      - Hauptbahnhof
+      - Keplerplatz
+      - Reumannplatz
+      - Troststraße
+      - Altes Landgut
+      - Alaudagasse
+      - Neulaa
+      - Oberlaa
 
-    ref: U1
-    type: subway
+    colour: '#e20613'
     station_count: 24
   - 
-    colour: '#a762a4'
+    name: U2 Seestadt <=> Karlsplatz
+    type: subway
+    ref: U2
     itineraries: 
       r2919734: 
         - Seestadt (n3598308198)
@@ -164,7 +136,6 @@ routes:
         - Seestadt (n3598308198)
 
 
-    name: U2 Seestadt <=> Karlsplatz
     stations: 
       - Seestadt
       - Aspern Nord
@@ -187,11 +158,12 @@ routes:
       - Museumsquartier
       - Karlsplatz U2
 
-    ref: U2
-    type: subway
+    colour: '#a762a4'
     station_count: 20
   - 
-    colour: '#ef7c00'
+    name: U3 Ottakring <=> Simmering
+    type: subway
+    ref: U3
     itineraries: 
       r20309: 
         - Ottakring (n4228503593)
@@ -240,7 +212,6 @@ routes:
         - Ottakring (n4228503593)
 
 
-    name: U3 Ottakring <=> Simmering
     stations: 
       - Simmering
       - Enkplatz
@@ -264,33 +235,13 @@ routes:
       - Wien Kendlerstraße
       - Ottakring
 
-    ref: U3
-    type: subway
+    colour: '#ef7c00'
     station_count: 21
   - 
-    colour: '#029540'
+    name: U4 Hütteldorf <=> Heiligenstadt
+    type: subway
+    ref: U4
     itineraries: 
-      r2852864: 
-        - Hütteldorf (n3535818951)
-        - Ober St. Veit (n3993274360)
-        - Unter St. Veit (n3993274362)
-        - Braunschweiggasse (n3993274357)
-        - Hietzing (n3993274358)
-        - Schönbrunn (n3993274361)
-        - Meidling Hauptstraße (n1352828685)
-        - Längenfeldgasse (n3993274359)
-        - Margaretengürtel (n3993342690)
-        - Kettenbrückengasse (n3993342689)
-        - Karlsplatz (n3503264091)
-        - Stadtpark (n3993298632)
-        - Landstraße (n4003949409)
-        - Schwedenplatz (n4003977156)
-        - Schottenring (n4560843528)
-        - Roßauer Lände (n4003901213)
-        - Friedensbrücke (n4003901212)
-        - Spittelau (n3488513525)
-        - Heiligenstadt (n3488454904)
-
       r5954448: 
         - Heiligenstadt (n3488454904)
         - Spittelau (n3488513525)
@@ -312,34 +263,55 @@ routes:
         - Ober St. Veit (n3993274360)
         - Hütteldorf (n3535818951)
 
+      r2852864: 
+        - Hütteldorf (n3535818951)
+        - Ober St. Veit (n3993274360)
+        - Unter St. Veit (n3993274362)
+        - Braunschweiggasse (n3993274357)
+        - Hietzing (n3993274358)
+        - Schönbrunn (n3993274361)
+        - Meidling Hauptstraße (n1352828685)
+        - Längenfeldgasse (n3993274359)
+        - Margaretengürtel (n3993342690)
+        - Kettenbrückengasse (n3993342689)
+        - Karlsplatz (n3503264091)
+        - Stadtpark (n3993298632)
+        - Landstraße (n4003949409)
+        - Schwedenplatz (n4003977156)
+        - Schottenring (n4560843528)
+        - Roßauer Lände (n4003901213)
+        - Friedensbrücke (n4003901212)
+        - Spittelau (n3488513525)
+        - Heiligenstadt (n3488454904)
 
-    name: U4 Hütteldorf <=> Heiligenstadt
+
     stations: 
-      - Hütteldorf
-      - Ober St. Veit
-      - Unter St. Veit
-      - Wien Braunschweiggasse
-      - Hietzing
-      - Schönbrunn
-      - Meidling Hauptstraße
-      - Längenfeldgasse
-      - Wien Margaretengürtel
-      - Kettenbrückengasse
-      - Karlsplatz U4
-      - Wien Stadtpark
-      - Landstraße U4
-      - Schwedenplatz U4
-      - Schottenring U4
-      - Wien Roßauer Lände
-      - Wien Friedensbrücke
-      - Spittelau U4
       - Bahnhof Heiligenstadt
+      - Spittelau U4
+      - Wien Friedensbrücke
+      - Wien Roßauer Lände
+      - Schottenring U4
+      - Schwedenplatz U4
+      - Landstraße U4
+      - Wien Stadtpark
+      - Karlsplatz U4
+      - Kettenbrückengasse
+      - Wien Margaretengürtel
+      - Längenfeldgasse
+      - Meidling Hauptstraße
+      - Schönbrunn
+      - Hietzing
+      - Wien Braunschweiggasse
+      - Unter St. Veit
+      - Ober St. Veit
+      - Hütteldorf
 
-    ref: U4
-    type: subway
+    colour: '#029540'
     station_count: 19
   - 
-    colour: '#9c6830'
+    name: U6 Siebenhirten <=> Floridsdorf
+    type: subway
+    ref: U6
     itineraries: 
       r2853012: 
         - Siebenhirten (n4005731390)
@@ -394,7 +366,6 @@ routes:
         - Siebenhirten (n4005731390)
 
 
-    name: U6 Siebenhirten <=> Floridsdorf
     stations: 
       - Wien Siebenhirten
       - Perfektastraße
@@ -421,9 +392,38 @@ routes:
       - Neue Donau
       - Floridsdorf
 
-    ref: U6
-    type: subway
+    colour: '#9c6830'
     station_count: 24
+
+transfers: 
+  - 
+    - Karlsplatz U1 (r7672136)
+    - Karlsplatz U2 (r7672143)
+    - Karlsplatz U4 (r7672141)
+  - 
+    - Landstraße U3 (r7672144)
+    - Landstraße U4 (r7672135)
+  - 
+    - Praterstern U1 (r7681742)
+    - Praterstern U2 (r7672134)
+  - 
+    - Schottenring U2 (r7672133)
+    - Schottenring U4 (r7672140)
+  - 
+    - Schwedenplatz U1 (r7672132)
+    - Schwedenplatz U4 (r7672147)
+  - 
+    - Spittelau U4 (r7672145)
+    - Spittelau U6 (r7672131)
+  - 
+    - Stephansplatz U1 (r7672142)
+    - Stephansplatz U3 (r7672130)
+  - 
+    - Volkstheater U2 (r7672129)
+    - Volkstheater U3 (r7672139)
+  - 
+    - Westbahnhof U3 (r7672128)
+    - Westbahnhof U6 (r7672127)
 
 stations: 
   - Aderklaaer Straße (n4155298891)

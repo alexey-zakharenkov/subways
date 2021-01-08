@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ef8016'
+    name: Elron Tallinn <--> Aegviidu
+    type: light_rail
+    ref: Elron Tallinn <--> Aegviidu
     itineraries: 
       r1405240: 
         - Tallinn (n650927310)
@@ -36,46 +36,28 @@ routes:
         - Tallinn (n650927310)
 
 
-    name: Elron Tallinn <--> Aegviidu
     stations: 
-      - Tallinn
-      - Kitseküla
-      - Ülemiste
-      - Vesse
-      - Lagedi
-      - Kulli
-      - Aruküla
-      - Raasiku
-      - Parila
-      - Kehra
-      - Lahinguvälja
-      - Mustjõe
       - Aegviidu
+      - Mustjõe
+      - Lahinguvälja
+      - Kehra
+      - Parila
+      - Raasiku
+      - Aruküla
+      - Kulli
+      - Lagedi
+      - Vesse
+      - Ülemiste
+      - Kitseküla
+      - Tallinn
 
-    ref: Elron Tallinn <--> Aegviidu
-    type: light_rail
+    colour: '#ef8016'
     station_count: 13
   - 
-    colour: '#ef8016'
+    name: Elron Tallinn <--> Kloogaranna
+    type: light_rail
+    ref: Elron Tallinn <--> Kloogaranna
     itineraries: 
-      r9726760: 
-        - Kloogaranna (n30153594)
-        - Klooga (n790225001)
-        - Niitvälja (n30153584)
-        - Keila (n30153569)
-        - Saue (n29163264)
-        - Padula (n324566863)
-        - Urda (n6573243428)
-        - Laagri (n29163173)
-        - Pääsküla (n29163112)
-        - Kivimäe (n29163110)
-        - Hiiu (n27471086)
-        - Nõmme (n27471088)
-        - Rahumäe (n6572486459)
-        - Järve (n6573243441)
-        - Lilleküla (n27499361)
-        - Tallinn (n650927310)
-
       r1405558: 
         - Tallinn (n650927310)
         - Lilleküla (n27499361)
@@ -94,8 +76,25 @@ routes:
         - Klooga (n790225001)
         - Kloogaranna (n30153594)
 
+      r9726760: 
+        - Kloogaranna (n30153594)
+        - Klooga (n790225001)
+        - Niitvälja (n30153584)
+        - Keila (n30153569)
+        - Saue (n29163264)
+        - Padula (n324566863)
+        - Urda (n6573243428)
+        - Laagri (n29163173)
+        - Pääsküla (n29163112)
+        - Kivimäe (n29163110)
+        - Hiiu (n27471086)
+        - Nõmme (n27471088)
+        - Rahumäe (n6572486459)
+        - Järve (n6573243441)
+        - Lilleküla (n27499361)
+        - Tallinn (n650927310)
 
-    name: Elron Tallinn <--> Kloogaranna
+
     stations: 
       - Tallinn
       - Lilleküla
@@ -114,33 +113,13 @@ routes:
       - Klooga
       - Kloogaranna
 
-    ref: Elron Tallinn <--> Kloogaranna
-    type: light_rail
+    colour: '#ef8016'
     station_count: 16
   - 
-    colour: '#ef8016'
+    name: Elron Tallinn <--> Paldiski
+    type: light_rail
+    ref: Elron Tallinn <--> Paldiski
     itineraries: 
-      r1405182: 
-        - Tallinn (n650927310)
-        - Lilleküla (n27499361)
-        - Järve (n6573243441)
-        - Rahumäe (n6572486459)
-        - Nõmme (n27471088)
-        - Hiiu (n27471086)
-        - Kivimäe (n29163110)
-        - Pääsküla (n29163112)
-        - Laagri (n29163173)
-        - Urda (n6573243428)
-        - Padula (n324566863)
-        - Saue (n29163264)
-        - Valingu (n27145891)
-        - Keila (n30153569)
-        - Niitvälja (n30153584)
-        - Klooga (n790225001)
-        - Põllküla (n57577653)
-        - Laoküla (n660788046)
-        - Paldiski (n30402685)
-
       r9726752: 
         - Paldiski (n30402685)
         - Laoküla (n660788046)
@@ -162,8 +141,28 @@ routes:
         - Lilleküla (n27499361)
         - Tallinn (n650927310)
 
+      r1405182: 
+        - Tallinn (n650927310)
+        - Lilleküla (n27499361)
+        - Järve (n6573243441)
+        - Rahumäe (n6572486459)
+        - Nõmme (n27471088)
+        - Hiiu (n27471086)
+        - Kivimäe (n29163110)
+        - Pääsküla (n29163112)
+        - Laagri (n29163173)
+        - Urda (n6573243428)
+        - Padula (n324566863)
+        - Saue (n29163264)
+        - Valingu (n27145891)
+        - Keila (n30153569)
+        - Niitvälja (n30153584)
+        - Klooga (n790225001)
+        - Põllküla (n57577653)
+        - Laoküla (n660788046)
+        - Paldiski (n30402685)
 
-    name: Elron Tallinn <--> Paldiski
+
     stations: 
       - Paldiski
       - Laoküla
@@ -185,11 +184,12 @@ routes:
       - Lilleküla
       - Tallinn
 
-    ref: Elron Tallinn <--> Paldiski
-    type: light_rail
+    colour: '#ef8016'
     station_count: 19
   - 
-    colour: '#ef8016'
+    name: Elron Tallinn <--> Riisipere
+    type: light_rail
+    ref: Elron Tallinn <--> Riisipere
     itineraries: 
       r9725779: 
         - Tallinn (n650927310)
@@ -238,33 +238,33 @@ routes:
         - Tallinn (n650927310)
 
 
-    name: Elron Tallinn <--> Riisipere
     stations: 
-      - Riisipere
-      - Jaanika
-      - Laitse
-      - Kibuna
-      - Vasalemma
-      - Kulna
-      - Keila
-      - Valingu
-      - Saue
-      - Padula
-      - Urda
-      - Laagri
-      - Pääsküla
-      - Kivimäe
-      - Hiiu
-      - Nõmme
-      - Rahumäe
-      - Järve
-      - Tondi
-      - Lilleküla
       - Tallinn
+      - Lilleküla
+      - Tondi
+      - Järve
+      - Rahumäe
+      - Nõmme
+      - Hiiu
+      - Kivimäe
+      - Pääsküla
+      - Laagri
+      - Urda
+      - Padula
+      - Saue
+      - Valingu
+      - Keila
+      - Kulna
+      - Vasalemma
+      - Kibuna
+      - Laitse
+      - Jaanika
+      - Riisipere
 
-    ref: Elron Tallinn <--> Riisipere
-    type: light_rail
+    colour: '#ef8016'
     station_count: 21
+
+transfers: 
 
 stations: 
   - Aegviidu (n323110380)

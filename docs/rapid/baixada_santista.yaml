@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#93c21c'
+    name: Linha 1 do VLT da Baixada Santista
+    type: light_rail
+    ref: 1
     itineraries: 
       r7252643: 
         - Terminal Porto (n6399257813)
@@ -40,27 +40,27 @@ routes:
         - Terminal Porto (n6399257813)
 
 
-    name: Linha 1 do VLT da Baixada Santista
     stations: 
-      - Terminal Porto
-      - Conselheiro Nébias
-      - Washington Luis
-      - Ana Costa
-      - Bernardino de Campos
-      - Pinheiro Machado
-      - Nossa Senhora de Lourdes
-      - João Ribeiro
-      - Itararé
-      - José Monteiro
-      - Nossa Senhora das Graças
-      - Emmerich
-      - São Vicente
-      - Mascarenhas
       - Terminal Barreiros
+      - Mascarenhas
+      - São Vicente
+      - Emmerich
+      - Nossa Senhora das Graças
+      - José Monteiro
+      - Itararé
+      - João Ribeiro
+      - Nossa Senhora de Lourdes
+      - Pinheiro Machado
+      - Bernardino de Campos
+      - Ana Costa
+      - Washington Luis
+      - Conselheiro Nébias
+      - Terminal Porto
 
-    ref: 1
-    type: light_rail
+    colour: '#93c21c'
     station_count: 15
+
+transfers: 
 
 stations: 
   - Ana Costa (n6403164591)

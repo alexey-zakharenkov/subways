@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#004d9f'
+    name: The Tide
+    type: light_rail
+    ref: Tide
     itineraries: 
       r6950524: 
         - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
@@ -32,7 +32,6 @@ routes:
         - Eastern Virginia Medical College/Fort Norfolk Station (n4892157752)
 
 
-    name: The Tide
     stations: 
       - EVMC/Fort Norfolk Station
       - York Street/Freemason
@@ -46,9 +45,10 @@ routes:
       - Military Highway Station
       - Newtown Road
 
-    ref: Tide
-    type: light_rail
+    colour: '#004d9f'
     station_count: 11
+
+transfers: 
 
 stations: 
   - Ballentine / Broad Creek Station WB (n6766890685)

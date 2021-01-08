@@ -1,19 +1,19 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Porto-Nesima
+    type: subway
+    ref: 1
     itineraries: 
-      r7269755: 
-        - Porto (n7758321985)
-        - Galatea (n307425339)
-        - Italia (n307425268)
-        - Giuffrida (n299170087)
-        - Borgo (n307423725)
-        - Milo (n4840555502)
-        - San Nullo (n2841490395)
+      r7269754: 
         - Nesima (n5191380041)
+        - San Nullo (n2841490395)
+        - Milo (n4840555502)
+        - Borgo (n307423725)
+        - Giuffrida (n299170087)
+        - Italia (n307425268)
+        - Galatea (n307425339)
+        - Porto (n7758321985)
 
       r6878037: 
         - Nesima (n5191380041)
@@ -37,18 +37,17 @@ routes:
         - San Nullo (n2841490395)
         - Nesima (n5191380041)
 
-      r7269754: 
-        - Nesima (n5191380041)
-        - San Nullo (n2841490395)
-        - Milo (n4840555502)
-        - Borgo (n307423725)
-        - Giuffrida (n299170087)
-        - Italia (n307425268)
-        - Galatea (n307425339)
+      r7269755: 
         - Porto (n7758321985)
+        - Galatea (n307425339)
+        - Italia (n307425268)
+        - Giuffrida (n299170087)
+        - Borgo (n307423725)
+        - Milo (n4840555502)
+        - San Nullo (n2841490395)
+        - Nesima (n5191380041)
 
 
-    name: Porto-Nesima
     stations: 
       - Porto
       - Galatea
@@ -58,12 +57,13 @@ routes:
       - Milo
       - San Nullo
       - Nesima
-      - Stesicoro
       - Giovanni XXIII
+      - Stesicoro
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 10
+
+transfers: 
 
 stations: 
   - Borgo (n307423725)

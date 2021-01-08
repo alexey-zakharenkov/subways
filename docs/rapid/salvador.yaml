@@ -1,12 +1,9 @@
 
-transfers: 
-  - 
-    - Acesso Norte (r7803001)
-    - Acesso Norte (r7803002)
-
 routes: 
   - 
-    colour: '#791714'
+    name: Linha 1
+    type: subway
+    ref: 1
     itineraries: 
       r6774703: 
         - Pirajá (w514871898)
@@ -29,37 +26,23 @@ routes:
         - Pirajá (w514871898)
 
 
-    name: Linha 1
     stations: 
-      - Pirajá
-      - Bom Juá
-      - Retiro
-      - Acesso Norte
-      - Bonocô
-      - Brotas
-      - Campo da Pólvora
       - Lapa
+      - Campo da Pólvora
+      - Brotas
+      - Bonocô
+      - Acesso Norte
+      - Retiro
+      - Bom Juá
+      - Pirajá
 
-    ref: 1
-    type: subway
+    colour: '#791714'
     station_count: 8
   - 
-    colour: '#02406f'
+    name: Linha 2
+    type: subway
+    ref: 2
     itineraries: 
-      r7857257: 
-        - Aeroporto (w531671017)
-        - Mussurunga (w492578619)
-        - Bairro da Paz (w525007248)
-        - Tamburugy (w492578621)
-        - Flamboyant (w492578622)
-        - Pituaçu (w492578624)
-        - CAB (w492578626)
-        - Imbuí (w460845823)
-        - Pernambués (w432297470)
-        - Rodoviária (w116425037)
-        - Detran (n4313768777)
-        - Acesso Norte (n5330886492)
-
       r6771624: 
         - Acesso Norte (n5330886492)
         - Detran (n4313768777)
@@ -74,25 +57,42 @@ routes:
         - Mussurunga (w492578619)
         - Aeroporto (w531671017)
 
+      r7857257: 
+        - Aeroporto (w531671017)
+        - Mussurunga (w492578619)
+        - Bairro da Paz (w525007248)
+        - Tamburugy (w492578621)
+        - Flamboyant (w492578622)
+        - Pituaçu (w492578624)
+        - CAB (w492578626)
+        - Imbuí (w460845823)
+        - Pernambués (w432297470)
+        - Rodoviária (w116425037)
+        - Detran (n4313768777)
+        - Acesso Norte (n5330886492)
 
-    name: Linha 2
+
     stations: 
-      - Aeroporto
-      - Estação Mussurunga
-      - Estação Bairro da Paz
-      - Tamburugy
-      - Flamboyant
-      - Pituaçu
-      - CAB
-      - Imbuí
-      - Pernambués
-      - Rodoviária
-      - Detran
       - Acesso Norte
+      - Detran
+      - Rodoviária
+      - Pernambués
+      - Imbuí
+      - CAB
+      - Pituaçu
+      - Flamboyant
+      - Tamburugy
+      - Estação Bairro da Paz
+      - Estação Mussurunga
+      - Aeroporto
 
-    ref: 2
-    type: subway
+    colour: '#02406f'
     station_count: 12
+
+transfers: 
+  - 
+    - Acesso Norte (r7803001)
+    - Acesso Norte (r7803002)
 
 stations: 
   - Acesso Norte (n5330886492)

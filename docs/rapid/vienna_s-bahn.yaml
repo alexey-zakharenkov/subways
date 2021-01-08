@@ -1,12 +1,12 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#343593'
+    name: Schnellbahn S1
+    type: train
+    ref: S1
     itineraries: 
       r105397: 
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Matzleinsdorfer Platz (n3127678348)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Quartier Belvedere (n3308392301)
@@ -47,37 +47,37 @@ routes:
         - Wien Quartier Belvedere (n3308392301)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Matzleinsdorfer Platz (n3127678348)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
 
 
-    name: Schnellbahn S1
     stations: 
-      - Marchegg Bahnhof
-      - Oberweiden Bahnhof
-      - Gänserndorf Bahnhof
-      - Silberwald
-      - Strasshof
-      - Helmahof
-      - Deutsch Wagram
-      - Wien Süßenbrunn
-      - Leopoldau
-      - Wien Siemensstraße
-      - Floridsdorf
-      - Handelskai
-      - Traisengasse
-      - Praterstern Railway Station
-      - Landstraße-Wien Mitte
-      - Rennweg
-      - Wien Quartier Belvedere
-      - Hauptbahnhof
-      - Wien Matzleinsdorfer Platz
       - Meidling
+      - Wien Matzleinsdorfer Platz
+      - Hauptbahnhof
+      - Wien Quartier Belvedere
+      - Rennweg
+      - Landstraße-Wien Mitte
+      - Praterstern Railway Station
+      - Traisengasse
+      - Handelskai
+      - Floridsdorf
+      - Wien Siemensstraße
+      - Leopoldau
+      - Wien Süßenbrunn
+      - Deutsch Wagram
+      - Helmahof
+      - Strasshof
+      - Silberwald
+      - Gänserndorf Bahnhof
+      - Oberweiden Bahnhof
+      - Marchegg Bahnhof
 
-    ref: S1
-    type: train
+    colour: '#343593'
     station_count: 20
   - 
-    colour: '#20bcbd'
+    name: Schnellbahn S2
+    type: train
+    ref: S2
     itineraries: 
       r63301: 
         - Laa an der Thaya (n4151036817)
@@ -112,7 +112,7 @@ routes:
         - Wien Quartier Belvedere (n3308392301)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Matzleinsdorfer Platz (n3127678348)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Hetzendorf (n2691315726)
         - Wien Atzgersdorf (n4314093360)
         - Wien Liesing (n3324394753)
@@ -127,7 +127,7 @@ routes:
         - Wien Liesing (n3324394753)
         - Wien Atzgersdorf (n4314093360)
         - Wien Hetzendorf (n2691315726)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Matzleinsdorfer Platz (n3127678348)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Quartier Belvedere (n3308392301)
@@ -162,7 +162,6 @@ routes:
         - Laa an der Thaya (n4151036817)
 
 
-    name: Schnellbahn S2
     stations: 
       - Laa an der Thaya
       - Kottingneusiedl
@@ -204,12 +203,59 @@ routes:
       - Brunn-Maria Enzersdorf Bahnhof
       - Mödling Bahnhof
 
-    ref: S2
-    type: train
+    colour: '#20bcbd'
     station_count: 39
   - 
-    colour: '#9d0921'
+    name: Schnellbahn S3
+    type: train
+    ref: S3
     itineraries: 
+      r1641881: 
+        - Wiener Neustadt Hbf (n2874038819)
+        - Wiener Neustadt Nord (n2644603892)
+        - Theresienfeld (n2644620800)
+        - Felixdorf (n3321134688)
+        - Sollenau (n2673195941)
+        - Leobersdorf (n3324325619)
+        - Kottingbrunn (n5890350095)
+        - Bad Vöslau (n3324325618)
+        - Baden (n3244697567)
+        - Pfaffstätten (n419610148)
+        - Gumpoldskirchen (n4807735159)
+        - Guntramsdorf Thallern (n3975438609)
+        - Mödling (n3324369161)
+        - Brunn-Maria Enzersdorf (n3975440034)
+        - Perchtoldsdorf (n4345375447)
+        - Wien Liesing (n3324394753)
+        - Wien Atzgersdorf (n4314093360)
+        - Wien Hetzendorf (n2691315726)
+        - Wien Meidling (n66432827)
+        - Wien Matzleinsdorfer Platz (n3127678348)
+        - Wien Hauptbahnhof (n1839787470)
+        - Wien Quartier Belvedere (n3308392301)
+        - Wien Rennweg (n3309570451)
+        - Wien Mitte (n3309570449)
+        - Wien Praterstern (n3309570450)
+        - Wien Traisengasse (n3309570452)
+        - Handelskai (n3324474915)
+        - Floridsdorf (n4005736525)
+        - Wien Brünner  Straße (n3310997802)
+        - Wien Jedlersdorf (n3310963985)
+        - Wien Strebersdorf (n3310963986)
+        - Langenzersdorf (n3397575014)
+        - Bisamberg (n3397575004)
+        - Korneuburg (n3395076835)
+        - Leobendorf-Burg Kreuzenstein (n3396773141)
+        - Spillern (n3396805671)
+        - Stockerau (n3394643718)
+        - Oberolberndorf (n1747390770)
+        - Sierndorf (n3398123357)
+        - Höbersdorf (n270534452)
+        - Schönborn-Mallebarn (n1747578410)
+        - Göllersdorf (n3398745162)
+        - Breitenwaida (n704415649)
+        - Hollabrunn (n3398770659)
+
       r63305: 
         - Hollabrunn (n3398770659)
         - Breitenwaida (n704415649)
@@ -236,7 +282,7 @@ routes:
         - Wien Quartier Belvedere (n3308392301)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Matzleinsdorfer Platz (n3127678348)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Hetzendorf (n2691315726)
         - Wien Atzgersdorf (n4314093360)
         - Wien Liesing (n3324394753)
@@ -256,54 +302,7 @@ routes:
         - Wiener Neustadt Nord (n2644603892)
         - Wiener Neustadt Hbf (n2874038819)
 
-      r1641881: 
-        - Wiener Neustadt Hbf (n2874038819)
-        - Wiener Neustadt Nord (n2644603892)
-        - Theresienfeld (n2644620800)
-        - Felixdorf (n3321134688)
-        - Sollenau (n2673195941)
-        - Leobersdorf (n3324325619)
-        - Kottingbrunn (n5890350095)
-        - Bad Vöslau (n3324325618)
-        - Baden (n3244697567)
-        - Pfaffstätten (n419610148)
-        - Gumpoldskirchen (n4807735159)
-        - Guntramsdorf Thallern (n3975438609)
-        - Mödling (n3324369161)
-        - Brunn-Maria Enzersdorf (n3975440034)
-        - Perchtoldsdorf (n4345375447)
-        - Wien Liesing (n3324394753)
-        - Wien Atzgersdorf (n4314093360)
-        - Wien Hetzendorf (n2691315726)
-        - Bahnhof Meidling (n3071028227)
-        - Wien Matzleinsdorfer Platz (n3127678348)
-        - Wien Hauptbahnhof (n1839787470)
-        - Wien Quartier Belvedere (n3308392301)
-        - Wien Rennweg (n3309570451)
-        - Wien Mitte (n3309570449)
-        - Wien Praterstern (n3309570450)
-        - Wien Traisengasse (n3309570452)
-        - Handelskai (n3324474915)
-        - Floridsdorf (n4005736525)
-        - Wien Brünner  Straße (n3310997802)
-        - Wien Jedlersdorf (n3310963985)
-        - Wien Strebersdorf (n3310963986)
-        - Langenzersdorf (n3397575014)
-        - Bisamberg (n3397575004)
-        - Korneuburg (n3395076835)
-        - Leobendorf-Burg Kreuzenstein (n3396773141)
-        - Spillern (n3396805671)
-        - Stockerau (n3394643718)
-        - Oberolberndorf (n1747390770)
-        - Sierndorf (n3398123357)
-        - Höbersdorf (n270534452)
-        - Schönborn-Mallebarn (n1747578410)
-        - Göllersdorf (n3398745162)
-        - Breitenwaida (n704415649)
-        - Hollabrunn (n3398770659)
 
-
-    name: Schnellbahn S3
     stations: 
       - Hollabrunn Bahnhof
       - Breitenwaida Bahnhaltestelle
@@ -350,11 +349,12 @@ routes:
       - Wiener Neustadt Nord (S-Bahn)
       - Wiener Neustadt Hauptbahnhof (S-Bahn)
 
-    ref: S3
-    type: train
+    colour: '#9d0921'
     station_count: 44
   - 
-    colour: '#9d0921'
+    name: Schnellbahn S4
+    type: train
+    ref: S4
     itineraries: 
       r7220313: 
         - Tullnerfeld (n2877829383)
@@ -380,7 +380,7 @@ routes:
         - Wien Quartier Belvedere (n3308392301)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Matzleinsdorfer Platz (n3127678348)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Hetzendorf (n2691315726)
         - Wien Atzgersdorf (n4314093360)
         - Wien Liesing (n3324394753)
@@ -419,7 +419,7 @@ routes:
         - Wien Liesing (n3324394753)
         - Wien Atzgersdorf (n4314093360)
         - Wien Hetzendorf (n2691315726)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Matzleinsdorfer Platz (n3127678348)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Quartier Belvedere (n3308392301)
@@ -445,56 +445,56 @@ routes:
         - Tullnerfeld (n2877829383)
 
 
-    name: Schnellbahn S4
     stations: 
-      - Wiener Neustadt Hauptbahnhof (S-Bahn)
-      - Wiener Neustadt Nord (S-Bahn)
-      - Theresienfeld Bahnhof
-      - Felixdorf Bahnhof
-      - Sollenau Bahnhof
-      - Leobersdorf Bahnhof
-      - Kottingbrunn
-      - Bad Vöslau Bahnhof
-      - Baden Bahnhof (S-Bahn)
-      - Pfaffstätten Bahnhof
-      - Gumpoldskirchen Bahnhof
-      - Guntramsdorf Thallern Bahnhof
-      - Mödling Bahnhof
-      - Brunn-Maria Enzersdorf Bahnhof
-      - Perchtoldsdorf
-      - Liesing
-      - Wien Atzgersdorf
-      - Hetzendorf (S-Bahn)
-      - Meidling
-      - Wien Matzleinsdorfer Platz
-      - Hauptbahnhof
-      - Wien Quartier Belvedere
-      - Rennweg
-      - Landstraße-Wien Mitte
-      - Praterstern Railway Station
-      - Traisengasse
-      - Handelskai
-      - Floridsdorf
-      - Brünner Straße
-      - Jedlersdorf
-      - Bahnhof Strebersdorf
-      - Langenzersdorf Bahnhof
-      - Bisamberg Bahnhof
-      - Korneuburg Bahnhof
-      - Leobendorf-Burg Kreuzenstein Bahnhof
-      - Spillern Bahnhof
-      - Stockerau Bahnhof
-      - Hausleiten b.Stockerau Bahnhof
-      - Gaisruck b.Stockerau Bahnhof
-      - Absdorf-Hippersdorf
-      - Tulln Stadt Bahnhof
       - Tullnerfeld Bahnhof
+      - Tulln Stadt Bahnhof
+      - Absdorf-Hippersdorf
+      - Gaisruck b.Stockerau Bahnhof
+      - Hausleiten b.Stockerau Bahnhof
+      - Stockerau Bahnhof
+      - Spillern Bahnhof
+      - Leobendorf-Burg Kreuzenstein Bahnhof
+      - Korneuburg Bahnhof
+      - Bisamberg Bahnhof
+      - Langenzersdorf Bahnhof
+      - Bahnhof Strebersdorf
+      - Jedlersdorf
+      - Brünner Straße
+      - Floridsdorf
+      - Handelskai
+      - Traisengasse
+      - Praterstern Railway Station
+      - Landstraße-Wien Mitte
+      - Rennweg
+      - Wien Quartier Belvedere
+      - Hauptbahnhof
+      - Wien Matzleinsdorfer Platz
+      - Meidling
+      - Hetzendorf (S-Bahn)
+      - Wien Atzgersdorf
+      - Liesing
+      - Perchtoldsdorf
+      - Brunn-Maria Enzersdorf Bahnhof
+      - Mödling Bahnhof
+      - Guntramsdorf Thallern Bahnhof
+      - Gumpoldskirchen Bahnhof
+      - Pfaffstätten Bahnhof
+      - Baden Bahnhof (S-Bahn)
+      - Bad Vöslau Bahnhof
+      - Kottingbrunn
+      - Leobersdorf Bahnhof
+      - Sollenau Bahnhof
+      - Felixdorf Bahnhof
+      - Theresienfeld Bahnhof
+      - Wiener Neustadt Nord (S-Bahn)
+      - Wiener Neustadt Hauptbahnhof (S-Bahn)
 
-    ref: S4
-    type: train
+    colour: '#9d0921'
     station_count: 42
   - 
-    colour: '#f05923'
+    name: Schnellbahn S40
+    type: train
+    ref: S40
     itineraries: 
       r4850563: 
         - Wien Franz-Josefs-Bahnhof (n3488513518)
@@ -565,7 +565,6 @@ routes:
         - Wien Franz-Josefs-Bahnhof (n3488513518)
 
 
-    name: Schnellbahn S40
     stations: 
       - St. Pölten Hauptbahnhof
       - St. Pölten Traisenpark
@@ -600,11 +599,12 @@ routes:
       - Spittelau
       - Wien Franz-Josefs-Bahnhof
 
-    ref: S40
-    type: train
+    colour: '#f05923'
     station_count: 32
   - 
-    colour: '#bdd542'
+    name: Schnellbahn S45
+    type: train
+    ref: S45
     itineraries: 
       r3770663: 
         - Handelskai (n3324474915)
@@ -631,7 +631,6 @@ routes:
         - Handelskai (n3324474915)
 
 
-    name: Schnellbahn S45
     stations: 
       - Hütteldorf
       - Penzing
@@ -644,11 +643,12 @@ routes:
       - Bahnhof Heiligenstadt
       - Handelskai
 
-    ref: S45
-    type: train
+    colour: '#bdd542'
     station_count: 10
   - 
-    colour: '#05aded'
+    name: Schnellbahn S50
+    type: train
+    ref: S50
     itineraries: 
       r3773484: 
         - Neulengbach (n5801667476)
@@ -695,34 +695,34 @@ routes:
         - Neulengbach (n5801667476)
 
 
-    name: Schnellbahn S50
     stations: 
-      - Neulengbach
-      - Neulengbach Stadt Bahnhof
-      - Hofstatt
-      - Maria Anzbach
-      - Unter Oberndorf
-      - Eichgraben-Altlengbach (S-Bahn)
-      - Rekawinkel Bahnhof
-      - Dürrwien Bahnhaltestelle
-      - Pressbaum
-      - Tullnerbach-Pressbaum Bahnhof
-      - Untertullnerbach Bahnhof (S-Bahn)
-      - Purkersdorf Zentrum
-      - Unterpurkersdorf Bahnhof
-      - Purkersdorf Sanatorium
-      - Wien Weidlingau
-      - Hadersdorf Bahnhof
-      - Wien Wolf in der Au
-      - Hütteldorf
-      - Penzing
       - Wien Westbahnhof
+      - Penzing
+      - Hütteldorf
+      - Wien Wolf in der Au
+      - Hadersdorf Bahnhof
+      - Wien Weidlingau
+      - Purkersdorf Sanatorium
+      - Unterpurkersdorf Bahnhof
+      - Purkersdorf Zentrum
+      - Untertullnerbach Bahnhof (S-Bahn)
+      - Tullnerbach-Pressbaum Bahnhof
+      - Pressbaum
+      - Dürrwien Bahnhaltestelle
+      - Rekawinkel Bahnhof
+      - Eichgraben-Altlengbach (S-Bahn)
+      - Unter Oberndorf
+      - Maria Anzbach
+      - Hofstatt
+      - Neulengbach Stadt Bahnhof
+      - Neulengbach
 
-    ref: S50
-    type: train
+    colour: '#05aded'
     station_count: 20
   - 
-    colour: '#9bbe46'
+    name: Schnellbahn S60
+    type: train
+    ref: S60
     itineraries: 
       r3774039: 
         - Bruck an der Leitha (n3359297214)
@@ -736,7 +736,7 @@ routes:
         - Kledering (n3111811989)
         - Wien Grillgasse (n3265275935)
         - Wien Hauptbahnhof (n1839787470)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Blumental (n2874018201)
         - Hennersdorf (n5085385669)
         - Achau (n5085385670)
@@ -765,7 +765,7 @@ routes:
         - Achau (n5085385670)
         - Hennersdorf (n5085385669)
         - Wien Blumental (n2874018201)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Grillgasse (n3265275935)
         - Kledering (n3111811989)
@@ -779,7 +779,6 @@ routes:
         - Bruck an der Leitha (n3359297214)
 
 
-    name: Schnellbahn S60
     stations: 
       - Wiener Neustadt Hauptbahnhof (S-Bahn)
       - Wiener Neustadt Civitas Nova
@@ -807,53 +806,13 @@ routes:
       - Wilfleinsdorf
       - Bruck an der Leitha Bahnhof
 
-    ref: S60
-    type: train
+    colour: '#9bbe46'
     station_count: 25
   - 
-    colour: '#ec1093'
+    name: Schnellbahn S7
+    type: train
+    ref: S7
     itineraries: 
-      r3775246: 
-        - Wolfsthal (n3330876311)
-        - Hainburg an der Donau Ungartor (n32317913)
-        - Hainburg an der Donau Personenbf (n32317926)
-        - Hainburg an der Donau Kulturfabrik (n32317930)
-        - Bad Deutsch Altenburg (n4300599672)
-        - Petronell-Carnuntum (n6844644626)
-        - Wildungsmauer (n302735255)
-        - Regelsbrunn (n6844644627)
-        - Haslau (n443011460)
-        - Maria Ellend (n4300623581)
-        - Fischamend (n3330876296)
-        - Flughafen Wien (n62823673)
-        - Mannswörth (n3329357416)
-        - Schwechat (n3329357422)
-        - Wien Kaiserebersdorf (n3329326134)
-        - Wien Zentralfriedhof (n3329319162)
-        - Wien Geiselbergstraße (n3329291522)
-        - Wien St. Marx (n3329304534)
-        - Wien Rennweg (n3309570451)
-        - Wien Mitte (n3309570449)
-        - Wien Praterstern (n3309570450)
-        - Wien Traisengasse (n3309570452)
-        - Handelskai (n3324474915)
-        - Floridsdorf (n4005736525)
-        - Wien Siemensstraße (n3313275952)
-        - Leopoldau (n67029576)
-        - Gerasdorf (n4140102487)
-        - Kapellerfeld (n4140102488)
-        - Seyring (n4140103590)
-        - Obersdorf (n4140103589)
-        - Wolkersdorf (n3923766258)
-        - Ulrichskirchen (n295690616)
-        - Schleinbach (n3923751888)
-        - Hautzendorf (n211252890)
-        - Niederkreuzstetten (n293771758)
-        - Neubau-Kreuzstetten (n3923741006)
-        - Ladendorf (n7083320733)
-        - Paasdorf (n263383953)
-        - Mistelbach (n5882660569)
-
       r63311: 
         - Mistelbach (n5882660569)
         - Paasdorf (n263383953)
@@ -895,8 +854,48 @@ routes:
         - Hainburg an der Donau Ungartor (n32317913)
         - Wolfsthal (n3330876311)
 
+      r3775246: 
+        - Wolfsthal (n3330876311)
+        - Hainburg an der Donau Ungartor (n32317913)
+        - Hainburg an der Donau Personenbf (n32317926)
+        - Hainburg an der Donau Kulturfabrik (n32317930)
+        - Bad Deutsch Altenburg (n4300599672)
+        - Petronell-Carnuntum (n6844644626)
+        - Wildungsmauer (n302735255)
+        - Regelsbrunn (n6844644627)
+        - Haslau (n443011460)
+        - Maria Ellend (n4300623581)
+        - Fischamend (n3330876296)
+        - Flughafen Wien (n62823673)
+        - Mannswörth (n3329357416)
+        - Schwechat (n3329357422)
+        - Wien Kaiserebersdorf (n3329326134)
+        - Wien Zentralfriedhof (n3329319162)
+        - Wien Geiselbergstraße (n3329291522)
+        - Wien St. Marx (n3329304534)
+        - Wien Rennweg (n3309570451)
+        - Wien Mitte (n3309570449)
+        - Wien Praterstern (n3309570450)
+        - Wien Traisengasse (n3309570452)
+        - Handelskai (n3324474915)
+        - Floridsdorf (n4005736525)
+        - Wien Siemensstraße (n3313275952)
+        - Leopoldau (n67029576)
+        - Gerasdorf (n4140102487)
+        - Kapellerfeld (n4140102488)
+        - Seyring (n4140103590)
+        - Obersdorf (n4140103589)
+        - Wolkersdorf (n3923766258)
+        - Ulrichskirchen (n295690616)
+        - Schleinbach (n3923751888)
+        - Hautzendorf (n211252890)
+        - Niederkreuzstetten (n293771758)
+        - Neubau-Kreuzstetten (n3923741006)
+        - Ladendorf (n7083320733)
+        - Paasdorf (n263383953)
+        - Mistelbach (n5882660569)
 
-    name: Schnellbahn S7
+
     stations: 
       - Mistelbach
       - Paasdorf
@@ -938,26 +937,13 @@ routes:
       - Hainburg an der Donau Ungartor
       - Wolfsthal Bahnhof
 
-    ref: S7
-    type: train
+    colour: '#ec1093'
     station_count: 39
   - 
-    colour: '#e7c21e'
+    name: Schnellbahn S80
+    type: train
+    ref: S80
     itineraries: 
-      r5736553: 
-        - Hütteldorf (n3535818951)
-        - Wien Speising (n3286379332)
-        - Bahnhof Meidling (n3071028227)
-        - Wien Matzleinsdorfer Platz (n3127678348)
-        - Wien Hauptbahnhof (n1839787470)
-        - Simmering (n117527786)
-        - Wien Haidestraße (n3327470950)
-        - Wien Praterkai (n3327470949)
-        - Stadlau (n4077783491)
-        - Wien Erzherzog-Karl-Straße (n3327739589)
-        - Wien Hirschstetten (n5709119713)
-        - Wien Aspern Nord (n3598290692)
-
       r5736565: 
         - Wien Aspern Nord (n3598290692)
         - Wien Hirschstetten (n5709119713)
@@ -968,12 +954,25 @@ routes:
         - Simmering (n117527786)
         - Wien Hauptbahnhof (n1839787470)
         - Wien Matzleinsdorfer Platz (n3127678348)
-        - Bahnhof Meidling (n3071028227)
+        - Wien Meidling (n66432827)
         - Wien Speising (n3286379332)
         - Hütteldorf (n3535818951)
 
+      r5736553: 
+        - Hütteldorf (n3535818951)
+        - Wien Speising (n3286379332)
+        - Wien Meidling (n66432827)
+        - Wien Matzleinsdorfer Platz (n3127678348)
+        - Wien Hauptbahnhof (n1839787470)
+        - Simmering (n117527786)
+        - Wien Haidestraße (n3327470950)
+        - Wien Praterkai (n3327470949)
+        - Stadlau (n4077783491)
+        - Wien Erzherzog-Karl-Straße (n3327739589)
+        - Wien Hirschstetten (n5709119713)
+        - Wien Aspern Nord (n3598290692)
 
-    name: Schnellbahn S80
+
     stations: 
       - Aspern Nord
       - Hirschstetten
@@ -988,9 +987,10 @@ routes:
       - Speising
       - Hütteldorf
 
-    ref: S80
-    type: train
+    colour: '#e7c21e'
     station_count: 12
+
+transfers: 
 
 stations: 
   - Absdorf-Hippersdorf (n3391799933)
@@ -999,7 +999,6 @@ stations:
   - Bad Deutsch Altenburg (n4300599672)
   - Bad Vöslau (n3324325618)
   - Baden (n3244697567)
-  - Bahnhof Meidling (n3071028227)
   - Bisamberg (n3397575004)
   - Breitenwaida (n704415649)
   - Bruck an der Leitha (n3359297214)
@@ -1150,6 +1149,7 @@ stations:
   - Wien Krottenbachstraße (n1418408040)
   - Wien Liesing (n3324394753)
   - Wien Matzleinsdorfer Platz (n3127678348)
+  - Wien Meidling (n66432827)
   - Wien Mitte (n3309570449)
   - Wien Nußdorf (n3488369063)
   - Wien Oberdöbling (n1418408080)

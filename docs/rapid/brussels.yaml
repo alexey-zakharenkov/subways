@@ -1,39 +1,10 @@
 
-transfers: 
-  - 
-    - 'Arts-Loi - Kunst-Wet (r7685223)'
-    - 'Arts-Loi - Kunst-Wet (r7763657)'
-  - 
-    - Simonis (r7685224)
-    - Simonis-Elisabeth (r7151510)
-
 routes: 
   - 
-    colour: '#c4008f'
+    name: STIB/MIVB 1
+    type: subway
+    ref: 1
     itineraries: 
-      r7006075: 
-        - 'Stockel - Stokkel (n250312071)'
-        - 'Crainhem - Kraainem (n250310431)'
-        - Alma (n2368465586)
-        - Vandervelde (n250310420)
-        - Roodebeek (n250309558)
-        - Tomberg (n250309308)
-        - Gribaumont (n250308844)
-        - Joséphine-Charlotte (n250308215)
-        - Montgomery (n4687124672)
-        - Merode (n142687752)
-        - Schuman (n142700510)
-        - 'Maelbeek - Maalbeek (n145980763)'
-        - 'Arts-Loi - Kunst-Wet (n142700511)'
-        - 'Parc - Park (n4618293165)'
-        - 'Gare Centrale - Centraal Station (n142700522)'
-        - De Brouckère (n142719362)
-        - 'Sainte-Catherine - Sint-Katelijne (n142719368)'
-        - 'Comte de Flandre - Graaf van Vlaanderen (n144002963)'
-        - 'Étangs Noirs - Zwarte Vijvers (n144050557)'
-        - Beekkant (n143725254)
-        - 'Gare de l''Ouest - Weststation (n143725278)'
-
       r58240: 
         - 'Gare de l''Ouest - Weststation (n143725278)'
         - Beekkant (n143725254)
@@ -57,8 +28,30 @@ routes:
         - 'Crainhem - Kraainem (n250310431)'
         - 'Stockel - Stokkel (n250312071)'
 
+      r7006075: 
+        - 'Stockel - Stokkel (n250312071)'
+        - 'Crainhem - Kraainem (n250310431)'
+        - Alma (n2368465586)
+        - Vandervelde (n250310420)
+        - Roodebeek (n250309558)
+        - Tomberg (n250309308)
+        - Gribaumont (n250308844)
+        - Joséphine-Charlotte (n250308215)
+        - Montgomery (n4687124672)
+        - Merode (n142687752)
+        - Schuman (n142700510)
+        - 'Maelbeek - Maalbeek (n145980763)'
+        - 'Arts-Loi - Kunst-Wet (n142700511)'
+        - 'Parc - Park (n4618293165)'
+        - 'Gare Centrale - Centraal Station (n142700522)'
+        - De Brouckère (n142719362)
+        - 'Sainte-Catherine - Sint-Katelijne (n142719368)'
+        - 'Comte de Flandre - Graaf van Vlaanderen (n144002963)'
+        - 'Étangs Noirs - Zwarte Vijvers (n144050557)'
+        - Beekkant (n143725254)
+        - 'Gare de l''Ouest - Weststation (n143725278)'
 
-    name: STIB/MIVB 1
+
     stations: 
       - 'Stockel - Stokkel'
       - 'Crainhem - Kraainem'
@@ -82,11 +75,12 @@ routes:
       - Beekkant
       - 'Gare de l''Ouest - Weststation'
 
-    ref: 1
-    type: subway
+    colour: '#c4008f'
     station_count: 21
   - 
-    colour: '#f57000'
+    name: STIB/MIVB 2
+    type: subway
+    ref: 2
     itineraries: 
       r7305691: 
         - Elisabeth (n345771178)
@@ -131,7 +125,6 @@ routes:
         - Elisabeth (n345771178)
 
 
-    name: STIB/MIVB 2
     stations: 
       - Simonis-Elisabeth
       - 'Osseghem - Ossegem'
@@ -152,11 +145,12 @@ routes:
       - 'Yser - IJzer'
       - Ribaucourt
 
-    ref: 2
-    type: subway
+    colour: '#f57000'
     station_count: 18
   - 
-    colour: '#b5ba05'
+    name: STIB/MIVB 5
+    type: subway
+    ref: 5
     itineraries: 
       r6996916: 
         - Herrmann-Debroux (n147132819)
@@ -219,42 +213,42 @@ routes:
         - Herrmann-Debroux (n147132819)
 
 
-    name: STIB/MIVB 5
     stations: 
-      - Herrmann-Debroux
-      - Demey
-      - Beaulieu
-      - Delta
-      - Hankar
-      - Pétillon
-      - Thieffry
-      - Merode
-      - Schuman
-      - 'Maelbeek - Maalbeek'
-      - 'Arts-Loi - Kunst-Wet'
-      - 'Parc - Park'
-      - 'Gare Centrale - Centraal Station'
-      - De Brouckère
-      - 'Sainte-Catherine - Sint-Katelijne'
-      - 'Comte de Flandre - Graaf van Vlaanderen'
-      - 'Étangs Noirs - Zwarte Vijvers'
-      - Beekkant
-      - 'Gare de l''Ouest - Weststation'
-      - Jacques Brel
-      - Aumale
-      - 'Saint-Guidon - Sint-Guido'
-      - 'Veeweyde - Veeweide'
-      - Bizet
-      - 'La Roue - Het Rad'
-      - 'CERIA - COOVI'
-      - Eddy Merckx
       - 'Erasme - Erasmus'
+      - Eddy Merckx
+      - 'CERIA - COOVI'
+      - 'La Roue - Het Rad'
+      - Bizet
+      - 'Veeweyde - Veeweide'
+      - 'Saint-Guidon - Sint-Guido'
+      - Aumale
+      - Jacques Brel
+      - 'Gare de l''Ouest - Weststation'
+      - Beekkant
+      - 'Étangs Noirs - Zwarte Vijvers'
+      - 'Comte de Flandre - Graaf van Vlaanderen'
+      - 'Sainte-Catherine - Sint-Katelijne'
+      - De Brouckère
+      - 'Gare Centrale - Centraal Station'
+      - 'Parc - Park'
+      - 'Arts-Loi - Kunst-Wet'
+      - 'Maelbeek - Maalbeek'
+      - Schuman
+      - Merode
+      - Thieffry
+      - Pétillon
+      - Hankar
+      - Delta
+      - Beaulieu
+      - Demey
+      - Herrmann-Debroux
 
-    ref: 5
-    type: subway
+    colour: '#b5ba05'
     station_count: 28
   - 
-    colour: '#0078ad'
+    name: STIB/MIVB 6
+    type: subway
+    ref: 6
     itineraries: 
       r108101: 
         - 'Roi Baudouin - Koning Boudewijn (n144283201)'
@@ -313,7 +307,6 @@ routes:
         - 'Roi Baudouin - Koning Boudewijn (n144283201)'
 
 
-    name: STIB/MIVB 6
     stations: 
       - Simonis
       - Ribaucourt
@@ -341,9 +334,16 @@ routes:
       - 'Heysel - Heizel'
       - 'Roi Baudouin - Koning Boudewijn'
 
-    ref: 6
-    type: subway
+    colour: '#0078ad'
     station_count: 25
+
+transfers: 
+  - 
+    - 'Arts-Loi - Kunst-Wet (r7685223)'
+    - 'Arts-Loi - Kunst-Wet (r7763657)'
+  - 
+    - Simonis (r7685224)
+    - Simonis-Elisabeth (r7151510)
 
 stations: 
   - Alma (n2368465586)

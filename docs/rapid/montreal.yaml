@@ -1,52 +1,10 @@
 
-transfers: 
-  - 
-    - 'Berri-UQAM - Green Line station (r7734010)'
-    - 'Berri-UQAM - Orange Line station (r7734005)'
-    - 'Berri-UQAM - Yellow Line station (r7734004)'
-  - 
-    - 'Jean-Talon - Blue Line station (r7734007)'
-    - 'Jean-Talon - Orange Line station (r7734006)'
-  - 
-    - 'Lionel-Groulx - Bottom Level (r7833242)'
-    - 'Lionel-Groulx - Top Level (r7889628)'
-  - 
-    - 'Snowdon - Blue Line (r7734003)'
-    - 'Snowdon - Orange Line (r7734009)'
-
 routes: 
   - 
-    colour: '#5f8c55'
+    name: Ligne verte
+    type: subway
+    ref: 1
     itineraries: 
-      r3228500: 
-        - Honoré-Beaugrand (n7041520766)
-        - Radisson (n7052949183)
-        - Langelier (n7052949184)
-        - Cadillac (n7041520765)
-        - Assomption (n7052992085)
-        - Viau (n6615202527)
-        - Pie IX (n7052992086)
-        - Joliette (n7052992087)
-        - Préfontaine (n6615202531)
-        - Frontenac (n7052992088)
-        - Papineau (n7052992089)
-        - Beaudry (n7052992090)
-        - Berri-UQAM (n6600856333)
-        - Saint-Laurent (n7052992091)
-        - Place-des-Arts (n7052992092)
-        - McGill (n6831524451)
-        - Peel (n7052992094)
-        - Guy-Concordia (n7052992095)
-        - Atwater (n7052992096)
-        - Lionel-Groulx (n5299904569)
-        - Charlevoix (n6615202530)
-        - LaSalle (n7052992097)
-        - De l'Église (n6615202529)
-        - Verdun (n7052992098)
-        - Jolicoeur (n7052992099)
-        - Monk (n6615202528)
-        - Angrignon (n7052992100)
-
       r58433: 
         - Angrignon (n7052992100)
         - Monk (n6615202528)
@@ -76,8 +34,36 @@ routes:
         - Radisson (n7052949183)
         - Honoré-Beaugrand (n7041520766)
 
+      r3228500: 
+        - Honoré-Beaugrand (n7041520766)
+        - Radisson (n7052949183)
+        - Langelier (n7052949184)
+        - Cadillac (n7041520765)
+        - Assomption (n7052992085)
+        - Viau (n6615202527)
+        - Pie IX (n7052992086)
+        - Joliette (n7052992087)
+        - Préfontaine (n6615202531)
+        - Frontenac (n7052992088)
+        - Papineau (n7052992089)
+        - Beaudry (n7052992090)
+        - Berri-UQAM (n6600856333)
+        - Saint-Laurent (n7052992091)
+        - Place-des-Arts (n7052992092)
+        - McGill (n6831524451)
+        - Peel (n7052992094)
+        - Guy-Concordia (n7052992095)
+        - Atwater (n7052992096)
+        - Lionel-Groulx (n5299904569)
+        - Charlevoix (n6615202530)
+        - LaSalle (n7052992097)
+        - De l'Église (n6615202529)
+        - Verdun (n7052992098)
+        - Jolicoeur (n7052992099)
+        - Monk (n6615202528)
+        - Angrignon (n7052992100)
 
-    name: Ligne verte
+
     stations: 
       - Angrignon
       - Monk
@@ -107,11 +93,12 @@ routes:
       - Radisson
       - Honoré-Beaugrand
 
-    ref: 1
-    type: subway
+    colour: '#5f8c55'
     station_count: 27
   - 
-    colour: '#d06d07'
+    name: Ligne orange
+    type: subway
+    ref: 2
     itineraries: 
       r3228499: 
         - Montmorency (n7757580977)
@@ -180,7 +167,6 @@ routes:
         - Montmorency (n7757580977)
 
 
-    name: Ligne orange
     stations: 
       - Côte-Vertu
       - Du Collège
@@ -214,34 +200,35 @@ routes:
       - De la Concorde (Métro)
       - Montmorency
 
-    ref: 2
-    type: subway
+    colour: '#d06d07'
     station_count: 31
   - 
-    colour: '#f1ce00'
+    name: Ligne jaune
+    type: subway
+    ref: 4
     itineraries: 
-      r3228498: 
-        - Berri-UQAM (n6600856333)
-        - Jean-Drapeau (n6600874117)
-        - Longueuil–Université-de-Sherbrooke (n6600830243)
-
       r270252: 
         - Longueuil–Université-de-Sherbrooke (n6600830243)
         - Jean-Drapeau (n6600874117)
         - Berri-UQAM (n6600856333)
 
+      r3228498: 
+        - Berri-UQAM (n6600856333)
+        - Jean-Drapeau (n6600874117)
+        - Longueuil–Université-de-Sherbrooke (n6600830243)
 
-    name: Ligne jaune
+
     stations: 
-      - 'Berri-UQAM - Yellow Line station'
-      - Jean-Drapeau
       - Longueuil–Université-de-Sherbrooke
+      - Jean-Drapeau
+      - 'Berri-UQAM - Yellow Line station'
 
-    ref: 4
-    type: subway
+    colour: '#f1ce00'
     station_count: 3
   - 
-    colour: '#3465b4'
+    name: Ligne bleue
+    type: subway
+    ref: 5
     itineraries: 
       r270255: 
         - Snowdon (n6607411942)
@@ -272,7 +259,6 @@ routes:
         - Snowdon (n6607411942)
 
 
-    name: Ligne bleue
     stations: 
       - Saint-Michel
       - D’Iberville
@@ -287,9 +273,23 @@ routes:
       - Côte-des-Neiges
       - 'Snowdon - Blue Line'
 
-    ref: 5
-    type: subway
+    colour: '#3465b4'
     station_count: 12
+
+transfers: 
+  - 
+    - 'Berri-UQAM - Green Line station (r7734010)'
+    - 'Berri-UQAM - Orange Line station (r7734005)'
+    - 'Berri-UQAM - Yellow Line station (r7734004)'
+  - 
+    - 'Jean-Talon - Blue Line station (r7734007)'
+    - 'Jean-Talon - Orange Line station (r7734006)'
+  - 
+    - 'Lionel-Groulx - Bottom Level (r7833242)'
+    - 'Lionel-Groulx - Top Level (r7889628)'
+  - 
+    - 'Snowdon - Blue Line (r7734003)'
+    - 'Snowdon - Orange Line (r7734009)'
 
 stations: 
   - Acadie (n7052471491)

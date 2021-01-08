@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#2d3087'
+    name: りんかい線
+    type: subway
+    ref: R
     itineraries: 
       r7963668: 
         - 大崎 (n7798811209)
@@ -26,20 +26,20 @@ routes:
         - 大崎 (n7798811209)
 
 
-    name: りんかい線
     stations: 
-      - 大崎 (東京臨海高速鉄道りんかい線)
-      - 大井町
-      - 品川シーサイド
-      - 天王洲アイル
-      - 東京テレポート
-      - 国際展示場
-      - 東雲
       - 新木場 (東京臨海高速鉄道りんかい線)
+      - 東雲
+      - 国際展示場
+      - 東京テレポート
+      - 天王洲アイル
+      - 品川シーサイド
+      - 大井町
+      - 大崎 (東京臨海高速鉄道りんかい線)
 
-    ref: R
-    type: subway
+    colour: '#2d3087'
     station_count: 8
+
+transfers: 
 
 stations: 
   - 品川シーサイド (n6211678482)

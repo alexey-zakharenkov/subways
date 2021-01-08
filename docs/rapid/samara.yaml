@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Самарское Метро
+    type: subway
+    ref: 1
     itineraries: 
       r173532: 
         - Юнгородок (n351119704)
@@ -30,7 +30,6 @@ routes:
         - Юнгородок (n351119704)
 
 
-    name: Самарское Метро
     stations: 
       - Алабинская
       - Российская
@@ -43,9 +42,10 @@ routes:
       - Кировская
       - Юнгородок
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 10
+
+transfers: 
 
 stations: 
   - Алабинская (n3779454539)

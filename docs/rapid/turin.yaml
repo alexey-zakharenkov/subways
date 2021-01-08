@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ffff00'
+    name: 'M1: Lingotto - Fermi'
+    type: subway
+    ref: M1
     itineraries: 
       r1204590: 
         - Lingotto (n4076608590)
@@ -52,7 +52,6 @@ routes:
         - Lingotto (n4076608590)
 
 
-    name: 'M1: Lingotto - Fermi'
     stations: 
       - Lingotto
       - Spezia
@@ -76,9 +75,10 @@ routes:
       - Paradiso
       - Fermi
 
-    ref: M1
-    type: subway
+    colour: '#ffff00'
     station_count: 21
+
+transfers: 
 
 stations: 
   - Bernini (n332648606)

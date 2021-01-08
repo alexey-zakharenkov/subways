@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff69b4'
+    name: 日暮里・舎人ライナー
+    type: light_rail
+    ref: NT
     itineraries: 
       r3423146: 
         - 日暮里 (n772389775)
@@ -36,7 +36,6 @@ routes:
         - 日暮里 (n772389775)
 
 
-    name: 日暮里・舎人ライナー
     stations: 
       - 見沼代親水公園
       - 舎人
@@ -52,9 +51,10 @@ routes:
       - 西日暮里 (日暮里・舎人ライナー)
       - 日暮里
 
-    ref: NT
-    type: light_rail
+    colour: '#ff69b4'
     station_count: 13
+
+transfers: 
 
 stations: 
   - 扇大橋 (n6234995906)

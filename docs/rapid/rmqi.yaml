@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#10069f'
+    name: Line 1
+    type: subway
+    ref: 1
     itineraries: 
       r6228180: 
         - 国际机场 (n4191403903)
@@ -52,7 +52,6 @@ routes:
         - 国际机场 (n4191403903)
 
 
-    name: Line 1
     stations: 
       - 国际机场
       - 大地窝堡
@@ -76,9 +75,10 @@ routes:
       - 新疆大学
       - 三屯碑
 
-    ref: 1
-    type: subway
+    colour: '#10069f'
     station_count: 21
+
+transfers: 
 
 stations: 
   - 三屯碑 (n4191403069)

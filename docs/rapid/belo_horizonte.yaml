@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#000080'
+    name: 'Linha 1 - Azul'
+    type: subway
+    ref: 1
     itineraries: 
       r6087652: 
         - Eldorado (n5362545412)
@@ -48,31 +48,31 @@ routes:
         - Eldorado (n5362545412)
 
 
-    name: 'Linha 1 - Azul'
     stations: 
-      - Estação Eldorado
-      - Estação Cidade Industrial
-      - Vila Oeste
-      - Estação Gameleira
-      - Estação Calafate
-      - Estação Carlos Prates
-      - Lagoinha
-      - Estação Central
-      - Santa Efigênia
-      - Estação Santa Tereza
-      - Estação Horto
-      - Estação Santa Inês
-      - Estação José Cândido da Silveira
-      - Minas Shopping
-      - Estação São Gabriel
-      - Estação Primeiro de Maio
-      - Estação Waldomiro Lobo
-      - Floramar
       - Estação Vilarinho
+      - Floramar
+      - Estação Waldomiro Lobo
+      - Estação Primeiro de Maio
+      - Estação São Gabriel
+      - Minas Shopping
+      - Estação José Cândido da Silveira
+      - Estação Santa Inês
+      - Estação Horto
+      - Estação Santa Tereza
+      - Santa Efigênia
+      - Estação Central
+      - Lagoinha
+      - Estação Carlos Prates
+      - Estação Calafate
+      - Estação Gameleira
+      - Vila Oeste
+      - Estação Cidade Industrial
+      - Estação Eldorado
 
-    ref: 1
-    type: subway
+    colour: '#000080'
     station_count: 19
+
+transfers: 
 
 stations: 
   - Calafate (n5365398604)

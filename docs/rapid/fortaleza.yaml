@@ -1,12 +1,9 @@
 
-transfers: 
-  - 
-    - Parangaba (Sul) (r9963944)
-    - Parangaba (VLT) (r9963945)
-
 routes: 
   - 
-    colour: '#008000'
+    name: Linha Oeste
+    type: light_rail
+    ref: Oeste
     itineraries: 
       r9963936: 
         - Caucaia (n4718998738)
@@ -33,24 +30,24 @@ routes:
         - Caucaia (n4718998738)
 
 
-    name: Linha Oeste
     stations: 
-      - Estação Caucaia
-      - Estação Araturi
-      - Jurema
-      - Conjunto Ceará
-      - Parque Albano
-      - Conjunto São Miguel
-      - Antonio Bezerra
-      - Padre Andrade
-      - Álvaro Weyne
       - Estação Moura Brasil
+      - Álvaro Weyne
+      - Padre Andrade
+      - Antonio Bezerra
+      - Conjunto São Miguel
+      - Parque Albano
+      - Conjunto Ceará
+      - Jurema
+      - Estação Araturi
+      - Estação Caucaia
 
-    ref: Oeste
-    type: light_rail
+    colour: '#008000'
     station_count: 10
   - 
-    colour: '#6b297e'
+    name: Linha Parangaba-Mucuripe
+    type: light_rail
+    ref: Parangaba-Mucuripe
     itineraries: 
       r4511811: 
         - Parangaba (n5713710078)
@@ -77,24 +74,24 @@ routes:
         - Parangaba (n5713710078)
 
 
-    name: Linha Parangaba-Mucuripe
     stations: 
-      - Iate
-      - Mucuripe
-      - Papicu
-      - Antônio Sales
-      - Pontes Vieira
-      - São João do Tauape
-      - Borges de Melo
-      - Vila União
-      - Montese
       - Parangaba (VLT)
+      - Montese
+      - Vila União
+      - Borges de Melo
+      - São João do Tauape
+      - Pontes Vieira
+      - Antônio Sales
+      - Papicu
+      - Mucuripe
+      - Iate
 
-    ref: Parangaba-Mucuripe
-    type: light_rail
+    colour: '#6b297e'
     station_count: 10
   - 
-    colour: '#ff0000'
+    name: Linha Sul
+    type: subway
+    ref: Sul
     itineraries: 
       r4511593: 
         - Carlito Benevides (n263302800)
@@ -141,7 +138,6 @@ routes:
         - Carlito Benevides (n263302800)
 
 
-    name: Linha Sul
     stations: 
       - Carlito Benevides
       - Jereissati
@@ -164,9 +160,13 @@ routes:
       - José de Alencar
       - 'Central - Chico da Silva'
 
-    ref: Sul
-    type: subway
+    colour: '#ff0000'
     station_count: 20
+
+transfers: 
+  - 
+    - Parangaba (Sul) (r9963944)
+    - Parangaba (VLT) (r9963945)
 
 stations: 
   - Alto Alegre (n6992662722)

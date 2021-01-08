@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#3333ff'
+    name: 小倉線
+    type: monorail
+    ref: Kokura
     itineraries: 
       r4567944: 
         - 企救丘 (n265931202)
@@ -36,7 +36,6 @@ routes:
         - 企救丘 (n265931202)
 
 
-    name: 小倉線
     stations: 
       - 企救丘
       - 志井
@@ -52,9 +51,10 @@ routes:
       - 平和通
       - 小倉 (Monorail)
 
-    ref: Kokura
-    type: monorail
+    colour: '#3333ff'
     station_count: 13
+
+transfers: 
 
 stations: 
   - 企救丘 (n265931202)

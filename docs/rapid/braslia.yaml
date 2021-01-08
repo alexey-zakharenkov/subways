@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#eb9710'
+    name: Linha Laranja
+    type: subway
+    ref: Laranja
     itineraries: 
       r420556: 
         - Central (n516640062)
@@ -46,32 +46,32 @@ routes:
         - Central (n516640062)
 
 
-    name: Linha Laranja
     stations: 
-      - Samambaia
-      - Samambaia Sul
-      - Furnas
-      - Taguatinga Sul
-      - Águas Claras
-      - Arniqueiras
-      - Estação Guará
-      - Feira
-      - Shopping
-      - Asa Sul
-      - 114 Sul
-      - 112 Sul
-      - 110 Sul
-      - 108 Sul
-      - 106 Sul
-      - 102 Sul
-      - Galeria
       - Central
+      - Galeria
+      - 102 Sul
+      - 106 Sul
+      - 108 Sul
+      - 110 Sul
+      - 112 Sul
+      - 114 Sul
+      - Asa Sul
+      - Shopping
+      - Feira
+      - Estação Guará
+      - Arniqueiras
+      - Águas Claras
+      - Taguatinga Sul
+      - Furnas
+      - Samambaia Sul
+      - Samambaia
 
-    ref: Laranja
-    type: subway
+    colour: '#eb9710'
     station_count: 18
   - 
-    colour: '#076c57'
+    name: Linha Verde
+    type: subway
+    ref: Verde
     itineraries: 
       r7733963: 
         - Ceilândia (n1468359687)
@@ -124,35 +124,35 @@ routes:
         - Ceilândia (n1468359687)
 
 
-    name: Linha Verde
     stations: 
-      - Ceilândia
-      - Ceilândia Norte
-      - Ceilândia Centro
-      - Guariroba
-      - Ceilândia Sul
-      - Centro Metropolitano
-      - Praça do Relógio
-      - Estrada Parque
-      - Concessionárias
-      - Águas Claras
-      - Arniqueiras
-      - Estação Guará
-      - Feira
-      - Shopping
-      - Asa Sul
-      - 114 Sul
-      - 112 Sul
-      - 110 Sul
-      - 108 Sul
-      - 106 Sul
-      - 102 Sul
-      - Galeria
       - Central
+      - Galeria
+      - 102 Sul
+      - 106 Sul
+      - 108 Sul
+      - 110 Sul
+      - 112 Sul
+      - 114 Sul
+      - Asa Sul
+      - Shopping
+      - Feira
+      - Estação Guará
+      - Arniqueiras
+      - Águas Claras
+      - Concessionárias
+      - Estrada Parque
+      - Praça do Relógio
+      - Centro Metropolitano
+      - Ceilândia Sul
+      - Guariroba
+      - Ceilândia Centro
+      - Ceilândia Norte
+      - Ceilândia
 
-    ref: Verde
-    type: subway
+    colour: '#076c57'
     station_count: 23
+
+transfers: 
 
 stations: 
   - 102 Sul (n2524907501)

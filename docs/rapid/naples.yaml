@@ -1,15 +1,9 @@
 
-transfers: 
-  - 
-    - Garibaldi (r7683111)
-    - Napoli Piazza Garibaldi (r10105977)
-  - 
-    - Mergellina (r7683071)
-    - Napoli Mergellina (r10105974)
-
 routes: 
   - 
-    colour: '#000099'
+    name: Linea 1 (Piscinola → Garibaldi)
+    type: subway
+    ref: 1
     itineraries: 
       r2168102: 
         - Garibaldi (n1757100177)
@@ -52,7 +46,6 @@ routes:
         - Garibaldi (n1757100177)
 
 
-    name: Linea 1 (Piscinola → Garibaldi)
     stations: 
       - Piscinola (ANM)
       - Chiaiano
@@ -73,25 +66,13 @@ routes:
       - Università
       - Garibaldi
 
-    ref: 1
-    type: subway
+    colour: '#000099'
     station_count: 18
   - 
-    colour: '#0000ff'
+    name: Linea 2 (Pozzuoli Solfatara → San Giovanni-Barra)
+    type: train
+    ref: 2
     itineraries: 
-      r2168103: 
-        - Napoli San Giovanni-Barra (n4459022870)
-        - Napoli Gianturco (n4459023928)
-        - Napoli Piazza Garibaldi (n6886777286)
-        - Piazza Cavour (n656149059)
-        - Montesanto (n3114747045)
-        - Piazza Amedeo (n499585572)
-        - Napoli Mergellina (n6536935424)
-        - Piazza Leopardi (n6817760441)
-        - Napoli Campi Flegrei (n6817740560)
-        - Bagnoli-Agnano Terme (n6817755819)
-        - Pozzuoli Solfatara (n6817792727)
-
       r445980: 
         - Pozzuoli Solfatara (n6817792727)
         - Bagnoli-Agnano Terme (n6817755819)
@@ -105,50 +86,69 @@ routes:
         - Napoli Gianturco (n4459023928)
         - Napoli San Giovanni-Barra (n4459022870)
 
+      r2168103: 
+        - Napoli San Giovanni-Barra (n4459022870)
+        - Napoli Gianturco (n4459023928)
+        - Napoli Piazza Garibaldi (n6886777286)
+        - Piazza Cavour (n656149059)
+        - Montesanto (n3114747045)
+        - Piazza Amedeo (n499585572)
+        - Napoli Mergellina (n6536935424)
+        - Piazza Leopardi (n6817760441)
+        - Napoli Campi Flegrei (n6817740560)
+        - Bagnoli-Agnano Terme (n6817755819)
+        - Pozzuoli Solfatara (n6817792727)
 
-    name: Linea 2 (San Giovanni-Barra → Pozzuoli Solfatara)
+
     stations: 
-      - Napoli San Giovanni-Barra
-      - Napoli Gianturco
-      - Napoli Piazza Garibaldi
-      - Piazza Cavour
-      - Montesanto
-      - Piazza Amedeo
-      - Napoli Mergellina
-      - Piazza Leopardi
-      - Napoli Campi Flegrei
-      - Bagnoli-Agnano Terme
       - Pozzuoli Solfatara
+      - Bagnoli-Agnano Terme
+      - Napoli Campi Flegrei
+      - Piazza Leopardi
+      - Napoli Mergellina
+      - Piazza Amedeo
+      - Montesanto
+      - Piazza Cavour
+      - Napoli Piazza Garibaldi
+      - Napoli Gianturco
+      - Napoli San Giovanni-Barra
 
-    ref: 2
-    type: train
+    colour: '#0000ff'
     station_count: 11
   - 
-    colour: '#0099cc'
+    name: Linea 6
+    type: subway
+    ref: 6
     itineraries: 
-      r446007: 
-        - Mostra (n434789470)
-        - Augusto (n663078056)
-        - Lala (n663077724)
-        - Mergellina (n663078054)
-
       r2168104: 
         - Mergellina (n663078054)
         - Lala (n663077724)
         - Augusto (n663078056)
         - Mostra (n434789470)
 
+      r446007: 
+        - Mostra (n434789470)
+        - Augusto (n663078056)
+        - Lala (n663077724)
+        - Mergellina (n663078054)
 
-    name: Linea 6
+
     stations: 
       - Mostra
       - Augusto
       - Lala
       - Mergellina
 
-    ref: 6
-    type: subway
+    colour: '#0099cc'
     station_count: 4
+
+transfers: 
+  - 
+    - Garibaldi (r7683111)
+    - Napoli Piazza Garibaldi (r10105977)
+  - 
+    - Mergellina (r7683071)
+    - Napoli Mergellina (r10105974)
 
 stations: 
   - Augusto (n663078056)

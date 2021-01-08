@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f44f0d'
+    name: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
+    type: light_rail
+    ref: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
     itineraries: 
       r10567271: 
         - Rose Hill Central (n7158546299)
@@ -24,19 +24,19 @@ routes:
         - Rose Hill Central (n7158546299)
 
 
-    name: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
     stations: 
-      - Port Louis Victoria
-      - St Louis
-      - Coromandel
-      - Barkly
-      - Beau Bassin
-      - Vandermeersch
       - Rose Hill
+      - Vandermeersch
+      - Beau Bassin
+      - Barkly
+      - Coromandel
+      - St Louis
+      - Port Louis Victoria
 
-    ref: 'Mauritius Metro Express: Rose Hill ⟷ Port Louis Victoria'
-    type: light_rail
+    colour: '#f44f0d'
     station_count: 7
+
+transfers: 
 
 stations: 
   - Barkly (n7158546297)

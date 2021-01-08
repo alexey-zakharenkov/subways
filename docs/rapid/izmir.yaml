@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    name: Fahrettin Altay-Evka 3
+    type: subway
+    ref: 2
     itineraries: 
       r7981826: 
         - Evka 3 (n5388472400)
@@ -44,7 +44,6 @@ routes:
         - Evka 3 (n5388472400)
 
 
-    name: Fahrettin Altay-Evka 3
     stations: 
       - Fahrettin Altay
       - Poligon
@@ -64,9 +63,10 @@ routes:
       - Ege Üniversitesi
       - Evka 3
 
-    ref: 2
-    type: subway
+    colour: '#0000ff'
     station_count: 17
+
+transfers: 
 
 stations: 
   - Basmane (n7729209165)

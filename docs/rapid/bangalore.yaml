@@ -1,12 +1,9 @@
 
-transfers: 
-  - 
-    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
-    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
-
 routes: 
   - 
-    colour: '#009933'
+    name: Namma Metro Green Line
+    type: subway
+    ref: Green
     itineraries: 
       r7842287: 
         - Nagasandra (n5960788723)
@@ -61,7 +58,6 @@ routes:
         - Nagasandra (n5960788723)
 
 
-    name: Namma Metro Green Line
     stations: 
       - Nagasandra
       - Dasarahalli
@@ -88,11 +84,12 @@ routes:
       - J P Nagar
       - Yelachenahalli
 
-    ref: Green
-    type: subway
+    colour: '#009933'
     station_count: 24
   - 
-    colour: '#e542de'
+    name: Namma Metro Purple Line
+    type: subway
+    ref: Purple
     itineraries: 
       r7841331: 
         - Mysore Road (n6400857565)
@@ -133,7 +130,6 @@ routes:
         - Mysore Road (n6400857565)
 
 
-    name: Namma Metro Purple Line
     stations: 
       - Mysore Road
       - Deepanjali Nagar
@@ -153,9 +149,13 @@ routes:
       - Swami Vivekananda Road
       - Baiyyappanahalli
 
-    ref: Purple
-    type: subway
+    colour: '#e542de'
     station_count: 17
+
+transfers: 
+  - 
+    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
+    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
 
 stations: 
   - Attiguppe (n6400857563)

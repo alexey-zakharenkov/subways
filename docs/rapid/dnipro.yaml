@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Дніпровський метрополітен
+    type: subway
+    ref: 1
     itineraries: 
       r7734179: 
         - Вокзальна (n927301152)
@@ -22,7 +22,6 @@ routes:
         - Вокзальна (n927301152)
 
 
-    name: Дніпровський метрополітен
     stations: 
       - Покровська
       - Проспект Свободи
@@ -31,9 +30,10 @@ routes:
       - Метробудівників
       - Вокзальна
 
-    ref: 1
-    type: subway
+    colour: '#ff0000'
     station_count: 6
+
+transfers: 
 
 stations: 
   - Вокзальна (n927301152)

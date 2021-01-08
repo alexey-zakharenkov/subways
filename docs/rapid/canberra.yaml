@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#343f4b'
+    name: Canberra Metro
+    type: light_rail
+    ref: CMET
     itineraries: 
       r10271385: 
         - Alinga Street (n6355817336)
@@ -36,7 +36,6 @@ routes:
         - Alinga Street (n6355817336)
 
 
-    name: Canberra Metro
     stations: 
       - Gungahlin Place
       - Manning Clark North
@@ -52,9 +51,10 @@ routes:
       - Elouera Street
       - Alinga Street
 
-    ref: CMET
-    type: light_rail
+    colour: '#343f4b'
     station_count: 13
+
+transfers: 
 
 stations: 
   - Alinga Street (n6355817336)

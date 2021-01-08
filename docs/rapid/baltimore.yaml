@@ -1,101 +1,9 @@
 
-transfers: 
-  - 
-    - Lexington Market (Light Rail) (r9976827)
-    - Lexington Market (Subway) (r7910852)
-
 routes: 
   - 
-    colour: '#fff200'
-    itineraries: 
-      r9976612: 
-        - Glen Burnie (n850371396)
-        - Ferndale (n850371399)
-        - Linthicum (n848279408)
-        - North Linthicum (n848279364)
-        - Nursery Road (n848279442)
-        - Baltimore Highlands (n848279440)
-        - Patapsco (n848279259)
-        - Cherry Hill (n847727185)
-        - Westport (n847727112)
-        - Stadium/Federal Hill (n847727127)
-        - Camden Yards (n845911360)
-        - Convention Center (n845911393)
-        - Baltimore Arena (n845911138)
-        - Lexington Market (n845372088)
-        - Mount Vernon (n845371951)
-        - Cultural Center (n845372038)
-        - Mount Royal/MICA (n844812290)
-        - North Avenue (n844812526)
-        - Woodberry (n844696754)
-        - Cold Spring Lane (n844696317)
-        - Mount Washington (n529084461)
-        - Falls Road (n844224968)
-        - Lutherville (n844225037)
-        - Timonium (n844225174)
-        - Fairgrounds (n844179240)
-
-      r2711782: 
-        - Fairgrounds (n844179240)
-        - Timonium (n844225174)
-        - Lutherville (n844225037)
-        - Falls Road (n844224968)
-        - Mount Washington (n529084461)
-        - Cold Spring Lane (n844696317)
-        - Woodberry (n844696754)
-        - North Avenue (n844812526)
-        - Mount Royal/MICA (n844812290)
-        - Cultural Center (n845372038)
-        - Mount Vernon (n845371951)
-        - Lexington Market (n845372088)
-        - Baltimore Arena (n845911138)
-        - Convention Center (n845911393)
-        - Camden Yards (n845911360)
-        - Stadium/Federal Hill (n847727127)
-        - Westport (n847727112)
-        - Cherry Hill (n847727185)
-        - Patapsco (n848279259)
-        - Baltimore Highlands (n848279440)
-        - Nursery Road (n848279442)
-        - North Linthicum (n848279364)
-        - Linthicum (n848279408)
-        - Ferndale (n850371399)
-        - Glen Burnie (n850371396)
-
-
-    name: 'Baltimore Light RailLink: Fairgrounds—Glen Burnie (Yellow)'
-    stations: 
-      - Glen Burnie
-      - Ferndale
-      - Linthicum
-      - North Linthicum
-      - Nursery Road
-      - Baltimore Highlands
-      - Patapsco
-      - Cherry Hill
-      - Westport
-      - Stadium/Federal Hill
-      - Camden Yards
-      - Baltimore Arena
-      - Baltimore Arena
-      - Lexington Market (Light Rail)
-      - Mount Vernon
-      - Cultural Center
-      - Mount Royal/MICA
-      - North Avenue
-      - Woodberry
-      - Cold Spring Lane
-      - Mount Washington
-      - Falls Road
-      - Lutherville
-      - Timonium
-      - Fairgrounds
-
-    ref: LR
+    name: 'Baltimore Light RailLink: Hunt Valley—BWI Airport (Blue)'
     type: light_rail
-    station_count: 25
-  - 
-    colour: '#00aeef'
+    ref: LR
     itineraries: 
       r9976614: 
         - BWI Airport (n848318012)
@@ -162,10 +70,103 @@ routes:
         - BWI Airport (n848318012)
 
 
-    name: 'Baltimore Light RailLink: Hunt Valley—BWI Airport (Blue)'
     stations: 
-      - BWI Airport
+      - Hunt Valley
+      - Pepper Road
+      - McCormick Road
+      - Gilroy Road
+      - Warren Road
+      - Fairgrounds
+      - Timonium
+      - Lutherville
+      - Falls Road
+      - Mount Washington
+      - Cold Spring Lane
+      - Woodberry
+      - North Avenue
+      - Mount Royal/MICA
+      - Cultural Center
+      - Mount Vernon
+      - Lexington Market (Light Rail)
+      - Baltimore Arena
+      - Baltimore Arena
+      - Camden Yards
+      - Stadium/Federal Hill
+      - Westport
+      - Cherry Hill
+      - Patapsco
+      - Baltimore Highlands
+      - Nursery Road
+      - North Linthicum
+      - Linthicum
       - BWI Business District
+      - BWI Airport
+
+    colour: '#00aeef'
+    station_count: 30
+  - 
+    name: 'Baltimore Light RailLink: Fairgrounds—Glen Burnie (Yellow)'
+    type: light_rail
+    ref: LR
+    itineraries: 
+      r9976612: 
+        - Glen Burnie (n850371396)
+        - Ferndale (n850371399)
+        - Linthicum (n848279408)
+        - North Linthicum (n848279364)
+        - Nursery Road (n848279442)
+        - Baltimore Highlands (n848279440)
+        - Patapsco (n848279259)
+        - Cherry Hill (n847727185)
+        - Westport (n847727112)
+        - Stadium/Federal Hill (n847727127)
+        - Camden Yards (n845911360)
+        - Convention Center (n845911393)
+        - Baltimore Arena (n845911138)
+        - Lexington Market (n845372088)
+        - Mount Vernon (n845371951)
+        - Cultural Center (n845372038)
+        - Mount Royal/MICA (n844812290)
+        - North Avenue (n844812526)
+        - Woodberry (n844696754)
+        - Cold Spring Lane (n844696317)
+        - Mount Washington (n529084461)
+        - Falls Road (n844224968)
+        - Lutherville (n844225037)
+        - Timonium (n844225174)
+        - Fairgrounds (n844179240)
+
+      r2711782: 
+        - Fairgrounds (n844179240)
+        - Timonium (n844225174)
+        - Lutherville (n844225037)
+        - Falls Road (n844224968)
+        - Mount Washington (n529084461)
+        - Cold Spring Lane (n844696317)
+        - Woodberry (n844696754)
+        - North Avenue (n844812526)
+        - Mount Royal/MICA (n844812290)
+        - Cultural Center (n845372038)
+        - Mount Vernon (n845371951)
+        - Lexington Market (n845372088)
+        - Baltimore Arena (n845911138)
+        - Convention Center (n845911393)
+        - Camden Yards (n845911360)
+        - Stadium/Federal Hill (n847727127)
+        - Westport (n847727112)
+        - Cherry Hill (n847727185)
+        - Patapsco (n848279259)
+        - Baltimore Highlands (n848279440)
+        - Nursery Road (n848279442)
+        - North Linthicum (n848279364)
+        - Linthicum (n848279408)
+        - Ferndale (n850371399)
+        - Glen Burnie (n850371396)
+
+
+    stations: 
+      - Glen Burnie
+      - Ferndale
       - Linthicum
       - North Linthicum
       - Nursery Road
@@ -189,17 +190,13 @@ routes:
       - Lutherville
       - Timonium
       - Fairgrounds
-      - Warren Road
-      - Gilroy Road
-      - McCormick Road
-      - Pepper Road
-      - Hunt Valley
 
-    ref: LR
-    type: light_rail
-    station_count: 30
+    colour: '#fff200'
+    station_count: 25
   - 
-    colour: '#de1d43'
+    name: 'Baltimore Light RailLink: Penn Station—Camden Yards (Red)'
+    type: light_rail
+    ref: LR
     itineraries: 
       r9976613: 
         - Baltimore Penn Station (n7103884603)
@@ -222,7 +219,6 @@ routes:
         - Baltimore Penn Station (n7103884603)
 
 
-    name: 'Baltimore Light RailLink: Penn Station—Camden Yards (Red)'
     stations: 
       - Camden Yards
       - Baltimore Arena
@@ -233,28 +229,13 @@ routes:
       - Mount Royal/MICA
       - Baltimore Penn Station (Light Rail)
 
-    ref: LR
-    type: light_rail
+    colour: '#de1d43'
     station_count: 8
   - 
-    colour: '#00a651'
+    name: Baltimore Metro SubwayLink
+    type: subway
+    ref: M
     itineraries: 
-      r7919552: 
-        - Owings Mills (n843713678)
-        - Old Court (n843714468)
-        - Milford Mill (n843713836)
-        - Reisterstown Plaza (n843950380)
-        - Rogers Avenue (n843950496)
-        - West Coldspring (n844073713)
-        - Mondawmin (n844091673)
-        - Penn–North (n844091841)
-        - Upton–Avenue Market (n844091815)
-        - State Center/Cultural Center (n844091751)
-        - Lexington Market (n844091639)
-        - Charles Center (n844091742)
-        - Shot Tower/Market Place (n7785026062)
-        - Johns Hopkins Hospital (n844091748)
-
       r1406632: 
         - Johns Hopkins Hospital (n844091748)
         - Shot Tower/Market Place (n7785026062)
@@ -271,8 +252,23 @@ routes:
         - Old Court (n843714468)
         - Owings Mills (n843713678)
 
+      r7919552: 
+        - Owings Mills (n843713678)
+        - Old Court (n843714468)
+        - Milford Mill (n843713836)
+        - Reisterstown Plaza (n843950380)
+        - Rogers Avenue (n843950496)
+        - West Coldspring (n844073713)
+        - Mondawmin (n844091673)
+        - Penn–North (n844091841)
+        - Upton–Avenue Market (n844091815)
+        - State Center/Cultural Center (n844091751)
+        - Lexington Market (n844091639)
+        - Charles Center (n844091742)
+        - Shot Tower/Market Place (n7785026062)
+        - Johns Hopkins Hospital (n844091748)
 
-    name: Baltimore Metro SubwayLink
+
     stations: 
       - Owings Mills
       - Old Court
@@ -289,9 +285,13 @@ routes:
       - Shot Tower/Market Place (Subway)
       - Johns Hopkins Hospital
 
-    ref: M
-    type: subway
+    colour: '#00a651'
     station_count: 14
+
+transfers: 
+  - 
+    - Lexington Market (Light Rail) (r9976827)
+    - Lexington Market (Subway) (r7910852)
 
 stations: 
   - BWI Airport (n848318012)

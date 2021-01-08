@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    name: LRT Palembang
+    type: light_rail
+    ref: 1
     itineraries: 
       r9732463: 
         - Bandara (n5984721327)
@@ -38,7 +38,6 @@ routes:
         - Bandara (n5984721327)
 
 
-    name: LRT Palembang
     stations: 
       - Bandara
       - Asrama Haji
@@ -55,9 +54,10 @@ routes:
       - DJKA
       - Depo
 
-    ref: 1
-    type: light_rail
+    colour: '#0000ff'
     station_count: 14
+
+transfers: 
 
 stations: 
   - Ampera (n5984721318)

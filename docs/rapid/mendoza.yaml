@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: Metrotranvía Urbano
+    type: light_rail
+    ref: Metrotranvía
     itineraries: 
       r2119332: 
         - Avellaneda (n7067998372)
@@ -58,7 +58,6 @@ routes:
         - Avellaneda (n7067998372)
 
 
-    name: Metrotranvía Urbano
     stations: 
       - Gutiérrez
       - Maza
@@ -85,9 +84,10 @@ routes:
       - Marcos Burgos
       - Avellaneda
 
-    ref: Metrotranvía
-    type: light_rail
+    colour: '#ff0000'
     station_count: 24
+
+transfers: 
 
 stations: 
   - 25 de Mayo (n7063747984)

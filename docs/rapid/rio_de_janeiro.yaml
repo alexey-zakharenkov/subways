@@ -1,35 +1,10 @@
 
-transfers: 
-  - 
-    - General Osório (Linha 1) (r7939633)
-    - General Osório (Linha 4) (r7939632)
-
 routes: 
   - 
-    colour: '#e77405'
+    name: Metrô Rio Linha 1
+    type: subway
+    ref: 1
     itineraries: 
-      r285322: 
-        - Uruguai (n1784229907)
-        - Saens Peña (n1473517781)
-        - São Francisco Xavier (n710950049)
-        - Afonso Pena (n710950083)
-        - Estácio (n246126554)
-        - Praça Onze (n712849029)
-        - Central (n5365436833)
-        - Presidente Vargas (n2726866239)
-        - Uruguaiana (n5284484734)
-        - Carioca (n712849053)
-        - Cinelândia (n712849094)
-        - Glória (n180337351)
-        - Catete (n332517552)
-        - Largo do Machado (n712849086)
-        - Flamengo (n712849079)
-        - Botafogo (n506848463)
-        - Cardeal Arcoverde (n165688241)
-        - Siqueira Campos (n712849129)
-        - Cantagalo (n712849124)
-        - General Osório (n5367720224)
-
       r7944060: 
         - General Osório (n5367720224)
         - Cantagalo (n712849124)
@@ -52,35 +27,57 @@ routes:
         - Saens Peña (n1473517781)
         - Uruguai (n1784229907)
 
+      r285322: 
+        - Uruguai (n1784229907)
+        - Saens Peña (n1473517781)
+        - São Francisco Xavier (n710950049)
+        - Afonso Pena (n710950083)
+        - Estácio (n246126554)
+        - Praça Onze (n712849029)
+        - Central (n5365436833)
+        - Presidente Vargas (n2726866239)
+        - Uruguaiana (n5284484734)
+        - Carioca (n712849053)
+        - Cinelândia (n712849094)
+        - Glória (n180337351)
+        - Catete (n332517552)
+        - Largo do Machado (n712849086)
+        - Flamengo (n712849079)
+        - Botafogo (n506848463)
+        - Cardeal Arcoverde (n165688241)
+        - Siqueira Campos (n712849129)
+        - Cantagalo (n712849124)
+        - General Osório (n5367720224)
 
-    name: Metrô Rio Linha 1
+
     stations: 
-      - Estação de Metrô Uruguai
-      - Saens Peña
-      - São Francisco Xavier
-      - Afonso Pena
-      - Estácio
-      - Praça Onze
-      - Central
-      - Presidente Vargas
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Carioca
-      - Cinelândia
-      - Glória
-      - Catete
-      - Largo do Machado
-      - Flamengo
-      - Botafogo
-      - Cardeal Arcoverde
-      - Siqueira Campos
-      - Cantagalo
       - General Osório (Linha 1)
+      - Cantagalo
+      - Siqueira Campos
+      - Cardeal Arcoverde
+      - Botafogo
+      - Flamengo
+      - Largo do Machado
+      - Catete
+      - Glória
+      - Cinelândia
+      - Carioca
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Presidente Vargas
+      - Central
+      - Praça Onze
+      - Estácio
+      - Afonso Pena
+      - São Francisco Xavier
+      - Saens Peña
+      - Estação de Metrô Uruguai
 
-    ref: 1
-    type: subway
+    colour: '#e77405'
     station_count: 20
   - 
-    colour: '#028f34'
+    name: Metrô Rio Linha 2
+    type: subway
+    ref: 2
     itineraries: 
       r285324: 
         - Pavuna (n5362542035)
@@ -139,49 +136,41 @@ routes:
         - Pavuna (n5362542035)
 
 
-    name: Metrô Rio Linha 2
     stations: 
-      - Pavuna
-      - Engenheiro Rubens Paiva
-      - Acari / Fazenda Botafogo
-      - Coelho Neto
-      - Colégio
-      - Irajá
-      - Vicente de Carvalho
-      - Thomáz Coelho
-      - Engenho da Rainha
-      - Inhaúma
-      - Nova América / Del Castilho
-      - Maria da Graça
-      - Triagem (Metrô)
-      - Maracanã (Metrô)
-      - São Cristóvão (Metrô)
-      - Cidade Nova
-      - Central
-      - Presidente Vargas
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Carioca
-      - Cinelândia
-      - Glória
-      - Catete
-      - Largo do Machado
-      - Flamengo
       - Botafogo
+      - Flamengo
+      - Largo do Machado
+      - Catete
+      - Glória
+      - Cinelândia
+      - Carioca
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Presidente Vargas
+      - Central
+      - Cidade Nova
+      - São Cristóvão (Metrô)
+      - Maracanã (Metrô)
+      - Triagem (Metrô)
+      - Maria da Graça
+      - Nova América / Del Castilho
+      - Inhaúma
+      - Engenho da Rainha
+      - Thomáz Coelho
+      - Vicente de Carvalho
+      - Irajá
+      - Colégio
+      - Coelho Neto
+      - Acari / Fazenda Botafogo
+      - Engenheiro Rubens Paiva
+      - Pavuna
 
-    ref: 2
-    type: subway
+    colour: '#028f34'
     station_count: 26
   - 
-    colour: '#ffcc29'
+    name: 'Linha 4: General Osório ↔ Jardim Oceânico'
+    type: subway
+    ref: 4
     itineraries: 
-      r6432700: 
-        - General Osório (n5367720224)
-        - Nossa Senhora da Paz (n4317159360)
-        - Jardim de Alah (n4317159359)
-        - Antero de Quental (n4317159358)
-        - São Conrado (n4317159361)
-        - Jardim Oceânico (n5302148205)
-
       r6432701: 
         - Jardim Oceânico (n5302148205)
         - São Conrado (n4317159361)
@@ -190,8 +179,15 @@ routes:
         - Nossa Senhora da Paz (n4317159360)
         - General Osório (n5367720224)
 
+      r6432700: 
+        - General Osório (n5367720224)
+        - Nossa Senhora da Paz (n4317159360)
+        - Jardim de Alah (n4317159359)
+        - Antero de Quental (n4317159358)
+        - São Conrado (n4317159361)
+        - Jardim Oceânico (n5302148205)
 
-    name: 'Linha 4: General Osório ↔ Jardim Oceânico'
+
     stations: 
       - Jardim Oceânico
       - São Conrado
@@ -200,9 +196,13 @@ routes:
       - Nossa Senhora da Paz
       - General Osório (Linha 4)
 
-    ref: 4
-    type: subway
+    colour: '#ffcc29'
     station_count: 6
+
+transfers: 
+  - 
+    - General Osório (Linha 1) (r7939633)
+    - General Osório (Linha 4) (r7939632)
 
 stations: 
   - Acari / Fazenda Botafogo (n712848989)

@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#015698'
+    name: River Line
+    type: light_rail
+    ref: River Line
     itineraries: 
       r10213648: 
         - Trenton (n7703677001)
@@ -52,7 +52,6 @@ routes:
         - Trenton (n7703677001)
 
 
-    name: River Line
     stations: 
       - Entertainment Center
       - Adventure Aquarium
@@ -76,9 +75,10 @@ routes:
       - Hamilton Avenue
       - Trenton (River Line)
 
-    ref: River Line
-    type: light_rail
+    colour: '#015698'
     station_count: 21
+
+transfers: 
 
 stations: 
   - 36th Street (n6969053904)

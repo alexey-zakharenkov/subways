@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#00008b'
+    name: 特急ラピート
+    type: train
+    ref: NK
     itineraries: 
       r10386551: 
         - なんば (n280487841)
@@ -26,7 +26,6 @@ routes:
         - なんば (n280487841)
 
 
-    name: 特急ラピート
     stations: 
       - なんば
       - 新今宮 (南海鉄道)
@@ -37,9 +36,10 @@ routes:
       - りんくうタウン
       - 関西空港
 
-    ref: NK
-    type: train
+    colour: '#00008b'
     station_count: 8
+
+transfers: 
 
 stations: 
   - なんば (n280487841)

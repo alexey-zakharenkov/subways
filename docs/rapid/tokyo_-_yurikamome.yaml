@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#1662b8'
+    name: ゆりかもめ東京臨海新交通臨海線
+    type: light_rail
+    ref: U
     itineraries: 
       r3670770: 
         - 豊洲 (n3349961088)
@@ -42,7 +42,6 @@ routes:
         - 豊洲 (n3349961088)
 
 
-    name: ゆりかもめ東京臨海新交通臨海線
     stations: 
       - 新橋 (ゆりかもめ)
       - 汐留 (ゆりかもめ)
@@ -61,9 +60,10 @@ routes:
       - 新豊洲
       - 豊洲
 
-    ref: U
-    type: light_rail
+    colour: '#1662b8'
     station_count: 16
+
+transfers: 
 
 stations: 
   - お台場海浜公園 (n3349902309)

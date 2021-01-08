@@ -1,41 +1,10 @@
 
-transfers: 
-  - 
-    - Fonte do Cuco (r10830267)
-    - Fonte do Cuco (r9518030)
-  - 
-    - Trindade (r10830264)
-    - Trindade (r7970629)
-
 routes: 
   - 
-    colour: '#3caeef'
+    name: 'Linha A: Estádio do Dragão <=> Senhor de Matosinhos'
+    type: light_rail
+    ref: A
     itineraries: 
-      r2174525: 
-        - Senhor de Matosinhos (n6634498467)
-        - Mercado (n6634498461)
-        - Brito Capelo (n6634498460)
-        - Matosinhos Sul (n6634498459)
-        - Câmara de Matosinhos (n6634498462)
-        - Parque de Real (n6634498463)
-        - Pedro Hispano (n6634498464)
-        - Estádio do Mar (n6634498465)
-        - Vasco da Gama (n6634498466)
-        - Senhora da Hora (n6627320512)
-        - Sete Bicas (n3939659557)
-        - Via Rápida / Viso (n3939836094)
-        - Ramalde (n3941918457)
-        - Francos (n3939661657)
-        - Casa da Música (n6627320513)
-        - Carolina Michaelis (n6627320514)
-        - Lapa (n6627320515)
-        - Trindade (n3996603757)
-        - Bolhão (n6627320516)
-        - Campo 24 de Agosto (n6627320517)
-        - Heroísmo (n6627320518)
-        - 'Porto - Campanhã (n6630378103)'
-        - Estádio do Dragão (n6627320519)
-
       r6064924: 
         - Estádio do Dragão (n6627320519)
         - 'Porto - Campanhã (n6630378103)'
@@ -61,8 +30,32 @@ routes:
         - Mercado (n6634498461)
         - Senhor de Matosinhos (n6634498467)
 
+      r2174525: 
+        - Senhor de Matosinhos (n6634498467)
+        - Mercado (n6634498461)
+        - Brito Capelo (n6634498460)
+        - Matosinhos Sul (n6634498459)
+        - Câmara de Matosinhos (n6634498462)
+        - Parque de Real (n6634498463)
+        - Pedro Hispano (n6634498464)
+        - Estádio do Mar (n6634498465)
+        - Vasco da Gama (n6634498466)
+        - Senhora da Hora (n6627320512)
+        - Sete Bicas (n3939659557)
+        - Via Rápida / Viso (n3939836094)
+        - Ramalde (n3941918457)
+        - Francos (n3939661657)
+        - Casa da Música (n6627320513)
+        - Carolina Michaelis (n6627320514)
+        - Lapa (n6627320515)
+        - Trindade (n3996603757)
+        - Bolhão (n6627320516)
+        - Campo 24 de Agosto (n6627320517)
+        - Heroísmo (n6627320518)
+        - 'Porto - Campanhã (n6630378103)'
+        - Estádio do Dragão (n6627320519)
 
-    name: 'Linha A: Estádio do Dragão <=> Senhor de Matosinhos'
+
     stations: 
       - Senhor de Matosinhos
       - Mercado
@@ -88,11 +81,12 @@ routes:
       - Campanhã
       - Estádio do Dragão
 
-    ref: A
-    type: light_rail
+    colour: '#3caeef'
     station_count: 23
   - 
-    colour: '#e62621'
+    name: 'Linha B: Póvoa de Varzim <=> Estádio do Dragão'
+    type: light_rail
+    ref: B
     itineraries: 
       r5750428: 
         - Estádio do Dragão (n6627320519)
@@ -171,7 +165,6 @@ routes:
         - Estádio do Dragão (n6627320519)
 
 
-    name: 'Linha B: Póvoa de Varzim <=> Estádio do Dragão'
     stations: 
       - Estádio do Dragão
       - Campanhã
@@ -210,38 +203,13 @@ routes:
       - São Brás
       - Póvoa de Varzim
 
-    ref: B
-    type: light_rail
+    colour: '#e62621'
     station_count: 36
   - 
-    colour: '#8bc63e'
+    name: 'Linha C: Campanhã <=> ISMAI'
+    type: light_rail
+    ref: C
     itineraries: 
-      r2124143: 
-        - ISMAI (n6632462990)
-        - Castêlo da Maia (n6632462989)
-        - Mandim (n6632462988)
-        - Zona Industrial (n6632462987)
-        - Fórum Maia (n6632462986)
-        - Parque Maia (n6632462985)
-        - Custió (n6632407684)
-        - Araújo (n6632407683)
-        - Pias (n6632407682)
-        - Cândido dos Reis (n6632407681)
-        - Fonte do Cuco (w686427805)
-        - Senhora da Hora (n6627320512)
-        - Sete Bicas (n3939659557)
-        - Via Rápida / Viso (n3939836094)
-        - Ramalde (n3941918457)
-        - Francos (n3939661657)
-        - Casa da Música (n6627320513)
-        - Carolina Michaelis (n6627320514)
-        - Lapa (n6627320515)
-        - Trindade (n3996603757)
-        - Bolhão (n6627320516)
-        - Campo 24 de Agosto (n6627320517)
-        - Heroísmo (n6627320518)
-        - 'Porto - Campanhã (n6630378103)'
-
       r6065644: 
         - 'Porto - Campanhã (n6630378103)'
         - Heroísmo (n6627320518)
@@ -268,8 +236,33 @@ routes:
         - Castêlo da Maia (n6632462989)
         - ISMAI (n6632462990)
 
+      r2124143: 
+        - ISMAI (n6632462990)
+        - Castêlo da Maia (n6632462989)
+        - Mandim (n6632462988)
+        - Zona Industrial (n6632462987)
+        - Fórum Maia (n6632462986)
+        - Parque Maia (n6632462985)
+        - Custió (n6632407684)
+        - Araújo (n6632407683)
+        - Pias (n6632407682)
+        - Cândido dos Reis (n6632407681)
+        - Fonte do Cuco (w686427805)
+        - Senhora da Hora (n6627320512)
+        - Sete Bicas (n3939659557)
+        - Via Rápida / Viso (n3939836094)
+        - Ramalde (n3941918457)
+        - Francos (n3939661657)
+        - Casa da Música (n6627320513)
+        - Carolina Michaelis (n6627320514)
+        - Lapa (n6627320515)
+        - Trindade (n3996603757)
+        - Bolhão (n6627320516)
+        - Campo 24 de Agosto (n6627320517)
+        - Heroísmo (n6627320518)
+        - 'Porto - Campanhã (n6630378103)'
 
-    name: 'Linha C: Campanhã <=> ISMAI'
+
     stations: 
       - Campanhã
       - Heroísmo
@@ -296,11 +289,12 @@ routes:
       - Castêlo da Maia
       - ISMAI
 
-    ref: C
-    type: light_rail
+    colour: '#8bc63e'
     station_count: 24
   - 
-    colour: '#f9c212'
+    name: 'Linha D: Hospital de São João <=> Santo Ovídio'
+    type: light_rail
+    ref: D
     itineraries: 
       r6063096: 
         - Hospital São João (n6630342113)
@@ -339,30 +333,30 @@ routes:
         - Hospital São João (n6630342113)
 
 
-    name: 'Linha D: Hospital de São João <=> Santo Ovídio'
     stations: 
-      - Santo Ovídio
-      - Dom João II
-      - João de Deus
-      - Câmara de Gaia
-      - General Torres
-      - Jardim do Morro
-      - São Bento
-      - Aliados
-      - Trindade
-      - Faria Guimarães
-      - Marquês
-      - Combatentes
-      - Salgueiros
-      - Polo Universitário
-      - IPO
       - Hospital São João
+      - IPO
+      - Polo Universitário
+      - Salgueiros
+      - Combatentes
+      - Marquês
+      - Faria Guimarães
+      - Trindade
+      - Aliados
+      - São Bento
+      - Jardim do Morro
+      - General Torres
+      - Câmara de Gaia
+      - João de Deus
+      - Dom João II
+      - Santo Ovídio
 
-    ref: D
-    type: light_rail
+    colour: '#f9c212'
     station_count: 16
   - 
-    colour: '#937bb8'
+    name: 'Linha E: Estádio do Dragão <=> Aeroporto'
+    type: light_rail
+    ref: E
     itineraries: 
       r6063236: 
         - Estádio do Dragão (n6627320519)
@@ -411,62 +405,36 @@ routes:
         - Estádio do Dragão (n6627320519)
 
 
-    name: 'Linha E: Estádio do Dragão <=> Aeroporto'
     stations: 
-      - Aeroporto
-      - Botica
-      - Verdes
-      - Crestins
-      - Esposade
-      - Custóias
-      - Fonte do Cuco
-      - Senhora da Hora
-      - Sete Bicas
-      - Via Rápida / Viso
-      - Ramalde
-      - Francos
-      - Casa da Música
-      - Carolina Michaelis
-      - Lapa
-      - Trindade
-      - Bolhão
-      - Campo 24 de Agosto
-      - Heroísmo
-      - Campanhã
       - Estádio do Dragão
+      - Campanhã
+      - Heroísmo
+      - Campo 24 de Agosto
+      - Bolhão
+      - Trindade
+      - Lapa
+      - Carolina Michaelis
+      - Casa da Música
+      - Francos
+      - Ramalde
+      - Via Rápida / Viso
+      - Sete Bicas
+      - Senhora da Hora
+      - Fonte do Cuco
+      - Custóias
+      - Esposade
+      - Crestins
+      - Verdes
+      - Botica
+      - Aeroporto
 
-    ref: E
-    type: light_rail
+    colour: '#937bb8'
     station_count: 21
   - 
-    colour: '#f68b1f'
+    name: 'Linha F: Senhora da Hora <=> Fânzeres'
+    type: light_rail
+    ref: F
     itineraries: 
-      r6064750: 
-        - Fânzeres (w558217937)
-        - Venda Nova (w558217979)
-        - Carreira (w558223912)
-        - Baguim (w558231370)
-        - Campainha (w558232959)
-        - Rio Tinto (w558234599)
-        - Levada (w558241557)
-        - Nau Vitória (n6627320524)
-        - Nasoni (w558241570)
-        - Contumil (w558243287)
-        - Estádio do Dragão (n6627320519)
-        - 'Porto - Campanhã (n6630378103)'
-        - Heroísmo (n6627320518)
-        - Campo 24 de Agosto (n6627320517)
-        - Bolhão (n6627320516)
-        - Trindade (n3996603757)
-        - Lapa (n6627320515)
-        - Carolina Michaelis (n6627320514)
-        - Casa da Música (n6627320513)
-        - Francos (n3939661657)
-        - Ramalde (n3941918457)
-        - Via Rápida / Viso (n3939836094)
-        - Sete Bicas (n3939659557)
-        - Senhora da Hora (n6627320512)
-
       r2465891: 
         - Senhora da Hora (n6627320512)
         - Sete Bicas (n3939659557)
@@ -493,8 +461,33 @@ routes:
         - Venda Nova (w558217979)
         - Fânzeres (w558217937)
 
+      r6064750: 
+        - Fânzeres (w558217937)
+        - Venda Nova (w558217979)
+        - Carreira (w558223912)
+        - Baguim (w558231370)
+        - Campainha (w558232959)
+        - Rio Tinto (w558234599)
+        - Levada (w558241557)
+        - Nau Vitória (n6627320524)
+        - Nasoni (w558241570)
+        - Contumil (w558243287)
+        - Estádio do Dragão (n6627320519)
+        - 'Porto - Campanhã (n6630378103)'
+        - Heroísmo (n6627320518)
+        - Campo 24 de Agosto (n6627320517)
+        - Bolhão (n6627320516)
+        - Trindade (n3996603757)
+        - Lapa (n6627320515)
+        - Carolina Michaelis (n6627320514)
+        - Casa da Música (n6627320513)
+        - Francos (n3939661657)
+        - Ramalde (n3941918457)
+        - Via Rápida / Viso (n3939836094)
+        - Sete Bicas (n3939659557)
+        - Senhora da Hora (n6627320512)
 
-    name: 'Linha F: Senhora da Hora <=> Fânzeres'
+
     stations: 
       - Senhora da Hora
       - Sete Bicas
@@ -521,9 +514,16 @@ routes:
       - Venda Nova
       - Fânzeres
 
-    ref: F
-    type: light_rail
+    colour: '#f68b1f'
     station_count: 24
+
+transfers: 
+  - 
+    - Fonte do Cuco (r10830267)
+    - Fonte do Cuco (r9518030)
+  - 
+    - Trindade (r10830264)
+    - Trindade (r7970629)
 
 stations: 
   - Aeroporto (n6632410573)

@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#c61094'
+    name: 横浜高速鉄道みなとみらい21線
+    type: subway
+    ref: MM
     itineraries: 
       r7703632: 
         - 元町・中華街 (n7856115775)
@@ -22,20 +22,20 @@ routes:
         - 元町・中華街 (n7856115775)
 
 
-    name: 横浜高速鉄道みなとみらい21線
     stations: 
-      - 横浜 (みなとみらい線 東急東横線)
-      - 新高島
-      - みなとみらい
-      - 馬車道
-      - 日本大通り
       - 元町・中華街
+      - 日本大通り
+      - 馬車道
+      - みなとみらい
+      - 新高島
+      - 横浜 (みなとみらい線 東急東横線)
 
-    ref: MM
-    type: subway
+    colour: '#c61094'
     station_count: 6
   - 
-    colour: '#da0442'
+    name: 列車 東急東横線
+    type: train
+    ref: TY
     itineraries: 
       r1947536: 
         - 横浜 (n7967959831)
@@ -84,7 +84,6 @@ routes:
         - 横浜 (n7967959831)
 
 
-    name: 列車 東急東横線
     stations: 
       - 渋谷 (東京メトロ副都心線・東急東横線)
       - 代官山
@@ -108,9 +107,10 @@ routes:
       - 反町
       - 横浜 (みなとみらい線 東急東横線)
 
-    ref: TY
-    type: train
+    colour: '#da0442'
     station_count: 21
+
+transfers: 
 
 stations: 
   - みなとみらい (n7856115778)

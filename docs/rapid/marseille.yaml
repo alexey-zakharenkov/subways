@@ -1,12 +1,9 @@
 
-transfers: 
-  - 
-    - Castellane — M1 (r7683732)
-    - Castellane — M2 (r7683731)
-
 routes: 
   - 
-    colour: '#0075be'
+    name: Métro 1
+    type: subway
+    ref: M1
     itineraries: 
       r6274531: 
         - La Rose (w421630984)
@@ -49,7 +46,6 @@ routes:
         - La Rose (w421630984)
 
 
-    name: Métro 1
     stations: 
       - La Fourragère
       - Saint-Barnabé
@@ -70,11 +66,12 @@ routes:
       - Frais Vallon
       - La Rose
 
-    ref: M1
-    type: subway
+    colour: '#0075be'
     station_count: 18
   - 
-    colour: '#e30513'
+    name: Metro 2
+    type: subway
+    ref: M2
     itineraries: 
       r6274533: 
         - Sainte-Marguerite Dromel (w419035089)
@@ -107,7 +104,6 @@ routes:
         - Sainte-Marguerite Dromel (w419035089)
 
 
-    name: Metro 2
     stations: 
       - Sainte-Marguerite Dromel
       - Rond-Point du Prado
@@ -123,9 +119,13 @@ routes:
       - Bougainville
       - Métro Gèze
 
-    ref: M2
-    type: subway
+    colour: '#e30513'
     station_count: 13
+
+transfers: 
+  - 
+    - Castellane — M1 (r7683732)
+    - Castellane — M2 (r7683731)
 
 stations: 
   - Baille (w420876794)

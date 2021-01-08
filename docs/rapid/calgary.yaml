@@ -1,10 +1,36 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    name: CTrain Red Line
+    type: light_rail
+    ref: 201
     itineraries: 
+      r2653243: 
+        - 'Somerset - Bridlewood (n6575607872)'
+        - Shawnessy (n3684428765)
+        - 'Fish Creek - Lacombe (n6712140298)'
+        - Canyon Meadows (n6575595186)
+        - Anderson (n6575591954)
+        - Southland (n6575591953)
+        - Heritage (n6575588314)
+        - Chinook (n6575588313)
+        - 39 Avenue (n6575573990)
+        - Erlton / Stampede (n6575522464)
+        - Victoria Park / Stampede (n6575549333)
+        - City Hall (n6575466744)
+        - 1 Street SW (n6575466746)
+        - 4 Street SW (n6575466756)
+        - 7 Street SW (n6575440359)
+        - Sunnyside (n3185974854)
+        - SAIT/AUArts/Jubilee (n6575604646)
+        - Lions Park (n3185972587)
+        - Banff Trail (n3167127887)
+        - University (n6575591757)
+        - Brentwood (n6575665571)
+        - Dalhousie (n6575616772)
+        - Crowfoot (n6575593129)
+        - Tuscany (n6575621430)
+
       r9729911: 
         - Tuscany (n6575621430)
         - Crowfoot (n6575593129)
@@ -32,34 +58,7 @@ routes:
         - Shawnessy (n3684428765)
         - 'Somerset - Bridlewood (n6575607872)'
 
-      r2653243: 
-        - 'Somerset - Bridlewood (n6575607872)'
-        - Shawnessy (n3684428765)
-        - 'Fish Creek - Lacombe (n6712140298)'
-        - Canyon Meadows (n6575595186)
-        - Anderson (n6575591954)
-        - Southland (n6575591953)
-        - Heritage (n6575588314)
-        - Chinook (n6575588313)
-        - 39 Avenue (n6575573990)
-        - Erlton / Stampede (n6575522464)
-        - Victoria Park / Stampede (n6575549333)
-        - City Hall (n6575466744)
-        - 1 Street SW (n6575466746)
-        - 4 Street SW (n6575466756)
-        - 7 Street SW (n6575440359)
-        - Sunnyside (n3185974854)
-        - SAIT/AUArts/Jubilee (n6575604646)
-        - Lions Park (n3185972587)
-        - Banff Trail (n3167127887)
-        - University (n6575591757)
-        - Brentwood (n6575665571)
-        - Dalhousie (n6575616772)
-        - Crowfoot (n6575593129)
-        - Tuscany (n6575621430)
 
-
-    name: CTrain Red Line
     stations: 
       - Tuscany
       - Crowfoot
@@ -90,11 +89,12 @@ routes:
       - 4 Street SW
       - 7 Street SW
 
-    ref: 201
-    type: light_rail
+    colour: '#ff0000'
     station_count: 28
   - 
-    colour: '#0000ff'
+    name: CTrain Blue Line
+    type: light_rail
+    ref: 202
     itineraries: 
       r9729896: 
         - Saddletowne (n6575529216)
@@ -144,7 +144,6 @@ routes:
         - Saddletowne (n6575529216)
 
 
-    name: CTrain Blue Line
     stations: 
       - Saddletowne
       - Martindale
@@ -172,9 +171,10 @@ routes:
       - 3 Street SW
       - Centre Street
 
-    ref: 202
-    type: light_rail
+    colour: '#0000ff'
     station_count: 25
+
+transfers: 
 
 stations: 
   - 1 Street SW (n6575466746)

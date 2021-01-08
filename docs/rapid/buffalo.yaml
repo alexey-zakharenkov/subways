@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#73757d'
+    name: NFTA Metro Rail
+    type: light_rail
+    ref: Metro
     itineraries: 
       r3517747: 
         - Erie Canal Harbor (n111456195)
@@ -36,7 +36,6 @@ routes:
         - Erie Canal Harbor (n111456195)
 
 
-    name: NFTA Metro Rail
     stations: 
       - Erie Canal Harbor
       - Seneca
@@ -52,9 +51,10 @@ routes:
       - LaSalle
       - University
 
-    ref: Metro
-    type: light_rail
+    colour: '#73757d'
     station_count: 13
+
+transfers: 
 
 stations: 
   - Allen/Medical Campus (n306391081)

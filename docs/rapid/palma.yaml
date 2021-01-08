@@ -1,21 +1,10 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f1b03e'
+    name: Metro M1
+    type: light_rail
+    ref: M1
     itineraries: 
-      r1664324: 
-        - Plaça d'Espanya (n5263686386)
-        - Jacint Verdaguer (n8043190541)
-        - 'Son Costa - Son Fortesa (n8048727321)'
-        - Son Fuster Vell (n1362173666)
-        - Son Castelló (n1362173665)
-        - Gran via Asima (n1362173662)
-        - Camí dels Reis (n1362173663)
-        - Son Sardina (n5263686385)
-        - UIB (n1362170795)
-
       r7781525: 
         - UIB (n1362170795)
         - Son Sardina (n5263686385)
@@ -27,24 +16,35 @@ routes:
         - Jacint Verdaguer (n8043190541)
         - Plaça d'Espanya (n5263686386)
 
+      r1664324: 
+        - Plaça d'Espanya (n5263686386)
+        - Jacint Verdaguer (n8043190541)
+        - 'Son Costa - Son Fortesa (n8048727321)'
+        - Son Fuster Vell (n1362173666)
+        - Son Castelló (n1362173665)
+        - Gran via Asima (n1362173662)
+        - Camí dels Reis (n1362173663)
+        - Son Sardina (n5263686385)
+        - UIB (n1362170795)
 
-    name: Metro M1
+
     stations: 
-      - UIB
-      - Son Sardina
-      - Camí dels Reis
-      - Gran via Asima
-      - Son Castelló
-      - Son Fuster Vell
-      - 'Son Costa - Son Fortesa'
-      - Jacint Verdaguer
       - Plaça d'Espanya (light rail/train station)
+      - Jacint Verdaguer
+      - 'Son Costa - Son Fortesa'
+      - Son Fuster Vell
+      - Son Castelló
+      - Gran via Asima
+      - Camí dels Reis
+      - Son Sardina
+      - UIB
 
-    ref: M1
-    type: light_rail
+    colour: '#f1b03e'
     station_count: 9
   - 
-    colour: '#e93324'
+    name: Metro M2
+    type: light_rail
+    ref: M2
     itineraries: 
       r7781524: 
         - Marratxí (n8048771641)
@@ -71,7 +71,6 @@ routes:
         - Marratxí (n8048771641)
 
 
-    name: Metro M2
     stations: 
       - Plaça d'Espanya (light rail/train station)
       - Jacint Verdaguer
@@ -84,9 +83,10 @@ routes:
       - Polígon de Marratxí
       - Marratxí
 
-    ref: M2
-    type: light_rail
+    colour: '#e93324'
     station_count: 10
+
+transfers: 
 
 stations: 
   - Camí dels Reis (n1362173663)

@@ -1,9 +1,9 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#62bb46'
+    name: Green Line
+    type: subway
+    ref: Green
     itineraries: 
       r4499117: 
         - Palmetto (n462721823)
@@ -54,36 +54,36 @@ routes:
         - Palmetto (n462721823)
 
 
-    name: Green Line
     stations: 
-      - Dadeland South (Metrorail)
-      - Dadeland North (Metrorail)
-      - South Miami (Metrorail)
-      - University (Metrorail)
-      - Douglas Road (Metrorail)
-      - Coconut Grove (Metrorail)
-      - Vizcaya (Metrorail)
-      - Brickell (Metrorail)
-      - Government Center (Metrorail)
-      - Historic Overtown/Lyric Theatre
-      - Culmer (Metrorail)
-      - Civic Center (Metrorail)
-      - Santa Clara (Metrorail)
-      - Allapattah (Metrorail)
-      - Earlington Heights (Metrorail)
-      - Brownsville (Metrorail)
-      - Dr. Martin Luther King, Jr. (Metrorail)
-      - Northside (Metrorail)
-      - Tri-Rail Transfer (Metrorail)
-      - Hialeah (Metrorail)
-      - Okeechobee (Metrorail)
       - Palmetto (Metrorail)
+      - Okeechobee (Metrorail)
+      - Hialeah (Metrorail)
+      - Tri-Rail Transfer (Metrorail)
+      - Northside (Metrorail)
+      - Dr. Martin Luther King, Jr. (Metrorail)
+      - Brownsville (Metrorail)
+      - Earlington Heights (Metrorail)
+      - Allapattah (Metrorail)
+      - Santa Clara (Metrorail)
+      - Civic Center (Metrorail)
+      - Culmer (Metrorail)
+      - Historic Overtown/Lyric Theatre
+      - Government Center (Metrorail)
+      - Brickell (Metrorail)
+      - Vizcaya (Metrorail)
+      - Coconut Grove (Metrorail)
+      - Douglas Road (Metrorail)
+      - University (Metrorail)
+      - South Miami (Metrorail)
+      - Dadeland North (Metrorail)
+      - Dadeland South (Metrorail)
 
-    ref: Green
-    type: subway
+    colour: '#62bb46'
     station_count: 22
   - 
-    colour: '#f78f1e'
+    name: Orange Line
+    type: subway
+    ref: Orange
     itineraries: 
       r7924525: 
         - Miami International Airport (n6416386201)
@@ -122,7 +122,6 @@ routes:
         - Miami International Airport (n6416386201)
 
 
-    name: Orange Line
     stations: 
       - Dadeland South (Metrorail)
       - Dadeland North (Metrorail)
@@ -141,9 +140,10 @@ routes:
       - Earlington Heights (Metrorail)
       - Miami International Airport
 
-    ref: Orange
-    type: subway
+    colour: '#f78f1e'
     station_count: 16
+
+transfers: 
 
 stations: 
   - Allapattah (n462648893)
