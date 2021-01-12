@@ -1,504 +1,4 @@
 
-routes: 
-  - 
-    name: Linha Belford Roxo
-    type: train
-    ref: Belford Roxo
-    itineraries: 
-      r1578053: 
-        - Central do Brasil (n712849026)
-        - São Cristóvão (n712849018)
-        - Maracanã (n712849021)
-        - Triagem (n712849012)
-        - Jacarezinho (n823908954)
-        - Del Castilho (n823908964)
-        - Pilares (n823909080)
-        - Tomás Coelho (n823908947)
-        - Cavalcante (n823909073)
-        - Mercadão de Madureira (n823908996)
-        - Rocha Miranda (n823909092)
-        - Honório Gurgel (n823909054)
-        - Barros Filho (n823909057)
-        - Costa Barros (n823908922)
-        - Pavuna/São João de Meriti (n823909007)
-        - Vila Rosali (n993782878)
-        - Agostinho Porto (n993784202)
-        - Coelho da Rocha (n993784935)
-        - Belford Roxo (n6753788981)
-
-      r9963650: 
-        - Belford Roxo (n6753788981)
-        - Coelho da Rocha (n993784935)
-        - Agostinho Porto (n993784202)
-        - Vila Rosali (n993782878)
-        - Pavuna/São João de Meriti (n823909007)
-        - Costa Barros (n823908922)
-        - Barros Filho (n823909057)
-        - Honório Gurgel (n823909054)
-        - Rocha Miranda (n823909092)
-        - Mercadão de Madureira (n823908996)
-        - Cavalcante (n823909073)
-        - Tomás Coelho (n823908947)
-        - Pilares (n823909080)
-        - Del Castilho (n823908964)
-        - Jacarezinho (n823908954)
-        - Triagem (n712849012)
-        - Maracanã (n712849021)
-        - São Cristóvão (n712849018)
-        - Central do Brasil (n712849026)
-
-
-    stations: 
-      - Central do Brasil (SuperVia)
-      - São Cristóvão (SuperVia)
-      - Maracanã (SuperVia)
-      - Triagem (SuperVia)
-      - Jacarezinho
-      - Del Castilho
-      - Pilares
-      - Tomás Coelho
-      - Cavalcante
-      - Mercadão de Madureira
-      - Rocha Miranda
-      - Honório Gurgel
-      - Barros Filho
-      - Costa Barros
-      - Pavuna/São João de Meriti
-      - Vila Rosali
-      - Agostinho Porto
-      - Coelho da Rocha
-      - Belford Roxo
-
-    colour: '#660066'
-    station_count: 19
-  - 
-    name: Linha Deodoro
-    type: train
-    ref: Deodoro
-    itineraries: 
-      r1609111: 
-        - Central do Brasil (n712849026)
-        - Praça da Bandeira (n712849023)
-        - São Cristóvão (n712849018)
-        - Maracanã (n712849021)
-        - Mangueira / Jamelão (n6750699335)
-        - São Francisco Xavier (n687072757)
-        - Riachuelo (n823909091)
-        - Sampaio (n823909083)
-        - Engenho Novo (n6744577066)
-        - Méier (n823909075)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Piedade (n823909055)
-        - Quintino (n823908912)
-        - Cascadura (n823909065)
-        - Madureira (n823908929)
-        - Oswaldo Cruz (n823909024)
-        - Pref. Bento Ribeiro (n823909118)
-        - Marechal Hermes (n823908966)
-        - Deodoro (n823909099)
-
-      r9963664: 
-        - Deodoro (n823909099)
-        - Marechal Hermes (n823908966)
-        - Pref. Bento Ribeiro (n823909118)
-        - Oswaldo Cruz (n823909024)
-        - Madureira (n823908929)
-        - Cascadura (n823909065)
-        - Quintino (n823908912)
-        - Piedade (n823909055)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Méier (n823909075)
-        - Engenho Novo (n6744577066)
-        - Sampaio (n823909083)
-        - Riachuelo (n823909091)
-        - São Francisco Xavier (n687072757)
-        - Mangueira / Jamelão (n6750699335)
-        - Maracanã (n712849021)
-        - São Cristóvão (n712849018)
-        - Praça da Bandeira (n712849023)
-        - Central do Brasil (n712849026)
-
-
-    stations: 
-      - Central do Brasil (SuperVia)
-      - Praça da Bandeira
-      - São Cristóvão (SuperVia)
-      - Maracanã (SuperVia)
-      - Mangueira
-      - São Francisco Xavier
-      - Riachuelo
-      - Sampaio
-      - Engenho Novo
-      - Méier
-      - Olímpica Engenho de Dentro
-      - Piedade
-      - Quintino
-      - Cascadura
-      - Madureira
-      - Oswaldo Cruz
-      - Pref. Bento Ribeiro
-      - Marechal Hermes
-      - Deodoro
-
-    colour: '#f60619'
-    station_count: 19
-  - 
-    name: Linha Paracambi
-    type: train
-    ref: JRI-PBI
-    itineraries: 
-      r9963668: 
-        - Japeri (n1278195937)
-        - Lages (n1278911578)
-        - Paracambi (n1277781330)
-
-      r1578818: 
-        - Paracambi (n1277781330)
-        - Lages (n1278911578)
-        - Japeri (n1278195937)
-
-
-    stations: 
-      - Paracambi
-      - Lages
-      - Japeri
-
-    colour: '#5194c4'
-    station_count: 3
-  - 
-    name: Linha Japeri
-    type: train
-    ref: Japeri
-    itineraries: 
-      r1589649: 
-        - Central do Brasil (n712849026)
-        - São Cristóvão (n712849018)
-        - Maracanã (n712849021)
-        - Silva Freire (n982308914)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Madureira (n823908929)
-        - Deodoro (n823909099)
-        - Ricardo de Albuquerque (n823909078)
-        - Anchieta (n823909110)
-        - Olinda (n992840767)
-        - Nilópolis (n992841159)
-        - Edson Passos (n992845669)
-        - Mesquita (n992846878)
-        - Presidente Juscelino (n992848083)
-        - Nova Iguaçu (n992849414)
-        - Comendador Soares (n992849871)
-        - Austin (n992850521)
-        - Queimados (n992850832)
-        - Engenheiro Pedreira (n992856860)
-        - Japeri (n1278195937)
-
-      r6432247: 
-        - Japeri (n1278195937)
-        - Engenheiro Pedreira (n992856860)
-        - Queimados (n992850832)
-        - Austin (n992850521)
-        - Comendador Soares (n992849871)
-        - Nova Iguaçu (n992849414)
-        - Presidente Juscelino (n992848083)
-        - Mesquita (n992846878)
-        - Edson Passos (n992845669)
-        - Nilópolis (n992841159)
-        - Olinda (n992840767)
-        - Anchieta (n823909110)
-        - Ricardo de Albuquerque (n823909078)
-        - Deodoro (n823909099)
-        - Madureira (n823908929)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Silva Freire (n982308914)
-        - Maracanã (n712849021)
-        - São Cristóvão (n712849018)
-        - Central do Brasil (n712849026)
-
-
-    stations: 
-      - Central do Brasil (SuperVia)
-      - São Cristóvão (SuperVia)
-      - Maracanã (SuperVia)
-      - Silva Freire
-      - Olímpica Engenho de Dentro
-      - Madureira
-      - Deodoro
-      - Ricardo de Albuquerque
-      - Anchieta
-      - Olinda
-      - Nilópolis
-      - Edson Passos
-      - Mesquita
-      - Presidente Juscelino
-      - Nova Iguaçu
-      - Comendador Soares
-      - Austin
-      - Queimados
-      - Engenheiro Pedreira
-      - Japeri
-
-    colour: '#0691f6'
-    station_count: 20
-  - 
-    name: 'Linha Guapimirim: Saracuruna - Guapimirim'
-    type: train
-    ref: SAR-GIM
-    itineraries: 
-      r1604427: 
-        - Saracuruna (n1053355283)
-        - Parque Estrela (n1053355284)
-        - Parada Santa Dalila (n1054609033)
-        - Suruí (n1058120139)
-        - Iriri (n1305341874)
-        - Magé (n1128223409)
-        - Jardim Nova Marília (n2211440347)
-        - Jororó (n2211440346)
-        - Citrolândia (n2211438810)
-        - Parada Ideal (n2211441993)
-        - Jardim Guapimirim (n2211436751)
-        - Parada Modelo (n1128292080)
-        - Parada Bananal (n2211434416)
-        - Guapimirim (n6750726934)
-
-      r9963673: 
-        - Guapimirim (n6750726934)
-        - Parada Bananal (n2211434416)
-        - Parada Modelo (n1128292080)
-        - Jardim Guapimirim (n2211436751)
-        - Parada Ideal (n2211441993)
-        - Citrolândia (n2211438810)
-        - Jororó (n2211440346)
-        - Jardim Nova Marília (n2211440347)
-        - Magé (n1128223409)
-        - Iriri (n1305341874)
-        - Suruí (n1058120139)
-        - Parada Santa Dalila (n1054609033)
-        - Parque Estrela (n1053355284)
-        - Saracuruna (n1053355283)
-
-
-    stations: 
-      - Guapimirim
-      - Parada Bananal
-      - Parada Modelo
-      - Jardim Guapimirim
-      - Parada Ideal
-      - Citrolândia
-      - Jororó
-      - Jardim Nova Marília
-      - Magé
-      - Iriri
-      - Suruí
-      - Santa Dalila
-      - Parque Estrela
-      - Saracuruna
-
-    colour: '#96333b'
-    station_count: 14
-  - 
-    name: Linha Vila Inhomirim
-    type: train
-    ref: SAR-VIN
-    itineraries: 
-      r9963644: 
-        - Vila Inhomirim (n1304247564)
-        - Fragoso (n1304246239)
-        - Piabetá (n1304242080)
-        - Parada Angélica (n1304227521)
-        - Manoel Belo (n1304217915)
-        - Imbariê (n1304214216)
-        - Morabi (n1304139978)
-        - Saracuruna (n1053355283)
-
-      r1604426: 
-        - Saracuruna (n1053355283)
-        - Morabi (n1304139978)
-        - Imbariê (n1304214216)
-        - Manoel Belo (n1304217915)
-        - Parada Angélica (n1304227521)
-        - Piabetá (n1304242080)
-        - Fragoso (n1304246239)
-        - Vila Inhomirim (n1304247564)
-
-
-    stations: 
-      - Vila Inhomirim
-      - Fragoso
-      - Piabetá
-      - Parada Angélica
-      - Manoel Belo
-      - Imbariê
-      - Morabi
-      - Saracuruna
-
-    colour: '#d1aa00'
-    station_count: 8
-  - 
-    name: Linha Santa Cruz
-    type: train
-    ref: Santa Cruz
-    itineraries: 
-      r6432130: 
-        - Santa Cruz (n823908945)
-        - Tancredo Neves (n823908904)
-        - Paciência (n823909093)
-        - Cosmos (n823909074)
-        - Inhoaíba (n823909108)
-        - Benjamin do Monte (n823908910)
-        - Campo Grande (n823909050)
-        - Augusto Vasconcelos (n823909111)
-        - Santíssimo (n823909107)
-        - Senador Camará (n823908998)
-        - Bangu (n823908896)
-        - Guilherme da Silveira (n823908982)
-        - Mocidade de Padre Miguel (n823909046)
-        - Realengo (n823908935)
-        - Magalhães Bastos (n823909071)
-        - Vila Militar (n823908991)
-        - Deodoro (n823909099)
-        - Madureira (n823908929)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Silva Freire (n982308914)
-        - Maracanã (n712849021)
-        - São Cristóvão (n712849018)
-        - Central do Brasil (n712849026)
-
-      r1609112: 
-        - Central do Brasil (n712849026)
-        - São Cristóvão (n712849018)
-        - Maracanã (n712849021)
-        - Silva Freire (n982308914)
-        - Olímpica de Engenho de Dentro (n823908958)
-        - Madureira (n823908929)
-        - Deodoro (n823909099)
-        - Vila Militar (n823908991)
-        - Magalhães Bastos (n823909071)
-        - Realengo (n823908935)
-        - Mocidade de Padre Miguel (n823909046)
-        - Guilherme da Silveira (n823908982)
-        - Bangu (n823908896)
-        - Senador Camará (n823908998)
-        - Santíssimo (n823909107)
-        - Augusto Vasconcelos (n823909111)
-        - Campo Grande (n823909050)
-        - Benjamin do Monte (n823908910)
-        - Inhoaíba (n823909108)
-        - Cosmos (n823909074)
-        - Paciência (n823909093)
-        - Tancredo Neves (n823908904)
-        - Santa Cruz (n823908945)
-
-
-    stations: 
-      - Central do Brasil (SuperVia)
-      - São Cristóvão (SuperVia)
-      - Maracanã (SuperVia)
-      - Silva Freire
-      - Olímpica Engenho de Dentro
-      - Madureira
-      - Deodoro
-      - Vila Militar
-      - Magalhães Bastos
-      - Realengo
-      - Mocidade de Padre Miguel
-      - Guilherme da Silveira
-      - Bangu
-      - Senador Camará
-      - Santíssimo
-      - Augusto Vasconcelos
-      - Campo Grande
-      - Benjamin do Monte
-      - Inhoaíba
-      - Cosmos
-      - Paciência
-      - Tancredo Neves
-      - Santa Cruz
-
-    colour: '#629f3f'
-    station_count: 23
-  - 
-    name: Linha Saracuruna
-    type: train
-    ref: Saracuruna
-    itineraries: 
-      r1306884: 
-        - Central do Brasil (n712849026)
-        - São Cristóvão (n712849018)
-        - Maracanã (n712849021)
-        - Triagem (n712849012)
-        - Manguinhos (n6753772513)
-        - Bonsucesso (n6750743893)
-        - Ramos (n823909027)
-        - Olaria (n823909122)
-        - Penha (n823908970)
-        - Penha Circular (n823909101)
-        - Brás de Pina (n823909117)
-        - Cordovil (n823909087)
-        - Parada de Lucas (n823909094)
-        - Vigário Geral (n823909015)
-        - Duque de Caxias (n331873876)
-        - Corte Oito (n2211412853)
-        - Gramacho (n331874228)
-
-      r9963672: 
-        - Gramacho (n331874228)
-        - Corte Oito (n2211412853)
-        - Duque de Caxias (n331873876)
-        - Vigário Geral (n823909015)
-        - Parada de Lucas (n823909094)
-        - Cordovil (n823909087)
-        - Brás de Pina (n823909117)
-        - Penha Circular (n823909101)
-        - Penha (n823908970)
-        - Olaria (n823909122)
-        - Ramos (n823909027)
-        - Bonsucesso (n6750743893)
-        - Manguinhos (n6753772513)
-        - Triagem (n712849012)
-        - Maracanã (n712849021)
-        - São Cristóvão (n712849018)
-        - Central do Brasil (n712849026)
-
-      r6018221: 
-        - Gramacho (n331874228)
-        - Campos Elíseos (n331875799)
-        - Jardim Primavera (n331875825)
-        - Saracuruna (n1053355283)
-
-      r9963666: 
-        - Saracuruna (n1053355283)
-        - Jardim Primavera (n331875825)
-        - Campos Elíseos (n331875799)
-        - Gramacho (n331874228)
-
-
-    stations: 
-      - Gramacho
-      - Corte Oito
-      - Duque de Caxias
-      - Vigário Geral
-      - Parada de Lucas
-      - Cordovil
-      - Brás de Pina
-      - Penha Circular
-      - Penha
-      - Olaria
-      - Ramos
-      - Bonsucesso
-      - Manguinhos
-      - Triagem (SuperVia)
-      - Maracanã (SuperVia)
-      - São Cristóvão (SuperVia)
-      - Central do Brasil (SuperVia)
-      - Saracuruna
-      - Jardim Primavera
-      - Campos Elíseos
-
-    colour: '#fa8835'
-    station_count: 20
-
-transfers: 
-
 stations: 
   - Agostinho Porto (n993784202)
   - Anchieta (n823909110)
@@ -603,4 +103,504 @@ stations:
   - Vila Inhomirim (n1304247564)
   - Vila Militar (n823908991)
   - Vila Rosali (n993782878)
+
+routes: 
+  - 
+    type: train
+    itineraries: 
+      r9963650: 
+        - Belford Roxo (n6753788981)
+        - Coelho da Rocha (n993784935)
+        - Agostinho Porto (n993784202)
+        - Vila Rosali (n993782878)
+        - Pavuna/São João de Meriti (n823909007)
+        - Costa Barros (n823908922)
+        - Barros Filho (n823909057)
+        - Honório Gurgel (n823909054)
+        - Rocha Miranda (n823909092)
+        - Mercadão de Madureira (n823908996)
+        - Cavalcante (n823909073)
+        - Tomás Coelho (n823908947)
+        - Pilares (n823909080)
+        - Del Castilho (n823908964)
+        - Jacarezinho (n823908954)
+        - Triagem (n712849012)
+        - Maracanã (n712849021)
+        - São Cristóvão (n712849018)
+        - Central do Brasil (n712849026)
+
+      r1578053: 
+        - Central do Brasil (n712849026)
+        - São Cristóvão (n712849018)
+        - Maracanã (n712849021)
+        - Triagem (n712849012)
+        - Jacarezinho (n823908954)
+        - Del Castilho (n823908964)
+        - Pilares (n823909080)
+        - Tomás Coelho (n823908947)
+        - Cavalcante (n823909073)
+        - Mercadão de Madureira (n823908996)
+        - Rocha Miranda (n823909092)
+        - Honório Gurgel (n823909054)
+        - Barros Filho (n823909057)
+        - Costa Barros (n823908922)
+        - Pavuna/São João de Meriti (n823909007)
+        - Vila Rosali (n993782878)
+        - Agostinho Porto (n993784202)
+        - Coelho da Rocha (n993784935)
+        - Belford Roxo (n6753788981)
+
+
+    colour: '#660066'
+    stations: 
+      - Belford Roxo
+      - Coelho da Rocha
+      - Agostinho Porto
+      - Vila Rosali
+      - Pavuna/São João de Meriti
+      - Costa Barros
+      - Barros Filho
+      - Honório Gurgel
+      - Rocha Miranda
+      - Mercadão de Madureira
+      - Cavalcante
+      - Tomás Coelho
+      - Pilares
+      - Del Castilho
+      - Jacarezinho
+      - Triagem (SuperVia)
+      - Maracanã (SuperVia)
+      - São Cristóvão (SuperVia)
+      - Central do Brasil (SuperVia)
+
+    station_count: 19
+    name: Linha Belford Roxo
+    ref: Belford Roxo
+  - 
+    type: train
+    itineraries: 
+      r1609111: 
+        - Central do Brasil (n712849026)
+        - Praça da Bandeira (n712849023)
+        - São Cristóvão (n712849018)
+        - Maracanã (n712849021)
+        - Mangueira / Jamelão (n6750699335)
+        - São Francisco Xavier (n687072757)
+        - Riachuelo (n823909091)
+        - Sampaio (n823909083)
+        - Engenho Novo (n6744577066)
+        - Méier (n823909075)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Piedade (n823909055)
+        - Quintino (n823908912)
+        - Cascadura (n823909065)
+        - Madureira (n823908929)
+        - Oswaldo Cruz (n823909024)
+        - Pref. Bento Ribeiro (n823909118)
+        - Marechal Hermes (n823908966)
+        - Deodoro (n823909099)
+
+      r9963664: 
+        - Deodoro (n823909099)
+        - Marechal Hermes (n823908966)
+        - Pref. Bento Ribeiro (n823909118)
+        - Oswaldo Cruz (n823909024)
+        - Madureira (n823908929)
+        - Cascadura (n823909065)
+        - Quintino (n823908912)
+        - Piedade (n823909055)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Méier (n823909075)
+        - Engenho Novo (n6744577066)
+        - Sampaio (n823909083)
+        - Riachuelo (n823909091)
+        - São Francisco Xavier (n687072757)
+        - Mangueira / Jamelão (n6750699335)
+        - Maracanã (n712849021)
+        - São Cristóvão (n712849018)
+        - Praça da Bandeira (n712849023)
+        - Central do Brasil (n712849026)
+
+
+    colour: '#f60619'
+    stations: 
+      - Central do Brasil (SuperVia)
+      - Praça da Bandeira
+      - São Cristóvão (SuperVia)
+      - Maracanã (SuperVia)
+      - Mangueira
+      - São Francisco Xavier
+      - Riachuelo
+      - Sampaio
+      - Engenho Novo
+      - Méier
+      - Olímpica Engenho de Dentro
+      - Piedade
+      - Quintino
+      - Cascadura
+      - Madureira
+      - Oswaldo Cruz
+      - Pref. Bento Ribeiro
+      - Marechal Hermes
+      - Deodoro
+
+    station_count: 19
+    name: Linha Deodoro
+    ref: Deodoro
+  - 
+    type: train
+    itineraries: 
+      r1578818: 
+        - Paracambi (n1277781330)
+        - Lages (n1278911578)
+        - Japeri (n1278195937)
+
+      r9963668: 
+        - Japeri (n1278195937)
+        - Lages (n1278911578)
+        - Paracambi (n1277781330)
+
+
+    colour: '#5194c4'
+    stations: 
+      - Japeri
+      - Lages
+      - Paracambi
+
+    station_count: 3
+    name: Linha Paracambi
+    ref: JRI-PBI
+  - 
+    type: train
+    itineraries: 
+      r1589649: 
+        - Central do Brasil (n712849026)
+        - São Cristóvão (n712849018)
+        - Maracanã (n712849021)
+        - Silva Freire (n982308914)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Madureira (n823908929)
+        - Deodoro (n823909099)
+        - Ricardo de Albuquerque (n823909078)
+        - Anchieta (n823909110)
+        - Olinda (n992840767)
+        - Nilópolis (n992841159)
+        - Edson Passos (n992845669)
+        - Mesquita (n992846878)
+        - Presidente Juscelino (n992848083)
+        - Nova Iguaçu (n992849414)
+        - Comendador Soares (n992849871)
+        - Austin (n992850521)
+        - Queimados (n992850832)
+        - Engenheiro Pedreira (n992856860)
+        - Japeri (n1278195937)
+
+      r6432247: 
+        - Japeri (n1278195937)
+        - Engenheiro Pedreira (n992856860)
+        - Queimados (n992850832)
+        - Austin (n992850521)
+        - Comendador Soares (n992849871)
+        - Nova Iguaçu (n992849414)
+        - Presidente Juscelino (n992848083)
+        - Mesquita (n992846878)
+        - Edson Passos (n992845669)
+        - Nilópolis (n992841159)
+        - Olinda (n992840767)
+        - Anchieta (n823909110)
+        - Ricardo de Albuquerque (n823909078)
+        - Deodoro (n823909099)
+        - Madureira (n823908929)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Silva Freire (n982308914)
+        - Maracanã (n712849021)
+        - São Cristóvão (n712849018)
+        - Central do Brasil (n712849026)
+
+
+    colour: '#0691f6'
+    stations: 
+      - Central do Brasil (SuperVia)
+      - São Cristóvão (SuperVia)
+      - Maracanã (SuperVia)
+      - Silva Freire
+      - Olímpica Engenho de Dentro
+      - Madureira
+      - Deodoro
+      - Ricardo de Albuquerque
+      - Anchieta
+      - Olinda
+      - Nilópolis
+      - Edson Passos
+      - Mesquita
+      - Presidente Juscelino
+      - Nova Iguaçu
+      - Comendador Soares
+      - Austin
+      - Queimados
+      - Engenheiro Pedreira
+      - Japeri
+
+    station_count: 20
+    name: Linha Japeri
+    ref: Japeri
+  - 
+    type: train
+    itineraries: 
+      r9963673: 
+        - Guapimirim (n6750726934)
+        - Parada Bananal (n2211434416)
+        - Parada Modelo (n1128292080)
+        - Jardim Guapimirim (n2211436751)
+        - Parada Ideal (n2211441993)
+        - Citrolândia (n2211438810)
+        - Jororó (n2211440346)
+        - Jardim Nova Marília (n2211440347)
+        - Magé (n1128223409)
+        - Iriri (n1305341874)
+        - Suruí (n1058120139)
+        - Parada Santa Dalila (n1054609033)
+        - Parque Estrela (n1053355284)
+        - Saracuruna (n1053355283)
+
+      r1604427: 
+        - Saracuruna (n1053355283)
+        - Parque Estrela (n1053355284)
+        - Parada Santa Dalila (n1054609033)
+        - Suruí (n1058120139)
+        - Iriri (n1305341874)
+        - Magé (n1128223409)
+        - Jardim Nova Marília (n2211440347)
+        - Jororó (n2211440346)
+        - Citrolândia (n2211438810)
+        - Parada Ideal (n2211441993)
+        - Jardim Guapimirim (n2211436751)
+        - Parada Modelo (n1128292080)
+        - Parada Bananal (n2211434416)
+        - Guapimirim (n6750726934)
+
+
+    colour: '#96333b'
+    stations: 
+      - Saracuruna
+      - Parque Estrela
+      - Santa Dalila
+      - Suruí
+      - Iriri
+      - Magé
+      - Jardim Nova Marília
+      - Jororó
+      - Citrolândia
+      - Parada Ideal
+      - Jardim Guapimirim
+      - Parada Modelo
+      - Parada Bananal
+      - Guapimirim
+
+    station_count: 14
+    name: 'Linha Guapimirim: Saracuruna - Guapimirim'
+    ref: SAR-GIM
+  - 
+    type: train
+    itineraries: 
+      r1604426: 
+        - Saracuruna (n1053355283)
+        - Morabi (n1304139978)
+        - Imbariê (n1304214216)
+        - Manoel Belo (n1304217915)
+        - Parada Angélica (n1304227521)
+        - Piabetá (n1304242080)
+        - Fragoso (n1304246239)
+        - Vila Inhomirim (n1304247564)
+
+      r9963644: 
+        - Vila Inhomirim (n1304247564)
+        - Fragoso (n1304246239)
+        - Piabetá (n1304242080)
+        - Parada Angélica (n1304227521)
+        - Manoel Belo (n1304217915)
+        - Imbariê (n1304214216)
+        - Morabi (n1304139978)
+        - Saracuruna (n1053355283)
+
+
+    colour: '#d1aa00'
+    stations: 
+      - Saracuruna
+      - Morabi
+      - Imbariê
+      - Manoel Belo
+      - Parada Angélica
+      - Piabetá
+      - Fragoso
+      - Vila Inhomirim
+
+    station_count: 8
+    name: Linha Vila Inhomirim
+    ref: SAR-VIN
+  - 
+    type: train
+    itineraries: 
+      r6432130: 
+        - Santa Cruz (n823908945)
+        - Tancredo Neves (n823908904)
+        - Paciência (n823909093)
+        - Cosmos (n823909074)
+        - Inhoaíba (n823909108)
+        - Benjamin do Monte (n823908910)
+        - Campo Grande (n823909050)
+        - Augusto Vasconcelos (n823909111)
+        - Santíssimo (n823909107)
+        - Senador Camará (n823908998)
+        - Bangu (n823908896)
+        - Guilherme da Silveira (n823908982)
+        - Mocidade de Padre Miguel (n823909046)
+        - Realengo (n823908935)
+        - Magalhães Bastos (n823909071)
+        - Vila Militar (n823908991)
+        - Deodoro (n823909099)
+        - Madureira (n823908929)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Silva Freire (n982308914)
+        - Maracanã (n712849021)
+        - São Cristóvão (n712849018)
+        - Central do Brasil (n712849026)
+
+      r1609112: 
+        - Central do Brasil (n712849026)
+        - São Cristóvão (n712849018)
+        - Maracanã (n712849021)
+        - Silva Freire (n982308914)
+        - Olímpica de Engenho de Dentro (n823908958)
+        - Madureira (n823908929)
+        - Deodoro (n823909099)
+        - Vila Militar (n823908991)
+        - Magalhães Bastos (n823909071)
+        - Realengo (n823908935)
+        - Mocidade de Padre Miguel (n823909046)
+        - Guilherme da Silveira (n823908982)
+        - Bangu (n823908896)
+        - Senador Camará (n823908998)
+        - Santíssimo (n823909107)
+        - Augusto Vasconcelos (n823909111)
+        - Campo Grande (n823909050)
+        - Benjamin do Monte (n823908910)
+        - Inhoaíba (n823909108)
+        - Cosmos (n823909074)
+        - Paciência (n823909093)
+        - Tancredo Neves (n823908904)
+        - Santa Cruz (n823908945)
+
+
+    colour: '#629f3f'
+    stations: 
+      - Central do Brasil (SuperVia)
+      - São Cristóvão (SuperVia)
+      - Maracanã (SuperVia)
+      - Silva Freire
+      - Olímpica Engenho de Dentro
+      - Madureira
+      - Deodoro
+      - Vila Militar
+      - Magalhães Bastos
+      - Realengo
+      - Mocidade de Padre Miguel
+      - Guilherme da Silveira
+      - Bangu
+      - Senador Camará
+      - Santíssimo
+      - Augusto Vasconcelos
+      - Campo Grande
+      - Benjamin do Monte
+      - Inhoaíba
+      - Cosmos
+      - Paciência
+      - Tancredo Neves
+      - Santa Cruz
+
+    station_count: 23
+    name: Linha Santa Cruz
+    ref: Santa Cruz
+  - 
+    type: train
+    itineraries: 
+      r1306884: 
+        - Central do Brasil (n712849026)
+        - São Cristóvão (n712849018)
+        - Maracanã (n712849021)
+        - Triagem (n712849012)
+        - Manguinhos (n6753772513)
+        - Bonsucesso (n6750743893)
+        - Ramos (n823909027)
+        - Olaria (n823909122)
+        - Penha (n823908970)
+        - Penha Circular (n823909101)
+        - Brás de Pina (n823909117)
+        - Cordovil (n823909087)
+        - Parada de Lucas (n823909094)
+        - Vigário Geral (n823909015)
+        - Duque de Caxias (n331873876)
+        - Corte Oito (n2211412853)
+        - Gramacho (n331874228)
+
+      r6018221: 
+        - Gramacho (n331874228)
+        - Campos Elíseos (n331875799)
+        - Jardim Primavera (n331875825)
+        - Saracuruna (n1053355283)
+
+      r9963666: 
+        - Saracuruna (n1053355283)
+        - Jardim Primavera (n331875825)
+        - Campos Elíseos (n331875799)
+        - Gramacho (n331874228)
+
+      r9963672: 
+        - Gramacho (n331874228)
+        - Corte Oito (n2211412853)
+        - Duque de Caxias (n331873876)
+        - Vigário Geral (n823909015)
+        - Parada de Lucas (n823909094)
+        - Cordovil (n823909087)
+        - Brás de Pina (n823909117)
+        - Penha Circular (n823909101)
+        - Penha (n823908970)
+        - Olaria (n823909122)
+        - Ramos (n823909027)
+        - Bonsucesso (n6750743893)
+        - Manguinhos (n6753772513)
+        - Triagem (n712849012)
+        - Maracanã (n712849021)
+        - São Cristóvão (n712849018)
+        - Central do Brasil (n712849026)
+
+
+    colour: '#fa8835'
+    stations: 
+      - Gramacho
+      - Campos Elíseos
+      - Jardim Primavera
+      - Saracuruna
+      - Corte Oito
+      - Duque de Caxias
+      - Vigário Geral
+      - Parada de Lucas
+      - Cordovil
+      - Brás de Pina
+      - Penha Circular
+      - Penha
+      - Olaria
+      - Ramos
+      - Bonsucesso
+      - Manguinhos
+      - Triagem (SuperVia)
+      - Maracanã (SuperVia)
+      - São Cristóvão (SuperVia)
+      - Central do Brasil (SuperVia)
+
+    station_count: 20
+    name: Linha Saracuruna
+    ref: Saracuruna
+
+transfers: 
 

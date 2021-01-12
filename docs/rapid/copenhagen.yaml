@@ -1,955 +1,4 @@
 
-routes: 
-  - 
-    name: S-tog A
-    type: light_rail
-    ref: A
-    itineraries: 
-      r9969573: 
-        - Køge (n287901130)
-        - Ølby (n5642862445)
-        - Køge Nord (n5643031051)
-        - Jersie (n287333273)
-        - Solrød Strand (n287332180)
-        - Karlslunde (n287328785)
-        - Greve (n295218037)
-        - Hundige (n286999329)
-        - Ishøj (n287043264)
-        - Vallensbæk (n286885624)
-        - Brøndby Strand (n286885763)
-        - Avedøre (n286885968)
-        - Friheden (n286886106)
-        - Åmarken (n286886137)
-        - Ny Ellebjerg (n1017968484)
-        - Sjælør (n286886199)
-        - Sydhavn (n286886246)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Hellerup (n598201521)
-        - Bernstorffsvej (n25872886)
-        - Gentofte (n598205283)
-        - Jægersborg (n5785023300)
-        - Lyngby (n5762708641)
-        - Sorgenfri (n25872941)
-        - Virum (n25872951)
-        - Holte (n20946305)
-        - Birkerød (n349187308)
-        - Allerød (n5696961214)
-        - Hillerød (n1733449578)
-
-      r9971485: 
-        - Solrød Strand (n287332180)
-        - Karlslunde (n287328785)
-        - Greve (n295218037)
-        - Hundige (n286999329)
-        - Ishøj (n287043264)
-        - Vallensbæk (n286885624)
-        - Brøndby Strand (n286885763)
-        - Avedøre (n286885968)
-        - Friheden (n286886106)
-        - Åmarken (n286886137)
-        - Ny Ellebjerg (n1017968484)
-        - Sjælør (n286886199)
-        - Sydhavn (n286886246)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Hellerup (n598201521)
-        - Lyngby (n5762708641)
-        - Holte (n20946305)
-        - Birkerød (n349187308)
-        - Allerød (n5696961214)
-        - Hillerød (n1733449578)
-
-      r9974943: 
-        - Hillerød (n1733449578)
-        - Allerød (n5696961214)
-        - Birkerød (n349187308)
-        - Holte (n20946305)
-        - Lyngby (n5762708641)
-        - Hellerup (n598201521)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Sydhavn (n286886246)
-        - Sjælør (n286886199)
-        - Ny Ellebjerg (n1017968484)
-        - Åmarken (n286886137)
-        - Friheden (n286886106)
-        - Avedøre (n286885968)
-        - Brøndby Strand (n286885763)
-        - Vallensbæk (n286885624)
-        - Ishøj (n287043264)
-        - Hundige (n286999329)
-        - Greve (n295218037)
-        - Karlslunde (n287328785)
-        - Solrød Strand (n287332180)
-
-      r9971028: 
-        - Hillerød (n1733449578)
-        - Allerød (n5696961214)
-        - Birkerød (n349187308)
-        - Holte (n20946305)
-        - Virum (n25872951)
-        - Sorgenfri (n25872941)
-        - Lyngby (n5762708641)
-        - Jægersborg (n5785023300)
-        - Gentofte (n598205283)
-        - Bernstorffsvej (n25872886)
-        - Hellerup (n598201521)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Sydhavn (n286886246)
-        - Sjælør (n286886199)
-        - Ny Ellebjerg (n1017968484)
-        - Åmarken (n286886137)
-        - Friheden (n286886106)
-        - Avedøre (n286885968)
-        - Brøndby Strand (n286885763)
-        - Vallensbæk (n286885624)
-        - Ishøj (n287043264)
-        - Hundige (n286999329)
-        - Greve (n295218037)
-        - Karlslunde (n287328785)
-        - Solrød Strand (n287332180)
-        - Jersie (n287333273)
-        - Køge Nord (n5643031051)
-        - Ølby (n5642862445)
-        - Køge (n287901130)
-
-
-    stations: 
-      - Køge
-      - Ølby
-      - Køge Nord
-      - Jersie
-      - Solrød Strand
-      - Karlslunde
-      - Greve
-      - Hundige
-      - Ishøj
-      - Vallensbæk
-      - Brøndby Strand
-      - Avedøre
-      - Friheden
-      - Åmarken
-      - Ny Ellebjerg
-      - Sjælør
-      - Sydhavn
-      - Dybbølsbro
-      - København H
-      - Vesterport
-      - Nørreport
-      - Østerport
-      - Nordhavn
-      - Svanemøllen
-      - Hellerup
-      - Bernstorffsvej
-      - Gentofte
-      - Jægersborg
-      - Lyngby
-      - Sorgenfri
-      - Virum
-      - Holte
-      - Birkerød
-      - Allerød
-      - Hillerød
-
-    colour: '#00bfff'
-    station_count: 35
-  - 
-    name: S-tog B
-    type: light_rail
-    ref: B
-    itineraries: 
-      r5612107: 
-        - Høje Taastrup (n5502509094)
-        - Taastrup (n1036553613)
-        - Albertslund (n1036553616)
-        - Glostrup (n1034044245)
-        - Brøndbyøster (n1023040928)
-        - Rødovre (n24954656)
-        - Hvidovre (n1036553605)
-        - Danshøj (n611318182)
-        - Valby (n5073252188)
-        - Carlsberg (n4280112495)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Ryparken (n593869905)
-        - Emdrup (n659992474)
-        - Dyssegård (n597730022)
-        - Vangede (n597729973)
-        - Kildebakke (n597730004)
-        - Buddinge (n494382836)
-        - Stengården (n597426666)
-        - Bagsværd (n597426641)
-        - Skovbrynet (n597771469)
-        - Hareskov (n597771450)
-        - Værløse (n597771392)
-        - Farum (n597771482)
-
-      r5612106: 
-        - Farum (n597771482)
-        - Værløse (n597771392)
-        - Hareskov (n597771450)
-        - Skovbrynet (n597771469)
-        - Bagsværd (n597426641)
-        - Stengården (n597426666)
-        - Buddinge (n494382836)
-        - Kildebakke (n597730004)
-        - Vangede (n597729973)
-        - Dyssegård (n597730022)
-        - Emdrup (n659992474)
-        - Ryparken (n593869905)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Carlsberg (n4280112495)
-        - Valby (n5073252188)
-        - Danshøj (n611318182)
-        - Hvidovre (n1036553605)
-        - Rødovre (n24954656)
-        - Brøndbyøster (n1023040928)
-        - Glostrup (n1034044245)
-        - Albertslund (n1036553616)
-        - Taastrup (n1036553613)
-        - Høje Taastrup (n5502509094)
-
-
-    stations: 
-      - Høje Taastrup
-      - Taastrup
-      - Albertslund
-      - Glostrup
-      - Brøndbyøster
-      - Rødovre
-      - Hvidovre
-      - Danshøj
-      - Valby
-      - Carlsberg
-      - Dybbølsbro
-      - København H
-      - Vesterport
-      - Nørreport
-      - Østerport
-      - Nordhavn
-      - Svanemøllen
-      - Ryparken
-      - Emdrup
-      - Dyssegård
-      - Vangede
-      - Kildebakke
-      - Buddinge
-      - Stengården
-      - Bagsværd
-      - Skovbrynet
-      - Hareskov
-      - Værløse
-      - Farum
-
-    colour: '#32cd32'
-    station_count: 29
-  - 
-    name: S-tog Bx
-    type: light_rail
-    ref: Bx
-    itineraries: 
-      r5612108: 
-        - Høje Taastrup (n5502509094)
-        - Taastrup (n1036553613)
-        - Albertslund (n1036553616)
-        - Glostrup (n1034044245)
-        - Danshøj (n611318182)
-        - Valby (n5073252188)
-        - Carlsberg (n4280112495)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Ryparken (n593869905)
-        - Emdrup (n659992474)
-        - Dyssegård (n597730022)
-        - Vangede (n597729973)
-        - Kildebakke (n597730004)
-        - Buddinge (n494382836)
-        - Stengården (n597426666)
-        - Bagsværd (n597426641)
-        - Skovbrynet (n597771469)
-        - Hareskov (n597771450)
-        - Værløse (n597771392)
-        - Farum (n597771482)
-
-      r5612109: 
-        - Farum (n597771482)
-        - Værløse (n597771392)
-        - Hareskov (n597771450)
-        - Skovbrynet (n597771469)
-        - Bagsværd (n597426641)
-        - Stengården (n597426666)
-        - Buddinge (n494382836)
-        - Kildebakke (n597730004)
-        - Vangede (n597729973)
-        - Dyssegård (n597730022)
-        - Emdrup (n659992474)
-        - Ryparken (n593869905)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Carlsberg (n4280112495)
-        - Valby (n5073252188)
-        - Danshøj (n611318182)
-        - Glostrup (n1034044245)
-        - Albertslund (n1036553616)
-        - Taastrup (n1036553613)
-        - Høje Taastrup (n5502509094)
-
-
-    stations: 
-      - Farum
-      - Værløse
-      - Hareskov
-      - Skovbrynet
-      - Bagsværd
-      - Stengården
-      - Buddinge
-      - Kildebakke
-      - Vangede
-      - Dyssegård
-      - Emdrup
-      - Ryparken
-      - Svanemøllen
-      - Nordhavn
-      - Østerport
-      - Nørreport
-      - Vesterport
-      - København H
-      - Dybbølsbro
-      - Carlsberg
-      - Valby
-      - Danshøj
-      - Glostrup
-      - Albertslund
-      - Taastrup
-      - Høje Taastrup
-
-    colour: '#9acd32'
-    station_count: 26
-  - 
-    name: S-tog C
-    type: light_rail
-    ref: C
-    itineraries: 
-      r5612111: 
-        - Klampenborg (n2951409808)
-        - Ordrup (n2093979759)
-        - Charlottenlund (n25872825)
-        - Hellerup (n598201521)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Carlsberg (n4280112495)
-        - Valby (n5073252188)
-        - Langgade (n1036553606)
-        - Peter Bangsvej (n1040169361)
-        - Flintholm (n611305003)
-        - Vanløse (n5066122140)
-        - Jyllingevej (n586436651)
-        - Islev (n586436631)
-        - Husum (n5126423536)
-        - Herlev (n494382792)
-        - Skovlunde (n587660892)
-        - Malmparken (n1071641459)
-        - Ballerup (n5130464045)
-        - Måløv (n587732384)
-        - Kildedal (n587739741)
-        - Veksø (n587738229)
-        - Stenløse (n5133910423)
-        - Egedal (n587738170)
-        - Ølstykke (n587738110)
-        - Vinge (n8203164043)
-        - Frederikssund (n587738050)
-
-      r5612110: 
-        - Frederikssund (n587738050)
-        - Vinge (n8203164043)
-        - Ølstykke (n587738110)
-        - Egedal (n587738170)
-        - Stenløse (n5133910423)
-        - Veksø (n587738229)
-        - Kildedal (n587739741)
-        - Måløv (n587732384)
-        - Ballerup (n5130464045)
-        - Malmparken (n1071641459)
-        - Skovlunde (n587660892)
-        - Herlev (n494382792)
-        - Husum (n5126423536)
-        - Islev (n586436631)
-        - Jyllingevej (n586436651)
-        - Vanløse (n5066122140)
-        - Flintholm (n611305003)
-        - Peter Bangsvej (n1040169361)
-        - Langgade (n1036553606)
-        - Valby (n5073252188)
-        - Carlsberg (n4280112495)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Hellerup (n598201521)
-        - Charlottenlund (n25872825)
-        - Ordrup (n2093979759)
-        - Klampenborg (n2951409808)
-
-
-    stations: 
-      - Frederikssund
-      - Vinge
-      - Ølstykke
-      - Egedal
-      - Stenløse
-      - Veksø
-      - Kildedal
-      - Måløv
-      - Ballerup
-      - Malmparken
-      - Skovlunde
-      - Herlev
-      - Husum
-      - Islev
-      - Jyllingevej
-      - Vanløse
-      - Flintholm
-      - Peter Bangs Vej
-      - Langgade
-      - Valby
-      - Carlsberg
-      - Dybbølsbro
-      - København H
-      - Vesterport
-      - Nørreport
-      - Østerport
-      - Nordhavn
-      - Svanemøllen
-      - Hellerup
-      - Charlottenlund
-      - Ordrup
-      - Klampenborg
-
-    colour: '#ffa500'
-    station_count: 32
-  - 
-    name: S-tog E
-    type: light_rail
-    ref: E
-    itineraries: 
-      r5612112: 
-        - Holte (n20946305)
-        - Virum (n25872951)
-        - Sorgenfri (n25872941)
-        - Lyngby (n5762708641)
-        - Jægersborg (n5785023300)
-        - Gentofte (n598205283)
-        - Bernstorffsvej (n25872886)
-        - Hellerup (n598201521)
-        - Svanemøllen (n595293336)
-        - Nordhavn (n595296652)
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Sydhavn (n286886246)
-        - Sjælør (n286886199)
-        - Ny Ellebjerg (n1017968484)
-        - Ishøj (n287043264)
-        - Hundige (n286999329)
-        - Greve (n295218037)
-        - Karlslunde (n287328785)
-        - Solrød Strand (n287332180)
-        - Jersie (n287333273)
-        - Køge Nord (n5643031051)
-        - Ølby (n5642862445)
-        - Køge (n287901130)
-
-      r5612113: 
-        - Køge (n287901130)
-        - Ølby (n5642862445)
-        - Køge Nord (n5643031051)
-        - Jersie (n287333273)
-        - Solrød Strand (n287332180)
-        - Karlslunde (n287328785)
-        - Greve (n295218037)
-        - Hundige (n286999329)
-        - Ishøj (n287043264)
-        - Ny Ellebjerg (n1017968484)
-        - Sjælør (n286886199)
-        - Sydhavn (n286886246)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-        - Nordhavn (n595296652)
-        - Svanemøllen (n595293336)
-        - Hellerup (n598201521)
-        - Bernstorffsvej (n25872886)
-        - Gentofte (n598205283)
-        - Jægersborg (n5785023300)
-        - Lyngby (n5762708641)
-        - Sorgenfri (n25872941)
-        - Virum (n25872951)
-        - Holte (n20946305)
-
-
-    stations: 
-      - Holte
-      - Virum
-      - Sorgenfri
-      - Lyngby
-      - Jægersborg
-      - Gentofte
-      - Bernstorffsvej
-      - Hellerup
-      - Svanemøllen
-      - Nordhavn
-      - Østerport
-      - Nørreport
-      - Vesterport
-      - København H
-      - Dybbølsbro
-      - Sydhavn
-      - Sjælør
-      - Ny Ellebjerg
-      - Ishøj
-      - Hundige
-      - Greve
-      - Karlslunde
-      - Solrød Strand
-      - Jersie
-      - Køge Nord
-      - Ølby
-      - Køge
-
-    colour: '#9370db'
-    station_count: 27
-  - 
-    name: S-tog F
-    type: light_rail
-    ref: F
-    itineraries: 
-      r5612115: 
-        - Ny Ellebjerg (n1017968484)
-        - Vigerslev Allé (n611325250)
-        - Danshøj (n611318182)
-        - Ålholm (n611318209)
-        - KB Hallen (n611318230)
-        - Flintholm (n611305003)
-        - Grøndal (n611305065)
-        - Fuglebakken (n611297799)
-        - Nørrebro (n610619173)
-        - Bispebjerg (n24960728)
-        - Ryparken (n593869905)
-        - Hellerup (n598201521)
-
-      r5612114: 
-        - Hellerup (n598201521)
-        - Ryparken (n593869905)
-        - Bispebjerg (n24960728)
-        - Nørrebro (n610619173)
-        - Fuglebakken (n611297799)
-        - Grøndal (n611305065)
-        - Flintholm (n611305003)
-        - KB Hallen (n611318230)
-        - Ålholm (n611318209)
-        - Danshøj (n611318182)
-        - Vigerslev Allé (n611325250)
-        - Ny Ellebjerg (n1017968484)
-
-
-    stations: 
-      - Hellerup
-      - Ryparken
-      - Bispebjerg
-      - Nørrebro
-      - Fuglebakken
-      - Grøndal
-      - Flintholm
-      - KB Hallen
-      - Åholm
-      - Danshøj
-      - Vigerslev Allé
-      - Ny Ellebjerg
-
-    colour: '#ffc225'
-    station_count: 12
-  - 
-    name: S-tog H
-    type: light_rail
-    ref: H
-    itineraries: 
-      r5612119: 
-        - Østerport (n4989664667)
-        - Nørreport (n6836386878)
-        - Vesterport (n593753668)
-        - København H (n5096749954)
-        - Dybbølsbro (n593765406)
-        - Carlsberg (n4280112495)
-        - Valby (n5073252188)
-        - Flintholm (n611305003)
-        - Vanløse (n5066122140)
-        - Herlev (n494382792)
-        - Malmparken (n1071641459)
-        - Ballerup (n5130464045)
-        - Måløv (n587732384)
-        - Veksø (n587738229)
-        - Stenløse (n5133910423)
-        - Egedal (n587738170)
-        - Ølstykke (n587738110)
-        - Frederikssund (n587738050)
-
-      r5612118: 
-        - Frederikssund (n587738050)
-        - Ølstykke (n587738110)
-        - Egedal (n587738170)
-        - Stenløse (n5133910423)
-        - Veksø (n587738229)
-        - Måløv (n587732384)
-        - Ballerup (n5130464045)
-        - Malmparken (n1071641459)
-        - Herlev (n494382792)
-        - Vanløse (n5066122140)
-        - Flintholm (n611305003)
-        - Valby (n5073252188)
-        - Carlsberg (n4280112495)
-        - Dybbølsbro (n593765406)
-        - København H (n5096749954)
-        - Vesterport (n593753668)
-        - Nørreport (n6836386878)
-        - Østerport (n4989664667)
-
-
-    stations: 
-      - Frederikssund
-      - Ølstykke
-      - Egedal
-      - Stenløse
-      - Veksø
-      - Måløv
-      - Ballerup
-      - Malmparken
-      - Herlev
-      - Vanløse
-      - Flintholm
-      - Valby
-      - Carlsberg
-      - Dybbølsbro
-      - København H
-      - Vesterport
-      - Nørreport
-      - Østerport
-
-    colour: '#e64415'
-    station_count: 18
-  - 
-    name: Metro M1
-    type: subway
-    ref: M1
-    itineraries: 
-      r152202: 
-        - Vanløse (n5066122139)
-        - Flintholm (n5072901609)
-        - Lindevang (n1271230723)
-        - Fasanvej (n5715956182)
-        - Frederiksberg (n5715956181)
-        - Forum (n5715956180)
-        - Nørreport (n6836386878)
-        - Kongens Nytorv (n5715956178)
-        - Christianshavn (n5715956177)
-        - Islands Brygge (n2705324077)
-        - DR Byen (n2705324074)
-        - Sundby (n2705324076)
-        - Bella Center (n2705324067)
-        - Ørestad (n2089115303)
-        - Vestamager (n2042342677)
-
-      r152332: 
-        - Vestamager (n2042342677)
-        - Ørestad (n2089115303)
-        - Bella Center (n2705324067)
-        - Sundby (n2705324076)
-        - DR Byen (n2705324074)
-        - Islands Brygge (n2705324077)
-        - Christianshavn (n5715956177)
-        - Kongens Nytorv (n5715956178)
-        - Nørreport (n6836386878)
-        - Forum (n5715956180)
-        - Frederiksberg (n5715956181)
-        - Fasanvej (n5715956182)
-        - Lindevang (n1271230723)
-        - Flintholm (n5072901609)
-        - Vanløse (n5066122139)
-
-
-    stations: 
-      - Vanløse
-      - Flintholm
-      - Lindevang
-      - Fasanvej
-      - Frederiksberg
-      - Forum
-      - Nørreport
-      - Kongens Nytorv (M1+M2)
-      - Christianshavn
-      - Islands Brygge
-      - DR Byen
-      - Sundby
-      - Bella Center
-      - Ørestad
-      - Vestamager
-
-    colour: '#007d58'
-    station_count: 15
-  - 
-    name: Metro M2
-    type: subway
-    ref: M2
-    itineraries: 
-      r152339: 
-        - Lufthavnen (Metro) (n1742785276)
-        - Kastrup (n2705309633)
-        - Femøren (n2705309629)
-        - Amager Strand (n2705309632)
-        - Øresund (n2705324072)
-        - Lergravsparken (n5715956175)
-        - Amagerbro (n5715956176)
-        - Christianshavn (n5715956177)
-        - Kongens Nytorv (n5715956178)
-        - Nørreport (n6836386878)
-        - Forum (n5715956180)
-        - Frederiksberg (n5715956181)
-        - Fasanvej (n5715956182)
-        - Lindevang (n1271230723)
-        - Flintholm (n5072901609)
-        - Vanløse (n5066122139)
-
-      r152224: 
-        - Vanløse (n5066122139)
-        - Flintholm (n5072901609)
-        - Lindevang (n1271230723)
-        - Fasanvej (n5715956182)
-        - Frederiksberg (n5715956181)
-        - Forum (n5715956180)
-        - Nørreport (n6836386878)
-        - Kongens Nytorv (n5715956178)
-        - Christianshavn (n5715956177)
-        - Amagerbro (n5715956176)
-        - Lergravsparken (n5715956175)
-        - Øresund (n2705324072)
-        - Amager Strand (n2705309632)
-        - Femøren (n2705309629)
-        - Kastrup (n2705309633)
-        - Lufthavnen (Metro) (n1742785276)
-
-
-    stations: 
-      - Vanløse
-      - Flintholm
-      - Lindevang
-      - Fasanvej
-      - Frederiksberg
-      - Forum
-      - Nørreport
-      - Kongens Nytorv (M1+M2)
-      - Christianshavn
-      - Amagerbro
-      - Lergravsparken
-      - Øresund
-      - Amager Strand
-      - Femøren
-      - Kastrup
-      - Lufthavnen (Metro)
-
-    colour: '#fdc110'
-    station_count: 16
-  - 
-    name: Cityringen
-    type: subway
-    ref: M3
-    itineraries: 
-      r10283922: 
-        - Aksel Møllers Have (n6836446144)
-        - Frederiksberg (n5715956181)
-        - Frederiksberg Allé (n6836434802)
-        - Enghave Plads (n6836434801)
-        - København H (n6836386876)
-        - Rådhuspladsen (n6836386877)
-        - Gammel Strand (n6836386879)
-        - Kongens Nytorv (n5715956178)
-        - Marmorkirken (n6836648164)
-        - Østerport (n6836648163)
-        - Trianglen (n6836652392)
-        - Poul Henningsens Plads (n6836652393)
-        - Vibenhus Runddel (n6836624243)
-        - Skjolds Plads (n6836466111)
-        - Nørrebro (n6836446143)
-        - Nørrebros Runddel (n6836446142)
-        - Nuuks Plads (n6836446145)
-        - Aksel Møllers Have (n6836446144)
-
-      r10157170: 
-        - Aksel Møllers Have (n6836446144)
-        - Nuuks Plads (n6836446145)
-        - Nørrebros Runddel (n6836446142)
-        - Nørrebro (n6836446143)
-        - Skjolds Plads (n6836466111)
-        - Vibenhus Runddel (n6836624243)
-        - Poul Henningsens Plads (n6836652393)
-        - Trianglen (n6836652392)
-        - Østerport (n6836648163)
-        - Marmorkirken (n6836648164)
-        - Kongens Nytorv (n5715956178)
-        - Gammel Strand (n6836386879)
-        - Rådhuspladsen (n6836386877)
-        - København H (n6836386876)
-        - Enghave Plads (n6836434801)
-        - Frederiksberg Allé (n6836434802)
-        - Frederiksberg (n5715956181)
-        - Aksel Møllers Have (n6836446144)
-
-
-    stations: 
-      - Aksel Møllers Have
-      - Nuuks Plads
-      - Nørrebros Runddel
-      - Nørrebro
-      - Skjolds Plads
-      - Vibenhus Runddel
-      - Poul Henningsens Plads
-      - Trianglen
-      - Østerport
-      - Marmorkirken
-      - Kongens Nytorv (M3)
-      - Gammel Strand
-      - Rådhuspladsen
-      - København H
-      - Enghave Plads
-      - Frederiksberg Allé
-      - Frederiksberg
-
-    colour: '#ff0a0a'
-    station_count: 17
-  - 
-    name: Nordhavnsmetro
-    type: subway
-    ref: M4
-    itineraries: 
-      r10925796: 
-        - Orientkaj (n6041192146)
-        - Nordhavn (n7339730678)
-        - Østerport (n6836648163)
-        - Marmorkirken (n6836648164)
-        - Kongens Nytorv (n5715956178)
-        - Gammel Strand (n6836386879)
-        - Rådhuspladsen (n6836386877)
-        - København H (n6836386876)
-
-      r10925797: 
-        - København H (n6836386876)
-        - Rådhuspladsen (n6836386877)
-        - Gammel Strand (n6836386879)
-        - Kongens Nytorv (n5715956178)
-        - Marmorkirken (n6836648164)
-        - Østerport (n6836648163)
-        - Nordhavn (n7339730678)
-        - Orientkaj (n6041192146)
-
-
-    stations: 
-      - København H
-      - Rådhuspladsen
-      - Gammel Strand
-      - Kongens Nytorv (M3)
-      - Marmorkirken
-      - Østerport
-      - Nordhavn
-      - Orientkaj
-
-    colour: '#36b6f1'
-    station_count: 8
-
-transfers: 
-  - 
-    - Danshøj (r10827798)
-    - Danshøj (r8142040)
-  - 
-    - Flintholm (r7530616)
-    - Flintholm (r7669691)
-  - 
-    - Frederiksberg (r10283920)
-    - Frederiksberg (r7669657)
-  - 
-    - Kongens Nytorv (M1+M2) (r7669662)
-    - Kongens Nytorv (M3) (r10283921)
-  - 
-    - København H (r10029111)
-    - København H (r10096932)
-  - 
-    - Nordhavn (r10925798)
-    - Nordhavn (r7669660)
-  - 
-    - Ny Ellebjerg (r10827819)
-    - Ny Ellebjerg (r8147696)
-  - 
-    - Nørrebro (r10390599)
-    - Nørrebro (r9984255)
-  - 
-    - Vanløse (r7520701)
-    - Vanløse (r7669690)
-  - 
-    - Østerport (r10062851)
-    - Østerport (r9964953)
-
 stations: 
   - Aksel Møllers Have (n6836446144)
   - Albertslund (n1036553616)
@@ -1075,4 +124,955 @@ stations:
   - Øresund (n2705324072)
   - Østerport (n4989664667)
   - Østerport (n6836648163)
+
+routes: 
+  - 
+    type: light_rail
+    itineraries: 
+      r9971028: 
+        - Hillerød (n1733449578)
+        - Allerød (n5696961214)
+        - Birkerød (n349187308)
+        - Holte (n20946305)
+        - Virum (n25872951)
+        - Sorgenfri (n25872941)
+        - Lyngby (n5762708641)
+        - Jægersborg (n5785023300)
+        - Gentofte (n598205283)
+        - Bernstorffsvej (n25872886)
+        - Hellerup (n598201521)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Sydhavn (n286886246)
+        - Sjælør (n286886199)
+        - Ny Ellebjerg (n1017968484)
+        - Åmarken (n286886137)
+        - Friheden (n286886106)
+        - Avedøre (n286885968)
+        - Brøndby Strand (n286885763)
+        - Vallensbæk (n286885624)
+        - Ishøj (n287043264)
+        - Hundige (n286999329)
+        - Greve (n295218037)
+        - Karlslunde (n287328785)
+        - Solrød Strand (n287332180)
+        - Jersie (n287333273)
+        - Køge Nord (n5643031051)
+        - Ølby (n5642862445)
+        - Køge (n287901130)
+
+      r9969573: 
+        - Køge (n287901130)
+        - Ølby (n5642862445)
+        - Køge Nord (n5643031051)
+        - Jersie (n287333273)
+        - Solrød Strand (n287332180)
+        - Karlslunde (n287328785)
+        - Greve (n295218037)
+        - Hundige (n286999329)
+        - Ishøj (n287043264)
+        - Vallensbæk (n286885624)
+        - Brøndby Strand (n286885763)
+        - Avedøre (n286885968)
+        - Friheden (n286886106)
+        - Åmarken (n286886137)
+        - Ny Ellebjerg (n1017968484)
+        - Sjælør (n286886199)
+        - Sydhavn (n286886246)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Hellerup (n598201521)
+        - Bernstorffsvej (n25872886)
+        - Gentofte (n598205283)
+        - Jægersborg (n5785023300)
+        - Lyngby (n5762708641)
+        - Sorgenfri (n25872941)
+        - Virum (n25872951)
+        - Holte (n20946305)
+        - Birkerød (n349187308)
+        - Allerød (n5696961214)
+        - Hillerød (n1733449578)
+
+      r9971485: 
+        - Solrød Strand (n287332180)
+        - Karlslunde (n287328785)
+        - Greve (n295218037)
+        - Hundige (n286999329)
+        - Ishøj (n287043264)
+        - Vallensbæk (n286885624)
+        - Brøndby Strand (n286885763)
+        - Avedøre (n286885968)
+        - Friheden (n286886106)
+        - Åmarken (n286886137)
+        - Ny Ellebjerg (n1017968484)
+        - Sjælør (n286886199)
+        - Sydhavn (n286886246)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Hellerup (n598201521)
+        - Lyngby (n5762708641)
+        - Holte (n20946305)
+        - Birkerød (n349187308)
+        - Allerød (n5696961214)
+        - Hillerød (n1733449578)
+
+      r9974943: 
+        - Hillerød (n1733449578)
+        - Allerød (n5696961214)
+        - Birkerød (n349187308)
+        - Holte (n20946305)
+        - Lyngby (n5762708641)
+        - Hellerup (n598201521)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Sydhavn (n286886246)
+        - Sjælør (n286886199)
+        - Ny Ellebjerg (n1017968484)
+        - Åmarken (n286886137)
+        - Friheden (n286886106)
+        - Avedøre (n286885968)
+        - Brøndby Strand (n286885763)
+        - Vallensbæk (n286885624)
+        - Ishøj (n287043264)
+        - Hundige (n286999329)
+        - Greve (n295218037)
+        - Karlslunde (n287328785)
+        - Solrød Strand (n287332180)
+
+
+    colour: '#00bfff'
+    stations: 
+      - Hillerød
+      - Allerød
+      - Birkerød
+      - Holte
+      - Virum
+      - Sorgenfri
+      - Lyngby
+      - Jægersborg
+      - Gentofte
+      - Bernstorffsvej
+      - Hellerup
+      - Svanemøllen
+      - Nordhavn
+      - Østerport
+      - Nørreport
+      - Vesterport
+      - København H
+      - Dybbølsbro
+      - Sydhavn
+      - Sjælør
+      - Ny Ellebjerg
+      - Åmarken
+      - Friheden
+      - Avedøre
+      - Brøndby Strand
+      - Vallensbæk
+      - Ishøj
+      - Hundige
+      - Greve
+      - Karlslunde
+      - Solrød Strand
+      - Jersie
+      - Køge Nord
+      - Ølby
+      - Køge
+
+    station_count: 35
+    name: S-tog A
+    ref: A
+  - 
+    type: light_rail
+    itineraries: 
+      r5612107: 
+        - Høje Taastrup (n5502509094)
+        - Taastrup (n1036553613)
+        - Albertslund (n1036553616)
+        - Glostrup (n1034044245)
+        - Brøndbyøster (n1023040928)
+        - Rødovre (n24954656)
+        - Hvidovre (n1036553605)
+        - Danshøj (n611318182)
+        - Valby (n5073252188)
+        - Carlsberg (n4280112495)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Ryparken (n593869905)
+        - Emdrup (n659992474)
+        - Dyssegård (n597730022)
+        - Vangede (n597729973)
+        - Kildebakke (n597730004)
+        - Buddinge (n494382836)
+        - Stengården (n597426666)
+        - Bagsværd (n597426641)
+        - Skovbrynet (n597771469)
+        - Hareskov (n597771450)
+        - Værløse (n597771392)
+        - Farum (n597771482)
+
+      r5612106: 
+        - Farum (n597771482)
+        - Værløse (n597771392)
+        - Hareskov (n597771450)
+        - Skovbrynet (n597771469)
+        - Bagsværd (n597426641)
+        - Stengården (n597426666)
+        - Buddinge (n494382836)
+        - Kildebakke (n597730004)
+        - Vangede (n597729973)
+        - Dyssegård (n597730022)
+        - Emdrup (n659992474)
+        - Ryparken (n593869905)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Carlsberg (n4280112495)
+        - Valby (n5073252188)
+        - Danshøj (n611318182)
+        - Hvidovre (n1036553605)
+        - Rødovre (n24954656)
+        - Brøndbyøster (n1023040928)
+        - Glostrup (n1034044245)
+        - Albertslund (n1036553616)
+        - Taastrup (n1036553613)
+        - Høje Taastrup (n5502509094)
+
+
+    colour: '#32cd32'
+    stations: 
+      - Høje Taastrup
+      - Taastrup
+      - Albertslund
+      - Glostrup
+      - Brøndbyøster
+      - Rødovre
+      - Hvidovre
+      - Danshøj
+      - Valby
+      - Carlsberg
+      - Dybbølsbro
+      - København H
+      - Vesterport
+      - Nørreport
+      - Østerport
+      - Nordhavn
+      - Svanemøllen
+      - Ryparken
+      - Emdrup
+      - Dyssegård
+      - Vangede
+      - Kildebakke
+      - Buddinge
+      - Stengården
+      - Bagsværd
+      - Skovbrynet
+      - Hareskov
+      - Værløse
+      - Farum
+
+    station_count: 29
+    name: S-tog B
+    ref: B
+  - 
+    type: light_rail
+    itineraries: 
+      r5612108: 
+        - Høje Taastrup (n5502509094)
+        - Taastrup (n1036553613)
+        - Albertslund (n1036553616)
+        - Glostrup (n1034044245)
+        - Danshøj (n611318182)
+        - Valby (n5073252188)
+        - Carlsberg (n4280112495)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Ryparken (n593869905)
+        - Emdrup (n659992474)
+        - Dyssegård (n597730022)
+        - Vangede (n597729973)
+        - Kildebakke (n597730004)
+        - Buddinge (n494382836)
+        - Stengården (n597426666)
+        - Bagsværd (n597426641)
+        - Skovbrynet (n597771469)
+        - Hareskov (n597771450)
+        - Værløse (n597771392)
+        - Farum (n597771482)
+
+      r5612109: 
+        - Farum (n597771482)
+        - Værløse (n597771392)
+        - Hareskov (n597771450)
+        - Skovbrynet (n597771469)
+        - Bagsværd (n597426641)
+        - Stengården (n597426666)
+        - Buddinge (n494382836)
+        - Kildebakke (n597730004)
+        - Vangede (n597729973)
+        - Dyssegård (n597730022)
+        - Emdrup (n659992474)
+        - Ryparken (n593869905)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Carlsberg (n4280112495)
+        - Valby (n5073252188)
+        - Danshøj (n611318182)
+        - Glostrup (n1034044245)
+        - Albertslund (n1036553616)
+        - Taastrup (n1036553613)
+        - Høje Taastrup (n5502509094)
+
+
+    colour: '#9acd32'
+    stations: 
+      - Høje Taastrup
+      - Taastrup
+      - Albertslund
+      - Glostrup
+      - Danshøj
+      - Valby
+      - Carlsberg
+      - Dybbølsbro
+      - København H
+      - Vesterport
+      - Nørreport
+      - Østerport
+      - Nordhavn
+      - Svanemøllen
+      - Ryparken
+      - Emdrup
+      - Dyssegård
+      - Vangede
+      - Kildebakke
+      - Buddinge
+      - Stengården
+      - Bagsværd
+      - Skovbrynet
+      - Hareskov
+      - Værløse
+      - Farum
+
+    station_count: 26
+    name: S-tog Bx
+    ref: Bx
+  - 
+    type: light_rail
+    itineraries: 
+      r5612110: 
+        - Frederikssund (n587738050)
+        - Vinge (n8203164043)
+        - Ølstykke (n587738110)
+        - Egedal (n587738170)
+        - Stenløse (n5133910423)
+        - Veksø (n587738229)
+        - Kildedal (n587739741)
+        - Måløv (n587732384)
+        - Ballerup (n5130464045)
+        - Malmparken (n1071641459)
+        - Skovlunde (n587660892)
+        - Herlev (n494382792)
+        - Husum (n5126423536)
+        - Islev (n586436631)
+        - Jyllingevej (n586436651)
+        - Vanløse (n5066122140)
+        - Flintholm (n611305003)
+        - Peter Bangsvej (n1040169361)
+        - Langgade (n1036553606)
+        - Valby (n5073252188)
+        - Carlsberg (n4280112495)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Hellerup (n598201521)
+        - Charlottenlund (n25872825)
+        - Ordrup (n2093979759)
+        - Klampenborg (n2951409808)
+
+      r5612111: 
+        - Klampenborg (n2951409808)
+        - Ordrup (n2093979759)
+        - Charlottenlund (n25872825)
+        - Hellerup (n598201521)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Carlsberg (n4280112495)
+        - Valby (n5073252188)
+        - Langgade (n1036553606)
+        - Peter Bangsvej (n1040169361)
+        - Flintholm (n611305003)
+        - Vanløse (n5066122140)
+        - Jyllingevej (n586436651)
+        - Islev (n586436631)
+        - Husum (n5126423536)
+        - Herlev (n494382792)
+        - Skovlunde (n587660892)
+        - Malmparken (n1071641459)
+        - Ballerup (n5130464045)
+        - Måløv (n587732384)
+        - Kildedal (n587739741)
+        - Veksø (n587738229)
+        - Stenløse (n5133910423)
+        - Egedal (n587738170)
+        - Ølstykke (n587738110)
+        - Vinge (n8203164043)
+        - Frederikssund (n587738050)
+
+
+    colour: '#ffa500'
+    stations: 
+      - Frederikssund
+      - Vinge
+      - Ølstykke
+      - Egedal
+      - Stenløse
+      - Veksø
+      - Kildedal
+      - Måløv
+      - Ballerup
+      - Malmparken
+      - Skovlunde
+      - Herlev
+      - Husum
+      - Islev
+      - Jyllingevej
+      - Vanløse
+      - Flintholm
+      - Peter Bangs Vej
+      - Langgade
+      - Valby
+      - Carlsberg
+      - Dybbølsbro
+      - København H
+      - Vesterport
+      - Nørreport
+      - Østerport
+      - Nordhavn
+      - Svanemøllen
+      - Hellerup
+      - Charlottenlund
+      - Ordrup
+      - Klampenborg
+
+    station_count: 32
+    name: S-tog C
+    ref: C
+  - 
+    type: light_rail
+    itineraries: 
+      r5612112: 
+        - Holte (n20946305)
+        - Virum (n25872951)
+        - Sorgenfri (n25872941)
+        - Lyngby (n5762708641)
+        - Jægersborg (n5785023300)
+        - Gentofte (n598205283)
+        - Bernstorffsvej (n25872886)
+        - Hellerup (n598201521)
+        - Svanemøllen (n595293336)
+        - Nordhavn (n595296652)
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Sydhavn (n286886246)
+        - Sjælør (n286886199)
+        - Ny Ellebjerg (n1017968484)
+        - Ishøj (n287043264)
+        - Hundige (n286999329)
+        - Greve (n295218037)
+        - Karlslunde (n287328785)
+        - Solrød Strand (n287332180)
+        - Jersie (n287333273)
+        - Køge Nord (n5643031051)
+        - Ølby (n5642862445)
+        - Køge (n287901130)
+
+      r5612113: 
+        - Køge (n287901130)
+        - Ølby (n5642862445)
+        - Køge Nord (n5643031051)
+        - Jersie (n287333273)
+        - Solrød Strand (n287332180)
+        - Karlslunde (n287328785)
+        - Greve (n295218037)
+        - Hundige (n286999329)
+        - Ishøj (n287043264)
+        - Ny Ellebjerg (n1017968484)
+        - Sjælør (n286886199)
+        - Sydhavn (n286886246)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+        - Nordhavn (n595296652)
+        - Svanemøllen (n595293336)
+        - Hellerup (n598201521)
+        - Bernstorffsvej (n25872886)
+        - Gentofte (n598205283)
+        - Jægersborg (n5785023300)
+        - Lyngby (n5762708641)
+        - Sorgenfri (n25872941)
+        - Virum (n25872951)
+        - Holte (n20946305)
+
+
+    colour: '#9370db'
+    stations: 
+      - Holte
+      - Virum
+      - Sorgenfri
+      - Lyngby
+      - Jægersborg
+      - Gentofte
+      - Bernstorffsvej
+      - Hellerup
+      - Svanemøllen
+      - Nordhavn
+      - Østerport
+      - Nørreport
+      - Vesterport
+      - København H
+      - Dybbølsbro
+      - Sydhavn
+      - Sjælør
+      - Ny Ellebjerg
+      - Ishøj
+      - Hundige
+      - Greve
+      - Karlslunde
+      - Solrød Strand
+      - Jersie
+      - Køge Nord
+      - Ølby
+      - Køge
+
+    station_count: 27
+    name: S-tog E
+    ref: E
+  - 
+    type: light_rail
+    itineraries: 
+      r5612115: 
+        - Ny Ellebjerg (n1017968484)
+        - Vigerslev Allé (n611325250)
+        - Danshøj (n611318182)
+        - Ålholm (n611318209)
+        - KB Hallen (n611318230)
+        - Flintholm (n611305003)
+        - Grøndal (n611305065)
+        - Fuglebakken (n611297799)
+        - Nørrebro (n610619173)
+        - Bispebjerg (n24960728)
+        - Ryparken (n593869905)
+        - Hellerup (n598201521)
+
+      r5612114: 
+        - Hellerup (n598201521)
+        - Ryparken (n593869905)
+        - Bispebjerg (n24960728)
+        - Nørrebro (n610619173)
+        - Fuglebakken (n611297799)
+        - Grøndal (n611305065)
+        - Flintholm (n611305003)
+        - KB Hallen (n611318230)
+        - Ålholm (n611318209)
+        - Danshøj (n611318182)
+        - Vigerslev Allé (n611325250)
+        - Ny Ellebjerg (n1017968484)
+
+
+    colour: '#ffc225'
+    stations: 
+      - Hellerup
+      - Ryparken
+      - Bispebjerg
+      - Nørrebro
+      - Fuglebakken
+      - Grøndal
+      - Flintholm
+      - KB Hallen
+      - Åholm
+      - Danshøj
+      - Vigerslev Allé
+      - Ny Ellebjerg
+
+    station_count: 12
+    name: S-tog F
+    ref: F
+  - 
+    type: light_rail
+    itineraries: 
+      r5612118: 
+        - Frederikssund (n587738050)
+        - Ølstykke (n587738110)
+        - Egedal (n587738170)
+        - Stenløse (n5133910423)
+        - Veksø (n587738229)
+        - Måløv (n587732384)
+        - Ballerup (n5130464045)
+        - Malmparken (n1071641459)
+        - Herlev (n494382792)
+        - Vanløse (n5066122140)
+        - Flintholm (n611305003)
+        - Valby (n5073252188)
+        - Carlsberg (n4280112495)
+        - Dybbølsbro (n593765406)
+        - København H (n5096749954)
+        - Vesterport (n593753668)
+        - Nørreport (n6836386878)
+        - Østerport (n4989664667)
+
+      r5612119: 
+        - Østerport (n4989664667)
+        - Nørreport (n6836386878)
+        - Vesterport (n593753668)
+        - København H (n5096749954)
+        - Dybbølsbro (n593765406)
+        - Carlsberg (n4280112495)
+        - Valby (n5073252188)
+        - Flintholm (n611305003)
+        - Vanløse (n5066122140)
+        - Herlev (n494382792)
+        - Malmparken (n1071641459)
+        - Ballerup (n5130464045)
+        - Måløv (n587732384)
+        - Veksø (n587738229)
+        - Stenløse (n5133910423)
+        - Egedal (n587738170)
+        - Ølstykke (n587738110)
+        - Frederikssund (n587738050)
+
+
+    colour: '#e64415'
+    stations: 
+      - Østerport
+      - Nørreport
+      - Vesterport
+      - København H
+      - Dybbølsbro
+      - Carlsberg
+      - Valby
+      - Flintholm
+      - Vanløse
+      - Herlev
+      - Malmparken
+      - Ballerup
+      - Måløv
+      - Veksø
+      - Stenløse
+      - Egedal
+      - Ølstykke
+      - Frederikssund
+
+    station_count: 18
+    name: S-tog H
+    ref: H
+  - 
+    type: subway
+    itineraries: 
+      r152202: 
+        - Vanløse (n5066122139)
+        - Flintholm (n5072901609)
+        - Lindevang (n1271230723)
+        - Fasanvej (n5715956182)
+        - Frederiksberg (n5715956181)
+        - Forum (n5715956180)
+        - Nørreport (n6836386878)
+        - Kongens Nytorv (n5715956178)
+        - Christianshavn (n5715956177)
+        - Islands Brygge (n2705324077)
+        - DR Byen (n2705324074)
+        - Sundby (n2705324076)
+        - Bella Center (n2705324067)
+        - Ørestad (n2089115303)
+        - Vestamager (n2042342677)
+
+      r152332: 
+        - Vestamager (n2042342677)
+        - Ørestad (n2089115303)
+        - Bella Center (n2705324067)
+        - Sundby (n2705324076)
+        - DR Byen (n2705324074)
+        - Islands Brygge (n2705324077)
+        - Christianshavn (n5715956177)
+        - Kongens Nytorv (n5715956178)
+        - Nørreport (n6836386878)
+        - Forum (n5715956180)
+        - Frederiksberg (n5715956181)
+        - Fasanvej (n5715956182)
+        - Lindevang (n1271230723)
+        - Flintholm (n5072901609)
+        - Vanløse (n5066122139)
+
+
+    colour: '#007d58'
+    stations: 
+      - Vanløse
+      - Flintholm
+      - Lindevang
+      - Fasanvej
+      - Frederiksberg
+      - Forum
+      - Nørreport
+      - Kongens Nytorv (M1+M2)
+      - Christianshavn
+      - Islands Brygge
+      - DR Byen
+      - Sundby
+      - Bella Center
+      - Ørestad
+      - Vestamager
+
+    station_count: 15
+    name: Metro M1
+    ref: M1
+  - 
+    type: subway
+    itineraries: 
+      r152339: 
+        - Lufthavnen (Metro) (n1742785276)
+        - Kastrup (n2705309633)
+        - Femøren (n2705309629)
+        - Amager Strand (n2705309632)
+        - Øresund (n2705324072)
+        - Lergravsparken (n5715956175)
+        - Amagerbro (n5715956176)
+        - Christianshavn (n5715956177)
+        - Kongens Nytorv (n5715956178)
+        - Nørreport (n6836386878)
+        - Forum (n5715956180)
+        - Frederiksberg (n5715956181)
+        - Fasanvej (n5715956182)
+        - Lindevang (n1271230723)
+        - Flintholm (n5072901609)
+        - Vanløse (n5066122139)
+
+      r152224: 
+        - Vanløse (n5066122139)
+        - Flintholm (n5072901609)
+        - Lindevang (n1271230723)
+        - Fasanvej (n5715956182)
+        - Frederiksberg (n5715956181)
+        - Forum (n5715956180)
+        - Nørreport (n6836386878)
+        - Kongens Nytorv (n5715956178)
+        - Christianshavn (n5715956177)
+        - Amagerbro (n5715956176)
+        - Lergravsparken (n5715956175)
+        - Øresund (n2705324072)
+        - Amager Strand (n2705309632)
+        - Femøren (n2705309629)
+        - Kastrup (n2705309633)
+        - Lufthavnen (Metro) (n1742785276)
+
+
+    colour: '#fdc110'
+    stations: 
+      - Vanløse
+      - Flintholm
+      - Lindevang
+      - Fasanvej
+      - Frederiksberg
+      - Forum
+      - Nørreport
+      - Kongens Nytorv (M1+M2)
+      - Christianshavn
+      - Amagerbro
+      - Lergravsparken
+      - Øresund
+      - Amager Strand
+      - Femøren
+      - Kastrup
+      - Lufthavnen (Metro)
+
+    station_count: 16
+    name: Metro M2
+    ref: M2
+  - 
+    type: subway
+    itineraries: 
+      r10283922: 
+        - Aksel Møllers Have (n6836446144)
+        - Frederiksberg (n5715956181)
+        - Frederiksberg Allé (n6836434802)
+        - Enghave Plads (n6836434801)
+        - København H (n6836386876)
+        - Rådhuspladsen (n6836386877)
+        - Gammel Strand (n6836386879)
+        - Kongens Nytorv (n5715956178)
+        - Marmorkirken (n6836648164)
+        - Østerport (n6836648163)
+        - Trianglen (n6836652392)
+        - Poul Henningsens Plads (n6836652393)
+        - Vibenhus Runddel (n6836624243)
+        - Skjolds Plads (n6836466111)
+        - Nørrebro (n6836446143)
+        - Nørrebros Runddel (n6836446142)
+        - Nuuks Plads (n6836446145)
+        - Aksel Møllers Have (n6836446144)
+
+      r10157170: 
+        - Aksel Møllers Have (n6836446144)
+        - Nuuks Plads (n6836446145)
+        - Nørrebros Runddel (n6836446142)
+        - Nørrebro (n6836446143)
+        - Skjolds Plads (n6836466111)
+        - Vibenhus Runddel (n6836624243)
+        - Poul Henningsens Plads (n6836652393)
+        - Trianglen (n6836652392)
+        - Østerport (n6836648163)
+        - Marmorkirken (n6836648164)
+        - Kongens Nytorv (n5715956178)
+        - Gammel Strand (n6836386879)
+        - Rådhuspladsen (n6836386877)
+        - København H (n6836386876)
+        - Enghave Plads (n6836434801)
+        - Frederiksberg Allé (n6836434802)
+        - Frederiksberg (n5715956181)
+        - Aksel Møllers Have (n6836446144)
+
+
+    colour: '#ff0a0a'
+    stations: 
+      - Aksel Møllers Have
+      - Frederiksberg
+      - Frederiksberg Allé
+      - Enghave Plads
+      - København H
+      - Rådhuspladsen
+      - Gammel Strand
+      - Kongens Nytorv (M3)
+      - Marmorkirken
+      - Østerport
+      - Trianglen
+      - Poul Henningsens Plads
+      - Vibenhus Runddel
+      - Skjolds Plads
+      - Nørrebro
+      - Nørrebros Runddel
+      - Nuuks Plads
+
+    station_count: 17
+    name: Cityringen
+    ref: M3
+  - 
+    type: subway
+    itineraries: 
+      r10925796: 
+        - Orientkaj (n6041192146)
+        - Nordhavn (n7339730678)
+        - Østerport (n6836648163)
+        - Marmorkirken (n6836648164)
+        - Kongens Nytorv (n5715956178)
+        - Gammel Strand (n6836386879)
+        - Rådhuspladsen (n6836386877)
+        - København H (n6836386876)
+
+      r10925797: 
+        - København H (n6836386876)
+        - Rådhuspladsen (n6836386877)
+        - Gammel Strand (n6836386879)
+        - Kongens Nytorv (n5715956178)
+        - Marmorkirken (n6836648164)
+        - Østerport (n6836648163)
+        - Nordhavn (n7339730678)
+        - Orientkaj (n6041192146)
+
+
+    colour: '#36b6f1'
+    stations: 
+      - Orientkaj
+      - Nordhavn
+      - Østerport
+      - Marmorkirken
+      - Kongens Nytorv (M3)
+      - Gammel Strand
+      - Rådhuspladsen
+      - København H
+
+    station_count: 8
+    name: Nordhavnsmetro
+    ref: M4
+
+transfers: 
+  - 
+    - Danshøj (r10827798)
+    - Danshøj (r8142040)
+  - 
+    - Flintholm (r7530616)
+    - Flintholm (r7669691)
+  - 
+    - Frederiksberg (r10283920)
+    - Frederiksberg (r7669657)
+  - 
+    - Kongens Nytorv (M1+M2) (r7669662)
+    - Kongens Nytorv (M3) (r10283921)
+  - 
+    - København H (r10029111)
+    - København H (r10096932)
+  - 
+    - Nordhavn (r10925798)
+    - Nordhavn (r7669660)
+  - 
+    - Ny Ellebjerg (r10827819)
+    - Ny Ellebjerg (r8147696)
+  - 
+    - Nørrebro (r10390599)
+    - Nørrebro (r9984255)
+  - 
+    - Vanløse (r7520701)
+    - Vanløse (r7669690)
+  - 
+    - Østerport (r10062851)
+    - Østerport (r9964953)
 

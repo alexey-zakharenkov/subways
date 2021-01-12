@@ -1,9 +1,39 @@
 
+stations: 
+  - 12 de Octubre (n5213877061)
+  - 24 de Diciembre (w684868238)
+  - Albrook (n5208805276)
+  - Altos de Tocumen (w684868239)
+  - Brisas Del Golf (w684868247)
+  - Cerro Viento (w684868246)
+  - Cinco de Mayo (n5208805275)
+  - Cincuentenario (w666341239)
+  - Corredor Sur (w684868242)
+  - Don Bosco (w684874791)
+  - El Crisol (w684868248)
+  - El Ingenio (n5208805271)
+  - Fernández de Córdoba (n5213877060)
+  - Hospital del Este (w684868240)
+  - Iglesia del Carmen (n5213877057)
+  - Las Mañanitas (w684868241)
+  - Los Andes (n5208805269)
+  - Lotería (n5208805273)
+  - Nuevo Tocumen (w684868231)
+  - Pan de Azúcar (n5213877056)
+  - Paraiso (w684868253)
+  - 'Pedregal - Las Acacias (w684868244)'
+  - Pueblo Nuevo (n5213877062)
+  - San Antonio (w684868245)
+  - San Isidro (w684889038)
+  - San Miguelito (w581769337)
+  - San Miguelito (w666341240)
+  - Santo Tomás (n5208805272)
+  - Villa Lucre (w684868252)
+  - Vía Argentina (n5213877058)
+
 routes: 
   - 
-    name: Línea 1
     type: subway
-    ref: 1
     itineraries: 
       r7706228: 
         - San Isidro (w684889038)
@@ -38,28 +68,28 @@ routes:
         - San Isidro (w684889038)
 
 
-    stations: 
-      - Albrook
-      - Cinco de Mayo
-      - Lotería
-      - Santo Tomás
-      - Iglesia del Carmen
-      - Vía Argentina
-      - Fernández de Córdoba
-      - El Ingenio
-      - 12 de Octubre
-      - Pueblo Nuevo
-      - San Miguelito
-      - Pan de Azúcar
-      - Los Andes
-      - San Isidro
-
     colour: '#ff0000'
+    stations: 
+      - San Isidro
+      - Los Andes
+      - Pan de Azúcar
+      - San Miguelito
+      - Pueblo Nuevo
+      - 12 de Octubre
+      - El Ingenio
+      - Fernández de Córdoba
+      - Vía Argentina
+      - Iglesia del Carmen
+      - Santo Tomás
+      - Lotería
+      - Cinco de Mayo
+      - Albrook
+
     station_count: 14
+    name: Línea 1
+    ref: 1
   - 
-    name: Línea 2
     type: subway
-    ref: L2
     itineraries: 
       r9502695: 
         - Nuevo Tocumen (w684868231)
@@ -98,61 +128,31 @@ routes:
         - Nuevo Tocumen (w684868231)
 
 
-    stations: 
-      - Nuevo Tocumen
-      - 24 de Diciembre
-      - Altos de Tocumen
-      - Hospital del Este
-      - Las Mañanitas
-      - Corredor Sur
-      - Don Bosco
-      - 'Pedregal - Las Acacias'
-      - San Antonio
-      - Cerro Viento
-      - Brisas Del Golf
-      - El Crisol
-      - Villa Lucre
-      - Cincuentenario
-      - Paraiso
-      - San Miguelito
-
     colour: '#008000'
+    stations: 
+      - San Miguelito
+      - Paraiso
+      - Cincuentenario
+      - Villa Lucre
+      - El Crisol
+      - Brisas Del Golf
+      - Cerro Viento
+      - San Antonio
+      - 'Pedregal - Las Acacias'
+      - Don Bosco
+      - Corredor Sur
+      - Las Mañanitas
+      - Hospital del Este
+      - Altos de Tocumen
+      - 24 de Diciembre
+      - Nuevo Tocumen
+
     station_count: 16
+    name: Línea 2
+    ref: L2
 
 transfers: 
   - 
     - San Miguelito (r7712342)
     - San Miguelito (r9536804)
-
-stations: 
-  - 12 de Octubre (n5213877061)
-  - 24 de Diciembre (w684868238)
-  - Albrook (n5208805276)
-  - Altos de Tocumen (w684868239)
-  - Brisas Del Golf (w684868247)
-  - Cerro Viento (w684868246)
-  - Cinco de Mayo (n5208805275)
-  - Cincuentenario (w666341239)
-  - Corredor Sur (w684868242)
-  - Don Bosco (w684874791)
-  - El Crisol (w684868248)
-  - El Ingenio (n5208805271)
-  - Fernández de Córdoba (n5213877060)
-  - Hospital del Este (w684868240)
-  - Iglesia del Carmen (n5213877057)
-  - Las Mañanitas (w684868241)
-  - Los Andes (n5208805269)
-  - Lotería (n5208805273)
-  - Nuevo Tocumen (w684868231)
-  - Pan de Azúcar (n5213877056)
-  - Paraiso (w684868253)
-  - 'Pedregal - Las Acacias (w684868244)'
-  - Pueblo Nuevo (n5213877062)
-  - San Antonio (w684868245)
-  - San Isidro (w684889038)
-  - San Miguelito (w581769337)
-  - San Miguelito (w666341240)
-  - Santo Tomás (n5208805272)
-  - Villa Lucre (w684868252)
-  - Vía Argentina (n5213877058)
 

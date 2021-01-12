@@ -1,9 +1,25 @@
 
+stations: 
+  - ABC (n625719259)
+  - Bebedouro (n5807457166)
+  - Bom Parto (n5807457179)
+  - Fernão Velho (n5807456335)
+  - Goiabeira (n5807457154)
+  - Gustavo Paiva (n5807315992)
+  - Jaraguá (n6392484813)
+  - Lourenço de Albuquerque (n4987882471)
+  - Maceió (w613872534)
+  - Mercado (n5885317270)
+  - Mutange (Desativada) (n5807457178)
+  - Rio Largo (n5807315996)
+  - Rio Novo (n7119146213)
+  - Satuba (n7120528007)
+  - Sururu de Capote (n5807457160)
+  - Utinga (n5809605747)
+
 routes: 
   - 
-    name: VLT de Maceió
     type: light_rail
-    ref: CBTU
     itineraries: 
       r6636197: 
         - Jaraguá (n6392484813)
@@ -42,6 +58,7 @@ routes:
         - Jaraguá (n6392484813)
 
 
+    colour: '#0000ff'
     stations: 
       - Lourenço de Albuquerque
       - Rio Largo
@@ -60,26 +77,9 @@ routes:
       - Maceió
       - Jaraguá
 
-    colour: '#0000ff'
     station_count: 16
+    name: VLT de Maceió
+    ref: CBTU
 
 transfers: 
-
-stations: 
-  - ABC (n625719259)
-  - Bebedouro (n5807457166)
-  - Bom Parto (n5807457179)
-  - Fernão Velho (n5807456335)
-  - Goiabeira (n5807457154)
-  - Gustavo Paiva (n5807315992)
-  - Jaraguá (n6392484813)
-  - Lourenço de Albuquerque (n4987882471)
-  - Maceió (w613872534)
-  - Mercado (n5885317270)
-  - Mutange (Desativada) (n5807457178)
-  - Rio Largo (n5807315996)
-  - Rio Novo (n7119146213)
-  - Satuba (n7120528007)
-  - Sururu de Capote (n5807457160)
-  - Utinga (n5809605747)
 

@@ -1,17 +1,22 @@
 
+stations: 
+  - Abuja Metro (n2176898978)
+  - Airport (n5754152726)
+  - Bassanjiwa (n5754152721)
+  - Deidei (n5754381304)
+  - Gbazango (n5754381303)
+  - Gwagwa (n5754381302)
+  - Idu Station (w607064215)
+  - Kagini (n5754381309)
+  - Kukwaba I (n5754032240)
+  - Kukwaba II (n5754032230)
+  - Stadium (n5754032239)
+  - Wupa (n5754031515)
+
 routes: 
   - 
-    name: Blue Line
     type: light_rail
-    ref: Blue
     itineraries: 
-      r8442723: 
-        - Gbazango (n5754381303)
-        - Kagini (n5754381309)
-        - Deidei (n5754381304)
-        - Gwagwa (n5754381302)
-        - Idu Station (w607064215)
-
       r8442724: 
         - Idu Station (w607064215)
         - Gwagwa (n5754381302)
@@ -19,20 +24,27 @@ routes:
         - Kagini (n5754381309)
         - Gbazango (n5754381303)
 
+      r8442723: 
+        - Gbazango (n5754381303)
+        - Kagini (n5754381309)
+        - Deidei (n5754381304)
+        - Gwagwa (n5754381302)
+        - Idu Station (w607064215)
 
-    stations: 
-      - Idu
-      - Gwagwa
-      - Deidei
-      - Kagini
-      - Gbazango
 
     colour: '#0000ff'
+    stations: 
+      - Gbazango
+      - Kagini
+      - Deidei
+      - Gwagwa
+      - Idu
+
     station_count: 5
+    name: Blue Line
+    ref: Blue
   - 
-    name: Yellow Line
     type: light_rail
-    ref: Yellow
     itineraries: 
       r8441841: 
         - Abuja Metro (n2176898978)
@@ -55,35 +67,23 @@ routes:
         - Abuja Metro (n2176898978)
 
 
-    stations: 
-      - Airport
-      - Bassanjiwa
-      - Idu
-      - Wupa
-      - Kukwaba II
-      - Kukwaba I
-      - Stadium
-      - Abuja Metro
-
     colour: '#ffff00'
+    stations: 
+      - Abuja Metro
+      - Stadium
+      - Kukwaba I
+      - Kukwaba II
+      - Wupa
+      - Idu
+      - Bassanjiwa
+      - Airport
+
     station_count: 8
+    name: Yellow Line
+    ref: Yellow
 
 transfers: 
   - 
     - Idu (r9122493)
     - Idu (r9122739)
-
-stations: 
-  - Abuja Metro (n2176898978)
-  - Airport (n5754152726)
-  - Bassanjiwa (n5754152721)
-  - Deidei (n5754381304)
-  - Gbazango (n5754381303)
-  - Gwagwa (n5754381302)
-  - Idu Station (w607064215)
-  - Kagini (n5754381309)
-  - Kukwaba I (n5754032240)
-  - Kukwaba II (n5754032230)
-  - Stadium (n5754032239)
-  - Wupa (n5754031515)
 

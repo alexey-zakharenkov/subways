@@ -1,9 +1,61 @@
 
+stations: 
+  - Andalucía Tech (n1625341623)
+  - Barbarela (n4408155456)
+  - Carranque (n4408159190)
+  - Ciudad de la Justicia (n1625341600)
+  - Clínico (n1912826078)
+  - El Cónsul (n1625341605)
+  - El Perchel (n4408112018)
+  - El Torcal (n4409558424)
+  - La Isla (n4409530066)
+  - 'La Luz - La Paz (n3762485517)'
+  - La Unión (n1625341615)
+  - Palacio de los Deportes (n4344674995)
+  - Paraninfo (n2897360350)
+  - Portada Alta (n1625341635)
+  - 'Princesa - Huelin (n4409535923)'
+  - Puerta Blanca (n3762485520)
+  - Universidad (n4943984613)
+
 routes: 
   - 
-    name: Línea 1
     type: subway
+    itineraries: 
+      r6598364: 
+        - El Perchel (n4408112018)
+        - La Isla (n4409530066)
+        - 'Princesa - Huelin (n4409535923)'
+        - El Torcal (n4409558424)
+        - 'La Luz - La Paz (n3762485517)'
+        - Puerta Blanca (n3762485520)
+        - Palacio de los Deportes (n4344674995)
+
+      r4484361: 
+        - Palacio de los Deportes (n4344674995)
+        - Puerta Blanca (n3762485520)
+        - 'La Luz - La Paz (n3762485517)'
+        - El Torcal (n4409558424)
+        - 'Princesa - Huelin (n4409535923)'
+        - La Isla (n4409530066)
+        - El Perchel (n4408112018)
+
+
+    colour: '#0000ff'
+    stations: 
+      - El Perchel
+      - La Isla
+      - 'Princesa - Huelin'
+      - El Torcal
+      - 'La Luz - La Paz'
+      - Puerta Blanca
+      - Palacio de los Deportes
+
+    station_count: 7
+    name: Línea 2
     ref: L2
+  - 
+    type: subway
     itineraries: 
       r7781441: 
         - El Perchel (n4408112018)
@@ -32,6 +84,7 @@ routes:
         - El Perchel (n4408112018)
 
 
+    colour: '#ff0000'
     stations: 
       - Andalucía Tech
       - Paraninfo
@@ -45,62 +98,9 @@ routes:
       - La Unión
       - El Perchel
 
-    colour: '#ff0000'
     station_count: 11
-  - 
-    name: Línea 2
-    type: subway
+    name: Línea 1
     ref: L2
-    itineraries: 
-      r6598364: 
-        - El Perchel (n4408112018)
-        - La Isla (n4409530066)
-        - 'Princesa - Huelin (n4409535923)'
-        - El Torcal (n4409558424)
-        - 'La Luz - La Paz (n3762485517)'
-        - Puerta Blanca (n3762485520)
-        - Palacio de los Deportes (n4344674995)
-
-      r4484361: 
-        - Palacio de los Deportes (n4344674995)
-        - Puerta Blanca (n3762485520)
-        - 'La Luz - La Paz (n3762485517)'
-        - El Torcal (n4409558424)
-        - 'Princesa - Huelin (n4409535923)'
-        - La Isla (n4409530066)
-        - El Perchel (n4408112018)
-
-
-    stations: 
-      - El Perchel
-      - La Isla
-      - 'Princesa - Huelin'
-      - El Torcal
-      - 'La Luz - La Paz'
-      - Puerta Blanca
-      - Palacio de los Deportes
-
-    colour: '#0000ff'
-    station_count: 7
 
 transfers: 
-
-stations: 
-  - Andalucía Tech (n1625341623)
-  - Barbarela (n4408155456)
-  - Carranque (n4408159190)
-  - Ciudad de la Justicia (n1625341600)
-  - Clínico (n1912826078)
-  - El Cónsul (n1625341605)
-  - El Perchel (n4408112018)
-  - El Torcal (n4409558424)
-  - La Isla (n4409530066)
-  - 'La Luz - La Paz (n3762485517)'
-  - La Unión (n1625341615)
-  - Palacio de los Deportes (n4344674995)
-  - Paraninfo (n2897360350)
-  - Portada Alta (n1625341635)
-  - 'Princesa - Huelin (n4409535923)'
-  - Puerta Blanca (n3762485520)
-  - Universidad (n4943984613)
 

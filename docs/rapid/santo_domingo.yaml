@@ -1,9 +1,43 @@
 
+stations: 
+  - Amín Abel Hasbún (n2382433212)
+  - Casandra Damirón (n2382351269)
+  - Centro de los Héroes (n2382875701)
+  - Concepción Bona (w541799754)
+  - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
+  - Eduardo Brito (n2324963154)
+  - Ercilia Pepín (n3723270045)
+  - Francisco Alberto Caamaño Deñó (n2382875707)
+  - Francisco Gregorio Billini (n4119588390)
+  - 'Freddy Beras - Goico (n2324955715)'
+  - Gregorio Luperón (n2104800239)
+  - Gregorio Urbano Gilbert Suero (n4042570077)
+  - Hermanas Mirabal (n2385996177)
+  - Horacio Vásquez (n5228521725)
+  - Joaquín Balaguer (n2382356033)
+  - Juan Pablo Duarte (n2324959085)
+  - Juan Pablo Duarte (n5226305563)
+  - Juan Ulises García Saleta (n309520913)
+  - Los Taínos (n312855599)
+  - Mamá Tingó (n2104800307)
+  - Manuel de Jesús Abreu Galván (n2324963155)
+  - María Móntez (n2324956457)
+  - Mauricio Báez (n2324959692)
+  - Máximo Gómez (n2104800000)
+  - Pedro Francisco Bonó (n4119545007)
+  - Pedro Livio Cedeño (n312855983)
+  - Pedro Mir (n5226305553)
+  - Peña Batlle (n312855286)
+  - Peña Gómez (n2385996813)
+  - Profesor Juan Bosch (n2382351268)
+  - Ramón Cáceres (n2324962072)
+  - Rosa Duarte (n6476494996)
+  - Trina de Moya de Vásquez (w541801797)
+  - Ulises Fransico Espalliat (n4119588420)
+
 routes: 
   - 
-    name: Línea 1
     type: subway
-    ref: 1
     itineraries: 
       r1325782: 
         - Mamá Tingó (n2104800307)
@@ -42,6 +76,7 @@ routes:
         - Mamá Tingó (n2104800307)
 
 
+    colour: '#0000ff'
     stations: 
       - Centro De Los Héroes
       - Francisco Alberto Caamaño Deñó
@@ -60,33 +95,12 @@ routes:
       - Gregorio Urbano Gilbert Suero
       - Mama Tingò
 
-    colour: '#0000ff'
     station_count: 16
+    name: Línea 1
+    ref: 1
   - 
-    name: Línea 2
     type: subway
-    ref: 2
     itineraries: 
-      r7730098: 
-        - María Móntez (n2324956457)
-        - Pedro Francisco Bonó (n4119545007)
-        - Francisco Gregorio Billini (n4119588390)
-        - Ulises Fransico Espalliat (n4119588420)
-        - Pedro Mir (n5226305553)
-        - 'Freddy Beras - Goico (n2324955715)'
-        - Juan Ulises García Saleta (n309520913)
-        - Juan Pablo Duarte (n5226305563)
-        - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
-        - Mauricio Báez (n2324959692)
-        - Ramón Cáceres (n2324962072)
-        - Horacio Vásquez (n5228521725)
-        - Manuel de Jesús Abreu Galván (n2324963155)
-        - Eduardo Brito (n2324963154)
-        - Ercilia Pepín (n3723270045)
-        - Rosa Duarte (n6476494996)
-        - Trina de Moya de Vásquez (w541801797)
-        - Concepción Bona (w541799754)
-
       r7734058: 
         - Concepción Bona (w541799754)
         - Trina de Moya de Vásquez (w541801797)
@@ -107,68 +121,54 @@ routes:
         - Pedro Francisco Bonó (n4119545007)
         - María Móntez (n2324956457)
 
+      r7730098: 
+        - María Móntez (n2324956457)
+        - Pedro Francisco Bonó (n4119545007)
+        - Francisco Gregorio Billini (n4119588390)
+        - Ulises Fransico Espalliat (n4119588420)
+        - Pedro Mir (n5226305553)
+        - 'Freddy Beras - Goico (n2324955715)'
+        - Juan Ulises García Saleta (n309520913)
+        - Juan Pablo Duarte (n5226305563)
+        - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
+        - Mauricio Báez (n2324959692)
+        - Ramón Cáceres (n2324962072)
+        - Horacio Vásquez (n5228521725)
+        - Manuel de Jesús Abreu Galván (n2324963155)
+        - Eduardo Brito (n2324963154)
+        - Ercilia Pepín (n3723270045)
+        - Rosa Duarte (n6476494996)
+        - Trina de Moya de Vásquez (w541801797)
+        - Concepción Bona (w541799754)
 
-    stations: 
-      - María Móntez
-      - Pedro Francisco Bonó
-      - Francisco Gregorio Billini
-      - Ulises Fransico Espalliat
-      - Pedro Mir
-      - 'Freddy Beras - Goico'
-      - Juan Ulises García Saleta
-      - Centro Olímpico Juan Pablo Duarte
-      - Coronel Rafael Tomás Fernández Domínguez
-      - Mauricio Báez
-      - Ramón Cáceres
-      - Horacio Vásquez
-      - Manuel de Jesús Abreu Galván
-      - Eduardo Brito
-      - Ercilia Pepín
-      - Rosa Duarte
-      - Trina de Moya de Vásquez
-      - Concepción Bona
 
     colour: '#ff0000'
+    stations: 
+      - Concepción Bona
+      - Trina de Moya de Vásquez
+      - Rosa Duarte
+      - Ercilia Pepín
+      - Eduardo Brito
+      - Manuel de Jesús Abreu Galván
+      - Horacio Vásquez
+      - Ramón Cáceres
+      - Mauricio Báez
+      - Coronel Rafael Tomás Fernández Domínguez
+      - Centro Olímpico Juan Pablo Duarte
+      - Juan Ulises García Saleta
+      - 'Freddy Beras - Goico'
+      - Pedro Mir
+      - Ulises Fransico Espalliat
+      - Francisco Gregorio Billini
+      - Pedro Francisco Bonó
+      - María Móntez
+
     station_count: 18
+    name: Línea 2
+    ref: 2
 
 transfers: 
   - 
     - Centro Olímpico Juan Pablo Duarte (r7730099)
     - Centro Olímpico Juan Pablo Duarte (r7730100)
-
-stations: 
-  - Amín Abel Hasbún (n2382433212)
-  - Casandra Damirón (n2382351269)
-  - Centro de los Héroes (n2382875701)
-  - Concepción Bona (w541799754)
-  - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
-  - Eduardo Brito (n2324963154)
-  - Ercilia Pepín (n3723270045)
-  - Francisco Alberto Caamaño Deñó (n2382875707)
-  - Francisco Gregorio Billini (n4119588390)
-  - 'Freddy Beras - Goico (n2324955715)'
-  - Gregorio Luperón (n2104800239)
-  - Gregorio Urbano Gilbert Suero (n4042570077)
-  - Hermanas Mirabal (n2385996177)
-  - Horacio Vásquez (n5228521725)
-  - Joaquín Balaguer (n2382356033)
-  - Juan Pablo Duarte (n2324959085)
-  - Juan Pablo Duarte (n5226305563)
-  - Juan Ulises García Saleta (n309520913)
-  - Los Taínos (n312855599)
-  - Mamá Tingó (n2104800307)
-  - Manuel de Jesús Abreu Galván (n2324963155)
-  - María Móntez (n2324956457)
-  - Mauricio Báez (n2324959692)
-  - Máximo Gómez (n2104800000)
-  - Pedro Francisco Bonó (n4119545007)
-  - Pedro Livio Cedeño (n312855983)
-  - Pedro Mir (n5226305553)
-  - Peña Batlle (n312855286)
-  - Peña Gómez (n2385996813)
-  - Profesor Juan Bosch (n2382351268)
-  - Ramón Cáceres (n2324962072)
-  - Rosa Duarte (n6476494996)
-  - Trina de Moya de Vásquez (w541801797)
-  - Ulises Fransico Espalliat (n4119588420)
 

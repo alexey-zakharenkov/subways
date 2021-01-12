@@ -1,9 +1,67 @@
 
+stations: 
+  - Achim (n3600180679)
+  - Bad Zwischenahn (n99707282)
+  - Baden (Krs. Verden) (n2576177621)
+  - Barrien (n277361622)
+  - Bassum (n5809191172)
+  - Berne (n148954098)
+  - Bookholzberg (n268436273)
+  - Brake (Unterweser) (n268642884)
+  - Bramstedt (b Syke) (n473099070)
+  - Bremen Hauptbahnhof (n8041901931)
+  - Bremen Mühlenstraße (n2563849452)
+  - Bremen Neustadt (n26496854)
+  - Bremen Turnerstraße (n1415886487)
+  - Bremen-Aumund (n257290391)
+  - Bremen-Blumenthal (n610645730)
+  - Bremen-Burg (n610585788)
+  - Bremen-Farge (n345000935)
+  - Bremen-Hemelingen (n24965627)
+  - Bremen-Kreinsloger (n257290384)
+  - Bremen-Lesum (n2568003871)
+  - Bremen-Mahndorf (n1703353815)
+  - Bremen-Oslebshausen (n25587943)
+  - Bremen-Schönebeck (n2568003885)
+  - Bremen-Sebaldsbrück (n30007104)
+  - Bremen-St. Magnus (n1909867631)
+  - Bremen-Vegesack (n5808908194)
+  - Bremen-Walle (n347468710)
+  - Bremerhaven Hauptbahnhof (n26562398)
+  - Bremerhaven-Lehe (n2574919478)
+  - Bremerhaven-Wulsdorf (n1853304914)
+  - Delmenhorst (n26490141)
+  - Dreye (n2563849473)
+  - Elsfleth (n307856927)
+  - Etelsen (n347475456)
+  - Heidkrug (n3710927131)
+  - Hoykenkamp (n270729246)
+  - Hude (Oldenburg) (n1347965940)
+  - Kirchhammelwarden (n2563357340)
+  - Kirchweyhe (n3536940451)
+  - Kleinensiel (n307849375)
+  - Klinikum Bremen-Nord/Beckedorf (n5808878459)
+  - Langwedel (n347475804)
+  - Loxstedt (w251242791)
+  - Lunestedt (n5806556637)
+  - Lübberstedt (n26025172)
+  - Nordenham (n307623233)
+  - Oldenburg (Oldb) Hbf (n91753264)
+  - Oldenburg-Wechloy (n3226281803)
+  - Oldenbüttel (n5808870115)
+  - Osterholz-Scharmbeck (n2688800382)
+  - Ritterhude (n29774619)
+  - Rodenkirchen (Oldb) (n307849376)
+  - Schierbrok (n27394018)
+  - Stubben (n5808872368)
+  - Syke (n29976784)
+  - Twistringen (n376015408)
+  - Verden (Aller) (n25268471)
+  - Wüsting (n304103356)
+
 routes: 
   - 
-    name: RS 1
     type: train
-    ref: RS 1
     itineraries: 
       r3422654: 
         - Bremen-Farge (n345000935)
@@ -80,16 +138,6 @@ routes:
         - Langwedel (n347475804)
         - Verden (Aller) (n25268471)
 
-      r79130: 
-        - Bremen-Farge (n345000935)
-        - Bremen Turnerstraße (n1415886487)
-        - Bremen-Kreinsloger (n257290384)
-        - Bremen Mühlenstraße (n2563849452)
-        - Bremen-Blumenthal (n610645730)
-        - Klinikum Bremen-Nord/Beckedorf (n5808878459)
-        - Bremen-Aumund (n257290391)
-        - Bremen-Vegesack (n5808908194)
-
       r77366: 
         - Verden (Aller) (n25268471)
         - Langwedel (n347475804)
@@ -107,37 +155,47 @@ routes:
         - Bremen-Schönebeck (n2568003885)
         - Bremen-Vegesack (n5808908194)
 
+      r79130: 
+        - Bremen-Farge (n345000935)
+        - Bremen Turnerstraße (n1415886487)
+        - Bremen-Kreinsloger (n257290384)
+        - Bremen Mühlenstraße (n2563849452)
+        - Bremen-Blumenthal (n610645730)
+        - Klinikum Bremen-Nord/Beckedorf (n5808878459)
+        - Bremen-Aumund (n257290391)
+        - Bremen-Vegesack (n5808908194)
 
-    stations: 
-      - Vegesack
-      - Bremen-Aumund
-      - Klinikum Bremen-Nord
-      - Bremen-Blumenthal
-      - Bremen Mühlenstraße
-      - Bremen-Kreinsloger
-      - Bremen Turnerstraße
-      - Bremen Farge
-      - Verden (Aller)
-      - Langwedel
-      - Etelsen
-      - Baden (Verden)
-      - Achim
-      - Bf Mahndorf
-      - Bf Sebaldsbrück
-      - Bremen Hauptbahnhof
-      - Bahnhof Walle
-      - Bremen-Oslebshausen
-      - Bahnhof Burg
-      - Bremen-Lesum
-      - Bremen-St. Magnus
-      - Bremen-Schönebeck
 
     colour: '#0000ee'
+    stations: 
+      - Bremen Farge
+      - Bremen Turnerstraße
+      - Bremen-Kreinsloger
+      - Bremen Mühlenstraße
+      - Bremen-Blumenthal
+      - Klinikum Bremen-Nord
+      - Bremen-Aumund
+      - Vegesack
+      - Bremen-Schönebeck
+      - Bremen-St. Magnus
+      - Bremen-Lesum
+      - Bahnhof Burg
+      - Bremen-Oslebshausen
+      - Bahnhof Walle
+      - Bremen Hauptbahnhof
+      - Bf Sebaldsbrück
+      - Bf Mahndorf
+      - Achim
+      - Baden (Verden)
+      - Etelsen
+      - Langwedel
+      - Verden (Aller)
+
     station_count: 22
+    name: RS 1
+    ref: RS 1
   - 
-    name: RS 2 Twistringen <=> Bremerhaven-Lehe
     type: train
-    ref: RS 2
     itineraries: 
       r1344048: 
         - Bremerhaven-Lehe (n2574919478)
@@ -184,6 +242,7 @@ routes:
         - Bremerhaven-Lehe (n2574919478)
 
 
+    colour: '#ff9e00'
     stations: 
       - Twistringen
       - Bassum
@@ -206,12 +265,11 @@ routes:
       - Bremerhaven Hauptbahnhof
       - Bremerhaven-Lehe
 
-    colour: '#ff9e00'
     station_count: 20
+    name: RS 2 Twistringen <=> Bremerhaven-Lehe
+    ref: RS 2
   - 
-    name: RS 3 Bad Zwischenahn <=> Oldenburg <=> Delmenhorst <=> Bremen
     type: train
-    ref: RS 3
     itineraries: 
       r2309714: 
         - Bremen Hauptbahnhof (n8041901931)
@@ -242,6 +300,7 @@ routes:
         - Bremen Hauptbahnhof (n8041901931)
 
 
+    colour: '#5cda21'
     stations: 
       - Bremen Hauptbahnhof
       - Bremen Neustadt
@@ -256,12 +315,11 @@ routes:
       - Oldenburg-Wechloy
       - Bad Zwischenahn
 
-    colour: '#5cda21'
     station_count: 12
+    name: RS 3 Bad Zwischenahn <=> Oldenburg <=> Delmenhorst <=> Bremen
+    ref: RS 3
   - 
-    name: RS 4
     type: train
-    ref: RS 4
     itineraries: 
       r6925926: 
         - Bremen Hauptbahnhof (n8041901931)
@@ -288,6 +346,7 @@ routes:
         - Bremen Hauptbahnhof (n8041901931)
 
 
+    colour: '#ff0000'
     stations: 
       - Nordenham
       - Kleinensiel
@@ -300,68 +359,9 @@ routes:
       - Delmenhorst
       - Bremen Hauptbahnhof
 
-    colour: '#ff0000'
     station_count: 10
+    name: RS 4
+    ref: RS 4
 
 transfers: 
-
-stations: 
-  - Achim (n3600180679)
-  - Bad Zwischenahn (n99707282)
-  - Baden (Krs. Verden) (n2576177621)
-  - Barrien (n277361622)
-  - Bassum (n5809191172)
-  - Berne (n148954098)
-  - Bookholzberg (n268436273)
-  - Brake (Unterweser) (n268642884)
-  - Bramstedt (b Syke) (n473099070)
-  - Bremen Hauptbahnhof (n8041901931)
-  - Bremen Mühlenstraße (n2563849452)
-  - Bremen Neustadt (n26496854)
-  - Bremen Turnerstraße (n1415886487)
-  - Bremen-Aumund (n257290391)
-  - Bremen-Blumenthal (n610645730)
-  - Bremen-Burg (n610585788)
-  - Bremen-Farge (n345000935)
-  - Bremen-Hemelingen (n24965627)
-  - Bremen-Kreinsloger (n257290384)
-  - Bremen-Lesum (n2568003871)
-  - Bremen-Mahndorf (n1703353815)
-  - Bremen-Oslebshausen (n25587943)
-  - Bremen-Schönebeck (n2568003885)
-  - Bremen-Sebaldsbrück (n30007104)
-  - Bremen-St. Magnus (n1909867631)
-  - Bremen-Vegesack (n5808908194)
-  - Bremen-Walle (n347468710)
-  - Bremerhaven Hauptbahnhof (n26562398)
-  - Bremerhaven-Lehe (n2574919478)
-  - Bremerhaven-Wulsdorf (n1853304914)
-  - Delmenhorst (n26490141)
-  - Dreye (n2563849473)
-  - Elsfleth (n307856927)
-  - Etelsen (n347475456)
-  - Heidkrug (n3710927131)
-  - Hoykenkamp (n270729246)
-  - Hude (Oldenburg) (n1347965940)
-  - Kirchhammelwarden (n2563357340)
-  - Kirchweyhe (n3536940451)
-  - Kleinensiel (n307849375)
-  - Klinikum Bremen-Nord/Beckedorf (n5808878459)
-  - Langwedel (n347475804)
-  - Loxstedt (w251242791)
-  - Lunestedt (n5806556637)
-  - Lübberstedt (n26025172)
-  - Nordenham (n307623233)
-  - Oldenburg (Oldb) Hbf (n91753264)
-  - Oldenburg-Wechloy (n3226281803)
-  - Oldenbüttel (n5808870115)
-  - Osterholz-Scharmbeck (n2688800382)
-  - Ritterhude (n29774619)
-  - Rodenkirchen (Oldb) (n307849376)
-  - Schierbrok (n27394018)
-  - Stubben (n5808872368)
-  - Syke (n29976784)
-  - Twistringen (n376015408)
-  - Verden (Aller) (n25268471)
-  - Wüsting (n304103356)
 

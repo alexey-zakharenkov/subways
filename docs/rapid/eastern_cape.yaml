@@ -1,9 +1,37 @@
 
+stations: 
+  - Arnoldton (n247325948)
+  - Berlin (n247325966)
+  - Cambridge (n765870775)
+  - Chiselhurst (n247326032)
+  - Dawn (n356776698)
+  - De Mist (n247259684)
+  - Despatch (n248577992)
+  - East London (n247326273)
+  - Egerton (n247326246)
+  - Fort Jackson (n247326081)
+  - Highgate (n247326117)
+  - Horseshoe (n247326121)
+  - Lonetree (n247326209)
+  - Mdantsane (n766144560)
+  - Mount Ruth (n247326295)
+  - Mtsotso (n247326279)
+  - New Brighton (n30274072)
+  - North End (n30278966)
+  - Panmure (n247326331)
+  - Perseverance (n31395706)
+  - Port Elizabeth (n30278974)
+  - Redhouse (n30276737)
+  - Southernwood (n247326428)
+  - Swartkops (n30275278)
+  - Sydenham (n30278698)
+  - Uitenhage (n7035457399)
+  - Vincent (n247326531)
+  - Wilsonia (n356772234)
+
 routes: 
   - 
-    name: Berlin Line
     type: train
-    ref: Berlin
     itineraries: 
       r10374783: 
         - Berlin (n247325966)
@@ -46,6 +74,7 @@ routes:
         - Berlin (n247325966)
 
 
+    colour: '#f58220'
     stations: 
       - East London
       - Southernwood
@@ -66,25 +95,12 @@ routes:
       - Lonetree
       - Berlin
 
-    colour: '#f58220'
     station_count: 18
+    name: Berlin Line
+    ref: Berlin
   - 
-    name: Uitenhage CBD
     type: train
-    ref: Uitenhage CBD
     itineraries: 
-      r10374692: 
-        - Uitenhage (n7035457399)
-        - De Mist (n247259684)
-        - Despatch (n248577992)
-        - Perseverance (n31395706)
-        - Redhouse (n30276737)
-        - Swartkops (n30275278)
-        - New Brighton (n30274072)
-        - Sydenham (n30278698)
-        - North End (n30278966)
-        - Port Elizabeth (n30278974)
-
       r952460: 
         - Port Elizabeth (n30278974)
         - North End (n30278966)
@@ -97,51 +113,35 @@ routes:
         - De Mist (n247259684)
         - Uitenhage (n7035457399)
 
+      r10374692: 
+        - Uitenhage (n7035457399)
+        - De Mist (n247259684)
+        - Despatch (n248577992)
+        - Perseverance (n31395706)
+        - Redhouse (n30276737)
+        - Swartkops (n30275278)
+        - New Brighton (n30274072)
+        - Sydenham (n30278698)
+        - North End (n30278966)
+        - Port Elizabeth (n30278974)
 
-    stations: 
-      - Port Elizabeth
-      - North End
-      - Sydenham
-      - New Brighton
-      - Swartkops
-      - Redhouse
-      - Perseverance
-      - Despatch
-      - De Mist
-      - Uitenhage
 
     colour: '#f9cc3e'
+    stations: 
+      - Uitenhage
+      - De Mist
+      - Despatch
+      - Perseverance
+      - Redhouse
+      - Swartkops
+      - New Brighton
+      - Sydenham
+      - North End
+      - Port Elizabeth
+
     station_count: 10
+    name: Uitenhage CBD
+    ref: Uitenhage CBD
 
 transfers: 
-
-stations: 
-  - Arnoldton (n247325948)
-  - Berlin (n247325966)
-  - Cambridge (n765870775)
-  - Chiselhurst (n247326032)
-  - Dawn (n356776698)
-  - De Mist (n247259684)
-  - Despatch (n248577992)
-  - East London (n247326273)
-  - Egerton (n247326246)
-  - Fort Jackson (n247326081)
-  - Highgate (n247326117)
-  - Horseshoe (n247326121)
-  - Lonetree (n247326209)
-  - Mdantsane (n766144560)
-  - Mount Ruth (n247326295)
-  - Mtsotso (n247326279)
-  - New Brighton (n30274072)
-  - North End (n30278966)
-  - Panmure (n247326331)
-  - Perseverance (n31395706)
-  - Port Elizabeth (n30278974)
-  - Redhouse (n30276737)
-  - Southernwood (n247326428)
-  - Swartkops (n30275278)
-  - Sydenham (n30278698)
-  - Uitenhage (n7035457399)
-  - Vincent (n247326531)
-  - Wilsonia (n356772234)
 

@@ -1,34 +1,33 @@
 
+stations: 
+  - Allapattah (n462648893)
+  - Brickell (n462517397)
+  - Brownsville (n462671720)
+  - Civic Center (n462636623)
+  - Coconut Grove (n462354527)
+  - Culmer (n462625340)
+  - Dadeland North (n462237456)
+  - Dadeland South (n462234896)
+  - Douglas Road (n462351565)
+  - Dr. Martin Luther King, Jr. (n462678359)
+  - Earlington Heights (n462658627)
+  - Government Center (n6612182883)
+  - Hialeah (n462691978)
+  - Historic Overtown/Lyric Theatre (n462599402)
+  - Miami International Airport (n6416386201)
+  - Northside (n462685985)
+  - Okeechobee (n462693507)
+  - Palmetto (n462721823)
+  - Santa Clara (n462639220)
+  - South Miami (n462341030)
+  - Tri-Rail Transfer (n462688749)
+  - University (n462347481)
+  - Vizcaya (n462429749)
+
 routes: 
   - 
-    name: Green Line
     type: subway
-    ref: Green
     itineraries: 
-      r4499117: 
-        - Palmetto (n462721823)
-        - Okeechobee (n462693507)
-        - Hialeah (n462691978)
-        - Tri-Rail Transfer (n462688749)
-        - Northside (n462685985)
-        - Dr. Martin Luther King, Jr. (n462678359)
-        - Brownsville (n462671720)
-        - Earlington Heights (n462658627)
-        - Allapattah (n462648893)
-        - Santa Clara (n462639220)
-        - Civic Center (n462636623)
-        - Culmer (n462625340)
-        - Historic Overtown/Lyric Theatre (n462599402)
-        - Government Center (n6612182883)
-        - Brickell (n462517397)
-        - Vizcaya (n462429749)
-        - Coconut Grove (n462354527)
-        - Douglas Road (n462351565)
-        - University (n462347481)
-        - South Miami (n462341030)
-        - Dadeland North (n462237456)
-        - Dadeland South (n462234896)
-
       r7924526: 
         - Dadeland South (n462234896)
         - Dadeland North (n462237456)
@@ -53,7 +52,32 @@ routes:
         - Okeechobee (n462693507)
         - Palmetto (n462721823)
 
+      r4499117: 
+        - Palmetto (n462721823)
+        - Okeechobee (n462693507)
+        - Hialeah (n462691978)
+        - Tri-Rail Transfer (n462688749)
+        - Northside (n462685985)
+        - Dr. Martin Luther King, Jr. (n462678359)
+        - Brownsville (n462671720)
+        - Earlington Heights (n462658627)
+        - Allapattah (n462648893)
+        - Santa Clara (n462639220)
+        - Civic Center (n462636623)
+        - Culmer (n462625340)
+        - Historic Overtown/Lyric Theatre (n462599402)
+        - Government Center (n6612182883)
+        - Brickell (n462517397)
+        - Vizcaya (n462429749)
+        - Coconut Grove (n462354527)
+        - Douglas Road (n462351565)
+        - University (n462347481)
+        - South Miami (n462341030)
+        - Dadeland North (n462237456)
+        - Dadeland South (n462234896)
 
+
+    colour: '#62bb46'
     stations: 
       - Palmetto (Metrorail)
       - Okeechobee (Metrorail)
@@ -78,12 +102,11 @@ routes:
       - Dadeland North (Metrorail)
       - Dadeland South (Metrorail)
 
-    colour: '#62bb46'
     station_count: 22
+    name: Green Line
+    ref: Green
   - 
-    name: Orange Line
     type: subway
-    ref: Orange
     itineraries: 
       r7924525: 
         - Miami International Airport (n6416386201)
@@ -122,6 +145,7 @@ routes:
         - Miami International Airport (n6416386201)
 
 
+    colour: '#f78f1e'
     stations: 
       - Dadeland South (Metrorail)
       - Dadeland North (Metrorail)
@@ -140,33 +164,9 @@ routes:
       - Earlington Heights (Metrorail)
       - Miami International Airport
 
-    colour: '#f78f1e'
     station_count: 16
+    name: Orange Line
+    ref: Orange
 
 transfers: 
-
-stations: 
-  - Allapattah (n462648893)
-  - Brickell (n462517397)
-  - Brownsville (n462671720)
-  - Civic Center (n462636623)
-  - Coconut Grove (n462354527)
-  - Culmer (n462625340)
-  - Dadeland North (n462237456)
-  - Dadeland South (n462234896)
-  - Douglas Road (n462351565)
-  - Dr. Martin Luther King, Jr. (n462678359)
-  - Earlington Heights (n462658627)
-  - Government Center (n6612182883)
-  - Hialeah (n462691978)
-  - Historic Overtown/Lyric Theatre (n462599402)
-  - Miami International Airport (n6416386201)
-  - Northside (n462685985)
-  - Okeechobee (n462693507)
-  - Palmetto (n462721823)
-  - Santa Clara (n462639220)
-  - South Miami (n462341030)
-  - Tri-Rail Transfer (n462688749)
-  - University (n462347481)
-  - Vizcaya (n462429749)
 

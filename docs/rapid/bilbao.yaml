@@ -1,10 +1,90 @@
 
+stations: 
+  - Abando (n5294695228)
+  - Abatxolo (n5294695247)
+  - Aiboa (n5299570341)
+  - Algorta (n5299570340)
+  - Ansio (n5294695242)
+  - Areeta (n5299570344)
+  - Ariz (n5294695234)
+  - Astrabudua (n5295678083)
+  - Bagatza (n5294695244)
+  - Barakaldo (n5294695243)
+  - Basarrate (n5294695231)
+  - Basauri (n5294695235)
+  - Berango (n5299570339)
+  - Bidezabal (n5263800704)
+  - Bolueta (n5294695232)
+  - Deustu (n5294695238)
+  - Erandio (n5295678084)
+  - Etxebarri (n5294695233)
+  - Gobela (n5299570343)
+  - Gurutzeta/Cruces (n5294695241)
+  - Ibarbengoa (n3934286489)
+  - Indautxu (n5294695236)
+  - Kabiezes (n5294695251)
+  - Kukullaga (n5294711012)
+  - Lamiako (n5295689396)
+  - Larrabasterra (n5299570338)
+  - Leioa (n5295678051)
+  - Lutxana (n5263800703)
+  - Matiko (n5061716164)
+  - Moyua (n5294695226)
+  - Neguri (n5299570342)
+  - Otxarkoaga (n5294711013)
+  - Peñota (n5294695249)
+  - Plentzia (n5299570322)
+  - Portugalete (n5294695248)
+  - San Ignazio (n5294695240)
+  - Santimami/San Mames (n5294695237)
+  - Santurtzi (n5294695250)
+  - Santutxu (n5294695230)
+  - Sarriko (n5294695239)
+  - Sestao (n5294695246)
+  - Sopela (n5299570331)
+  - Txurdinaga (n5294711014)
+  - Urbinaga (n5294695245)
+  - Urduliz (n5299570330)
+  - Uribarri (n5294711016)
+  - Zazpikaleak/Casco Viejo (n5294695227)
+  - Zazpikaleak/Casco Viejo (n5294695229)
+  - Zurbaranbarri (n5294711015)
+
 routes: 
   - 
-    name: L1
     type: subway
-    ref: L1
     itineraries: 
+      r7184309: 
+        - Etxebarri (n5294695233)
+        - Bolueta (n5294695232)
+        - Basarrate (n5294695231)
+        - Santutxu (n5294695230)
+        - Zazpikaleak/Casco Viejo (n5294695229)
+        - Abando (n5294695228)
+        - Moyua (n5294695226)
+        - Indautxu (n5294695236)
+        - Santimami/San Mames (n5294695237)
+        - Deustu (n5294695238)
+        - Sarriko (n5294695239)
+        - San Ignazio (n5294695240)
+        - Lutxana (n5263800703)
+        - Erandio (n5295678084)
+        - Astrabudua (n5295678083)
+        - Leioa (n5295678051)
+        - Lamiako (n5295689396)
+        - Areeta (n5299570344)
+        - Gobela (n5299570343)
+        - Neguri (n5299570342)
+        - Aiboa (n5299570341)
+        - Algorta (n5299570340)
+        - Bidezabal (n5263800704)
+        - Ibarbengoa (n3934286489)
+        - Berango (n5299570339)
+        - Larrabasterra (n5299570338)
+        - Sopela (n5299570331)
+        - Urduliz (n5299570330)
+        - Plentzia (n5299570322)
+
       r7184296: 
         - Etxebarri (n5294695233)
         - Bolueta (n5294695232)
@@ -33,10 +113,64 @@ routes:
         - Berango (n5299570339)
         - Larrabasterra (n5299570338)
 
+      r7106861: 
+        - Etxebarri (n5294695233)
+        - Bolueta (n5294695232)
+        - Basarrate (n5294695231)
+        - Santutxu (n5294695230)
+        - Zazpikaleak/Casco Viejo (n5294695229)
+        - Abando (n5294695228)
+        - Moyua (n5294695226)
+        - Indautxu (n5294695236)
+        - Santimami/San Mames (n5294695237)
+        - Deustu (n5294695238)
+        - Sarriko (n5294695239)
+        - San Ignazio (n5294695240)
+        - Lutxana (n5263800703)
+        - Erandio (n5295678084)
+        - Astrabudua (n5295678083)
+        - Leioa (n5295678051)
+        - Lamiako (n5295689396)
+        - Areeta (n5299570344)
+        - Gobela (n5299570343)
+        - Neguri (n5299570342)
+        - Aiboa (n5299570341)
+        - Algorta (n5299570340)
+        - Bidezabal (n5263800704)
+        - Ibarbengoa (n3934286489)
+
       r7184308: 
         - Plentzia (n5299570322)
         - Urduliz (n5299570330)
         - Sopela (n5299570331)
+        - Larrabasterra (n5299570338)
+        - Berango (n5299570339)
+        - Ibarbengoa (n3934286489)
+        - Bidezabal (n5263800704)
+        - Algorta (n5299570340)
+        - Aiboa (n5299570341)
+        - Neguri (n5299570342)
+        - Gobela (n5299570343)
+        - Areeta (n5299570344)
+        - Lamiako (n5295689396)
+        - Leioa (n5295678051)
+        - Astrabudua (n5295678083)
+        - Erandio (n5295678084)
+        - Lutxana (n5263800703)
+        - San Ignazio (n5294695240)
+        - Sarriko (n5294695239)
+        - Deustu (n5294695238)
+        - Santimami/San Mames (n5294695237)
+        - Indautxu (n5294695236)
+        - Moyua (n5294695226)
+        - Abando (n5294695228)
+        - Zazpikaleak/Casco Viejo (n5294695229)
+        - Santutxu (n5294695230)
+        - Basarrate (n5294695231)
+        - Bolueta (n5294695232)
+        - Etxebarri (n5294695233)
+
+      r7184297: 
         - Larrabasterra (n5299570338)
         - Berango (n5299570339)
         - Ibarbengoa (n3934286489)
@@ -90,92 +224,8 @@ routes:
         - Bolueta (n5294695232)
         - Etxebarri (n5294695233)
 
-      r7184309: 
-        - Etxebarri (n5294695233)
-        - Bolueta (n5294695232)
-        - Basarrate (n5294695231)
-        - Santutxu (n5294695230)
-        - Zazpikaleak/Casco Viejo (n5294695229)
-        - Abando (n5294695228)
-        - Moyua (n5294695226)
-        - Indautxu (n5294695236)
-        - Santimami/San Mames (n5294695237)
-        - Deustu (n5294695238)
-        - Sarriko (n5294695239)
-        - San Ignazio (n5294695240)
-        - Lutxana (n5263800703)
-        - Erandio (n5295678084)
-        - Astrabudua (n5295678083)
-        - Leioa (n5295678051)
-        - Lamiako (n5295689396)
-        - Areeta (n5299570344)
-        - Gobela (n5299570343)
-        - Neguri (n5299570342)
-        - Aiboa (n5299570341)
-        - Algorta (n5299570340)
-        - Bidezabal (n5263800704)
-        - Ibarbengoa (n3934286489)
-        - Berango (n5299570339)
-        - Larrabasterra (n5299570338)
-        - Sopela (n5299570331)
-        - Urduliz (n5299570330)
-        - Plentzia (n5299570322)
 
-      r7106861: 
-        - Etxebarri (n5294695233)
-        - Bolueta (n5294695232)
-        - Basarrate (n5294695231)
-        - Santutxu (n5294695230)
-        - Zazpikaleak/Casco Viejo (n5294695229)
-        - Abando (n5294695228)
-        - Moyua (n5294695226)
-        - Indautxu (n5294695236)
-        - Santimami/San Mames (n5294695237)
-        - Deustu (n5294695238)
-        - Sarriko (n5294695239)
-        - San Ignazio (n5294695240)
-        - Lutxana (n5263800703)
-        - Erandio (n5295678084)
-        - Astrabudua (n5295678083)
-        - Leioa (n5295678051)
-        - Lamiako (n5295689396)
-        - Areeta (n5299570344)
-        - Gobela (n5299570343)
-        - Neguri (n5299570342)
-        - Aiboa (n5299570341)
-        - Algorta (n5299570340)
-        - Bidezabal (n5263800704)
-        - Ibarbengoa (n3934286489)
-
-      r7184297: 
-        - Larrabasterra (n5299570338)
-        - Berango (n5299570339)
-        - Ibarbengoa (n3934286489)
-        - Bidezabal (n5263800704)
-        - Algorta (n5299570340)
-        - Aiboa (n5299570341)
-        - Neguri (n5299570342)
-        - Gobela (n5299570343)
-        - Areeta (n5299570344)
-        - Lamiako (n5295689396)
-        - Leioa (n5295678051)
-        - Astrabudua (n5295678083)
-        - Erandio (n5295678084)
-        - Lutxana (n5263800703)
-        - San Ignazio (n5294695240)
-        - Sarriko (n5294695239)
-        - Deustu (n5294695238)
-        - Santimami/San Mames (n5294695237)
-        - Indautxu (n5294695236)
-        - Moyua (n5294695226)
-        - Abando (n5294695228)
-        - Zazpikaleak/Casco Viejo (n5294695229)
-        - Santutxu (n5294695230)
-        - Basarrate (n5294695231)
-        - Bolueta (n5294695232)
-        - Etxebarri (n5294695233)
-
-
+    colour: '#ff0000'
     stations: 
       - Etxebarri
       - Bolueta
@@ -207,40 +257,12 @@ routes:
       - Urduliz
       - Plentzia
 
-    colour: '#ff0000'
     station_count: 29
+    name: L1
+    ref: L1
   - 
-    name: L2
     type: subway
-    ref: L2
     itineraries: 
-      r6661418: 
-        - Basauri (n5294695235)
-        - Ariz (n5294695234)
-        - Etxebarri (n5294695233)
-        - Bolueta (n5294695232)
-        - Basarrate (n5294695231)
-        - Santutxu (n5294695230)
-        - Zazpikaleak/Casco Viejo (n5294695229)
-        - Abando (n5294695228)
-        - Moyua (n5294695226)
-        - Indautxu (n5294695236)
-        - Santimami/San Mames (n5294695237)
-        - Deustu (n5294695238)
-        - Sarriko (n5294695239)
-        - San Ignazio (n5294695240)
-        - Gurutzeta/Cruces (n5294695241)
-        - Ansio (n5294695242)
-        - Barakaldo (n5294695243)
-        - Bagatza (n5294695244)
-        - Urbinaga (n5294695245)
-        - Sestao (n5294695246)
-        - Abatxolo (n5294695247)
-        - Portugalete (n5294695248)
-        - Peñota (n5294695249)
-        - Santurtzi (n5294695250)
-        - Kabiezes (n5294695251)
-
       r6727389: 
         - Kabiezes (n5294695251)
         - Santurtzi (n5294695250)
@@ -268,7 +290,35 @@ routes:
         - Ariz (n5294695234)
         - Basauri (n5294695235)
 
+      r6661418: 
+        - Basauri (n5294695235)
+        - Ariz (n5294695234)
+        - Etxebarri (n5294695233)
+        - Bolueta (n5294695232)
+        - Basarrate (n5294695231)
+        - Santutxu (n5294695230)
+        - Zazpikaleak/Casco Viejo (n5294695229)
+        - Abando (n5294695228)
+        - Moyua (n5294695226)
+        - Indautxu (n5294695236)
+        - Santimami/San Mames (n5294695237)
+        - Deustu (n5294695238)
+        - Sarriko (n5294695239)
+        - San Ignazio (n5294695240)
+        - Gurutzeta/Cruces (n5294695241)
+        - Ansio (n5294695242)
+        - Barakaldo (n5294695243)
+        - Bagatza (n5294695244)
+        - Urbinaga (n5294695245)
+        - Sestao (n5294695246)
+        - Abatxolo (n5294695247)
+        - Portugalete (n5294695248)
+        - Peñota (n5294695249)
+        - Santurtzi (n5294695250)
+        - Kabiezes (n5294695251)
 
+
+    colour: '#000000'
     stations: 
       - Kabiezes
       - Santurtzi
@@ -296,12 +346,11 @@ routes:
       - Ariz
       - Basauri
 
-    colour: '#000000'
     station_count: 25
+    name: L2
+    ref: L2
   - 
-    name: L3 (Matiko → Kukullaga)
     type: subway
-    ref: L3
     itineraries: 
       r7141755: 
         - Matiko (n5061716164)
@@ -322,6 +371,7 @@ routes:
         - Matiko (n5061716164)
 
 
+    colour: '#e3007d'
     stations: 
       - Matiko
       - Uribarri
@@ -331,62 +381,12 @@ routes:
       - Otxarkoaga
       - Kukullaga
 
-    colour: '#e3007d'
     station_count: 7
+    name: L3 (Matiko → Kukullaga)
+    ref: L3
 
 transfers: 
   - 
     - Zazpikaleak/Casco Viejo (r7718058)
     - Zazpikaleak/Casco Viejo (r7718064)
-
-stations: 
-  - Abando (n5294695228)
-  - Abatxolo (n5294695247)
-  - Aiboa (n5299570341)
-  - Algorta (n5299570340)
-  - Ansio (n5294695242)
-  - Areeta (n5299570344)
-  - Ariz (n5294695234)
-  - Astrabudua (n5295678083)
-  - Bagatza (n5294695244)
-  - Barakaldo (n5294695243)
-  - Basarrate (n5294695231)
-  - Basauri (n5294695235)
-  - Berango (n5299570339)
-  - Bidezabal (n5263800704)
-  - Bolueta (n5294695232)
-  - Deustu (n5294695238)
-  - Erandio (n5295678084)
-  - Etxebarri (n5294695233)
-  - Gobela (n5299570343)
-  - Gurutzeta/Cruces (n5294695241)
-  - Ibarbengoa (n3934286489)
-  - Indautxu (n5294695236)
-  - Kabiezes (n5294695251)
-  - Kukullaga (n5294711012)
-  - Lamiako (n5295689396)
-  - Larrabasterra (n5299570338)
-  - Leioa (n5295678051)
-  - Lutxana (n5263800703)
-  - Matiko (n5061716164)
-  - Moyua (n5294695226)
-  - Neguri (n5299570342)
-  - Otxarkoaga (n5294711013)
-  - Peñota (n5294695249)
-  - Plentzia (n5299570322)
-  - Portugalete (n5294695248)
-  - San Ignazio (n5294695240)
-  - Santimami/San Mames (n5294695237)
-  - Santurtzi (n5294695250)
-  - Santutxu (n5294695230)
-  - Sarriko (n5294695239)
-  - Sestao (n5294695246)
-  - Sopela (n5299570331)
-  - Txurdinaga (n5294711014)
-  - Urbinaga (n5294695245)
-  - Urduliz (n5299570330)
-  - Uribarri (n5294711016)
-  - Zazpikaleak/Casco Viejo (n5294695227)
-  - Zazpikaleak/Casco Viejo (n5294695229)
-  - Zurbaranbarri (n5294711015)
 

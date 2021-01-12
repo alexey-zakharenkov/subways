@@ -1,9 +1,25 @@
 
+stations: 
+  - Bayamón (n5358034644)
+  - Centro Médico (n5358027631)
+  - Cupey (n5358026499)
+  - Deportivo (n5358033735)
+  - Domenech (n5356339972)
+  - Hato Rey (n5356336924)
+  - Jardines (n5358026131)
+  - Las Lomas (n5358028284)
+  - Martínez Nadal (n5358029212)
+  - Piñero (n5356345356)
+  - Roosevelt (n5356339950)
+  - Río Piedras (n5356352679)
+  - Sagrado Corazón (n5356326078)
+  - San Francisco (n5358028078)
+  - Torrimar (n5358031031)
+  - Universidad (n4594120609)
+
 routes: 
   - 
-    name: Tren Urbano
     type: subway
-    ref: Tren Urbano
     itineraries: 
       r4751619: 
         - Bayamón (n5358034644)
@@ -42,6 +58,7 @@ routes:
         - Bayamón (n5358034644)
 
 
+    colour: '#800080'
     stations: 
       - Bayamón
       - Deportivo
@@ -60,26 +77,9 @@ routes:
       - Hato Rey
       - Sagrado Corazón
 
-    colour: '#800080'
     station_count: 16
+    name: Tren Urbano
+    ref: Tren Urbano
 
 transfers: 
-
-stations: 
-  - Bayamón (n5358034644)
-  - Centro Médico (n5358027631)
-  - Cupey (n5358026499)
-  - Deportivo (n5358033735)
-  - Domenech (n5356339972)
-  - Hato Rey (n5356336924)
-  - Jardines (n5358026131)
-  - Las Lomas (n5358028284)
-  - Martínez Nadal (n5358029212)
-  - Piñero (n5356345356)
-  - Roosevelt (n5356339950)
-  - Río Piedras (n5356352679)
-  - Sagrado Corazón (n5356326078)
-  - San Francisco (n5358028078)
-  - Torrimar (n5358031031)
-  - Universidad (n4594120609)
 

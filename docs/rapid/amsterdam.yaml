@@ -1,9 +1,48 @@
 
+stations: 
+  - Amstelveenseweg (n250222266)
+  - Amsterdam Amstel (n4040491812)
+  - Amsterdam Bijlmer ArenA (n4005961975)
+  - Amsterdam Holendrecht (n250233810)
+  - Amsterdam Lelylaan (n4076017504)
+  - Bullewijk (n4046388677)
+  - Centraal Station (n5424713348)
+  - De Pijp (n5737467957)
+  - De Vlugtlaan (n2237721918)
+  - Diemen Zuid (n46199966)
+  - Duivendrecht (n4041666291)
+  - Europaplein (n5737467956)
+  - Gaasperplas (n4041642874)
+  - Ganzenhoef (n4041662264)
+  - Gein (n4041640589)
+  - Heemstedestraat (n4053335995)
+  - Henk Sneevlietweg (n4075987791)
+  - Isolatorweg (n4077313759)
+  - Jan van Galenstraat (n250224485)
+  - Kraaiennest (n4041662265)
+  - Nieuwmarkt (n4073743506)
+  - Noord (n5737467961)
+  - Noorderpark (n5737467960)
+  - Overamstel (n427565080)
+  - Postjesweg (n4077313763)
+  - Reigersbos (n4041640590)
+  - Rokin (w266903916)
+  - Spaklerweg (n4073693626)
+  - Station RAI (n5360384018)
+  - Station Sloterdijk (n5267675296)
+  - Strandvliet (n4046383465)
+  - Van der Madeweg (n289445435)
+  - Venserpolder (n4041664287)
+  - Verrijn Stuartweg (n4064153245)
+  - Vijzelgracht (n5737467958)
+  - Waterlooplein (w268782305)
+  - Weesperplein (w268998785)
+  - Wibautstraat (n4073693628)
+  - Zuid (n5267675295)
+
 routes: 
   - 
-    name: Metro 50
     type: subway
-    ref: 50
     itineraries: 
       r4515354: 
         - Isolatorweg (n4077313759)
@@ -50,6 +89,7 @@ routes:
         - Isolatorweg (n4077313759)
 
 
+    colour: '#29ab4d'
     stations: 
       - Isolatorweg
       - Amsterdam Sloterdijk (Metro)
@@ -72,12 +112,11 @@ routes:
       - Reigersbos
       - Gein
 
-    colour: '#29ab4d'
     station_count: 20
+    name: Metro 50
+    ref: 50
   - 
-    name: Metro 51
     type: subway
-    ref: 51
     itineraries: 
       r4515355: 
         - Isolatorweg (n4077313759)
@@ -122,33 +161,33 @@ routes:
         - Isolatorweg (n4077313759)
 
 
-    stations: 
-      - Isolatorweg
-      - Amsterdam Sloterdijk (Metro)
-      - De Vlugtlaan
-      - Jan van Galenstraat
-      - Postjesweg
-      - Amsterdam Lelylaan
-      - Heemstedestraat
-      - Henk Sneevlietweg
-      - Amstelveenseweg
-      - Zuid
-      - Station RAI
-      - Overamstel
-      - Spaklerweg
-      - Amsterdam Amstel
-      - Wibautstraat
-      - Weesperplein
-      - Waterlooplein
-      - Nieuwmarkt
-      - Centraal Station
-
     colour: '#f69931'
+    stations: 
+      - Centraal Station
+      - Nieuwmarkt
+      - Waterlooplein
+      - Weesperplein
+      - Wibautstraat
+      - Amsterdam Amstel
+      - Spaklerweg
+      - Overamstel
+      - Station RAI
+      - Zuid
+      - Amstelveenseweg
+      - Henk Sneevlietweg
+      - Heemstedestraat
+      - Amsterdam Lelylaan
+      - Postjesweg
+      - Jan van Galenstraat
+      - De Vlugtlaan
+      - Amsterdam Sloterdijk (Metro)
+      - Isolatorweg
+
     station_count: 19
+    name: Metro 51
+    ref: 51
   - 
-    name: Metro 52
     type: subway
-    ref: 52
     itineraries: 
       r8466667: 
         - Noord (n5737467961)
@@ -171,6 +210,7 @@ routes:
         - Noord (n5737467961)
 
 
+    colour: '#00adef'
     stations: 
       - Zuid
       - Europaplein
@@ -181,12 +221,11 @@ routes:
       - Noorderpark
       - Noord
 
-    colour: '#00adef'
     station_count: 8
+    name: Metro 52
+    ref: 52
   - 
-    name: Metro 53
     type: subway
-    ref: 53
     itineraries: 
       r4515356: 
         - Gaasperplas (n4041642874)
@@ -221,6 +260,7 @@ routes:
         - Gaasperplas (n4041642874)
 
 
+    colour: '#ff0000'
     stations: 
       - Centraal Station
       - Nieuwmarkt
@@ -237,12 +277,11 @@ routes:
       - Kraaiennest
       - Gaasperplas
 
-    colour: '#ff0000'
     station_count: 14
+    name: Metro 53
+    ref: 53
   - 
-    name: Metro 54
     type: subway
-    ref: 54
     itineraries: 
       r18423: 
         - Centraal Station (n5424713348)
@@ -279,69 +318,30 @@ routes:
         - Centraal Station (n5424713348)
 
 
-    stations: 
-      - Gein
-      - Reigersbos
-      - Holendrecht
-      - Bullewijk
-      - Bijlmer ArenA
-      - Strandvliet
-      - Duivendrecht
-      - Van der Madeweg
-      - Spaklerweg
-      - Amsterdam Amstel
-      - Wibautstraat
-      - Weesperplein
-      - Waterlooplein
-      - Nieuwmarkt
-      - Centraal Station
-
     colour: '#fcfb05'
+    stations: 
+      - Centraal Station
+      - Nieuwmarkt
+      - Waterlooplein
+      - Weesperplein
+      - Wibautstraat
+      - Amsterdam Amstel
+      - Spaklerweg
+      - Van der Madeweg
+      - Duivendrecht
+      - Strandvliet
+      - Bijlmer ArenA
+      - Bullewijk
+      - Holendrecht
+      - Reigersbos
+      - Gein
+
     station_count: 15
+    name: Metro 54
+    ref: 54
 
 transfers: 
   - 
     - Centraal Station (r6078295)
     - Centraal Station (r8468343)
-
-stations: 
-  - Amstelveenseweg (n250222266)
-  - Amsterdam Amstel (n4040491812)
-  - Amsterdam Bijlmer ArenA (n4005961975)
-  - Amsterdam Holendrecht (n250233810)
-  - Amsterdam Lelylaan (n4076017504)
-  - Bullewijk (n4046388677)
-  - Centraal Station (n5424713348)
-  - De Pijp (n5737467957)
-  - De Vlugtlaan (n2237721918)
-  - Diemen Zuid (n46199966)
-  - Duivendrecht (n4041666291)
-  - Europaplein (n5737467956)
-  - Gaasperplas (n4041642874)
-  - Ganzenhoef (n4041662264)
-  - Gein (n4041640589)
-  - Heemstedestraat (n4053335995)
-  - Henk Sneevlietweg (n4075987791)
-  - Isolatorweg (n4077313759)
-  - Jan van Galenstraat (n250224485)
-  - Kraaiennest (n4041662265)
-  - Nieuwmarkt (n4073743506)
-  - Noord (n5737467961)
-  - Noorderpark (n5737467960)
-  - Overamstel (n427565080)
-  - Postjesweg (n4077313763)
-  - Reigersbos (n4041640590)
-  - Rokin (w266903916)
-  - Spaklerweg (n4073693626)
-  - Station RAI (n5360384018)
-  - Station Sloterdijk (n5267675296)
-  - Strandvliet (n4046383465)
-  - Van der Madeweg (n289445435)
-  - Venserpolder (n4041664287)
-  - Verrijn Stuartweg (n4064153245)
-  - Vijzelgracht (n5737467958)
-  - Waterlooplein (w268782305)
-  - Weesperplein (w268998785)
-  - Wibautstraat (n4073693628)
-  - Zuid (n5267675295)
 

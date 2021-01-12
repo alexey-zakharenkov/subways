@@ -1,219 +1,4 @@
 
-routes: 
-  - 
-    name: LRT Line 1
-    type: light_rail
-    ref: 1
-    itineraries: 
-      r8000260: 
-        - Baclaran (w290189159)
-        - EDSA (w222628891)
-        - Libertad (w290088413)
-        - Gil Puyat (w288127159)
-        - Vito Cruz (w288126518)
-        - Quirino (w288126517)
-        - Pedro Gil (w288126519)
-        - United Nations (w288091194)
-        - Central Terminal (w179251377)
-        - Carriedo (w288089644)
-        - Doroteo Jose (w112644274)
-        - Bambang (w187134601)
-        - Tayuman (w288010747)
-        - Blumentritt (w288085179)
-        - Abad Santos (w288085512)
-        - R. Papa (w288087278)
-        - 5th Avenue (w288086563)
-        - Yamaha Monumento (w288086841)
-        - Balintawak (w402882917)
-
-      r110418: 
-        - Balintawak (w402882917)
-        - Yamaha Monumento (w288086841)
-        - 5th Avenue (w288086563)
-        - R. Papa (w288087278)
-        - Abad Santos (w288085512)
-        - Blumentritt (w288085179)
-        - Tayuman (w288010747)
-        - Bambang (w187134601)
-        - Doroteo Jose (w112644274)
-        - Carriedo (w288089644)
-        - Central Terminal (w179251377)
-        - United Nations (w288091194)
-        - Pedro Gil (w288126519)
-        - Quirino (w288126517)
-        - Vito Cruz (w288126518)
-        - Gil Puyat (w288127159)
-        - Libertad (w290088413)
-        - EDSA (w222628891)
-        - Baclaran (w290189159)
-
-      r10463194: 
-        - Yamaha Monumento (w288086841)
-        - 5th Avenue (w288086563)
-        - R. Papa (w288087278)
-        - Abad Santos (w288085512)
-        - Blumentritt (w288085179)
-        - Tayuman (w288010747)
-        - Bambang (w187134601)
-        - Doroteo Jose (w112644274)
-        - Carriedo (w288089644)
-        - Central Terminal (w179251377)
-        - United Nations (w288091194)
-        - Pedro Gil (w288126519)
-        - Quirino (w288126517)
-        - Vito Cruz (w288126518)
-        - Gil Puyat (w288127159)
-        - Libertad (w290088413)
-        - EDSA (w222628891)
-        - Baclaran (w290189159)
-
-      r10463195: 
-        - Baclaran (w290189159)
-        - EDSA (w222628891)
-        - Libertad (w290088413)
-        - Gil Puyat (w288127159)
-        - Vito Cruz (w288126518)
-        - Quirino (w288126517)
-        - Pedro Gil (w288126519)
-        - United Nations (w288091194)
-        - Central Terminal (w179251377)
-        - Carriedo (w288089644)
-        - Doroteo Jose (w112644274)
-        - Bambang (w187134601)
-        - Tayuman (w288010747)
-        - Blumentritt (w288085179)
-        - Abad Santos (w288085512)
-        - R. Papa (w288087278)
-        - 5th Avenue (w288086563)
-        - Yamaha Monumento (w288086841)
-
-
-    stations: 
-      - Baclaran
-      - EDSA
-      - Libertad
-      - Gil Puyat
-      - Vito Cruz
-      - Quirino
-      - Pedro Gil
-      - United Nations
-      - Central Terminal
-      - Carriedo
-      - Doroteo Jose
-      - Bambang
-      - Tayuman
-      - Blumentritt (LRT)
-      - Abad Santos
-      - R. Papa
-      - 5th Avenue
-      - Yamaha Monumento
-      - Balintawak
-
-    colour: '#008000'
-    station_count: 19
-  - 
-    name: LRT Line 2
-    type: subway
-    ref: 2
-    itineraries: 
-      r110410: 
-        - 'Araneta Center - Cubao (w184582280)'
-        - Betty Go-Belmonte (w113358959)
-        - Gilmore (w188169761)
-        - J. Ruiz (w188168853)
-        - V. Mapa (w188168855)
-        - Pureza (w188168854)
-        - Legarda (w28788659)
-        - Recto (w179240108)
-
-      r8000264: 
-        - Recto (w179240108)
-        - Legarda (w28788659)
-        - Pureza (w188168854)
-        - V. Mapa (w188168855)
-        - J. Ruiz (w188168853)
-        - Gilmore (w188169761)
-        - Betty Go-Belmonte (w113358959)
-        - 'Araneta Center - Cubao (w184582280)'
-
-
-    stations: 
-      - 'Araneta Center - Cubao'
-      - 'Betty Go - Belmonte'
-      - Gilmore
-      - J. Ruiz
-      - V. Mapa
-      - Pureza
-      - Legarda
-      - Recto
-
-    colour: '#800080'
-    station_count: 8
-  - 
-    name: MRT Line 3
-    type: light_rail
-    ref: 3
-    itineraries: 
-      r109159: 
-        - North Avenue (w222628892)
-        - Quezon Avenue (w128196488)
-        - GMA Kamuning (w30262758)
-        - 'Araneta - Cubao (w127506881)'
-        - Santolan (w95496202)
-        - Ortigas (w60194145)
-        - Shaw Boulevard (w112315687)
-        - Boni (w60198083)
-        - Guadalupe (w60618740)
-        - Buendia (w112320439)
-        - Ayala (w27663063)
-        - Magallanes (w222628890)
-        - Taft Avenue (w222628889)
-
-      r8000253: 
-        - Taft Avenue (w222628889)
-        - Magallanes (w222628890)
-        - Ayala (w27663063)
-        - Buendia (w112320439)
-        - Guadalupe (w60618740)
-        - Boni (w60198083)
-        - Shaw Boulevard (w112315687)
-        - Ortigas (w60194145)
-        - Santolan (w95496202)
-        - 'Araneta - Cubao (w127506881)'
-        - GMA Kamuning (w30262758)
-        - Quezon Avenue (w128196488)
-        - North Avenue (w222628892)
-
-
-    stations: 
-      - North Avenue
-      - Quezon Avenue
-      - GMA Kamuning
-      - 'Araneta - Cubao'
-      - Santolan
-      - Ortigas
-      - Shaw Boulevard
-      - Boni/Pioneer
-      - Guadalupe
-      - Buendia
-      - Ayala
-      - Magallanes
-      - Taft Avenue
-
-    colour: '#ffcc00'
-    station_count: 13
-
-transfers: 
-  - 
-    - 'Araneta - Cubao (r8000181)'
-    - 'Araneta Center - Cubao (r8000208)'
-  - 
-    - Doroteo Jose (r7683920)
-    - Recto (r8000239)
-  - 
-    - EDSA (r3873772)
-    - Taft Avenue (r8000203)
-
 stations: 
   - 5th Avenue (w288086563)
   - Abad Santos (w288085512)
@@ -255,4 +40,219 @@ stations:
   - V. Mapa (w188168855)
   - Vito Cruz (w288126518)
   - Yamaha Monumento (w288086841)
+
+routes: 
+  - 
+    type: light_rail
+    itineraries: 
+      r10463195: 
+        - Baclaran (w290189159)
+        - EDSA (w222628891)
+        - Libertad (w290088413)
+        - Gil Puyat (w288127159)
+        - Vito Cruz (w288126518)
+        - Quirino (w288126517)
+        - Pedro Gil (w288126519)
+        - United Nations (w288091194)
+        - Central Terminal (w179251377)
+        - Carriedo (w288089644)
+        - Doroteo Jose (w112644274)
+        - Bambang (w187134601)
+        - Tayuman (w288010747)
+        - Blumentritt (w288085179)
+        - Abad Santos (w288085512)
+        - R. Papa (w288087278)
+        - 5th Avenue (w288086563)
+        - Yamaha Monumento (w288086841)
+
+      r8000260: 
+        - Baclaran (w290189159)
+        - EDSA (w222628891)
+        - Libertad (w290088413)
+        - Gil Puyat (w288127159)
+        - Vito Cruz (w288126518)
+        - Quirino (w288126517)
+        - Pedro Gil (w288126519)
+        - United Nations (w288091194)
+        - Central Terminal (w179251377)
+        - Carriedo (w288089644)
+        - Doroteo Jose (w112644274)
+        - Bambang (w187134601)
+        - Tayuman (w288010747)
+        - Blumentritt (w288085179)
+        - Abad Santos (w288085512)
+        - R. Papa (w288087278)
+        - 5th Avenue (w288086563)
+        - Yamaha Monumento (w288086841)
+        - Balintawak (w402882917)
+
+      r10463194: 
+        - Yamaha Monumento (w288086841)
+        - 5th Avenue (w288086563)
+        - R. Papa (w288087278)
+        - Abad Santos (w288085512)
+        - Blumentritt (w288085179)
+        - Tayuman (w288010747)
+        - Bambang (w187134601)
+        - Doroteo Jose (w112644274)
+        - Carriedo (w288089644)
+        - Central Terminal (w179251377)
+        - United Nations (w288091194)
+        - Pedro Gil (w288126519)
+        - Quirino (w288126517)
+        - Vito Cruz (w288126518)
+        - Gil Puyat (w288127159)
+        - Libertad (w290088413)
+        - EDSA (w222628891)
+        - Baclaran (w290189159)
+
+      r110418: 
+        - Balintawak (w402882917)
+        - Yamaha Monumento (w288086841)
+        - 5th Avenue (w288086563)
+        - R. Papa (w288087278)
+        - Abad Santos (w288085512)
+        - Blumentritt (w288085179)
+        - Tayuman (w288010747)
+        - Bambang (w187134601)
+        - Doroteo Jose (w112644274)
+        - Carriedo (w288089644)
+        - Central Terminal (w179251377)
+        - United Nations (w288091194)
+        - Pedro Gil (w288126519)
+        - Quirino (w288126517)
+        - Vito Cruz (w288126518)
+        - Gil Puyat (w288127159)
+        - Libertad (w290088413)
+        - EDSA (w222628891)
+        - Baclaran (w290189159)
+
+
+    colour: '#008000'
+    stations: 
+      - Yamaha Monumento
+      - 5th Avenue
+      - R. Papa
+      - Abad Santos
+      - Blumentritt (LRT)
+      - Tayuman
+      - Bambang
+      - Doroteo Jose
+      - Carriedo
+      - Central Terminal
+      - United Nations
+      - Pedro Gil
+      - Quirino
+      - Vito Cruz
+      - Gil Puyat
+      - Libertad
+      - EDSA
+      - Baclaran
+      - Balintawak
+
+    station_count: 19
+    name: LRT Line 1
+    ref: 1
+  - 
+    type: subway
+    itineraries: 
+      r110410: 
+        - 'Araneta Center - Cubao (w184582280)'
+        - Betty Go-Belmonte (w113358959)
+        - Gilmore (w188169761)
+        - J. Ruiz (w188168853)
+        - V. Mapa (w188168855)
+        - Pureza (w188168854)
+        - Legarda (w28788659)
+        - Recto (w179240108)
+
+      r8000264: 
+        - Recto (w179240108)
+        - Legarda (w28788659)
+        - Pureza (w188168854)
+        - V. Mapa (w188168855)
+        - J. Ruiz (w188168853)
+        - Gilmore (w188169761)
+        - Betty Go-Belmonte (w113358959)
+        - 'Araneta Center - Cubao (w184582280)'
+
+
+    colour: '#800080'
+    stations: 
+      - 'Araneta Center - Cubao'
+      - 'Betty Go - Belmonte'
+      - Gilmore
+      - J. Ruiz
+      - V. Mapa
+      - Pureza
+      - Legarda
+      - Recto
+
+    station_count: 8
+    name: LRT Line 2
+    ref: 2
+  - 
+    type: light_rail
+    itineraries: 
+      r8000253: 
+        - Taft Avenue (w222628889)
+        - Magallanes (w222628890)
+        - Ayala (w27663063)
+        - Buendia (w112320439)
+        - Guadalupe (w60618740)
+        - Boni (w60198083)
+        - Shaw Boulevard (w112315687)
+        - Ortigas (w60194145)
+        - Santolan (w95496202)
+        - 'Araneta - Cubao (w127506881)'
+        - GMA Kamuning (w30262758)
+        - Quezon Avenue (w128196488)
+        - North Avenue (w222628892)
+
+      r109159: 
+        - North Avenue (w222628892)
+        - Quezon Avenue (w128196488)
+        - GMA Kamuning (w30262758)
+        - 'Araneta - Cubao (w127506881)'
+        - Santolan (w95496202)
+        - Ortigas (w60194145)
+        - Shaw Boulevard (w112315687)
+        - Boni (w60198083)
+        - Guadalupe (w60618740)
+        - Buendia (w112320439)
+        - Ayala (w27663063)
+        - Magallanes (w222628890)
+        - Taft Avenue (w222628889)
+
+
+    colour: '#ffcc00'
+    stations: 
+      - Taft Avenue
+      - Magallanes
+      - Ayala
+      - Buendia
+      - Guadalupe
+      - Boni/Pioneer
+      - Shaw Boulevard
+      - Ortigas
+      - Santolan
+      - 'Araneta - Cubao'
+      - GMA Kamuning
+      - Quezon Avenue
+      - North Avenue
+
+    station_count: 13
+    name: MRT Line 3
+    ref: 3
+
+transfers: 
+  - 
+    - 'Araneta - Cubao (r8000181)'
+    - 'Araneta Center - Cubao (r8000208)'
+  - 
+    - Doroteo Jose (r7683920)
+    - Recto (r8000239)
+  - 
+    - EDSA (r3873772)
+    - Taft Avenue (r8000203)
 

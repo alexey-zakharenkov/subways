@@ -1,9 +1,50 @@
 
+stations: 
+  - 'Ampère - Victor Hugo (n5385036748)'
+  - Bellecour (n5365148732)
+  - Brotteaux (n5385029707)
+  - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
+  - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
+  - Cordeliers (w332823084)
+  - Croix-Paquet (n5387297446)
+  - Croix-Rousse (n5388249130)
+  - Cuire (n5388270721)
+  - Cusset (n5385037838)
+  - Debourg (n5365142247)
+  - 'Flachet - Alain Gilles (n5385037696)'
+  - Foch (n5385037483)
+  - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
+  - Gare d'Oullins (n5365146848)
+  - Gare de Vaise (n5385023672)
+  - Garibaldi (n5385025147)
+  - Gorge de Loup (n5365180176)
+  - Grange Blanche (n5385025382)
+  - Gratte-Ciel (n5385037695)
+  - Guillotière (n5380090834)
+  - Hénon (w445225318)
+  - 'Hôtel de Ville - Louis Pradel (n5365157959)'
+  - Jean Macé (n5385052292)
+  - Laennec (n5385022793)
+  - 'Laurent Bonnevay - Astroballe (n5385038134)'
+  - Masséna (n5365589507)
+  - 'Mermoz - Pinel (n5385026358)'
+  - 'Monplaisir - Lumière (n5365180454)'
+  - Parilly (n5385027363)
+  - Perrache (n5385006337)
+  - 'Place Guichard - Bourse du Travail (w337016053)'
+  - Place Jean Jaurès (n5365143994)
+  - 'République - Villeurbanne (n5385037619)'
+  - Sans Souci (n5385025439)
+  - 'Saxe - Gambetta (n5380092139)'
+  - Stade de Gerland—Le LOU (n5365165135)
+  - Valmy (n5380086325)
+  - 'Vaulx-en-Velin - La Soie (n5365154886)'
+  - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
+  - Vénissieux (n5390305237)
+
 routes: 
   - 
-    name: Metro A
     type: subway
-    ref: A
     itineraries: 
       r153123: 
         - Perrache (n5385006337)
@@ -38,6 +79,7 @@ routes:
         - Perrache (n5385006337)
 
 
+    colour: '#ee3898'
     stations: 
       - 'Vaulx-en-Velin - La Soie'
       - 'Laurent Bonnevay - Astroballe (Ligne A)'
@@ -54,12 +96,11 @@ routes:
       - 'Ampère - Victor Hugo'
       - Perrache (subway)
 
-    colour: '#ee3898'
     station_count: 14
+    name: Metro A
+    ref: A
   - 
-    name: Metro B
     type: subway
-    ref: B
     itineraries: 
       r113907: 
         - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
@@ -86,6 +127,7 @@ routes:
         - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
 
 
+    colour: '#007dc5'
     stations: 
       - 'Charpennes - Charles Hernu (Ligne B)'
       - Brotteaux
@@ -98,28 +140,28 @@ routes:
       - Stade de Gerland
       - Pôle Multimodal d'Oullins
 
-    colour: '#007dc5'
     station_count: 10
+    name: Metro B
+    ref: B
   - 
-    name: Metro C
     type: subway
-    ref: C
     itineraries: 
+      r3687321: 
+        - Cuire (n5388270721)
+        - Hénon (w445225318)
+        - Croix-Rousse (n5388249130)
+        - Croix-Paquet (n5387297446)
+        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
+
       r113906: 
         - 'Hôtel de Ville - Louis Pradel (n5365157959)'
         - Croix-Paquet (n5387297446)
         - Croix-Rousse (n5388249130)
-        - Hénon (n5388264922)
+        - Hénon (w445225318)
         - Cuire (n5388270721)
 
-      r3687321: 
-        - Cuire (n5388270721)
-        - Hénon (n5388264922)
-        - Croix-Rousse (n5388249130)
-        - Croix-Paquet (n5387297446)
-        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
 
-
+    colour: '#f99d1d'
     stations: 
       - 'Hôtel de Ville - Louis Pradel (Ligne C)'
       - Croix-Paquet
@@ -127,12 +169,11 @@ routes:
       - Hénon
       - Cuire
 
-    colour: '#f99d1d'
     station_count: 5
+    name: Metro C
+    ref: C
   - 
-    name: Metro D
     type: subway
-    ref: D
     itineraries: 
       r113903: 
         - Gare de Vaise (n5385023672)
@@ -169,25 +210,27 @@ routes:
         - Gare de Vaise (n5385023672)
 
 
-    stations: 
-      - Pôle d'échanges Gare de Vaise
-      - Valmy
-      - Pôle d'échanges Gorge de Loup
-      - 'Vieux Lyon - Cathédrale Saint-Jean'
-      - Bellecour (Ligne D)
-      - Guillotière
-      - 'Saxe - Gambetta (Ligne D)'
-      - Garibaldi (subway)
-      - Sans Souci
-      - 'Monplaisir - Lumière'
-      - Grange Blanche
-      - Laennec
-      - 'Mermoz - Pinel'
-      - Parilly
-      - Gare de Vénissieux
-
     colour: '#00ac4d'
+    stations: 
+      - Gare de Vénissieux
+      - Parilly
+      - 'Mermoz - Pinel'
+      - Laennec
+      - Grange Blanche
+      - 'Monplaisir - Lumière'
+      - Sans Souci
+      - Garibaldi (subway)
+      - 'Saxe - Gambetta (Ligne D)'
+      - Guillotière
+      - Bellecour (Ligne D)
+      - 'Vieux Lyon - Cathédrale Saint-Jean'
+      - Pôle d'échanges Gorge de Loup
+      - Valmy
+      - Pôle d'échanges Gare de Vaise
+
     station_count: 15
+    name: Metro D
+    ref: D
 
 transfers: 
   - 
@@ -202,47 +245,4 @@ transfers:
   - 
     - 'Saxe - Gambetta (Ligne B) (r7975219)'
     - 'Saxe - Gambetta (Ligne D) (r3750361)'
-
-stations: 
-  - 'Ampère - Victor Hugo (n5385036748)'
-  - Bellecour (n5365148732)
-  - Brotteaux (n5385029707)
-  - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
-  - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
-  - Cordeliers (w332823084)
-  - Croix-Paquet (n5387297446)
-  - Croix-Rousse (n5388249130)
-  - Cuire (n5388270721)
-  - Cusset (n5385037838)
-  - Debourg (n5365142247)
-  - 'Flachet - Alain Gilles (n5385037696)'
-  - Foch (n5385037483)
-  - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
-  - Gare d'Oullins (n5365146848)
-  - Gare de Vaise (n5385023672)
-  - Garibaldi (n5385025147)
-  - Gorge de Loup (n5365180176)
-  - Grange Blanche (n5385025382)
-  - Gratte-Ciel (n5385037695)
-  - Guillotière (n5380090834)
-  - Hénon (n5388264922)
-  - 'Hôtel de Ville - Louis Pradel (n5365157959)'
-  - Jean Macé (n5385052292)
-  - Laennec (n5385022793)
-  - 'Laurent Bonnevay - Astroballe (n5385038134)'
-  - Masséna (n5365589507)
-  - 'Mermoz - Pinel (n5385026358)'
-  - 'Monplaisir - Lumière (n5365180454)'
-  - Parilly (n5385027363)
-  - Perrache (n5385006337)
-  - 'Place Guichard - Bourse du Travail (w337016053)'
-  - Place Jean Jaurès (n5365143994)
-  - 'République - Villeurbanne (n5385037619)'
-  - Sans Souci (n5385025439)
-  - 'Saxe - Gambetta (n5380092139)'
-  - Stade de Gerland—Le LOU (n5365165135)
-  - Valmy (n5380086325)
-  - 'Vaulx-en-Velin - La Soie (n5365154886)'
-  - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
-  - Vénissieux (n5390305237)
 
