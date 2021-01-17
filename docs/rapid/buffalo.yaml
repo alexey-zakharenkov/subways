@@ -1,38 +1,13 @@
 
-stations: 
-  - Allen/Medical Campus (n306391081)
-  - Amherst Street (n347412808)
-  - Church (n486769916)
-  - Delavan/Canisius College (n306394201)
-  - Erie Canal Harbor (n111456195)
-  - Fountain Plaza (n111582398)
-  - Humboldt–Hospital (n347412806)
-  - LaSalle (n347412810)
-  - Lafayette Square (n111582022)
-  - Seneca (n5844253031)
-  - Summer–Best (n304893295)
-  - University (n256821989)
-  - Utica (n347412733)
+transfers: 
 
 routes: 
   - 
+    colour: '#73757d'
+    name: NFTA Metro Rail
     type: light_rail
+    station_count: 13
     itineraries: 
-      r3517747: 
-        - Erie Canal Harbor (n111456195)
-        - Seneca (n5844253031)
-        - Church (n486769916)
-        - Lafayette Square (n111582022)
-        - Fountain Plaza (n111582398)
-        - Allen/Medical Campus (n306391081)
-        - Summer–Best (n304893295)
-        - Utica (n347412733)
-        - Delavan/Canisius College (n306394201)
-        - Humboldt–Hospital (n347412806)
-        - Amherst Street (n347412808)
-        - LaSalle (n347412810)
-        - University (n256821989)
-
       r11364343: 
         - University (n256821989)
         - LaSalle (n347412810)
@@ -48,8 +23,22 @@ routes:
         - Seneca (n5844253031)
         - Erie Canal Harbor (n111456195)
 
+      r3517747: 
+        - Erie Canal Harbor (n111456195)
+        - Seneca (n5844253031)
+        - Church (n486769916)
+        - Lafayette Square (n111582022)
+        - Fountain Plaza (n111582398)
+        - Allen/Medical Campus (n306391081)
+        - Summer–Best (n304893295)
+        - Utica (n347412733)
+        - Delavan/Canisius College (n306394201)
+        - Humboldt–Hospital (n347412806)
+        - Amherst Street (n347412808)
+        - LaSalle (n347412810)
+        - University (n256821989)
 
-    colour: '#73757d'
+
     stations: 
       - University
       - LaSalle
@@ -65,9 +54,20 @@ routes:
       - Seneca
       - Erie Canal Harbor
 
-    station_count: 13
-    name: NFTA Metro Rail
     ref: Metro
 
-transfers: 
+stations: 
+  - Allen/Medical Campus (n306391081)
+  - Amherst Street (n347412808)
+  - Church (n486769916)
+  - Delavan/Canisius College (n306394201)
+  - Erie Canal Harbor (n111456195)
+  - Fountain Plaza (n111582398)
+  - Humboldt–Hospital (n347412806)
+  - LaSalle (n347412810)
+  - Lafayette Square (n111582022)
+  - Seneca (n5844253031)
+  - Summer–Best (n304893295)
+  - University (n256821989)
+  - Utica (n347412733)
 

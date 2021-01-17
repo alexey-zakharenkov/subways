@@ -1,62 +1,18 @@
 
-stations: 
-  - 12th & I (n6157430109)
-  - 13th Street (n6157429166)
-  - 16th Street (n6157429158)
-  - 23rd Street (n6169976043)
-  - 29th Street (n6169976028)
-  - 39th Street (n6169975191)
-  - 47th Avenue (n6159580183)
-  - 48th Street (n6169975196)
-  - 4th Avenue/Wayne Hultgren (n6159580180)
-  - 59th Street (n6169975201)
-  - 7th & Capitol (n6157429174)
-  - 7th & I/County Center (n6157430100)
-  - 7th & Richards/Township 9 (n6157430341)
-  - 8th & Capitol (n6157429175)
-  - 8th & H/County Center (n6157430101)
-  - 8th & K (n6157429171)
-  - 8th & O (n6157430099)
-  - Alkali Flat/La Valentina (n6157430142)
-  - Archives Plaza (n6157430139)
-  - Arden/Del Paso (n6157430377)
-  - Broadway (n6159580179)
-  - Butterfield (n6169975235)
-  - Cathedral Square (n6157429180)
-  - Center Parkway (n6159583687)
-  - City College (n6159580181)
-  - College Greens (n6169975215)
-  - Cordova Town Center (n6169975250)
-  - Cosumnes River College (n6159583688)
-  - Florin (n6159580184)
-  - Franklin (n6159583686)
-  - Fruitridge (n6159580182)
-  - Glenn/Robert G Holderness (n6169975262)
-  - Globe (n6157430363)
-  - Hazel (n6169975258)
-  - Historic Folsom (n6169975263)
-  - Iron Point (n6169975259)
-  - Marconi/Arcade (n6157430468)
-  - Mather Field/Mills (n6169975240)
-  - Meadowview (n6159583685)
-  - Power Inn (n6169975208)
-  - Roseville Road (n6157430498)
-  - Royal Oaks (n6157430418)
-  - Sacramento Valley Station (n6157430338)
-  - St. Rose of Lima Park (n6157429167)
-  - Starfire (n6169975221)
-  - Sunrise (n6169975255)
-  - Swanston (n6157430421)
-  - Tiber (n6169975226)
-  - University/65th Street (n6169975206)
-  - Watt/I-80 (n6157430536)
-  - Watt/I-80 West (n6157430515)
-  - Watt/Manlove (n6169975220)
-  - Zinfandel (n6169975245)
+transfers: 
+  - 
+    - 7th & Capitol (r9142031)
+    - 8th & Capitol (r9142032)
+  - 
+    - 7th & I/County Center (r9142036)
+    - 8th & H/County Center (r9142035)
 
 routes: 
   - 
+    colour: '#0000c0'
+    name: Blue Line
     type: light_rail
+    station_count: 27
     itineraries: 
       r2378981: 
         - Cosumnes River College (n6159583688)
@@ -115,71 +71,42 @@ routes:
         - Cosumnes River College (n6159583688)
 
 
-    colour: '#0000c0'
     stations: 
-      - Watt/I-80
-      - Watt/I-80 West
-      - Roseville Road
-      - Marconi/Arcade
-      - Swanston
-      - Royal Oaks
-      - Arden/Del Paso
-      - Globe
-      - Alkali Flat/La Valentina
-      - 12th & I
-      - Cathedral Square
-      - 8th & Capitol
-      - 8th & O
-      - Archives Plaza
-      - 13th Street
-      - 16th Street
-      - Broadway
-      - 4th Avenue/Wayne Hultgren
-      - City College
-      - Fruitridge
-      - 47th Avenue
-      - Florin
-      - Meadowview
-      - Franklin
-      - Center Parkway
       - Cosumnes River College
+      - Center Parkway
+      - Franklin
+      - Meadowview
+      - Florin
+      - 47th Avenue
+      - Fruitridge
+      - City College
+      - 4th Avenue/Wayne Hultgren
+      - Broadway
+      - 16th Street
+      - 13th Street
+      - Archives Plaza
+      - 7th & Capitol
       - St. Rose of Lima Park
+      - Cathedral Square
+      - 12th & I
+      - Alkali Flat/La Valentina
+      - Globe
+      - Arden/Del Paso
+      - Royal Oaks
+      - Swanston
+      - Marconi/Arcade
+      - Roseville Road
+      - Watt/I-80 West
+      - Watt/I-80
+      - 8th & O
 
-    station_count: 27
-    name: Blue Line
     ref: Blue
   - 
+    colour: '#c0ba00'
+    name: Gold Line
     type: light_rail
+    station_count: 28
     itineraries: 
-      r2352702: 
-        - Historic Folsom (n6169975263)
-        - Glenn/Robert G Holderness (n6169975262)
-        - Iron Point (n6169975259)
-        - Hazel (n6169975258)
-        - Sunrise (n6169975255)
-        - Cordova Town Center (n6169975250)
-        - Zinfandel (n6169975245)
-        - Mather Field/Mills (n6169975240)
-        - Butterfield (n6169975235)
-        - Tiber (n6169975226)
-        - Starfire (n6169975221)
-        - Watt/Manlove (n6169975220)
-        - College Greens (n6169975215)
-        - Power Inn (n6169975208)
-        - University/65th Street (n6169975206)
-        - 59th Street (n6169975201)
-        - 48th Street (n6169975196)
-        - 39th Street (n6169975191)
-        - 29th Street (n6169976028)
-        - 23rd Street (n6169976043)
-        - 16th Street (n6157429158)
-        - 13th Street (n6157429166)
-        - Archives Plaza (n6157430139)
-        - 8th & Capitol (n6157429175)
-        - 8th & K (n6157429171)
-        - 8th & H/County Center (n6157430101)
-        - Sacramento Valley Station (n6157430338)
-
       r2352701: 
         - Sacramento Valley Station (n6157430338)
         - 7th & I/County Center (n6157430100)
@@ -209,8 +136,36 @@ routes:
         - Glenn/Robert G Holderness (n6169975262)
         - Historic Folsom (n6169975263)
 
+      r2352702: 
+        - Historic Folsom (n6169975263)
+        - Glenn/Robert G Holderness (n6169975262)
+        - Iron Point (n6169975259)
+        - Hazel (n6169975258)
+        - Sunrise (n6169975255)
+        - Cordova Town Center (n6169975250)
+        - Zinfandel (n6169975245)
+        - Mather Field/Mills (n6169975240)
+        - Butterfield (n6169975235)
+        - Tiber (n6169975226)
+        - Starfire (n6169975221)
+        - Watt/Manlove (n6169975220)
+        - College Greens (n6169975215)
+        - Power Inn (n6169975208)
+        - University/65th Street (n6169975206)
+        - 59th Street (n6169975201)
+        - 48th Street (n6169975196)
+        - 39th Street (n6169975191)
+        - 29th Street (n6169976028)
+        - 23rd Street (n6169976043)
+        - 16th Street (n6157429158)
+        - 13th Street (n6157429166)
+        - Archives Plaza (n6157430139)
+        - 8th & Capitol (n6157429175)
+        - 8th & K (n6157429171)
+        - 8th & H/County Center (n6157430101)
+        - Sacramento Valley Station (n6157430338)
 
-    colour: '#c0ba00'
+
     stations: 
       - Historic Folsom
       - Glenn/Robert G Holderness
@@ -241,20 +196,13 @@ routes:
       - Sacramento Valley Station
       - 8th & O
 
-    station_count: 28
-    name: Gold Line
     ref: Gold
   - 
+    colour: '#00c000'
+    name: Green Line
     type: light_rail
+    station_count: 7
     itineraries: 
-      r2379221: 
-        - 7th & Richards/Township 9 (n6157430341)
-        - 7th & I/County Center (n6157430100)
-        - 7th & Capitol (n6157429174)
-        - 8th & O (n6157430099)
-        - Archives Plaza (n6157430139)
-        - 13th Street (n6157429166)
-
       r2379220: 
         - 13th Street (n6157429166)
         - Archives Plaza (n6157430139)
@@ -263,26 +211,78 @@ routes:
         - 8th & H/County Center (n6157430101)
         - 7th & Richards/Township 9 (n6157430341)
 
+      r2379221: 
+        - 7th & Richards/Township 9 (n6157430341)
+        - 7th & I/County Center (n6157430100)
+        - 7th & Capitol (n6157429174)
+        - 8th & O (n6157430099)
+        - Archives Plaza (n6157430139)
+        - 13th Street (n6157429166)
 
-    colour: '#00c000'
+
     stations: 
-      - 13th Street
-      - Archives Plaza
-      - 7th & Capitol
-      - 8th & K
-      - 7th & I/County Center
       - 7th & Richards/Township 9
+      - 8th & H/County Center
+      - 8th & Capitol
       - 8th & O
+      - Archives Plaza
+      - 13th Street
+      - 8th & K
 
-    station_count: 7
-    name: Green Line
     ref: Green
 
-transfers: 
-  - 
-    - 7th & Capitol (r9142031)
-    - 8th & Capitol (r9142032)
-  - 
-    - 7th & I/County Center (r9142036)
-    - 8th & H/County Center (r9142035)
+stations: 
+  - 12th & I (n6157430109)
+  - 13th Street (n6157429166)
+  - 16th Street (n6157429158)
+  - 23rd Street (n6169976043)
+  - 29th Street (n6169976028)
+  - 39th Street (n6169975191)
+  - 47th Avenue (n6159580183)
+  - 48th Street (n6169975196)
+  - 4th Avenue/Wayne Hultgren (n6159580180)
+  - 59th Street (n6169975201)
+  - 7th & Capitol (n6157429174)
+  - 7th & I/County Center (n6157430100)
+  - 7th & Richards/Township 9 (n6157430341)
+  - 8th & Capitol (n6157429175)
+  - 8th & H/County Center (n6157430101)
+  - 8th & K (n6157429171)
+  - 8th & O (n6157430099)
+  - Alkali Flat/La Valentina (n6157430142)
+  - Archives Plaza (n6157430139)
+  - Arden/Del Paso (n6157430377)
+  - Broadway (n6159580179)
+  - Butterfield (n6169975235)
+  - Cathedral Square (n6157429180)
+  - Center Parkway (n6159583687)
+  - City College (n6159580181)
+  - College Greens (n6169975215)
+  - Cordova Town Center (n6169975250)
+  - Cosumnes River College (n6159583688)
+  - Florin (n6159580184)
+  - Franklin (n6159583686)
+  - Fruitridge (n6159580182)
+  - Glenn/Robert G Holderness (n6169975262)
+  - Globe (n6157430363)
+  - Hazel (n6169975258)
+  - Historic Folsom (n6169975263)
+  - Iron Point (n6169975259)
+  - Marconi/Arcade (n6157430468)
+  - Mather Field/Mills (n6169975240)
+  - Meadowview (n6159583685)
+  - Power Inn (n6169975208)
+  - Roseville Road (n6157430498)
+  - Royal Oaks (n6157430418)
+  - Sacramento Valley Station (n6157430338)
+  - St. Rose of Lima Park (n6157429167)
+  - Starfire (n6169975221)
+  - Sunrise (n6169975255)
+  - Swanston (n6157430421)
+  - Tiber (n6169975226)
+  - University/65th Street (n6169975206)
+  - Watt/I-80 (n6157430536)
+  - Watt/I-80 West (n6157430515)
+  - Watt/Manlove (n6169975220)
+  - Zinfandel (n6169975245)
 

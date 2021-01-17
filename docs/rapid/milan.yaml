@@ -1,4 +1,559 @@
 
+transfers: 
+  - 
+    - Cadorna (r7646785)
+    - Cadorna (r7646786)
+  - 
+    - Centrale M2 (r7646801)
+    - Centrale M3 (r7715455)
+  - 
+    - Duomo M1 (r7646845)
+    - Duomo M3 (r7715433)
+  - 
+    - Garibaldi FS (r7646823)
+    - Garibaldi FS (r7646847)
+  - 
+    - Loreto M1 (r2147884)
+    - Loreto M2 (r7715207)
+  - 
+    - Lotto M1 (r7646817)
+    - Lotto M5 (r7646858)
+  - 
+    - Zara M3 (r7646820)
+    - Zara M5 (r7715401)
+
+routes: 
+  - 
+    colour: '#eb312e'
+    name: Linea M1
+    type: subway
+    station_count: 38
+    itineraries: 
+      r919278: 
+        - Bisceglie (n7801411132)
+        - Inganni (n29463264)
+        - Primaticcio (n27555351)
+        - Bande Nere (n21227207)
+        - Gambara (n21227049)
+        - De Angeli (n21226111)
+        - Wagner (n21225838)
+        - Pagano (n21226654)
+        - Conciliazione (n21226008)
+        - Cadorna (n1272557583)
+        - Cairoli (n232864604)
+        - Cordusio (n232864605)
+        - Duomo (n257900140)
+        - San Babila (n307809391)
+        - Palestro (n307809395)
+        - Porta Venezia (n4942466113)
+        - Lima (n307809735)
+        - Loreto (n1725942582)
+        - Pasteur (n267034934)
+        - Rovereto (n295548092)
+        - Turro (n434849658)
+        - Gorla (n270443358)
+        - Precotto (n270443359)
+        - Villa San Giovanni (n317997619)
+        - Sesto Marelli (n302941608)
+        - Sesto Rondò (n256380164)
+        - Sesto 1º Maggio F.S. (n256384526)
+
+      r919277: 
+        - Sesto 1º Maggio F.S. (n256384526)
+        - Sesto Rondò (n256380164)
+        - Sesto Marelli (n302941608)
+        - Villa San Giovanni (n317997619)
+        - Precotto (n270443359)
+        - Gorla (n270443358)
+        - Turro (n434849658)
+        - Rovereto (n295548092)
+        - Pasteur (n267034934)
+        - Loreto (n1725942582)
+        - Lima (n307809735)
+        - Porta Venezia (n4942466113)
+        - Palestro (n307809395)
+        - San Babila (n307809391)
+        - Duomo (n257900140)
+        - Cordusio (n232864605)
+        - Cairoli (n232864604)
+        - Cadorna (n1272557583)
+        - Conciliazione (n21226008)
+        - Pagano (n21226654)
+        - Buonarroti (n21227215)
+        - Amendola (n21226123)
+        - Lotto (n344550296)
+        - QT8 (n344550581)
+        - Lampugnano (n301102111)
+        - Uruguay (n301102148)
+        - Bonola (n301102520)
+        - San Leonardo (n301102639)
+        - Molino Dorino (n344551806)
+        - Pero (n791819611)
+        - Rho-Fiera (n344552615)
+
+      r919276: 
+        - Rho-Fiera (n344552615)
+        - Pero (n791819611)
+        - Molino Dorino (n344551806)
+        - San Leonardo (n301102639)
+        - Bonola (n301102520)
+        - Uruguay (n301102148)
+        - Lampugnano (n301102111)
+        - QT8 (n344550581)
+        - Lotto (n344550296)
+        - Amendola (n21226123)
+        - Buonarroti (n21227215)
+        - Pagano (n21226654)
+        - Conciliazione (n21226008)
+        - Cadorna (n1272557583)
+        - Cairoli (n232864604)
+        - Cordusio (n232864605)
+        - Duomo (n257900140)
+        - San Babila (n307809391)
+        - Palestro (n307809395)
+        - Porta Venezia (n4942466113)
+        - Lima (n307809735)
+        - Loreto (n1725942582)
+        - Pasteur (n267034934)
+        - Rovereto (n295548092)
+        - Turro (n434849658)
+        - Gorla (n270443358)
+        - Precotto (n270443359)
+        - Villa San Giovanni (n317997619)
+        - Sesto Marelli (n302941608)
+        - Sesto Rondò (n256380164)
+        - Sesto 1º Maggio F.S. (n256384526)
+
+      r919279: 
+        - Sesto 1º Maggio F.S. (n256384526)
+        - Sesto Rondò (n256380164)
+        - Sesto Marelli (n302941608)
+        - Villa San Giovanni (n317997619)
+        - Precotto (n270443359)
+        - Gorla (n270443358)
+        - Turro (n434849658)
+        - Rovereto (n295548092)
+        - Pasteur (n267034934)
+        - Loreto (n1725942582)
+        - Lima (n307809735)
+        - Porta Venezia (n4942466113)
+        - Palestro (n307809395)
+        - San Babila (n307809391)
+        - Duomo (n257900140)
+        - Cordusio (n232864605)
+        - Cairoli (n232864604)
+        - Cadorna (n1272557583)
+        - Conciliazione (n21226008)
+        - Pagano (n21226654)
+        - Wagner (n21225838)
+        - De Angeli (n21226111)
+        - Gambara (n21227049)
+        - Bande Nere (n21227207)
+        - Primaticcio (n27555351)
+        - Inganni (n29463264)
+        - Bisceglie (n7801411132)
+
+
+    stations: 
+      - Bisceglie
+      - Inganni
+      - Primaticcio
+      - Bande Nere
+      - Gambara
+      - De Angeli
+      - Wagner
+      - Pagano
+      - Conciliazione
+      - Cadorna
+      - Cairoli
+      - Cordusio
+      - Duomo M1
+      - San Babila
+      - Palestro
+      - Porta Venezia
+      - Lima
+      - Loreto M1
+      - Pasteur
+      - Rovereto
+      - Turro
+      - Gorla
+      - Precotto
+      - Villa San Giovanni
+      - Sesto Marelli
+      - Sesto Rondò
+      - Sesto 1° Maggio F.S.
+      - Rho-Fiera
+      - Pero
+      - Molino Dorino
+      - San Leonardo
+      - Bonola
+      - Uruguay
+      - Lampugnano
+      - QT8
+      - Lotto M1
+      - Amendola
+      - Buonarroti
+
+    ref: M1
+  - 
+    colour: '#82bb32'
+    name: Linea M2
+    type: subway
+    station_count: 35
+    itineraries: 
+      r919292: 
+        - Abbiategrasso (n1739767077)
+        - Famagosta (n456344433)
+        - Romolo (n1759883432)
+        - Porta Genova FS (n1739767084)
+        - Sant'Agostino (n1739767086)
+        - Sant'Ambrogio (n21555708)
+        - Cadorna (n21306358)
+        - Lanza (n21555749)
+        - Moscova (n1725740868)
+        - Gioia (n91567648)
+        - Centrale FS (n91567650)
+        - Caiazzo (n1725942573)
+        - Loreto (n5216248524)
+        - Piola (n1722078727)
+        - Lambrate FS (n1746151180)
+        - Udine (n249586436)
+        - Cimiano (n2631107193)
+        - Crescenzago (n1916755350)
+        - Cascina Gobba (n2356329672)
+        - Cologno Sud (n5216255290)
+        - Cologno Centro (n340494761)
+        - Cologno Nord (n340493077)
+
+      r1576143: 
+        - Assago Milanofiori Forum (n1164736020)
+        - Assago Milanofiori Nord (n1164734238)
+        - Famagosta (n456344433)
+        - Romolo (n1759883432)
+        - Porta Genova FS (n1739767084)
+        - Sant'Agostino (n1739767086)
+        - Sant'Ambrogio (n21555708)
+        - Cadorna (n21306358)
+        - Lanza (n21555749)
+        - Moscova (n1725740868)
+        - Garibaldi FS (n3935647345)
+        - Gioia (n91567648)
+        - Centrale FS (n91567650)
+        - Caiazzo (n1725942573)
+        - Loreto (n5216248524)
+        - Piola (n1722078727)
+        - Lambrate FS (n1746151180)
+        - Udine (n249586436)
+        - Cimiano (n2631107193)
+        - Crescenzago (n1916755350)
+        - Cascina Gobba (n2356329672)
+        - Cologno Sud (n5216255290)
+        - Cologno Centro (n340494761)
+        - Cologno Nord (n340493077)
+
+      r919291: 
+        - Gessate (w846860801)
+        - Cascina Antonietta (n4066582557)
+        - Gorgonzola (n257553064)
+        - Villa Pompea (n4031014791)
+        - Bussero (n4031019906)
+        - Cassina de' Pecchi (n5216116308)
+        - Villa Fiorita (n1515869614)
+        - Cernusco sul Naviglio (n2192464898)
+        - Cascina Burrona (n3681299728)
+        - Vimodrone (n257553602)
+        - Cascina Gobba (n2356329672)
+        - Crescenzago (n1916755350)
+        - Cimiano (n2631107193)
+        - Udine (n249586436)
+        - Lambrate FS (n1746151180)
+        - Piola (n1722078727)
+        - Loreto (n5216248524)
+        - Caiazzo (n1725942573)
+        - Centrale FS (n91567650)
+        - Gioia (n91567648)
+        - Garibaldi FS (n3935647345)
+        - Moscova (n1725740868)
+        - Lanza (n21555749)
+        - Cadorna (n21306358)
+        - Sant'Ambrogio (n21555708)
+        - Sant'Agostino (n1739767086)
+        - Porta Genova FS (n1739767084)
+        - Romolo (n1759883432)
+        - Famagosta (n456344433)
+        - Abbiategrasso (n1739767077)
+
+      r919290: 
+        - Abbiategrasso (n1739767077)
+        - Famagosta (n456344433)
+        - Romolo (n1759883432)
+        - Porta Genova FS (n1739767084)
+        - Sant'Agostino (n1739767086)
+        - Sant'Ambrogio (n21555708)
+        - Cadorna (n21306358)
+        - Lanza (n21555749)
+        - Moscova (n1725740868)
+        - Garibaldi FS (n3935647345)
+        - Gioia (n91567648)
+        - Centrale FS (n91567650)
+        - Caiazzo (n1725942573)
+        - Loreto (n5216248524)
+        - Piola (n1722078727)
+        - Lambrate FS (n1746151180)
+        - Udine (n249586436)
+        - Cimiano (n2631107193)
+        - Crescenzago (n1916755350)
+        - Cascina Gobba (n2356329672)
+        - Vimodrone (n257553602)
+        - Cascina Burrona (n3681299728)
+        - Cernusco sul Naviglio (n2192464898)
+        - Villa Fiorita (n1515869614)
+        - Cassina de' Pecchi (n5216116308)
+        - Bussero (n4031019906)
+        - Villa Pompea (n4031014791)
+        - Gorgonzola (n257553064)
+        - Cascina Antonietta (n4066582557)
+        - Gessate (w846860801)
+
+      r919293: 
+        - Cologno Nord (n340493077)
+        - Cologno Centro (n340494761)
+        - Cologno Sud (n5216255290)
+        - Cascina Gobba (n2356329672)
+        - Crescenzago (n1916755350)
+        - Cimiano (n2631107193)
+        - Udine (n249586436)
+        - Lambrate FS (n1746151180)
+        - Piola (n1722078727)
+        - Loreto (n5216248524)
+        - Caiazzo (n1725942573)
+        - Centrale FS (n91567650)
+        - Gioia (n91567648)
+        - Garibaldi FS (n3935647345)
+        - Moscova (n1725740868)
+        - Lanza (n21555749)
+        - Cadorna (n21306358)
+        - Sant'Ambrogio (n21555708)
+        - Sant'Agostino (n1739767086)
+        - Porta Genova FS (n1739767084)
+        - Romolo (n1759883432)
+        - Famagosta (n456344433)
+        - Abbiategrasso (n1739767077)
+
+      r1576144: 
+        - Cologno Nord (n340493077)
+        - Cologno Centro (n340494761)
+        - Cologno Sud (n5216255290)
+        - Cascina Gobba (n2356329672)
+        - Crescenzago (n1916755350)
+        - Cimiano (n2631107193)
+        - Udine (n249586436)
+        - Lambrate FS (n1746151180)
+        - Piola (n1722078727)
+        - Loreto (n5216248524)
+        - Caiazzo (n1725942573)
+        - Centrale FS (n91567650)
+        - Gioia (n91567648)
+        - Garibaldi FS (n3935647345)
+        - Moscova (n1725740868)
+        - Lanza (n21555749)
+        - Cadorna (n21306358)
+        - Sant'Ambrogio (n21555708)
+        - Sant'Agostino (n1739767086)
+        - Porta Genova FS (n1739767084)
+        - Romolo (n1759883432)
+        - Famagosta (n456344433)
+        - Assago Milanofiori Nord (n1164734238)
+        - Assago Milanofiori Forum (n1164736020)
+
+
+    stations: 
+      - Gessate
+      - Cascina Antonietta
+      - Gorgonzola
+      - Villa Pompea
+      - Bussero
+      - Cassina de' Pecchi
+      - Villa Fiorita
+      - Cernusco sul Naviglio
+      - Cascina Burrona
+      - Vimodrone
+      - Cascina Gobba
+      - Crescenzago
+      - Cimiano
+      - Udine
+      - Lambrate FS
+      - Piola
+      - Loreto M2
+      - Caiazzo
+      - Centrale M2
+      - Gioia
+      - Garibaldi FS
+      - Moscova
+      - Lanza
+      - Cadorna
+      - Sant'Ambrogio
+      - Sant'Agostino
+      - Porta Genova FS
+      - Romolo
+      - Famagosta
+      - Abbiategrasso
+      - Cologno Nord
+      - Cologno Centro
+      - Cologno Sud
+      - Assago Milanofiori Forum
+      - Assago Milanofiori Nord
+
+    ref: M2
+  - 
+    colour: '#e2e11d'
+    name: Linea M3
+    type: subway
+    station_count: 21
+    itineraries: 
+      r919312: 
+        - Comasina (n441109566)
+        - Affori FN (n1277834213)
+        - Affori Centro (n1029570927)
+        - Dergano (n441109563)
+        - Maciachini (n1737802638)
+        - Zara (n1737802640)
+        - Sondrio (n1737802639)
+        - Centrale FS (n5216248525)
+        - Repubblica (n2344518514)
+        - Turati (n257900143)
+        - Montenapoleone (n257900141)
+        - Duomo (n5216248523)
+        - Missori (n257900139)
+        - Crocetta (n257898306)
+        - Porta Romana (n257898305)
+        - Lodi T.I.B.B. (n257898307)
+        - Brenta (n340474842)
+        - Corvetto (n340061063)
+        - Porto di Mare (n340060545)
+        - Milano Rogoredo (n340059424)
+        - San Donato (n318013353)
+
+      r919311: 
+        - San Donato (n318013353)
+        - Milano Rogoredo (n340059424)
+        - Porto di Mare (n340060545)
+        - Corvetto (n340061063)
+        - Brenta (n340474842)
+        - Lodi T.I.B.B. (n257898307)
+        - Porta Romana (n257898305)
+        - Crocetta (n257898306)
+        - Missori (n257900139)
+        - Duomo (n5216248523)
+        - Montenapoleone (n257900141)
+        - Turati (n257900143)
+        - Repubblica (n2344518514)
+        - Centrale FS (n5216248525)
+        - Sondrio (n1737802639)
+        - Zara (n1737802640)
+        - Maciachini (n1737802638)
+        - Dergano (n441109563)
+        - Affori Centro (n1029570927)
+        - Affori FN (n1277834213)
+        - Comasina (n441109566)
+
+
+    stations: 
+      - Comasina
+      - Affori FN
+      - Affori Centro
+      - Dergano
+      - Maciachini
+      - Zara M3
+      - Sondrio
+      - Centrale M3
+      - Repubblica
+      - Turati
+      - Montenapoleone
+      - Duomo M3
+      - Missori
+      - Crocetta
+      - Porta Romana
+      - Lodi T.I.B.B.
+      - Brenta
+      - Corvetto
+      - Porto di Mare
+      - Milano Rogoredo
+      - San Donato
+
+    ref: M3
+  - 
+    colour: '#7956a3'
+    name: Linea M5
+    type: subway
+    station_count: 19
+    itineraries: 
+      r1275550: 
+        - Bignami (n441118977)
+        - Ponale (n441118976)
+        - Bicocca (n441118974)
+        - 'Ca'' Granda - Pratocentenaro (n441118971)'
+        - Istria (n441118969)
+        - Marche (n441118967)
+        - Zara (n5216248522)
+        - Isola (n441118965)
+        - Garibaldi FS (n2344518511)
+        - Monumentale (n674079901)
+        - Cenisio (n674079900)
+        - Gerusalemme (n674079899)
+        - Domodossola (n674079898)
+        - Tre Torri (n992935286)
+        - Portello (n3001245476)
+        - Lotto (n1209230604)
+        - Segesta (n992935273)
+        - San Siro Ippodromo (n992935276)
+        - San Siro Stadio (n992935284)
+
+      r1275549: 
+        - San Siro Stadio (n992935284)
+        - San Siro Ippodromo (n992935276)
+        - Segesta (n992935273)
+        - Lotto (n1209230604)
+        - Portello (n3001245476)
+        - Tre Torri (n992935286)
+        - Domodossola (n674079898)
+        - Gerusalemme (n674079899)
+        - Cenisio (n674079900)
+        - Monumentale (n674079901)
+        - Garibaldi FS (n2344518511)
+        - Isola (n441118965)
+        - Zara (n5216248522)
+        - Marche (n441118967)
+        - Istria (n441118969)
+        - 'Ca'' Granda - Pratocentenaro (n441118971)'
+        - Bicocca (n441118974)
+        - Ponale (n441118976)
+        - Bignami (n441118977)
+
+
+    stations: 
+      - Bignami
+      - Ponale
+      - Bicocca
+      - 'Ca'' Granda - Pratocentenaro'
+      - Istria
+      - Marche
+      - Zara M5
+      - Isola
+      - Garibaldi FS
+      - Monumentale
+      - Cenisio
+      - Gerusalemme
+      - Domodossola
+      - Tre Torri
+      - Portello
+      - Lotto M5
+      - Segesta
+      - San Siro Ippodromo
+      - San Siro Stadio
+
+    ref: M5
+
 stations: 
   - Abbiategrasso (n1739767077)
   - Affori Centro (n1029570927)
@@ -113,559 +668,4 @@ stations:
   - Wagner (n21225838)
   - Zara (n1737802640)
   - Zara (n5216248522)
-
-routes: 
-  - 
-    type: subway
-    itineraries: 
-      r919277: 
-        - Sesto 1º Maggio F.S. (n256384526)
-        - Sesto Rondò (n256380164)
-        - Sesto Marelli (n302941608)
-        - Villa San Giovanni (n317997619)
-        - Precotto (n270443359)
-        - Gorla (n270443358)
-        - Turro (n434849658)
-        - Rovereto (n295548092)
-        - Pasteur (n267034934)
-        - Loreto (n1725942582)
-        - Lima (n307809735)
-        - Porta Venezia (n4942466113)
-        - Palestro (n307809395)
-        - San Babila (n307809391)
-        - Duomo (n257900140)
-        - Cordusio (n232864605)
-        - Cairoli (n232864604)
-        - Cadorna (n1272557583)
-        - Conciliazione (n21226008)
-        - Pagano (n21226654)
-        - Buonarroti (n21227215)
-        - Amendola (n21226123)
-        - Lotto (n344550296)
-        - QT8 (n344550581)
-        - Lampugnano (n301102111)
-        - Uruguay (n301102148)
-        - Bonola (n301102520)
-        - San Leonardo (n301102639)
-        - Molino Dorino (n344551806)
-        - Pero (n791819611)
-        - Rho-Fiera (n344552615)
-
-      r919276: 
-        - Rho-Fiera (n344552615)
-        - Pero (n791819611)
-        - Molino Dorino (n344551806)
-        - San Leonardo (n301102639)
-        - Bonola (n301102520)
-        - Uruguay (n301102148)
-        - Lampugnano (n301102111)
-        - QT8 (n344550581)
-        - Lotto (n344550296)
-        - Amendola (n21226123)
-        - Buonarroti (n21227215)
-        - Pagano (n21226654)
-        - Conciliazione (n21226008)
-        - Cadorna (n1272557583)
-        - Cairoli (n232864604)
-        - Cordusio (n232864605)
-        - Duomo (n257900140)
-        - San Babila (n307809391)
-        - Palestro (n307809395)
-        - Porta Venezia (n4942466113)
-        - Lima (n307809735)
-        - Loreto (n1725942582)
-        - Pasteur (n267034934)
-        - Rovereto (n295548092)
-        - Turro (n434849658)
-        - Gorla (n270443358)
-        - Precotto (n270443359)
-        - Villa San Giovanni (n317997619)
-        - Sesto Marelli (n302941608)
-        - Sesto Rondò (n256380164)
-        - Sesto 1º Maggio F.S. (n256384526)
-
-      r919279: 
-        - Sesto 1º Maggio F.S. (n256384526)
-        - Sesto Rondò (n256380164)
-        - Sesto Marelli (n302941608)
-        - Villa San Giovanni (n317997619)
-        - Precotto (n270443359)
-        - Gorla (n270443358)
-        - Turro (n434849658)
-        - Rovereto (n295548092)
-        - Pasteur (n267034934)
-        - Loreto (n1725942582)
-        - Lima (n307809735)
-        - Porta Venezia (n4942466113)
-        - Palestro (n307809395)
-        - San Babila (n307809391)
-        - Duomo (n257900140)
-        - Cordusio (n232864605)
-        - Cairoli (n232864604)
-        - Cadorna (n1272557583)
-        - Conciliazione (n21226008)
-        - Pagano (n21226654)
-        - Wagner (n21225838)
-        - De Angeli (n21226111)
-        - Gambara (n21227049)
-        - Bande Nere (n21227207)
-        - Primaticcio (n27555351)
-        - Inganni (n29463264)
-        - Bisceglie (n7801411132)
-
-      r919278: 
-        - Bisceglie (n7801411132)
-        - Inganni (n29463264)
-        - Primaticcio (n27555351)
-        - Bande Nere (n21227207)
-        - Gambara (n21227049)
-        - De Angeli (n21226111)
-        - Wagner (n21225838)
-        - Pagano (n21226654)
-        - Conciliazione (n21226008)
-        - Cadorna (n1272557583)
-        - Cairoli (n232864604)
-        - Cordusio (n232864605)
-        - Duomo (n257900140)
-        - San Babila (n307809391)
-        - Palestro (n307809395)
-        - Porta Venezia (n4942466113)
-        - Lima (n307809735)
-        - Loreto (n1725942582)
-        - Pasteur (n267034934)
-        - Rovereto (n295548092)
-        - Turro (n434849658)
-        - Gorla (n270443358)
-        - Precotto (n270443359)
-        - Villa San Giovanni (n317997619)
-        - Sesto Marelli (n302941608)
-        - Sesto Rondò (n256380164)
-        - Sesto 1º Maggio F.S. (n256384526)
-
-
-    colour: '#eb312e'
-    stations: 
-      - Sesto 1° Maggio F.S.
-      - Sesto Rondò
-      - Sesto Marelli
-      - Villa San Giovanni
-      - Precotto
-      - Gorla
-      - Turro
-      - Rovereto
-      - Pasteur
-      - Loreto M1
-      - Lima
-      - Porta Venezia
-      - Palestro
-      - San Babila
-      - Duomo M1
-      - Cordusio
-      - Cairoli
-      - Cadorna
-      - Conciliazione
-      - Pagano
-      - Buonarroti
-      - Amendola
-      - Lotto M1
-      - QT8
-      - Lampugnano
-      - Uruguay
-      - Bonola
-      - San Leonardo
-      - Molino Dorino
-      - Pero
-      - Rho-Fiera
-      - Wagner
-      - De Angeli
-      - Gambara
-      - Bande Nere
-      - Primaticcio
-      - Inganni
-      - Bisceglie
-
-    station_count: 38
-    name: Linea M1
-    ref: M1
-  - 
-    type: subway
-    itineraries: 
-      r1576144: 
-        - Cologno Nord (n340493077)
-        - Cologno Centro (n340494761)
-        - Cologno Sud (n5216255290)
-        - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
-        - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
-        - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
-        - Centrale FS (n91567650)
-        - Gioia (n91567648)
-        - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
-        - Assago Milanofiori Nord (n1164734238)
-        - Assago Milanofiori Forum (n1164736020)
-
-      r919290: 
-        - Abbiategrasso (n1739767077)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
-        - Garibaldi FS (n3935647345)
-        - Gioia (n91567648)
-        - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
-        - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
-        - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
-        - Cascina Gobba (n2356329672)
-        - Vimodrone (n257553602)
-        - Cascina Burrona (n3681299728)
-        - Cernusco sul Naviglio (n2192464898)
-        - Villa Fiorita (n1515869614)
-        - Cassina de' Pecchi (n5216116308)
-        - Bussero (n4031019906)
-        - Villa Pompea (n4031014791)
-        - Gorgonzola (n257553064)
-        - Cascina Antonietta (n4066582557)
-        - Gessate (w846860801)
-
-      r919292: 
-        - Abbiategrasso (n1739767077)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
-        - Gioia (n91567648)
-        - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
-        - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
-        - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
-        - Cascina Gobba (n2356329672)
-        - Cologno Sud (n5216255290)
-        - Cologno Centro (n340494761)
-        - Cologno Nord (n340493077)
-
-      r1576143: 
-        - Assago Milanofiori Forum (n1164736020)
-        - Assago Milanofiori Nord (n1164734238)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
-        - Garibaldi FS (n3935647345)
-        - Gioia (n91567648)
-        - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
-        - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
-        - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
-        - Cascina Gobba (n2356329672)
-        - Cologno Sud (n5216255290)
-        - Cologno Centro (n340494761)
-        - Cologno Nord (n340493077)
-
-      r919291: 
-        - Gessate (w846860801)
-        - Cascina Antonietta (n4066582557)
-        - Gorgonzola (n257553064)
-        - Villa Pompea (n4031014791)
-        - Bussero (n4031019906)
-        - Cassina de' Pecchi (n5216116308)
-        - Villa Fiorita (n1515869614)
-        - Cernusco sul Naviglio (n2192464898)
-        - Cascina Burrona (n3681299728)
-        - Vimodrone (n257553602)
-        - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
-        - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
-        - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
-        - Centrale FS (n91567650)
-        - Gioia (n91567648)
-        - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
-        - Abbiategrasso (n1739767077)
-
-      r919293: 
-        - Cologno Nord (n340493077)
-        - Cologno Centro (n340494761)
-        - Cologno Sud (n5216255290)
-        - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
-        - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
-        - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
-        - Centrale FS (n91567650)
-        - Gioia (n91567648)
-        - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
-        - Abbiategrasso (n1739767077)
-
-
-    colour: '#82bb32'
-    stations: 
-      - Abbiategrasso
-      - Famagosta
-      - Romolo
-      - Porta Genova FS
-      - Sant'Agostino
-      - Sant'Ambrogio
-      - Cadorna
-      - Lanza
-      - Moscova
-      - Gioia
-      - Centrale M2
-      - Caiazzo
-      - Loreto M2
-      - Piola
-      - Lambrate FS
-      - Udine
-      - Cimiano
-      - Crescenzago
-      - Cascina Gobba
-      - Cologno Sud
-      - Cologno Centro
-      - Cologno Nord
-      - Gessate
-      - Cascina Antonietta
-      - Gorgonzola
-      - Villa Pompea
-      - Bussero
-      - Cassina de' Pecchi
-      - Villa Fiorita
-      - Cernusco sul Naviglio
-      - Cascina Burrona
-      - Vimodrone
-      - Garibaldi FS
-      - Assago Milanofiori Forum
-      - Assago Milanofiori Nord
-
-    station_count: 35
-    name: Linea M2
-    ref: M2
-  - 
-    type: subway
-    itineraries: 
-      r919311: 
-        - San Donato (n318013353)
-        - Milano Rogoredo (n340059424)
-        - Porto di Mare (n340060545)
-        - Corvetto (n340061063)
-        - Brenta (n340474842)
-        - Lodi T.I.B.B. (n257898307)
-        - Porta Romana (n257898305)
-        - Crocetta (n257898306)
-        - Missori (n257900139)
-        - Duomo (n5216248523)
-        - Montenapoleone (n257900141)
-        - Turati (n257900143)
-        - Repubblica (n2344518514)
-        - Centrale FS (n5216248525)
-        - Sondrio (n1737802639)
-        - Zara (n1737802640)
-        - Maciachini (n1737802638)
-        - Dergano (n441109563)
-        - Affori Centro (n1029570927)
-        - Affori FN (n1277834213)
-        - Comasina (n441109566)
-
-      r919312: 
-        - Comasina (n441109566)
-        - Affori FN (n1277834213)
-        - Affori Centro (n1029570927)
-        - Dergano (n441109563)
-        - Maciachini (n1737802638)
-        - Zara (n1737802640)
-        - Sondrio (n1737802639)
-        - Centrale FS (n5216248525)
-        - Repubblica (n2344518514)
-        - Turati (n257900143)
-        - Montenapoleone (n257900141)
-        - Duomo (n5216248523)
-        - Missori (n257900139)
-        - Crocetta (n257898306)
-        - Porta Romana (n257898305)
-        - Lodi T.I.B.B. (n257898307)
-        - Brenta (n340474842)
-        - Corvetto (n340061063)
-        - Porto di Mare (n340060545)
-        - Milano Rogoredo (n340059424)
-        - San Donato (n318013353)
-
-
-    colour: '#e2e11d'
-    stations: 
-      - Comasina
-      - Affori FN
-      - Affori Centro
-      - Dergano
-      - Maciachini
-      - Zara M3
-      - Sondrio
-      - Centrale M3
-      - Repubblica
-      - Turati
-      - Montenapoleone
-      - Duomo M3
-      - Missori
-      - Crocetta
-      - Porta Romana
-      - Lodi T.I.B.B.
-      - Brenta
-      - Corvetto
-      - Porto di Mare
-      - Milano Rogoredo
-      - San Donato
-
-    station_count: 21
-    name: Linea M3
-    ref: M3
-  - 
-    type: subway
-    itineraries: 
-      r1275549: 
-        - San Siro Stadio (n992935284)
-        - San Siro Ippodromo (n992935276)
-        - Segesta (n992935273)
-        - Lotto (n1209230604)
-        - Portello (n3001245476)
-        - Tre Torri (n992935286)
-        - Domodossola (n674079898)
-        - Gerusalemme (n674079899)
-        - Cenisio (n674079900)
-        - Monumentale (n674079901)
-        - Garibaldi FS (n2344518511)
-        - Isola (n441118965)
-        - Zara (n5216248522)
-        - Marche (n441118967)
-        - Istria (n441118969)
-        - 'Ca'' Granda - Pratocentenaro (n441118971)'
-        - Bicocca (n441118974)
-        - Ponale (n441118976)
-        - Bignami (n441118977)
-
-      r1275550: 
-        - Bignami (n441118977)
-        - Ponale (n441118976)
-        - Bicocca (n441118974)
-        - 'Ca'' Granda - Pratocentenaro (n441118971)'
-        - Istria (n441118969)
-        - Marche (n441118967)
-        - Zara (n5216248522)
-        - Isola (n441118965)
-        - Garibaldi FS (n2344518511)
-        - Monumentale (n674079901)
-        - Cenisio (n674079900)
-        - Gerusalemme (n674079899)
-        - Domodossola (n674079898)
-        - Tre Torri (n992935286)
-        - Portello (n3001245476)
-        - Lotto (n1209230604)
-        - Segesta (n992935273)
-        - San Siro Ippodromo (n992935276)
-        - San Siro Stadio (n992935284)
-
-
-    colour: '#7956a3'
-    stations: 
-      - San Siro Stadio
-      - San Siro Ippodromo
-      - Segesta
-      - Lotto M5
-      - Portello
-      - Tre Torri
-      - Domodossola
-      - Gerusalemme
-      - Cenisio
-      - Monumentale
-      - Garibaldi FS
-      - Isola
-      - Zara M5
-      - Marche
-      - Istria
-      - 'Ca'' Granda - Pratocentenaro'
-      - Bicocca
-      - Ponale
-      - Bignami
-
-    station_count: 19
-    name: Linea M5
-    ref: M5
-
-transfers: 
-  - 
-    - Cadorna (r7646785)
-    - Cadorna (r7646786)
-  - 
-    - Centrale M2 (r7646801)
-    - Centrale M3 (r7715455)
-  - 
-    - Duomo M1 (r7646845)
-    - Duomo M3 (r7715433)
-  - 
-    - Garibaldi FS (r7646823)
-    - Garibaldi FS (r7646847)
-  - 
-    - Loreto M1 (r2147884)
-    - Loreto M2 (r7715207)
-  - 
-    - Lotto M1 (r7646817)
-    - Lotto M5 (r7646858)
-  - 
-    - Zara M3 (r7646820)
-    - Zara M5 (r7715401)
 

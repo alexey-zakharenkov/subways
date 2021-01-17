@@ -1,19 +1,12 @@
 
-stations: 
-  - Centurion (n6983528224)
-  - Hatfield (n6983499376)
-  - Marlboro (n326083326)
-  - Midrand (n6983563278)
-  - O.R. Tambo International Airport (n6983349354)
-  - Park Station (n6983463551)
-  - Pretoria Gautrain Station (n6983501555)
-  - Rhodesfield (n6983349355)
-  - Rosebank (n6983544367)
-  - Sandton (n6983509221)
+transfers: 
 
 routes: 
   - 
+    colour: '#ff0000'
+    name: North-South Commuter Line
     type: train
+    station_count: 8
     itineraries: 
       r1021770: 
         - Park Station (n6983463551)
@@ -36,7 +29,6 @@ routes:
         - Park Station (n6983463551)
 
 
-    colour: '#ff0000'
     stations: 
       - Hatfield
       - Pretoria
@@ -47,34 +39,35 @@ routes:
       - Rosebank
       - Park Station
 
-    station_count: 8
-    name: North-South Commuter Line
     ref: GAUTRAIN
   - 
+    colour: '#0000ff'
+    name: East-West Commuter Line
     type: train
+    station_count: 3
     itineraries: 
-      r10305544: 
-        - Rhodesfield (n6983349355)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
-
       r1694561: 
         - Sandton (n6983509221)
         - Marlboro (n326083326)
         - Rhodesfield (n6983349355)
 
+      r10305544: 
+        - Rhodesfield (n6983349355)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
 
-    colour: '#0000ff'
+
     stations: 
       - Sandton
       - Marlboro
       - Rhodesfield (Gautrain)
 
-    station_count: 3
-    name: East-West Commuter Line
     ref: GAUTRAIN
   - 
+    colour: '#9d8b57'
+    name: Airport Line
     type: train
+    station_count: 3
     itineraries: 
       r10305561: 
         - O.R. Tambo International Airport (n6983349354)
@@ -87,15 +80,22 @@ routes:
         - O.R. Tambo International Airport (n6983349354)
 
 
-    colour: '#9d8b57'
     stations: 
       - O.R. Tambo International Airport
       - Marlboro
       - Sandton
 
-    station_count: 3
-    name: Airport Line
     ref: GAUTRAIN
 
-transfers: 
+stations: 
+  - Centurion (n6983528224)
+  - Hatfield (n6983499376)
+  - Marlboro (n326083326)
+  - Midrand (n6983563278)
+  - O.R. Tambo International Airport (n6983349354)
+  - Park Station (n6983463551)
+  - Pretoria Gautrain Station (n6983501555)
+  - Rhodesfield (n6983349355)
+  - Rosebank (n6983544367)
+  - Sandton (n6983509221)
 

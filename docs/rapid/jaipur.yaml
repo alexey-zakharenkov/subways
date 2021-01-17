@@ -1,34 +1,13 @@
 
-stations: 
-  - Badi Chopad (n8044083223)
-  - Chandpole (n8044083221)
-  - Choti Chaupar (n8044083222)
-  - Civil Lines (n6783208321)
-  - Manasarovar (n8140108469)
-  - New Aatish Market (n8149193789)
-  - Railway Station (n5391527174)
-  - Ram Nagar (w867387882)
-  - Shyam Nagar (n8149193787)
-  - Sindhi Camp (n5391526672)
-  - Vivek Vihar (n8149193788)
+transfers: 
 
 routes: 
   - 
+    colour: '#0000ff'
+    name: Pink Line
     type: subway
+    station_count: 11
     itineraries: 
-      r5250264: 
-        - Manasarovar (n8140108469)
-        - New Aatish Market (n8149193789)
-        - Vivek Vihar (n8149193788)
-        - Shyam Nagar (n8149193787)
-        - Ram Nagar (w867387882)
-        - Civil Lines (n6783208321)
-        - Railway Station (n5391527174)
-        - Sindhi Camp (n5391526672)
-        - Chandpole (n8044083221)
-        - Choti Chaupar (n8044083222)
-        - Badi Chopad (n8044083223)
-
       r7989307: 
         - Badi Chopad (n8044083223)
         - Choti Chaupar (n8044083222)
@@ -42,8 +21,20 @@ routes:
         - New Aatish Market (n8149193789)
         - Manasarovar (n8140108469)
 
+      r5250264: 
+        - Manasarovar (n8140108469)
+        - New Aatish Market (n8149193789)
+        - Vivek Vihar (n8149193788)
+        - Shyam Nagar (n8149193787)
+        - Ram Nagar (w867387882)
+        - Civil Lines (n6783208321)
+        - Railway Station (n5391527174)
+        - Sindhi Camp (n5391526672)
+        - Chandpole (n8044083221)
+        - Choti Chaupar (n8044083222)
+        - Badi Chopad (n8044083223)
 
-    colour: '#0000ff'
+
     stations: 
       - Manasarovar
       - New Aatish Market
@@ -57,9 +48,18 @@ routes:
       - Choti Chaupar
       - Badi Chopad
 
-    station_count: 11
-    name: Pink Line
     ref: Pink Line
 
-transfers: 
+stations: 
+  - Badi Chopad (n8044083223)
+  - Chandpole (n8044083221)
+  - Choti Chaupar (n8044083222)
+  - Civil Lines (n6783208321)
+  - Manasarovar (n8140108469)
+  - New Aatish Market (n8149193789)
+  - Railway Station (n5391527174)
+  - Ram Nagar (w867387882)
+  - Shyam Nagar (n8149193787)
+  - Sindhi Camp (n5391526672)
+  - Vivek Vihar (n8149193788)
 

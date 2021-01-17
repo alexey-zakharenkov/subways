@@ -1,33 +1,12 @@
 
-stations: 
-  - 25 de Mayo (n7063747984)
-  - 9 de Julio (n7066080931)
-  - Alta Italia (n7066080936)
-  - Avellaneda (n7067998372)
-  - Belgrano (n7063751286)
-  - Coronel Moldes (n7089852934)
-  - Damián Hudson (n7089862693)
-  - General Espejo (n7089845000)
-  - Godoy Cruz (n7080840925)
-  - Gutiérrez (n7098749745)
-  - Independencia (n7066080930)
-  - Lugones (n7063751285)
-  - Luzuriaga (n7066080932)
-  - Marcos Burgos (n7067998371)
-  - Maza (n7066080934)
-  - Mendoza (n7063751287)
-  - Patricias Mendocinas (n7089844999)
-  - Pedro Molina (n7063747983)
-  - Pellegrini (n7067998373)
-  - Piedra Buena (n7066080933)
-  - Progreso (n7066080935)
-  - San Martín (n7067998375)
-  - San Miguel (n7089844998)
-  - Suipacha (n7089853255)
+transfers: 
 
 routes: 
   - 
+    colour: '#ff0000'
+    name: Metrotranvía Urbano
     type: light_rail
+    station_count: 24
     itineraries: 
       r2119332: 
         - Avellaneda (n7067998372)
@@ -82,7 +61,6 @@ routes:
         - Avellaneda (n7067998372)
 
 
-    colour: '#ff0000'
     stations: 
       - Avellaneda
       - Marcos Burgos
@@ -109,9 +87,31 @@ routes:
       - Maza
       - Gutiérrez
 
-    station_count: 24
-    name: Metrotranvía Urbano
     ref: Metrotranvía
 
-transfers: 
+stations: 
+  - 25 de Mayo (n7063747984)
+  - 9 de Julio (n7066080931)
+  - Alta Italia (n7066080936)
+  - Avellaneda (n7067998372)
+  - Belgrano (n7063751286)
+  - Coronel Moldes (n7089852934)
+  - Damián Hudson (n7089862693)
+  - General Espejo (n7089845000)
+  - Godoy Cruz (n7080840925)
+  - Gutiérrez (n7098749745)
+  - Independencia (n7066080930)
+  - Lugones (n7063751285)
+  - Luzuriaga (n7066080932)
+  - Marcos Burgos (n7067998371)
+  - Maza (n7066080934)
+  - Mendoza (n7063751287)
+  - Patricias Mendocinas (n7089844999)
+  - Pedro Molina (n7063747983)
+  - Pellegrini (n7067998373)
+  - Piedra Buena (n7066080933)
+  - Progreso (n7066080935)
+  - San Martín (n7067998375)
+  - San Miguel (n7089844998)
+  - Suipacha (n7089853255)
 

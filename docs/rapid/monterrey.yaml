@@ -1,62 +1,16 @@
 
-stations: 
-  - Alameda (n1041599630)
-  - Alfonso Reyes (n308520674)
-  - Anáhuac (n1041636956)
-  - Aztlan (n308520684)
-  - Central (n308516817)
-  - Cuauhtémoc (w778476380)
-  - Del Golfo (n308516813)
-  - Edison (n308520653)
-  - Eloy Cavazos (n308521293)
-  - Exposición (n308521283)
-  - Fundadores (n1041599626)
-  - Félix U. Gomez (n3788005136)
-  - General Anaya (n1041636993)
-  - General I. Zaragoza (n1041599589)
-  - Hospital (n308520670)
-  - Lerdo de Tejada (n308521285)
-  - Mitras (n308520673)
-  - Niños Heroes (n1041636969)
-  - Padre Mier (n1041599598)
-  - Parque Fundidora (n308521309)
-  - Penitenciaria (n308520675)
-  - Regina (n1041637024)
-  - San Bernabé (n308520693)
-  - San Nicolás (n1041637014)
-  - Santiago Tapia (n1041637107)
-  - Sendero (n1041636979)
-  - Simón Bolivar (n308520671)
-  - Talleres (n1041993397)
-  - Unidad Modelo (n308520692)
-  - Universidad (n1041637116)
-  - Y Griega (n308521303)
+transfers: 
+  - 
+    - Cuauhtémoc (r10791445)
+    - Cuauhtémoc (r7923859)
 
 routes: 
   - 
+    colour: '#fec04f'
+    name: Línea 1
     type: subway
+    station_count: 19
     itineraries: 
-      r7890221: 
-        - Exposición (n308521283)
-        - Lerdo de Tejada (n308521285)
-        - Eloy Cavazos (n308521293)
-        - Y Griega (n308521303)
-        - Parque Fundidora (n308521309)
-        - Félix U. Gomez (n3788005136)
-        - Del Golfo (n308516813)
-        - Cuauhtémoc (w778476380)
-        - Central (n308516817)
-        - Edison (n308520653)
-        - Hospital (n308520670)
-        - Simón Bolivar (n308520671)
-        - Mitras (n308520673)
-        - Alfonso Reyes (n308520674)
-        - Penitenciaria (n308520675)
-        - Aztlan (n308520684)
-        - Unidad Modelo (n308520692)
-        - San Bernabé (n308520693)
-        - Talleres (n1041993397)
-
       r7890222: 
         - Talleres (n1041993397)
         - San Bernabé (n308520693)
@@ -78,34 +32,55 @@ routes:
         - Lerdo de Tejada (n308521285)
         - Exposición (n308521283)
 
+      r7890221: 
+        - Exposición (n308521283)
+        - Lerdo de Tejada (n308521285)
+        - Eloy Cavazos (n308521293)
+        - Y Griega (n308521303)
+        - Parque Fundidora (n308521309)
+        - Félix U. Gomez (n3788005136)
+        - Del Golfo (n308516813)
+        - Cuauhtémoc (w778476380)
+        - Central (n308516817)
+        - Edison (n308520653)
+        - Hospital (n308520670)
+        - Simón Bolivar (n308520671)
+        - Mitras (n308520673)
+        - Alfonso Reyes (n308520674)
+        - Penitenciaria (n308520675)
+        - Aztlan (n308520684)
+        - Unidad Modelo (n308520692)
+        - San Bernabé (n308520693)
+        - Talleres (n1041993397)
 
-    colour: '#fec04f'
+
     stations: 
-      - Talleres
-      - San Bernabé
-      - Unidad Modelo
-      - Aztlan
-      - Penitenciaria
-      - Alfonso Reyes
-      - Mitras
-      - Simón Bolivar
-      - Hospital
-      - Edison
-      - Central
-      - Cuauhtémoc
-      - Del Golfo
-      - Félix U. Gomez
-      - Parque Fundidora
-      - Y Griega
-      - Eloy Cavazos
-      - Lerdo de Tejada
       - Exposición
+      - Lerdo de Tejada
+      - Eloy Cavazos
+      - Y Griega
+      - Parque Fundidora
+      - Félix U. Gomez
+      - Del Golfo
+      - Cuauhtémoc
+      - Central
+      - Edison
+      - Hospital
+      - Simón Bolivar
+      - Mitras
+      - Alfonso Reyes
+      - Penitenciaria
+      - Aztlan
+      - Unidad Modelo
+      - San Bernabé
+      - Talleres
 
-    station_count: 19
-    name: Línea 1
     ref: 1
   - 
+    colour: '#6bc069'
+    name: Línea 2
     type: subway
+    station_count: 13
     itineraries: 
       r3403903: 
         - Sendero (n1041636979)
@@ -138,7 +113,6 @@ routes:
         - Sendero (n1041636979)
 
 
-    colour: '#6bc069'
     stations: 
       - General I. Zaragoza
       - Padre Mier
@@ -154,12 +128,38 @@ routes:
       - Santiago Tapia
       - Sendero
 
-    station_count: 13
-    name: Línea 2
     ref: 2
 
-transfers: 
-  - 
-    - Cuauhtémoc (r10791445)
-    - Cuauhtémoc (r7923859)
+stations: 
+  - Alameda (n1041599630)
+  - Alfonso Reyes (n308520674)
+  - Anáhuac (n1041636956)
+  - Aztlan (n308520684)
+  - Central (n308516817)
+  - Cuauhtémoc (w778476380)
+  - Del Golfo (n308516813)
+  - Edison (n308520653)
+  - Eloy Cavazos (n308521293)
+  - Exposición (n308521283)
+  - Fundadores (n1041599626)
+  - Félix U. Gomez (n3788005136)
+  - General Anaya (n1041636993)
+  - General I. Zaragoza (n1041599589)
+  - Hospital (n308520670)
+  - Lerdo de Tejada (n308521285)
+  - Mitras (n308520673)
+  - Niños Heroes (n1041636969)
+  - Padre Mier (n1041599598)
+  - Parque Fundidora (n308521309)
+  - Penitenciaria (n308520675)
+  - Regina (n1041637024)
+  - San Bernabé (n308520693)
+  - San Nicolás (n1041637014)
+  - Santiago Tapia (n1041637107)
+  - Sendero (n1041636979)
+  - Simón Bolivar (n308520671)
+  - Talleres (n1041993397)
+  - Unidad Modelo (n308520692)
+  - Universidad (n1041637116)
+  - Y Griega (n308521303)
 

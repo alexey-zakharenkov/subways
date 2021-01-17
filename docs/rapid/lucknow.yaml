@@ -1,30 +1,12 @@
 
-stations: 
-  - Alambagh (n3997322401)
-  - Alambagh Bus Station (n3997322400)
-  - Amausi (n8006089162)
-  - Badshah Nagar (n4977535820)
-  - Bhootnath Market (n6445132135)
-  - Charbagh Railway Station (n4244207702)
-  - Chaudhary Charan Singh International Airport (n8001538669)
-  - Durgapuri (n4244207703)
-  - Hazratganj (n6445132136)
-  - Hussainganj (n6445132137)
-  - IT College (n6444506695)
-  - Indira Nagar (n4977536038)
-  - KD Singh Babu Stadium (n4977535798)
-  - Krishna Nagar (n3997322402)
-  - Lekhraj Market (n4977535811)
-  - Lucknow University (n4977535810)
-  - Mawaiya (n3997322403)
-  - Munshipulia (n6444506071)
-  - Sachivalaya (n4244207745)
-  - Singar Nagar (n3997322776)
-  - Transport Nagar (n8006089161)
+transfers: 
 
 routes: 
   - 
+    colour: '#ff0000'
+    name: Red Line
     type: subway
+    station_count: 21
     itineraries: 
       r8299496: 
         - Munshipulia (n6444506071)
@@ -73,33 +55,51 @@ routes:
         - Munshipulia (n6444506071)
 
 
-    colour: '#ff0000'
     stations: 
-      - Chaudhary Charan Singh International Airport
-      - Amausi
-      - Transport Nagar
-      - Krishna Nagar
-      - Singar Nagar
-      - Alambagh
-      - Alambagh Bus Station
-      - Mawaiya
-      - Durgapuri
-      - Charbagh Railway Station
-      - Hussainganj
-      - Sachivalaya
-      - Hazratganj
-      - KD Singh Babu Stadium
-      - Lucknow University
-      - IT College
-      - Badshah Nagar
-      - Lekhraj Market
-      - Bhootnath Market
-      - Indira Nagar
       - Munshipulia
+      - Indira Nagar
+      - Bhootnath Market
+      - Lekhraj Market
+      - Badshah Nagar
+      - IT College
+      - Lucknow University
+      - KD Singh Babu Stadium
+      - Hazratganj
+      - Sachivalaya
+      - Hussainganj
+      - Charbagh Railway Station
+      - Durgapuri
+      - Mawaiya
+      - Alambagh Bus Station
+      - Alambagh
+      - Singar Nagar
+      - Krishna Nagar
+      - Transport Nagar
+      - Amausi
+      - Chaudhary Charan Singh International Airport
 
-    station_count: 21
-    name: Red Line
     ref: 1
 
-transfers: 
+stations: 
+  - Alambagh (n3997322401)
+  - Alambagh Bus Station (n3997322400)
+  - Amausi (n8006089162)
+  - Badshah Nagar (n4977535820)
+  - Bhootnath Market (n6445132135)
+  - Charbagh Railway Station (n4244207702)
+  - Chaudhary Charan Singh International Airport (n8001538669)
+  - Durgapuri (n4244207703)
+  - Hazratganj (n6445132136)
+  - Hussainganj (n6445132137)
+  - IT College (n6444506695)
+  - Indira Nagar (n4977536038)
+  - KD Singh Babu Stadium (n4977535798)
+  - Krishna Nagar (n3997322402)
+  - Lekhraj Market (n4977535811)
+  - Lucknow University (n4977535810)
+  - Mawaiya (n3997322403)
+  - Munshipulia (n6444506071)
+  - Sachivalaya (n4244207745)
+  - Singar Nagar (n3997322776)
+  - Transport Nagar (n8006089161)
 

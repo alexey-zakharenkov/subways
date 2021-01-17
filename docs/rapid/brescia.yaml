@@ -1,46 +1,13 @@
 
-stations: 
-  - Bresciadue (n2183569927)
-  - Casazza (n2183569928)
-  - Europa (n2183569929)
-  - Lamarmora (n2183569930)
-  - Marconi (n2183569931)
-  - Mompiano (n2183569932)
-  - Ospedale (n2183569933)
-  - Poliambulanza (n1719862268)
-  - Prealpino (n2183569934)
-  - San Faustino (n2183569935)
-  - San Polo (n1719862284)
-  - San Polo Parco (n1719862280)
-  - Sanpolino (n1719862289)
-  - 'Sant''Eufemia - Buffalora (n1719862292)'
-  - Stazione FS (n2183569936)
-  - Vittoria (n2183569937)
-  - Volta (n2183569938)
+transfers: 
 
 routes: 
   - 
+    colour: '#030f3f'
+    name: Brescia Metro
     type: subway
+    station_count: 17
     itineraries: 
-      r2797903: 
-        - Prealpino (n2183569934)
-        - Casazza (n2183569928)
-        - Mompiano (n2183569932)
-        - Europa (n2183569929)
-        - Ospedale (n2183569933)
-        - Marconi (n2183569931)
-        - San Faustino (n2183569935)
-        - Vittoria (n2183569937)
-        - Stazione FS (n2183569936)
-        - Bresciadue (n2183569927)
-        - Lamarmora (n2183569930)
-        - Volta (n2183569938)
-        - Poliambulanza (n1719862268)
-        - San Polo Parco (n1719862280)
-        - San Polo (n1719862284)
-        - Sanpolino (n1719862289)
-        - 'Sant''Eufemia - Buffalora (n1719862292)'
-
       r2797902: 
         - 'Sant''Eufemia - Buffalora (n1719862292)'
         - Sanpolino (n1719862289)
@@ -60,30 +27,63 @@ routes:
         - Casazza (n2183569928)
         - Prealpino (n2183569934)
 
+      r2797903: 
+        - Prealpino (n2183569934)
+        - Casazza (n2183569928)
+        - Mompiano (n2183569932)
+        - Europa (n2183569929)
+        - Ospedale (n2183569933)
+        - Marconi (n2183569931)
+        - San Faustino (n2183569935)
+        - Vittoria (n2183569937)
+        - Stazione FS (n2183569936)
+        - Bresciadue (n2183569927)
+        - Lamarmora (n2183569930)
+        - Volta (n2183569938)
+        - Poliambulanza (n1719862268)
+        - San Polo Parco (n1719862280)
+        - San Polo (n1719862284)
+        - Sanpolino (n1719862289)
+        - 'Sant''Eufemia - Buffalora (n1719862292)'
 
-    colour: '#030f3f'
+
     stations: 
-      - Prealpino
-      - Casazza
-      - Mompiano
-      - Europa
-      - Ospedale
-      - Marconi
-      - San Faustino
-      - Vittoria
-      - Stazione FS
-      - Bresciadue
-      - Lamarmora
-      - Volta
-      - Poliambulanza
-      - San Polo Parco
-      - San Polo
-      - Sanpolino
       - 'Sant''Eufemia - Buffalora'
+      - Sanpolino
+      - San Polo
+      - San Polo Parco
+      - Poliambulanza
+      - Volta
+      - Lamarmora
+      - Bresciadue
+      - Stazione FS
+      - Vittoria
+      - San Faustino
+      - Marconi
+      - Ospedale
+      - Europa
+      - Mompiano
+      - Casazza
+      - Prealpino
 
-    station_count: 17
-    name: Brescia Metro
     ref: Metropolitana
 
-transfers: 
+stations: 
+  - Bresciadue (n2183569927)
+  - Casazza (n2183569928)
+  - Europa (n2183569929)
+  - Lamarmora (n2183569930)
+  - Marconi (n2183569931)
+  - Mompiano (n2183569932)
+  - Ospedale (n2183569933)
+  - Poliambulanza (n1719862268)
+  - Prealpino (n2183569934)
+  - San Faustino (n2183569935)
+  - San Polo (n1719862284)
+  - San Polo Parco (n1719862280)
+  - Sanpolino (n1719862289)
+  - 'Sant''Eufemia - Buffalora (n1719862292)'
+  - Stazione FS (n2183569936)
+  - Vittoria (n2183569937)
+  - Volta (n2183569938)
 

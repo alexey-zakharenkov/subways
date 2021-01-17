@@ -1,47 +1,12 @@
 
-stations: 
-  - 5th & Missouri (n315523919)
-  - 8th & Pine (n1422456548)
-  - Belleville (n320741956)
-  - Brentwood I-64 (n471420184)
-  - Central West End (n1422137626)
-  - Civic Center (n1422456527)
-  - Clayton (n471420087)
-  - College (n317076327)
-  - Convention Center (n1422456528)
-  - Cortex (n5800092280)
-  - Delmar Loop (n692717004)
-  - East Riverfront (n1422456530)
-  - Emerson Park (n315529353)
-  - Fairview Heights (n237174176)
-  - 'Forest Park - DeBaliviere (n1422137629)'
-  - Forsyth (n471419290)
-  - Grand (n1422137631)
-  - Jackie Joyner-Kersee Center (n237173846)
-  - Laclede's Landing (n1422456513)
-  - Lambert Airport Terminal 1 (n1422137638)
-  - Lambert Airport Terminal 2 (n1422137636)
-  - Maplewood-Manchester (n1457088571)
-  - Memorial Hospital (n320748141)
-  - North Hanley (n1422137640)
-  - Richmond Heights (n471420113)
-  - Rock Road (n1422137643)
-  - Shiloh-Scott (n317075170)
-  - Shrewsbury-Lansdowne I-44 (n565861185)
-  - Skinker (n355001376)
-  - Stadium (n1422456533)
-  - Sunnen (n2334702001)
-  - Swansea (n320743744)
-  - UMSL North (n1420486227)
-  - UMSL South (n1422137652)
-  - Union Station (n1422456546)
-  - 'University City - Big Bend (n528595352)'
-  - Washington Park (n237173878)
-  - Wellston (n1422137653)
+transfers: 
 
 routes: 
   - 
+    colour: '#0000f8'
+    name: MetroLink Blue Line
     type: light_rail
+    station_count: 25
     itineraries: 
       r1737996: 
         - Shrewsbury-Lansdowne I-44 (n565861185)
@@ -98,7 +63,6 @@ routes:
         - Shrewsbury-Lansdowne I-44 (n565861185)
 
 
-    colour: '#0000f8'
     stations: 
       - MetroLink Fairview Heights
       - MetroLink Washington Park
@@ -126,11 +90,12 @@ routes:
       - MetroLink Sunnen
       - Shrewsbury-Lansdowne I-44
 
-    station_count: 25
-    name: MetroLink Blue Line
     ref: Blue Line
   - 
+    colour: '#f80000'
+    name: MetroLink Red Line
     type: light_rail
+    station_count: 29
     itineraries: 
       r1737997: 
         - Lambert Airport Terminal 1 (n1422137638)
@@ -195,41 +160,76 @@ routes:
         - Lambert Airport Terminal 1 (n1422137638)
 
 
-    colour: '#f80000'
     stations: 
-      - Lambert Airport Terminal 1
-      - Lambert Airport Terminal 2
-      - MetroLink North Hanley
-      - UMSL North
-      - MetroLink UMSL South
-      - MetroLink Rock Road
-      - MetroLink Wellston
-      - MetroLink Delmar Loop
-      - 'MetroLink Forest Park - DeBaliviere'
-      - MetroLink Central West End
-      - MetroLink Cortex
-      - MetroLink Grand
-      - Union Station
-      - Civic Center
-      - Stadium
-      - MetroLink 8th & Pine
-      - MetroLink Convention Center
-      - Laclede's Landing
-      - East Riverfront
-      - 5th & Missouri
-      - MetroLink Emerson Park
-      - MetroLink Jackie Joyner-Kersee Center
-      - MetroLink Washington Park
-      - MetroLink Fairview Heights
-      - MetroLink Memorial Hospital
-      - MetroLink Swansea
-      - MetroLink Belleville
-      - MetroLink College
       - MetroLink Shiloh-Scott
+      - MetroLink College
+      - MetroLink Belleville
+      - MetroLink Swansea
+      - MetroLink Memorial Hospital
+      - MetroLink Fairview Heights
+      - MetroLink Washington Park
+      - MetroLink Jackie Joyner-Kersee Center
+      - MetroLink Emerson Park
+      - 5th & Missouri
+      - East Riverfront
+      - Laclede's Landing
+      - MetroLink Convention Center
+      - MetroLink 8th & Pine
+      - Stadium
+      - Civic Center
+      - Union Station
+      - MetroLink Grand
+      - MetroLink Cortex
+      - MetroLink Central West End
+      - 'MetroLink Forest Park - DeBaliviere'
+      - MetroLink Delmar Loop
+      - MetroLink Wellston
+      - MetroLink Rock Road
+      - MetroLink UMSL South
+      - UMSL North
+      - MetroLink North Hanley
+      - Lambert Airport Terminal 2
+      - Lambert Airport Terminal 1
 
-    station_count: 29
-    name: MetroLink Red Line
     ref: Red Line
 
-transfers: 
+stations: 
+  - 5th & Missouri (n315523919)
+  - 8th & Pine (n1422456548)
+  - Belleville (n320741956)
+  - Brentwood I-64 (n471420184)
+  - Central West End (n1422137626)
+  - Civic Center (n1422456527)
+  - Clayton (n471420087)
+  - College (n317076327)
+  - Convention Center (n1422456528)
+  - Cortex (n5800092280)
+  - Delmar Loop (n692717004)
+  - East Riverfront (n1422456530)
+  - Emerson Park (n315529353)
+  - Fairview Heights (n237174176)
+  - 'Forest Park - DeBaliviere (n1422137629)'
+  - Forsyth (n471419290)
+  - Grand (n1422137631)
+  - Jackie Joyner-Kersee Center (n237173846)
+  - Laclede's Landing (n1422456513)
+  - Lambert Airport Terminal 1 (n1422137638)
+  - Lambert Airport Terminal 2 (n1422137636)
+  - Maplewood-Manchester (n1457088571)
+  - Memorial Hospital (n320748141)
+  - North Hanley (n1422137640)
+  - Richmond Heights (n471420113)
+  - Rock Road (n1422137643)
+  - Shiloh-Scott (n317075170)
+  - Shrewsbury-Lansdowne I-44 (n565861185)
+  - Skinker (n355001376)
+  - Stadium (n1422456533)
+  - Sunnen (n2334702001)
+  - Swansea (n320743744)
+  - UMSL North (n1420486227)
+  - UMSL South (n1422137652)
+  - Union Station (n1422456546)
+  - 'University City - Big Bend (n528595352)'
+  - Washington Park (n237173878)
+  - Wellston (n1422137653)
 

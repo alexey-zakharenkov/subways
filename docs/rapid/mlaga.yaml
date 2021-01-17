@@ -1,26 +1,12 @@
 
-stations: 
-  - Andalucía Tech (n1625341623)
-  - Barbarela (n4408155456)
-  - Carranque (n4408159190)
-  - Ciudad de la Justicia (n1625341600)
-  - Clínico (n1912826078)
-  - El Cónsul (n1625341605)
-  - El Perchel (n4408112018)
-  - El Torcal (n4409558424)
-  - La Isla (n4409530066)
-  - 'La Luz - La Paz (n3762485517)'
-  - La Unión (n1625341615)
-  - Palacio de los Deportes (n4344674995)
-  - Paraninfo (n2897360350)
-  - Portada Alta (n1625341635)
-  - 'Princesa - Huelin (n4409535923)'
-  - Puerta Blanca (n3762485520)
-  - Universidad (n4943984613)
+transfers: 
 
 routes: 
   - 
+    colour: '#0000ff'
+    name: Línea 2
     type: subway
+    station_count: 7
     itineraries: 
       r6598364: 
         - El Perchel (n4408112018)
@@ -41,21 +27,21 @@ routes:
         - El Perchel (n4408112018)
 
 
-    colour: '#0000ff'
     stations: 
-      - El Perchel
-      - La Isla
-      - 'Princesa - Huelin'
-      - El Torcal
-      - 'La Luz - La Paz'
-      - Puerta Blanca
       - Palacio de los Deportes
+      - Puerta Blanca
+      - 'La Luz - La Paz'
+      - El Torcal
+      - 'Princesa - Huelin'
+      - La Isla
+      - El Perchel
 
-    station_count: 7
-    name: Línea 2
     ref: L2
   - 
+    colour: '#ff0000'
+    name: Línea 1
     type: subway
+    station_count: 11
     itineraries: 
       r7781441: 
         - El Perchel (n4408112018)
@@ -84,23 +70,37 @@ routes:
         - El Perchel (n4408112018)
 
 
-    colour: '#ff0000'
     stations: 
-      - Andalucía Tech
-      - Paraninfo
-      - El Cónsul
-      - Clínico
-      - Universidad
-      - Ciudad de la Justicia
-      - Portada Alta
-      - Carranque
-      - Barbarela
-      - La Unión
       - El Perchel
+      - La Unión
+      - Barbarela
+      - Carranque
+      - Portada Alta
+      - Ciudad de la Justicia
+      - Universidad
+      - Clínico
+      - El Cónsul
+      - Paraninfo
+      - Andalucía Tech
 
-    station_count: 11
-    name: Línea 1
     ref: L2
 
-transfers: 
+stations: 
+  - Andalucía Tech (n1625341623)
+  - Barbarela (n4408155456)
+  - Carranque (n4408159190)
+  - Ciudad de la Justicia (n1625341600)
+  - Clínico (n1912826078)
+  - El Cónsul (n1625341605)
+  - El Perchel (n4408112018)
+  - El Torcal (n4409558424)
+  - La Isla (n4409530066)
+  - 'La Luz - La Paz (n3762485517)'
+  - La Unión (n1625341615)
+  - Palacio de los Deportes (n4344674995)
+  - Paraninfo (n2897360350)
+  - Portada Alta (n1625341635)
+  - 'Princesa - Huelin (n4409535923)'
+  - Puerta Blanca (n3762485520)
+  - Universidad (n4943984613)
 

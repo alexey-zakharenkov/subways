@@ -1,4 +1,395 @@
 
+transfers: 
+  - 
+    - Ana Rosa (r7343195)
+    - Ana Rosa (r9632198)
+  - 
+    - Chácara Klabin (r8120903)
+    - Chácara Klabin (r9587221)
+  - 
+    - Consolação (r7642010)
+    - Paulista (r7627825)
+  - 
+    - Luz (Linha 1) (r7945362)
+    - Luz (Linha 4) (r7946016)
+  - 
+    - Paraíso (r7946020)
+    - Paraíso (r9632199)
+  - 
+    - República (Linha 3) (r7946012)
+    - República (Linha 4) (r7945333)
+  - 
+    - Santa Cruz (r7634747)
+    - Santa Cruz (r8861024)
+  - 
+    - Sé (Linha 1) (r8210912)
+    - Sé (Linha 3) (r3596995)
+  - 
+    - Vila Prudente (Linha 15) (r7946025)
+    - Vila Prudente (Linha 2) (r3619671)
+
+routes: 
+  - 
+    colour: '#1a5ba3'
+    name: 'Linha 1 - Azul'
+    type: subway
+    station_count: 23
+    itineraries: 
+      r3596994: 
+        - Tucuruvi (n4924472501)
+        - Parada Inglesa (w16644748)
+        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
+        - Santana (r3308953)
+        - Carandiru (w16644515)
+        - 'Portuguesa - Tietê (r6545983)'
+        - Armênia (w16645299)
+        - Tiradentes (n5153819541)
+        - Luz (n5368677484)
+        - São Bento (n5369277944)
+        - Sé (n4311073828)
+        - 'Japão - Liberdade (n5369277070)'
+        - São Joaquim (n7717276955)
+        - Vergueiro (n4897835958)
+        - Paraíso (n4861900294)
+        - Ana Rosa (n4924478010)
+        - Vila Mariana (n4964592035)
+        - Santa Cruz (n5153871131)
+        - Praça da Árvore (n5153861800)
+        - Saúde (n5153861350)
+        - São Judas (n5153855592)
+        - Conceição (n4922664269)
+        - Jabaquara (n4962907887)
+
+      r2144052: 
+        - Jabaquara (n4962907887)
+        - Conceição (n4922664269)
+        - São Judas (n5153855592)
+        - Saúde (n5153861350)
+        - Praça da Árvore (n5153861800)
+        - Santa Cruz (n5153871131)
+        - Vila Mariana (n4964592035)
+        - Ana Rosa (n4924478010)
+        - Paraíso (n4861900294)
+        - Vergueiro (n4897835958)
+        - São Joaquim (n7717276955)
+        - 'Japão - Liberdade (n5369277070)'
+        - Sé (n4311073828)
+        - São Bento (n5369277944)
+        - Luz (n5368677484)
+        - Tiradentes (n5153819541)
+        - Armênia (w16645299)
+        - 'Portuguesa - Tietê (r6545983)'
+        - Carandiru (w16644515)
+        - Santana (r3308953)
+        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
+        - Parada Inglesa (w16644748)
+        - Tucuruvi (n4924472501)
+
+
+    stations: 
+      - Jabaquara
+      - Conceição
+      - São Judas
+      - Saúde
+      - Praça da Árvore
+      - Santa Cruz
+      - Vila Mariana
+      - Ana Rosa
+      - Paraíso
+      - Vergueiro
+      - São Joaquim
+      - Japão-Liberdade
+      - Sé (Linha 1)
+      - São Bento
+      - Luz (Linha 1)
+      - Tiradentes
+      - Armênia
+      - 'Portuguesa - Tietê'
+      - Carandiru
+      - Santana
+      - 'Jardim São Paulo - Ayrton Senna'
+      - Parada Inglesa
+      - Tucuruvi
+
+    ref: 1
+  - 
+    colour: '#899194'
+    name: 'Linha 15 - Prata'
+    type: monorail
+    station_count: 10
+    itineraries: 
+      r5887354: 
+        - Vila Prudente (n5369265811)
+        - Oratório (n5368659768)
+        - São Lucas (n5540052301)
+        - Camilo Haddad (n5540052300)
+        - Vila Tolstói (n5540052299)
+        - Vila União (n5540052298)
+        - Jardim Planato (n6764734909)
+        - Sapopemba (n7058843479)
+        - Fazenda da Juta (n7058843469)
+        - São Mateus (n6571970481)
+
+      r5887353: 
+        - São Mateus (n6571970481)
+        - Fazenda da Juta (n7058843469)
+        - Sapopemba (n7058843479)
+        - Jardim Planato (n6764734909)
+        - Vila União (n5540052298)
+        - Vila Tolstói (n5540052299)
+        - Camilo Haddad (n5540052300)
+        - São Lucas (n5540052301)
+        - Oratório (n5368659768)
+        - Vila Prudente (n5369265811)
+
+
+    stations: 
+      - Vila Prudente (Linha 15)
+      - Oratório
+      - São Lucas
+      - Camilo Haddad
+      - Vila Tolstói
+      - Vila União
+      - Jardim Planalto
+      - Sapopemba
+      - Fazenda da Juta
+      - São Mateus
+
+    ref: 15
+  - 
+    colour: '#008000'
+    name: 'Linha 2 - Verde'
+    type: subway
+    station_count: 14
+    itineraries: 
+      r3619669: 
+        - Vila Madalena (n605663613)
+        - 'Santuário Nossa Senhora de Fátima - Sumaré (n5368635708)'
+        - Clínicas (n5316930424)
+        - Consolação (n5159984416)
+        - Trianon-Masp (n5159984781)
+        - Brigadeiro (n4962873828)
+        - Paraíso (n4861900294)
+        - Ana Rosa (n4924478010)
+        - Chácara Klabin (n4923069358)
+        - 'Santos - Imigrantes (n5368628878)'
+        - Alto do Ipiranga (n4443122951)
+        - Sacomã (n4432647540)
+        - Tamanduateí (n4119710093)
+        - Vila Prudente (n4924500191)
+
+      r419276: 
+        - Vila Prudente (n4924500191)
+        - Tamanduateí (n4119710093)
+        - Sacomã (n4432647540)
+        - Alto do Ipiranga (n4443122951)
+        - 'Santos - Imigrantes (n5368628878)'
+        - Chácara Klabin (n4923069358)
+        - Ana Rosa (n4924478010)
+        - Paraíso (n4861900294)
+        - Brigadeiro (n4962873828)
+        - Trianon-Masp (n5159984781)
+        - Consolação (n5159984416)
+        - Clínicas (n5316930424)
+        - 'Santuário Nossa Senhora de Fátima - Sumaré (n5368635708)'
+        - Vila Madalena (n605663613)
+
+
+    stations: 
+      - Vila Madalena
+      - 'Santuário Nossa Senhora de Fátima - Sumaré'
+      - Clínicas
+      - Consolação
+      - Trianon-Masp
+      - Brigadeiro
+      - Paraíso
+      - Ana Rosa
+      - Chácara Klabin
+      - 'Santos - Imigrantes'
+      - Alto do Ipiranga
+      - Sacomã
+      - Tamanduateí (Linha 2)
+      - Vila Prudente (Linha 2)
+
+    ref: 2
+  - 
+    colour: '#d9001c'
+    name: 'Linha 3 - Vermelha'
+    type: subway
+    station_count: 18
+    itineraries: 
+      r419274: 
+        - 'Palmeiras - Barra Funda (n4593556119)'
+        - Marechal Deodoro (n5368625730)
+        - Santa Cecília (n5369269022)
+        - República (n4311953410)
+        - Anhangabaú (n5316917066)
+        - Sé (n4311073828)
+        - Pedro II (n4117571828)
+        - Brás (n4117565742)
+        - Bresser-Mooca (n5369262558)
+        - Belém (n5369261562)
+        - Tatuapé (n4424425022)
+        - Carrão (n5369281661)
+        - Penha (n5369270115)
+        - Vila Matilde (n5369273626)
+        - Guilhermina-Esperança (n5369273978)
+        - Patriarca • Vila Ré (n5369274765)
+        - Artur Alvim (n5369270072)
+        - Corinthians-Itaquera (n5370729520)
+
+      r3252761: 
+        - Corinthians-Itaquera (n5370729520)
+        - Artur Alvim (n5369270072)
+        - Patriarca • Vila Ré (n5369274765)
+        - Guilhermina-Esperança (n5369273978)
+        - Vila Matilde (n5369273626)
+        - Penha (n5369270115)
+        - Carrão (n5369281661)
+        - Tatuapé (n4424425022)
+        - Belém (n5369261562)
+        - Bresser-Mooca (n5369262558)
+        - Brás (n4117565742)
+        - Pedro II (n4117571828)
+        - Sé (n4311073828)
+        - Anhangabaú (n5316917066)
+        - República (n4311953410)
+        - Santa Cecília (n5369269022)
+        - Marechal Deodoro (n5368625730)
+        - 'Palmeiras - Barra Funda (n4593556119)'
+
+
+    stations: 
+      - Corinthians-Itaquera
+      - Arthur Alvim
+      - Patriarca • Vila Ré
+      - Guilhermina-Esperança
+      - Vila Matilde
+      - Penha
+      - Carrão
+      - Tatuapé
+      - Belém
+      - Bresser-Mooca
+      - Brás (Linha 3)
+      - Pedro II
+      - Sé (Linha 3)
+      - Anhangabaú
+      - República (Linha 3)
+      - Santa Cecília
+      - Marechal Deodoro
+      - 'Palmeiras - Barra Funda (Metrô)'
+
+    ref: 3
+  - 
+    colour: '#ffd700'
+    name: 'Linha 4 - Amarela'
+    type: subway
+    station_count: 10
+    itineraries: 
+      r3613476: 
+        - São Paulo – Morumbi (n5942913082)
+        - Butantã (n5368617428)
+        - Pinheiros (n4425010407)
+        - Faria Lima (n5153876863)
+        - Fradique Coutinho (n5148119198)
+        - Oscar Freire (n5538960005)
+        - Paulista (n5148131318)
+        - Higienópolis-Mackenzie (n5356426230)
+        - República (n4311953410)
+        - Luz (n5368677484)
+
+      r419281: 
+        - Luz (n5368677484)
+        - República (n4311953410)
+        - Higienópolis-Mackenzie (n5356426230)
+        - Paulista (n5148131318)
+        - Oscar Freire (n5538960005)
+        - Fradique Coutinho (n5148119198)
+        - Faria Lima (n5153876863)
+        - Pinheiros (n4425010407)
+        - Butantã (n5368617428)
+        - São Paulo – Morumbi (n5942913082)
+
+
+    stations: 
+      - Luz (Linha 4)
+      - República (Linha 4)
+      - Higienópolis-Mackenzie
+      - Paulista
+      - Oscar Freire
+      - Fradique Coutinho
+      - Faria Lima
+      - Pinheiros
+      - Butantã
+      - São Paulo • Morumbi
+
+    ref: 4
+  - 
+    colour: '#9200c3'
+    name: 'Linha 5 - Lilás'
+    type: subway
+    station_count: 17
+    itineraries: 
+      r3539819: 
+        - Chácara Klabin (n4923069358)
+        - Santa Cruz (n5951581006)
+        - Hospital São Paulo (n5930317872)
+        - AACD – Servidor (n5730401533)
+        - Moema (n5538620800)
+        - Eucaliptos (n5449373613)
+        - Campo Belo (n6390726996)
+        - Brooklin (n5109495595)
+        - Borba Gato (n5109495596)
+        - Alto da Boa Vista (n5109491581)
+        - Adolfo Pinheiro (n4924414397)
+        - Largo Treze (n4438460892)
+        - Santo Amaro (n4143583173)
+        - Giovanni Gronchi (n5368610130)
+        - Vila das Belezas (n4170379232)
+        - Campo Limpo (n8000500360)
+        - Capão Redondo (n5368613746)
+
+      r419266: 
+        - Capão Redondo (n5368613746)
+        - Campo Limpo (n8000500360)
+        - Vila das Belezas (n4170379232)
+        - Giovanni Gronchi (n5368610130)
+        - Santo Amaro (n4143583173)
+        - Largo Treze (n4438460892)
+        - Adolfo Pinheiro (n4924414397)
+        - Alto da Boa Vista (n5109491581)
+        - Borba Gato (n5109495596)
+        - Brooklin (n5109495595)
+        - Campo Belo (n6390726996)
+        - Eucaliptos (n5449373613)
+        - Moema (n5538620800)
+        - AACD – Servidor (n5730401533)
+        - Hospital São Paulo (n5930317872)
+        - Santa Cruz (n5951581006)
+        - Chácara Klabin (n4923069358)
+
+
+    stations: 
+      - Capão Redondo
+      - Campo Limpo
+      - Vila das Belezas
+      - Giovanni Gronchi
+      - Santo Amaro (Metrô)
+      - Largo Treze
+      - Adolfo Pinheiro
+      - Alto da Boa Vista
+      - Borba Gato
+      - Brooklin
+      - Campo Belo
+      - Eucaliptos
+      - Moema
+      - AACD – Servidor
+      - Hospital São Paulo
+      - Santa Cruz
+      - Chácara Klabin
+
+    ref: 5
+
 stations: 
   - AACD – Servidor (n5730401533)
   - Adolfo Pinheiro (n4924414397)
@@ -86,395 +477,4 @@ stations:
   - Vila Tolstói (n5540052299)
   - Vila União (n5540052298)
   - Vila das Belezas (n4170379232)
-
-routes: 
-  - 
-    type: subway
-    itineraries: 
-      r3596994: 
-        - Tucuruvi (n4924472501)
-        - Parada Inglesa (w16644748)
-        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
-        - Santana (r3308953)
-        - Carandiru (w16644515)
-        - 'Portuguesa - Tietê (r6545983)'
-        - Armênia (w16645299)
-        - Tiradentes (n5153819541)
-        - Luz (n5368677484)
-        - São Bento (n5369277944)
-        - Sé (n4311073828)
-        - 'Japão - Liberdade (n5369277070)'
-        - São Joaquim (n7717276955)
-        - Vergueiro (n4897835958)
-        - Paraíso (n4861900294)
-        - Ana Rosa (n4924478010)
-        - Vila Mariana (n4964592035)
-        - Santa Cruz (n5153871131)
-        - Praça da Árvore (n5153861800)
-        - Saúde (n5153861350)
-        - São Judas (n5153855592)
-        - Conceição (n4922664269)
-        - Jabaquara (n4962907887)
-
-      r2144052: 
-        - Jabaquara (n4962907887)
-        - Conceição (n4922664269)
-        - São Judas (n5153855592)
-        - Saúde (n5153861350)
-        - Praça da Árvore (n5153861800)
-        - Santa Cruz (n5153871131)
-        - Vila Mariana (n4964592035)
-        - Ana Rosa (n4924478010)
-        - Paraíso (n4861900294)
-        - Vergueiro (n4897835958)
-        - São Joaquim (n7717276955)
-        - 'Japão - Liberdade (n5369277070)'
-        - Sé (n4311073828)
-        - São Bento (n5369277944)
-        - Luz (n5368677484)
-        - Tiradentes (n5153819541)
-        - Armênia (w16645299)
-        - 'Portuguesa - Tietê (r6545983)'
-        - Carandiru (w16644515)
-        - Santana (r3308953)
-        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
-        - Parada Inglesa (w16644748)
-        - Tucuruvi (n4924472501)
-
-
-    colour: '#1a5ba3'
-    stations: 
-      - Tucuruvi
-      - Parada Inglesa
-      - 'Jardim São Paulo - Ayrton Senna'
-      - Santana
-      - Carandiru
-      - 'Portuguesa - Tietê'
-      - Armênia
-      - Tiradentes
-      - Luz (Linha 1)
-      - São Bento
-      - Sé (Linha 1)
-      - Japão-Liberdade
-      - São Joaquim
-      - Vergueiro
-      - Paraíso
-      - Ana Rosa
-      - Vila Mariana
-      - Santa Cruz
-      - Praça da Árvore
-      - Saúde
-      - São Judas
-      - Conceição
-      - Jabaquara
-
-    station_count: 23
-    name: 'Linha 1 - Azul'
-    ref: 1
-  - 
-    type: monorail
-    itineraries: 
-      r5887353: 
-        - São Mateus (n6571970481)
-        - Fazenda da Juta (n7058843469)
-        - Sapopemba (n7058843479)
-        - Jardim Planato (n6764734909)
-        - Vila União (n5540052298)
-        - Vila Tolstói (n5540052299)
-        - Camilo Haddad (n5540052300)
-        - São Lucas (n5540052301)
-        - Oratório (n5368659768)
-        - Vila Prudente (n5369265811)
-
-      r5887354: 
-        - Vila Prudente (n5369265811)
-        - Oratório (n5368659768)
-        - São Lucas (n5540052301)
-        - Camilo Haddad (n5540052300)
-        - Vila Tolstói (n5540052299)
-        - Vila União (n5540052298)
-        - Jardim Planato (n6764734909)
-        - Sapopemba (n7058843479)
-        - Fazenda da Juta (n7058843469)
-        - São Mateus (n6571970481)
-
-
-    colour: '#899194'
-    stations: 
-      - Vila Prudente (Linha 15)
-      - Oratório
-      - São Lucas
-      - Camilo Haddad
-      - Vila Tolstói
-      - Vila União
-      - Jardim Planalto
-      - Sapopemba
-      - Fazenda da Juta
-      - São Mateus
-
-    station_count: 10
-    name: 'Linha 15 - Prata'
-    ref: 15
-  - 
-    type: subway
-    itineraries: 
-      r3619669: 
-        - Vila Madalena (n605663613)
-        - 'Santuário Nossa Senhora de Fátima - Sumaré (n5368635708)'
-        - Clínicas (n5316930424)
-        - Consolação (n5159984416)
-        - Trianon-Masp (n5159984781)
-        - Brigadeiro (n4962873828)
-        - Paraíso (n4861900294)
-        - Ana Rosa (n4924478010)
-        - Chácara Klabin (n4923069358)
-        - 'Santos - Imigrantes (n5368628878)'
-        - Alto do Ipiranga (n4443122951)
-        - Sacomã (n4432647540)
-        - Tamanduateí (n4119710093)
-        - Vila Prudente (n4924500191)
-
-      r419276: 
-        - Vila Prudente (n4924500191)
-        - Tamanduateí (n4119710093)
-        - Sacomã (n4432647540)
-        - Alto do Ipiranga (n4443122951)
-        - 'Santos - Imigrantes (n5368628878)'
-        - Chácara Klabin (n4923069358)
-        - Ana Rosa (n4924478010)
-        - Paraíso (n4861900294)
-        - Brigadeiro (n4962873828)
-        - Trianon-Masp (n5159984781)
-        - Consolação (n5159984416)
-        - Clínicas (n5316930424)
-        - 'Santuário Nossa Senhora de Fátima - Sumaré (n5368635708)'
-        - Vila Madalena (n605663613)
-
-
-    colour: '#008000'
-    stations: 
-      - Vila Prudente (Linha 2)
-      - Tamanduateí (Linha 2)
-      - Sacomã
-      - Alto do Ipiranga
-      - 'Santos - Imigrantes'
-      - Chácara Klabin
-      - Ana Rosa
-      - Paraíso
-      - Brigadeiro
-      - Trianon-Masp
-      - Consolação
-      - Clínicas
-      - 'Santuário Nossa Senhora de Fátima - Sumaré'
-      - Vila Madalena
-
-    station_count: 14
-    name: 'Linha 2 - Verde'
-    ref: 2
-  - 
-    type: subway
-    itineraries: 
-      r3252761: 
-        - Corinthians-Itaquera (n5370729520)
-        - Artur Alvim (n5369270072)
-        - Patriarca • Vila Ré (n5369274765)
-        - Guilhermina-Esperança (n5369273978)
-        - Vila Matilde (n5369273626)
-        - Penha (n5369270115)
-        - Carrão (n5369281661)
-        - Tatuapé (n4424425022)
-        - Belém (n5369261562)
-        - Bresser-Mooca (n5369262558)
-        - Brás (n4117565742)
-        - Pedro II (n4117571828)
-        - Sé (n4311073828)
-        - Anhangabaú (n5316917066)
-        - República (n4311953410)
-        - Santa Cecília (n5369269022)
-        - Marechal Deodoro (n5368625730)
-        - 'Palmeiras - Barra Funda (n4593556119)'
-
-      r419274: 
-        - 'Palmeiras - Barra Funda (n4593556119)'
-        - Marechal Deodoro (n5368625730)
-        - Santa Cecília (n5369269022)
-        - República (n4311953410)
-        - Anhangabaú (n5316917066)
-        - Sé (n4311073828)
-        - Pedro II (n4117571828)
-        - Brás (n4117565742)
-        - Bresser-Mooca (n5369262558)
-        - Belém (n5369261562)
-        - Tatuapé (n4424425022)
-        - Carrão (n5369281661)
-        - Penha (n5369270115)
-        - Vila Matilde (n5369273626)
-        - Guilhermina-Esperança (n5369273978)
-        - Patriarca • Vila Ré (n5369274765)
-        - Artur Alvim (n5369270072)
-        - Corinthians-Itaquera (n5370729520)
-
-
-    colour: '#d9001c'
-    stations: 
-      - 'Palmeiras - Barra Funda (Metrô)'
-      - Marechal Deodoro
-      - Santa Cecília
-      - República (Linha 3)
-      - Anhangabaú
-      - Sé (Linha 3)
-      - Pedro II
-      - Brás (Linha 3)
-      - Bresser-Mooca
-      - Belém
-      - Tatuapé
-      - Carrão
-      - Penha
-      - Vila Matilde
-      - Guilhermina-Esperança
-      - Patriarca • Vila Ré
-      - Arthur Alvim
-      - Corinthians-Itaquera
-
-    station_count: 18
-    name: 'Linha 3 - Vermelha'
-    ref: 3
-  - 
-    type: subway
-    itineraries: 
-      r3613476: 
-        - São Paulo – Morumbi (n5942913082)
-        - Butantã (n5368617428)
-        - Pinheiros (n4425010407)
-        - Faria Lima (n5153876863)
-        - Fradique Coutinho (n5148119198)
-        - Oscar Freire (n5538960005)
-        - Paulista (n5148131318)
-        - Higienópolis-Mackenzie (n5356426230)
-        - República (n4311953410)
-        - Luz (n5368677484)
-
-      r419281: 
-        - Luz (n5368677484)
-        - República (n4311953410)
-        - Higienópolis-Mackenzie (n5356426230)
-        - Paulista (n5148131318)
-        - Oscar Freire (n5538960005)
-        - Fradique Coutinho (n5148119198)
-        - Faria Lima (n5153876863)
-        - Pinheiros (n4425010407)
-        - Butantã (n5368617428)
-        - São Paulo – Morumbi (n5942913082)
-
-
-    colour: '#ffd700'
-    stations: 
-      - Luz (Linha 4)
-      - República (Linha 4)
-      - Higienópolis-Mackenzie
-      - Paulista
-      - Oscar Freire
-      - Fradique Coutinho
-      - Faria Lima
-      - Pinheiros
-      - Butantã
-      - São Paulo • Morumbi
-
-    station_count: 10
-    name: 'Linha 4 - Amarela'
-    ref: 4
-  - 
-    type: subway
-    itineraries: 
-      r3539819: 
-        - Chácara Klabin (n4923069358)
-        - Santa Cruz (n5951581006)
-        - Hospital São Paulo (n5930317872)
-        - AACD – Servidor (n5730401533)
-        - Moema (n5538620800)
-        - Eucaliptos (n5449373613)
-        - Campo Belo (n6390726996)
-        - Brooklin (n5109495595)
-        - Borba Gato (n5109495596)
-        - Alto da Boa Vista (n5109491581)
-        - Adolfo Pinheiro (n4924414397)
-        - Largo Treze (n4438460892)
-        - Santo Amaro (n4143583173)
-        - Giovanni Gronchi (n5368610130)
-        - Vila das Belezas (n4170379232)
-        - Campo Limpo (n8000500360)
-        - Capão Redondo (n5368613746)
-
-      r419266: 
-        - Capão Redondo (n5368613746)
-        - Campo Limpo (n8000500360)
-        - Vila das Belezas (n4170379232)
-        - Giovanni Gronchi (n5368610130)
-        - Santo Amaro (n4143583173)
-        - Largo Treze (n4438460892)
-        - Adolfo Pinheiro (n4924414397)
-        - Alto da Boa Vista (n5109491581)
-        - Borba Gato (n5109495596)
-        - Brooklin (n5109495595)
-        - Campo Belo (n6390726996)
-        - Eucaliptos (n5449373613)
-        - Moema (n5538620800)
-        - AACD – Servidor (n5730401533)
-        - Hospital São Paulo (n5930317872)
-        - Santa Cruz (n5951581006)
-        - Chácara Klabin (n4923069358)
-
-
-    colour: '#9200c3'
-    stations: 
-      - Capão Redondo
-      - Campo Limpo
-      - Vila das Belezas
-      - Giovanni Gronchi
-      - Santo Amaro (Metrô)
-      - Largo Treze
-      - Adolfo Pinheiro
-      - Alto da Boa Vista
-      - Borba Gato
-      - Brooklin
-      - Campo Belo
-      - Eucaliptos
-      - Moema
-      - AACD – Servidor
-      - Hospital São Paulo
-      - Santa Cruz
-      - Chácara Klabin
-
-    station_count: 17
-    name: 'Linha 5 - Lilás'
-    ref: 5
-
-transfers: 
-  - 
-    - Ana Rosa (r7343195)
-    - Ana Rosa (r9632198)
-  - 
-    - Chácara Klabin (r8120903)
-    - Chácara Klabin (r9587221)
-  - 
-    - Consolação (r7642010)
-    - Paulista (r7627825)
-  - 
-    - Luz (Linha 1) (r7945362)
-    - Luz (Linha 4) (r7946016)
-  - 
-    - Paraíso (r7946020)
-    - Paraíso (r9632199)
-  - 
-    - República (Linha 3) (r7946012)
-    - República (Linha 4) (r7945333)
-  - 
-    - Santa Cruz (r7634747)
-    - Santa Cruz (r8861024)
-  - 
-    - Sé (Linha 1) (r8210912)
-    - Sé (Linha 3) (r3596995)
-  - 
-    - Vila Prudente (Linha 15) (r7946025)
-    - Vila Prudente (Linha 2) (r3619671)
 

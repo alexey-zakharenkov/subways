@@ -1,47 +1,12 @@
 
-stations: 
-  - 152 Evler (n5315432299)
-  - Altınşehir (n5317033353)
-  - Arabayatağı (n5315425255)
-  - Ataevler (n5317041669)
-  - Batıkent (n5317020148)
-  - Bağlarbaşı/Esentepe (n5316452966)
-  - Beşevler (n5316997726)
-  - Bursaspor/Acemler (n5315511268)
-  - Cumalıkızık (n5315410731)
-  - Demirtaşpaşa (n5315478129)
-  - Duaçınarı (n7726391260)
-  - Emek (n5316433997)
-  - Ertuğrul (n5317028674)
-  - Fatih Sultan Mehmet (n5316997737)
-  - Gökdere (n5315446884)
-  - Gürsu (n5315410742)
-  - Hacivat (n5315407491)
-  - Hamitler/Fethiye (n5316451309)
-  - Karaman (n5316422506)
-  - Kestel (n5315410781)
-  - Korupark (n5316433984)
-  - Kültürpark (n5315484816)
-  - Küçük Sanayi (n5317041681)
-  - Merinos (n5315476895)
-  - 'Mimar Sinan - BTÜ (n5315407482)'
-  - Nilüfer (n5316997750)
-  - Organize Sanayi (n5316437013)
-  - Osmangazi (n5315476918)
-  - Otosansit (n5315407514)
-  - Paşa Çiftliği (n5315511279)
-  - Sırameşeler (n5315511285)
-  - Yüzüncüyıl (n5317020135)
-  - Yıldırım/Davutdede (n5315444458)
-  - Özlüce (n5317023689)
-  - Üniversite (n5317020169)
-  - İhsaniye (n5316452957)
-  - Şehreküstü (n5315476920)
-  - Şirinevler (n5315407499)
+transfers: 
 
 routes: 
   - 
+    colour: '#ff0000'
+    name: BursaRay 1
     type: subway
+    station_count: 20
     itineraries: 
       r7868620: 
         - Emek (n5316433997)
@@ -88,7 +53,6 @@ routes:
         - Emek (n5316433997)
 
 
-    colour: '#ff0000'
     stations: 
       - Arabayatağı
       - Yüksek İhtisas
@@ -111,11 +75,12 @@ routes:
       - Korupark
       - Emek
 
-    station_count: 20
-    name: BursaRay 1
     ref: B1
   - 
+    colour: '#000000'
+    name: BursaRay 2
     type: subway
+    station_count: 31
     itineraries: 
       r7869621: 
         - Üniversite (n5317020169)
@@ -184,7 +149,6 @@ routes:
         - Üniversite (n5317020169)
 
 
-    colour: '#000000'
     stations: 
       - Üniversite
       - Batıkent
@@ -218,9 +182,45 @@ routes:
       - Gürsu
       - Kestel
 
-    station_count: 31
-    name: BursaRay 2
     ref: B2
 
-transfers: 
+stations: 
+  - 152 Evler (n5315432299)
+  - Altınşehir (n5317033353)
+  - Arabayatağı (n5315425255)
+  - Ataevler (n5317041669)
+  - Batıkent (n5317020148)
+  - Bağlarbaşı/Esentepe (n5316452966)
+  - Beşevler (n5316997726)
+  - Bursaspor/Acemler (n5315511268)
+  - Cumalıkızık (n5315410731)
+  - Demirtaşpaşa (n5315478129)
+  - Duaçınarı (n7726391260)
+  - Emek (n5316433997)
+  - Ertuğrul (n5317028674)
+  - Fatih Sultan Mehmet (n5316997737)
+  - Gökdere (n5315446884)
+  - Gürsu (n5315410742)
+  - Hacivat (n5315407491)
+  - Hamitler/Fethiye (n5316451309)
+  - Karaman (n5316422506)
+  - Kestel (n5315410781)
+  - Korupark (n5316433984)
+  - Kültürpark (n5315484816)
+  - Küçük Sanayi (n5317041681)
+  - Merinos (n5315476895)
+  - 'Mimar Sinan - BTÜ (n5315407482)'
+  - Nilüfer (n5316997750)
+  - Organize Sanayi (n5316437013)
+  - Osmangazi (n5315476918)
+  - Otosansit (n5315407514)
+  - Paşa Çiftliği (n5315511279)
+  - Sırameşeler (n5315511285)
+  - Yüzüncüyıl (n5317020135)
+  - Yıldırım/Davutdede (n5315444458)
+  - Özlüce (n5317023689)
+  - Üniversite (n5317020169)
+  - İhsaniye (n5316452957)
+  - Şehreküstü (n5315476920)
+  - Şirinevler (n5315407499)
 

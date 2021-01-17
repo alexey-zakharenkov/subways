@@ -1,22 +1,12 @@
 
-stations: 
-  - Alinga Street (n6355817336)
-  - Dickson Interchange (n6355817338)
-  - EPIC and Racecourse (n6355817329)
-  - Elouera Street (n6355817340)
-  - Gungahlin Place (n6355817330)
-  - Ipima Street (n6355817332)
-  - Macarthur Avenue (n6355817331)
-  - Manning Clark North (n6355817334)
-  - Mapleton Avenue (n6355817333)
-  - Nullarbor Avenue (n6355817335)
-  - Phillip Avenue (n6355817337)
-  - Swinden Street (n6355817339)
-  - Well Station Drive (n6355817341)
+transfers: 
 
 routes: 
   - 
+    colour: '#343f4b'
+    name: Canberra Metro
     type: light_rail
+    station_count: 13
     itineraries: 
       r10271386: 
         - Gungahlin Place (n6355817330)
@@ -49,7 +39,6 @@ routes:
         - Gungahlin Place (n6355817330)
 
 
-    colour: '#343f4b'
     stations: 
       - Alinga Street
       - Elouera Street
@@ -65,9 +54,20 @@ routes:
       - Manning Clark North
       - Gungahlin Place
 
-    station_count: 13
-    name: Canberra Metro
     ref: CMET
 
-transfers: 
+stations: 
+  - Alinga Street (n6355817336)
+  - Dickson Interchange (n6355817338)
+  - EPIC and Racecourse (n6355817329)
+  - Elouera Street (n6355817340)
+  - Gungahlin Place (n6355817330)
+  - Ipima Street (n6355817332)
+  - Macarthur Avenue (n6355817331)
+  - Manning Clark North (n6355817334)
+  - Mapleton Avenue (n6355817333)
+  - Nullarbor Avenue (n6355817335)
+  - Phillip Avenue (n6355817337)
+  - Swinden Street (n6355817339)
+  - Well Station Drive (n6355817341)
 

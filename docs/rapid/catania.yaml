@@ -1,19 +1,12 @@
 
-stations: 
-  - Borgo (n307423725)
-  - Galatea (n307425339)
-  - Giovanni XXIII (n601502088)
-  - Giuffrida (n299170087)
-  - Italia (n307425268)
-  - Milo (n4840555502)
-  - Nesima (n5191380041)
-  - Porto (n7758321985)
-  - San Nullo (n2841490395)
-  - Stesicoro (n601502076)
+transfers: 
 
 routes: 
   - 
+    colour: '#ff0000'
+    name: Nesima-Stesicoro
     type: subway
+    station_count: 10
     itineraries: 
       r7269755: 
         - Porto (n7758321985)
@@ -35,17 +28,6 @@ routes:
         - Galatea (n307425339)
         - Porto (n7758321985)
 
-      r6878037: 
-        - Nesima (n5191380041)
-        - San Nullo (n2841490395)
-        - Milo (n4840555502)
-        - Borgo (n307423725)
-        - Giuffrida (n299170087)
-        - Italia (n307425268)
-        - Galatea (n307425339)
-        - Giovanni XXIII (n601502088)
-        - Stesicoro (n601502076)
-
       r6878036: 
         - Stesicoro (n601502076)
         - Giovanni XXIII (n601502088)
@@ -57,23 +39,41 @@ routes:
         - San Nullo (n2841490395)
         - Nesima (n5191380041)
 
+      r6878037: 
+        - Nesima (n5191380041)
+        - San Nullo (n2841490395)
+        - Milo (n4840555502)
+        - Borgo (n307423725)
+        - Giuffrida (n299170087)
+        - Italia (n307425268)
+        - Galatea (n307425339)
+        - Giovanni XXIII (n601502088)
+        - Stesicoro (n601502076)
 
-    colour: '#ff0000'
+
     stations: 
-      - Porto
-      - Galatea
-      - Italia
-      - Giuffrida
-      - Borgo
-      - Milo
-      - San Nullo
       - Nesima
+      - San Nullo
+      - Milo
+      - Borgo
+      - Giuffrida
+      - Italia
+      - Galatea
       - Giovanni XXIII
       - Stesicoro
+      - Porto
 
-    station_count: 10
-    name: Porto-Nesima
     ref: 1
 
-transfers: 
+stations: 
+  - Borgo (n307423725)
+  - Galatea (n307425339)
+  - Giovanni XXIII (n601502088)
+  - Giuffrida (n299170087)
+  - Italia (n307425268)
+  - Milo (n4840555502)
+  - Nesima (n5191380041)
+  - Porto (n7758321985)
+  - San Nullo (n2841490395)
+  - Stesicoro (n601502076)
 

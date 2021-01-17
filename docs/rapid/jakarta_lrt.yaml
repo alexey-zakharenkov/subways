@@ -1,15 +1,12 @@
 
-stations: 
-  - Boulevard Selatan (n5984702927)
-  - Boulevard Utara (n5984702926)
-  - Depo Pegangsaan Dua (n5984702931)
-  - Equestrian (n5984702929)
-  - Pulomas (n5984702928)
-  - Velodrome (n5984702930)
+transfers: 
 
 routes: 
   - 
+    colour: '#add8e6'
+    name: LRT Jakarta
     type: light_rail
+    station_count: 6
     itineraries: 
       r10693119: 
         - Depo Pegangsaan Dua (n5984702931)
@@ -28,7 +25,6 @@ routes:
         - Depo Pegangsaan Dua (n5984702931)
 
 
-    colour: '#add8e6'
     stations: 
       - Velodrome
       - Equestrian
@@ -37,9 +33,13 @@ routes:
       - Boulevard Selatan
       - Depo Pegangsaan Dua
 
-    station_count: 6
-    name: LRT Jakarta
     ref: LRT
 
-transfers: 
+stations: 
+  - Boulevard Selatan (n5984702927)
+  - Boulevard Utara (n5984702926)
+  - Depo Pegangsaan Dua (n5984702931)
+  - Equestrian (n5984702929)
+  - Pulomas (n5984702928)
+  - Velodrome (n5984702930)
 

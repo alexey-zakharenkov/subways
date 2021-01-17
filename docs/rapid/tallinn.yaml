@@ -1,48 +1,12 @@
 
-stations: 
-  - Aegviidu (n323110380)
-  - Aruküla (n344390052)
-  - Hiiu (n27471086)
-  - Jaanika (n1133646710)
-  - Järve (n6573243441)
-  - Kehra (n344390060)
-  - Keila (n30153569)
-  - Kibuna (n1133646698)
-  - Kitseküla (n629284302)
-  - Kivimäe (n29163110)
-  - Klooga (n790225001)
-  - Kloogaranna (n30153594)
-  - Kulli (n344390054)
-  - Kulna (n30153673)
-  - Laagri (n29163173)
-  - Lagedi (n27509230)
-  - Lahinguvälja (n29331126)
-  - Laitse (n850008507)
-  - Laoküla (n660788046)
-  - Lilleküla (n27499361)
-  - Mustjõe (n344390056)
-  - Niitvälja (n30153584)
-  - Nõmme (n27471088)
-  - Padula (n324566863)
-  - Paldiski (n30402685)
-  - Parila (n344390045)
-  - Pääsküla (n29163112)
-  - Põllküla (n57577653)
-  - Raasiku (n344390051)
-  - Rahumäe (n6572486459)
-  - Riisipere (n30153696)
-  - Saue (n29163264)
-  - Tallinn (n650927310)
-  - Tondi (n27499369)
-  - Urda (n6573243428)
-  - Valingu (n27145891)
-  - Vasalemma (n1133646721)
-  - Vesse (n645758693)
-  - Ülemiste (n27508651)
+transfers: 
 
 routes: 
   - 
+    colour: '#ef8016'
+    name: Elron Tallinn <--> Aegviidu
     type: light_rail
+    station_count: 13
     itineraries: 
       r9725783: 
         - Aegviidu (n323110380)
@@ -75,7 +39,6 @@ routes:
         - Aegviidu (n323110380)
 
 
-    colour: '#ef8016'
     stations: 
       - Aegviidu
       - Mustjõe
@@ -91,30 +54,13 @@ routes:
       - Kitseküla
       - Tallinn
 
-    station_count: 13
-    name: Elron Tallinn <--> Aegviidu
     ref: Elron Tallinn <--> Aegviidu
   - 
+    colour: '#ef8016'
+    name: Elron Tallinn <--> Kloogaranna
     type: light_rail
+    station_count: 16
     itineraries: 
-      r1405558: 
-        - Tallinn (n650927310)
-        - Lilleküla (n27499361)
-        - Järve (n6573243441)
-        - Rahumäe (n6572486459)
-        - Nõmme (n27471088)
-        - Hiiu (n27471086)
-        - Kivimäe (n29163110)
-        - Pääsküla (n29163112)
-        - Laagri (n29163173)
-        - Urda (n6573243428)
-        - Padula (n324566863)
-        - Saue (n29163264)
-        - Keila (n30153569)
-        - Niitvälja (n30153584)
-        - Klooga (n790225001)
-        - Kloogaranna (n30153594)
-
       r9726760: 
         - Kloogaranna (n30153594)
         - Klooga (n790225001)
@@ -133,8 +79,25 @@ routes:
         - Lilleküla (n27499361)
         - Tallinn (n650927310)
 
+      r1405558: 
+        - Tallinn (n650927310)
+        - Lilleküla (n27499361)
+        - Järve (n6573243441)
+        - Rahumäe (n6572486459)
+        - Nõmme (n27471088)
+        - Hiiu (n27471086)
+        - Kivimäe (n29163110)
+        - Pääsküla (n29163112)
+        - Laagri (n29163173)
+        - Urda (n6573243428)
+        - Padula (n324566863)
+        - Saue (n29163264)
+        - Keila (n30153569)
+        - Niitvälja (n30153584)
+        - Klooga (n790225001)
+        - Kloogaranna (n30153594)
 
-    colour: '#ef8016'
+
     stations: 
       - Tallinn
       - Lilleküla
@@ -153,11 +116,12 @@ routes:
       - Klooga
       - Kloogaranna
 
-    station_count: 16
-    name: Elron Tallinn <--> Kloogaranna
     ref: Elron Tallinn <--> Kloogaranna
   - 
+    colour: '#ef8016'
+    name: Elron Tallinn <--> Paldiski
     type: light_rail
+    station_count: 19
     itineraries: 
       r1405182: 
         - Tallinn (n650927310)
@@ -202,7 +166,6 @@ routes:
         - Tallinn (n650927310)
 
 
-    colour: '#ef8016'
     stations: 
       - Paldiski
       - Laoküla
@@ -224,11 +187,12 @@ routes:
       - Lilleküla
       - Tallinn
 
-    station_count: 19
-    name: Elron Tallinn <--> Paldiski
     ref: Elron Tallinn <--> Paldiski
   - 
+    colour: '#ef8016'
+    name: Elron Tallinn <--> Riisipere
     type: light_rail
+    station_count: 21
     itineraries: 
       r9725779: 
         - Tallinn (n650927310)
@@ -277,7 +241,6 @@ routes:
         - Tallinn (n650927310)
 
 
-    colour: '#ef8016'
     stations: 
       - Tallinn
       - Lilleküla
@@ -301,9 +264,46 @@ routes:
       - Jaanika
       - Riisipere
 
-    station_count: 21
-    name: Elron Tallinn <--> Riisipere
     ref: Elron Tallinn <--> Riisipere
 
-transfers: 
+stations: 
+  - Aegviidu (n323110380)
+  - Aruküla (n344390052)
+  - Hiiu (n27471086)
+  - Jaanika (n1133646710)
+  - Järve (n6573243441)
+  - Kehra (n344390060)
+  - Keila (n30153569)
+  - Kibuna (n1133646698)
+  - Kitseküla (n629284302)
+  - Kivimäe (n29163110)
+  - Klooga (n790225001)
+  - Kloogaranna (n30153594)
+  - Kulli (n344390054)
+  - Kulna (n30153673)
+  - Laagri (n29163173)
+  - Lagedi (n27509230)
+  - Lahinguvälja (n29331126)
+  - Laitse (n850008507)
+  - Laoküla (n660788046)
+  - Lilleküla (n27499361)
+  - Mustjõe (n344390056)
+  - Niitvälja (n30153584)
+  - Nõmme (n27471088)
+  - Padula (n324566863)
+  - Paldiski (n30402685)
+  - Parila (n344390045)
+  - Pääsküla (n29163112)
+  - Põllküla (n57577653)
+  - Raasiku (n344390051)
+  - Rahumäe (n6572486459)
+  - Riisipere (n30153696)
+  - Saue (n29163264)
+  - Tallinn (n650927310)
+  - Tondi (n27499369)
+  - Urda (n6573243428)
+  - Valingu (n27145891)
+  - Vasalemma (n1133646721)
+  - Vesse (n645758693)
+  - Ülemiste (n27508651)
 
