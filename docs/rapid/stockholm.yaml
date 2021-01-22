@@ -1,18 +1,27 @@
 
-transfers: 
-  - 
-    - Fridhemsplan — Blue (r7647309)
-    - Fridhemsplan — Green (r7682661)
-  - 
-    - T-Centralen — Blå linjen (r7680771)
-    - T-Centralen — Gröna och Röda linjerna (r7647285)
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: 10
     name: 10
-    type: subway
+    colour: '#0000ff'
     station_count: 14
+    type: subway
+    stations: 
+      - Hjulsta
+      - Tensta
+      - Rinkeby
+      - Rissne
+      - Duvbo
+      - Sundbybergs centrum
+      - Solna strand
+      - Huvudsta
+      - Västra skogen
+      - Stadshagen
+      - Fridhemsplan — Blue
+      - Rådhuset
+      - T-Centralen — Blå linjen
+      - Kungsträdgården
+
     itineraries: 
       r6286469: 
         - Hjulsta (n4225502331)
@@ -47,58 +56,12 @@ routes:
         - Hjulsta (n4225502331)
 
 
-    stations: 
-      - Hjulsta
-      - Tensta
-      - Rinkeby
-      - Rissne
-      - Duvbo
-      - Sundbybergs centrum
-      - Solna strand
-      - Huvudsta
-      - Västra skogen
-      - Stadshagen
-      - Fridhemsplan — Blue
-      - Rådhuset
-      - T-Centralen — Blå linjen
-      - Kungsträdgården
-
-    ref: 10
   - 
-    colour: '#0000ff'
+    ref: 11
     name: 11
-    type: subway
+    colour: '#0000ff'
     station_count: 12
-    itineraries: 
-      r6286472: 
-        - Kungsträdgården (n4225502342)
-        - T-Centralen (n4225502381)
-        - Rådhuset (n4225502362)
-        - Fridhemsplan (n4225502321)
-        - Stadshagen (n4225502376)
-        - Västra skogen (n4225502889)
-        - Solna centrum (n4225502373)
-        - Näckrosen (n4225502354)
-        - Hallonbergen (n4225502328)
-        - Kista (n4225502343)
-        - Husby (n4225502333)
-        - Akalla (n4225502305)
-
-      r6286471: 
-        - Akalla (n4225502305)
-        - Husby (n4225502333)
-        - Kista (n4225502343)
-        - Hallonbergen (n4225502328)
-        - Näckrosen (n4225502354)
-        - Solna centrum (n4225502373)
-        - Västra skogen (n4225502889)
-        - Stadshagen (n4225502376)
-        - Fridhemsplan (n4225502321)
-        - Rådhuset (n4225502362)
-        - T-Centralen (n4225502381)
-        - Kungsträdgården (n4225502342)
-
-
+    type: subway
     stations: 
       - Akalla
       - Husby
@@ -113,12 +76,69 @@ routes:
       - T-Centralen — Blå linjen
       - Kungsträdgården
 
-    ref: 11
+    itineraries: 
+      r6286471: 
+        - Akalla (n4225502305)
+        - Husby (n4225502333)
+        - Kista (n4225502343)
+        - Hallonbergen (n4225502328)
+        - Näckrosen (n4225502354)
+        - Solna centrum (n4225502373)
+        - Västra skogen (n4225502889)
+        - Stadshagen (n4225502376)
+        - Fridhemsplan (n4225502321)
+        - Rådhuset (n4225502362)
+        - T-Centralen (n4225502381)
+        - Kungsträdgården (n4225502342)
+
+      r6286472: 
+        - Kungsträdgården (n4225502342)
+        - T-Centralen (n4225502381)
+        - Rådhuset (n4225502362)
+        - Fridhemsplan (n4225502321)
+        - Stadshagen (n4225502376)
+        - Västra skogen (n4225502889)
+        - Solna centrum (n4225502373)
+        - Näckrosen (n4225502354)
+        - Hallonbergen (n4225502328)
+        - Kista (n4225502343)
+        - Husby (n4225502333)
+        - Akalla (n4225502305)
+
+
   - 
-    colour: '#ff0000'
+    ref: 13
     name: 13
-    type: subway
+    colour: '#ff0000'
     station_count: 25
+    type: subway
+    stations: 
+      - Norsborg
+      - Hallunda
+      - Alby
+      - Fittja
+      - Masmo
+      - Vårby gård
+      - Vårberg
+      - Skärholmen
+      - Sätra
+      - Bredäng
+      - Mälarhöjden
+      - Axelsberg
+      - Örnsberg
+      - Aspudden
+      - Liljeholmen
+      - Hornstull
+      - Zinkensdamm
+      - Mariatorget
+      - Slussen
+      - Gamla stan
+      - T-Centralen — Gröna och Röda linjerna
+      - Östermalmstorg
+      - Karlaplan
+      - Gärdet
+      - Ropsten
+
     itineraries: 
       r6286474: 
         - Ropsten (n4225502360)
@@ -175,61 +195,34 @@ routes:
         - Ropsten (n4225502360)
 
 
-    stations: 
-      - Norsborg
-      - Hallunda
-      - Alby
-      - Fittja
-      - Masmo
-      - Vårby gård
-      - Vårberg
-      - Skärholmen
-      - Sätra
-      - Bredäng
-      - Mälarhöjden
-      - Axelsberg
-      - Örnsberg
-      - Aspudden
-      - Liljeholmen
-      - Hornstull
-      - Zinkensdamm
-      - Mariatorget
-      - Slussen
-      - Gamla stan
-      - T-Centralen — Gröna och Röda linjerna
-      - Östermalmstorg
-      - Karlaplan
-      - Gärdet
-      - Ropsten
-
-    ref: 13
   - 
-    colour: '#ff0000'
+    ref: 14
     name: 14
-    type: subway
+    colour: '#ff0000'
     station_count: 19
-    itineraries: 
-      r6286475: 
-        - Fruängen (n4225502322)
-        - Västertorp (n4225502388)
-        - Hägerstensåsen (n1332810633)
-        - Telefonplan (n4225502383)
-        - Midsommarkransen (n4225502350)
-        - Liljeholmen (n4225502346)
-        - Hornstull (n4225502332)
-        - Zinkensdamm (n4225502891)
-        - Mariatorget (n4225502347)
-        - Slussen (n4225502371)
-        - Gamla stan (n4225502323)
-        - T-Centralen (n4225502381)
-        - Östermalmstorg (n4225503127)
-        - Stadion (n4225502375)
-        - Tekniska högskolan (n60746176)
-        - Universitetet (n4225502386)
-        - Bergshamra (n4225502312)
-        - Danderyds sjukhus (n4225502316)
-        - Mörby centrum (n4225502352)
+    type: subway
+    stations: 
+      - Mörby centrum
+      - Danderyds sjukhus
+      - Bergshamra
+      - Universitetet
+      - Tekniska högskolan
+      - Stadion
+      - Östermalmstorg
+      - T-Centralen — Gröna och Röda linjerna
+      - Gamla stan
+      - Slussen
+      - Mariatorget
+      - Zinkensdamm
+      - Hornstull
+      - Liljeholmen
+      - Midsommarkransen
+      - Telefonplan
+      - Hägerstensåsen
+      - Västertorp
+      - Fruängen
 
+    itineraries: 
       r6286476: 
         - Mörby centrum (n4225502352)
         - Danderyds sjukhus (n4225502316)
@@ -251,61 +244,61 @@ routes:
         - Västertorp (n4225502388)
         - Fruängen (n4225502322)
 
-
-    stations: 
-      - Fruängen
-      - Västertorp
-      - Hägerstensåsen
-      - Telefonplan
-      - Midsommarkransen
-      - Liljeholmen
-      - Hornstull
-      - Zinkensdamm
-      - Mariatorget
-      - Slussen
-      - Gamla stan
-      - T-Centralen — Gröna och Röda linjerna
-      - Östermalmstorg
-      - Stadion
-      - Tekniska högskolan
-      - Universitetet
-      - Bergshamra
-      - Danderyds sjukhus
-      - Mörby centrum
-
-    ref: 14
-  - 
-    colour: '#008000'
-    name: 17
-    type: subway
-    station_count: 24
-    itineraries: 
-      r6286477: 
-        - Skarpnäck (n4225502368)
-        - Bagarmossen (n4225502310)
-        - Kärrtorp (n4225502345)
-        - Björkhagen (n146868479)
-        - Hammarbyhöjden (n4225502330)
-        - Skärmarbrink (n4225502370)
-        - Gullmarsplan (n4225502326)
-        - Skanstull (n4225502367)
-        - Medborgarplatsen (n4225502349)
+      r6286475: 
+        - Fruängen (n4225502322)
+        - Västertorp (n4225502388)
+        - Hägerstensåsen (n1332810633)
+        - Telefonplan (n4225502383)
+        - Midsommarkransen (n4225502350)
+        - Liljeholmen (n4225502346)
+        - Hornstull (n4225502332)
+        - Zinkensdamm (n4225502891)
+        - Mariatorget (n4225502347)
         - Slussen (n4225502371)
         - Gamla stan (n4225502323)
         - T-Centralen (n4225502381)
-        - Hötorget (n4225502338)
-        - Rådmansgatan (n4225502363)
-        - Odenplan (n4225502357)
-        - Sankt Eriksplan (n4225502366)
-        - Fridhemsplan (n4225502321)
-        - Thorildsplan (n4225502385)
-        - Kristineberg (n4225502344)
-        - Alvik (n4225502307)
-        - Stora mossen (n4225502377)
-        - Abrahamsberg (n4225502304)
-        - Brommaplan (n4225502315)
-        - Åkeshov (n4225503125)
+        - Östermalmstorg (n4225503127)
+        - Stadion (n4225502375)
+        - Tekniska högskolan (n60746176)
+        - Universitetet (n4225502386)
+        - Bergshamra (n4225502312)
+        - Danderyds sjukhus (n4225502316)
+        - Mörby centrum (n4225502352)
 
+
+  - 
+    ref: 17
+    name: 17
+    colour: '#008000'
+    station_count: 24
+    type: subway
+    stations: 
+      - Skarpnäck
+      - Bagarmossen
+      - Kärrtorp
+      - Björkhagen
+      - Hammarbyhöjden
+      - Skärmarbrink
+      - Gullmarsplan
+      - Skanstull
+      - Medborgarplatsen
+      - Slussen
+      - Gamla stan
+      - T-Centralen — Gröna och Röda linjerna
+      - Hötorget
+      - Rådmansgatan
+      - Odenplan
+      - Sankt Eriksplan
+      - Fridhemsplan — Green
+      - Thorildsplan
+      - Kristineberg
+      - Alvik
+      - Stora mossen
+      - Abrahamsberg
+      - Brommaplan
+      - Åkeshov
+
+    itineraries: 
       r6286478: 
         - Åkeshov (n4225503125)
         - Brommaplan (n4225502315)
@@ -332,12 +325,40 @@ routes:
         - Bagarmossen (n4225502310)
         - Skarpnäck (n4225502368)
 
+      r6286477: 
+        - Skarpnäck (n4225502368)
+        - Bagarmossen (n4225502310)
+        - Kärrtorp (n4225502345)
+        - Björkhagen (n146868479)
+        - Hammarbyhöjden (n4225502330)
+        - Skärmarbrink (n4225502370)
+        - Gullmarsplan (n4225502326)
+        - Skanstull (n4225502367)
+        - Medborgarplatsen (n4225502349)
+        - Slussen (n4225502371)
+        - Gamla stan (n4225502323)
+        - T-Centralen (n4225502381)
+        - Hötorget (n4225502338)
+        - Rådmansgatan (n4225502363)
+        - Odenplan (n4225502357)
+        - Sankt Eriksplan (n4225502366)
+        - Fridhemsplan (n4225502321)
+        - Thorildsplan (n4225502385)
+        - Kristineberg (n4225502344)
+        - Alvik (n4225502307)
+        - Stora mossen (n4225502377)
+        - Abrahamsberg (n4225502304)
+        - Brommaplan (n4225502315)
+        - Åkeshov (n4225503125)
 
+
+  - 
+    ref: 18
+    name: 18
+    colour: '#008000'
+    station_count: 23
+    type: subway
     stations: 
-      - Åkeshov
-      - Brommaplan
-      - Abrahamsberg
-      - Stora mossen
       - Alvik
       - Kristineberg
       - Thorildsplan
@@ -353,18 +374,15 @@ routes:
       - Skanstull
       - Gullmarsplan
       - Skärmarbrink
-      - Hammarbyhöjden
-      - Björkhagen
-      - Kärrtorp
-      - Bagarmossen
-      - Skarpnäck
+      - Blåsut
+      - Sandsborg
+      - Skogskyrkogården
+      - Tallkrogen
+      - Gubbängen
+      - Hökarängen
+      - Farsta
+      - Farsta strand
 
-    ref: 17
-  - 
-    colour: '#008000'
-    name: 18
-    type: subway
-    station_count: 23
     itineraries: 
       r6286479: 
         - Alvik (n4225502307)
@@ -416,75 +434,50 @@ routes:
         - Alvik (n4225502307)
 
 
-    stations: 
-      - Alvik
-      - Kristineberg
-      - Thorildsplan
-      - Fridhemsplan — Green
-      - Sankt Eriksplan
-      - Odenplan
-      - Rådmansgatan
-      - Hötorget
-      - T-Centralen — Gröna och Röda linjerna
-      - Gamla stan
-      - Slussen
-      - Medborgarplatsen
-      - Skanstull
-      - Gullmarsplan
-      - Skärmarbrink
-      - Blåsut
-      - Sandsborg
-      - Skogskyrkogården
-      - Tallkrogen
-      - Gubbängen
-      - Hökarängen
-      - Farsta
-      - Farsta strand
-
-    ref: 18
   - 
-    colour: '#008000'
+    ref: 19
     name: 19
-    type: subway
+    colour: '#008000'
     station_count: 35
-    itineraries: 
-      r6286481: 
-        - Hagsätra (n60884889)
-        - Rågsved (n4225502364)
-        - Högdalen (n2069718820)
-        - Bandhagen (n4225502311)
-        - Stureby (n4225502378)
-        - Svedmyra (n4225502380)
-        - Sockenplan (n4225502372)
-        - Enskede gård (n4225502318)
-        - Globen (n4225502324)
-        - Gullmarsplan (n4225502326)
-        - Skanstull (n4225502367)
-        - Medborgarplatsen (n4225502349)
-        - Slussen (n4225502371)
-        - Gamla stan (n4225502323)
-        - T-Centralen (n4225502381)
-        - Hötorget (n4225502338)
-        - Rådmansgatan (n4225502363)
-        - Odenplan (n4225502357)
-        - Sankt Eriksplan (n4225502366)
-        - Fridhemsplan (n4225502321)
-        - Thorildsplan (n4225502385)
-        - Kristineberg (n4225502344)
-        - Alvik (n4225502307)
-        - Stora mossen (n4225502377)
-        - Abrahamsberg (n4225502304)
-        - Brommaplan (n4225502315)
-        - Åkeshov (n4225503125)
-        - Ängbyplan (n4225503124)
-        - Islandstorget (n4225502339)
-        - Blackeberg (n4225502313)
-        - Råcksta (n4225502361)
-        - Vällingby (n4225502387)
-        - Johannelund (n4225502340)
-        - Hässelby gård (n4225502335)
-        - Hässelby strand (n4225502336)
+    type: subway
+    stations: 
+      - Hagsätra
+      - Rågsved
+      - Högdalen
+      - Bandhagen
+      - Stureby
+      - Svedmyra
+      - Sockenplan
+      - Enskede gård
+      - Globen
+      - Gullmarsplan
+      - Skanstull
+      - Medborgarplatsen
+      - Slussen
+      - Gamla stan
+      - T-Centralen — Gröna och Röda linjerna
+      - Hötorget
+      - Rådmansgatan
+      - Odenplan
+      - Sankt Eriksplan
+      - Fridhemsplan — Green
+      - Thorildsplan
+      - Kristineberg
+      - Alvik
+      - Stora mossen
+      - Abrahamsberg
+      - Brommaplan
+      - Åkeshov
+      - Ängbyplan
+      - Islandstorget
+      - Blackeberg
+      - Råcksta
+      - Vällingby
+      - Johannelund
+      - Hässelby gård
+      - Hässelby strand
 
+    itineraries: 
       r6286482: 
         - Hässelby strand (n4225502336)
         - Hässelby gård (n4225502335)
@@ -522,45 +515,44 @@ routes:
         - Rågsved (n4225502364)
         - Hagsätra (n60884889)
 
+      r6286481: 
+        - Hagsätra (n60884889)
+        - Rågsved (n4225502364)
+        - Högdalen (n2069718820)
+        - Bandhagen (n4225502311)
+        - Stureby (n4225502378)
+        - Svedmyra (n4225502380)
+        - Sockenplan (n4225502372)
+        - Enskede gård (n4225502318)
+        - Globen (n4225502324)
+        - Gullmarsplan (n4225502326)
+        - Skanstull (n4225502367)
+        - Medborgarplatsen (n4225502349)
+        - Slussen (n4225502371)
+        - Gamla stan (n4225502323)
+        - T-Centralen (n4225502381)
+        - Hötorget (n4225502338)
+        - Rådmansgatan (n4225502363)
+        - Odenplan (n4225502357)
+        - Sankt Eriksplan (n4225502366)
+        - Fridhemsplan (n4225502321)
+        - Thorildsplan (n4225502385)
+        - Kristineberg (n4225502344)
+        - Alvik (n4225502307)
+        - Stora mossen (n4225502377)
+        - Abrahamsberg (n4225502304)
+        - Brommaplan (n4225502315)
+        - Åkeshov (n4225503125)
+        - Ängbyplan (n4225503124)
+        - Islandstorget (n4225502339)
+        - Blackeberg (n4225502313)
+        - Råcksta (n4225502361)
+        - Vällingby (n4225502387)
+        - Johannelund (n4225502340)
+        - Hässelby gård (n4225502335)
+        - Hässelby strand (n4225502336)
 
-    stations: 
-      - Hässelby strand
-      - Hässelby gård
-      - Johannelund
-      - Vällingby
-      - Råcksta
-      - Blackeberg
-      - Islandstorget
-      - Ängbyplan
-      - Åkeshov
-      - Brommaplan
-      - Abrahamsberg
-      - Stora mossen
-      - Alvik
-      - Kristineberg
-      - Thorildsplan
-      - Fridhemsplan — Green
-      - Sankt Eriksplan
-      - Odenplan
-      - Rådmansgatan
-      - Hötorget
-      - T-Centralen — Gröna och Röda linjerna
-      - Gamla stan
-      - Slussen
-      - Medborgarplatsen
-      - Skanstull
-      - Gullmarsplan
-      - Globen
-      - Enskede gård
-      - Sockenplan
-      - Svedmyra
-      - Stureby
-      - Bandhagen
-      - Högdalen
-      - Rågsved
-      - Hagsätra
 
-    ref: 19
 
 stations: 
   - Abrahamsberg (n4225502304)
@@ -663,4 +655,12 @@ stations:
   - Åkeshov (n4225503125)
   - Örnsberg (n4225503126)
   - Östermalmstorg (n4225503127)
+
+transfers: 
+  - 
+    - Fridhemsplan — Blue (r7647309)
+    - Fridhemsplan — Green (r7682661)
+  - 
+    - T-Centralen — Blå linjen (r7680771)
+    - T-Centralen — Gröna och Röda linjerna (r7647285)
 

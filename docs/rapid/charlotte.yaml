@@ -1,12 +1,39 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: Blue
     name: LYNX Blue Line
-    type: light_rail
+    colour: '#0000ff'
     station_count: 26
+    type: light_rail
+    stations: 
+      - UNC Charlotte Main
+      - JW Clay Boulevard /UNC Charlotte
+      - McCullough
+      - University City Boulevard
+      - Tom Hunter
+      - Old Concord Road
+      - Sugar Creek
+      - 36th Street
+      - 25th Street
+      - Parkwood
+      - 9th Street
+      - 7th Street
+      - CTC/Arena
+      - 3rd St/Conv. Center
+      - Stonewall
+      - Carson
+      - Bland Street
+      - East/West
+      - New Bern
+      - Scaleybark
+      - Woodlawn
+      - Tyvola
+      - Archdale Station
+      - Arrowood
+      - Sharon Road West
+      - I-485/South Boulevard (light rail)
+
     itineraries: 
       r10012482: 
         - UNC Charlotte Main (n5189367104)
@@ -65,35 +92,6 @@ routes:
         - UNC Charlotte Main (n5189367104)
 
 
-    stations: 
-      - UNC Charlotte Main
-      - JW Clay Boulevard /UNC Charlotte
-      - McCullough
-      - University City Boulevard
-      - Tom Hunter
-      - Old Concord Road
-      - Sugar Creek
-      - 36th Street
-      - 25th Street
-      - Parkwood
-      - 9th Street
-      - 7th Street
-      - CTC/Arena
-      - 3rd St/Conv. Center
-      - Stonewall
-      - Carson
-      - Bland Street
-      - East/West
-      - New Bern
-      - Scaleybark
-      - Woodlawn
-      - Tyvola
-      - Archdale Station
-      - Arrowood
-      - Sharon Road West
-      - I-485/South Boulevard (light rail)
-
-    ref: Blue
 
 stations: 
   - 25th Street (n4553286981)
@@ -122,4 +120,6 @@ stations:
   - UNC Charlotte Main (n5189367104)
   - University City Boulevard (n5189367239)
   - Woodlawn (n618124179)
+
+transfers: 
 

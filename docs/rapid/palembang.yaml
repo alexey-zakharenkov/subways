@@ -1,12 +1,27 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: 1
     name: LRT Palembang
-    type: light_rail
+    colour: '#0000ff'
     station_count: 14
+    type: light_rail
+    stations: 
+      - Bandara
+      - Asrama Haji
+      - Punti Kayu
+      - RSUD
+      - Garuda Dempo
+      - Demang
+      - Bumi Sriwijaya
+      - Dishub
+      - Cinde
+      - Ampera
+      - Polresta
+      - Jakabaring
+      - DJKA
+      - Depo
+
     itineraries: 
       r9732463: 
         - Bandara (n5984721327)
@@ -41,23 +56,6 @@ routes:
         - Bandara (n5984721327)
 
 
-    stations: 
-      - Bandara
-      - Asrama Haji
-      - Punti Kayu
-      - RSUD
-      - Garuda Dempo
-      - Demang
-      - Bumi Sriwijaya
-      - Dishub
-      - Cinde
-      - Ampera
-      - Polresta
-      - Jakabaring
-      - DJKA
-      - Depo
-
-    ref: 1
 
 stations: 
   - Ampera (n5984721318)
@@ -74,4 +72,6 @@ stations:
   - Polresta (n5984721317)
   - Punti Kayu (n5984721325)
   - RSUD (n5984721324)
+
+transfers: 
 

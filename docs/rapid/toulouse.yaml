@@ -1,15 +1,31 @@
 
-transfers: 
-  - 
-    - Jean Jaurès A (r7683769)
-    - Jean Jaurès B (r7683764)
-
 routes: 
   - 
-    colour: '#db001b'
+    ref: A
     name: 'Métro A: Basso Cambo/Balma Gramont'
-    type: subway
+    colour: '#db001b'
     station_count: 18
+    type: subway
+    stations: 
+      - Balma-Gramont
+      - Argoulets
+      - Roseraie
+      - Jolimont
+      - Marengo-SNCF
+      - Jean Jaurès A
+      - Capitole
+      - Esquirol
+      - 'Saint-Cyprien - République'
+      - Patte d'Oie
+      - Arènes
+      - Fontaine Lestang
+      - Mermoz
+      - Bagatelle
+      - Mirail-Université
+      - Reynerie
+      - Bellefontaine
+      - Basso Cambo
+
     itineraries: 
       r1557126: 
         - Basso Cambo (n7681108802)
@@ -52,32 +68,34 @@ routes:
         - Basso Cambo (n7681108802)
 
 
-    stations: 
-      - Basso Cambo
-      - Bellefontaine
-      - Reynerie
-      - Mirail-Université
-      - Bagatelle
-      - Mermoz
-      - Fontaine Lestang
-      - Arènes
-      - Patte d'Oie
-      - 'Saint-Cyprien - République'
-      - Esquirol
-      - Capitole
-      - Jean Jaurès A
-      - Marengo-SNCF
-      - Jolimont
-      - Roseraie
-      - Argoulets
-      - Balma-Gramont
-
-    ref: A
   - 
-    colour: '#ffd900'
+    ref: B
     name: 'Métro B: Borderouge/Ramonville'
-    type: subway
+    colour: '#ffd900'
     station_count: 20
+    type: subway
+    stations: 
+      - Borderouge
+      - Trois Cocus
+      - La Vache
+      - Barrière de Paris
+      - 'Minimes - Claude Nougaro'
+      - Canal du Midi
+      - Compans-Caffarelli
+      - Jeanne d'Arc
+      - Jean Jaurès B
+      - François Verdier
+      - Carmes
+      - Palais de Justice
+      - 'Saint-Michel - Marcel Langer'
+      - Empalot
+      - Saint-Agne SNCF
+      - Saouzelong
+      - Rangueil
+      - Faculté de Pharmacie
+      - Université Paul Sabatier
+      - Ramonville
+
     itineraries: 
       r1557171: 
         - Ramonville (n231752329)
@@ -124,29 +142,6 @@ routes:
         - Ramonville (n231752329)
 
 
-    stations: 
-      - Borderouge
-      - Trois Cocus
-      - La Vache
-      - Barrière de Paris
-      - 'Minimes - Claude Nougaro'
-      - Canal du Midi
-      - Compans-Caffarelli
-      - Jeanne d'Arc
-      - Jean Jaurès B
-      - François Verdier
-      - Carmes
-      - Palais de Justice
-      - 'Saint-Michel - Marcel Langer'
-      - Empalot
-      - Saint-Agne SNCF
-      - Saouzelong
-      - Rangueil
-      - Faculté de Pharmacie
-      - Université Paul Sabatier
-      - Ramonville
-
-    ref: B
 
 stations: 
   - Argoulets (n333113201)
@@ -186,4 +181,9 @@ stations:
   - Saouzelong (n231747846)
   - Trois Cocus (n231716610)
   - Université Paul Sabatier (n231750682)
+
+transfers: 
+  - 
+    - Jean Jaurès A (r7683769)
+    - Jean Jaurès B (r7683764)
 

@@ -1,40 +1,44 @@
 
-transfers: 
-  - 
-    - Bukit Bintang (Monorail) (r8126789)
-    - Bukit Bintang (SBK) (r8000328)
-  - 
-    - Bukit Nanas (r8149131)
-    - Dang Wangi (r7989422)
-  - 
-    - Hang Tuah (LRT) (r8140357)
-    - Hang Tuah (Monorail) (r8140358)
-  - 
-    - KL Sentral (LRT) (r7989430)
-    - KL Sentral (Monorail) (r8126785)
-    - Muzium Negara (r8066127)
-  - 
-    - Maluri (LRT) (r8126791)
-    - Maluri (SBK) (r7990576)
-  - 
-    - Masjid Jamek (AG SP) (r8140356)
-    - Masjid Jamek (KJ) (r7989423)
-  - 
-    - Merdeka (r8066126)
-    - Plaza Rakyat (r7989412)
-  - 
-    - Pasar Seni (LRT) (r8126787)
-    - Pasar Seni (SBK) (r7989424)
-  - 
-    - Titiwangsa (LRT) (r7989472)
-    - Titiwangsa (Monorail) (r8140354)
-
 routes: 
   - 
-    colour: '#008000'
+    ref: 9
     name: Laluan Kajang
-    type: subway
+    colour: '#008000'
     station_count: 31
+    type: subway
+    stations: 
+      - Sungai Buloh (SBK)
+      - Kampung Selamat
+      - Kwasa Damansara
+      - Kwasa Sentral
+      - Kota Damansara
+      - Surian
+      - Mutiara Damansara
+      - Bandar Utama
+      - Taman Tun Dr Ismail
+      - Phileo Damansara
+      - Pusat Bandar Damansara
+      - Semantan
+      - Muzium Negara
+      - Pasar Seni (SBK)
+      - Merdeka
+      - Bukit Bintang (SBK)
+      - Tun Razak Exchange
+      - Cochrane
+      - Maluri (SBK)
+      - Taman Pertama
+      - Taman Midah
+      - Taman Mutiara
+      - Taman Connaught
+      - Taman Suntex
+      - Sri Raya
+      - Bandar Tun Hussein Onn
+      - Batu 11 Cheras
+      - Bukit Dukung
+      - Sungai Jernih
+      - Stadium Kajang
+      - Kajang (SBK)
+
     itineraries: 
       r5690837: 
         - SBK01 S01 Sungai Buloh (w457131104)
@@ -103,45 +107,32 @@ routes:
         - SBK01 S01 Sungai Buloh (w457131104)
 
 
-    stations: 
-      - Kajang (SBK)
-      - Stadium Kajang
-      - Sungai Jernih
-      - Bukit Dukung
-      - Batu 11 Cheras
-      - Bandar Tun Hussein Onn
-      - Sri Raya
-      - Taman Suntex
-      - Taman Connaught
-      - Taman Mutiara
-      - Taman Midah
-      - Taman Pertama
-      - Maluri (SBK)
-      - Cochrane
-      - Tun Razak Exchange
-      - Bukit Bintang (SBK)
-      - Merdeka
-      - Pasar Seni (SBK)
-      - Muzium Negara
-      - Semantan
-      - Pusat Bandar Damansara
-      - Phileo Damansara
-      - Taman Tun Dr Ismail
-      - Bandar Utama
-      - Mutiara Damansara
-      - Surian
-      - Kota Damansara
-      - Kwasa Sentral
-      - Kwasa Damansara
-      - Kampung Selamat
-      - Sungai Buloh (SBK)
-
-    ref: 9
   - 
-    colour: '#fe8e10'
+    ref: AG
     name: Ampang Line
-    type: light_rail
+    colour: '#fe8e10'
     station_count: 18
+    type: light_rail
+    stations: 
+      - Sentul Timur
+      - Sentul
+      - Titiwangsa (LRT)
+      - PWTC
+      - Sultan Ismail
+      - Bandaraya
+      - Masjid Jamek (AG SP)
+      - Plaza Rakyat
+      - Hang Tuah (LRT)
+      - Pudu
+      - Chan Sow Lin
+      - Miharja
+      - Maluri (LRT)
+      - Pandan Jaya
+      - Pandan Indah
+      - Cempaka
+      - Cahaya
+      - Ampang
+
     itineraries: 
       r4466552: 
         - AG1 SP1 Sentul Timur (w24375056)
@@ -184,32 +175,51 @@ routes:
         - AG1 SP1 Sentul Timur (w24375056)
 
 
-    stations: 
-      - Ampang
-      - Cahaya
-      - Cempaka
-      - Pandan Indah
-      - Pandan Jaya
-      - Maluri (LRT)
-      - Miharja
-      - Chan Sow Lin
-      - Pudu
-      - Hang Tuah (LRT)
-      - Plaza Rakyat
-      - Masjid Jamek (AG SP)
-      - Bandaraya
-      - Sultan Ismail
-      - PWTC
-      - Titiwangsa (LRT)
-      - Sentul
-      - Sentul Timur
-
-    ref: AG
   - 
-    colour: '#e0115f'
+    ref: KJ
     name: Kelana Jaya Line
-    type: light_rail
+    colour: '#e0115f'
     station_count: 37
+    type: light_rail
+    stations: 
+      - Putra Heights
+      - Subang Alam
+      - Alam Megah
+      - USJ21
+      - Wawasan
+      - Taipan
+      - USJ7区
+      - SS18
+      - SS15
+      - Subang Jaya (LRT)
+      - Glenmarie
+      - Ara Damansara
+      - Lembah Subang
+      - Kelana Jaya
+      - Taman Bahagia
+      - Taman Paramount
+      - Asia Jaya
+      - Taman Jaya
+      - Universiti
+      - Kerinchi
+      - Abdullah Hukum (RapidKL)
+      - Bangsar
+      - KL Sentral (LRT)
+      - Pasar Seni (LRT)
+      - Masjid Jamek (KJ)
+      - Dang Wangi
+      - Kampung Baru
+      - KLCC
+      - Ampang Park
+      - Damai
+      - Dato' Keramat
+      - Jelatek
+      - Setiawangsa
+      - Sri Rampai
+      - Wangsa Maju
+      - Taman Melati
+      - Gombak
+
     itineraries: 
       r1895592: 
         - KJ1 Gombak (w140908243)
@@ -290,79 +300,12 @@ routes:
         - KJ1 Gombak (w140908243)
 
 
-    stations: 
-      - Gombak
-      - Taman Melati
-      - Wangsa Maju
-      - Sri Rampai
-      - Setiawangsa
-      - Jelatek
-      - Dato' Keramat
-      - Damai
-      - Ampang Park
-      - KLCC
-      - Kampung Baru
-      - Dang Wangi
-      - Masjid Jamek (KJ)
-      - Pasar Seni (LRT)
-      - KL Sentral (LRT)
-      - Bangsar
-      - Abdullah Hukum (RapidKL)
-      - Kerinchi
-      - Universiti
-      - Taman Jaya
-      - Asia Jaya
-      - Taman Paramount
-      - Taman Bahagia
-      - Kelana Jaya
-      - Lembah Subang
-      - Ara Damansara
-      - Glenmarie
-      - Subang Jaya (LRT)
-      - SS15
-      - SS18
-      - USJ7区
-      - Taipan
-      - Wawasan
-      - USJ21
-      - Alam Megah
-      - Subang Alam
-      - Putra Heights
-
-    ref: KJ
   - 
-    colour: '#7dba00'
+    ref: MR
     name: KL Monorail
-    type: monorail
+    colour: '#7dba00'
     station_count: 11
-    itineraries: 
-      r2546881: 
-        - MR1 KL Sentral (Monorail) (w24375045)
-        - MR2 Tun Sambanthan (w24375055)
-        - MR3 Maharajalela (w24375060)
-        - Hang Tuah (w24375042)
-        - MR5 Imbi (w24375101)
-        - MR6 Bukit Bintang (w24375094)
-        - MR7 Raja Chulan (w24375097)
-        - MR8 Bukit Nanas (w24375079)
-        - MR9 Medan Tuanku (w24375104)
-        - MR10 Chow Kit (w24375086)
-        - MR11 Titiwangsa (w24375054)
-
-      r8149037: 
-        - MR11 Titiwangsa (w24375054)
-        - MR10 Chow Kit (w24375086)
-        - MR9 Medan Tuanku (w24375104)
-        - MR8 Bukit Nanas (w24375079)
-        - MR7 Raja Chulan (w24375097)
-        - MR6 Bukit Bintang (w24375094)
-        - MR5 Imbi (w24375101)
-        - Hang Tuah (w24375042)
-        - MR3 Maharajalela (w24375060)
-        - MR2 Tun Sambanthan (w24375055)
-        - MR1 KL Sentral (Monorail) (w24375045)
-
-
+    type: monorail
     stations: 
       - Titiwangsa (Monorail)
       - Chow Kit
@@ -376,44 +319,72 @@ routes:
       - Tun Sambanthan
       - KL Sentral (Monorail)
 
-    ref: MR
-  - 
-    colour: '#721422'
-    name: Sri Petaling Line
-    type: light_rail
-    station_count: 29
     itineraries: 
-      r3374384: 
-        - AG1 SP1 Sentul Timur (w24375056)
-        - AG2 SP2 Sentul (w251290716)
-        - AG3 SP3 Titiwangsa (w24375043)
-        - AG4 SP4 PWTC (w24375063)
-        - AG5 SP5 Sultan Ismail (w24375050)
-        - AG6 SP6 Bandaraya (w24375111)
-        - AG7 SP7 KJ13 Masjid Jamek (n6502502981)
-        - AG8 SP8 Plaza Rakyat (w24375051)
-        - AG9 SP9 Hang Tuah (n5499467421)
-        - AG10 SP10 Pudu (w24375035)
-        - Chan Sow Lin (w24375046)
-        - SP12 Cheras (w24375031)
-        - SP13 Salak Selatan (w24375081)
-        - SP14 Bandar Tun Razak (w24375044)
-        - SP15 Bandar Tasik Selatan (w24375110)
-        - SP16 Sungai Besi (w24375113)
-        - SP17 Bukit Jalil (w24375074)
-        - SP18 Sri Petaling (w24375057)
-        - SP19 Awan Besar (w379709713)
-        - SP20 Muhibbah (w379709614)
-        - SP21 Alam Sutera (w401185518)
-        - SP22 Kinrara BK 5 (w379709358)
-        - SP24 IOI Puchong Jaya (w407156818)
-        - SP25 Pusat Bandar Puchong (w407156819)
-        - SP26 Taman Perindustrian Puchong (w407156821)
-        - SP27 Bandar Puteri (w407156825)
-        - SP28 Puchong Perdana (w424882040)
-        - SP29 Puchong Prima (w407156827)
-        - SP31 KJ37 Putra Heights (w401169425)
+      r8149037: 
+        - MR11 Titiwangsa (w24375054)
+        - MR10 Chow Kit (w24375086)
+        - MR9 Medan Tuanku (w24375104)
+        - MR8 Bukit Nanas (w24375079)
+        - MR7 Raja Chulan (w24375097)
+        - MR6 Bukit Bintang (w24375094)
+        - MR5 Imbi (w24375101)
+        - Hang Tuah (w24375042)
+        - MR3 Maharajalela (w24375060)
+        - MR2 Tun Sambanthan (w24375055)
+        - MR1 KL Sentral (Monorail) (w24375045)
 
+      r2546881: 
+        - MR1 KL Sentral (Monorail) (w24375045)
+        - MR2 Tun Sambanthan (w24375055)
+        - MR3 Maharajalela (w24375060)
+        - Hang Tuah (w24375042)
+        - MR5 Imbi (w24375101)
+        - MR6 Bukit Bintang (w24375094)
+        - MR7 Raja Chulan (w24375097)
+        - MR8 Bukit Nanas (w24375079)
+        - MR9 Medan Tuanku (w24375104)
+        - MR10 Chow Kit (w24375086)
+        - MR11 Titiwangsa (w24375054)
+
+
+  - 
+    ref: SP
+    name: Sri Petaling Line
+    colour: '#721422'
+    station_count: 29
+    type: light_rail
+    stations: 
+      - Sentul Timur
+      - Sentul
+      - Titiwangsa (LRT)
+      - PWTC
+      - Sultan Ismail
+      - Bandaraya
+      - Masjid Jamek (AG SP)
+      - Plaza Rakyat
+      - Hang Tuah (LRT)
+      - Pudu
+      - Chan Sow Lin
+      - Cheras
+      - Salak Selatan
+      - Bandar Tun Razak
+      - Bandar Tasik Selatan (RapidKL)
+      - Sungai Besi
+      - Bukit Jalil
+      - Sri Petaling
+      - Awan Besar
+      - Muhibbah
+      - Alam Sutera
+      - Kinrara BK 5
+      - IOI Puchong Jaya
+      - Pusat Bandar Puchong
+      - Taman Perindustrian Puchong
+      - Bandar Puteri
+      - Puchong Perdana
+      - Puchong Prima
+      - Putra Heights
+
+    itineraries: 
       r8000387: 
         - SP31 KJ37 Putra Heights (w401169425)
         - SP29 Puchong Prima (w407156827)
@@ -445,39 +416,38 @@ routes:
         - AG2 SP2 Sentul (w251290716)
         - AG1 SP1 Sentul Timur (w24375056)
 
+      r3374384: 
+        - AG1 SP1 Sentul Timur (w24375056)
+        - AG2 SP2 Sentul (w251290716)
+        - AG3 SP3 Titiwangsa (w24375043)
+        - AG4 SP4 PWTC (w24375063)
+        - AG5 SP5 Sultan Ismail (w24375050)
+        - AG6 SP6 Bandaraya (w24375111)
+        - AG7 SP7 KJ13 Masjid Jamek (n6502502981)
+        - AG8 SP8 Plaza Rakyat (w24375051)
+        - AG9 SP9 Hang Tuah (n5499467421)
+        - AG10 SP10 Pudu (w24375035)
+        - Chan Sow Lin (w24375046)
+        - SP12 Cheras (w24375031)
+        - SP13 Salak Selatan (w24375081)
+        - SP14 Bandar Tun Razak (w24375044)
+        - SP15 Bandar Tasik Selatan (w24375110)
+        - SP16 Sungai Besi (w24375113)
+        - SP17 Bukit Jalil (w24375074)
+        - SP18 Sri Petaling (w24375057)
+        - SP19 Awan Besar (w379709713)
+        - SP20 Muhibbah (w379709614)
+        - SP21 Alam Sutera (w401185518)
+        - SP22 Kinrara BK 5 (w379709358)
+        - SP24 IOI Puchong Jaya (w407156818)
+        - SP25 Pusat Bandar Puchong (w407156819)
+        - SP26 Taman Perindustrian Puchong (w407156821)
+        - SP27 Bandar Puteri (w407156825)
+        - SP28 Puchong Perdana (w424882040)
+        - SP29 Puchong Prima (w407156827)
+        - SP31 KJ37 Putra Heights (w401169425)
 
-    stations: 
-      - Putra Heights
-      - Puchong Prima
-      - Puchong Perdana
-      - Bandar Puteri
-      - Taman Perindustrian Puchong
-      - Pusat Bandar Puchong
-      - IOI Puchong Jaya
-      - Kinrara BK 5
-      - Alam Sutera
-      - Muhibbah
-      - Awan Besar
-      - Sri Petaling
-      - Bukit Jalil
-      - Sungai Besi
-      - Bandar Tasik Selatan (RapidKL)
-      - Bandar Tun Razak
-      - Salak Selatan
-      - Cheras
-      - Chan Sow Lin
-      - Pudu
-      - Hang Tuah (LRT)
-      - Plaza Rakyat
-      - Masjid Jamek (AG SP)
-      - Bandaraya
-      - Sultan Ismail
-      - PWTC
-      - Titiwangsa (LRT)
-      - Sentul
-      - Sentul Timur
 
-    ref: SP
 
 stations: 
   - AG1 SP1 Sentul Timur (w24375056)
@@ -593,4 +563,34 @@ stations:
   - SP28 Puchong Perdana (w424882040)
   - SP29 Puchong Prima (w407156827)
   - SP31 KJ37 Putra Heights (w401169425)
+
+transfers: 
+  - 
+    - Bukit Bintang (Monorail) (r8126789)
+    - Bukit Bintang (SBK) (r8000328)
+  - 
+    - Bukit Nanas (r8149131)
+    - Dang Wangi (r7989422)
+  - 
+    - Hang Tuah (LRT) (r8140357)
+    - Hang Tuah (Monorail) (r8140358)
+  - 
+    - KL Sentral (LRT) (r7989430)
+    - KL Sentral (Monorail) (r8126785)
+    - Muzium Negara (r8066127)
+  - 
+    - Maluri (LRT) (r8126791)
+    - Maluri (SBK) (r7990576)
+  - 
+    - Masjid Jamek (AG SP) (r8140356)
+    - Masjid Jamek (KJ) (r7989423)
+  - 
+    - Merdeka (r8066126)
+    - Plaza Rakyat (r7989412)
+  - 
+    - Pasar Seni (LRT) (r8126787)
+    - Pasar Seni (SBK) (r7989424)
+  - 
+    - Titiwangsa (LRT) (r7989472)
+    - Titiwangsa (Monorail) (r8140354)
 

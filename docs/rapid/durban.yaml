@@ -1,46 +1,11 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f9cc3e'
+    ref: Crossmoor
     name: Crossmoor Line
-    type: train
+    colour: '#f9cc3e'
     station_count: 14
-    itineraries: 
-      r1994534: 
-        - Durban Train Station (n348954984)
-        - Berea Road (n7051410154)
-        - Dalbridge (n205288230)
-        - Congella (n348972020)
-        - Umbilo (n348972150)
-        - Rossburgh (n348972170)
-        - Clairwood (n348988997)
-        - Montclair (n348988966)
-        - Merebank (n348989848)
-        - Havenside (n348967764)
-        - Bayview (n348967836)
-        - Westcliff (n348967865)
-        - Chatsglen (n348967915)
-        - Crossmoor (n1609289561)
-
-      r10646662: 
-        - Crossmoor (n1609289561)
-        - Chatsglen (n348967915)
-        - Westcliff (n348967865)
-        - Bayview (n348967836)
-        - Havenside (n348967764)
-        - Merebank (n348989848)
-        - Montclair (n348988966)
-        - Clairwood (n348988997)
-        - Rossburgh (n348972170)
-        - Umbilo (n348972150)
-        - Congella (n348972020)
-        - Dalbridge (n205288230)
-        - Berea Road (n7051410154)
-        - Durban Train Station (n348954984)
-
-
+    type: train
     stations: 
       - Durban
       - Berea Road
@@ -57,12 +22,71 @@ routes:
       - Chatsglen
       - Crossmoor
 
-    ref: Crossmoor
+    itineraries: 
+      r10646662: 
+        - Crossmoor (n1609289561)
+        - Chatsglen (n348967915)
+        - Westcliff (n348967865)
+        - Bayview (n348967836)
+        - Havenside (n348967764)
+        - Merebank (n348989848)
+        - Montclair (n348988966)
+        - Clairwood (n348988997)
+        - Rossburgh (n348972170)
+        - Umbilo (n348972150)
+        - Congella (n348972020)
+        - Dalbridge (n205288230)
+        - Berea Road (n7051410154)
+        - Durban Train Station (n348954984)
+
+      r1994534: 
+        - Durban Train Station (n348954984)
+        - Berea Road (n7051410154)
+        - Dalbridge (n205288230)
+        - Congella (n348972020)
+        - Umbilo (n348972150)
+        - Rossburgh (n348972170)
+        - Clairwood (n348988997)
+        - Montclair (n348988966)
+        - Merebank (n348989848)
+        - Havenside (n348967764)
+        - Bayview (n348967836)
+        - Westcliff (n348967865)
+        - Chatsglen (n348967915)
+        - Crossmoor (n1609289561)
+
+
   - 
-    colour: '#00baf1'
+    ref: New Main
     name: New Main Line
-    type: train
+    colour: '#00baf1'
     station_count: 23
+    type: train
+    stations: 
+      - Durban
+      - Berea Road
+      - Dalbridge
+      - Congella
+      - Umbilo
+      - Rossburgh
+      - Mount Vernon
+      - Cavendish
+      - Burlington
+      - Shallcross
+      - Klaarwater
+      - Mariannhill
+      - Thornwood
+      - Situndu Hills
+      - Dassenhoek
+      - kwaNdengezi
+      - Delville Wood
+      - Nshongweni
+      - Cliffdale
+      - Hammarsdale
+      - kwaTandaza
+      - Georgedale
+      - Cato Ridge
+
     itineraries: 
       r1994637: 
         - Durban Train Station (n348954984)
@@ -115,37 +139,39 @@ routes:
         - Durban Train Station (n348954984)
 
 
-    stations: 
-      - Cato Ridge
-      - Georgedale
-      - kwaTandaza
-      - Hammarsdale
-      - Cliffdale
-      - Nshongweni
-      - Delville Wood
-      - kwaNdengezi
-      - Dassenhoek
-      - Situndu Hills
-      - Thornwood
-      - Mariannhill
-      - Klaarwater
-      - Shallcross
-      - Burlington
-      - Cavendish
-      - Mount Vernon
-      - Rossburgh
-      - Umbilo
-      - Congella
-      - Dalbridge
-      - Berea Road
-      - Durban
-
-    ref: New Main
   - 
-    colour: '#90268f'
+    ref: North Coast
     name: North Coast Line
-    type: train
+    colour: '#90268f'
     station_count: 25
+    type: train
+    stations: 
+      - Stanger
+      - Gledhow
+      - Charlottedale
+      - Groutville
+      - Tinley Manor
+      - Shakaskraal
+      - Umhlali
+      - Compensation
+      - Fraser
+      - Tongaat
+      - Tongaat Central
+      - Flamingo Heights
+      - Nyaninga
+      - Canelands
+      - Verulam
+      - Ottawa
+      - Mount Edgecombe
+      - Phoenix
+      - Duff's Road
+      - Effingham
+      - Kenville
+      - Temple
+      - Umgeni
+      - Durban
+      - Berea Road
+
     itineraries: 
       r1994719: 
         - Stanger (n666070999)
@@ -202,79 +228,12 @@ routes:
         - Stanger (n666070999)
 
 
-    stations: 
-      - Berea Road
-      - Durban
-      - Umgeni
-      - Temple
-      - Kenville
-      - Effingham
-      - Duff's Road
-      - Phoenix
-      - Mount Edgecombe
-      - Ottawa
-      - Verulam
-      - Canelands
-      - Nyaninga
-      - Flamingo Heights
-      - Tongaat Central
-      - Tongaat
-      - Fraser
-      - Compensation
-      - Umhlali
-      - Shakaskraal
-      - Tinley Manor
-      - Groutville
-      - Charlottedale
-      - Gledhow
-      - Stanger
-
-    ref: North Coast
   - 
-    colour: '#6e2527'
+    ref: Old Main
     name: Old Main Line
-    type: train
+    colour: '#6e2527'
     station_count: 17
-    itineraries: 
-      r1959553: 
-        - Durban Train Station (n348954984)
-        - Berea Road (n7051410154)
-        - Dalbridge (n205288230)
-        - Congella (n348972020)
-        - Umbilo (n348972150)
-        - Rossburgh (n348972170)
-        - Sea View (n348975783)
-        - Bellair (n348975727)
-        - Hillary (n348960363)
-        - Poet's Corner (n348960291)
-        - Malvern (n348960219)
-        - Escombe (n348960086)
-        - Northdene (n348959928)
-        - Moseley (n1583414531)
-        - Glen Park (n348959800)
-        - Sarnia (n6988710793)
-        - Pinetown (n270845197)
-
-      r10646656: 
-        - Pinetown (n270845197)
-        - Sarnia (n6988710793)
-        - Glen Park (n348959800)
-        - Moseley (n1583414531)
-        - Northdene (n348959928)
-        - Escombe (n348960086)
-        - Malvern (n348960219)
-        - Poet's Corner (n348960291)
-        - Hillary (n348960363)
-        - Bellair (n348975727)
-        - Sea View (n348975783)
-        - Rossburgh (n348972170)
-        - Umbilo (n348972150)
-        - Congella (n348972020)
-        - Dalbridge (n205288230)
-        - Berea Road (n7051410154)
-        - Durban Train Station (n348954984)
-
-
+    type: train
     stations: 
       - Pinetown
       - Sarnia
@@ -294,66 +253,19 @@ routes:
       - Berea Road
       - Durban
 
-    ref: Old Main
-  - 
-    colour: '#0072bc'
-    name: South Coast Line
-    type: train
-    station_count: 28
     itineraries: 
-      r1112787: 
-        - Durban Train Station (n348954984)
-        - Berea Road (n7051410154)
-        - Dalbridge (n205288230)
-        - Congella (n348972020)
-        - Umbilo (n348972150)
-        - Rossburgh (n348972170)
-        - Clairwood (n348988997)
-        - Montclair (n348988966)
-        - Merebank (n348989848)
-        - Reunion (n847532516)
-        - Pelgrim (n348968547)
-        - Isipingo (n348968567)
-        - Umbogintwini (n348968699)
-        - Pahla (n348968760)
-        - Amanzimtoti (n348968950)
-        - Doonside (n348968983)
-        - Warner Beach (n348969020)
-        - Winklespruit (n348969059)
-        - Illovo Beach (n348969087)
-        - Karridene (n847532421)
-        - Umgababa (n348969122)
-        - Ilfracombe (n348969171)
-        - Umkomaas (n348969208)
-        - Claustal (n348969297)
-        - Renishaw (n348969362)
-        - Scottburgh (n847532519)
-        - Park Rynie (n449438706)
-        - Kelso (n449441376)
-
-      r10646253: 
-        - Kelso (n449441376)
-        - Park Rynie (n449438706)
-        - Scottburgh (n847532519)
-        - Renishaw (n348969362)
-        - Claustal (n348969297)
-        - Umkomaas (n348969208)
-        - Ilfracombe (n348969171)
-        - Umgababa (n348969122)
-        - Karridene (n847532421)
-        - Illovo Beach (n348969087)
-        - Winklespruit (n348969059)
-        - Warner Beach (n348969020)
-        - Doonside (n348968983)
-        - Amanzimtoti (n348968950)
-        - Pahla (n348968760)
-        - Umbogintwini (n348968699)
-        - Isipingo (n348968567)
-        - Pelgrim (n348968547)
-        - Reunion (n847532516)
-        - Merebank (n348989848)
-        - Montclair (n348988966)
-        - Clairwood (n348988997)
+      r10646656: 
+        - Pinetown (n270845197)
+        - Sarnia (n6988710793)
+        - Glen Park (n348959800)
+        - Moseley (n1583414531)
+        - Northdene (n348959928)
+        - Escombe (n348960086)
+        - Malvern (n348960219)
+        - Poet's Corner (n348960291)
+        - Hillary (n348960363)
+        - Bellair (n348975727)
+        - Sea View (n348975783)
         - Rossburgh (n348972170)
         - Umbilo (n348972150)
         - Congella (n348972020)
@@ -361,7 +273,32 @@ routes:
         - Berea Road (n7051410154)
         - Durban Train Station (n348954984)
 
+      r1959553: 
+        - Durban Train Station (n348954984)
+        - Berea Road (n7051410154)
+        - Dalbridge (n205288230)
+        - Congella (n348972020)
+        - Umbilo (n348972150)
+        - Rossburgh (n348972170)
+        - Sea View (n348975783)
+        - Bellair (n348975727)
+        - Hillary (n348960363)
+        - Poet's Corner (n348960291)
+        - Malvern (n348960219)
+        - Escombe (n348960086)
+        - Northdene (n348959928)
+        - Moseley (n1583414531)
+        - Glen Park (n348959800)
+        - Sarnia (n6988710793)
+        - Pinetown (n270845197)
 
+
+  - 
+    ref: South Coast
+    name: South Coast Line
+    colour: '#0072bc'
+    station_count: 28
+    type: train
     stations: 
       - Kelso
       - Park Rynie
@@ -392,12 +329,89 @@ routes:
       - Berea Road
       - Durban
 
-    ref: South Coast
+    itineraries: 
+      r10646253: 
+        - Kelso (n449441376)
+        - Park Rynie (n449438706)
+        - Scottburgh (n847532519)
+        - Renishaw (n348969362)
+        - Claustal (n348969297)
+        - Umkomaas (n348969208)
+        - Ilfracombe (n348969171)
+        - Umgababa (n348969122)
+        - Karridene (n847532421)
+        - Illovo Beach (n348969087)
+        - Winklespruit (n348969059)
+        - Warner Beach (n348969020)
+        - Doonside (n348968983)
+        - Amanzimtoti (n348968950)
+        - Pahla (n348968760)
+        - Umbogintwini (n348968699)
+        - Isipingo (n348968567)
+        - Pelgrim (n348968547)
+        - Reunion (n847532516)
+        - Merebank (n348989848)
+        - Montclair (n348988966)
+        - Clairwood (n348988997)
+        - Rossburgh (n348972170)
+        - Umbilo (n348972150)
+        - Congella (n348972020)
+        - Dalbridge (n205288230)
+        - Berea Road (n7051410154)
+        - Durban Train Station (n348954984)
+
+      r1112787: 
+        - Durban Train Station (n348954984)
+        - Berea Road (n7051410154)
+        - Dalbridge (n205288230)
+        - Congella (n348972020)
+        - Umbilo (n348972150)
+        - Rossburgh (n348972170)
+        - Clairwood (n348988997)
+        - Montclair (n348988966)
+        - Merebank (n348989848)
+        - Reunion (n847532516)
+        - Pelgrim (n348968547)
+        - Isipingo (n348968567)
+        - Umbogintwini (n348968699)
+        - Pahla (n348968760)
+        - Amanzimtoti (n348968950)
+        - Doonside (n348968983)
+        - Warner Beach (n348969020)
+        - Winklespruit (n348969059)
+        - Illovo Beach (n348969087)
+        - Karridene (n847532421)
+        - Umgababa (n348969122)
+        - Ilfracombe (n348969171)
+        - Umkomaas (n348969208)
+        - Claustal (n348969297)
+        - Renishaw (n348969362)
+        - Scottburgh (n847532519)
+        - Park Rynie (n449438706)
+        - Kelso (n449441376)
+
+
   - 
-    colour: '#00652e'
+    ref: Umlazi
     name: Umlazi Line
-    type: train
+    colour: '#00652e'
     station_count: 13
+    type: train
+    stations: 
+      - Umlazi
+      - Lindokuhle
+      - kwaMnyandu
+      - Zwelethu
+      - Reunion
+      - Merebank
+      - Montclair
+      - Jacobs
+      - Wentworth
+      - King's Rest
+      - Fynnland
+      - Island View
+      - Wests
+
     itineraries: 
       r1994512: 
         - Umlazi (n7167108456)
@@ -430,14 +444,20 @@ routes:
         - Umlazi (n7167108456)
 
 
+  - 
+    ref: West
+    name: West Line
+    colour: '#a6ce39'
+    station_count: 13
+    type: train
     stations: 
-      - Umlazi
-      - Lindokuhle
-      - kwaMnyandu
-      - Zwelethu
-      - Reunion
-      - Merebank
-      - Montclair
+      - Durban
+      - Berea Road
+      - Dalbridge
+      - Congella
+      - Umbilo
+      - Rossburgh
+      - Clairwood
       - Jacobs
       - Wentworth
       - King's Rest
@@ -445,28 +465,7 @@ routes:
       - Island View
       - Wests
 
-    ref: Umlazi
-  - 
-    colour: '#a6ce39'
-    name: West Line
-    type: train
-    station_count: 13
     itineraries: 
-      r1994511: 
-        - Durban Train Station (n348954984)
-        - Berea Road (n7051410154)
-        - Dalbridge (n205288230)
-        - Congella (n348972020)
-        - Umbilo (n348972150)
-        - Rossburgh (n348972170)
-        - Clairwood (n348988997)
-        - Jacobs (n348988831)
-        - Wentworth (n348988274)
-        - King's Rest (n1609289568)
-        - Fynnland (n1609289564)
-        - Island View (n348982700)
-        - Wests (n348982134)
-
       r10646659: 
         - Wests (n348982134)
         - Island View (n348982700)
@@ -482,14 +481,36 @@ routes:
         - Berea Road (n7051410154)
         - Durban Train Station (n348954984)
 
+      r1994511: 
+        - Durban Train Station (n348954984)
+        - Berea Road (n7051410154)
+        - Dalbridge (n205288230)
+        - Congella (n348972020)
+        - Umbilo (n348972150)
+        - Rossburgh (n348972170)
+        - Clairwood (n348988997)
+        - Jacobs (n348988831)
+        - Wentworth (n348988274)
+        - King's Rest (n1609289568)
+        - Fynnland (n1609289564)
+        - Island View (n348982700)
+        - Wests (n348982134)
 
+
+  - 
+    ref: kwaMashu
+    name: kwaMashu Line
+    colour: '#ee1d23'
+    station_count: 21
+    type: train
     stations: 
-      - Wests
-      - Island View
-      - Fynnland
-      - King's Rest
-      - Wentworth
-      - Jacobs
+      - Umlazi
+      - Lindokuhle
+      - kwaMnyandu
+      - Zwelethu
+      - Reunion
+      - Merebank
+      - Montclair
       - Clairwood
       - Rossburgh
       - Umbilo
@@ -497,13 +518,14 @@ routes:
       - Dalbridge
       - Berea Road
       - Durban
+      - Umgeni
+      - Temple
+      - Kenville
+      - Effingham
+      - Duff's Road
+      - Tembalihle
+      - kwaMashu
 
-    ref: West
-  - 
-    colour: '#ee1d23'
-    name: kwaMashu Line
-    type: train
-    station_count: 21
     itineraries: 
       r10646664: 
         - Umlazi (n7167108456)
@@ -552,30 +574,6 @@ routes:
         - Umlazi (n7167108456)
 
 
-    stations: 
-      - Umlazi
-      - Lindokuhle
-      - kwaMnyandu
-      - Zwelethu
-      - Reunion
-      - Merebank
-      - Montclair
-      - Clairwood
-      - Rossburgh
-      - Umbilo
-      - Congella
-      - Dalbridge
-      - Berea Road
-      - Durban
-      - Umgeni
-      - Temple
-      - Kenville
-      - Effingham
-      - Duff's Road
-      - Tembalihle
-      - kwaMashu
-
-    ref: kwaMashu
 
 stations: 
   - Amanzimtoti (n348968950)
@@ -674,4 +672,6 @@ stations:
   - kwaMnyandu (n348992716)
   - kwaNdengezi (n348969728)
   - kwaTandaza (n348970544)
+
+transfers: 
 

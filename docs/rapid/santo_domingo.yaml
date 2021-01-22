@@ -1,15 +1,29 @@
 
-transfers: 
-  - 
-    - Centro Olímpico Juan Pablo Duarte (r7730099)
-    - Centro Olímpico Juan Pablo Duarte (r7730100)
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: 1
     name: Línea 1
-    type: subway
+    colour: '#0000ff'
     station_count: 16
+    type: subway
+    stations: 
+      - Centro De Los Héroes
+      - Francisco Alberto Caamaño Deñó
+      - Amín Abel Hasbún
+      - Joaquín Balaguer
+      - Casandra Damirón
+      - Profesor Juan Bosch
+      - Centro Olímpico Juan Pablo Duarte
+      - Peña Batlle
+      - Pedro Livio Cedeño
+      - Los Taínos
+      - Máximo Gómez
+      - Hermanas Mirabal
+      - Peña Gómez
+      - Gregorio Luperón
+      - Gregorio Urbano Gilbert Suero
+      - Mama Tingò
+
     itineraries: 
       r1325782: 
         - Mamá Tingó (n2104800307)
@@ -48,30 +62,32 @@ routes:
         - Mamá Tingó (n2104800307)
 
 
-    stations: 
-      - Mama Tingò
-      - Gregorio Urbano Gilbert Suero
-      - Gregorio Luperón
-      - Peña Gómez
-      - Hermanas Mirabal
-      - Máximo Gómez
-      - Los Taínos
-      - Pedro Livio Cedeño
-      - Peña Batlle
-      - Centro Olímpico Juan Pablo Duarte
-      - Profesor Juan Bosch
-      - Casandra Damirón
-      - Joaquín Balaguer
-      - Amín Abel Hasbún
-      - Francisco Alberto Caamaño Deñó
-      - Centro De Los Héroes
-
-    ref: 1
   - 
-    colour: '#ff0000'
+    ref: 2
     name: Línea 2
-    type: subway
+    colour: '#ff0000'
     station_count: 18
+    type: subway
+    stations: 
+      - María Móntez
+      - Pedro Francisco Bonó
+      - Francisco Gregorio Billini
+      - Ulises Fransico Espalliat
+      - Pedro Mir
+      - 'Freddy Beras - Goico'
+      - Juan Ulises García Saleta
+      - Centro Olímpico Juan Pablo Duarte
+      - Coronel Rafael Tomás Fernández Domínguez
+      - Mauricio Báez
+      - Ramón Cáceres
+      - Horacio Vásquez
+      - Manuel de Jesús Abreu Galván
+      - Eduardo Brito
+      - Ercilia Pepín
+      - Rosa Duarte
+      - Trina de Moya de Vásquez
+      - Concepción Bona
+
     itineraries: 
       r7730098: 
         - María Móntez (n2324956457)
@@ -114,27 +130,6 @@ routes:
         - María Móntez (n2324956457)
 
 
-    stations: 
-      - Concepción Bona
-      - Trina de Moya de Vásquez
-      - Rosa Duarte
-      - Ercilia Pepín
-      - Eduardo Brito
-      - Manuel de Jesús Abreu Galván
-      - Horacio Vásquez
-      - Ramón Cáceres
-      - Mauricio Báez
-      - Coronel Rafael Tomás Fernández Domínguez
-      - Centro Olímpico Juan Pablo Duarte
-      - Juan Ulises García Saleta
-      - 'Freddy Beras - Goico'
-      - Pedro Mir
-      - Ulises Fransico Espalliat
-      - Francisco Gregorio Billini
-      - Pedro Francisco Bonó
-      - María Móntez
-
-    ref: 2
 
 stations: 
   - Amín Abel Hasbún (n2382433212)
@@ -171,4 +166,9 @@ stations:
   - Rosa Duarte (n6476494996)
   - Trina de Moya de Vásquez (w541801797)
   - Ulises Fransico Espalliat (n4119588420)
+
+transfers: 
+  - 
+    - Centro Olímpico Juan Pablo Duarte (r7730099)
+    - Centro Olímpico Juan Pablo Duarte (r7730100)
 

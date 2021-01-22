@@ -1,46 +1,38 @@
 
-transfers: 
-  - 
-    - 15th Street (r7950754)
-    - City Hall (BSL) (r7963446)
-  - 
-    - 69th Street Transportation Center (MFL) (r7950454)
-    - 69th Street Transportation Center (NHSL) (r7950453)
-  - 
-    - 8th & Market (BSL) (r10688596)
-    - 8th Street (r7950691)
-
 routes: 
   - 
-    colour: '#f58220'
+    ref: BSL
     name: SEPTA Broad Street Line
-    type: subway
+    colour: '#f58220'
     station_count: 24
-    itineraries: 
-      r10693789: 
-        - Fern Rock Transportation Center (n1118107614)
-        - Olney Transportation Center (n775922743)
-        - Logan (n775922744)
-        - Wyoming (n775922745)
-        - Hunting Park (n775922746)
-        - Erie (n775922747)
-        - Allegheny (n775922748)
-        - North Philadelphia (n775922749)
-        - Susquehanna-Dauphin (n5529504457)
-        - Cecil B. Moore (n775922751)
-        - Girard (n775922752)
-        - Fairmount (n775922753)
-        - Spring Garden (n775922755)
-        - Race-Vine (n775922756)
-        - City Hall (n5377316453)
-        - Walnut-Locust (n5377305092)
-        - Lombard-South (n775915931)
-        - Ellsworth-Federal (n775915932)
-        - Tasker-Morris (n775915933)
-        - Snyder (n775915935)
-        - Oregon (n5460903183)
-        - NRG (n775915939)
+    type: subway
+    stations: 
+      - Fern Rock Transportation Center (BSL)
+      - Olney Transportation Center
+      - Logan
+      - Wyoming
+      - Hunting Park
+      - Erie
+      - Allegheny (BSL)
+      - North Philadelphia (BSL)
+      - Susquehanna-Dauphin
+      - Cecil B. Moore
+      - Girard (BSL)
+      - Fairmount
+      - Spring Garden (BSL)
+      - Race-Vine
+      - City Hall (BSL)
+      - Walnut-Locust
+      - Lombard-South
+      - Ellsworth-Federal
+      - Tasker-Morris
+      - Snyder
+      - Oregon
+      - NRG
+      - 8th & Market (BSL)
+      - Chinatown
 
+    itineraries: 
       r7950638: 
         - 8th & Market (n5372039290)
         - Chinatown (n1118209246)
@@ -50,6 +42,27 @@ routes:
         - Erie (n775922747)
         - Olney Transportation Center (n775922743)
         - Fern Rock Transportation Center (n1118107614)
+
+      r7950640: 
+        - NRG (n775915939)
+        - Walnut-Locust (n5377305092)
+        - City Hall (n5377316453)
+        - Race-Vine (n775922756)
+        - Spring Garden (n775922755)
+        - Girard (n775922752)
+        - Erie (n775922747)
+        - Olney Transportation Center (n775922743)
+        - Fern Rock Transportation Center (n1118107614)
+
+      r10693787: 
+        - Fern Rock Transportation Center (n1118107614)
+        - Olney Transportation Center (n775922743)
+        - Erie (n775922747)
+        - Girard (n775922752)
+        - Spring Garden (n775922755)
+        - Race-Vine (n775922756)
+        - City Hall (n5377316453)
+        - Walnut-Locust (n5377305092)
 
       r966946: 
         - Fern Rock Transportation Center (n1118107614)
@@ -71,27 +84,6 @@ routes:
         - Fairmount (n775922753)
         - Chinatown (n1118209246)
         - 8th & Market (n5372039290)
-
-      r10693787: 
-        - Fern Rock Transportation Center (n1118107614)
-        - Olney Transportation Center (n775922743)
-        - Erie (n775922747)
-        - Girard (n775922752)
-        - Spring Garden (n775922755)
-        - Race-Vine (n775922756)
-        - City Hall (n5377316453)
-        - Walnut-Locust (n5377305092)
-
-      r7950640: 
-        - NRG (n775915939)
-        - Walnut-Locust (n5377305092)
-        - City Hall (n5377316453)
-        - Race-Vine (n775922756)
-        - Spring Garden (n775922755)
-        - Girard (n775922752)
-        - Erie (n775922747)
-        - Olney Transportation Center (n775922743)
-        - Fern Rock Transportation Center (n1118107614)
 
       r10693788: 
         - NRG (n775915939)
@@ -127,39 +119,67 @@ routes:
         - Olney Transportation Center (n775922743)
         - Fern Rock Transportation Center (n1118107614)
 
+      r10693789: 
+        - Fern Rock Transportation Center (n1118107614)
+        - Olney Transportation Center (n775922743)
+        - Logan (n775922744)
+        - Wyoming (n775922745)
+        - Hunting Park (n775922746)
+        - Erie (n775922747)
+        - Allegheny (n775922748)
+        - North Philadelphia (n775922749)
+        - Susquehanna-Dauphin (n5529504457)
+        - Cecil B. Moore (n775922751)
+        - Girard (n775922752)
+        - Fairmount (n775922753)
+        - Spring Garden (n775922755)
+        - Race-Vine (n775922756)
+        - City Hall (n5377316453)
+        - Walnut-Locust (n5377305092)
+        - Lombard-South (n775915931)
+        - Ellsworth-Federal (n775915932)
+        - Tasker-Morris (n775915933)
+        - Snyder (n775915935)
+        - Oregon (n5460903183)
+        - NRG (n775915939)
 
-    stations: 
-      - Fern Rock Transportation Center (BSL)
-      - Olney Transportation Center
-      - Logan
-      - Wyoming
-      - Hunting Park
-      - Erie
-      - Allegheny (BSL)
-      - North Philadelphia (BSL)
-      - Susquehanna-Dauphin
-      - Cecil B. Moore
-      - Girard (BSL)
-      - Fairmount
-      - Spring Garden (BSL)
-      - Race-Vine
-      - City Hall (BSL)
-      - Walnut-Locust
-      - Lombard-South
-      - Ellsworth-Federal
-      - Tasker-Morris
-      - Snyder
-      - Oregon
-      - NRG
-      - Chinatown
-      - 8th & Market (BSL)
 
-    ref: BSL
   - 
-    colour: '#0066ff'
+    ref: MFL
     name: SEPTA Market-Frankford Line
-    type: subway
+    colour: '#0066ff'
     station_count: 28
+    type: subway
+    stations: 
+      - 69th Street Transportation Center (MFL)
+      - Millbourne
+      - 63rd Street
+      - 60th Street
+      - 56th Street
+      - 52nd Street
+      - 46th Street
+      - 40th Street
+      - 34th Street
+      - 30th Street
+      - 15th Street
+      - 13th Street
+      - 11th Street
+      - 8th Street
+      - 5th Street
+      - 2nd Street
+      - Spring Garden (MFL)
+      - Girard (MFL)
+      - Berks
+      - York-Dauphin
+      - Huntingdon
+      - Somerset
+      - Allegheny (MFL)
+      - Tioga
+      - Erie-Torresdale
+      - Church
+      - Arrott Transportation Center
+      - Frankford Transportation Center
+
     itineraries: 
       r7953595: 
         - 69th Street Transportation Center (n650939214)
@@ -222,67 +242,37 @@ routes:
         - 69th Street Transportation Center (n650939214)
 
 
-    stations: 
-      - 69th Street Transportation Center (MFL)
-      - Millbourne
-      - 63rd Street
-      - 60th Street
-      - 56th Street
-      - 52nd Street
-      - 46th Street
-      - 40th Street
-      - 34th Street
-      - 30th Street
-      - 15th Street
-      - 13th Street
-      - 11th Street
-      - 8th Street
-      - 5th Street
-      - 2nd Street
-      - Spring Garden (MFL)
-      - Girard (MFL)
-      - Berks
-      - York-Dauphin
-      - Huntingdon
-      - Somerset
-      - Allegheny (MFL)
-      - Tioga
-      - Erie-Torresdale
-      - Church
-      - Arrott Transportation Center
-      - Frankford Transportation Center
-
-    ref: MFL
   - 
-    colour: '#84388a'
+    ref: NHSL
     name: SEPTA Norristown High Speed Line
-    type: light_rail
+    colour: '#84388a'
     station_count: 22
-    itineraries: 
-      r1337833: 
-        - Norristown Transportation Center (n5371629450)
-        - Bridgeport (n5371747212)
-        - DeKalb Street (n5371747214)
-        - Hughes Park (n5371747215)
-        - Gulph Mills (n5371770918)
-        - Matsonford (n5371747358)
-        - County Line (n5371747356)
-        - Radnor (n5371763628)
-        - Villanova (n4270440311)
-        - Stadium-Ithan Avenue (n5371761732)
-        - Garrett Hill (n5371761730)
-        - Roberts Road (n5371761728)
-        - Bryn Mawr (n5371754386)
-        - Haverford (n5371754385)
-        - Ardmore Avenue (n5371754384)
-        - Ardmore Junction (n5371754383)
-        - Wynnewood Road (n5371754382)
-        - Beechwood-Brookline (n5371636922)
-        - Penfield (n5371633281)
-        - Township Line Road (n5371632532)
-        - Parkview (n5371626028)
-        - 69th Street Transportation Center (n5371622834)
+    type: light_rail
+    stations: 
+      - Norristown Transportation Center (NHSL)
+      - Bridgeport
+      - DeKalb Street
+      - Hughes Park
+      - Gulph Mills
+      - Radnor (NHSL)
+      - Ardmore Junction
+      - Township Line Road
+      - 69th Street Transportation Center (NHSL)
+      - Penfield
+      - Bryn Mawr (NHSL)
+      - Roberts Road
+      - Garrett Hill
+      - Stadium-Ithan Avenue
+      - Villanova (NHSL)
+      - County Line
+      - Matsonford
+      - Haverford (NHSL)
+      - Ardmore Avenue
+      - Wynnewood Road
+      - Beechwood-Brookline
+      - Parkview
 
+    itineraries: 
       r7953617: 
         - 69th Street Transportation Center (n5371622834)
         - Parkview (n5371626028)
@@ -318,6 +308,30 @@ routes:
         - Township Line Road (n5371632532)
         - 69th Street Transportation Center (n5371622834)
 
+      r1337833: 
+        - Norristown Transportation Center (n5371629450)
+        - Bridgeport (n5371747212)
+        - DeKalb Street (n5371747214)
+        - Hughes Park (n5371747215)
+        - Gulph Mills (n5371770918)
+        - Matsonford (n5371747358)
+        - County Line (n5371747356)
+        - Radnor (n5371763628)
+        - Villanova (n4270440311)
+        - Stadium-Ithan Avenue (n5371761732)
+        - Garrett Hill (n5371761730)
+        - Roberts Road (n5371761728)
+        - Bryn Mawr (n5371754386)
+        - Haverford (n5371754385)
+        - Ardmore Avenue (n5371754384)
+        - Ardmore Junction (n5371754383)
+        - Wynnewood Road (n5371754382)
+        - Beechwood-Brookline (n5371636922)
+        - Penfield (n5371633281)
+        - Township Line Road (n5371632532)
+        - Parkview (n5371626028)
+        - 69th Street Transportation Center (n5371622834)
+
       r10696324: 
         - 69th Street Transportation Center (n5371622834)
         - Penfield (n5371633281)
@@ -337,31 +351,6 @@ routes:
         - Norristown Transportation Center (n5371629450)
 
 
-    stations: 
-      - 69th Street Transportation Center (NHSL)
-      - Penfield
-      - Ardmore Junction
-      - Bryn Mawr (NHSL)
-      - Roberts Road
-      - Garrett Hill
-      - Stadium-Ithan Avenue
-      - Villanova (NHSL)
-      - Radnor (NHSL)
-      - County Line
-      - Matsonford
-      - Gulph Mills
-      - Hughes Park
-      - DeKalb Street
-      - Bridgeport
-      - Norristown Transportation Center (NHSL)
-      - Parkview
-      - Township Line Road
-      - Beechwood-Brookline
-      - Wynnewood Road
-      - Ardmore Avenue
-      - Haverford (NHSL)
-
-    ref: NHSL
 
 stations: 
   - 11th Street (n5372090220)
@@ -438,4 +427,15 @@ stations:
   - Wynnewood Road (n5371754382)
   - Wyoming (n775922745)
   - York-Dauphin (n1118188481)
+
+transfers: 
+  - 
+    - 15th Street (r7950754)
+    - City Hall (BSL) (r7963446)
+  - 
+    - 69th Street Transportation Center (MFL) (r7950454)
+    - 69th Street Transportation Center (NHSL) (r7950453)
+  - 
+    - 8th & Market (BSL) (r10688596)
+    - 8th Street (r7950691)
 

@@ -1,12 +1,26 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#10a899'
+    ref: NS
     name: 埼玉新都市交通伊奈線
-    type: light_rail
+    colour: '#10a899'
     station_count: 13
+    type: light_rail
+    stations: 
+      - 内宿
+      - 羽貫
+      - 伊奈中央
+      - 志久
+      - 丸山
+      - 沼南
+      - 原市
+      - 原市
+      - 今羽
+      - 東宮原
+      - 加茂宮
+      - 鉄道博物館
+      - 大宮
+
     itineraries: 
       r1949290: 
         - 内宿 (n6853946981)
@@ -39,22 +53,6 @@ routes:
         - 内宿 (n6853946981)
 
 
-    stations: 
-      - 内宿
-      - 羽貫
-      - 伊奈中央
-      - 志久
-      - 丸山
-      - 沼南
-      - 原市
-      - 原市
-      - 今羽
-      - 東宮原
-      - 加茂宮
-      - 鉄道博物館
-      - 大宮
-
-    ref: NS
 
 stations: 
   - 丸山 (n361021857)
@@ -70,4 +68,6 @@ stations:
   - 沼南 (n6848816471)
   - 羽貫 (n361021956)
   - 鉄道博物館 (n361021706)
+
+transfers: 
 

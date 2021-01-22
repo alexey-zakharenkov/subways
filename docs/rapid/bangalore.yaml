@@ -1,79 +1,11 @@
 
-transfers: 
-  - 
-    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
-    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
-
 routes: 
   - 
-    colour: '#009933'
+    ref: Green
     name: Namma Metro Green Line
-    type: subway
+    colour: '#009933'
     station_count: 29
-    itineraries: 
-      r1798772: 
-        - Silk Institute (w894923128)
-        - Thalaghattapura (w894923127)
-        - Vajarahalli (w894923126)
-        - Doddakallasandra (w894923125)
-        - Konanakunte Cross (w894923123)
-        - Yelachenahalli (n6432710292)
-        - J P Nagar (n6432710293)
-        - Banashankari (n6432710294)
-        - Rashtriya Vidyalaya Road (n6432710295)
-        - Jayanagar (n6432710296)
-        - South End Circle (n6432710297)
-        - Lalbagh (n6432710298)
-        - National College (n6432710299)
-        - Krishna Rajendra Market (n6432710300)
-        - Chikkapete (n6432710301)
-        - Nadaprabhu Kempegowda Station, Majestic (n6400857558)
-        - Mantri Square Sampige Road (n6410706688)
-        - Srirampura (n5960788726)
-        - Mahakavi Kuvempu Road (n6410706689)
-        - Rajajinagar (n6410706690)
-        - Mahalakshmi (n6410706691)
-        - Sandal Soap Factory (n6410706692)
-        - Yeshwantpura (n6410706693)
-        - Goraguntepalya (n6410706694)
-        - Peenya (n6410706695)
-        - Peenya Industry (n6410706696)
-        - Jalahalli (n5960788725)
-        - Dasarahalli (n5960788724)
-        - Nagasandra (n5960788723)
-
-      r7842287: 
-        - Nagasandra (n5960788723)
-        - Dasarahalli (n5960788724)
-        - Jalahalli (n5960788725)
-        - Peenya Industry (n6410706696)
-        - Peenya (n6410706695)
-        - Goraguntepalya (n6410706694)
-        - Yeshwantpura (n6410706693)
-        - Sandal Soap Factory (n6410706692)
-        - Mahalakshmi (n6410706691)
-        - Rajajinagar (n6410706690)
-        - Mahakavi Kuvempu Road (n6410706689)
-        - Srirampura (n5960788726)
-        - Mantri Square Sampige Road (n6410706688)
-        - Nadaprabhu Kempegowda Station, Majestic (n6400857558)
-        - Chikkapete (n6432710301)
-        - Krishna Rajendra Market (n6432710300)
-        - National College (n6432710299)
-        - Lalbagh (n6432710298)
-        - South End Circle (n6432710297)
-        - Jayanagar (n6432710296)
-        - Rashtriya Vidyalaya Road (n6432710295)
-        - Banashankari (n6432710294)
-        - J P Nagar (n6432710293)
-        - Yelachenahalli (n6432710292)
-        - Konanakunte Cross (w894923123)
-        - Doddakallasandra (w894923125)
-        - Vajarahalli (w894923126)
-        - Thalaghattapura (w894923127)
-        - Silk Institute (w894923128)
-
-
+    type: subway
     stations: 
       - Silk Institute
       - Thalaghattapura
@@ -105,12 +37,95 @@ routes:
       - Dasarahalli
       - Nagasandra
 
-    ref: Green
+    itineraries: 
+      r7842287: 
+        - Nagasandra (n5960788723)
+        - Dasarahalli (n5960788724)
+        - Jalahalli (n5960788725)
+        - Peenya Industry (n6410706696)
+        - Peenya (n6410706695)
+        - Goraguntepalya (n6410706694)
+        - Yeshwantpura (n6410706693)
+        - Sandal Soap Factory (n6410706692)
+        - Mahalakshmi (n6410706691)
+        - Rajajinagar (n6410706690)
+        - Mahakavi Kuvempu Road (n6410706689)
+        - Srirampura (n5960788726)
+        - Mantri Square Sampige Road (n6410706688)
+        - Nadaprabhu Kempegowda Station, Majestic (n6400857558)
+        - Chikkapete (n6432710301)
+        - Krishna Rajendra Market (n6432710300)
+        - National College (n6432710299)
+        - Lalbagh (n6432710298)
+        - South End Circle (n6432710297)
+        - Jayanagar (n6432710296)
+        - Rashtriya Vidyalaya Road (n6432710295)
+        - Banashankari (n6432710294)
+        - J P Nagar (n6432710293)
+        - Yelachenahalli (n6432710292)
+        - Konanakunte Cross (w894923123)
+        - Doddakallasandra (w894923125)
+        - Vajarahalli (w894923126)
+        - Thalaghattapura (w894923127)
+        - Silk Institute (w894923128)
+
+      r1798772: 
+        - Silk Institute (w894923128)
+        - Thalaghattapura (w894923127)
+        - Vajarahalli (w894923126)
+        - Doddakallasandra (w894923125)
+        - Konanakunte Cross (w894923123)
+        - Yelachenahalli (n6432710292)
+        - J P Nagar (n6432710293)
+        - Banashankari (n6432710294)
+        - Rashtriya Vidyalaya Road (n6432710295)
+        - Jayanagar (n6432710296)
+        - South End Circle (n6432710297)
+        - Lalbagh (n6432710298)
+        - National College (n6432710299)
+        - Krishna Rajendra Market (n6432710300)
+        - Chikkapete (n6432710301)
+        - Nadaprabhu Kempegowda Station, Majestic (n6400857558)
+        - Mantri Square Sampige Road (n6410706688)
+        - Srirampura (n5960788726)
+        - Mahakavi Kuvempu Road (n6410706689)
+        - Rajajinagar (n6410706690)
+        - Mahalakshmi (n6410706691)
+        - Sandal Soap Factory (n6410706692)
+        - Yeshwantpura (n6410706693)
+        - Goraguntepalya (n6410706694)
+        - Peenya (n6410706695)
+        - Peenya Industry (n6410706696)
+        - Jalahalli (n5960788725)
+        - Dasarahalli (n5960788724)
+        - Nagasandra (n5960788723)
+
+
   - 
-    colour: '#e542de'
+    ref: Purple
     name: Namma Metro Purple Line
-    type: subway
+    colour: '#e542de'
     station_count: 17
+    type: subway
+    stations: 
+      - Mysore Road
+      - Deepanjali Nagar
+      - Attiguppe
+      - Vijayanagara
+      - Sri Balagangadaranatha Swamy Hosahalli
+      - Magadi Road
+      - Krantivira Sangolli Rayanna
+      - Nadaprabhu Kempegowda Station, Majestic (Purple Line)
+      - 'Sir M Vishweshwariah - Central College'
+      - Dr. B R Ambedkar Station, Vidhana Soudha
+      - Cubbon Park
+      - Mahatma Gandhi Road
+      - Trinity
+      - Halasuru
+      - Indiranagar
+      - Swami Vivekananda Road
+      - Baiyyappanahalli
+
     itineraries: 
       r1798771: 
         - Baiyyappanahalli (n6400857549)
@@ -151,26 +166,6 @@ routes:
         - Baiyyappanahalli (n6400857549)
 
 
-    stations: 
-      - Mysore Road
-      - Deepanjali Nagar
-      - Attiguppe
-      - Vijayanagara
-      - Sri Balagangadaranatha Swamy Hosahalli
-      - Magadi Road
-      - Krantivira Sangolli Rayanna
-      - Nadaprabhu Kempegowda Station, Majestic (Purple Line)
-      - 'Sir M Vishweshwariah - Central College'
-      - Dr. B R Ambedkar Station, Vidhana Soudha
-      - Cubbon Park
-      - Mahatma Gandhi Road
-      - Trinity
-      - Halasuru
-      - Indiranagar
-      - Swami Vivekananda Road
-      - Baiyyappanahalli
-
-    ref: Purple
 
 stations: 
   - Attiguppe (n6400857563)
@@ -218,4 +213,9 @@ stations:
   - Vijayanagara (n6400857562)
   - Yelachenahalli (n6432710292)
   - Yeshwantpura (n6410706693)
+
+transfers: 
+  - 
+    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
+    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
 

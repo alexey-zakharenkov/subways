@@ -1,87 +1,11 @@
 
-transfers: 
-  - 
-    - Farragut North (r6135570)
-    - Farragut West (r7924586)
-  - 
-    - Fort Totten (Red) (r7945937)
-    - Fort Totten (Yellow / Green) (r7945936)
-  - 
-    - Gallery Place (Red) (r7945932)
-    - Gallery Place (Yellow/Green) (r359558)
-  - 
-    - L'Enfant Plaza (Blue/Orange/Silver) (r7945929)
-    - L'Enfant Plaza (Green/Yellow) (r7921908)
-  - 
-    - Metro Center (Blue/Orange/Silver) (r7924554)
-    - Metro Center (Red) (r359557)
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: BL
     name: WMATA Blue Line
-    type: subway
+    colour: '#0000ff'
     station_count: 27
-    itineraries: 
-      r270832: 
-        - Franconia–Springfield (n738189366)
-        - Van Dorn Street (n738189365)
-        - King Street–Old Town (n738189339)
-        - Braddock Road (n738189320)
-        - Ronald Reagan Washington National Airport (n738189386)
-        - Crystal City (n738189355)
-        - Pentagon City (n738189357)
-        - Pentagon (n453069888)
-        - Arlington Cemetery (n738189380)
-        - Rosslyn (n738189319)
-        - Foggy Bottom–GWU (n738189359)
-        - Farragut West (n738189326)
-        - McPherson Square (n738189342)
-        - Metro Center (n7788485989)
-        - Federal Triangle (n738189343)
-        - Smithsonian (n1844430184)
-        - L'Enfant Plaza (n738189393)
-        - Federal Center Southwest (n738189403)
-        - Capitol South (n738189321)
-        - Eastern Market (n738189400)
-        - Potomac Avenue (n738189360)
-        - Stadium–Armory (n738189327)
-        - Benning Road (n738189384)
-        - Capitol Heights (n738189348)
-        - Addison Road–Seat Pleasant (n738189387)
-        - Morgan Boulevard (n738189322)
-        - Largo Town Center (n810813923)
-
-      r7919757: 
-        - Largo Town Center (n810813923)
-        - Morgan Boulevard (n738189322)
-        - Addison Road–Seat Pleasant (n738189387)
-        - Capitol Heights (n738189348)
-        - Benning Road (n738189384)
-        - Stadium–Armory (n738189327)
-        - Potomac Avenue (n738189360)
-        - Eastern Market (n738189400)
-        - Capitol South (n738189321)
-        - Federal Center Southwest (n738189403)
-        - L'Enfant Plaza (n738189393)
-        - Smithsonian (n1844430184)
-        - Federal Triangle (n738189343)
-        - Metro Center (n7788485989)
-        - McPherson Square (n738189342)
-        - Farragut West (n738189326)
-        - Foggy Bottom–GWU (n738189359)
-        - Rosslyn (n738189319)
-        - Arlington Cemetery (n738189380)
-        - Pentagon (n453069888)
-        - Pentagon City (n738189357)
-        - Crystal City (n738189355)
-        - Ronald Reagan Washington National Airport (n738189386)
-        - Braddock Road (n738189320)
-        - King Street–Old Town (n738189339)
-        - Van Dorn Street (n738189365)
-        - Franconia–Springfield (n738189366)
-
-
+    type: subway
     stations: 
       - Largo Town Center
       - Morgan Boulevard
@@ -111,60 +35,72 @@ routes:
       - Van Dorn Street
       - Franconia–Springfield (Metro)
 
-    ref: BL
-  - 
-    colour: '#008000'
-    name: WMATA Green Line
-    type: subway
-    station_count: 21
     itineraries: 
-      r7919784: 
-        - Branch Avenue (n738189335)
-        - Suitland (n738189370)
-        - Naylor Road (n738189369)
-        - Southern Avenue (n738189373)
-        - Congress Heights (n738189331)
-        - Anacostia (n738189399)
-        - Navy Yard–Ballpark (n738189401)
-        - Waterfront (n5284068378)
-        - L'Enfant Plaza (n7788485988)
-        - Archives (n738189394)
-        - Gallery Place (n738189362)
-        - Mount Vernon Square (n738189363)
-        - Shaw–Howard University (n738189352)
-        - U Street (n738189385)
-        - Columbia Heights (n1333688926)
-        - Georgia Avenue–Petworth (n738189374)
-        - Fort Totten (n7788485986)
-        - West Hyattsville (n738189383)
-        - Prince George's Plaza (n738189345)
-        - College Park–University of Maryland (n738189344)
-        - Greenbelt (n738189376)
+      r7919757: 
+        - Largo Town Center (n810813923)
+        - Morgan Boulevard (n738189322)
+        - Addison Road–Seat Pleasant (n738189387)
+        - Capitol Heights (n738189348)
+        - Benning Road (n738189384)
+        - Stadium–Armory (n738189327)
+        - Potomac Avenue (n738189360)
+        - Eastern Market (n738189400)
+        - Capitol South (n738189321)
+        - Federal Center Southwest (n738189403)
+        - L'Enfant Plaza (n738189393)
+        - Smithsonian (n1844430184)
+        - Federal Triangle (n738189343)
+        - Metro Center (n7788485989)
+        - McPherson Square (n738189342)
+        - Farragut West (n738189326)
+        - Foggy Bottom–GWU (n738189359)
+        - Rosslyn (n738189319)
+        - Arlington Cemetery (n738189380)
+        - Pentagon (n453069888)
+        - Pentagon City (n738189357)
+        - Crystal City (n738189355)
+        - Ronald Reagan Washington National Airport (n738189386)
+        - Braddock Road (n738189320)
+        - King Street–Old Town (n738189339)
+        - Van Dorn Street (n738189365)
+        - Franconia–Springfield (n738189366)
 
-      r2609895: 
-        - Greenbelt (n738189376)
-        - College Park–University of Maryland (n738189344)
-        - Prince George's Plaza (n738189345)
-        - West Hyattsville (n738189383)
-        - Fort Totten (n7788485986)
-        - Georgia Avenue–Petworth (n738189374)
-        - Columbia Heights (n1333688926)
-        - U Street (n738189385)
-        - Shaw–Howard University (n738189352)
-        - Mount Vernon Square (n738189363)
-        - Gallery Place (n738189362)
-        - Archives (n738189394)
-        - L'Enfant Plaza (n7788485988)
-        - Waterfront (n5284068378)
-        - Navy Yard–Ballpark (n738189401)
-        - Anacostia (n738189399)
-        - Congress Heights (n738189331)
-        - Southern Avenue (n738189373)
-        - Naylor Road (n738189369)
-        - Suitland (n738189370)
-        - Branch Avenue (n738189335)
+      r270832: 
+        - Franconia–Springfield (n738189366)
+        - Van Dorn Street (n738189365)
+        - King Street–Old Town (n738189339)
+        - Braddock Road (n738189320)
+        - Ronald Reagan Washington National Airport (n738189386)
+        - Crystal City (n738189355)
+        - Pentagon City (n738189357)
+        - Pentagon (n453069888)
+        - Arlington Cemetery (n738189380)
+        - Rosslyn (n738189319)
+        - Foggy Bottom–GWU (n738189359)
+        - Farragut West (n738189326)
+        - McPherson Square (n738189342)
+        - Metro Center (n7788485989)
+        - Federal Triangle (n738189343)
+        - Smithsonian (n1844430184)
+        - L'Enfant Plaza (n738189393)
+        - Federal Center Southwest (n738189403)
+        - Capitol South (n738189321)
+        - Eastern Market (n738189400)
+        - Potomac Avenue (n738189360)
+        - Stadium–Armory (n738189327)
+        - Benning Road (n738189384)
+        - Capitol Heights (n738189348)
+        - Addison Road–Seat Pleasant (n738189387)
+        - Morgan Boulevard (n738189322)
+        - Largo Town Center (n810813923)
 
 
+  - 
+    ref: GR
+    name: WMATA Green Line
+    colour: '#008000'
+    station_count: 21
+    type: subway
     stations: 
       - Greenbelt (Metro)
       - College Park–University of Maryland
@@ -188,12 +124,88 @@ routes:
       - Suitland
       - Branch Avenue
 
-    ref: GR
+    itineraries: 
+      r2609895: 
+        - Greenbelt (n738189376)
+        - College Park–University of Maryland (n738189344)
+        - Prince George's Plaza (n738189345)
+        - West Hyattsville (n738189383)
+        - Fort Totten (n7788485986)
+        - Georgia Avenue–Petworth (n738189374)
+        - Columbia Heights (n1333688926)
+        - U Street (n738189385)
+        - Shaw–Howard University (n738189352)
+        - Mount Vernon Square (n738189363)
+        - Gallery Place (n738189362)
+        - Archives (n738189394)
+        - L'Enfant Plaza (n7788485988)
+        - Waterfront (n5284068378)
+        - Navy Yard–Ballpark (n738189401)
+        - Anacostia (n738189399)
+        - Congress Heights (n738189331)
+        - Southern Avenue (n738189373)
+        - Naylor Road (n738189369)
+        - Suitland (n738189370)
+        - Branch Avenue (n738189335)
+
+      r7919784: 
+        - Branch Avenue (n738189335)
+        - Suitland (n738189370)
+        - Naylor Road (n738189369)
+        - Southern Avenue (n738189373)
+        - Congress Heights (n738189331)
+        - Anacostia (n738189399)
+        - Navy Yard–Ballpark (n738189401)
+        - Waterfront (n5284068378)
+        - L'Enfant Plaza (n7788485988)
+        - Archives (n738189394)
+        - Gallery Place (n738189362)
+        - Mount Vernon Square (n738189363)
+        - Shaw–Howard University (n738189352)
+        - U Street (n738189385)
+        - Columbia Heights (n1333688926)
+        - Georgia Avenue–Petworth (n738189374)
+        - Fort Totten (n7788485986)
+        - West Hyattsville (n738189383)
+        - Prince George's Plaza (n738189345)
+        - College Park–University of Maryland (n738189344)
+        - Greenbelt (n738189376)
+
+
   - 
-    colour: '#e89038'
+    ref: OR
     name: WMATA Orange Line
-    type: subway
+    colour: '#e89038'
     station_count: 26
+    type: subway
+    stations: 
+      - New Carrollton (Metro)
+      - Landover
+      - Cheverly
+      - Deanwood
+      - Minnesota Avenue
+      - Stadium–Armory
+      - Potomac Avenue
+      - Eastern Market
+      - Capitol South
+      - Federal Center Southwest
+      - L'Enfant Plaza (Blue/Orange/Silver)
+      - Smithsonian
+      - Federal Triangle
+      - Metro Center (Blue/Orange/Silver)
+      - McPherson Square
+      - Farragut West
+      - Foggy Bottom–GWU
+      - Rosslyn
+      - Court House
+      - Clarendon
+      - Virginia Square–GMU
+      - Ballston–MU
+      - East Falls Church
+      - West Falls Church–VT/UVA
+      - Dunn Loring–Merrifield
+      - Vienna/Fairfax–GMU
+
     itineraries: 
       r400284: 
         - Vienna/Fairfax–GMU (n738189340)
@@ -252,100 +264,12 @@ routes:
         - Vienna/Fairfax–GMU (n738189340)
 
 
-    stations: 
-      - Vienna/Fairfax–GMU
-      - Dunn Loring–Merrifield
-      - West Falls Church–VT/UVA
-      - East Falls Church
-      - Ballston–MU
-      - Virginia Square–GMU
-      - Clarendon
-      - Court House
-      - Rosslyn
-      - Foggy Bottom–GWU
-      - Farragut West
-      - McPherson Square
-      - Metro Center (Blue/Orange/Silver)
-      - Federal Triangle
-      - Smithsonian
-      - L'Enfant Plaza (Blue/Orange/Silver)
-      - Federal Center Southwest
-      - Capitol South
-      - Eastern Market
-      - Potomac Avenue
-      - Stadium–Armory
-      - Minnesota Avenue
-      - Deanwood
-      - Cheverly
-      - Landover
-      - New Carrollton (Metro)
-
-    ref: OR
   - 
-    colour: '#e94333'
+    ref: RD
     name: WMATA Red Line
-    type: subway
+    colour: '#e94333'
     station_count: 27
-    itineraries: 
-      r192836: 
-        - Glenmont (n738189379)
-        - Wheaton (n738189337)
-        - Forest Glen (n738189324)
-        - Silver Spring (n3816542778)
-        - Takoma (n738189358)
-        - Fort Totten (n738189367)
-        - Brookland–CUA (n738189398)
-        - Rhode Island Avenue–Brentwood (n5276250837)
-        - NoMa–Gallaudet U (n738189375)
-        - Union Station (n738189330)
-        - Judiciary Square (n738189406)
-        - Gallery Place (n7788485987)
-        - Metro Center (n738189329)
-        - Farragut North (n738189364)
-        - Dupont Circle (n738182031)
-        - Woodley Park (n738189368)
-        - Cleveland Park (n738189318)
-        - Van Ness–UDC (n738189407)
-        - Tenleytown–AU (n738189341)
-        - Friendship Heights (n738189372)
-        - Bethesda (n738189338)
-        - Medical Center (n738189354)
-        - Grosvenor–Strathmore (n738189392)
-        - White Flint (n738189389)
-        - Twinbrook (n738189388)
-        - Rockville (n7015066751)
-        - Shady Grove (n738189350)
-
-      r7919629: 
-        - Shady Grove (n738189350)
-        - Rockville (n7015066751)
-        - Twinbrook (n738189388)
-        - White Flint (n738189389)
-        - Grosvenor–Strathmore (n738189392)
-        - Medical Center (n738189354)
-        - Bethesda (n738189338)
-        - Friendship Heights (n738189372)
-        - Tenleytown–AU (n738189341)
-        - Van Ness–UDC (n738189407)
-        - Cleveland Park (n738189318)
-        - Woodley Park (n738189368)
-        - Dupont Circle (n738182031)
-        - Farragut North (n738189364)
-        - Metro Center (n738189329)
-        - Gallery Place (n7788485987)
-        - Judiciary Square (n738189406)
-        - Union Station (n738189330)
-        - NoMa–Gallaudet U (n738189375)
-        - Rhode Island Avenue–Brentwood (n5276250837)
-        - Brookland–CUA (n738189398)
-        - Fort Totten (n738189367)
-        - Takoma (n738189358)
-        - Silver Spring (n3816542778)
-        - Forest Glen (n738189324)
-        - Wheaton (n738189337)
-        - Glenmont (n738189379)
-
-
+    type: subway
     stations: 
       - Glenmont
       - Wheaton
@@ -375,12 +299,102 @@ routes:
       - Rockville (Metro)
       - Shady Grove
 
-    ref: RD
+    itineraries: 
+      r7919629: 
+        - Shady Grove (n738189350)
+        - Rockville (n7015066751)
+        - Twinbrook (n738189388)
+        - White Flint (n738189389)
+        - Grosvenor–Strathmore (n738189392)
+        - Medical Center (n738189354)
+        - Bethesda (n738189338)
+        - Friendship Heights (n738189372)
+        - Tenleytown–AU (n738189341)
+        - Van Ness–UDC (n738189407)
+        - Cleveland Park (n738189318)
+        - Woodley Park (n738189368)
+        - Dupont Circle (n738182031)
+        - Farragut North (n738189364)
+        - Metro Center (n738189329)
+        - Gallery Place (n7788485987)
+        - Judiciary Square (n738189406)
+        - Union Station (n738189330)
+        - NoMa–Gallaudet U (n738189375)
+        - Rhode Island Avenue–Brentwood (n5276250837)
+        - Brookland–CUA (n738189398)
+        - Fort Totten (n738189367)
+        - Takoma (n738189358)
+        - Silver Spring (n3816542778)
+        - Forest Glen (n738189324)
+        - Wheaton (n738189337)
+        - Glenmont (n738189379)
+
+      r192836: 
+        - Glenmont (n738189379)
+        - Wheaton (n738189337)
+        - Forest Glen (n738189324)
+        - Silver Spring (n3816542778)
+        - Takoma (n738189358)
+        - Fort Totten (n738189367)
+        - Brookland–CUA (n738189398)
+        - Rhode Island Avenue–Brentwood (n5276250837)
+        - NoMa–Gallaudet U (n738189375)
+        - Union Station (n738189330)
+        - Judiciary Square (n738189406)
+        - Gallery Place (n7788485987)
+        - Metro Center (n738189329)
+        - Farragut North (n738189364)
+        - Dupont Circle (n738182031)
+        - Woodley Park (n738189368)
+        - Cleveland Park (n738189318)
+        - Van Ness–UDC (n738189407)
+        - Tenleytown–AU (n738189341)
+        - Friendship Heights (n738189372)
+        - Bethesda (n738189338)
+        - Medical Center (n738189354)
+        - Grosvenor–Strathmore (n738189392)
+        - White Flint (n738189389)
+        - Twinbrook (n738189388)
+        - Rockville (n7015066751)
+        - Shady Grove (n738189350)
+
+
   - 
-    colour: '#c0c0c0'
+    ref: SI
     name: WMATA Silver Line
-    type: subway
+    colour: '#c0c0c0'
     station_count: 28
+    type: subway
+    stations: 
+      - Wiehle–Reston East
+      - Spring Hill
+      - Greensboro
+      - Tysons Corner
+      - McLean
+      - East Falls Church
+      - Ballston–MU
+      - Virginia Square–GMU
+      - Clarendon
+      - Court House
+      - Rosslyn
+      - Foggy Bottom–GWU
+      - Farragut West
+      - McPherson Square
+      - Metro Center (Blue/Orange/Silver)
+      - Federal Triangle
+      - Smithsonian
+      - L'Enfant Plaza (Blue/Orange/Silver)
+      - Federal Center Southwest
+      - Capitol South
+      - Eastern Market
+      - Potomac Avenue
+      - Stadium–Armory
+      - Benning Road
+      - Capitol Heights
+      - Addison Road–Seat Pleasant
+      - Morgan Boulevard
+      - Largo Town Center
+
     itineraries: 
       r3031441: 
         - Largo Town Center (n810813923)
@@ -443,90 +457,12 @@ routes:
         - Largo Town Center (n810813923)
 
 
-    stations: 
-      - Largo Town Center
-      - Morgan Boulevard
-      - Addison Road–Seat Pleasant
-      - Capitol Heights
-      - Benning Road
-      - Stadium–Armory
-      - Potomac Avenue
-      - Eastern Market
-      - Capitol South
-      - Federal Center Southwest
-      - L'Enfant Plaza (Blue/Orange/Silver)
-      - Smithsonian
-      - Federal Triangle
-      - Metro Center (Blue/Orange/Silver)
-      - McPherson Square
-      - Farragut West
-      - Foggy Bottom–GWU
-      - Rosslyn
-      - Court House
-      - Clarendon
-      - Virginia Square–GMU
-      - Ballston–MU
-      - East Falls Church
-      - McLean
-      - Tysons Corner
-      - Greensboro
-      - Spring Hill
-      - Wiehle–Reston East
-
-    ref: SI
   - 
-    colour: '#ffff00'
+    ref: YL
     name: WMATA Yellow Line
-    type: subway
+    colour: '#ffff00'
     station_count: 21
-    itineraries: 
-      r918503: 
-        - Greenbelt (n738189376)
-        - College Park–University of Maryland (n738189344)
-        - Prince George's Plaza (n738189345)
-        - West Hyattsville (n738189383)
-        - Fort Totten (n7788485986)
-        - Georgia Avenue–Petworth (n738189374)
-        - Columbia Heights (n1333688926)
-        - U Street (n738189385)
-        - Shaw–Howard University (n738189352)
-        - Mount Vernon Square (n738189363)
-        - Gallery Place (n738189362)
-        - Archives (n738189394)
-        - L'Enfant Plaza (n7788485988)
-        - Pentagon (n453069888)
-        - Pentagon City (n738189357)
-        - Crystal City (n738189355)
-        - Ronald Reagan Washington National Airport (n738189386)
-        - Braddock Road (n738189320)
-        - King Street–Old Town (n738189339)
-        - Eisenhower Avenue (n5352800477)
-        - Huntington (n738189378)
-
-      r7572166: 
-        - Huntington (n738189378)
-        - Eisenhower Avenue (n5352800477)
-        - King Street–Old Town (n738189339)
-        - Braddock Road (n738189320)
-        - Ronald Reagan Washington National Airport (n738189386)
-        - Crystal City (n738189355)
-        - Pentagon City (n738189357)
-        - Pentagon (n453069888)
-        - L'Enfant Plaza (n7788485988)
-        - Archives (n738189394)
-        - Gallery Place (n738189362)
-        - Mount Vernon Square (n738189363)
-        - Shaw–Howard University (n738189352)
-        - U Street (n738189385)
-        - Columbia Heights (n1333688926)
-        - Georgia Avenue–Petworth (n738189374)
-        - Fort Totten (n7788485986)
-        - West Hyattsville (n738189383)
-        - Prince George's Plaza (n738189345)
-        - College Park–University of Maryland (n738189344)
-        - Greenbelt (n738189376)
-
-
+    type: subway
     stations: 
       - Huntington
       - Eisenhower Avenue
@@ -550,7 +486,54 @@ routes:
       - College Park–University of Maryland
       - Greenbelt (Metro)
 
-    ref: YL
+    itineraries: 
+      r7572166: 
+        - Huntington (n738189378)
+        - Eisenhower Avenue (n5352800477)
+        - King Street–Old Town (n738189339)
+        - Braddock Road (n738189320)
+        - Ronald Reagan Washington National Airport (n738189386)
+        - Crystal City (n738189355)
+        - Pentagon City (n738189357)
+        - Pentagon (n453069888)
+        - L'Enfant Plaza (n7788485988)
+        - Archives (n738189394)
+        - Gallery Place (n738189362)
+        - Mount Vernon Square (n738189363)
+        - Shaw–Howard University (n738189352)
+        - U Street (n738189385)
+        - Columbia Heights (n1333688926)
+        - Georgia Avenue–Petworth (n738189374)
+        - Fort Totten (n7788485986)
+        - West Hyattsville (n738189383)
+        - Prince George's Plaza (n738189345)
+        - College Park–University of Maryland (n738189344)
+        - Greenbelt (n738189376)
+
+      r918503: 
+        - Greenbelt (n738189376)
+        - College Park–University of Maryland (n738189344)
+        - Prince George's Plaza (n738189345)
+        - West Hyattsville (n738189383)
+        - Fort Totten (n7788485986)
+        - Georgia Avenue–Petworth (n738189374)
+        - Columbia Heights (n1333688926)
+        - U Street (n738189385)
+        - Shaw–Howard University (n738189352)
+        - Mount Vernon Square (n738189363)
+        - Gallery Place (n738189362)
+        - Archives (n738189394)
+        - L'Enfant Plaza (n7788485988)
+        - Pentagon (n453069888)
+        - Pentagon City (n738189357)
+        - Crystal City (n738189355)
+        - Ronald Reagan Washington National Airport (n738189386)
+        - Braddock Road (n738189320)
+        - King Street–Old Town (n738189339)
+        - Eisenhower Avenue (n5352800477)
+        - Huntington (n738189378)
+
+
 
 stations: 
   - Addison Road–Seat Pleasant (n738189387)
@@ -648,4 +631,21 @@ stations:
   - White Flint (n738189389)
   - Wiehle–Reston East (n5351619702)
   - Woodley Park (n738189368)
+
+transfers: 
+  - 
+    - Farragut North (r6135570)
+    - Farragut West (r7924586)
+  - 
+    - Fort Totten (Red) (r7945937)
+    - Fort Totten (Yellow / Green) (r7945936)
+  - 
+    - Gallery Place (Red) (r7945932)
+    - Gallery Place (Yellow/Green) (r359558)
+  - 
+    - L'Enfant Plaza (Blue/Orange/Silver) (r7945929)
+    - L'Enfant Plaza (Green/Yellow) (r7921908)
+  - 
+    - Metro Center (Blue/Orange/Silver) (r7924554)
+    - Metro Center (Red) (r359557)
 

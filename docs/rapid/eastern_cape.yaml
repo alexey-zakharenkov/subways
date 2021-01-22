@@ -1,12 +1,31 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f58220'
+    ref: Berlin
     name: Berlin Line
-    type: train
+    colour: '#f58220'
     station_count: 18
+    type: train
+    stations: 
+      - Berlin
+      - Lonetree
+      - Fort Jackson
+      - Egerton
+      - Mount Ruth
+      - Mdantsane
+      - Mtsotso
+      - Arnoldton
+      - Wilsonia
+      - Dawn
+      - Horseshoe
+      - Highgate
+      - Cambridge
+      - Vincent
+      - Chiselhurst
+      - Panmure
+      - Southernwood
+      - East London
+
     itineraries: 
       r10374783: 
         - Berlin (n247325966)
@@ -49,32 +68,24 @@ routes:
         - Berlin (n247325966)
 
 
-    stations: 
-      - Berlin
-      - Lonetree
-      - Fort Jackson
-      - Egerton
-      - Mount Ruth
-      - Mdantsane
-      - Mtsotso
-      - Arnoldton
-      - Wilsonia
-      - Dawn
-      - Horseshoe
-      - Highgate
-      - Cambridge
-      - Vincent
-      - Chiselhurst
-      - Panmure
-      - Southernwood
-      - East London
-
-    ref: Berlin
   - 
-    colour: '#f9cc3e'
+    ref: Uitenhage CBD
     name: Uitenhage CBD
-    type: train
+    colour: '#f9cc3e'
     station_count: 10
+    type: train
+    stations: 
+      - Port Elizabeth
+      - North End
+      - Sydenham
+      - New Brighton
+      - Swartkops
+      - Redhouse
+      - Perseverance
+      - Despatch
+      - De Mist
+      - Uitenhage
+
     itineraries: 
       r10374692: 
         - Uitenhage (n7035457399)
@@ -101,19 +112,6 @@ routes:
         - Uitenhage (n7035457399)
 
 
-    stations: 
-      - Port Elizabeth
-      - North End
-      - Sydenham
-      - New Brighton
-      - Swartkops
-      - Redhouse
-      - Perseverance
-      - Despatch
-      - De Mist
-      - Uitenhage
-
-    ref: Uitenhage CBD
 
 stations: 
   - Arnoldton (n247325948)
@@ -144,4 +142,6 @@ stations:
   - Uitenhage (n7035457399)
   - Vincent (n247326531)
   - Wilsonia (n356772234)
+
+transfers: 
 

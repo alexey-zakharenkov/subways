@@ -1,132 +1,34 @@
 
-transfers: 
-  - 
-    - Atlalilco (Linea 12) (r7970710)
-    - Atlalilco (Linea 8) (r7970711)
-  - 
-    - Balderas (Linea 1) (r7973316)
-    - Balderas (Linea 3) (r7895869)
-  - 
-    - Bellas Artes (Linea 2) (r7902752)
-    - Bellas Artes (Linea 8) (r7973334)
-  - 
-    - Buenavista (STC Metro) (r7895295)
-    - Buenavista (Tren Suburbano) (r10262718)
-  - 
-    - Candelaria (Linea 1) (r7898643)
-    - Candeleria (Linea 4) (r7970730)
-  - 
-    - Centro Médico (Linea 3) (r7895857)
-    - Centro Médico (Linea 9) (r7973111)
-  - 
-    - Chabacano (Linea 2) (r7902900)
-    - Chabacano (Linea 8) (r7973156)
-    - Chabacano (Linea 9) (r7973155)
-  - 
-    - Consulado (Linea 4) (r7970678)
-    - Consulado (Linea 5) (r7970677)
-  - 
-    - Deportivo 18 de Marzo (Linea 3) (r7895896)
-    - Deportivo 18 de Marzo (Linea 6) (r7970650)
-  - 
-    - El Rosario (Linea 6) (r7970641)
-    - El Rosario (Linea 7) (r7970642)
-  - 
-    - Ermita (Linea 12) (r7970705)
-    - Ermita (Linea 2) (r7970706)
-  - 
-    - Ferrería/Arena Ciudad de México (r8429763)
-    - Fortuna (r10262686)
-  - 
-    - Garibaldi-Lagunilla (Linea 8) (r7930040)
-    - Garibaldi/Lagunilla (Linea B) (r7973214)
-  - 
-    - Guerrero (Linea 3) (r7973281)
-    - Guerrero (Linea B) (r7895299)
-  - 
-    - Hidalgo (Linea 2) (r7973331)
-    - Hidalgo (Linea 3) (r7895883)
-  - 
-    - Instituto del Petróleo (Linea 5) (r7970646)
-    - Instituto del Petróleo (Linea 6) (r7970645)
-  - 
-    - Jamaica (Linea 4) (r7970718)
-    - Jamaica (Linea 9) (r7970717)
-  - 
-    - La Raza (Linea 3) (r7895891)
-    - La Raza (Linea 5) (r7970673)
-  - 
-    - Martín Carrera (Linea 4) (r7935336)
-    - Martín Carrera (Linea 6) (r7927103)
-  - 
-    - Mixcoac (Linea 12) (r7970669)
-    - Mixcoac (Linea 7) (r7930046)
-  - 
-    - Morelos (LInea B) (r7973044)
-    - Morelos (Linea 4) (r7973045)
-  - 
-    - Oceanía (Linea 5) (r7970691)
-    - Oceanía (Linea B) (r7930042)
-  - 
-    - Pantitlán (Linea 1) (r7898736)
-    - Pantitlán (Linea 5) (r7970696)
-    - Pantitlán (Linea 9) (r7970697)
-    - Pantitlán (Linea A) (r7970698)
-  - 
-    - Pino Suárez (Linea 1) (r7896018)
-    - Pino Suárez (Linea 2) (r7973303)
-  - 
-    - Salto del Agua (Linea 1) (r7896014)
-    - Salto del Agua (Linea 8) (r7973312)
-  - 
-    - San Lázaro (Linea 1) (r7898644)
-    - San Lázaro (Linea B) (r7973025)
-  - 
-    - Santa Anita (Linea 4) (r7970713)
-    - Santa Anita (Linea 8) (r7970714)
-  - 
-    - Tacuba (Linea 2) (r7970656)
-    - Tacuba (Linea 7) (r7902707)
-  - 
-    - Tacubaya (Linea 7) (r7970666)
-    - Tacubaya (Línea 1) (r7895947)
-    - Tacubaya (Línea 9) (r9294772)
-  - 
-    - Tasqueña (Metro de México) (r8429775)
-    - Tasqueña (Tren Ligero) (r3960536)
-  - 
-    - Zapata (Linea 12) (r7895428)
-    - Zapata (Linea 3) (r7970701)
-
 routes: 
   - 
-    colour: '#e86495'
+    ref: 1
     name: Línea 1
-    type: subway
+    colour: '#e86495'
     station_count: 20
-    itineraries: 
-      r1432856: 
-        - Pantitlán (n5358430107)
-        - Zaragoza (n1155638781)
-        - Gómez Farías (n294086737)
-        - Boulevard Puerto Aéreo (n1155638742)
-        - Balbuena (n5337596249)
-        - Moctezuma (n4923087436)
-        - San Lázaro (n5358443126)
-        - Candelaria (n5358423932)
-        - Merced (n1155680835)
-        - Pino Suárez (n5335789644)
-        - Isabel la Católica (n1158001795)
-        - Salto del Agua (n294088991)
-        - Balderas (n5335688062)
-        - Cuauhtémoc (n5335776404)
-        - Insurgentes (w217402832)
-        - Sevilla (n4688809545)
-        - Chapultepec (n5335762554)
-        - Juanacatlán (n5335750526)
-        - Tacubaya (n5335749332)
-        - Observatorio (w217419203)
+    type: subway
+    stations: 
+      - Pantitlán (Linea 1)
+      - Zaragoza
+      - Gómez Farías
+      - Boulevard Puerto Aéreo
+      - Balbuena
+      - Moctezuma
+      - San Lázaro (Linea 1)
+      - Candelaria (Linea 1)
+      - Merced
+      - Pino Suárez (Linea 1)
+      - Isabel la Católica
+      - Salto del Agua (Linea 1)
+      - Balderas (Linea 1)
+      - Cuauhtémoc
+      - Insurgentes
+      - Sevilla
+      - Chapultepec
+      - Juanacatlán
+      - Tacubaya (Línea 1)
+      - Observatorio
 
+    itineraries: 
       r7935037: 
         - Observatorio (w217419203)
         - Tacubaya (n5335749332)
@@ -149,35 +51,57 @@ routes:
         - Zaragoza (n1155638781)
         - Pantitlán (n5358430107)
 
+      r1432856: 
+        - Pantitlán (n5358430107)
+        - Zaragoza (n1155638781)
+        - Gómez Farías (n294086737)
+        - Boulevard Puerto Aéreo (n1155638742)
+        - Balbuena (n5337596249)
+        - Moctezuma (n4923087436)
+        - San Lázaro (n5358443126)
+        - Candelaria (n5358423932)
+        - Merced (n1155680835)
+        - Pino Suárez (n5335789644)
+        - Isabel la Católica (n1158001795)
+        - Salto del Agua (n294088991)
+        - Balderas (n5335688062)
+        - Cuauhtémoc (n5335776404)
+        - Insurgentes (w217402832)
+        - Sevilla (n4688809545)
+        - Chapultepec (n5335762554)
+        - Juanacatlán (n5335750526)
+        - Tacubaya (n5335749332)
+        - Observatorio (w217419203)
 
-    stations: 
-      - Observatorio
-      - Tacubaya (Línea 1)
-      - Juanacatlán
-      - Chapultepec
-      - Sevilla
-      - Insurgentes
-      - Cuauhtémoc
-      - Balderas (Linea 1)
-      - Salto del Agua (Linea 1)
-      - Isabel la Católica
-      - Pino Suárez (Linea 1)
-      - Merced
-      - Candelaria (Linea 1)
-      - San Lázaro (Linea 1)
-      - Moctezuma
-      - Balbuena
-      - Boulevard Puerto Aéreo
-      - Gómez Farías
-      - Zaragoza
-      - Pantitlán (Linea 1)
 
-    ref: 1
   - 
-    colour: '#b69764'
+    ref: 12
     name: Línea 12
-    type: subway
+    colour: '#b69764'
     station_count: 20
+    type: subway
+    stations: 
+      - Mixcoac (Linea 12)
+      - Insurgentes Sur
+      - Hospital 20 de Noviembre
+      - Zapata (Linea 12)
+      - Parque de los Venados
+      - Eje Central
+      - Ermita (Linea 12)
+      - Mexicaltzingo
+      - Atlalilco (Linea 12)
+      - Culhuacán
+      - San Andrés Tomatlán
+      - Lomas Estrella
+      - Calle 11
+      - Periférico Oriente
+      - Tezonco
+      - Olivos
+      - Nopalera
+      - Zapotitlán
+      - Tlaltenco
+      - Tláhuac
+
     itineraries: 
       r7935367: 
         - Tláhuac (n1991237764)
@@ -224,34 +148,38 @@ routes:
         - Tláhuac (n1991237764)
 
 
-    stations: 
-      - Mixcoac (Linea 12)
-      - Insurgentes Sur
-      - Hospital 20 de Noviembre
-      - Zapata (Linea 12)
-      - Parque de los Venados
-      - Eje Central
-      - Ermita (Linea 12)
-      - Mexicaltzingo
-      - Atlalilco (Linea 12)
-      - Culhuacán
-      - San Andrés Tomatlán
-      - Lomas Estrella
-      - Calle 11
-      - Periférico Oriente
-      - Tezonco
-      - Olivos
-      - Nopalera
-      - Zapotitlán
-      - Tlaltenco
-      - Tláhuac
-
-    ref: 12
   - 
-    colour: '#0080ff'
+    ref: 2
     name: Línea 2
-    type: subway
+    colour: '#0080ff'
     station_count: 24
+    type: subway
+    stations: 
+      - Cuatro Caminos
+      - Panteones
+      - Tacuba (Linea 2)
+      - Cuitláhuac
+      - Popotla
+      - Colegio Militar
+      - Normal
+      - San Cosme
+      - Revolución
+      - Hidalgo (Linea 2)
+      - Bellas Artes (Linea 2)
+      - Allende
+      - Zócalo
+      - Pino Suárez (Linea 2)
+      - San Antonio Abad
+      - Chabacano (Linea 2)
+      - Viaducto
+      - Xola
+      - Villa de Cortés
+      - Nativitas
+      - Portales
+      - Ermita (Linea 2)
+      - General Anaya
+      - Tasqueña (Metro de México)
+
     itineraries: 
       r7935435: 
         - Tasqueña (n3649087197)
@@ -306,62 +234,36 @@ routes:
         - Tasqueña (n3649087197)
 
 
-    stations: 
-      - Cuatro Caminos
-      - Panteones
-      - Tacuba (Linea 2)
-      - Cuitláhuac
-      - Popotla
-      - Colegio Militar
-      - Normal
-      - San Cosme
-      - Revolución
-      - Hidalgo (Linea 2)
-      - Bellas Artes (Linea 2)
-      - Allende
-      - Zócalo
-      - Pino Suárez (Linea 2)
-      - San Antonio Abad
-      - Chabacano (Linea 2)
-      - Viaducto
-      - Xola
-      - Villa de Cortés
-      - Nativitas
-      - Portales
-      - Ermita (Linea 2)
-      - General Anaya
-      - Tasqueña (Metro de México)
-
-    ref: 2
   - 
-    colour: '#ae9d27'
+    ref: 3
     name: Línea 3
-    type: subway
+    colour: '#ae9d27'
     station_count: 21
-    itineraries: 
-      r443206: 
-        - Indios Verdes (w217801323)
-        - Deportivo 18 de Marzo (n5382514908)
-        - Potrero (w217802099)
-        - La Raza (n5335707477)
-        - Tlatelolco (n5335704171)
-        - Guerrero (n5335244209)
-        - Hidalgo (n5335697469)
-        - Juárez (n5335697471)
-        - Balderas (n5335688062)
-        - Niños Héroes (n5335683975)
-        - Hospital General (n5335680625)
-        - Centro Médico (n5383932843)
-        - Etiopía/Plaza de la Transparencia (n5335412857)
-        - Eugenia (n5335318010)
-        - División del Norte (n5335301483)
-        - Zapata (n5335289466)
-        - Coyoacán (n5335249518)
-        - Viveros-Derechos Humanos (n5335255558)
-        - Miguel Ángel de Quevedo (n5335259535)
-        - Copilco (n5335263290)
-        - Universidad (n5335271955)
+    type: subway
+    stations: 
+      - Universidad
+      - Copilco
+      - Miguel Ángel de Quevedo
+      - Viveros-Derechos Humanos
+      - Coyoacán
+      - Zapata (Linea 3)
+      - División del Norte
+      - Eugenia
+      - 'Etiopía - Plaza de la Transparencia'
+      - Centro Médico (Linea 3)
+      - Hospital General
+      - Niños Héroes
+      - Balderas (Linea 3)
+      - Juárez
+      - Hidalgo (Linea 3)
+      - Guerrero (Linea 3)
+      - Tlatelolco
+      - La Raza (Linea 3)
+      - Potrero
+      - Deportivo 18 de Marzo (Linea 3)
+      - Indios Verdes
 
+    itineraries: 
       r7935445: 
         - Universidad (n5335271955)
         - Copilco (n5335263290)
@@ -385,36 +287,48 @@ routes:
         - Deportivo 18 de Marzo (n5382514908)
         - Indios Verdes (w217801323)
 
+      r443206: 
+        - Indios Verdes (w217801323)
+        - Deportivo 18 de Marzo (n5382514908)
+        - Potrero (w217802099)
+        - La Raza (n5335707477)
+        - Tlatelolco (n5335704171)
+        - Guerrero (n5335244209)
+        - Hidalgo (n5335697469)
+        - Juárez (n5335697471)
+        - Balderas (n5335688062)
+        - Niños Héroes (n5335683975)
+        - Hospital General (n5335680625)
+        - Centro Médico (n5383932843)
+        - Etiopía/Plaza de la Transparencia (n5335412857)
+        - Eugenia (n5335318010)
+        - División del Norte (n5335301483)
+        - Zapata (n5335289466)
+        - Coyoacán (n5335249518)
+        - Viveros-Derechos Humanos (n5335255558)
+        - Miguel Ángel de Quevedo (n5335259535)
+        - Copilco (n5335263290)
+        - Universidad (n5335271955)
 
-    stations: 
-      - Indios Verdes
-      - Deportivo 18 de Marzo (Linea 3)
-      - Potrero
-      - La Raza (Linea 3)
-      - Tlatelolco
-      - Guerrero (Linea 3)
-      - Hidalgo (Linea 3)
-      - Juárez
-      - Balderas (Linea 3)
-      - Niños Héroes
-      - Hospital General
-      - Centro Médico (Linea 3)
-      - 'Etiopía - Plaza de la Transparencia'
-      - Eugenia
-      - División del Norte
-      - Zapata (Linea 3)
-      - Coyoacán
-      - Viveros-Derechos Humanos
-      - Miguel Ángel de Quevedo
-      - Copilco
-      - Universidad
 
-    ref: 3
   - 
-    colour: '#80ffff'
+    ref: 4
     name: Línea 4
-    type: subway
+    colour: '#80ffff'
     station_count: 10
+    type: subway
+    stations: 
+      - Martín Carrera (Linea 4)
+      - Talismán
+      - Bondojito
+      - Consulado (Linea 4)
+      - Canal del Norte
+      - Morelos (Linea 4)
+      - Candeleria (Linea 4)
+      - Fray Servando
+      - Jamaica (Linea 4)
+      - Santa Anita (Linea 4)
+
     itineraries: 
       r443196: 
         - Martín Carrera (n5363864103)
@@ -441,40 +355,28 @@ routes:
         - Martín Carrera (n5363864103)
 
 
-    stations: 
-      - Martín Carrera (Linea 4)
-      - Talismán
-      - Bondojito
-      - Consulado (Linea 4)
-      - Canal del Norte
-      - Morelos (Linea 4)
-      - Candeleria (Linea 4)
-      - Fray Servando
-      - Jamaica (Linea 4)
-      - Santa Anita (Linea 4)
-
-    ref: 4
   - 
-    colour: '#ffff11'
+    ref: 5
     name: Línea 5
-    type: subway
+    colour: '#ffff11'
     station_count: 13
-    itineraries: 
-      r7935362: 
-        - Pantitlán (n5358430107)
-        - Hangares (n313547018)
-        - Terminal Aérea (n313546269)
-        - Oceanía (n5358462886)
-        - Aragón (n302325593)
-        - Eduardo Molina (n302325585)
-        - Consulado (n5382550257)
-        - Valle Gómez (n2288627581)
-        - Misterios (n2288627580)
-        - La Raza (n5335707477)
-        - Autobuses del Norte (n313766839)
-        - Instituto del Petróleo (n5382508495)
-        - Politécnico (n313766852)
+    type: subway
+    stations: 
+      - Pantitlán (Linea 5)
+      - Hangares
+      - Terminal Aérea
+      - Oceanía (Linea 5)
+      - Aragón
+      - Eduardo Molina
+      - Consulado (Linea 5)
+      - Valle Gómez
+      - Misterios
+      - La Raza (Linea 5)
+      - Autobuses del Norte
+      - Instituto del Petróleo (Linea 5)
+      - Politécnico
 
+    itineraries: 
       r443204: 
         - Politécnico (n313766852)
         - Instituto del Petróleo (n5382508495)
@@ -490,28 +392,41 @@ routes:
         - Hangares (n313547018)
         - Pantitlán (n5358430107)
 
+      r7935362: 
+        - Pantitlán (n5358430107)
+        - Hangares (n313547018)
+        - Terminal Aérea (n313546269)
+        - Oceanía (n5358462886)
+        - Aragón (n302325593)
+        - Eduardo Molina (n302325585)
+        - Consulado (n5382550257)
+        - Valle Gómez (n2288627581)
+        - Misterios (n2288627580)
+        - La Raza (n5335707477)
+        - Autobuses del Norte (n313766839)
+        - Instituto del Petróleo (n5382508495)
+        - Politécnico (n313766852)
 
-    stations: 
-      - Politécnico
-      - Instituto del Petróleo (Linea 5)
-      - Autobuses del Norte
-      - La Raza (Linea 5)
-      - Misterios
-      - Valle Gómez
-      - Consulado (Linea 5)
-      - Eduardo Molina
-      - Aragón
-      - Oceanía (Linea 5)
-      - Terminal Aérea
-      - Hangares
-      - Pantitlán (Linea 5)
 
-    ref: 5
   - 
-    colour: '#e00050'
+    ref: 6
     name: Línea 6
-    type: subway
+    colour: '#e00050'
     station_count: 11
+    type: subway
+    stations: 
+      - El Rosario (Linea 6)
+      - Tezozómoc
+      - UAM-Azcapotzalco
+      - Ferrería/Arena Ciudad de México
+      - Norte 45
+      - Vallejo
+      - Instituto del Petróleo (Linea 6)
+      - Lindavista
+      - Deportivo 18 de Marzo (Linea 6)
+      - La Villa-Basílica
+      - Martín Carrera (Linea 6)
+
     itineraries: 
       r443209: 
         - Martín Carrera (n5363864103)
@@ -540,25 +455,28 @@ routes:
         - Martín Carrera (n5363864103)
 
 
-    stations: 
-      - El Rosario (Linea 6)
-      - Tezozómoc
-      - UAM-Azcapotzalco
-      - Ferrería/Arena Ciudad de México
-      - Norte 45
-      - Vallejo
-      - Instituto del Petróleo (Linea 6)
-      - Lindavista
-      - Deportivo 18 de Marzo (Linea 6)
-      - La Villa-Basílica
-      - Martín Carrera (Linea 6)
-
-    ref: 6
   - 
-    colour: '#ff8000'
+    ref: 7
     name: Línea 7
-    type: subway
+    colour: '#ff8000'
     station_count: 14
+    type: subway
+    stations: 
+      - Barranca del Muerto
+      - Mixcoac (Linea 7)
+      - San Antonio
+      - San Pedro de los Pinos
+      - Tacubaya (Linea 7)
+      - Constituyentes
+      - Auditorio
+      - Polanco
+      - San Joaquín
+      - Tacuba (Linea 7)
+      - Refinería
+      - Camarones
+      - Aquiles Serdán
+      - El Rosario (Linea 7)
+
     itineraries: 
       r7935373: 
         - Barranca del Muerto (n308554084)
@@ -593,50 +511,34 @@ routes:
         - Barranca del Muerto (n308554084)
 
 
-    stations: 
-      - El Rosario (Linea 7)
-      - Aquiles Serdán
-      - Camarones
-      - Refinería
-      - Tacuba (Linea 7)
-      - San Joaquín
-      - Polanco
-      - Auditorio
-      - Constituyentes
-      - Tacubaya (Linea 7)
-      - San Pedro de los Pinos
-      - San Antonio
-      - Mixcoac (Linea 7)
-      - Barranca del Muerto
-
-    ref: 7
   - 
-    colour: '#30c090'
+    ref: 8
     name: Línea 8
-    type: subway
+    colour: '#30c090'
     station_count: 19
-    itineraries: 
-      r443195: 
-        - Garibaldi-Lagunilla (n5358459287)
-        - Bellas Artes (n5339558998)
-        - San Juan de Letrán (n555081970)
-        - Salto del Agua (n294088991)
-        - Doctores (n555079083)
-        - Obrera (n555079073)
-        - Chabacano (n5339640805)
-        - La Viga (n555079051)
-        - Santa Anita (n5383897872)
-        - Coyuya (n3649370809)
-        - Iztacalco (n555065028)
-        - Apatlaco (n555064969)
-        - Aculco (n555066702)
-        - Escuadrón 201 (n555066276)
-        - Atlalilco (n5341512359)
-        - Iztapalapa (n3692692973)
-        - Cerro de la Estrella (n554750099)
-        - UAM-I (n554754754)
-        - Constitución de 1917 (n506035217)
+    type: subway
+    stations: 
+      - Garibaldi-Lagunilla (Linea 8)
+      - Bellas Artes (Linea 8)
+      - San Juan de Letrán
+      - Salto del Agua (Linea 8)
+      - Doctores
+      - Obrera
+      - Chabacano (Linea 8)
+      - La Viga
+      - Santa Anita (Linea 8)
+      - Coyuya
+      - Iztacalco
+      - Apatlaco
+      - Aculco
+      - Escuadrón 201
+      - Atlalilco (Linea 8)
+      - Iztapalapa
+      - Cerro de la Estrella
+      - UAM-I
+      - Constitución de 1917
 
+    itineraries: 
       r7935421: 
         - Constitución de 1917 (n506035217)
         - UAM-I (n554754754)
@@ -658,64 +560,34 @@ routes:
         - Bellas Artes (n5339558998)
         - Garibaldi-Lagunilla (n5358459287)
 
+      r443195: 
+        - Garibaldi-Lagunilla (n5358459287)
+        - Bellas Artes (n5339558998)
+        - San Juan de Letrán (n555081970)
+        - Salto del Agua (n294088991)
+        - Doctores (n555079083)
+        - Obrera (n555079073)
+        - Chabacano (n5339640805)
+        - La Viga (n555079051)
+        - Santa Anita (n5383897872)
+        - Coyuya (n3649370809)
+        - Iztacalco (n555065028)
+        - Apatlaco (n555064969)
+        - Aculco (n555066702)
+        - Escuadrón 201 (n555066276)
+        - Atlalilco (n5341512359)
+        - Iztapalapa (n3692692973)
+        - Cerro de la Estrella (n554750099)
+        - UAM-I (n554754754)
+        - Constitución de 1917 (n506035217)
 
-    stations: 
-      - Constitución de 1917
-      - UAM-I
-      - Cerro de la Estrella
-      - Iztapalapa
-      - Atlalilco (Linea 8)
-      - Escuadrón 201
-      - Aculco
-      - Apatlaco
-      - Iztacalco
-      - Coyuya
-      - Santa Anita (Linea 8)
-      - La Viga
-      - Chabacano (Linea 8)
-      - Obrera
-      - Doctores
-      - Salto del Agua (Linea 8)
-      - San Juan de Letrán
-      - Bellas Artes (Linea 8)
-      - Garibaldi-Lagunilla (Linea 8)
 
-    ref: 8
   - 
-    colour: '#804000'
+    ref: 9
     name: Línea 9
-    type: subway
+    colour: '#804000'
     station_count: 12
-    itineraries: 
-      r443224: 
-        - Tacubaya (n5335749332)
-        - Patriotismo (n2266164095)
-        - Chilpancingo (n842889550)
-        - Centro Médico (n5383932843)
-        - Lázaro Cárdenas (n294082204)
-        - Chabacano (n5339640805)
-        - Jamaica (n5383898229)
-        - Mixhuca (n555069072)
-        - Velódromo (n294027569)
-        - Ciudad Deportiva (n294027195)
-        - Puebla (n294027128)
-        - Pantitlán (n5358430107)
-
-      r7935440: 
-        - Pantitlán (n5358430107)
-        - Puebla (n294027128)
-        - Ciudad Deportiva (n294027195)
-        - Velódromo (n294027569)
-        - Mixhuca (n555069072)
-        - Jamaica (n5383898229)
-        - Chabacano (n5339640805)
-        - Lázaro Cárdenas (n294082204)
-        - Centro Médico (n5383932843)
-        - Chilpancingo (n842889550)
-        - Patriotismo (n2266164095)
-        - Tacubaya (n5335749332)
-
-
+    type: subway
     stations: 
       - Tacubaya (Línea 9)
       - Patriotismo
@@ -730,25 +602,55 @@ routes:
       - Puebla
       - Pantitlán (Linea 9)
 
-    ref: 9
-  - 
-    colour: '#a3277d'
-    name: Línea A
-    type: subway
-    station_count: 10
     itineraries: 
-      r1429929: 
-        - La Paz (n1149526802)
-        - Los Reyes (n1149526748)
-        - Santa Martha (n1149526719)
-        - Acatitla (n3650765703)
-        - Peñón Viejo (n1155147125)
-        - Guelatao (n1155147244)
-        - Tepalcates (n1155521764)
-        - Canal de San Juan (n1155521581)
-        - Agrícola Oriental (n1155521678)
+      r7935440: 
+        - Pantitlán (n5358430107)
+        - Puebla (n294027128)
+        - Ciudad Deportiva (n294027195)
+        - Velódromo (n294027569)
+        - Mixhuca (n555069072)
+        - Jamaica (n5383898229)
+        - Chabacano (n5339640805)
+        - Lázaro Cárdenas (n294082204)
+        - Centro Médico (n5383932843)
+        - Chilpancingo (n842889550)
+        - Patriotismo (n2266164095)
+        - Tacubaya (n5335749332)
+
+      r443224: 
+        - Tacubaya (n5335749332)
+        - Patriotismo (n2266164095)
+        - Chilpancingo (n842889550)
+        - Centro Médico (n5383932843)
+        - Lázaro Cárdenas (n294082204)
+        - Chabacano (n5339640805)
+        - Jamaica (n5383898229)
+        - Mixhuca (n555069072)
+        - Velódromo (n294027569)
+        - Ciudad Deportiva (n294027195)
+        - Puebla (n294027128)
         - Pantitlán (n5358430107)
 
+
+  - 
+    ref: A
+    name: Línea A
+    colour: '#a3277d'
+    station_count: 10
+    type: subway
+    stations: 
+      - Pantitlán (Linea A)
+      - Agrícola Oriental
+      - Canal de San Juan
+      - Tepalcates
+      - Guelatao
+      - Peñón Viejo
+      - Acatitla
+      - Santa Martha
+      - Los Reyes
+      - La Paz
+
+    itineraries: 
       r7935379: 
         - Pantitlán (n5358430107)
         - Agrícola Oriental (n1155521678)
@@ -761,73 +663,25 @@ routes:
         - Los Reyes (n1149526748)
         - La Paz (n1149526802)
 
+      r1429929: 
+        - La Paz (n1149526802)
+        - Los Reyes (n1149526748)
+        - Santa Martha (n1149526719)
+        - Acatitla (n3650765703)
+        - Peñón Viejo (n1155147125)
+        - Guelatao (n1155147244)
+        - Tepalcates (n1155521764)
+        - Canal de San Juan (n1155521581)
+        - Agrícola Oriental (n1155521678)
+        - Pantitlán (n5358430107)
 
-    stations: 
-      - La Paz
-      - Los Reyes
-      - Santa Martha
-      - Acatitla
-      - Peñón Viejo
-      - Guelatao
-      - Tepalcates
-      - Canal de San Juan
-      - Agrícola Oriental
-      - Pantitlán (Linea A)
 
-    ref: A
   - 
-    colour: '#408080'
+    ref: B
     name: Línea B
-    type: subway
+    colour: '#408080'
     station_count: 21
-    itineraries: 
-      r443198: 
-        - Buenavista (n5335231300)
-        - Guerrero (n5335244209)
-        - Garibaldi-Lagunilla (n5358459287)
-        - Lagunilla (n681460966)
-        - Tepito (n681460971)
-        - Morelos (n5383914298)
-        - San Lázaro (n5358443126)
-        - Ricardo Flores Magón (n302327340)
-        - Romero Rubio (n302327339)
-        - Oceanía (n5358462886)
-        - Deportivo Oceanía (n302327334)
-        - Bosque de Aragón (n302327331)
-        - Villa de Aragón (n302327325)
-        - Nezahualcóyotl (n302327319)
-        - Impulsora (n302327318)
-        - Río de Remedios (n302327317)
-        - Múzquiz (n302327316)
-        - Ecatepec (n302327315)
-        - Olímpica (n302327312)
-        - Plaza Aragón (n302327308)
-        - Ciudad Azteca (n302327307)
-
-      r7935432: 
-        - Ciudad Azteca (n302327307)
-        - Plaza Aragón (n302327308)
-        - Olímpica (n302327312)
-        - Ecatepec (n302327315)
-        - Múzquiz (n302327316)
-        - Río de Remedios (n302327317)
-        - Impulsora (n302327318)
-        - Nezahualcóyotl (n302327319)
-        - Villa de Aragón (n302327325)
-        - Bosque de Aragón (n302327331)
-        - Deportivo Oceanía (n302327334)
-        - Oceanía (n5358462886)
-        - Romero Rubio (n302327339)
-        - Ricardo Flores Magón (n302327340)
-        - San Lázaro (n5358443126)
-        - Morelos (n5383914298)
-        - Tepito (n681460971)
-        - Lagunilla (n681460966)
-        - Garibaldi-Lagunilla (n5358459287)
-        - Guerrero (n5335244209)
-        - Buenavista (n5335231300)
-
-
+    type: subway
     stations: 
       - Ciudad Azteca
       - Plaza Aragón
@@ -851,12 +705,69 @@ routes:
       - Guerrero (Linea B)
       - Buenavista (STC Metro)
 
-    ref: B
+    itineraries: 
+      r7935432: 
+        - Ciudad Azteca (n302327307)
+        - Plaza Aragón (n302327308)
+        - Olímpica (n302327312)
+        - Ecatepec (n302327315)
+        - Múzquiz (n302327316)
+        - Río de Remedios (n302327317)
+        - Impulsora (n302327318)
+        - Nezahualcóyotl (n302327319)
+        - Villa de Aragón (n302327325)
+        - Bosque de Aragón (n302327331)
+        - Deportivo Oceanía (n302327334)
+        - Oceanía (n5358462886)
+        - Romero Rubio (n302327339)
+        - Ricardo Flores Magón (n302327340)
+        - San Lázaro (n5358443126)
+        - Morelos (n5383914298)
+        - Tepito (n681460971)
+        - Lagunilla (n681460966)
+        - Garibaldi-Lagunilla (n5358459287)
+        - Guerrero (n5335244209)
+        - Buenavista (n5335231300)
+
+      r443198: 
+        - Buenavista (n5335231300)
+        - Guerrero (n5335244209)
+        - Garibaldi-Lagunilla (n5358459287)
+        - Lagunilla (n681460966)
+        - Tepito (n681460971)
+        - Morelos (n5383914298)
+        - San Lázaro (n5358443126)
+        - Ricardo Flores Magón (n302327340)
+        - Romero Rubio (n302327339)
+        - Oceanía (n5358462886)
+        - Deportivo Oceanía (n302327334)
+        - Bosque de Aragón (n302327331)
+        - Villa de Aragón (n302327325)
+        - Nezahualcóyotl (n302327319)
+        - Impulsora (n302327318)
+        - Río de Remedios (n302327317)
+        - Múzquiz (n302327316)
+        - Ecatepec (n302327315)
+        - Olímpica (n302327312)
+        - Plaza Aragón (n302327308)
+        - Ciudad Azteca (n302327307)
+
+
   - 
-    colour: '#bf1600'
+    ref: S
     name: Línea 1 de CAF Tren Suburbano
-    type: train
+    colour: '#bf1600'
     station_count: 7
+    type: train
+    stations: 
+      - Cuautitlán
+      - Tultitlán
+      - Lechería
+      - San Rafael
+      - Tlalnepantla
+      - Fortuna
+      - Buenavista (Tren Suburbano)
+
     itineraries: 
       r7498375: 
         - Cuautitlán (n6948920220)
@@ -877,63 +788,12 @@ routes:
         - Cuautitlán (n6948920220)
 
 
-    stations: 
-      - Buenavista (Tren Suburbano)
-      - Fortuna
-      - Tlalnepantla
-      - San Rafael
-      - Lechería
-      - Tultitlán
-      - Cuautitlán
-
-    ref: S
   - 
-    colour: '#233e81'
+    ref: TL
     name: Tren Ligero de la Ciudad de México
-    type: light_rail
+    colour: '#233e81'
     station_count: 18
-    itineraries: 
-      r1142629: 
-        - Tasqueña (n1130113868)
-        - Las Torres (n3016464458)
-        - Ciudad Jardín (n3016544532)
-        - La Virgen (n3021939899)
-        - Xotepingo (n3021948067)
-        - Nezahualpilli (n3021958260)
-        - Registro Federal (n3021967669)
-        - Textitlan (n1130113729)
-        - El Vergel (n1130113572)
-        - Estadio Azteca (n6572510418)
-        - Huipulco (n6572510416)
-        - Xomali (n1130113733)
-        - Periférico (n1130113671)
-        - Tepepan (n1130113803)
-        - La Noria (n1130113794)
-        - Huichapan (n1130113753)
-        - Francisco Goitia (n1130113836)
-        - Xochimilco (n1130113790)
-
-      r1402127: 
-        - Xochimilco (n1130113790)
-        - Francisco Goitia (n1130113836)
-        - Huichapan (n1130113753)
-        - La Noria (n1130113794)
-        - Tepepan (n1130113803)
-        - Periférico (n1130113671)
-        - Xomali (n1130113733)
-        - Huipulco (n6572510416)
-        - Estadio Azteca (n6572510418)
-        - El Vergel (n1130113572)
-        - Textitlan (n1130113729)
-        - Registro Federal (n3021967669)
-        - Nezahualpilli (n3021958260)
-        - Xotepingo (n3021948067)
-        - La Virgen (n3021939899)
-        - Ciudad Jardín (n3016544532)
-        - Las Torres (n3016464458)
-        - Tasqueña (n1130113868)
-
-
+    type: light_rail
     stations: 
       - Xochimilco
       - Francisco Goitia
@@ -954,7 +814,48 @@ routes:
       - Las Torres
       - Tasqueña (Tren Ligero)
 
-    ref: TL
+    itineraries: 
+      r1402127: 
+        - Xochimilco (n1130113790)
+        - Francisco Goitia (n1130113836)
+        - Huichapan (n1130113753)
+        - La Noria (n1130113794)
+        - Tepepan (n1130113803)
+        - Periférico (n1130113671)
+        - Xomali (n1130113733)
+        - Huipulco (n6572510416)
+        - Estadio Azteca (n6572510418)
+        - El Vergel (n1130113572)
+        - Textitlan (n1130113729)
+        - Registro Federal (n3021967669)
+        - Nezahualpilli (n3021958260)
+        - Xotepingo (n3021948067)
+        - La Virgen (n3021939899)
+        - Ciudad Jardín (n3016544532)
+        - Las Torres (n3016464458)
+        - Tasqueña (n1130113868)
+
+      r1142629: 
+        - Tasqueña (n1130113868)
+        - Las Torres (n3016464458)
+        - Ciudad Jardín (n3016544532)
+        - La Virgen (n3021939899)
+        - Xotepingo (n3021948067)
+        - Nezahualpilli (n3021958260)
+        - Registro Federal (n3021967669)
+        - Textitlan (n1130113729)
+        - El Vergel (n1130113572)
+        - Estadio Azteca (n6572510418)
+        - Huipulco (n6572510416)
+        - Xomali (n1130113733)
+        - Periférico (n1130113671)
+        - Tepepan (n1130113803)
+        - La Noria (n1130113794)
+        - Huichapan (n1130113753)
+        - Francisco Goitia (n1130113836)
+        - Xochimilco (n1130113790)
+
+
 
 stations: 
   - Acatitla (n3650765703)
@@ -1145,4 +1046,103 @@ stations:
   - Zapotitlán (n1991257161)
   - Zaragoza (n1155638781)
   - Zócalo (n5339555634)
+
+transfers: 
+  - 
+    - Atlalilco (Linea 12) (r7970710)
+    - Atlalilco (Linea 8) (r7970711)
+  - 
+    - Balderas (Linea 1) (r7973316)
+    - Balderas (Linea 3) (r7895869)
+  - 
+    - Bellas Artes (Linea 2) (r7902752)
+    - Bellas Artes (Linea 8) (r7973334)
+  - 
+    - Buenavista (STC Metro) (r7895295)
+    - Buenavista (Tren Suburbano) (r10262718)
+  - 
+    - Candelaria (Linea 1) (r7898643)
+    - Candeleria (Linea 4) (r7970730)
+  - 
+    - Centro Médico (Linea 3) (r7895857)
+    - Centro Médico (Linea 9) (r7973111)
+  - 
+    - Chabacano (Linea 2) (r7902900)
+    - Chabacano (Linea 8) (r7973156)
+    - Chabacano (Linea 9) (r7973155)
+  - 
+    - Consulado (Linea 4) (r7970678)
+    - Consulado (Linea 5) (r7970677)
+  - 
+    - Deportivo 18 de Marzo (Linea 3) (r7895896)
+    - Deportivo 18 de Marzo (Linea 6) (r7970650)
+  - 
+    - El Rosario (Linea 6) (r7970641)
+    - El Rosario (Linea 7) (r7970642)
+  - 
+    - Ermita (Linea 12) (r7970705)
+    - Ermita (Linea 2) (r7970706)
+  - 
+    - Ferrería/Arena Ciudad de México (r8429763)
+    - Fortuna (r10262686)
+  - 
+    - Garibaldi-Lagunilla (Linea 8) (r7930040)
+    - Garibaldi/Lagunilla (Linea B) (r7973214)
+  - 
+    - Guerrero (Linea 3) (r7973281)
+    - Guerrero (Linea B) (r7895299)
+  - 
+    - Hidalgo (Linea 2) (r7973331)
+    - Hidalgo (Linea 3) (r7895883)
+  - 
+    - Instituto del Petróleo (Linea 5) (r7970646)
+    - Instituto del Petróleo (Linea 6) (r7970645)
+  - 
+    - Jamaica (Linea 4) (r7970718)
+    - Jamaica (Linea 9) (r7970717)
+  - 
+    - La Raza (Linea 3) (r7895891)
+    - La Raza (Linea 5) (r7970673)
+  - 
+    - Martín Carrera (Linea 4) (r7935336)
+    - Martín Carrera (Linea 6) (r7927103)
+  - 
+    - Mixcoac (Linea 12) (r7970669)
+    - Mixcoac (Linea 7) (r7930046)
+  - 
+    - Morelos (LInea B) (r7973044)
+    - Morelos (Linea 4) (r7973045)
+  - 
+    - Oceanía (Linea 5) (r7970691)
+    - Oceanía (Linea B) (r7930042)
+  - 
+    - Pantitlán (Linea 1) (r7898736)
+    - Pantitlán (Linea 5) (r7970696)
+    - Pantitlán (Linea 9) (r7970697)
+    - Pantitlán (Linea A) (r7970698)
+  - 
+    - Pino Suárez (Linea 1) (r7896018)
+    - Pino Suárez (Linea 2) (r7973303)
+  - 
+    - Salto del Agua (Linea 1) (r7896014)
+    - Salto del Agua (Linea 8) (r7973312)
+  - 
+    - San Lázaro (Linea 1) (r7898644)
+    - San Lázaro (Linea B) (r7973025)
+  - 
+    - Santa Anita (Linea 4) (r7970713)
+    - Santa Anita (Linea 8) (r7970714)
+  - 
+    - Tacuba (Linea 2) (r7970656)
+    - Tacuba (Linea 7) (r7902707)
+  - 
+    - Tacubaya (Linea 7) (r7970666)
+    - Tacubaya (Línea 1) (r7895947)
+    - Tacubaya (Línea 9) (r9294772)
+  - 
+    - Tasqueña (Metro de México) (r8429775)
+    - Tasqueña (Tren Ligero) (r3960536)
+  - 
+    - Zapata (Linea 12) (r7895428)
+    - Zapata (Linea 3) (r7970701)
 

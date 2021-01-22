@@ -1,57 +1,11 @@
 
-transfers: 
-  - 
-    - Gare Lille Flandres (Ligne 1) (r9333340)
-    - Gare Lille Flandres (Ligne 2) (r9333339)
-
 routes: 
   - 
-    colour: '#ffd400'
+    ref: 1
     name: Métro Ligne 1
-    type: subway
+    colour: '#ffd400'
     station_count: 18
-    itineraries: 
-      r171691: 
-        - Quatre Cantons – Stade Pierre Mauroy (w79508706)
-        - Cité Scientifique – Professeur Gabillard (w79508517)
-        - Triolo (w79049973)
-        - Villeneuve d'Ascq – Hôtel de Ville (n367098730)
-        - Pont de Bois (n6525837594)
-        - Square Flandres (n392217616)
-        - Mairie d'Hellemmes (n392217617)
-        - Marbrerie (n392217618)
-        - Fives (n2062882464)
-        - Caulier (n405255871)
-        - Gare Lille Flandres (n5268053621)
-        - Rihour (n302942324)
-        - 'République - Beaux-Arts (n302942316)'
-        - Gambetta (n469323707)
-        - Wazemmes (n2062882287)
-        - Porte des Postes (n389432270)
-        - CHU – Centre Oscar Lambret (w39841726)
-        - CHU – Eurasanté (w39841728)
-
-      r7786750: 
-        - CHU – Eurasanté (w39841728)
-        - CHU – Centre Oscar Lambret (w39841726)
-        - Porte des Postes (n389432270)
-        - Wazemmes (n2062882287)
-        - Gambetta (n469323707)
-        - 'République - Beaux-Arts (n302942316)'
-        - Rihour (n302942324)
-        - Gare Lille Flandres (n5268053621)
-        - Caulier (n405255871)
-        - Fives (n2062882464)
-        - Marbrerie (n392217618)
-        - Mairie d'Hellemmes (n392217617)
-        - Square Flandres (n392217616)
-        - Pont de Bois (n6525837594)
-        - Villeneuve d'Ascq – Hôtel de Ville (n367098730)
-        - Triolo (w79049973)
-        - Cité Scientifique – Professeur Gabillard (w79508517)
-        - Quatre Cantons – Stade Pierre Mauroy (w79508706)
-
-
+    type: subway
     stations: 
       - Quatre Cantons – Stade Pierre Mauroy
       - Cité Scientifique – Professeur Gabillard
@@ -72,12 +26,100 @@ routes:
       - CHU – Centre Oscar Lambret
       - CHU – Eurasanté
 
-    ref: 1
+    itineraries: 
+      r7786750: 
+        - CHU – Eurasanté (w39841728)
+        - CHU – Centre Oscar Lambret (w39841726)
+        - Porte des Postes (n389432270)
+        - Wazemmes (n2062882287)
+        - Gambetta (n469323707)
+        - 'République - Beaux-Arts (n302942316)'
+        - Rihour (n302942324)
+        - Gare Lille Flandres (n5268053621)
+        - Caulier (n405255871)
+        - Fives (n2062882464)
+        - Marbrerie (n392217618)
+        - Mairie d'Hellemmes (n392217617)
+        - Square Flandres (n392217616)
+        - Pont de Bois (n6525837594)
+        - Villeneuve d'Ascq – Hôtel de Ville (n367098730)
+        - Triolo (w79049973)
+        - Cité Scientifique – Professeur Gabillard (w79508517)
+        - Quatre Cantons – Stade Pierre Mauroy (w79508706)
+
+      r171691: 
+        - Quatre Cantons – Stade Pierre Mauroy (w79508706)
+        - Cité Scientifique – Professeur Gabillard (w79508517)
+        - Triolo (w79049973)
+        - Villeneuve d'Ascq – Hôtel de Ville (n367098730)
+        - Pont de Bois (n6525837594)
+        - Square Flandres (n392217616)
+        - Mairie d'Hellemmes (n392217617)
+        - Marbrerie (n392217618)
+        - Fives (n2062882464)
+        - Caulier (n405255871)
+        - Gare Lille Flandres (n5268053621)
+        - Rihour (n302942324)
+        - 'République - Beaux-Arts (n302942316)'
+        - Gambetta (n469323707)
+        - Wazemmes (n2062882287)
+        - Porte des Postes (n389432270)
+        - CHU – Centre Oscar Lambret (w39841726)
+        - CHU – Eurasanté (w39841728)
+
+
   - 
-    colour: '#ed1d24'
+    ref: 2
     name: Métro Ligne 2
-    type: subway
+    colour: '#ed1d24'
     station_count: 44
+    type: subway
+    stations: 
+      - Saint-Philibert
+      - Bourg
+      - Maison des Enfants
+      - Mitterie
+      - Pont Supérieur
+      - Lomme – Lambersart – Arthur Notebart
+      - Canteleu
+      - Bois Blancs
+      - Port de Lille
+      - Cormontaigne
+      - Montebello
+      - Porte des Postes
+      - Porte d'Arras
+      - Porte de Douai
+      - Porte de Valenciennes
+      - Lille Grand Palais
+      - Mairie de Lille
+      - Gare Lille Flandres (Ligne 2)
+      - Gare Lille Europe
+      - Saint-Maurice Pellevoisin
+      - Mons Sarts
+      - Mairie de Mons
+      - Fort de Mons
+      - 'Les Prés - Edgard-Pisani'
+      - Jean Jaurès
+      - Wasquehal – Pavé de Lille
+      - Wasquehal – Hôtel de Ville
+      - Croix Centre
+      - Mairie de Croix
+      - Épeule – Montesquieu
+      - Roubaix – Charles de Gaulle
+      - Eurotéléport
+      - Roubaix – Grand Place
+      - Gare Jean Lebas Roubaix
+      - Alsace
+      - Mercure
+      - Carliers
+      - Gare de Tourcoing
+      - Tourcoing Centre
+      - Colbert
+      - Phalempins
+      - Pont de Neuville
+      - Bourgogne
+      - C.H. Dron
+
     itineraries: 
       r7786749: 
         - C.H. Dron (n2061595085)
@@ -172,53 +214,6 @@ routes:
         - C.H. Dron (n2061595085)
 
 
-    stations: 
-      - Saint-Philibert
-      - Bourg
-      - Maison des Enfants
-      - Mitterie
-      - Pont Supérieur
-      - Lomme – Lambersart – Arthur Notebart
-      - Canteleu
-      - Bois Blancs
-      - Port de Lille
-      - Cormontaigne
-      - Montebello
-      - Porte des Postes
-      - Porte d'Arras
-      - Porte de Douai
-      - Porte de Valenciennes
-      - Lille Grand Palais
-      - Mairie de Lille
-      - Gare Lille Flandres (Ligne 2)
-      - Gare Lille Europe
-      - Saint-Maurice Pellevoisin
-      - Mons Sarts
-      - Mairie de Mons
-      - Fort de Mons
-      - 'Les Prés - Edgard-Pisani'
-      - Jean Jaurès
-      - Wasquehal – Pavé de Lille
-      - Wasquehal – Hôtel de Ville
-      - Croix Centre
-      - Mairie de Croix
-      - Épeule – Montesquieu
-      - Roubaix – Charles de Gaulle
-      - Eurotéléport
-      - Roubaix – Grand Place
-      - Gare Jean Lebas Roubaix
-      - Alsace
-      - Mercure
-      - Carliers
-      - Gare de Tourcoing
-      - Tourcoing Centre
-      - Colbert
-      - Phalempins
-      - Pont de Neuville
-      - Bourgogne
-      - C.H. Dron
-
-    ref: 2
 
 stations: 
   - Alsace (n7399520003)
@@ -281,4 +276,9 @@ stations:
   - 'Wasquehal - Pavé de Lille (n428622046)'
   - Wazemmes (n2062882287)
   - 'Épeule - Montesquieu (n3326895519)'
+
+transfers: 
+  - 
+    - Gare Lille Flandres (Ligne 1) (r9333340)
+    - Gare Lille Flandres (Ligne 2) (r9333339)
 

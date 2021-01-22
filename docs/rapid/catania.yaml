@@ -1,12 +1,23 @@
 
-transfers: 
-
 routes: 
   - 
+    ref: 1
+    name: Nesima-Porto
     colour: '#ff0000'
-    name: Nesima-Stesicoro
-    type: subway
     station_count: 10
+    type: subway
+    stations: 
+      - Nesima
+      - San Nullo
+      - Milo
+      - Borgo
+      - Giuffrida
+      - Italia
+      - Galatea
+      - Porto
+      - Stesicoro
+      - Giovanni XXIII
+
     itineraries: 
       r7269755: 
         - Porto (n7758321985)
@@ -51,19 +62,6 @@ routes:
         - Stesicoro (n601502076)
 
 
-    stations: 
-      - Nesima
-      - San Nullo
-      - Milo
-      - Borgo
-      - Giuffrida
-      - Italia
-      - Galatea
-      - Giovanni XXIII
-      - Stesicoro
-      - Porto
-
-    ref: 1
 
 stations: 
   - Borgo (n307423725)
@@ -76,4 +74,6 @@ stations:
   - Porto (n7758321985)
   - San Nullo (n2841490395)
   - Stesicoro (n601502076)
+
+transfers: 
 

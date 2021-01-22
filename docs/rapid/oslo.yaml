@@ -1,48 +1,48 @@
 
-transfers: 
-
 routes: 
   - 
+    ref: 1
     colour: '#00b6f1'
-    type: subway
     station_count: 35
-    itineraries: 
-      r2890636: 
-        - Frognerseteren (n25703752)
-        - Voksenkollen (n25703622)
-        - Lillevann (n25703429)
-        - Skogen (n25703253)
-        - Voksenlia (n1347436486)
-        - Holmenkollen (n1347436771)
-        - Besserud (n1347436674)
-        - Midtstuen (n1347436489)
-        - Skådalen (n1347436972)
-        - Vettakollen (n1347436843)
-        - Gråkammen (n1347436532)
-        - Slemdal (n1347436922)
-        - Ris (n1347436816)
-        - Gaustad (n1347436530)
-        - Vinderen (n1347436762)
-        - Steinerud (n1347436475)
-        - Frøen (n1489137128)
-        - Majorstuen (n2274012035)
-        - Nationaltheatret (n5218231660)
-        - Stortinget (n5218231673)
-        - Jernbanetorget (n5218231668)
-        - Grønland (n5218231665)
-        - Tøyen (n5487374937)
-        - Ensjø (n6184808734)
-        - Helsfyr (n5218231670)
-        - Brynseng (n5359891692)
-        - Høyenhall (n5359891629)
-        - Manglerud (n5359891619)
-        - Ryen (n5359891618)
-        - Brattlikollen (n5359891617)
-        - Karlsrud (n5206900305)
-        - Lambertseter (n5359891693)
-        - Munkelia (n5359891694)
-        - Bergkrystallen (n5359891695)
+    type: subway
+    stations: 
+      - Bergkrystallen
+      - Munkelia
+      - Lambertseter
+      - Karlsrud
+      - Brattlikollen
+      - Ryen
+      - Manglerud
+      - Høyenhall
+      - Brynseng
+      - Helsfyr
+      - Ensjø
+      - Tøyen
+      - Grønland
+      - Jernbanetorget
+      - Stortinget
+      - Nationaltheatret
+      - Majorstuen
+      - Frøen
+      - Steinerud
+      - Vinderen
+      - Gaustad
+      - Ris
+      - Slemdal
+      - Gråkammen
+      - Gulleråsen
+      - Vettakollen
+      - Skådalen
+      - Midtstuen
+      - Besserud
+      - Holmenkollen
+      - Voksenlia
+      - Skogen
+      - Lillevann
+      - Voksenkollen
+      - Frognerseteren
 
+    itineraries: 
       r6099199: 
         - Frognerseteren (n25703752)
         - Voksenkollen (n25703622)
@@ -69,34 +69,6 @@ routes:
         - Tøyen (n5487374937)
         - Ensjø (n6184808734)
         - Helsfyr (n5218231670)
-
-      r6099200: 
-        - Helsfyr (n5218231670)
-        - Ensjø (n6184808734)
-        - Tøyen (n5487374937)
-        - Grønland (n5218231665)
-        - Jernbanetorget (n5218231668)
-        - Stortinget (n5218231673)
-        - Nationaltheatret (n5218231660)
-        - Majorstuen (n2274012035)
-        - Frøen (n1489137128)
-        - Steinerud (n1347436475)
-        - Vinderen (n1347436762)
-        - Gaustad (n1347436530)
-        - Ris (n1347436816)
-        - Slemdal (n1347436922)
-        - Gråkammen (n1347436532)
-        - Gulleråsen (n25702382)
-        - Vettakollen (n1347436843)
-        - Skådalen (n1347436972)
-        - Midtstuen (n1347436489)
-        - Besserud (n1347436674)
-        - Holmenkollen (n1347436771)
-        - Voksenlia (n1347436486)
-        - Skogen (n25703253)
-        - Lillevann (n25703429)
-        - Voksenkollen (n25703622)
-        - Frognerseteren (n25703752)
 
       r451860: 
         - Bergkrystallen (n5359891695)
@@ -135,25 +107,87 @@ routes:
         - Voksenkollen (n25703622)
         - Frognerseteren (n25703752)
 
+      r6099200: 
+        - Helsfyr (n5218231670)
+        - Ensjø (n6184808734)
+        - Tøyen (n5487374937)
+        - Grønland (n5218231665)
+        - Jernbanetorget (n5218231668)
+        - Stortinget (n5218231673)
+        - Nationaltheatret (n5218231660)
+        - Majorstuen (n2274012035)
+        - Frøen (n1489137128)
+        - Steinerud (n1347436475)
+        - Vinderen (n1347436762)
+        - Gaustad (n1347436530)
+        - Ris (n1347436816)
+        - Slemdal (n1347436922)
+        - Gråkammen (n1347436532)
+        - Gulleråsen (n25702382)
+        - Vettakollen (n1347436843)
+        - Skådalen (n1347436972)
+        - Midtstuen (n1347436489)
+        - Besserud (n1347436674)
+        - Holmenkollen (n1347436771)
+        - Voksenlia (n1347436486)
+        - Skogen (n25703253)
+        - Lillevann (n25703429)
+        - Voksenkollen (n25703622)
+        - Frognerseteren (n25703752)
 
+      r2890636: 
+        - Frognerseteren (n25703752)
+        - Voksenkollen (n25703622)
+        - Lillevann (n25703429)
+        - Skogen (n25703253)
+        - Voksenlia (n1347436486)
+        - Holmenkollen (n1347436771)
+        - Besserud (n1347436674)
+        - Midtstuen (n1347436489)
+        - Skådalen (n1347436972)
+        - Vettakollen (n1347436843)
+        - Gråkammen (n1347436532)
+        - Slemdal (n1347436922)
+        - Ris (n1347436816)
+        - Gaustad (n1347436530)
+        - Vinderen (n1347436762)
+        - Steinerud (n1347436475)
+        - Frøen (n1489137128)
+        - Majorstuen (n2274012035)
+        - Nationaltheatret (n5218231660)
+        - Stortinget (n5218231673)
+        - Jernbanetorget (n5218231668)
+        - Grønland (n5218231665)
+        - Tøyen (n5487374937)
+        - Ensjø (n6184808734)
+        - Helsfyr (n5218231670)
+        - Brynseng (n5359891692)
+        - Høyenhall (n5359891629)
+        - Manglerud (n5359891619)
+        - Ryen (n5359891618)
+        - Brattlikollen (n5359891617)
+        - Karlsrud (n5206900305)
+        - Lambertseter (n5359891693)
+        - Munkelia (n5359891694)
+        - Bergkrystallen (n5359891695)
+
+
+  - 
+    ref: 2
+    colour: '#f26522'
+    station_count: 26
+    type: subway
     stations: 
-      - Frognerseteren
-      - Voksenkollen
-      - Lillevann
-      - Skogen
-      - Voksenlia
-      - Holmenkollen
-      - Besserud
-      - Midtstuen
-      - Skådalen
-      - Vettakollen
-      - Gråkammen
-      - Slemdal
-      - Ris
-      - Gaustad
-      - Vinderen
-      - Steinerud
-      - Frøen
+      - Østerås
+      - Lijordet
+      - Eiksmarka
+      - Ekraveien
+      - Røa
+      - Hovseter
+      - Holmen
+      - Makrellbekken
+      - Smestad
+      - Borgen
       - Majorstuen
       - Nationaltheatret
       - Stortinget
@@ -162,22 +196,15 @@ routes:
       - Tøyen
       - Ensjø
       - Helsfyr
-      - Bergkrystallen
-      - Munkelia
-      - Lambertseter
-      - Karlsrud
-      - Brattlikollen
-      - Ryen
-      - Manglerud
-      - Høyenhall
       - Brynseng
-      - Gulleråsen
+      - Hellerud
+      - Tveita
+      - Haugerud
+      - Trosterud
+      - Lindeberg
+      - Furuset
+      - Ellingsrudåsen
 
-    ref: 1
-  - 
-    colour: '#f26522'
-    type: subway
-    station_count: 26
     itineraries: 
       r452520: 
         - Ellingsrudåsen (n668188776)
@@ -236,39 +263,46 @@ routes:
         - Ellingsrudåsen (n668188776)
 
 
-    stations: 
-      - Østerås
-      - Lijordet
-      - Eiksmarka
-      - Ekraveien
-      - Røa
-      - Hovseter
-      - Holmen
-      - Makrellbekken
-      - Smestad
-      - Borgen
-      - Majorstuen
-      - Nationaltheatret
-      - Stortinget
-      - Jernbanetorget
-      - Grønland
-      - Tøyen
-      - Ensjø
-      - Helsfyr
-      - Brynseng
-      - Hellerud
-      - Tveita
-      - Haugerud
-      - Trosterud
-      - Lindeberg
-      - Furuset
-      - Ellingsrudåsen
-
-    ref: 2
   - 
+    ref: 3
     colour: '#a066aa'
-    type: subway
     station_count: 33
+    type: subway
+    stations: 
+      - Mortensrud
+      - Skullerud
+      - Bogerud
+      - Bøler
+      - Ulsrud
+      - Oppsal
+      - Skøyenåsen
+      - Godlia
+      - Hellerud
+      - Brynseng
+      - Helsfyr
+      - Ensjø
+      - Tøyen
+      - Grønland
+      - Jernbanetorget
+      - Stortinget
+      - Nationaltheatret
+      - Majorstuen
+      - Borgen
+      - Smestad
+      - Montebello
+      - Ullernåsen
+      - Åsjordet
+      - Bjørnsletta
+      - Jar
+      - Ringstabekk
+      - Bekkestua
+      - Gjønnes
+      - Haslum
+      - Avløs
+      - Gjettum
+      - Hauger
+      - Kolsås
+
     itineraries: 
       r6104597: 
         - Stortinget (n5218231673)
@@ -287,24 +321,6 @@ routes:
         - Bogerud (n5359891701)
         - Skullerud (n5359891702)
         - Mortensrud (n5359891703)
-
-      r6104599: 
-        - Mortensrud (n5359891703)
-        - Skullerud (n5359891702)
-        - Bogerud (n5359891701)
-        - Bøler (n5359891700)
-        - Ulsrud (n5359891699)
-        - Oppsal (n5359891698)
-        - Skøyenåsen (n5359891697)
-        - Godlia (n5359891696)
-        - Hellerud (n5206912738)
-        - Brynseng (n5359891692)
-        - Helsfyr (n5218231670)
-        - Ensjø (n6184808734)
-        - Tøyen (n5487374937)
-        - Grønland (n5218231665)
-        - Jernbanetorget (n5218231668)
-        - Stortinget (n5218231673)
 
       r2635251: 
         - Kolsås (n5206918160)
@@ -376,17 +392,39 @@ routes:
         - Hauger (n3059769717)
         - Kolsås (n5206918160)
 
+      r6104599: 
+        - Mortensrud (n5359891703)
+        - Skullerud (n5359891702)
+        - Bogerud (n5359891701)
+        - Bøler (n5359891700)
+        - Ulsrud (n5359891699)
+        - Oppsal (n5359891698)
+        - Skøyenåsen (n5359891697)
+        - Godlia (n5359891696)
+        - Hellerud (n5206912738)
+        - Brynseng (n5359891692)
+        - Helsfyr (n5218231670)
+        - Ensjø (n6184808734)
+        - Tøyen (n5487374937)
+        - Grønland (n5218231665)
+        - Jernbanetorget (n5218231668)
+        - Stortinget (n5218231673)
 
+
+  - 
+    ref: 4
+    colour: '#0054a6'
+    station_count: 37
+    type: subway
     stations: 
-      - Mortensrud
-      - Skullerud
-      - Bogerud
-      - Bøler
-      - Ulsrud
-      - Oppsal
-      - Skøyenåsen
-      - Godlia
-      - Hellerud
+      - Bergkrystallen
+      - Munkelia
+      - Lambertseter
+      - Karlsrud
+      - Brattlikollen
+      - Ryen
+      - Manglerud
+      - Høyenhall
       - Brynseng
       - Helsfyr
       - Ensjø
@@ -396,27 +434,27 @@ routes:
       - Stortinget
       - Nationaltheatret
       - Majorstuen
-      - Borgen
-      - Smestad
-      - Montebello
-      - Ullernåsen
-      - Åsjordet
-      - Bjørnsletta
-      - Jar
-      - Ringstabekk
-      - Bekkestua
-      - Gjønnes
-      - Haslum
-      - Avløs
-      - Gjettum
-      - Hauger
-      - Kolsås
+      - Blindern
+      - Forskningsparken
+      - Ullevål stadion
+      - Nydalen
+      - Storo
+      - Sinsen
+      - Økern
+      - Risløkka
+      - Vollebekk
+      - Linderud
+      - Veitvet
+      - Rødvet
+      - Kalbakken
+      - Ammerud
+      - Grorud
+      - Romsås
+      - Rommen
+      - Stovner
+      - Vestli
+      - Løren
 
-    ref: 3
-  - 
-    colour: '#0054a6'
-    type: subway
-    station_count: 37
     itineraries: 
       r2826133: 
         - Vestli (n5463924740)
@@ -496,30 +534,32 @@ routes:
         - Vestli (n5463924740)
 
 
+  - 
+    ref: 5
+    colour: '#50b848'
+    station_count: 33
+    type: subway
     stations: 
-      - Bergkrystallen
-      - Munkelia
-      - Lambertseter
-      - Karlsrud
-      - Brattlikollen
-      - Ryen
-      - Manglerud
-      - Høyenhall
-      - Brynseng
-      - Helsfyr
-      - Ensjø
-      - Tøyen
-      - Grønland
-      - Jernbanetorget
-      - Stortinget
-      - Nationaltheatret
-      - Majorstuen
-      - Blindern
-      - Forskningsparken
+      - Sognsvann
+      - Kringsjå
+      - Holstein
+      - Østhorn
+      - Tåsen
+      - Berg
       - Ullevål stadion
-      - Nydalen
-      - Storo
+      - Forskningsparken
+      - Blindern
+      - Majorstuen
+      - Nationaltheatret
+      - Stortinget
+      - Jernbanetorget
+      - Grønland
+      - Tøyen
+      - Carl Berners plass
       - Sinsen
+      - Storo
+      - Nydalen
+      - Hasle
       - Økern
       - Risløkka
       - Vollebekk
@@ -533,59 +573,8 @@ routes:
       - Rommen
       - Stovner
       - Vestli
-      - Løren
 
-    ref: 4
-  - 
-    colour: '#50b848'
-    type: subway
-    station_count: 33
     itineraries: 
-      r2640903: 
-        - Sognsvann (n25298228)
-        - Kringsjå (n25298233)
-        - Holstein (n25298243)
-        - Østhorn (n25298260)
-        - Tåsen (n25050729)
-        - Berg (n25049175)
-        - Ullevål stadion (n5218231666)
-        - Forskningsparken (n5218231662)
-        - Blindern (n5218231663)
-        - Majorstuen (n2274012035)
-        - Nationaltheatret (n5218231660)
-        - Stortinget (n5218231673)
-        - Jernbanetorget (n5218231668)
-        - Grønland (n5218231665)
-        - Tøyen (n5487374937)
-        - Carl Berners plass (n26639185)
-        - Sinsen (n5218231664)
-        - Storo (n5218231669)
-        - Nydalen (n5218231667)
-        - Ullevål stadion (n5218231666)
-        - Forskningsparken (n5218231662)
-        - Blindern (n5218231663)
-        - Majorstuen (n2274012035)
-        - Nationaltheatret (n5218231660)
-        - Stortinget (n5218231673)
-        - Jernbanetorget (n5218231668)
-        - Grønland (n5218231665)
-        - Tøyen (n5487374937)
-        - Carl Berners plass (n26639185)
-        - Hasle (n5480418908)
-        - Økern (n5480418909)
-        - Risløkka (n5480418910)
-        - Vollebekk (n5480418911)
-        - Linderud (n5480418912)
-        - Veitvet (n5480418913)
-        - Rødtvet (n5480418915)
-        - Kalbakken (n5480418914)
-        - Ammerud (n5480418916)
-        - Grorud (n5480418917)
-        - Romsås (n5480418918)
-        - Rommen (n5480418919)
-        - Stovner (n5478620916)
-        - Vestli (n5463924740)
-
       r453461: 
         - Vestli (n5463924740)
         - Stovner (n5478620916)
@@ -631,43 +620,52 @@ routes:
         - Kringsjå (n25298233)
         - Sognsvann (n25298228)
 
+      r2640903: 
+        - Sognsvann (n25298228)
+        - Kringsjå (n25298233)
+        - Holstein (n25298243)
+        - Østhorn (n25298260)
+        - Tåsen (n25050729)
+        - Berg (n25049175)
+        - Ullevål stadion (n5218231666)
+        - Forskningsparken (n5218231662)
+        - Blindern (n5218231663)
+        - Majorstuen (n2274012035)
+        - Nationaltheatret (n5218231660)
+        - Stortinget (n5218231673)
+        - Jernbanetorget (n5218231668)
+        - Grønland (n5218231665)
+        - Tøyen (n5487374937)
+        - Carl Berners plass (n26639185)
+        - Sinsen (n5218231664)
+        - Storo (n5218231669)
+        - Nydalen (n5218231667)
+        - Ullevål stadion (n5218231666)
+        - Forskningsparken (n5218231662)
+        - Blindern (n5218231663)
+        - Majorstuen (n2274012035)
+        - Nationaltheatret (n5218231660)
+        - Stortinget (n5218231673)
+        - Jernbanetorget (n5218231668)
+        - Grønland (n5218231665)
+        - Tøyen (n5487374937)
+        - Carl Berners plass (n26639185)
+        - Hasle (n5480418908)
+        - Økern (n5480418909)
+        - Risløkka (n5480418910)
+        - Vollebekk (n5480418911)
+        - Linderud (n5480418912)
+        - Veitvet (n5480418913)
+        - Rødtvet (n5480418915)
+        - Kalbakken (n5480418914)
+        - Ammerud (n5480418916)
+        - Grorud (n5480418917)
+        - Romsås (n5480418918)
+        - Rommen (n5480418919)
+        - Stovner (n5478620916)
+        - Vestli (n5463924740)
 
-    stations: 
-      - Sognsvann
-      - Kringsjå
-      - Holstein
-      - Østhorn
-      - Tåsen
-      - Berg
-      - Ullevål stadion
-      - Forskningsparken
-      - Blindern
-      - Majorstuen
-      - Nationaltheatret
-      - Stortinget
-      - Jernbanetorget
-      - Grønland
-      - Tøyen
-      - Carl Berners plass
-      - Sinsen
-      - Storo
-      - Nydalen
-      - Hasle
-      - Økern
-      - Risløkka
-      - Vollebekk
-      - Linderud
-      - Veitvet
-      - Rødvet
-      - Kalbakken
-      - Ammerud
-      - Grorud
-      - Romsås
-      - Rommen
-      - Stovner
-      - Vestli
 
-    ref: 5
 
 stations: 
   - Ammerud (n5480418916)
@@ -771,4 +769,6 @@ stations:
   - Økern (n5480418909)
   - Østerås (n1315527632)
   - Østhorn (n25298260)
+
+transfers: 
 

@@ -1,25 +1,40 @@
 
-transfers: 
-  - 
-    - 'Berri-UQAM - Green Line station (r7734010)'
-    - 'Berri-UQAM - Orange Line station (r7734005)'
-    - 'Berri-UQAM - Yellow Line station (r7734004)'
-  - 
-    - 'Jean-Talon - Blue Line station (r7734007)'
-    - 'Jean-Talon - Orange Line station (r7734006)'
-  - 
-    - 'Lionel-Groulx - Bottom Level (r7833242)'
-    - 'Lionel-Groulx - Top Level (r7889628)'
-  - 
-    - 'Snowdon - Blue Line (r7734003)'
-    - 'Snowdon - Orange Line (r7734009)'
-
 routes: 
   - 
-    colour: '#5f8c55'
+    ref: 1
     name: Ligne verte
-    type: subway
+    colour: '#5f8c55'
     station_count: 27
+    type: subway
+    stations: 
+      - Honoré-Beaugrand
+      - Radisson
+      - Langelier
+      - Cadillac
+      - Assomption
+      - Viau
+      - Pie IX
+      - Joliette
+      - Préfontaine
+      - Frontenac
+      - Papineau
+      - Beaudry
+      - 'Berri-UQAM - Green Line station'
+      - Saint-Laurent
+      - Place-des-Arts
+      - McGill
+      - Peel
+      - Guy-Concordia
+      - Atwater
+      - 'Lionel-Groulx - Top Level'
+      - Station Charlevoix (Centre / Charlevoix)
+      - LaSalle
+      - De l'Église
+      - Verdun
+      - Jolicoeur
+      - Monk
+      - Angrignon
+
     itineraries: 
       r58433: 
         - Angrignon (n7052992100)
@@ -80,75 +95,46 @@ routes:
         - Angrignon (n7052992100)
 
 
-    stations: 
-      - Honoré-Beaugrand
-      - Radisson
-      - Langelier
-      - Cadillac
-      - Assomption
-      - Viau
-      - Pie IX
-      - Joliette
-      - Préfontaine
-      - Frontenac
-      - Papineau
-      - Beaudry
-      - 'Berri-UQAM - Green Line station'
-      - Saint-Laurent
-      - Place-des-Arts
-      - McGill
-      - Peel
-      - Guy-Concordia
-      - Atwater
-      - 'Lionel-Groulx - Top Level'
-      - Station Charlevoix (Centre / Charlevoix)
-      - LaSalle
-      - De l'Église
-      - Verdun
-      - Jolicoeur
-      - Monk
-      - Angrignon
-
-    ref: 1
   - 
-    colour: '#d06d07'
+    ref: 2
     name: Ligne orange
-    type: subway
+    colour: '#d06d07'
     station_count: 31
-    itineraries: 
-      r270251: 
-        - Côte-Vertu (n7052605729)
-        - Du Collège (n7052605730)
-        - De La Savane (n7052605731)
-        - Namur (n7052605732)
-        - Plamondon (n7052605733)
-        - Côte-Sainte-Catherine (n7052605734)
-        - Snowdon (n6607411942)
-        - Villa-Maria (n6607411941)
-        - Vendôme (n7052605735)
-        - Place Saint-Henri (n7052605736)
-        - Lionel-Groulx (n5299904569)
-        - Georges-Vanier (n7052605737)
-        - Lucien L'Allier (n5360360498)
-        - Bonaventure (n7052605738)
-        - Square-Victoria-OACI (n7052605739)
-        - Place d’Armes (n7052605740)
-        - Champ-de-Mars (n7052605741)
-        - Berri-UQAM (n6600856333)
-        - Sherbrooke (n7052605742)
-        - Mont-Royal (n7052605743)
-        - Laurier (n7052605744)
-        - Rosemont (n7052605745)
-        - Beaubien (n7052605746)
-        - Jean-Talon (n7052471488)
-        - Jarry (n7052605747)
-        - Crémazie (n7052605748)
-        - Sauvé (n7052605749)
-        - Henri-Bourassa (n7052605750)
-        - Cartier (n7758614182)
-        - De la Concorde (n7052605751)
-        - Montmorency (n7757580977)
+    type: subway
+    stations: 
+      - Montmorency
+      - De la Concorde (Métro)
+      - Cartier
+      - Henri-Bourassa
+      - Sauvé (Métro)
+      - Crémazie
+      - Jarry
+      - 'Jean-Talon - Orange Line station'
+      - Beaubien
+      - Métro Rosemont
+      - Station Laurier
+      - Mont-Royal
+      - Sherbrooke
+      - 'Berri-UQAM - Orange Line station'
+      - Champ-de-Mars
+      - Place d'Armes
+      - Square-Victoria-OACI
+      - Bonaventure
+      - Lucien L'Allier (Métro)
+      - Georges-Vanier
+      - 'Lionel-Groulx - Top Level'
+      - Place Saint-Henri
+      - Vendôme (Métro)
+      - Villa-Maria
+      - 'Snowdon - Orange Line'
+      - Côte-Sainte-Catherine
+      - Plamondon
+      - Namur
+      - De la Savane
+      - Du Collège
+      - Côte-Vertu
 
+    itineraries: 
       r3228499: 
         - Montmorency (n7757580977)
         - De la Concorde (n7052605751)
@@ -182,46 +168,51 @@ routes:
         - Du Collège (n7052605730)
         - Côte-Vertu (n7052605729)
 
+      r270251: 
+        - Côte-Vertu (n7052605729)
+        - Du Collège (n7052605730)
+        - De La Savane (n7052605731)
+        - Namur (n7052605732)
+        - Plamondon (n7052605733)
+        - Côte-Sainte-Catherine (n7052605734)
+        - Snowdon (n6607411942)
+        - Villa-Maria (n6607411941)
+        - Vendôme (n7052605735)
+        - Place Saint-Henri (n7052605736)
+        - Lionel-Groulx (n5299904569)
+        - Georges-Vanier (n7052605737)
+        - Lucien L'Allier (n5360360498)
+        - Bonaventure (n7052605738)
+        - Square-Victoria-OACI (n7052605739)
+        - Place d’Armes (n7052605740)
+        - Champ-de-Mars (n7052605741)
+        - Berri-UQAM (n6600856333)
+        - Sherbrooke (n7052605742)
+        - Mont-Royal (n7052605743)
+        - Laurier (n7052605744)
+        - Rosemont (n7052605745)
+        - Beaubien (n7052605746)
+        - Jean-Talon (n7052471488)
+        - Jarry (n7052605747)
+        - Crémazie (n7052605748)
+        - Sauvé (n7052605749)
+        - Henri-Bourassa (n7052605750)
+        - Cartier (n7758614182)
+        - De la Concorde (n7052605751)
+        - Montmorency (n7757580977)
 
-    stations: 
-      - Côte-Vertu
-      - Du Collège
-      - De la Savane
-      - Namur
-      - Plamondon
-      - Côte-Sainte-Catherine
-      - 'Snowdon - Orange Line'
-      - Villa-Maria
-      - Vendôme (Métro)
-      - Place Saint-Henri
-      - 'Lionel-Groulx - Bottom Level'
-      - Georges-Vanier
-      - Lucien L'Allier (Métro)
-      - Bonaventure
-      - Square-Victoria-OACI
-      - Place d'Armes
-      - Champ-de-Mars
-      - 'Berri-UQAM - Orange Line station'
-      - Sherbrooke
-      - Mont-Royal
-      - Station Laurier
-      - Métro Rosemont
-      - Beaubien
-      - 'Jean-Talon - Orange Line station'
-      - Jarry
-      - Crémazie
-      - Sauvé (Métro)
-      - Henri-Bourassa
-      - Cartier
-      - De la Concorde (Métro)
-      - Montmorency
 
-    ref: 2
   - 
-    colour: '#f1ce00'
+    ref: 4
     name: Ligne jaune
-    type: subway
+    colour: '#f1ce00'
     station_count: 3
+    type: subway
+    stations: 
+      - 'Berri-UQAM - Yellow Line station'
+      - Jean-Drapeau
+      - Longueuil–Université-de-Sherbrooke
+
     itineraries: 
       r3228498: 
         - Berri-UQAM (n6600856333)
@@ -234,47 +225,12 @@ routes:
         - Berri-UQAM (n6600856333)
 
 
-    stations: 
-      - 'Berri-UQAM - Yellow Line station'
-      - Jean-Drapeau
-      - Longueuil–Université-de-Sherbrooke
-
-    ref: 4
   - 
-    colour: '#3465b4'
+    ref: 5
     name: Ligne bleue
-    type: subway
+    colour: '#3465b4'
     station_count: 12
-    itineraries: 
-      r270255: 
-        - Snowdon (n6607411942)
-        - Côte-des-Neiges (n6600830244)
-        - Université-de-Montréal (n7052471493)
-        - Édouard-Montpetit (n7052471492)
-        - Outremont (n1765620875)
-        - Acadie (n7052471491)
-        - Parc (n7052471490)
-        - De Castelnau (n7052471489)
-        - Jean-Talon (n7052471488)
-        - Fabre (n7052471487)
-        - D’Iberville (n7052471486)
-        - Saint-Michel (n7052471485)
-
-      r3228497: 
-        - Saint-Michel (n7052471485)
-        - D’Iberville (n7052471486)
-        - Fabre (n7052471487)
-        - Jean-Talon (n7052471488)
-        - De Castelnau (n7052471489)
-        - Parc (n7052471490)
-        - Acadie (n7052471491)
-        - Outremont (n1765620875)
-        - Édouard-Montpetit (n7052471492)
-        - Université-de-Montréal (n7052471493)
-        - Côte-des-Neiges (n6600830244)
-        - Snowdon (n6607411942)
-
-
+    type: subway
     stations: 
       - Saint-Michel
       - D’Iberville
@@ -289,7 +245,36 @@ routes:
       - Côte-des-Neiges
       - 'Snowdon - Blue Line'
 
-    ref: 5
+    itineraries: 
+      r3228497: 
+        - Saint-Michel (n7052471485)
+        - D’Iberville (n7052471486)
+        - Fabre (n7052471487)
+        - Jean-Talon (n7052471488)
+        - De Castelnau (n7052471489)
+        - Parc (n7052471490)
+        - Acadie (n7052471491)
+        - Outremont (n1765620875)
+        - Édouard-Montpetit (n7052471492)
+        - Université-de-Montréal (n7052471493)
+        - Côte-des-Neiges (n6600830244)
+        - Snowdon (n6607411942)
+
+      r270255: 
+        - Snowdon (n6607411942)
+        - Côte-des-Neiges (n6600830244)
+        - Université-de-Montréal (n7052471493)
+        - Édouard-Montpetit (n7052471492)
+        - Outremont (n1765620875)
+        - Acadie (n7052471491)
+        - Parc (n7052471490)
+        - De Castelnau (n7052471489)
+        - Jean-Talon (n7052471488)
+        - Fabre (n7052471487)
+        - D’Iberville (n7052471486)
+        - Saint-Michel (n7052471485)
+
+
 
 stations: 
   - Acadie (n7052471491)
@@ -360,4 +345,19 @@ stations:
   - Viau (n6615202527)
   - Villa-Maria (n6607411941)
   - Édouard-Montpetit (n7052471492)
+
+transfers: 
+  - 
+    - 'Berri-UQAM - Green Line station (r7734010)'
+    - 'Berri-UQAM - Orange Line station (r7734005)'
+    - 'Berri-UQAM - Yellow Line station (r7734004)'
+  - 
+    - 'Jean-Talon - Blue Line station (r7734007)'
+    - 'Jean-Talon - Orange Line station (r7734006)'
+  - 
+    - 'Lionel-Groulx - Bottom Level (r7833242)'
+    - 'Lionel-Groulx - Top Level (r7889628)'
+  - 
+    - 'Snowdon - Blue Line (r7734003)'
+    - 'Snowdon - Orange Line (r7734009)'
 

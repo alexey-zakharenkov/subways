@@ -1,12 +1,24 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#004d9f'
+    ref: Tide
     name: The Tide
-    type: light_rail
+    colour: '#004d9f'
     station_count: 11
+    type: light_rail
+    stations: 
+      - Newtown Road
+      - Military Highway Station
+      - Ingleside Road Station
+      - Ballentine / Broad Creek Station
+      - NSU Station
+      - Harbor Park Station
+      - Civic Plaza Station
+      - MacArthur Square
+      - Monticello Station
+      - York Street/Freemason
+      - EVMC/Fort Norfolk Station
+
     itineraries: 
       r6950523: 
         - Newtown Road (n941532061)
@@ -35,20 +47,6 @@ routes:
         - Newtown Road (n941532061)
 
 
-    stations: 
-      - EVMC/Fort Norfolk Station
-      - York Street/Freemason
-      - Monticello Station
-      - MacArthur Square
-      - Civic Plaza Station
-      - Harbor Park Station
-      - NSU Station
-      - Ballentine / Broad Creek Station
-      - Ingleside Road Station
-      - Military Highway Station
-      - Newtown Road
-
-    ref: Tide
 
 stations: 
   - Ballentine / Broad Creek Station WB (n6766890685)
@@ -62,4 +60,6 @@ stations:
   - NSU Station (n6754424666)
   - Newtown Road (n941532061)
   - York St/ Freemason Station WB (n6766842462)
+
+transfers: 
 

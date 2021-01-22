@@ -1,18 +1,31 @@
 
-transfers: 
-  - 
-    - Garibaldi (r7683111)
-    - Napoli Piazza Garibaldi (r10105977)
-  - 
-    - Mergellina (r7683071)
-    - Napoli Mergellina (r10105974)
-
 routes: 
   - 
-    colour: '#000099'
+    ref: 1
     name: Linea 1 (Piscinola → Garibaldi)
-    type: subway
+    colour: '#000099'
     station_count: 18
+    type: subway
+    stations: 
+      - Piscinola (ANM)
+      - Chiaiano
+      - Frullone
+      - Colli Aminei
+      - Policlinico
+      - Rione Alto
+      - Montedonzelli
+      - Medaglie d'oro
+      - Vanvitelli
+      - Quattro Giornate
+      - Salvator Rosa
+      - Materdei
+      - Museo
+      - Dante
+      - Toledo
+      - Municipio
+      - Università
+      - Garibaldi
+
     itineraries: 
       r2168102: 
         - Garibaldi (n1757100177)
@@ -55,32 +68,26 @@ routes:
         - Garibaldi (n1757100177)
 
 
-    stations: 
-      - Piscinola (ANM)
-      - Chiaiano
-      - Frullone
-      - Colli Aminei
-      - Policlinico
-      - Rione Alto
-      - Montedonzelli
-      - Medaglie d'oro
-      - Vanvitelli
-      - Quattro Giornate
-      - Salvator Rosa
-      - Materdei
-      - Museo
-      - Dante
-      - Toledo
-      - Municipio
-      - Università
-      - Garibaldi
-
-    ref: 1
   - 
-    colour: '#0000ff'
+    ref: 2
     name: Linea 2 (San Giovanni-Barra → Pozzuoli Solfatara)
-    type: train
+    colour: '#0000ff'
     station_count: 12
+    type: train
+    stations: 
+      - Napoli San Giovanni-Barra
+      - Napoli Gianturco
+      - Napoli Piazza Garibaldi
+      - Piazza Cavour
+      - Montesanto
+      - Piazza Amedeo
+      - Napoli Mergellina
+      - Piazza Leopardi
+      - Napoli Campi Flegrei
+      - Cavalleggeri Aosta
+      - Bagnoli-Agnano Terme
+      - Pozzuoli Solfatara
+
     itineraries: 
       r445980: 
         - Pozzuoli Solfatara (n6817792727)
@@ -111,26 +118,18 @@ routes:
         - Pozzuoli Solfatara (n6817792727)
 
 
-    stations: 
-      - Napoli San Giovanni-Barra
-      - Napoli Gianturco
-      - Napoli Piazza Garibaldi
-      - Piazza Cavour
-      - Montesanto
-      - Piazza Amedeo
-      - Napoli Mergellina
-      - Piazza Leopardi
-      - Napoli Campi Flegrei
-      - Cavalleggeri Aosta
-      - Bagnoli-Agnano Terme
-      - Pozzuoli Solfatara
-
-    ref: 2
   - 
-    colour: '#0099cc'
+    ref: 6
     name: Linea 6
-    type: subway
+    colour: '#0099cc'
     station_count: 4
+    type: subway
+    stations: 
+      - Mergellina
+      - Lala
+      - Augusto
+      - Mostra
+
     itineraries: 
       r446007: 
         - Mostra (n434789470)
@@ -145,13 +144,6 @@ routes:
         - Mostra (n434789470)
 
 
-    stations: 
-      - Mostra
-      - Augusto
-      - Lala
-      - Mergellina
-
-    ref: 6
 
 stations: 
   - Augusto (n663078056)
@@ -188,4 +180,12 @@ stations:
   - Toledo (n1738657713)
   - Università (n1428260807)
   - Vanvitelli (n434762989)
+
+transfers: 
+  - 
+    - Garibaldi (r7683111)
+    - Napoli Piazza Garibaldi (r10105977)
+  - 
+    - Mergellina (r7683071)
+    - Napoli Mergellina (r10105974)
 

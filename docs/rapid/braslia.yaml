@@ -1,12 +1,31 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#eb9710'
+    ref: Laranja
     name: Linha Laranja
-    type: subway
+    colour: '#eb9710'
     station_count: 18
+    type: subway
+    stations: 
+      - Samambaia
+      - Samambaia Sul
+      - Furnas
+      - Taguatinga Sul
+      - Águas Claras
+      - Arniqueiras
+      - Estação Guará
+      - Feira
+      - Shopping
+      - Asa Sul
+      - 114 Sul
+      - 112 Sul
+      - 110 Sul
+      - 108 Sul
+      - 106 Sul
+      - 102 Sul
+      - Galeria
+      - Central
+
     itineraries: 
       r420556: 
         - Central (n516640062)
@@ -49,84 +68,12 @@ routes:
         - Central (n516640062)
 
 
-    stations: 
-      - Central
-      - Galeria
-      - 102 Sul
-      - 106 Sul
-      - 108 Sul
-      - 110 Sul
-      - 112 Sul
-      - 114 Sul
-      - Asa Sul
-      - Shopping
-      - Feira
-      - Estação Guará
-      - Arniqueiras
-      - Águas Claras
-      - Taguatinga Sul
-      - Furnas
-      - Samambaia Sul
-      - Samambaia
-
-    ref: Laranja
   - 
-    colour: '#076c57'
+    ref: Verde
     name: Linha Verde
-    type: subway
+    colour: '#076c57'
     station_count: 23
-    itineraries: 
-      r420554: 
-        - Central (n516640062)
-        - Galeria (n2705401531)
-        - 102 Sul (n2524907501)
-        - 106 Sul (n516640052)
-        - 108 Sul (n516640049)
-        - 110 Sul (n516640047)
-        - 112 Sul (n516640044)
-        - 114 Sul (n2889616445)
-        - Asa Sul (n2682370666)
-        - Shopping (w209414773)
-        - Feira (n2178318705)
-        - Estação Guará (n839630410)
-        - Arniqueiras (n979379521)
-        - Águas Claras (n988050311)
-        - Concessionárias (n2682369305)
-        - Estrada Parque (n7115646947)
-        - Praça do Relógio (n278295965)
-        - Centro Metropolitano (n6969891170)
-        - Ceilândia Sul (n503227567)
-        - Guariroba (n601165345)
-        - Ceilândia Centro (n656731197)
-        - Ceilândia Norte (n1468359682)
-        - Ceilândia (n1468359687)
-
-      r7733963: 
-        - Ceilândia (n1468359687)
-        - Ceilândia Norte (n1468359682)
-        - Ceilândia Centro (n656731197)
-        - Guariroba (n601165345)
-        - Ceilândia Sul (n503227567)
-        - Centro Metropolitano (n6969891170)
-        - Praça do Relógio (n278295965)
-        - Estrada Parque (n7115646947)
-        - Concessionárias (n2682369305)
-        - Águas Claras (n988050311)
-        - Arniqueiras (n979379521)
-        - Estação Guará (n839630410)
-        - Feira (n2178318705)
-        - Shopping (w209414773)
-        - Asa Sul (n2682370666)
-        - 114 Sul (n2889616445)
-        - 112 Sul (n516640044)
-        - 110 Sul (n516640047)
-        - 108 Sul (n516640049)
-        - 106 Sul (n516640052)
-        - 102 Sul (n2524907501)
-        - Galeria (n2705401531)
-        - Central (n516640062)
-
-
+    type: subway
     stations: 
       - Central
       - Galeria
@@ -152,7 +99,58 @@ routes:
       - Ceilândia Norte
       - Ceilândia
 
-    ref: Verde
+    itineraries: 
+      r7733963: 
+        - Ceilândia (n1468359687)
+        - Ceilândia Norte (n1468359682)
+        - Ceilândia Centro (n656731197)
+        - Guariroba (n601165345)
+        - Ceilândia Sul (n503227567)
+        - Centro Metropolitano (n6969891170)
+        - Praça do Relógio (n278295965)
+        - Estrada Parque (n7115646947)
+        - Concessionárias (n2682369305)
+        - Águas Claras (n988050311)
+        - Arniqueiras (n979379521)
+        - Estação Guará (n839630410)
+        - Feira (n2178318705)
+        - Shopping (w209414773)
+        - Asa Sul (n2682370666)
+        - 114 Sul (n2889616445)
+        - 112 Sul (n516640044)
+        - 110 Sul (n516640047)
+        - 108 Sul (n516640049)
+        - 106 Sul (n516640052)
+        - 102 Sul (n2524907501)
+        - Galeria (n2705401531)
+        - Central (n516640062)
+
+      r420554: 
+        - Central (n516640062)
+        - Galeria (n2705401531)
+        - 102 Sul (n2524907501)
+        - 106 Sul (n516640052)
+        - 108 Sul (n516640049)
+        - 110 Sul (n516640047)
+        - 112 Sul (n516640044)
+        - 114 Sul (n2889616445)
+        - Asa Sul (n2682370666)
+        - Shopping (w209414773)
+        - Feira (n2178318705)
+        - Estação Guará (n839630410)
+        - Arniqueiras (n979379521)
+        - Águas Claras (n988050311)
+        - Concessionárias (n2682369305)
+        - Estrada Parque (n7115646947)
+        - Praça do Relógio (n278295965)
+        - Centro Metropolitano (n6969891170)
+        - Ceilândia Sul (n503227567)
+        - Guariroba (n601165345)
+        - Ceilândia Centro (n656731197)
+        - Ceilândia Norte (n1468359682)
+        - Ceilândia (n1468359687)
+
+
 
 stations: 
   - 102 Sul (n2524907501)
@@ -182,4 +180,6 @@ stations:
   - Shopping (w209414773)
   - Taguatinga Sul (n2427461165)
   - Águas Claras (n988050311)
+
+transfers: 
 

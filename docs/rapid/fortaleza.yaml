@@ -1,41 +1,11 @@
 
-transfers: 
-  - 
-    - Parangaba (Sul) (r9963944)
-    - Parangaba (VLT) (r9963945)
-
 routes: 
   - 
-    colour: '#008000'
+    ref: Oeste
     name: Linha Oeste
-    type: light_rail
+    colour: '#008000'
     station_count: 10
-    itineraries: 
-      r9963936: 
-        - Caucaia (n4718998738)
-        - Araturi (n4718998737)
-        - Jurema (n4718998735)
-        - Conjunto Ceará (n4718998734)
-        - Parque Albano (n4718998733)
-        - São Miguel (n4718998732)
-        - Antônio Bezerra (n4718998731)
-        - Padre Andrade (n4718998730)
-        - Álvaro Weyne (n4718998729)
-        - 'Tirol - Moura Brasil (n7061644305)'
-
-      r4511795: 
-        - 'Tirol - Moura Brasil (n7061644305)'
-        - Álvaro Weyne (n4718998729)
-        - Padre Andrade (n4718998730)
-        - Antônio Bezerra (n4718998731)
-        - São Miguel (n4718998732)
-        - Parque Albano (n4718998733)
-        - Conjunto Ceará (n4718998734)
-        - Jurema (n4718998735)
-        - Araturi (n4718998737)
-        - Caucaia (n4718998738)
-
-
+    type: light_rail
     stations: 
       - Estação Moura Brasil
       - Álvaro Weyne
@@ -48,25 +18,51 @@ routes:
       - Estação Araturi
       - Estação Caucaia
 
-    ref: Oeste
-  - 
-    colour: '#6b297e'
-    name: Linha Parangaba-Mucuripe
-    type: light_rail
-    station_count: 10
     itineraries: 
-      r4511811: 
-        - Parangaba (n5713710078)
-        - Montese (n5713710079)
-        - Vila União (n5713710080)
-        - Borges de Melo (n5713710081)
-        - São João do Tauape (n5713710082)
-        - Pontes Vieira (n5713710083)
-        - Antônio Sales (n5713710086)
-        - Papicu (n5713710087)
-        - Mucuripe (n5713710085)
-        - Iate (n5713710084)
+      r4511795: 
+        - 'Tirol - Moura Brasil (n7061644305)'
+        - Álvaro Weyne (n4718998729)
+        - Padre Andrade (n4718998730)
+        - Antônio Bezerra (n4718998731)
+        - São Miguel (n4718998732)
+        - Parque Albano (n4718998733)
+        - Conjunto Ceará (n4718998734)
+        - Jurema (n4718998735)
+        - Araturi (n4718998737)
+        - Caucaia (n4718998738)
 
+      r9963936: 
+        - Caucaia (n4718998738)
+        - Araturi (n4718998737)
+        - Jurema (n4718998735)
+        - Conjunto Ceará (n4718998734)
+        - Parque Albano (n4718998733)
+        - São Miguel (n4718998732)
+        - Antônio Bezerra (n4718998731)
+        - Padre Andrade (n4718998730)
+        - Álvaro Weyne (n4718998729)
+        - 'Tirol - Moura Brasil (n7061644305)'
+
+
+  - 
+    ref: Parangaba-Mucuripe
+    name: Linha Parangaba-Mucuripe
+    colour: '#6b297e'
+    station_count: 10
+    type: light_rail
+    stations: 
+      - Parangaba (VLT)
+      - Montese
+      - Vila União
+      - Borges de Melo
+      - São João do Tauape
+      - Pontes Vieira
+      - Antônio Sales
+      - Papicu
+      - Mucuripe
+      - Iate
+
+    itineraries: 
       r9963933: 
         - Iate (n5713710084)
         - Mucuripe (n5713710085)
@@ -79,48 +75,48 @@ routes:
         - Montese (n5713710079)
         - Parangaba (n5713710078)
 
+      r4511811: 
+        - Parangaba (n5713710078)
+        - Montese (n5713710079)
+        - Vila União (n5713710080)
+        - Borges de Melo (n5713710081)
+        - São João do Tauape (n5713710082)
+        - Pontes Vieira (n5713710083)
+        - Antônio Sales (n5713710086)
+        - Papicu (n5713710087)
+        - Mucuripe (n5713710085)
+        - Iate (n5713710084)
 
-    stations: 
-      - Iate
-      - Mucuripe
-      - Papicu
-      - Antônio Sales
-      - Pontes Vieira
-      - São João do Tauape
-      - Borges de Melo
-      - Vila União
-      - Montese
-      - Parangaba (VLT)
 
-    ref: Parangaba-Mucuripe
   - 
-    colour: '#ff0000'
+    ref: Sul
     name: Linha Sul
-    type: subway
+    colour: '#ff0000'
     station_count: 20
-    itineraries: 
-      r4511593: 
-        - Carlito Benevides (n263302800)
-        - Jereissati (n7055735691)
-        - Maracanaú (w233612429)
-        - Virgílio Távora (w409611076)
-        - Rachel de Queiroz (n7055759117)
-        - Alto Alegre (n6992662722)
-        - Aracapé (n7055764714)
-        - Esperança (n7055710061)
-        - Mondubim (n3305872190)
-        - Manoel Sátiro (n4117447795)
-        - Vila Pery (n4117447796)
-        - Parangaba (n4717011131)
-        - Juscelino Kubitschek (n4717011138)
-        - Couto Fernandes (n4103129509)
-        - Porangabussu (n4103129511)
-        - Padre Cícero (n263302921)
-        - Benfica (n6992486607)
-        - São Benedito (n6992492887)
-        - José de Alencar (n6874599700)
-        - 'Central - Chico da Silva (n6992473950)'
+    type: subway
+    stations: 
+      - 'Central - Chico da Silva'
+      - José de Alencar
+      - São Benedito
+      - Benfica
+      - Padre Cícero
+      - Porangabussu
+      - Couto Fernandes
+      - Juscelino Kubitschek
+      - Parangaba (Sul)
+      - Vila Pery
+      - Manoel Sátiro
+      - Mondubim
+      - Esperança
+      - Aracapé
+      - Alto Alegre
+      - Rachel de Queiroz
+      - Virgílio Távora
+      - Maracanaú
+      - Jereissati
+      - Carlito Benevides
 
+    itineraries: 
       r6113027: 
         - 'Central - Chico da Silva (n6992473950)'
         - José de Alencar (n6874599700)
@@ -143,30 +139,29 @@ routes:
         - Jereissati (n7055735691)
         - Carlito Benevides (n263302800)
 
+      r4511593: 
+        - Carlito Benevides (n263302800)
+        - Jereissati (n7055735691)
+        - Maracanaú (w233612429)
+        - Virgílio Távora (w409611076)
+        - Rachel de Queiroz (n7055759117)
+        - Alto Alegre (n6992662722)
+        - Aracapé (n7055764714)
+        - Esperança (n7055710061)
+        - Mondubim (n3305872190)
+        - Manoel Sátiro (n4117447795)
+        - Vila Pery (n4117447796)
+        - Parangaba (n4717011131)
+        - Juscelino Kubitschek (n4717011138)
+        - Couto Fernandes (n4103129509)
+        - Porangabussu (n4103129511)
+        - Padre Cícero (n263302921)
+        - Benfica (n6992486607)
+        - São Benedito (n6992492887)
+        - José de Alencar (n6874599700)
+        - 'Central - Chico da Silva (n6992473950)'
 
-    stations: 
-      - Carlito Benevides
-      - Jereissati
-      - Maracanaú
-      - Virgílio Távora
-      - Rachel de Queiroz
-      - Alto Alegre
-      - Aracapé
-      - Esperança
-      - Mondubim
-      - Manoel Sátiro
-      - Vila Pery
-      - Parangaba (Sul)
-      - Juscelino Kubitschek
-      - Couto Fernandes
-      - Porangabussu
-      - Padre Cícero
-      - Benfica
-      - São Benedito
-      - José de Alencar
-      - 'Central - Chico da Silva'
 
-    ref: Sul
 
 stations: 
   - Alto Alegre (n6992662722)
@@ -209,4 +204,9 @@ stations:
   - Vila União (n5713710080)
   - Virgílio Távora (w409611076)
   - Álvaro Weyne (n4718998729)
+
+transfers: 
+  - 
+    - Parangaba (Sul) (r9963944)
+    - Parangaba (VLT) (r9963945)
 

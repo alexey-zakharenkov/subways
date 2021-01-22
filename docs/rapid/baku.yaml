@@ -1,18 +1,26 @@
 
-transfers: 
-  - 
-    - 28 May mst (r7664613)
-    - Cəfər Cabbarlı (r7680070)
-  - 
-    - Memar Əcəmi (r7664627)
-    - Memar Əcəmi (r7680627)
-
 routes: 
   - 
-    colour: '#ff0000'
+    ref: 1
     name: Line 1
-    type: subway
+    colour: '#ff0000'
     station_count: 13
+    type: subway
+    stations: 
+      - Bakmil
+      - Nəriman Nərimanov
+      - Gənclik
+      - 28 May mst
+      - Sahil
+      - İçərişəhər
+      - Həzi Aslanov
+      - Əhmədli
+      - Xalqlar Dostluğu
+      - Neftçilər
+      - Qara Qarayev
+      - Koroğlu
+      - Ulduz
+
     itineraries: 
       r456668: 
         - İçərişəhər (n670198805)
@@ -28,22 +36,6 @@ routes:
         - Əhmədli (n670220979)
         - Həzi Aslanov (n670220993)
 
-      r7792471: 
-        - Bakmil (n670220144)
-        - Nəriman Nərimanov (n670219867)
-        - Gənclik (n670219440)
-        - 28 May (n5188836356)
-        - Sahil (n670199291)
-        - İçərişəhər (n670198805)
-
-      r7680413: 
-        - İçərişəhər (n670198805)
-        - Sahil (n670199291)
-        - 28 May (n5188836356)
-        - Gənclik (n670219440)
-        - Nəriman Nərimanov (n670219867)
-        - Bakmil (n670220144)
-
       r7792470: 
         - Həzi Aslanov (n670220993)
         - Əhmədli (n670220979)
@@ -58,14 +50,30 @@ routes:
         - Sahil (n670199291)
         - İçərişəhər (n670198805)
 
+      r7680413: 
+        - İçərişəhər (n670198805)
+        - Sahil (n670199291)
+        - 28 May (n5188836356)
+        - Gənclik (n670219440)
+        - Nəriman Nərimanov (n670219867)
+        - Bakmil (n670220144)
 
+      r7792471: 
+        - Bakmil (n670220144)
+        - Nəriman Nərimanov (n670219867)
+        - Gənclik (n670219440)
+        - 28 May (n5188836356)
+        - Sahil (n670199291)
+        - İçərişəhər (n670198805)
+
+
+  - 
+    ref: 2
+    name: Line 2
+    colour: '#008000'
+    station_count: 19
+    type: subway
     stations: 
-      - İçərişəhər
-      - Sahil
-      - 28 May mst
-      - Gənclik
-      - Nəriman Nərimanov
-      - Bakmil
       - Həzi Aslanov
       - Əhmədli
       - Xalqlar Dostluğu
@@ -73,14 +81,34 @@ routes:
       - Qara Qarayev
       - Koroğlu
       - Ulduz
+      - Nəriman Nərimanov
+      - Gənclik
+      - 28 May mst
+      - Nizami
+      - Elmlər Akademiyası
+      - İnşaatçılar
+      - 20 Yanvar
+      - Memar Əcəmi
+      - Nəsimi
+      - Azadlıq pr mst
+      - Dərnəgül
+      - Bakmil
 
-    ref: 1
-  - 
-    colour: '#008000'
-    name: Line 2
-    type: subway
-    station_count: 19
     itineraries: 
+      r7680414: 
+        - Dərnəgül (n1924834867)
+        - Azadlıq prospekti (n1148914625)
+        - Nəsimi (n670217698)
+        - Memar Əcəmi (n4161594118)
+        - 20 Yanvar (n1930089762)
+        - İnşaatçılar (n670217274)
+        - Elmlər Akademiyası (n670217100)
+        - Nizami (n670216818)
+        - 28 May (n5188836356)
+        - Gənclik (n670219440)
+        - Nəriman Nərimanov (n670219867)
+        - Bakmil (n670220144)
+
       r456667: 
         - Dərnəgül (n1924834867)
         - Azadlıq prospekti (n1148914625)
@@ -101,19 +129,19 @@ routes:
         - Əhmədli (n670220979)
         - Həzi Aslanov (n670220993)
 
-      r7680414: 
-        - Dərnəgül (n1924834867)
-        - Azadlıq prospekti (n1148914625)
-        - Nəsimi (n670217698)
-        - Memar Əcəmi (n4161594118)
-        - 20 Yanvar (n1930089762)
-        - İnşaatçılar (n670217274)
-        - Elmlər Akademiyası (n670217100)
-        - Nizami (n670216818)
-        - 28 May (n5188836356)
-        - Gənclik (n670219440)
-        - Nəriman Nərimanov (n670219867)
+      r7792469: 
         - Bakmil (n670220144)
+        - Nəriman Nərimanov (n670219867)
+        - Gənclik (n670219440)
+        - 28 May (n5188836356)
+        - Nizami (n670216818)
+        - Elmlər Akademiyası (n670217100)
+        - İnşaatçılar (n670217274)
+        - 20 Yanvar (n1930089762)
+        - Memar Əcəmi (n4161594118)
+        - Nəsimi (n670217698)
+        - Azadlıq prospekti (n1148914625)
+        - Dərnəgül (n1924834867)
 
       r7792468: 
         - Həzi Aslanov (n670220993)
@@ -135,68 +163,37 @@ routes:
         - Azadlıq prospekti (n1148914625)
         - Dərnəgül (n1924834867)
 
-      r7792469: 
-        - Bakmil (n670220144)
-        - Nəriman Nərimanov (n670219867)
-        - Gənclik (n670219440)
-        - 28 May (n5188836356)
-        - Nizami (n670216818)
-        - Elmlər Akademiyası (n670217100)
-        - İnşaatçılar (n670217274)
-        - 20 Yanvar (n1930089762)
-        - Memar Əcəmi (n4161594118)
-        - Nəsimi (n670217698)
-        - Azadlıq prospekti (n1148914625)
-        - Dərnəgül (n1924834867)
 
-
-    stations: 
-      - Bakmil
-      - Nəriman Nərimanov
-      - Gənclik
-      - 28 May mst
-      - Nizami
-      - Elmlər Akademiyası
-      - İnşaatçılar
-      - 20 Yanvar
-      - Memar Əcəmi
-      - Nəsimi
-      - Azadlıq pr mst
-      - Dərnəgül
-      - Həzi Aslanov
-      - Əhmədli
-      - Xalqlar Dostluğu
-      - Neftçilər
-      - Qara Qarayev
-      - Koroğlu
-      - Ulduz
-
-    ref: 2
   - 
-    colour: '#90ee90'
+    ref: 2B
     name: Line 2B
-    type: subway
+    colour: '#90ee90'
     station_count: 2
-    itineraries: 
-      r7664611: 
-        - Şah İsmail Xətai (n670199298)
-        - Cəfər Cabbarlı (n2295524457)
-
-      r7792467: 
-        - Cəfər Cabbarlı (n2295524457)
-        - Şah İsmail Xətai (n670199298)
-
-
+    type: subway
     stations: 
       - Şah İsmail Xətai
       - Cəfər Cabbarlı
 
-    ref: 2B
+    itineraries: 
+      r7792467: 
+        - Cəfər Cabbarlı (n2295524457)
+        - Şah İsmail Xətai (n670199298)
+
+      r7664611: 
+        - Şah İsmail Xətai (n670199298)
+        - Cəfər Cabbarlı (n2295524457)
+
+
   - 
-    colour: '#800080'
+    ref: 3
     name: Line 3
-    type: subway
+    colour: '#800080'
     station_count: 2
+    type: subway
+    stations: 
+      - Avtovağzal mst
+      - Memar Əcəmi
+
     itineraries: 
       r7792466: 
         - Memar Əcəmi (n7279336593)
@@ -207,11 +204,6 @@ routes:
         - Memar Əcəmi (n7279336593)
 
 
-    stations: 
-      - Avtovağzal mst
-      - Memar Əcəmi
-
-    ref: 3
 
 stations: 
   - 20 Yanvar (n1930089762)
@@ -239,4 +231,12 @@ stations:
   - İçərişəhər (n670198805)
   - Şah İsmail Xətai (n670199298)
   - Əhmədli (n670220979)
+
+transfers: 
+  - 
+    - 28 May mst (r7664613)
+    - Cəfər Cabbarlı (r7680070)
+  - 
+    - Memar Əcəmi (r7664627)
+    - Memar Əcəmi (r7680627)
 

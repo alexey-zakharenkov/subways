@@ -1,26 +1,22 @@
 
-transfers: 
-  - 
-    - Lexington Market (Light Rail) (r9976827)
-    - Lexington Market (Subway) (r7910852)
-
 routes: 
   - 
-    colour: '#de1d43'
+    ref: LR
     name: 'Baltimore Light RailLink: Penn Station—Camden Yards (Red)'
-    type: light_rail
+    colour: '#de1d43'
     station_count: 8
-    itineraries: 
-      r9976613: 
-        - Baltimore Penn Station (n7103884603)
-        - Mount Royal/MICA (n844812290)
-        - Cultural Center (n845372038)
-        - Mount Vernon (n845371951)
-        - Lexington Market (n845372088)
-        - Baltimore Arena (n845911138)
-        - Convention Center (n845911393)
-        - Camden Yards (n845911360)
+    type: light_rail
+    stations: 
+      - Camden Yards
+      - Baltimore Arena
+      - Baltimore Arena
+      - Lexington Market (Light Rail)
+      - Mount Vernon
+      - Cultural Center
+      - Mount Royal/MICA
+      - Baltimore Penn Station (Light Rail)
 
+    itineraries: 
       r2711781: 
         - Camden Yards (n845911360)
         - Convention Center (n845911393)
@@ -31,9 +27,37 @@ routes:
         - Mount Royal/MICA (n844812290)
         - Baltimore Penn Station (n7103884603)
 
+      r9976613: 
+        - Baltimore Penn Station (n7103884603)
+        - Mount Royal/MICA (n844812290)
+        - Cultural Center (n845372038)
+        - Mount Vernon (n845371951)
+        - Lexington Market (n845372088)
+        - Baltimore Arena (n845911138)
+        - Convention Center (n845911393)
+        - Camden Yards (n845911360)
 
+
+  - 
+    ref: LR
+    name: 'Baltimore Light RailLink: Hunt Valley—BWI Airport (Blue)'
+    colour: '#00aeef'
+    station_count: 30
+    type: light_rail
     stations: 
-      - Baltimore Penn Station (Light Rail)
+      - Hunt Valley
+      - Pepper Road
+      - McCormick Road
+      - Gilroy Road
+      - Warren Road
+      - Fairgrounds
+      - Timonium
+      - Lutherville
+      - Falls Road
+      - Mount Washington
+      - Cold Spring Lane
+      - Woodberry
+      - North Avenue
       - Mount Royal/MICA
       - Cultural Center
       - Mount Vernon
@@ -41,13 +65,17 @@ routes:
       - Baltimore Arena
       - Baltimore Arena
       - Camden Yards
+      - Stadium/Federal Hill
+      - Westport
+      - Cherry Hill
+      - Patapsco
+      - Baltimore Highlands
+      - Nursery Road
+      - North Linthicum
+      - Linthicum
+      - BWI Business District
+      - BWI Airport
 
-    ref: LR
-  - 
-    colour: '#00aeef'
-    name: 'Baltimore Light RailLink: Hunt Valley—BWI Airport (Blue)'
-    type: light_rail
-    station_count: 30
     itineraries: 
       r9976614: 
         - BWI Airport (n848318012)
@@ -114,9 +142,15 @@ routes:
         - BWI Airport (n848318012)
 
 
+  - 
+    ref: LR
+    name: 'Baltimore Light RailLink: Fairgrounds—Glen Burnie (Yellow)'
+    colour: '#fff200'
+    station_count: 25
+    type: light_rail
     stations: 
-      - BWI Airport
-      - BWI Business District
+      - Glen Burnie
+      - Ferndale
       - Linthicum
       - North Linthicum
       - Nursery Road
@@ -140,18 +174,7 @@ routes:
       - Lutherville
       - Timonium
       - Fairgrounds
-      - Warren Road
-      - Gilroy Road
-      - McCormick Road
-      - Pepper Road
-      - Hunt Valley
 
-    ref: LR
-  - 
-    colour: '#fff200'
-    name: 'Baltimore Light RailLink: Fairgrounds—Glen Burnie (Yellow)'
-    type: light_rail
-    station_count: 25
     itineraries: 
       r9976612: 
         - Glen Burnie (n850371396)
@@ -208,39 +231,28 @@ routes:
         - Glen Burnie (n850371396)
 
 
-    stations: 
-      - Glen Burnie
-      - Ferndale
-      - Linthicum
-      - North Linthicum
-      - Nursery Road
-      - Baltimore Highlands
-      - Patapsco
-      - Cherry Hill
-      - Westport
-      - Stadium/Federal Hill
-      - Camden Yards
-      - Baltimore Arena
-      - Baltimore Arena
-      - Lexington Market (Light Rail)
-      - Mount Vernon
-      - Cultural Center
-      - Mount Royal/MICA
-      - North Avenue
-      - Woodberry
-      - Cold Spring Lane
-      - Mount Washington
-      - Falls Road
-      - Lutherville
-      - Timonium
-      - Fairgrounds
-
-    ref: LR
   - 
-    colour: '#00a651'
+    ref: M
     name: Baltimore Metro SubwayLink
-    type: subway
+    colour: '#00a651'
     station_count: 14
+    type: subway
+    stations: 
+      - Johns Hopkins Hospital
+      - Shot Tower/Market Place (Subway)
+      - Charles Center
+      - Lexington Market (Subway)
+      - State Center/Cultural Center (Subway)
+      - Upton–Avenue Market
+      - Penn–North (Subway)
+      - Mondawmin (Subway)
+      - West Coldspring
+      - Rogers Avenue
+      - Reisterstown Plaza
+      - Milford Mill
+      - Old Court
+      - Owings Mills
+
     itineraries: 
       r7919552: 
         - Owings Mills (n843713678)
@@ -275,23 +287,6 @@ routes:
         - Owings Mills (n843713678)
 
 
-    stations: 
-      - Owings Mills
-      - Old Court
-      - Milford Mill
-      - Reisterstown Plaza
-      - Rogers Avenue
-      - West Coldspring
-      - Mondawmin (Subway)
-      - Penn–North (Subway)
-      - Upton–Avenue Market
-      - State Center/Cultural Center (Subway)
-      - Lexington Market (Subway)
-      - Charles Center
-      - Shot Tower/Market Place (Subway)
-      - Johns Hopkins Hospital
-
-    ref: M
 
 stations: 
   - BWI Airport (n848318012)
@@ -341,4 +336,9 @@ stations:
   - West Coldspring (n844073713)
   - Westport (n847727112)
   - Woodberry (n844696754)
+
+transfers: 
+  - 
+    - Lexington Market (Light Rail) (r9976827)
+    - Lexington Market (Subway) (r7910852)
 

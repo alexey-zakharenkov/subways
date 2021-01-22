@@ -1,55 +1,11 @@
 
-transfers: 
-  - 
-    - Airport Station (r4439494)
-    - Airport Station (r9701938)
-    - Domestic Baggage Claim (r9701937)
-  - 
-    - Five Points station (East-West Line) (r7915137)
-    - Five Points station (North-South Line) (r7915138)
-
 routes: 
   - 
-    colour: '#0274ba'
+    ref: Blue Line
     name: Subway Blue Line
-    type: subway
+    colour: '#0274ba'
     station_count: 15
-    itineraries: 
-      r4439527: 
-        - Indian Creek (n4172459857)
-        - Kensington (n4172459856)
-        - Avondale (n4172458457)
-        - Decatur (n8140627609)
-        - East Lake (n4172458493)
-        - Edgewood / Candler Park (n4172458492)
-        - Inman Park/Reynoldstown (n4172458491)
-        - King Memorial (n4172458489)
-        - Georgia State (n4172458490)
-        - Five Points (n318451223)
-        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
-        - Vine City (n7745032438)
-        - Ashby (n6863544212)
-        - West Lake (n4170391718)
-        - Hamilton E. Holmes (n4172168711)
-
-      r239510: 
-        - Hamilton E. Holmes (n4172168711)
-        - West Lake (n4170391718)
-        - Ashby (n6863544212)
-        - Vine City (n7745032438)
-        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
-        - Five Points (n318451223)
-        - Georgia State (n4172458490)
-        - King Memorial (n4172458489)
-        - Inman Park/Reynoldstown (n4172458491)
-        - Edgewood / Candler Park (n4172458492)
-        - East Lake (n4172458493)
-        - Decatur (n8140627609)
-        - Avondale (n4172458457)
-        - Kensington (n4172459856)
-        - Indian Creek (n4172459857)
-
-
+    type: subway
     stations: 
       - Hamilton E. Holmes
       - West Lake
@@ -67,54 +23,48 @@ routes:
       - Kensington
       - Indian Creek
 
-    ref: Blue Line
-  - 
-    colour: '#f67705'
-    name: Subway Gold Line
-    type: subway
-    station_count: 18
     itineraries: 
-      r4439528: 
-        - Airport (n4172450831)
-        - College Park (n4172450830)
-        - East Point (n4172450829)
-        - Lakewood / Fort McPherson (n5346180632)
-        - Oakland City (n4172450827)
-        - West End (n4172450826)
-        - Garnett Station (n5346183223)
+      r239510: 
+        - Hamilton E. Holmes (n4172168711)
+        - West Lake (n4170391718)
+        - Ashby (n6863544212)
+        - Vine City (n7745032438)
+        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
         - Five Points (n318451223)
-        - Peachtree Center (n4170221445)
-        - Civic Center (n4172450832)
-        - North Avenue (n4172450833)
-        - Midtown (n4172450834)
-        - Arts Center (n4172450835)
-        - Lindbergh Center (n5346210486)
-        - Lenox (n4172164015)
-        - Brookhaven (n4172164014)
-        - Chamblee (n4172164012)
-        - Doraville (n4172164013)
+        - Georgia State (n4172458490)
+        - King Memorial (n4172458489)
+        - Inman Park/Reynoldstown (n4172458491)
+        - Edgewood / Candler Park (n4172458492)
+        - East Lake (n4172458493)
+        - Decatur (n8140627609)
+        - Avondale (n4172458457)
+        - Kensington (n4172459856)
+        - Indian Creek (n4172459857)
 
-      r304620: 
-        - Doraville (n4172164013)
-        - Chamblee (n4172164012)
-        - Brookhaven (n4172164014)
-        - Lenox (n4172164015)
-        - Lindbergh Center (n5346210486)
-        - Arts Center (n4172450835)
-        - Midtown (n4172450834)
-        - North Avenue (n4172450833)
-        - Civic Center (n4172450832)
-        - Peachtree Center (n4170221445)
+      r4439527: 
+        - Indian Creek (n4172459857)
+        - Kensington (n4172459856)
+        - Avondale (n4172458457)
+        - Decatur (n8140627609)
+        - East Lake (n4172458493)
+        - Edgewood / Candler Park (n4172458492)
+        - Inman Park/Reynoldstown (n4172458491)
+        - King Memorial (n4172458489)
+        - Georgia State (n4172458490)
         - Five Points (n318451223)
-        - Garnett Station (n5346183223)
-        - West End (n4172450826)
-        - Oakland City (n4172450827)
-        - Lakewood / Fort McPherson (n5346180632)
-        - East Point (n4172450829)
-        - College Park (n4172450830)
-        - Airport (n4172450831)
+        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
+        - Vine City (n7745032438)
+        - Ashby (n6863544212)
+        - West Lake (n4170391718)
+        - Hamilton E. Holmes (n4172168711)
 
 
+  - 
+    ref: Gold Line
+    name: Subway Gold Line
+    colour: '#f67705'
+    station_count: 18
+    type: subway
     stations: 
       - Airport Station
       - College Park Station
@@ -135,24 +85,66 @@ routes:
       - Chamblee Station
       - Doraville Station
 
-    ref: Gold Line
-  - 
-    colour: '#009544'
-    name: Subway Green Line
-    type: subway
-    station_count: 9
     itineraries: 
-      r4439530: 
-        - Edgewood / Candler Park (n4172458492)
-        - Inman Park/Reynoldstown (n4172458491)
-        - King Memorial (n4172458489)
-        - Georgia State (n4172458490)
+      r304620: 
+        - Doraville (n4172164013)
+        - Chamblee (n4172164012)
+        - Brookhaven (n4172164014)
+        - Lenox (n4172164015)
+        - Lindbergh Center (n5346210486)
+        - Arts Center (n4172450835)
+        - Midtown (n4172450834)
+        - North Avenue (n4172450833)
+        - Civic Center (n4172450832)
+        - Peachtree Center (n4170221445)
         - Five Points (n318451223)
-        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
-        - Vine City (n7745032438)
-        - Ashby (n6863544212)
-        - Bankhead (n4082290806)
+        - Garnett Station (n5346183223)
+        - West End (n4172450826)
+        - Oakland City (n4172450827)
+        - Lakewood / Fort McPherson (n5346180632)
+        - East Point (n4172450829)
+        - College Park (n4172450830)
+        - Airport (n4172450831)
 
+      r4439528: 
+        - Airport (n4172450831)
+        - College Park (n4172450830)
+        - East Point (n4172450829)
+        - Lakewood / Fort McPherson (n5346180632)
+        - Oakland City (n4172450827)
+        - West End (n4172450826)
+        - Garnett Station (n5346183223)
+        - Five Points (n318451223)
+        - Peachtree Center (n4170221445)
+        - Civic Center (n4172450832)
+        - North Avenue (n4172450833)
+        - Midtown (n4172450834)
+        - Arts Center (n4172450835)
+        - Lindbergh Center (n5346210486)
+        - Lenox (n4172164015)
+        - Brookhaven (n4172164014)
+        - Chamblee (n4172164012)
+        - Doraville (n4172164013)
+
+
+  - 
+    ref: Green Line
+    name: Subway Green Line
+    colour: '#009544'
+    station_count: 9
+    type: subway
+    stations: 
+      - Bankhead Station
+      - Ashby
+      - Vine City Station
+      - Dome / GWCC / Philips Arena / CNN Center
+      - Five Points station (East-West Line)
+      - Georgia State Station
+      - King Memorial Station
+      - Inman Park/Reynoldstown Station
+      - Edgewood/Candler Park Station
+
+    itineraries: 
       r304604: 
         - Bankhead (n4082290806)
         - Ashby (n6863544212)
@@ -164,24 +156,34 @@ routes:
         - Inman Park/Reynoldstown (n4172458491)
         - Edgewood / Candler Park (n4172458492)
 
+      r4439530: 
+        - Edgewood / Candler Park (n4172458492)
+        - Inman Park/Reynoldstown (n4172458491)
+        - King Memorial (n4172458489)
+        - Georgia State (n4172458490)
+        - Five Points (n318451223)
+        - Dome / GWCC / Philips Arena / CNN Center (n6863551312)
+        - Vine City (n7745032438)
+        - Ashby (n6863544212)
+        - Bankhead (n4082290806)
 
-    stations: 
-      - Edgewood/Candler Park Station
-      - Inman Park/Reynoldstown Station
-      - King Memorial Station
-      - Georgia State Station
-      - Five Points station (East-West Line)
-      - Dome / GWCC / Philips Arena / CNN Center
-      - Vine City Station
-      - Ashby
-      - Bankhead Station
 
-    ref: Green Line
   - 
-    colour: '#76253d'
+    ref: Plane Train
     name: The Plane Train
-    type: monorail
+    colour: '#76253d'
     station_count: 8
+    type: monorail
+    stations: 
+      - Domestic Baggage Claim
+      - T Gates
+      - A Gates
+      - B Gates
+      - C Gates
+      - D Gates
+      - E Gates
+      - F Gates & International Terminal
+
     itineraries: 
       r9269860: 
         - F Gates & International Terminal (n1235734761)
@@ -204,22 +206,33 @@ routes:
         - F Gates & International Terminal (n1235734761)
 
 
-    stations: 
-      - F Gates & International Terminal
-      - E Gates
-      - D Gates
-      - C Gates
-      - B Gates
-      - A Gates
-      - T Gates
-      - Domestic Baggage Claim
-
-    ref: Plane Train
   - 
-    colour: '#cc0000'
+    ref: Red Line
     name: Subway Red Line
-    type: subway
+    colour: '#cc0000'
     station_count: 19
+    type: subway
+    stations: 
+      - North Springs
+      - Sandy Springs
+      - Dunwoody
+      - Medical Center
+      - Buckhead Station
+      - Lindbergh Center
+      - Arts Center Station
+      - Midtown Station
+      - North Avenue Station
+      - Civic Center
+      - Peachtree Center Station
+      - Five Points station (North-South Line)
+      - Garnett Station
+      - West End Station
+      - Oakland City Station
+      - Lakewood/Fort McPherson Station
+      - East Point Station
+      - College Park Station
+      - Airport Station
+
     itineraries: 
       r304619: 
         - North Springs (n5346206680)
@@ -264,51 +277,29 @@ routes:
         - North Springs (n5346206680)
 
 
-    stations: 
-      - Airport Station
-      - College Park Station
-      - East Point Station
-      - Lakewood/Fort McPherson Station
-      - Oakland City Station
-      - West End Station
-      - Garnett Station
-      - Five Points station (North-South Line)
-      - Peachtree Center Station
-      - Civic Center
-      - North Avenue Station
-      - Midtown Station
-      - Arts Center Station
-      - Lindbergh Center
-      - Buckhead Station
-      - Medical Center
-      - Dunwoody
-      - Sandy Springs
-      - North Springs
-
-    ref: Red Line
   - 
-    colour: '#0000ff'
+    ref: SkyTrain
     name: ATL SkyTrain
-    type: monorail
+    colour: '#0000ff'
     station_count: 3
-    itineraries: 
-      r9269862: 
-        - Rental Car Center (n5186556521)
-        - GICC/Gateway Center (n5348303512)
-        - Airport Station (n5348303511)
-
-      r8863388: 
-        - Airport Station (n5348303511)
-        - GICC/Gateway Center (n5348303512)
-        - Rental Car Center (n5186556521)
-
-
+    type: monorail
     stations: 
       - Rental Car Center
       - GICC/Gateway Center
       - Airport Station
 
-    ref: SkyTrain
+    itineraries: 
+      r8863388: 
+        - Airport Station (n5348303511)
+        - GICC/Gateway Center (n5348303512)
+        - Rental Car Center (n5186556521)
+
+      r9269862: 
+        - Rental Car Center (n5186556521)
+        - GICC/Gateway Center (n5348303512)
+        - Airport Station (n5348303511)
+
+
 
 stations: 
   - A Gates (n1235734767)
@@ -360,4 +351,13 @@ stations:
   - Vine City (n7745032438)
   - West End (n4172450826)
   - West Lake (n4170391718)
+
+transfers: 
+  - 
+    - Airport Station (r4439494)
+    - Airport Station (r9701938)
+    - Domestic Baggage Claim (r9701937)
+  - 
+    - Five Points station (East-West Line) (r7915137)
+    - Five Points station (North-South Line) (r7915138)
 

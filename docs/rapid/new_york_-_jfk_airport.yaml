@@ -1,12 +1,22 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0194d7'
+    ref: JFK
     name: Howard Beach Route
-    type: light_rail
+    colour: '#0194d7'
     station_count: 9
+    type: light_rail
+    stations: 
+      - Howard Beach (JFK)
+      - Lefferts Boulevard
+      - Federal Circle
+      - Terminal 1
+      - Terminal 2
+      - Terminal 4
+      - Terminal 5
+      - Terminal 7
+      - Terminal 8
+
     itineraries: 
       r7895590: 
         - Howard Beach (n277753014)
@@ -23,10 +33,13 @@ routes:
         - Howard Beach (n277753014)
 
 
+  - 
+    ref: JFK
+    name: All Terminals Loop
+    colour: '#0194d7'
+    station_count: 6
+    type: light_rail
     stations: 
-      - Howard Beach (JFK)
-      - Lefferts Boulevard
-      - Federal Circle
       - Terminal 1
       - Terminal 2
       - Terminal 4
@@ -34,12 +47,6 @@ routes:
       - Terminal 7
       - Terminal 8
 
-    ref: JFK
-  - 
-    colour: '#0194d7'
-    name: All Terminals Loop
-    type: light_rail
-    station_count: 6
     itineraries: 
       r7895591: 
         - Terminal 1 (n277752293)
@@ -51,7 +58,15 @@ routes:
         - Terminal 1 (n277752293)
 
 
+  - 
+    ref: JFK
+    name: Jamaica Station Route
+    colour: '#0194d7'
+    station_count: 8
+    type: light_rail
     stations: 
+      - Jamaica (JFK)
+      - Federal Circle
       - Terminal 1
       - Terminal 2
       - Terminal 4
@@ -59,12 +74,6 @@ routes:
       - Terminal 7
       - Terminal 8
 
-    ref: JFK
-  - 
-    colour: '#0194d7'
-    name: Jamaica Station Route
-    type: light_rail
-    station_count: 8
     itineraries: 
       r7895554: 
         - Jamaica (n6624448793)
@@ -79,17 +88,6 @@ routes:
         - Jamaica (n6624448793)
 
 
-    stations: 
-      - Jamaica (JFK)
-      - Federal Circle
-      - Terminal 1
-      - Terminal 2
-      - Terminal 4
-      - Terminal 5
-      - Terminal 7
-      - Terminal 8
-
-    ref: JFK
 
 stations: 
   - Federal Circle (n277752415)
@@ -102,4 +100,6 @@ stations:
   - Terminal 5 (n277752210)
   - Terminal 7 (n277752134)
   - Terminal 8 (n277751536)
+
+transfers: 
 

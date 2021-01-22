@@ -1,12 +1,15 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ca0a23'
+    ref: LEX
     name: Train Leonardo Express
-    type: train
+    colour: '#ca0a23'
     station_count: 2
+    type: train
+    stations: 
+      - Fiumicino Aeroporto
+      - Roma Termini
+
     itineraries: 
       r1724268: 
         - Fiumicino Aeroporto (n1313285473)
@@ -17,13 +20,10 @@ routes:
         - Fiumicino Aeroporto (n1313285473)
 
 
-    stations: 
-      - Roma Termini
-      - Fiumicino Aeroporto
-
-    ref: LEX
 
 stations: 
   - Fiumicino Aeroporto (n1313285473)
   - Roma Termini (n251904108)
+
+transfers: 
 

@@ -1,68 +1,52 @@
 
-transfers: 
-  - 
-    - Bloor-Yonge (Line 1 Yonge-University) (r7874387)
-    - Bloor-Yonge (Line 2 Bloor-Danforth) (r7874877)
-  - 
-    - Kennedy (Line 2) (r7871642)
-    - Kennedy (Line 3) (r7889630)
-  - 
-    - Sheppard-Yonge (Sheppard) (r7871816)
-    - Sheppard-Yonge (Yonge-University) (r7872185)
-  - 
-    - Spadina (Bloor-Danforth) (r7281897)
-    - Spadina (Yonge-University) (r7874876)
-  - 
-    - St. George (Bloor-Danforth) (r7874879)
-    - St. George (Yonge-University) (r7874878)
-
 routes: 
   - 
-    colour: '#ffff00'
+    ref: 1
     name: Line 1 Yonge-University
-    type: subway
+    colour: '#ffff00'
     station_count: 38
-    itineraries: 
-      r102388: 
-        - Vaughan Metropolitan Centre (n4357782894)
-        - Highway 407 (n5321964774)
-        - Pioneer Village (r11838545)
-        - York University (r11928469)
-        - Finch West (n5061304514)
-        - Downsview Park (n5061304513)
-        - Sheppard West (n420561530)
-        - Wilson (n5321922638)
-        - Yorkdale (n5321922639)
-        - Lawrence West (n5321922640)
-        - Glencairn (n560192986)
-        - Eglinton West (n5320359169)
-        - St. Clair West (n5320349308)
-        - Dupont (n5320349317)
-        - Spadina (n5320293105)
-        - St. George (n34710071)
-        - Museum (n5320293827)
-        - Queen's Park (n280372903)
-        - St. Patrick (n26240971)
-        - Osgoode (n34710072)
-        - St. Andrew (n34710073)
-        - Union (n5320067932)
-        - King (n34710076)
-        - Queen (n34710077)
-        - Dundas (n26240972)
-        - College (n34710078)
-        - Wellesley (n34710079)
-        - Bloor-Yonge (n1157217363)
-        - Rosedale (n5319198159)
-        - Summerhill (n70363937)
-        - St. Clair (n55493312)
-        - Davisville (n5319182778)
-        - Eglinton (n55493345)
-        - Lawrence (n55786835)
-        - York Mills (n56922357)
-        - Sheppard-Yonge (n5318480902)
-        - North York Centre (n60355167)
-        - Finch (n56922363)
+    type: subway
+    stations: 
+      - Finch
+      - North York Centre
+      - Sheppard-Yonge (Yonge-University)
+      - York Mills
+      - Lawrence
+      - Eglinton
+      - Davisville
+      - St. Clair
+      - Summerhill
+      - Rosedale
+      - Bloor-Yonge (Line 1 Yonge-University)
+      - Wellesley
+      - College
+      - Dundas
+      - Queen
+      - King
+      - Union
+      - St. Andrew
+      - Osgoode
+      - St. Patrick
+      - Queen's Park
+      - Museum
+      - St. George (Yonge-University)
+      - Spadina (Yonge-University)
+      - Dupont
+      - St. Clair West
+      - Eglinton West station
+      - Glencairn
+      - Lawrence West
+      - Yorkdale
+      - Wilson
+      - Sheppard West
+      - Downsview Park (Subway)
+      - Finch West
+      - York University
+      - Pioneer Village
+      - Highway 407
+      - Vaughan Metropolitan Centre
 
+    itineraries: 
       r7884488: 
         - Finch (n56922363)
         - North York Centre (n60355167)
@@ -103,87 +87,87 @@ routes:
         - Highway 407 (n5321964774)
         - Vaughan Metropolitan Centre (n4357782894)
 
-
-    stations: 
-      - Vaughan Metropolitan Centre
-      - Highway 407
-      - Pioneer Village
-      - York University
-      - Finch West
-      - Downsview Park (Subway)
-      - Sheppard West
-      - Wilson
-      - Yorkdale
-      - Lawrence West
-      - Glencairn
-      - Eglinton West station
-      - St. Clair West
-      - Dupont
-      - Spadina (Yonge-University)
-      - St. George (Yonge-University)
-      - Museum
-      - Queen's Park
-      - St. Patrick
-      - Osgoode
-      - St. Andrew
-      - Union
-      - King
-      - Queen
-      - Dundas
-      - College
-      - Wellesley
-      - Bloor-Yonge (Line 1 Yonge-University)
-      - Rosedale
-      - Summerhill
-      - St. Clair
-      - Davisville
-      - Eglinton
-      - Lawrence
-      - York Mills
-      - Sheppard-Yonge (Yonge-University)
-      - North York Centre
-      - Finch
-
-    ref: 1
-  - 
-    colour: '#008000'
-    name: Line 2 Bloor-Danforth
-    type: subway
-    station_count: 31
-    itineraries: 
-      r7885232: 
-        - Kennedy (n4875013046)
-        - Warden (n5326530554)
-        - Victoria Park (n5326535707)
-        - Main Street (w28135191)
-        - Woodbine (w90306825)
-        - Coxwell (w30327861)
-        - Greenwood (w35979526)
-        - Donlands (w55639063)
-        - Pape (r12126902)
-        - Chester (w105803298)
-        - Broadview (w694507180)
-        - Castle Frank (w43804186)
-        - Sherbourne (n2481423750)
-        - Bloor-Yonge (n1157217363)
-        - Bay (n25991314)
-        - St. George (n34710071)
+      r102388: 
+        - Vaughan Metropolitan Centre (n4357782894)
+        - Highway 407 (n5321964774)
+        - Pioneer Village (r11838545)
+        - York University (r11928469)
+        - Finch West (n5061304514)
+        - Downsview Park (n5061304513)
+        - Sheppard West (n420561530)
+        - Wilson (n5321922638)
+        - Yorkdale (n5321922639)
+        - Lawrence West (n5321922640)
+        - Glencairn (n560192986)
+        - Eglinton West (n5320359169)
+        - St. Clair West (n5320349308)
+        - Dupont (n5320349317)
         - Spadina (n5320293105)
-        - Bathurst (n5326501680)
-        - Christie (n5262888213)
-        - Ossington (n5326487199)
-        - Dufferin (n5326479603)
-        - Lansdowne (n5326476228)
-        - Dundas West (n25991463)
-        - Keele (n424028617)
-        - High Park (n424028625)
-        - Runnymede (n2249683136)
-        - Jane (n2249683137)
-        - Old Mill (n59980039)
-        - Royal York (n5326455477)
-        - Islington (n5326471419)
-        - Kipling (n432805453)
+        - St. George (n34710071)
+        - Museum (n5320293827)
+        - Queen's Park (n280372903)
+        - St. Patrick (n26240971)
+        - Osgoode (n34710072)
+        - St. Andrew (n34710073)
+        - Union (n5320067932)
+        - King (n34710076)
+        - Queen (n34710077)
+        - Dundas (n26240972)
+        - College (n34710078)
+        - Wellesley (n34710079)
+        - Bloor-Yonge (n1157217363)
+        - Rosedale (n5319198159)
+        - Summerhill (n70363937)
+        - St. Clair (n55493312)
+        - Davisville (n5319182778)
+        - Eglinton (n55493345)
+        - Lawrence (n55786835)
+        - York Mills (n56922357)
+        - Sheppard-Yonge (n5318480902)
+        - North York Centre (n60355167)
+        - Finch (n56922363)
 
+
+  - 
+    ref: 2
+    name: Line 2 Bloor-Danforth
+    colour: '#008000'
+    station_count: 31
+    type: subway
+    stations: 
+      - Kennedy (Line 2)
+      - Warden station
+      - Victoria Park station
+      - Main Street station
+      - Woodbine station
+      - Coxwell station
+      - Greenwood station
+      - Donlands station
+      - Pape station
+      - Chester
+      - Broadview station
+      - Castle Frank station
+      - Sherbourne station
+      - Bloor-Yonge (Line 2 Bloor-Danforth)
+      - Bay
+      - St. George (Bloor-Danforth)
+      - Spadina (Bloor-Danforth)
+      - Bathurst Station
+      - Christie Station
+      - Ossington station
+      - Dufferin station
+      - Lansdowne Station
+      - Dundas West
+      - Keele station
+      - High Park station
+      - Runnymede station
+      - Jane station
+      - Old Mill station
+      - Royal York station
+      - Islington station
+      - Kipling (Subway)
+
+    itineraries: 
       r102386: 
         - Kipling (n432805453)
         - Islington (n5326471419)
@@ -217,46 +201,54 @@ routes:
         - Warden (n5326530554)
         - Kennedy (n4875013046)
 
+      r7885232: 
+        - Kennedy (n4875013046)
+        - Warden (n5326530554)
+        - Victoria Park (n5326535707)
+        - Main Street (w28135191)
+        - Woodbine (w90306825)
+        - Coxwell (w30327861)
+        - Greenwood (w35979526)
+        - Donlands (w55639063)
+        - Pape (r12126902)
+        - Chester (w105803298)
+        - Broadview (w694507180)
+        - Castle Frank (w43804186)
+        - Sherbourne (n2481423750)
+        - Bloor-Yonge (n1157217363)
+        - Bay (n25991314)
+        - St. George (n34710071)
+        - Spadina (n5320293105)
+        - Bathurst (n5326501680)
+        - Christie (n5262888213)
+        - Ossington (n5326487199)
+        - Dufferin (n5326479603)
+        - Lansdowne (n5326476228)
+        - Dundas West (n25991463)
+        - Keele (n424028617)
+        - High Park (n424028625)
+        - Runnymede (n2249683136)
+        - Jane (n2249683137)
+        - Old Mill (n59980039)
+        - Royal York (n5326455477)
+        - Islington (n5326471419)
+        - Kipling (n432805453)
 
-    stations: 
-      - Kipling (Subway)
-      - Islington station
-      - Royal York station
-      - Old Mill station
-      - Jane station
-      - Runnymede station
-      - High Park station
-      - Keele station
-      - Dundas West
-      - Lansdowne Station
-      - Dufferin station
-      - Ossington station
-      - Christie Station
-      - Bathurst Station
-      - Spadina (Bloor-Danforth)
-      - St. George (Bloor-Danforth)
-      - Bay
-      - Bloor-Yonge (Line 2 Bloor-Danforth)
-      - Sherbourne station
-      - Castle Frank station
-      - Broadview station
-      - Chester
-      - Pape station
-      - Donlands station
-      - Greenwood station
-      - Coxwell station
-      - Woodbine station
-      - Main Street station
-      - Victoria Park station
-      - Warden station
-      - Kennedy (Line 2)
 
-    ref: 2
   - 
-    colour: '#0093dd'
+    ref: 3
     name: Line 3 Scarborough
-    type: light_rail
+    colour: '#0093dd'
     station_count: 6
+    type: light_rail
+    stations: 
+      - Kennedy (Line 3)
+      - Lawrence East
+      - Ellesmere
+      - Midland
+      - Scarborough Centre
+      - McCowan
+
     itineraries: 
       r7871683: 
         - McCowan (n32809628)
@@ -275,28 +267,20 @@ routes:
         - McCowan (n32809628)
 
 
-    stations: 
-      - McCowan
-      - Scarborough Centre
-      - Midland
-      - Ellesmere
-      - Lawrence East
-      - Kennedy (Line 3)
-
-    ref: 3
   - 
-    colour: '#800080'
+    ref: 4
     name: Line 4 Sheppard
-    type: subway
+    colour: '#800080'
     station_count: 5
-    itineraries: 
-      r7871815: 
-        - Sheppard-Yonge (n5318480902)
-        - Bayview (n5318480907)
-        - Bessarion (n5318484724)
-        - Leslie (n5318484741)
-        - Don Mills (n5318484736)
+    type: subway
+    stations: 
+      - Sheppard-Yonge (Sheppard)
+      - Bayview
+      - Bessarion
+      - Leslie
+      - Don Mills
 
+    itineraries: 
       r7871814: 
         - Don Mills (n5318484736)
         - Leslie (n5318484741)
@@ -304,15 +288,14 @@ routes:
         - Bayview (n5318480907)
         - Sheppard-Yonge (n5318480902)
 
+      r7871815: 
+        - Sheppard-Yonge (n5318480902)
+        - Bayview (n5318480907)
+        - Bessarion (n5318484724)
+        - Leslie (n5318484741)
+        - Don Mills (n5318484736)
 
-    stations: 
-      - Don Mills
-      - Leslie
-      - Bessarion
-      - Bayview
-      - Sheppard-Yonge (Sheppard)
 
-    ref: 4
 
 stations: 
   - Bathurst (n5326501680)
@@ -391,4 +374,21 @@ stations:
   - York Mills (n56922357)
   - York University (r11928469)
   - Yorkdale (n5321922639)
+
+transfers: 
+  - 
+    - Bloor-Yonge (Line 1 Yonge-University) (r7874387)
+    - Bloor-Yonge (Line 2 Bloor-Danforth) (r7874877)
+  - 
+    - Kennedy (Line 2) (r7871642)
+    - Kennedy (Line 3) (r7889630)
+  - 
+    - Sheppard-Yonge (Sheppard) (r7871816)
+    - Sheppard-Yonge (Yonge-University) (r7872185)
+  - 
+    - Spadina (Bloor-Danforth) (r7281897)
+    - Spadina (Yonge-University) (r7874876)
+  - 
+    - St. George (Bloor-Danforth) (r7874879)
+    - St. George (Yonge-University) (r7874878)
 

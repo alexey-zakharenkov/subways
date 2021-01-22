@@ -1,18 +1,34 @@
 
-transfers: 
-  - 
-    - 'Arts-Loi - Kunst-Wet (r7685223)'
-    - 'Arts-Loi - Kunst-Wet (r7763657)'
-  - 
-    - Simonis (r7685224)
-    - Simonis-Elisabeth (r7151510)
-
 routes: 
   - 
-    colour: '#c4008f'
+    ref: 1
     name: STIB/MIVB 1
-    type: subway
+    colour: '#c4008f'
     station_count: 21
+    type: subway
+    stations: 
+      - 'Gare de l''Ouest - Weststation'
+      - Beekkant
+      - 'Étangs Noirs - Zwarte Vijvers'
+      - 'Comte de Flandre - Graaf van Vlaanderen'
+      - 'Sainte-Catherine - Sint-Katelijne'
+      - De Brouckère
+      - 'Gare Centrale - Centraal Station'
+      - 'Parc - Park'
+      - 'Arts-Loi - Kunst-Wet'
+      - 'Maelbeek - Maalbeek'
+      - Schuman
+      - Merode
+      - Montgomery
+      - Joséphine-Charlotte
+      - Gribaumont
+      - Tomberg
+      - Roodebeek
+      - Vandervelde
+      - Alma
+      - 'Crainhem - Kraainem'
+      - 'Stockel - Stokkel'
+
     itineraries: 
       r58240: 
         - 'Gare de l''Ouest - Weststation (n143725278)'
@@ -61,35 +77,32 @@ routes:
         - 'Gare de l''Ouest - Weststation (n143725278)'
 
 
+  - 
+    ref: 2
+    name: STIB/MIVB 2
+    colour: '#f57000'
+    station_count: 18
+    type: subway
     stations: 
-      - 'Stockel - Stokkel'
-      - 'Crainhem - Kraainem'
-      - Alma
-      - Vandervelde
-      - Roodebeek
-      - Tomberg
-      - Gribaumont
-      - Joséphine-Charlotte
-      - Montgomery
-      - Merode
-      - Schuman
-      - 'Maelbeek - Maalbeek'
-      - 'Arts-Loi - Kunst-Wet'
-      - 'Parc - Park'
-      - 'Gare Centrale - Centraal Station'
-      - De Brouckère
-      - 'Sainte-Catherine - Sint-Katelijne'
-      - 'Comte de Flandre - Graaf van Vlaanderen'
-      - 'Étangs Noirs - Zwarte Vijvers'
+      - Simonis-Elisabeth
+      - 'Osseghem - Ossegem'
       - Beekkant
       - 'Gare de l''Ouest - Weststation'
+      - Delacroix
+      - Clemenceau
+      - 'Gare du Midi - Zuidstation'
+      - 'Porte de Hal - Hallepoort'
+      - 'Hôtel des Monnaies - Munthof'
+      - 'Louise - Louiza'
+      - 'Porte de Namur - Naamsepoort'
+      - 'Trône - Troon'
+      - 'Arts-Loi - Kunst-Wet'
+      - Madou
+      - 'Botanique - Kruidtuin'
+      - Rogier
+      - 'Yser - IJzer'
+      - Ribaucourt
 
-    ref: 1
-  - 
-    colour: '#f57000'
-    name: STIB/MIVB 2
-    type: subway
-    station_count: 18
     itineraries: 
       r58242: 
         - Simonis (n2101668768)
@@ -134,32 +147,42 @@ routes:
         - Simonis (n2101668768)
 
 
+  - 
+    ref: 5
+    name: STIB/MIVB 5
+    colour: '#b5ba05'
+    station_count: 28
+    type: subway
     stations: 
-      - Simonis
-      - Ribaucourt
-      - 'Yser - IJzer'
-      - Rogier
-      - 'Botanique - Kruidtuin'
-      - Madou
-      - 'Arts-Loi - Kunst-Wet'
-      - 'Trône - Troon'
-      - 'Porte de Namur - Naamsepoort'
-      - 'Louise - Louiza'
-      - 'Hôtel des Monnaies - Munthof'
-      - 'Porte de Hal - Hallepoort'
-      - 'Gare du Midi - Zuidstation'
-      - Clemenceau
-      - Delacroix
+      - 'Erasme - Erasmus'
+      - Eddy Merckx
+      - 'CERIA - COOVI'
+      - 'La Roue - Het Rad'
+      - Bizet
+      - 'Veeweyde - Veeweide'
+      - 'Saint-Guidon - Sint-Guido'
+      - Aumale
+      - Jacques Brel
       - 'Gare de l''Ouest - Weststation'
       - Beekkant
-      - 'Osseghem - Ossegem'
+      - 'Étangs Noirs - Zwarte Vijvers'
+      - 'Comte de Flandre - Graaf van Vlaanderen'
+      - 'Sainte-Catherine - Sint-Katelijne'
+      - De Brouckère
+      - 'Gare Centrale - Centraal Station'
+      - 'Parc - Park'
+      - 'Arts-Loi - Kunst-Wet'
+      - 'Maelbeek - Maalbeek'
+      - Schuman
+      - Merode
+      - Thieffry
+      - Pétillon
+      - Hankar
+      - Delta
+      - Beaulieu
+      - Demey
+      - Herrmann-Debroux
 
-    ref: 2
-  - 
-    colour: '#b5ba05'
-    name: STIB/MIVB 5
-    type: subway
-    station_count: 28
     itineraries: 
       r58241: 
         - 'Erasme - Erasmus (n144100088)'
@@ -222,42 +245,39 @@ routes:
         - 'Erasme - Erasmus (n144100088)'
 
 
-    stations: 
-      - Herrmann-Debroux
-      - Demey
-      - Beaulieu
-      - Delta
-      - Hankar
-      - Pétillon
-      - Thieffry
-      - Merode
-      - Schuman
-      - 'Maelbeek - Maalbeek'
-      - 'Arts-Loi - Kunst-Wet'
-      - 'Parc - Park'
-      - 'Gare Centrale - Centraal Station'
-      - De Brouckère
-      - 'Sainte-Catherine - Sint-Katelijne'
-      - 'Comte de Flandre - Graaf van Vlaanderen'
-      - 'Étangs Noirs - Zwarte Vijvers'
-      - Beekkant
-      - 'Gare de l''Ouest - Weststation'
-      - Jacques Brel
-      - Aumale
-      - 'Saint-Guidon - Sint-Guido'
-      - 'Veeweyde - Veeweide'
-      - Bizet
-      - 'La Roue - Het Rad'
-      - 'CERIA - COOVI'
-      - Eddy Merckx
-      - 'Erasme - Erasmus'
-
-    ref: 5
   - 
-    colour: '#0078ad'
+    ref: 6
     name: STIB/MIVB 6
-    type: subway
+    colour: '#0078ad'
     station_count: 25
+    type: subway
+    stations: 
+      - Simonis
+      - Ribaucourt
+      - 'Yser - IJzer'
+      - Rogier
+      - 'Botanique - Kruidtuin'
+      - Madou
+      - 'Arts-Loi - Kunst-Wet'
+      - 'Trône - Troon'
+      - 'Porte de Namur - Naamsepoort'
+      - 'Louise - Louiza'
+      - 'Hôtel des Monnaies - Munthof'
+      - 'Porte de Hal - Hallepoort'
+      - 'Gare du Midi - Zuidstation'
+      - Clemenceau
+      - Delacroix
+      - 'Gare de l''Ouest - Weststation'
+      - Beekkant
+      - 'Osseghem - Ossegem'
+      - Belgica
+      - Pannenhuis
+      - Bockstael
+      - Stuyvenbergh
+      - Houba-Brugmann
+      - 'Heysel - Heizel'
+      - 'Roi Baudouin - Koning Boudewijn'
+
     itineraries: 
       r108101: 
         - 'Roi Baudouin - Koning Boudewijn (n144283201)'
@@ -316,34 +336,6 @@ routes:
         - 'Roi Baudouin - Koning Boudewijn (n144283201)'
 
 
-    stations: 
-      - Simonis
-      - Ribaucourt
-      - 'Yser - IJzer'
-      - Rogier
-      - 'Botanique - Kruidtuin'
-      - Madou
-      - 'Arts-Loi - Kunst-Wet'
-      - 'Trône - Troon'
-      - 'Porte de Namur - Naamsepoort'
-      - 'Louise - Louiza'
-      - 'Hôtel des Monnaies - Munthof'
-      - 'Porte de Hal - Hallepoort'
-      - 'Gare du Midi - Zuidstation'
-      - Clemenceau
-      - Delacroix
-      - 'Gare de l''Ouest - Weststation'
-      - Beekkant
-      - 'Osseghem - Ossegem'
-      - Belgica
-      - Pannenhuis
-      - Bockstael
-      - Stuyvenbergh
-      - Houba-Brugmann
-      - 'Heysel - Heizel'
-      - 'Roi Baudouin - Koning Boudewijn'
-
-    ref: 6
 
 stations: 
   - Alma (n2368465586)
@@ -406,4 +398,12 @@ stations:
   - 'Veeweyde - Veeweide (n144070405)'
   - 'Yser - IJzer (n143701411)'
   - 'Étangs Noirs - Zwarte Vijvers (n144050557)'
+
+transfers: 
+  - 
+    - 'Arts-Loi - Kunst-Wet (r7685223)'
+    - 'Arts-Loi - Kunst-Wet (r7763657)'
+  - 
+    - Simonis (r7685224)
+    - Simonis-Elisabeth (r7151510)
 

@@ -1,82 +1,16 @@
 
-transfers: 
-  - 
-    - Anand Vihar (Blue Line) (r9211728)
-    - Anand Vihar (Pink Line) (r9571362)
-  - 
-    - Azadpur (Pink Line) (r9566066)
-    - Azadpur (Yellow Line) (r9566067)
-  - 
-    - Botanical Garden (Blue Line) (r8077006)
-    - Botanical Garden (Magenta Line) (r8077005)
-  - 
-    - Central Secretariat (Violet Line) (r8032913)
-    - Central Secretariat (Yellow Line) (r8076972)
-  - 
-    - Dwarka (r9681200)
-    - Dwarka (r9681201)
-  - 
-    - Dwarka Sector 21 (Airport Express Line) (r8076925)
-    - Dwarka Sector 21 (Blue Line) (r8076924)
-  - 
-    - Hauz Khas (Magenta Line) (r8385436)
-    - Hauz Khas (Yellow Line) (r8239099)
-  - 
-    - INA (Pink Line) (r9561648)
-    - INA (Yellow Line) (r8411808)
-  - 
-    - Inderlok (Green Line) (r8076955)
-    - Inderlok (Red Line) (r8076956)
-  - 
-    - Janakpuri West (Blue Line) (r8300352)
-    - Janakpuri West (Magenta Line) (r8385435)
-  - 
-    - Kalkaji Mandir (Mangenta Line) (r8076982)
-    - Kalkaji Mandir (Violet Line) (r8076983)
-  - 
-    - Karkarduma (Blue Line) (r9571348)
-    - Karkarduma (Pink Line) (r9571347)
-  - 
-    - Kashmere Gate (Red Line) (r8076966)
-    - Kashmere Gate (Violet Line) (r8076964)
-    - Kashmere Gate (Yellow Line) (r8076965)
-  - 
-    - Kirti Nagar (Blue Line) (r8076949)
-    - Kirti Nagar (Green Line) (r8076950)
-  - 
-    - Lajpat Nagar (Pink Line) (r9561646)
-    - Lajpat Nagar (Violet Line) (r9566069)
-  - 
-    - Mandi House (Blue Line) (r8076975)
-    - Mandi House (Violet Line) (r8076976)
-  - 
-    - 'Mayur Vihar - I (r9211732)'
-    - 'Mayur Vihar - I (r9561643)'
-  - 
-    - Netaji Subhash Place (Pink Line) (r9566064)
-    - Netaji Subhash Place (Red Line) (r9566063)
-  - 
-    - New Delhi (Line 2) (r8032892)
-    - New Delhi Airport Express Terminal (r8032893)
-  - 
-    - Rajiv Chowk (Blue Line) (r8032902)
-    - Rajiv Chowk (Yellow Line) (r8076941)
-  - 
-    - Rajouri Garden (Blue Line) (r8300348)
-    - Rajouri Garden (Pink Line) (r9566062)
-  - 
-    - Sikandarpur (Rapid MetroRail) (r8076921)
-    - Sikandarpur (Yellow Line) (r8076920)
-  - 
-    - Welcome (Pink Line) (r9571345)
-    - Welcome (Red Line) (r9571346)
-
 routes: 
   - 
-    colour: '#808080'
+    ref: 9
     name: Grey Line
-    type: subway
+    colour: '#808080'
     station_count: 3
+    type: subway
+    stations: 
+      - Dwarka
+      - Nangli
+      - Najafgarh
+
     itineraries: 
       r8051592: 
         - Najafgarh (n7039532904)
@@ -89,26 +23,21 @@ routes:
         - Najafgarh (n7039532904)
 
 
-    stations: 
-      - Dwarka
-      - Nangli
-      - Najafgarh
-
-    ref: 9
   - 
-    colour: '#ffa500'
+    ref: AEx
     name: Airport Express Line
-    type: subway
+    colour: '#ffa500'
     station_count: 6
-    itineraries: 
-      r8037715: 
-        - New Delhi Airport Express Terminal (n938409545)
-        - ONGC Shivaji Stadium (n554257833)
-        - Dhaula Kuan (n927873513)
-        - Delhi Aerocity (n554257763)
-        - Indira Gandhi International Airport (n927873494)
-        - Dwarka Sector 21 (n6539894862)
+    type: subway
+    stations: 
+      - Dwarka Sector 21 (Airport Express Line)
+      - Indira Gandhi International Airport
+      - Delhi Aerocity
+      - Dhaula Kuan
+      - ONGC Shivaji Stadium
+      - New Delhi Airport Express Terminal
 
+    itineraries: 
       r2535798: 
         - Dwarka Sector 21 (n6539894862)
         - Indira Gandhi International Airport (n927873494)
@@ -117,42 +46,81 @@ routes:
         - ONGC Shivaji Stadium (n554257833)
         - New Delhi Airport Express Terminal (n938409545)
 
+      r8037715: 
+        - New Delhi Airport Express Terminal (n938409545)
+        - ONGC Shivaji Stadium (n554257833)
+        - Dhaula Kuan (n927873513)
+        - Delhi Aerocity (n554257763)
+        - Indira Gandhi International Airport (n927873494)
+        - Dwarka Sector 21 (n6539894862)
 
-    stations: 
-      - New Delhi Airport Express Terminal
-      - ONGC Shivaji Stadium
-      - Dhaula Kuan
-      - Delhi Aerocity
-      - Indira Gandhi International Airport
-      - Dwarka Sector 21 (Airport Express Line)
 
-    ref: AEx
   - 
-    colour: '#0000ff'
+    ref: Blue Line
     name: Blue Line
-    type: subway
+    colour: '#0000ff'
     station_count: 57
+    type: subway
+    stations: 
+      - Dwarka Sector 21 (Blue Line)
+      - Dwarka Sector 8
+      - Dwarka Sector 9
+      - Dwarka Sector 10
+      - Dwarka Sector 11
+      - Dwarka Sector 12
+      - Dwarka Sector 13
+      - Dwarka Sector 14
+      - Dwarka
+      - Dwarka Mor
+      - Nawada
+      - Uttam Nagar West
+      - Uttam Nagar East
+      - Janakpuri West (Blue Line)
+      - Janakpuri East
+      - Tilak Nagar
+      - Subhash Nagar
+      - Tagore Garden
+      - Rajouri Garden (Blue Line)
+      - Ramesh Nagar
+      - Moti Nagar
+      - Kirti Nagar (Blue Line)
+      - Shadipur
+      - Patel Nagar (East)
+      - Rajendra Place
+      - Karol Bagh
+      - Jhandewalan
+      - Ramakrishna Ashram Marg
+      - Rajiv Chowk (Blue Line)
+      - Barakhambha Road
+      - Mandi House (Blue Line)
+      - Pragati Maidan
+      - Indraprastha
+      - Yamuna Bank
+      - Akshardham
+      - 'Mayur Vihar - I'
+      - Mayur Vihar Extension
+      - New Ashok Nagar
+      - Noida Sector 15
+      - Noida Sector 16
+      - Wave Sector-18 Noida
+      - Botanical Garden (Blue Line)
+      - Noida Golf Course
+      - Noida City Centre
+      - Noida Sector 34
+      - Noida Sector 52
+      - Noida Sector 61
+      - Noida Sector 59
+      - Noida Sector 62
+      - Noida Electronic City
+      - Vaishali
+      - Kaushambi
+      - Anand Vihar (Blue Line)
+      - Karkarduma (Blue Line)
+      - Preet Vihar
+      - Nirman Vihar
+      - Laxmi Nagar
+
     itineraries: 
-      r8037670: 
-        - Vaishali (n1924974147)
-        - Kaushambi (n554257855)
-        - Anand Vihar (Blue Line) (n2833971686)
-        - Karkarduma (Blue Line) (n6458130120)
-        - Preet Vihar (n663793549)
-        - Nirman Vihar (n663793972)
-        - Laxmi Nagar (n663794722)
-        - Yamuna Bank (Blue Line) (n6537193576)
-
-      r2535795: 
-        - Yamuna Bank (Blue Line) (n6537193576)
-        - Laxmi Nagar (n663794722)
-        - Nirman Vihar (n663793972)
-        - Preet Vihar (n663793549)
-        - Karkarduma (Blue Line) (n6458130120)
-        - Anand Vihar (Blue Line) (n2833971686)
-        - Kaushambi (n554257855)
-        - Vaishali (n1924974147)
-
       r447209: 
         - Noida Electronic City (n6539894868)
         - Noida Sector 62 (n6539894863)
@@ -204,6 +172,26 @@ routes:
         - Dwarka Sector 9 (n6539894860)
         - Dwarka Sector 8 (n6539894861)
         - Dwarka Sector 21 (n6539894862)
+
+      r2535795: 
+        - Yamuna Bank (Blue Line) (n6537193576)
+        - Laxmi Nagar (n663794722)
+        - Nirman Vihar (n663793972)
+        - Preet Vihar (n663793549)
+        - Karkarduma (Blue Line) (n6458130120)
+        - Anand Vihar (Blue Line) (n2833971686)
+        - Kaushambi (n554257855)
+        - Vaishali (n1924974147)
+
+      r8037670: 
+        - Vaishali (n1924974147)
+        - Kaushambi (n554257855)
+        - Anand Vihar (Blue Line) (n2833971686)
+        - Karkarduma (Blue Line) (n6458130120)
+        - Preet Vihar (n663793549)
+        - Nirman Vihar (n663793972)
+        - Laxmi Nagar (n663794722)
+        - Yamuna Bank (Blue Line) (n6537193576)
 
       r8037669: 
         - Dwarka Sector 21 (n6539894862)
@@ -258,99 +246,47 @@ routes:
         - Noida Electronic City (n6539894868)
 
 
-    stations: 
-      - Noida Electronic City
-      - Noida Sector 62
-      - Noida Sector 59
-      - Noida Sector 61
-      - Noida Sector 52
-      - Noida Sector 34
-      - Noida City Centre
-      - Noida Golf Course
-      - Botanical Garden (Blue Line)
-      - Wave Sector-18 Noida
-      - Noida Sector 16
-      - Noida Sector 15
-      - New Ashok Nagar
-      - Mayur Vihar Extension
-      - 'Mayur Vihar - I'
-      - Akshardham
-      - Yamuna Bank
-      - Indraprastha
-      - Pragati Maidan
-      - Mandi House (Blue Line)
-      - Barakhambha Road
-      - Rajiv Chowk (Blue Line)
-      - Ramakrishna Ashram Marg
-      - Jhandewalan
-      - Karol Bagh
-      - Rajendra Place
-      - Patel Nagar (East)
-      - Shadipur
-      - Kirti Nagar (Blue Line)
-      - Moti Nagar
-      - Ramesh Nagar
-      - Rajouri Garden (Blue Line)
-      - Tagore Garden
-      - Subhash Nagar
-      - Tilak Nagar
-      - Janakpuri East
-      - Janakpuri West (Blue Line)
-      - Uttam Nagar East
-      - Uttam Nagar West
-      - Nawada
-      - Dwarka Mor
-      - Dwarka
-      - Dwarka Sector 14
-      - Dwarka Sector 13
-      - Dwarka Sector 12
-      - Dwarka Sector 11
-      - Dwarka Sector 10
-      - Dwarka Sector 9
-      - Dwarka Sector 8
-      - Dwarka Sector 21 (Blue Line)
-      - Vaishali
-      - Kaushambi
-      - Anand Vihar (Blue Line)
-      - Karkarduma (Blue Line)
-      - Preet Vihar
-      - Nirman Vihar
-      - Laxmi Nagar
-
-    ref: Blue Line
   - 
-    colour: '#008000'
+    ref: Green Line
     name: Green Line
-    type: subway
+    colour: '#008000'
     station_count: 23
+    type: subway
+    stations: 
+      - Brigadier Hoshiyar Singh
+      - Bahadurgarh City
+      - Pandit Shree Ram Sharma
+      - Tikri Border
+      - Tikri Kalan
+      - Ghevra Metro Station
+      - Mundka Industrial Area
+      - Mundka
+      - Rajdhani Park
+      - Nangloi Railway Station
+      - Nangloi
+      - Surajmal Stadium
+      - Udyog Nagar
+      - Peera Garhi
+      - Paschim Vihar West
+      - Paschim Vihar East
+      - Madipur
+      - Shivaji Park
+      - Punjabi Bagh
+      - Ashok Park Main
+      - Inderlok (Green Line)
+      - Kirti Nagar (Green Line)
+      - Satguru Ramsingh Marg
+
     itineraries: 
       r2535796: 
         - Kirti Nagar (n1824659702)
         - Satguru Ramsingh Marg (n1824659742)
         - Ashok Park Main (n6465991435)
 
-      r8037666: 
-        - Inderlok (Green Line) (n6465991434)
+      r8037675: 
         - Ashok Park Main (n6465991435)
-        - Punjabi Bagh (n6465991436)
-        - Shivaji Park (n6465991437)
-        - Madipur (n6465991438)
-        - Paschim Vihar East (n6465991439)
-        - Paschim Vihar West (n6465991440)
-        - Peera Garhi (n6465991441)
-        - Udyog Nagar (n6465991442)
-        - Surajmal Stadium (n6465991443)
-        - Nangloi (n6465991444)
-        - Nangloi Railway Station (n6465991445)
-        - Rajdhani Park (n6465991446)
-        - Mundka (n6465991447)
-        - Mundka Industrial Area (n6465991448)
-        - Ghevra Metro Station (n6465991449)
-        - Tikri Kalan (n6465991450)
-        - Tikri Border (n6465991451)
-        - Pandit Shree Ram Sharma (n6465991452)
-        - Bahadurgarh City (n6465991453)
-        - Brigadier Hoshiyar Singh (n6465991454)
+        - Satguru Ramsingh Marg (n1824659742)
+        - Kirti Nagar (n1824659702)
 
       r8037687: 
         - Brigadier Hoshiyar Singh (n6465991454)
@@ -375,43 +311,63 @@ routes:
         - Ashok Park Main (n6465991435)
         - Inderlok (Green Line) (n6465991434)
 
-      r8037675: 
+      r8037666: 
+        - Inderlok (Green Line) (n6465991434)
         - Ashok Park Main (n6465991435)
-        - Satguru Ramsingh Marg (n1824659742)
-        - Kirti Nagar (n1824659702)
+        - Punjabi Bagh (n6465991436)
+        - Shivaji Park (n6465991437)
+        - Madipur (n6465991438)
+        - Paschim Vihar East (n6465991439)
+        - Paschim Vihar West (n6465991440)
+        - Peera Garhi (n6465991441)
+        - Udyog Nagar (n6465991442)
+        - Surajmal Stadium (n6465991443)
+        - Nangloi (n6465991444)
+        - Nangloi Railway Station (n6465991445)
+        - Rajdhani Park (n6465991446)
+        - Mundka (n6465991447)
+        - Mundka Industrial Area (n6465991448)
+        - Ghevra Metro Station (n6465991449)
+        - Tikri Kalan (n6465991450)
+        - Tikri Border (n6465991451)
+        - Pandit Shree Ram Sharma (n6465991452)
+        - Bahadurgarh City (n6465991453)
+        - Brigadier Hoshiyar Singh (n6465991454)
 
 
-    stations: 
-      - Ashok Park Main
-      - Satguru Ramsingh Marg
-      - Kirti Nagar (Green Line)
-      - Brigadier Hoshiyar Singh
-      - Bahadurgarh City
-      - Pandit Shree Ram Sharma
-      - Tikri Border
-      - Tikri Kalan
-      - Ghevra Metro Station
-      - Mundka Industrial Area
-      - Mundka
-      - Rajdhani Park
-      - Nangloi Railway Station
-      - Nangloi
-      - Surajmal Stadium
-      - Udyog Nagar
-      - Peera Garhi
-      - Paschim Vihar West
-      - Paschim Vihar East
-      - Madipur
-      - Shivaji Park
-      - Punjabi Bagh
-      - Inderlok (Green Line)
-
-    ref: Green Line
   - 
-    colour: '#ff00ff'
+    ref: Magenta Line
     name: Magenta Line
-    type: subway
+    colour: '#ff00ff'
     station_count: 25
+    type: subway
+    stations: 
+      - Janakpuri West (Magenta Line)
+      - Dabri Mor
+      - Dashrath Puri
+      - Palam
+      - Sadar Bazaar Cantonment
+      - Terminal 1 Indira Gandhi Airport
+      - Shankar Vihar
+      - Vasant Vihar
+      - Munirka
+      - RK Puram
+      - IIT Delhi
+      - Hauz Khas (Magenta Line)
+      - Panchsheel Park
+      - Chirag Delhi
+      - Greater Kailash
+      - Nehru Enclave
+      - Kalkaji Mandir (Mangenta Line)
+      - Okhla NSIC
+      - Sukhdev Vihar
+      - Jamia Millia Islamia
+      - Okhla Vihar
+      - Jasola Vihar Shaheen Bagh
+      - Kalindi Kunj
+      - Okhla Bird Sanctuary
+      - Botanical Garden (Magenta Line)
+
     itineraries: 
       r8385430: 
         - Janakpuri West (n2832938329)
@@ -468,39 +424,52 @@ routes:
         - Janakpuri West (n2832938329)
 
 
-    stations: 
-      - Janakpuri West (Magenta Line)
-      - Dabri Mor
-      - Dashrath Puri
-      - Palam
-      - Sadar Bazaar Cantonment
-      - Terminal 1 Indira Gandhi Airport
-      - Shankar Vihar
-      - Vasant Vihar
-      - Munirka
-      - RK Puram
-      - IIT Delhi
-      - Hauz Khas (Magenta Line)
-      - Panchsheel Park
-      - Chirag Delhi
-      - Greater Kailash
-      - Nehru Enclave
-      - Kalkaji Mandir (Mangenta Line)
-      - Okhla NSIC
-      - Sukhdev Vihar
-      - Jamia Millia Islamia
-      - Okhla Vihar
-      - Jasola Vihar Shaheen Bagh
-      - Kalindi Kunj
-      - Okhla Bird Sanctuary
-      - Botanical Garden (Magenta Line)
-
-    ref: Magenta Line
   - 
-    colour: '#ffc0cb'
+    ref: Pink Line
     name: Pink Line
-    type: subway
+    colour: '#ffc0cb'
     station_count: 38
+    type: subway
+    stations: 
+      - Mayur Vihar Pocket 1
+      - 'Mayur Vihar - I'
+      - Hazrat Nizamuddin
+      - Ashram
+      - Vinobapuri
+      - Lajpat Nagar (Pink Line)
+      - South Extension
+      - INA (Pink Line)
+      - Sarojini Nagar
+      - Bhikaji Cama Place
+      - Sir Vishweshwaraiah Moti Bagh
+      - Durgabai Deshmukh South Campus
+      - Delhi Cantonment
+      - Naraina Vihar
+      - Mayapuri
+      - Rajouri Garden (Pink Line)
+      - ESI Hospital
+      - Punjabi Bagh West
+      - Shakurpur
+      - Netaji Subhash Place (Pink Line)
+      - Shalimar Bagh
+      - Azadpur (Pink Line)
+      - Majlis Park
+      - Shiv Vihar
+      - Johri Enclave
+      - Gokulpuri
+      - Maujpur-Babarpur
+      - Jaffrabad
+      - Welcome (Pink Line)
+      - East Azad Nagar
+      - Krishna Nagar
+      - Karkarduma Court
+      - Karkarduma (Pink Line)
+      - Anand Vihar (Pink Line)
+      - IP Extension
+      - 'Mandawali - West Vinod Nagar'
+      - 'East Vinod Nagar - Mayur Vihar - II'
+      - Trilokpuri Sanjay Lake
+
     itineraries: 
       r8242437: 
         - Majlis Park (n6196100475)
@@ -543,21 +512,6 @@ routes:
         - Shiv Vihar (n6049373291)
 
       r8241298: 
-        - Shiv Vihar (n6049373291)
-        - Johri Enclave (n6049373292)
-        - Gokulpuri (n6049373293)
-        - Maujpur-Babarpur (n6049373294)
-        - Jaffrabad (n6049373295)
-        - Welcome (Pink Line) (n6049373296)
-        - East Azad Nagar (n6049373297)
-        - Krishna Nagar (n6049373298)
-        - Karkarduma Court (n4676900919)
-        - Karkarduma (Pink Line) (n2833971689)
-        - Anand Vihar (Pink Line) (n6454015469)
-        - IP Extension (n4676900918)
-        - 'Mandawali - West Vinod Nagar (n4676901224)'
-        - 'East Vinod Nagar - Mayur Vihar - II (n4676900933)'
-        - Trilokpuri Sanjay Lake (n2833531907)
         - Mayur Vihar Pocket 1 (n6196100479)
         - 'Mayur Vihar - I (Pink Line) (n6196100478)'
         - 'Sarai Kale Khan - Nizamuddin (n6196100480)'
@@ -581,54 +535,42 @@ routes:
         - Shalimar Bagh (n6458202840)
         - Azadpur (Pink Line) (n6453992651)
         - Majlis Park (n6196100475)
+        - Shiv Vihar (n6049373291)
+        - Johri Enclave (n6049373292)
+        - Gokulpuri (n6049373293)
+        - Maujpur-Babarpur (n6049373294)
+        - Jaffrabad (n6049373295)
+        - Welcome (Pink Line) (n6049373296)
+        - East Azad Nagar (n6049373297)
+        - Krishna Nagar (n6049373298)
+        - Karkarduma Court (n4676900919)
+        - Karkarduma (Pink Line) (n2833971689)
+        - Anand Vihar (Pink Line) (n6454015469)
+        - IP Extension (n4676900918)
+        - 'Mandawali - West Vinod Nagar (n4676901224)'
+        - 'East Vinod Nagar - Mayur Vihar - II (n4676900933)'
+        - Trilokpuri Sanjay Lake (n2833531907)
 
 
-    stations: 
-      - Majlis Park
-      - Azadpur (Pink Line)
-      - Shalimar Bagh
-      - Netaji Subhash Place (Pink Line)
-      - Shakurpur
-      - Punjabi Bagh West
-      - ESI Hospital
-      - Rajouri Garden (Pink Line)
-      - Mayapuri
-      - Naraina Vihar
-      - Delhi Cantonment
-      - Durgabai Deshmukh South Campus
-      - Sir Vishweshwaraiah Moti Bagh
-      - Bhikaji Cama Place
-      - Sarojini Nagar
-      - INA (Pink Line)
-      - South Extension
-      - Lajpat Nagar (Pink Line)
-      - Vinobapuri
-      - Ashram
-      - Hazrat Nizamuddin
-      - 'Mayur Vihar - I'
-      - Mayur Vihar Pocket 1
-      - Trilokpuri Sanjay Lake
-      - 'East Vinod Nagar - Mayur Vihar - II'
-      - 'Mandawali - West Vinod Nagar'
-      - IP Extension
-      - Anand Vihar (Pink Line)
-      - Karkarduma (Pink Line)
-      - Karkarduma Court
-      - Krishna Nagar
-      - East Azad Nagar
-      - Welcome (Pink Line)
-      - Jaffrabad
-      - Maujpur-Babarpur
-      - Gokulpuri
-      - Johri Enclave
-      - Shiv Vihar
-
-    ref: Pink Line
   - 
-    colour: '#808080'
+    ref: RMGL
     name: Rapid MetroRail Gurgaon
-    type: subway
+    colour: '#808080'
     station_count: 11
+    type: subway
+    stations: 
+      - Sector 55–56
+      - Sector 54 Chowk
+      - Sector 53-54
+      - Sector 42-43
+      - DLF Phase 1
+      - Sikandarpur (Rapid MetroRail)
+      - DLF Phase 2
+      - Vodafone Belvedere Towers
+      - IndusInd Bank Cyber City
+      - Micromax Moulsari Avenue
+      - DLF Phase 3
+
     itineraries: 
       r7890002: 
         - Sikandarpur RMRG Station (n1988848900)
@@ -661,25 +603,43 @@ routes:
         - Sikandarpur RMRG Station (n1988848900)
 
 
-    stations: 
-      - Sector 55–56
-      - Sector 54 Chowk
-      - Sector 53-54
-      - Sector 42-43
-      - DLF Phase 1
-      - Sikandarpur (Rapid MetroRail)
-      - DLF Phase 2
-      - Vodafone Belvedere Towers
-      - IndusInd Bank Cyber City
-      - Micromax Moulsari Avenue
-      - DLF Phase 3
-
-    ref: RMGL
   - 
-    colour: '#ff0000'
+    ref: Red Line
     name: Red Line
-    type: subway
+    colour: '#ff0000'
     station_count: 29
+    type: subway
+    stations: 
+      - Shaheed Sthal New Bus Adda
+      - Hindon River
+      - Arthala
+      - Mohan Nagar
+      - Shyam Park
+      - Major Mohit Sharma Rajendra Nagar
+      - Raj Bagh
+      - Shaheed Nagar
+      - Dilshad Garden
+      - Jhilmil
+      - Mansarovar
+      - Shahdara
+      - Welcome (Red Line)
+      - Seelampur
+      - Shastri Park
+      - Kashmere Gate (Red Line)
+      - Tis Hazari
+      - Pul Bangash
+      - Pratap Nagar
+      - Shastri Nagar
+      - Inderlok (Red Line)
+      - Kanhaiya Nagar
+      - Keshav Puram
+      - Netaji Subhash Place (Red Line)
+      - Kohat Enclave
+      - Pitam Pura
+      - Rohini East
+      - Rohini West
+      - Rithala
+
     itineraries: 
       r447214: 
         - Shaheed Sthal New Bus Adda (w824093230)
@@ -744,43 +704,48 @@ routes:
         - Shaheed Sthal New Bus Adda (w824093230)
 
 
-    stations: 
-      - Rithala
-      - Rohini West
-      - Rohini East
-      - Pitam Pura
-      - Kohat Enclave
-      - Netaji Subhash Place (Red Line)
-      - Keshav Puram
-      - Kanhaiya Nagar
-      - Inderlok (Red Line)
-      - Shastri Nagar
-      - Pratap Nagar
-      - Pul Bangash
-      - Tis Hazari
-      - Kashmere Gate (Red Line)
-      - Shastri Park
-      - Seelampur
-      - Welcome (Red Line)
-      - Shahdara
-      - Mansarovar
-      - Jhilmil
-      - Dilshad Garden
-      - Shaheed Nagar
-      - Raj Bagh
-      - Major Mohit Sharma Rajendra Nagar
-      - Shyam Park
-      - Mohan Nagar
-      - Arthala
-      - Hindon River
-      - Shaheed Sthal New Bus Adda
-
-    ref: Red Line
   - 
-    colour: '#800080'
+    ref: Violet Line
     name: 'Violet Line: Kashmere Gate <=> Raja Nahar Singh'
-    type: subway
+    colour: '#800080'
     station_count: 34
+    type: subway
+    stations: 
+      - Kashmere Gate (Violet Line)
+      - Lal Quila
+      - Jama Masjid
+      - Delhi Gate
+      - ITO
+      - Mandi House (Violet Line)
+      - Janpath
+      - Central Secretariat (Violet Line)
+      - Khan Market
+      - Jawaharlal Nehru Stadium
+      - Jangpura
+      - Lajpat Nagar (Violet Line)
+      - Moolchand
+      - Kailash Colony
+      - Nehru Place
+      - Kalkaji Mandir (Violet Line)
+      - Govind Puri
+      - Harkesh Nagar Okhla
+      - Jasola Apollo
+      - Sarita Vihar
+      - Mohan Estate
+      - Tughlakabad
+      - Badarpur
+      - Sarai
+      - N.H.P.C. Chowk
+      - Mewala Maharajpur
+      - Sector 28
+      - Badhkal Mor
+      - Old Faridabad Metro Station
+      - Neelam Chowk Ajronda
+      - Bata Chowk
+      - Escorts Mujesar
+      - Sant Surdas (Sihi)
+      - Raja Nahar Singh
+
     itineraries: 
       r8037705: 
         - Raja Nahar Singh (n4678405308)
@@ -855,128 +820,12 @@ routes:
         - Raja Nahar Singh (n4678405308)
 
 
-    stations: 
-      - Raja Nahar Singh
-      - Sant Surdas (Sihi)
-      - Escorts Mujesar
-      - Bata Chowk
-      - Neelam Chowk Ajronda
-      - Old Faridabad Metro Station
-      - Badhkal Mor
-      - Sector 28
-      - Mewala Maharajpur
-      - N.H.P.C. Chowk
-      - Sarai
-      - Badarpur
-      - Tughlakabad
-      - Mohan Estate
-      - Sarita Vihar
-      - Jasola Apollo
-      - Harkesh Nagar Okhla
-      - Govind Puri
-      - Kalkaji Mandir (Violet Line)
-      - Nehru Place
-      - Kailash Colony
-      - Moolchand
-      - Lajpat Nagar (Violet Line)
-      - Jangpura
-      - Jawaharlal Nehru Stadium
-      - Khan Market
-      - Central Secretariat (Violet Line)
-      - Janpath
-      - Mandi House (Violet Line)
-      - ITO
-      - Delhi Gate
-      - Jama Masjid
-      - Lal Quila
-      - Kashmere Gate (Violet Line)
-
-    ref: Violet Line
   - 
-    colour: '#ffff00'
+    ref: Yellow Line
     name: Yellow Line
-    type: subway
+    colour: '#ffff00'
     station_count: 37
-    itineraries: 
-      r8037712: 
-        - HUDA City Centre (n7018316590)
-        - IFFCO Chowk Metro Station (n7018301882)
-        - MG Road (n7018301881)
-        - Sikandarpur (n535297593)
-        - Guru Dronacharya (n7018301879)
-        - Arjan Garh (n7018886732)
-        - Ghitorni (n7018886731)
-        - Sultanpur (n7018711118)
-        - Chhatarpur (n7018316592)
-        - Qutub Minar (n7018886730)
-        - Saket (n6179179025)
-        - Malviya Nagar (n7018316591)
-        - Hauz Khas (n554257787)
-        - Green Park (n7018316585)
-        - All India Institute of Medical Sciences (n7018301883)
-        - INA (Yellow Line) (n6453992653)
-        - Jor Bagh (n7018886729)
-        - Lok Kalyan Marg (n7018886728)
-        - Udyog Bhavan (n7018886727)
-        - Central Secretariat (n5453646586)
-        - Patel Chok (n7018886726)
-        - Rajiv Chok (n6539894851)
-        - New Delhi (n554257841)
-        - Chawri Bazaar (n7018886725)
-        - Chandni Chowk (n7018886724)
-        - Kashmere Gate (n5453649433)
-        - Civil Lines (n7018316586)
-        - Vidhan Sabha (n7018316587)
-        - Vishwa Vidyalaya (n7018316588)
-        - GTB Nagar;Guru Tegh Bahadur Nagar (n913485885)
-        - Model Town (n7018301880)
-        - Azadpur (Yellow Line) (n6453992652)
-        - Adarsh Nagar (n6547772109)
-        - Jahangirpuri (n6547772110)
-        - Haiderpur Badli Mor (n5397665618)
-        - Rohini Sector 18 (n2837147020)
-        - Samaypur Badli (n2837147019)
-
-      r447210: 
-        - Samaypur Badli (n2837147019)
-        - Rohini Sector 18 (n2837147020)
-        - Haiderpur Badli Mor (n5397665618)
-        - Jahangirpuri (n6547772110)
-        - Adarsh Nagar (n6547772109)
-        - Azadpur (Yellow Line) (n6453992652)
-        - Model Town (n7018301880)
-        - GTB Nagar;Guru Tegh Bahadur Nagar (n913485885)
-        - Vishwa Vidyalaya (n7018316588)
-        - Vidhan Sabha (n7018316587)
-        - Civil Lines (n7018316586)
-        - Kashmere Gate (n5453649433)
-        - Chandni Chowk (n7018886724)
-        - Chawri Bazaar (n7018886725)
-        - New Delhi (n554257841)
-        - Rajiv Chok (n6539894851)
-        - Patel Chok (n7018886726)
-        - Central Secretariat (n5453646586)
-        - Udyog Bhavan (n7018886727)
-        - Lok Kalyan Marg (n7018886728)
-        - Jor Bagh (n7018886729)
-        - INA (Yellow Line) (n6453992653)
-        - All India Institute of Medical Sciences (n7018301883)
-        - Green Park (n7018316585)
-        - Hauz Khas (n554257787)
-        - Malviya Nagar (n7018316591)
-        - Saket (n6179179025)
-        - Qutub Minar (n7018886730)
-        - Chhatarpur (n7018316592)
-        - Sultanpur (n7018711118)
-        - Ghitorni (n7018886731)
-        - Arjan Garh (n7018886732)
-        - Guru Dronacharya (n7018301879)
-        - Sikandarpur (n535297593)
-        - MG Road (n7018301881)
-        - IFFCO Chowk Metro Station (n7018301882)
-        - HUDA City Centre (n7018316590)
-
-
+    type: subway
     stations: 
       - Samaypur Badli
       - Rohini Sector 18
@@ -1016,7 +865,86 @@ routes:
       - IFFCO Chowk Metro Station
       - HUDA City Centre
 
-    ref: Yellow Line
+    itineraries: 
+      r447210: 
+        - Samaypur Badli (n2837147019)
+        - Rohini Sector 18 (n2837147020)
+        - Haiderpur Badli Mor (n5397665618)
+        - Jahangirpuri (n6547772110)
+        - Adarsh Nagar (n6547772109)
+        - Azadpur (Yellow Line) (n6453992652)
+        - Model Town (n7018301880)
+        - GTB Nagar;Guru Tegh Bahadur Nagar (n913485885)
+        - Vishwa Vidyalaya (n7018316588)
+        - Vidhan Sabha (n7018316587)
+        - Civil Lines (n7018316586)
+        - Kashmere Gate (n5453649433)
+        - Chandni Chowk (n7018886724)
+        - Chawri Bazaar (n7018886725)
+        - New Delhi (n554257841)
+        - Rajiv Chok (n6539894851)
+        - Patel Chok (n7018886726)
+        - Central Secretariat (n5453646586)
+        - Udyog Bhavan (n7018886727)
+        - Lok Kalyan Marg (n7018886728)
+        - Jor Bagh (n7018886729)
+        - INA (Yellow Line) (n6453992653)
+        - All India Institute of Medical Sciences (n7018301883)
+        - Green Park (n7018316585)
+        - Hauz Khas (n554257787)
+        - Malviya Nagar (n7018316591)
+        - Saket (n6179179025)
+        - Qutub Minar (n7018886730)
+        - Chhatarpur (n7018316592)
+        - Sultanpur (n7018711118)
+        - Ghitorni (n7018886731)
+        - Arjan Garh (n7018886732)
+        - Guru Dronacharya (n7018301879)
+        - Sikandarpur (n535297593)
+        - MG Road (n7018301881)
+        - IFFCO Chowk Metro Station (n7018301882)
+        - HUDA City Centre (n7018316590)
+
+      r8037712: 
+        - HUDA City Centre (n7018316590)
+        - IFFCO Chowk Metro Station (n7018301882)
+        - MG Road (n7018301881)
+        - Sikandarpur (n535297593)
+        - Guru Dronacharya (n7018301879)
+        - Arjan Garh (n7018886732)
+        - Ghitorni (n7018886731)
+        - Sultanpur (n7018711118)
+        - Chhatarpur (n7018316592)
+        - Qutub Minar (n7018886730)
+        - Saket (n6179179025)
+        - Malviya Nagar (n7018316591)
+        - Hauz Khas (n554257787)
+        - Green Park (n7018316585)
+        - All India Institute of Medical Sciences (n7018301883)
+        - INA (Yellow Line) (n6453992653)
+        - Jor Bagh (n7018886729)
+        - Lok Kalyan Marg (n7018886728)
+        - Udyog Bhavan (n7018886727)
+        - Central Secretariat (n5453646586)
+        - Patel Chok (n7018886726)
+        - Rajiv Chok (n6539894851)
+        - New Delhi (n554257841)
+        - Chawri Bazaar (n7018886725)
+        - Chandni Chowk (n7018886724)
+        - Kashmere Gate (n5453649433)
+        - Civil Lines (n7018316586)
+        - Vidhan Sabha (n7018316587)
+        - Vishwa Vidyalaya (n7018316588)
+        - GTB Nagar;Guru Tegh Bahadur Nagar (n913485885)
+        - Model Town (n7018301880)
+        - Azadpur (Yellow Line) (n6453992652)
+        - Adarsh Nagar (n6547772109)
+        - Jahangirpuri (n6547772110)
+        - Haiderpur Badli Mor (n5397665618)
+        - Rohini Sector 18 (n2837147020)
+        - Samaypur Badli (n2837147019)
+
+
 
 stations: 
   - Adarsh Nagar (n6547772109)
@@ -1280,4 +1208,76 @@ stations:
   - Welcome (Pink Line) (n6049373296)
   - Welcome (Red Line) (n663758748)
   - Yamuna Bank (Blue Line) (n6537193576)
+
+transfers: 
+  - 
+    - Anand Vihar (Blue Line) (r9211728)
+    - Anand Vihar (Pink Line) (r9571362)
+  - 
+    - Azadpur (Pink Line) (r9566066)
+    - Azadpur (Yellow Line) (r9566067)
+  - 
+    - Botanical Garden (Blue Line) (r8077006)
+    - Botanical Garden (Magenta Line) (r8077005)
+  - 
+    - Central Secretariat (Violet Line) (r8032913)
+    - Central Secretariat (Yellow Line) (r8076972)
+  - 
+    - Dwarka (r9681200)
+    - Dwarka (r9681201)
+  - 
+    - Dwarka Sector 21 (Airport Express Line) (r8076925)
+    - Dwarka Sector 21 (Blue Line) (r8076924)
+  - 
+    - Hauz Khas (Magenta Line) (r8385436)
+    - Hauz Khas (Yellow Line) (r8239099)
+  - 
+    - INA (Pink Line) (r9561648)
+    - INA (Yellow Line) (r8411808)
+  - 
+    - Inderlok (Green Line) (r8076955)
+    - Inderlok (Red Line) (r8076956)
+  - 
+    - Janakpuri West (Blue Line) (r8300352)
+    - Janakpuri West (Magenta Line) (r8385435)
+  - 
+    - Kalkaji Mandir (Mangenta Line) (r8076982)
+    - Kalkaji Mandir (Violet Line) (r8076983)
+  - 
+    - Karkarduma (Blue Line) (r9571348)
+    - Karkarduma (Pink Line) (r9571347)
+  - 
+    - Kashmere Gate (Red Line) (r8076966)
+    - Kashmere Gate (Violet Line) (r8076964)
+    - Kashmere Gate (Yellow Line) (r8076965)
+  - 
+    - Kirti Nagar (Blue Line) (r8076949)
+    - Kirti Nagar (Green Line) (r8076950)
+  - 
+    - Lajpat Nagar (Pink Line) (r9561646)
+    - Lajpat Nagar (Violet Line) (r9566069)
+  - 
+    - Mandi House (Blue Line) (r8076975)
+    - Mandi House (Violet Line) (r8076976)
+  - 
+    - 'Mayur Vihar - I (r9211732)'
+    - 'Mayur Vihar - I (r9561643)'
+  - 
+    - Netaji Subhash Place (Pink Line) (r9566064)
+    - Netaji Subhash Place (Red Line) (r9566063)
+  - 
+    - New Delhi (Line 2) (r8032892)
+    - New Delhi Airport Express Terminal (r8032893)
+  - 
+    - Rajiv Chowk (Blue Line) (r8032902)
+    - Rajiv Chowk (Yellow Line) (r8076941)
+  - 
+    - Rajouri Garden (Blue Line) (r8300348)
+    - Rajouri Garden (Pink Line) (r9566062)
+  - 
+    - Sikandarpur (Rapid MetroRail) (r8076921)
+    - Sikandarpur (Yellow Line) (r8076920)
+  - 
+    - Welcome (Pink Line) (r9571345)
+    - Welcome (Red Line) (r9571346)
 

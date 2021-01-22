@@ -1,12 +1,25 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: 1
     name: Mumbai Metro Line 1
-    type: subway
+    colour: '#0000ff'
     station_count: 12
+    type: subway
+    stations: 
+      - Ghatkopar (Metro)
+      - Jagruti Nagar
+      - Asalpha
+      - Saki Naka
+      - Marol Naka
+      - Airport Road
+      - 'Chakala - J.B. Nagar'
+      - Western Express Highway
+      - Andheri Metro Station
+      - Azad Nagar
+      - D. N. Nagar
+      - Versova
+
     itineraries: 
       r7684032: 
         - Ghatkopar (w151205149)
@@ -37,26 +50,31 @@ routes:
         - Ghatkopar (w151205149)
 
 
-    stations: 
-      - Versova
-      - D. N. Nagar
-      - Azad Nagar
-      - Andheri Metro Station
-      - Western Express Highway
-      - 'Chakala - J.B. Nagar'
-      - Airport Road
-      - Marol Naka
-      - Saki Naka
-      - Asalpha
-      - Jagruti Nagar
-      - Ghatkopar (Metro)
-
-    ref: 1
   - 
-    colour: '#00ffff'
+    ref: Mono 1
     name: Mumbai Monorail Line 1
-    type: monorail
+    colour: '#00ffff'
     station_count: 17
+    type: monorail
+    stations: 
+      - Sant Gadge Maharaj Chok
+      - Lower Parel
+      - Mint Colony
+      - Ambedkar Nagar
+      - Naigaon
+      - Dadar East
+      - Wadala Bridge
+      - Acharya Atre Nagar
+      - Antop Hill
+      - Guru Tegh Bahadur Nagar
+      - Wadala Depot
+      - Bhakti Park
+      - Mysore Colony
+      - Bharat Petroleum
+      - Fertilizer Township
+      - VNP & RC Marg Junction
+      - Chembur
+
     itineraries: 
       r7684084: 
         - Sant Gadge Maharaj Chok (n3806743194)
@@ -97,26 +115,6 @@ routes:
         - Sant Gadge Maharaj Chok (n3806743194)
 
 
-    stations: 
-      - Chembur
-      - VNP & RC Marg Junction
-      - Fertilizer Township
-      - Bharat Petroleum
-      - Mysore Colony
-      - Bhakti Park
-      - Wadala Depot
-      - Guru Tegh Bahadur Nagar
-      - Antop Hill
-      - Acharya Atre Nagar
-      - Wadala Bridge
-      - Dadar East
-      - Naigaon
-      - Ambedkar Nagar
-      - Mint Colony
-      - Lower Parel
-      - Sant Gadge Maharaj Chok
-
-    ref: Mono 1
 
 stations: 
   - Acharya Atre Nagar (n3806743187)
@@ -148,4 +146,6 @@ stations:
   - Wadala Bridge (n3732540593)
   - Wadala Depot (n632342238)
   - Western Express Highway (w331815671)
+
+transfers: 
 

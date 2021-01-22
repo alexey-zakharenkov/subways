@@ -1,12 +1,39 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#f7943a'
+    ref: O
     name: 'Orange Line: Ali Town ↔ Dera Gujran'
-    type: subway
+    colour: '#f7943a'
     station_count: 26
+    type: subway
+    stations: 
+      - Dera Gujran
+      - Islam Park
+      - Salamatpura
+      - Mahmood Booti
+      - Pakistan Mint
+      - Shalimar Gardens
+      - Baghbanpura
+      - U.E.T
+      - Sultanpura
+      - Railway Station
+      - Lakshmi
+      - G.P.O
+      - Anarkali
+      - Chauburji
+      - Gulshan-e-Ravi
+      - Samanabad
+      - Bund Road
+      - Salahudin Road
+      - Shahnoor
+      - Sabzazar
+      - Awan Town
+      - Wahdat Road
+      - Hanjarwal
+      - Canal View
+      - Thokar Niaz Baig
+      - Ali Town
+
     itineraries: 
       r11803500: 
         - Ali Town (n5844889650)
@@ -65,35 +92,6 @@ routes:
         - Ali Town (n5844889650)
 
 
-    stations: 
-      - Ali Town
-      - Thokar Niaz Baig
-      - Canal View
-      - Hanjarwal
-      - Wahdat Road
-      - Awan Town
-      - Sabzazar
-      - Shahnoor
-      - Salahudin Road
-      - Bund Road
-      - Samanabad
-      - Gulshan-e-Ravi
-      - Chauburji
-      - Anarkali
-      - G.P.O
-      - Lakshmi
-      - Railway Station
-      - Sultanpura
-      - U.E.T
-      - Baghbanpura
-      - Shalimar Gardens
-      - Pakistan Mint
-      - Mahmood Booti
-      - Salamatpura
-      - Islam Park
-      - Dera Gujran
-
-    ref: O
 
 stations: 
   - Ali Town (n5844889650)
@@ -122,4 +120,6 @@ stations:
   - Thokar Niaz Baig (n5844889651)
   - U.E.T (n8058806348)
   - Wahdat Road (n5844889654)
+
+transfers: 
 

@@ -1,12 +1,28 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff6600'
+    ref: Subway
     name: Glasgow Subway
-    type: subway
+    colour: '#ff6600'
     station_count: 15
+    type: subway
+    stations: 
+      - Cowcaddens
+      - Buchanan Street
+      - St Enoch
+      - Bridge Street
+      - West Street
+      - Shields Road
+      - Kinning Park
+      - Cessnock
+      - Ibrox
+      - Govan
+      - Partick
+      - Kelvinhall
+      - Hillhead
+      - Kelvinbridge
+      - St Georges Cross
+
     itineraries: 
       r225658: 
         - Cowcaddens (n7295641225)
@@ -44,24 +60,6 @@ routes:
         - Cowcaddens (n7295641225)
 
 
-    stations: 
-      - Cowcaddens
-      - Buchanan Street
-      - St Enoch
-      - Bridge Street
-      - West Street
-      - Shields Road
-      - Kinning Park
-      - Cessnock
-      - Ibrox
-      - Govan
-      - Partick
-      - Kelvinhall
-      - Hillhead
-      - Kelvinbridge
-      - St Georges Cross
-
-    ref: Subway
 
 stations: 
   - Bridge Street (n29751011)
@@ -79,4 +77,6 @@ stations:
   - St Enoch (n29751009)
   - St George's Cross (n29751012)
   - West Street (n30004633)
+
+transfers: 
 

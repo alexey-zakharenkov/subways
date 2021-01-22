@@ -1,12 +1,35 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#7fffd4'
+    ref: I
     name: Kochi Metro Phase I
-    type: subway
+    colour: '#7fffd4'
     station_count: 22
+    type: subway
+    stations: 
+      - Aluva
+      - Pulinchodu
+      - Companypady
+      - Ambattukavu
+      - Muttom
+      - Kalamassery Town
+      - Cochin University
+      - Pathadipalam
+      - Edapally
+      - Changampuzha Park
+      - Palarivattom
+      - JLN Stadium
+      - Kaloor
+      - Lissie
+      - M. G. Road
+      - Maharaja's College
+      - Ernakulam South
+      - Kadavanthra
+      - Elamkulam
+      - Vyttila
+      - Thykoodam
+      - Pettah
+
     itineraries: 
       r7752157: 
         - Aluva (n4903755238)
@@ -57,31 +80,6 @@ routes:
         - Aluva (n4903755238)
 
 
-    stations: 
-      - Pettah
-      - Thykoodam
-      - Vyttila
-      - Elamkulam
-      - Kadavanthra
-      - Ernakulam South
-      - Maharaja's College
-      - M. G. Road
-      - Lissie
-      - Kaloor
-      - JLN Stadium
-      - Palarivattom
-      - Changampuzha Park
-      - Edapally
-      - Pathadipalam
-      - Cochin University
-      - Kalamassery Town
-      - Muttom
-      - Ambattukavu
-      - Companypady
-      - Pulinchodu
-      - Aluva
-
-    ref: I
 
 stations: 
   - Aluva (n4903755238)
@@ -106,4 +104,6 @@ stations:
   - Thykoodam (n6777772110)
   - Town Hall (n5242586672)
   - Vyttila (n7673847483)
+
+transfers: 
 

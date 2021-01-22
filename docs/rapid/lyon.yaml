@@ -1,24 +1,27 @@
 
-transfers: 
-  - 
-    - Bellecour (Ligne A) (r7975217)
-    - Bellecour (Ligne D) (r3661103)
-  - 
-    - 'Charpennes - Charles Hernu (Ligne A) (r3205870)'
-    - 'Charpennes - Charles Hernu (Ligne B) (r8031593)'
-  - 
-    - 'Hôtel de Ville - Louis Pradel (Ligne A) (r7975237)'
-    - 'Hôtel de Ville - Louis Pradel (Ligne C) (r7975236)'
-  - 
-    - 'Saxe - Gambetta (Ligne B) (r7975219)'
-    - 'Saxe - Gambetta (Ligne D) (r3750361)'
-
 routes: 
   - 
-    colour: '#ee3898'
+    ref: A
     name: Metro A
-    type: subway
+    colour: '#ee3898'
     station_count: 14
+    type: subway
+    stations: 
+      - Perrache (subway)
+      - 'Ampère - Victor Hugo'
+      - Bellecour (Ligne A)
+      - Cordeliers
+      - 'Hôtel de Ville - Louis Pradel (Ligne A)'
+      - Foch
+      - Masséna
+      - 'Charpennes - Charles Hernu (Ligne A)'
+      - 'République - Villeurbanne'
+      - Gratte-Ciel
+      - Flachet
+      - Cusset
+      - 'Laurent Bonnevay - Astroballe (Ligne A)'
+      - 'Vaulx-en-Velin - La Soie'
+
     itineraries: 
       r153123: 
         - Perrache (n5385006337)
@@ -53,54 +56,12 @@ routes:
         - Perrache (n5385006337)
 
 
-    stations: 
-      - 'Vaulx-en-Velin - La Soie'
-      - 'Laurent Bonnevay - Astroballe (Ligne A)'
-      - Cusset
-      - Flachet
-      - Gratte-Ciel
-      - 'République - Villeurbanne'
-      - 'Charpennes - Charles Hernu (Ligne A)'
-      - Masséna
-      - Foch
-      - 'Hôtel de Ville - Louis Pradel (Ligne A)'
-      - Cordeliers
-      - Bellecour (Ligne A)
-      - 'Ampère - Victor Hugo'
-      - Perrache (subway)
-
-    ref: A
   - 
-    colour: '#007dc5'
+    ref: B
     name: Metro B
-    type: subway
+    colour: '#007dc5'
     station_count: 10
-    itineraries: 
-      r3687320: 
-        - Gare d'Oullins (n5365146848)
-        - Stade de Gerland—Le LOU (n5365165135)
-        - Debourg (n5365142247)
-        - Place Jean Jaurès (n5365143994)
-        - Jean Macé (n5385052292)
-        - 'Saxe - Gambetta (n5380092139)'
-        - 'Place Guichard - Bourse du Travail (w337016053)'
-        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
-        - Brotteaux (n5385029707)
-        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
-
-      r113907: 
-        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
-        - Brotteaux (n5385029707)
-        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
-        - 'Place Guichard - Bourse du Travail (w337016053)'
-        - 'Saxe - Gambetta (n5380092139)'
-        - Jean Macé (n5385052292)
-        - Place Jean Jaurès (n5365143994)
-        - Debourg (n5365142247)
-        - Stade de Gerland—Le LOU (n5365165135)
-        - Gare d'Oullins (n5365146848)
-
-
+    type: subway
     stations: 
       - 'Charpennes - Charles Hernu (Ligne B)'
       - Brotteaux
@@ -113,12 +74,45 @@ routes:
       - Stade de Gerland
       - Pôle Multimodal d'Oullins
 
-    ref: B
+    itineraries: 
+      r113907: 
+        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
+        - Brotteaux (n5385029707)
+        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
+        - 'Place Guichard - Bourse du Travail (w337016053)'
+        - 'Saxe - Gambetta (n5380092139)'
+        - Jean Macé (n5385052292)
+        - Place Jean Jaurès (n5365143994)
+        - Debourg (n5365142247)
+        - Stade de Gerland—Le LOU (n5365165135)
+        - Gare d'Oullins (n5365146848)
+
+      r3687320: 
+        - Gare d'Oullins (n5365146848)
+        - Stade de Gerland—Le LOU (n5365165135)
+        - Debourg (n5365142247)
+        - Place Jean Jaurès (n5365143994)
+        - Jean Macé (n5385052292)
+        - 'Saxe - Gambetta (n5380092139)'
+        - 'Place Guichard - Bourse du Travail (w337016053)'
+        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
+        - Brotteaux (n5385029707)
+        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
+
+
   - 
-    colour: '#f99d1d'
+    ref: C
     name: Metro C
-    type: subway
+    colour: '#f99d1d'
     station_count: 5
+    type: subway
+    stations: 
+      - 'Hôtel de Ville - Louis Pradel (Ligne C)'
+      - Croix-Paquet
+      - Croix-Rousse
+      - Hénon
+      - Cuire
+
     itineraries: 
       r3687321: 
         - Cuire (n5388270721)
@@ -135,19 +129,29 @@ routes:
         - Cuire (n5388270721)
 
 
-    stations: 
-      - 'Hôtel de Ville - Louis Pradel (Ligne C)'
-      - Croix-Paquet
-      - Croix-Rousse
-      - Hénon
-      - Cuire
-
-    ref: C
   - 
-    colour: '#00ac4d'
+    ref: D
     name: Metro D
-    type: subway
+    colour: '#00ac4d'
     station_count: 15
+    type: subway
+    stations: 
+      - Gare de Vénissieux
+      - Parilly
+      - 'Mermoz - Pinel'
+      - Laennec
+      - Grange Blanche
+      - 'Monplaisir - Lumière'
+      - Sans Souci
+      - Garibaldi (subway)
+      - 'Saxe - Gambetta (Ligne D)'
+      - Guillotière
+      - Bellecour (Ligne D)
+      - 'Vieux Lyon - Cathédrale Saint-Jean'
+      - Pôle d'échanges Gorge de Loup
+      - Valmy
+      - Pôle d'échanges Gare de Vaise
+
     itineraries: 
       r3687322: 
         - Vénissieux (n5390305237)
@@ -184,24 +188,6 @@ routes:
         - Vénissieux (n5390305237)
 
 
-    stations: 
-      - Gare de Vénissieux
-      - Parilly
-      - 'Mermoz - Pinel'
-      - Laennec
-      - Grange Blanche
-      - 'Monplaisir - Lumière'
-      - Sans Souci
-      - Garibaldi (subway)
-      - 'Saxe - Gambetta (Ligne D)'
-      - Guillotière
-      - Bellecour (Ligne D)
-      - 'Vieux Lyon - Cathédrale Saint-Jean'
-      - Pôle d'échanges Gorge de Loup
-      - Valmy
-      - Pôle d'échanges Gare de Vaise
-
-    ref: D
 
 stations: 
   - 'Ampère - Victor Hugo (n5385036748)'
@@ -245,4 +231,18 @@ stations:
   - 'Vaulx-en-Velin - La Soie (n5365154886)'
   - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
   - Vénissieux (n5390305237)
+
+transfers: 
+  - 
+    - Bellecour (Ligne A) (r7975217)
+    - Bellecour (Ligne D) (r3661103)
+  - 
+    - 'Charpennes - Charles Hernu (Ligne A) (r3205870)'
+    - 'Charpennes - Charles Hernu (Ligne B) (r8031593)'
+  - 
+    - 'Hôtel de Ville - Louis Pradel (Ligne A) (r7975237)'
+    - 'Hôtel de Ville - Louis Pradel (Ligne C) (r7975236)'
+  - 
+    - 'Saxe - Gambetta (Ligne B) (r7975219)'
+    - 'Saxe - Gambetta (Ligne D) (r3750361)'
 

@@ -1,32 +1,31 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ffff00'
+    ref: S 1
     name: 'S-Bahn S 1: Leipzig-Stötteritz <> Leipzig Miltitzer Allee'
-    type: train
+    colour: '#ffff00'
     station_count: 17
-    itineraries: 
-      r2920373: 
-        - Leipzig-Stötteritz (n2299420249)
-        - Leipzig Völkerschlachtdenkmal (n7931651159)
-        - Leipzig MDR (n4882974564)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig-Gohlis (n4878038057)
-        - Leipzig Coppiplatz (n3620655545)
-        - Leipzig-Möckern (n3620655546)
-        - Leipzig-Leutzsch (n2536347483)
-        - Leipzig-Lindenau (n26023348)
-        - Leipzig-Plagwitz (n3997898906)
-        - Leipzig-Grünauer Allee (n3847801813)
-        - Leipzig-Allee-Center (n3847277005)
-        - Leipzig-Karlsruher Straße (n3847801811)
-        - Leipzig Miltitzer Allee (n4877849763)
+    type: train
+    stations: 
+      - Leipzig Miltitzer Allee
+      - Leipzig Karlsruher Straße
+      - Leipzig Allee-Center
+      - Leipzig Grünauer Allee
+      - Leipzig-Plagwitz
+      - Leipzig-Lindenau
+      - Leipzig-Leutzsch
+      - Leipzig-Möckern
+      - Leipzig Coppiplatz
+      - Leipzig-Gohlis (S-Bahn)
+      - Leipzig Hbf (tief)
+      - Leipzig Markt
+      - Wilhelm-Leuschner-Platz (S-Bahn)
+      - Leipzig Bayerischer Bahnhof
+      - Leipzig MDR (S-Bahn)
+      - Leipzig Völkerschlachtdenkmal
+      - Leipzig-Stötteritz
 
+    itineraries: 
       r2920371: 
         - Leipzig Miltitzer Allee (n4877849763)
         - Leipzig-Karlsruher Straße (n3847801811)
@@ -46,81 +45,64 @@ routes:
         - Leipzig Völkerschlachtdenkmal (n7931651159)
         - Leipzig-Stötteritz (n2299420249)
 
+      r2920373: 
+        - Leipzig-Stötteritz (n2299420249)
+        - Leipzig Völkerschlachtdenkmal (n7931651159)
+        - Leipzig MDR (n4882974564)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig-Gohlis (n4878038057)
+        - Leipzig Coppiplatz (n3620655545)
+        - Leipzig-Möckern (n3620655546)
+        - Leipzig-Leutzsch (n2536347483)
+        - Leipzig-Lindenau (n26023348)
+        - Leipzig-Plagwitz (n3997898906)
+        - Leipzig-Grünauer Allee (n3847801813)
+        - Leipzig-Allee-Center (n3847277005)
+        - Leipzig-Karlsruher Straße (n3847801811)
+        - Leipzig Miltitzer Allee (n4877849763)
 
-    stations: 
-      - Leipzig-Stötteritz
-      - Leipzig Völkerschlachtdenkmal
-      - Leipzig MDR (S-Bahn)
-      - Leipzig Bayerischer Bahnhof
-      - Wilhelm-Leuschner-Platz (S-Bahn)
-      - Leipzig Markt
-      - Leipzig Hbf (tief)
-      - Leipzig-Gohlis (S-Bahn)
-      - Leipzig Coppiplatz
-      - Leipzig-Möckern
-      - Leipzig-Leutzsch
-      - Leipzig-Lindenau
-      - Leipzig-Plagwitz
-      - Leipzig Grünauer Allee
-      - Leipzig Allee-Center
-      - Leipzig Karlsruher Straße
-      - Leipzig Miltitzer Allee
 
-    ref: S 1
   - 
-    colour: '#00ffff'
+    ref: S 2
     name: 'S-Bahn S 2: Wittenberg/Dessau <> Leipzig-Stötteritz'
-    type: train
+    colour: '#00ffff'
     station_count: 29
+    type: train
+    stations: 
+      - Dessau Hauptbahnhof
+      - Dessau Süd
+      - Marke
+      - Raguhn
+      - Jeßnitz (Anh)
+      - Wolfen (Bitterfeld)
+      - Greppin
+      - Bitterfeld
+      - Petersroda
+      - Delitzsch unterer Bahnhof
+      - Zschortau
+      - Rackwitz (Leipzig)
+      - Leipzig Messebahnhof
+      - Leipzig Essener Straße
+      - Leipzig Nord
+      - Leipzig Hbf (tief)
+      - Leipzig Markt
+      - Wilhelm-Leuschner-Platz (S-Bahn)
+      - Leipzig Bayerischer Bahnhof
+      - Leipzig MDR (S-Bahn)
+      - Leipzig Völkerschlachtdenkmal
+      - Leipzig-Stötteritz
+      - Muldenstein
+      - Burgkemnitz
+      - Gräfenhainichen
+      - Radis
+      - Bergwitz
+      - Pratau
+      - Lutherstadt Wittenberg
+
     itineraries: 
-      r7805738: 
-        - Leipzig-Stötteritz (n2299420249)
-        - Leipzig Völkerschlachtdenkmal (n7931651159)
-        - Leipzig MDR (n4882974564)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig Nord (n3493054183)
-        - Leipzig Essener Straße (n1487072712)
-        - Leipzig Messe (n3718879892)
-        - Rackwitz (Leipzig) (n3089100813)
-        - Zschortau (n6695541079)
-        - Delitzsch unt Bf (n447584234)
-        - Petersroda (n2581430731)
-        - Bitterfeld (n2480240101)
-        - Muldenstein (n100085065)
-        - Burgkemnitz (n279592443)
-        - Gräfenhainichen (n278707229)
-        - Radis (n309443287)
-        - Bergwitz (n4340490375)
-        - Pratau (n100085314)
-        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
-
-      r7805739: 
-        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
-        - Pratau (n100085314)
-        - Bergwitz (n4340490375)
-        - Radis (n309443287)
-        - Gräfenhainichen (n278707229)
-        - Burgkemnitz (n279592443)
-        - Muldenstein (n100085065)
-        - Bitterfeld (n2480240101)
-        - Petersroda (n2581430731)
-        - Delitzsch unt Bf (n447584234)
-        - Zschortau (n6695541079)
-        - Rackwitz (Leipzig) (n3089100813)
-        - Leipzig Messe (n3718879892)
-        - Leipzig Essener Straße (n1487072712)
-        - Leipzig Nord (n3493054183)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig MDR (n4882974564)
-        - Leipzig Völkerschlachtdenkmal (n7931651159)
-        - Leipzig-Stötteritz (n2299420249)
-
       r3119885: 
         - Leipzig-Stötteritz (n2299420249)
         - Leipzig Völkerschlachtdenkmal (n7931651159)
@@ -169,8 +151,73 @@ routes:
         - Leipzig Völkerschlachtdenkmal (n7931651159)
         - Leipzig-Stötteritz (n2299420249)
 
+      r7805739: 
+        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
+        - Pratau (n100085314)
+        - Bergwitz (n4340490375)
+        - Radis (n309443287)
+        - Gräfenhainichen (n278707229)
+        - Burgkemnitz (n279592443)
+        - Muldenstein (n100085065)
+        - Bitterfeld (n2480240101)
+        - Petersroda (n2581430731)
+        - Delitzsch unt Bf (n447584234)
+        - Zschortau (n6695541079)
+        - Rackwitz (Leipzig) (n3089100813)
+        - Leipzig Messe (n3718879892)
+        - Leipzig Essener Straße (n1487072712)
+        - Leipzig Nord (n3493054183)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig MDR (n4882974564)
+        - Leipzig Völkerschlachtdenkmal (n7931651159)
+        - Leipzig-Stötteritz (n2299420249)
 
+      r7805738: 
+        - Leipzig-Stötteritz (n2299420249)
+        - Leipzig Völkerschlachtdenkmal (n7931651159)
+        - Leipzig MDR (n4882974564)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig Nord (n3493054183)
+        - Leipzig Essener Straße (n1487072712)
+        - Leipzig Messe (n3718879892)
+        - Rackwitz (Leipzig) (n3089100813)
+        - Zschortau (n6695541079)
+        - Delitzsch unt Bf (n447584234)
+        - Petersroda (n2581430731)
+        - Bitterfeld (n2480240101)
+        - Muldenstein (n100085065)
+        - Burgkemnitz (n279592443)
+        - Gräfenhainichen (n278707229)
+        - Radis (n309443287)
+        - Bergwitz (n4340490375)
+        - Pratau (n100085314)
+        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
+
+
+  - 
+    ref: S 3
+    name: 'S-Bahn S 3: Halle-Trotha <> Wurzen'
+    colour: '#d7171f'
+    station_count: 35
+    type: train
     stations: 
+      - Oschatz
+      - Dahlen
+      - Kühren
+      - Wurzen Bahnhof
+      - Bennewitz
+      - Altenbach
+      - Machern (Sachsen)
+      - Gerichshain
+      - Borsdorf (Sachsen)
+      - Engelsdorf
+      - Leipzig-Anger-Crottendorf
       - Leipzig-Stötteritz
       - Leipzig Völkerschlachtdenkmal
       - Leipzig MDR (S-Bahn)
@@ -178,35 +225,24 @@ routes:
       - Wilhelm-Leuschner-Platz (S-Bahn)
       - Leipzig Markt
       - Leipzig Hbf (tief)
-      - Leipzig Nord
-      - Leipzig Essener Straße
-      - Leipzig Messebahnhof
-      - Rackwitz (Leipzig)
-      - Zschortau
-      - Delitzsch unterer Bahnhof
-      - Petersroda
-      - Bitterfeld
-      - Muldenstein
-      - Burgkemnitz
-      - Gräfenhainichen
-      - Radis
-      - Bergwitz
-      - Pratau
-      - Lutherstadt Wittenberg
-      - Dessau Hauptbahnhof
-      - Dessau Süd
-      - Marke
-      - Raguhn
-      - Jeßnitz (Anh)
-      - Wolfen (Bitterfeld)
-      - Greppin
+      - Leipzig-Gohlis (S-Bahn)
+      - Leipzig Olbrichtstraße
+      - Leipzig Slevogtstraße
+      - Leipzig-Wahren
+      - Leipzig-Lützschena
+      - Schkeuditz
+      - Schkeuditz West
+      - Großkugel
+      - Gröbers
+      - Dieskau
+      - Halle Messe
+      - Halle (Saale) Hauptbahnhof
+      - Halle Steintorbrücke
+      - Halle Dessauer Brücke
+      - Halle Zoo
+      - Halle Wohnstadt Nord
+      - Halle-Trotha
 
-    ref: S 2
-  - 
-    colour: '#d7171f'
-    name: 'S-Bahn S 3: Halle-Trotha <> Wurzen'
-    type: train
-    station_count: 35
     itineraries: 
       r2499841: 
         - Oschatz (n2729212586)
@@ -283,49 +319,48 @@ routes:
         - Oschatz (n2729212586)
 
 
-    stations: 
-      - Oschatz
-      - Dahlen
-      - Kühren
-      - Wurzen Bahnhof
-      - Bennewitz
-      - Altenbach
-      - Machern (Sachsen)
-      - Gerichshain
-      - Borsdorf (Sachsen)
-      - Engelsdorf
-      - Leipzig-Anger-Crottendorf
-      - Leipzig-Stötteritz
-      - Leipzig Völkerschlachtdenkmal
-      - Leipzig MDR (S-Bahn)
-      - Leipzig Bayerischer Bahnhof
-      - Wilhelm-Leuschner-Platz (S-Bahn)
-      - Leipzig Markt
-      - Leipzig Hbf (tief)
-      - Leipzig-Gohlis (S-Bahn)
-      - Leipzig Olbrichtstraße
-      - Leipzig Slevogtstraße
-      - Leipzig-Wahren
-      - Leipzig-Lützschena
-      - Schkeuditz
-      - Schkeuditz West
-      - Großkugel
-      - Gröbers
-      - Dieskau
-      - Halle Messe
-      - Halle (Saale) Hauptbahnhof
-      - Halle Steintorbrücke
-      - Halle Dessauer Brücke
-      - Halle Zoo
-      - Halle Wohnstadt Nord
-      - Halle-Trotha
-
-    ref: S 3
   - 
-    colour: '#00a650'
+    ref: S 4
     name: 'S-Bahn S 4: Markkleeberg-Gaschwitz <> Hoyerswerda'
-    type: train
+    colour: '#00a650'
     station_count: 34
+    type: train
+    stations: 
+      - Hoyerswerda
+      - Bahnhof Schwarzkollm
+      - Hp. Lauta (Nl)
+      - Hosena, Bahnhof
+      - Ruhland, Bahnhof
+      - Lauchhammer, Bahnhof
+      - Elsterwerda-Biehla, Bahnhof
+      - Bad Liebenwerda, Bahnhof
+      - Falkenberg/E., Bahnhof
+      - Rehfeld (EE), Bahnhof
+      - Beilrode
+      - Torgau Bahnhof
+      - Mockrehna
+      - Doberschütz
+      - Eilenburg Ost
+      - Eilenburg
+      - Jesewitz
+      - Pönitz (bei Leipzig)
+      - Taucha, S-Bahnhof (Bahn)
+      - Leipzig-Heiterblick
+      - Leipzig-Thekla
+      - Leipzig Mockauer Straße
+      - Leipzig Nord
+      - Leipzig Hbf (tief)
+      - Leipzig Markt
+      - Wilhelm-Leuschner-Platz (S-Bahn)
+      - Leipzig Bayerischer Bahnhof
+      - Leipzig MDR (S-Bahn)
+      - Connewitz
+      - Markkleeberg Nord
+      - Markkleeberg
+      - Markkleeberg-Großstädteln
+      - Markkleeberg-Gaschwitz
+      - Plessa, Bahnhof
+
     itineraries: 
       r3386825: 
         - Markkleeberg-Gaschwitz (n1834231118)
@@ -399,9 +434,30 @@ routes:
         - Markkleeberg-Gaschwitz (n1834231118)
 
 
+  - 
+    ref: S 5
+    name: 'S-Bahn S 5: Zwickau (Sachs) Hbf <> Halle (Saale) Hbf'
+    colour: '#f17f1a'
+    station_count: 28
+    type: train
     stations: 
-      - Markkleeberg-Gaschwitz
-      - Markkleeberg-Großstädteln
+      - Zwickau (Sachsen) Hauptbahnhof
+      - Lichtentanne (Sachs)
+      - Steinpleis
+      - Werdau
+      - Werdau Nord
+      - Schweinsburg-Culten
+      - Crimmitschau
+      - Ponitz
+      - Gößnitz
+      - Lehndorf (Altenburg)
+      - Altenburg
+      - Treben Lehma
+      - Regis-Breitingen
+      - Deutzen
+      - Neukieritzsch
+      - Böhlen Werke
+      - Böhlen (Leipzig)
       - Markkleeberg
       - Markkleeberg Nord
       - Connewitz
@@ -410,68 +466,11 @@ routes:
       - Wilhelm-Leuschner-Platz (S-Bahn)
       - Leipzig Markt
       - Leipzig Hbf (tief)
-      - Leipzig Nord
-      - Leipzig Mockauer Straße
-      - Leipzig-Thekla
-      - Leipzig-Heiterblick
-      - Taucha, S-Bahnhof (Bahn)
-      - Pönitz (bei Leipzig)
-      - Jesewitz
-      - Eilenburg
-      - Eilenburg Ost
-      - Doberschütz
-      - Mockrehna
-      - Torgau Bahnhof
-      - Beilrode
-      - Rehfeld (EE), Bahnhof
-      - Falkenberg/E., Bahnhof
-      - Bad Liebenwerda, Bahnhof
-      - Elsterwerda-Biehla, Bahnhof
-      - Plessa, Bahnhof
-      - Lauchhammer, Bahnhof
-      - Ruhland, Bahnhof
-      - Hosena, Bahnhof
-      - Hp. Lauta (Nl)
-      - Bahnhof Schwarzkollm
-      - Hoyerswerda
+      - Leipzig Messebahnhof
+      - Leipzig/Halle Flughafen
+      - Halle (Saale) Hauptbahnhof
 
-    ref: S 4
-  - 
-    colour: '#f17f1a'
-    name: 'S-Bahn S 5: Zwickau (Sachs) Hbf <> Halle (Saale) Hbf'
-    type: train
-    station_count: 28
     itineraries: 
-      r2606967: 
-        - Halle (Saale) Hauptbahnhof (n250082941)
-        - Leipzig/Halle Flughafen (n3602155783)
-        - Leipzig Messe (n3718879892)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig MDR (n4882974564)
-        - Leipzig-Connewitz (n1946583016)
-        - Markkleeberg Nord (n5622254543)
-        - Markkleeberg (n1834231120)
-        - Böhlen (Leipzig) (n2582862865)
-        - Böhlen Werke (n1931328962)
-        - Neukieritzsch (n1931317878)
-        - Deutzen (n355602680)
-        - Regis-Breitingen (n355162422)
-        - Treben Lehma (n26086557)
-        - Altenburg (n3072712506)
-        - Lehndorf (Altenburg) (n469415176)
-        - Gößnitz (n1834514415)
-        - Ponitz (n295475129)
-        - Crimmitschau (n2582770365)
-        - Schweinsburg-Culten (n2538223616)
-        - Werdau Nord (n1684188624)
-        - Werdau (n1835615611)
-        - Steinpleis (n601622759)
-        - Lichtentanne (Sachs) (n448858454)
-        - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
-
       r56054: 
         - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
         - Lichtentanne (Sachs) (n448858454)
@@ -502,45 +501,7 @@ routes:
         - Leipzig/Halle Flughafen (n3602155783)
         - Halle (Saale) Hauptbahnhof (n250082941)
 
-
-    stations: 
-      - Halle (Saale) Hauptbahnhof
-      - Leipzig/Halle Flughafen
-      - Leipzig Messebahnhof
-      - Leipzig Hbf (tief)
-      - Leipzig Markt
-      - Wilhelm-Leuschner-Platz (S-Bahn)
-      - Leipzig Bayerischer Bahnhof
-      - Leipzig MDR (S-Bahn)
-      - Connewitz
-      - Markkleeberg Nord
-      - Markkleeberg
-      - Böhlen (Leipzig)
-      - Böhlen Werke
-      - Neukieritzsch
-      - Deutzen
-      - Regis-Breitingen
-      - Treben Lehma
-      - Altenburg
-      - Lehndorf (Altenburg)
-      - Gößnitz
-      - Ponitz
-      - Crimmitschau
-      - Schweinsburg-Culten
-      - Werdau Nord
-      - Werdau
-      - Steinpleis
-      - Lichtentanne (Sachs)
-      - Zwickau (Sachsen) Hauptbahnhof
-
-    ref: S 5
-  - 
-    colour: '#fdd456'
-    name: 'S-Bahn S 5X: Zwickau (Sachs) Hbf <> Halle (Saale) Hbf'
-    type: train
-    station_count: 17
-    itineraries: 
-      r2044513: 
+      r2606967: 
         - Halle (Saale) Hauptbahnhof (n250082941)
         - Leipzig/Halle Flughafen (n3602155783)
         - Leipzig Messe (n3718879892)
@@ -553,12 +514,50 @@ routes:
         - Markkleeberg Nord (n5622254543)
         - Markkleeberg (n1834231120)
         - Böhlen (Leipzig) (n2582862865)
+        - Böhlen Werke (n1931328962)
+        - Neukieritzsch (n1931317878)
+        - Deutzen (n355602680)
+        - Regis-Breitingen (n355162422)
+        - Treben Lehma (n26086557)
         - Altenburg (n3072712506)
+        - Lehndorf (Altenburg) (n469415176)
         - Gößnitz (n1834514415)
+        - Ponitz (n295475129)
         - Crimmitschau (n2582770365)
+        - Schweinsburg-Culten (n2538223616)
+        - Werdau Nord (n1684188624)
         - Werdau (n1835615611)
+        - Steinpleis (n601622759)
+        - Lichtentanne (Sachs) (n448858454)
         - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
 
+
+  - 
+    ref: S 5X
+    name: 'S-Bahn S 5X: Zwickau (Sachs) Hbf <> Halle (Saale) Hbf'
+    colour: '#fdd456'
+    station_count: 17
+    type: train
+    stations: 
+      - Zwickau (Sachsen) Hauptbahnhof
+      - Werdau
+      - Crimmitschau
+      - Gößnitz
+      - Altenburg
+      - Böhlen (Leipzig)
+      - Markkleeberg
+      - Markkleeberg Nord
+      - Connewitz
+      - Leipzig MDR (S-Bahn)
+      - Leipzig Bayerischer Bahnhof
+      - Wilhelm-Leuschner-Platz (S-Bahn)
+      - Leipzig Markt
+      - Leipzig Hbf (tief)
+      - Leipzig Messebahnhof
+      - Leipzig/Halle Flughafen
+      - Halle (Saale) Hauptbahnhof
+
+    itineraries: 
       r2044553: 
         - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
         - Werdau (n1835615611)
@@ -578,84 +577,32 @@ routes:
         - Leipzig/Halle Flughafen (n3602155783)
         - Halle (Saale) Hauptbahnhof (n250082941)
 
+      r2044513: 
+        - Halle (Saale) Hauptbahnhof (n250082941)
+        - Leipzig/Halle Flughafen (n3602155783)
+        - Leipzig Messe (n3718879892)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig MDR (n4882974564)
+        - Leipzig-Connewitz (n1946583016)
+        - Markkleeberg Nord (n5622254543)
+        - Markkleeberg (n1834231120)
+        - Böhlen (Leipzig) (n2582862865)
+        - Altenburg (n3072712506)
+        - Gößnitz (n1834514415)
+        - Crimmitschau (n2582770365)
+        - Werdau (n1835615611)
+        - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
 
-    stations: 
-      - Halle (Saale) Hauptbahnhof
-      - Leipzig/Halle Flughafen
-      - Leipzig Messebahnhof
-      - Leipzig Hbf (tief)
-      - Leipzig Markt
-      - Wilhelm-Leuschner-Platz (S-Bahn)
-      - Leipzig Bayerischer Bahnhof
-      - Leipzig MDR (S-Bahn)
-      - Connewitz
-      - Markkleeberg Nord
-      - Markkleeberg
-      - Böhlen (Leipzig)
-      - Altenburg
-      - Gößnitz
-      - Crimmitschau
-      - Werdau
-      - Zwickau (Sachsen) Hauptbahnhof
 
-    ref: S 5X
   - 
-    colour: '#56033a'
+    ref: S 6
     name: 'S-Bahn S 6: Leipzig Messe <> Geithain'
-    type: train
+    colour: '#56033a'
     station_count: 23
-    itineraries: 
-      r7815086: 
-        - Leipzig Messe (n3718879892)
-        - Leipzig Essener Straße (n1487072712)
-        - Leipzig Nord (n3493054183)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig MDR (n4882974564)
-        - Leipzig-Connewitz (n1946583016)
-        - Markkleeberg Nord (n5622254543)
-        - Markkleeberg (n1834231120)
-        - Markkleeberg-Großstädteln (n1834231122)
-        - Markkleeberg-Gaschwitz (n1834231118)
-        - Großdeuben (n1834231119)
-        - Böhlen (Leipzig) (n2582862865)
-        - Böhlen Werke (n1931328962)
-        - Neukieritzsch (n1931317878)
-        - Lobstädt (n1931305584)
-        - Borna (Leipzig) (n1931297034)
-        - Petergrube (n2291225955)
-        - Neukirchen-Wyhra (n1831920866)
-        - Frohburg (n5631201271)
-        - Geithain (n3911497592)
-
-      r7814996: 
-        - Geithain (n3911497592)
-        - Frohburg (n5631201271)
-        - Neukirchen-Wyhra (n1831920866)
-        - Petergrube (n2291225955)
-        - Borna (Leipzig) (n1931297034)
-        - Lobstädt (n1931305584)
-        - Neukieritzsch (n1931317878)
-        - Böhlen Werke (n1931328962)
-        - Böhlen (Leipzig) (n2582862865)
-        - Großdeuben (n1834231119)
-        - Markkleeberg-Gaschwitz (n1834231118)
-        - Markkleeberg-Großstädteln (n1834231122)
-        - Markkleeberg (n1834231120)
-        - Markkleeberg Nord (n5622254543)
-        - Leipzig-Connewitz (n1946583016)
-        - Leipzig MDR (n4882974564)
-        - Leipzig Bayerischer Bahnhof (n5647138907)
-        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
-        - Leipzig Markt (n1993610395)
-        - Leipzig Hauptbahnhof (tief) (n5621640643)
-        - Leipzig Nord (n3493054183)
-        - Leipzig Essener Straße (n1487072712)
-        - Leipzig Messe (n3718879892)
-
-
+    type: train
     stations: 
       - Leipzig Messebahnhof
       - Leipzig Essener Straße
@@ -681,12 +628,73 @@ routes:
       - Frohburg
       - Geithain
 
-    ref: S 6
+    itineraries: 
+      r7814996: 
+        - Geithain (n3911497592)
+        - Frohburg (n5631201271)
+        - Neukirchen-Wyhra (n1831920866)
+        - Petergrube (n2291225955)
+        - Borna (Leipzig) (n1931297034)
+        - Lobstädt (n1931305584)
+        - Neukieritzsch (n1931317878)
+        - Böhlen Werke (n1931328962)
+        - Böhlen (Leipzig) (n2582862865)
+        - Großdeuben (n1834231119)
+        - Markkleeberg-Gaschwitz (n1834231118)
+        - Markkleeberg-Großstädteln (n1834231122)
+        - Markkleeberg (n1834231120)
+        - Markkleeberg Nord (n5622254543)
+        - Leipzig-Connewitz (n1946583016)
+        - Leipzig MDR (n4882974564)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig Nord (n3493054183)
+        - Leipzig Essener Straße (n1487072712)
+        - Leipzig Messe (n3718879892)
+
+      r7815086: 
+        - Leipzig Messe (n3718879892)
+        - Leipzig Essener Straße (n1487072712)
+        - Leipzig Nord (n3493054183)
+        - Leipzig Hauptbahnhof (tief) (n5621640643)
+        - Leipzig Markt (n1993610395)
+        - Leipzig Wilhelm-Leuschner-Platz (n5619497135)
+        - Leipzig Bayerischer Bahnhof (n5647138907)
+        - Leipzig MDR (n4882974564)
+        - Leipzig-Connewitz (n1946583016)
+        - Markkleeberg Nord (n5622254543)
+        - Markkleeberg (n1834231120)
+        - Markkleeberg-Großstädteln (n1834231122)
+        - Markkleeberg-Gaschwitz (n1834231118)
+        - Großdeuben (n1834231119)
+        - Böhlen (Leipzig) (n2582862865)
+        - Böhlen Werke (n1931328962)
+        - Neukieritzsch (n1931317878)
+        - Lobstädt (n1931305584)
+        - Borna (Leipzig) (n1931297034)
+        - Petergrube (n2291225955)
+        - Neukirchen-Wyhra (n1831920866)
+        - Frohburg (n5631201271)
+        - Geithain (n3911497592)
+
+
   - 
-    colour: '#015ca3'
+    ref: S 7
     name: 'S-Bahn S 7: Halle (Saale) Hbf <> Halle-Nietleben'
-    type: train
+    colour: '#015ca3'
     station_count: 7
+    type: train
+    stations: 
+      - Halle Nietleben
+      - Halle-Neustadt
+      - Halle Zscherbener Straße
+      - Halle Südstadt
+      - Halle-Silberhöhe
+      - Halle Rosengarten
+      - Halle (Saale) Hauptbahnhof
+
     itineraries: 
       r2046721: 
         - Halle-Nietleben (n1763008125)
@@ -707,52 +715,35 @@ routes:
         - Halle-Nietleben (n1763008125)
 
 
-    stations: 
-      - Halle Nietleben
-      - Halle-Neustadt
-      - Halle Zscherbener Straße
-      - Halle Südstadt
-      - Halle-Silberhöhe
-      - Halle Rosengarten
-      - Halle (Saale) Hauptbahnhof
-
-    ref: S 7
   - 
-    colour: '#6b2c94'
+    ref: S 8
     name: 'S-Bahn S 8: Halle <> Dessau/Wittenberg'
-    type: train
+    colour: '#6b2c94'
     station_count: 20
+    type: train
+    stations: 
+      - Halle (Saale) Hauptbahnhof
+      - Hohenthurm
+      - Landsberg (bei Halle/Saale)
+      - Brehna
+      - Roitzsch
+      - Bitterfeld
+      - Greppin
+      - Wolfen (Bitterfeld)
+      - Jeßnitz (Anh)
+      - Raguhn
+      - Marke
+      - Dessau Süd
+      - Dessau Hauptbahnhof
+      - Lutherstadt Wittenberg
+      - Pratau
+      - Bergwitz
+      - Radis
+      - Gräfenhainichen
+      - Burgkemnitz
+      - Muldenstein
+
     itineraries: 
-      r2605120: 
-        - Halle (Saale) Hauptbahnhof (n250082941)
-        - Hohenthurm (n854900649)
-        - Landsberg (bei Halle/Saale) (n31077761)
-        - Brehna (n659879862)
-        - Roitzsch (n2918315462)
-        - Bitterfeld (n2480240101)
-        - Greppin (n5635022879)
-        - Wolfen (Bitterfeld) (n382368016)
-        - Jeßnitz (Anh) (n5635015016)
-        - Raguhn (n1907444127)
-        - Marke (n5635031821)
-        - Dessau Süd (n5626195611)
-        - Dessau Hauptbahnhof (n2844061660)
-
-      r2605119: 
-        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
-        - Pratau (n100085314)
-        - Bergwitz (n4340490375)
-        - Radis (n309443287)
-        - Gräfenhainichen (n278707229)
-        - Burgkemnitz (n279592443)
-        - Muldenstein (n100085065)
-        - Bitterfeld (n2480240101)
-        - Roitzsch (n2918315462)
-        - Brehna (n659879862)
-        - Landsberg (bei Halle/Saale) (n31077761)
-        - Hohenthurm (n854900649)
-        - Halle (Saale) Hauptbahnhof (n250082941)
-
       r379350: 
         - Dessau Hauptbahnhof (n2844061660)
         - Dessau Süd (n5626195611)
@@ -767,6 +758,21 @@ routes:
         - Landsberg (bei Halle/Saale) (n31077761)
         - Hohenthurm (n854900649)
         - Halle (Saale) Hauptbahnhof (n250082941)
+
+      r2605120: 
+        - Halle (Saale) Hauptbahnhof (n250082941)
+        - Hohenthurm (n854900649)
+        - Landsberg (bei Halle/Saale) (n31077761)
+        - Brehna (n659879862)
+        - Roitzsch (n2918315462)
+        - Bitterfeld (n2480240101)
+        - Greppin (n5635022879)
+        - Wolfen (Bitterfeld) (n382368016)
+        - Jeßnitz (Anh) (n5635015016)
+        - Raguhn (n1907444127)
+        - Marke (n5635031821)
+        - Dessau Süd (n5626195611)
+        - Dessau Hauptbahnhof (n2844061660)
 
       r379363: 
         - Halle (Saale) Hauptbahnhof (n250082941)
@@ -783,49 +789,42 @@ routes:
         - Pratau (n100085314)
         - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
 
-
-    stations: 
-      - Halle (Saale) Hauptbahnhof
-      - Hohenthurm
-      - Landsberg (bei Halle/Saale)
-      - Brehna
-      - Roitzsch
-      - Bitterfeld
-      - Greppin
-      - Wolfen (Bitterfeld)
-      - Jeßnitz (Anh)
-      - Raguhn
-      - Marke
-      - Dessau Süd
-      - Dessau Hauptbahnhof
-      - Muldenstein
-      - Burgkemnitz
-      - Gräfenhainichen
-      - Radis
-      - Bergwitz
-      - Pratau
-      - Lutherstadt Wittenberg
-
-    ref: S 8
-  - 
-    colour: '#f17f1a'
-    name: 'S-Bahn S 9: Halle (Saale) Hbf <> Eilenburg'
-    type: train
-    station_count: 11
-    itineraries: 
-      r7805409: 
-        - Eilenburg (n32520446)
-        - Kämmereiforst (n1156294800)
-        - Krensitz (n2171504612)
-        - Hohenroda (n2032333800)
-        - Delitzsch oberer Bahnhof (n1027087225)
-        - Kyhna (n1542393760)
-        - Klitschmar (n438504420)
-        - Landsberg-Süd (n631668037)
-        - Reußen (n355532543)
-        - Peißen (n5622246252)
+      r2605119: 
+        - Lutherstadt Wittenberg Hauptbahnhof (n280139991)
+        - Pratau (n100085314)
+        - Bergwitz (n4340490375)
+        - Radis (n309443287)
+        - Gräfenhainichen (n278707229)
+        - Burgkemnitz (n279592443)
+        - Muldenstein (n100085065)
+        - Bitterfeld (n2480240101)
+        - Roitzsch (n2918315462)
+        - Brehna (n659879862)
+        - Landsberg (bei Halle/Saale) (n31077761)
+        - Hohenthurm (n854900649)
         - Halle (Saale) Hauptbahnhof (n250082941)
 
+
+  - 
+    ref: S 9
+    name: 'S-Bahn S 9: Halle (Saale) Hbf <> Eilenburg'
+    colour: '#f17f1a'
+    station_count: 11
+    type: train
+    stations: 
+      - Eilenburg
+      - Kämmereiforst
+      - Krensitz
+      - Hohenroda
+      - Delitzsch oberer Bahnhof
+      - Kyhna
+      - Klitschmar
+      - Landsberg Süd
+      - Reußen
+      - Peißen
+      - Halle (Saale) Hauptbahnhof
+
+    itineraries: 
       r7805410: 
         - Halle (Saale) Hauptbahnhof (n250082941)
         - Peißen (n5622246252)
@@ -839,21 +838,20 @@ routes:
         - Kämmereiforst (n1156294800)
         - Eilenburg (n32520446)
 
+      r7805409: 
+        - Eilenburg (n32520446)
+        - Kämmereiforst (n1156294800)
+        - Krensitz (n2171504612)
+        - Hohenroda (n2032333800)
+        - Delitzsch oberer Bahnhof (n1027087225)
+        - Kyhna (n1542393760)
+        - Klitschmar (n438504420)
+        - Landsberg-Süd (n631668037)
+        - Reußen (n355532543)
+        - Peißen (n5622246252)
+        - Halle (Saale) Hauptbahnhof (n250082941)
 
-    stations: 
-      - Halle (Saale) Hauptbahnhof
-      - Peißen
-      - Reußen
-      - Landsberg Süd
-      - Klitschmar
-      - Kyhna
-      - Delitzsch oberer Bahnhof
-      - Hohenroda
-      - Krensitz
-      - Kämmereiforst
-      - Eilenburg
 
-    ref: S 9
 
 stations: 
   - Altenbach (n1748965259)
@@ -994,4 +992,6 @@ stations:
   - Wurzen (n2507288752)
   - Zschortau (n6695541079)
   - Zwickau (Sachsen) Hauptbahnhof (n2442391853)
+
+transfers: 
 

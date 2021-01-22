@@ -1,18 +1,36 @@
 
-transfers: 
-  - 
-    - Fonte do Cuco (r10830267)
-    - Fonte do Cuco (r9518030)
-  - 
-    - Trindade (r10830264)
-    - Trindade (r7970629)
-
 routes: 
   - 
-    colour: '#3caeef'
+    ref: A
     name: 'Linha A: Estádio do Dragão <=> Senhor de Matosinhos'
-    type: light_rail
+    colour: '#3caeef'
     station_count: 23
+    type: light_rail
+    stations: 
+      - Senhor de Matosinhos
+      - Mercado
+      - Brito Capelo
+      - Matosinhos Sul
+      - Câmara de Matosinhos
+      - Parque de Real
+      - Pedro Hispano
+      - Estádio do Mar
+      - Vasco da Gama
+      - Senhora da Hora
+      - Sete Bicas
+      - Via Rápida / Viso
+      - Ramalde
+      - Francos
+      - Casa da Música
+      - Carolina Michaelis
+      - Lapa
+      - Trindade
+      - Bolhão
+      - Campo 24 de Agosto
+      - Heroísmo
+      - Campanhã
+      - Estádio do Dragão
+
     itineraries: 
       r2174525: 
         - Senhor de Matosinhos (n6634498467)
@@ -65,76 +83,51 @@ routes:
         - Senhor de Matosinhos (n6634498467)
 
 
-    stations: 
-      - Senhor de Matosinhos
-      - Mercado
-      - Brito Capelo
-      - Matosinhos Sul
-      - Câmara de Matosinhos
-      - Parque de Real
-      - Pedro Hispano
-      - Estádio do Mar
-      - Vasco da Gama
-      - Senhora da Hora
-      - Sete Bicas
-      - Via Rápida / Viso
-      - Ramalde
-      - Francos
-      - Casa da Música
-      - Carolina Michaelis
-      - Lapa
-      - Trindade
-      - Bolhão
-      - Campo 24 de Agosto
-      - Heroísmo
-      - Campanhã
-      - Estádio do Dragão
-
-    ref: A
   - 
-    colour: '#e62621'
+    ref: B
     name: 'Linha B: Póvoa de Varzim <=> Estádio do Dragão'
-    type: light_rail
+    colour: '#e62621'
     station_count: 36
-    itineraries: 
-      r5750428: 
-        - Estádio do Dragão (n6627320519)
-        - 'Porto - Campanhã (n6630378103)'
-        - Heroísmo (n6627320518)
-        - Campo 24 de Agosto (n6627320517)
-        - Bolhão (n6627320516)
-        - Trindade (n3996603757)
-        - Lapa (n6627320515)
-        - Carolina Michaelis (n6627320514)
-        - Casa da Música (n6627320513)
-        - Francos (n3939661657)
-        - Ramalde (n3941918457)
-        - Via Rápida / Viso (n3939836094)
-        - Sete Bicas (n3939659557)
-        - Senhora da Hora (n6627320512)
-        - Fonte do Cuco (w686427805)
-        - Custóias (w686427804)
-        - Esposade (w686427803)
-        - Crestins (w686427796)
-        - Verdes (w686427778)
-        - Pedras Rubras (w686337118)
-        - Lidador (w686337108)
-        - Vilar de Pinheiro (w686337099)
-        - Modivas Sul (w686325086)
-        - Modivas Centro (w686325077)
-        - VC Fashion Outlet / Modivas (w686325065)
-        - Mindelo (w686320168)
-        - Espaço Natureza (w686320159)
-        - Varziela (w686320154)
-        - Árvore (w686320150)
-        - Azurara (w686320143)
-        - Santa Clara (w686315131)
-        - Vila do Conde (w686315122)
-        - Alto de Pêga (w686315103)
-        - Portas Fronhas (w686285774)
-        - São Brás (w686277330)
-        - Póvoa de Varzim (w686277312)
+    type: light_rail
+    stations: 
+      - Estádio do Dragão
+      - Campanhã
+      - Heroísmo
+      - Campo 24 de Agosto
+      - Bolhão
+      - Trindade
+      - Lapa
+      - Carolina Michaelis
+      - Casa da Música
+      - Francos
+      - Ramalde
+      - Via Rápida / Viso
+      - Sete Bicas
+      - Senhora da Hora
+      - Fonte do Cuco
+      - Custóias
+      - Esposade
+      - Crestins
+      - Verdes
+      - Pedras Rubras
+      - Lidador
+      - Vilar de Pinheiro
+      - Modivas Sul
+      - Modivas Centro
+      - VC Fashion Outlet / Modivas
+      - Mindelo
+      - Espaço Natureza
+      - Varziela
+      - Árvore
+      - Azurara
+      - Santa Clara
+      - Vila do Conde
+      - Alto de Pêga
+      - Portas Fronhas
+      - São Brás
+      - Póvoa de Varzim
 
+    itineraries: 
       r2904254: 
         - Póvoa de Varzim (w686277312)
         - São Brás (w686277330)
@@ -173,29 +166,62 @@ routes:
         - 'Porto - Campanhã (n6630378103)'
         - Estádio do Dragão (n6627320519)
 
+      r5750428: 
+        - Estádio do Dragão (n6627320519)
+        - 'Porto - Campanhã (n6630378103)'
+        - Heroísmo (n6627320518)
+        - Campo 24 de Agosto (n6627320517)
+        - Bolhão (n6627320516)
+        - Trindade (n3996603757)
+        - Lapa (n6627320515)
+        - Carolina Michaelis (n6627320514)
+        - Casa da Música (n6627320513)
+        - Francos (n3939661657)
+        - Ramalde (n3941918457)
+        - Via Rápida / Viso (n3939836094)
+        - Sete Bicas (n3939659557)
+        - Senhora da Hora (n6627320512)
+        - Fonte do Cuco (w686427805)
+        - Custóias (w686427804)
+        - Esposade (w686427803)
+        - Crestins (w686427796)
+        - Verdes (w686427778)
+        - Pedras Rubras (w686337118)
+        - Lidador (w686337108)
+        - Vilar de Pinheiro (w686337099)
+        - Modivas Sul (w686325086)
+        - Modivas Centro (w686325077)
+        - VC Fashion Outlet / Modivas (w686325065)
+        - Mindelo (w686320168)
+        - Espaço Natureza (w686320159)
+        - Varziela (w686320154)
+        - Árvore (w686320150)
+        - Azurara (w686320143)
+        - Santa Clara (w686315131)
+        - Vila do Conde (w686315122)
+        - Alto de Pêga (w686315103)
+        - Portas Fronhas (w686285774)
+        - São Brás (w686277330)
+        - Póvoa de Varzim (w686277312)
 
+
+  - 
+    ref: C
+    name: 'Linha C: Campanhã <=> ISMAI'
+    colour: '#8bc63e'
+    station_count: 24
+    type: light_rail
     stations: 
-      - Póvoa de Varzim
-      - São Brás
-      - Portas Fronhas
-      - Alto de Pêga
-      - Vila do Conde
-      - Santa Clara
-      - Azurara
-      - Árvore
-      - Varziela
-      - Espaço Natureza
-      - Mindelo
-      - VC Fashion Outlet / Modivas
-      - Modivas Centro
-      - Modivas Sul
-      - Vilar de Pinheiro
-      - Lidador
-      - Pedras Rubras
-      - Verdes
-      - Crestins
-      - Esposade
-      - Custóias
+      - ISMAI
+      - Castêlo da Maia
+      - Mandim
+      - Zona Industrial
+      - Fórum Maia
+      - Parque Maia
+      - Custió
+      - Araújo
+      - Pias
+      - Cândido dos Reis
       - Fonte do Cuco
       - Senhora da Hora
       - Sete Bicas
@@ -210,14 +236,7 @@ routes:
       - Campo 24 de Agosto
       - Heroísmo
       - Campanhã
-      - Estádio do Dragão
 
-    ref: B
-  - 
-    colour: '#8bc63e'
-    name: 'Linha C: Campanhã <=> ISMAI'
-    type: light_rail
-    station_count: 24
     itineraries: 
       r6065644: 
         - 'Porto - Campanhã (n6630378103)'
@@ -272,76 +291,12 @@ routes:
         - 'Porto - Campanhã (n6630378103)'
 
 
-    stations: 
-      - Campanhã
-      - Heroísmo
-      - Campo 24 de Agosto
-      - Bolhão
-      - Trindade
-      - Lapa
-      - Carolina Michaelis
-      - Casa da Música
-      - Francos
-      - Ramalde
-      - Via Rápida / Viso
-      - Sete Bicas
-      - Senhora da Hora
-      - Fonte do Cuco
-      - Cândido dos Reis
-      - Pias
-      - Araújo
-      - Custió
-      - Parque Maia
-      - Fórum Maia
-      - Zona Industrial
-      - Mandim
-      - Castêlo da Maia
-      - ISMAI
-
-    ref: C
   - 
-    colour: '#f9c212'
+    ref: D
     name: 'Linha D: Hospital de São João <=> Santo Ovídio'
-    type: light_rail
+    colour: '#f9c212'
     station_count: 16
-    itineraries: 
-      r6063096: 
-        - Hospital São João (n6630342113)
-        - IPO (n6630342114)
-        - Pólo Universitário (n6632372474)
-        - Salgueiros (n6632372476)
-        - Combatentes (n6632372475)
-        - Marquês (n6632372473)
-        - Faria Guimarães (n6632372472)
-        - Trindade (n3996603757)
-        - Aliados (n6632372471)
-        - São Bento (n6632372470)
-        - Jardim do Morro (n6632372469)
-        - General Torres (n6632372468)
-        - Câmara de Gaia (n6632372467)
-        - João de Deus (n6632372466)
-        - Dom João II (n6632372465)
-        - Santo Ovídio (n6630342112)
-
-      r2567504: 
-        - Santo Ovídio (n6630342112)
-        - Dom João II (n6632372465)
-        - João de Deus (n6632372466)
-        - Câmara de Gaia (n6632372467)
-        - General Torres (n6632372468)
-        - Jardim do Morro (n6632372469)
-        - São Bento (n6632372470)
-        - Aliados (n6632372471)
-        - Trindade (n3996603757)
-        - Faria Guimarães (n6632372472)
-        - Marquês (n6632372473)
-        - Combatentes (n6632372475)
-        - Salgueiros (n6632372476)
-        - Pólo Universitário (n6632372474)
-        - IPO (n6630342114)
-        - Hospital São João (n6630342113)
-
-
+    type: light_rail
     stations: 
       - Santo Ovídio
       - Dom João II
@@ -360,36 +315,74 @@ routes:
       - IPO
       - Hospital São João
 
-    ref: D
-  - 
-    colour: '#937bb8'
-    name: 'Linha E: Estádio do Dragão <=> Aeroporto'
-    type: light_rail
-    station_count: 21
     itineraries: 
-      r6063236: 
-        - Estádio do Dragão (n6627320519)
-        - 'Porto - Campanhã (n6630378103)'
-        - Heroísmo (n6627320518)
-        - Campo 24 de Agosto (n6627320517)
-        - Bolhão (n6627320516)
+      r2567504: 
+        - Santo Ovídio (n6630342112)
+        - Dom João II (n6632372465)
+        - João de Deus (n6632372466)
+        - Câmara de Gaia (n6632372467)
+        - General Torres (n6632372468)
+        - Jardim do Morro (n6632372469)
+        - São Bento (n6632372470)
+        - Aliados (n6632372471)
         - Trindade (n3996603757)
-        - Lapa (n6627320515)
-        - Carolina Michaelis (n6627320514)
-        - Casa da Música (n6627320513)
-        - Francos (n3939661657)
-        - Ramalde (n3941918457)
-        - Via Rápida / Viso (n3939836094)
-        - Sete Bicas (n3939659557)
-        - Senhora da Hora (n6627320512)
-        - Fonte do Cuco (w686427805)
-        - Custóias (w686427804)
-        - Esposade (w686427803)
-        - Crestins (w686427796)
-        - Verdes (w686427778)
-        - Botica (n6632410574)
-        - Aeroporto (n6632410573)
+        - Faria Guimarães (n6632372472)
+        - Marquês (n6632372473)
+        - Combatentes (n6632372475)
+        - Salgueiros (n6632372476)
+        - Pólo Universitário (n6632372474)
+        - IPO (n6630342114)
+        - Hospital São João (n6630342113)
 
+      r6063096: 
+        - Hospital São João (n6630342113)
+        - IPO (n6630342114)
+        - Pólo Universitário (n6632372474)
+        - Salgueiros (n6632372476)
+        - Combatentes (n6632372475)
+        - Marquês (n6632372473)
+        - Faria Guimarães (n6632372472)
+        - Trindade (n3996603757)
+        - Aliados (n6632372471)
+        - São Bento (n6632372470)
+        - Jardim do Morro (n6632372469)
+        - General Torres (n6632372468)
+        - Câmara de Gaia (n6632372467)
+        - João de Deus (n6632372466)
+        - Dom João II (n6632372465)
+        - Santo Ovídio (n6630342112)
+
+
+  - 
+    ref: E
+    name: 'Linha E: Estádio do Dragão <=> Aeroporto'
+    colour: '#937bb8'
+    station_count: 21
+    type: light_rail
+    stations: 
+      - Aeroporto
+      - Botica
+      - Verdes
+      - Crestins
+      - Esposade
+      - Custóias
+      - Fonte do Cuco
+      - Senhora da Hora
+      - Sete Bicas
+      - Via Rápida / Viso
+      - Ramalde
+      - Francos
+      - Casa da Música
+      - Carolina Michaelis
+      - Lapa
+      - Trindade
+      - Bolhão
+      - Campo 24 de Agosto
+      - Heroísmo
+      - Campanhã
+      - Estádio do Dragão
+
+    itineraries: 
       r1710380: 
         - Aeroporto (n6632410573)
         - Botica (n6632410574)
@@ -413,8 +406,47 @@ routes:
         - 'Porto - Campanhã (n6630378103)'
         - Estádio do Dragão (n6627320519)
 
+      r6063236: 
+        - Estádio do Dragão (n6627320519)
+        - 'Porto - Campanhã (n6630378103)'
+        - Heroísmo (n6627320518)
+        - Campo 24 de Agosto (n6627320517)
+        - Bolhão (n6627320516)
+        - Trindade (n3996603757)
+        - Lapa (n6627320515)
+        - Carolina Michaelis (n6627320514)
+        - Casa da Música (n6627320513)
+        - Francos (n3939661657)
+        - Ramalde (n3941918457)
+        - Via Rápida / Viso (n3939836094)
+        - Sete Bicas (n3939659557)
+        - Senhora da Hora (n6627320512)
+        - Fonte do Cuco (w686427805)
+        - Custóias (w686427804)
+        - Esposade (w686427803)
+        - Crestins (w686427796)
+        - Verdes (w686427778)
+        - Botica (n6632410574)
+        - Aeroporto (n6632410573)
 
+
+  - 
+    ref: F
+    name: 'Linha F: Senhora da Hora <=> Fânzeres'
+    colour: '#f68b1f'
+    station_count: 24
+    type: light_rail
     stations: 
+      - Fânzeres
+      - Venda Nova
+      - Carreira
+      - Baguim
+      - Campainha
+      - Rio Tinto
+      - Levada
+      - Nau Vitória
+      - Nasoni
+      - Contumil
       - Estádio do Dragão
       - Campanhã
       - Heroísmo
@@ -429,20 +461,7 @@ routes:
       - Via Rápida / Viso
       - Sete Bicas
       - Senhora da Hora
-      - Fonte do Cuco
-      - Custóias
-      - Esposade
-      - Crestins
-      - Verdes
-      - Botica
-      - Aeroporto
 
-    ref: E
-  - 
-    colour: '#f68b1f'
-    name: 'Linha F: Senhora da Hora <=> Fânzeres'
-    type: light_rail
-    station_count: 24
     itineraries: 
       r2465891: 
         - Senhora da Hora (n6627320512)
@@ -497,33 +516,6 @@ routes:
         - Senhora da Hora (n6627320512)
 
 
-    stations: 
-      - Fânzeres
-      - Venda Nova
-      - Carreira
-      - Baguim
-      - Campainha
-      - Rio Tinto
-      - Levada
-      - Nau Vitória
-      - Nasoni
-      - Contumil
-      - Estádio do Dragão
-      - Campanhã
-      - Heroísmo
-      - Campo 24 de Agosto
-      - Bolhão
-      - Trindade
-      - Lapa
-      - Carolina Michaelis
-      - Casa da Música
-      - Francos
-      - Ramalde
-      - Via Rápida / Viso
-      - Sete Bicas
-      - Senhora da Hora
-
-    ref: F
 
 stations: 
   - Aeroporto (n6632410573)
@@ -608,4 +600,12 @@ stations:
   - Vilar de Pinheiro (w686337099)
   - Zona Industrial (n6632462987)
   - Árvore (w686320150)
+
+transfers: 
+  - 
+    - Fonte do Cuco (r10830267)
+    - Fonte do Cuco (r9518030)
+  - 
+    - Trindade (r10830264)
+    - Trindade (r7970629)
 

@@ -1,12 +1,26 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#73757d'
+    ref: Metro
     name: NFTA Metro Rail
-    type: light_rail
+    colour: '#73757d'
     station_count: 13
+    type: light_rail
+    stations: 
+      - University
+      - LaSalle
+      - Amherst Street
+      - Humboldt–Hospital
+      - Delavan/Canisius College
+      - Utica
+      - Summer–Best Station
+      - Allen/Medical Campus
+      - Fountain Plaza
+      - Lafayette Square
+      - Church
+      - Seneca
+      - Erie Canal Harbor
+
     itineraries: 
       r11364343: 
         - University (n256821989)
@@ -39,22 +53,6 @@ routes:
         - University (n256821989)
 
 
-    stations: 
-      - University
-      - LaSalle
-      - Amherst Street
-      - Humboldt–Hospital
-      - Delavan/Canisius College
-      - Utica
-      - Summer–Best Station
-      - Allen/Medical Campus
-      - Fountain Plaza
-      - Lafayette Square
-      - Church
-      - Seneca
-      - Erie Canal Harbor
-
-    ref: Metro
 
 stations: 
   - Allen/Medical Campus (n306391081)
@@ -70,4 +68,6 @@ stations:
   - Summer–Best (n304893295)
   - University (n256821989)
   - Utica (n347412733)
+
+transfers: 
 

@@ -1,12 +1,26 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ce0037'
+    ref: NS
     name: North-South Line
-    type: subway
+    colour: '#ce0037'
     station_count: 13
+    type: subway
+    stations: 
+      - Lebak Bulus
+      - Fatmawati
+      - Cipete Raya
+      - Haji Nawi
+      - Blok A
+      - Blok M
+      - ASEAN
+      - Senayan
+      - Istora
+      - Bendungan Hilir
+      - Setiabudi
+      - Dukuh Atas
+      - Bundaran HI
+
     itineraries: 
       r9677669: 
         - Lebak Bulus (n6577753463)
@@ -39,22 +53,6 @@ routes:
         - Lebak Bulus (n6577753463)
 
 
-    stations: 
-      - Lebak Bulus
-      - Fatmawati
-      - Cipete Raya
-      - Haji Nawi
-      - Blok A
-      - Blok M
-      - ASEAN
-      - Senayan
-      - Istora
-      - Bendungan Hilir
-      - Setiabudi
-      - Dukuh Atas
-      - Bundaran HI
-
-    ref: NS
 
 stations: 
   - ASEAN (n4695686975)
@@ -70,4 +68,6 @@ stations:
   - Senayan (n6196107724)
   - Setiabudi (n6196107721)
   - Stasiun MRT Bendungan Hilir (n6196107722)
+
+transfers: 
 

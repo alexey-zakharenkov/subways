@@ -1,15 +1,18 @@
 
-transfers: 
-  - 
-    - Idu (r9122493)
-    - Idu (r9122739)
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: Blue
     name: Blue Line
-    type: light_rail
+    colour: '#0000ff'
     station_count: 5
+    type: light_rail
+    stations: 
+      - Gbazango
+      - Kagini
+      - Deidei
+      - Gwagwa
+      - Idu
+
     itineraries: 
       r8442723: 
         - Gbazango (n5754381303)
@@ -26,19 +29,22 @@ routes:
         - Gbazango (n5754381303)
 
 
-    stations: 
-      - Idu
-      - Gwagwa
-      - Deidei
-      - Kagini
-      - Gbazango
-
-    ref: Blue
   - 
-    colour: '#ffff00'
+    ref: Yellow
     name: Yellow Line
-    type: light_rail
+    colour: '#ffff00'
     station_count: 8
+    type: light_rail
+    stations: 
+      - Abuja Metro
+      - Stadium
+      - Kukwaba I
+      - Kukwaba II
+      - Wupa
+      - Idu
+      - Bassanjiwa
+      - Airport
+
     itineraries: 
       r8441841: 
         - Abuja Metro (n2176898978)
@@ -61,17 +67,6 @@ routes:
         - Abuja Metro (n2176898978)
 
 
-    stations: 
-      - Abuja Metro
-      - Stadium
-      - Kukwaba I
-      - Kukwaba II
-      - Wupa
-      - Idu
-      - Bassanjiwa
-      - Airport
-
-    ref: Yellow
 
 stations: 
   - Abuja Metro (n2176898978)
@@ -86,4 +81,9 @@ stations:
   - Kukwaba II (n5754032230)
   - Stadium (n5754032239)
   - Wupa (n5754031515)
+
+transfers: 
+  - 
+    - Idu (r9122493)
+    - Idu (r9122739)
 

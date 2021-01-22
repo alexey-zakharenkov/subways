@@ -1,66 +1,11 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    ref: Metrotranvía
     name: Metrotranvía Urbano
-    type: light_rail
+    colour: '#ff0000'
     station_count: 24
-    itineraries: 
-      r2119332: 
-        - Avellaneda (n7067998372)
-        - Marcos Burgos (n7067998371)
-        - General Espejo (n7089845000)
-        - Patricias Mendocinas (n7089844999)
-        - San Miguel (n7089844998)
-        - Damián Hudson (n7089862693)
-        - Lugones (n7063751285)
-        - Coronel Moldes (n7089852934)
-        - Suipacha (n7089853255)
-        - Mendoza (n7063751287)
-        - Belgrano (n7063751286)
-        - Pedro Molina (n7063747983)
-        - 25 de Mayo (n7063747984)
-        - Pellegrini (n7067998373)
-        - San Martín (n7067998375)
-        - Godoy Cruz (n7080840925)
-        - Progreso (n7066080935)
-        - Independencia (n7066080930)
-        - 9 de Julio (n7066080931)
-        - Luzuriaga (n7066080932)
-        - Piedra Buena (n7066080933)
-        - Alta Italia (n7066080936)
-        - Maza (n7066080934)
-        - Gutiérrez (n7098749745)
-
-      r3413331: 
-        - Gutiérrez (n7098749745)
-        - Maza (n7066080934)
-        - Alta Italia (n7066080936)
-        - Piedra Buena (n7066080933)
-        - Luzuriaga (n7066080932)
-        - 9 de Julio (n7066080931)
-        - Independencia (n7066080930)
-        - Progreso (n7066080935)
-        - Godoy Cruz (n7080840925)
-        - San Martín (n7067998375)
-        - Pellegrini (n7067998373)
-        - 25 de Mayo (n7063747984)
-        - Pedro Molina (n7063747983)
-        - Belgrano (n7063751286)
-        - Mendoza (n7063751287)
-        - Suipacha (n7089853255)
-        - Coronel Moldes (n7089852934)
-        - Lugones (n7063751285)
-        - Damián Hudson (n7089862693)
-        - San Miguel (n7089844998)
-        - Patricias Mendocinas (n7089844999)
-        - General Espejo (n7089845000)
-        - Marcos Burgos (n7067998371)
-        - Avellaneda (n7067998372)
-
-
+    type: light_rail
     stations: 
       - Avellaneda
       - Marcos Burgos
@@ -87,7 +32,60 @@ routes:
       - Maza
       - Gutiérrez
 
-    ref: Metrotranvía
+    itineraries: 
+      r3413331: 
+        - Gutiérrez (n7098749745)
+        - Maza (n7066080934)
+        - Alta Italia (n7066080936)
+        - Piedra Buena (n7066080933)
+        - Luzuriaga (n7066080932)
+        - 9 de Julio (n7066080931)
+        - Independencia (n7066080930)
+        - Progreso (n7066080935)
+        - Godoy Cruz (n7080840925)
+        - San Martín (n7067998375)
+        - Pellegrini (n7067998373)
+        - 25 de Mayo (n7063747984)
+        - Pedro Molina (n7063747983)
+        - Belgrano (n7063751286)
+        - Mendoza (n7063751287)
+        - Suipacha (n7089853255)
+        - Coronel Moldes (n7089852934)
+        - Lugones (n7063751285)
+        - Damián Hudson (n7089862693)
+        - San Miguel (n7089844998)
+        - Patricias Mendocinas (n7089844999)
+        - General Espejo (n7089845000)
+        - Marcos Burgos (n7067998371)
+        - Avellaneda (n7067998372)
+
+      r2119332: 
+        - Avellaneda (n7067998372)
+        - Marcos Burgos (n7067998371)
+        - General Espejo (n7089845000)
+        - Patricias Mendocinas (n7089844999)
+        - San Miguel (n7089844998)
+        - Damián Hudson (n7089862693)
+        - Lugones (n7063751285)
+        - Coronel Moldes (n7089852934)
+        - Suipacha (n7089853255)
+        - Mendoza (n7063751287)
+        - Belgrano (n7063751286)
+        - Pedro Molina (n7063747983)
+        - 25 de Mayo (n7063747984)
+        - Pellegrini (n7067998373)
+        - San Martín (n7067998375)
+        - Godoy Cruz (n7080840925)
+        - Progreso (n7066080935)
+        - Independencia (n7066080930)
+        - 9 de Julio (n7066080931)
+        - Luzuriaga (n7066080932)
+        - Piedra Buena (n7066080933)
+        - Alta Italia (n7066080936)
+        - Maza (n7066080934)
+        - Gutiérrez (n7098749745)
+
+
 
 stations: 
   - 25 de Mayo (n7063747984)
@@ -114,4 +112,6 @@ stations:
   - San Martín (n7067998375)
   - San Miguel (n7089844998)
   - Suipacha (n7089853255)
+
+transfers: 
 

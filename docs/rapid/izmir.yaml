@@ -1,12 +1,30 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: 2
     name: Fahrettin Altay-Evka 3
-    type: subway
+    colour: '#0000ff'
     station_count: 17
+    type: subway
+    stations: 
+      - Fahrettin Altay
+      - Poligon
+      - Göztepe
+      - Hatay
+      - İzmirspor
+      - Üçyol
+      - Konak
+      - Çankaya
+      - Basmane
+      - Hilal
+      - Halkapınar
+      - Stadyum
+      - Sanayi
+      - Bölge
+      - Bornova Metro Durağı
+      - Ege Üniversitesi
+      - Evka 3
+
     itineraries: 
       r7981826: 
         - Evka 3 (n5388472400)
@@ -47,26 +65,6 @@ routes:
         - Evka 3 (n5388472400)
 
 
-    stations: 
-      - Evka 3
-      - Ege Üniversitesi
-      - Bornova Metro Durağı
-      - Bölge
-      - Sanayi
-      - Stadyum
-      - Halkapınar
-      - Hilal
-      - Basmane
-      - Çankaya
-      - Konak
-      - Üçyol
-      - İzmirspor
-      - Hatay
-      - Göztepe
-      - Poligon
-      - Fahrettin Altay
-
-    ref: 2
 
 stations: 
   - Basmane (n7729209165)
@@ -86,4 +84,6 @@ stations:
   - Çankaya (n5388472391)
   - Üçyol (n5388472389)
   - İzmirspor (n5388472388)
+
+transfers: 
 

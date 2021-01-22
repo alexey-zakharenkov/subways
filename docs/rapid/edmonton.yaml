@@ -1,48 +1,11 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#3a59a9'
+    ref: 501
     name: Capital Line
-    type: light_rail
+    colour: '#3a59a9'
     station_count: 15
-    itineraries: 
-      r9730135: 
-        - Century Park (n6799872965)
-        - Southgate (n1813432369)
-        - South Campus/Fort Edmonton Park (n2067529107)
-        - McKernan/Belgravia (n2067535175)
-        - Health Sciences/Jubilee (n4237213143)
-        - University (n2525716100)
-        - Grandin (n6501293444)
-        - Corona (n247678753)
-        - Bay/Enterprise Square (n247678712)
-        - Central (n247678643)
-        - Churchill (n3225243182)
-        - Stadium (n4237411866)
-        - Coliseum (n2136199336)
-        - Belvedere (n2136199254)
-        - Clareview (n2061254572)
-
-      r1861588: 
-        - Clareview (n2061254572)
-        - Belvedere (n2136199254)
-        - Coliseum (n2136199336)
-        - Stadium (n4237411866)
-        - Churchill (n3225243182)
-        - Central (n247678643)
-        - Bay/Enterprise Square (n247678712)
-        - Corona (n247678753)
-        - Grandin (n6501293444)
-        - University (n2525716100)
-        - Health Sciences/Jubilee (n4237213143)
-        - McKernan/Belgravia (n2067535175)
-        - South Campus/Fort Edmonton Park (n2067529107)
-        - Southgate (n1813432369)
-        - Century Park (n6799872965)
-
-
+    type: light_rail
     stations: 
       - Century Park Transit Centre
       - Southgate LRT Station
@@ -60,12 +23,60 @@ routes:
       - Belvedere
       - Clareview
 
-    ref: 501
+    itineraries: 
+      r1861588: 
+        - Clareview (n2061254572)
+        - Belvedere (n2136199254)
+        - Coliseum (n2136199336)
+        - Stadium (n4237411866)
+        - Churchill (n3225243182)
+        - Central (n247678643)
+        - Bay/Enterprise Square (n247678712)
+        - Corona (n247678753)
+        - Grandin (n6501293444)
+        - University (n2525716100)
+        - Health Sciences/Jubilee (n4237213143)
+        - McKernan/Belgravia (n2067535175)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - Southgate (n1813432369)
+        - Century Park (n6799872965)
+
+      r9730135: 
+        - Century Park (n6799872965)
+        - Southgate (n1813432369)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - McKernan/Belgravia (n2067535175)
+        - Health Sciences/Jubilee (n4237213143)
+        - University (n2525716100)
+        - Grandin (n6501293444)
+        - Corona (n247678753)
+        - Bay/Enterprise Square (n247678712)
+        - Central (n247678643)
+        - Churchill (n3225243182)
+        - Stadium (n4237411866)
+        - Coliseum (n2136199336)
+        - Belvedere (n2136199254)
+        - Clareview (n2061254572)
+
+
   - 
-    colour: '#fc6357'
+    ref: 502
     name: Metro Line
-    type: light_rail
+    colour: '#fc6357'
     station_count: 10
+    type: light_rail
+    stations: 
+      - Health Sciences/Jubilee
+      - University
+      - Grandin
+      - Corona
+      - Bay/Enterprise Square
+      - Central
+      - Churchill
+      - MacEwan LRT Station
+      - Kingsway/Royal Alex
+      - NAIT
+
     itineraries: 
       r9730136: 
         - NAIT (w718989056)
@@ -92,19 +103,6 @@ routes:
         - NAIT (w718989056)
 
 
-    stations: 
-      - Health Sciences/Jubilee
-      - University
-      - Grandin
-      - Corona
-      - Bay/Enterprise Square
-      - Central
-      - Churchill
-      - MacEwan LRT Station
-      - Kingsway/Royal Alex
-      - NAIT
-
-    ref: 502
 
 stations: 
   - Bay/Enterprise Square (n247678712)
@@ -125,4 +123,6 @@ stations:
   - Southgate (n1813432369)
   - Stadium (n4237411866)
   - University (n2525716100)
+
+transfers: 
 

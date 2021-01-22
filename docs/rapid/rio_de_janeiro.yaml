@@ -1,15 +1,33 @@
 
-transfers: 
-  - 
-    - General Osório (Linha 1) (r7939633)
-    - General Osório (Linha 4) (r7939632)
-
 routes: 
   - 
-    colour: '#e77405'
+    ref: 1
     name: Metrô Rio Linha 1
-    type: subway
+    colour: '#e77405'
     station_count: 20
+    type: subway
+    stations: 
+      - Estação de Metrô Uruguai
+      - Saens Peña
+      - São Francisco Xavier
+      - Afonso Pena
+      - Estácio
+      - Praça Onze
+      - Central
+      - Presidente Vargas
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Carioca
+      - Cinelândia
+      - Glória
+      - Catete
+      - Largo do Machado
+      - Flamengo
+      - Botafogo
+      - Cardeal Arcoverde
+      - Siqueira Campos
+      - Cantagalo
+      - General Osório (Linha 1)
+
     itineraries: 
       r7944060: 
         - General Osório (n5367720224)
@@ -56,63 +74,41 @@ routes:
         - General Osório (n5367720224)
 
 
-    stations: 
-      - Estação de Metrô Uruguai
-      - Saens Peña
-      - São Francisco Xavier
-      - Afonso Pena
-      - Estácio
-      - Praça Onze
-      - Central
-      - Presidente Vargas
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Carioca
-      - Cinelândia
-      - Glória
-      - Catete
-      - Largo do Machado
-      - Flamengo
-      - Botafogo
-      - Cardeal Arcoverde
-      - Siqueira Campos
-      - Cantagalo
-      - General Osório (Linha 1)
-
-    ref: 1
   - 
-    colour: '#028f34'
+    ref: 2
     name: Metrô Rio Linha 2
-    type: subway
+    colour: '#028f34'
     station_count: 26
-    itineraries: 
-      r4292975: 
-        - Botafogo (n506848463)
-        - Flamengo (n712849079)
-        - Largo do Machado (n712849086)
-        - Catete (n332517552)
-        - Glória (n180337351)
-        - Cinelândia (n712849094)
-        - Carioca (n712849053)
-        - Uruguaiana (n5284484734)
-        - Presidente Vargas (n2726866239)
-        - Central (n5365436833)
-        - Cidade Nova (n974274513)
-        - São Cristóvão (n712849019)
-        - Maracanã (n712849010)
-        - Triagem (n712849014)
-        - Maria da Graça (n712849002)
-        - Nova América / Del Castilho (n712849005)
-        - Inhaúma (n712849006)
-        - Engenho da Rainha (n712849008)
-        - Thomáz Coelho (n712848995)
-        - Vicente de Carvalho (n712848997)
-        - Irajá (n712848999)
-        - Colégio (n712849000)
-        - Coelho Neto (n712848988)
-        - Acari / Fazenda Botafogo (n712848989)
-        - Engenheiro Rubens Paiva (n712848991)
-        - Pavuna (n5362542035)
+    type: subway
+    stations: 
+      - Botafogo
+      - Flamengo
+      - Largo do Machado
+      - Catete
+      - Glória
+      - Cinelândia
+      - Carioca
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Presidente Vargas
+      - Central
+      - Cidade Nova
+      - São Cristóvão (Metrô)
+      - Maracanã (Metrô)
+      - Triagem (Metrô)
+      - Maria da Graça
+      - Nova América / Del Castilho
+      - Inhaúma
+      - Engenho da Rainha
+      - Thomáz Coelho
+      - Vicente de Carvalho
+      - Irajá
+      - Colégio
+      - Coelho Neto
+      - Acari / Fazenda Botafogo
+      - Engenheiro Rubens Paiva
+      - Pavuna
 
+    itineraries: 
       r285324: 
         - Pavuna (n5362542035)
         - Engenheiro Rubens Paiva (n712848991)
@@ -141,41 +137,49 @@ routes:
         - Flamengo (n712849079)
         - Botafogo (n506848463)
 
+      r4292975: 
+        - Botafogo (n506848463)
+        - Flamengo (n712849079)
+        - Largo do Machado (n712849086)
+        - Catete (n332517552)
+        - Glória (n180337351)
+        - Cinelândia (n712849094)
+        - Carioca (n712849053)
+        - Uruguaiana (n5284484734)
+        - Presidente Vargas (n2726866239)
+        - Central (n5365436833)
+        - Cidade Nova (n974274513)
+        - São Cristóvão (n712849019)
+        - Maracanã (n712849010)
+        - Triagem (n712849014)
+        - Maria da Graça (n712849002)
+        - Nova América / Del Castilho (n712849005)
+        - Inhaúma (n712849006)
+        - Engenho da Rainha (n712849008)
+        - Thomáz Coelho (n712848995)
+        - Vicente de Carvalho (n712848997)
+        - Irajá (n712848999)
+        - Colégio (n712849000)
+        - Coelho Neto (n712848988)
+        - Acari / Fazenda Botafogo (n712848989)
+        - Engenheiro Rubens Paiva (n712848991)
+        - Pavuna (n5362542035)
 
-    stations: 
-      - Pavuna
-      - Engenheiro Rubens Paiva
-      - Acari / Fazenda Botafogo
-      - Coelho Neto
-      - Colégio
-      - Irajá
-      - Vicente de Carvalho
-      - Thomáz Coelho
-      - Engenho da Rainha
-      - Inhaúma
-      - Nova América / Del Castilho
-      - Maria da Graça
-      - Triagem (Metrô)
-      - Maracanã (Metrô)
-      - São Cristóvão (Metrô)
-      - Cidade Nova
-      - Central
-      - Presidente Vargas
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Carioca
-      - Cinelândia
-      - Glória
-      - Catete
-      - Largo do Machado
-      - Flamengo
-      - Botafogo
 
-    ref: 2
   - 
-    colour: '#ffcc29'
+    ref: 4
     name: 'Linha 4: General Osório ↔ Jardim Oceânico'
-    type: subway
+    colour: '#ffcc29'
     station_count: 6
+    type: subway
+    stations: 
+      - Jardim Oceânico
+      - São Conrado
+      - Antero de Quental
+      - Jardim de Alah
+      - Nossa Senhora da Paz
+      - General Osório (Linha 4)
+
     itineraries: 
       r6432701: 
         - Jardim Oceânico (n5302148205)
@@ -194,15 +198,6 @@ routes:
         - Jardim Oceânico (n5302148205)
 
 
-    stations: 
-      - General Osório (Linha 4)
-      - Nossa Senhora da Paz
-      - Jardim de Alah
-      - Antero de Quental
-      - São Conrado
-      - Jardim Oceânico
-
-    ref: 4
 
 stations: 
   - Acari / Fazenda Botafogo (n712848989)
@@ -246,4 +241,9 @@ stations:
   - Uruguai (n1784229907)
   - Uruguaiana (n5284484734)
   - Vicente de Carvalho (n712848997)
+
+transfers: 
+  - 
+    - General Osório (Linha 1) (r7939633)
+    - General Osório (Linha 4) (r7939632)
 

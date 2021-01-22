@@ -1,16 +1,97 @@
 
-transfers: 
-  - 
-    - 'Beurs - A,B,C (r7685906)'
-    - 'Beurs - D,E (r7685870)'
-
 routes: 
   - 
-    colour: '#00aa50'
+    ref: A
     name: Metro A
-    type: subway
+    colour: '#00aa50'
     station_count: 24
+    type: subway
+    stations: 
+      - Binnenhof
+      - Romeynshof
+      - Graskruid
+      - Rotterdam Alexander
+      - Oosterflank
+      - Prinsenlaan
+      - Schenkel
+      - Capelsebrug
+      - Kralingse Zoom
+      - Voorschoterlaan
+      - Gerdesiaweg
+      - Oostplein
+      - Rotterdam Blaak
+      - 'Beurs - A,B,C'
+      - Eendrachtsplein
+      - Dijkzigt
+      - Coolhaven
+      - Delfshaven
+      - Marconiplein
+      - Schiedam Centrum
+      - Vlaardingen West
+      - Vlaardingen Centrum
+      - Vlaardingen Oost
+      - Schiedam Nieuwland
+
     itineraries: 
+      r11174054: 
+        - Binnenhof (n4048801940)
+        - Romeynshof (n4048801963)
+        - Graskruid (n4048801950)
+        - Alexander (n6501644177)
+        - Oosterflank (n4048801958)
+        - Prinsenlaan (n4048801962)
+        - Schenkel (n4048801968)
+        - Capelsebrug (n4048801942)
+        - Kralingse Zoom (n4048801954)
+        - Voorschoterlaan (n4048801974)
+        - Gerdesiaweg (n4048801949)
+        - Oostplein (n4048801959)
+        - Rotterdam Blaak (n4048801966)
+        - Beurs (n3149917961)
+        - Eendrachtsplein (n4048801948)
+        - Dijkzigt (n4048801947)
+        - Coolhaven (n4048801943)
+        - Delfshaven (n4048801946)
+        - Marconiplein (w275004894)
+        - Schiedam Centrum (n4048801969)
+
+      r2785673: 
+        - Vlaardingen West (n44324523)
+        - Vlaardingen Centrum (n5320428567)
+        - Vlaardingen Oost (n5320427711)
+        - Schiedam Nieuwland (n5320433276)
+        - Schiedam Centrum (n4048801969)
+        - Marconiplein (w275004894)
+        - Delfshaven (n4048801946)
+        - Coolhaven (n4048801943)
+        - Dijkzigt (n4048801947)
+        - Eendrachtsplein (n4048801948)
+        - Beurs (n3149917961)
+        - Rotterdam Blaak (n4048801966)
+        - Oostplein (n4048801959)
+        - Gerdesiaweg (n4048801949)
+        - Voorschoterlaan (n4048801974)
+        - Kralingse Zoom (n4048801954)
+        - Capelsebrug (n4048801942)
+        - Schenkel (n4048801968)
+        - Prinsenlaan (n4048801962)
+        - Oosterflank (n4048801958)
+        - Alexander (n6501644177)
+        - Graskruid (n4048801950)
+        - Romeynshof (n4048801963)
+        - Binnenhof (n4048801940)
+
+      r11174057: 
+        - Binnenhof (n4048801940)
+        - Romeynshof (n4048801963)
+        - Graskruid (n4048801950)
+        - Alexander (n6501644177)
+        - Oosterflank (n4048801958)
+        - Prinsenlaan (n4048801962)
+        - Schenkel (n4048801968)
+        - Capelsebrug (n4048801942)
+        - Kralingse Zoom (n4048801954)
+
       r11174056: 
         - Kralingse Zoom (n4048801954)
         - Capelsebrug (n4048801942)
@@ -48,32 +129,6 @@ routes:
         - Vlaardingen Centrum (n5320428567)
         - Vlaardingen West (n44324523)
 
-      r2785673: 
-        - Vlaardingen West (n44324523)
-        - Vlaardingen Centrum (n5320428567)
-        - Vlaardingen Oost (n5320427711)
-        - Schiedam Nieuwland (n5320433276)
-        - Schiedam Centrum (n4048801969)
-        - Marconiplein (w275004894)
-        - Delfshaven (n4048801946)
-        - Coolhaven (n4048801943)
-        - Dijkzigt (n4048801947)
-        - Eendrachtsplein (n4048801948)
-        - Beurs (n3149917961)
-        - Rotterdam Blaak (n4048801966)
-        - Oostplein (n4048801959)
-        - Gerdesiaweg (n4048801949)
-        - Voorschoterlaan (n4048801974)
-        - Kralingse Zoom (n4048801954)
-        - Capelsebrug (n4048801942)
-        - Schenkel (n4048801968)
-        - Prinsenlaan (n4048801962)
-        - Oosterflank (n4048801958)
-        - Alexander (n6501644177)
-        - Graskruid (n4048801950)
-        - Romeynshof (n4048801963)
-        - Binnenhof (n4048801940)
-
       r11174055: 
         - Schiedam Centrum (n4048801969)
         - Marconiplein (w275004894)
@@ -96,41 +151,22 @@ routes:
         - Romeynshof (n4048801963)
         - Binnenhof (n4048801940)
 
-      r11174054: 
-        - Binnenhof (n4048801940)
-        - Romeynshof (n4048801963)
-        - Graskruid (n4048801950)
-        - Alexander (n6501644177)
-        - Oosterflank (n4048801958)
-        - Prinsenlaan (n4048801962)
-        - Schenkel (n4048801968)
-        - Capelsebrug (n4048801942)
-        - Kralingse Zoom (n4048801954)
-        - Voorschoterlaan (n4048801974)
-        - Gerdesiaweg (n4048801949)
-        - Oostplein (n4048801959)
-        - Rotterdam Blaak (n4048801966)
-        - Beurs (n3149917961)
-        - Eendrachtsplein (n4048801948)
-        - Dijkzigt (n4048801947)
-        - Coolhaven (n4048801943)
-        - Delfshaven (n4048801946)
-        - Marconiplein (w275004894)
-        - Schiedam Centrum (n4048801969)
 
-      r11174057: 
-        - Binnenhof (n4048801940)
-        - Romeynshof (n4048801963)
-        - Graskruid (n4048801950)
-        - Alexander (n6501644177)
-        - Oosterflank (n4048801958)
-        - Prinsenlaan (n4048801962)
-        - Schenkel (n4048801968)
-        - Capelsebrug (n4048801942)
-        - Kralingse Zoom (n4048801954)
-
-
+  - 
+    ref: B
+    name: Metro B
+    colour: '#ffd301'
+    station_count: 31
+    type: subway
     stations: 
+      - Hoek van Holland Haven
+      - Steendijkpolder
+      - Maassluis West
+      - Maassluis Centrum
+      - Vlaardingen West
+      - Vlaardingen Centrum
+      - Vlaardingen Oost
+      - Schiedam Nieuwland
       - Schiedam Centrum
       - Marconiplein
       - Delfshaven
@@ -149,19 +185,12 @@ routes:
       - Oosterflank
       - Rotterdam Alexander
       - Graskruid
-      - Romeynshof
-      - Binnenhof
-      - Schiedam Nieuwland
-      - Vlaardingen Oost
-      - Vlaardingen Centrum
-      - Vlaardingen West
+      - Hesseplaats
+      - Nieuw Verlaat
+      - Ambachtsland
+      - De Tochten
+      - Nesselande
 
-    ref: A
-  - 
-    colour: '#ffd301'
-    name: Metro B
-    type: subway
-    station_count: 31
     itineraries: 
       r2785674: 
         - Nesselande (n4048801956)
@@ -195,6 +224,38 @@ routes:
         - Maassluis West (n5320436262)
         - Steendijkpolder (n6202080926)
         - Hoek van Holland Haven (n6206333075)
+
+      r11171044: 
+        - Steendijkpolder (n6202080926)
+        - Maassluis West (n5320436262)
+        - Maassluis Centrum (n5320431173)
+        - Vlaardingen West (n44324523)
+        - Vlaardingen Centrum (n5320428567)
+        - Vlaardingen Oost (n5320427711)
+        - Schiedam Nieuwland (n5320433276)
+        - Schiedam Centrum (n4048801969)
+        - Marconiplein (w275004894)
+        - Delfshaven (n4048801946)
+        - Coolhaven (n4048801943)
+        - Dijkzigt (n4048801947)
+        - Eendrachtsplein (n4048801948)
+        - Beurs (n3149917961)
+        - Rotterdam Blaak (n4048801966)
+        - Oostplein (n4048801959)
+        - Gerdesiaweg (n4048801949)
+        - Voorschoterlaan (n4048801974)
+        - Kralingse Zoom (n4048801954)
+        - Capelsebrug (n4048801942)
+        - Schenkel (n4048801968)
+        - Prinsenlaan (n4048801962)
+        - Oosterflank (n4048801958)
+        - Alexander (n6501644177)
+        - Graskruid (n4048801950)
+        - Hesseplaats (n4048801951)
+        - Nieuw Verlaat (n4048801957)
+        - Ambachtsland (n4048801939)
+        - De Tochten (n4048801945)
+        - Nesselande (n4048801956)
 
       r11171043: 
         - Nesselande (n4048801956)
@@ -261,136 +322,13 @@ routes:
         - De Tochten (n4048801945)
         - Nesselande (n4048801956)
 
-      r11171044: 
-        - Steendijkpolder (n6202080926)
-        - Maassluis West (n5320436262)
-        - Maassluis Centrum (n5320431173)
-        - Vlaardingen West (n44324523)
-        - Vlaardingen Centrum (n5320428567)
-        - Vlaardingen Oost (n5320427711)
-        - Schiedam Nieuwland (n5320433276)
-        - Schiedam Centrum (n4048801969)
-        - Marconiplein (w275004894)
-        - Delfshaven (n4048801946)
-        - Coolhaven (n4048801943)
-        - Dijkzigt (n4048801947)
-        - Eendrachtsplein (n4048801948)
-        - Beurs (n3149917961)
-        - Rotterdam Blaak (n4048801966)
-        - Oostplein (n4048801959)
-        - Gerdesiaweg (n4048801949)
-        - Voorschoterlaan (n4048801974)
-        - Kralingse Zoom (n4048801954)
-        - Capelsebrug (n4048801942)
-        - Schenkel (n4048801968)
-        - Prinsenlaan (n4048801962)
-        - Oosterflank (n4048801958)
-        - Alexander (n6501644177)
-        - Graskruid (n4048801950)
-        - Hesseplaats (n4048801951)
-        - Nieuw Verlaat (n4048801957)
-        - Ambachtsland (n4048801939)
-        - De Tochten (n4048801945)
-        - Nesselande (n4048801956)
 
-
-    stations: 
-      - Steendijkpolder
-      - Maassluis West
-      - Maassluis Centrum
-      - Vlaardingen West
-      - Vlaardingen Centrum
-      - Vlaardingen Oost
-      - Schiedam Nieuwland
-      - Schiedam Centrum
-      - Marconiplein
-      - Delfshaven
-      - Coolhaven
-      - Dijkzigt
-      - Eendrachtsplein
-      - 'Beurs - A,B,C'
-      - Rotterdam Blaak
-      - Oostplein
-      - Gerdesiaweg
-      - Voorschoterlaan
-      - Kralingse Zoom
-      - Capelsebrug
-      - Schenkel
-      - Prinsenlaan
-      - Oosterflank
-      - Rotterdam Alexander
-      - Graskruid
-      - Hesseplaats
-      - Nieuw Verlaat
-      - Ambachtsland
-      - De Tochten
-      - Nesselande
-      - Hoek van Holland Haven
-
-    ref: B
   - 
-    colour: '#ef1f1f'
+    ref: C
     name: Metro C
-    type: subway
+    colour: '#ef1f1f'
     station_count: 26
-    itineraries: 
-      r2785676: 
-        - De Akkers (n3149917963)
-        - Heemraadlaan (n3149917964)
-        - Spijkenisse Centrum (n3149917979)
-        - Zalmplaat (n3149917985)
-        - Hoogvliet (n2288890193)
-        - Tussenwater (n3149917982)
-        - Pernis (n4048801961)
-        - Vijfsluizen (n4048801973)
-        - Troelstralaan (n4048801972)
-        - Parkweg (n4048801960)
-        - Schiedam Centrum (n4048801969)
-        - Marconiplein (w275004894)
-        - Delfshaven (n4048801946)
-        - Coolhaven (n4048801943)
-        - Dijkzigt (n4048801947)
-        - Eendrachtsplein (n4048801948)
-        - Beurs (n3149917961)
-        - Rotterdam Blaak (n4048801966)
-        - Oostplein (n4048801959)
-        - Gerdesiaweg (n4048801949)
-        - Voorschoterlaan (n4048801974)
-        - Kralingse Zoom (n4048801954)
-        - Capelsebrug (n4048801942)
-        - Slotlaan (n4048801971)
-        - Capelle Centrum (n4048801941)
-        - De Terp (n4048801944)
-
-      r2785677: 
-        - De Terp (n4048801944)
-        - Capelle Centrum (n4048801941)
-        - Slotlaan (n4048801971)
-        - Capelsebrug (n4048801942)
-        - Kralingse Zoom (n4048801954)
-        - Voorschoterlaan (n4048801974)
-        - Gerdesiaweg (n4048801949)
-        - Oostplein (n4048801959)
-        - Rotterdam Blaak (n4048801966)
-        - Beurs (n3149917961)
-        - Eendrachtsplein (n4048801948)
-        - Dijkzigt (n4048801947)
-        - Coolhaven (n4048801943)
-        - Delfshaven (n4048801946)
-        - Marconiplein (w275004894)
-        - Schiedam Centrum (n4048801969)
-        - Parkweg (n4048801960)
-        - Troelstralaan (n4048801972)
-        - Vijfsluizen (n4048801973)
-        - Pernis (n4048801961)
-        - Tussenwater (n3149917982)
-        - Hoogvliet (n2288890193)
-        - Zalmplaat (n3149917985)
-        - Spijkenisse Centrum (n3149917979)
-        - Heemraadlaan (n3149917964)
-        - De Akkers (n3149917963)
-
-
+    type: subway
     stations: 
       - De Akkers
       - Heemraadlaan
@@ -419,12 +357,89 @@ routes:
       - Capelle Centrum
       - De Terp
 
-    ref: C
+    itineraries: 
+      r2785677: 
+        - De Terp (n4048801944)
+        - Capelle Centrum (n4048801941)
+        - Slotlaan (n4048801971)
+        - Capelsebrug (n4048801942)
+        - Kralingse Zoom (n4048801954)
+        - Voorschoterlaan (n4048801974)
+        - Gerdesiaweg (n4048801949)
+        - Oostplein (n4048801959)
+        - Rotterdam Blaak (n4048801966)
+        - Beurs (n3149917961)
+        - Eendrachtsplein (n4048801948)
+        - Dijkzigt (n4048801947)
+        - Coolhaven (n4048801943)
+        - Delfshaven (n4048801946)
+        - Marconiplein (w275004894)
+        - Schiedam Centrum (n4048801969)
+        - Parkweg (n4048801960)
+        - Troelstralaan (n4048801972)
+        - Vijfsluizen (n4048801973)
+        - Pernis (n4048801961)
+        - Tussenwater (n3149917982)
+        - Hoogvliet (n2288890193)
+        - Zalmplaat (n3149917985)
+        - Spijkenisse Centrum (n3149917979)
+        - Heemraadlaan (n3149917964)
+        - De Akkers (n3149917963)
+
+      r2785676: 
+        - De Akkers (n3149917963)
+        - Heemraadlaan (n3149917964)
+        - Spijkenisse Centrum (n3149917979)
+        - Zalmplaat (n3149917985)
+        - Hoogvliet (n2288890193)
+        - Tussenwater (n3149917982)
+        - Pernis (n4048801961)
+        - Vijfsluizen (n4048801973)
+        - Troelstralaan (n4048801972)
+        - Parkweg (n4048801960)
+        - Schiedam Centrum (n4048801969)
+        - Marconiplein (w275004894)
+        - Delfshaven (n4048801946)
+        - Coolhaven (n4048801943)
+        - Dijkzigt (n4048801947)
+        - Eendrachtsplein (n4048801948)
+        - Beurs (n3149917961)
+        - Rotterdam Blaak (n4048801966)
+        - Oostplein (n4048801959)
+        - Gerdesiaweg (n4048801949)
+        - Voorschoterlaan (n4048801974)
+        - Kralingse Zoom (n4048801954)
+        - Capelsebrug (n4048801942)
+        - Slotlaan (n4048801971)
+        - Capelle Centrum (n4048801941)
+        - De Terp (n4048801944)
+
+
   - 
-    colour: '#1bc5e9'
+    ref: D
     name: Metro D
-    type: subway
+    colour: '#1bc5e9'
     station_count: 17
+    type: subway
+    stations: 
+      - Rotterdam Centraal
+      - Stadhuis
+      - 'Beurs - D,E'
+      - Leuvehaven
+      - Wilhelminaplein
+      - Rijnhaven
+      - Maashaven
+      - Zuidplein
+      - Slinge
+      - Rhoon
+      - Poortugaal
+      - Tussenwater
+      - Hoogvliet
+      - Zalmplaat
+      - Spijkenisse Centrum
+      - Heemraadlaan
+      - De Akkers
+
     itineraries: 
       r2785505: 
         - Rotterdam Centraal (n5193927668)
@@ -465,31 +480,37 @@ routes:
         - Rotterdam Centraal (n5193927668)
 
 
-    stations: 
-      - De Akkers
-      - Heemraadlaan
-      - Spijkenisse Centrum
-      - Zalmplaat
-      - Hoogvliet
-      - Tussenwater
-      - Poortugaal
-      - Rhoon
-      - Slinge
-      - Zuidplein
-      - Maashaven
-      - Rijnhaven
-      - Wilhelminaplein
-      - Leuvehaven
-      - 'Beurs - D,E'
-      - Stadhuis
-      - Rotterdam Centraal
-
-    ref: D
   - 
-    colour: '#1a389a'
+    ref: E
     name: Metro E
-    type: subway
+    colour: '#1a389a'
     station_count: 23
+    type: subway
+    stations: 
+      - Den Haag Centraal
+      - Den Haag Laan van NOI
+      - Voorburg 't Loo
+      - Leidschendam-Voorburg
+      - Forepark
+      - Leidschenveen Centrum
+      - Nootdorp
+      - Pijnacker Centrum
+      - Pijnacker Zuid
+      - Berkel Westpolder
+      - Rodenrijs
+      - Meijersplein
+      - Melanchthonweg
+      - Blijdorp
+      - Rotterdam Centraal
+      - Stadhuis
+      - 'Beurs - D,E'
+      - Leuvehaven
+      - Wilhelminaplein
+      - Rijnhaven
+      - Maashaven
+      - Zuidplein
+      - Slinge
+
     itineraries: 
       r2777286: 
         - Den Haag Centraal (n5267735554)
@@ -542,32 +563,6 @@ routes:
         - Den Haag Centraal (n5267735554)
 
 
-    stations: 
-      - Slinge
-      - Zuidplein
-      - Maashaven
-      - Rijnhaven
-      - Wilhelminaplein
-      - Leuvehaven
-      - 'Beurs - D,E'
-      - Stadhuis
-      - Rotterdam Centraal
-      - Blijdorp
-      - Melanchthonweg
-      - Meijersplein
-      - Rodenrijs
-      - Berkel Westpolder
-      - Pijnacker Zuid
-      - Pijnacker Centrum
-      - Nootdorp
-      - Leidschenveen Centrum
-      - Forepark
-      - Leidschendam-Voorburg
-      - Voorburg 't Loo
-      - Den Haag Laan van NOI
-      - Den Haag Centraal
-
-    ref: E
 
 stations: 
   - Alexander (n6501644177)
@@ -640,4 +635,9 @@ stations:
   - Wilhelminaplein (n3149917984)
   - Zalmplaat (n3149917985)
   - Zuidplein (n3149917986)
+
+transfers: 
+  - 
+    - 'Beurs - A,B,C (r7685906)'
+    - 'Beurs - D,E (r7685870)'
 

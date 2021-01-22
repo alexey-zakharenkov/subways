@@ -1,44 +1,11 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ffa500'
+    ref: M1
     name: M1
-    type: subway
+    colour: '#ffa500'
     station_count: 13
-    itineraries: 
-      r7838817: 
-        - Hastane (n5303145331)
-        - Anadolu Lisesi (n5303136066)
-        - Huzurevi (n5303130955)
-        - Mavi Bulvar (n5303130960)
-        - Yurt (n5303118157)
-        - Yeşilyurt (n5303116331)
-        - Fatih (n5303116352)
-        - Vilayet (n5303110220)
-        - İstiklal (n5303110219)
-        - Kocavezir (n5303110841)
-        - Hürriyet (n5303110862)
-        - Cumhuriyet (n5303110883)
-        - Akıncılar (n5303110898)
-
-      r7838816: 
-        - Akıncılar (n5303110898)
-        - Cumhuriyet (n5303110883)
-        - Hürriyet (n5303110862)
-        - Kocavezir (n5303110841)
-        - İstiklal (n5303110219)
-        - Vilayet (n5303110220)
-        - Fatih (n5303116352)
-        - Yeşilyurt (n5303116331)
-        - Yurt (n5303118157)
-        - Mavi Bulvar (n5303130960)
-        - Huzurevi (n5303130955)
-        - Anadolu Lisesi (n5303136066)
-        - Hastane (n5303145331)
-
-
+    type: subway
     stations: 
       - Hastane
       - Anadolu Lisesi
@@ -54,7 +21,38 @@ routes:
       - Cumhuriyet
       - Akıncılar
 
-    ref: M1
+    itineraries: 
+      r7838816: 
+        - Akıncılar (n5303110898)
+        - Cumhuriyet (n5303110883)
+        - Hürriyet (n5303110862)
+        - Kocavezir (n5303110841)
+        - İstiklal (n5303110219)
+        - Vilayet (n5303110220)
+        - Fatih (n5303116352)
+        - Yeşilyurt (n5303116331)
+        - Yurt (n5303118157)
+        - Mavi Bulvar (n5303130960)
+        - Huzurevi (n5303130955)
+        - Anadolu Lisesi (n5303136066)
+        - Hastane (n5303145331)
+
+      r7838817: 
+        - Hastane (n5303145331)
+        - Anadolu Lisesi (n5303136066)
+        - Huzurevi (n5303130955)
+        - Mavi Bulvar (n5303130960)
+        - Yurt (n5303118157)
+        - Yeşilyurt (n5303116331)
+        - Fatih (n5303116352)
+        - Vilayet (n5303110220)
+        - İstiklal (n5303110219)
+        - Kocavezir (n5303110841)
+        - Hürriyet (n5303110862)
+        - Cumhuriyet (n5303110883)
+        - Akıncılar (n5303110898)
+
+
 
 stations: 
   - Akıncılar (n5303110898)
@@ -70,4 +68,6 @@ stations:
   - Yeşilyurt (n5303116331)
   - Yurt (n5303118157)
   - İstiklal (n5303110219)
+
+transfers: 
 

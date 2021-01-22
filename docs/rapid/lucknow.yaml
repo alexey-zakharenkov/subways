@@ -1,12 +1,34 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#ff0000'
+    ref: 1
     name: Red Line
-    type: subway
+    colour: '#ff0000'
     station_count: 21
+    type: subway
+    stations: 
+      - Chaudhary Charan Singh International Airport
+      - Amausi
+      - Transport Nagar
+      - Krishna Nagar
+      - Singar Nagar
+      - Alambagh
+      - Alambagh Bus Station
+      - Mawaiya
+      - Durgapuri
+      - Charbagh Railway Station
+      - Hussainganj
+      - Sachivalaya
+      - Hazratganj
+      - KD Singh Babu Stadium
+      - Lucknow University
+      - IT College
+      - Badshah Nagar
+      - Lekhraj Market
+      - Bhootnath Market
+      - Indira Nagar
+      - Munshipulia
+
     itineraries: 
       r8299496: 
         - Munshipulia (n6444506071)
@@ -55,30 +77,6 @@ routes:
         - Munshipulia (n6444506071)
 
 
-    stations: 
-      - Munshipulia
-      - Indira Nagar
-      - Bhootnath Market
-      - Lekhraj Market
-      - Badshah Nagar
-      - IT College
-      - Lucknow University
-      - KD Singh Babu Stadium
-      - Hazratganj
-      - Sachivalaya
-      - Hussainganj
-      - Charbagh Railway Station
-      - Durgapuri
-      - Mawaiya
-      - Alambagh Bus Station
-      - Alambagh
-      - Singar Nagar
-      - Krishna Nagar
-      - Transport Nagar
-      - Amausi
-      - Chaudhary Charan Singh International Airport
-
-    ref: 1
 
 stations: 
   - Alambagh (n3997322401)
@@ -102,4 +100,6 @@ stations:
   - Sachivalaya (n4244207745)
   - Singar Nagar (n3997322776)
   - Transport Nagar (n8006089161)
+
+transfers: 
 

@@ -1,99 +1,41 @@
 
-transfers: 
-  - 
-    - Alameda (Metrotren) (r9993648)
-    - Estación Central (Metro) (r6346692)
-  - 
-    - Baquedano (1) (r6345237)
-    - Baquedano (5) (r7732951)
-  - 
-    - Franklin (2) (r7732968)
-    - Franklin (6) (r7732969)
-  - 
-    - Irarrázabal (3) (r7732963)
-    - Irarrázabal (5) (r6363903)
-  - 
-    - La Cisterna (2) (r6354204)
-    - La Cisterna (4A) (r7732996)
-  - 
-    - Lo Valledor (Metro) (r7732966)
-    - Lo Valledor (Metrotren) (r9993705)
-  - 
-    - Los Héroes (1) (r6345439)
-    - Los Héroes (2) (r7732958)
-  - 
-    - Los Leones (1) (r6345094)
-    - Los Leones (6) (r7732946)
-  - 
-    - Metro Cal y Canto (2) (r6354107)
-    - Metro Cal y Canto (3) (r7732953)
-  - 
-    - Plaza Egaña (3) (r7732940)
-    - Plaza Egaña (4) (r6353776)
-  - 
-    - Plaza de Armas (3) (r7732954)
-    - Plaza de Armas (5) (r6364028)
-  - 
-    - San Pablo (1) (r6346936)
-    - San Pablo (5) (r7732945)
-  - 
-    - Santa Ana (2) (r6354112)
-    - Santa Ana (5) (r7732956)
-  - 
-    - Tobalaba (1) (r7732949)
-    - Tobalaba (4) (r7732947)
-  - 
-    - Universidad de Chile (1) (r6345307)
-    - Universidad de Chile (3) (r7732944)
-  - 
-    - Vicente Valdés (r6351466)
-    - Vicente Valdés (r9643717)
-  - 
-    - Vicuña Mackena (r6351469)
-    - Vicuña Mackena (r9643713)
-  - 
-    - Ñuble (5) (r7732964)
-    - Ñuble (6) (r6363895)
-  - 
-    - Ñuñoa (3) (r7732961)
-    - Ñuñoa (6) (r7732962)
-
 routes: 
   - 
-    colour: '#cc0000'
+    ref: 1
     name: Línea 1 del Metro de Santiago
-    type: subway
+    colour: '#cc0000'
     station_count: 27
-    itineraries: 
-      r2943868: 
-        - San Pablo (n668141380)
-        - Neptuno (n4519746485)
-        - Pajaritos (n253282383)
-        - Las Rejas (n253282379)
-        - Ecuador (n253282361)
-        - San Alberto Hurtado (n253282358)
-        - Universidad de Santiago (n253282351)
-        - Estación Central (n252528391)
-        - Unión Latinoamericana (n252528387)
-        - República (n252528383)
-        - Los Héroes (n2307244234)
-        - La Moneda (n3391796062)
-        - Universidad de Chile (n6506316372)
-        - Santa Lucía (n252527604)
-        - Universidad Católica (n252527603)
-        - Baquedano (n1157168087)
-        - Salvador (n520459156)
-        - Manuel Montt (n252527600)
-        - Pedro de Valdivia (n252527599)
-        - Los Leones (n5227884071)
-        - Tobalaba (n252527597)
-        - El Golf (n252527596)
-        - Alcántara (n252527592)
-        - Escuela Militar (n252527589)
-        - Manquehue (n390998417)
-        - Hernando de Magallanes (n390998425)
-        - Los Dominicos (n390998430)
+    type: subway
+    stations: 
+      - Entradas Metro Los Dominicos
+      - Entrada Metro Hernando de Magallanes
+      - Entradas Metro Manquehue
+      - Entradas Metro Escuela Militar
+      - Entradas Metro Alcántara
+      - Entradas Metro el Golf
+      - Tobalaba (1)
+      - Los Leones (1)
+      - Entradas Metro Pedro de Valdivia
+      - Entradas Metro Manuel Montt
+      - Entradas Metro Salvador
+      - Baquedano (1)
+      - Entradas Metro Universidad Católica
+      - Entradas Metro Santa Lucía
+      - Universidad de Chile (1)
+      - Entradas Metro Moneda
+      - Los Héroes (1)
+      - Entradas Metro República
+      - Entradas estación ULA
+      - Estación Central (Metro)
+      - Entradas Metro República
+      - Entradas Metro San Alberto Hurtado
+      - Entradas Metro Ecuador
+      - Entradas Metro Las Rejas
+      - Entradas Metro Pajaritos
+      - Entradas Metro Neptuno
+      - San Pablo (1)
 
+    itineraries: 
       r444963: 
         - Los Dominicos (n390998430)
         - Hernando de Magallanes (n390998425)
@@ -123,92 +65,42 @@ routes:
         - Neptuno (n4519746485)
         - San Pablo (n668141380)
 
+      r2943868: 
+        - San Pablo (n668141380)
+        - Neptuno (n4519746485)
+        - Pajaritos (n253282383)
+        - Las Rejas (n253282379)
+        - Ecuador (n253282361)
+        - San Alberto Hurtado (n253282358)
+        - Universidad de Santiago (n253282351)
+        - Estación Central (n252528391)
+        - Unión Latinoamericana (n252528387)
+        - República (n252528383)
+        - Los Héroes (n2307244234)
+        - La Moneda (n3391796062)
+        - Universidad de Chile (n6506316372)
+        - Santa Lucía (n252527604)
+        - Universidad Católica (n252527603)
+        - Baquedano (n1157168087)
+        - Salvador (n520459156)
+        - Manuel Montt (n252527600)
+        - Pedro de Valdivia (n252527599)
+        - Los Leones (n5227884071)
+        - Tobalaba (n252527597)
+        - El Golf (n252527596)
+        - Alcántara (n252527592)
+        - Escuela Militar (n252527589)
+        - Manquehue (n390998417)
+        - Hernando de Magallanes (n390998425)
+        - Los Dominicos (n390998430)
 
-    stations: 
-      - San Pablo (1)
-      - Entradas Metro Neptuno
-      - Entradas Metro Pajaritos
-      - Entradas Metro Las Rejas
-      - Entradas Metro Ecuador
-      - Entradas Metro San Alberto Hurtado
-      - Entradas Metro República
-      - Estación Central (Metro)
-      - Entradas estación ULA
-      - Entradas Metro República
-      - Los Héroes (1)
-      - Entradas Metro Moneda
-      - Universidad de Chile (1)
-      - Entradas Metro Santa Lucía
-      - Entradas Metro Universidad Católica
-      - Baquedano (1)
-      - Entradas Metro Salvador
-      - Entradas Metro Manuel Montt
-      - Entradas Metro Pedro de Valdivia
-      - Los Leones (1)
-      - Tobalaba (1)
-      - Entradas Metro el Golf
-      - Entradas Metro Alcántara
-      - Entradas Metro Escuela Militar
-      - Entradas Metro Manquehue
-      - Entrada Metro Hernando de Magallanes
-      - Entradas Metro Los Dominicos
 
-    ref: 1
   - 
-    colour: '#ffbe2e'
+    ref: 2
     name: Línea 2 del Metro de Santiago
-    type: subway
+    colour: '#ffbe2e'
     station_count: 22
-    itineraries: 
-      r3636603: 
-        - Vespucio Norte (n267078399)
-        - Zapadores (n265684322)
-        - Dorsal (n267077543)
-        - Einstein (n944490452)
-        - Cementerios (n265684316)
-        - Cerro Blanco (n944490442)
-        - Patronato (n944490419)
-        - Puente Cal y Canto (n6506316370)
-        - Santa Ana (n477827069)
-        - Los Héroes (n2307244234)
-        - Toesca (n141096340)
-        - Parque O'Higgins (n253360557)
-        - Rondizzoni (n227926453)
-        - Franklin (n4519756994)
-        - El Llano (n301699361)
-        - San Miguel (n301699379)
-        - Lo Vial (n301699645)
-        - Departamental (n301699773)
-        - Ciudad del Niño (n301699834)
-        - Lo Ovalle (n301699842)
-        - El Parrón (n301699913)
-        - La Cisterna (n5564321725)
-
-      r6657231: 
-        - La Cisterna (n5564321725)
-        - El Parrón (n301699913)
-        - Lo Ovalle (n301699842)
-        - Ciudad del Niño (n301699834)
-        - Departamental (n301699773)
-        - Lo Vial (n301699645)
-        - San Miguel (n301699379)
-        - El Llano (n301699361)
-        - Franklin (n4519756994)
-        - Rondizzoni (n227926453)
-        - Parque O'Higgins (n253360557)
-        - Toesca (n141096340)
-        - Los Héroes (n2307244234)
-        - Santa Ana (n477827069)
-        - Puente Cal y Canto (n6506316370)
-        - Patronato (n944490419)
-        - Cerro Blanco (n944490442)
-        - Cementerios (n265684316)
-        - Einstein (n944490452)
-        - Dorsal (n267077543)
-        - Zapadores (n265684322)
-        - Vespucio Norte (n267078399)
-
-
+    type: subway
     stations: 
       - La Cisterna (2)
       - Entradas Metro El Parrón
@@ -233,54 +125,62 @@ routes:
       - Entradas Metro Zapadores
       - Vespucio Norte
 
-    ref: 2
-  - 
-    colour: '#8b4513'
-    name: Línea 3 del Metro de Santiago
-    type: subway
-    station_count: 18
     itineraries: 
-      r2193874: 
-        - Los Libertadores (n2390287915)
-        - Cardenal Caro (n6228531487)
-        - Vivaceta (n6228531486)
-        - Conchalí (n6228531283)
-        - Plaza Chacabuco (n6228531280)
-        - Hospitales (n6228531279)
+      r6657231: 
+        - La Cisterna (n5564321725)
+        - El Parrón (n301699913)
+        - Lo Ovalle (n301699842)
+        - Ciudad del Niño (n301699834)
+        - Departamental (n301699773)
+        - Lo Vial (n301699645)
+        - San Miguel (n301699379)
+        - El Llano (n301699361)
+        - Franklin (n4519756994)
+        - Rondizzoni (n227926453)
+        - Parque O'Higgins (n253360557)
+        - Toesca (n141096340)
+        - Los Héroes (n2307244234)
+        - Santa Ana (n477827069)
         - Puente Cal y Canto (n6506316370)
-        - Plaza de Armas (n6231367141)
-        - Universidad de Chile (n6506316372)
-        - Parque Almagro (n6228531277)
-        - Matta (n6228531275)
-        - Irarrázaval (n6506316374)
-        - Monseñor Eyzaguirre (n1363217828)
-        - Ñuñoa (n6506316376)
-        - Chile España (n1894898784)
-        - Villa Frei (n1894900066)
-        - Plaza Egaña (n6506316379)
-        - Fernando Castillo Velasco (n6512675039)
+        - Patronato (n944490419)
+        - Cerro Blanco (n944490442)
+        - Cementerios (n265684316)
+        - Einstein (n944490452)
+        - Dorsal (n267077543)
+        - Zapadores (n265684322)
+        - Vespucio Norte (n267078399)
 
-      r9633217: 
-        - Fernando Castillo Velasco (n6512675039)
-        - Plaza Egaña (n6506316379)
-        - Villa Frei (n1894900066)
-        - Chile España (n1894898784)
-        - Ñuñoa (n6506316376)
-        - Monseñor Eyzaguirre (n1363217828)
-        - Irarrázaval (n6506316374)
-        - Matta (n6228531275)
-        - Parque Almagro (n6228531277)
-        - Universidad de Chile (n6506316372)
-        - Plaza de Armas (n6231367141)
+      r3636603: 
+        - Vespucio Norte (n267078399)
+        - Zapadores (n265684322)
+        - Dorsal (n267077543)
+        - Einstein (n944490452)
+        - Cementerios (n265684316)
+        - Cerro Blanco (n944490442)
+        - Patronato (n944490419)
         - Puente Cal y Canto (n6506316370)
-        - Hospitales (n6228531279)
-        - Plaza Chacabuco (n6228531280)
-        - Conchalí (n6228531283)
-        - Vivaceta (n6228531486)
-        - Cardenal Caro (n6228531487)
-        - Los Libertadores (n2390287915)
+        - Santa Ana (n477827069)
+        - Los Héroes (n2307244234)
+        - Toesca (n141096340)
+        - Parque O'Higgins (n253360557)
+        - Rondizzoni (n227926453)
+        - Franklin (n4519756994)
+        - El Llano (n301699361)
+        - San Miguel (n301699379)
+        - Lo Vial (n301699645)
+        - Departamental (n301699773)
+        - Ciudad del Niño (n301699834)
+        - Lo Ovalle (n301699842)
+        - El Parrón (n301699913)
+        - La Cisterna (n5564321725)
 
 
+  - 
+    ref: 3
+    name: Línea 3 del Metro de Santiago
+    colour: '#8b4513'
+    station_count: 18
+    type: subway
     stations: 
       - Entradas Metro Fernando Castillo Velasco
       - Plaza Egaña (3)
@@ -301,12 +201,79 @@ routes:
       - Cardenal Caro
       - Entradas Metro Los Libertadores
 
-    ref: 3
+    itineraries: 
+      r9633217: 
+        - Fernando Castillo Velasco (n6512675039)
+        - Plaza Egaña (n6506316379)
+        - Villa Frei (n1894900066)
+        - Chile España (n1894898784)
+        - Ñuñoa (n6506316376)
+        - Monseñor Eyzaguirre (n1363217828)
+        - Irarrázaval (n6506316374)
+        - Matta (n6228531275)
+        - Parque Almagro (n6228531277)
+        - Universidad de Chile (n6506316372)
+        - Plaza de Armas (n6231367141)
+        - Puente Cal y Canto (n6506316370)
+        - Hospitales (n6228531279)
+        - Plaza Chacabuco (n6228531280)
+        - Conchalí (n6228531283)
+        - Vivaceta (n6228531486)
+        - Cardenal Caro (n6228531487)
+        - Los Libertadores (n2390287915)
+
+      r2193874: 
+        - Los Libertadores (n2390287915)
+        - Cardenal Caro (n6228531487)
+        - Vivaceta (n6228531486)
+        - Conchalí (n6228531283)
+        - Plaza Chacabuco (n6228531280)
+        - Hospitales (n6228531279)
+        - Puente Cal y Canto (n6506316370)
+        - Plaza de Armas (n6231367141)
+        - Universidad de Chile (n6506316372)
+        - Parque Almagro (n6228531277)
+        - Matta (n6228531275)
+        - Irarrázaval (n6506316374)
+        - Monseñor Eyzaguirre (n1363217828)
+        - Ñuñoa (n6506316376)
+        - Chile España (n1894898784)
+        - Villa Frei (n1894900066)
+        - Plaza Egaña (n6506316379)
+        - Fernando Castillo Velasco (n6512675039)
+
+
   - 
-    colour: '#292d91'
+    ref: 4
     name: Línea 4 del Metro de Santiago
-    type: subway
+    colour: '#292d91'
     station_count: 23
+    type: subway
+    stations: 
+      - Entrada Metro Plaza Puente Alto
+      - Entradas Metro Las Mercedes
+      - Entrada Metro Protectora de la Infacia
+      - Entradas Metro Hospital Sótero del Río
+      - Entradas Metro Elisa Correa
+      - Entradas Metro Quillayes
+      - Entradas Metro José de la Estrella
+      - Entradas Metro Trinidad
+      - Entradas Metro Rojas Magallanes
+      - Vicente Valdés
+      - Vicuña Mackena
+      - Entrada Metro Macul
+      - Entradas Metro Las Torres
+      - Entradas Metro Quilín
+      - Entradas Metro Los Presidentes
+      - Entradas Metro Grecia
+      - Entradas Metro Los Orientales
+      - Plaza Egaña (4)
+      - Entradas Metro Simón Bolivar
+      - Entradas Metro Príncipe de Gales
+      - Francisco Bilbao
+      - Cristóbal Colón
+      - Tobalaba (4)
+
     itineraries: 
       r6657239: 
         - Plaza de Puente Alto (n491641302)
@@ -359,37 +326,20 @@ routes:
         - Plaza de Puente Alto (n491641302)
 
 
-    stations: 
-      - Tobalaba (4)
-      - Cristóbal Colón
-      - Francisco Bilbao
-      - Entradas Metro Príncipe de Gales
-      - Entradas Metro Simón Bolivar
-      - Plaza Egaña (4)
-      - Entradas Metro Los Orientales
-      - Entradas Metro Grecia
-      - Entradas Metro Los Presidentes
-      - Entradas Metro Quilín
-      - Entradas Metro Las Torres
-      - Entrada Metro Macul
-      - Vicuña Mackena
-      - Vicente Valdés
-      - Entradas Metro Rojas Magallanes
-      - Entradas Metro Trinidad
-      - Entradas Metro José de la Estrella
-      - Entradas Metro Quillayes
-      - Entradas Metro Elisa Correa
-      - Entradas Metro Hospital Sótero del Río
-      - Entrada Metro Protectora de la Infacia
-      - Entradas Metro Las Mercedes
-      - Entrada Metro Plaza Puente Alto
-
-    ref: 4
   - 
-    colour: '#0099ff'
+    ref: 4A
     name: 'Línea 4A: La Cisterna → Vicuña Mackenna'
-    type: subway
+    colour: '#0099ff'
     station_count: 6
+    type: subway
+    stations: 
+      - La Cisterna (4A)
+      - Entradas Metro San Ramón
+      - Entradas Metro Santa Rosa
+      - Entradas Metro La Granja
+      - Entradas Metro Santa Julia
+      - Vicuña Mackena
+
     itineraries: 
       r444982: 
         - Vicuña Mackenna (n6514765510)
@@ -408,53 +358,45 @@ routes:
         - Vicuña Mackenna (n6514765510)
 
 
-    stations: 
-      - La Cisterna (4A)
-      - Entradas Metro San Ramón
-      - Entradas Metro Santa Rosa
-      - Entradas Metro La Granja
-      - Entradas Metro Santa Julia
-      - Vicuña Mackena
-
-    ref: 4A
   - 
-    colour: '#006633'
+    ref: 5
     name: Línea 5 del Metro de Santiago
-    type: subway
+    colour: '#006633'
     station_count: 30
-    itineraries: 
-      r444964: 
-        - Plaza de Maipú (n3587889955)
-        - Santiago Bueras (n476917797)
-        - Del Sol (n549216801)
-        - Monte Tabor (n463084780)
-        - Las Parcelas (n463084774)
-        - Laguna Sur (n391008466)
-        - Barrancas (n391007642)
-        - Pudahuel (n475498017)
-        - San Pablo (n668141380)
-        - Lo Prado (n476909750)
-        - Blanqueado (n475498009)
-        - Gruta de Lourdes (n475498004)
-        - Quinta Normal (n254343697)
-        - Cumming (n253281419)
-        - Santa Ana (n477827069)
-        - Plaza de Armas (n6231367141)
-        - Bellas Artes (n253281389)
-        - Baquedano (n1157168087)
-        - Parque Bustamante (n475497992)
-        - Santa Isabel (n253294531)
-        - Irarrázaval (n6506316374)
-        - Ñuble (n615092336)
-        - Rodrigo de Araya (n253295184)
-        - Carlos Valdovinos (n253295179)
-        - Camino Agrícola (n253295175)
-        - San Joaquín (n4593692288)
-        - Pedrero (n253295163)
-        - Mirador (n253295159)
-        - Bellavista de La Florida (n256999811)
-        - Vicente Valdés (n6514737770)
+    type: subway
+    stations: 
+      - Vicente Valdés
+      - Entradas Metro Bellavista de la Florida
+      - Entradas Metro Mirador
+      - Entrada Metro Pedrero
+      - Entradas Metro San Joaquín
+      - Entrada Metro Camino Agrícola
+      - Entradas Metro Carlos Valdovinos
+      - Entrada Metro Rodrigo de Araya
+      - Ñuble (5)
+      - Irarrázabal (5)
+      - Entradas Metro Santa Isabel
+      - Entradas Metro Parque Bustamente
+      - Baquedano (5)
+      - Entrada Metro Bellas Artes
+      - Plaza de Armas (5)
+      - Santa Ana (5)
+      - Entradas Metro Cumming
+      - Entradas Metro Quinta Normal
+      - Entradas Metro Gruta Lourdes
+      - Entrada Metro Blanqueado
+      - Entradas Metro Lo Prado
+      - San Pablo (5)
+      - Entrada Metro Pudahuel
+      - Entradas Metro Barrancas
+      - Entrada Metro Laguna Sur
+      - Entrada Metro Las Parcelas
+      - Entrada Metro Montetabor
+      - Entradas Metro del Sol
+      - Entrada Metro Santiago Bueras
+      - Entradas Metro Plaza
 
+    itineraries: 
       r6657266: 
         - Vicente Valdés (n6514737770)
         - Bellavista de La Florida (n256999811)
@@ -487,45 +429,57 @@ routes:
         - Santiago Bueras (n476917797)
         - Plaza de Maipú (n3587889955)
 
+      r444964: 
+        - Plaza de Maipú (n3587889955)
+        - Santiago Bueras (n476917797)
+        - Del Sol (n549216801)
+        - Monte Tabor (n463084780)
+        - Las Parcelas (n463084774)
+        - Laguna Sur (n391008466)
+        - Barrancas (n391007642)
+        - Pudahuel (n475498017)
+        - San Pablo (n668141380)
+        - Lo Prado (n476909750)
+        - Blanqueado (n475498009)
+        - Gruta de Lourdes (n475498004)
+        - Quinta Normal (n254343697)
+        - Cumming (n253281419)
+        - Santa Ana (n477827069)
+        - Plaza de Armas (n6231367141)
+        - Bellas Artes (n253281389)
+        - Baquedano (n1157168087)
+        - Parque Bustamante (n475497992)
+        - Santa Isabel (n253294531)
+        - Irarrázaval (n6506316374)
+        - Ñuble (n615092336)
+        - Rodrigo de Araya (n253295184)
+        - Carlos Valdovinos (n253295179)
+        - Camino Agrícola (n253295175)
+        - San Joaquín (n4593692288)
+        - Pedrero (n253295163)
+        - Mirador (n253295159)
+        - Bellavista de La Florida (n256999811)
+        - Vicente Valdés (n6514737770)
 
-    stations: 
-      - Entradas Metro Plaza
-      - Entrada Metro Santiago Bueras
-      - Entradas Metro del Sol
-      - Entrada Metro Montetabor
-      - Entrada Metro Las Parcelas
-      - Entrada Metro Laguna Sur
-      - Entradas Metro Barrancas
-      - Entrada Metro Pudahuel
-      - San Pablo (5)
-      - Entradas Metro Lo Prado
-      - Entrada Metro Blanqueado
-      - Entradas Metro Gruta Lourdes
-      - Entradas Metro Quinta Normal
-      - Entradas Metro Cumming
-      - Santa Ana (5)
-      - Plaza de Armas (5)
-      - Entrada Metro Bellas Artes
-      - Baquedano (5)
-      - Entradas Metro Parque Bustamente
-      - Entradas Metro Santa Isabel
-      - Irarrázabal (5)
-      - Ñuble (5)
-      - Entrada Metro Rodrigo de Araya
-      - Entradas Metro Carlos Valdovinos
-      - Entrada Metro Camino Agrícola
-      - Entradas Metro San Joaquín
-      - Entrada Metro Pedrero
-      - Entradas Metro Mirador
-      - Entradas Metro Bellavista de la Florida
-      - Vicente Valdés
 
-    ref: 5
   - 
-    colour: '#8e16a1'
+    ref: 6
     name: Línea 6 del Metro de Santiago
-    type: subway
+    colour: '#8e16a1'
     station_count: 10
+    type: subway
+    stations: 
+      - Los Leones (6)
+      - Inés de Suárez
+      - Ñuñoa (6)
+      - Estadio Nacional
+      - Ñuble (6)
+      - Bío Bío
+      - Franklin (6)
+      - Presidente Pedro Aguirre Cerda
+      - Lo Valledor (Metro)
+      - Cerrillos
+
     itineraries: 
       r7732975: 
         - Los Leones (n5227884071)
@@ -552,50 +506,12 @@ routes:
         - Los Leones (n5227884071)
 
 
-    stations: 
-      - Los Leones (6)
-      - Inés de Suárez
-      - Ñuñoa (6)
-      - Estadio Nacional
-      - Ñuble (6)
-      - Bío Bío
-      - Franklin (6)
-      - Presidente Pedro Aguirre Cerda
-      - Lo Valledor (Metro)
-      - Cerrillos
-
-    ref: 6
   - 
-    colour: '#0000ff'
+    ref: Nos
     name: Metrotren Nos
-    type: train
+    colour: '#0000ff'
     station_count: 10
-    itineraries: 
-      r7106218: 
-        - Alameda (n4757181460)
-        - Lo Valledor (n4746169733)
-        - Pedro Aguirre Cerda (n4593880289)
-        - Lo Espejo (n4753977083)
-        - Lo Blanco (n4746169757)
-        - Freire (n4756906640)
-        - San Bernardo (n318377395)
-        - Maestranza (n318475846)
-        - 5 Pinos (n4756906623)
-        - Nos (n4747704104)
-
-      r7106219: 
-        - Nos (n4747704104)
-        - 5 Pinos (n4756906623)
-        - Maestranza (n318475846)
-        - San Bernardo (n318377395)
-        - Freire (n4756906640)
-        - Lo Blanco (n4746169757)
-        - Lo Espejo (n4753977083)
-        - Pedro Aguirre Cerda (n4593880289)
-        - Lo Valledor (n4746169733)
-        - Alameda (n4757181460)
-
-
+    type: train
     stations: 
       - Alameda (Metrotren)
       - Lo Valledor (Metrotren)
@@ -608,7 +524,32 @@ routes:
       - 5 Pinos
       - Nos
 
-    ref: Nos
+    itineraries: 
+      r7106219: 
+        - Nos (n4747704104)
+        - 5 Pinos (n4756906623)
+        - Maestranza (n318475846)
+        - San Bernardo (n318377395)
+        - Freire (n4756906640)
+        - Lo Blanco (n4746169757)
+        - Lo Espejo (n4753977083)
+        - Pedro Aguirre Cerda (n4593880289)
+        - Lo Valledor (n4746169733)
+        - Alameda (n4757181460)
+
+      r7106218: 
+        - Alameda (n4757181460)
+        - Lo Valledor (n4746169733)
+        - Pedro Aguirre Cerda (n4593880289)
+        - Lo Espejo (n4753977083)
+        - Lo Blanco (n4746169757)
+        - Freire (n4756906640)
+        - San Bernardo (n318377395)
+        - Maestranza (n318475846)
+        - 5 Pinos (n4756906623)
+        - Nos (n4747704104)
+
+
 
 stations: 
   - 5 Pinos (n4756906623)
@@ -740,4 +681,63 @@ stations:
   - Zapadores (n265684322)
   - Ñuble (n615092336)
   - Ñuñoa (n6506316376)
+
+transfers: 
+  - 
+    - Alameda (Metrotren) (r9993648)
+    - Estación Central (Metro) (r6346692)
+  - 
+    - Baquedano (1) (r6345237)
+    - Baquedano (5) (r7732951)
+  - 
+    - Franklin (2) (r7732968)
+    - Franklin (6) (r7732969)
+  - 
+    - Irarrázabal (3) (r7732963)
+    - Irarrázabal (5) (r6363903)
+  - 
+    - La Cisterna (2) (r6354204)
+    - La Cisterna (4A) (r7732996)
+  - 
+    - Lo Valledor (Metro) (r7732966)
+    - Lo Valledor (Metrotren) (r9993705)
+  - 
+    - Los Héroes (1) (r6345439)
+    - Los Héroes (2) (r7732958)
+  - 
+    - Los Leones (1) (r6345094)
+    - Los Leones (6) (r7732946)
+  - 
+    - Metro Cal y Canto (2) (r6354107)
+    - Metro Cal y Canto (3) (r7732953)
+  - 
+    - Plaza Egaña (3) (r7732940)
+    - Plaza Egaña (4) (r6353776)
+  - 
+    - Plaza de Armas (3) (r7732954)
+    - Plaza de Armas (5) (r6364028)
+  - 
+    - San Pablo (1) (r6346936)
+    - San Pablo (5) (r7732945)
+  - 
+    - Santa Ana (2) (r6354112)
+    - Santa Ana (5) (r7732956)
+  - 
+    - Tobalaba (1) (r7732949)
+    - Tobalaba (4) (r7732947)
+  - 
+    - Universidad de Chile (1) (r6345307)
+    - Universidad de Chile (3) (r7732944)
+  - 
+    - Vicente Valdés (r6351466)
+    - Vicente Valdés (r9643717)
+  - 
+    - Vicuña Mackena (r6351469)
+    - Vicuña Mackena (r9643713)
+  - 
+    - Ñuble (5) (r7732964)
+    - Ñuble (6) (r6363895)
+  - 
+    - Ñuñoa (3) (r7732961)
+    - Ñuñoa (6) (r7732962)
 

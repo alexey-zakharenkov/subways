@@ -1,12 +1,24 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#0000ff'
+    ref: Pink Line
     name: Pink Line
-    type: subway
+    colour: '#0000ff'
     station_count: 11
+    type: subway
+    stations: 
+      - Badi Chopad
+      - Choti Chaupar
+      - Chandpole
+      - Sindhi Camp
+      - Railway Station
+      - Civil Lines
+      - Ram Nagar
+      - Shyam Nagar
+      - Vivek Vihar
+      - New Aatish Market
+      - Manasarovar
+
     itineraries: 
       r7989307: 
         - Badi Chopad (n8044083223)
@@ -35,20 +47,6 @@ routes:
         - Badi Chopad (n8044083223)
 
 
-    stations: 
-      - Manasarovar
-      - New Aatish Market
-      - Vivek Vihar
-      - Shyam Nagar
-      - Ram Nagar
-      - Civil Lines
-      - Railway Station
-      - Sindhi Camp
-      - Chandpole
-      - Choti Chaupar
-      - Badi Chopad
-
-    ref: Pink Line
 
 stations: 
   - Badi Chopad (n8044083223)
@@ -62,4 +60,6 @@ stations:
   - Shyam Nagar (n8149193787)
   - Sindhi Camp (n5391526672)
   - Vivek Vihar (n8149193788)
+
+transfers: 
 

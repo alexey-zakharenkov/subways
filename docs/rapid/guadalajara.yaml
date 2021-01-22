@@ -1,21 +1,32 @@
 
-transfers: 
-  - 
-    - Avila Camacho (Line 1) (r11637371)
-    - Avila Camacho (Line 3) (r11637370)
-  - 
-    - Catedral (Line 3) (r11637369)
-    - Plaza Universidad (r9724122)
-  - 
-    - Estacion Juarez (Line 1) (r11637244)
-    - Estacion Juarez (Line 2) (r11637245)
-
 routes: 
   - 
-    colour: '#ff0000'
+    ref: TL-1
     name: Tren Ligero Línea 1
-    type: light_rail
+    colour: '#ff0000'
     station_count: 19
+    type: light_rail
+    stations: 
+      - Estacion Auditorio
+      - Estacion Periferico Norte
+      - Estacion Dermatologico
+      - Estacion Atemajac
+      - Estacion Division del Norte
+      - Avila Camacho (Line 1)
+      - Estacion Mezquitan
+      - Estacion Refugio
+      - Estacion Juarez (Line 1)
+      - Estacion Mexicaltzingo
+      - Estacion Washington
+      - Estacion Unidad Deportiva
+      - Estacion Urdaneta
+      - Estacion 18 de marzo
+      - Estacion Isla Raza
+      - Estacion Patria.
+      - España
+      - Santuario Martires de Cristo Rey
+      - Periférico Sur
+
     itineraries: 
       r6849310: 
         - Estacion Auditorio (w839533951)
@@ -60,33 +71,24 @@ routes:
         - Estacion Auditorio (w839533951)
 
 
-    stations: 
-      - Periférico Sur
-      - Santuario Martires de Cristo Rey
-      - España
-      - Estacion Patria.
-      - Estacion Isla Raza
-      - Estacion 18 de marzo
-      - Estacion Urdaneta
-      - Estacion Unidad Deportiva
-      - Estacion Washington
-      - Estacion Mexicaltzingo
-      - Estacion Juarez (Line 1)
-      - Estacion Refugio
-      - Estacion Mezquitan
-      - Avila Camacho (Line 1)
-      - Estacion Division del Norte
-      - Estacion Atemajac
-      - Estacion Dermatologico
-      - Estacion Periferico Norte
-      - Estacion Auditorio
-
-    ref: TL-1
   - 
-    colour: '#008000'
+    ref: TL-2
     name: Tren Ligero Línea 2
-    type: light_rail
+    colour: '#008000'
     station_count: 10
+    type: light_rail
+    stations: 
+      - Tetlán
+      - La Aurora
+      - San Jacinto
+      - San Andrés
+      - Cristobal de Oñate
+      - Oblatos
+      - Belisario Dominguez
+      - San Juan de Dios
+      - Plaza Universidad
+      - Estacion Juarez (Line 2)
+
     itineraries: 
       r6851903: 
         - Estacion Juarez (w848849276)
@@ -113,66 +115,12 @@ routes:
         - Estacion Juarez (w848849276)
 
 
-    stations: 
-      - Estacion Juarez (Line 2)
-      - Plaza Universidad
-      - San Juan de Dios
-      - Belisario Dominguez
-      - Oblatos
-      - Cristobal de Oñate
-      - San Andrés
-      - San Jacinto
-      - La Aurora
-      - Tetlán
-
-    ref: TL-2
   - 
-    colour: '#ffc0cb'
+    ref: TL-3
     name: Tren Ligero Línea 3
-    type: light_rail
+    colour: '#ffc0cb'
     station_count: 18
-    itineraries: 
-      r11637372: 
-        - Estacion Central Nueva (w838853823)
-        - Estacion Lazaro Cardenas (w838853824)
-        - Estacion Tlaquepaque Centro (w838853825)
-        - Estacion Rio Nilo (w838853826)
-        - Estacion Revolucion (w838853827)
-        - Estación CUCEI L3 Tren Ligero (w537525845)
-        - Estacion Plaza de la Bandera (w838853828)
-        - Estacion Independencia (w838853829)
-        - Estacion Catedral (n8011659023)
-        - Estacion Santuario (w838853831)
-        - Estacion La Normal (w838853832)
-        - Estación Avila Camacho (w765854480)
-        - Estación Circunvalación (w765854479)
-        - Estacion Plaza Patria (w765854478)
-        - Estación Zapopan Centro (w765854477)
-        - Estación Mercado del Mar (w765854476)
-        - Estacion Periferico Belenes (w765854475)
-        - Estacion Arcos de Zapopan (w765854474)
-
-      r11632938: 
-        - Estacion Arcos de Zapopan (w765854474)
-        - Estacion Periferico Belenes (w765854475)
-        - Estación Mercado del Mar (w765854476)
-        - Estación Zapopan Centro (w765854477)
-        - Estacion Plaza Patria (w765854478)
-        - Estación Circunvalación (w765854479)
-        - Estación Avila Camacho (w765854480)
-        - Estacion La Normal (w838853832)
-        - Estacion Santuario (w838853831)
-        - Estacion Catedral (n8011659023)
-        - Estacion Independencia (w838853829)
-        - Estacion Plaza de la Bandera (w838853828)
-        - Estación CUCEI L3 Tren Ligero (w537525845)
-        - Estacion Revolucion (w838853827)
-        - Estacion Rio Nilo (w838853826)
-        - Estacion Tlaquepaque Centro (w838853825)
-        - Estacion Lazaro Cardenas (w838853824)
-        - Estacion Central Nueva (w838853823)
-
-
+    type: light_rail
     stations: 
       - Estacion Arcos de Zapopan
       - Estacion Periferico Belenes
@@ -193,7 +141,48 @@ routes:
       - Estacion Lazaro Cardenas
       - Estacion Central Nueva
 
-    ref: TL-3
+    itineraries: 
+      r11632938: 
+        - Estacion Arcos de Zapopan (w765854474)
+        - Estacion Periferico Belenes (w765854475)
+        - Estación Mercado del Mar (w765854476)
+        - Estación Zapopan Centro (w765854477)
+        - Estacion Plaza Patria (w765854478)
+        - Estación Circunvalación (w765854479)
+        - Estación Avila Camacho (w765854480)
+        - Estacion La Normal (w838853832)
+        - Estacion Santuario (w838853831)
+        - Estacion Catedral (n8011659023)
+        - Estacion Independencia (w838853829)
+        - Estacion Plaza de la Bandera (w838853828)
+        - Estación CUCEI L3 Tren Ligero (w537525845)
+        - Estacion Revolucion (w838853827)
+        - Estacion Rio Nilo (w838853826)
+        - Estacion Tlaquepaque Centro (w838853825)
+        - Estacion Lazaro Cardenas (w838853824)
+        - Estacion Central Nueva (w838853823)
+
+      r11637372: 
+        - Estacion Central Nueva (w838853823)
+        - Estacion Lazaro Cardenas (w838853824)
+        - Estacion Tlaquepaque Centro (w838853825)
+        - Estacion Rio Nilo (w838853826)
+        - Estacion Revolucion (w838853827)
+        - Estación CUCEI L3 Tren Ligero (w537525845)
+        - Estacion Plaza de la Bandera (w838853828)
+        - Estacion Independencia (w838853829)
+        - Estacion Catedral (n8011659023)
+        - Estacion Santuario (w838853831)
+        - Estacion La Normal (w838853832)
+        - Estación Avila Camacho (w765854480)
+        - Estación Circunvalación (w765854479)
+        - Estacion Plaza Patria (w765854478)
+        - Estación Zapopan Centro (w765854477)
+        - Estación Mercado del Mar (w765854476)
+        - Estacion Periferico Belenes (w765854475)
+        - Estacion Arcos de Zapopan (w765854474)
+
+
 
 stations: 
   - Belisario Dominguez (n4591386801)
@@ -243,4 +232,15 @@ stations:
   - San Juan de Dios (n4591374873)
   - Santuario Martires de Cristo Rey (w839219550)
   - Tetlán (n4591489679)
+
+transfers: 
+  - 
+    - Avila Camacho (Line 1) (r11637371)
+    - Avila Camacho (Line 3) (r11637370)
+  - 
+    - Catedral (Line 3) (r11637369)
+    - Plaza Universidad (r9724122)
+  - 
+    - Estacion Juarez (Line 1) (r11637244)
+    - Estacion Juarez (Line 2) (r11637245)
 

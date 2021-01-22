@@ -1,50 +1,49 @@
 
-transfers: 
-
 routes: 
   - 
-    colour: '#006bb6'
+    ref: SIR
     name: 'NYCS - Staten Island Railway'
-    type: subway
+    colour: '#006bb6'
     station_count: 21
-    itineraries: 
-      r7944035: 
-        - Tottenville (n42970072)
-        - Arthur Kill (n2153937115)
-        - Richmond Valley (n359882376)
-        - Pleasant Plains (n42970021)
-        - Prince's Bay (n42969976)
-        - Huguenot (n42969964)
-        - Annadale (n42969951)
-        - Eltingville (n42969938)
-        - Great Kills (n42969919)
-        - Bay Terrace (n360003816)
-        - Oakwood Heights (n4479401405)
-        - New Dorp (n4479116892)
-        - Grant City (n4479116891)
-        - Jefferson Avenue (n5366564381)
-        - Dongan Hills (w450783997)
-        - Old Town (w450741490)
-        - Grasmere (w450631735)
-        - Clifton (n5244636936)
-        - Stapleton (n4519212006)
-        - Tompkinsville (n4517182541)
-        - St. George (n42969559)
+    type: subway
+    stations: 
+      - St. George
+      - Tompkinsville
+      - Stapleton
+      - Clifton
+      - Grasmere
+      - Old Town
+      - Dongan Hills
+      - Jefferson Avenue
+      - Grant City
+      - New Dorp
+      - Oakwood Heights
+      - Bay Terrace
+      - Great Kills
+      - Tottenville
+      - Arthur Kill
+      - Richmond Valley
+      - Pleasant Plains
+      - Prince's Bay
+      - Huguenot
+      - Annadale
+      - Eltingville
 
-      r11262662: 
-        - St. George (n42969559)
-        - Tompkinsville (n4517182541)
-        - Stapleton (n4519212006)
-        - Clifton (n5244636936)
-        - Grasmere (w450631735)
-        - Old Town (w450741490)
-        - Dongan Hills (w450783997)
-        - Jefferson Avenue (n5366564381)
-        - Grant City (n4479116891)
-        - New Dorp (n4479116892)
-        - Oakwood Heights (n4479401405)
-        - Bay Terrace (n360003816)
+    itineraries: 
+      r11262661: 
         - Great Kills (n42969919)
+        - Bay Terrace (n360003816)
+        - Oakwood Heights (n4479401405)
+        - New Dorp (n4479116892)
+        - Grant City (n4479116891)
+        - Jefferson Avenue (n5366564381)
+        - Dongan Hills (w450783997)
+        - Old Town (w450741490)
+        - Grasmere (w450631735)
+        - Clifton (n5244636936)
+        - Stapleton (n4519212006)
+        - Tompkinsville (n4517182541)
+        - St. George (n42969559)
 
       r10131632: 
         - St. George (n42969559)
@@ -69,33 +68,6 @@ routes:
         - Arthur Kill (n2153937115)
         - Tottenville (n42970072)
 
-      r1379671: 
-        - St. George (n42969559)
-        - Great Kills (n42969919)
-        - Eltingville (n42969938)
-        - Annadale (n42969951)
-        - Huguenot (n42969964)
-        - Prince's Bay (n42969976)
-        - Pleasant Plains (n42970021)
-        - Richmond Valley (n359882376)
-        - Arthur Kill (n2153937115)
-        - Tottenville (n42970072)
-
-      r11262661: 
-        - Great Kills (n42969919)
-        - Bay Terrace (n360003816)
-        - Oakwood Heights (n4479401405)
-        - New Dorp (n4479116892)
-        - Grant City (n4479116891)
-        - Jefferson Avenue (n5366564381)
-        - Dongan Hills (w450783997)
-        - Old Town (w450741490)
-        - Grasmere (w450631735)
-        - Clifton (n5244636936)
-        - Stapleton (n4519212006)
-        - Tompkinsville (n4517182541)
-        - St. George (n42969559)
-
       r10131633: 
         - Tottenville (n42970072)
         - Arthur Kill (n2153937115)
@@ -111,31 +83,57 @@ routes:
         - New Dorp (n4479116892)
         - St. George (n42969559)
 
+      r11262662: 
+        - St. George (n42969559)
+        - Tompkinsville (n4517182541)
+        - Stapleton (n4519212006)
+        - Clifton (n5244636936)
+        - Grasmere (w450631735)
+        - Old Town (w450741490)
+        - Dongan Hills (w450783997)
+        - Jefferson Avenue (n5366564381)
+        - Grant City (n4479116891)
+        - New Dorp (n4479116892)
+        - Oakwood Heights (n4479401405)
+        - Bay Terrace (n360003816)
+        - Great Kills (n42969919)
 
-    stations: 
-      - Tottenville
-      - Arthur Kill
-      - Richmond Valley
-      - Pleasant Plains
-      - Prince's Bay
-      - Huguenot
-      - Annadale
-      - Eltingville
-      - Great Kills
-      - Bay Terrace
-      - Oakwood Heights
-      - New Dorp
-      - St. George
-      - Tompkinsville
-      - Stapleton
-      - Clifton
-      - Grasmere
-      - Old Town
-      - Dongan Hills
-      - Jefferson Avenue
-      - Grant City
+      r1379671: 
+        - St. George (n42969559)
+        - Great Kills (n42969919)
+        - Eltingville (n42969938)
+        - Annadale (n42969951)
+        - Huguenot (n42969964)
+        - Prince's Bay (n42969976)
+        - Pleasant Plains (n42970021)
+        - Richmond Valley (n359882376)
+        - Arthur Kill (n2153937115)
+        - Tottenville (n42970072)
 
-    ref: SIR
+      r7944035: 
+        - Tottenville (n42970072)
+        - Arthur Kill (n2153937115)
+        - Richmond Valley (n359882376)
+        - Pleasant Plains (n42970021)
+        - Prince's Bay (n42969976)
+        - Huguenot (n42969964)
+        - Annadale (n42969951)
+        - Eltingville (n42969938)
+        - Great Kills (n42969919)
+        - Bay Terrace (n360003816)
+        - Oakwood Heights (n4479401405)
+        - New Dorp (n4479116892)
+        - Grant City (n4479116891)
+        - Jefferson Avenue (n5366564381)
+        - Dongan Hills (w450783997)
+        - Old Town (w450741490)
+        - Grasmere (w450631735)
+        - Clifton (n5244636936)
+        - Stapleton (n4519212006)
+        - Tompkinsville (n4517182541)
+        - St. George (n42969559)
+
+
 
 stations: 
   - Annadale (n42969951)
@@ -159,4 +157,6 @@ stations:
   - Stapleton (n4519212006)
   - Tompkinsville (n4517182541)
   - Tottenville (n42970072)
+
+transfers: 
 
