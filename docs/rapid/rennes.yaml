@@ -1,10 +1,26 @@
 
+transfers: 
+
+stations: 
+  - Anatole France (w80889641)
+  - Charles de Gaulle (n8261579025)
+  - Clemenceau (n8261582970)
+  - Gares (n8261579024)
+  - Henri Fréville (w80741011)
+  - Italie (n8261582987)
+  - J.F. Kennedy (n8261608361)
+  - Jacques Cartier (n8261582969)
+  - La Poterie (r6777483)
+  - Le Blosne (n8261582992)
+  - Pontchaillou (w81216471)
+  - République (n8261579029)
+  - Sainte-Anne (n8261579031)
+  - Triangle (n8261582991)
+  - 'Villejean - Université (n8261608358)'
+
 routes: 
   - 
-    ref: a
-    name: Métro Rennes Ligne a
     colour: '#ed1c24'
-    station_count: 15
     type: subway
     stations: 
       - J.F. Kennedy
@@ -23,6 +39,8 @@ routes:
       - Le Blosne
       - La Poterie
 
+    ref: a
+    station_count: 15
     itineraries: 
       r23518: 
         - J.F. Kennedy (n8261608361)
@@ -59,23 +77,5 @@ routes:
         - J.F. Kennedy (n8261608361)
 
 
-
-stations: 
-  - Anatole France (w80889641)
-  - Charles de Gaulle (n8261579025)
-  - Clemenceau (n8261582970)
-  - Gares (n8261579024)
-  - Henri Fréville (w80741011)
-  - Italie (n8261582987)
-  - J.F. Kennedy (n8261608361)
-  - Jacques Cartier (n8261582969)
-  - La Poterie (r6777483)
-  - Le Blosne (n8261582992)
-  - Pontchaillou (w81216471)
-  - République (n8261579029)
-  - Sainte-Anne (n8261579031)
-  - Triangle (n8261582991)
-  - 'Villejean - Université (n8261608358)'
-
-transfers: 
+    name: Métro Rennes Ligne a
 

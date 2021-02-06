@@ -1,46 +1,97 @@
 
+transfers: 
+
+stations: 
+  - Bad Schandau (n2736023837)
+  - Coswig (b Dresden) (n1055406062)
+  - Dresden Bischofsplatz (n3577048943)
+  - Dresden Flughafen (n2746933618)
+  - Dresden Freiberger Straße (n2717278138)
+  - Dresden Grenzstraße (n2746885438)
+  - Dresden Hbf (n25397500)
+  - Dresden Industriegelände (n2740099845)
+  - Dresden Mitte (n3332924794)
+  - Dresden-Dobritz (n346658905)
+  - Dresden-Klotzsche (n2744503913)
+  - Dresden-Neustadt (n3723386251)
+  - Dresden-Niedersedlitz (n513675394)
+  - Dresden-Pieschen (n2690731738)
+  - Dresden-Plauen (n2749904783)
+  - Dresden-Reick (n2720761590)
+  - Dresden-Strehlen (n2720676482)
+  - Dresden-Trachau (n2663026437)
+  - Dresden-Zschachwitz (n2723328325)
+  - Edle Krone (n2753876934)
+  - Freiberg (Sachsen) (n2749430565)
+  - Freital-Deuben (n2752009153)
+  - Freital-Hainsberg (n2752156067)
+  - Freital-Hainsberg West (n2753175508)
+  - Freital-Potschappel (n2751547406)
+  - Heidenau (n2723861214)
+  - Heidenau Süd (n2723921429)
+  - Heidenau-Großsedlitz (n2725309590)
+  - Klingenberg-Colmnitz (n2757806170)
+  - Krippen (n2736132837)
+  - Kurort Rathen (n2731457306)
+  - Königstein (Sächs Schw) (n2733379605)
+  - Meißen (n2702296184)
+  - Meißen Altstadt (n2548838529)
+  - Meißen Triebischtal (n1417352685)
+  - Muldenhütten (n2768452444)
+  - Neusörnewitz (n1417356358)
+  - Niederbobritzsch (n2767984944)
+  - Obervogelgesang (n2726667852)
+  - Pirna (n2725563940)
+  - Radebeul Ost (n2684765813)
+  - Radebeul-Kötzschenbroda (n1417426008)
+  - Radebeul-Weintraube (n1614321191)
+  - Radebeul-Zitzschewig (n2589417588)
+  - Schmilka-Hirschmühle (n2736467689)
+  - Schöna (n2736597774)
+  - Stadt Wehlen (Sachs) (n2731039807)
+  - Tharandt (n2749276857)
+
 routes: 
   - 
-    ref: S 1
-    name: 'S-Bahn S 1: Schöna <> Meißen'
     colour: '#f36421'
-    station_count: 33
     type: train
     stations: 
-      - Schöna
-      - Hp. Schmilka-Hirschmühle
-      - Krippen
-      - Bad Schandau
-      - Hp. Königstein (Sächs Schw)
-      - Kurort Rathen
-      - Hp. Stadt Wehlen (Sachs)
-      - Hp. Obervogelgesang
-      - Bhf. Pirna
-      - Hp. Heidenau-Großsedlitz
-      - Hp. Heidenau Süd
-      - Heidenau
-      - Hp. Dresden-Zschachwitz
-      - Hp. Dresden-Niedersedlitz
-      - Hp. Dresden-Dobritz
-      - Bf. Dresden-Reick
-      - Hp. Dresden-Strehlen
-      - Bf. Dresden Hbf
-      - Hp. Dresden Freiberger Straße
-      - Bf. Dresden Mitte
-      - Bahnhof Dresden-Neustadt
-      - Dresden Bischofsplatz
-      - Hp. Dresden-Pieschen
-      - Hp. Dresden-Trachau
-      - Hp. Radebeul Ost
-      - Hp. Radebeul-Weintraube
-      - Hp. Radebeul-Kötzschenbroda
-      - Hp. Radebeul-Zitzschewig
-      - Bahnhof Coswig (b Dresden)
-      - S-Bahnhof Neusörnewitz
-      - Meißen
-      - S-Bahnhof Meißen Altstadt
       - S-Bahnhof Meißen Triebischtal
+      - S-Bahnhof Meißen Altstadt
+      - Meißen
+      - S-Bahnhof Neusörnewitz
+      - Bahnhof Coswig (b Dresden)
+      - Hp. Radebeul-Zitzschewig
+      - Hp. Radebeul-Kötzschenbroda
+      - Hp. Radebeul-Weintraube
+      - Hp. Radebeul Ost
+      - Hp. Dresden-Trachau
+      - Hp. Dresden-Pieschen
+      - Dresden Bischofsplatz
+      - Bahnhof Dresden-Neustadt
+      - Bf. Dresden Mitte
+      - Hp. Dresden Freiberger Straße
+      - Bf. Dresden Hbf
+      - Hp. Dresden-Strehlen
+      - Bf. Dresden-Reick
+      - Hp. Dresden-Dobritz
+      - Hp. Dresden-Niedersedlitz
+      - Hp. Dresden-Zschachwitz
+      - Heidenau
+      - Hp. Heidenau Süd
+      - Hp. Heidenau-Großsedlitz
+      - Bhf. Pirna
+      - Hp. Obervogelgesang
+      - Hp. Stadt Wehlen (Sachs)
+      - Kurort Rathen
+      - Hp. Königstein (Sächs Schw)
+      - Bad Schandau
+      - Krippen
+      - Hp. Schmilka-Hirschmühle
+      - Schöna
 
+    ref: S 1
+    station_count: 33
     itineraries: 
       r3562518: 
         - Schöna (n2736597774)
@@ -113,11 +164,9 @@ routes:
         - Schöna (n2736597774)
 
 
+    name: 'S-Bahn S 1: Schöna <> Meißen'
   - 
-    ref: S 2
-    name: 'S-Bahn S 2: Dresden Flughafen <> Pirna'
     colour: '#b8282e'
-    station_count: 17
     type: train
     stations: 
       - Bhf. Pirna
@@ -138,6 +187,8 @@ routes:
       - Bf Dresden Grenzstraße
       - Bf Dresden Flughafen
 
+    ref: S 2
+    station_count: 17
     itineraries: 
       r66354: 
         - Dresden Flughafen (n2746933618)
@@ -178,11 +229,9 @@ routes:
         - Dresden Flughafen (n2746933618)
 
 
+    name: 'S-Bahn S 2: Dresden Flughafen <> Pirna'
   - 
-    ref: S 3
-    name: 'S-Bahn S 3: Dresden <> Freiberg'
     colour: '#ed0172'
-    station_count: 12
     type: train
     stations: 
       - Bf. Dresden Hbf
@@ -198,21 +247,9 @@ routes:
       - Hp. Muldenhütten
       - Freiberg (Sachsen)
 
+    ref: S 3
+    station_count: 12
     itineraries: 
-      r67541: 
-        - Dresden Hbf (n25397500)
-        - Dresden-Plauen (n2749904783)
-        - Freital-Potschappel (n2751547406)
-        - Freital-Deuben (n2752009153)
-        - Freital-Hainsberg (n2752156067)
-        - Freital-Hainsberg West (n2753175508)
-        - Tharandt (n2749276857)
-        - Edle Krone (n2753876934)
-        - Klingenberg-Colmnitz (n2757806170)
-        - Niederbobritzsch (n2767984944)
-        - Muldenhütten (n2768452444)
-        - Freiberg (Sachsen) (n2749430565)
-
       r67556: 
         - Freiberg (Sachsen) (n2749430565)
         - Muldenhütten (n2768452444)
@@ -227,57 +264,20 @@ routes:
         - Dresden-Plauen (n2749904783)
         - Dresden Hbf (n25397500)
 
+      r67541: 
+        - Dresden Hbf (n25397500)
+        - Dresden-Plauen (n2749904783)
+        - Freital-Potschappel (n2751547406)
+        - Freital-Deuben (n2752009153)
+        - Freital-Hainsberg (n2752156067)
+        - Freital-Hainsberg West (n2753175508)
+        - Tharandt (n2749276857)
+        - Edle Krone (n2753876934)
+        - Klingenberg-Colmnitz (n2757806170)
+        - Niederbobritzsch (n2767984944)
+        - Muldenhütten (n2768452444)
+        - Freiberg (Sachsen) (n2749430565)
 
 
-stations: 
-  - Bad Schandau (n2736023837)
-  - Coswig (b Dresden) (n1055406062)
-  - Dresden Bischofsplatz (n3577048943)
-  - Dresden Flughafen (n2746933618)
-  - Dresden Freiberger Straße (n2717278138)
-  - Dresden Grenzstraße (n2746885438)
-  - Dresden Hbf (n25397500)
-  - Dresden Industriegelände (n2740099845)
-  - Dresden Mitte (n3332924794)
-  - Dresden-Dobritz (n346658905)
-  - Dresden-Klotzsche (n2744503913)
-  - Dresden-Neustadt (n3723386251)
-  - Dresden-Niedersedlitz (n513675394)
-  - Dresden-Pieschen (n2690731738)
-  - Dresden-Plauen (n2749904783)
-  - Dresden-Reick (n2720761590)
-  - Dresden-Strehlen (n2720676482)
-  - Dresden-Trachau (n2663026437)
-  - Dresden-Zschachwitz (n2723328325)
-  - Edle Krone (n2753876934)
-  - Freiberg (Sachsen) (n2749430565)
-  - Freital-Deuben (n2752009153)
-  - Freital-Hainsberg (n2752156067)
-  - Freital-Hainsberg West (n2753175508)
-  - Freital-Potschappel (n2751547406)
-  - Heidenau (n2723861214)
-  - Heidenau Süd (n2723921429)
-  - Heidenau-Großsedlitz (n2725309590)
-  - Klingenberg-Colmnitz (n2757806170)
-  - Krippen (n2736132837)
-  - Kurort Rathen (n2731457306)
-  - Königstein (Sächs Schw) (n2733379605)
-  - Meißen (n2702296184)
-  - Meißen Altstadt (n2548838529)
-  - Meißen Triebischtal (n1417352685)
-  - Muldenhütten (n2768452444)
-  - Neusörnewitz (n1417356358)
-  - Niederbobritzsch (n2767984944)
-  - Obervogelgesang (n2726667852)
-  - Pirna (n2725563940)
-  - Radebeul Ost (n2684765813)
-  - Radebeul-Kötzschenbroda (n1417426008)
-  - Radebeul-Weintraube (n1614321191)
-  - Radebeul-Zitzschewig (n2589417588)
-  - Schmilka-Hirschmühle (n2736467689)
-  - Schöna (n2736597774)
-  - Stadt Wehlen (Sachs) (n2731039807)
-  - Tharandt (n2749276857)
-
-transfers: 
+    name: 'S-Bahn S 3: Dresden <> Freiberg'
 

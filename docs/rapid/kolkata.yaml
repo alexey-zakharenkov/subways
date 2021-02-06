@@ -1,126 +1,5 @@
 
-routes: 
-  - 
-    ref: 1
-    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
-    colour: '#008000'
-    station_count: 24
-    type: subway
-    stations: 
-      - Kavi Subhash
-      - Shahid Khudiram
-      - Kavi Nazrul
-      - Geetanjali
-      - Masterda Surya Sen
-      - Netaji
-      - Mahanayak Uttam Kumar
-      - Rabindra Sarobar
-      - Kalighat
-      - Jatin Das Park
-      - Netaji Bhavan
-      - Rabindra Sadan
-      - Maidan
-      - Park Street
-      - Esplanade
-      - Chandni Chowk
-      - Central
-      - Mahatma Gandhi Road
-      - Girish Park
-      - Shobhabazar Sutanuti
-      - Shyambazar
-      - Belgachia
-      - Dum Dum
-      - Noapara
-
-    itineraries: 
-      r8034180: 
-        - Noapara (n5421551283)
-        - Dum Dum (n5421537963)
-        - Belgachia (n5421548359)
-        - Shyambazar (n5421546974)
-        - Shobhabazar Sutanuti (n5421546940)
-        - Girish Park (n5421546475)
-        - Mahatma Gandhi Road (n5421545390)
-        - Central (n5421528426)
-        - Chandni Chowk (n5421543316)
-        - Esplanade (n5421545051)
-        - Park Street (n5421528503)
-        - Maidan (n5421543288)
-        - Rabindra Sadan (n5421542551)
-        - Netaji Bhavan (n5421541284)
-        - Jatin Das Park (n5421540159)
-        - Kalighat (n5421539684)
-        - Rabindra Sarobar (n5421538365)
-        - Mahanayak Uttam Kumar (n5421536497)
-        - Netaji (n5421533468)
-        - Masterda Surya Sen (n5421533679)
-        - Geetanjali (n5421533680)
-        - Kavi Nazrul (n5421533465)
-        - Shahid Khudiram (n5421533466)
-        - Kavi Subhash (n5421533467)
-
-      r8033916: 
-        - Kavi Subhash (n5421533467)
-        - Shahid Khudiram (n5421533466)
-        - Kavi Nazrul (n5421533465)
-        - Geetanjali (n5421533680)
-        - Masterda Surya Sen (n5421533679)
-        - Netaji (n5421533468)
-        - Mahanayak Uttam Kumar (n5421536497)
-        - Rabindra Sarobar (n5421538365)
-        - Kalighat (n5421539684)
-        - Jatin Das Park (n5421540159)
-        - Netaji Bhavan (n5421541284)
-        - Rabindra Sadan (n5421542551)
-        - Maidan (n5421543288)
-        - Park Street (n5421528503)
-        - Esplanade (n5421545051)
-        - Chandni Chowk (n5421543316)
-        - Central (n5421528426)
-        - Mahatma Gandhi Road (n5421545390)
-        - Girish Park (n5421546475)
-        - Shobhabazar Sutanuti (n5421546940)
-        - Shyambazar (n5421546974)
-        - Belgachia (n5421548359)
-        - Dum Dum (n5421537963)
-        - Noapara (n5421551283)
-
-
-  - 
-    ref: 2
-    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
-    colour: '#ff0000'
-    station_count: 7
-    type: subway
-    stations: 
-      - Phoolbagan
-      - Salt Lake Stadium
-      - Bengal Chemical
-      - City Centre
-      - Central Park
-      - Karunamoyee
-      - Salt Lake Sector V
-
-    itineraries: 
-      r11720071: 
-        - Phoolbagan (n7976140072)
-        - Salt Lake Stadium (n7976140069)
-        - Bengal Chemical (n7976140066)
-        - City Centre (n7976140063)
-        - Central Park (n7976140060)
-        - Karunamoyee (n7976140059)
-        - Salt Lake Sector V (n7976140073)
-
-      r11720072: 
-        - Salt Lake Sector V (n7976140073)
-        - Karunamoyee (n7976140059)
-        - Central Park (n7976140060)
-        - City Centre (n7976140063)
-        - Bengal Chemical (n7976140066)
-        - Salt Lake Stadium (n7976140069)
-        - Phoolbagan (n7976140072)
-
-
+transfers: 
 
 stations: 
   - Belgachia (n5421548359)
@@ -155,5 +34,126 @@ stations:
   - Shobhabazar Sutanuti (n5421546940)
   - Shyambazar (n5421546974)
 
-transfers: 
+routes: 
+  - 
+    colour: '#008000'
+    type: subway
+    stations: 
+      - Kavi Subhash
+      - Shahid Khudiram
+      - Kavi Nazrul
+      - Geetanjali
+      - Masterda Surya Sen
+      - Netaji
+      - Mahanayak Uttam Kumar
+      - Rabindra Sarobar
+      - Kalighat
+      - Jatin Das Park
+      - Netaji Bhavan
+      - Rabindra Sadan
+      - Maidan
+      - Park Street
+      - Esplanade
+      - Chandni Chowk
+      - Central
+      - Mahatma Gandhi Road
+      - Girish Park
+      - Shobhabazar Sutanuti
+      - Shyambazar
+      - Belgachia
+      - Dum Dum
+      - Noapara
+
+    ref: 1
+    station_count: 24
+    itineraries: 
+      r8033916: 
+        - Kavi Subhash (n5421533467)
+        - Shahid Khudiram (n5421533466)
+        - Kavi Nazrul (n5421533465)
+        - Geetanjali (n5421533680)
+        - Masterda Surya Sen (n5421533679)
+        - Netaji (n5421533468)
+        - Mahanayak Uttam Kumar (n5421536497)
+        - Rabindra Sarobar (n5421538365)
+        - Kalighat (n5421539684)
+        - Jatin Das Park (n5421540159)
+        - Netaji Bhavan (n5421541284)
+        - Rabindra Sadan (n5421542551)
+        - Maidan (n5421543288)
+        - Park Street (n5421528503)
+        - Esplanade (n5421545051)
+        - Chandni Chowk (n5421543316)
+        - Central (n5421528426)
+        - Mahatma Gandhi Road (n5421545390)
+        - Girish Park (n5421546475)
+        - Shobhabazar Sutanuti (n5421546940)
+        - Shyambazar (n5421546974)
+        - Belgachia (n5421548359)
+        - Dum Dum (n5421537963)
+        - Noapara (n5421551283)
+
+      r8034180: 
+        - Noapara (n5421551283)
+        - Dum Dum (n5421537963)
+        - Belgachia (n5421548359)
+        - Shyambazar (n5421546974)
+        - Shobhabazar Sutanuti (n5421546940)
+        - Girish Park (n5421546475)
+        - Mahatma Gandhi Road (n5421545390)
+        - Central (n5421528426)
+        - Chandni Chowk (n5421543316)
+        - Esplanade (n5421545051)
+        - Park Street (n5421528503)
+        - Maidan (n5421543288)
+        - Rabindra Sadan (n5421542551)
+        - Netaji Bhavan (n5421541284)
+        - Jatin Das Park (n5421540159)
+        - Kalighat (n5421539684)
+        - Rabindra Sarobar (n5421538365)
+        - Mahanayak Uttam Kumar (n5421536497)
+        - Netaji (n5421533468)
+        - Masterda Surya Sen (n5421533679)
+        - Geetanjali (n5421533680)
+        - Kavi Nazrul (n5421533465)
+        - Shahid Khudiram (n5421533466)
+        - Kavi Subhash (n5421533467)
+
+
+    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
+  - 
+    colour: '#ff0000'
+    type: subway
+    stations: 
+      - Salt Lake Sector V
+      - Karunamoyee
+      - Central Park
+      - City Centre
+      - Bengal Chemical
+      - Salt Lake Stadium
+      - Phoolbagan
+
+    ref: 2
+    station_count: 7
+    itineraries: 
+      r11720071: 
+        - Phoolbagan (n7976140072)
+        - Salt Lake Stadium (n7976140069)
+        - Bengal Chemical (n7976140066)
+        - City Centre (n7976140063)
+        - Central Park (n7976140060)
+        - Karunamoyee (n7976140059)
+        - Salt Lake Sector V (n7976140073)
+
+      r11720072: 
+        - Salt Lake Sector V (n7976140073)
+        - Karunamoyee (n7976140059)
+        - Central Park (n7976140060)
+        - City Centre (n7976140063)
+        - Bengal Chemical (n7976140066)
+        - Salt Lake Stadium (n7976140069)
+        - Phoolbagan (n7976140072)
+
+
+    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
 

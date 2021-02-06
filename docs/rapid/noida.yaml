@@ -1,10 +1,32 @@
 
+transfers: 
+
+stations: 
+  - Alpha 1 (n4165778689)
+  - Delta 1 (n4165778690)
+  - Depot Station (n4849447792)
+  - GNIDA Office (n4165778691)
+  - Knowledge Park II (w696190204)
+  - NSEZ (n4849443432)
+  - Noida Sector 101 (n4950920120)
+  - Noida Sector 137 (n4267913913)
+  - Noida Sector 142 (n4165777371)
+  - Noida Sector 143 (n4165777365)
+  - Noida Sector 144 (n4165778734)
+  - Noida Sector 145 (n4678434990)
+  - Noida Sector 146 (n4678434989)
+  - Noida Sector 147 (n4165778709)
+  - Noida Sector 148 (n4165777372)
+  - Noida Sector 50 (n4950923221)
+  - Noida Sector 51 (n4950923222)
+  - Noida Sector 76 (n4950923223)
+  - Noida Sector 81 (n4950923224)
+  - Noida Sector 83 (n4267913896)
+  - Pari Chowk (n4849443434)
+
 routes: 
   - 
-    ref: Aqua Line
-    name: Aqua Line
     colour: '#00ffff'
-    station_count: 21
     type: subway
     stations: 
       - Depot Station
@@ -29,6 +51,8 @@ routes:
       - Noida Sector 50
       - Noida Sector 51
 
+    ref: Aqua Line
+    station_count: 21
     itineraries: 
       r9268568: 
         - Depot Station (n4849447792)
@@ -77,29 +101,5 @@ routes:
         - Depot Station (n4849447792)
 
 
-
-stations: 
-  - Alpha 1 (n4165778689)
-  - Delta 1 (n4165778690)
-  - Depot Station (n4849447792)
-  - GNIDA Office (n4165778691)
-  - Knowledge Park II (w696190204)
-  - NSEZ (n4849443432)
-  - Noida Sector 101 (n4950920120)
-  - Noida Sector 137 (n4267913913)
-  - Noida Sector 142 (n4165777371)
-  - Noida Sector 143 (n4165777365)
-  - Noida Sector 144 (n4165778734)
-  - Noida Sector 145 (n4678434990)
-  - Noida Sector 146 (n4678434989)
-  - Noida Sector 147 (n4165778709)
-  - Noida Sector 148 (n4165777372)
-  - Noida Sector 50 (n4950923221)
-  - Noida Sector 51 (n4950923222)
-  - Noida Sector 76 (n4950923223)
-  - Noida Sector 81 (n4950923224)
-  - Noida Sector 83 (n4267913896)
-  - Pari Chowk (n4849443434)
-
-transfers: 
+    name: Aqua Line
 

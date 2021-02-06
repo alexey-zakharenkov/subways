@@ -1,46 +1,5 @@
 
-routes: 
-  - 
-    ref: 1
-    name: 'Línea 1: Francisco de Miranda → Monumental'
-    colour: '#cc0000'
-    station_count: 9
-    type: light_rail
-    stations: 
-      - Francisco de Miranda
-      - Rafael Urdaneta
-      - Cedeño (L1)
-      - Lara (L1)
-      - Michelena (L1)
-      - Santa Rosa (L1)
-      - Palotal (L1)
-      - Las Ferias (L1)
-      - Monumental (L1)
-
-    itineraries: 
-      r7734070: 
-        - Francisco de Miranda (n5188885803)
-        - Rafael Urdaneta (n5190317043)
-        - Cedeño (L1) (n1177192742)
-        - Lara (L1) (n1177192746)
-        - Michelena (L1) (n1214856904)
-        - Santa Rosa (L1) (n1214856922)
-        - Palotal (L1) (n1214856935)
-        - Las Ferias (L1) (n1214856950)
-        - Monumental (L1) (n1214856964)
-
-      r7680781: 
-        - Monumental (L1) (n1214856964)
-        - Las Ferias (L1) (n1214856950)
-        - Palotal (L1) (n1214856935)
-        - Santa Rosa (L1) (n1214856922)
-        - Michelena (L1) (n1214856904)
-        - Lara (L1) (n1177192746)
-        - Cedeño (L1) (n1177192742)
-        - Rafael Urdaneta (n5190317043)
-        - Francisco de Miranda (n5188885803)
-
-
+transfers: 
 
 stations: 
   - Cedeño (L1) (n1177192742)
@@ -53,5 +12,46 @@ stations:
   - Rafael Urdaneta (n5190317043)
   - Santa Rosa (L1) (n1214856922)
 
-transfers: 
+routes: 
+  - 
+    colour: '#cc0000'
+    type: light_rail
+    stations: 
+      - Francisco de Miranda
+      - Rafael Urdaneta
+      - Cedeño (L1)
+      - Lara (L1)
+      - Michelena (L1)
+      - Santa Rosa (L1)
+      - Palotal (L1)
+      - Las Ferias (L1)
+      - Monumental (L1)
+
+    ref: 1
+    station_count: 9
+    itineraries: 
+      r7680781: 
+        - Monumental (L1) (n1214856964)
+        - Las Ferias (L1) (n1214856950)
+        - Palotal (L1) (n1214856935)
+        - Santa Rosa (L1) (n1214856922)
+        - Michelena (L1) (n1214856904)
+        - Lara (L1) (n1177192746)
+        - Cedeño (L1) (n1177192742)
+        - Rafael Urdaneta (n5190317043)
+        - Francisco de Miranda (n5188885803)
+
+      r7734070: 
+        - Francisco de Miranda (n5188885803)
+        - Rafael Urdaneta (n5190317043)
+        - Cedeño (L1) (n1177192742)
+        - Lara (L1) (n1177192746)
+        - Michelena (L1) (n1214856904)
+        - Santa Rosa (L1) (n1214856922)
+        - Palotal (L1) (n1214856935)
+        - Las Ferias (L1) (n1214856950)
+        - Monumental (L1) (n1214856964)
+
+
+    name: 'Línea 1: Francisco de Miranda → Monumental'
 

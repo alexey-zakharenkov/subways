@@ -1,10 +1,30 @@
 
+transfers: 
+
+stations: 
+  - Calafate (n5365398604)
+  - Carlos Prates (n5365396588)
+  - Central (n7773976736)
+  - Cidade Industrial (n5363031124)
+  - Eldorado (n5362545412)
+  - Floramar (n5365199766)
+  - Gameleira (n7774375164)
+  - Horto (n5365389740)
+  - José Cândido da Silveira (n5365386589)
+  - Lagoinha (n5365391312)
+  - Minas Shopping (n5365208176)
+  - Primeiro de Maio (n5365204649)
+  - Santa Efigênia (n5365392544)
+  - Santa Inês (n5365385309)
+  - Santa Tereza (n5365391617)
+  - São Gabriel (n5371461010)
+  - Vila Oeste (n4124563097)
+  - Vilarinho (n5365193658)
+  - Waldomiro Lobo (n5365202168)
+
 routes: 
   - 
-    ref: 1
-    name: 'Linha 1 - Azul'
     colour: '#000080'
-    station_count: 19
     type: subway
     stations: 
       - Estação Vilarinho
@@ -27,6 +47,8 @@ routes:
       - Estação Cidade Industrial
       - Estação Eldorado
 
+    ref: 1
+    station_count: 19
     itineraries: 
       r420605: 
         - Vilarinho (n5365193658)
@@ -71,27 +93,5 @@ routes:
         - Vilarinho (n5365193658)
 
 
-
-stations: 
-  - Calafate (n5365398604)
-  - Carlos Prates (n5365396588)
-  - Central (n7773976736)
-  - Cidade Industrial (n5363031124)
-  - Eldorado (n5362545412)
-  - Floramar (n5365199766)
-  - Gameleira (n7774375164)
-  - Horto (n5365389740)
-  - José Cândido da Silveira (n5365386589)
-  - Lagoinha (n5365391312)
-  - Minas Shopping (n5365208176)
-  - Primeiro de Maio (n5365204649)
-  - Santa Efigênia (n5365392544)
-  - Santa Inês (n5365385309)
-  - Santa Tereza (n5365391617)
-  - São Gabriel (n5371461010)
-  - Vila Oeste (n4124563097)
-  - Vilarinho (n5365193658)
-  - Waldomiro Lobo (n5365202168)
-
-transfers: 
+    name: 'Linha 1 - Azul'
 

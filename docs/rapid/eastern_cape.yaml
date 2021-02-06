@@ -1,117 +1,5 @@
 
-routes: 
-  - 
-    ref: Berlin
-    name: Berlin Line
-    colour: '#f58220'
-    station_count: 18
-    type: train
-    stations: 
-      - Berlin
-      - Lonetree
-      - Fort Jackson
-      - Egerton
-      - Mount Ruth
-      - Mdantsane
-      - Mtsotso
-      - Arnoldton
-      - Wilsonia
-      - Dawn
-      - Horseshoe
-      - Highgate
-      - Cambridge
-      - Vincent
-      - Chiselhurst
-      - Panmure
-      - Southernwood
-      - East London
-
-    itineraries: 
-      r10374783: 
-        - Berlin (n247325966)
-        - Lonetree (n247326209)
-        - Fort Jackson (n247326081)
-        - Egerton (n247326246)
-        - Mount Ruth (n247326295)
-        - Mdantsane (n766144560)
-        - Mtsotso (n247326279)
-        - Arnoldton (n247325948)
-        - Wilsonia (n356772234)
-        - Dawn (n356776698)
-        - Horseshoe (n247326121)
-        - Highgate (n247326117)
-        - Cambridge (n765870775)
-        - Vincent (n247326531)
-        - Chiselhurst (n247326032)
-        - Panmure (n247326331)
-        - Southernwood (n247326428)
-        - East London (n247326273)
-
-      r952426: 
-        - East London (n247326273)
-        - Southernwood (n247326428)
-        - Panmure (n247326331)
-        - Chiselhurst (n247326032)
-        - Vincent (n247326531)
-        - Cambridge (n765870775)
-        - Highgate (n247326117)
-        - Horseshoe (n247326121)
-        - Dawn (n356776698)
-        - Wilsonia (n356772234)
-        - Arnoldton (n247325948)
-        - Mtsotso (n247326279)
-        - Mdantsane (n766144560)
-        - Mount Ruth (n247326295)
-        - Egerton (n247326246)
-        - Fort Jackson (n247326081)
-        - Lonetree (n247326209)
-        - Berlin (n247325966)
-
-
-  - 
-    ref: Uitenhage CBD
-    name: Uitenhage CBD
-    colour: '#f9cc3e'
-    station_count: 10
-    type: train
-    stations: 
-      - Port Elizabeth
-      - North End
-      - Sydenham
-      - New Brighton
-      - Swartkops
-      - Redhouse
-      - Perseverance
-      - Despatch
-      - De Mist
-      - Uitenhage
-
-    itineraries: 
-      r10374692: 
-        - Uitenhage (n7035457399)
-        - De Mist (n247259684)
-        - Despatch (n248577992)
-        - Perseverance (n31395706)
-        - Redhouse (n30276737)
-        - Swartkops (n30275278)
-        - New Brighton (n30274072)
-        - Sydenham (n30278698)
-        - North End (n30278966)
-        - Port Elizabeth (n30278974)
-
-      r952460: 
-        - Port Elizabeth (n30278974)
-        - North End (n30278966)
-        - Sydenham (n30278698)
-        - New Brighton (n30274072)
-        - Swartkops (n30275278)
-        - Redhouse (n30276737)
-        - Perseverance (n31395706)
-        - Despatch (n248577992)
-        - De Mist (n247259684)
-        - Uitenhage (n7035457399)
-
-
+transfers: 
 
 stations: 
   - Arnoldton (n247325948)
@@ -143,5 +31,117 @@ stations:
   - Vincent (n247326531)
   - Wilsonia (n356772234)
 
-transfers: 
+routes: 
+  - 
+    colour: '#f58220'
+    type: train
+    stations: 
+      - Berlin
+      - Lonetree
+      - Fort Jackson
+      - Egerton
+      - Mount Ruth
+      - Mdantsane
+      - Mtsotso
+      - Arnoldton
+      - Wilsonia
+      - Dawn
+      - Horseshoe
+      - Highgate
+      - Cambridge
+      - Vincent
+      - Chiselhurst
+      - Panmure
+      - Southernwood
+      - East London
+
+    ref: Berlin
+    station_count: 18
+    itineraries: 
+      r952426: 
+        - East London (n247326273)
+        - Southernwood (n247326428)
+        - Panmure (n247326331)
+        - Chiselhurst (n247326032)
+        - Vincent (n247326531)
+        - Cambridge (n765870775)
+        - Highgate (n247326117)
+        - Horseshoe (n247326121)
+        - Dawn (n356776698)
+        - Wilsonia (n356772234)
+        - Arnoldton (n247325948)
+        - Mtsotso (n247326279)
+        - Mdantsane (n766144560)
+        - Mount Ruth (n247326295)
+        - Egerton (n247326246)
+        - Fort Jackson (n247326081)
+        - Lonetree (n247326209)
+        - Berlin (n247325966)
+
+      r10374783: 
+        - Berlin (n247325966)
+        - Lonetree (n247326209)
+        - Fort Jackson (n247326081)
+        - Egerton (n247326246)
+        - Mount Ruth (n247326295)
+        - Mdantsane (n766144560)
+        - Mtsotso (n247326279)
+        - Arnoldton (n247325948)
+        - Wilsonia (n356772234)
+        - Dawn (n356776698)
+        - Horseshoe (n247326121)
+        - Highgate (n247326117)
+        - Cambridge (n765870775)
+        - Vincent (n247326531)
+        - Chiselhurst (n247326032)
+        - Panmure (n247326331)
+        - Southernwood (n247326428)
+        - East London (n247326273)
+
+
+    name: Berlin Line
+  - 
+    colour: '#f9cc3e'
+    type: train
+    stations: 
+      - Port Elizabeth
+      - North End
+      - Sydenham
+      - New Brighton
+      - Swartkops
+      - Redhouse
+      - Perseverance
+      - Despatch
+      - De Mist
+      - Uitenhage
+
+    ref: Uitenhage CBD
+    station_count: 10
+    itineraries: 
+      r10374692: 
+        - Uitenhage (n7035457399)
+        - De Mist (n247259684)
+        - Despatch (n248577992)
+        - Perseverance (n31395706)
+        - Redhouse (n30276737)
+        - Swartkops (n30275278)
+        - New Brighton (n30274072)
+        - Sydenham (n30278698)
+        - North End (n30278966)
+        - Port Elizabeth (n30278974)
+
+      r952460: 
+        - Port Elizabeth (n30278974)
+        - North End (n30278966)
+        - Sydenham (n30278698)
+        - New Brighton (n30274072)
+        - Swartkops (n30275278)
+        - Redhouse (n30276737)
+        - Perseverance (n31395706)
+        - Despatch (n248577992)
+        - De Mist (n247259684)
+        - Uitenhage (n7035457399)
+
+
+    name: Uitenhage CBD
 

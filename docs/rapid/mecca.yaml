@@ -1,10 +1,20 @@
 
+transfers: 
+
+stations: 
+  - Arafat Station 1 (n4534861100)
+  - Arafat Station 2 (n4534861099)
+  - Arafat Station 3 (n4534861098)
+  - Jamarat (Mina Station 3) (n6024783454)
+  - Mina Station 1 (n4534822206)
+  - Mina Station 2 (n4534822205)
+  - Muzdalifah Station 1 (n4534838647)
+  - Muzdalifah Station 2 (n4534834974)
+  - Muzdalifah Station 3 (n4534824625)
+
 routes: 
   - 
-    ref: S
-    name: قطار المشاعر المقدسة الخط الجنوبي
     colour: '#ffc0cb'
-    station_count: 9
     type: subway
     stations: 
       - الجمرات
@@ -17,6 +27,8 @@ routes:
       - محطة عرفات رقم 2
       - محطة عرفات رقم 1
 
+    ref: S
+    station_count: 9
     itineraries: 
       r7734267: 
         - Jamarat (Mina Station 3) (n6024783454)
@@ -41,17 +53,5 @@ routes:
         - Jamarat (Mina Station 3) (n6024783454)
 
 
-
-stations: 
-  - Arafat Station 1 (n4534861100)
-  - Arafat Station 2 (n4534861099)
-  - Arafat Station 3 (n4534861098)
-  - Jamarat (Mina Station 3) (n6024783454)
-  - Mina Station 1 (n4534822206)
-  - Mina Station 2 (n4534822205)
-  - Muzdalifah Station 1 (n4534838647)
-  - Muzdalifah Station 2 (n4534834974)
-  - Muzdalifah Station 3 (n4534824625)
-
-transfers: 
+    name: قطار المشاعر المقدسة الخط الجنوبي
 

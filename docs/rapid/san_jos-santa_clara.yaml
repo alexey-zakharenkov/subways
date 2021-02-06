@@ -1,281 +1,5 @@
 
-routes: 
-  - 
-    ref: Blue
-    name: Blue Line
-    colour: '#00a4e2'
-    station_count: 26
-    type: light_rail
-    stations: 
-      - Baypointe
-      - Tasman
-      - River Oaks
-      - Orchard
-      - Bonaventura
-      - Component
-      - Karina
-      - Metro/Airport
-      - Gish
-      - Civic Center
-      - Japantown/Ayer
-      - Saint James
-      - Santa Clara
-      - San Antonio
-      - Convention Center
-      - Children’s Discovery Museum
-      - Virginia
-      - Tamien
-      - Curtner
-      - Capitol
-      - Branham
-      - Ohlone/Chynoweth
-      - Blossom Hill
-      - Snell
-      - Cottle
-      - Santa Teresa
-
-    itineraries: 
-      r2989876: 
-        - Baypointe (n6309492419)
-        - Tasman (n6309491975)
-        - River Oaks (n6309492424)
-        - Orchard (n6309492428)
-        - Bonaventura (n6309491978)
-        - Component (n6309492423)
-        - Karina (n6309492429)
-        - Metro/Airport (n6309492431)
-        - Gish (n6309492426)
-        - Civic Center (n6309492412)
-        - Japantown/Ayer (n6309492427)
-        - Saint James (n6309491962)
-        - Santa Clara (n6309491960)
-        - San Antonio (n6309492413)
-        - Convention Center (n6309492416)
-        - Children’s Discovery Museum (n6309491954)
-        - Virginia (n6309491953)
-        - Tamien (n6644472041)
-        - Curtner (n6309491952)
-        - Capitol (n6309491951)
-        - Branham (n6309491950)
-        - Ohlone/Chynoweth (n6309491949)
-        - Blossom Hill (n6309491948)
-        - Snell (n6309491947)
-        - Cottle (n6309491946)
-        - Santa Teresa (n6309491945)
-
-      r9897507: 
-        - Santa Teresa (n6309491945)
-        - Cottle (n6309491946)
-        - Snell (n6309491947)
-        - Blossom Hill (n6309491948)
-        - Ohlone/Chynoweth (n6309491949)
-        - Branham (n6309491950)
-        - Capitol (n6309491951)
-        - Curtner (n6309491952)
-        - Tamien (n6644472041)
-        - Virginia (n6309491953)
-        - Children’s Discovery Museum (n6309491954)
-        - Convention Center (n6309492416)
-        - San Antonio (n6309492413)
-        - Santa Clara (n6309491960)
-        - Saint James (n6309491962)
-        - Japantown/Ayer (n6309492427)
-        - Civic Center (n6309492412)
-        - Gish (n6309492426)
-        - Metro/Airport (n6309492431)
-        - Karina (n6309492429)
-        - Component (n6309492423)
-        - Bonaventura (n6309491978)
-        - Orchard (n6309492428)
-        - River Oaks (n6309492424)
-        - Tasman (n6309491975)
-        - Baypointe (n6309492419)
-
-
-  - 
-    ref: Green
-    name: Green Line
-    colour: '#76c761'
-    station_count: 26
-    type: light_rail
-    stations: 
-      - Winchester
-      - Campbell
-      - Hamilton
-      - Bascom
-      - Fruitdale
-      - Race
-      - San Jose Diridon
-      - San Fernando
-      - Convention Center
-      - San Antonio
-      - Santa Clara
-      - Saint James
-      - Japantown/Ayer
-      - Civic Center
-      - Gish
-      - Metro/Airport
-      - Karina
-      - Component
-      - Bonaventura
-      - Orchard
-      - River Oaks
-      - Tasman
-      - Champion
-      - Lick Mill
-      - Great America
-      - Old Ironsides
-
-    itineraries: 
-      r9897506: 
-        - Old Ironsides (n6309491973)
-        - Great America (n6309491974)
-        - Lick Mill (n6309492434)
-        - Champion (n6309492422)
-        - Tasman (n6309491975)
-        - River Oaks (n6309492424)
-        - Orchard (n6309492428)
-        - Bonaventura (n6309491978)
-        - Component (n6309492423)
-        - Karina (n6309492429)
-        - Metro/Airport (n6309492431)
-        - Gish (n6309492426)
-        - Civic Center (n6309492412)
-        - Japantown/Ayer (n6309492427)
-        - Saint James (n6309491962)
-        - Santa Clara (n6309491960)
-        - San Antonio (n6309492413)
-        - Convention Center (n6309492416)
-        - San Fernando (n6309491959)
-        - San Jose Diridon (n6644531666)
-        - Race (n6309492415)
-        - Fruitdale (n6309491958)
-        - Bascom (n6309491957)
-        - Hamilton (n6309491977)
-        - Campbell (n6309491956)
-        - Winchester (n6309491955)
-
-      r2989877: 
-        - Winchester (n6309491955)
-        - Campbell (n6309491956)
-        - Hamilton (n6309491977)
-        - Bascom (n6309491957)
-        - Fruitdale (n6309491958)
-        - Race (n6309492415)
-        - San Jose Diridon (n6644531666)
-        - San Fernando (n6309491959)
-        - Convention Center (n6309492416)
-        - San Antonio (n6309492413)
-        - Santa Clara (n6309491960)
-        - Saint James (n6309491962)
-        - Japantown/Ayer (n6309492427)
-        - Civic Center (n6309492412)
-        - Gish (n6309492426)
-        - Metro/Airport (n6309492431)
-        - Karina (n6309492429)
-        - Component (n6309492423)
-        - Bonaventura (n6309491978)
-        - Orchard (n6309492428)
-        - River Oaks (n6309492424)
-        - Tasman (n6309491975)
-        - Champion (n6309492422)
-        - Lick Mill (n6309492434)
-        - Great America (n6309491974)
-        - Old Ironsides (n6309491973)
-
-
-  - 
-    ref: Orange
-    name: Orange Line
-    colour: '#f9661e'
-    station_count: 26
-    type: light_rail
-    stations: 
-      - Mountain View
-      - Whisman
-      - Middlefield
-      - Bayshore/NASA
-      - Moffett Park
-      - Lockheed Martin
-      - Borregas
-      - Crossman
-      - Fair Oaks
-      - Vienna
-      - Reamwood
-      - Old Ironsides
-      - Great America
-      - Lick Mill
-      - Champion
-      - Baypointe
-      - Cisco Way
-      - Alder
-      - Great Mall/Main
-      - Milpitas
-      - Cropley
-      - Hostetter
-      - Berryessa
-      - Penitencia Creek
-      - McKee
-      - Alum Rock
-
-    itineraries: 
-      r10561835: 
-        - Alum Rock (n6309491963)
-        - McKee (n6309491979)
-        - Penitencia Creek (n6309491964)
-        - Berryessa (n6309492411)
-        - Hostetter (n6309492435)
-        - Cropley (n6309491965)
-        - Milpitas (n6309491976)
-        - Great Mall/Main (n6309492432)
-        - Alder (n6309491966)
-        - Cisco Way (n6309491967)
-        - Baypointe (n6309492419)
-        - Champion (n6309492422)
-        - Lick Mill (n6309492434)
-        - Great America (n6309491974)
-        - Old Ironsides (n6309491973)
-        - Reamwood (n6309492425)
-        - Vienna (n6309492417)
-        - Fair Oaks (n6309492430)
-        - Crossman (n6309842162)
-        - Borregas (n6309492420)
-        - Lockheed Martin (n6309492410)
-        - Moffett Park (n6309491980)
-        - Bayshore/NASA (n6309492409)
-        - Middlefield (n6309492421)
-        - Whisman (n6309492414)
-        - Mountain View (n6644366979)
-
-      r10561836: 
-        - Mountain View (n6644366979)
-        - Whisman (n6309492414)
-        - Middlefield (n6309492421)
-        - Bayshore/NASA (n6309492409)
-        - Moffett Park (n6309491980)
-        - Lockheed Martin (n6309492410)
-        - Borregas (n6309492420)
-        - Crossman (n6309842162)
-        - Fair Oaks (n6309492430)
-        - Vienna (n6309492417)
-        - Reamwood (n6309492425)
-        - Old Ironsides (n6309491973)
-        - Great America (n6309491974)
-        - Lick Mill (n6309492434)
-        - Champion (n6309492422)
-        - Baypointe (n6309492419)
-        - Cisco Way (n6309491967)
-        - Alder (n6309491966)
-        - Great Mall/Main (n6309492432)
-        - Milpitas (n6309491976)
-        - Cropley (n6309491965)
-        - Hostetter (n6309492435)
-        - Berryessa (n6309492411)
-        - Penitencia Creek (n6309491964)
-        - McKee (n6309491979)
-        - Alum Rock (n6309491963)
-
-
+transfers: 
 
 stations: 
   - Alder (n6309491966)
@@ -338,5 +62,281 @@ stations:
   - Whisman (n6309492414)
   - Winchester (n6309491955)
 
-transfers: 
+routes: 
+  - 
+    colour: '#00a4e2'
+    type: light_rail
+    stations: 
+      - Santa Teresa
+      - Cottle
+      - Snell
+      - Blossom Hill
+      - Ohlone/Chynoweth
+      - Branham
+      - Capitol
+      - Curtner
+      - Tamien
+      - Virginia
+      - Children’s Discovery Museum
+      - Convention Center
+      - San Antonio
+      - Santa Clara
+      - Saint James
+      - Japantown/Ayer
+      - Civic Center
+      - Gish
+      - Metro/Airport
+      - Karina
+      - Component
+      - Bonaventura
+      - Orchard
+      - River Oaks
+      - Tasman
+      - Baypointe
+
+    ref: Blue
+    station_count: 26
+    itineraries: 
+      r9897507: 
+        - Santa Teresa (n6309491945)
+        - Cottle (n6309491946)
+        - Snell (n6309491947)
+        - Blossom Hill (n6309491948)
+        - Ohlone/Chynoweth (n6309491949)
+        - Branham (n6309491950)
+        - Capitol (n6309491951)
+        - Curtner (n6309491952)
+        - Tamien (n6644472041)
+        - Virginia (n6309491953)
+        - Children’s Discovery Museum (n6309491954)
+        - Convention Center (n6309492416)
+        - San Antonio (n6309492413)
+        - Santa Clara (n6309491960)
+        - Saint James (n6309491962)
+        - Japantown/Ayer (n6309492427)
+        - Civic Center (n6309492412)
+        - Gish (n6309492426)
+        - Metro/Airport (n6309492431)
+        - Karina (n6309492429)
+        - Component (n6309492423)
+        - Bonaventura (n6309491978)
+        - Orchard (n6309492428)
+        - River Oaks (n6309492424)
+        - Tasman (n6309491975)
+        - Baypointe (n6309492419)
+
+      r2989876: 
+        - Baypointe (n6309492419)
+        - Tasman (n6309491975)
+        - River Oaks (n6309492424)
+        - Orchard (n6309492428)
+        - Bonaventura (n6309491978)
+        - Component (n6309492423)
+        - Karina (n6309492429)
+        - Metro/Airport (n6309492431)
+        - Gish (n6309492426)
+        - Civic Center (n6309492412)
+        - Japantown/Ayer (n6309492427)
+        - Saint James (n6309491962)
+        - Santa Clara (n6309491960)
+        - San Antonio (n6309492413)
+        - Convention Center (n6309492416)
+        - Children’s Discovery Museum (n6309491954)
+        - Virginia (n6309491953)
+        - Tamien (n6644472041)
+        - Curtner (n6309491952)
+        - Capitol (n6309491951)
+        - Branham (n6309491950)
+        - Ohlone/Chynoweth (n6309491949)
+        - Blossom Hill (n6309491948)
+        - Snell (n6309491947)
+        - Cottle (n6309491946)
+        - Santa Teresa (n6309491945)
+
+
+    name: Blue Line
+  - 
+    colour: '#76c761'
+    type: light_rail
+    stations: 
+      - Old Ironsides
+      - Great America
+      - Lick Mill
+      - Champion
+      - Tasman
+      - River Oaks
+      - Orchard
+      - Bonaventura
+      - Component
+      - Karina
+      - Metro/Airport
+      - Gish
+      - Civic Center
+      - Japantown/Ayer
+      - Saint James
+      - Santa Clara
+      - San Antonio
+      - Convention Center
+      - San Fernando
+      - San Jose Diridon
+      - Race
+      - Fruitdale
+      - Bascom
+      - Hamilton
+      - Campbell
+      - Winchester
+
+    ref: Green
+    station_count: 26
+    itineraries: 
+      r9897506: 
+        - Old Ironsides (n6309491973)
+        - Great America (n6309491974)
+        - Lick Mill (n6309492434)
+        - Champion (n6309492422)
+        - Tasman (n6309491975)
+        - River Oaks (n6309492424)
+        - Orchard (n6309492428)
+        - Bonaventura (n6309491978)
+        - Component (n6309492423)
+        - Karina (n6309492429)
+        - Metro/Airport (n6309492431)
+        - Gish (n6309492426)
+        - Civic Center (n6309492412)
+        - Japantown/Ayer (n6309492427)
+        - Saint James (n6309491962)
+        - Santa Clara (n6309491960)
+        - San Antonio (n6309492413)
+        - Convention Center (n6309492416)
+        - San Fernando (n6309491959)
+        - San Jose Diridon (n6644531666)
+        - Race (n6309492415)
+        - Fruitdale (n6309491958)
+        - Bascom (n6309491957)
+        - Hamilton (n6309491977)
+        - Campbell (n6309491956)
+        - Winchester (n6309491955)
+
+      r2989877: 
+        - Winchester (n6309491955)
+        - Campbell (n6309491956)
+        - Hamilton (n6309491977)
+        - Bascom (n6309491957)
+        - Fruitdale (n6309491958)
+        - Race (n6309492415)
+        - San Jose Diridon (n6644531666)
+        - San Fernando (n6309491959)
+        - Convention Center (n6309492416)
+        - San Antonio (n6309492413)
+        - Santa Clara (n6309491960)
+        - Saint James (n6309491962)
+        - Japantown/Ayer (n6309492427)
+        - Civic Center (n6309492412)
+        - Gish (n6309492426)
+        - Metro/Airport (n6309492431)
+        - Karina (n6309492429)
+        - Component (n6309492423)
+        - Bonaventura (n6309491978)
+        - Orchard (n6309492428)
+        - River Oaks (n6309492424)
+        - Tasman (n6309491975)
+        - Champion (n6309492422)
+        - Lick Mill (n6309492434)
+        - Great America (n6309491974)
+        - Old Ironsides (n6309491973)
+
+
+    name: Green Line
+  - 
+    colour: '#f9661e'
+    type: light_rail
+    stations: 
+      - Mountain View
+      - Whisman
+      - Middlefield
+      - Bayshore/NASA
+      - Moffett Park
+      - Lockheed Martin
+      - Borregas
+      - Crossman
+      - Fair Oaks
+      - Vienna
+      - Reamwood
+      - Old Ironsides
+      - Great America
+      - Lick Mill
+      - Champion
+      - Baypointe
+      - Cisco Way
+      - Alder
+      - Great Mall/Main
+      - Milpitas
+      - Cropley
+      - Hostetter
+      - Berryessa
+      - Penitencia Creek
+      - McKee
+      - Alum Rock
+
+    ref: Orange
+    station_count: 26
+    itineraries: 
+      r10561836: 
+        - Mountain View (n6644366979)
+        - Whisman (n6309492414)
+        - Middlefield (n6309492421)
+        - Bayshore/NASA (n6309492409)
+        - Moffett Park (n6309491980)
+        - Lockheed Martin (n6309492410)
+        - Borregas (n6309492420)
+        - Crossman (n6309842162)
+        - Fair Oaks (n6309492430)
+        - Vienna (n6309492417)
+        - Reamwood (n6309492425)
+        - Old Ironsides (n6309491973)
+        - Great America (n6309491974)
+        - Lick Mill (n6309492434)
+        - Champion (n6309492422)
+        - Baypointe (n6309492419)
+        - Cisco Way (n6309491967)
+        - Alder (n6309491966)
+        - Great Mall/Main (n6309492432)
+        - Milpitas (n6309491976)
+        - Cropley (n6309491965)
+        - Hostetter (n6309492435)
+        - Berryessa (n6309492411)
+        - Penitencia Creek (n6309491964)
+        - McKee (n6309491979)
+        - Alum Rock (n6309491963)
+
+      r10561835: 
+        - Alum Rock (n6309491963)
+        - McKee (n6309491979)
+        - Penitencia Creek (n6309491964)
+        - Berryessa (n6309492411)
+        - Hostetter (n6309492435)
+        - Cropley (n6309491965)
+        - Milpitas (n6309491976)
+        - Great Mall/Main (n6309492432)
+        - Alder (n6309491966)
+        - Cisco Way (n6309491967)
+        - Baypointe (n6309492419)
+        - Champion (n6309492422)
+        - Lick Mill (n6309492434)
+        - Great America (n6309491974)
+        - Old Ironsides (n6309491973)
+        - Reamwood (n6309492425)
+        - Vienna (n6309492417)
+        - Fair Oaks (n6309492430)
+        - Crossman (n6309842162)
+        - Borregas (n6309492420)
+        - Lockheed Martin (n6309492410)
+        - Moffett Park (n6309491980)
+        - Bayshore/NASA (n6309492409)
+        - Middlefield (n6309492421)
+        - Whisman (n6309492414)
+        - Mountain View (n6644366979)
+
+
+    name: Orange Line
 

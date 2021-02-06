@@ -1,149 +1,11 @@
 
-routes: 
+transfers: 
   - 
-    ref: 1
-    name: Linea 1 (Piscinola → Garibaldi)
-    colour: '#000099'
-    station_count: 18
-    type: subway
-    stations: 
-      - Piscinola (ANM)
-      - Chiaiano
-      - Frullone
-      - Colli Aminei
-      - Policlinico
-      - Rione Alto
-      - Montedonzelli
-      - Medaglie d'oro
-      - Vanvitelli
-      - Quattro Giornate
-      - Salvator Rosa
-      - Materdei
-      - Museo
-      - Dante
-      - Toledo
-      - Municipio
-      - Università
-      - Garibaldi
-
-    itineraries: 
-      r2168102: 
-        - Garibaldi (n1757100177)
-        - Università (n1428260807)
-        - Municipio (n2552779115)
-        - Toledo (n1738657713)
-        - Dante (n434763027)
-        - Museo (n434763023)
-        - Materdei (n434763015)
-        - Salvator Rosa (n434763011)
-        - Quattro Giornate (n434763004)
-        - Vanvitelli (n434762989)
-        - Medaglie d'oro (n3036923663)
-        - Montedonzelli (n435104388)
-        - Rione Alto (n3036923656)
-        - Policlinico (n3036909913)
-        - Colli Aminei (n3036909925)
-        - Frullone (n1738657712)
-        - Chiaiano (n324415153)
-        - Piscinola (ANM) (n614419534)
-
-      r386098: 
-        - Piscinola (ANM) (n614419534)
-        - Chiaiano (n324415153)
-        - Frullone (n1738657712)
-        - Colli Aminei (n3036909925)
-        - Policlinico (n3036909913)
-        - Rione Alto (n3036923656)
-        - Montedonzelli (n435104388)
-        - Medaglie d'oro (n3036923663)
-        - Vanvitelli (n434762989)
-        - Quattro Giornate (n434763004)
-        - Salvator Rosa (n434763011)
-        - Materdei (n434763015)
-        - Museo (n434763023)
-        - Dante (n434763027)
-        - Toledo (n1738657713)
-        - Municipio (n2552779115)
-        - Università (n1428260807)
-        - Garibaldi (n1757100177)
-
-
+    - Garibaldi (r7683111)
+    - Napoli Piazza Garibaldi (r10105977)
   - 
-    ref: 2
-    name: Linea 2 (San Giovanni-Barra → Pozzuoli Solfatara)
-    colour: '#0000ff'
-    station_count: 12
-    type: train
-    stations: 
-      - Napoli San Giovanni-Barra
-      - Napoli Gianturco
-      - Napoli Piazza Garibaldi
-      - Piazza Cavour
-      - Montesanto
-      - Piazza Amedeo
-      - Napoli Mergellina
-      - Piazza Leopardi
-      - Napoli Campi Flegrei
-      - Cavalleggeri Aosta
-      - Bagnoli-Agnano Terme
-      - Pozzuoli Solfatara
-
-    itineraries: 
-      r445980: 
-        - Pozzuoli Solfatara (n6817792727)
-        - Bagnoli-Agnano Terme (n6817755819)
-        - Cavalleggeri Aosta (n8278678762)
-        - Napoli Campi Flegrei (n6817740560)
-        - Piazza Leopardi (n6817760441)
-        - Napoli Mergellina (n6536935424)
-        - Piazza Amedeo (n499585572)
-        - Montesanto (n3114747045)
-        - Piazza Cavour (n656149059)
-        - Napoli Piazza Garibaldi (n6886777286)
-        - Napoli Gianturco (n4459023928)
-        - Napoli San Giovanni-Barra (n4459022870)
-
-      r2168103: 
-        - Napoli San Giovanni-Barra (n4459022870)
-        - Napoli Gianturco (n4459023928)
-        - Napoli Piazza Garibaldi (n6886777286)
-        - Piazza Cavour (n656149059)
-        - Montesanto (n3114747045)
-        - Piazza Amedeo (n499585572)
-        - Napoli Mergellina (n6536935424)
-        - Piazza Leopardi (n6817760441)
-        - Napoli Campi Flegrei (n6817740560)
-        - Cavalleggeri Aosta (n8278678762)
-        - Bagnoli-Agnano Terme (n6817755819)
-        - Pozzuoli Solfatara (n6817792727)
-
-
-  - 
-    ref: 6
-    name: Linea 6
-    colour: '#0099cc'
-    station_count: 4
-    type: subway
-    stations: 
-      - Mergellina
-      - Lala
-      - Augusto
-      - Mostra
-
-    itineraries: 
-      r446007: 
-        - Mostra (n434789470)
-        - Augusto (n663078056)
-        - Lala (n663077724)
-        - Mergellina (n663078054)
-
-      r2168104: 
-        - Mergellina (n663078054)
-        - Lala (n663077724)
-        - Augusto (n663078056)
-        - Mostra (n434789470)
-
-
+    - Mergellina (r7683071)
+    - Napoli Mergellina (r10105974)
 
 stations: 
   - Augusto (n663078056)
@@ -181,11 +43,149 @@ stations:
   - Università (n1428260807)
   - Vanvitelli (n434762989)
 
-transfers: 
+routes: 
   - 
-    - Garibaldi (r7683111)
-    - Napoli Piazza Garibaldi (r10105977)
+    colour: '#000099'
+    type: subway
+    stations: 
+      - Garibaldi
+      - Università
+      - Municipio
+      - Toledo
+      - Dante
+      - Museo
+      - Materdei
+      - Salvator Rosa
+      - Quattro Giornate
+      - Vanvitelli
+      - Medaglie d'oro
+      - Montedonzelli
+      - Rione Alto
+      - Policlinico
+      - Colli Aminei
+      - Frullone
+      - Chiaiano
+      - Piscinola (ANM)
+
+    ref: 1
+    station_count: 18
+    itineraries: 
+      r386098: 
+        - Piscinola (ANM) (n614419534)
+        - Chiaiano (n324415153)
+        - Frullone (n1738657712)
+        - Colli Aminei (n3036909925)
+        - Policlinico (n3036909913)
+        - Rione Alto (n3036923656)
+        - Montedonzelli (n435104388)
+        - Medaglie d'oro (n3036923663)
+        - Vanvitelli (n434762989)
+        - Quattro Giornate (n434763004)
+        - Salvator Rosa (n434763011)
+        - Materdei (n434763015)
+        - Museo (n434763023)
+        - Dante (n434763027)
+        - Toledo (n1738657713)
+        - Municipio (n2552779115)
+        - Università (n1428260807)
+        - Garibaldi (n1757100177)
+
+      r2168102: 
+        - Garibaldi (n1757100177)
+        - Università (n1428260807)
+        - Municipio (n2552779115)
+        - Toledo (n1738657713)
+        - Dante (n434763027)
+        - Museo (n434763023)
+        - Materdei (n434763015)
+        - Salvator Rosa (n434763011)
+        - Quattro Giornate (n434763004)
+        - Vanvitelli (n434762989)
+        - Medaglie d'oro (n3036923663)
+        - Montedonzelli (n435104388)
+        - Rione Alto (n3036923656)
+        - Policlinico (n3036909913)
+        - Colli Aminei (n3036909925)
+        - Frullone (n1738657712)
+        - Chiaiano (n324415153)
+        - Piscinola (ANM) (n614419534)
+
+
+    name: Linea 1 (Garibaldi → Piscinola)
   - 
-    - Mergellina (r7683071)
-    - Napoli Mergellina (r10105974)
+    colour: '#0000ff'
+    type: train
+    stations: 
+      - Napoli San Giovanni-Barra
+      - Napoli Gianturco
+      - Napoli Piazza Garibaldi
+      - Piazza Cavour
+      - Montesanto
+      - Piazza Amedeo
+      - Napoli Mergellina
+      - Piazza Leopardi
+      - Napoli Campi Flegrei
+      - Cavalleggeri Aosta
+      - Bagnoli-Agnano Terme
+      - Pozzuoli Solfatara
+
+    ref: 2
+    station_count: 12
+    itineraries: 
+      r2168103: 
+        - Napoli San Giovanni-Barra (n4459022870)
+        - Napoli Gianturco (n4459023928)
+        - Napoli Piazza Garibaldi (n6886777286)
+        - Piazza Cavour (n656149059)
+        - Montesanto (n3114747045)
+        - Piazza Amedeo (n499585572)
+        - Napoli Mergellina (n6536935424)
+        - Piazza Leopardi (n6817760441)
+        - Napoli Campi Flegrei (n6817740560)
+        - Cavalleggeri Aosta (n8278678762)
+        - Bagnoli-Agnano Terme (n6817755819)
+        - Pozzuoli Solfatara (n6817792727)
+
+      r445980: 
+        - Pozzuoli Solfatara (n6817792727)
+        - Bagnoli-Agnano Terme (n6817755819)
+        - Cavalleggeri Aosta (n8278678762)
+        - Napoli Campi Flegrei (n6817740560)
+        - Piazza Leopardi (n6817760441)
+        - Napoli Mergellina (n6536935424)
+        - Piazza Amedeo (n499585572)
+        - Montesanto (n3114747045)
+        - Piazza Cavour (n656149059)
+        - Napoli Piazza Garibaldi (n6886777286)
+        - Napoli Gianturco (n4459023928)
+        - Napoli San Giovanni-Barra (n4459022870)
+
+
+    name: Linea 2 (San Giovanni-Barra → Pozzuoli Solfatara)
+  - 
+    colour: '#0099cc'
+    type: subway
+    stations: 
+      - Mostra
+      - Augusto
+      - Lala
+      - Mergellina
+
+    ref: 6
+    station_count: 4
+    itineraries: 
+      r2168104: 
+        - Mergellina (n663078054)
+        - Lala (n663077724)
+        - Augusto (n663078056)
+        - Mostra (n434789470)
+
+      r446007: 
+        - Mostra (n434789470)
+        - Augusto (n663078056)
+        - Lala (n663077724)
+        - Mergellina (n663078054)
+
+
+    name: Linea 6
 

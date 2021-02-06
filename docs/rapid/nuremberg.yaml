@@ -1,368 +1,8 @@
 
-routes: 
+transfers: 
   - 
-    ref: U1
-    name: 'U-Bahn U1: Fürth Hardhöhe <=> Nürnberg Langwasser Süd'
-    colour: '#000066'
-    station_count: 27
-    type: subway
-    stations: 
-      - Eberhardshof
-      - Maximilianstraße
-      - Bärenschanze
-      - Gostenhof
-      - Plärrer
-      - Weißer Turm
-      - Lorenzkirche
-      - Nürnberg Hauptbahnhof (U1)
-      - Aufseßplatz
-      - Maffeiplatz
-      - Frankenstraße
-      - Hasenbuck
-      - Bauernfeindstraße
-      - Messe
-      - Fürth-Hardhöhe
-      - Fürth Klinikum
-      - Fürth-Stadthalle
-      - Fürth Rathaus
-      - Fürth Hauptbahnhof (U1)
-      - Fürth Jakobinenstraße
-      - Stadtgrenze
-      - Muggenhof
-      - Langwasser Nord
-      - Scharfreiterring
-      - Langwasser Mitte
-      - Gemeinschaftshaus
-      - Langwasser Süd
-
-    itineraries: 
-      r10517761: 
-        - Scharfreiterring (n4759187459)
-        - Langwasser Mitte (n4763971452)
-        - Gemeinschaftshaus (n1585094565)
-        - Nürnberg Langwasser Süd (n736693342)
-
-      r10517762: 
-        - Fürth-Stadthalle (n7204798211)
-        - Fürth Rathaus (n7204798212)
-        - Fürth Hauptbahnhof (n5407589294)
-        - Fürth Jakobinenstraße (n904158186)
-        - Stadtgrenze (n4757608375)
-        - Muggenhof (n4772500005)
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-        - Langwasser Nord (n4763985965)
-        - Scharfreiterring (n4759187459)
-        - Langwasser Mitte (n4763971452)
-        - Gemeinschaftshaus (n1585094565)
-        - Nürnberg Langwasser Süd (n736693342)
-
-      r10517757: 
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-
-      r10517758: 
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-        - Langwasser Nord (n4763985965)
-        - Scharfreiterring (n4759187459)
-        - Langwasser Mitte (n4763971452)
-        - Gemeinschaftshaus (n1585094565)
-        - Nürnberg Langwasser Süd (n736693342)
-
-      r10517754: 
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-
-      r10517760: 
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-
-      r538906: 
-        - Fürth Hardhöhe (n904363731)
-        - Fürth Klinikum (n904343710)
-        - Fürth-Stadthalle (n7204798211)
-        - Fürth Rathaus (n7204798212)
-        - Fürth Hauptbahnhof (n5407589294)
-        - Fürth Jakobinenstraße (n904158186)
-        - Stadtgrenze (n4757608375)
-        - Muggenhof (n4772500005)
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-        - Langwasser Nord (n4763985965)
-        - Scharfreiterring (n4759187459)
-        - Langwasser Mitte (n4763971452)
-        - Gemeinschaftshaus (n1585094565)
-        - Nürnberg Langwasser Süd (n736693342)
-
-      r10517755: 
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-
-      r10517756: 
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-        - Langwasser Nord (n4763985965)
-        - Scharfreiterring (n4759187459)
-        - Langwasser Mitte (n4763971452)
-        - Gemeinschaftshaus (n1585094565)
-        - Nürnberg Langwasser Süd (n736693342)
-
-      r10517759: 
-        - Fürth Hardhöhe (n904363731)
-        - Fürth Klinikum (n904343710)
-        - Fürth-Stadthalle (n7204798211)
-        - Fürth Rathaus (n7204798212)
-        - Fürth Hauptbahnhof (n5407589294)
-        - Fürth Jakobinenstraße (n904158186)
-        - Stadtgrenze (n4757608375)
-        - Muggenhof (n4772500005)
-        - Eberhardshof (n2606135480)
-        - Maximilianstraße (n4774135615)
-        - Bärenschanze (n2606135478)
-        - Gostenhof (n2606135477)
-        - Plärrer (n4761338549)
-        - Weißer Turm (n4757400223)
-        - Lorenzkirche (n5377012523)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Aufseßplatz (n1539236964)
-        - Maffeiplatz (n4774196233)
-        - Frankenstraße (n1585044529)
-        - Hasenbuck (n1585044532)
-        - Bauernfeindstraße (n1585094513)
-        - Messe (n4774103687)
-
-      r538907: 
-        - Nürnberg Langwasser Süd (n736693342)
-        - Gemeinschaftshaus (n1585094565)
-        - Langwasser Mitte (n4763971452)
-        - Scharfreiterring (n4759187459)
-        - Langwasser Nord (n4763985965)
-        - Messe (n4774103687)
-        - Bauernfeindstraße (n1585094513)
-        - Hasenbuck (n1585044532)
-        - Frankenstraße (n1585044529)
-        - Maffeiplatz (n4774196233)
-        - Aufseßplatz (n1539236964)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Lorenzkirche (n5377012523)
-        - Weißer Turm (n4757400223)
-        - Plärrer (n4761338549)
-        - Gostenhof (n2606135477)
-        - Bärenschanze (n2606135478)
-        - Maximilianstraße (n4774135615)
-        - Eberhardshof (n2606135480)
-        - Muggenhof (n4772500005)
-        - Stadtgrenze (n4757608375)
-        - Fürth Jakobinenstraße (n904158186)
-        - Fürth Hauptbahnhof (n5407589294)
-        - Fürth Rathaus (n7204798212)
-        - Fürth-Stadthalle (n7204798211)
-        - Fürth Klinikum (n904343710)
-        - Fürth Hardhöhe (n904363731)
-
-
-  - 
-    ref: U2
-    name: 'U-Bahn U2: Nürnberg Röthenbach <=> Nürnberg Flughafen'
-    colour: '#ff0000'
-    station_count: 16
-    type: subway
-    stations: 
-      - Nürnberg Röthenbach
-      - Hohe Marter
-      - Schweinau
-      - St. Leonhard
-      - Rothenburger Straße
-      - Plärrer
-      - Opernhaus
-      - Nürnberg Hauptbahnhof (U2/U3)
-      - Wöhrder Wiese
-      - Rathenauplatz
-      - Rennweg
-      - Schoppershof
-      - Nordostbahnhof
-      - Herrnhütte
-      - Ziegelstein
-      - Flughafen
-
-    itineraries: 
-      r1168226: 
-        - Nürnberg Flughafen (n4353751889)
-        - Ziegelstein (n1517586316)
-        - Herrnhütte (n1517583504)
-        - Nordostbahnhof (n4772451721)
-        - Schoppershof (n4759152761)
-        - Rennweg (n4759421223)
-        - Rathenauplatz (n4333553202)
-        - Wöhrder Wiese (n4757400222)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Opernhaus (n4772350540)
-        - Plärrer (n4761338549)
-        - Rothenburger Straße (n4344458580)
-        - St. Leonhard (n4757622622)
-        - Schweinau (n4757717237)
-        - Hohe Marter (n1113282688)
-        - Nürnberg Röthenbach (n4759413821)
-
-      r905096: 
-        - Nürnberg Röthenbach (n4759413821)
-        - Hohe Marter (n1113282688)
-        - Schweinau (n4757717237)
-        - St. Leonhard (n4757622622)
-        - Rothenburger Straße (n4344458580)
-        - Plärrer (n4761338549)
-        - Opernhaus (n4772350540)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Wöhrder Wiese (n4757400222)
-        - Rathenauplatz (n4333553202)
-        - Rennweg (n4759421223)
-        - Schoppershof (n4759152761)
-        - Nordostbahnhof (n4772451721)
-        - Herrnhütte (n1517583504)
-        - Ziegelstein (n1517586316)
-        - Nürnberg Flughafen (n4353751889)
-
-
-  - 
-    ref: U3
-    name: 'U-Bahn U3: Nürnberg Gustv-Adolf-Straße <=> Nürnberg Nordwestring'
-    colour: '#00868b'
-    station_count: 14
-    type: subway
-    stations: 
-      - Nordwestring
-      - Klinikum Nord
-      - Friedrich-Ebert-Platz
-      - Kaulbachplatz
-      - Maxfeld
-      - Rathenauplatz
-      - Wöhrder Wiese
-      - Nürnberg Hauptbahnhof (U2/U3)
-      - Opernhaus
-      - Plärrer
-      - Rothenburger Straße
-      - Sündersbühl
-      - Gustav-Adolf-Straße
-      - Gustav-Adolf-Straße
-
-    itineraries: 
-      r905097: 
-        - Großreuth bei Schweinau (n7656308810)
-        - Gustav-Adolf-Straße (n8155373602)
-        - Sündersbühl (n8155524094)
-        - Rothenburger Straße (n4344458580)
-        - Plärrer (n4761338549)
-        - Opernhaus (n4772350540)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Wöhrder Wiese (n4757400222)
-        - Rathenauplatz (n4333553202)
-        - Maxfeld (n4774180523)
-        - Kaulbachplatz (n7214634664)
-        - Friedrich-Ebert-Platz (n8155420737)
-        - Klinikum Nord (n8155445039)
-        - Nordwestring (n5781540166)
-
-      r1168225: 
-        - Nordwestring (n5781540166)
-        - Klinikum Nord (n8155445039)
-        - Friedrich-Ebert-Platz (n8155420737)
-        - Kaulbachplatz (n7214634664)
-        - Maxfeld (n4774180523)
-        - Rathenauplatz (n4333553202)
-        - Wöhrder Wiese (n4757400222)
-        - Nürnberg Hauptbahnhof (n2616227985)
-        - Opernhaus (n4772350540)
-        - Plärrer (n4761338549)
-        - Rothenburger Straße (n4344458580)
-        - Sündersbühl (n8155524094)
-        - Gustav-Adolf-Straße (n8155373602)
-        - Großreuth bei Schweinau (n7656308810)
-
-
+    - Nürnberg Hauptbahnhof (U1) (r964696)
+    - Nürnberg Hauptbahnhof (U2/U3) (r7718826)
 
 stations: 
   - Aufseßplatz (n1539236964)
@@ -415,8 +55,368 @@ stations:
   - Wöhrder Wiese (n4757400222)
   - Ziegelstein (n1517586316)
 
-transfers: 
+routes: 
   - 
-    - Nürnberg Hauptbahnhof (U1) (r964696)
-    - Nürnberg Hauptbahnhof (U2/U3) (r7718826)
+    colour: '#000066'
+    type: subway
+    stations: 
+      - Gostenhof
+      - Plärrer
+      - Weißer Turm
+      - Lorenzkirche
+      - Nürnberg Hauptbahnhof (U1)
+      - Aufseßplatz
+      - Maffeiplatz
+      - Frankenstraße
+      - Hasenbuck
+      - Bauernfeindstraße
+      - Messe
+      - Eberhardshof
+      - Maximilianstraße
+      - Bärenschanze
+      - Langwasser Nord
+      - Scharfreiterring
+      - Langwasser Mitte
+      - Gemeinschaftshaus
+      - Langwasser Süd
+      - Muggenhof
+      - Stadtgrenze
+      - Fürth Jakobinenstraße
+      - Fürth Hauptbahnhof (U1)
+      - Fürth Rathaus
+      - Fürth-Stadthalle
+      - Fürth Klinikum
+      - Fürth-Hardhöhe
+
+    ref: U1
+    station_count: 27
+    itineraries: 
+      r538906: 
+        - Fürth Hardhöhe (n904363731)
+        - Fürth Klinikum (n904343710)
+        - Fürth-Stadthalle (n7204798211)
+        - Fürth Rathaus (n7204798212)
+        - Fürth Hauptbahnhof (n5407589294)
+        - Fürth Jakobinenstraße (n904158186)
+        - Stadtgrenze (n4757608375)
+        - Muggenhof (n4772500005)
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+        - Langwasser Nord (n4763985965)
+        - Scharfreiterring (n4759187459)
+        - Langwasser Mitte (n4763971452)
+        - Gemeinschaftshaus (n1585094565)
+        - Nürnberg Langwasser Süd (n736693342)
+
+      r10517754: 
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+
+      r10517759: 
+        - Fürth Hardhöhe (n904363731)
+        - Fürth Klinikum (n904343710)
+        - Fürth-Stadthalle (n7204798211)
+        - Fürth Rathaus (n7204798212)
+        - Fürth Hauptbahnhof (n5407589294)
+        - Fürth Jakobinenstraße (n904158186)
+        - Stadtgrenze (n4757608375)
+        - Muggenhof (n4772500005)
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+
+      r10517755: 
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+
+      r10517762: 
+        - Fürth-Stadthalle (n7204798211)
+        - Fürth Rathaus (n7204798212)
+        - Fürth Hauptbahnhof (n5407589294)
+        - Fürth Jakobinenstraße (n904158186)
+        - Stadtgrenze (n4757608375)
+        - Muggenhof (n4772500005)
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+        - Langwasser Nord (n4763985965)
+        - Scharfreiterring (n4759187459)
+        - Langwasser Mitte (n4763971452)
+        - Gemeinschaftshaus (n1585094565)
+        - Nürnberg Langwasser Süd (n736693342)
+
+      r10517756: 
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+        - Langwasser Nord (n4763985965)
+        - Scharfreiterring (n4759187459)
+        - Langwasser Mitte (n4763971452)
+        - Gemeinschaftshaus (n1585094565)
+        - Nürnberg Langwasser Süd (n736693342)
+
+      r10517761: 
+        - Scharfreiterring (n4759187459)
+        - Langwasser Mitte (n4763971452)
+        - Gemeinschaftshaus (n1585094565)
+        - Nürnberg Langwasser Süd (n736693342)
+
+      r10517760: 
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+
+      r538907: 
+        - Nürnberg Langwasser Süd (n736693342)
+        - Gemeinschaftshaus (n1585094565)
+        - Langwasser Mitte (n4763971452)
+        - Scharfreiterring (n4759187459)
+        - Langwasser Nord (n4763985965)
+        - Messe (n4774103687)
+        - Bauernfeindstraße (n1585094513)
+        - Hasenbuck (n1585044532)
+        - Frankenstraße (n1585044529)
+        - Maffeiplatz (n4774196233)
+        - Aufseßplatz (n1539236964)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Lorenzkirche (n5377012523)
+        - Weißer Turm (n4757400223)
+        - Plärrer (n4761338549)
+        - Gostenhof (n2606135477)
+        - Bärenschanze (n2606135478)
+        - Maximilianstraße (n4774135615)
+        - Eberhardshof (n2606135480)
+        - Muggenhof (n4772500005)
+        - Stadtgrenze (n4757608375)
+        - Fürth Jakobinenstraße (n904158186)
+        - Fürth Hauptbahnhof (n5407589294)
+        - Fürth Rathaus (n7204798212)
+        - Fürth-Stadthalle (n7204798211)
+        - Fürth Klinikum (n904343710)
+        - Fürth Hardhöhe (n904363731)
+
+      r10517758: 
+        - Eberhardshof (n2606135480)
+        - Maximilianstraße (n4774135615)
+        - Bärenschanze (n2606135478)
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+        - Langwasser Nord (n4763985965)
+        - Scharfreiterring (n4759187459)
+        - Langwasser Mitte (n4763971452)
+        - Gemeinschaftshaus (n1585094565)
+        - Nürnberg Langwasser Süd (n736693342)
+
+      r10517757: 
+        - Gostenhof (n2606135477)
+        - Plärrer (n4761338549)
+        - Weißer Turm (n4757400223)
+        - Lorenzkirche (n5377012523)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Aufseßplatz (n1539236964)
+        - Maffeiplatz (n4774196233)
+        - Frankenstraße (n1585044529)
+        - Hasenbuck (n1585044532)
+        - Bauernfeindstraße (n1585094513)
+        - Messe (n4774103687)
+
+
+    name: 'U-Bahn U1: Fürth Hardhöhe <=> Nürnberg Langwasser Süd'
+  - 
+    colour: '#ff0000'
+    type: subway
+    stations: 
+      - Nürnberg Röthenbach
+      - Hohe Marter
+      - Schweinau
+      - St. Leonhard
+      - Rothenburger Straße
+      - Plärrer
+      - Opernhaus
+      - Nürnberg Hauptbahnhof (U2/U3)
+      - Wöhrder Wiese
+      - Rathenauplatz
+      - Rennweg
+      - Schoppershof
+      - Nordostbahnhof
+      - Herrnhütte
+      - Ziegelstein
+      - Flughafen
+
+    ref: U2
+    station_count: 16
+    itineraries: 
+      r1168226: 
+        - Nürnberg Flughafen (n4353751889)
+        - Ziegelstein (n1517586316)
+        - Herrnhütte (n1517583504)
+        - Nordostbahnhof (n4772451721)
+        - Schoppershof (n4759152761)
+        - Rennweg (n4759421223)
+        - Rathenauplatz (n4333553202)
+        - Wöhrder Wiese (n4757400222)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Opernhaus (n4772350540)
+        - Plärrer (n4761338549)
+        - Rothenburger Straße (n4344458580)
+        - St. Leonhard (n4757622622)
+        - Schweinau (n4757717237)
+        - Hohe Marter (n1113282688)
+        - Nürnberg Röthenbach (n4759413821)
+
+      r905096: 
+        - Nürnberg Röthenbach (n4759413821)
+        - Hohe Marter (n1113282688)
+        - Schweinau (n4757717237)
+        - St. Leonhard (n4757622622)
+        - Rothenburger Straße (n4344458580)
+        - Plärrer (n4761338549)
+        - Opernhaus (n4772350540)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Wöhrder Wiese (n4757400222)
+        - Rathenauplatz (n4333553202)
+        - Rennweg (n4759421223)
+        - Schoppershof (n4759152761)
+        - Nordostbahnhof (n4772451721)
+        - Herrnhütte (n1517583504)
+        - Ziegelstein (n1517586316)
+        - Nürnberg Flughafen (n4353751889)
+
+
+    name: 'U-Bahn U2: Nürnberg Röthenbach <=> Nürnberg Flughafen'
+  - 
+    colour: '#00868b'
+    type: subway
+    stations: 
+      - Gustav-Adolf-Straße
+      - Gustav-Adolf-Straße
+      - Sündersbühl
+      - Rothenburger Straße
+      - Plärrer
+      - Opernhaus
+      - Nürnberg Hauptbahnhof (U2/U3)
+      - Wöhrder Wiese
+      - Rathenauplatz
+      - Maxfeld
+      - Kaulbachplatz
+      - Friedrich-Ebert-Platz
+      - Klinikum Nord
+      - Nordwestring
+
+    ref: U3
+    station_count: 14
+    itineraries: 
+      r905097: 
+        - Großreuth bei Schweinau (n7656308810)
+        - Gustav-Adolf-Straße (n8155373602)
+        - Sündersbühl (n8155524094)
+        - Rothenburger Straße (n4344458580)
+        - Plärrer (n4761338549)
+        - Opernhaus (n4772350540)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Wöhrder Wiese (n4757400222)
+        - Rathenauplatz (n4333553202)
+        - Maxfeld (n4774180523)
+        - Kaulbachplatz (n7214634664)
+        - Friedrich-Ebert-Platz (n8155420737)
+        - Klinikum Nord (n8155445039)
+        - Nordwestring (n5781540166)
+
+      r1168225: 
+        - Nordwestring (n5781540166)
+        - Klinikum Nord (n8155445039)
+        - Friedrich-Ebert-Platz (n8155420737)
+        - Kaulbachplatz (n7214634664)
+        - Maxfeld (n4774180523)
+        - Rathenauplatz (n4333553202)
+        - Wöhrder Wiese (n4757400222)
+        - Nürnberg Hauptbahnhof (n2616227985)
+        - Opernhaus (n4772350540)
+        - Plärrer (n4761338549)
+        - Rothenburger Straße (n4344458580)
+        - Sündersbühl (n8155524094)
+        - Gustav-Adolf-Straße (n8155373602)
+        - Großreuth bei Schweinau (n7656308810)
+
+
+    name: 'U-Bahn U3: Nürnberg Gustv-Adolf-Straße <=> Nürnberg Nordwestring'
 

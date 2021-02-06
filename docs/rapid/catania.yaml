@@ -1,79 +1,49 @@
 
-routes: 
-  - 
-    ref: 1
-    name: Nesima-Porto
-    colour: '#ff0000'
-    station_count: 10
-    type: subway
-    stations: 
-      - Nesima
-      - San Nullo
-      - Milo
-      - Borgo
-      - Giuffrida
-      - Italia
-      - Galatea
-      - Porto
-      - Stesicoro
-      - Giovanni XXIII
-
-    itineraries: 
-      r7269755: 
-        - Porto (n7758321985)
-        - Galatea (n307425339)
-        - Italia (n307425268)
-        - Giuffrida (n299170087)
-        - Borgo (n307423725)
-        - Milo (n4840555502)
-        - San Nullo (n2841490395)
-        - Nesima (n5191380041)
-
-      r7269754: 
-        - Nesima (n5191380041)
-        - San Nullo (n2841490395)
-        - Milo (n4840555502)
-        - Borgo (n307423725)
-        - Giuffrida (n299170087)
-        - Italia (n307425268)
-        - Galatea (n307425339)
-        - Porto (n7758321985)
-
-      r6878036: 
-        - Stesicoro (n601502076)
-        - Giovanni XXIII (n601502088)
-        - Galatea (n307425339)
-        - Italia (n307425268)
-        - Giuffrida (n299170087)
-        - Borgo (n307423725)
-        - Milo (n4840555502)
-        - San Nullo (n2841490395)
-        - Nesima (n5191380041)
-
-      r6878037: 
-        - Nesima (n5191380041)
-        - San Nullo (n2841490395)
-        - Milo (n4840555502)
-        - Borgo (n307423725)
-        - Giuffrida (n299170087)
-        - Italia (n307425268)
-        - Galatea (n307425339)
-        - Giovanni XXIII (n601502088)
-        - Stesicoro (n601502076)
-
-
+transfers: 
 
 stations: 
-  - Borgo (n307423725)
-  - Galatea (n307425339)
-  - Giovanni XXIII (n601502088)
-  - Giuffrida (n299170087)
-  - Italia (n307425268)
-  - Milo (n4840555502)
-  - Nesima (n5191380041)
-  - Porto (n7758321985)
-  - San Nullo (n2841490395)
-  - Stesicoro (n601502076)
+  - Borgo (n8388857182)
+  - Cibali (n8388857180)
+  - Galatea (n8388857185)
+  - Giovanni XXIII (n8388857186)
+  - Giuffrida (n8388857183)
+  - Italia (n8388857184)
+  - Milo (n8388857181)
+  - Nesima (n8388857178)
+  - San Nullo (n8388857179)
+  - Stesicoro (n8388857187)
 
-transfers: 
+routes: 
+  - 
+    colour: '#ff0000'
+    type: subway
+    stations: 
+      - Stesicoro
+      - Giovanni XXIII
+      - Galatea
+      - Italia
+      - Giuffrida
+      - Borgo
+      - Milo
+      - Cibali
+      - San Nullo
+      - Nesima
+
+    ref: 1
+    station_count: 10
+    itineraries: 
+      r6878036: 
+        - Stesicoro (n8388857187)
+        - Giovanni XXIII (n8388857186)
+        - Galatea (n8388857185)
+        - Italia (n8388857184)
+        - Giuffrida (n8388857183)
+        - Borgo (n8388857182)
+        - Milo (n8388857181)
+        - Cibali (n8388857180)
+        - San Nullo (n8388857179)
+        - Nesima (n8388857178)
+
+
+    name: Metropolitana di Catania
 

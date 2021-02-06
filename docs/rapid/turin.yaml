@@ -1,82 +1,5 @@
 
-routes: 
-  - 
-    ref: M1
-    name: 'M1: Fermi - Lingotto'
-    colour: '#ffff00'
-    station_count: 21
-    type: subway
-    stations: 
-      - Fermi
-      - Paradiso
-      - Marche
-      - Marche
-      - Pozzo Strada
-      - Monte Grappa
-      - Rivoli
-      - Racconigi
-      - Bernini
-      - Principi D'Acaja
-      - XVIII Dicembre
-      - Porta Susa
-      - Vinzaglio
-      - Re Umberto
-      - Porta Nuova
-      - Marconi
-      - Nizza
-      - Dante
-      - Carducci-Molinette
-      - Spezia
-      - Lingotto
-
-    itineraries: 
-      r1204590: 
-        - Lingotto (n4076608590)
-        - Spezia (n1621378603)
-        - Carducci-Molinette (n3253332071)
-        - Dante (n893193542)
-        - Nizza (n1621697594)
-        - Marconi (n1622042729)
-        - Porta Nuova (n254594415)
-        - Re Umberto (n254594416)
-        - Vinzaglio (n543360161)
-        - Porta Susa (n432803701)
-        - XVIII Dicembre (n432803698)
-        - Principi D'Acaja (n2081499942)
-        - Bernini (n332648606)
-        - Racconigi (n1095052533)
-        - Rivoli (n332648726)
-        - Monte Grappa (n496268558)
-        - Pozzo Strada (n496268559)
-        - Massaua (n496268560)
-        - Marche (n496268561)
-        - Paradiso (n332648897)
-        - Fermi (n1481306407)
-
-      r386242: 
-        - Fermi (n1481306407)
-        - Paradiso (n332648897)
-        - Marche (n496268561)
-        - Massaua (n496268560)
-        - Pozzo Strada (n496268559)
-        - Monte Grappa (n496268558)
-        - Rivoli (n332648726)
-        - Racconigi (n1095052533)
-        - Bernini (n332648606)
-        - Principi D'Acaja (n2081499942)
-        - XVIII Dicembre (n432803698)
-        - Porta Susa (n432803701)
-        - Vinzaglio (n543360161)
-        - Re Umberto (n254594416)
-        - Porta Nuova (n254594415)
-        - Marconi (n1622042729)
-        - Nizza (n1621697594)
-        - Dante (n893193542)
-        - Carducci-Molinette (n3253332071)
-        - Spezia (n1621378603)
-        - Lingotto (n4076608590)
-
-
+transfers: 
 
 stations: 
   - Bernini (n332648606)
@@ -101,5 +24,82 @@ stations:
   - Vinzaglio (n543360161)
   - XVIII Dicembre (n432803698)
 
-transfers: 
+routes: 
+  - 
+    colour: '#ffff00'
+    type: subway
+    stations: 
+      - Lingotto
+      - Spezia
+      - Carducci-Molinette
+      - Dante
+      - Nizza
+      - Marconi
+      - Porta Nuova
+      - Re Umberto
+      - Vinzaglio
+      - Porta Susa
+      - XVIII Dicembre
+      - Principi D'Acaja
+      - Bernini
+      - Racconigi
+      - Rivoli
+      - Monte Grappa
+      - Pozzo Strada
+      - Marche
+      - Marche
+      - Paradiso
+      - Fermi
+
+    ref: M1
+    station_count: 21
+    itineraries: 
+      r386242: 
+        - Fermi (n1481306407)
+        - Paradiso (n332648897)
+        - Marche (n496268561)
+        - Massaua (n496268560)
+        - Pozzo Strada (n496268559)
+        - Monte Grappa (n496268558)
+        - Rivoli (n332648726)
+        - Racconigi (n1095052533)
+        - Bernini (n332648606)
+        - Principi D'Acaja (n2081499942)
+        - XVIII Dicembre (n432803698)
+        - Porta Susa (n432803701)
+        - Vinzaglio (n543360161)
+        - Re Umberto (n254594416)
+        - Porta Nuova (n254594415)
+        - Marconi (n1622042729)
+        - Nizza (n1621697594)
+        - Dante (n893193542)
+        - Carducci-Molinette (n3253332071)
+        - Spezia (n1621378603)
+        - Lingotto (n4076608590)
+
+      r1204590: 
+        - Lingotto (n4076608590)
+        - Spezia (n1621378603)
+        - Carducci-Molinette (n3253332071)
+        - Dante (n893193542)
+        - Nizza (n1621697594)
+        - Marconi (n1622042729)
+        - Porta Nuova (n254594415)
+        - Re Umberto (n254594416)
+        - Vinzaglio (n543360161)
+        - Porta Susa (n432803701)
+        - XVIII Dicembre (n432803698)
+        - Principi D'Acaja (n2081499942)
+        - Bernini (n332648606)
+        - Racconigi (n1095052533)
+        - Rivoli (n332648726)
+        - Monte Grappa (n496268558)
+        - Pozzo Strada (n496268559)
+        - Massaua (n496268560)
+        - Marche (n496268561)
+        - Paradiso (n332648897)
+        - Fermi (n1481306407)
+
+
+    name: 'M1: Lingotto - Fermi'
 

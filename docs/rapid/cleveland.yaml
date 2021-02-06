@@ -1,245 +1,14 @@
 
-routes: 
+transfers: 
   - 
-    ref: Blue
-    name: RTA Blue Line
-    colour: '#0000ff'
-    station_count: 24
-    type: light_rail
-    stations: 
-      - Warrensville–Van Aken
-      - Farnsleigh
-      - Lynnfield
-      - Kenmore
-      - Avalon
-      - Lee–Van Aken
-      - Ashby
-      - Onaway
-      - Southington (Blue Line)
-      - South Woodland
-      - Drexmore
-      - Shaker Square
-      - East 116th–St. Luke’s
-      - Buckeye–Woodhill
-      - East 79th (light rail)
-      - East 55th (light rail)
-      - Tri-C–Campus District (light rail)
-      - Tower City (light rail)
-      - Settlers Landing
-      - Flats East Bank
-      - West 3rd
-      - Amtrak
-      - East 9th–North Coast
-      - South Harbor
-
-    itineraries: 
-      r7548641: 
-        - South Harbor (n5084279856)
-        - East 9th–North Coast (n5084279875)
-        - Amtrak (n7777190111)
-        - West 3rd (n5084279884)
-        - Flats East Bank (n5084122713)
-        - Settlers Landing (n5084123654)
-        - Tower City (n5371550472)
-        - Tri-C–Campus District (n5371553444)
-        - East 55th (n5371557810)
-        - East 79th (n5084494507)
-        - Buckeye–Woodhill (n5084494497)
-        - East 116th–St. Luke’s (n5084494450)
-        - Shaker Square (n5084494470)
-        - Drexmore (n5371579640)
-        - South Woodland (n5371600130)
-        - Southington (n5371598839)
-        - Onaway (n5371596029)
-        - Ashby (n5371595408)
-        - Lee–Van Aken (n5084586293)
-        - Avalon (n5371593950)
-        - Kenmore (n5371590769)
-        - Lynnfield (n5084586264)
-        - Farnsleigh (n5084586231)
-        - Warrensville–Van Aken (n5371533632)
-
-      r7548639: 
-        - Warrensville–Van Aken (n5371533632)
-        - Farnsleigh (n5084586231)
-        - Lynnfield (n5084586264)
-        - Kenmore (n5371590769)
-        - Avalon (n5371593950)
-        - Lee–Van Aken (n5084586293)
-        - Ashby (n5371595408)
-        - Onaway (n5371596029)
-        - Southington (n5371598839)
-        - South Woodland (n5371600130)
-        - Drexmore (n5371579640)
-        - Shaker Square (n5084494470)
-        - East 116th–St. Luke’s (n5084494450)
-        - Buckeye–Woodhill (n5084494497)
-        - East 79th (n5084494507)
-        - East 55th (n5371557810)
-        - Tri-C–Campus District (n5371553444)
-        - Tower City (n5371550472)
-        - Settlers Landing (n5084123654)
-        - Flats East Bank (n5084122713)
-        - West 3rd (n5084279884)
-        - Amtrak (n7777190111)
-        - East 9th–North Coast (n5084279875)
-        - South Harbor (n5084279856)
-
-
+    - East 55th (Red Line) (r7929814)
+    - East 55th (light rail) (r7950403)
   - 
-    ref: Green
-    name: RTA Green Line
-    colour: '#008000'
-    station_count: 24
-    type: light_rail
-    stations: 
-      - South Harbor
-      - East 9th–North Coast
-      - Amtrak
-      - West 3rd
-      - Flats East Bank
-      - Settlers Landing
-      - Tower City (light rail)
-      - Tri-C–Campus District (light rail)
-      - East 55th (light rail)
-      - East 79th (light rail)
-      - Buckeye–Woodhill
-      - East 116th–St. Luke’s
-      - Shaker Square
-      - Coventry
-      - Southington (Green Line)
-      - South Park
-      - Lee–Shaker
-      - Attleboro
-      - Eaton
-      - Courtland
-      - Warrensville–Shaker
-      - Belvoir
-      - West Green
-      - Green Road
-
-    itineraries: 
-      r7548638: 
-        - South Harbor (n5084279856)
-        - East 9th–North Coast (n5084279875)
-        - Amtrak (n7777190111)
-        - West 3rd (n5084279884)
-        - Flats East Bank (n5084122713)
-        - Settlers Landing (n5084123654)
-        - Tower City (n5371550472)
-        - Tri-C–Campus District (n5371553444)
-        - East 55th (n5371557810)
-        - East 79th (n5084494507)
-        - Buckeye–Woodhill (n5084494497)
-        - East 116th–St. Luke’s (n5084494450)
-        - Shaker Square (n5084494470)
-        - Coventry (n5371565387)
-        - Southington (n5371565793)
-        - South Park (n5371519705)
-        - Lee–Shaker (n5371569673)
-        - Attleboro (n5371570948)
-        - Eaton (n5371571178)
-        - Courtland (n5371575572)
-        - Warrensville–Shaker (n5371574134)
-        - Belvoir (n5090624036)
-        - West Green (n5090620814)
-        - Green Road (n5090620817)
-
-      r7548637: 
-        - Green Road (n5090620817)
-        - West Green (n5090620814)
-        - Belvoir (n5090624036)
-        - Warrensville–Shaker (n5371574134)
-        - Courtland (n5371575572)
-        - Eaton (n5371571178)
-        - Attleboro (n5371570948)
-        - Lee–Shaker (n5371569673)
-        - South Park (n5371519705)
-        - Southington (n5371565793)
-        - Coventry (n5371565387)
-        - Shaker Square (n5084494470)
-        - East 116th–St. Luke’s (n5084494450)
-        - Buckeye–Woodhill (n5084494497)
-        - East 79th (n5084494507)
-        - East 55th (n5371557810)
-        - Tri-C–Campus District (n5371553444)
-        - Tower City (n5371550472)
-        - Settlers Landing (n5084123654)
-        - Flats East Bank (n5084122713)
-        - West 3rd (n5084279884)
-        - Amtrak (n7777190111)
-        - East 9th–North Coast (n5084279875)
-        - South Harbor (n5084279856)
-
-
+    - Tower City (Red Line) (r7929821)
+    - Tower City (light rail) (r7950400)
   - 
-    ref: Red
-    name: RTA Red Line
-    colour: '#ff0000'
-    station_count: 18
-    type: subway
-    stations: 
-      - Airport
-      - Brookpark
-      - Puritas
-      - West Park
-      - Triskett
-      - West 117th–Madison
-      - West Boulevard–Cudell
-      - West 65th–Lorain (Eco-Village)
-      - West 25th–Ohio City
-      - Tower City (Red Line)
-      - Tri-C–Campus District (Red Line)
-      - East 55th (Red Line)
-      - East 79th (Red Line)
-      - East 105th–Quincy
-      - Cedar–University
-      - Little Italy–University Circle
-      - Superior
-      - Louis Stokes Station at Windermere
-
-    itineraries: 
-      r7551455: 
-        - Louis Stokes Station at Windermere (n5358107528)
-        - Superior (n5404041945)
-        - Little Italy–University Circle (n5358107329)
-        - Cedar–University (n5358111416)
-        - East 105th–Quincy (n5358113321)
-        - East 79th (n5358099775)
-        - East 55th (n5358118175)
-        - Tri-C–Campus District (n5358121254)
-        - Tower City (n5083875545)
-        - West 25th–Ohio City (n5358121707)
-        - West 65th–Lorain (Eco-Village) (n5358122403)
-        - West Boulevard–Cudell (n5358121039)
-        - West 117th–Madison (n5086768047)
-        - Triskett (n5348271582)
-        - West Park (n5348257327)
-        - Puritas (n5348247388)
-        - Brookpark (n5348242525)
-        - Airport (n5086768130)
-
-      r7551456: 
-        - Airport (n5086768130)
-        - Brookpark (n5348242525)
-        - Puritas (n5348247388)
-        - West Park (n5348257327)
-        - Triskett (n5348271582)
-        - West 117th–Madison (n5086768047)
-        - West Boulevard–Cudell (n5358121039)
-        - West 65th–Lorain (Eco-Village) (n5358122403)
-        - West 25th–Ohio City (n5358121707)
-        - Tower City (n5083875545)
-        - Tri-C–Campus District (n5358121254)
-        - East 55th (n5358118175)
-        - East 79th (n5358099775)
-        - East 105th–Quincy (n5358113321)
-        - Cedar–University (n5358111416)
-        - Little Italy–University Circle (n5358107329)
-        - Superior (n5404041945)
-        - Louis Stokes Station at Windermere (n5358107528)
-
-
+    - Tri-C–Campus District (Red Line) (r7929816)
+    - Tri-C–Campus District (light rail) (r7950402)
 
 stations: 
   - Airport (n5086768130)
@@ -296,14 +65,245 @@ stations:
   - West Green (n5090620814)
   - West Park (n5348257327)
 
-transfers: 
+routes: 
   - 
-    - East 55th (Red Line) (r7929814)
-    - East 55th (light rail) (r7950403)
+    colour: '#0000ff'
+    type: light_rail
+    stations: 
+      - Warrensville–Van Aken
+      - Farnsleigh
+      - Lynnfield
+      - Kenmore
+      - Avalon
+      - Lee–Van Aken
+      - Ashby
+      - Onaway
+      - Southington (Blue Line)
+      - South Woodland
+      - Drexmore
+      - Shaker Square
+      - East 116th–St. Luke’s
+      - Buckeye–Woodhill
+      - East 79th (light rail)
+      - East 55th (light rail)
+      - Tri-C–Campus District (light rail)
+      - Tower City (light rail)
+      - Settlers Landing
+      - Flats East Bank
+      - West 3rd
+      - Amtrak
+      - East 9th–North Coast
+      - South Harbor
+
+    ref: Blue
+    station_count: 24
+    itineraries: 
+      r7548641: 
+        - South Harbor (n5084279856)
+        - East 9th–North Coast (n5084279875)
+        - Amtrak (n7777190111)
+        - West 3rd (n5084279884)
+        - Flats East Bank (n5084122713)
+        - Settlers Landing (n5084123654)
+        - Tower City (n5371550472)
+        - Tri-C–Campus District (n5371553444)
+        - East 55th (n5371557810)
+        - East 79th (n5084494507)
+        - Buckeye–Woodhill (n5084494497)
+        - East 116th–St. Luke’s (n5084494450)
+        - Shaker Square (n5084494470)
+        - Drexmore (n5371579640)
+        - South Woodland (n5371600130)
+        - Southington (n5371598839)
+        - Onaway (n5371596029)
+        - Ashby (n5371595408)
+        - Lee–Van Aken (n5084586293)
+        - Avalon (n5371593950)
+        - Kenmore (n5371590769)
+        - Lynnfield (n5084586264)
+        - Farnsleigh (n5084586231)
+        - Warrensville–Van Aken (n5371533632)
+
+      r7548639: 
+        - Warrensville–Van Aken (n5371533632)
+        - Farnsleigh (n5084586231)
+        - Lynnfield (n5084586264)
+        - Kenmore (n5371590769)
+        - Avalon (n5371593950)
+        - Lee–Van Aken (n5084586293)
+        - Ashby (n5371595408)
+        - Onaway (n5371596029)
+        - Southington (n5371598839)
+        - South Woodland (n5371600130)
+        - Drexmore (n5371579640)
+        - Shaker Square (n5084494470)
+        - East 116th–St. Luke’s (n5084494450)
+        - Buckeye–Woodhill (n5084494497)
+        - East 79th (n5084494507)
+        - East 55th (n5371557810)
+        - Tri-C–Campus District (n5371553444)
+        - Tower City (n5371550472)
+        - Settlers Landing (n5084123654)
+        - Flats East Bank (n5084122713)
+        - West 3rd (n5084279884)
+        - Amtrak (n7777190111)
+        - East 9th–North Coast (n5084279875)
+        - South Harbor (n5084279856)
+
+
+    name: RTA Blue Line
   - 
-    - Tower City (Red Line) (r7929821)
-    - Tower City (light rail) (r7950400)
+    colour: '#008000'
+    type: light_rail
+    stations: 
+      - Green Road
+      - West Green
+      - Belvoir
+      - Warrensville–Shaker
+      - Courtland
+      - Eaton
+      - Attleboro
+      - Lee–Shaker
+      - South Park
+      - Southington (Green Line)
+      - Coventry
+      - Shaker Square
+      - East 116th–St. Luke’s
+      - Buckeye–Woodhill
+      - East 79th (light rail)
+      - East 55th (light rail)
+      - Tri-C–Campus District (light rail)
+      - Tower City (light rail)
+      - Settlers Landing
+      - Flats East Bank
+      - West 3rd
+      - Amtrak
+      - East 9th–North Coast
+      - South Harbor
+
+    ref: Green
+    station_count: 24
+    itineraries: 
+      r7548638: 
+        - South Harbor (n5084279856)
+        - East 9th–North Coast (n5084279875)
+        - Amtrak (n7777190111)
+        - West 3rd (n5084279884)
+        - Flats East Bank (n5084122713)
+        - Settlers Landing (n5084123654)
+        - Tower City (n5371550472)
+        - Tri-C–Campus District (n5371553444)
+        - East 55th (n5371557810)
+        - East 79th (n5084494507)
+        - Buckeye–Woodhill (n5084494497)
+        - East 116th–St. Luke’s (n5084494450)
+        - Shaker Square (n5084494470)
+        - Coventry (n5371565387)
+        - Southington (n5371565793)
+        - South Park (n5371519705)
+        - Lee–Shaker (n5371569673)
+        - Attleboro (n5371570948)
+        - Eaton (n5371571178)
+        - Courtland (n5371575572)
+        - Warrensville–Shaker (n5371574134)
+        - Belvoir (n5090624036)
+        - West Green (n5090620814)
+        - Green Road (n5090620817)
+
+      r7548637: 
+        - Green Road (n5090620817)
+        - West Green (n5090620814)
+        - Belvoir (n5090624036)
+        - Warrensville–Shaker (n5371574134)
+        - Courtland (n5371575572)
+        - Eaton (n5371571178)
+        - Attleboro (n5371570948)
+        - Lee–Shaker (n5371569673)
+        - South Park (n5371519705)
+        - Southington (n5371565793)
+        - Coventry (n5371565387)
+        - Shaker Square (n5084494470)
+        - East 116th–St. Luke’s (n5084494450)
+        - Buckeye–Woodhill (n5084494497)
+        - East 79th (n5084494507)
+        - East 55th (n5371557810)
+        - Tri-C–Campus District (n5371553444)
+        - Tower City (n5371550472)
+        - Settlers Landing (n5084123654)
+        - Flats East Bank (n5084122713)
+        - West 3rd (n5084279884)
+        - Amtrak (n7777190111)
+        - East 9th–North Coast (n5084279875)
+        - South Harbor (n5084279856)
+
+
+    name: RTA Green Line
   - 
-    - Tri-C–Campus District (Red Line) (r7929816)
-    - Tri-C–Campus District (light rail) (r7950402)
+    colour: '#ff0000'
+    type: subway
+    stations: 
+      - Airport
+      - Brookpark
+      - Puritas
+      - West Park
+      - Triskett
+      - West 117th–Madison
+      - West Boulevard–Cudell
+      - West 65th–Lorain (Eco-Village)
+      - West 25th–Ohio City
+      - Tower City (Red Line)
+      - Tri-C–Campus District (Red Line)
+      - East 55th (Red Line)
+      - East 79th (Red Line)
+      - East 105th–Quincy
+      - Cedar–University
+      - Little Italy–University Circle
+      - Superior
+      - Louis Stokes Station at Windermere
+
+    ref: Red
+    station_count: 18
+    itineraries: 
+      r7551456: 
+        - Airport (n5086768130)
+        - Brookpark (n5348242525)
+        - Puritas (n5348247388)
+        - West Park (n5348257327)
+        - Triskett (n5348271582)
+        - West 117th–Madison (n5086768047)
+        - West Boulevard–Cudell (n5358121039)
+        - West 65th–Lorain (Eco-Village) (n5358122403)
+        - West 25th–Ohio City (n5358121707)
+        - Tower City (n5083875545)
+        - Tri-C–Campus District (n5358121254)
+        - East 55th (n5358118175)
+        - East 79th (n5358099775)
+        - East 105th–Quincy (n5358113321)
+        - Cedar–University (n5358111416)
+        - Little Italy–University Circle (n5358107329)
+        - Superior (n5404041945)
+        - Louis Stokes Station at Windermere (n5358107528)
+
+      r7551455: 
+        - Louis Stokes Station at Windermere (n5358107528)
+        - Superior (n5404041945)
+        - Little Italy–University Circle (n5358107329)
+        - Cedar–University (n5358111416)
+        - East 105th–Quincy (n5358113321)
+        - East 79th (n5358099775)
+        - East 55th (n5358118175)
+        - Tri-C–Campus District (n5358121254)
+        - Tower City (n5083875545)
+        - West 25th–Ohio City (n5358121707)
+        - West 65th–Lorain (Eco-Village) (n5358122403)
+        - West Boulevard–Cudell (n5358121039)
+        - West 117th–Madison (n5086768047)
+        - Triskett (n5348271582)
+        - West Park (n5348257327)
+        - Puritas (n5348247388)
+        - Brookpark (n5348242525)
+        - Airport (n5086768130)
+
+
+    name: RTA Red Line
 

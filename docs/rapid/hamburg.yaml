@@ -1,470 +1,8 @@
 
-routes: 
+transfers: 
   - 
-    ref: U1
-    name: 'U1: Norderstedt Mitte <=> Ohlstedt/Großhansdorf'
-    colour: '#0066b3'
-    station_count: 47
-    type: subway
-    stations: 
-      - Großhansdorf
-      - Kiekut
-      - Schmalenbeck
-      - Ahrensburg Ost
-      - Ahrensburg West
-      - Buchenkamp
-      - Volksdorf
-      - Meiendorfer Weg
-      - Berne
-      - Oldenfelde
-      - Farmsen
-      - Trabrennbahn
-      - Wandsbek-Gartenstadt
-      - Alter Teichweg
-      - Straßburger Straße
-      - Wandsbek Markt
-      - Wandsbeker Chaussee
-      - Ritterstraße
-      - Wartenau
-      - Lübecker Straße
-      - Lohmühlenstraße
-      - Hauptbahnhof Süd
-      - Steinstraße
-      - Meßberg
-      - Jungfernstieg
-      - Stephansplatz (Oper/CCH)
-      - Hallerstraße
-      - Klosterstern
-      - Kellinghusenstraße
-      - Hudtwalckerstraße
-      - Lattenkamp (Sporthalle)
-      - Alsterdorf
-      - Sengelmannstraße (City Nord)
-      - Ohlsdorf U
-      - Klein Borstel
-      - Fuhlsbüttel
-      - Fuhlsbüttel Nord
-      - Langenhorn Markt
-      - Langenhorn Nord
-      - Kiwittsmoor
-      - Ochsenzoll
-      - Garstedt
-      - Richtweg
-      - Norderstedt Mitte
-      - Buckhorn
-      - Hoisbüttel
-      - Ohlstedt
-
-    itineraries: 
-      r12044389: 
-        - Ohlstedt (n4269580494)
-        - Hoisbüttel (n206226420)
-        - Buckhorn (n4242323423)
-        - Volksdorf (n3573110198)
-        - Meiendorfer Weg (n6146300735)
-        - Berne (n3034089803)
-        - Oldenfelde (n7047553146)
-        - Farmsen (n5532829853)
-        - Trabrennbahn (n1648288162)
-        - Wandsbek-Gartenstadt (n617871270)
-        - Alter Teichweg (n260720436)
-        - Straßburger Straße (n5656833096)
-        - Wandsbek Markt (n617825071)
-        - Wandsbeker Chaussee (n5527651211)
-        - Ritterstraße (n6907067953)
-        - Wartenau (n1197626211)
-        - Lübecker Straße (n3366133260)
-        - Lohmühlenstraße (n5257886400)
-        - Hauptbahnhof Süd (n258576519)
-        - Steinstraße (n5257886399)
-        - Meßberg (n301359593)
-        - Jungfernstieg (n430203857)
-        - Stephansplatz (Oper/CCH) (n5228160282)
-        - Hallerstraße (n3034089805)
-        - Klosterstern (n4240997099)
-        - Kellinghusenstraße (w34385651)
-        - Hudtwalckerstraße (n3081690840)
-        - Lattenkamp (Sporthalle) (n4042444590)
-        - Alsterdorf (n4042376366)
-        - Sengelmannstraße (City Nord) (n5527648759)
-        - Ohlsdorf (n2630595165)
-        - Klein Borstel (n3034089807)
-        - Fuhlsbüttel (n3034089804)
-        - Fuhlsbüttel Nord (n4063037581)
-        - Langenhorn Markt (n4063111596)
-        - Langenhorn Nord (n3681991826)
-        - Kiwittsmoor (n4064650103)
-        - Ochsenzoll (n3034089808)
-        - Garstedt (n4229779983)
-        - Richtweg (n3452417420)
-        - Norderstedt Mitte (w262406302)
-
-      r1687358: 
-        - Norderstedt Mitte (w262406302)
-        - Richtweg (n3452417420)
-        - Garstedt (n4229779983)
-        - Ochsenzoll (n3034089808)
-        - Kiwittsmoor (n4064650103)
-        - Langenhorn Nord (n3681991826)
-        - Langenhorn Markt (n4063111596)
-        - Fuhlsbüttel Nord (n4063037581)
-        - Fuhlsbüttel (n3034089804)
-        - Klein Borstel (n3034089807)
-        - Ohlsdorf (n2630595165)
-        - Sengelmannstraße (City Nord) (n5527648759)
-        - Alsterdorf (n4042376366)
-        - Lattenkamp (Sporthalle) (n4042444590)
-        - Hudtwalckerstraße (n3081690840)
-        - Kellinghusenstraße (w34385651)
-        - Klosterstern (n4240997099)
-        - Hallerstraße (n3034089805)
-        - Stephansplatz (Oper/CCH) (n5228160282)
-        - Jungfernstieg (n430203857)
-        - Meßberg (n301359593)
-        - Steinstraße (n5257886399)
-        - Hauptbahnhof Süd (n258576519)
-        - Lohmühlenstraße (n5257886400)
-        - Lübecker Straße (n3366133260)
-        - Wartenau (n1197626211)
-        - Ritterstraße (n6907067953)
-        - Wandsbeker Chaussee (n5527651211)
-        - Wandsbek Markt (n617825071)
-        - Straßburger Straße (n5656833096)
-        - Alter Teichweg (n260720436)
-        - Wandsbek-Gartenstadt (n617871270)
-        - Trabrennbahn (n1648288162)
-        - Farmsen (n5532829853)
-        - Oldenfelde (n7047553146)
-        - Berne (n3034089803)
-        - Meiendorfer Weg (n6146300735)
-        - Volksdorf (n3573110198)
-        - Buchenkamp (n538032518)
-        - Ahrensburg West (n6233764950)
-        - Ahrensburg Ost (n5196118052)
-        - Schmalenbeck (n504929032)
-        - Kiekut (n504966244)
-        - Großhansdorf (n505815723)
-
-      r62923: 
-        - Großhansdorf (n505815723)
-        - Kiekut (n504966244)
-        - Schmalenbeck (n504929032)
-        - Ahrensburg Ost (n5196118052)
-        - Ahrensburg West (n6233764950)
-        - Buchenkamp (n538032518)
-        - Volksdorf (n3573110198)
-        - Meiendorfer Weg (n6146300735)
-        - Berne (n3034089803)
-        - Oldenfelde (n7047553146)
-        - Farmsen (n5532829853)
-        - Trabrennbahn (n1648288162)
-        - Wandsbek-Gartenstadt (n617871270)
-        - Alter Teichweg (n260720436)
-        - Straßburger Straße (n5656833096)
-        - Wandsbek Markt (n617825071)
-        - Wandsbeker Chaussee (n5527651211)
-        - Ritterstraße (n6907067953)
-        - Wartenau (n1197626211)
-        - Lübecker Straße (n3366133260)
-        - Lohmühlenstraße (n5257886400)
-        - Hauptbahnhof Süd (n258576519)
-        - Steinstraße (n5257886399)
-        - Meßberg (n301359593)
-        - Jungfernstieg (n430203857)
-        - Stephansplatz (Oper/CCH) (n5228160282)
-        - Hallerstraße (n3034089805)
-        - Klosterstern (n4240997099)
-        - Kellinghusenstraße (w34385651)
-        - Hudtwalckerstraße (n3081690840)
-        - Lattenkamp (Sporthalle) (n4042444590)
-        - Alsterdorf (n4042376366)
-        - Sengelmannstraße (City Nord) (n5527648759)
-        - Ohlsdorf (n2630595165)
-        - Klein Borstel (n3034089807)
-        - Fuhlsbüttel (n3034089804)
-        - Fuhlsbüttel Nord (n4063037581)
-        - Langenhorn Markt (n4063111596)
-        - Langenhorn Nord (n3681991826)
-        - Kiwittsmoor (n4064650103)
-        - Ochsenzoll (n3034089808)
-        - Garstedt (n4229779983)
-        - Richtweg (n3452417420)
-        - Norderstedt Mitte (w262406302)
-
-      r12044390: 
-        - Norderstedt Mitte (w262406302)
-        - Richtweg (n3452417420)
-        - Garstedt (n4229779983)
-        - Ochsenzoll (n3034089808)
-        - Kiwittsmoor (n4064650103)
-        - Langenhorn Nord (n3681991826)
-        - Langenhorn Markt (n4063111596)
-        - Fuhlsbüttel Nord (n4063037581)
-        - Fuhlsbüttel (n3034089804)
-        - Klein Borstel (n3034089807)
-        - Ohlsdorf (n2630595165)
-        - Sengelmannstraße (City Nord) (n5527648759)
-        - Alsterdorf (n4042376366)
-        - Lattenkamp (Sporthalle) (n4042444590)
-        - Hudtwalckerstraße (n3081690840)
-        - Kellinghusenstraße (w34385651)
-        - Klosterstern (n4240997099)
-        - Hallerstraße (n3034089805)
-        - Stephansplatz (Oper/CCH) (n5228160282)
-        - Jungfernstieg (n430203857)
-        - Meßberg (n301359593)
-        - Steinstraße (n5257886399)
-        - Hauptbahnhof Süd (n258576519)
-        - Lohmühlenstraße (n5257886400)
-        - Lübecker Straße (n3366133260)
-        - Wartenau (n1197626211)
-        - Ritterstraße (n6907067953)
-        - Wandsbeker Chaussee (n5527651211)
-        - Wandsbek Markt (n617825071)
-        - Straßburger Straße (n5656833096)
-        - Alter Teichweg (n260720436)
-        - Wandsbek-Gartenstadt (n617871270)
-        - Trabrennbahn (n1648288162)
-        - Farmsen (n5532829853)
-        - Oldenfelde (n7047553146)
-        - Berne (n3034089803)
-        - Meiendorfer Weg (n6146300735)
-        - Volksdorf (n3573110198)
-        - Buckhorn (n4242323423)
-        - Hoisbüttel (n206226420)
-        - Ohlstedt (n4269580494)
-
-
-  - 
-    ref: U2
-    name: 'U2: Mümmelmannsberg <=> Niendorf Nord'
-    colour: '#ee1d23'
-    station_count: 25
-    type: subway
-    stations: 
-      - Niendorf Nord
-      - Schippelsweg
-      - Joachim-Mähl-Straße
-      - Niendorf Markt
-      - U Hagendeel
-      - Hagenbecks Tierpark
-      - Lutterothstraße
-      - Osterstraße
-      - Emilienstraße
-      - Christuskirche
-      - Schlump
-      - Messehallen
-      - Gänsemarkt (Oper)
-      - Jungfernstieg
-      - Hauptbahnhof Nord
-      - Berliner Tor
-      - Burgstraße
-      - Hammer Kirche
-      - Rauhes Haus
-      - Horner Rennbahn
-      - Legienstraße
-      - Billstedt
-      - Merkenstraße
-      - Steinfurther Allee
-      - Mümmelmannsberg
-
-    itineraries: 
-      r60691: 
-        - Niendorf Nord (n6225974661)
-        - Schippelsweg (n1944744060)
-        - Joachim-Mähl-Straße (n6903682283)
-        - Niendorf Markt (n1944623930)
-        - Hagendeel (n4053151596)
-        - Hagenbecks Tierpark (n6079838037)
-        - Lutterothstraße (n4053151598)
-        - Osterstraße (n4053151599)
-        - Emilienstraße (n4053151594)
-        - Christuskirche (n5257905676)
-        - Schlump (n2682432552)
-        - Messehallen (n1586118346)
-        - Gänsemarkt (Oper) (n5257886401)
-        - Jungfernstieg (n430203857)
-        - Hauptbahnhof Nord (n3741659626)
-        - Berliner Tor (n4102358153)
-        - Burgstraße (n3020817676)
-        - Hammer Kirche (n3020817678)
-        - Rauhes Haus (n3197892918)
-        - Horner Rennbahn (n3020817680)
-        - Legienstraße (n3020817681)
-        - Billstedt (n3020817675)
-        - Merkenstraße (n3020817682)
-        - Steinfurther Allee (n3020822246)
-        - Mümmelmannsberg (n3020817685)
-
-      r1686087: 
-        - Mümmelmannsberg (n3020817685)
-        - Steinfurther Allee (n3020822246)
-        - Merkenstraße (n3020817682)
-        - Billstedt (n3020817675)
-        - Legienstraße (n3020817681)
-        - Horner Rennbahn (n3020817680)
-        - Rauhes Haus (n3197892918)
-        - Hammer Kirche (n3020817678)
-        - Burgstraße (n3020817676)
-        - Berliner Tor (n4102358153)
-        - Hauptbahnhof Nord (n3741659626)
-        - Jungfernstieg (n430203857)
-        - Gänsemarkt (Oper) (n5257886401)
-        - Messehallen (n1586118346)
-        - Schlump (n2682432552)
-        - Christuskirche (n5257905676)
-        - Emilienstraße (n4053151594)
-        - Osterstraße (n4053151599)
-        - Lutterothstraße (n4053151598)
-        - Hagenbecks Tierpark (n6079838037)
-        - Hagendeel (n4053151596)
-        - Niendorf Markt (n1944623930)
-        - Joachim-Mähl-Straße (n6903682283)
-        - Schippelsweg (n1944744060)
-        - Niendorf Nord (n6225974661)
-
-
-  - 
-    ref: U3
-    name: 'U3: Barmbek <=> Wandsbek Gartenstadt'
-    colour: '#fcdf00'
-    station_count: 25
-    type: subway
-    stations: 
-      - Wandsbek-Gartenstadt
-      - Habichtstraße
-      - Barmbek U
-      - Dehnhaide
-      - Hamburger Straße
-      - Mundsburg
-      - Uhlandstraße
-      - Lübecker Straße
-      - Berliner Tor
-      - Hauptbahnhof Süd
-      - Mönckebergstraße
-      - Rathaus
-      - Rödingsmarkt
-      - Baumwall
-      - Landungsbrücken
-      - St. Pauli
-      - Feldstraße (Heiligengeistfeld)
-      - U S Sternschanze
-      - Schlump
-      - Hoheluftbrücke
-      - Eppendorfer Baum
-      - Kellinghusenstraße
-      - Sierichstraße
-      - Borgweg (Stadtpark)
-      - Saarlandstraße
-
-    itineraries: 
-      r1643324: 
-        - Wandsbek-Gartenstadt (n617871270)
-        - Habichtstraße (n7475370734)
-        - Barmbek (n3236186817)
-        - Dehnhaide (w34126794)
-        - Hamburger Straße (n6906144897)
-        - Mundsburg (w34129206)
-        - Uhlandstraße (n4247987506)
-        - Lübecker Straße (n3366133260)
-        - Berliner Tor (n4102358153)
-        - Hauptbahnhof Süd (n258576519)
-        - Mönckebergstraße (n265088027)
-        - Rathaus (n6284717662)
-        - Rödingsmarkt (w34386184)
-        - Baumwall (Elbphilharmonie) (n5257886402)
-        - Landungsbrücken (n540173264)
-        - St. Pauli (n6900614290)
-        - Feldstraße (Heiligengeistfeld) (n5228160283)
-        - Sternschanze (Messe) (n6900614289)
-        - Schlump (n2682432552)
-        - Hoheluftbrücke (n249675195)
-        - Eppendorfer Baum (n6985171368)
-        - Kellinghusenstraße (w34385651)
-        - Sierichstraße (n3081702198)
-        - Borgweg (Stadtpark) (n4049755223)
-        - Saarlandstraße (w270862967)
-        - Barmbek (n3236186817)
-
-      r1643221: 
-        - Barmbek (n3236186817)
-        - Saarlandstraße (w270862967)
-        - Borgweg (Stadtpark) (n4049755223)
-        - Sierichstraße (n3081702198)
-        - Kellinghusenstraße (w34385651)
-        - Eppendorfer Baum (n6985171368)
-        - Hoheluftbrücke (n249675195)
-        - Schlump (n2682432552)
-        - Sternschanze (Messe) (n6900614289)
-        - Feldstraße (Heiligengeistfeld) (n5228160283)
-        - St. Pauli (n6900614290)
-        - Landungsbrücken (n540173264)
-        - Baumwall (Elbphilharmonie) (n5257886402)
-        - Rödingsmarkt (w34386184)
-        - Rathaus (n6284717662)
-        - Mönckebergstraße (n265088027)
-        - Hauptbahnhof Süd (n258576519)
-        - Berliner Tor (n4102358153)
-        - Lübecker Straße (n3366133260)
-        - Uhlandstraße (n4247987506)
-        - Mundsburg (w34129206)
-        - Hamburger Straße (n6906144897)
-        - Dehnhaide (w34126794)
-        - Barmbek (n3236186817)
-        - Habichtstraße (n7475370734)
-        - Wandsbek-Gartenstadt (n617871270)
-
-
-  - 
-    ref: U4
-    name: 'U4: Billstedt <=> Elbbrücken'
-    colour: '#2ec6ff'
-    station_count: 12
-    type: subway
-    stations: 
-      - Elbbrücken
-      - HafenCity Universität
-      - Überseequartier
-      - Jungfernstieg
-      - Hauptbahnhof Nord
-      - Berliner Tor
-      - Burgstraße
-      - Hammer Kirche
-      - Rauhes Haus
-      - Horner Rennbahn
-      - Legienstraße
-      - Billstedt
-
-    itineraries: 
-      r2390138: 
-        - Billstedt (n3020817675)
-        - Legienstraße (n3020817681)
-        - Horner Rennbahn (n3020817680)
-        - Rauhes Haus (n3197892918)
-        - Hammer Kirche (n3020817678)
-        - Burgstraße (n3020817676)
-        - Berliner Tor (n4102358153)
-        - Hauptbahnhof Nord (n3741659626)
-        - Jungfernstieg (n430203857)
-        - Überseequartier (n312586262)
-        - HafenCity Universität (n3738942416)
-        - Elbbrücken (n3391154047)
-
-      r2872789: 
-        - Elbbrücken (n3391154047)
-        - HafenCity Universität (n3738942416)
-        - Überseequartier (n312586262)
-        - Jungfernstieg (n430203857)
-        - Hauptbahnhof Nord (n3741659626)
-        - Berliner Tor (n4102358153)
-        - Burgstraße (n3020817676)
-        - Hammer Kirche (n3020817678)
-        - Rauhes Haus (n3197892918)
-        - Horner Rennbahn (n3020817680)
-        - Legienstraße (n3020817681)
-        - Billstedt (n3020817675)
-
-
+    - Hauptbahnhof Nord (r289247)
+    - Hauptbahnhof Süd (r280012)
 
 stations: 
   - Ahrensburg Ost (n5196118052)
@@ -561,8 +99,470 @@ stations:
   - Wartenau (n1197626211)
   - Überseequartier (n312586262)
 
-transfers: 
+routes: 
   - 
-    - Hauptbahnhof Nord (r289247)
-    - Hauptbahnhof Süd (r280012)
+    colour: '#0066b3'
+    type: subway
+    stations: 
+      - Großhansdorf
+      - Kiekut
+      - Schmalenbeck
+      - Ahrensburg Ost
+      - Ahrensburg West
+      - Buchenkamp
+      - Volksdorf
+      - Meiendorfer Weg
+      - Berne
+      - Oldenfelde
+      - Farmsen
+      - Trabrennbahn
+      - Wandsbek-Gartenstadt
+      - Alter Teichweg
+      - Straßburger Straße
+      - Wandsbek Markt
+      - Wandsbeker Chaussee
+      - Ritterstraße
+      - Wartenau
+      - Lübecker Straße
+      - Lohmühlenstraße
+      - Hauptbahnhof Süd
+      - Steinstraße
+      - Meßberg
+      - Jungfernstieg
+      - Stephansplatz (Oper/CCH)
+      - Hallerstraße
+      - Klosterstern
+      - Kellinghusenstraße
+      - Hudtwalckerstraße
+      - Lattenkamp (Sporthalle)
+      - Alsterdorf
+      - Sengelmannstraße (City Nord)
+      - Ohlsdorf U
+      - Klein Borstel
+      - Fuhlsbüttel
+      - Fuhlsbüttel Nord
+      - Langenhorn Markt
+      - Langenhorn Nord
+      - Kiwittsmoor
+      - Ochsenzoll
+      - Garstedt
+      - Richtweg
+      - Norderstedt Mitte
+      - Ohlstedt
+      - Hoisbüttel
+      - Buckhorn
+
+    ref: U1
+    station_count: 47
+    itineraries: 
+      r1687358: 
+        - Norderstedt Mitte (w262406302)
+        - Richtweg (n3452417420)
+        - Garstedt (n4229779983)
+        - Ochsenzoll (n3034089808)
+        - Kiwittsmoor (n4064650103)
+        - Langenhorn Nord (n3681991826)
+        - Langenhorn Markt (n4063111596)
+        - Fuhlsbüttel Nord (n4063037581)
+        - Fuhlsbüttel (n3034089804)
+        - Klein Borstel (n3034089807)
+        - Ohlsdorf (n2630595165)
+        - Sengelmannstraße (City Nord) (n5527648759)
+        - Alsterdorf (n4042376366)
+        - Lattenkamp (Sporthalle) (n4042444590)
+        - Hudtwalckerstraße (n3081690840)
+        - Kellinghusenstraße (w34385651)
+        - Klosterstern (n4240997099)
+        - Hallerstraße (n3034089805)
+        - Stephansplatz (Oper/CCH) (n5228160282)
+        - Jungfernstieg (n430203857)
+        - Meßberg (n301359593)
+        - Steinstraße (n5257886399)
+        - Hauptbahnhof Süd (n258576519)
+        - Lohmühlenstraße (n5257886400)
+        - Lübecker Straße (n3366133260)
+        - Wartenau (n1197626211)
+        - Ritterstraße (n6907067953)
+        - Wandsbeker Chaussee (n5527651211)
+        - Wandsbek Markt (n617825071)
+        - Straßburger Straße (n5656833096)
+        - Alter Teichweg (n260720436)
+        - Wandsbek-Gartenstadt (n617871270)
+        - Trabrennbahn (n1648288162)
+        - Farmsen (n5532829853)
+        - Oldenfelde (n7047553146)
+        - Berne (n3034089803)
+        - Meiendorfer Weg (n6146300735)
+        - Volksdorf (n3573110198)
+        - Buchenkamp (n538032518)
+        - Ahrensburg West (n6233764950)
+        - Ahrensburg Ost (n5196118052)
+        - Schmalenbeck (n504929032)
+        - Kiekut (n504966244)
+        - Großhansdorf (n505815723)
+
+      r62923: 
+        - Großhansdorf (n505815723)
+        - Kiekut (n504966244)
+        - Schmalenbeck (n504929032)
+        - Ahrensburg Ost (n5196118052)
+        - Ahrensburg West (n6233764950)
+        - Buchenkamp (n538032518)
+        - Volksdorf (n3573110198)
+        - Meiendorfer Weg (n6146300735)
+        - Berne (n3034089803)
+        - Oldenfelde (n7047553146)
+        - Farmsen (n5532829853)
+        - Trabrennbahn (n1648288162)
+        - Wandsbek-Gartenstadt (n617871270)
+        - Alter Teichweg (n260720436)
+        - Straßburger Straße (n5656833096)
+        - Wandsbek Markt (n617825071)
+        - Wandsbeker Chaussee (n5527651211)
+        - Ritterstraße (n6907067953)
+        - Wartenau (n1197626211)
+        - Lübecker Straße (n3366133260)
+        - Lohmühlenstraße (n5257886400)
+        - Hauptbahnhof Süd (n258576519)
+        - Steinstraße (n5257886399)
+        - Meßberg (n301359593)
+        - Jungfernstieg (n430203857)
+        - Stephansplatz (Oper/CCH) (n5228160282)
+        - Hallerstraße (n3034089805)
+        - Klosterstern (n4240997099)
+        - Kellinghusenstraße (w34385651)
+        - Hudtwalckerstraße (n3081690840)
+        - Lattenkamp (Sporthalle) (n4042444590)
+        - Alsterdorf (n4042376366)
+        - Sengelmannstraße (City Nord) (n5527648759)
+        - Ohlsdorf (n2630595165)
+        - Klein Borstel (n3034089807)
+        - Fuhlsbüttel (n3034089804)
+        - Fuhlsbüttel Nord (n4063037581)
+        - Langenhorn Markt (n4063111596)
+        - Langenhorn Nord (n3681991826)
+        - Kiwittsmoor (n4064650103)
+        - Ochsenzoll (n3034089808)
+        - Garstedt (n4229779983)
+        - Richtweg (n3452417420)
+        - Norderstedt Mitte (w262406302)
+
+      r12044389: 
+        - Ohlstedt (n4269580494)
+        - Hoisbüttel (n206226420)
+        - Buckhorn (n4242323423)
+        - Volksdorf (n3573110198)
+        - Meiendorfer Weg (n6146300735)
+        - Berne (n3034089803)
+        - Oldenfelde (n7047553146)
+        - Farmsen (n5532829853)
+        - Trabrennbahn (n1648288162)
+        - Wandsbek-Gartenstadt (n617871270)
+        - Alter Teichweg (n260720436)
+        - Straßburger Straße (n5656833096)
+        - Wandsbek Markt (n617825071)
+        - Wandsbeker Chaussee (n5527651211)
+        - Ritterstraße (n6907067953)
+        - Wartenau (n1197626211)
+        - Lübecker Straße (n3366133260)
+        - Lohmühlenstraße (n5257886400)
+        - Hauptbahnhof Süd (n258576519)
+        - Steinstraße (n5257886399)
+        - Meßberg (n301359593)
+        - Jungfernstieg (n430203857)
+        - Stephansplatz (Oper/CCH) (n5228160282)
+        - Hallerstraße (n3034089805)
+        - Klosterstern (n4240997099)
+        - Kellinghusenstraße (w34385651)
+        - Hudtwalckerstraße (n3081690840)
+        - Lattenkamp (Sporthalle) (n4042444590)
+        - Alsterdorf (n4042376366)
+        - Sengelmannstraße (City Nord) (n5527648759)
+        - Ohlsdorf (n2630595165)
+        - Klein Borstel (n3034089807)
+        - Fuhlsbüttel (n3034089804)
+        - Fuhlsbüttel Nord (n4063037581)
+        - Langenhorn Markt (n4063111596)
+        - Langenhorn Nord (n3681991826)
+        - Kiwittsmoor (n4064650103)
+        - Ochsenzoll (n3034089808)
+        - Garstedt (n4229779983)
+        - Richtweg (n3452417420)
+        - Norderstedt Mitte (w262406302)
+
+      r12044390: 
+        - Norderstedt Mitte (w262406302)
+        - Richtweg (n3452417420)
+        - Garstedt (n4229779983)
+        - Ochsenzoll (n3034089808)
+        - Kiwittsmoor (n4064650103)
+        - Langenhorn Nord (n3681991826)
+        - Langenhorn Markt (n4063111596)
+        - Fuhlsbüttel Nord (n4063037581)
+        - Fuhlsbüttel (n3034089804)
+        - Klein Borstel (n3034089807)
+        - Ohlsdorf (n2630595165)
+        - Sengelmannstraße (City Nord) (n5527648759)
+        - Alsterdorf (n4042376366)
+        - Lattenkamp (Sporthalle) (n4042444590)
+        - Hudtwalckerstraße (n3081690840)
+        - Kellinghusenstraße (w34385651)
+        - Klosterstern (n4240997099)
+        - Hallerstraße (n3034089805)
+        - Stephansplatz (Oper/CCH) (n5228160282)
+        - Jungfernstieg (n430203857)
+        - Meßberg (n301359593)
+        - Steinstraße (n5257886399)
+        - Hauptbahnhof Süd (n258576519)
+        - Lohmühlenstraße (n5257886400)
+        - Lübecker Straße (n3366133260)
+        - Wartenau (n1197626211)
+        - Ritterstraße (n6907067953)
+        - Wandsbeker Chaussee (n5527651211)
+        - Wandsbek Markt (n617825071)
+        - Straßburger Straße (n5656833096)
+        - Alter Teichweg (n260720436)
+        - Wandsbek-Gartenstadt (n617871270)
+        - Trabrennbahn (n1648288162)
+        - Farmsen (n5532829853)
+        - Oldenfelde (n7047553146)
+        - Berne (n3034089803)
+        - Meiendorfer Weg (n6146300735)
+        - Volksdorf (n3573110198)
+        - Buckhorn (n4242323423)
+        - Hoisbüttel (n206226420)
+        - Ohlstedt (n4269580494)
+
+
+    name: 'U1: Norderstedt Mitte <=> Ohlstedt/Großhansdorf'
+  - 
+    colour: '#ee1d23'
+    type: subway
+    stations: 
+      - Mümmelmannsberg
+      - Steinfurther Allee
+      - Merkenstraße
+      - Billstedt
+      - Legienstraße
+      - Horner Rennbahn
+      - Rauhes Haus
+      - Hammer Kirche
+      - Burgstraße
+      - Berliner Tor
+      - Hauptbahnhof Nord
+      - Jungfernstieg
+      - Gänsemarkt (Oper)
+      - Messehallen
+      - Schlump
+      - Christuskirche
+      - Emilienstraße
+      - Osterstraße
+      - Lutterothstraße
+      - Hagenbecks Tierpark
+      - U Hagendeel
+      - Niendorf Markt
+      - Joachim-Mähl-Straße
+      - Schippelsweg
+      - Niendorf Nord
+
+    ref: U2
+    station_count: 25
+    itineraries: 
+      r60691: 
+        - Niendorf Nord (n6225974661)
+        - Schippelsweg (n1944744060)
+        - Joachim-Mähl-Straße (n6903682283)
+        - Niendorf Markt (n1944623930)
+        - Hagendeel (n4053151596)
+        - Hagenbecks Tierpark (n6079838037)
+        - Lutterothstraße (n4053151598)
+        - Osterstraße (n4053151599)
+        - Emilienstraße (n4053151594)
+        - Christuskirche (n5257905676)
+        - Schlump (n2682432552)
+        - Messehallen (n1586118346)
+        - Gänsemarkt (Oper) (n5257886401)
+        - Jungfernstieg (n430203857)
+        - Hauptbahnhof Nord (n3741659626)
+        - Berliner Tor (n4102358153)
+        - Burgstraße (n3020817676)
+        - Hammer Kirche (n3020817678)
+        - Rauhes Haus (n3197892918)
+        - Horner Rennbahn (n3020817680)
+        - Legienstraße (n3020817681)
+        - Billstedt (n3020817675)
+        - Merkenstraße (n3020817682)
+        - Steinfurther Allee (n3020822246)
+        - Mümmelmannsberg (n3020817685)
+
+      r1686087: 
+        - Mümmelmannsberg (n3020817685)
+        - Steinfurther Allee (n3020822246)
+        - Merkenstraße (n3020817682)
+        - Billstedt (n3020817675)
+        - Legienstraße (n3020817681)
+        - Horner Rennbahn (n3020817680)
+        - Rauhes Haus (n3197892918)
+        - Hammer Kirche (n3020817678)
+        - Burgstraße (n3020817676)
+        - Berliner Tor (n4102358153)
+        - Hauptbahnhof Nord (n3741659626)
+        - Jungfernstieg (n430203857)
+        - Gänsemarkt (Oper) (n5257886401)
+        - Messehallen (n1586118346)
+        - Schlump (n2682432552)
+        - Christuskirche (n5257905676)
+        - Emilienstraße (n4053151594)
+        - Osterstraße (n4053151599)
+        - Lutterothstraße (n4053151598)
+        - Hagenbecks Tierpark (n6079838037)
+        - Hagendeel (n4053151596)
+        - Niendorf Markt (n1944623930)
+        - Joachim-Mähl-Straße (n6903682283)
+        - Schippelsweg (n1944744060)
+        - Niendorf Nord (n6225974661)
+
+
+    name: 'U2: Mümmelmannsberg <=> Niendorf Nord'
+  - 
+    colour: '#fcdf00'
+    type: subway
+    stations: 
+      - Barmbek U
+      - Saarlandstraße
+      - Borgweg (Stadtpark)
+      - Sierichstraße
+      - Kellinghusenstraße
+      - Eppendorfer Baum
+      - Hoheluftbrücke
+      - Schlump
+      - U S Sternschanze
+      - Feldstraße (Heiligengeistfeld)
+      - St. Pauli
+      - Landungsbrücken
+      - Baumwall
+      - Rödingsmarkt
+      - Rathaus
+      - Mönckebergstraße
+      - Hauptbahnhof Süd
+      - Berliner Tor
+      - Lübecker Straße
+      - Uhlandstraße
+      - Mundsburg
+      - Hamburger Straße
+      - Dehnhaide
+      - Habichtstraße
+      - Wandsbek-Gartenstadt
+
+    ref: U3
+    station_count: 25
+    itineraries: 
+      r1643221: 
+        - Barmbek (n3236186817)
+        - Saarlandstraße (w270862967)
+        - Borgweg (Stadtpark) (n4049755223)
+        - Sierichstraße (n3081702198)
+        - Kellinghusenstraße (w34385651)
+        - Eppendorfer Baum (n6985171368)
+        - Hoheluftbrücke (n249675195)
+        - Schlump (n2682432552)
+        - Sternschanze (Messe) (n6900614289)
+        - Feldstraße (Heiligengeistfeld) (n5228160283)
+        - St. Pauli (n6900614290)
+        - Landungsbrücken (n540173264)
+        - Baumwall (Elbphilharmonie) (n5257886402)
+        - Rödingsmarkt (w34386184)
+        - Rathaus (n6284717662)
+        - Mönckebergstraße (n265088027)
+        - Hauptbahnhof Süd (n258576519)
+        - Berliner Tor (n4102358153)
+        - Lübecker Straße (n3366133260)
+        - Uhlandstraße (n4247987506)
+        - Mundsburg (w34129206)
+        - Hamburger Straße (n6906144897)
+        - Dehnhaide (w34126794)
+        - Barmbek (n3236186817)
+        - Habichtstraße (n7475370734)
+        - Wandsbek-Gartenstadt (n617871270)
+
+      r1643324: 
+        - Wandsbek-Gartenstadt (n617871270)
+        - Habichtstraße (n7475370734)
+        - Barmbek (n3236186817)
+        - Dehnhaide (w34126794)
+        - Hamburger Straße (n6906144897)
+        - Mundsburg (w34129206)
+        - Uhlandstraße (n4247987506)
+        - Lübecker Straße (n3366133260)
+        - Berliner Tor (n4102358153)
+        - Hauptbahnhof Süd (n258576519)
+        - Mönckebergstraße (n265088027)
+        - Rathaus (n6284717662)
+        - Rödingsmarkt (w34386184)
+        - Baumwall (Elbphilharmonie) (n5257886402)
+        - Landungsbrücken (n540173264)
+        - St. Pauli (n6900614290)
+        - Feldstraße (Heiligengeistfeld) (n5228160283)
+        - Sternschanze (Messe) (n6900614289)
+        - Schlump (n2682432552)
+        - Hoheluftbrücke (n249675195)
+        - Eppendorfer Baum (n6985171368)
+        - Kellinghusenstraße (w34385651)
+        - Sierichstraße (n3081702198)
+        - Borgweg (Stadtpark) (n4049755223)
+        - Saarlandstraße (w270862967)
+        - Barmbek (n3236186817)
+
+
+    name: 'U3: Barmbek <=> Wandsbek Gartenstadt'
+  - 
+    colour: '#2ec6ff'
+    type: subway
+    stations: 
+      - Elbbrücken
+      - HafenCity Universität
+      - Überseequartier
+      - Jungfernstieg
+      - Hauptbahnhof Nord
+      - Berliner Tor
+      - Burgstraße
+      - Hammer Kirche
+      - Rauhes Haus
+      - Horner Rennbahn
+      - Legienstraße
+      - Billstedt
+
+    ref: U4
+    station_count: 12
+    itineraries: 
+      r2390138: 
+        - Billstedt (n3020817675)
+        - Legienstraße (n3020817681)
+        - Horner Rennbahn (n3020817680)
+        - Rauhes Haus (n3197892918)
+        - Hammer Kirche (n3020817678)
+        - Burgstraße (n3020817676)
+        - Berliner Tor (n4102358153)
+        - Hauptbahnhof Nord (n3741659626)
+        - Jungfernstieg (n430203857)
+        - Überseequartier (n312586262)
+        - HafenCity Universität (n3738942416)
+        - Elbbrücken (n3391154047)
+
+      r2872789: 
+        - Elbbrücken (n3391154047)
+        - HafenCity Universität (n3738942416)
+        - Überseequartier (n312586262)
+        - Jungfernstieg (n430203857)
+        - Hauptbahnhof Nord (n3741659626)
+        - Berliner Tor (n4102358153)
+        - Burgstraße (n3020817676)
+        - Hammer Kirche (n3020817678)
+        - Rauhes Haus (n3197892918)
+        - Horner Rennbahn (n3020817680)
+        - Legienstraße (n3020817681)
+        - Billstedt (n3020817675)
+
+
+    name: 'U4: Billstedt <=> Elbbrücken'
 

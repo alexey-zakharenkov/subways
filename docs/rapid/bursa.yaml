@@ -1,10 +1,49 @@
 
+transfers: 
+
+stations: 
+  - 152 Evler (n5315432299)
+  - Altınşehir (n5317033353)
+  - Arabayatağı (n5315425255)
+  - Ataevler (n5317041669)
+  - Batıkent (n5317020148)
+  - Bağlarbaşı/Esentepe (n5316452966)
+  - Beşevler (n5316997726)
+  - Bursaspor/Acemler (n5315511268)
+  - Cumalıkızık (n5315410731)
+  - Demirtaşpaşa (n5315478129)
+  - Duaçınarı (n7726391260)
+  - Emek (n5316433997)
+  - Ertuğrul (n5317028674)
+  - Fatih Sultan Mehmet (n5316997737)
+  - Gökdere (n5315446884)
+  - Gürsu (n5315410742)
+  - Hacivat (n5315407491)
+  - Hamitler/Fethiye (n5316451309)
+  - Karaman (n5316422506)
+  - Kestel (n5315410781)
+  - Korupark (n5316433984)
+  - Kültürpark (n5315484816)
+  - Küçük Sanayi (n5317041681)
+  - Merinos (n5315476895)
+  - 'Mimar Sinan - BTÜ (n5315407482)'
+  - Nilüfer (n5316997750)
+  - Organize Sanayi (n5316437013)
+  - Osmangazi (n5315476918)
+  - Otosansit (n5315407514)
+  - Paşa Çiftliği (n5315511279)
+  - Sırameşeler (n5315511285)
+  - Yüzüncüyıl (n5317020135)
+  - Yıldırım/Davutdede (n5315444458)
+  - Özlüce (n5317023689)
+  - Üniversite (n5317020169)
+  - İhsaniye (n5316452957)
+  - Şehreküstü (n5315476920)
+  - Şirinevler (n5315407499)
+
 routes: 
   - 
-    ref: B1
-    name: BursaRay 1
     colour: '#ff0000'
-    station_count: 20
     type: subway
     stations: 
       - Arabayatağı
@@ -28,6 +67,8 @@ routes:
       - Korupark
       - Emek
 
+    ref: B1
+    station_count: 20
     itineraries: 
       r7868723: 
         - Arabayatağı (n5315425255)
@@ -74,11 +115,9 @@ routes:
         - Arabayatağı (n5315425255)
 
 
+    name: BursaRay 1
   - 
-    ref: B2
-    name: BursaRay 2
     colour: '#000000'
-    station_count: 31
     type: subway
     stations: 
       - Üniversite
@@ -113,40 +152,9 @@ routes:
       - Gürsu
       - Kestel
 
+    ref: B2
+    station_count: 31
     itineraries: 
-      r7869620: 
-        - Kestel (n5315410781)
-        - Gürsu (n5315410742)
-        - Cumalıkızık (n5315410731)
-        - Otosansit (n5315407514)
-        - Şirinevler (n5315407499)
-        - Hacivat (n5315407491)
-        - 'Mimar Sinan - BTÜ (n5315407482)'
-        - Arabayatağı (n5315425255)
-        - 152 Evler (n5315432299)
-        - Duaçınarı (n7726391260)
-        - Yıldırım/Davutdede (n5315444458)
-        - Gökdere (n5315446884)
-        - Demirtaşpaşa (n5315478129)
-        - Şehreküstü (n5315476920)
-        - Osmangazi (n5315476918)
-        - Merinos (n5315476895)
-        - Kültürpark (n5315484816)
-        - Sırameşeler (n5315511285)
-        - Paşa Çiftliği (n5315511279)
-        - Bursaspor/Acemler (n5315511268)
-        - Nilüfer (n5316997750)
-        - Fatih Sultan Mehmet (n5316997737)
-        - Beşevler (n5316997726)
-        - Ataevler (n5317041669)
-        - Küçük Sanayi (n5317041681)
-        - Altınşehir (n5317033353)
-        - Ertuğrul (n5317028674)
-        - Özlüce (n5317023689)
-        - Yüzüncüyıl (n5317020135)
-        - Batıkent (n5317020148)
-        - Üniversite (n5317020169)
-
       r7869621: 
         - Üniversite (n5317020169)
         - Batıkent (n5317020148)
@@ -180,47 +188,39 @@ routes:
         - Gürsu (n5315410742)
         - Kestel (n5315410781)
 
+      r7869620: 
+        - Kestel (n5315410781)
+        - Gürsu (n5315410742)
+        - Cumalıkızık (n5315410731)
+        - Otosansit (n5315407514)
+        - Şirinevler (n5315407499)
+        - Hacivat (n5315407491)
+        - 'Mimar Sinan - BTÜ (n5315407482)'
+        - Arabayatağı (n5315425255)
+        - 152 Evler (n5315432299)
+        - Duaçınarı (n7726391260)
+        - Yıldırım/Davutdede (n5315444458)
+        - Gökdere (n5315446884)
+        - Demirtaşpaşa (n5315478129)
+        - Şehreküstü (n5315476920)
+        - Osmangazi (n5315476918)
+        - Merinos (n5315476895)
+        - Kültürpark (n5315484816)
+        - Sırameşeler (n5315511285)
+        - Paşa Çiftliği (n5315511279)
+        - Bursaspor/Acemler (n5315511268)
+        - Nilüfer (n5316997750)
+        - Fatih Sultan Mehmet (n5316997737)
+        - Beşevler (n5316997726)
+        - Ataevler (n5317041669)
+        - Küçük Sanayi (n5317041681)
+        - Altınşehir (n5317033353)
+        - Ertuğrul (n5317028674)
+        - Özlüce (n5317023689)
+        - Yüzüncüyıl (n5317020135)
+        - Batıkent (n5317020148)
+        - Üniversite (n5317020169)
 
 
-stations: 
-  - 152 Evler (n5315432299)
-  - Altınşehir (n5317033353)
-  - Arabayatağı (n5315425255)
-  - Ataevler (n5317041669)
-  - Batıkent (n5317020148)
-  - Bağlarbaşı/Esentepe (n5316452966)
-  - Beşevler (n5316997726)
-  - Bursaspor/Acemler (n5315511268)
-  - Cumalıkızık (n5315410731)
-  - Demirtaşpaşa (n5315478129)
-  - Duaçınarı (n7726391260)
-  - Emek (n5316433997)
-  - Ertuğrul (n5317028674)
-  - Fatih Sultan Mehmet (n5316997737)
-  - Gökdere (n5315446884)
-  - Gürsu (n5315410742)
-  - Hacivat (n5315407491)
-  - Hamitler/Fethiye (n5316451309)
-  - Karaman (n5316422506)
-  - Kestel (n5315410781)
-  - Korupark (n5316433984)
-  - Kültürpark (n5315484816)
-  - Küçük Sanayi (n5317041681)
-  - Merinos (n5315476895)
-  - 'Mimar Sinan - BTÜ (n5315407482)'
-  - Nilüfer (n5316997750)
-  - Organize Sanayi (n5316437013)
-  - Osmangazi (n5315476918)
-  - Otosansit (n5315407514)
-  - Paşa Çiftliği (n5315511279)
-  - Sırameşeler (n5315511285)
-  - Yüzüncüyıl (n5317020135)
-  - Yıldırım/Davutdede (n5315444458)
-  - Özlüce (n5317023689)
-  - Üniversite (n5317020169)
-  - İhsaniye (n5316452957)
-  - Şehreküstü (n5315476920)
-  - Şirinevler (n5315407499)
-
-transfers: 
+    name: BursaRay 2
 

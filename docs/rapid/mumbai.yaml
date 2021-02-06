@@ -1,10 +1,40 @@
 
+transfers: 
+
+stations: 
+  - Acharya Atre Nagar (n3806743187)
+  - Airport Road (w311841874)
+  - Ambedkar Nagar (n3806743188)
+  - Andheri (n6020955334)
+  - Antop Hill (n3806743189)
+  - Asalpha (w331827626)
+  - Azad Nagar (w331815667)
+  - Bhakti Park (n632340589)
+  - Bharat Petroleum (n2647295137)
+  - 'Chakala - J.B. Nagar (w331824153)'
+  - Chembur (n632337506)
+  - D.N. Nagar (w287299866)
+  - Dadar East (n3806743192)
+  - Fertilizer Township (n2986295912)
+  - Ghatkopar (w151205149)
+  - Guru Tegh Bahadur Nagar (n3806743193)
+  - Jagruti Nagar (w311841875)
+  - Lower Parel (n6498408219)
+  - Marol Naka (w311841876)
+  - Mint Colony (n3806743195)
+  - Mysore Colony (n1643263977)
+  - Naigaon (n3806743196)
+  - Saki Naka (w331824155)
+  - Sant Gadge Maharaj Chok (n3806743194)
+  - VNP & RC Marg Junction (n2647295140)
+  - Versova (w287299861)
+  - Wadala Bridge (n3732540593)
+  - Wadala Depot (n632342238)
+  - Western Express Highway (w331815671)
+
 routes: 
   - 
-    ref: 1
-    name: Mumbai Metro Line 1
     colour: '#0000ff'
-    station_count: 12
     type: subway
     stations: 
       - Ghatkopar (Metro)
@@ -20,6 +50,8 @@ routes:
       - D. N. Nagar
       - Versova
 
+    ref: 1
+    station_count: 12
     itineraries: 
       r7684032: 
         - Ghatkopar (w151205149)
@@ -50,11 +82,9 @@ routes:
         - Ghatkopar (w151205149)
 
 
+    name: Mumbai Metro Line 1
   - 
-    ref: Mono 1
-    name: Mumbai Monorail Line 1
     colour: '#00ffff'
-    station_count: 17
     type: monorail
     stations: 
       - Sant Gadge Maharaj Chok
@@ -75,6 +105,8 @@ routes:
       - VNP & RC Marg Junction
       - Chembur
 
+    ref: Mono 1
+    station_count: 17
     itineraries: 
       r7684084: 
         - Sant Gadge Maharaj Chok (n3806743194)
@@ -115,37 +147,5 @@ routes:
         - Sant Gadge Maharaj Chok (n3806743194)
 
 
-
-stations: 
-  - Acharya Atre Nagar (n3806743187)
-  - Airport Road (w311841874)
-  - Ambedkar Nagar (n3806743188)
-  - Andheri (n6020955334)
-  - Antop Hill (n3806743189)
-  - Asalpha (w331827626)
-  - Azad Nagar (w331815667)
-  - Bhakti Park (n632340589)
-  - Bharat Petroleum (n2647295137)
-  - 'Chakala - J.B. Nagar (w331824153)'
-  - Chembur (n632337506)
-  - D.N. Nagar (w287299866)
-  - Dadar East (n3806743192)
-  - Fertilizer Township (n2986295912)
-  - Ghatkopar (w151205149)
-  - Guru Tegh Bahadur Nagar (n3806743193)
-  - Jagruti Nagar (w311841875)
-  - Lower Parel (n6498408219)
-  - Marol Naka (w311841876)
-  - Mint Colony (n3806743195)
-  - Mysore Colony (n1643263977)
-  - Naigaon (n3806743196)
-  - Saki Naka (w331824155)
-  - Sant Gadge Maharaj Chok (n3806743194)
-  - VNP & RC Marg Junction (n2647295140)
-  - Versova (w287299861)
-  - Wadala Bridge (n3732540593)
-  - Wadala Depot (n632342238)
-  - Western Express Highway (w331815671)
-
-transfers: 
+    name: Mumbai Monorail Line 1
 

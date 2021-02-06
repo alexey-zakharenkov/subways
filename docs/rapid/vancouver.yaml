@@ -1,278 +1,11 @@
 
-routes: 
+transfers: 
   - 
-    ref: Canada Line
-    name: Canada Line
-    colour: '#009ac8'
-    station_count: 16
-    type: subway
-    stations: 
-      - Waterfront (Canada Line)
-      - Vancouver City Centre station
-      - Yaletown–Roundhouse station
-      - Olympic Village
-      - Broadway–City Hall station
-      - King Edward station
-      - Oakridge-41st Avenue station
-      - Langara-49th Avenue station
-      - Marine Drive station
-      - Bridgeport station
-      - Aberdeen station
-      - Lansdowne station
-      - Richmond–Brighouse station
-      - Templeton station
-      - Sea Island Centre station
-      - YVR-Airport
-
-    itineraries: 
-      r5881437: 
-        - Waterfront (n3831781786)
-        - Vancouver City Centre (n5324838897)
-        - Yaletown–Roundhouse (n5324837598)
-        - Olympic Village (n5324798857)
-        - Broadway–City Hall (n5324830285)
-        - King Edward (n5324825482)
-        - Oakridge-41st Avenue (n5324820129)
-        - Langara-49th Avenue (n5324820954)
-        - Marine Drive (n5324814227)
-        - Bridgeport (n3956055739)
-        - Aberdeen (n5324748888)
-        - Lansdowne (n5324785127)
-        - Richmond–Brighouse (n5324786154)
-
-      r207798: 
-        - Waterfront (n3831781786)
-        - Vancouver City Centre (n5324838897)
-        - Yaletown–Roundhouse (n5324837598)
-        - Olympic Village (n5324798857)
-        - Broadway–City Hall (n5324830285)
-        - King Edward (n5324825482)
-        - Oakridge-41st Avenue (n5324820129)
-        - Langara-49th Avenue (n5324820954)
-        - Marine Drive (n5324814227)
-        - Bridgeport (n3956055739)
-        - Templeton (n5324792504)
-        - Sea Island Centre (n5324793019)
-        - YVR–Airport (n5330999693)
-
-      r5881438: 
-        - YVR–Airport (n5330999693)
-        - Sea Island Centre (n5324793019)
-        - Templeton (n5324792504)
-        - Bridgeport (n3956055739)
-        - Marine Drive (n5324814227)
-        - Langara-49th Avenue (n5324820954)
-        - Oakridge-41st Avenue (n5324820129)
-        - King Edward (n5324825482)
-        - Broadway–City Hall (n5324830285)
-        - Olympic Village (n5324798857)
-        - Yaletown–Roundhouse (n5324837598)
-        - Vancouver City Centre (n5324838897)
-        - Waterfront (n3831781786)
-
-      r5881436: 
-        - Richmond–Brighouse (n5324786154)
-        - Lansdowne (n5324785127)
-        - Aberdeen (n5324748888)
-        - Bridgeport (n3956055739)
-        - Marine Drive (n5324814227)
-        - Langara-49th Avenue (n5324820954)
-        - Oakridge-41st Avenue (n5324820129)
-        - King Edward (n5324825482)
-        - Broadway–City Hall (n5324830285)
-        - Olympic Village (n5324798857)
-        - Yaletown–Roundhouse (n5324837598)
-        - Vancouver City Centre (n5324838897)
-        - Waterfront (n3831781786)
-
-
+    - Commercial-Broadway Platforms 1 & 2 (r7882534)
+    - Commercial-Broadway Platforms 3 & 4 (r7882533)
   - 
-    ref: Expo Line
-    name: Expo Line
-    colour: '#0060a9'
-    station_count: 24
-    type: subway
-    stations: 
-      - Production Way-University station
-      - Lougheed Town Centre station
-      - Braid station
-      - Sapperton station
-      - Columbia station
-      - New Westminster Station
-      - 22nd Street Station
-      - Edmonds Station
-      - Royal Oak station
-      - Metrotown station
-      - Patterson station
-      - Joyce–Collingwood station
-      - 29th Avenue Station
-      - Nanaimo station
-      - Commercial-Broadway Platforms 3 & 4
-      - Main Street-Science World
-      - Stadium-Chinatown station
-      - Granville Station
-      - Burrard Station
-      - Waterfront (Expo Line)
-      - Scott Road
-      - Gateway
-      - Surrey Central station
-      - King George station
-
-    itineraries: 
-      r207814: 
-        - Production Way-University (n5324685228)
-        - Lougheed Town Centre (n3956040169)
-        - Braid (n5324667872)
-        - Sapperton (n5324488092)
-        - Columbia (n5324471829)
-        - New Westminster (n5324519662)
-        - 22nd Street (n5324525267)
-        - Edmonds (n5324545412)
-        - Royal Oak (n5324551029)
-        - Metrotown (n5324559457)
-        - Patterson (n5324568678)
-        - Joyce–Collingwood (n5324581126)
-        - 29th Avenue (n5324600053)
-        - Nanaimo (n5324590526)
-        - Commercial–Broadway (n3956040167)
-        - Main Street–Science World (n25751159)
-        - Stadium-Chinatown (n5324635405)
-        - Granville (n5324635042)
-        - Burrard (n5324651729)
-        - Waterfront (n3831781786)
-
-      r5881297: 
-        - Waterfront (n3831781786)
-        - Burrard (n5324651729)
-        - Granville (n5324635042)
-        - Stadium-Chinatown (n5324635405)
-        - Main Street–Science World (n25751159)
-        - Commercial–Broadway (n3956040167)
-        - Nanaimo (n5324590526)
-        - 29th Avenue (n5324600053)
-        - Joyce–Collingwood (n5324581126)
-        - Patterson (n5324568678)
-        - Metrotown (n5324559457)
-        - Royal Oak (n5324551029)
-        - Edmonds (n5324545412)
-        - 22nd Street (n5324525267)
-        - New Westminster (n5324519662)
-        - Columbia (n5324471829)
-        - Scott Road (n5324453350)
-        - Gateway (n5324415604)
-        - Surrey Central (n5324415606)
-        - King George (n5324432723)
-
-      r207813: 
-        - King George (n5324432723)
-        - Surrey Central (n5324415606)
-        - Gateway (n5324415604)
-        - Scott Road (n5324453350)
-        - Columbia (n5324471829)
-        - New Westminster (n5324519662)
-        - 22nd Street (n5324525267)
-        - Edmonds (n5324545412)
-        - Royal Oak (n5324551029)
-        - Metrotown (n5324559457)
-        - Patterson (n5324568678)
-        - Joyce–Collingwood (n5324581126)
-        - 29th Avenue (n5324600053)
-        - Nanaimo (n5324590526)
-        - Commercial–Broadway (n3956040167)
-        - Main Street–Science World (n25751159)
-        - Stadium-Chinatown (n5324635405)
-        - Granville (n5324635042)
-        - Burrard (n5324651729)
-        - Waterfront (n3831781786)
-
-      r7882446: 
-        - Waterfront (n3831781786)
-        - Burrard (n5324651729)
-        - Granville (n5324635042)
-        - Stadium-Chinatown (n5324635405)
-        - Main Street–Science World (n25751159)
-        - Commercial–Broadway (n3956040167)
-        - Nanaimo (n5324590526)
-        - 29th Avenue (n5324600053)
-        - Joyce–Collingwood (n5324581126)
-        - Patterson (n5324568678)
-        - Metrotown (n5324559457)
-        - Royal Oak (n5324551029)
-        - Edmonds (n5324545412)
-        - 22nd Street (n5324525267)
-        - New Westminster (n5324519662)
-        - Columbia (n5324471829)
-        - Sapperton (n5324488092)
-        - Braid (n5324667872)
-        - Lougheed Town Centre (n3956040169)
-        - Production Way-University (n5324685228)
-
-
-  - 
-    ref: Millennium Line
-    name: Millennium Line
-    colour: '#ffd520'
-    station_count: 17
-    type: subway
-    stations: 
-      - Lafarge Lake–Douglas station
-      - Lincoln station
-      - Coquitlam Central (Rapid Transit)
-      - Inlet Centre station
-      - Moody Centre (Rapid Transit)
-      - Burquitlam station
-      - Lougheed Town Centre station
-      - Production Way-University station
-      - Lake City Way station
-      - Sperling–Burnaby Lake station
-      - Holdom station
-      - Brentwood Town Centre station
-      - Gilmore station
-      - Rupert station
-      - Renfrew station
-      - Commercial-Broadway Platforms 1 & 2
-      - VCC-Clark station
-
-    itineraries: 
-      r5881418: 
-        - Lafarge Lake–Douglas (n5325411930)
-        - Lincoln (n5325411924)
-        - Coquitlam Central (n5324742207)
-        - Inlet Centre (n5325408472)
-        - Moody Centre (n5325408927)
-        - Burquitlam (n5324737128)
-        - Lougheed Town Centre (n3956040169)
-        - Production Way-University (n5324685228)
-        - Lake City Way (n5324689532)
-        - Sperling–Burnaby Lake (n5324716725)
-        - Holdom (n5324719980)
-        - Brentwood Town Centre (n258029290)
-        - Gilmore (n25325833)
-        - Rupert (n5324730259)
-        - Renfrew (n5324734517)
-        - Commercial–Broadway (n3956040167)
-        - VCC-Clark (n5324621993)
-
-      r7252767: 
-        - VCC-Clark (n5324621993)
-        - Commercial–Broadway (n3956040167)
-        - Renfrew (n5324734517)
-        - Rupert (n5324730259)
-        - Gilmore (n25325833)
-        - Brentwood Town Centre (n258029290)
-        - Holdom (n5324719980)
-        - Sperling–Burnaby Lake (n5324716725)
-        - Lake City Way (n5324689532)
-        - Production Way-University (n5324685228)
-        - Lougheed Town Centre (n3956040169)
-        - Burquitlam (n5324737128)
-        - Moody Centre (n5325408927)
-        - Inlet Centre (n5325408472)
-        - Coquitlam Central (n5324742207)
-        - Lincoln (n5325411924)
-        - Lafarge Lake–Douglas (n5325411930)
-
-
+    - Waterfront (Canada Line) (r7882599)
+    - Waterfront (Expo Line) (r7882589)
 
 stations: 
   - 22nd Street (n5324525267)
@@ -329,11 +62,278 @@ stations:
   - YVR–Airport (n5330999693)
   - Yaletown–Roundhouse (n5324837598)
 
-transfers: 
+routes: 
   - 
-    - Commercial-Broadway Platforms 1 & 2 (r7882534)
-    - Commercial-Broadway Platforms 3 & 4 (r7882533)
+    colour: '#009ac8'
+    type: subway
+    stations: 
+      - YVR-Airport
+      - Sea Island Centre station
+      - Templeton station
+      - Bridgeport station
+      - Marine Drive station
+      - Langara-49th Avenue station
+      - Oakridge-41st Avenue station
+      - King Edward station
+      - Broadway–City Hall station
+      - Olympic Village
+      - Yaletown–Roundhouse station
+      - Vancouver City Centre station
+      - Waterfront (Canada Line)
+      - Richmond–Brighouse station
+      - Lansdowne station
+      - Aberdeen station
+
+    ref: Canada Line
+    station_count: 16
+    itineraries: 
+      r207798: 
+        - Waterfront (n3831781786)
+        - Vancouver City Centre (n5324838897)
+        - Yaletown–Roundhouse (n5324837598)
+        - Olympic Village (n5324798857)
+        - Broadway–City Hall (n5324830285)
+        - King Edward (n5324825482)
+        - Oakridge-41st Avenue (n5324820129)
+        - Langara-49th Avenue (n5324820954)
+        - Marine Drive (n5324814227)
+        - Bridgeport (n3956055739)
+        - Templeton (n5324792504)
+        - Sea Island Centre (n5324793019)
+        - YVR–Airport (n5330999693)
+
+      r5881438: 
+        - YVR–Airport (n5330999693)
+        - Sea Island Centre (n5324793019)
+        - Templeton (n5324792504)
+        - Bridgeport (n3956055739)
+        - Marine Drive (n5324814227)
+        - Langara-49th Avenue (n5324820954)
+        - Oakridge-41st Avenue (n5324820129)
+        - King Edward (n5324825482)
+        - Broadway–City Hall (n5324830285)
+        - Olympic Village (n5324798857)
+        - Yaletown–Roundhouse (n5324837598)
+        - Vancouver City Centre (n5324838897)
+        - Waterfront (n3831781786)
+
+      r5881437: 
+        - Waterfront (n3831781786)
+        - Vancouver City Centre (n5324838897)
+        - Yaletown–Roundhouse (n5324837598)
+        - Olympic Village (n5324798857)
+        - Broadway–City Hall (n5324830285)
+        - King Edward (n5324825482)
+        - Oakridge-41st Avenue (n5324820129)
+        - Langara-49th Avenue (n5324820954)
+        - Marine Drive (n5324814227)
+        - Bridgeport (n3956055739)
+        - Aberdeen (n5324748888)
+        - Lansdowne (n5324785127)
+        - Richmond–Brighouse (n5324786154)
+
+      r5881436: 
+        - Richmond–Brighouse (n5324786154)
+        - Lansdowne (n5324785127)
+        - Aberdeen (n5324748888)
+        - Bridgeport (n3956055739)
+        - Marine Drive (n5324814227)
+        - Langara-49th Avenue (n5324820954)
+        - Oakridge-41st Avenue (n5324820129)
+        - King Edward (n5324825482)
+        - Broadway–City Hall (n5324830285)
+        - Olympic Village (n5324798857)
+        - Yaletown–Roundhouse (n5324837598)
+        - Vancouver City Centre (n5324838897)
+        - Waterfront (n3831781786)
+
+
+    name: Canada Line
   - 
-    - Waterfront (Canada Line) (r7882599)
-    - Waterfront (Expo Line) (r7882589)
+    colour: '#0060a9'
+    type: subway
+    stations: 
+      - Waterfront (Expo Line)
+      - Burrard Station
+      - Granville Station
+      - Stadium-Chinatown station
+      - Main Street-Science World
+      - Commercial-Broadway Platforms 3 & 4
+      - Nanaimo station
+      - 29th Avenue Station
+      - Joyce–Collingwood station
+      - Patterson station
+      - Metrotown station
+      - Royal Oak station
+      - Edmonds Station
+      - 22nd Street Station
+      - New Westminster Station
+      - Columbia station
+      - Sapperton station
+      - Braid station
+      - Lougheed Town Centre station
+      - Production Way-University station
+      - Scott Road
+      - Gateway
+      - Surrey Central station
+      - King George station
+
+    ref: Expo Line
+    station_count: 24
+    itineraries: 
+      r207814: 
+        - Production Way-University (n5324685228)
+        - Lougheed Town Centre (n3956040169)
+        - Braid (n5324667872)
+        - Sapperton (n5324488092)
+        - Columbia (n5324471829)
+        - New Westminster (n5324519662)
+        - 22nd Street (n5324525267)
+        - Edmonds (n5324545412)
+        - Royal Oak (n5324551029)
+        - Metrotown (n5324559457)
+        - Patterson (n5324568678)
+        - Joyce–Collingwood (n5324581126)
+        - 29th Avenue (n5324600053)
+        - Nanaimo (n5324590526)
+        - Commercial–Broadway (n3956040167)
+        - Main Street–Science World (n25751159)
+        - Stadium-Chinatown (n5324635405)
+        - Granville (n5324635042)
+        - Burrard (n5324651729)
+        - Waterfront (n3831781786)
+
+      r207813: 
+        - King George (n5324432723)
+        - Surrey Central (n5324415606)
+        - Gateway (n5324415604)
+        - Scott Road (n5324453350)
+        - Columbia (n5324471829)
+        - New Westminster (n5324519662)
+        - 22nd Street (n5324525267)
+        - Edmonds (n5324545412)
+        - Royal Oak (n5324551029)
+        - Metrotown (n5324559457)
+        - Patterson (n5324568678)
+        - Joyce–Collingwood (n5324581126)
+        - 29th Avenue (n5324600053)
+        - Nanaimo (n5324590526)
+        - Commercial–Broadway (n3956040167)
+        - Main Street–Science World (n25751159)
+        - Stadium-Chinatown (n5324635405)
+        - Granville (n5324635042)
+        - Burrard (n5324651729)
+        - Waterfront (n3831781786)
+
+      r5881297: 
+        - Waterfront (n3831781786)
+        - Burrard (n5324651729)
+        - Granville (n5324635042)
+        - Stadium-Chinatown (n5324635405)
+        - Main Street–Science World (n25751159)
+        - Commercial–Broadway (n3956040167)
+        - Nanaimo (n5324590526)
+        - 29th Avenue (n5324600053)
+        - Joyce–Collingwood (n5324581126)
+        - Patterson (n5324568678)
+        - Metrotown (n5324559457)
+        - Royal Oak (n5324551029)
+        - Edmonds (n5324545412)
+        - 22nd Street (n5324525267)
+        - New Westminster (n5324519662)
+        - Columbia (n5324471829)
+        - Scott Road (n5324453350)
+        - Gateway (n5324415604)
+        - Surrey Central (n5324415606)
+        - King George (n5324432723)
+
+      r7882446: 
+        - Waterfront (n3831781786)
+        - Burrard (n5324651729)
+        - Granville (n5324635042)
+        - Stadium-Chinatown (n5324635405)
+        - Main Street–Science World (n25751159)
+        - Commercial–Broadway (n3956040167)
+        - Nanaimo (n5324590526)
+        - 29th Avenue (n5324600053)
+        - Joyce–Collingwood (n5324581126)
+        - Patterson (n5324568678)
+        - Metrotown (n5324559457)
+        - Royal Oak (n5324551029)
+        - Edmonds (n5324545412)
+        - 22nd Street (n5324525267)
+        - New Westminster (n5324519662)
+        - Columbia (n5324471829)
+        - Sapperton (n5324488092)
+        - Braid (n5324667872)
+        - Lougheed Town Centre (n3956040169)
+        - Production Way-University (n5324685228)
+
+
+    name: Expo Line
+  - 
+    colour: '#ffd520'
+    type: subway
+    stations: 
+      - VCC-Clark station
+      - Commercial-Broadway Platforms 1 & 2
+      - Renfrew station
+      - Rupert station
+      - Gilmore station
+      - Brentwood Town Centre station
+      - Holdom station
+      - Sperling–Burnaby Lake station
+      - Lake City Way station
+      - Production Way-University station
+      - Lougheed Town Centre station
+      - Burquitlam station
+      - Moody Centre (Rapid Transit)
+      - Inlet Centre station
+      - Coquitlam Central (Rapid Transit)
+      - Lincoln station
+      - Lafarge Lake–Douglas station
+
+    ref: Millennium Line
+    station_count: 17
+    itineraries: 
+      r5881418: 
+        - Lafarge Lake–Douglas (n5325411930)
+        - Lincoln (n5325411924)
+        - Coquitlam Central (n5324742207)
+        - Inlet Centre (n5325408472)
+        - Moody Centre (n5325408927)
+        - Burquitlam (n5324737128)
+        - Lougheed Town Centre (n3956040169)
+        - Production Way-University (n5324685228)
+        - Lake City Way (n5324689532)
+        - Sperling–Burnaby Lake (n5324716725)
+        - Holdom (n5324719980)
+        - Brentwood Town Centre (n258029290)
+        - Gilmore (n25325833)
+        - Rupert (n5324730259)
+        - Renfrew (n5324734517)
+        - Commercial–Broadway (n3956040167)
+        - VCC-Clark (n5324621993)
+
+      r7252767: 
+        - VCC-Clark (n5324621993)
+        - Commercial–Broadway (n3956040167)
+        - Renfrew (n5324734517)
+        - Rupert (n5324730259)
+        - Gilmore (n25325833)
+        - Brentwood Town Centre (n258029290)
+        - Holdom (n5324719980)
+        - Sperling–Burnaby Lake (n5324716725)
+        - Lake City Way (n5324689532)
+        - Production Way-University (n5324685228)
+        - Lougheed Town Centre (n3956040169)
+        - Burquitlam (n5324737128)
+        - Moody Centre (n5325408927)
+        - Inlet Centre (n5325408472)
+        - Coquitlam Central (n5324742207)
+        - Lincoln (n5325411924)
+        - Lafarge Lake–Douglas (n5325411930)
+
+
+    name: Millennium Line
 
