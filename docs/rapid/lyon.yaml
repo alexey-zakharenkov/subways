@@ -1,18 +1,4 @@
 
-transfers: 
-  - 
-    - Bellecour (Ligne A) (r7975217)
-    - Bellecour (Ligne D) (r3661103)
-  - 
-    - 'Charpennes - Charles Hernu (Ligne A) (r3205870)'
-    - 'Charpennes - Charles Hernu (Ligne B) (r8031593)'
-  - 
-    - 'Hôtel de Ville - Louis Pradel (Ligne A) (r7975237)'
-    - 'Hôtel de Ville - Louis Pradel (Ligne C) (r7975236)'
-  - 
-    - 'Saxe - Gambetta (Ligne B) (r7975219)'
-    - 'Saxe - Gambetta (Ligne D) (r3750361)'
-
 stations: 
   - 'Ampère - Victor Hugo (n5385036748)'
   - Bellecour (n5365148732)
@@ -56,28 +42,38 @@ stations:
   - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
   - Vénissieux (n5390305237)
 
+transfers: 
+  - 
+    - Bellecour (Ligne A) (r7975217)
+    - Bellecour (Ligne D) (r3661103)
+  - 
+    - 'Charpennes - Charles Hernu (Ligne A) (r3205870)'
+    - 'Charpennes - Charles Hernu (Ligne B) (r8031593)'
+  - 
+    - 'Hôtel de Ville - Louis Pradel (Ligne A) (r7975237)'
+    - 'Hôtel de Ville - Louis Pradel (Ligne C) (r7975236)'
+  - 
+    - 'Saxe - Gambetta (Ligne B) (r7975219)'
+    - 'Saxe - Gambetta (Ligne D) (r3750361)'
+
 routes: 
   - 
-    colour: '#ee3898'
-    type: subway
     stations: 
-      - 'Vaulx-en-Velin - La Soie'
-      - 'Laurent Bonnevay - Astroballe (Ligne A)'
-      - Cusset
-      - Flachet
-      - Gratte-Ciel
-      - 'République - Villeurbanne'
-      - 'Charpennes - Charles Hernu (Ligne A)'
-      - Masséna
-      - Foch
-      - 'Hôtel de Ville - Louis Pradel (Ligne A)'
-      - Cordeliers
-      - Bellecour (Ligne A)
-      - 'Ampère - Victor Hugo'
       - Perrache (subway)
+      - 'Ampère - Victor Hugo'
+      - Bellecour (Ligne A)
+      - Cordeliers
+      - 'Hôtel de Ville - Louis Pradel (Ligne A)'
+      - Foch
+      - Masséna
+      - 'Charpennes - Charles Hernu (Ligne A)'
+      - 'République - Villeurbanne'
+      - Gratte-Ciel
+      - Flachet
+      - Cusset
+      - 'Laurent Bonnevay - Astroballe (Ligne A)'
+      - 'Vaulx-en-Velin - La Soie'
 
-    ref: A
-    station_count: 14
     itineraries: 
       r3687319: 
         - 'Vaulx-en-Velin - La Soie (n5365154886)'
@@ -113,9 +109,11 @@ routes:
 
 
     name: Metro A
-  - 
-    colour: '#007dc5'
+    station_count: 14
+    ref: A
+    colour: '#ee3898'
     type: subway
+  - 
     stations: 
       - Pôle Multimodal d'Oullins
       - Stade de Gerland
@@ -128,8 +126,6 @@ routes:
       - Brotteaux
       - 'Charpennes - Charles Hernu (Ligne B)'
 
-    ref: B
-    station_count: 10
     itineraries: 
       r3687320: 
         - Gare d'Oullins (n5365146848)
@@ -157,9 +153,11 @@ routes:
 
 
     name: Metro B
-  - 
-    colour: '#f99d1d'
+    station_count: 10
+    ref: B
+    colour: '#007dc5'
     type: subway
+  - 
     stations: 
       - 'Hôtel de Ville - Louis Pradel (Ligne C)'
       - Croix-Paquet
@@ -167,16 +165,7 @@ routes:
       - Hénon
       - Cuire
 
-    ref: C
-    station_count: 5
     itineraries: 
-      r3687321: 
-        - Cuire (n5388270721)
-        - Hénon (w445225318)
-        - Croix-Rousse (n5388249130)
-        - Croix-Paquet (n5387297446)
-        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
-
       r113906: 
         - 'Hôtel de Ville - Louis Pradel (n5365157959)'
         - Croix-Paquet (n5387297446)
@@ -184,30 +173,37 @@ routes:
         - Hénon (w445225318)
         - Cuire (n5388270721)
 
+      r3687321: 
+        - Cuire (n5388270721)
+        - Hénon (w445225318)
+        - Croix-Rousse (n5388249130)
+        - Croix-Paquet (n5387297446)
+        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
+
 
     name: Metro C
-  - 
-    colour: '#00ac4d'
+    station_count: 5
+    ref: C
+    colour: '#f99d1d'
     type: subway
+  - 
     stations: 
-      - Pôle d'échanges Gare de Vaise
-      - Valmy
-      - Pôle d'échanges Gorge de Loup
-      - 'Vieux Lyon - Cathédrale Saint-Jean'
-      - Bellecour (Ligne D)
-      - Guillotière
-      - 'Saxe - Gambetta (Ligne D)'
-      - Garibaldi (subway)
-      - Sans Souci
-      - 'Monplaisir - Lumière'
-      - Grange Blanche
-      - Laennec
-      - 'Mermoz - Pinel'
-      - Parilly
       - Gare de Vénissieux
+      - Parilly
+      - 'Mermoz - Pinel'
+      - Laennec
+      - Grange Blanche
+      - 'Monplaisir - Lumière'
+      - Sans Souci
+      - Garibaldi (subway)
+      - 'Saxe - Gambetta (Ligne D)'
+      - Guillotière
+      - Bellecour (Ligne D)
+      - 'Vieux Lyon - Cathédrale Saint-Jean'
+      - Pôle d'échanges Gorge de Loup
+      - Valmy
+      - Pôle d'échanges Gare de Vaise
 
-    ref: D
-    station_count: 15
     itineraries: 
       r113903: 
         - Gare de Vaise (n5385023672)
@@ -245,4 +241,8 @@ routes:
 
 
     name: Metro D
+    station_count: 15
+    ref: D
+    colour: '#00ac4d'
+    type: subway
 

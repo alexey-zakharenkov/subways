@@ -1,12 +1,4 @@
 
-transfers: 
-  - 
-    - 14th Street (PATH to New Jersey) (r11168314)
-    - 14th Street (PATH uptown) (r3420745)
-  - 
-    - Harrison (eastbound) (r11092344)
-    - Harrison (westbound) (r11180658)
-
 stations: 
   - 14th Street (n5353031435)
   - 23rd Street (n7509382446)
@@ -22,10 +14,16 @@ stations:
   - Newport (n1293095286)
   - World Trade Center (n1279337146)
 
+transfers: 
+  - 
+    - 14th Street (PATH to New Jersey) (r11168314)
+    - 14th Street (PATH uptown) (r3420745)
+  - 
+    - Harrison (eastbound) (r11092344)
+    - Harrison (westbound) (r11180658)
+
 routes: 
   - 
-    colour: '#0082c6'
-    type: subway
     stations: 
       - Hoboken (PATH)
       - Christopher Street
@@ -34,8 +32,6 @@ routes:
       - 23rd Street (PATH)
       - 33rd Street (PATH)
 
-    ref: HOB–33
-    station_count: 6
     itineraries: 
       r1468831: 
         - 33rd Street (n5365337595)
@@ -55,35 +51,37 @@ routes:
 
 
     name: PATH 33rd-Hoboken
-  - 
-    colour: '#009e58'
+    station_count: 6
+    ref: HOB–33
+    colour: '#0082c6'
     type: subway
+  - 
     stations: 
-      - Hoboken (PATH)
-      - Newport (PATH)
-      - Exchange Place (PATH)
       - World Trade Center (PATH)
+      - Exchange Place (PATH)
+      - Newport (PATH)
+      - Hoboken (PATH)
 
-    ref: HOB–WTC
-    station_count: 4
     itineraries: 
-      r1468847: 
-        - Hoboken (n6556450069)
-        - Newport (n1293095286)
-        - Exchange Place (w74268320)
-        - World Trade Center (n1279337146)
-
       r7943872: 
         - World Trade Center (n1279337146)
         - Exchange Place (w74268320)
         - Newport (n1293095286)
         - Hoboken (n6556450069)
 
+      r1468847: 
+        - Hoboken (n6556450069)
+        - Newport (n1293095286)
+        - Exchange Place (w74268320)
+        - World Trade Center (n1279337146)
+
 
     name: PATH WTC-Hoboken
-  - 
-    colour: '#fdb827'
+    station_count: 4
+    ref: HOB–WTC
+    colour: '#009e58'
     type: subway
+  - 
     stations: 
       - Journal Square Transportation Center (PATH)
       - Grove Street
@@ -94,8 +92,6 @@ routes:
       - 23rd Street (PATH)
       - 33rd Street (PATH)
 
-    ref: JSQ–33
-    station_count: 8
     itineraries: 
       r7943925: 
         - 33rd Street (n5365337595)
@@ -119,33 +115,23 @@ routes:
 
 
     name: PATH Journal Square-33rd
-  - 
+    station_count: 8
+    ref: JSQ–33
+    colour: '#fdb827'
     type: subway
+  - 
     stations: 
-      - Journal Square Transportation Center (PATH)
-      - Grove Street
-      - Newport (PATH)
-      - Hoboken (PATH)
-      - Christopher Street
-      - 9th Street
-      - 14th Street (PATH to New Jersey)
-      - 23rd Street (PATH)
       - 33rd Street (PATH)
+      - 23rd Street (PATH)
+      - 14th Street (PATH uptown)
+      - 9th Street
+      - Christopher Street
+      - Hoboken (PATH)
+      - Newport (PATH)
+      - Grove Street
+      - Journal Square Transportation Center (PATH)
 
-    ref: JSQ–33 via HOB
-    station_count: 9
     itineraries: 
-      r11100811: 
-        - 33rd Street (n5365337595)
-        - 23rd Street (n7509382446)
-        - 14th Street (n5353031435)
-        - 9th Street (n5350221083)
-        - Christopher Street (n5646503045)
-        - Hoboken (n6556450069)
-        - Newport (n1293095286)
-        - Grove Street (n1078335224)
-        - Journal Square Transportation Center (n296926855)
-
       r11100812: 
         - Journal Square Transportation Center (n296926855)
         - Grove Street (n1078335224)
@@ -157,21 +143,31 @@ routes:
         - 23rd Street (n7509382446)
         - 33rd Street (n5365337595)
 
+      r11100811: 
+        - 33rd Street (n5365337595)
+        - 23rd Street (n7509382446)
+        - 14th Street (n5353031435)
+        - 9th Street (n5350221083)
+        - Christopher Street (n5646503045)
+        - Hoboken (n6556450069)
+        - Newport (n1293095286)
+        - Grove Street (n1078335224)
+        - Journal Square Transportation Center (n296926855)
+
 
     name: PATH Journal Square-33rd via Hoboken
-  - 
-    colour: '#ef3941'
+    station_count: 9
+    ref: JSQ–33 via HOB
     type: subway
+  - 
     stations: 
-      - Newark Penn Station (PATH)
-      - Harrison (westbound)
-      - Journal Square Transportation Center (PATH)
-      - Grove Street
-      - Exchange Place (PATH)
       - World Trade Center (PATH)
+      - Exchange Place (PATH)
+      - Grove Street
+      - Journal Square Transportation Center (PATH)
+      - Harrison (eastbound)
+      - Newark Penn Station (PATH)
 
-    ref: NWK–WTC
-    station_count: 6
     itineraries: 
       r1468867: 
         - Newark Penn Station (n7068257064)
@@ -191,4 +187,8 @@ routes:
 
 
     name: PATH Newark-WTC
+    station_count: 6
+    ref: NWK–WTC
+    colour: '#ef3941'
+    type: subway
 

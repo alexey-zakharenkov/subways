@@ -1,18 +1,4 @@
 
-transfers: 
-  - 
-    - Do'stlik (r7664270)
-    - Do'stlik-2 (r11649101)
-  - 
-    - Алишер Навоий (r7664280)
-    - Пахтакор (r7664267)
-  - 
-    - Амира Тимура (r7662009)
-    - Юнyc Раджабий (r7662008)
-  - 
-    - Минг Урик (r7661973)
-    - Ойбек (r7661974)
-
 stations: 
   - Amir Temur xiyoboni (n1777051509)
   - Bekat-1 (w881900775)
@@ -58,10 +44,22 @@ stations:
   - Чорсу (n1577932485)
   - Юнyc Раджабий (n1777051512)
 
+transfers: 
+  - 
+    - Do'stlik (r7664270)
+    - Do'stlik-2 (r11649101)
+  - 
+    - Алишер Навоий (r7664280)
+    - Пахтакор (r7664267)
+  - 
+    - Амира Тимура (r7662009)
+    - Юнyc Раджабий (r7662008)
+  - 
+    - Минг Урик (r7661973)
+    - Ойбек (r7661974)
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
       - Буюк Ипак Йули
       - Пушкина
@@ -81,28 +79,7 @@ routes:
       - Bekat-4
       - Bekat-5
 
-    ref: 1
-    station_count: 17
     itineraries: 
-      r2254096: 
-        - Бекат-5 (w888864487)
-        - Бекат-4 (w881899152)
-        - Бекат-3 (w888864488)
-        - Бекат-2 (w881900776)
-        - Bekat-1 (w881900775)
-        - Алмазар (n1777845992)
-        - Чиланзар (n854338154)
-        - Мирзо Улугбек (n852873027)
-        - Новза (n563751850)
-        - Миллий Бог (n1252201486)
-        - Халклар Дустлиги (n568770460)
-        - Пахтакор (n1777740154)
-        - Мустакиллик майдони (n1778357473)
-        - Amir Temur xiyoboni (n1777051509)
-        - Хамида Алимджана (n1775848270)
-        - Пушкина (n1777037922)
-        - Buyuk Ipak Yo'li (n1777037919)
-
       r2456703: 
         - Buyuk Ipak Yo'li (n1777037919)
         - Пушкина (n1777037922)
@@ -122,22 +99,41 @@ routes:
         - Бекат-4 (w881899152)
         - Бекат-5 (w888864487)
 
+      r2254096: 
+        - Бекат-5 (w888864487)
+        - Бекат-4 (w881899152)
+        - Бекат-3 (w888864488)
+        - Бекат-2 (w881900776)
+        - Bekat-1 (w881900775)
+        - Алмазар (n1777845992)
+        - Чиланзар (n854338154)
+        - Мирзо Улугбек (n852873027)
+        - Новза (n563751850)
+        - Миллий Бог (n1252201486)
+        - Халклар Дустлиги (n568770460)
+        - Пахтакор (n1777740154)
+        - Мустакиллик майдони (n1778357473)
+        - Amir Temur xiyoboni (n1777051509)
+        - Хамида Алимджана (n1775848270)
+        - Пушкина (n1777037922)
+        - Buyuk Ipak Yo'li (n1777037919)
+
 
     name: Чиланзарская линия
-  - 
-    colour: '#9933ff'
+    station_count: 17
+    ref: 1
+    colour: '#ff0000'
     type: subway
+  - 
     stations: 
-      - Do'stlik-2
-      - Ohangaron
-      - Tuzel
-      - Iltifot
-      - Rohat
-      - Yangiobod
       - Куйлюк
+      - Yangiobod
+      - Rohat
+      - Iltifot
+      - Tuzel
+      - Ohangaron
+      - Do'stlik-2
 
-    ref: 2
-    station_count: 7
     itineraries: 
       r11649100: 
         - Do'stlik-2 metro stantsiyasi (w713930067)
@@ -158,10 +154,12 @@ routes:
         - Do'stlik-2 metro stantsiyasi (w713930067)
 
 
-    name: 'Circle Line: Do''stlik - Qo‘yliq'
-  - 
-    colour: '#0000ff'
+    name: 'Circle Line: Qo‘yliq - Do''stlik'
+    station_count: 7
+    ref: 2
+    colour: '#9933ff'
     type: subway
+  - 
     stations: 
       - Беруни
       - Тинчлик
@@ -175,8 +173,6 @@ routes:
       - Машиносозлар
       - Do'stlik
 
-    ref: 2
-    station_count: 11
     itineraries: 
       r2460690: 
         - Do'stlik (n1777856012)
@@ -206,21 +202,21 @@ routes:
 
 
     name: Узбекистанская линия
-  - 
-    colour: '#008000'
+    station_count: 11
+    ref: 2
+    colour: '#0000ff'
     type: subway
+  - 
     stations: 
-      - Минг Урик
-      - Юнyc Раджабий
-      - Абдулла Кодирий
-      - Минор
-      - Бодомзар
-      - Shahriston
-      - Юнусабад
       - Туркистон
+      - Юнусабад
+      - Shahriston
+      - Бодомзар
+      - Минор
+      - Абдулла Кодирий
+      - Юнyc Раджабий
+      - Минг Урик
 
-    ref: 3
-    station_count: 8
     itineraries: 
       r2458135: 
         - Turkiston (n7861940928)
@@ -244,4 +240,8 @@ routes:
 
 
     name: Юнусабадская линия
+    station_count: 8
+    ref: 3
+    colour: '#008000'
+    type: subway
 

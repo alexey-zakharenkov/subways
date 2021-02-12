@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - 'Beurs - A,B,C (r7685906)'
-    - 'Beurs - D,E (r7685870)'
-
 stations: 
   - Alexander (n6501644177)
   - Ambachtsland (n4048801939)
@@ -76,10 +71,13 @@ stations:
   - Zalmplaat (n3149917985)
   - Zuidplein (n3149917986)
 
+transfers: 
+  - 
+    - 'Beurs - A,B,C (r7685906)'
+    - 'Beurs - D,E (r7685870)'
+
 routes: 
   - 
-    colour: '#00aa50'
-    type: subway
     stations: 
       - Vlaardingen West
       - Vlaardingen Centrum
@@ -106,58 +104,12 @@ routes:
       - Romeynshof
       - Binnenhof
 
-    ref: A
-    station_count: 24
     itineraries: 
-      r11174054: 
-        - Binnenhof (n4048801940)
-        - Romeynshof (n4048801963)
-        - Graskruid (n4048801950)
-        - Alexander (n6501644177)
-        - Oosterflank (n4048801958)
-        - Prinsenlaan (n4048801962)
-        - Schenkel (n4048801968)
-        - Capelsebrug (n4048801942)
-        - Kralingse Zoom (n4048801954)
-        - Voorschoterlaan (n4048801974)
-        - Gerdesiaweg (n4048801949)
-        - Oostplein (n4048801959)
-        - Rotterdam Blaak (n4048801966)
-        - Beurs (n3149917961)
-        - Eendrachtsplein (n4048801948)
-        - Dijkzigt (n4048801947)
-        - Coolhaven (n4048801943)
-        - Delfshaven (n4048801946)
-        - Marconiplein (w275004894)
-        - Schiedam Centrum (n4048801969)
-
-      r2785672: 
-        - Binnenhof (n4048801940)
-        - Romeynshof (n4048801963)
-        - Graskruid (n4048801950)
-        - Alexander (n6501644177)
-        - Oosterflank (n4048801958)
-        - Prinsenlaan (n4048801962)
-        - Schenkel (n4048801968)
-        - Capelsebrug (n4048801942)
-        - Kralingse Zoom (n4048801954)
-        - Voorschoterlaan (n4048801974)
-        - Gerdesiaweg (n4048801949)
-        - Oostplein (n4048801959)
-        - Rotterdam Blaak (n4048801966)
-        - Beurs (n3149917961)
-        - Eendrachtsplein (n4048801948)
-        - Dijkzigt (n4048801947)
-        - Coolhaven (n4048801943)
-        - Delfshaven (n4048801946)
-        - Marconiplein (w275004894)
-        - Schiedam Centrum (n4048801969)
-        - Schiedam Nieuwland (n5320433276)
-        - Vlaardingen Oost (n5320427711)
-        - Vlaardingen Centrum (n5320428567)
+      r2785673: 
         - Vlaardingen West (n44324523)
-
-      r11174055: 
+        - Vlaardingen Centrum (n5320428567)
+        - Vlaardingen Oost (n5320427711)
+        - Schiedam Nieuwland (n5320433276)
         - Schiedam Centrum (n4048801969)
         - Marconiplein (w275004894)
         - Delfshaven (n4048801946)
@@ -190,11 +142,40 @@ routes:
         - Romeynshof (n4048801963)
         - Binnenhof (n4048801940)
 
-      r2785673: 
-        - Vlaardingen West (n44324523)
-        - Vlaardingen Centrum (n5320428567)
-        - Vlaardingen Oost (n5320427711)
-        - Schiedam Nieuwland (n5320433276)
+      r11174054: 
+        - Binnenhof (n4048801940)
+        - Romeynshof (n4048801963)
+        - Graskruid (n4048801950)
+        - Alexander (n6501644177)
+        - Oosterflank (n4048801958)
+        - Prinsenlaan (n4048801962)
+        - Schenkel (n4048801968)
+        - Capelsebrug (n4048801942)
+        - Kralingse Zoom (n4048801954)
+        - Voorschoterlaan (n4048801974)
+        - Gerdesiaweg (n4048801949)
+        - Oostplein (n4048801959)
+        - Rotterdam Blaak (n4048801966)
+        - Beurs (n3149917961)
+        - Eendrachtsplein (n4048801948)
+        - Dijkzigt (n4048801947)
+        - Coolhaven (n4048801943)
+        - Delfshaven (n4048801946)
+        - Marconiplein (w275004894)
+        - Schiedam Centrum (n4048801969)
+
+      r11174057: 
+        - Binnenhof (n4048801940)
+        - Romeynshof (n4048801963)
+        - Graskruid (n4048801950)
+        - Alexander (n6501644177)
+        - Oosterflank (n4048801958)
+        - Prinsenlaan (n4048801962)
+        - Schenkel (n4048801968)
+        - Capelsebrug (n4048801942)
+        - Kralingse Zoom (n4048801954)
+
+      r11174055: 
         - Schiedam Centrum (n4048801969)
         - Marconiplein (w275004894)
         - Delfshaven (n4048801946)
@@ -216,7 +197,7 @@ routes:
         - Romeynshof (n4048801963)
         - Binnenhof (n4048801940)
 
-      r11174057: 
+      r2785672: 
         - Binnenhof (n4048801940)
         - Romeynshof (n4048801963)
         - Graskruid (n4048801950)
@@ -226,12 +207,29 @@ routes:
         - Schenkel (n4048801968)
         - Capelsebrug (n4048801942)
         - Kralingse Zoom (n4048801954)
+        - Voorschoterlaan (n4048801974)
+        - Gerdesiaweg (n4048801949)
+        - Oostplein (n4048801959)
+        - Rotterdam Blaak (n4048801966)
+        - Beurs (n3149917961)
+        - Eendrachtsplein (n4048801948)
+        - Dijkzigt (n4048801947)
+        - Coolhaven (n4048801943)
+        - Delfshaven (n4048801946)
+        - Marconiplein (w275004894)
+        - Schiedam Centrum (n4048801969)
+        - Schiedam Nieuwland (n5320433276)
+        - Vlaardingen Oost (n5320427711)
+        - Vlaardingen Centrum (n5320428567)
+        - Vlaardingen West (n44324523)
 
 
     name: Metro A
-  - 
-    colour: '#ffd301'
+    station_count: 24
+    ref: A
+    colour: '#00aa50'
     type: subway
+  - 
     stations: 
       - Nesselande
       - De Tochten
@@ -265,8 +263,6 @@ routes:
       - Steendijkpolder
       - Hoek van Holland Haven
 
-    ref: B
-    station_count: 31
     itineraries: 
       r11171043: 
         - Nesselande (n4048801956)
@@ -400,9 +396,11 @@ routes:
 
 
     name: Metro B
-  - 
-    colour: '#ef1f1f'
+    station_count: 31
+    ref: B
+    colour: '#ffd301'
     type: subway
+  - 
     stations: 
       - De Terp
       - Capelle Centrum
@@ -431,8 +429,6 @@ routes:
       - Heemraadlaan
       - De Akkers
 
-    ref: C
-    station_count: 26
     itineraries: 
       r2785676: 
         - De Akkers (n3149917963)
@@ -492,30 +488,30 @@ routes:
 
 
     name: Metro C
-  - 
-    colour: '#1bc5e9'
+    station_count: 26
+    ref: C
+    colour: '#ef1f1f'
     type: subway
+  - 
     stations: 
-      - De Akkers
-      - Heemraadlaan
-      - Spijkenisse Centrum
-      - Zalmplaat
-      - Hoogvliet
-      - Tussenwater
-      - Poortugaal
-      - Rhoon
-      - Slinge
-      - Zuidplein
-      - Maashaven
-      - Rijnhaven
-      - Wilhelminaplein
-      - Leuvehaven
-      - 'Beurs - D,E'
-      - Stadhuis
       - Rotterdam Centraal
+      - Stadhuis
+      - 'Beurs - D,E'
+      - Leuvehaven
+      - Wilhelminaplein
+      - Rijnhaven
+      - Maashaven
+      - Zuidplein
+      - Slinge
+      - Rhoon
+      - Poortugaal
+      - Tussenwater
+      - Hoogvliet
+      - Zalmplaat
+      - Spijkenisse Centrum
+      - Heemraadlaan
+      - De Akkers
 
-    ref: D
-    station_count: 17
     itineraries: 
       r2785505: 
         - Rotterdam Centraal (n5193927668)
@@ -557,36 +553,36 @@ routes:
 
 
     name: Metro D
-  - 
-    colour: '#1a389a'
+    station_count: 17
+    ref: D
+    colour: '#1bc5e9'
     type: subway
+  - 
     stations: 
-      - Slinge
-      - Zuidplein
-      - Maashaven
-      - Rijnhaven
-      - Wilhelminaplein
-      - Leuvehaven
-      - 'Beurs - D,E'
-      - Stadhuis
-      - Rotterdam Centraal
-      - Blijdorp
-      - Melanchthonweg
-      - Meijersplein
-      - Rodenrijs
-      - Berkel Westpolder
-      - Pijnacker Zuid
-      - Pijnacker Centrum
-      - Nootdorp
-      - Leidschenveen Centrum
-      - Forepark
-      - Leidschendam-Voorburg
-      - Voorburg 't Loo
-      - Den Haag Laan van NOI
       - Den Haag Centraal
+      - Den Haag Laan van NOI
+      - Voorburg 't Loo
+      - Leidschendam-Voorburg
+      - Forepark
+      - Leidschenveen Centrum
+      - Nootdorp
+      - Pijnacker Centrum
+      - Pijnacker Zuid
+      - Berkel Westpolder
+      - Rodenrijs
+      - Meijersplein
+      - Melanchthonweg
+      - Blijdorp
+      - Rotterdam Centraal
+      - Stadhuis
+      - 'Beurs - D,E'
+      - Leuvehaven
+      - Wilhelminaplein
+      - Rijnhaven
+      - Maashaven
+      - Zuidplein
+      - Slinge
 
-    ref: E
-    station_count: 23
     itineraries: 
       r2777286: 
         - Den Haag Centraal (n5267735554)
@@ -640,4 +636,8 @@ routes:
 
 
     name: Metro E
+    station_count: 23
+    ref: E
+    colour: '#1a389a'
+    type: subway
 

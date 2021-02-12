@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Borgo (n8388857182)
   - Cibali (n8388857180)
@@ -13,10 +11,10 @@ stations:
   - San Nullo (n8388857179)
   - Stesicoro (n8388857187)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
       - Stesicoro
       - Giovanni XXIII
@@ -29,8 +27,6 @@ routes:
       - San Nullo
       - Nesima
 
-    ref: 1
-    station_count: 10
     itineraries: 
       r6878036: 
         - Stesicoro (n8388857187)
@@ -46,4 +42,8 @@ routes:
 
 
     name: Metropolitana di Catania
+    station_count: 10
+    ref: 1
+    colour: '#ff0000'
+    type: subway
 

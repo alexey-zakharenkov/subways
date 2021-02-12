@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Camí dels Reis (n1362173663)
   - Es Pont d'Inca Nou (n8048752171)
@@ -19,10 +17,10 @@ stations:
   - Verge de Lluc (n8048748498)
   - es Pont d'Inca (n8048726800)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#f1b03e'
-    type: light_rail
     stations: 
       - UIB
       - Son Sardina
@@ -34,8 +32,6 @@ routes:
       - Jacint Verdaguer
       - Plaça d'Espanya (light rail/train station)
 
-    ref: M1
-    station_count: 9
     itineraries: 
       r1664324: 
         - Plaça d'Espanya (n5263686386)
@@ -61,9 +57,11 @@ routes:
 
 
     name: Metro M1
-  - 
-    colour: '#e93324'
+    station_count: 9
+    ref: M1
+    colour: '#f1b03e'
     type: light_rail
+  - 
     stations: 
       - Plaça d'Espanya (light rail/train station)
       - Jacint Verdaguer
@@ -76,8 +74,6 @@ routes:
       - Polígon de Marratxí
       - Marratxí
 
-    ref: M2
-    station_count: 10
     itineraries: 
       r7781524: 
         - Marratxí (n8048771641)
@@ -105,4 +101,8 @@ routes:
 
 
     name: Metro M2
+    station_count: 10
+    ref: M2
+    colour: '#e93324'
+    type: light_rail
 

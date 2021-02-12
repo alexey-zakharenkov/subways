@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - San Antonio (r1501144)
-    - San Antonio (r9608066)
-
 stations: 
   - Acevedo (w363347844)
   - Aguacatala (n1214397344)
@@ -33,35 +28,36 @@ stations:
   - Tricentenario (w504572294)
   - Universidad (n1214422296)
 
+transfers: 
+  - 
+    - San Antonio (r1501144)
+    - San Antonio (r9608066)
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: subway
     stations: 
-      - Niquía
-      - Bello
-      - Madera
-      - Acevedo
-      - Tricentenario
-      - Caribe
-      - Universidad
-      - Hospital (Metro)
-      - Prado
-      - Parque Berrío
-      - San Antonio
-      - Alpujarra
-      - Exposiciones
-      - Industriales (Metro)
-      - Poblado
-      - Aguacatala
-      - Ayurá
-      - Envigado
-      - Itagüí
-      - Sabaneta
       - La Estrella
+      - Sabaneta
+      - Itagüí
+      - Envigado
+      - Ayurá
+      - Aguacatala
+      - Poblado
+      - Industriales (Metro)
+      - Exposiciones
+      - Alpujarra
+      - San Antonio
+      - Parque Berrío
+      - Prado
+      - Hospital (Metro)
+      - Universidad
+      - Caribe
+      - Tricentenario
+      - Acevedo
+      - Madera
+      - Bello
+      - Niquía
 
-    ref: A
-    station_count: 21
     itineraries: 
       r1502510: 
         - Niquía (w363347843)
@@ -111,9 +107,11 @@ routes:
 
 
     name: Metro Línea A
-  - 
-    colour: '#ffa500'
+    station_count: 21
+    ref: A
+    colour: '#0000ff'
     type: subway
+  - 
     stations: 
       - San Javier
       - Santa Lucía
@@ -123,8 +121,6 @@ routes:
       - Cisneros (Metro)
       - San Antonio
 
-    ref: B
-    station_count: 7
     itineraries: 
       r1504096: 
         - San Antonio (n1214418069)
@@ -146,4 +142,8 @@ routes:
 
 
     name: Metro Línea B
+    station_count: 7
+    ref: B
+    colour: '#ffa500'
+    type: subway
 

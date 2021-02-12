@@ -1,27 +1,4 @@
 
-transfers: 
-  - 
-    - Ashmont (light rail) (r11358796)
-    - Ashmont/Peabody Square (r7893482)
-  - 
-    - Downtown Crossing (Orange Line) (r7896789)
-    - Downtown Crossing (Red Line) (r7891364)
-  - 
-    - Government Center (Blue Line) (r4086908)
-    - Government Center (Green Line) (r10117012)
-  - 
-    - Haymarket (Green line) (r7896848)
-    - Haymarket (Orange line) (r7896847)
-  - 
-    - North Station (Green line) (r7896863)
-    - North Station (Orange line) (r7896862)
-  - 
-    - Park Street (Green line) (r10103631)
-    - Park Street (Red line) (r7891420)
-  - 
-    - State (Blue Line) (r4086912)
-    - State (Orange Line) (r7896784)
-
 stations: 
   - Airport (n69504191)
   - Alewife (n5331923416)
@@ -146,10 +123,31 @@ stations:
   - Wood Island (n69504387)
   - Woodland (n6839015879)
 
+transfers: 
+  - 
+    - Ashmont (light rail) (r11358796)
+    - Ashmont/Peabody Square (r7893482)
+  - 
+    - Downtown Crossing (Orange Line) (r7896789)
+    - Downtown Crossing (Red Line) (r7891364)
+  - 
+    - Government Center (Blue Line) (r4086908)
+    - Government Center (Green Line) (r10117012)
+  - 
+    - Haymarket (Green line) (r7896848)
+    - Haymarket (Orange line) (r7896847)
+  - 
+    - North Station (Green line) (r7896863)
+    - North Station (Orange line) (r7896862)
+  - 
+    - Park Street (Green line) (r10103631)
+    - Park Street (Red line) (r7891420)
+  - 
+    - State (Blue Line) (r4086912)
+    - State (Orange Line) (r7896784)
+
 routes: 
   - 
-    colour: '#008150'
-    type: light_rail
     stations: 
       - Boston College
       - South Street
@@ -176,8 +174,6 @@ routes:
       - Boylston
       - Park Street (Green line)
 
-    ref: B
-    station_count: 24
     itineraries: 
       r2887650: 
         - Boston College (n7762655085)
@@ -233,9 +229,11 @@ routes:
 
 
     name: MBTA Green Line (B)
+    station_count: 24
+    ref: B
+    colour: '#008150'
+    type: light_rail
   - 
-    colour: '#0000ff'
-    type: subway
     stations: 
       - Bowdoin
       - Government Center (Blue Line)
@@ -250,23 +248,7 @@ routes:
       - Revere Beach
       - Wonderland
 
-    ref: Blue
-    station_count: 12
     itineraries: 
-      r1600269: 
-        - Bowdoin (n5333829938)
-        - Government Center (n6853725315)
-        - State (n69504608)
-        - Aquarium (n365922994)
-        - Maverick (n3111450054)
-        - Airport (n69504191)
-        - Wood Island (n69504387)
-        - Orient Heights (n69504367)
-        - Suffolk Downs (n69504429)
-        - Beachmont (n3111450053)
-        - Revere Beach (n3111450058)
-        - Wonderland (n3111450065)
-
       r4086916: 
         - Wonderland (n3111450065)
         - Revere Beach (n3111450058)
@@ -281,62 +263,52 @@ routes:
         - Government Center (n6853725315)
         - Bowdoin (n5333829938)
 
+      r1600269: 
+        - Bowdoin (n5333829938)
+        - Government Center (n6853725315)
+        - State (n69504608)
+        - Aquarium (n365922994)
+        - Maverick (n3111450054)
+        - Airport (n69504191)
+        - Wood Island (n69504387)
+        - Orient Heights (n69504367)
+        - Suffolk Downs (n69504429)
+        - Beachmont (n3111450053)
+        - Revere Beach (n3111450058)
+        - Wonderland (n3111450065)
+
 
     name: MBTA Blue Line
+    station_count: 12
+    ref: Blue
+    colour: '#0000ff'
+    type: subway
   - 
-    colour: '#008150'
-    type: light_rail
     stations: 
-      - Cleveland Circle
-      - Englewood Avenue
-      - Dean Road
-      - Tappan Street
-      - Washington Square
-      - Fairbanks Street
-      - Brandon Hall
-      - Summit Avenue
-      - Coolidge Corner
-      - Saint Paul Street (C Branch)
-      - Kent Street
-      - Hawes Street
-      - Saint Mary's Street
-      - Kenmore
-      - Hynes Convention Center
-      - Copley
-      - Arlington
-      - Boylston
-      - Park Street (Green line)
-      - Government Center (Green Line)
-      - Haymarket (Green line)
       - North Station (Green line)
+      - Haymarket (Green line)
+      - Government Center (Green Line)
+      - Park Street (Green line)
+      - Boylston
+      - Arlington
+      - Copley
+      - Hynes Convention Center
+      - Kenmore
+      - Saint Mary's Street
+      - Hawes Street
+      - Kent Street
+      - Saint Paul Street (C Branch)
+      - Coolidge Corner
+      - Summit Avenue
+      - Brandon Hall
+      - Fairbanks Street
+      - Washington Square
+      - Tappan Street
+      - Dean Road
+      - Englewood Avenue
+      - Cleveland Circle
 
-    ref: C
-    station_count: 22
     itineraries: 
-      r11359934: 
-        - North Station (n5336634035)
-        - Haymarket (n5336614722)
-        - Government Center (n6853725315)
-        - Park Street (n5331996285)
-        - Boylston (n5335456568)
-        - Arlington (n69489378)
-        - Copley (n5333800946)
-        - Hynes Convention Center (n69481739)
-        - Kenmore (n69496958)
-        - Saint Mary's Street (n7762626870)
-        - Hawes Street (n7762626869)
-        - Kent Street (n69481663)
-        - Saint Paul Street (n4509208528)
-        - Coolidge Corner (n69490387)
-        - Summit Avenue (n69481020)
-        - Brandon Hall (n69483139)
-        - Fairbanks Street (n69488890)
-        - Washington Square (n69482402)
-        - Tappan Street (n69482704)
-        - Dean Road (n6568254472)
-        - Englewood Avenue (n69486909)
-        - Cleveland Circle (n3324509153)
-
       r2887651: 
         - Cleveland Circle (n3324509153)
         - Englewood Avenue (n69486909)
@@ -361,11 +333,37 @@ routes:
         - Haymarket (n5336614722)
         - North Station (n5336634035)
 
+      r11359934: 
+        - North Station (n5336634035)
+        - Haymarket (n5336614722)
+        - Government Center (n6853725315)
+        - Park Street (n5331996285)
+        - Boylston (n5335456568)
+        - Arlington (n69489378)
+        - Copley (n5333800946)
+        - Hynes Convention Center (n69481739)
+        - Kenmore (n69496958)
+        - Saint Mary's Street (n7762626870)
+        - Hawes Street (n7762626869)
+        - Kent Street (n69481663)
+        - Saint Paul Street (n4509208528)
+        - Coolidge Corner (n69490387)
+        - Summit Avenue (n69481020)
+        - Brandon Hall (n69483139)
+        - Fairbanks Street (n69488890)
+        - Washington Square (n69482402)
+        - Tappan Street (n69482704)
+        - Dean Road (n6568254472)
+        - Englewood Avenue (n69486909)
+        - Cleveland Circle (n3324509153)
+
 
     name: MBTA Green Line (C)
-  - 
+    station_count: 22
+    ref: C
     colour: '#008150'
     type: light_rail
+  - 
     stations: 
       - Riverside
       - Woodland
@@ -388,8 +386,6 @@ routes:
       - Park Street (Green line)
       - Government Center (Green Line)
 
-    ref: D
-    station_count: 20
     itineraries: 
       r2887652: 
         - Riverside (n6839025361)
@@ -437,9 +433,11 @@ routes:
 
 
     name: MBTA Green Line (D)
-  - 
+    station_count: 20
+    ref: D
     colour: '#008150'
     type: light_rail
+  - 
     stations: 
       - Heath Street
       - Back of the Hill
@@ -460,29 +458,7 @@ routes:
       - Haymarket (Green line)
       - North Station (Green line)
 
-    ref: E
-    station_count: 18
     itineraries: 
-      r2887653: 
-        - North Station (n5336634035)
-        - Haymarket (n5336614722)
-        - Government Center (n6853725315)
-        - Park Street (n5331996285)
-        - Boylston (n5335456568)
-        - Arlington (n69489378)
-        - Copley (n5333800946)
-        - Prudential (n69495531)
-        - Symphony (n69493115)
-        - Northeastern (n7762578821)
-        - Museum of Fine Arts (n7762578820)
-        - Longwood Medical Area (n7762578818)
-        - Brigham Circle (n69481819)
-        - Fenwood Road (n69483568)
-        - Mission Park (n1176681869)
-        - Riverway (n69481493)
-        - Back of the Hill (n69491687)
-        - Heath Street (n3185222408)
-
       r9709937: 
         - Heath Street (n3185222408)
         - Back of the Hill (n69491687)
@@ -503,11 +479,33 @@ routes:
         - Haymarket (n5336614722)
         - North Station (n5336634035)
 
+      r2887653: 
+        - North Station (n5336634035)
+        - Haymarket (n5336614722)
+        - Government Center (n6853725315)
+        - Park Street (n5331996285)
+        - Boylston (n5335456568)
+        - Arlington (n69489378)
+        - Copley (n5333800946)
+        - Prudential (n69495531)
+        - Symphony (n69493115)
+        - Northeastern (n7762578821)
+        - Museum of Fine Arts (n7762578820)
+        - Longwood Medical Area (n7762578818)
+        - Brigham Circle (n69481819)
+        - Fenwood Road (n69483568)
+        - Mission Park (n1176681869)
+        - Riverway (n69481493)
+        - Back of the Hill (n69491687)
+        - Heath Street (n3185222408)
+
 
     name: MBTA Green Line (E)
-  - 
-    colour: '#ff0000'
+    station_count: 18
+    ref: E
+    colour: '#008150'
     type: light_rail
+  - 
     stations: 
       - Mattapan
       - Capen Street
@@ -518,8 +516,6 @@ routes:
       - Cedar Grove
       - Ashmont (light rail)
 
-    ref: M
-    station_count: 8
     itineraries: 
       r1600326: 
         - Ashmont (n5746523078)
@@ -543,56 +539,34 @@ routes:
 
 
     name: MBTA Mattapan Trolley
+    station_count: 8
+    ref: M
+    colour: '#ff0000'
+    type: light_rail
   - 
-    colour: '#ff8000'
-    type: subway
     stations: 
-      - Forest Hills (Orange Line)
-      - Green Street
-      - Stony Brook
-      - Jackson Square
-      - Roxbury Crossing
-      - Ruggles (Orange Line)
-      - Massachusetts Avenue
-      - Back Bay (Orange Line)
-      - Tufts Medical Center
-      - Chinatown
-      - Downtown Crossing (Orange Line)
-      - State (Orange Line)
-      - Haymarket (Orange line)
-      - North Station (Orange line)
-      - Community College
-      - Sullivan Square
-      - Assembly
-      - Wellington
-      - Malden Center (Orange Line)
       - Oak Grove
+      - Malden Center (Orange Line)
+      - Wellington
+      - Assembly
+      - Sullivan Square
+      - Community College
+      - North Station (Orange line)
+      - Haymarket (Orange line)
+      - State (Orange Line)
+      - Downtown Crossing (Orange Line)
+      - Chinatown
+      - Tufts Medical Center
+      - Back Bay (Orange Line)
+      - Massachusetts Avenue
+      - Ruggles (Orange Line)
+      - Roxbury Crossing
+      - Jackson Square
+      - Stony Brook
+      - Green Street
+      - Forest Hills (Orange Line)
 
-    ref: Orange
-    station_count: 20
     itineraries: 
-      r7874311: 
-        - Forest Hills (n69486291)
-        - Green Street (n7761881973)
-        - Stony Brook (n7761881974)
-        - Jackson Square (n6571086797)
-        - Roxbury Crossing (n69504418)
-        - Ruggles (n7105898934)
-        - Massachusetts Avenue (n7758139810)
-        - Back Bay (n7105898927)
-        - Tufts Medical Center (n69504980)
-        - Chinatown (n69505365)
-        - Downtown Crossing (n5331978048)
-        - State (n69504608)
-        - Haymarket (n5336614723)
-        - North Station (n5336634037)
-        - Community College (n69487423)
-        - Sullivan Square (n7762897892)
-        - Assembly (n5507063751)
-        - Wellington (n7761881978)
-        - Malden Center (n69493249)
-        - Oak Grove (n69505088)
-
       r1600276: 
         - Oak Grove (n69505088)
         - Malden Center (n69493249)
@@ -615,38 +589,80 @@ routes:
         - Green Street (n7761881973)
         - Forest Hills (n69486291)
 
+      r7874311: 
+        - Forest Hills (n69486291)
+        - Green Street (n7761881973)
+        - Stony Brook (n7761881974)
+        - Jackson Square (n6571086797)
+        - Roxbury Crossing (n69504418)
+        - Ruggles (n7105898934)
+        - Massachusetts Avenue (n7758139810)
+        - Back Bay (n7105898927)
+        - Tufts Medical Center (n69504980)
+        - Chinatown (n69505365)
+        - Downtown Crossing (n5331978048)
+        - State (n69504608)
+        - Haymarket (n5336614723)
+        - North Station (n5336634037)
+        - Community College (n69487423)
+        - Sullivan Square (n7762897892)
+        - Assembly (n5507063751)
+        - Wellington (n7761881978)
+        - Malden Center (n69493249)
+        - Oak Grove (n69505088)
+
 
     name: MBTA Orange Line
-  - 
-    colour: '#ff0000'
+    station_count: 20
+    ref: Orange
+    colour: '#ff8000'
     type: subway
+  - 
     stations: 
-      - Alewife
-      - Davis
-      - Porter (Red Line)
-      - Harvard
-      - Central Square
-      - Kendall/MIT
-      - Charles/MGH
-      - Park Street (Red line)
-      - Downtown Crossing (Red Line)
-      - South Station (Red Line)
-      - Broadway
-      - Andrew
-      - JFK/UMass (Red Line)
-      - North Quincy
-      - Wollaston
-      - Quincy Center (Red Line)
-      - Quincy Adams
       - Braintree (Red Line)
-      - Ashmont/Peabody Square
-      - Shawmut
-      - Fields Corner
+      - Quincy Adams
+      - Quincy Center (Red Line)
+      - Wollaston
+      - North Quincy
+      - JFK/UMass (Red Line)
+      - Andrew
+      - Broadway
+      - South Station (Red Line)
+      - Downtown Crossing (Red Line)
+      - Park Street (Red line)
+      - Charles/MGH
+      - Kendall/MIT
+      - Central Square
+      - Harvard
+      - Porter (Red Line)
+      - Davis
+      - Alewife
       - Savin Hill
+      - Fields Corner
+      - Shawmut
+      - Ashmont/Peabody Square
 
-    ref: Red
-    station_count: 22
     itineraries: 
+      r7874285: 
+        - Alewife (n5331923416)
+        - Davis (n5331945814)
+        - Porter (n5333733253)
+        - Harvard (n69480627)
+        - Central Square (n7758139811)
+        - Kendall/MIT (n5325254494)
+        - Charles/MGH (n5331891587)
+        - Park Street (n5331996285)
+        - Downtown Crossing (n5331978048)
+        - South Station (n5331967896)
+        - Broadway (n69494687)
+        - Andrew (n69481065)
+        - JFK/UMass (n5333753296)
+        - North Quincy (n69504783)
+        - Wollaston (n69504909)
+        - Quincy Center (n69504996)
+        - Quincy Adams (n69486701)
+        - Braintree (n5331827938)
+
       r7874284: 
         - Ashmont/Peabody Square (n5333849926)
         - Shawmut (n5333849226)
@@ -685,26 +701,6 @@ routes:
         - Shawmut (n5333849226)
         - Ashmont/Peabody Square (n5333849926)
 
-      r7874285: 
-        - Alewife (n5331923416)
-        - Davis (n5331945814)
-        - Porter (n5333733253)
-        - Harvard (n69480627)
-        - Central Square (n7758139811)
-        - Kendall/MIT (n5325254494)
-        - Charles/MGH (n5331891587)
-        - Park Street (n5331996285)
-        - Downtown Crossing (n5331978048)
-        - South Station (n5331967896)
-        - Broadway (n69494687)
-        - Andrew (n69481065)
-        - JFK/UMass (n5333753296)
-        - North Quincy (n69504783)
-        - Wollaston (n69504909)
-        - Quincy Center (n69504996)
-        - Quincy Adams (n69486701)
-        - Braintree (n5331827938)
-
       r7874286: 
         - Braintree (n5331827938)
         - Quincy Adams (n69486701)
@@ -727,4 +723,8 @@ routes:
 
 
     name: MBTA Red Line
+    station_count: 22
+    ref: Red
+    colour: '#ff0000'
+    type: subway
 

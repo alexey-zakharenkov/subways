@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Ana Costa (n6403164591)
   - Bernardino de Campos (n6399257900)
@@ -18,47 +16,28 @@ stations:
   - Terminal Porto (n6399257813)
   - Washington Luis (n6403156774)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#93c21c'
-    type: light_rail
     stations: 
-      - Terminal Barreiros
-      - Mascarenhas
-      - São Vicente
-      - Emmerich
-      - Nossa Senhora das Graças
-      - José Monteiro
-      - Itararé
-      - João Ribeiro
-      - Nossa Senhora de Lourdes
-      - Pinheiro Machado
-      - Bernardino de Campos
-      - Ana Costa
-      - Washington Luis
-      - Conselheiro Nébias
       - Terminal Porto
+      - Conselheiro Nébias
+      - Washington Luis
+      - Ana Costa
+      - Bernardino de Campos
+      - Pinheiro Machado
+      - Nossa Senhora de Lourdes
+      - João Ribeiro
+      - Itararé
+      - José Monteiro
+      - Nossa Senhora das Graças
+      - Emmerich
+      - São Vicente
+      - Mascarenhas
+      - Terminal Barreiros
 
-    ref: 1
-    station_count: 15
     itineraries: 
-      r7252642: 
-        - Terminal Barreiros (n6399257992)
-        - Mascarenhas (n6399257936)
-        - São Vicente (n6399257934)
-        - Emmerich (n6399257932)
-        - Nossa Senhora das Graças (n6399257920)
-        - José Monteiro (n6399257919)
-        - Itararé (n6399257915)
-        - João Ribeiro (n6399257913)
-        - Nossa Senhora de Lourdes (n6399257910)
-        - Pinheiro Machado (n6399257902)
-        - Bernardino de Campos (n6399257900)
-        - Ana Costa (n6403164591)
-        - Washington Luis (n6403156774)
-        - Conselheiro Nébias (n6399257815)
-        - Terminal Porto (n6399257813)
-
       r7252643: 
         - Terminal Porto (n6399257813)
         - Conselheiro Nébias (n6399257815)
@@ -76,6 +55,27 @@ routes:
         - Mascarenhas (n6399257936)
         - Terminal Barreiros (n6399257992)
 
+      r7252642: 
+        - Terminal Barreiros (n6399257992)
+        - Mascarenhas (n6399257936)
+        - São Vicente (n6399257934)
+        - Emmerich (n6399257932)
+        - Nossa Senhora das Graças (n6399257920)
+        - José Monteiro (n6399257919)
+        - Itararé (n6399257915)
+        - João Ribeiro (n6399257913)
+        - Nossa Senhora de Lourdes (n6399257910)
+        - Pinheiro Machado (n6399257902)
+        - Bernardino de Campos (n6399257900)
+        - Ana Costa (n6403164591)
+        - Washington Luis (n6403156774)
+        - Conselheiro Nébias (n6399257815)
+        - Terminal Porto (n6399257813)
+
 
     name: Linha 1 do VLT da Baixada Santista
+    station_count: 15
+    ref: 1
+    colour: '#93c21c'
+    type: light_rail
 

@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Bernini (n332648606)
   - Carducci-Molinette (n3253332071)
@@ -24,35 +22,33 @@ stations:
   - Vinzaglio (n543360161)
   - XVIII Dicembre (n432803698)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ffff00'
-    type: subway
     stations: 
-      - Lingotto
-      - Spezia
-      - Carducci-Molinette
-      - Dante
-      - Nizza
-      - Marconi
-      - Porta Nuova
-      - Re Umberto
-      - Vinzaglio
-      - Porta Susa
-      - XVIII Dicembre
-      - Principi D'Acaja
-      - Bernini
-      - Racconigi
-      - Rivoli
-      - Monte Grappa
-      - Pozzo Strada
-      - Marche
-      - Marche
-      - Paradiso
       - Fermi
+      - Paradiso
+      - Marche
+      - Marche
+      - Pozzo Strada
+      - Monte Grappa
+      - Rivoli
+      - Racconigi
+      - Bernini
+      - Principi D'Acaja
+      - XVIII Dicembre
+      - Porta Susa
+      - Vinzaglio
+      - Re Umberto
+      - Porta Nuova
+      - Marconi
+      - Nizza
+      - Dante
+      - Carducci-Molinette
+      - Spezia
+      - Lingotto
 
-    ref: M1
-    station_count: 21
     itineraries: 
       r386242: 
         - Fermi (n1481306407)
@@ -101,5 +97,9 @@ routes:
         - Fermi (n1481306407)
 
 
-    name: 'M1: Lingotto - Fermi'
+    name: 'M1: Fermi - Lingotto'
+    station_count: 21
+    ref: M1
+    colour: '#ffff00'
+    type: subway
 

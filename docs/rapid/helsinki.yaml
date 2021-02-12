@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Aalto-yliopisto (n4364527726)
   - Ainola (n6489254392)
@@ -92,22 +90,20 @@ stations:
   - Vehkala (n2177226631)
   - Vuosaari (n51334955)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#8c4799'
-    type: train
     stations: 
-      - Helsingin päärautatieasema
-      - Pasilan rautatieasema
-      - Ilmalan rautatieasema
-      - Huopalahden asema
-      - Valimon rautatieasema
-      - Pitäjänmäen rautatieasema
-      - Mäkkylän rautatieasema
       - Leppävaaran rautatieasema
+      - Mäkkylän rautatieasema
+      - Pitäjänmäen rautatieasema
+      - Valimon rautatieasema
+      - Huopalahden asema
+      - Ilmalan rautatieasema
+      - Pasilan rautatieasema
+      - Helsingin päärautatieasema
 
-    ref: A
-    station_count: 8
     itineraries: 
       r357190: 
         - Helsinki (n25474663)
@@ -131,8 +127,11 @@ routes:
 
 
     name: 'A Helsinki - Leppävaara'
-  - 
+    station_count: 8
+    ref: A
+    colour: '#8c4799'
     type: train
+  - 
     stations: 
       - Riihimäen rautatieasema
       - Hyvinkää
@@ -142,8 +141,6 @@ routes:
       - Pasilan rautatieasema
       - Helsingin päärautatieasema
 
-    ref: D
-    station_count: 7
     itineraries: 
       r358112: 
         - Helsinki (n25474663)
@@ -165,9 +162,10 @@ routes:
 
 
     name: 'D Helsinki - Riihimäki'
-  - 
-    colour: '#008000'
+    station_count: 7
+    ref: D
     type: train
+  - 
     stations: 
       - Kauklahden rautatieasema
       - Espoon rautatieasema
@@ -181,22 +179,7 @@ routes:
       - Pasilan rautatieasema
       - Helsingin päärautatieasema
 
-    ref: E
-    station_count: 11
     itineraries: 
-      r7442188: 
-        - Kauklahti (n429164018)
-        - Espoo (n1716259527)
-        - Tuomarila (n3041779973)
-        - Koivuhovi (n26430225)
-        - Kauniainen (n26432517)
-        - Kera (n60289871)
-        - Kilo (n339861453)
-        - Leppävaara (n339856183)
-        - Huopalahti (n92560933)
-        - Pasila (n76388216)
-        - Helsinki (n25474663)
-
       r357220: 
         - Helsinki (n25474663)
         - Pasila (n76388216)
@@ -210,33 +193,37 @@ routes:
         - Espoo (n1716259527)
         - Kauklahti (n429164018)
 
+      r7442188: 
+        - Kauklahti (n429164018)
+        - Espoo (n1716259527)
+        - Tuomarila (n3041779973)
+        - Koivuhovi (n26430225)
+        - Kauniainen (n26432517)
+        - Kera (n60289871)
+        - Kilo (n339861453)
+        - Leppävaara (n339856183)
+        - Huopalahti (n92560933)
+        - Pasila (n76388216)
+        - Helsinki (n25474663)
+
 
     name: E Helsinki–Kauklahti
-  - 
+    station_count: 11
+    ref: E
+    colour: '#008000'
     type: train
+  - 
     stations: 
-      - Riihimäen rautatieasema
-      - Hikiän rautatieasema
-      - Oitti
-      - Mommilan rautatieasema
-      - Lappilan rautatieasema
-      - Järvelän rautatieasema
-      - Herralan rautatieasema
       - Lahti
+      - Herralan rautatieasema
+      - Järvelän rautatieasema
+      - Lappilan rautatieasema
+      - Mommilan rautatieasema
+      - Oitti
+      - Hikiän rautatieasema
+      - Riihimäen rautatieasema
 
-    ref: G
-    station_count: 8
     itineraries: 
-      r7435092: 
-        - Riihimäki (n3275586015)
-        - Hikiä (n7035599996)
-        - Oitti (n7033564460)
-        - Mommila (n7035584429)
-        - Lappila (n7035551562)
-        - Järvelä (n7035551573)
-        - Herrala (n7035551584)
-        - Lahti (n537913195)
-
       r7435093: 
         - Lahti (n537913195)
         - Herrala (n7035551584)
@@ -247,10 +234,22 @@ routes:
         - Hikiä (n7035599996)
         - Riihimäki (n3275586015)
 
+      r7435092: 
+        - Riihimäki (n3275586015)
+        - Hikiä (n7035599996)
+        - Oitti (n7033564460)
+        - Mommila (n7035584429)
+        - Lappila (n7035551562)
+        - Järvelä (n7035551573)
+        - Herrala (n7035551584)
+        - Lahti (n537913195)
+
 
     name: 'G Riihimäki - Lahti'
-  - 
+    station_count: 8
+    ref: G
     type: train
+  - 
     stations: 
       - Helsingin päärautatieasema
       - Pasilan rautatieasema
@@ -277,8 +276,6 @@ routes:
       - Huopalahden asema
       - Ilmalan rautatieasema
 
-    ref: I
-    station_count: 24
     itineraries: 
       r358139: 
         - Helsinki (n25474663)
@@ -310,45 +307,28 @@ routes:
 
 
     name: I Helsinki–Tikkurila–Lentoasema–Huopalahti–Helsinki
-  - 
+    station_count: 24
+    ref: I
     type: train
+  - 
     stations: 
-      - Keravan asema
-      - Savio
-      - Korso
-      - Rekola
-      - Koivukylä
-      - Hiekkaharjun rautatieasema
-      - Tikkurilan rautatieasema
-      - Puistolan rautatieasema
-      - Tapanilan rautatieasema
-      - Malmin rautatieasema
-      - Pukinmäen rautatieasema
-      - Oulunkylän rautatieasema
-      - Käpylä
-      - Pasilan rautatieasema
       - Helsingin päärautatieasema
+      - Pasilan rautatieasema
+      - Käpylä
+      - Oulunkylän rautatieasema
+      - Pukinmäen rautatieasema
+      - Malmin rautatieasema
+      - Tapanilan rautatieasema
+      - Puistolan rautatieasema
+      - Tikkurilan rautatieasema
+      - Hiekkaharjun rautatieasema
+      - Koivukylä
+      - Rekola
+      - Korso
+      - Savio
+      - Keravan asema
 
-    ref: K
-    station_count: 15
     itineraries: 
-      r358138: 
-        - Helsinki (n25474663)
-        - Pasila (n76388216)
-        - Käpylä (n1516867775)
-        - Oulunkylä (n117926288)
-        - Pukinmäki (n25710228)
-        - Malmi (n339605265)
-        - Tapanila (n25710227)
-        - Puistola (n178275725)
-        - Tikkurila (n340019021)
-        - Hiekkaharju (n340021461)
-        - Koivukylä (n294868841)
-        - Rekola (n1102387364)
-        - Korso (n178300028)
-        - Savio (n2267739270)
-        - Kerava (n239962129)
-
       r7435652: 
         - Kerava (n239962129)
         - Savio (n2267739270)
@@ -366,56 +346,51 @@ routes:
         - Pasila (n76388216)
         - Helsinki (n25474663)
 
-
-    name: 'K Helsinki - Kerava'
-  - 
-    colour: '#008000'
-    type: train
-    stations: 
-      - Kirkkonummen rautatieasema
-      - Tolsan rautatieasema
-      - Jorvaksen rautatieasema
-      - Masalan rautatieasema
-      - Kauklahden rautatieasema
-      - Espoon rautatieasema
-      - Tuomarilan rautatieasema
-      - Koivuhovin rautatieasema
-      - Kauniaisten rautatieasema
-      - Keran rautatieasema
-      - Kilon rautatieasema
-      - Leppävaaran rautatieasema
-      - Mäkkylän rautatieasema
-      - Pitäjänmäen rautatieasema
-      - Valimon rautatieasema
-      - Huopalahden asema
-      - Ilmalan rautatieasema
-      - Pasilan rautatieasema
-      - Helsingin päärautatieasema
-
-    ref: L
-    station_count: 19
-    itineraries: 
-      r358114: 
+      r358138: 
         - Helsinki (n25474663)
         - Pasila (n76388216)
-        - Ilmala (n25477046)
-        - Huopalahti (n92560933)
-        - Valimo (n92567667)
-        - Pitäjänmäki (n339848672)
-        - Mäkkylä (n339850922)
-        - Leppävaara (n339856183)
-        - Kilo (n339861453)
-        - Kera (n60289871)
-        - Kauniainen (n26432517)
-        - Koivuhovi (n26430225)
-        - Tuomarila (n3041779973)
-        - Espoo (n1716259527)
-        - Kauklahti (n429164018)
-        - Masala (n26414390)
-        - Jorvas (n3824772478)
-        - Tolsa (n6421453593)
-        - Kirkkonummi (n6421310381)
+        - Käpylä (n1516867775)
+        - Oulunkylä (n117926288)
+        - Pukinmäki (n25710228)
+        - Malmi (n339605265)
+        - Tapanila (n25710227)
+        - Puistola (n178275725)
+        - Tikkurila (n340019021)
+        - Hiekkaharju (n340021461)
+        - Koivukylä (n294868841)
+        - Rekola (n1102387364)
+        - Korso (n178300028)
+        - Savio (n2267739270)
+        - Kerava (n239962129)
 
+
+    name: 'K Helsinki - Kerava'
+    station_count: 15
+    ref: K
+    type: train
+  - 
+    stations: 
+      - Helsingin päärautatieasema
+      - Pasilan rautatieasema
+      - Ilmalan rautatieasema
+      - Huopalahden asema
+      - Valimon rautatieasema
+      - Pitäjänmäen rautatieasema
+      - Mäkkylän rautatieasema
+      - Leppävaaran rautatieasema
+      - Kilon rautatieasema
+      - Keran rautatieasema
+      - Kauniaisten rautatieasema
+      - Koivuhovin rautatieasema
+      - Tuomarilan rautatieasema
+      - Espoon rautatieasema
+      - Kauklahden rautatieasema
+      - Masalan rautatieasema
+      - Jorvaksen rautatieasema
+      - Tolsan rautatieasema
+      - Kirkkonummen rautatieasema
+
+    itineraries: 
       r7442588: 
         - Kirkkonummi (n6421310381)
         - Tolsa (n6421453593)
@@ -437,37 +412,58 @@ routes:
         - Pasila (n76388216)
         - Helsinki (n25474663)
 
+      r358114: 
+        - Helsinki (n25474663)
+        - Pasila (n76388216)
+        - Ilmala (n25477046)
+        - Huopalahti (n92560933)
+        - Valimo (n92567667)
+        - Pitäjänmäki (n339848672)
+        - Mäkkylä (n339850922)
+        - Leppävaara (n339856183)
+        - Kilo (n339861453)
+        - Kera (n60289871)
+        - Kauniainen (n26432517)
+        - Koivuhovi (n26430225)
+        - Tuomarila (n3041779973)
+        - Espoo (n1716259527)
+        - Kauklahti (n429164018)
+        - Masala (n26414390)
+        - Jorvas (n3824772478)
+        - Tolsa (n6421453593)
+        - Kirkkonummi (n6421310381)
+
 
     name: 'L Helsinki - Kirkkonummi'
+    station_count: 19
+    ref: L
+    colour: '#008000'
+    type: train
   - 
-    colour: '#f25e24'
-    type: subway
     stations: 
-      - Matinkylä
-      - Niittykumpu
-      - Urheilupuisto
-      - Tapiola
-      - Aalto-yliopisto
-      - Keilaniemi
-      - Koivusaari
-      - Lauttasaari
-      - Ruoholahti
-      - Kamppi
-      - Rautatientori
-      - Helsingin yliopisto
-      - Hakaniemi
-      - Sörnäinen
-      - Kalasatama
-      - Kulosaari
-      - Herttoniemi
-      - Siilitie
-      - Itäkeskus
-      - Puotila
-      - Rastila
       - Vuosaari
+      - Rastila
+      - Puotila
+      - Itäkeskus
+      - Siilitie
+      - Herttoniemi
+      - Kulosaari
+      - Kalasatama
+      - Sörnäinen
+      - Hakaniemi
+      - Helsingin yliopisto
+      - Rautatientori
+      - Kamppi
+      - Ruoholahti
+      - Lauttasaari
+      - Koivusaari
+      - Keilaniemi
+      - Aalto-yliopisto
+      - Tapiola
+      - Urheilupuisto
+      - Niittykumpu
+      - Matinkylä
 
-    ref: M1
-    station_count: 22
     itineraries: 
       r2390282: 
         - Matinkylä (n4364527730)
@@ -519,9 +515,11 @@ routes:
 
 
     name: M1 Vuosaari–Matinkylä
-  - 
+    station_count: 22
+    ref: M1
     colour: '#f25e24'
     type: subway
+  - 
     stations: 
       - Tapiola
       - Aalto-yliopisto
@@ -543,8 +541,6 @@ routes:
       - Kontula
       - Mellunmäki
 
-    ref: M2
-    station_count: 19
     itineraries: 
       r2390370: 
         - Mellunmäki (n52609066)
@@ -590,27 +586,28 @@ routes:
 
 
     name: M2 Mellunmäki–Tapiola
+    station_count: 19
+    ref: M2
+    colour: '#f25e24'
+    type: subway
   - 
-    type: train
     stations: 
-      - Helsingin päärautatieasema
-      - Pasilan rautatieasema
-      - Käpylä
-      - Oulunkylän rautatieasema
-      - Pukinmäen rautatieasema
-      - Malmin rautatieasema
-      - Tapanilan rautatieasema
-      - Puistolan rautatieasema
-      - Tikkurilan rautatieasema
-      - Hiekkaharjun rautatieasema
-      - Koivukylä
-      - Rekola
-      - Korso
-      - Savio
       - Keravan asema
+      - Savio
+      - Korso
+      - Rekola
+      - Koivukylä
+      - Hiekkaharjun rautatieasema
+      - Tikkurilan rautatieasema
+      - Puistolan rautatieasema
+      - Tapanilan rautatieasema
+      - Malmin rautatieasema
+      - Pukinmäen rautatieasema
+      - Oulunkylän rautatieasema
+      - Käpylä
+      - Pasilan rautatieasema
+      - Helsingin päärautatieasema
 
-    ref: N
-    station_count: 15
     itineraries: 
       r7438872: 
         - Kerava (n239962129)
@@ -648,9 +645,10 @@ routes:
 
 
     name: 'N Helsinki - Kerava'
-  - 
-    colour: '#0000ff'
+    station_count: 15
+    ref: N
     type: train
+  - 
     stations: 
       - Helsingin päärautatieasema
       - Pasilan rautatieasema
@@ -677,8 +675,6 @@ routes:
       - Oulunkylän rautatieasema
       - Käpylä
 
-    ref: P
-    station_count: 24
     itineraries: 
       r357191: 
         - Helsinki (n25474663)
@@ -710,8 +706,11 @@ routes:
 
 
     name: P Helsinki–Huopalahti–Lentoasema–Tikkurila–Helsinki
-  - 
+    station_count: 24
+    ref: P
+    colour: '#0000ff'
     type: train
+  - 
     stations: 
       - Hämeenlinnan rautatieasema
       - Turenki
@@ -727,8 +726,6 @@ routes:
       - Pasilan rautatieasema
       - Helsingin päärautatieasema
 
-    ref: R
-    station_count: 13
     itineraries: 
       r7439054: 
         - Hämeenlinna (n157056783)
@@ -762,33 +759,33 @@ routes:
 
 
     name: 'R Helsinki - Riihimäki - Tampere'
-  - 
+    station_count: 13
+    ref: R
     type: train
+  - 
     stations: 
-      - Riihimäen rautatieasema
-      - Hyvinkää
-      - Jokela
-      - Saunakallion rautatieasema
-      - Järvenpää
-      - Ainola
-      - Keravan asema
-      - Savio
-      - Korso
-      - Rekola
-      - Koivukylä
-      - Hiekkaharjun rautatieasema
-      - Tikkurilan rautatieasema
-      - Puistolan rautatieasema
-      - Tapanilan rautatieasema
-      - Malmin rautatieasema
-      - Pukinmäen rautatieasema
-      - Oulunkylän rautatieasema
-      - Käpylä
-      - Pasilan rautatieasema
       - Helsingin päärautatieasema
+      - Pasilan rautatieasema
+      - Käpylä
+      - Oulunkylän rautatieasema
+      - Pukinmäen rautatieasema
+      - Malmin rautatieasema
+      - Tapanilan rautatieasema
+      - Puistolan rautatieasema
+      - Tikkurilan rautatieasema
+      - Hiekkaharjun rautatieasema
+      - Koivukylä
+      - Rekola
+      - Korso
+      - Savio
+      - Keravan asema
+      - Ainola
+      - Järvenpää
+      - Saunakallion rautatieasema
+      - Jokela
+      - Hyvinkää
+      - Riihimäen rautatieasema
 
-    ref: T
-    station_count: 21
     itineraries: 
       r7439174: 
         - Riihimäki (n3275586015)
@@ -837,31 +834,30 @@ routes:
         - Riihimäki (n3275586015)
 
 
-    name: T Riihimäki–Helsinki
-  - 
-    colour: '#008000'
+    name: T Helsinki–Riihimäki
+    station_count: 21
+    ref: T
     type: train
+  - 
     stations: 
-      - Helsingin päärautatieasema
-      - Pasilan rautatieasema
-      - Huopalahden asema
-      - Leppävaaran rautatieasema
-      - Kilon rautatieasema
-      - Keran rautatieasema
-      - Kauniaisten rautatieasema
-      - Koivuhovin rautatieasema
-      - Tuomarilan rautatieasema
-      - Espoon rautatieasema
-      - Kauklahden rautatieasema
-      - Masalan rautatieasema
-      - Jorvaksen rautatieasema
-      - Tolsan rautatieasema
       - Kirkkonummen rautatieasema
+      - Tolsan rautatieasema
+      - Jorvaksen rautatieasema
+      - Masalan rautatieasema
+      - Kauklahden rautatieasema
+      - Espoon rautatieasema
+      - Tuomarilan rautatieasema
+      - Koivuhovin rautatieasema
+      - Kauniaisten rautatieasema
+      - Keran rautatieasema
+      - Kilon rautatieasema
+      - Leppävaaran rautatieasema
+      - Huopalahden asema
+      - Pasilan rautatieasema
+      - Helsingin päärautatieasema
 
-    ref: U
-    station_count: 15
     itineraries: 
-      r7442495: 
+      r10993681: 
         - Kirkkonummi (n6421310381)
         - Tolsa (n6421453593)
         - Jorvas (n3824772478)
@@ -878,7 +874,7 @@ routes:
         - Pasila (n76388216)
         - Helsinki (n25474663)
 
-      r10993681: 
+      r10993680: 
         - Kirkkonummi (n6421310381)
         - Tolsa (n6421453593)
         - Jorvas (n3824772478)
@@ -912,7 +908,7 @@ routes:
         - Tolsa (n6421453593)
         - Kirkkonummi (n6421310381)
 
-      r10993680: 
+      r7442495: 
         - Kirkkonummi (n6421310381)
         - Tolsa (n6421453593)
         - Jorvas (n3824772478)
@@ -931,21 +927,22 @@ routes:
 
 
     name: 'U Helsinki - Kirkkonummi'
-  - 
+    station_count: 15
+    ref: U
+    colour: '#008000'
     type: train
+  - 
     stations: 
-      - Siuntion rautatieasema
-      - Kirkkonummen rautatieasema
-      - Masalan rautatieasema
-      - Kauklahden rautatieasema
-      - Espoon rautatieasema
-      - Leppävaaran rautatieasema
-      - Huopalahden asema
-      - Pasilan rautatieasema
       - Helsingin päärautatieasema
+      - Pasilan rautatieasema
+      - Huopalahden asema
+      - Leppävaaran rautatieasema
+      - Espoon rautatieasema
+      - Kauklahden rautatieasema
+      - Masalan rautatieasema
+      - Kirkkonummen rautatieasema
+      - Siuntion rautatieasema
 
-    ref: Y
-    station_count: 9
     itineraries: 
       r7442715: 
         - Siuntio (n493618730)
@@ -971,8 +968,10 @@ routes:
 
 
     name: 'Y Helsinki - Siuntio'
-  - 
+    station_count: 9
+    ref: Y
     type: train
+  - 
     stations: 
       - Lahti
       - Henna
@@ -983,19 +982,7 @@ routes:
       - Pasilan rautatieasema
       - Helsingin päärautatieasema
 
-    ref: Z
-    station_count: 8
     itineraries: 
-      r7435585: 
-        - Lahti (n537913195)
-        - Henna (n5275467757)
-        - Mäntsälä (n205331524)
-        - Haarajoki (n6486497548)
-        - Kerava (n239962129)
-        - Tikkurila (n340019021)
-        - Pasila (n76388216)
-        - Helsinki (n25474663)
-
       r358115: 
         - Helsinki (n25474663)
         - Pasila (n76388216)
@@ -1006,6 +993,19 @@ routes:
         - Henna (n5275467757)
         - Lahti (n537913195)
 
+      r7435585: 
+        - Lahti (n537913195)
+        - Henna (n5275467757)
+        - Mäntsälä (n205331524)
+        - Haarajoki (n6486497548)
+        - Kerava (n239962129)
+        - Tikkurila (n340019021)
+        - Pasila (n76388216)
+        - Helsinki (n25474663)
+
 
     name: 'Z Helsinki - Lahti'
+    station_count: 8
+    ref: Z
+    type: train
 

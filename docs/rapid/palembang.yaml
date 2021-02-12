@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Ampera (n5984721318)
   - Asrama Haji (n5984721326)
@@ -17,10 +15,10 @@ stations:
   - Punti Kayu (n5984721325)
   - RSUD (n5984721324)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: light_rail
     stations: 
       - Bandara
       - Asrama Haji
@@ -37,8 +35,6 @@ routes:
       - DJKA
       - Depo
 
-    ref: 1
-    station_count: 14
     itineraries: 
       r9732461: 
         - Depo (n5984721314)
@@ -74,4 +70,8 @@ routes:
 
 
     name: LRT Palembang
+    station_count: 14
+    ref: 1
+    colour: '#0000ff'
+    type: light_rail
 

@@ -1,21 +1,4 @@
 
-transfers: 
-  - 
-    - Central (r3134295)
-    - Central (r9678603)
-  - 
-    - Chatswood (r2781855)
-    - Chatswood (r9621510)
-  - 
-    - Dulwich Hill (r6987159)
-    - Dulwich Hill (r9678593)
-  - 
-    - Epping (r9620120)
-    - Epping (r9621530)
-  - 
-    - Wolli Creek (r9705896)
-    - Wolli Creek (r9802366)
-
 stations: 
   - Allawah (n1843700641)
   - Arlington (n5692088708)
@@ -235,10 +218,25 @@ stations:
   - Yagoona (n3754231421)
   - Yennora (n1886265380)
 
+transfers: 
+  - 
+    - Central (r3134295)
+    - Central (r9678603)
+  - 
+    - Chatswood (r2781855)
+    - Chatswood (r9621510)
+  - 
+    - Dulwich Hill (r6987159)
+    - Dulwich Hill (r9678593)
+  - 
+    - Epping (r9620120)
+    - Epping (r9621530)
+  - 
+    - Wolli Creek (r9705896)
+    - Wolli Creek (r9802366)
+
 routes: 
   - 
-    colour: '#ee343f'
-    type: light_rail
     stations: 
       - Dulwich Hill
       - Dulwich Grove
@@ -264,8 +262,6 @@ routes:
       - Capitol Square
       - Central
 
-    ref: L1
-    station_count: 23
     itineraries: 
       r9678583: 
         - Dulwich Hill (n5692088706)
@@ -319,9 +315,11 @@ routes:
 
 
     name: Dulwich Hill Line
-  - 
+    station_count: 23
+    ref: L1
     colour: '#ee343f'
     type: light_rail
+  - 
     stations: 
       - Circular Quay
       - Bridge Street
@@ -338,25 +336,7 @@ routes:
       - UNSW High Street
       - Randwick
 
-    ref: L2
-    station_count: 14
     itineraries: 
-      r9736834: 
-        - Circular Quay (w740048069)
-        - Bridge Street (w740048668)
-        - Wynyard (w740048667)
-        - QVB (w740048666)
-        - Town Hall (w740048665)
-        - Chinatown (w739793099)
-        - Haymarket (w739794651)
-        - Central Chalmers Street (w740050932)
-        - Surry Hills (w740047982)
-        - Moore Park (w739799799)
-        - Royal Randwick (w740047983)
-        - Wansey Road (w740047984)
-        - UNSW High Street (w740047985)
-        - Randwick (w739801575)
-
       r9736832: 
         - Randwick (w739801575)
         - UNSW High Street (w740047985)
@@ -373,11 +353,29 @@ routes:
         - Bridge Street (w740048668)
         - Circular Quay (w740048069)
 
+      r9736834: 
+        - Circular Quay (w740048069)
+        - Bridge Street (w740048668)
+        - Wynyard (w740048667)
+        - QVB (w740048666)
+        - Town Hall (w740048665)
+        - Chinatown (w739793099)
+        - Haymarket (w739794651)
+        - Central Chalmers Street (w740050932)
+        - Surry Hills (w740047982)
+        - Moore Park (w739799799)
+        - Royal Randwick (w740047983)
+        - Wansey Road (w740047984)
+        - UNSW High Street (w740047985)
+        - Randwick (w739801575)
+
 
     name: Randwick Line
-  - 
+    station_count: 14
+    ref: L2
     colour: '#ee343f'
     type: light_rail
+  - 
     stations: 
       - Circular Quay
       - Bridge Street
@@ -390,21 +388,7 @@ routes:
       - Surry Hills
       - Moore Park
 
-    ref: L3
-    station_count: 10
     itineraries: 
-      r10411682: 
-        - Circular Quay (w740048069)
-        - Bridge Street (w740048668)
-        - Wynyard (w740048667)
-        - QVB (w740048666)
-        - Town Hall (w740048665)
-        - Chinatown (w739793099)
-        - Haymarket (w739794651)
-        - Central Chalmers Street (w740050932)
-        - Surry Hills (w740047982)
-        - Moore Park (w739799799)
-
       r10411681: 
         - Moore Park (w739799799)
         - Surry Hills (w740047982)
@@ -417,11 +401,25 @@ routes:
         - Bridge Street (w740048668)
         - Circular Quay (w740048069)
 
+      r10411682: 
+        - Circular Quay (w740048069)
+        - Bridge Street (w740048668)
+        - Wynyard (w740048667)
+        - QVB (w740048666)
+        - Town Hall (w740048665)
+        - Chinatown (w739793099)
+        - Haymarket (w739794651)
+        - Central Chalmers Street (w740050932)
+        - Surry Hills (w740047982)
+        - Moore Park (w739799799)
+
 
     name: Kingsford Line
+    station_count: 10
+    ref: L3
+    colour: '#ee343f'
+    type: light_rail
   - 
-    colour: '#3e9397'
-    type: subway
     stations: 
       - Chatswood
       - North Ryde
@@ -437,8 +435,6 @@ routes:
       - Rouse Hill
       - Tallawong
 
-    ref: M
-    station_count: 13
     itineraries: 
       r8631621: 
         - Chatswood (n6497471265)
@@ -472,9 +468,11 @@ routes:
 
 
     name: Sydney Metro Northwest
+    station_count: 13
+    ref: M
+    colour: '#3e9397'
+    type: subway
   - 
-    colour: '#f89c1c'
-    type: train
     stations: 
       - Berowra
       - Mount Kuring-gai
@@ -533,10 +531,8 @@ routes:
       - Quakers Hill
       - Marayong
 
-    ref: T1
-    station_count: 56
     itineraries: 
-      r9806975: 
+      r9806974: 
         - Berowra (n1886265349)
         - Mount Kuring-gai (n1886240875)
         - Mount Colah (n6624452584)
@@ -575,64 +571,14 @@ routes:
         - Toongabbie (n1886255326)
         - Seven Hills (n5253376705)
         - Blacktown (n60284908)
-        - Marayong (n1886255309)
-        - Quakers Hill (n1886255320)
-        - Schofields (n2130285345)
-        - Riverstone (n1886255322)
-        - Vineyard (n1886255329)
-        - Mulgrave (n1886255314)
-        - Windsor (n1594205983)
-        - Clarendon (n1886255291)
-        - East Richmond (n1886255293)
-        - Richmond (n26621575)
-
-      r8406989: 
-        - Emu Plains (n1886255294)
-        - Penrith (n6624452553)
-        - Kingswood (n1886255301)
-        - Werrington (n1886255331)
-        - St Marys (n1886255324)
-        - Mount Druitt (n1886255312)
-        - Rooty Hill (n19140831)
         - Doonside (n1670207781)
-        - Blacktown (n60284908)
-        - Seven Hills (n5253376705)
-        - Toongabbie (n1886255326)
-        - Pendle Hill (n1886255318)
-        - Wentworthville (n633285161)
-        - Westmead (n6616036413)
-        - Parramatta (n20964687)
-        - Harris Park (n6616036405)
-        - Granville (n4692878089)
-        - Clyde (n20964683)
-        - Auburn (n60285987)
-        - Lidcombe (n19164434)
-        - Strathfield (n618594832)
-        - Redfern (w585998416)
-        - Central (w34891023)
-        - Town Hall (n1763901273)
-        - Wynyard (n1886265379)
-        - Milsons Point (n1829323375)
-        - North Sydney (n4887412745)
-        - Waverton (n1886265376)
-        - Wollstonecraft (n1830303527)
-        - St Leonards (n13877592)
-        - Artarmon (n1557879554)
-        - Chatswood (n6497471265)
-        - Roseville (n6553012213)
-        - Lindfield (n6553012216)
-        - Killara (n6553012218)
-        - Gordon (n1886240871)
-        - Pymble (n6624454793)
-        - Turramurra (n32501096)
-        - Warrawee (n26391532)
-        - Wahroonga (n1886265373)
-        - Waitara (n26391583)
-        - Hornsby (n4329364693)
-        - Asquith (n1886240861)
-        - Mount Colah (n6624452584)
-        - Mount Kuring-gai (n1886240875)
-        - Berowra (n1886265349)
+        - Rooty Hill (n19140831)
+        - Mount Druitt (n1886255312)
+        - St Marys (n1886255324)
+        - Werrington (n1886255331)
+        - Kingswood (n1886255301)
+        - Penrith (n6624452553)
+        - Emu Plains (n1886255294)
 
       r9709947: 
         - Richmond (n26621575)
@@ -684,7 +630,55 @@ routes:
         - Mount Kuring-gai (n1886240875)
         - Berowra (n1886265349)
 
-      r9806974: 
+      r8406989: 
+        - Emu Plains (n1886255294)
+        - Penrith (n6624452553)
+        - Kingswood (n1886255301)
+        - Werrington (n1886255331)
+        - St Marys (n1886255324)
+        - Mount Druitt (n1886255312)
+        - Rooty Hill (n19140831)
+        - Doonside (n1670207781)
+        - Blacktown (n60284908)
+        - Seven Hills (n5253376705)
+        - Toongabbie (n1886255326)
+        - Pendle Hill (n1886255318)
+        - Wentworthville (n633285161)
+        - Westmead (n6616036413)
+        - Parramatta (n20964687)
+        - Harris Park (n6616036405)
+        - Granville (n4692878089)
+        - Clyde (n20964683)
+        - Auburn (n60285987)
+        - Lidcombe (n19164434)
+        - Strathfield (n618594832)
+        - Redfern (w585998416)
+        - Central (w34891023)
+        - Town Hall (n1763901273)
+        - Wynyard (n1886265379)
+        - Milsons Point (n1829323375)
+        - North Sydney (n4887412745)
+        - Waverton (n1886265376)
+        - Wollstonecraft (n1830303527)
+        - St Leonards (n13877592)
+        - Artarmon (n1557879554)
+        - Chatswood (n6497471265)
+        - Roseville (n6553012213)
+        - Lindfield (n6553012216)
+        - Killara (n6553012218)
+        - Gordon (n1886240871)
+        - Pymble (n6624454793)
+        - Turramurra (n32501096)
+        - Warrawee (n26391532)
+        - Wahroonga (n1886265373)
+        - Waitara (n26391583)
+        - Hornsby (n4329364693)
+        - Asquith (n1886240861)
+        - Mount Colah (n6624452584)
+        - Mount Kuring-gai (n1886240875)
+        - Berowra (n1886265349)
+
+      r9806975: 
         - Berowra (n1886265349)
         - Mount Kuring-gai (n1886240875)
         - Mount Colah (n6624452584)
@@ -723,20 +717,24 @@ routes:
         - Toongabbie (n1886255326)
         - Seven Hills (n5253376705)
         - Blacktown (n60284908)
-        - Doonside (n1670207781)
-        - Rooty Hill (n19140831)
-        - Mount Druitt (n1886255312)
-        - St Marys (n1886255324)
-        - Werrington (n1886255331)
-        - Kingswood (n1886255301)
-        - Penrith (n6624452553)
-        - Emu Plains (n1886255294)
+        - Marayong (n1886255309)
+        - Quakers Hill (n1886255320)
+        - Schofields (n2130285345)
+        - Riverstone (n1886255322)
+        - Vineyard (n1886255329)
+        - Mulgrave (n1886255314)
+        - Windsor (n1594205983)
+        - Clarendon (n1886255291)
+        - East Richmond (n1886255293)
+        - Richmond (n26621575)
 
 
     name: North Shore & Western Line
-  - 
-    colour: '#0097cd'
+    station_count: 56
+    ref: T1
+    colour: '#f89c1c'
     type: train
+  - 
     stations: 
       - Parramatta
       - Harris Park railway station
@@ -759,25 +757,23 @@ routes:
       - Redfern
       - Central
       - Town Hall
+      - Leppington
+      - Edmondson Park
+      - Glenfield
+      - Casula railway station
+      - Liverpool railway station
+      - Warwick Farm railway station
+      - Cabramatta railway station
+      - Canley Vale railway station
+      - Fairfield railway station
+      - Yennora railway station
+      - Guildford railway station
+      - Merrylands railway station
       - Museum
       - St James
       - Circular Quay
       - Wynyard
-      - Merrylands railway station
-      - Guildford railway station
-      - Yennora railway station
-      - Fairfield railway station
-      - Canley Vale railway station
-      - Cabramatta railway station
-      - Warwick Farm railway station
-      - Liverpool railway station
-      - Casula railway station
-      - Glenfield
-      - Edmondson Park
-      - Leppington
 
-    ref: T2
-    station_count: 37
     itineraries: 
       r9800346: 
         - Museum (n6571334824)
@@ -805,29 +801,6 @@ routes:
         - Granville (n4692878089)
         - Harris Park (n6616036405)
         - Parramatta (n20964687)
-
-      r9800345: 
-        - Parramatta (n20964687)
-        - Harris Park (n6616036405)
-        - Granville (n4692878089)
-        - Clyde (n20964683)
-        - Auburn (n60285987)
-        - Lidcombe (n19164434)
-        - Flemington (n20163894)
-        - Homebush (n6618892734)
-        - Strathfield (n618594832)
-        - Burwood (n630744637)
-        - Croydon (n6553012244)
-        - Ashfield (n1886240860)
-        - Summer Hill (n1886240903)
-        - Lewisham (n6618892736)
-        - Petersham (n1886240877)
-        - Stanmore (n6618892735)
-        - Newtown (n4735625743)
-        - Macdonaldtown (n4735626773)
-        - Redfern (w585998416)
-        - Central (w34891023)
-        - Town Hall (n1763901273)
 
       r3165393: 
         - Museum (n6571334824)
@@ -866,6 +839,29 @@ routes:
         - Edmondson Park (n3337544919)
         - Leppington (w317138648)
 
+      r9800345: 
+        - Parramatta (n20964687)
+        - Harris Park (n6616036405)
+        - Granville (n4692878089)
+        - Clyde (n20964683)
+        - Auburn (n60285987)
+        - Lidcombe (n19164434)
+        - Flemington (n20163894)
+        - Homebush (n6618892734)
+        - Strathfield (n618594832)
+        - Burwood (n630744637)
+        - Croydon (n6553012244)
+        - Ashfield (n1886240860)
+        - Summer Hill (n1886240903)
+        - Lewisham (n6618892736)
+        - Petersham (n1886240877)
+        - Stanmore (n6618892735)
+        - Newtown (n4735625743)
+        - Macdonaldtown (n4735626773)
+        - Redfern (w585998416)
+        - Central (w34891023)
+        - Town Hall (n1763901273)
+
       r9800347: 
         - Leppington (w317138648)
         - Edmondson Park (n3337544919)
@@ -901,9 +897,11 @@ routes:
 
 
     name: Inner West & Leppington Line
-  - 
-    colour: '#f36421'
+    station_count: 37
+    ref: T2
+    colour: '#0097cd'
     type: train
+  - 
     stations: 
       - Town Hall
       - Wynyard
@@ -939,67 +937,32 @@ routes:
       - Sefton
       - Sydenham
 
-    ref: T3
-    station_count: 33
     itineraries: 
-      r9811034: 
-        - Lidcombe (n19164434)
-        - Berala (n6627573507)
+      r9811033: 
+        - Town Hall (n1763901273)
+        - Wynyard (n1886265379)
+        - Circular Quay (n1692720118)
+        - St James (n1763901272)
+        - Museum (n6571334824)
+        - Central (w34891023)
+        - Redfern (w585998416)
+        - Erskineville (n6627573542)
+        - St Peters (n1853644076)
+        - Marrickville (n15194910)
+        - Dulwich Hill (n6627573536)
+        - Hurlstone Park (n26428905)
+        - Canterbury (n6627573533)
+        - Campsie (n6627573530)
+        - Belmore (n6553012201)
+        - Lakemba (n6615213260)
+        - Wiley Park (n4689599828)
+        - Punchbowl (n1886240880)
+        - Bankstown (n6627573522)
+        - Yagoona (n3754231421)
+        - Birrong (n1886265350)
         - Regents Park (n6627573510)
-        - Birrong (n1886265350)
-        - Yagoona (n3754231421)
-        - Bankstown (n6627573522)
-        - Punchbowl (n1886240880)
-        - Wiley Park (n4689599828)
-        - Lakemba (n6615213260)
-        - Belmore (n6553012201)
-        - Campsie (n6627573530)
-        - Canterbury (n6627573533)
-        - Hurlstone Park (n26428905)
-        - Dulwich Hill (n6627573536)
-        - Marrickville (n15194910)
-        - Sydenham (n6571195040)
-        - St Peters (n1853644076)
-        - Erskineville (n6627573542)
-        - Redfern (w585998416)
-        - Central (w34891023)
-        - Museum (n6571334824)
-        - St James (n1763901272)
-        - Circular Quay (n1692720118)
-        - Wynyard (n1886265379)
-        - Town Hall (n1763901273)
-
-      r9775429: 
-        - Liverpool (n6616036388)
-        - Warwick Farm (n1886265375)
-        - Cabramatta (n26774097)
-        - Carramar (n1886265354)
-        - Villawood (n6627573513)
-        - Leightonfield (n1886265361)
-        - Chester Hill (n2267841195)
-        - Sefton (n1886265369)
-        - Birrong (n1886265350)
-        - Yagoona (n3754231421)
-        - Bankstown (n6627573522)
-        - Punchbowl (n1886240880)
-        - Wiley Park (n4689599828)
-        - Lakemba (n6615213260)
-        - Belmore (n6553012201)
-        - Campsie (n6627573530)
-        - Canterbury (n6627573533)
-        - Hurlstone Park (n26428905)
-        - Dulwich Hill (n6627573536)
-        - Marrickville (n15194910)
-        - Sydenham (n6571195040)
-        - St Peters (n1853644076)
-        - Erskineville (n6627573542)
-        - Redfern (w585998416)
-        - Central (w34891023)
-        - Museum (n6571334824)
-        - St James (n1763901272)
-        - Circular Quay (n1692720118)
-        - Wynyard (n1886265379)
-        - Town Hall (n1763901273)
+        - Berala (n6627573507)
+        - Lidcombe (n19164434)
 
       r9775430: 
         - Town Hall (n1763901273)
@@ -1033,37 +996,72 @@ routes:
         - Warwick Farm (n1886265375)
         - Liverpool (n6616036388)
 
-      r9811033: 
-        - Town Hall (n1763901273)
-        - Wynyard (n1886265379)
-        - Circular Quay (n1692720118)
-        - St James (n1763901272)
-        - Museum (n6571334824)
-        - Central (w34891023)
-        - Redfern (w585998416)
-        - Erskineville (n6627573542)
-        - St Peters (n1853644076)
-        - Marrickville (n15194910)
-        - Dulwich Hill (n6627573536)
-        - Hurlstone Park (n26428905)
-        - Canterbury (n6627573533)
-        - Campsie (n6627573530)
-        - Belmore (n6553012201)
-        - Lakemba (n6615213260)
-        - Wiley Park (n4689599828)
-        - Punchbowl (n1886240880)
-        - Bankstown (n6627573522)
-        - Yagoona (n3754231421)
+      r9775429: 
+        - Liverpool (n6616036388)
+        - Warwick Farm (n1886265375)
+        - Cabramatta (n26774097)
+        - Carramar (n1886265354)
+        - Villawood (n6627573513)
+        - Leightonfield (n1886265361)
+        - Chester Hill (n2267841195)
+        - Sefton (n1886265369)
         - Birrong (n1886265350)
-        - Regents Park (n6627573510)
-        - Berala (n6627573507)
+        - Yagoona (n3754231421)
+        - Bankstown (n6627573522)
+        - Punchbowl (n1886240880)
+        - Wiley Park (n4689599828)
+        - Lakemba (n6615213260)
+        - Belmore (n6553012201)
+        - Campsie (n6627573530)
+        - Canterbury (n6627573533)
+        - Hurlstone Park (n26428905)
+        - Dulwich Hill (n6627573536)
+        - Marrickville (n15194910)
+        - Sydenham (n6571195040)
+        - St Peters (n1853644076)
+        - Erskineville (n6627573542)
+        - Redfern (w585998416)
+        - Central (w34891023)
+        - Museum (n6571334824)
+        - St James (n1763901272)
+        - Circular Quay (n1692720118)
+        - Wynyard (n1886265379)
+        - Town Hall (n1763901273)
+
+      r9811034: 
         - Lidcombe (n19164434)
+        - Berala (n6627573507)
+        - Regents Park (n6627573510)
+        - Birrong (n1886265350)
+        - Yagoona (n3754231421)
+        - Bankstown (n6627573522)
+        - Punchbowl (n1886240880)
+        - Wiley Park (n4689599828)
+        - Lakemba (n6615213260)
+        - Belmore (n6553012201)
+        - Campsie (n6627573530)
+        - Canterbury (n6627573533)
+        - Hurlstone Park (n26428905)
+        - Dulwich Hill (n6627573536)
+        - Marrickville (n15194910)
+        - Sydenham (n6571195040)
+        - St Peters (n1853644076)
+        - Erskineville (n6627573542)
+        - Redfern (w585998416)
+        - Central (w34891023)
+        - Museum (n6571334824)
+        - St James (n1763901272)
+        - Circular Quay (n1692720118)
+        - Wynyard (n1886265379)
+        - Town Hall (n1763901273)
 
 
     name: Bankstown Line
-  - 
-    colour: '#015aa5'
+    station_count: 33
+    ref: T3
+    colour: '#f36421'
     type: train
+  - 
     stations: 
       - Bondi Junction
       - Edgecliff
@@ -1094,13 +1092,11 @@ routes:
       - Caringbah
       - Woolooware
       - Cronulla
-      - Loftus
-      - Engadine
-      - Heathcote
       - Waterfall
+      - Heathcote
+      - Engadine
+      - Loftus
 
-    ref: T4
-    station_count: 33
     itineraries: 
       r9802352: 
         - Bondi Junction (n20955155)
@@ -1224,9 +1220,11 @@ routes:
 
 
     name: Eastern Suburbs & Illawarra Line
-  - 
-    colour: '#c32190'
+    station_count: 33
+    ref: T4
+    colour: '#015aa5'
     type: train
+  - 
     stations: 
       - Richmond
       - East Richmond railway station
@@ -1259,8 +1257,6 @@ routes:
       - Edmondson Park
       - Leppington
 
-    ref: T5
-    station_count: 30
     itineraries: 
       r9796596: 
         - Leppington (w317138648)
@@ -1328,15 +1324,15 @@ routes:
 
 
     name: Cumberland Line
-  - 
-    colour: '#6e818e'
+    station_count: 30
+    ref: T5
+    colour: '#c32190'
     type: train
+  - 
     stations: 
-      - Lidcombe
       - Olympic Park
+      - Lidcombe
 
-    ref: T7
-    station_count: 2
     itineraries: 
       r9698736: 
         - Lidcombe (n19164434)
@@ -1348,9 +1344,11 @@ routes:
 
 
     name: Olympic Park Line
-  - 
-    colour: '#008a45'
+    station_count: 2
+    ref: T7
+    colour: '#6e818e'
     type: train
+  - 
     stations: 
       - Macarthur
       - Campbelltown
@@ -1370,24 +1368,22 @@ routes:
       - Kingsgrove
       - Bexley North
       - Bardwell Park
-      - Turrella
-      - Sydenham
-      - St Peters
-      - Redfern
+      - Wolli Creek
+      - International Airport
+      - Domestic Airport
+      - Mascot
+      - Green Square
       - Central
       - Museum
       - St James
       - Circular Quay
       - Wynyard
       - Town Hall
-      - Green Square
-      - Mascot
-      - Domestic Airport
-      - International Airport
-      - Wolli Creek
+      - Redfern
+      - St Peters
+      - Sydenham
+      - Turrella
 
-    ref: T8
-    station_count: 33
     itineraries: 
       r9724269: 
         - Town Hall (n1763901273)
@@ -1421,65 +1417,6 @@ routes:
         - Campbelltown (n1886255290)
         - Macarthur (n1886255308)
 
-      r2167463: 
-        - Town Hall (n1763901273)
-        - Wynyard (n1886265379)
-        - Circular Quay (n1692720118)
-        - St James (n1763901272)
-        - Museum (n6571334824)
-        - Redfern (w585998416)
-        - St Peters (n1853644076)
-        - Sydenham (n6571195040)
-        - Turrella (n1886255327)
-        - Bardwell Park (n1886174942)
-        - Bexley North (n6576039170)
-        - Kingsgrove (n1663675831)
-        - Beverly Hills (n6576039172)
-        - Narwee (n6560219252)
-        - Riverwood (n1886255323)
-        - Padstow (n1886255316)
-        - Revesby (n1886255321)
-        - Panania (n6560219259)
-        - East Hills (n6560219263)
-        - Holsworthy (n1886255299)
-        - Glenfield (n1886265357)
-        - Macquarie Fields (n1886265363)
-        - Ingleburn (n1886255300)
-        - Minto (n1886255311)
-        - Leumeah (n1886255304)
-        - Campbelltown (n1886255290)
-        - Macarthur (n1886255308)
-
-      r9698880: 
-        - Macarthur (n1886255308)
-        - Campbelltown (n1886255290)
-        - Leumeah (n1886255304)
-        - Minto (n1886255311)
-        - Ingleburn (n1886255300)
-        - Macquarie Fields (n1886265363)
-        - Glenfield (n1886265357)
-        - Holsworthy (n1886255299)
-        - East Hills (n6560219263)
-        - Panania (n6560219259)
-        - Revesby (n1886255321)
-        - Padstow (n1886255316)
-        - Riverwood (n1886255323)
-        - Narwee (n6560219252)
-        - Beverly Hills (n6576039172)
-        - Kingsgrove (n1663675831)
-        - Bexley North (n6576039170)
-        - Bardwell Park (n1886174942)
-        - Turrella (n1886255327)
-        - Sydenham (n6571195040)
-        - St Peters (n1853644076)
-        - Redfern (w585998416)
-        - Central (w34891023)
-        - Museum (n6571334824)
-        - St James (n1763901272)
-        - Circular Quay (n1692720118)
-        - Wynyard (n1886265379)
-        - Town Hall (n1763901273)
-
       r9724268: 
         - Macarthur (n1886255308)
         - Campbelltown (n1886255290)
@@ -1511,46 +1448,105 @@ routes:
         - Wynyard (n1886265379)
         - Town Hall (n1763901273)
 
+      r9698880: 
+        - Macarthur (n1886255308)
+        - Campbelltown (n1886255290)
+        - Leumeah (n1886255304)
+        - Minto (n1886255311)
+        - Ingleburn (n1886255300)
+        - Macquarie Fields (n1886265363)
+        - Glenfield (n1886265357)
+        - Holsworthy (n1886255299)
+        - East Hills (n6560219263)
+        - Panania (n6560219259)
+        - Revesby (n1886255321)
+        - Padstow (n1886255316)
+        - Riverwood (n1886255323)
+        - Narwee (n6560219252)
+        - Beverly Hills (n6576039172)
+        - Kingsgrove (n1663675831)
+        - Bexley North (n6576039170)
+        - Bardwell Park (n1886174942)
+        - Turrella (n1886255327)
+        - Sydenham (n6571195040)
+        - St Peters (n1853644076)
+        - Redfern (w585998416)
+        - Central (w34891023)
+        - Museum (n6571334824)
+        - St James (n1763901272)
+        - Circular Quay (n1692720118)
+        - Wynyard (n1886265379)
+        - Town Hall (n1763901273)
+
+      r2167463: 
+        - Town Hall (n1763901273)
+        - Wynyard (n1886265379)
+        - Circular Quay (n1692720118)
+        - St James (n1763901272)
+        - Museum (n6571334824)
+        - Redfern (w585998416)
+        - St Peters (n1853644076)
+        - Sydenham (n6571195040)
+        - Turrella (n1886255327)
+        - Bardwell Park (n1886174942)
+        - Bexley North (n6576039170)
+        - Kingsgrove (n1663675831)
+        - Beverly Hills (n6576039172)
+        - Narwee (n6560219252)
+        - Riverwood (n1886255323)
+        - Padstow (n1886255316)
+        - Revesby (n1886255321)
+        - Panania (n6560219259)
+        - East Hills (n6560219263)
+        - Holsworthy (n1886255299)
+        - Glenfield (n1886265357)
+        - Macquarie Fields (n1886265363)
+        - Ingleburn (n1886255300)
+        - Minto (n1886255311)
+        - Leumeah (n1886255304)
+        - Campbelltown (n1886255290)
+        - Macarthur (n1886255308)
+
 
     name: Airport & South Line
-  - 
-    colour: '#d21f2f'
+    station_count: 33
+    ref: T8
+    colour: '#008a45'
     type: train
+  - 
     stations: 
-      - Hornsby
-      - Normanhurst
-      - Thornleigh
-      - Pennant Hills
-      - Beecroft
-      - Cheltenham
-      - Epping
-      - Eastwood
-      - Denistone
-      - West Ryde
-      - Meadowbank
-      - Rhodes
-      - Concord West
-      - North Strathfield
-      - Strathfield
-      - Burwood
-      - Redfern
-      - Central
-      - Town Hall
-      - Wynyard
-      - Milsons Point
-      - North Sydney
-      - Waverton
-      - Wollstonecraft
-      - St Leonards
-      - Artamon
-      - Chatswood
-      - Roseville
-      - Lindfield
-      - Killara
       - Gordon
+      - Killara
+      - Lindfield
+      - Roseville
+      - Chatswood
+      - Artamon
+      - St Leonards
+      - Wollstonecraft
+      - Waverton
+      - North Sydney
+      - Milsons Point
+      - Wynyard
+      - Town Hall
+      - Central
+      - Redfern
+      - Burwood
+      - Strathfield
+      - North Strathfield
+      - Concord West
+      - Rhodes
+      - Meadowbank
+      - West Ryde
+      - Denistone
+      - Eastwood
+      - Epping
+      - Cheltenham
+      - Beecroft
+      - Pennant Hills
+      - Thornleigh
+      - Normanhurst
+      - Hornsby
 
-    ref: T9
-    station_count: 31
     itineraries: 
       r9697191: 
         - Gordon (n1886240871)
@@ -1620,4 +1616,8 @@ routes:
 
 
     name: Northern Line
+    station_count: 31
+    ref: T9
+    colour: '#d21f2f'
+    type: train
 

@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Castellane — M1 (r7683732)
-    - Castellane — M2 (r7683731)
-
 stations: 
   - Baille (w420876794)
   - Bougainville (w420028853)
@@ -35,32 +30,33 @@ stations:
   - Sainte-Marguerite Dromel (w419035089)
   - Vieux Port (w421161746)
 
+transfers: 
+  - 
+    - Castellane — M1 (r7683732)
+    - Castellane — M2 (r7683731)
+
 routes: 
   - 
-    colour: '#0075be'
-    type: subway
     stations: 
-      - La Fourragère
-      - Saint-Barnabé
-      - Louis Armand
-      - Gare de Marseille-Blancarde
-      - Métro La Timone
-      - Baille
-      - Castellane — M1
-      - 'Estrangin - Préfecture'
-      - Vieux Port
-      - Colbert
-      - Gare de Marseille-Saint-Charles
-      - 'Réformés - Canebière'
-      - Cinq Avenues
-      - Chartreux
-      - 'Saint-Just - Hôtel de Région'
-      - Malpassé
-      - Frais Vallon
       - La Rose
+      - Frais Vallon
+      - Malpassé
+      - 'Saint-Just - Hôtel de Région'
+      - Chartreux
+      - Cinq Avenues
+      - 'Réformés - Canebière'
+      - Gare de Marseille-Saint-Charles
+      - Colbert
+      - Vieux Port
+      - 'Estrangin - Préfecture'
+      - Castellane — M1
+      - Baille
+      - Métro La Timone
+      - Gare de Marseille-Blancarde
+      - Louis Armand
+      - Saint-Barnabé
+      - La Fourragère
 
-    ref: M1
-    station_count: 18
     itineraries: 
       r6274530: 
         - La Fourragère (w420359087)
@@ -104,26 +100,26 @@ routes:
 
 
     name: Métro 1
-  - 
-    colour: '#e30513'
+    station_count: 18
+    ref: M1
+    colour: '#0075be'
     type: subway
+  - 
     stations: 
-      - Sainte-Marguerite Dromel
-      - Rond-Point du Prado
-      - Prado-Périer
-      - Castellane — M2
-      - 'Notre-Dame-du-Mont - Cours Julien'
-      - 'Noailles - Canebière-Garibaldi'
-      - Gare de Marseille-Saint-Charles
-      - Jules Guesde
-      - Joliette
-      - Désirée Clary
-      - National
-      - Bougainville
       - Métro Gèze
+      - Bougainville
+      - National
+      - Désirée Clary
+      - Joliette
+      - Jules Guesde
+      - Gare de Marseille-Saint-Charles
+      - 'Noailles - Canebière-Garibaldi'
+      - 'Notre-Dame-du-Mont - Cours Julien'
+      - Castellane — M2
+      - Prado-Périer
+      - Rond-Point du Prado
+      - Sainte-Marguerite Dromel
 
-    ref: M2
-    station_count: 13
     itineraries: 
       r6274533: 
         - Sainte-Marguerite Dromel (w419035089)
@@ -157,4 +153,8 @@ routes:
 
 
     name: Metro 2
+    station_count: 13
+    ref: M2
+    colour: '#e30513'
+    type: subway
 

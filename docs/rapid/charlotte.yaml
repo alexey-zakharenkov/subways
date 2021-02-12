@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 25th Street (n4553286981)
   - 36th Street (n4334452789)
@@ -29,10 +27,10 @@ stations:
   - University City Boulevard (n5189367239)
   - Woodlawn (n618124179)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: light_rail
     stations: 
       - UNC Charlotte Main
       - JW Clay Boulevard /UNC Charlotte
@@ -61,8 +59,6 @@ routes:
       - Sharon Road West
       - I-485/South Boulevard (light rail)
 
-    ref: Blue
-    station_count: 26
     itineraries: 
       r10012482: 
         - UNC Charlotte Main (n5189367104)
@@ -122,4 +118,8 @@ routes:
 
 
     name: LYNX Blue Line
+    station_count: 26
+    ref: Blue
+    colour: '#0000ff'
+    type: light_rail
 

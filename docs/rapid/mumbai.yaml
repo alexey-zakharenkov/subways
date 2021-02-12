@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Acharya Atre Nagar (n3806743187)
   - Airport Road (w311841874)
@@ -32,41 +30,25 @@ stations:
   - Wadala Depot (n632342238)
   - Western Express Highway (w331815671)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: subway
     stations: 
-      - Ghatkopar (Metro)
-      - Jagruti Nagar
-      - Asalpha
-      - Saki Naka
-      - Marol Naka
-      - Airport Road
-      - 'Chakala - J.B. Nagar'
-      - Western Express Highway
-      - Andheri Metro Station
-      - Azad Nagar
-      - D. N. Nagar
       - Versova
+      - D. N. Nagar
+      - Azad Nagar
+      - Andheri Metro Station
+      - Western Express Highway
+      - 'Chakala - J.B. Nagar'
+      - Airport Road
+      - Marol Naka
+      - Saki Naka
+      - Asalpha
+      - Jagruti Nagar
+      - Ghatkopar (Metro)
 
-    ref: 1
-    station_count: 12
     itineraries: 
-      r7684032: 
-        - Ghatkopar (w151205149)
-        - Jagruti Nagar (w311841875)
-        - Asalpha (w331827626)
-        - Saki Naka (w331824155)
-        - Marol Naka (w311841876)
-        - Airport Road (w311841874)
-        - 'Chakala - J.B. Nagar (w331824153)'
-        - Western Express Highway (w331815671)
-        - Andheri (n6020955334)
-        - Azad Nagar (w331815667)
-        - D.N. Nagar (w287299866)
-        - Versova (w287299861)
-
       r3808111: 
         - Versova (w287299861)
         - D.N. Nagar (w287299866)
@@ -81,11 +63,27 @@ routes:
         - Jagruti Nagar (w311841875)
         - Ghatkopar (w151205149)
 
+      r7684032: 
+        - Ghatkopar (w151205149)
+        - Jagruti Nagar (w311841875)
+        - Asalpha (w331827626)
+        - Saki Naka (w331824155)
+        - Marol Naka (w311841876)
+        - Airport Road (w311841874)
+        - 'Chakala - J.B. Nagar (w331824153)'
+        - Western Express Highway (w331815671)
+        - Andheri (n6020955334)
+        - Azad Nagar (w331815667)
+        - D.N. Nagar (w287299866)
+        - Versova (w287299861)
+
 
     name: Mumbai Metro Line 1
+    station_count: 12
+    ref: 1
+    colour: '#0000ff'
+    type: subway
   - 
-    colour: '#00ffff'
-    type: monorail
     stations: 
       - Sant Gadge Maharaj Chok
       - Lower Parel
@@ -105,8 +103,6 @@ routes:
       - VNP & RC Marg Junction
       - Chembur
 
-    ref: Mono 1
-    station_count: 17
     itineraries: 
       r7684084: 
         - Sant Gadge Maharaj Chok (n3806743194)
@@ -148,4 +144,8 @@ routes:
 
 
     name: Mumbai Monorail Line 1
+    station_count: 17
+    ref: Mono 1
+    colour: '#00ffff'
+    type: monorail
 

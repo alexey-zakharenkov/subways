@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Bresciadue (n2183569927)
   - Casazza (n2183569928)
@@ -20,10 +18,10 @@ stations:
   - Vittoria (n2183569937)
   - Volta (n2183569938)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#030f3f'
-    type: subway
     stations: 
       - 'Sant''Eufemia - Buffalora'
       - Sanpolino
@@ -43,8 +41,6 @@ routes:
       - Casazza
       - Prealpino
 
-    ref: Metropolitana
-    station_count: 17
     itineraries: 
       r2797902: 
         - 'Sant''Eufemia - Buffalora (n1719862292)'
@@ -86,4 +82,8 @@ routes:
 
 
     name: Brescia Metro
+    station_count: 17
+    ref: Metropolitana
+    colour: '#030f3f'
+    type: subway
 

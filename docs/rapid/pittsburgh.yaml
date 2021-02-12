@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Overbrook Junction (r6889872)
-    - Willow (r6889902)
-
 stations: 
   - Allegheny (n7758163137)
   - Arlington (n5106122209)
@@ -58,38 +53,39 @@ stations:
   - Willow (n5106122157)
   - Wood Street (n5379947701)
 
+transfers: 
+  - 
+    - Overbrook Junction (r6889872)
+    - Willow (r6889902)
+
 routes: 
   - 
-    colour: '#77b6e4'
-    type: light_rail
     stations: 
-      - Allegheny
-      - North Side
-      - Gateway
-      - Wood Street
-      - Steel Plaza
-      - First Avenue
-      - Station Square
-      - South Hills Junction
-      - Boggs
-      - Bon Air
-      - Denise
-      - South Bank
-      - McNeilly
-      - Killarney
-      - Memorial Hall
-      - Willow
-      - St. Anne's
-      - Smith Road
-      - Washington Junction
-      - Casswell
-      - Highland
-      - Bethel Village
-      - Dorchester
       - South Hills Village
+      - Dorchester
+      - Bethel Village
+      - Highland
+      - Casswell
+      - Washington Junction
+      - Smith Road
+      - St. Anne's
+      - Willow
+      - Memorial Hall
+      - Killarney
+      - McNeilly
+      - South Bank
+      - Denise
+      - Bon Air
+      - Boggs
+      - South Hills Junction
+      - Station Square
+      - First Avenue
+      - Steel Plaza
+      - Wood Street
+      - Gateway
+      - North Side
+      - Allegheny
 
-    ref: Blue
-    station_count: 24
     itineraries: 
       r7575515: 
         - South Hills Village (n7774325613)
@@ -145,46 +141,72 @@ routes:
 
 
     name: PAT Blue Line
-  - 
-    colour: '#ec1b24'
+    station_count: 24
+    ref: Blue
+    colour: '#77b6e4'
     type: light_rail
+  - 
     stations: 
-      - South Hills Village
-      - Dorchester
-      - Bethel Village
-      - Highland
-      - Casswell
-      - Washington Junction
-      - Smith Road
-      - St. Anne's
-      - Overbrook Junction
-      - Castle Shannon
-      - Arlington
-      - Poplar
-      - Mt. Lebanon
-      - Dormont Junction
-      - Potomac
-      - Stevenson
-      - Shiras
-      - Belasco
-      - Hampshire
-      - Fallowfield
-      - Pennant
-      - Dawn
-      - Palm Garden
-      - South Hills Junction
-      - Station Square
-      - First Avenue
-      - Steel Plaza
-      - Wood Street
-      - Gateway
-      - North Side
       - Allegheny
+      - North Side
+      - Gateway
+      - Wood Street
+      - Steel Plaza
+      - First Avenue
+      - Station Square
+      - South Hills Junction
+      - Palm Garden
+      - Dawn
+      - Pennant
       - Westfield
+      - Fallowfield
+      - Hampshire
+      - Belasco
+      - Shiras
+      - Stevenson
+      - Potomac
+      - Dormont Junction
+      - Mt. Lebanon
+      - Poplar
+      - Arlington
+      - Castle Shannon
+      - Overbrook Junction
+      - St. Anne's
+      - Smith Road
+      - Washington Junction
+      - Casswell
+      - Highland
+      - Bethel Village
+      - Dorchester
+      - South Hills Village
 
-    ref: Red
-    station_count: 32
     itineraries: 
+      r7574879: 
+        - Allegheny (n7758163137)
+        - North Side (n7758163136)
+        - Gateway (n7758163135)
+        - Wood Street (n5379947701)
+        - Steel Plaza (n6728188002)
+        - First Avenue (n7758163134)
+        - Station Square (n5105282300)
+        - South Hills Junction (n5104398635)
+        - Palm Garden (n271203170)
+        - Dawn (n5106122373)
+        - Pennant (n5106122375)
+        - Westfield (n5106122357)
+        - Fallowfield (n5106122351)
+        - Hampshire (n271210116)
+        - Belasco (n3076463527)
+        - Shiras (n5106122332)
+        - Stevenson (n5106122325)
+        - Potomac (n5106122322)
+        - Dormont Junction (n5106122220)
+        - Mt. Lebanon (n7774350441)
+        - Poplar (n5106122211)
+        - Arlington (n5106122209)
+        - Castle Shannon (n7758163138)
+        - Overbrook Junction (n5106122199)
+
       r7575523: 
         - Allegheny (n7758163137)
         - North Side (n7758163136)
@@ -252,32 +274,6 @@ routes:
         - North Side (n7758163136)
         - Allegheny (n7758163137)
 
-      r7574879: 
-        - Allegheny (n7758163137)
-        - North Side (n7758163136)
-        - Gateway (n7758163135)
-        - Wood Street (n5379947701)
-        - Steel Plaza (n6728188002)
-        - First Avenue (n7758163134)
-        - Station Square (n5105282300)
-        - South Hills Junction (n5104398635)
-        - Palm Garden (n271203170)
-        - Dawn (n5106122373)
-        - Pennant (n5106122375)
-        - Westfield (n5106122357)
-        - Fallowfield (n5106122351)
-        - Hampshire (n271210116)
-        - Belasco (n3076463527)
-        - Shiras (n5106122332)
-        - Stevenson (n5106122325)
-        - Potomac (n5106122322)
-        - Dormont Junction (n5106122220)
-        - Mt. Lebanon (n7774350441)
-        - Poplar (n5106122211)
-        - Arlington (n5106122209)
-        - Castle Shannon (n7758163138)
-        - Overbrook Junction (n5106122199)
-
       r7574878: 
         - Overbrook Junction (n5106122199)
         - Castle Shannon (n7758163138)
@@ -305,9 +301,11 @@ routes:
 
 
     name: PAT Red Line
-  - 
-    colour: '#bcbdc0'
+    station_count: 32
+    ref: Red
+    colour: '#ec1b24'
     type: light_rail
+  - 
     stations: 
       - Allegheny
       - North Side
@@ -341,8 +339,6 @@ routes:
       - West Library
       - Library
 
-    ref: Silver
-    station_count: 31
     itineraries: 
       r7572383: 
         - Library (n5107632393)
@@ -412,4 +408,8 @@ routes:
 
 
     name: PAT Silver Line
+    station_count: 31
+    ref: Silver
+    colour: '#bcbdc0'
+    type: light_rail
 

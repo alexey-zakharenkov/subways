@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Авиастроительная (n1420931656)
   - Аметьево (n913287042)
@@ -14,10 +12,10 @@ stations:
   - Яшьлек (n1420931684)
   - площадь Тукая (n441886280)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
       - Авиастроительная
       - Северный вокзал
@@ -31,8 +29,6 @@ routes:
       - Проспект Победы
       - Дубравная
 
-    ref: 1
-    station_count: 11
     itineraries: 
       r7733916: 
         - Дубравная (n5868304044)
@@ -62,4 +58,8 @@ routes:
 
 
     name: 'Центральная линия: Авиастроительная → Проспект Победы'
+    station_count: 11
+    ref: 1
+    colour: '#ff0000'
+    type: subway
 

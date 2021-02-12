@@ -1,12 +1,4 @@
 
-transfers: 
-  - 
-    - 7th & Capitol (r9142031)
-    - 8th & Capitol (r9142032)
-  - 
-    - 7th & I/County Center (r9142036)
-    - 8th & H/County Center (r9142035)
-
 stations: 
   - 12th & I (n6157430109)
   - 13th Street (n6157429166)
@@ -62,10 +54,16 @@ stations:
   - Watt/Manlove (n6169975220)
   - Zinfandel (n6169975245)
 
+transfers: 
+  - 
+    - 7th & Capitol (r9142031)
+    - 8th & Capitol (r9142032)
+  - 
+    - 7th & I/County Center (r9142036)
+    - 8th & H/County Center (r9142035)
+
 routes: 
   - 
-    colour: '#0000c0'
-    type: light_rail
     stations: 
       - Cosumnes River College
       - Center Parkway
@@ -95,37 +93,7 @@ routes:
       - Watt/I-80
       - 8th & O
 
-    ref: Blue
-    station_count: 27
     itineraries: 
-      r2378982: 
-        - Watt/I-80 (n6157430536)
-        - Watt/I-80 West (n6157430515)
-        - Roseville Road (n6157430498)
-        - Marconi/Arcade (n6157430468)
-        - Swanston (n6157430421)
-        - Royal Oaks (n6157430418)
-        - Arden/Del Paso (n6157430377)
-        - Globe (n6157430363)
-        - Alkali Flat/La Valentina (n6157430142)
-        - 12th & I (n6157430109)
-        - Cathedral Square (n6157429180)
-        - 7th & Capitol (n6157429174)
-        - 8th & O (n6157430099)
-        - Archives Plaza (n6157430139)
-        - 13th Street (n6157429166)
-        - 16th Street (n6157429158)
-        - Broadway (n6159580179)
-        - 4th Avenue/Wayne Hultgren (n6159580180)
-        - City College (n6159580181)
-        - Fruitridge (n6159580182)
-        - 47th Avenue (n6159580183)
-        - Florin (n6159580184)
-        - Meadowview (n6159583685)
-        - Franklin (n6159583686)
-        - Center Parkway (n6159583687)
-        - Cosumnes River College (n6159583688)
-
       r2378981: 
         - Cosumnes River College (n6159583688)
         - Center Parkway (n6159583687)
@@ -154,11 +122,41 @@ routes:
         - Watt/I-80 West (n6157430515)
         - Watt/I-80 (n6157430536)
 
+      r2378982: 
+        - Watt/I-80 (n6157430536)
+        - Watt/I-80 West (n6157430515)
+        - Roseville Road (n6157430498)
+        - Marconi/Arcade (n6157430468)
+        - Swanston (n6157430421)
+        - Royal Oaks (n6157430418)
+        - Arden/Del Paso (n6157430377)
+        - Globe (n6157430363)
+        - Alkali Flat/La Valentina (n6157430142)
+        - 12th & I (n6157430109)
+        - Cathedral Square (n6157429180)
+        - 7th & Capitol (n6157429174)
+        - 8th & O (n6157430099)
+        - Archives Plaza (n6157430139)
+        - 13th Street (n6157429166)
+        - 16th Street (n6157429158)
+        - Broadway (n6159580179)
+        - 4th Avenue/Wayne Hultgren (n6159580180)
+        - City College (n6159580181)
+        - Fruitridge (n6159580182)
+        - 47th Avenue (n6159580183)
+        - Florin (n6159580184)
+        - Meadowview (n6159583685)
+        - Franklin (n6159583686)
+        - Center Parkway (n6159583687)
+        - Cosumnes River College (n6159583688)
+
 
     name: Blue Line
-  - 
-    colour: '#c0ba00'
+    station_count: 27
+    ref: Blue
+    colour: '#0000c0'
     type: light_rail
+  - 
     stations: 
       - Sacramento Valley Station
       - 8th & H/County Center
@@ -189,8 +187,6 @@ routes:
       - Historic Folsom
       - 8th & K
 
-    ref: Gold
-    station_count: 28
     itineraries: 
       r2352701: 
         - Sacramento Valley Station (n6157430338)
@@ -252,29 +248,21 @@ routes:
 
 
     name: Gold Line
-  - 
-    colour: '#00c000'
+    station_count: 28
+    ref: Gold
+    colour: '#c0ba00'
     type: light_rail
+  - 
     stations: 
-      - 13th Street
-      - Archives Plaza
-      - 7th & Capitol
-      - 8th & K
-      - 7th & I/County Center
       - 7th & Richards/Township 9
+      - 8th & H/County Center
+      - 8th & Capitol
       - 8th & O
+      - Archives Plaza
+      - 13th Street
+      - 8th & K
 
-    ref: Green
-    station_count: 7
     itineraries: 
-      r2379220: 
-        - 13th Street (n6157429166)
-        - Archives Plaza (n6157430139)
-        - 8th & Capitol (n6157429175)
-        - 8th & K (n6157429171)
-        - 8th & H/County Center (n6157430101)
-        - 7th & Richards/Township 9 (n6157430341)
-
       r2379221: 
         - 7th & Richards/Township 9 (n6157430341)
         - 7th & I/County Center (n6157430100)
@@ -283,6 +271,18 @@ routes:
         - Archives Plaza (n6157430139)
         - 13th Street (n6157429166)
 
+      r2379220: 
+        - 13th Street (n6157429166)
+        - Archives Plaza (n6157430139)
+        - 8th & Capitol (n6157429175)
+        - 8th & K (n6157429171)
+        - 8th & H/County Center (n6157430101)
+        - 7th & Richards/Township 9 (n6157430341)
+
 
     name: Green Line
+    station_count: 7
+    ref: Green
+    colour: '#00c000'
+    type: light_rail
 

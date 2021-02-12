@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Gare Lille Flandres (Ligne 1) (r9333340)
-    - Gare Lille Flandres (Ligne 2) (r9333339)
-
 stations: 
   - Alsace (n7399520003)
   - Bois Blancs (n2061592504)
@@ -66,10 +61,13 @@ stations:
   - Wazemmes (n2062882287)
   - 'Épeule - Montesquieu (n3326895519)'
 
+transfers: 
+  - 
+    - Gare Lille Flandres (Ligne 1) (r9333340)
+    - Gare Lille Flandres (Ligne 2) (r9333339)
+
 routes: 
   - 
-    colour: '#ffd400'
-    type: subway
     stations: 
       - Quatre Cantons – Stade Pierre Mauroy
       - Cité Scientifique – Professeur Gabillard
@@ -90,8 +88,6 @@ routes:
       - CHU – Centre Oscar Lambret
       - CHU – Eurasanté
 
-    ref: 1
-    station_count: 18
     itineraries: 
       r171691: 
         - Quatre Cantons – Stade Pierre Mauroy (w79508706)
@@ -135,9 +131,11 @@ routes:
 
 
     name: Métro Ligne 1
-  - 
-    colour: '#ed1d24'
+    station_count: 18
+    ref: 1
+    colour: '#ffd400'
     type: subway
+  - 
     stations: 
       - C.H. Dron
       - Bourgogne
@@ -184,55 +182,7 @@ routes:
       - Bourg
       - Saint-Philibert
 
-    ref: 2
-    station_count: 44
     itineraries: 
-      r7786749: 
-        - C.H. Dron (n2061595085)
-        - Bourgogne (n2061595075)
-        - Pont de Neuville (n1315981886)
-        - Phalempins (n1315981866)
-        - Colbert (n2061595049)
-        - 'Tourcoing - Centre (n2061595039)'
-        - Gare de Tourcoing (n664927006)
-        - Carliers (n664866039)
-        - Mercure (n662109551)
-        - Alsace (n7399520003)
-        - Gare Jean Lebas Roubaix (n409490567)
-        - 'Roubaix - Grand Place (n409490563)'
-        - Eurotéléport (n1648232235)
-        - 'Roubaix - Charles de Gaulle (n403762114)'
-        - 'Épeule - Montesquieu (n3326895519)'
-        - Mairie de Croix (n2061592951)
-        - Croix Centre (n2061592940)
-        - 'Wasquehal - Hôtel de Ville (n2061592933)'
-        - 'Wasquehal - Pavé de Lille (n428622046)'
-        - Jean Jaurès (n428622047)
-        - 'Les Prés - Edgard-Pisani (n428622057)'
-        - Fort de Mons (n428622060)
-        - Mairie de Mons (n2061592803)
-        - Mons Sarts (n6638170780)
-        - Saint-Maurice Pellevoisin (n2061592819)
-        - Gare Lille Europe (n2208333145)
-        - Gare Lille Flandres (n5268053621)
-        - Mairie de Lille (n406517672)
-        - Lille Grand Palais (n497394889)
-        - Porte de Valenciennes (w65487235)
-        - Porte de Douai (w35205656)
-        - Porte d'Arras (w65203864)
-        - Porte des Postes (n389432270)
-        - Montebello (n6132956431)
-        - Cormontaigne (n1635759514)
-        - Port de Lille (n439792372)
-        - Bois Blancs (n2061592504)
-        - Canteleu (n2061592702)
-        - Lomme – Lambersart – Arthur-Notebart (n476644664)
-        - Pont Supérieur (n476644665)
-        - Mitterie (n476644666)
-        - Maison des Enfants (n2061592877)
-        - Bourg (n2061592855)
-        - Saint-Philibert (n6659546245)
-
       r449485: 
         - Saint-Philibert (n6659546245)
         - Bourg (n2061592855)
@@ -279,6 +229,56 @@ routes:
         - Bourgogne (n2061595075)
         - C.H. Dron (n2061595085)
 
+      r7786749: 
+        - C.H. Dron (n2061595085)
+        - Bourgogne (n2061595075)
+        - Pont de Neuville (n1315981886)
+        - Phalempins (n1315981866)
+        - Colbert (n2061595049)
+        - 'Tourcoing - Centre (n2061595039)'
+        - Gare de Tourcoing (n664927006)
+        - Carliers (n664866039)
+        - Mercure (n662109551)
+        - Alsace (n7399520003)
+        - Gare Jean Lebas Roubaix (n409490567)
+        - 'Roubaix - Grand Place (n409490563)'
+        - Eurotéléport (n1648232235)
+        - 'Roubaix - Charles de Gaulle (n403762114)'
+        - 'Épeule - Montesquieu (n3326895519)'
+        - Mairie de Croix (n2061592951)
+        - Croix Centre (n2061592940)
+        - 'Wasquehal - Hôtel de Ville (n2061592933)'
+        - 'Wasquehal - Pavé de Lille (n428622046)'
+        - Jean Jaurès (n428622047)
+        - 'Les Prés - Edgard-Pisani (n428622057)'
+        - Fort de Mons (n428622060)
+        - Mairie de Mons (n2061592803)
+        - Mons Sarts (n6638170780)
+        - Saint-Maurice Pellevoisin (n2061592819)
+        - Gare Lille Europe (n2208333145)
+        - Gare Lille Flandres (n5268053621)
+        - Mairie de Lille (n406517672)
+        - Lille Grand Palais (n497394889)
+        - Porte de Valenciennes (w65487235)
+        - Porte de Douai (w35205656)
+        - Porte d'Arras (w65203864)
+        - Porte des Postes (n389432270)
+        - Montebello (n6132956431)
+        - Cormontaigne (n1635759514)
+        - Port de Lille (n439792372)
+        - Bois Blancs (n2061592504)
+        - Canteleu (n2061592702)
+        - Lomme – Lambersart – Arthur-Notebart (n476644664)
+        - Pont Supérieur (n476644665)
+        - Mitterie (n476644666)
+        - Maison des Enfants (n2061592877)
+        - Bourg (n2061592855)
+        - Saint-Philibert (n6659546245)
+
 
     name: Métro Ligne 2
+    station_count: 44
+    ref: 2
+    colour: '#ed1d24'
+    type: subway
 

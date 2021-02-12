@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Angern-Rogätz (n32881709)
   - Barleber See (n5682467385)
@@ -31,42 +29,40 @@ stations:
   - Zielitz (n5682467388)
   - Zielitz Ort (n5682467387)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#408040'
-    type: train
     stations: 
-      - Zielitz
-      - Zielitz Ort
-      - Wolmirstedt
-      - Barleber See
-      - Magdeburg-Rothensee
-      - Magdeburg-Eichenweiler
-      - Magdeburg-Neustadt
-      - Magdeburg Hauptbahnhof
-      - Magdeburg Hasselbachplatz
-      - Magdeburg-Buckau
-      - Magdeburg-Salbke
-      - Magdeburg Südost
-      - Schönebeck-Frohse
-      - Schönebeck (Elbe)
-      - Schönebeck Süd
       - Schönebeck-Bad Salzelmen
-      - Wittenberge, Bahnhof
-      - Geestgottberg
-      - Seehausen
-      - Osterburg
-      - Eichstedt
-      - Stendal-Stadtsee
-      - Stendal Hbf
-      - Demker
-      - Tangerhütte
-      - Mahlwinkel
-      - Angern-Rogätz
+      - Schönebeck Süd
+      - Schönebeck (Elbe)
+      - Schönebeck-Frohse
+      - Magdeburg Südost
+      - Magdeburg-Salbke
       - Magdeburg SKET Industriepark
+      - Magdeburg-Buckau
+      - Magdeburg Hasselbachplatz
+      - Magdeburg Hauptbahnhof
+      - Magdeburg-Neustadt
+      - Magdeburg-Eichenweiler
+      - Magdeburg-Rothensee
+      - Barleber See
+      - Wolmirstedt
+      - Zielitz Ort
+      - Angern-Rogätz
+      - Mahlwinkel
+      - Tangerhütte
+      - Demker
+      - Stendal Hbf
+      - Stendal-Stadtsee
+      - Eichstedt
+      - Osterburg
+      - Seehausen
+      - Geestgottberg
+      - Wittenberge, Bahnhof
+      - Zielitz
 
-    ref: S 1
-    station_count: 28
     itineraries: 
       r6604729: 
         - Wittenberge (n3620887012)
@@ -165,4 +161,8 @@ routes:
 
 
     name: S-Bahn S 1
+    station_count: 28
+    ref: S 1
+    colour: '#408040'
+    type: train
 

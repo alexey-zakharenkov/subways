@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 南鳩ヶ谷 (n7777259889)
   - 川口元郷 (n7777248385)
@@ -11,10 +9,10 @@ stations:
   - 赤羽岩淵 (n5406718981)
   - 鳩ヶ谷 (n7777259888)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#3564af'
-    type: subway
     stations: 
       - 浦和美園
       - 東川口
@@ -25,8 +23,6 @@ routes:
       - 川口元郷
       - 赤羽岩淵
 
-    ref: SR
-    station_count: 8
     itineraries: 
       r9336149: 
         - 浦和美園 (n6287107614)
@@ -50,4 +46,8 @@ routes:
 
 
     name: 埼玉高速鉄道線
+    station_count: 8
+    ref: SR
+    colour: '#3564af'
+    type: subway
 

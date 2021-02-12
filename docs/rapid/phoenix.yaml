@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - 44th Street/Washington station (r10744353)
-    - PHX Sky Train Station (r10744352)
-
 stations: 
   - 12th St/ Jefferson (n1502089330)
   - 12th St/ Washington (n1502089336)
@@ -53,18 +48,19 @@ stations:
   - Veterans Way/ College (n2671972515)
   - Washington/ Central Ave (n1502089308)
 
+transfers: 
+  - 
+    - 44th Street/Washington station (r10744353)
+    - PHX Sky Train Station (r10744352)
+
 routes: 
   - 
-    colour: '#b0c4de'
-    type: monorail
     stations: 
       - Terminal 3
       - Terminal 4
       - East Economy Parking
       - PHX Sky Train Station
 
-    ref: PST
-    station_count: 4
     itineraries: 
       r4499553: 
         - 44th Street (n1904374451)
@@ -80,9 +76,11 @@ routes:
 
 
     name: PHX Sky Train
+    station_count: 4
+    ref: PST
+    colour: '#b0c4de'
+    type: monorail
   - 
-    colour: '#89728e'
-    type: light_rail
     stations: 
       - 19th Ave/ Dunlap
       - Northern/ 19th Ave
@@ -128,8 +126,6 @@ routes:
       - Washington/ Central Ave
       - Van Buren/ 1st Ave (W)
 
-    ref: VMLR
-    station_count: 43
     itineraries: 
       r7728594: 
         - Gilbert Rd/ Main St (n6239618606)
@@ -213,4 +209,8 @@ routes:
 
 
     name: Light Rail
+    station_count: 43
+    ref: VMLR
+    colour: '#89728e'
+    type: light_rail
 

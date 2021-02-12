@@ -1,8 +1,6 @@
 
-transfers: 
-
 stations: 
-  - 丁公路北 (n3145593361)
+  - 丁公路北 (n2227410611)
   - 丁公路南 (n2375669720)
   - 丁公路南 (n3145593362)
   - 丁家洲 (n2558231545)
@@ -79,10 +77,10 @@ stations:
   - 鹰潭街 (n2651436600)
   - 龙岗 (n2375668092)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#e60039'
-    type: subway
     stations: 
       - 双港
       - 孔目湖
@@ -95,6 +93,7 @@ routes:
       - 滕王阁
       - 万寿宫
       - 八一广场
+      - 丁公路北
       - 师大南路
       - 彭家桥
       - 谢家村
@@ -106,8 +105,6 @@ routes:
       - 奥体中心
       - 瑶湖西
 
-    ref: 1
-    station_count: 21
     itineraries: 
       r2843401: 
         - 双港 (n2227542389)
@@ -121,6 +118,7 @@ routes:
         - 滕王阁 (n2227410623)
         - 万寿宫 (n2227410608)
         - 八一广场 (n2341674783)
+        - 丁公路北 (n2227410611)
         - 师大南路 (n2227410615)
         - 彭家桥 (n2227410625)
         - 谢家村 (n2227410616)
@@ -134,64 +132,66 @@ routes:
 
 
     name: 南昌地铁1号线
-  - 
+    station_count: 22
+    ref: 1
+    colour: '#e60039'
     type: subway
+  - 
     stations: 
 
-    ref: 11
-    station_count: 0
     itineraries: 
       r11899066: 
 
 
     name: 南昌地铁11号线
-  - 
+    station_count: 0
+    ref: 11
     type: subway
+  - 
     stations: 
 
-    ref: 12
-    station_count: 0
     itineraries: 
       r11899065: 
 
 
     name: 南昌地铁12号线
-  - 
+    station_count: 0
+    ref: 12
     type: subway
+  - 
     stations: 
 
-    ref: 13
-    station_count: 0
     itineraries: 
       r11899064: 
 
 
     name: 南昌地铁13号线
-  - 
+    station_count: 0
+    ref: 13
     type: subway
+  - 
     stations: 
 
-    ref: 14
-    station_count: 0
     itineraries: 
       r11899063: 
 
 
     name: 南昌地铁14号线
-  - 
+    station_count: 0
+    ref: 14
     type: subway
+  - 
     stations: 
 
-    ref: 15
-    station_count: 0
     itineraries: 
       r11899062: 
 
 
     name: 南昌地铁15号线
-  - 
-    colour: '#ffda01'
+    station_count: 0
+    ref: 15
     type: subway
+  - 
     stations: 
       - 辛家庵
       - 顺外
@@ -220,8 +220,6 @@ routes:
       - 大岗
       - 南路
 
-    ref: 2
-    station_count: 26
     itineraries: 
       r3067723: 
         - 辛家庵 (n2375672142)
@@ -253,9 +251,11 @@ routes:
 
 
     name: 南昌地铁2号线
-  - 
-    colour: '#00a560'
+    station_count: 26
+    ref: 2
+    colour: '#ffda01'
     type: subway
+  - 
     stations: 
       - 鱼尾洲
       - 科技城
@@ -266,7 +266,6 @@ routes:
       - 起凤路
       - 上沙沟
       - 人民公园
-      - 丁公路北
       - 丁公路南
       - 坛子口
       - 绳金塔
@@ -287,8 +286,6 @@ routes:
       - 裕丰街
       - 白马山
 
-    ref: 4
-    station_count: 29
     itineraries: 
       r4129938: 
         - 鱼尾洲 (n2497383719)
@@ -300,7 +297,6 @@ routes:
         - 起凤路 (n2647271738)
         - 上沙沟 (n2657269285)
         - 人民公园 (n2647229928)
-        - 丁公路北 (n3145593361)
         - 丁公路南 (n3145593362)
         - 坛子口 (n2647229912)
         - 绳金塔 (n2647229910)
@@ -323,59 +319,63 @@ routes:
 
 
     name: 南昌地铁4号线
-  - 
+    station_count: 28
+    ref: 4
+    colour: '#00a560'
     type: subway
+  - 
     stations: 
 
-    ref: 5
-    station_count: 0
     itineraries: 
       r11899041: 
 
 
     name: 南昌地铁5号线
-  - 
+    station_count: 0
+    ref: 5
     type: subway
+  - 
     stations: 
 
-    ref: 6
-    station_count: 0
     itineraries: 
       r11899071: 
 
 
     name: 南昌地铁6号线
-  - 
+    station_count: 0
+    ref: 6
     type: subway
+  - 
     stations: 
 
-    ref: 7
-    station_count: 0
     itineraries: 
       r11899070: 
 
 
     name: 南昌地铁7号线
-  - 
+    station_count: 0
+    ref: 7
     type: subway
+  - 
     stations: 
 
-    ref: 8
-    station_count: 0
     itineraries: 
       r11899069: 
 
 
     name: 南昌地铁8号线
-  - 
+    station_count: 0
+    ref: 8
     type: subway
+  - 
     stations: 
 
-    ref: 9
-    station_count: 0
     itineraries: 
       r11899068: 
 
 
     name: 南昌地铁9号线
+    station_count: 0
+    ref: 9
+    type: subway
 

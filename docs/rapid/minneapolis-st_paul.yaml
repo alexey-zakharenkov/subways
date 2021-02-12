@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 10th Street (n2913631290)
   - 28th Avenue (n1936899153)
@@ -40,10 +38,10 @@ stations:
   - Western Avenue (n2913631285)
   - Westgate (n2913631286)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: light_rail
     stations: 
       - Target Field (Metro Light Rail)
       - Warehouse District/Hennepin Avenue
@@ -65,8 +63,6 @@ routes:
       - 28th Avenue
       - Mall of America
 
-    ref: 901
-    station_count: 19
     itineraries: 
       r2440420: 
         - Mall of America (n1605300941)
@@ -112,62 +108,37 @@ routes:
 
 
     name: Blue Line (Hiawatha)
-  - 
-    colour: '#008144'
+    station_count: 19
+    ref: 901
+    colour: '#0000ff'
     type: light_rail
+  - 
     stations: 
-      - Target Field (Metro Light Rail)
-      - Warehouse District/Hennepin Avenue
-      - Nicollet Mall
-      - Government Plaza
-      - U.S. Bank Stadium Station
-      - West Bank
-      - East Bank
-      - Stadium Village
-      - Prospect Park
-      - Westgate
-      - Raymond Avenue
-      - Fairview Avenue
-      - Snelling Avenue
-      - Hamline Avenue
-      - Lexington Parkway
-      - Victoria Street
-      - Dale Street
-      - Western Avenue
-      - Capitol/Rice Street
-      - Robert Street
-      - 10th Street
-      - Central Station
       - Saint Paul Union Depot (light rail)
+      - Central Station
+      - 10th Street
+      - Robert Street
+      - Capitol/Rice Street
+      - Western Avenue
+      - Dale Street
+      - Victoria Street
+      - Lexington Parkway
+      - Hamline Avenue
+      - Snelling Avenue
+      - Fairview Avenue
+      - Raymond Avenue
+      - Westgate
+      - Prospect Park
+      - Stadium Village
+      - East Bank
+      - West Bank
+      - U.S. Bank Stadium Station
+      - Government Plaza
+      - Nicollet Mall
+      - Warehouse District/Hennepin Avenue
+      - Target Field (Metro Light Rail)
 
-    ref: 902
-    station_count: 23
     itineraries: 
-      r3817130: 
-        - 'Target Field - Platform 1 (n4305375756)'
-        - Warehouse District/Hennepin Avenue (n1819181071)
-        - Nicollet Mall (n1819181072)
-        - Government Plaza (n1819181070)
-        - U.S. Bank Stadium (n1819181065)
-        - West Bank (n4254534424)
-        - East Bank (n2913631281)
-        - Stadium Village (n2913631282)
-        - Prospect Park (n2913631277)
-        - Westgate (n2913631286)
-        - Raymond Avenue (n2913631278)
-        - Fairview Avenue (n2913631274)
-        - Snelling Avenue (n4065219555)
-        - Hamline Avenue (n2913631275)
-        - Lexington Parkway (n2913631276)
-        - Victoria Street (n2913631283)
-        - Dale Street (n2913631273)
-        - Western Avenue (n2913631285)
-        - Capitol/Rice Street (n2913631271)
-        - Robert Street (n2913631279)
-        - 10th Street (n2913631290)
-        - Central Station (n2913631272)
-        - Union Depot Station (n4305375753)
-
       r3817120: 
         - Union Depot Station (n4305375753)
         - Central Station (n2913631272)
@@ -193,6 +164,35 @@ routes:
         - Warehouse District/Hennepin Avenue (n1819181071)
         - 'Target Field - Platform 1 (n4305375756)'
 
+      r3817130: 
+        - 'Target Field - Platform 1 (n4305375756)'
+        - Warehouse District/Hennepin Avenue (n1819181071)
+        - Nicollet Mall (n1819181072)
+        - Government Plaza (n1819181070)
+        - U.S. Bank Stadium (n1819181065)
+        - West Bank (n4254534424)
+        - East Bank (n2913631281)
+        - Stadium Village (n2913631282)
+        - Prospect Park (n2913631277)
+        - Westgate (n2913631286)
+        - Raymond Avenue (n2913631278)
+        - Fairview Avenue (n2913631274)
+        - Snelling Avenue (n4065219555)
+        - Hamline Avenue (n2913631275)
+        - Lexington Parkway (n2913631276)
+        - Victoria Street (n2913631283)
+        - Dale Street (n2913631273)
+        - Western Avenue (n2913631285)
+        - Capitol/Rice Street (n2913631271)
+        - Robert Street (n2913631279)
+        - 10th Street (n2913631290)
+        - Central Station (n2913631272)
+        - Union Depot Station (n4305375753)
+
 
     name: Green Line
+    station_count: 23
+    ref: 902
+    colour: '#008144'
+    type: light_rail
 

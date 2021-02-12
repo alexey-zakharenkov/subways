@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Agathenburg (n305471920)
   - Allermöhe (n3128456543)
@@ -72,12 +70,15 @@ stations:
   - Wilhelmsburg (n3372168828)
   - Wohltorf (n1894315329)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#33b540'
-    type: light_rail
     stations: 
-      - Hamburg Airport (Flughafen)
+      - Poppenbüttel
+      - Wellingsbüttel
+      - Hoheneichen
+      - Kornweg (Klein Borstel)
       - Ohlsdorf S
       - Rübenkamp (City Nord)
       - Alte Wöhr (Stadtpark)
@@ -103,13 +104,8 @@ routes:
       - Sülldorf
       - Rissen
       - Wedel
-      - Poppenbüttel
-      - Wellingsbüttel
-      - Hoheneichen
-      - Kornweg (Klein Borstel)
+      - Hamburg Airport (Flughafen)
 
-    ref: S1
-    station_count: 30
     itineraries: 
       r1660619: 
         - Wedel (n1241952231)
@@ -138,34 +134,6 @@ routes:
         - Rübenkamp (City Nord) (n3372056976)
         - Ohlsdorf (n3372056975)
         - Hamburg Airport (Flughafen) (n4129931556)
-
-      r1660618: 
-        - Hamburg Airport (Flughafen) (n4129931556)
-        - Ohlsdorf (n3372056975)
-        - Rübenkamp (City Nord) (n3372056976)
-        - Alte Wöhr (Stadtpark) (n3372056972)
-        - Barmbek (n33070435)
-        - Friedrichsberg (n3372061141)
-        - Wandsbeker Chaussee (n2882508202)
-        - Hasselbrook (n4128824965)
-        - Landwehr (n3068973927)
-        - Berliner Tor (n2470903095)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Jungfernstieg (n3376281838)
-        - Stadthausbrücke (n300242481)
-        - Landungsbrücken (n52144713)
-        - Reeperbahn (n3376281840)
-        - Königstraße (n3376281839)
-        - Hamburg-Altona (n3357946758)
-        - Bahrenfeld (n3706213880)
-        - Othmarschen (n26600620)
-        - Klein Flottbek (Botanischer Garten) (n3372145519)
-        - Hochkamp (n1235197664)
-        - Blankenese (n4127523989)
-        - Iserbrook (n4052518767)
-        - Sülldorf (n3372147544)
-        - Rissen (n667460998)
-        - Wedel (n1241952231)
 
       r1540437: 
         - Wedel (n1241952231)
@@ -197,6 +165,34 @@ routes:
         - Hoheneichen (n3070913590)
         - Wellingsbüttel (n3070913593)
         - Poppenbüttel (n3070913592)
+
+      r1660618: 
+        - Hamburg Airport (Flughafen) (n4129931556)
+        - Ohlsdorf (n3372056975)
+        - Rübenkamp (City Nord) (n3372056976)
+        - Alte Wöhr (Stadtpark) (n3372056972)
+        - Barmbek (n33070435)
+        - Friedrichsberg (n3372061141)
+        - Wandsbeker Chaussee (n2882508202)
+        - Hasselbrook (n4128824965)
+        - Landwehr (n3068973927)
+        - Berliner Tor (n2470903095)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Jungfernstieg (n3376281838)
+        - Stadthausbrücke (n300242481)
+        - Landungsbrücken (n52144713)
+        - Reeperbahn (n3376281840)
+        - Königstraße (n3376281839)
+        - Hamburg-Altona (n3357946758)
+        - Bahrenfeld (n3706213880)
+        - Othmarschen (n26600620)
+        - Klein Flottbek (Botanischer Garten) (n3372145519)
+        - Hochkamp (n1235197664)
+        - Blankenese (n4127523989)
+        - Iserbrook (n4052518767)
+        - Sülldorf (n3372147544)
+        - Rissen (n667460998)
+        - Wedel (n1241952231)
 
       r1660621: 
         - Poppenbüttel (n3070913592)
@@ -231,36 +227,36 @@ routes:
 
 
     name: 'S1: Airport (Flughafen)/Poppenbüttel <=> Wedel'
-  - 
-    colour: '#44a325'
+    station_count: 30
+    ref: S1
+    colour: '#33b540'
     type: light_rail
+  - 
     stations: 
-      - Blankenese
-      - Hochkamp
-      - Klein Flottbek (Botanischer Garten)
-      - Othmarschen
-      - Bahrenfeld
-      - Altona
-      - Holstenstraße
-      - Sternschanze
-      - Hamburg Dammtor / Universität
-      - Hamburg Hauptbahnhof (S-Bahn)
-      - Berliner Tor
-      - Landwehr
-      - Hamburg Hasselbrook S-Bahn
-      - Wandsbeker Chaussee
-      - Friedrichsberg
-      - Barmbek S
-      - Alte Wöhr (Stadtpark)
-      - Rübenkamp (City Nord)
-      - Ohlsdorf S
-      - Kornweg (Klein Borstel)
-      - Hoheneichen
-      - Wellingsbüttel
       - Poppenbüttel
+      - Wellingsbüttel
+      - Hoheneichen
+      - Kornweg (Klein Borstel)
+      - Ohlsdorf S
+      - Rübenkamp (City Nord)
+      - Alte Wöhr (Stadtpark)
+      - Barmbek S
+      - Friedrichsberg
+      - Wandsbeker Chaussee
+      - Hamburg Hasselbrook S-Bahn
+      - Landwehr
+      - Berliner Tor
+      - Hamburg Hauptbahnhof (S-Bahn)
+      - Hamburg Dammtor / Universität
+      - Sternschanze
+      - Holstenstraße
+      - Altona
+      - Bahrenfeld
+      - Othmarschen
+      - Klein Flottbek (Botanischer Garten)
+      - Hochkamp
+      - Blankenese
 
-    ref: S11
-    station_count: 23
     itineraries: 
       r2095512: 
         - Poppenbüttel (n3070913592)
@@ -314,9 +310,11 @@ routes:
 
 
     name: 'S11: Blankenese <=> Poppenbüttel'
-  - 
-    colour: '#a70f47'
+    station_count: 23
+    ref: S11
+    colour: '#44a325'
     type: light_rail
+  - 
     stations: 
       - Altona
       - Königstraße
@@ -334,26 +332,7 @@ routes:
       - Nettelnburg
       - Bergedorf
 
-    ref: S2
-    station_count: 15
     itineraries: 
-      r5453603: 
-        - Bergedorf (n4010276891)
-        - Nettelnburg (n3376301005)
-        - Allermöhe (n3128456543)
-        - Mittlerer Landweg (n260549776)
-        - Billwerder-Moorfleet (n3376301003)
-        - Tiefstack (n248345538)
-        - Rothenburgsort (n255882724)
-        - Berliner Tor (n2470903095)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Jungfernstieg (n3376281838)
-        - Stadthausbrücke (n300242481)
-        - Landungsbrücken (n52144713)
-        - Reeperbahn (n3376281840)
-        - Königstraße (n3376281839)
-        - Hamburg-Altona (n3357946758)
-
       r297201: 
         - Hamburg-Altona (n3357946758)
         - Königstraße (n3376281839)
@@ -371,58 +350,53 @@ routes:
         - Nettelnburg (n3376301005)
         - Bergedorf (n4010276891)
 
+      r5453603: 
+        - Bergedorf (n4010276891)
+        - Nettelnburg (n3376301005)
+        - Allermöhe (n3128456543)
+        - Mittlerer Landweg (n260549776)
+        - Billwerder-Moorfleet (n3376301003)
+        - Tiefstack (n248345538)
+        - Rothenburgsort (n255882724)
+        - Berliner Tor (n2470903095)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Jungfernstieg (n3376281838)
+        - Stadthausbrücke (n300242481)
+        - Landungsbrücken (n52144713)
+        - Reeperbahn (n3376281840)
+        - Königstraße (n3376281839)
+        - Hamburg-Altona (n3357946758)
+
 
     name: 'S2: Altona <=> Bergedorf'
-  - 
+    station_count: 15
+    ref: S2
     colour: '#a70f47'
     type: light_rail
+  - 
     stations: 
-      - Aumühle
-      - Wohltorf
-      - Reinbek
-      - Bergedorf
-      - Nettelnburg
-      - Allermöhe
-      - Mittlerer Landweg
-      - Billwerder-Moorfleet
-      - Tiefstack
-      - Rothenburgsort
-      - Berliner Tor
-      - Hamburg Hauptbahnhof (S-Bahn)
-      - Hamburg Dammtor / Universität
-      - Sternschanze
-      - Holstenstraße
-      - Diebsteich
-      - Langenfelde
-      - Stellingen
-      - Eidelstedt
       - Elbgaustraße
+      - Eidelstedt
+      - Stellingen
+      - Langenfelde
+      - Diebsteich
+      - Holstenstraße
+      - Sternschanze
+      - Hamburg Dammtor / Universität
+      - Hamburg Hauptbahnhof (S-Bahn)
+      - Berliner Tor
+      - Rothenburgsort
+      - Tiefstack
+      - Billwerder-Moorfleet
+      - Mittlerer Landweg
+      - Allermöhe
+      - Nettelnburg
+      - Bergedorf
+      - Reinbek
+      - Wohltorf
+      - Aumühle
 
-    ref: S21
-    station_count: 20
     itineraries: 
-      r2089730: 
-        - Elbgaustraße (n295998494)
-        - Eidelstedt (n3377293658)
-        - Stellingen (n3357984511)
-        - Langenfelde (n3377293659)
-        - Diebsteich (n3183841634)
-        - Holstenstraße (n3376301004)
-        - Sternschanze (Messe) (n3129651718)
-        - Hamburg Dammtor / Universität (n3255993296)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Berliner Tor (n2470903095)
-        - Rothenburgsort (n255882724)
-        - Tiefstack (n248345538)
-        - Billwerder-Moorfleet (n3376301003)
-        - Mittlerer Landweg (n260549776)
-        - Allermöhe (n3128456543)
-        - Nettelnburg (n3376301005)
-        - Bergedorf (n4010276891)
-        - Reinbek (n3376301006)
-        - Wohltorf (n1894315329)
-        - Aumühle (n3137287937)
-
       r2064636: 
         - Aumühle (n3137287937)
         - Wohltorf (n1894315329)
@@ -445,11 +419,35 @@ routes:
         - Eidelstedt (n3377293658)
         - Elbgaustraße (n295998494)
 
+      r2089730: 
+        - Elbgaustraße (n295998494)
+        - Eidelstedt (n3377293658)
+        - Stellingen (n3357984511)
+        - Langenfelde (n3377293659)
+        - Diebsteich (n3183841634)
+        - Holstenstraße (n3376301004)
+        - Sternschanze (Messe) (n3129651718)
+        - Hamburg Dammtor / Universität (n3255993296)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Berliner Tor (n2470903095)
+        - Rothenburgsort (n255882724)
+        - Tiefstack (n248345538)
+        - Billwerder-Moorfleet (n3376301003)
+        - Mittlerer Landweg (n260549776)
+        - Allermöhe (n3128456543)
+        - Nettelnburg (n3376301005)
+        - Bergedorf (n4010276891)
+        - Reinbek (n3376301006)
+        - Wohltorf (n1894315329)
+        - Aumühle (n3137287937)
+
 
     name: 'S21: Aumühle <=> Elbgaustraße'
-  - 
-    colour: '#5d1d81'
+    station_count: 20
+    ref: S21
+    colour: '#a70f47'
     type: light_rail
+  - 
     stations: 
       - Buxtehude
       - Neu Wulmstorf
@@ -475,71 +473,17 @@ routes:
       - Stellingen
       - Eidelstedt
       - Elbgaustraße
-      - Pinneberg
-      - Thesdorf
-      - Halstenbek
-      - Krupunder
-      - Neukloster
-      - Horneburg
-      - Dollern
-      - Agathenburg
       - Stade
+      - Agathenburg
+      - Dollern
+      - Horneburg
+      - Neukloster
+      - Krupunder
+      - Halstenbek
+      - Thesdorf
+      - Pinneberg
 
-    ref: S3
-    station_count: 33
     itineraries: 
-      r9345803: 
-        - Buxtehude (n3376270539)
-        - Neu Wulmstorf (n4042447335)
-        - Fischbek (n3707303125)
-        - Neugraben (n3135325888)
-        - Neuwiedenthal (n3135336140)
-        - Heimfeld (n3707303129)
-        - Harburg Rathaus (n3707303127)
-        - Harburg (n3135336139)
-        - Wilhelmsburg (n3372168828)
-        - Veddel (BallinStadt) (n3081485464)
-        - Elbbrücken (n4546145795)
-        - Hammerbrook (n3129405072)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Jungfernstieg (n3376281838)
-        - Stadthausbrücke (n300242481)
-        - Landungsbrücken (n52144713)
-        - Reeperbahn (n3376281840)
-        - Königstraße (n3376281839)
-        - Hamburg-Altona (n3357946758)
-        - Diebsteich (n3183841634)
-        - Langenfelde (n3377293659)
-        - Stellingen (n3357984511)
-        - Eidelstedt (n3377293658)
-        - Elbgaustraße (n295998494)
-
-      r9345802: 
-        - Elbgaustraße (n295998494)
-        - Eidelstedt (n3377293658)
-        - Stellingen (n3357984511)
-        - Langenfelde (n3377293659)
-        - Diebsteich (n3183841634)
-        - Hamburg-Altona (n3357946758)
-        - Königstraße (n3376281839)
-        - Reeperbahn (n3376281840)
-        - Landungsbrücken (n52144713)
-        - Stadthausbrücke (n300242481)
-        - Jungfernstieg (n3376281838)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Hammerbrook (n3129405072)
-        - Elbbrücken (n4546145795)
-        - Veddel (BallinStadt) (n3081485464)
-        - Wilhelmsburg (n3372168828)
-        - Harburg (n3135336139)
-        - Harburg Rathaus (n3707303127)
-        - Heimfeld (n3707303129)
-        - Neuwiedenthal (n3135336140)
-        - Neugraben (n3135325888)
-        - Fischbek (n3707303125)
-        - Neu Wulmstorf (n4042447335)
-        - Buxtehude (n3376270539)
-
       r5454170: 
         - Stade (n29040843)
         - Agathenburg (n305471920)
@@ -574,6 +518,58 @@ routes:
         - Halstenbek (n3707303126)
         - Thesdorf (n1617961007)
         - Pinneberg (n976776639)
+
+      r9345802: 
+        - Elbgaustraße (n295998494)
+        - Eidelstedt (n3377293658)
+        - Stellingen (n3357984511)
+        - Langenfelde (n3377293659)
+        - Diebsteich (n3183841634)
+        - Hamburg-Altona (n3357946758)
+        - Königstraße (n3376281839)
+        - Reeperbahn (n3376281840)
+        - Landungsbrücken (n52144713)
+        - Stadthausbrücke (n300242481)
+        - Jungfernstieg (n3376281838)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Hammerbrook (n3129405072)
+        - Elbbrücken (n4546145795)
+        - Veddel (BallinStadt) (n3081485464)
+        - Wilhelmsburg (n3372168828)
+        - Harburg (n3135336139)
+        - Harburg Rathaus (n3707303127)
+        - Heimfeld (n3707303129)
+        - Neuwiedenthal (n3135336140)
+        - Neugraben (n3135325888)
+        - Fischbek (n3707303125)
+        - Neu Wulmstorf (n4042447335)
+        - Buxtehude (n3376270539)
+
+      r9345803: 
+        - Buxtehude (n3376270539)
+        - Neu Wulmstorf (n4042447335)
+        - Fischbek (n3707303125)
+        - Neugraben (n3135325888)
+        - Neuwiedenthal (n3135336140)
+        - Heimfeld (n3707303129)
+        - Harburg Rathaus (n3707303127)
+        - Harburg (n3135336139)
+        - Wilhelmsburg (n3372168828)
+        - Veddel (BallinStadt) (n3081485464)
+        - Elbbrücken (n4546145795)
+        - Hammerbrook (n3129405072)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Jungfernstieg (n3376281838)
+        - Stadthausbrücke (n300242481)
+        - Landungsbrücken (n52144713)
+        - Reeperbahn (n3376281840)
+        - Königstraße (n3376281839)
+        - Hamburg-Altona (n3357946758)
+        - Diebsteich (n3183841634)
+        - Langenfelde (n3377293659)
+        - Stellingen (n3357984511)
+        - Eidelstedt (n3377293658)
+        - Elbgaustraße (n295998494)
 
       r61612: 
         - Pinneberg (n976776639)
@@ -612,36 +608,41 @@ routes:
 
 
     name: 'S3: Pinneberg <=> Stade'
-  - 
+    station_count: 33
+    ref: S3
     colour: '#5d1d81'
     type: light_rail
+  - 
     stations: 
-      - Neugraben
-      - Neuwiedenthal
-      - Heimfeld
-      - Harburg Rathaus
-      - Harburg
-      - Wilhelmsburg
-      - Veddel (BallinStadt)
-      - Elbbrücken
-      - Hammerbrook
+      - Berliner Tor
       - Hamburg Hauptbahnhof (S-Bahn)
       - Hamburg Dammtor / Universität
       - Sternschanze
       - Holstenstraße
       - Altona
-      - Berliner Tor
+      - Hammerbrook
+      - Elbbrücken
+      - Veddel (BallinStadt)
+      - Wilhelmsburg
+      - Harburg
+      - Harburg Rathaus
+      - Heimfeld
+      - Neuwiedenthal
+      - Neugraben
 
-    ref: S31
-    station_count: 15
     itineraries: 
-      r1727353: 
+      r1727350: 
         - Hamburg-Altona (n3357946758)
         - Holstenstraße (n3376301004)
         - Sternschanze (Messe) (n3129651718)
         - Hamburg Dammtor / Universität (n3255993296)
         - Hamburg Hauptbahnhof (n2459919677)
-        - Berliner Tor (n2470903095)
+        - Hammerbrook (n3129405072)
+        - Elbbrücken (n4546145795)
+        - Veddel (BallinStadt) (n3081485464)
+        - Wilhelmsburg (n3372168828)
+        - Harburg (n3135336139)
+        - Harburg Rathaus (n3707303127)
 
       r1727354: 
         - Hamburg-Altona (n3357946758)
@@ -659,34 +660,8 @@ routes:
         - Neuwiedenthal (n3135336140)
         - Neugraben (n3135325888)
 
-      r1727350: 
-        - Hamburg-Altona (n3357946758)
-        - Holstenstraße (n3376301004)
-        - Sternschanze (Messe) (n3129651718)
-        - Hamburg Dammtor / Universität (n3255993296)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Hammerbrook (n3129405072)
-        - Elbbrücken (n4546145795)
-        - Veddel (BallinStadt) (n3081485464)
-        - Wilhelmsburg (n3372168828)
-        - Harburg (n3135336139)
-        - Harburg Rathaus (n3707303127)
-
       r1727351: 
         - Berliner Tor (n2470903095)
-        - Hamburg Hauptbahnhof (n2459919677)
-        - Hamburg Dammtor / Universität (n3255993296)
-        - Sternschanze (Messe) (n3129651718)
-        - Holstenstraße (n3376301004)
-        - Hamburg-Altona (n3357946758)
-
-      r1727352: 
-        - Harburg Rathaus (n3707303127)
-        - Harburg (n3135336139)
-        - Wilhelmsburg (n3372168828)
-        - Veddel (BallinStadt) (n3081485464)
-        - Elbbrücken (n4546145795)
-        - Hammerbrook (n3129405072)
         - Hamburg Hauptbahnhof (n2459919677)
         - Hamburg Dammtor / Universität (n3255993296)
         - Sternschanze (Messe) (n3129651718)
@@ -709,6 +684,31 @@ routes:
         - Holstenstraße (n3376301004)
         - Hamburg-Altona (n3357946758)
 
+      r1727352: 
+        - Harburg Rathaus (n3707303127)
+        - Harburg (n3135336139)
+        - Wilhelmsburg (n3372168828)
+        - Veddel (BallinStadt) (n3081485464)
+        - Elbbrücken (n4546145795)
+        - Hammerbrook (n3129405072)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Hamburg Dammtor / Universität (n3255993296)
+        - Sternschanze (Messe) (n3129651718)
+        - Holstenstraße (n3376301004)
+        - Hamburg-Altona (n3357946758)
+
+      r1727353: 
+        - Hamburg-Altona (n3357946758)
+        - Holstenstraße (n3376301004)
+        - Sternschanze (Messe) (n3129651718)
+        - Hamburg Dammtor / Universität (n3255993296)
+        - Hamburg Hauptbahnhof (n2459919677)
+        - Berliner Tor (n2470903095)
+
 
     name: 'S31: Altona <=> Neugraben'
+    station_count: 15
+    ref: S31
+    colour: '#5d1d81'
+    type: light_rail
 

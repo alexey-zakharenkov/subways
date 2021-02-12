@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Acesso Norte (r7803001)
-    - Acesso Norte (r7803002)
-
 stations: 
   - Acesso Norte (n5330886492)
   - Aeroporto (w531671017)
@@ -25,10 +20,13 @@ stations:
   - Rodoviária (w116425037)
   - Tamburugy (w492578621)
 
+transfers: 
+  - 
+    - Acesso Norte (r7803001)
+    - Acesso Norte (r7803002)
+
 routes: 
   - 
-    colour: '#791714'
-    type: subway
     stations: 
       - Pirajá
       - Bom Juá
@@ -39,8 +37,6 @@ routes:
       - Campo da Pólvora
       - Lapa
 
-    ref: 1
-    station_count: 8
     itineraries: 
       r4511874: 
         - Lapa (n5800854929)
@@ -64,9 +60,11 @@ routes:
 
 
     name: Linha 1
-  - 
-    colour: '#02406f'
+    station_count: 8
+    ref: 1
+    colour: '#791714'
     type: subway
+  - 
     stations: 
       - Acesso Norte
       - Detran
@@ -81,23 +79,7 @@ routes:
       - Estação Mussurunga
       - Aeroporto
 
-    ref: 2
-    station_count: 12
     itineraries: 
-      r6771624: 
-        - Acesso Norte (n5330886492)
-        - Detran (n4313768777)
-        - Rodoviária (w116425037)
-        - Pernambués (w432297470)
-        - Imbuí (w460845823)
-        - CAB (w492578626)
-        - Pituaçu (w492578624)
-        - Flamboyant (w492578622)
-        - Tamburugy (w492578621)
-        - Bairro da Paz (w525007248)
-        - Mussurunga (w492578619)
-        - Aeroporto (w531671017)
-
       r7857257: 
         - Aeroporto (w531671017)
         - Mussurunga (w492578619)
@@ -112,6 +94,24 @@ routes:
         - Detran (n4313768777)
         - Acesso Norte (n5330886492)
 
+      r6771624: 
+        - Acesso Norte (n5330886492)
+        - Detran (n4313768777)
+        - Rodoviária (w116425037)
+        - Pernambués (w432297470)
+        - Imbuí (w460845823)
+        - CAB (w492578626)
+        - Pituaçu (w492578624)
+        - Flamboyant (w492578622)
+        - Tamburugy (w492578621)
+        - Bairro da Paz (w525007248)
+        - Mussurunga (w492578619)
+        - Aeroporto (w531671017)
+
 
     name: Linha 2
+    station_count: 12
+    ref: 2
+    colour: '#02406f'
+    type: subway
 

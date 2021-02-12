@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Aversa Centro (n1444742575)
   - Aversa Ippodromo (n1444742572)
@@ -8,19 +6,17 @@ stations:
   - Mugnano (n1483514214)
   - Piscinola (ANM) (n614419534)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ffffff'
-    type: subway
     stations: 
-      - Piscinola (ANM)
-      - Mugnano
-      - Giugliano
-      - Aversa Ippodromo
       - Aversa Centro
+      - Aversa Ippodromo
+      - Giugliano
+      - Mugnano
+      - Piscinola (ANM)
 
-    ref: Arcobaleno
-    station_count: 5
     itineraries: 
       r1815018: 
         - Piscinola (ANM) (n614419534)
@@ -38,4 +34,8 @@ routes:
 
 
     name: Linea Arcobaleno
+    station_count: 5
+    ref: Arcobaleno
+    colour: '#ffffff'
+    type: subway
 

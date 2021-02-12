@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Centro Olímpico Juan Pablo Duarte (r7730099)
-    - Centro Olímpico Juan Pablo Duarte (r7730100)
-
 stations: 
   - Amín Abel Hasbún (n2382433212)
   - Casandra Damirón (n2382351269)
@@ -19,6 +14,7 @@ stations:
   - Gregorio Urbano Gilbert Suero (n4042570077)
   - Hermanas Mirabal (n2385996177)
   - Horacio Vásquez (n5228521725)
+  - Joaquín Balaguer (n2382356033)
   - Juan Pablo Duarte (n2324959085)
   - Juan Pablo Duarte (n5226305563)
   - Juan Ulises García Saleta (n309520913)
@@ -39,30 +35,50 @@ stations:
   - Trina de Moya de Vásquez (w541801797)
   - Ulises Fransico Espalliat (n4119588420)
 
+transfers: 
+  - 
+    - Centro Olímpico Juan Pablo Duarte (r7730099)
+    - Centro Olímpico Juan Pablo Duarte (r7730100)
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: subway
     stations: 
-      - Centro De Los Héroes
-      - Francisco Alberto Caamaño Deñó
-      - Amín Abel Hasbún
-      - Casandra Damirón
-      - Profesor Juan Bosch
-      - Centro Olímpico Juan Pablo Duarte
-      - Peña Batlle
-      - Pedro Livio Cedeño
-      - Los Taínos
-      - Máximo Gómez
-      - Hermanas Mirabal
-      - Peña Gómez
-      - Gregorio Luperón
-      - Gregorio Urbano Gilbert Suero
       - Mama Tingò
+      - Gregorio Urbano Gilbert Suero
+      - Gregorio Luperón
+      - Peña Gómez
+      - Hermanas Mirabal
+      - Máximo Gómez
+      - Los Taínos
+      - Pedro Livio Cedeño
+      - Peña Batlle
+      - Centro Olímpico Juan Pablo Duarte
+      - Profesor Juan Bosch
+      - Casandra Damirón
+      - Joaquín Balaguer
+      - Amín Abel Hasbún
+      - Francisco Alberto Caamaño Deñó
+      - Centro De Los Héroes
 
-    ref: 1
-    station_count: 15
     itineraries: 
+      r7734059: 
+        - Centro de los Héroes (n2382875701)
+        - Francisco Alberto Caamaño Deñó (n2382875707)
+        - Amín Abel Hasbún (n2382433212)
+        - Joaquín Balaguer (n2382356033)
+        - Casandra Damirón (n2382351269)
+        - Profesor Juan Bosch (n2382351268)
+        - Juan Pablo Duarte (n2324959085)
+        - Peña Batlle (n312855286)
+        - Pedro Livio Cedeño (n312855983)
+        - Los Taínos (n312855599)
+        - Máximo Gómez (n2104800000)
+        - Hermanas Mirabal (n2385996177)
+        - Peña Gómez (n2385996813)
+        - Gregorio Luperón (n2104800239)
+        - Gregorio Urbano Gilbert Suero (n4042570077)
+        - Mamá Tingó (n2104800307)
+
       r1325782: 
         - Mamá Tingó (n2104800307)
         - Gregorio Urbano Gilbert Suero (n4042570077)
@@ -76,32 +92,18 @@ routes:
         - Juan Pablo Duarte (n2324959085)
         - Profesor Juan Bosch (n2382351268)
         - Casandra Damirón (n2382351269)
+        - Joaquín Balaguer (n2382356033)
         - Amín Abel Hasbún (n2382433212)
         - Francisco Alberto Caamaño Deñó (n2382875707)
         - Centro de los Héroes (n2382875701)
-
-      r7734059: 
-        - Centro de los Héroes (n2382875701)
-        - Francisco Alberto Caamaño Deñó (n2382875707)
-        - Amín Abel Hasbún (n2382433212)
-        - Casandra Damirón (n2382351269)
-        - Profesor Juan Bosch (n2382351268)
-        - Juan Pablo Duarte (n2324959085)
-        - Peña Batlle (n312855286)
-        - Pedro Livio Cedeño (n312855983)
-        - Los Taínos (n312855599)
-        - Máximo Gómez (n2104800000)
-        - Hermanas Mirabal (n2385996177)
-        - Peña Gómez (n2385996813)
-        - Gregorio Luperón (n2104800239)
-        - Gregorio Urbano Gilbert Suero (n4042570077)
-        - Mamá Tingó (n2104800307)
 
 
     name: Línea 1
-  - 
-    colour: '#ff0000'
+    station_count: 16
+    ref: 1
+    colour: '#0000ff'
     type: subway
+  - 
     stations: 
       - Concepción Bona
       - Trina de Moya de Vásquez
@@ -122,29 +124,7 @@ routes:
       - Pedro Francisco Bonó
       - María Móntez
 
-    ref: 2
-    station_count: 18
     itineraries: 
-      r7734058: 
-        - Concepción Bona (w541799754)
-        - Trina de Moya de Vásquez (w541801797)
-        - Rosa Duarte (n6476494996)
-        - Ercilia Pepín (n3723270045)
-        - Eduardo Brito (n2324963154)
-        - Manuel de Jesús Abreu Galván (n2324963155)
-        - Horacio Vásquez (n5228521725)
-        - Ramón Cáceres (n2324962072)
-        - Mauricio Báez (n2324959692)
-        - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
-        - Juan Pablo Duarte (n5226305563)
-        - Juan Ulises García Saleta (n309520913)
-        - 'Freddy Beras - Goico (n2324955715)'
-        - Pedro Mir (n5226305553)
-        - Ulises Fransico Espalliat (n4119588420)
-        - Francisco Gregorio Billini (n4119588390)
-        - Pedro Francisco Bonó (n4119545007)
-        - María Móntez (n2324956457)
-
       r7730098: 
         - María Móntez (n2324956457)
         - Pedro Francisco Bonó (n4119545007)
@@ -165,6 +145,30 @@ routes:
         - Trina de Moya de Vásquez (w541801797)
         - Concepción Bona (w541799754)
 
+      r7734058: 
+        - Concepción Bona (w541799754)
+        - Trina de Moya de Vásquez (w541801797)
+        - Rosa Duarte (n6476494996)
+        - Ercilia Pepín (n3723270045)
+        - Eduardo Brito (n2324963154)
+        - Manuel de Jesús Abreu Galván (n2324963155)
+        - Horacio Vásquez (n5228521725)
+        - Ramón Cáceres (n2324962072)
+        - Mauricio Báez (n2324959692)
+        - Coronel Rafael Tomás Fernández Domínguez (n2324959619)
+        - Juan Pablo Duarte (n5226305563)
+        - Juan Ulises García Saleta (n309520913)
+        - 'Freddy Beras - Goico (n2324955715)'
+        - Pedro Mir (n5226305553)
+        - Ulises Fransico Espalliat (n4119588420)
+        - Francisco Gregorio Billini (n4119588390)
+        - Pedro Francisco Bonó (n4119545007)
+        - María Móntez (n2324956457)
+
 
     name: Línea 2
+    station_count: 18
+    ref: 2
+    colour: '#ff0000'
+    type: subway
 

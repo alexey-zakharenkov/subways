@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - ABC (n625719259)
   - Bebedouro (n5807457166)
@@ -19,10 +17,10 @@ stations:
   - Sururu de Capote (n5807457160)
   - Utinga (n5809605747)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: light_rail
     stations: 
       - Lourenço de Albuquerque
       - Rio Largo
@@ -41,8 +39,6 @@ routes:
       - Maceió
       - Jaraguá
 
-    ref: CBTU
-    station_count: 16
     itineraries: 
       r6636197: 
         - Jaraguá (n6392484813)
@@ -82,4 +78,8 @@ routes:
 
 
     name: VLT de Maceió
+    station_count: 16
+    ref: CBTU
+    colour: '#0000ff'
+    type: light_rail
 

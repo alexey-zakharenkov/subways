@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - いよ立花 (n3634551862)
   - 三津 (n3634554436)
@@ -38,29 +36,27 @@ stations:
   - 高浜 (n265041360)
   - 鷹ノ子 (n3634554452)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#00baf1'
-    type: train
     stations: 
-      - 松山市駅
-      - 石手川公園
-      - いよ立花
-      - 福音寺
-      - 北久米
-      - 久米
-      - 鷹ノ子
-      - 平井
-      - 梅本
-      - 牛渕団地前
-      - 牛渕
-      - 田窪
-      - 見奈良
-      - 愛大医学部南口
       - 横河原
+      - 愛大医学部南口
+      - 見奈良
+      - 田窪
+      - 牛渕
+      - 牛渕団地前
+      - 梅本
+      - 平井
+      - 鷹ノ子
+      - 久米
+      - 北久米
+      - 福音寺
+      - いよ立花
+      - 石手川公園
+      - 松山市駅
 
-    ref: 横河原線
-    station_count: 15
     itineraries: 
       r2309682: 
         - 松山市 (n3598694803)
@@ -98,9 +94,11 @@ routes:
 
 
     name: 横河原線
-  - 
-    colour: '#f36e21'
+    station_count: 15
+    ref: 横河原線
+    colour: '#00baf1'
     type: train
+  - 
     stations: 
       - 郡中港
       - 郡中
@@ -115,8 +113,6 @@ routes:
       - 土橋
       - 松山市駅
 
-    ref: 郡中線
-    station_count: 12
     itineraries: 
       r5342280: 
         - 郡中港 (n3637536528)
@@ -148,9 +144,11 @@ routes:
 
 
     name: 郡中線
-  - 
-    colour: '#8bc63e'
+    station_count: 12
+    ref: 郡中線
+    colour: '#f36e21'
     type: train
+  - 
     stations: 
       - 松山市駅
       - 大手町
@@ -163,8 +161,6 @@ routes:
       - 梅津寺
       - 高浜
 
-    ref: 高浜線
-    station_count: 10
     itineraries: 
       r2309774: 
         - 高浜 (n265041360)
@@ -192,4 +188,8 @@ routes:
 
 
     name: 高浜線
+    station_count: 10
+    ref: 高浜線
+    colour: '#8bc63e'
+    type: train
 

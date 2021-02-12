@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Allapattah (n462648893)
   - Brickell (n462517397)
@@ -26,10 +24,10 @@ stations:
   - University (n462347481)
   - Vizcaya (n462429749)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#62bb46'
-    type: subway
     stations: 
       - Palmetto (Metrorail)
       - Okeechobee (Metrorail)
@@ -54,33 +52,7 @@ routes:
       - Dadeland North (Metrorail)
       - Dadeland South (Metrorail)
 
-    ref: Green
-    station_count: 22
     itineraries: 
-      r4499117: 
-        - Palmetto (n462721823)
-        - Okeechobee (n462693507)
-        - Hialeah (n462691978)
-        - Tri-Rail Transfer (n462688749)
-        - Northside (n462685985)
-        - Dr. Martin Luther King, Jr. (n462678359)
-        - Brownsville (n462671720)
-        - Earlington Heights (n462658627)
-        - Allapattah (n462648893)
-        - Santa Clara (n462639220)
-        - Civic Center (n462636623)
-        - Culmer (n462625340)
-        - Historic Overtown/Lyric Theatre (n462599402)
-        - Government Center (n6612182883)
-        - Brickell (n462517397)
-        - Vizcaya (n462429749)
-        - Coconut Grove (n462354527)
-        - Douglas Road (n462351565)
-        - University (n462347481)
-        - South Miami (n462341030)
-        - Dadeland North (n462237456)
-        - Dadeland South (n462234896)
-
       r7924526: 
         - Dadeland South (n462234896)
         - Dadeland North (n462237456)
@@ -105,31 +77,55 @@ routes:
         - Okeechobee (n462693507)
         - Palmetto (n462721823)
 
+      r4499117: 
+        - Palmetto (n462721823)
+        - Okeechobee (n462693507)
+        - Hialeah (n462691978)
+        - Tri-Rail Transfer (n462688749)
+        - Northside (n462685985)
+        - Dr. Martin Luther King, Jr. (n462678359)
+        - Brownsville (n462671720)
+        - Earlington Heights (n462658627)
+        - Allapattah (n462648893)
+        - Santa Clara (n462639220)
+        - Civic Center (n462636623)
+        - Culmer (n462625340)
+        - Historic Overtown/Lyric Theatre (n462599402)
+        - Government Center (n6612182883)
+        - Brickell (n462517397)
+        - Vizcaya (n462429749)
+        - Coconut Grove (n462354527)
+        - Douglas Road (n462351565)
+        - University (n462347481)
+        - South Miami (n462341030)
+        - Dadeland North (n462237456)
+        - Dadeland South (n462234896)
+
 
     name: Green Line
-  - 
-    colour: '#f78f1e'
+    station_count: 22
+    ref: Green
+    colour: '#62bb46'
     type: subway
+  - 
     stations: 
-      - Dadeland South (Metrorail)
-      - Dadeland North (Metrorail)
-      - South Miami (Metrorail)
-      - University (Metrorail)
-      - Douglas Road (Metrorail)
-      - Coconut Grove (Metrorail)
-      - Vizcaya (Metrorail)
-      - Brickell (Metrorail)
-      - Government Center (Metrorail)
-      - Historic Overtown/Lyric Theatre
-      - Culmer (Metrorail)
-      - Civic Center (Metrorail)
-      - Santa Clara (Metrorail)
-      - Allapattah (Metrorail)
-      - Earlington Heights (Metrorail)
       - Miami International Airport
+      - Earlington Heights (Metrorail)
+      - Allapattah (Metrorail)
+      - Santa Clara (Metrorail)
+      - Civic Center (Metrorail)
+      - Culmer (Metrorail)
+      - Historic Overtown/Lyric Theatre
+      - Government Center (Metrorail)
+      - Brickell (Metrorail)
+      - Vizcaya (Metrorail)
+      - Coconut Grove (Metrorail)
+      - Douglas Road (Metrorail)
+      - University (Metrorail)
+      - South Miami (Metrorail)
+      - Dadeland North (Metrorail)
+      - Dadeland South (Metrorail)
 
-    ref: Orange
-    station_count: 16
     itineraries: 
       r7924525: 
         - Miami International Airport (n6416386201)
@@ -169,4 +165,8 @@ routes:
 
 
     name: Orange Line
+    station_count: 16
+    ref: Orange
+    colour: '#f78f1e'
+    type: subway
 

@@ -1,59 +1,5 @@
 
-transfers: 
-  - 
-    - Admiralty (Tsuen Wan) (r9748832)
-    - 金鐘 Admiralty (r8000624)
-  - 
-    - 三聖 Sam Shing (r6722037)
-    - 三聖 Sam Shing (r9788929)
-  - 
-    - 九龍塘 Kowloon Tong (r6158247)
-    - 九龍塘 Kowloon Tong (r9774355)
-  - 
-    - 元朗 Yuen Long (r6722059)
-    - 元朗 Yuen Long (r6741805)
-  - 
-    - 兆康 Siu Hong (r6558474)
-    - 兆康 Siu Hong (r6741802)
-  - 
-    - 北角 North Point (將軍澳綫 Tseung Kwan O Line) (r6715114)
-    - 北角 North Point (港鐵港島綫 MTR Island Line) (r9807656)
-  - 
-    - 南昌 Nam Cheong (r9774581)
-    - 南昌 Nam Cheong (r9774582)
-  - 
-    - 天水圍 Tin Shui Wai (r6717962)
-    - 天水圍 Tin Shui Wai (r6741803)
-  - 
-    - 尖東 East Tsim Sha Tsui (r9775782)
-    - 尖沙咀 Tsim Sha Tsui (r9363215)
-  - 
-    - 屯門 Tuen Mun (r6722056)
-    - 屯門 Tuen Mun (r6741801)
-  - 
-    - 屯門碼頭 Tuen Mun Ferry Pier (r6558477)
-    - 屯門碼頭 Tuen Mun Ferry Pier (r9788924)
-  - 
-    - 欣澳 Sunny Bay (Disneyland) (r9791066)
-    - 欣澳 Sunny Bay (r2946281)
-  - 
-    - 油塘 Yau Tong (Left) (r9791057)
-    - 油塘 Yau Tong (Right) (r9774599)
-  - 
-    - 田景 Tin King (halt) (r9791034)
-    - 田景 Tin King (r6721975)
-  - 
-    - 美孚 Mei Foo (r5301342)
-    - 美孚 Mei Foo (r9774338)
-  - 
-    - 鑽石山 Diamond Hill (r10713674)
-    - 鑽石山 Diamond Hill (r6502612)
-  - 
-    - 鰂魚涌 Quarry Bay (r6715113)
-    - 鰂魚涌 Quarry Bay (r9788597)
-
 stations: 
-  - '? (w228655424)'
   - 三聖 Sam Shing (n6606455995)
   - 上水 Sheung Shui (n5441594278)
   - 上環 Sheung Wan (w248789530)
@@ -220,31 +166,80 @@ stations:
   - 黃竹坑 Wong Chuk Hang (w302998785)
   - 龍門 Lung Mun (n6606442390)
 
+transfers: 
+  - 
+    - Admiralty (Tsuen Wan) (r9748832)
+    - 金鐘 Admiralty (r8000624)
+  - 
+    - 三聖 Sam Shing (r6722037)
+    - 三聖 Sam Shing (r9788929)
+  - 
+    - 九龍塘 Kowloon Tong (r6158247)
+    - 九龍塘 Kowloon Tong (r9774355)
+  - 
+    - 元朗 Yuen Long (r6722059)
+    - 元朗 Yuen Long (r6741805)
+  - 
+    - 兆康 Siu Hong (r6558474)
+    - 兆康 Siu Hong (r6741802)
+  - 
+    - 北角 North Point (將軍澳綫 Tseung Kwan O Line) (r6715114)
+    - 北角 North Point (港鐵港島綫 MTR Island Line) (r9807656)
+  - 
+    - 南昌 Nam Cheong (r9774581)
+    - 南昌 Nam Cheong (r9774582)
+  - 
+    - 天水圍 Tin Shui Wai (r6717962)
+    - 天水圍 Tin Shui Wai (r6741803)
+  - 
+    - 尖東 East Tsim Sha Tsui (r9775782)
+    - 尖沙咀 Tsim Sha Tsui (r9363215)
+  - 
+    - 屯門 Tuen Mun (r6722056)
+    - 屯門 Tuen Mun (r6741801)
+  - 
+    - 屯門碼頭 Tuen Mun Ferry Pier (r6558477)
+    - 屯門碼頭 Tuen Mun Ferry Pier (r9788924)
+  - 
+    - 欣澳 Sunny Bay (Disneyland) (r9791066)
+    - 欣澳 Sunny Bay (r2946281)
+  - 
+    - 油塘 Yau Tong (Left) (r9791057)
+    - 油塘 Yau Tong (Right) (r9774599)
+  - 
+    - 田景 Tin King (halt) (r9791034)
+    - 田景 Tin King (r6721975)
+  - 
+    - 美孚 Mei Foo (r5301342)
+    - 美孚 Mei Foo (r9774338)
+  - 
+    - 鑽石山 Diamond Hill (r10713674)
+    - 鑽石山 Diamond Hill (r6502612)
+  - 
+    - 鰂魚涌 Quarry Bay (r6715113)
+    - 鰂魚涌 Quarry Bay (r9788597)
+
 routes: 
   - 
-    colour: '#e6180a'
-    type: light_rail
     stations: 
-      - 兆康 Siu Hong
-      - 青松 Ching Chung
-      - 建生 Kin Sang
-      - 田景 Tin King
-      - 良景 Leung King
-      - 新圍 San Wai
-      - 石排 Shek Pai
-      - 鳴琴 Ming Kum
-      - 建安 Kin On
-      - 屯門 Tuen Mun
-      - 市中心 Town Centre
-      - 安定 On Ting
-      - 兆麟 Siu Lun
       - 三聖 Sam Shing
+      - 兆麟 Siu Lun
+      - 安定 On Ting
+      - 市中心 Town Centre
+      - 屯門 Tuen Mun
+      - 建安 Kin On
       - 山景 (南) Shan King (South)
       - 山景 (北) Shan King (North)
+      - 石排 Shek Pai
+      - 新圍 San Wai
+      - 良景 Leung King
+      - 田景 Tin King
+      - 建生 Kin Sang
+      - 青松 Ching Chung
       - 麒麟 Kei Lun
+      - 兆康 Siu Hong
+      - 鳴琴 Ming Kum
 
-    ref: 505
-    station_count: 17
     itineraries: 
       r3515354: 
         - 兆康 Siu Hong (n6635604450)
@@ -282,48 +277,30 @@ routes:
 
 
     name: 輕鐵505綫 Light Rail 505
-  - 
-    colour: '#1a8539'
+    station_count: 17
+    ref: 505
+    colour: '#e6180a'
     type: light_rail
+  - 
     stations: 
-      - 田景 Tin King (halt)
-      - 良景 Leung King
-      - 新圍 San Wai
-      - 大興 (北) Tai Hing (North)
-      - 大興 (南) Tai Hing (South)
-      - 銀圍 Ngan Wai
-      - 蔡意橋 Choy Yee Bridge
-      - 河田 Ho Tin
-      - 屯門 Tuen Mun
-      - 市中心 Town Centre
-      - 安定 On Ting
-      - 兆麟 Siu Lun
-      - 豐景園 Goodview Garden
-      - 屯門泳池 Tuen Mun Swimming Pool
-      - 兆禧 Siu Hei
       - 屯門碼頭 Tuen Mun Ferry Pier
+      - 兆禧 Siu Hei
+      - 屯門泳池 Tuen Mun Swimming Pool
+      - 豐景園 Goodview Garden
+      - 兆麟 Siu Lun
+      - 安定 On Ting
+      - 市中心 Town Centre
+      - 屯門 Tuen Mun
+      - 河田 Ho Tin
+      - 蔡意橋 Choy Yee Bridge
+      - 銀圍 Ngan Wai
+      - 大興 (南) Tai Hing (South)
+      - 大興 (北) Tai Hing (North)
+      - 新圍 San Wai
+      - 良景 Leung King
+      - 田景 Tin King (halt)
 
-    ref: 507
-    station_count: 16
     itineraries: 
-      r3679916: 
-        - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
-        - 兆禧 Siu Hei (n6606455993)
-        - 屯門泳池 Tuen Mun Swimming Pool (n6606455994)
-        - 豐景園 Goodview Garden (n6606417087)
-        - 兆麟 Siu Lun (n6606417088)
-        - 安定 On Ting (n6606426426)
-        - 市中心 Town Centre (n6606421452)
-        - 屯門 Tuen Mun (n6606421453)
-        - 河田 Ho Tin (n6606477010)
-        - 蔡意橋 Choy Yee Bridge (n6606477009)
-        - 銀圍 Ngan Wai (n6606477008)
-        - 大興 (南) Tai Hing (South) (n6606477011)
-        - 大興 (北) Tai Hing (North) (n6606477012)
-        - 新圍 San Wai (n6606455882)
-        - 良景 Leung King (n6606455883)
-        - 田景 Tin King (n6606455884)
-
       r6481316: 
         - 田景 Tin King (n6606455884)
         - 良景 Leung King (n6606455883)
@@ -342,70 +319,60 @@ routes:
         - 兆禧 Siu Hei (n6606455993)
         - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
 
+      r3679916: 
+        - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
+        - 兆禧 Siu Hei (n6606455993)
+        - 屯門泳池 Tuen Mun Swimming Pool (n6606455994)
+        - 豐景園 Goodview Garden (n6606417087)
+        - 兆麟 Siu Lun (n6606417088)
+        - 安定 On Ting (n6606426426)
+        - 市中心 Town Centre (n6606421452)
+        - 屯門 Tuen Mun (n6606421453)
+        - 河田 Ho Tin (n6606477010)
+        - 蔡意橋 Choy Yee Bridge (n6606477009)
+        - 銀圍 Ngan Wai (n6606477008)
+        - 大興 (南) Tai Hing (South) (n6606477011)
+        - 大興 (北) Tai Hing (North) (n6606477012)
+        - 新圍 San Wai (n6606455882)
+        - 良景 Leung King (n6606455883)
+        - 田景 Tin King (n6606455884)
+
 
     name: 輕鐵507綫 Light Rail 507
-  - 
-    colour: '#8d3219'
+    station_count: 16
+    ref: 507
+    colour: '#1a8539'
     type: light_rail
+  - 
     stations: 
-      - 元朗 Yuen Long
-      - 大棠路 Tai Tong Road
-      - 康樂路 Hong Lok Road
-      - 豐年路 Fung Nin Road
-      - 水邊圍 Shui Pin Wai
-      - 屏山 Ping Shan
-      - 塘坊村 Tong Fong Tsuen
-      - 洪水橋 Hung Shui Kiu
-      - 鍾屋村 Chung Uk Tsuen
-      - 泥圍 Nai Wai
-      - 藍地 Lam Tei
-      - 兆康 Siu Hong
-      - 屯門醫院 Tuen Mun Hospital
-      - 澤豐 Affluence
-      - 銀圍 Ngan Wai
-      - 大興 (南) Tai Hing (South)
-      - 大興 (北) Tai Hing (North)
-      - 石排 Shek Pai
-      - 鳴琴 Ming Kum
-      - 青雲 Tsing Wun
-      - 青山村 Tsing Shan Tsuen
-      - 龍門 Lung Mun
-      - 輕鐵車廠 Light Rail Depot
-      - 蝴蝶 Butterfly
-      - 美樂 Melody Garden
       - 屯門碼頭 Tuen Mun Ferry Pier
+      - 美樂 Melody Garden
+      - 蝴蝶 Butterfly
+      - 輕鐵車廠 Light Rail Depot
+      - 龍門 Lung Mun
+      - 青山村 Tsing Shan Tsuen
+      - 青雲 Tsing Wun
+      - 鳴琴 Ming Kum
+      - 石排 Shek Pai
+      - 大興 (北) Tai Hing (North)
+      - 大興 (南) Tai Hing (South)
+      - 銀圍 Ngan Wai
+      - 澤豐 Affluence
+      - 屯門醫院 Tuen Mun Hospital
+      - 兆康 Siu Hong
+      - 藍地 Lam Tei
+      - 泥圍 Nai Wai
+      - 鍾屋村 Chung Uk Tsuen
+      - 洪水橋 Hung Shui Kiu
+      - 塘坊村 Tong Fong Tsuen
+      - 屏山 Ping Shan
+      - 水邊圍 Shui Pin Wai
+      - 豐年路 Fung Nin Road
+      - 康樂路 Hong Lok Road
+      - 大棠路 Tai Tong Road
+      - 元朗 Yuen Long
 
-    ref: 610
-    station_count: 26
     itineraries: 
-      r3680161: 
-        - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
-        - 美樂 Melody Garden (n6606442393)
-        - 蝴蝶 Butterfly (n6606442392)
-        - 輕鐵車廠 Light Rail Depot (n6606442391)
-        - 龍門 Lung Mun (n6606442390)
-        - 青山村 Tsing Shan Tsuen (n6606442389)
-        - 青雲 Tsing Wun (n6606442388)
-        - 鳴琴 Ming Kum (n6610085346)
-        - 石排 Shek Pai (n6606477013)
-        - 大興 (北) Tai Hing (North) (n6606477012)
-        - 大興 (南) Tai Hing (South) (n6606477011)
-        - 銀圍 Ngan Wai (n6606477008)
-        - 澤豐 Affluence (n6610162152)
-        - 屯門醫院 Tuen Mun Hospital (n6606477007)
-        - 兆康 Siu Hong (n6635604450)
-        - 藍地 Lam Tei (n6606556981)
-        - 泥圍 Nai Wai (n6606556982)
-        - 鍾屋村 Chung Uk Tsuen (n6606555768)
-        - 洪水橋 Hung Shui Kiu (n6606515524)
-        - 塘坊村 Tong Fong Tsuen (n6606470984)
-        - 屏山 Ping Shan (n6606470983)
-        - 水邊圍 Shui Pin Wai (n6606470982)
-        - 豐年路 Fung Nin Road (n6606470981)
-        - 康樂路 Hong Lok Road (n6606470980)
-        - 大棠路 Tai Tong Road (n6606470979)
-        - 元朗 Yuen Long (n6587699060)
-
       r6481420: 
         - 元朗 Yuen Long (n6587699060)
         - 大棠路 Tai Tong Road (n6606470979)
@@ -434,39 +401,67 @@ routes:
         - 美樂 Melody Garden (n6606442393)
         - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
 
+      r3680161: 
+        - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
+        - 美樂 Melody Garden (n6606442393)
+        - 蝴蝶 Butterfly (n6606442392)
+        - 輕鐵車廠 Light Rail Depot (n6606442391)
+        - 龍門 Lung Mun (n6606442390)
+        - 青山村 Tsing Shan Tsuen (n6606442389)
+        - 青雲 Tsing Wun (n6606442388)
+        - 鳴琴 Ming Kum (n6610085346)
+        - 石排 Shek Pai (n6606477013)
+        - 大興 (北) Tai Hing (North) (n6606477012)
+        - 大興 (南) Tai Hing (South) (n6606477011)
+        - 銀圍 Ngan Wai (n6606477008)
+        - 澤豐 Affluence (n6610162152)
+        - 屯門醫院 Tuen Mun Hospital (n6606477007)
+        - 兆康 Siu Hong (n6635604450)
+        - 藍地 Lam Tei (n6606556981)
+        - 泥圍 Nai Wai (n6606556982)
+        - 鍾屋村 Chung Uk Tsuen (n6606555768)
+        - 洪水橋 Hung Shui Kiu (n6606515524)
+        - 塘坊村 Tong Fong Tsuen (n6606470984)
+        - 屏山 Ping Shan (n6606470983)
+        - 水邊圍 Shui Pin Wai (n6606470982)
+        - 豐年路 Fung Nin Road (n6606470981)
+        - 康樂路 Hong Lok Road (n6606470980)
+        - 大棠路 Tai Tong Road (n6606470979)
+        - 元朗 Yuen Long (n6587699060)
+
 
     name: 輕鐵610綫 Light Rail 610
-  - 
-    colour: '#44adc3'
+    station_count: 26
+    ref: 610
+    colour: '#8d3219'
     type: light_rail
+  - 
     stations: 
-      - 元朗 Yuen Long
-      - 大棠路 Tai Tong Road
-      - 康樂路 Hong Lok Road
-      - 豐年路 Fung Nin Road
-      - 水邊圍 Shui Pin Wai
-      - 屏山 Ping Shan
-      - 塘坊村 Tong Fong Tsuen
-      - 洪水橋 Hung Shui Kiu
-      - 鍾屋村 Chung Uk Tsuen
-      - 泥圍 Nai Wai
-      - 藍地 Lam Tei
-      - 兆康 Siu Hong
-      - 鳳地 Fung Tei
-      - 景峰 Prime View
-      - 新墟 San Hui
-      - 何福堂 Hoh Fuk Tong
-      - 杯渡 Pui To
-      - 市中心 Town Centre
-      - 安定 On Ting
-      - 兆麟 Siu Lun
-      - 豐景園 Goodview Garden
-      - 屯門泳池 Tuen Mun Swimming Pool
-      - 兆禧 Siu Hei
       - 屯門碼頭 Tuen Mun Ferry Pier
+      - 兆禧 Siu Hei
+      - 屯門泳池 Tuen Mun Swimming Pool
+      - 豐景園 Goodview Garden
+      - 兆麟 Siu Lun
+      - 安定 On Ting
+      - 市中心 Town Centre
+      - 杯渡 Pui To
+      - 何福堂 Hoh Fuk Tong
+      - 新墟 San Hui
+      - 景峰 Prime View
+      - 鳳地 Fung Tei
+      - 兆康 Siu Hong
+      - 藍地 Lam Tei
+      - 泥圍 Nai Wai
+      - 鍾屋村 Chung Uk Tsuen
+      - 洪水橋 Hung Shui Kiu
+      - 塘坊村 Tong Fong Tsuen
+      - 屏山 Ping Shan
+      - 水邊圍 Shui Pin Wai
+      - 豐年路 Fung Nin Road
+      - 康樂路 Hong Lok Road
+      - 大棠路 Tai Tong Road
+      - 元朗 Yuen Long
 
-    ref: 614
-    station_count: 24
     itineraries: 
       r6485194: 
         - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
@@ -522,26 +517,26 @@ routes:
 
 
     name: 輕鐵614綫 Light Rail 614
-  - 
-    colour: '#f4858d'
+    station_count: 24
+    ref: 614
+    colour: '#44adc3'
     type: light_rail
+  - 
     stations: 
-      - 兆康 Siu Hong
-      - 鳳地 Fung Tei
-      - 景峰 Prime View
-      - 新墟 San Hui
-      - 何福堂 Hoh Fuk Tong
-      - 杯渡 Pui To
-      - 市中心 Town Centre
-      - 安定 On Ting
-      - 兆麟 Siu Lun
-      - 豐景園 Goodview Garden
-      - 屯門泳池 Tuen Mun Swimming Pool
-      - 兆禧 Siu Hei
       - 屯門碼頭 Tuen Mun Ferry Pier
+      - 兆禧 Siu Hei
+      - 屯門泳池 Tuen Mun Swimming Pool
+      - 豐景園 Goodview Garden
+      - 兆麟 Siu Lun
+      - 安定 On Ting
+      - 市中心 Town Centre
+      - 杯渡 Pui To
+      - 何福堂 Hoh Fuk Tong
+      - 新墟 San Hui
+      - 景峰 Prime View
+      - 鳳地 Fung Tei
+      - 兆康 Siu Hong
 
-    ref: 614P
-    station_count: 13
     itineraries: 
       r5955256: 
         - 兆康 Siu Hong (n6635604450)
@@ -575,9 +570,11 @@ routes:
 
 
     name: 輕鐵614P綫 Light Rail 614P
-  - 
-    colour: '#f4e619'
+    station_count: 13
+    ref: 614P
+    colour: '#f4858d'
     type: light_rail
+  - 
     stations: 
       - 元朗 Yuen Long
       - 大棠路 Tai Tong Road
@@ -606,8 +603,6 @@ routes:
       - 美樂 Melody Garden
       - 屯門碼頭 Tuen Mun Ferry Pier
 
-    ref: 615
-    station_count: 26
     itineraries: 
       r6481434: 
         - 屯門碼頭 Tuen Mun Ferry Pier (n6606393445)
@@ -667,29 +662,29 @@ routes:
 
 
     name: 輕鐵615綫 Light Rail 615
-  - 
-    colour: '#006684'
+    station_count: 26
+    ref: 615
+    colour: '#f4e619'
     type: light_rail
+  - 
     stations: 
-      - 兆康 Siu Hong
-      - 麒麟 Kei Lun
-      - 青松 Ching Chung
-      - 建生 Kin Sang
-      - 田景 Tin King
-      - 良景 Leung King
-      - 新圍 San Wai
-      - 石排 Shek Pai
-      - 鳴琴 Ming Kum
-      - 青雲 Tsing Wun
-      - 青山村 Tsing Shan Tsuen
-      - 龍門 Lung Mun
-      - 輕鐵車廠 Light Rail Depot
-      - 蝴蝶 Butterfly
-      - 美樂 Melody Garden
       - 屯門碼頭 Tuen Mun Ferry Pier
+      - 美樂 Melody Garden
+      - 蝴蝶 Butterfly
+      - 輕鐵車廠 Light Rail Depot
+      - 龍門 Lung Mun
+      - 青山村 Tsing Shan Tsuen
+      - 青雲 Tsing Wun
+      - 鳴琴 Ming Kum
+      - 石排 Shek Pai
+      - 新圍 San Wai
+      - 良景 Leung King
+      - 田景 Tin King
+      - 建生 Kin Sang
+      - 青松 Ching Chung
+      - 麒麟 Kei Lun
+      - 兆康 Siu Hong
 
-    ref: 615P
-    station_count: 16
     itineraries: 
       r5955258: 
         - 兆康 Siu Hong (n6635604450)
@@ -729,9 +724,11 @@ routes:
 
 
     name: 輕鐵615P綫 Light Rail 615P
-  - 
-    colour: '#8cc022'
+    station_count: 16
+    ref: 615P
+    colour: '#006684'
     type: light_rail
+  - 
     stations: 
       - 天水圍 Tin Shui Wai
       - 天慈 Tin Tsz
@@ -749,8 +746,6 @@ routes:
       - 樂湖 Locwood
       - 天耀 Tin Yiu
 
-    ref: 705
-    station_count: 15
     itineraries: 
       r2941692: 
         - 天水圍 Tin Shui Wai (n6587695601)
@@ -772,9 +767,11 @@ routes:
 
 
     name: 輕鐵705綫 Light Rail 705
-  - 
-    colour: '#ba85bb'
+    station_count: 15
+    ref: 705
+    colour: '#8cc022'
     type: light_rail
+  - 
     stations: 
       - 天水圍 Tin Shui Wai
       - 天耀 Tin Yiu
@@ -792,8 +789,6 @@ routes:
       - 天湖 Tin Wu
       - 天慈 Tin Tsz
 
-    ref: 706
-    station_count: 15
     itineraries: 
       r2941790: 
         - 天水圍 Tin Shui Wai (n6587695601)
@@ -815,37 +810,61 @@ routes:
 
 
     name: 輕鐵706綫 Light Rail 706
-  - 
-    colour: '#f58c14'
+    station_count: 15
+    ref: 706
+    colour: '#ba85bb'
     type: light_rail
+  - 
     stations: 
-      - 天逸 Tin Yat
-      - 天富 Tin Fu
-      - 頌富 Chung Fu
-      - 翠湖 Chestwood
-      - 天榮 Tin Wing
-      - 銀座 Ginza
-      - 天湖 Tin Wu
-      - 天慈 Tin Tsz
-      - 天水圍 Tin Shui Wai
-      - 坑尾村 Hang Mei Tsuen
-      - 洪水橋 Hung Shui Kiu
-      - 鍾屋村 Chung Uk Tsuen
-      - 泥圍 Nai Wai
-      - 藍地 Lam Tei
-      - 兆康 Siu Hong
-      - 屯門醫院 Tuen Mun Hospital
-      - 澤豐 Affluence
-      - 蔡意橋 Choy Yee Bridge
-      - 河田 Ho Tin
-      - 屯門 Tuen Mun
-      - 市中心 Town Centre
       - 友愛 Yau Oi
       - 安定 On Ting
+      - 市中心 Town Centre
+      - 屯門 Tuen Mun
+      - 河田 Ho Tin
+      - 蔡意橋 Choy Yee Bridge
+      - 澤豐 Affluence
+      - 屯門醫院 Tuen Mun Hospital
+      - 兆康 Siu Hong
+      - 藍地 Lam Tei
+      - 泥圍 Nai Wai
+      - 鍾屋村 Chung Uk Tsuen
+      - 洪水橋 Hung Shui Kiu
+      - 坑尾村 Hang Mei Tsuen
+      - 天水圍 Tin Shui Wai
+      - 天慈 Tin Tsz
+      - 天湖 Tin Wu
+      - 銀座 Ginza
+      - 天榮 Tin Wing
+      - 翠湖 Chestwood
+      - 頌富 Chung Fu
+      - 天富 Tin Fu
+      - 天逸 Tin Yat
 
-    ref: 751
-    station_count: 23
     itineraries: 
+      r2926506: 
+        - 天逸 Tin Yat (n6606574269)
+        - 天富 Tin Fu (n6606574270)
+        - 頌富 Chung Fu (n6606574271)
+        - 翠湖 Chestwood (n6606574272)
+        - 天榮 Tin Wing (n6606574273)
+        - 銀座 Ginza (n6587690554)
+        - 天湖 Tin Wu (n6606532530)
+        - 天慈 Tin Tsz (n6606573209)
+        - 天水圍 Tin Shui Wai (n6587695601)
+        - 坑尾村 Hang Mei Tsuen (n6606555309)
+        - 洪水橋 Hung Shui Kiu (n6606515524)
+        - 鍾屋村 Chung Uk Tsuen (n6606555768)
+        - 泥圍 Nai Wai (n6606556982)
+        - 藍地 Lam Tei (n6606556981)
+        - 兆康 Siu Hong (n6635604450)
+        - 屯門醫院 Tuen Mun Hospital (n6606477007)
+        - 澤豐 Affluence (n6610162152)
+        - 蔡意橋 Choy Yee Bridge (n6606477009)
+        - 河田 Ho Tin (n6606477010)
+        - 屯門 Tuen Mun (n6606421453)
+        - 市中心 Town Centre (n6606421452)
+        - 友愛 Yau Oi (n6606417733)
+
       r6485218: 
         - 友愛 Yau Oi (n6606417733)
         - 安定 On Ting (n6606426426)
@@ -871,48 +890,24 @@ routes:
         - 天富 Tin Fu (n6606574270)
         - 天逸 Tin Yat (n6606574269)
 
-      r2926506: 
-        - 天逸 Tin Yat (n6606574269)
-        - 天富 Tin Fu (n6606574270)
-        - 頌富 Chung Fu (n6606574271)
-        - 翠湖 Chestwood (n6606574272)
-        - 天榮 Tin Wing (n6606574273)
-        - 銀座 Ginza (n6587690554)
-        - 天湖 Tin Wu (n6606532530)
-        - 天慈 Tin Tsz (n6606573209)
-        - 天水圍 Tin Shui Wai (n6587695601)
-        - 坑尾村 Hang Mei Tsuen (n6606555309)
-        - 洪水橋 Hung Shui Kiu (n6606515524)
-        - 鍾屋村 Chung Uk Tsuen (n6606555768)
-        - 泥圍 Nai Wai (n6606556982)
-        - 藍地 Lam Tei (n6606556981)
-        - 兆康 Siu Hong (n6635604450)
-        - 屯門醫院 Tuen Mun Hospital (n6606477007)
-        - 澤豐 Affluence (n6610162152)
-        - 蔡意橋 Choy Yee Bridge (n6606477009)
-        - 河田 Ho Tin (n6606477010)
-        - 屯門 Tuen Mun (n6606421453)
-        - 市中心 Town Centre (n6606421452)
-        - 友愛 Yau Oi (n6606417733)
-
 
     name: 輕鐵751綫 Light Rail 751
-  - 
-    colour: '#000000'
+    station_count: 23
+    ref: 751
+    colour: '#f58c14'
     type: light_rail
+  - 
     stations: 
-      - 天水圍 Tin Shui Wai
-      - 天慈 Tin Tsz
-      - 天湖 Tin Wu
-      - 銀座 Ginza
-      - 天榮 Tin Wing
-      - 翠湖 Chestwood
-      - 頌富 Chung Fu
-      - 天富 Tin Fu
       - 天逸 Tin Yat
+      - 天富 Tin Fu
+      - 頌富 Chung Fu
+      - 翠湖 Chestwood
+      - 天榮 Tin Wing
+      - 銀座 Ginza
+      - 天湖 Tin Wu
+      - 天慈 Tin Tsz
+      - 天水圍 Tin Shui Wai
 
-    ref: 751P
-    station_count: 9
     itineraries: 
       r6485219: 
         - 天水圍 Tin Shui Wai (n6587695601)
@@ -938,9 +933,11 @@ routes:
 
 
     name: 輕鐵751P綫 Light Rail 751P
-  - 
-    colour: '#70147b'
+    station_count: 9
+    ref: 751P
+    colour: '#000000'
     type: light_rail
+  - 
     stations: 
       - 天逸 Tin Yat
       - 天富 Tin Fu
@@ -957,8 +954,6 @@ routes:
       - 大棠路 Tai Tong Road
       - 元朗 Yuen Long
 
-    ref: 761P
-    station_count: 14
     itineraries: 
       r2942633: 
         - 元朗 Yuen Long (n6587699060)
@@ -994,9 +989,11 @@ routes:
 
 
     name: 輕鐵761P綫 Light Rail 761P
+    station_count: 14
+    ref: 761P
+    colour: '#70147b'
+    type: light_rail
   - 
-    colour: '#00888a'
-    type: subway
     stations: 
       - 博覽館 AsiaWorld-Expo
       - 機場 Airport
@@ -1004,16 +1001,7 @@ routes:
       - 九龍 Kowloon
       - 香港 Hong Kong
 
-    ref: AEL
-    station_count: 5
     itineraries: 
-      r5317238: 
-        - 博覽館 AsiaWorld-Expo (n738427429)
-        - 機場 Airport (w28069671)
-        - 青衣 Tsing Yi (n2703686815)
-        - 九龍 Kowloon (w251607763)
-        - 香港 Hong Kong (n5444491703)
-
       r5317239: 
         - 香港 Hong Kong (n5444491703)
         - 九龍 Kowloon (w251607763)
@@ -1021,17 +1009,24 @@ routes:
         - 機場 Airport (w28069671)
         - 博覽館 AsiaWorld-Expo (n738427429)
 
+      r5317238: 
+        - 博覽館 AsiaWorld-Expo (n738427429)
+        - 機場 Airport (w28069671)
+        - 青衣 Tsing Yi (n2703686815)
+        - 九龍 Kowloon (w251607763)
+        - 香港 Hong Kong (n5444491703)
+
 
     name: 機場快綫 Airport Express
-  - 
-    colour: '#f173ac'
+    station_count: 5
+    ref: AEL
+    colour: '#00888a'
     type: subway
+  - 
     stations: 
-      - 迪士尼 Disneyland Resort
       - 欣澳 Sunny Bay (Disneyland)
+      - 迪士尼 Disneyland Resort
 
-    ref: DRL
-    station_count: 2
     itineraries: 
       r4709540: 
         - 欣澳 Sunny Bay (n6612064022)
@@ -1043,80 +1038,30 @@ routes:
 
 
     name: 港鐵迪士尼綫 MTR Disneyland Resort Line
-  - 
-    colour: '#53b7e8'
+    station_count: 2
+    ref: DRL
+    colour: '#f173ac'
     type: subway
+  - 
     stations: 
-      - 馬場 Racecourse
-      - 沙田 Sha Tin
-      - 大圍 Tai Wai
-      - 九龍塘 Kowloon Tong
       - 旺角東 Mong Kok East
-      - 紅磡 Hung Hom
+      - 九龍塘 Kowloon Tong
+      - 大圍 Tai Wai
+      - 沙田 Sha Tin
+      - 火炭 Fo Tan
       - 大學 University
       - 大埔墟 Tai Po Market
-      - 火炭 Fo Tan
       - 太和 Tai Wo
       - 粉嶺 Fanling
       - 上水 Sheung Shui
-      - 落馬洲 Lok Ma Chau
       - 羅湖 Lo Wu
+      - 紅磡 Hung Hom
+      - 馬場 Racecourse
+      - 落馬洲 Lok Ma Chau
 
-    ref: EAL
-    station_count: 14
     itineraries: 
-      r6587830: 
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 太和 Tai Wo (w222614312)
-        - 粉嶺 Fanling (r11092467)
-        - 上水 Sheung Shui (n5441594278)
+      r4250433: 
         - 羅湖 Lo Wu (w222611816)
-
-      r6587849: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 馬場 Racecourse (n2325225341)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-
-      r6587828: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 太和 Tai Wo (w222614312)
-        - 粉嶺 Fanling (r11092467)
-        - 上水 Sheung Shui (n5441594278)
-
-      r4248591: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 太和 Tai Wo (w222614312)
-        - 粉嶺 Fanling (r11092467)
-        - 上水 Sheung Shui (n5441594278)
-        - 落馬洲 Lok Ma Chau (n6610120377)
-
-      r4250432: 
-        - 落馬洲 Lok Ma Chau (n6610120377)
         - 上水 Sheung Shui (n5441594278)
         - 粉嶺 Fanling (r11092467)
         - 太和 Tai Wo (w222614312)
@@ -1128,6 +1073,13 @@ routes:
         - 九龍塘 Kowloon Tong (n1634974083)
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
+
+      r6587846: 
+        - 火炭 Fo Tan (w188606344)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
 
       r4264526: 
         - 沙田 Sha Tin (w223848687)
@@ -1136,15 +1088,21 @@ routes:
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
 
-      r6587853: 
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 大學 University (n5098496689)
+      r6587852: 
         - 馬場 Racecourse (n2325225341)
         - 沙田 Sha Tin (w223848687)
         - 大圍 Tai Wai (w37518439)
         - 九龍塘 Kowloon Tong (n1634974083)
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
+
+      r6587848: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 馬場 Racecourse (n2325225341)
 
       r4250434: 
         - 紅磡 Hung Hom (n7900305742)
@@ -1160,69 +1118,6 @@ routes:
         - 上水 Sheung Shui (n5441594278)
         - 落馬洲 Lok Ma Chau (n6610120377)
 
-      r6587831: 
-        - 上水 Sheung Shui (n5441594278)
-        - 粉嶺 Fanling (r11092467)
-        - 太和 Tai Wo (w222614312)
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 大學 University (n5098496689)
-        - 馬場 Racecourse (n2325225341)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-        - 紅磡 Hung Hom (n7900305742)
-
-      r6587851: 
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-
-      r6587850: 
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-
-      r6587829: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-        - 大學 University (n5098496689)
-        - 大埔墟 Tai Po Market (n4338478841)
-
-      r6587845: 
-        - 火炭 Fo Tan (w188606344)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-        - 紅磡 Hung Hom (n7900305742)
-
-      r6587847: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 火炭 Fo Tan (w188606344)
-
-      r6587852: 
-        - 馬場 Racecourse (n2325225341)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-        - 紅磡 Hung Hom (n7900305742)
-
       r6587832: 
         - 上水 Sheung Shui (n5441594278)
         - 粉嶺 Fanling (r11092467)
@@ -1236,8 +1131,80 @@ routes:
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
 
+      r6587829: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
+
+      r6587847: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+
       r4248589: 
         - 落馬洲 Lok Ma Chau (n6610120377)
+        - 上水 Sheung Shui (n5441594278)
+        - 粉嶺 Fanling (r11092467)
+        - 太和 Tai Wo (w222614312)
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 大學 University (n5098496689)
+        - 火炭 Fo Tan (w188606344)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
+        - 紅磡 Hung Hom (n7900305742)
+
+      r4264527: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+
+      r6587854: 
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 大學 University (n5098496689)
+        - 火炭 Fo Tan (w188606344)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
+
+      r6587853: 
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 大學 University (n5098496689)
+        - 馬場 Racecourse (n2325225341)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
+        - 紅磡 Hung Hom (n7900305742)
+
+      r4248592: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 太和 Tai Wo (w222614312)
+        - 粉嶺 Fanling (r11092467)
+        - 上水 Sheung Shui (n5441594278)
+        - 羅湖 Lo Wu (w222611816)
+
+      r4248590: 
+        - 羅湖 Lo Wu (w222611816)
         - 上水 Sheung Shui (n5441594278)
         - 粉嶺 Fanling (r11092467)
         - 太和 Tai Wo (w222614312)
@@ -1260,6 +1227,28 @@ routes:
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
 
+      r6587845: 
+        - 火炭 Fo Tan (w188606344)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
+        - 紅磡 Hung Hom (n7900305742)
+
+      r4248591: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 太和 Tai Wo (w222614312)
+        - 粉嶺 Fanling (r11092467)
+        - 上水 Sheung Shui (n5441594278)
+        - 落馬洲 Lok Ma Chau (n6610120377)
+
       r6587827: 
         - 紅磡 Hung Hom (n7900305742)
         - 旺角東 Mong Kok East (w37517422)
@@ -1272,7 +1261,7 @@ routes:
         - 粉嶺 Fanling (r11092467)
         - 上水 Sheung Shui (n5441594278)
 
-      r4248592: 
+      r6587828: 
         - 紅磡 Hung Hom (n7900305742)
         - 旺角東 Mong Kok East (w37517422)
         - 九龍塘 Kowloon Tong (n1634974083)
@@ -1284,7 +1273,46 @@ routes:
         - 太和 Tai Wo (w222614312)
         - 粉嶺 Fanling (r11092467)
         - 上水 Sheung Shui (n5441594278)
-        - 羅湖 Lo Wu (w222611816)
+
+      r4250432: 
+        - 落馬洲 Lok Ma Chau (n6610120377)
+        - 上水 Sheung Shui (n5441594278)
+        - 粉嶺 Fanling (r11092467)
+        - 太和 Tai Wo (w222614312)
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 大學 University (n5098496689)
+        - 馬場 Racecourse (n2325225341)
+        - 沙田 Sha Tin (w223848687)
+        - 大圍 Tai Wai (w37518439)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 旺角東 Mong Kok East (w37517422)
+        - 紅磡 Hung Hom (n7900305742)
+
+      r6587850: 
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+
+      r6587849: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 馬場 Racecourse (n2325225341)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
+
+      r6587851: 
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
 
       r4250435: 
         - 紅磡 Hung Hom (n7900305742)
@@ -1299,53 +1327,7 @@ routes:
         - 上水 Sheung Shui (n5441594278)
         - 羅湖 Lo Wu (w222611816)
 
-      r6587854: 
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 大學 University (n5098496689)
-        - 火炭 Fo Tan (w188606344)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-
-      r4264527: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-
-      r4248590: 
-        - 羅湖 Lo Wu (w222611816)
-        - 上水 Sheung Shui (n5441594278)
-        - 粉嶺 Fanling (r11092467)
-        - 太和 Tai Wo (w222614312)
-        - 大埔墟 Tai Po Market (n4338478841)
-        - 大學 University (n5098496689)
-        - 火炭 Fo Tan (w188606344)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-        - 紅磡 Hung Hom (n7900305742)
-
-      r6587846: 
-        - 火炭 Fo Tan (w188606344)
-        - 沙田 Sha Tin (w223848687)
-        - 大圍 Tai Wai (w37518439)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 旺角東 Mong Kok East (w37517422)
-
-      r6587848: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 旺角東 Mong Kok East (w37517422)
-        - 九龍塘 Kowloon Tong (n1634974083)
-        - 大圍 Tai Wai (w37518439)
-        - 沙田 Sha Tin (w223848687)
-        - 馬場 Racecourse (n2325225341)
-
-      r4250433: 
-        - 羅湖 Lo Wu (w222611816)
+      r6587831: 
         - 上水 Sheung Shui (n5441594278)
         - 粉嶺 Fanling (r11092467)
         - 太和 Tai Wo (w222614312)
@@ -1357,12 +1339,27 @@ routes:
         - 九龍塘 Kowloon Tong (n1634974083)
         - 旺角東 Mong Kok East (w37517422)
         - 紅磡 Hung Hom (n7900305742)
+
+      r6587830: 
+        - 旺角東 Mong Kok East (w37517422)
+        - 九龍塘 Kowloon Tong (n1634974083)
+        - 大圍 Tai Wai (w37518439)
+        - 沙田 Sha Tin (w223848687)
+        - 火炭 Fo Tan (w188606344)
+        - 大學 University (n5098496689)
+        - 大埔墟 Tai Po Market (n4338478841)
+        - 太和 Tai Wo (w222614312)
+        - 粉嶺 Fanling (r11092467)
+        - 上水 Sheung Shui (n5441594278)
+        - 羅湖 Lo Wu (w222611816)
 
 
     name: 東鐵綫 East Rail Line
-  - 
-    colour: '#007dc5'
+    station_count: 14
+    ref: EAL
+    colour: '#53b7e8'
     type: subway
+  - 
     stations: 
       - 堅尼地城 Kennedy Town
       - 香港大學 HKU
@@ -1382,8 +1379,6 @@ routes:
       - 杏花邨 Heng Fa Chuen
       - 柴灣 Chai Wan
 
-    ref: ISL
-    station_count: 17
     itineraries: 
       r4432666: 
         - 堅尼地城 Kennedy Town (w248775630)
@@ -1425,31 +1420,77 @@ routes:
 
 
     name: 港鐵港島綫 MTR Island Line
-  - 
-    colour: '#00ab4e'
+    station_count: 17
+    ref: ISL
+    colour: '#007dc5'
     type: subway
+  - 
     stations: 
+      - 黃埔 Whampoa
+      - 何文田 Ho Man Tin
+      - 油麻地 Yau Ma Tei
+      - 旺角 Mong Kok
+      - 太子 Prince Edward
+      - 石硤尾 Shek Kip Mei
+      - 九龍塘 Kowloon Tong
+      - 樂富 Lok Fu
+      - 黃大仙 Wong Tai Sin
+      - 鑽石山 Diamond Hill
+      - 彩虹
+      - 九龍灣 Kowloon Bay
+      - 牛頭角
+      - 觀塘 Kwun Tong
       - 調景嶺 Tiu Keng Leng
       - 油塘 Yau Tong (Right)
       - 藍田 Lam Tin
-      - 觀塘 Kwun Tong
-      - 牛頭角
-      - 九龍灣 Kowloon Bay
-      - 彩虹
-      - 鑽石山 Diamond Hill
-      - 黃大仙 Wong Tai Sin
-      - 樂富 Lok Fu
-      - 九龍塘 Kowloon Tong
-      - 石硤尾 Shek Kip Mei
-      - 太子 Prince Edward
-      - 旺角 Mong Kok
-      - 油麻地 Yau Ma Tei
-      - 何文田 Ho Man Tin
-      - 黃埔 Whampoa
 
-    ref: KTL
-    station_count: 17
     itineraries: 
+      r6663510: 
+        - 調景嶺 Tiu Keng Leng (n1295654865)
+        - 油塘 Yau Tong (n6610130700)
+        - 藍田 Lam Tin (w88008343)
+        - 觀塘 Kwun Tong (w199004441)
+        - 牛頭角 Ngau Tau Kok (w39950659)
+        - 九龍灣 Kowloon Bay (w39888869)
+        - 彩虹 Choi Hung (w263472307)
+        - 鑽石山 Diamond Hill (r10711433)
+        - 黃大仙 Wong Tai Sin (w264462805)
+        - 樂富 Lok Fu (w184284416)
+        - 九龍塘 Kowloon Tong (n4355305740)
+        - 石硤尾 Shek Kip Mei (w816466449)
+        - 太子 Prince Edward (w355109678)
+        - 旺角 Mong Kok (w112427969)
+        - 油麻地 Yau Ma Tei (w112557169)
+        - 何文田 Ho Man Tin (w448419653)
+
+      r6658068: 
+        - 調景嶺 Tiu Keng Leng (n1295654865)
+        - 油塘 Yau Tong (n6610130700)
+        - 藍田 Lam Tin (w88008343)
+        - 觀塘 Kwun Tong (w199004441)
+        - 牛頭角 Ngau Tau Kok (w39950659)
+        - 九龍灣 Kowloon Bay (w39888869)
+        - 彩虹 Choi Hung (w263472307)
+
+      r6452935: 
+        - 黃埔 Whampoa (w448985634)
+        - 何文田 Ho Man Tin (w448419653)
+        - 油麻地 Yau Ma Tei (w112557169)
+        - 旺角 Mong Kok (w112427969)
+        - 太子 Prince Edward (w355109678)
+        - 石硤尾 Shek Kip Mei (w816466449)
+        - 九龍塘 Kowloon Tong (n4355305740)
+        - 樂富 Lok Fu (w184284416)
+        - 黃大仙 Wong Tai Sin (w264462805)
+        - 鑽石山 Diamond Hill (r10711433)
+        - 彩虹 Choi Hung (w263472307)
+        - 九龍灣 Kowloon Bay (w39888869)
+        - 牛頭角 Ngau Tau Kok (w39950659)
+        - 觀塘 Kwun Tong (w199004441)
+        - 藍田 Lam Tin (w88008343)
+        - 油塘 Yau Tong (n6610130700)
+        - 調景嶺 Tiu Keng Leng (n1295654865)
+
       r272125: 
         - 調景嶺 Tiu Keng Leng (n1295654865)
         - 油塘 Yau Tong (n6610130700)
@@ -1469,59 +1510,7 @@ routes:
         - 何文田 Ho Man Tin (w448419653)
         - 黃埔 Whampoa (w448985634)
 
-      r6658068: 
-        - 調景嶺 Tiu Keng Leng (n1295654865)
-        - 油塘 Yau Tong (n6610130700)
-        - 藍田 Lam Tin (w88008343)
-        - 觀塘 Kwun Tong (w199004441)
-        - 牛頭角 Ngau Tau Kok (w39950659)
-        - 九龍灣 Kowloon Bay (w39888869)
-        - 彩虹 Choi Hung (w263472307)
-
-      r6658069: 
-        - 調景嶺 Tiu Keng Leng (n1295654865)
-        - 油塘 Yau Tong (n6610130700)
-        - 藍田 Lam Tin (w88008343)
-        - 觀塘 Kwun Tong (w199004441)
-
-      r6663510: 
-        - 調景嶺 Tiu Keng Leng (n1295654865)
-        - 油塘 Yau Tong (n6610130700)
-        - 藍田 Lam Tin (w88008343)
-        - 觀塘 Kwun Tong (w199004441)
-        - 牛頭角 Ngau Tau Kok (w39950659)
-        - 九龍灣 Kowloon Bay (w39888869)
-        - 彩虹 Choi Hung (w263472307)
-        - 鑽石山 Diamond Hill (r10711433)
-        - 黃大仙 Wong Tai Sin (w264462805)
-        - 樂富 Lok Fu (w184284416)
-        - 九龍塘 Kowloon Tong (n4355305740)
-        - 石硤尾 Shek Kip Mei (w816466449)
-        - 太子 Prince Edward (w355109678)
-        - 旺角 Mong Kok (w112427969)
-        - 油麻地 Yau Ma Tei (w112557169)
-        - 何文田 Ho Man Tin (w448419653)
-
       r6663509: 
-        - 何文田 Ho Man Tin (w448419653)
-        - 油麻地 Yau Ma Tei (w112557169)
-        - 旺角 Mong Kok (w112427969)
-        - 太子 Prince Edward (w355109678)
-        - 石硤尾 Shek Kip Mei (w816466449)
-        - 九龍塘 Kowloon Tong (n4355305740)
-        - 樂富 Lok Fu (w184284416)
-        - 黃大仙 Wong Tai Sin (w264462805)
-        - 鑽石山 Diamond Hill (r10711433)
-        - 彩虹 Choi Hung (w263472307)
-        - 九龍灣 Kowloon Bay (w39888869)
-        - 牛頭角 Ngau Tau Kok (w39950659)
-        - 觀塘 Kwun Tong (w199004441)
-        - 藍田 Lam Tin (w88008343)
-        - 油塘 Yau Tong (n6610130700)
-        - 調景嶺 Tiu Keng Leng (n1295654865)
-
-      r6452935: 
-        - 黃埔 Whampoa (w448985634)
         - 何文田 Ho Man Tin (w448419653)
         - 油麻地 Yau Ma Tei (w112557169)
         - 旺角 Mong Kok (w112427969)
@@ -1555,20 +1544,26 @@ routes:
         - 牛頭角 Ngau Tau Kok (w39950659)
         - 觀塘 Kwun Tong (w199004441)
 
+      r6658069: 
+        - 調景嶺 Tiu Keng Leng (n1295654865)
+        - 油塘 Yau Tong (n6610130700)
+        - 藍田 Lam Tin (w88008343)
+        - 觀塘 Kwun Tong (w199004441)
+
 
     name: 觀塘綫 Kwun Tong Line
-  - 
-    colour: '#b6bd00'
+    station_count: 17
+    ref: KTL
+    colour: '#00ab4e'
     type: subway
+  - 
     stations: 
-      - 海怡半島 South Horizons
-      - 利東 Lei Tung
-      - 黃竹坑 Wong Chuk Hang
-      - 海洋公園 Ocean Park
       - 金鐘 Admiralty
+      - 海洋公園 Ocean Park
+      - 黃竹坑 Wong Chuk Hang
+      - 利東 Lei Tung
+      - 海怡半島 South Horizons
 
-    ref: SIL
-    station_count: 5
     itineraries: 
       r6827211: 
         - 金鐘 Admiralty (w248960443)
@@ -1586,21 +1581,21 @@ routes:
 
 
     name: 南港島綫 South Island Line
-  - 
-    colour: '#f7943e'
+    station_count: 5
+    ref: SIL
+    colour: '#b6bd00'
     type: subway
+  - 
     stations: 
-      - 香港 Hong Kong
-      - 九龍 Kowloon
-      - 奧運 Olympic
-      - 南昌 Nam Cheong
-      - 荔景 Lai King
       - 青衣 Tsing Yi
-      - 欣澳 Sunny Bay
+      - 荔景 Lai King
+      - 南昌 Nam Cheong
+      - 奧運 Olympic
+      - 九龍 Kowloon
+      - 香港 Hong Kong
       - 東涌 Tung Chung
+      - 欣澳 Sunny Bay
 
-    ref: TCL
-    station_count: 8
     itineraries: 
       r6723725: 
         - 香港 Hong Kong (n5444491703)
@@ -1609,16 +1604,6 @@ routes:
         - 南昌 Nam Cheong (n6605772868)
         - 荔景 Lai King (w111706734)
         - 青衣 Tsing Yi (n2703686815)
-
-      r5317706: 
-        - 香港 Hong Kong (n5444491703)
-        - 九龍 Kowloon (w251607763)
-        - 奧運 Olympic (w41415576)
-        - 南昌 Nam Cheong (n6605772868)
-        - 荔景 Lai King (w111706734)
-        - 青衣 Tsing Yi (n2703686815)
-        - 欣澳 Sunny Bay (n6612064022)
-        - 東涌 Tung Chung (n6610342222)
 
       r5317704: 
         - 東涌 Tung Chung (n6610342222)
@@ -1638,34 +1623,44 @@ routes:
         - 九龍 Kowloon (w251607763)
         - 香港 Hong Kong (n5444491703)
 
+      r5317706: 
+        - 香港 Hong Kong (n5444491703)
+        - 九龍 Kowloon (w251607763)
+        - 奧運 Olympic (w41415576)
+        - 南昌 Nam Cheong (n6605772868)
+        - 荔景 Lai King (w111706734)
+        - 青衣 Tsing Yi (n2703686815)
+        - 欣澳 Sunny Bay (n6612064022)
+        - 東涌 Tung Chung (n6610342222)
+
 
     name: 東涌綫 Tung Chung Line
-  - 
-    colour: '#7d499d'
+    station_count: 8
+    ref: TCL
+    colour: '#f7943e'
     type: subway
+  - 
     stations: 
+      - 康城 LOHAS Park
+      - 將軍澳 Tseung Kwan O
       - 北角 North Point (將軍澳綫 Tseung Kwan O Line)
       - 鰂魚涌 Quarry Bay
       - 油塘 Yau Tong (Left)
       - 調景嶺 Tiu Keng Leng
-      - 將軍澳 Tseung Kwan O
       - 坑口 Hang Hau
       - 寶琳 Po Lam
-      - 康城 LOHAS Park
 
-    ref: TKL
-    station_count: 8
     itineraries: 
       r269672: 
         - 北角 North Point (n2566102950)
-        - '? (w228655424)'
+        - 鰂魚涌 Quarry Bay (n6610705648)
         - 油塘 Yau Tong (n6610130700)
         - 調景嶺 Tiu Keng Leng (n1295654865)
         - 將軍澳 Tseung Kwan O (w158574718)
         - 坑口 Hang Hau (n6606594903)
         - 寶琳 Po Lam (w302740041)
 
-      r9736602: 
+      r9736610: 
         - 康城 LOHAS Park (n361384199)
         - 將軍澳 Tseung Kwan O (w158574718)
 
@@ -1675,49 +1670,35 @@ routes:
         - 將軍澳 Tseung Kwan O (w158574718)
         - 調景嶺 Tiu Keng Leng (n1295654865)
         - 油塘 Yau Tong (n6610130700)
-        - '? (w228655424)'
+        - 鰂魚涌 Quarry Bay (n6610705648)
         - 北角 North Point (n2566102950)
 
-      r9736610: 
+      r9736602: 
         - 康城 LOHAS Park (n361384199)
         - 將軍澳 Tseung Kwan O (w158574718)
 
 
     name: 將軍澳綫 Tseung Kwan O Line
-  - 
-    colour: '#923011'
+    station_count: 8
+    ref: TKL
+    colour: '#7d499d'
     type: subway
+  - 
     stations: 
-      - 啟德 Kai Tak
-      - 鑽石山 Diamond Hill
-      - 顯徑 Hin Keng
-      - 大圍 Tai Wai
-      - 車公廟 Che Kung Temple
-      - 沙田圍 Sha Tin Wai
-      - 第一城 City One
-      - 石門 Shek Mun
-      - 大水坑 Tai Shui Hang
-      - 恆安 Heng On
-      - 馬鞍山 Ma On Shan
       - 烏溪沙 Wu Kai Sha
+      - 馬鞍山 Ma On Shan
+      - 恆安 Heng On
+      - 大水坑 Tai Shui Hang
+      - 石門 Shek Mun
+      - 第一城 City One
+      - 沙田圍 Sha Tin Wai
+      - 車公廟 Che Kung Temple
+      - 大圍 Tai Wai
+      - 顯徑 Hin Keng
+      - 鑽石山 Diamond Hill
+      - 啟德 Kai Tak
 
-    ref: TML
-    station_count: 12
     itineraries: 
-      r6102298: 
-        - 啟德 Kai Tak (w772168466)
-        - 鑽石山 Diamond Hill (r10711433)
-        - 顯徑 Hin Keng (w227327486)
-        - 大圍 Tai Wai (w37518439)
-        - 車公廟 Che Kung Temple (w137340368)
-        - 沙田圍 Sha Tin Wai (w187405865)
-        - 第一城 City One (w235438725)
-        - 石門 Shek Mun (w188183631)
-        - 大水坑 Tai Shui Hang (w41856916)
-        - 恆安 Heng On (w41888281)
-        - 馬鞍山 Ma On Shan (w192579385)
-        - 烏溪沙 Wu Kai Sha (w41888442)
-
       r6102299: 
         - 烏溪沙 Wu Kai Sha (w41888442)
         - 馬鞍山 Ma On Shan (w192579385)
@@ -1732,11 +1713,27 @@ routes:
         - 鑽石山 Diamond Hill (r10711433)
         - 啟德 Kai Tak (w772168466)
 
+      r6102298: 
+        - 啟德 Kai Tak (w772168466)
+        - 鑽石山 Diamond Hill (r10711433)
+        - 顯徑 Hin Keng (w227327486)
+        - 大圍 Tai Wai (w37518439)
+        - 車公廟 Che Kung Temple (w137340368)
+        - 沙田圍 Sha Tin Wai (w187405865)
+        - 第一城 City One (w235438725)
+        - 石門 Shek Mun (w188183631)
+        - 大水坑 Tai Shui Hang (w41856916)
+        - 恆安 Heng On (w41888281)
+        - 馬鞍山 Ma On Shan (w192579385)
+        - 烏溪沙 Wu Kai Sha (w41888442)
+
 
     name: 屯馬綫一期 Tuen Ma Line Phase 1
-  - 
-    colour: '#ed1d24'
+    station_count: 12
+    ref: TML
+    colour: '#923011'
     type: subway
+  - 
     stations: 
       - 荃灣 Tsuen Wan
       - 大窩口 Tai Wo Hau
@@ -1755,8 +1752,6 @@ routes:
       - 金鐘 Admiralty
       - 中環 Central
 
-    ref: TWL
-    station_count: 16
     itineraries: 
       r9736530: 
         - 荃灣 Tsuen Wan (n288379716)
@@ -1796,25 +1791,25 @@ routes:
 
 
     name: 港鐵荃灣綫 MTR Tsuen Wan Line
-  - 
-    colour: '#a3238f'
+    station_count: 16
+    ref: TWL
+    colour: '#ed1d24'
     type: subway
+  - 
     stations: 
       - 紅磡 Hung Hom
       - 尖東 East Tsim Sha Tsui
       - 柯士甸 Austin
       - 南昌 Nam Cheong
       - 美孚 Mei Foo
-      - 荃灣西 Tsuen Wan West
-      - 錦上路 Kam Sheung Road
-      - 元朗 Yuen Long
-      - 朗屏 Long Ping
-      - 天水圍 Tin Shui Wai
-      - 兆康 Siu Hong
       - 屯門 Tuen Mun
+      - 兆康 Siu Hong
+      - 天水圍 Tin Shui Wai
+      - 朗屏 Long Ping
+      - 元朗 Yuen Long
+      - 錦上路 Kam Sheung Road
+      - 荃灣西 Tsuen Wan West
 
-    ref: WRL
-    station_count: 12
     itineraries: 
       r6582966: 
         - 紅磡 Hung Hom (n7900305742)
@@ -1830,13 +1825,6 @@ routes:
         - 兆康 Siu Hong (w41178206)
         - 屯門 Tuen Mun (w40430283)
 
-      r6582964: 
-        - 紅磡 Hung Hom (n7900305742)
-        - 尖東 East Tsim Sha Tsui (w724130074)
-        - 柯士甸 Austin (n6610744414)
-        - 南昌 Nam Cheong (n6605772868)
-        - 美孚 Mei Foo (w355013183)
-
       r6582965: 
         - 屯門 Tuen Mun (w40430283)
         - 兆康 Siu Hong (w41178206)
@@ -1851,6 +1839,17 @@ routes:
         - 尖東 East Tsim Sha Tsui (w724130074)
         - 紅磡 Hung Hom (n7900305742)
 
+      r6582964: 
+        - 紅磡 Hung Hom (n7900305742)
+        - 尖東 East Tsim Sha Tsui (w724130074)
+        - 柯士甸 Austin (n6610744414)
+        - 南昌 Nam Cheong (n6605772868)
+        - 美孚 Mei Foo (w355013183)
+
 
     name: 西鐵綫 West Rail Line
+    station_count: 12
+    ref: WRL
+    colour: '#a3238f'
+    type: subway
 

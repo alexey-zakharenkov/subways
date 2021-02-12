@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
-    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
-
 stations: 
   - Attiguppe (n6400857563)
   - Baiyyappanahalli (n6400857549)
@@ -51,10 +46,13 @@ stations:
   - Yelachenahalli (n6432710292)
   - Yeshwantpura (n6410706693)
 
+transfers: 
+  - 
+    - Nadaprabhu Kempegowda Station, Majestic (Green Line) (r7845649)
+    - Nadaprabhu Kempegowda Station, Majestic (Purple Line) (r7840088)
+
 routes: 
   - 
-    colour: '#009933'
-    type: subway
     stations: 
       - Nagasandra
       - Dasarahalli
@@ -86,8 +84,6 @@ routes:
       - Thalaghattapura
       - Silk Institute
 
-    ref: Green
-    station_count: 29
     itineraries: 
       r1798772: 
         - Silk Institute (w894923128)
@@ -153,30 +149,30 @@ routes:
 
 
     name: Namma Metro Green Line
-  - 
-    colour: '#e542de'
+    station_count: 29
+    ref: Green
+    colour: '#009933'
     type: subway
+  - 
     stations: 
-      - Mysore Road
-      - Deepanjali Nagar
-      - Attiguppe
-      - Vijayanagara
-      - Sri Balagangadaranatha Swamy Hosahalli
-      - Magadi Road
-      - Krantivira Sangolli Rayanna
-      - Nadaprabhu Kempegowda Station, Majestic (Purple Line)
-      - 'Sir M Vishweshwariah - Central College'
-      - Dr. B R Ambedkar Station, Vidhana Soudha
-      - Cubbon Park
-      - Mahatma Gandhi Road
-      - Trinity
-      - Halasuru
-      - Indiranagar
-      - Swami Vivekananda Road
       - Baiyyappanahalli
+      - Swami Vivekananda Road
+      - Indiranagar
+      - Halasuru
+      - Trinity
+      - Mahatma Gandhi Road
+      - Cubbon Park
+      - Dr. B R Ambedkar Station, Vidhana Soudha
+      - 'Sir M Vishweshwariah - Central College'
+      - Nadaprabhu Kempegowda Station, Majestic (Purple Line)
+      - Krantivira Sangolli Rayanna
+      - Magadi Road
+      - Sri Balagangadaranatha Swamy Hosahalli
+      - Vijayanagara
+      - Attiguppe
+      - Deepanjali Nagar
+      - Mysore Road
 
-    ref: Purple
-    station_count: 17
     itineraries: 
       r7841331: 
         - Mysore Road (n6400857565)
@@ -218,4 +214,8 @@ routes:
 
 
     name: Namma Metro Purple Line
+    station_count: 17
+    ref: Purple
+    colour: '#e542de'
+    type: subway
 

@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Àngel Guimerà L1 -L2 (r7916749)
-    - Ángel Guimerá L3-L5-L9 (r7916739)
-
 stations: 
   - Aeroport (n3353533886)
   - Alameda (n3352213337)
@@ -101,10 +96,13 @@ stations:
   - Xàtiva (n3352213377)
   - Àngel Guimerà (n3348096569)
 
+transfers: 
+  - 
+    - Àngel Guimerà L1 -L2 (r7916749)
+    - Ángel Guimerá L3-L5-L9 (r7916739)
+
 routes: 
   - 
-    colour: '#fdc600'
-    type: subway
     stations: 
       - Villanueva de Castellón
       - Alberic
@@ -147,8 +145,6 @@ routes:
       - S. Psiquiàtric
       - Bétera
 
-    ref: 1
-    station_count: 40
     itineraries: 
       r5622354: 
         - Villanueva de Castellón (n5498369221)
@@ -236,9 +232,11 @@ routes:
 
 
     name: Línia 1
-  - 
-    colour: '#e70095'
+    station_count: 40
+    ref: 1
+    colour: '#fdc600'
     type: subway
+  - 
     stations: 
       - Torrent Avinguda
       - Torrent
@@ -274,8 +272,6 @@ routes:
       - Benaguasil 2n
       - Llíria
 
-    ref: 2
-    station_count: 33
     itineraries: 
       r5622180: 
         - Torrent Avinguda (n5492075760)
@@ -349,9 +345,11 @@ routes:
 
 
     name: Línia 2
-  - 
-    colour: '#dd052b'
+    station_count: 33
+    ref: 2
+    colour: '#e70095'
     type: subway
+  - 
     stations: 
       - Aeroport
       - Rosas
@@ -381,8 +379,6 @@ routes:
       - La Pobla de Farnals
       - Rafelbunyol
 
-    ref: 3
-    station_count: 27
     itineraries: 
       r5625981: 
         - Rafelbunyol (n2420238745)
@@ -444,51 +440,32 @@ routes:
 
 
     name: Línia 3
-  - 
-    colour: '#009870'
+    station_count: 27
+    ref: 3
+    colour: '#dd052b'
     type: subway
+  - 
     stations: 
-      - 'Marítim - Serrería L5-L7'
-      - Ayora
-      - Amistat-Casa de Salud
-      - Alameda
-      - Colón
-      - Xàtiva
-      - Ángel Guimerá L3-L5-L9
-      - Avinguda del Cid
-      - Nou d'Octubre
-      - Mislata
-      - Mislata-Almassil
-      - Faitanar
-      - Quart de Poblet
-      - Salt de l'Aigua
-      - Manises
-      - Rosas
       - Aeroport
+      - Rosas
+      - Manises
+      - Salt de l'Aigua
+      - Quart de Poblet
+      - Faitanar
+      - Mislata-Almassil
+      - Mislata
+      - Nou d'Octubre
+      - Avinguda del Cid
+      - Ángel Guimerá L3-L5-L9
+      - Xàtiva
+      - Colón
+      - Alameda
       - Aragón
+      - Amistat-Casa de Salud
+      - Ayora
+      - 'Marítim - Serrería L5-L7'
 
-    ref: 5
-    station_count: 18
     itineraries: 
-      r5626066: 
-        - 'Marítim - Serrería (n5497241958)'
-        - Ayora (n3354222947)
-        - Amistat-Casa de Salud (n3354222956)
-        - Alameda (n3352213337)
-        - Colón (n3352213360)
-        - Xàtiva (n3352213377)
-        - Àngel Guimerà (n3348096569)
-        - Avinguda del Cid (n3352213598)
-        - Nou d'Octubre (n3353533804)
-        - Mislata (n3353533813)
-        - Mislata-Almassil (n3353533822)
-        - Faitanar (n3353533834)
-        - Quart de Poblet (n1735270823)
-        - Salt de l'Aigua (n3353533852)
-        - Manises (n3353533866)
-        - Rosas (n3420418504)
-        - Aeroport (n3353533886)
-
       r5622154: 
         - Aeroport (n3353533886)
         - Rosas (n3420418504)
@@ -509,11 +486,32 @@ routes:
         - Ayora (n3354222947)
         - 'Marítim - Serrería (n5497241958)'
 
+      r5626066: 
+        - 'Marítim - Serrería (n5497241958)'
+        - Ayora (n3354222947)
+        - Amistat-Casa de Salud (n3354222956)
+        - Alameda (n3352213337)
+        - Colón (n3352213360)
+        - Xàtiva (n3352213377)
+        - Àngel Guimerà (n3348096569)
+        - Avinguda del Cid (n3352213598)
+        - Nou d'Octubre (n3353533804)
+        - Mislata (n3353533813)
+        - Mislata-Almassil (n3353533822)
+        - Faitanar (n3353533834)
+        - Quart de Poblet (n1735270823)
+        - Salt de l'Aigua (n3353533852)
+        - Manises (n3353533866)
+        - Rosas (n3420418504)
+        - Aeroport (n3353533886)
+
 
     name: Línia 5
-  - 
-    colour: '#f28c00'
+    station_count: 18
+    ref: 5
+    colour: '#009870'
     type: subway
+  - 
     stations: 
       - 'Marítim - Serrería L5-L7'
       - Ayora
@@ -532,8 +530,6 @@ routes:
       - Torrent
       - Torrent Avinguda
 
-    ref: 7
-    station_count: 16
     itineraries: 
       r5616613: 
         - 'Marítim - Serrería (n5497241958)'
@@ -573,9 +569,11 @@ routes:
 
 
     name: Línia 7
-  - 
-    colour: '#b7814f'
+    station_count: 16
+    ref: 7
+    colour: '#f28c00'
     type: subway
+  - 
     stations: 
       - Alboraya-Peris Aragó
       - Alboraya-Palmaret
@@ -601,34 +599,7 @@ routes:
       - Masia de Traver
       - Riba-roja de Túria
 
-    ref: 9
-    station_count: 23
     itineraries: 
-      r5626068: 
-        - Alboraya-Peris Aragó (n3352207373)
-        - Alboraya-Palmaret (n3352207380)
-        - Machado (n3352207389)
-        - Benimaclet (n3352213311)
-        - Facultats (n3352213320)
-        - Alameda (n3352213337)
-        - Colón (n3352213360)
-        - Xàtiva (n3352213377)
-        - Àngel Guimerà (n3348096569)
-        - Avinguda del Cid (n3352213598)
-        - Nou d'Octubre (n3353533804)
-        - Mislata (n3353533813)
-        - Mislata-Almassil (n3353533822)
-        - Faitanar (n3353533834)
-        - Quart de Poblet (n1735270823)
-        - Salt de l'Aigua (n3353533852)
-        - Manises (n3353533866)
-        - Rosas (n3420418504)
-        - La Cova (n3357315762)
-        - La Presa (n3357315772)
-        - València la Vella (n6017550478)
-        - Masia de Traver (n3357315784)
-        - Riba-roja de Túria (n3357315808)
-
       r5626069: 
         - Riba-roja de Túria (n3357315808)
         - Masia de Traver (n3357315784)
@@ -654,6 +625,35 @@ routes:
         - Alboraya-Palmaret (n3352207380)
         - Alboraya-Peris Aragó (n3352207373)
 
+      r5626068: 
+        - Alboraya-Peris Aragó (n3352207373)
+        - Alboraya-Palmaret (n3352207380)
+        - Machado (n3352207389)
+        - Benimaclet (n3352213311)
+        - Facultats (n3352213320)
+        - Alameda (n3352213337)
+        - Colón (n3352213360)
+        - Xàtiva (n3352213377)
+        - Àngel Guimerà (n3348096569)
+        - Avinguda del Cid (n3352213598)
+        - Nou d'Octubre (n3353533804)
+        - Mislata (n3353533813)
+        - Mislata-Almassil (n3353533822)
+        - Faitanar (n3353533834)
+        - Quart de Poblet (n1735270823)
+        - Salt de l'Aigua (n3353533852)
+        - Manises (n3353533866)
+        - Rosas (n3420418504)
+        - La Cova (n3357315762)
+        - La Presa (n3357315772)
+        - València la Vella (n6017550478)
+        - Masia de Traver (n3357315784)
+        - Riba-roja de Túria (n3357315808)
+
 
     name: Línia 9
+    station_count: 23
+    ref: 9
+    colour: '#b7814f'
+    type: subway
 

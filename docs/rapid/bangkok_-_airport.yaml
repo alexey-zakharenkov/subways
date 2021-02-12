@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - บ้านทับช้าง (n6711014684)
   - พญาไท (n6711028526)
@@ -11,10 +9,10 @@ stations:
   - สุวรรณภูมิ (n6711003839)
   - หัวหมาก (n970112998)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
       - สนามบินสุวรรณภูมิ
       - ลาดกระบัง
@@ -25,8 +23,6 @@ routes:
       - ราชปรารภ
       - พญาไท
 
-    ref: ARL
-    station_count: 8
     itineraries: 
       r9921500: 
         - สุวรรณภูมิ (n6711003839)
@@ -50,4 +46,8 @@ routes:
 
 
     name: รถไฟฟ้าเชื่อมท่าอากาศยานสุวรรณภูมิ
+    station_count: 8
+    ref: ARL
+    colour: '#ff0000'
+    type: subway
 

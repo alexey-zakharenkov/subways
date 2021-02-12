@@ -1,15 +1,4 @@
 
-transfers: 
-  - 
-    - Marquês de Pombal (r10952089)
-    - Marquês de Pombal (r9541911)
-  - 
-    - Saldanha — Amarela (r7683263)
-    - Saldanha — Vermelha (r7683264)
-  - 
-    - São Sebastião — Azul (r7644199)
-    - São Sebastião — Vermelha (r7683262)
-
 stations: 
   - Aeroporto (w760887331)
   - Alameda (w900184898)
@@ -34,6 +23,7 @@ stations:
   - Colégio Militar/Luz (n256978583)
   - Encarnação (n1831350950)
   - Entrecampos (n246763964)
+  - Intendente (w898623801)
   - Jardim Zoológico (n256978160)
   - Laranjeiras (n256978165)
   - Lumiar (n245937941)
@@ -63,43 +53,38 @@ stations:
   - Telheiras (n245938001)
   - Terreiro do Paço (w619519277)
 
+transfers: 
+  - 
+    - Alameda (r12296403)
+    - Alameda (r7683266)
+  - 
+    - Marquês de Pombal (r10952089)
+    - Marquês de Pombal (r9541911)
+  - 
+    - Saldanha — Amarela (r7683263)
+    - Saldanha — Vermelha (r7683264)
+  - 
+    - São Sebastião — Azul (r7644199)
+    - São Sebastião — Vermelha (r7683262)
+
 routes: 
   - 
-    colour: '#f4bc18'
-    type: subway
     stations: 
-      - Odivelas
-      - Senhor Roubado
-      - Ameixoeira
-      - Lumiar
-      - Quinta das Conchas
-      - Campo Grande
-      - Cidade Universitária
-      - Entrecampos
-      - Campo Pequeno
-      - Saldanha — Amarela
-      - Picoas
-      - Marquês de Pombal
       - Rato
+      - Marquês de Pombal
+      - Picoas
+      - Saldanha — Amarela
+      - Campo Pequeno
+      - Entrecampos
+      - Cidade Universitária
+      - Campo Grande
+      - Quinta das Conchas
+      - Lumiar
+      - Ameixoeira
+      - Senhor Roubado
+      - Odivelas
 
-    ref: Amarela
-    station_count: 13
     itineraries: 
-      r7734162: 
-        - Odivelas (n146311452)
-        - Senhor Roubado (n7359956895)
-        - Ameixoeira (n245937922)
-        - Lumiar (n245937941)
-        - Quinta das Conchas (n245937950)
-        - Campo Grande (n5216412760)
-        - Cidade Universitária (n246763946)
-        - Entrecampos (n246763964)
-        - Campo Pequeno (n246763968)
-        - Saldanha (n246763972)
-        - Picoas (n265896596)
-        - Marquês de Pombal (r8754539)
-        - Rato (n247051839)
-
       r370761: 
         - Rato (n247051839)
         - Marquês de Pombal (r8754539)
@@ -115,54 +100,49 @@ routes:
         - Senhor Roubado (n7359956895)
         - Odivelas (n146311452)
 
+      r7734162: 
+        - Odivelas (n146311452)
+        - Senhor Roubado (n7359956895)
+        - Ameixoeira (n245937922)
+        - Lumiar (n245937941)
+        - Quinta das Conchas (n245937950)
+        - Campo Grande (n5216412760)
+        - Cidade Universitária (n246763946)
+        - Entrecampos (n246763964)
+        - Campo Pequeno (n246763968)
+        - Saldanha (n246763972)
+        - Picoas (n265896596)
+        - Marquês de Pombal (r8754539)
+        - Rato (n247051839)
+
 
     name: Linha Amarela
-  - 
-    colour: '#5e82c4'
+    station_count: 13
+    ref: Amarela
+    colour: '#f4bc18'
     type: subway
+  - 
     stations: 
-      - Reboleira
-      - Amadora Este
-      - Alfornelos
-      - Pontinha
-      - Carnide
-      - Colégio Militar/Luz
-      - Alto dos Moínhos
-      - Laranjeira
-      - Jardim Zoológico
-      - Praça de Espanha
-      - São Sebastião — Azul
-      - Parque
-      - Marquês de Pombal
-      - Avenida
-      - Restauradores
-      - Baixa-Chiado
-      - 'Terreiro do Paço - Metro'
       - Santa Apolónia
+      - 'Terreiro do Paço - Metro'
+      - Baixa-Chiado
+      - Restauradores
+      - Avenida
+      - Marquês de Pombal
+      - Parque
+      - São Sebastião — Azul
+      - Praça de Espanha
+      - Jardim Zoológico
+      - Laranjeira
+      - Alto dos Moínhos
+      - Colégio Militar/Luz
+      - Carnide
+      - Pontinha
+      - Alfornelos
+      - Amadora Este
+      - Reboleira
 
-    ref: Azul
-    station_count: 18
     itineraries: 
-      r371021: 
-        - Santa Apolónia (n1696909109)
-        - Terreiro do Paço (w619519277)
-        - Baixa-Chiado (w898560648)
-        - Restauradores (w695510929)
-        - Avenida (n600134721)
-        - Marquês de Pombal (r8754539)
-        - Parque (n256674213)
-        - São Sebastião (n6417780992)
-        - Praça de Espanha (n256976574)
-        - Jardim Zoológico (n256978160)
-        - Laranjeiras (n256978165)
-        - Alto dos Moínhos (n256978170)
-        - Colégio Militar/Luz (n256978583)
-        - Carnide (n256979289)
-        - Pontinha (n256981317)
-        - Alfornelos (n256981321)
-        - Amadora Este (n256981325)
-        - Reboleira (n4119252201)
-
       r7734161: 
         - Reboleira (n4119252201)
         - Amadora Este (n256981325)
@@ -183,11 +163,33 @@ routes:
         - Terreiro do Paço (w619519277)
         - Santa Apolónia (n1696909109)
 
+      r371021: 
+        - Santa Apolónia (n1696909109)
+        - Terreiro do Paço (w619519277)
+        - Baixa-Chiado (w898560648)
+        - Restauradores (w695510929)
+        - Avenida (n600134721)
+        - Marquês de Pombal (r8754539)
+        - Parque (n256674213)
+        - São Sebastião (n6417780992)
+        - Praça de Espanha (n256976574)
+        - Jardim Zoológico (n256978160)
+        - Laranjeiras (n256978165)
+        - Alto dos Moínhos (n256978170)
+        - Colégio Militar/Luz (n256978583)
+        - Carnide (n256979289)
+        - Pontinha (n256981317)
+        - Alfornelos (n256981321)
+        - Amadora Este (n256981325)
+        - Reboleira (n4119252201)
+
 
     name: Linha Azul
-  - 
-    colour: '#2f9b9c'
+    station_count: 18
+    ref: Azul
+    colour: '#5e82c4'
     type: subway
+  - 
     stations: 
       - Telheiras
       - Campo Grande
@@ -197,14 +199,28 @@ routes:
       - Alameda
       - Arroios
       - Anjos
+      - Intendente
       - Martim Moniz
       - Rossio
       - Baixa-Chiado
       - 'Cais do Sodré - Metro'
 
-    ref: Verde
-    station_count: 12
     itineraries: 
+      r371080: 
+        - Cais do Sodré (n256673563)
+        - Baixa-Chiado (w898560648)
+        - Rossio (w898569365)
+        - Martim Moniz (w898593442)
+        - Intendente (w898623801)
+        - Anjos (w900533380)
+        - Arroios (w900581650)
+        - Alameda (w900184898)
+        - Areeiro (n1465237705)
+        - Roma (n256971868)
+        - Alvalade (n256971869)
+        - Campo Grande (n5216412760)
+        - Telheiras (n245938001)
+
       r7734160: 
         - Telheiras (n245938001)
         - Campo Grande (n5216412760)
@@ -214,61 +230,34 @@ routes:
         - Alameda (w900184898)
         - Arroios (w900581650)
         - Anjos (w900533380)
+        - Intendente (w898623801)
         - Martim Moniz (w898593442)
         - Rossio (w898569365)
         - Baixa-Chiado (w898560648)
         - Cais do Sodré (n256673563)
-
-      r371080: 
-        - Cais do Sodré (n256673563)
-        - Baixa-Chiado (w898560648)
-        - Rossio (w898569365)
-        - Martim Moniz (w898593442)
-        - Anjos (w900533380)
-        - Arroios (w900581650)
-        - Alameda (w900184898)
-        - Areeiro (n1465237705)
-        - Roma (n256971868)
-        - Alvalade (n256971869)
-        - Campo Grande (n5216412760)
-        - Telheiras (n245938001)
 
 
     name: Linha Verde
-  - 
-    colour: '#df096f'
+    station_count: 13
+    ref: Verde
+    colour: '#2f9b9c'
     type: subway
+  - 
     stations: 
-      - Aeroporto
-      - Encarnação
-      - Moscavide
-      - Oriente
-      - Cabo Ruivo
-      - Olivais
-      - Chelas
-      - Bela Vista
-      - Olaias
-      - Alameda
-      - Saldanha — Vermelha
       - São Sebastião — Vermelha
+      - Saldanha — Vermelha
+      - Alameda
+      - Olaias
+      - Bela Vista
+      - Chelas
+      - Olivais
+      - Cabo Ruivo
+      - Oriente
+      - Moscavide
+      - Encarnação
+      - Aeroporto
 
-    ref: Vermelha
-    station_count: 12
     itineraries: 
-      r371084: 
-        - São Sebastião (n6417780991)
-        - Saldanha (n6417780993)
-        - Alameda (w900184898)
-        - Olaias (n256972634)
-        - Bela Vista (n256975148)
-        - Chelas (n256975157)
-        - Olivais (n256975161)
-        - Cabo Ruivo (n256975169)
-        - Oriente (n256975177)
-        - Moscavide (n1831350952)
-        - Encarnação (n1831350950)
-        - Aeroporto (w760887331)
-
       r7734159: 
         - Aeroporto (w760887331)
         - Encarnação (n1831350950)
@@ -283,6 +272,24 @@ routes:
         - Saldanha (n6417780993)
         - São Sebastião (n6417780991)
 
+      r371084: 
+        - São Sebastião (n6417780991)
+        - Saldanha (n6417780993)
+        - Alameda (w900184898)
+        - Olaias (n256972634)
+        - Bela Vista (n256975148)
+        - Chelas (n256975157)
+        - Olivais (n256975161)
+        - Cabo Ruivo (n256975169)
+        - Oriente (n256975177)
+        - Moscavide (n1831350952)
+        - Encarnação (n1831350950)
+        - Aeroporto (w760887331)
+
 
     name: Linha Vermelha
+    station_count: 12
+    ref: Vermelha
+    colour: '#df096f'
+    type: subway
 

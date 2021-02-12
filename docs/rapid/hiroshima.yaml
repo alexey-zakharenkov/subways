@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 上安 (n5205959974)
   - 不動院前 (n5205871575)
@@ -25,10 +23,10 @@ stations:
   - 長楽寺 (n5205959970)
   - 高取 (n5205959972)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ffa500'
-    type: subway
     stations: 
       - 広域公園前
       - 大塚
@@ -53,8 +51,6 @@ routes:
       - 県庁前
       - 本通
 
-    ref: 1
-    station_count: 22
     itineraries: 
       r7702657: 
         - 広域公園前 (n5205871581)
@@ -106,4 +102,8 @@ routes:
 
 
     name: 広島高速交通広島新交通1号線
+    station_count: 22
+    ref: 1
+    colour: '#ffa500'
+    type: subway
 

@@ -1,15 +1,4 @@
 
-transfers: 
-  - 
-    - Ameerpet (Blue Line) (r8297712)
-    - Ameerpet (Red Line) (r8297711)
-  - 
-    - M. G. Bus Station (Red Line) (r10692238)
-    - Mahatma Gandhi Bus Station (Green Line) (r10692237)
-  - 
-    - Parade Grounds (Blue Line) (r10402708)
-    - Parade Grounds (Green Line) (r10692236)
-
 stations: 
   - Ameerpet (Blue Line) (n6700511122)
   - Ameerpet (Red Line) (n6447191882)
@@ -72,10 +61,19 @@ stations:
   - Victoria Memorial (n2422989133)
   - Yusufguda (n6672440858)
 
+transfers: 
+  - 
+    - Ameerpet (Blue Line) (r8297712)
+    - Ameerpet (Red Line) (r8297711)
+  - 
+    - M. G. Bus Station (Red Line) (r10692238)
+    - Mahatma Gandhi Bus Station (Green Line) (r10692237)
+  - 
+    - Parade Grounds (Blue Line) (r10402708)
+    - Parade Grounds (Green Line) (r10692236)
+
 routes: 
   - 
-    colour: '#008000'
-    type: subway
     stations: 
       - Mahatma Gandhi Bus Station (Green Line)
       - Sultan Bazar
@@ -88,8 +86,6 @@ routes:
       - Parade Grounds (Green Line)
       - JBS
 
-    ref: 2
-    station_count: 10
     itineraries: 
       r10692235: 
         - JBS (n7201054971)
@@ -117,36 +113,36 @@ routes:
 
 
     name: Green Line
-  - 
-    colour: '#0000ff'
+    station_count: 10
+    ref: 2
+    colour: '#008000'
     type: subway
+  - 
     stations: 
-      - Raidurg
-      - HITEC City
-      - Durgam Cheruvu
-      - Madhapur
-      - Peddamma Gudi
-      - Jubilee Hills Checkpost
-      - Road No 5 Jubilee Hills
-      - Yusufguda
-      - Madhura Nagar
-      - Ameerpet (Blue Line)
-      - Begumpet
-      - Prakash Nagar
-      - Rasoolpura
-      - Paradise
-      - Parade Grounds (Blue Line)
-      - Secunderabad East
-      - Mettuguda
-      - Tarnaka
-      - Habsiguda
-      - NGRI
-      - Stadium
-      - Uppal
       - Nagole
+      - Uppal
+      - Stadium
+      - NGRI
+      - Habsiguda
+      - Tarnaka
+      - Mettuguda
+      - Secunderabad East
+      - Parade Grounds (Blue Line)
+      - Paradise
+      - Rasoolpura
+      - Prakash Nagar
+      - Begumpet
+      - Ameerpet (Blue Line)
+      - Madhura Nagar
+      - Yusufguda
+      - Road No 5 Jubilee Hills
+      - Jubilee Hills Checkpost
+      - Peddamma Gudi
+      - Madhapur
+      - Durgam Cheruvu
+      - HITEC City
+      - Raidurg
 
-    ref: 3
-    station_count: 23
     itineraries: 
       r5468841: 
         - Raidurg (n7052069775)
@@ -199,10 +195,12 @@ routes:
         - Raidurg (n7052069775)
 
 
-    name: Blue Line (Raidurg –-> Nagole)
-  - 
-    colour: '#ff0000'
+    name: Blue Line (Nagole –-> Raidurg)
+    station_count: 23
+    ref: 3
+    colour: '#0000ff'
     type: subway
+  - 
     stations: 
       - L. B. Nagar
       - Victoria Memorial
@@ -232,8 +230,6 @@ routes:
       - JNTU College
       - Miyapur
 
-    ref: Red Line
-    station_count: 27
     itineraries: 
       r8297689: 
         - L. B. Nagar (n4332315990)
@@ -295,4 +291,8 @@ routes:
 
 
     name: Red Line
+    station_count: 27
+    ref: Red Line
+    colour: '#ff0000'
+    type: subway
 

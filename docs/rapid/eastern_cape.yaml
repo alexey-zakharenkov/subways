@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Arnoldton (n247325948)
   - Berlin (n247325966)
@@ -31,32 +29,30 @@ stations:
   - Vincent (n247326531)
   - Wilsonia (n356772234)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#f58220'
-    type: train
     stations: 
-      - Berlin
-      - Lonetree
-      - Fort Jackson
-      - Egerton
-      - Mount Ruth
-      - Mdantsane
-      - Mtsotso
-      - Arnoldton
-      - Wilsonia
-      - Dawn
-      - Horseshoe
-      - Highgate
-      - Cambridge
-      - Vincent
-      - Chiselhurst
-      - Panmure
-      - Southernwood
       - East London
+      - Southernwood
+      - Panmure
+      - Chiselhurst
+      - Vincent
+      - Cambridge
+      - Highgate
+      - Horseshoe
+      - Dawn
+      - Wilsonia
+      - Arnoldton
+      - Mtsotso
+      - Mdantsane
+      - Mount Ruth
+      - Egerton
+      - Fort Jackson
+      - Lonetree
+      - Berlin
 
-    ref: Berlin
-    station_count: 18
     itineraries: 
       r952426: 
         - East London (n247326273)
@@ -100,36 +96,24 @@ routes:
 
 
     name: Berlin Line
-  - 
-    colour: '#f9cc3e'
+    station_count: 18
+    ref: Berlin
+    colour: '#f58220'
     type: train
+  - 
     stations: 
-      - Port Elizabeth
-      - North End
-      - Sydenham
-      - New Brighton
-      - Swartkops
-      - Redhouse
-      - Perseverance
-      - Despatch
-      - De Mist
       - Uitenhage
+      - De Mist
+      - Despatch
+      - Perseverance
+      - Redhouse
+      - Swartkops
+      - New Brighton
+      - Sydenham
+      - North End
+      - Port Elizabeth
 
-    ref: Uitenhage CBD
-    station_count: 10
     itineraries: 
-      r10374692: 
-        - Uitenhage (n7035457399)
-        - De Mist (n247259684)
-        - Despatch (n248577992)
-        - Perseverance (n31395706)
-        - Redhouse (n30276737)
-        - Swartkops (n30275278)
-        - New Brighton (n30274072)
-        - Sydenham (n30278698)
-        - North End (n30278966)
-        - Port Elizabeth (n30278974)
-
       r952460: 
         - Port Elizabeth (n30278974)
         - North End (n30278966)
@@ -142,6 +126,22 @@ routes:
         - De Mist (n247259684)
         - Uitenhage (n7035457399)
 
+      r10374692: 
+        - Uitenhage (n7035457399)
+        - De Mist (n247259684)
+        - Despatch (n248577992)
+        - Perseverance (n31395706)
+        - Redhouse (n30276737)
+        - Swartkops (n30275278)
+        - New Brighton (n30274072)
+        - Sydenham (n30278698)
+        - North End (n30278966)
+        - Port Elizabeth (n30278974)
+
 
     name: Uitenhage CBD
+    station_count: 10
+    ref: Uitenhage CBD
+    colour: '#f9cc3e'
+    type: train
 

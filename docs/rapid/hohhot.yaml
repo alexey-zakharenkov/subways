@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - 新华广场 (r10523884)
-    - 新华广场 (r11754265)
-
 stations: 
   - 一家村 (n7965245048)
   - 东二环路 (n7965245049)
@@ -50,10 +45,13 @@ stations:
   - 阿尔山路 (n7965531812)
   - 附属医院 (n7098893394)
 
+transfers: 
+  - 
+    - 新华广场 (r10523884)
+    - 新华广场 (r11754265)
+
 routes: 
   - 
-    colour: '#e82311'
-    type: subway
     stations: 
       - 坝堰（机场）
       - 白塔西
@@ -76,8 +74,6 @@ routes:
       - 西二环路
       - 伊利健康谷
 
-    ref: 1
-    station_count: 20
     itineraries: 
       r10454992: 
         - 伊利健康谷 (n7095452110)
@@ -125,9 +121,11 @@ routes:
 
 
     name: 呼和浩特地铁1号线
-  - 
-    colour: '#0645ad'
+    station_count: 20
+    ref: 1
+    colour: '#e82311'
     type: subway
+  - 
     stations: 
       - 阿尔山路
       - 喇嘛营
@@ -154,8 +152,6 @@ routes:
       - 新店
       - 塔利东路
 
-    ref: 2
-    station_count: 24
     itineraries: 
       r11697807: 
         - 阿尔山路 (n7965531812)
@@ -211,4 +207,8 @@ routes:
 
 
     name: 呼和浩特地铁2号线
+    station_count: 24
+    ref: 2
+    colour: '#0645ad'
+    type: subway
 

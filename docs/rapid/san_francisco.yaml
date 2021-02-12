@@ -1,16 +1,9 @@
 
-transfers: 
-  - 
-    - Coliseum (r7845924)
-    - Coliseum (r9938478)
-  - 
-    - Garage G/BART (r9734616)
-    - San Francisco International Airport (r7858680)
-
 stations: 
   - 16th Street Mission (n2150077206)
   - 19th Street Oakland (n2150077207)
   - 24th Street Mission (n2150077208)
+  - '? (w700618559)'
   - Antioch (n6133702995)
   - Ashby (n95327721)
   - Balboa Park (n6133371923)
@@ -52,7 +45,6 @@ stations:
   - Pittsburg/Bay Point Transfer (n5319797460)
   - Pleasant Hill/Contra Costa Centre (n6129526876)
   - Powell Street (n2150077204)
-  - Rental Car Center (n6579418973)
   - Richmond (n6108521326)
   - Rockridge (n53023702)
   - San Bruno (n6133477840)
@@ -70,22 +62,62 @@ stations:
   - West Field Road (n1087057078)
   - West Oakland (n5783081359)
 
+transfers: 
+  - 
+    - Coliseum (r7845924)
+    - Coliseum (r9938478)
+  - 
+    - Garage G/BART (r9734616)
+    - San Francisco International Airport (r7858680)
+
 routes: 
   - 
-    colour: '#00aeef'
-    type: subway
     stations: 
-      - Dublin/Pleasanton
-      - West Dublin/Pleasanton
-      - Castro Valley
-      - Bay Fair
-      - San Leandro
-      - Coliseum
-      - Fruitvale
-      - Lake Merritt
-      - West Oakland
-      - Embarcadero
+      - Rental Car Center
+      - West Field Road
+      - Grand Hyatt
+      - Garage A
+      - International Terminal A
+      - Terminal 1
+      - Terminal 2
+      - Terminal 3
+      - International Terminal G
+      - Garage G/BART
+
+    itineraries: 
+      r6043603: 
+        - '? (w700618559)'
+        - West Field Road (n1087057078)
+        - Grand Hyatt (n7119024966)
+        - Garage A (n1087091566)
+        - International Terminal A (n1087090410)
+        - Terminal 1 (n6579418970)
+        - Terminal 2 (n6579418971)
+        - Terminal 3 (n6579418972)
+        - International Terminal G (n1087092897)
+        - Garage G/BART (n1087092030)
+        - West Field Road (n1087057078)
+        - '? (w700618559)'
+
+
+    name: AirTrain Blue Line
+    station_count: 10
+    ref: Blue
+    colour: '#0000ff'
+    type: monorail
+  - 
+    stations: 
       - Montgomery Street
+      - Embarcadero
+      - West Oakland
+      - Lake Merritt
+      - Fruitvale
+      - Coliseum
+      - San Leandro
+      - Bay Fair
+      - Castro Valley
+      - West Dublin/Pleasanton
+      - Dublin/Pleasanton
       - Powell Street
       - Civic Center
       - 16th Street Mission
@@ -94,42 +126,7 @@ routes:
       - Balboa Park
       - Daly City
 
-    ref: Blue
-    station_count: 18
     itineraries: 
-      r9315474: 
-        - Dublin/Pleasanton (n6131716473)
-        - West Dublin/Pleasanton (n6131716472)
-        - Castro Valley (n6131716471)
-        - Bay Fair (n6131716474)
-        - San Leandro (n6131716475)
-        - Coliseum (n6131716479)
-        - Fruitvale (n6131716480)
-        - Lake Merritt (n2150077199)
-        - West Oakland (n5783081359)
-        - Embarcadero (n2150077198)
-        - Montgomery Street (n5015578939)
-
-      r2851725: 
-        - Dublin/Pleasanton (n6131716473)
-        - West Dublin/Pleasanton (n6131716472)
-        - Castro Valley (n6131716471)
-        - Bay Fair (n6131716474)
-        - San Leandro (n6131716475)
-        - Coliseum (n6131716479)
-        - Fruitvale (n6131716480)
-        - Lake Merritt (n2150077199)
-        - West Oakland (n5783081359)
-        - Embarcadero (n2150077198)
-        - Montgomery Street (n5015578939)
-        - Powell Street (n2150077204)
-        - Civic Center (n2150077196)
-        - 16th Street Mission (n2150077206)
-        - 24th Street Mission (n2150077208)
-        - Glen Park (n6133371922)
-        - Balboa Park (n6133371923)
-        - Daly City (n6133371924)
-
       r9315475: 
         - Montgomery Street (n5015578939)
         - Embarcadero (n2150077198)
@@ -163,45 +160,46 @@ routes:
         - West Dublin/Pleasanton (n6131716472)
         - Dublin/Pleasanton (n6131716473)
 
+      r2851725: 
+        - Dublin/Pleasanton (n6131716473)
+        - West Dublin/Pleasanton (n6131716472)
+        - Castro Valley (n6131716471)
+        - Bay Fair (n6131716474)
+        - San Leandro (n6131716475)
+        - Coliseum (n6131716479)
+        - Fruitvale (n6131716480)
+        - Lake Merritt (n2150077199)
+        - West Oakland (n5783081359)
+        - Embarcadero (n2150077198)
+        - Montgomery Street (n5015578939)
+        - Powell Street (n2150077204)
+        - Civic Center (n2150077196)
+        - 16th Street Mission (n2150077206)
+        - 24th Street Mission (n2150077208)
+        - Glen Park (n6133371922)
+        - Balboa Park (n6133371923)
+        - Daly City (n6133371924)
+
+      r9315474: 
+        - Dublin/Pleasanton (n6131716473)
+        - West Dublin/Pleasanton (n6131716472)
+        - Castro Valley (n6131716471)
+        - Bay Fair (n6131716474)
+        - San Leandro (n6131716475)
+        - Coliseum (n6131716479)
+        - Fruitvale (n6131716480)
+        - Lake Merritt (n2150077199)
+        - West Oakland (n5783081359)
+        - Embarcadero (n2150077198)
+        - Montgomery Street (n5015578939)
+
 
     name: Dublin/Pleasanton–Daly City Line
-  - 
-    colour: '#0000ff'
-    type: monorail
-    stations: 
-      - Rental Car Center
-      - West Field Road
-      - Grand Hyatt
-      - Garage A
-      - International Terminal A
-      - Terminal 1
-      - Terminal 2
-      - Terminal 3
-      - International Terminal G
-      - Garage G/BART
-
+    station_count: 18
     ref: Blue
-    station_count: 10
-    itineraries: 
-      r6043603: 
-        - Rental Car Center (n6579418973)
-        - West Field Road (n1087057078)
-        - Grand Hyatt (n7119024966)
-        - Garage A (n1087091566)
-        - International Terminal A (n1087090410)
-        - Terminal 1 (n6579418970)
-        - Terminal 2 (n6579418971)
-        - Terminal 3 (n6579418972)
-        - International Terminal G (n1087092897)
-        - Garage G/BART (n1087092030)
-        - West Field Road (n1087057078)
-        - Rental Car Center (n6579418973)
-
-
-    name: AirTrain Blue Line
-  - 
-    colour: '#4db848'
+    colour: '#00aeef'
     type: subway
+  - 
     stations: 
       - Berryessa/North San José
       - Milpitas
@@ -226,8 +224,6 @@ routes:
       - Balboa Park
       - Daly City
 
-    ref: Green
-    station_count: 22
     itineraries: 
       r2851728: 
         - Daly City (n6133371924)
@@ -279,78 +275,55 @@ routes:
 
 
     name: Berryessa/North San José–Daly City Line
+    station_count: 22
+    ref: Green
+    colour: '#4db848'
+    type: subway
   - 
-    colour: '#d5cfa3'
-    type: monorail
     stations: 
-      - Coliseum
       - Oakland International Airport
+      - Coliseum
 
-    ref: OAK
-    station_count: 2
     itineraries: 
-      r4740795: 
-        - Coliseum (n6131716479)
-        - Oakland International Airport (n6131716476)
-
       r4829981: 
         - Oakland International Airport (n6131716476)
         - Coliseum (n6131716479)
 
+      r4740795: 
+        - Coliseum (n6131716479)
+        - Oakland International Airport (n6131716476)
+
 
     name: Coliseum–Oakland International Airport Line
+    station_count: 2
+    ref: OAK
+    colour: '#d5cfa3'
+    type: monorail
   - 
-    colour: '#faa61a'
-    type: subway
     stations: 
-      - Richmond
-      - El Cerrito del Norte
-      - El Cerrito Plaza
-      - North Berkeley
-      - Downtown Berkeley
-      - Ashby
-      - MacArthur
-      - 19th Street Oakland
-      - 'Oakland City Center - 12th Street'
-      - Lake Merritt
-      - Fruitvale
-      - Coliseum
-      - San Leandro
-      - Bay Fair
-      - Hayward
-      - South Hayward
-      - Union City
-      - Fremont
-      - Warm Springs/South Fremont
-      - Milpitas
       - Berryessa/North San José
+      - Milpitas
+      - Warm Springs/South Fremont
+      - Fremont
+      - Union City
+      - South Hayward
+      - Hayward
+      - Bay Fair
+      - San Leandro
+      - Coliseum
+      - Fruitvale
+      - Lake Merritt
+      - 'Oakland City Center - 12th Street'
+      - 19th Street Oakland
+      - MacArthur
+      - Ashby
+      - Downtown Berkeley
+      - North Berkeley
+      - El Cerrito Plaza
+      - El Cerrito del Norte
+      - Richmond
 
-    ref: Orange
-    station_count: 21
     itineraries: 
-      r2851512: 
-        - Berryessa/North San José (n6955370556)
-        - Milpitas (n6955808073)
-        - Warm Springs/South Fremont (n6131304189)
-        - Fremont (n6131716481)
-        - Union City (n6131716468)
-        - South Hayward (n6131716469)
-        - Hayward (n6131716470)
-        - Bay Fair (n6131716474)
-        - San Leandro (n6131716475)
-        - Coliseum (n6131716479)
-        - Fruitvale (n6131716480)
-        - Lake Merritt (n2150077199)
-        - 'Oakland City Center - 12th Street (n2150077203)'
-        - 19th Street Oakland (n2150077207)
-        - MacArthur (n53023690)
-        - Ashby (n95327721)
-        - Downtown Berkeley (n6129383336)
-        - North Berkeley (n6129383335)
-        - El Cerrito Plaza (n6129383334)
-        - El Cerrito del Norte (n6129383333)
-        - Richmond (n6108521326)
-
       r2851510: 
         - Richmond (n6108521326)
         - El Cerrito del Norte (n6129383333)
@@ -374,17 +347,40 @@ routes:
         - Milpitas (n6955808073)
         - Berryessa/North San José (n6955370556)
 
+      r2851512: 
+        - Berryessa/North San José (n6955370556)
+        - Milpitas (n6955808073)
+        - Warm Springs/South Fremont (n6131304189)
+        - Fremont (n6131716481)
+        - Union City (n6131716468)
+        - South Hayward (n6131716469)
+        - Hayward (n6131716470)
+        - Bay Fair (n6131716474)
+        - San Leandro (n6131716475)
+        - Coliseum (n6131716479)
+        - Fruitvale (n6131716480)
+        - Lake Merritt (n2150077199)
+        - 'Oakland City Center - 12th Street (n2150077203)'
+        - 19th Street Oakland (n2150077207)
+        - MacArthur (n53023690)
+        - Ashby (n95327721)
+        - Downtown Berkeley (n6129383336)
+        - North Berkeley (n6129383335)
+        - El Cerrito Plaza (n6129383334)
+        - El Cerrito del Norte (n6129383333)
+        - Richmond (n6108521326)
+
 
     name: Berryessa/North San José–Richmond Line
-  - 
-    colour: '#903e98'
+    station_count: 21
+    ref: Orange
+    colour: '#faa61a'
     type: subway
+  - 
     stations: 
-      - Millbrae
       - San Francisco International Airport
+      - Millbrae
 
-    ref: Purple
-    station_count: 2
     itineraries: 
       r9315476: 
         - Millbrae (n5317898423)
@@ -396,43 +392,12 @@ routes:
 
 
     name: SFO–Millbrae Shuttle
-  - 
-    colour: '#ff0000'
-    type: monorail
-    stations: 
-      - Garage G/BART
-      - International Terminal G
-      - Terminal 3
-      - Terminal 2
-      - Terminal 1
-      - International Terminal A
-      - Garage A
-      - Grand Hyatt
-
-    ref: Red
-    station_count: 8
-    itineraries: 
-      r6043605: 
-        - Garage G/BART (n1087092030)
-        - International Terminal G (n1087092897)
-        - Terminal 3 (n6579418972)
-        - Terminal 2 (n6579418971)
-        - Terminal 1 (n6579418970)
-        - International Terminal A (n1087090410)
-        - Garage A (n1087091566)
-        - Grand Hyatt (n7119024966)
-        - Garage G/BART (n1087092030)
-
-
-    name: AirTrain Red Line
-  - 
-    colour: '#ed1c24'
+    station_count: 2
+    ref: Purple
+    colour: '#903e98'
     type: subway
+  - 
     stations: 
-      - Millbrae
-      - San Bruno
-      - South San Francisco
-      - Colma
       - Daly City
       - Balboa Park
       - Glen Park
@@ -452,9 +417,11 @@ routes:
       - El Cerrito Plaza
       - El Cerrito del Norte
       - Richmond
+      - Colma
+      - South San Francisco
+      - San Bruno
+      - Millbrae
 
-    ref: Red
-    station_count: 23
     itineraries: 
       r2851613: 
         - Millbrae (n5317898423)
@@ -481,6 +448,27 @@ routes:
         - El Cerrito del Norte (n6129383333)
         - Richmond (n6108521326)
 
+      r2851509: 
+        - Richmond (n6108521326)
+        - El Cerrito del Norte (n6129383333)
+        - El Cerrito Plaza (n6129383334)
+        - North Berkeley (n6129383335)
+        - Downtown Berkeley (n6129383336)
+        - Ashby (n95327721)
+        - MacArthur (n53023690)
+        - 19th Street Oakland (n2150077207)
+        - 'Oakland City Center - 12th Street (n2150077203)'
+        - West Oakland (n5783081359)
+        - Embarcadero (n2150077198)
+        - Montgomery Street (n5015578939)
+        - Powell Street (n2150077204)
+        - Civic Center (n2150077196)
+        - 16th Street Mission (n2150077206)
+        - 24th Street Mission (n2150077208)
+        - Glen Park (n6133371922)
+        - Balboa Park (n6133371923)
+        - Daly City (n6133371924)
+
       r2851612: 
         - Richmond (n6108521326)
         - El Cerrito del Norte (n6129383333)
@@ -506,27 +494,6 @@ routes:
         - San Bruno (n6133477840)
         - Millbrae (n5317898423)
 
-      r2851509: 
-        - Richmond (n6108521326)
-        - El Cerrito del Norte (n6129383333)
-        - El Cerrito Plaza (n6129383334)
-        - North Berkeley (n6129383335)
-        - Downtown Berkeley (n6129383336)
-        - Ashby (n95327721)
-        - MacArthur (n53023690)
-        - 19th Street Oakland (n2150077207)
-        - 'Oakland City Center - 12th Street (n2150077203)'
-        - West Oakland (n5783081359)
-        - Embarcadero (n2150077198)
-        - Montgomery Street (n5015578939)
-        - Powell Street (n2150077204)
-        - Civic Center (n2150077196)
-        - 16th Street Mission (n2150077206)
-        - 24th Street Mission (n2150077208)
-        - Glen Park (n6133371922)
-        - Balboa Park (n6133371923)
-        - Daly City (n6133371924)
-
       r2851511: 
         - Daly City (n6133371924)
         - Balboa Park (n6133371923)
@@ -550,32 +517,63 @@ routes:
 
 
     name: Richmond–Millbrae Line
+    station_count: 23
+    ref: Red
+    colour: '#ed1c24'
+    type: subway
   - 
-    colour: '#ffe800'
-    type: light_rail
     stations: 
-      - Pittsburg/Bay Point Transfer
-      - Pittsburg Center
-      - Antioch
+      - Garage G/BART
+      - International Terminal G
+      - Terminal 3
+      - Terminal 2
+      - Terminal 1
+      - International Terminal A
+      - Garage A
+      - Grand Hyatt
 
-    ref: Yellow
-    station_count: 3
     itineraries: 
-      r8129097: 
-        - Pittsburg/Bay Point Transfer (n5319797460)
-        - Pittsburg Center (n6133703104)
-        - Antioch (n6133702995)
+      r6043605: 
+        - Garage G/BART (n1087092030)
+        - International Terminal G (n1087092897)
+        - Terminal 3 (n6579418972)
+        - Terminal 2 (n6579418971)
+        - Terminal 1 (n6579418970)
+        - International Terminal A (n1087090410)
+        - Garage A (n1087091566)
+        - Grand Hyatt (n7119024966)
+        - Garage G/BART (n1087092030)
 
+
+    name: AirTrain Red Line
+    station_count: 8
+    ref: Red
+    colour: '#ff0000'
+    type: monorail
+  - 
+    stations: 
+      - Antioch
+      - Pittsburg Center
+      - Pittsburg/Bay Point Transfer
+
+    itineraries: 
       r8237283: 
         - Antioch (n6133702995)
         - Pittsburg Center (n6133703104)
         - Pittsburg/Bay Point Transfer (n5319797460)
 
+      r8129097: 
+        - Pittsburg/Bay Point Transfer (n5319797460)
+        - Pittsburg Center (n6133703104)
+        - Antioch (n6133702995)
+
 
     name: SFO/Millbrae–Antioch Line
-  - 
+    station_count: 3
+    ref: Yellow
     colour: '#ffe800'
-    type: subway
+    type: light_rail
+  - 
     stations: 
       - Millbrae
       - San Francisco International Airport
@@ -605,36 +603,35 @@ routes:
       - Pittsburg/Bay Point
       - Pittsburg/Bay Point Transfer
 
-    ref: Yellow
-    station_count: 27
     itineraries: 
-      r2827684: 
-        - San Francisco International Airport (n6133643372)
-        - San Bruno (n6133477840)
-        - South San Francisco (n6133477844)
-        - Colma (n6133477873)
-        - Daly City (n6133371924)
-        - Balboa Park (n6133371923)
-        - Glen Park (n6133371922)
-        - 24th Street Mission (n2150077208)
-        - 16th Street Mission (n2150077206)
-        - Civic Center (n2150077196)
-        - Powell Street (n2150077204)
-        - Montgomery Street (n5015578939)
-        - Embarcadero (n2150077198)
-        - West Oakland (n5783081359)
-        - 'Oakland City Center - 12th Street (n2150077203)'
-        - 19th Street Oakland (n2150077207)
-        - MacArthur (n53023690)
-        - Rockridge (n53023702)
-        - Orinda (n257087537)
-        - Lafayette (n257088282)
-        - Walnut Creek (n6129526877)
-        - Pleasant Hill/Contra Costa Centre (n6129526876)
-        - Concord (n57792672)
-        - North Concord/Martinez (n6129526875)
-        - Pittsburg/Bay Point (n6129526874)
+      r2827683: 
         - Pittsburg/Bay Point Transfer (n5319797460)
+        - Pittsburg/Bay Point (n6129526874)
+        - North Concord/Martinez (n6129526875)
+        - Concord (n57792672)
+        - Pleasant Hill/Contra Costa Centre (n6129526876)
+        - Walnut Creek (n6129526877)
+        - Lafayette (n257088282)
+        - Orinda (n257087537)
+        - Rockridge (n53023702)
+        - MacArthur (n53023690)
+        - 19th Street Oakland (n2150077207)
+        - 'Oakland City Center - 12th Street (n2150077203)'
+        - West Oakland (n5783081359)
+        - Embarcadero (n2150077198)
+        - Montgomery Street (n5015578939)
+        - Powell Street (n2150077204)
+        - Civic Center (n2150077196)
+        - 16th Street Mission (n2150077206)
+        - 24th Street Mission (n2150077208)
+        - Glen Park (n6133371922)
+        - Balboa Park (n6133371923)
+        - Daly City (n6133371924)
+        - Colma (n6133477873)
+        - South San Francisco (n6133477844)
+        - San Bruno (n6133477840)
+        - San Francisco International Airport (n6133643372)
+        - Millbrae (n5317898423)
 
       r2827685: 
         - Millbrae (n5317898423)
@@ -693,35 +690,38 @@ routes:
         - San Bruno (n6133477840)
         - San Francisco International Airport (n6133643372)
 
-      r2827683: 
-        - Pittsburg/Bay Point Transfer (n5319797460)
-        - Pittsburg/Bay Point (n6129526874)
-        - North Concord/Martinez (n6129526875)
-        - Concord (n57792672)
-        - Pleasant Hill/Contra Costa Centre (n6129526876)
-        - Walnut Creek (n6129526877)
-        - Lafayette (n257088282)
-        - Orinda (n257087537)
-        - Rockridge (n53023702)
-        - MacArthur (n53023690)
-        - 19th Street Oakland (n2150077207)
-        - 'Oakland City Center - 12th Street (n2150077203)'
-        - West Oakland (n5783081359)
-        - Embarcadero (n2150077198)
-        - Montgomery Street (n5015578939)
-        - Powell Street (n2150077204)
-        - Civic Center (n2150077196)
-        - 16th Street Mission (n2150077206)
-        - 24th Street Mission (n2150077208)
-        - Glen Park (n6133371922)
-        - Balboa Park (n6133371923)
-        - Daly City (n6133371924)
-        - Colma (n6133477873)
-        - South San Francisco (n6133477844)
-        - San Bruno (n6133477840)
+      r2827684: 
         - San Francisco International Airport (n6133643372)
-        - Millbrae (n5317898423)
+        - San Bruno (n6133477840)
+        - South San Francisco (n6133477844)
+        - Colma (n6133477873)
+        - Daly City (n6133371924)
+        - Balboa Park (n6133371923)
+        - Glen Park (n6133371922)
+        - 24th Street Mission (n2150077208)
+        - 16th Street Mission (n2150077206)
+        - Civic Center (n2150077196)
+        - Powell Street (n2150077204)
+        - Montgomery Street (n5015578939)
+        - Embarcadero (n2150077198)
+        - West Oakland (n5783081359)
+        - 'Oakland City Center - 12th Street (n2150077203)'
+        - 19th Street Oakland (n2150077207)
+        - MacArthur (n53023690)
+        - Rockridge (n53023702)
+        - Orinda (n257087537)
+        - Lafayette (n257088282)
+        - Walnut Creek (n6129526877)
+        - Pleasant Hill/Contra Costa Centre (n6129526876)
+        - Concord (n57792672)
+        - North Concord/Martinez (n6129526875)
+        - Pittsburg/Bay Point (n6129526874)
+        - Pittsburg/Bay Point Transfer (n5319797460)
 
 
     name: Antioch–SFO/Millbrae Line
+    station_count: 27
+    ref: Yellow
+    colour: '#ffe800'
+    type: subway
 

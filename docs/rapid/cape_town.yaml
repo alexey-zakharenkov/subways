@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Mutual (r9822421)
-    - Mutual (r9822422)
-
 stations: 
   - Abbotsdale (n240259351)
   - Acacia Park (n35992613)
@@ -107,10 +102,13 @@ stations:
   - Wynberg (n26114235)
   - Ysterplaat (n35991191)
 
+transfers: 
+  - 
+    - Mutual (r9822421)
+    - Mutual (r9822422)
+
 routes: 
   - 
-    colour: '#8c493a'
-    type: train
     stations: 
       - Retreat
       - Heathfield
@@ -129,26 +127,7 @@ routes:
       - Woodstock
       - Cape Town
 
-    ref: CFL
-    station_count: 16
     itineraries: 
-      r952458: 
-        - Cape Town Station (n288676470)
-        - Woodstock (n288676995)
-        - Salt River (n349078745)
-        - Koeberg Road (n288678018)
-        - Maitland (n288678029)
-        - Ndabeni (n288679264)
-        - Hazendal (n25376501)
-        - Athlone (n25376537)
-        - Crawford (n25376568)
-        - Lansdowne (n26121232)
-        - Wetton (n26121308)
-        - Ottery (n26121399)
-        - Southfield (n26124087)
-        - Heathfield (n6628609259)
-        - Retreat (n6628609261)
-
       r9812220: 
         - Retreat (n6628609261)
         - Heathfield (n6628609259)
@@ -167,42 +146,133 @@ routes:
         - Woodstock (n288676995)
         - Cape Town Station (n288676470)
 
+      r952458: 
+        - Cape Town Station (n288676470)
+        - Woodstock (n288676995)
+        - Salt River (n349078745)
+        - Koeberg Road (n288678018)
+        - Maitland (n288678029)
+        - Ndabeni (n288679264)
+        - Hazendal (n25376501)
+        - Athlone (n25376537)
+        - Crawford (n25376568)
+        - Lansdowne (n26121232)
+        - Wetton (n26121308)
+        - Ottery (n26121399)
+        - Southfield (n26124087)
+        - Heathfield (n6628609259)
+        - Retreat (n6628609261)
+
 
     name: Cape Flats Line
-  - 
-    colour: '#33bef3'
+    station_count: 16
+    ref: CFL
+    colour: '#8c493a'
     type: train
+  - 
     stations: 
-      - Chris Hani
-      - Kuyasa
-      - Khayelitsha
-      - Nonkqubela
-      - Nolungile
-      - Mandalay
-      - Stock Road
-      - Philippi
-      - Nyanga
-      - Heideveld
-      - Netreg
-      - Bonteheuwel
-      - Langa
-      - Mutual
-      - Ysterplaat
-      - Esplanade
       - Cape Town
-      - Lentegeur
-      - Mitchell's Plain
-      - Kapteinsklip Station
       - Woodstock
       - Salt River
       - Koeberg Road
       - Maitland
       - Ndabeni
       - Pinelands
+      - Langa
+      - Bonteheuwel
+      - Netreg
+      - Heideveld
+      - Nyanga
+      - Philippi
+      - Stock Road
+      - Mandalay
+      - Nolungile
+      - Nonkqubela
+      - Khayelitsha
+      - Kuyasa
+      - Chris Hani
+      - Esplanade
+      - Ysterplaat
+      - Mutual
+      - Kapteinsklip Station
+      - Mitchell's Plain
+      - Lentegeur
 
-    ref: CL
-    station_count: 26
     itineraries: 
+      r10671155: 
+        - Kapteinsklip Station (n6859255902)
+        - Mitchell's Plain (n125365006)
+        - Lentegeur (n125365367)
+        - Philippi (n288681832)
+        - Nyanga (n288681146)
+        - Heideveld (n56360109)
+        - Netreg (n7400828907)
+        - Bonteheuwel (n56360081)
+        - Langa (n25884626)
+        - Mutual (n288679159)
+        - Ysterplaat (n35991191)
+        - Esplanade (n288678132)
+        - Cape Town Station (n288676470)
+
+      r1112509: 
+        - Cape Town Station (n288676470)
+        - Woodstock (n288676995)
+        - Salt River (n349078745)
+        - Koeberg Road (n288678018)
+        - Maitland (n288678029)
+        - Ndabeni (n288679264)
+        - Pinelands (n291327406)
+        - Langa (n25884626)
+        - Bonteheuwel (n56360081)
+        - Netreg (n7400828907)
+        - Heideveld (n56360109)
+        - Nyanga (n288681146)
+        - Philippi (n288681832)
+        - Stock Road (n125366195)
+        - Mandalay (n7400813381)
+        - Nolungile (n125366984)
+        - Nonkqubela (n125368254)
+        - Khayelitsha (n125368155)
+        - Kuyasa (n7035268831)
+        - Chris Hani (n522277965)
+
+      r952471: 
+        - Cape Town Station (n288676470)
+        - Esplanade (n288678132)
+        - Ysterplaat (n35991191)
+        - Mutual (n288679159)
+        - Langa (n25884626)
+        - Bonteheuwel (n56360081)
+        - Netreg (n7400828907)
+        - Heideveld (n56360109)
+        - Nyanga (n288681146)
+        - Philippi (n288681832)
+        - Stock Road (n125366195)
+        - Mandalay (n7400813381)
+        - Nolungile (n125366984)
+        - Nonkqubela (n125368254)
+        - Khayelitsha (n125368155)
+        - Kuyasa (n7035268831)
+        - Chris Hani (n522277965)
+
+      r10671154: 
+        - Kapteinsklip Station (n6859255902)
+        - Mitchell's Plain (n125365006)
+        - Lentegeur (n125365367)
+        - Philippi (n288681832)
+        - Nyanga (n288681146)
+        - Heideveld (n56360109)
+        - Netreg (n7400828907)
+        - Bonteheuwel (n56360081)
+        - Langa (n25884626)
+        - Pinelands (n291327406)
+        - Ndabeni (n288679264)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
+
       r1112508: 
         - Cape Town Station (n288676470)
         - Esplanade (n288678132)
@@ -237,32 +307,14 @@ routes:
         - Esplanade (n288678132)
         - Cape Town Station (n288676470)
 
-      r1112509: 
-        - Cape Town Station (n288676470)
-        - Woodstock (n288676995)
-        - Salt River (n349078745)
-        - Koeberg Road (n288678018)
-        - Maitland (n288678029)
-        - Ndabeni (n288679264)
-        - Pinelands (n291327406)
-        - Langa (n25884626)
-        - Bonteheuwel (n56360081)
-        - Netreg (n7400828907)
-        - Heideveld (n56360109)
-        - Nyanga (n288681146)
-        - Philippi (n288681832)
-        - Stock Road (n125366195)
-        - Mandalay (n7400813381)
-        - Nolungile (n125366984)
-        - Nonkqubela (n125368254)
-        - Khayelitsha (n125368155)
-        - Kuyasa (n7035268831)
+      r10671153: 
         - Chris Hani (n522277965)
-
-      r10671154: 
-        - Kapteinsklip Station (n6859255902)
-        - Mitchell's Plain (n125365006)
-        - Lentegeur (n125365367)
+        - Kuyasa (n7035268831)
+        - Khayelitsha (n125368155)
+        - Nonkqubela (n125368254)
+        - Nolungile (n125366984)
+        - Mandalay (n7400813381)
+        - Stock Road (n125366195)
         - Philippi (n288681832)
         - Nyanga (n288681146)
         - Heideveld (n56360109)
@@ -295,92 +347,25 @@ routes:
         - Mitchell's Plain (n125365006)
         - Kapteinsklip Station (n6859255902)
 
-      r952471: 
-        - Cape Town Station (n288676470)
-        - Esplanade (n288678132)
-        - Ysterplaat (n35991191)
-        - Mutual (n288679159)
-        - Langa (n25884626)
-        - Bonteheuwel (n56360081)
-        - Netreg (n7400828907)
-        - Heideveld (n56360109)
-        - Nyanga (n288681146)
-        - Philippi (n288681832)
-        - Stock Road (n125366195)
-        - Mandalay (n7400813381)
-        - Nolungile (n125366984)
-        - Nonkqubela (n125368254)
-        - Khayelitsha (n125368155)
-        - Kuyasa (n7035268831)
-        - Chris Hani (n522277965)
-
-      r10671153: 
-        - Chris Hani (n522277965)
-        - Kuyasa (n7035268831)
-        - Khayelitsha (n125368155)
-        - Nonkqubela (n125368254)
-        - Nolungile (n125366984)
-        - Mandalay (n7400813381)
-        - Stock Road (n125366195)
-        - Philippi (n288681832)
-        - Nyanga (n288681146)
-        - Heideveld (n56360109)
-        - Netreg (n7400828907)
-        - Bonteheuwel (n56360081)
-        - Langa (n25884626)
-        - Pinelands (n291327406)
-        - Ndabeni (n288679264)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
-        - Cape Town Station (n288676470)
-
-      r10671155: 
-        - Kapteinsklip Station (n6859255902)
-        - Mitchell's Plain (n125365006)
-        - Lentegeur (n125365367)
-        - Philippi (n288681832)
-        - Nyanga (n288681146)
-        - Heideveld (n56360109)
-        - Netreg (n7400828907)
-        - Bonteheuwel (n56360081)
-        - Langa (n25884626)
-        - Mutual (n288679159)
-        - Ysterplaat (n35991191)
-        - Esplanade (n288678132)
-        - Cape Town Station (n288676470)
-
 
     name: Central Line
-  - 
-    colour: '#99d420'
+    station_count: 26
+    ref: CL
+    colour: '#33bef3'
     type: train
+  - 
     stations: 
-      - Muldersvlei
-      - Koelenhof
-      - Du Toit
-      - Stellenbosch
-      - Vlottenburg
-      - Lynedoch
-      - Eerste River
-      - Meltonrose
-      - Blackheath
-      - Kuils River
-      - Bellville
-      - Tygerberg
-      - Parow
-      - Elsies River
-      - Vasco
-      - Goodwood
-      - Thornton
-      - Mutual
-      - Woltemade
-      - Maitland
-      - Koeberg Road
-      - Salt River
-      - Woodstock
       - Cape Town
+      - Esplanade
+      - Ysterplaat
+      - Kentemade
+      - Century City
+      - Acacia Park
+      - Monte Vista
+      - De Grendel
+      - Avondale
+      - Oosterzee
+      - Bellville
       - Malmesbury
       - Abbotsdale
       - Kalbaskraal
@@ -393,48 +378,60 @@ routes:
       - Eikenfontein
       - Brackenfell
       - Stikland
-      - Oosterzee
-      - Avondale
-      - De Grendel
-      - Monte Vista
-      - Acacia Park
-      - Century City
-      - Kentemade
-      - Ysterplaat
-      - Klapmuts
-      - Paarl
-      - Huguenot
-      - Dal Josafat
-      - Mbekweni
+      - Muldersvlei
+      - Koelenhof
+      - Du Toit
+      - Stellenbosch
+      - Vlottenburg
+      - Lynedoch
+      - Eerste River
+      - Meltonrose
+      - Blackheath
+      - Kuils River
+      - Tygerberg
+      - Parow
+      - Elsies River
+      - Vasco
+      - Goodwood
+      - Thornton
+      - Mutual
+      - Woltemade
+      - Maitland
+      - Koeberg Road
+      - Salt River
+      - Woodstock
       - Wellington
-      - Esplanade
+      - Mbekweni
+      - Dal Josafat
+      - Huguenot
+      - Paarl
+      - Klapmuts
 
-    ref: NL
-    station_count: 51
     itineraries: 
-      r9822435: 
-        - Malmesbury (n240268935)
-        - Abbotsdale (n240259351)
-        - Kalbaskraal (n249333052)
-        - Wintervogel (n240243112)
-        - Klipheuwel (n240241238)
-        - Mikpunt (n240240298)
-        - Mellish (n240177024)
-        - Fisantkraal (n1554932260)
-        - Kraaifontein (n33493457)
-        - Eikenfontein (n33496025)
-        - Brackenfell (n36048261)
-        - Stikland (n36048228)
-        - Bellville (n36058142)
-        - Oosterzee (n36058092)
-        - Avondale (n36058069)
-        - De Grendel (n35993122)
-        - Monte Vista (n35992923)
-        - Acacia Park (n35992613)
-        - Century City (n6637181688)
-        - Kentemade (n6637164079)
-        - Ysterplaat (n35991191)
+      r957085: 
         - Cape Town Station (n288676470)
+        - Esplanade (n288678132)
+        - Ysterplaat (n35991191)
+        - Kentemade (n6637164079)
+        - Century City (n6637181688)
+        - Acacia Park (n35992613)
+        - Monte Vista (n35992923)
+        - De Grendel (n35993122)
+        - Avondale (n36058069)
+        - Oosterzee (n36058092)
+        - Bellville (n36058142)
+        - Stikland (n36048228)
+        - Brackenfell (n36048261)
+        - Eikenfontein (n33496025)
+        - Kraaifontein (n33493457)
+        - Fisantkraal (n1554932260)
+        - Mellish (n240177024)
+        - Mikpunt (n240240298)
+        - Klipheuwel (n240241238)
+        - Wintervogel (n240243112)
+        - Kalbaskraal (n249333052)
+        - Abbotsdale (n240259351)
+        - Malmesbury (n240268935)
 
       r10671158: 
         - Muldersvlei (n33153972)
@@ -462,33 +459,6 @@ routes:
         - Woodstock (n288676995)
         - Cape Town Station (n288676470)
 
-      r10671160: 
-        - Wellington (n6863009243)
-        - Mbekweni (n6863052615)
-        - Dal Josafat (n6863028440)
-        - Huguenot (n6863077960)
-        - Paarl (n3041795353)
-        - Klapmuts (n33501350)
-        - Muldersvlei (n33153972)
-        - Kraaifontein (n33493457)
-        - Eikenfontein (n33496025)
-        - Brackenfell (n36048261)
-        - Stikland (n36048228)
-        - Bellville (n36058142)
-        - Tygerberg (n36048162)
-        - Parow (n6863005225)
-        - Elsies River (n6863005234)
-        - Vasco (n288682152)
-        - Goodwood (n6863005235)
-        - Thornton (n6863005236)
-        - Mutual (n288679173)
-        - Woltemade (n768092873)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
-        - Cape Town Station (n288676470)
-
       r10671159: 
         - Bellville (n36058142)
         - Oosterzee (n36058092)
@@ -500,6 +470,57 @@ routes:
         - Kentemade (n6637164079)
         - Ysterplaat (n35991191)
         - Esplanade (n288678132)
+        - Cape Town Station (n288676470)
+
+      r956850: 
+        - Cape Town Station (n288676470)
+        - Woodstock (n288676995)
+        - Salt River (n349078745)
+        - Koeberg Road (n288678018)
+        - Maitland (n288678029)
+        - Woltemade (n768092873)
+        - Mutual (n288679173)
+        - Thornton (n6863005236)
+        - Goodwood (n6863005235)
+        - Vasco (n288682152)
+        - Elsies River (n6863005234)
+        - Parow (n6863005225)
+        - Tygerberg (n36048162)
+        - Bellville (n36058142)
+        - Stikland (n36048228)
+        - Brackenfell (n36048261)
+        - Eikenfontein (n33496025)
+        - Kraaifontein (n33493457)
+        - Muldersvlei (n33153972)
+        - Klapmuts (n33501350)
+        - Paarl (n3041795353)
+        - Huguenot (n6863077960)
+        - Dal Josafat (n6863028440)
+        - Mbekweni (n6863052615)
+        - Wellington (n6863009243)
+
+      r9822435: 
+        - Malmesbury (n240268935)
+        - Abbotsdale (n240259351)
+        - Kalbaskraal (n249333052)
+        - Wintervogel (n240243112)
+        - Klipheuwel (n240241238)
+        - Mikpunt (n240240298)
+        - Mellish (n240177024)
+        - Fisantkraal (n1554932260)
+        - Kraaifontein (n33493457)
+        - Eikenfontein (n33496025)
+        - Brackenfell (n36048261)
+        - Stikland (n36048228)
+        - Bellville (n36058142)
+        - Oosterzee (n36058092)
+        - Avondale (n36058069)
+        - De Grendel (n35993122)
+        - Monte Vista (n35992923)
+        - Acacia Park (n35992613)
+        - Century City (n6637181688)
+        - Kentemade (n6637164079)
+        - Ysterplaat (n35991191)
         - Cape Town Station (n288676470)
 
       r957035: 
@@ -541,63 +562,40 @@ routes:
         - Koelenhof (n33153921)
         - Muldersvlei (n33153972)
 
-      r956850: 
-        - Cape Town Station (n288676470)
-        - Woodstock (n288676995)
-        - Salt River (n349078745)
-        - Koeberg Road (n288678018)
-        - Maitland (n288678029)
-        - Woltemade (n768092873)
-        - Mutual (n288679173)
-        - Thornton (n6863005236)
-        - Goodwood (n6863005235)
-        - Vasco (n288682152)
-        - Elsies River (n6863005234)
-        - Parow (n6863005225)
-        - Tygerberg (n36048162)
-        - Bellville (n36058142)
-        - Stikland (n36048228)
-        - Brackenfell (n36048261)
-        - Eikenfontein (n33496025)
-        - Kraaifontein (n33493457)
-        - Muldersvlei (n33153972)
-        - Klapmuts (n33501350)
-        - Paarl (n3041795353)
-        - Huguenot (n6863077960)
-        - Dal Josafat (n6863028440)
-        - Mbekweni (n6863052615)
+      r10671160: 
         - Wellington (n6863009243)
-
-      r957085: 
-        - Cape Town Station (n288676470)
-        - Esplanade (n288678132)
-        - Ysterplaat (n35991191)
-        - Kentemade (n6637164079)
-        - Century City (n6637181688)
-        - Acacia Park (n35992613)
-        - Monte Vista (n35992923)
-        - De Grendel (n35993122)
-        - Avondale (n36058069)
-        - Oosterzee (n36058092)
-        - Bellville (n36058142)
-        - Stikland (n36048228)
-        - Brackenfell (n36048261)
-        - Eikenfontein (n33496025)
+        - Mbekweni (n6863052615)
+        - Dal Josafat (n6863028440)
+        - Huguenot (n6863077960)
+        - Paarl (n3041795353)
+        - Klapmuts (n33501350)
+        - Muldersvlei (n33153972)
         - Kraaifontein (n33493457)
-        - Fisantkraal (n1554932260)
-        - Mellish (n240177024)
-        - Mikpunt (n240240298)
-        - Klipheuwel (n240241238)
-        - Wintervogel (n240243112)
-        - Kalbaskraal (n249333052)
-        - Abbotsdale (n240259351)
-        - Malmesbury (n240268935)
+        - Eikenfontein (n33496025)
+        - Brackenfell (n36048261)
+        - Stikland (n36048228)
+        - Bellville (n36058142)
+        - Tygerberg (n36048162)
+        - Parow (n6863005225)
+        - Elsies River (n6863005234)
+        - Vasco (n288682152)
+        - Goodwood (n6863005235)
+        - Thornton (n6863005236)
+        - Mutual (n288679173)
+        - Woltemade (n768092873)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
 
 
     name: Northern Line
-  - 
-    colour: '#ed1c24'
+    station_count: 51
+    ref: NL
+    colour: '#99d420'
     type: train
+  - 
     stations: 
       - Simon's Town
       - Glencairn
@@ -627,8 +625,6 @@ routes:
       - Woodstock
       - Cape Town
 
-    ref: SL
-    station_count: 27
     itineraries: 
       r9822440: 
         - Simon's Town (n26117610)
@@ -690,4 +686,8 @@ routes:
 
 
     name: Southern Line
+    station_count: 27
+    ref: SL
+    colour: '#ed1c24'
+    type: train
 

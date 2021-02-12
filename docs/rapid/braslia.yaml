@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 102 Sul (n2524907501)
   - 106 Sul (n516640052)
@@ -30,10 +28,10 @@ stations:
   - Taguatinga Sul (n2427461165)
   - Águas Claras (n988050311)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#eb9710'
-    type: subway
     stations: 
       - Central
       - Galeria
@@ -54,8 +52,6 @@ routes:
       - Samambaia Sul
       - Samambaia
 
-    ref: Laranja
-    station_count: 18
     itineraries: 
       r420556: 
         - Central (n516640062)
@@ -99,9 +95,11 @@ routes:
 
 
     name: Linha Laranja
-  - 
-    colour: '#076c57'
+    station_count: 18
+    ref: Laranja
+    colour: '#eb9710'
     type: subway
+  - 
     stations: 
       - Ceilândia
       - Ceilândia Norte
@@ -127,34 +125,7 @@ routes:
       - Galeria
       - Central
 
-    ref: Verde
-    station_count: 23
     itineraries: 
-      r7733963: 
-        - Ceilândia (n1468359687)
-        - Ceilândia Norte (n1468359682)
-        - Ceilândia Centro (n656731197)
-        - Guariroba (n601165345)
-        - Ceilândia Sul (n503227567)
-        - Centro Metropolitano (n6969891170)
-        - Praça do Relógio (n278295965)
-        - Estrada Parque (n7115646947)
-        - Concessionárias (n2682369305)
-        - Águas Claras (n988050311)
-        - Arniqueiras (n979379521)
-        - Estação Guará (n839630410)
-        - Feira (n2178318705)
-        - Shopping (w209414773)
-        - Asa Sul (n2682370666)
-        - 114 Sul (n2889616445)
-        - 112 Sul (n516640044)
-        - 110 Sul (n516640047)
-        - 108 Sul (n516640049)
-        - 106 Sul (n516640052)
-        - 102 Sul (n2524907501)
-        - Galeria (n2705401531)
-        - Central (n516640062)
-
       r420554: 
         - Central (n516640062)
         - Galeria (n2705401531)
@@ -180,6 +151,35 @@ routes:
         - Ceilândia Norte (n1468359682)
         - Ceilândia (n1468359687)
 
+      r7733963: 
+        - Ceilândia (n1468359687)
+        - Ceilândia Norte (n1468359682)
+        - Ceilândia Centro (n656731197)
+        - Guariroba (n601165345)
+        - Ceilândia Sul (n503227567)
+        - Centro Metropolitano (n6969891170)
+        - Praça do Relógio (n278295965)
+        - Estrada Parque (n7115646947)
+        - Concessionárias (n2682369305)
+        - Águas Claras (n988050311)
+        - Arniqueiras (n979379521)
+        - Estação Guará (n839630410)
+        - Feira (n2178318705)
+        - Shopping (w209414773)
+        - Asa Sul (n2682370666)
+        - 114 Sul (n2889616445)
+        - 112 Sul (n516640044)
+        - 110 Sul (n516640047)
+        - 108 Sul (n516640049)
+        - 106 Sul (n516640052)
+        - 102 Sul (n2524907501)
+        - Galeria (n2705401531)
+        - Central (n516640062)
+
 
     name: Linha Verde
+    station_count: 23
+    ref: Verde
+    colour: '#076c57'
+    type: subway
 

@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Calafate (n5365398604)
   - Carlos Prates (n5365396588)
@@ -22,10 +20,10 @@ stations:
   - Vilarinho (n5365193658)
   - Waldomiro Lobo (n5365202168)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#000080'
-    type: subway
     stations: 
       - Estação Vilarinho
       - Floramar
@@ -47,8 +45,6 @@ routes:
       - Estação Cidade Industrial
       - Estação Eldorado
 
-    ref: 1
-    station_count: 19
     itineraries: 
       r420605: 
         - Vilarinho (n5365193658)
@@ -94,4 +90,8 @@ routes:
 
 
     name: 'Linha 1 - Azul'
+    station_count: 19
+    ref: 1
+    colour: '#000080'
+    type: subway
 

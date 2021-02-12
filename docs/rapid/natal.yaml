@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Alecrim I (r9471196)
   - Alecrim II (r9471192)
@@ -24,10 +22,10 @@ stations:
   - Santa Catarina (w177239157)
   - Soledade (n6977862963)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0000ff'
-    type: light_rail
     stations: 
       - Natal
       - Alecrim I
@@ -44,8 +42,6 @@ routes:
       - Lagoa Grande
       - Ceará-Mirim
 
-    ref: Norte
-    station_count: 14
     itineraries: 
       r1229611: 
         - Natal (r9471190)
@@ -81,9 +77,11 @@ routes:
 
 
     name: Linha Norte
-  - 
+    station_count: 14
+    ref: Norte
     colour: '#0000ff'
     type: light_rail
+  - 
     stations: 
       - Cidade Satélite
       - Pitimbu
@@ -94,8 +92,6 @@ routes:
       - Alecrim II
       - Natal
 
-    ref: Sul
-    station_count: 8
     itineraries: 
       r9881790: 
         - Natal (r9471190)
@@ -119,4 +115,8 @@ routes:
 
 
     name: Linha Sul
+    station_count: 8
+    ref: Sul
+    colour: '#0000ff'
+    type: light_rail
 

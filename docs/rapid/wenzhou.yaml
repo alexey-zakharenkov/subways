@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 三垟湿地 (n5960741599)
   - 动车南站 (n5960741601)
@@ -21,10 +19,10 @@ stations:
   - 龙腾路 (n5327011921)
   - 龙霞路 (n5960741597)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#0061ae'
-    type: subway
     stations: 
       - 桐岭
       - 潘桥
@@ -45,8 +43,6 @@ routes:
       - 瓯华
       - 双瓯大道
 
-    ref: S1
-    station_count: 18
     itineraries: 
       r10380257: 
         - 桐岭 (n5960741603)
@@ -90,4 +86,8 @@ routes:
 
 
     name: 温州轨道交通S1线
+    station_count: 18
+    ref: S1
+    colour: '#0061ae'
+    type: subway
 

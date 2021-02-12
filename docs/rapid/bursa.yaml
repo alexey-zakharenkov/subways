@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 152 Evler (n5315432299)
   - Altınşehir (n5317033353)
@@ -41,34 +39,32 @@ stations:
   - Şehreküstü (n5315476920)
   - Şirinevler (n5315407499)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
-      - Arabayatağı
-      - Yüksek İhtisas
-      - Duaçınarı
-      - Yıldırım/Davutdede
-      - Gökdere
-      - Demirtaşpaşa
-      - Şehreküstü
-      - Osmangazi
-      - Merinos
-      - Kültürpark
-      - Sırameşeler
-      - Paşa Çiftliği
-      - Bursaspor/Acemler
-      - Karaman
-      - İhsaniye
-      - Bağlarbaşı/Esentepe
-      - Hamitler/Fethiye
-      - Organize Sanayi
-      - Korupark
       - Emek
+      - Korupark
+      - Organize Sanayi
+      - Hamitler/Fethiye
+      - Bağlarbaşı/Esentepe
+      - İhsaniye
+      - Karaman
+      - Bursaspor/Acemler
+      - Paşa Çiftliği
+      - Sırameşeler
+      - Kültürpark
+      - Merinos
+      - Osmangazi
+      - Şehreküstü
+      - Demirtaşpaşa
+      - Gökdere
+      - Yıldırım/Davutdede
+      - Duaçınarı
+      - Yüksek İhtisas
+      - Arabayatağı
 
-    ref: B1
-    station_count: 20
     itineraries: 
       r7868723: 
         - Arabayatağı (n5315425255)
@@ -116,44 +112,44 @@ routes:
 
 
     name: BursaRay 1
-  - 
-    colour: '#000000'
+    station_count: 20
+    ref: B1
+    colour: '#ff0000'
     type: subway
+  - 
     stations: 
-      - Üniversite
-      - Batıkent
-      - Yüzüncüyıl
-      - Özlüce
-      - Ertuğrul
-      - Altınşehir
-      - Küçük Sanayi
-      - Ataevler
-      - Beşevler
-      - Fatih Sultan Mehmet
-      - Nilüfer
-      - Bursaspor/Acemler
-      - Paşa Çiftliği
-      - Sırameşeler
-      - Kültürpark
-      - Merinos
-      - Osmangazi
-      - Şehreküstü
-      - Demirtaşpaşa
-      - Gökdere
-      - Yıldırım/Davutdede
-      - Duaçınarı
-      - Yüksek İhtisas
-      - Arabayatağı
-      - 'Mimar Sinan - BTÜ'
-      - Hacivat
-      - Şirinevler
-      - Otosansit
-      - Cumalıkızık
-      - Gürsu
       - Kestel
+      - Gürsu
+      - Cumalıkızık
+      - Otosansit
+      - Şirinevler
+      - Hacivat
+      - 'Mimar Sinan - BTÜ'
+      - Arabayatağı
+      - Yüksek İhtisas
+      - Duaçınarı
+      - Yıldırım/Davutdede
+      - Gökdere
+      - Demirtaşpaşa
+      - Şehreküstü
+      - Osmangazi
+      - Merinos
+      - Kültürpark
+      - Sırameşeler
+      - Paşa Çiftliği
+      - Bursaspor/Acemler
+      - Nilüfer
+      - Fatih Sultan Mehmet
+      - Beşevler
+      - Ataevler
+      - Küçük Sanayi
+      - Altınşehir
+      - Ertuğrul
+      - Özlüce
+      - Yüzüncüyıl
+      - Batıkent
+      - Üniversite
 
-    ref: B2
-    station_count: 31
     itineraries: 
       r7869621: 
         - Üniversite (n5317020169)
@@ -223,4 +219,8 @@ routes:
 
 
     name: BursaRay 2
+    station_count: 31
+    ref: B2
+    colour: '#000000'
+    type: subway
 

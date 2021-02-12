@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Bad Schandau (n2736023837)
   - Coswig (b Dresden) (n1055406062)
@@ -51,47 +49,45 @@ stations:
   - Stadt Wehlen (Sachs) (n2731039807)
   - Tharandt (n2749276857)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#f36421'
-    type: train
     stations: 
-      - S-Bahnhof Meißen Triebischtal
-      - S-Bahnhof Meißen Altstadt
-      - Meißen
-      - S-Bahnhof Neusörnewitz
-      - Bahnhof Coswig (b Dresden)
-      - Hp. Radebeul-Zitzschewig
-      - Hp. Radebeul-Kötzschenbroda
-      - Hp. Radebeul-Weintraube
-      - Hp. Radebeul Ost
-      - Hp. Dresden-Trachau
-      - Hp. Dresden-Pieschen
-      - Dresden Bischofsplatz
-      - Bahnhof Dresden-Neustadt
-      - Bf. Dresden Mitte
-      - Hp. Dresden Freiberger Straße
-      - Bf. Dresden Hbf
-      - Hp. Dresden-Strehlen
-      - Bf. Dresden-Reick
-      - Hp. Dresden-Dobritz
-      - Hp. Dresden-Niedersedlitz
-      - Hp. Dresden-Zschachwitz
-      - Heidenau
-      - Hp. Heidenau Süd
-      - Hp. Heidenau-Großsedlitz
-      - Bhf. Pirna
-      - Hp. Obervogelgesang
-      - Hp. Stadt Wehlen (Sachs)
-      - Kurort Rathen
-      - Hp. Königstein (Sächs Schw)
-      - Bad Schandau
-      - Krippen
-      - Hp. Schmilka-Hirschmühle
       - Schöna
+      - Hp. Schmilka-Hirschmühle
+      - Krippen
+      - Bad Schandau
+      - Hp. Königstein (Sächs Schw)
+      - Kurort Rathen
+      - Hp. Stadt Wehlen (Sachs)
+      - Hp. Obervogelgesang
+      - Bhf. Pirna
+      - Hp. Heidenau-Großsedlitz
+      - Hp. Heidenau Süd
+      - Heidenau
+      - Hp. Dresden-Zschachwitz
+      - Hp. Dresden-Niedersedlitz
+      - Hp. Dresden-Dobritz
+      - Bf. Dresden-Reick
+      - Hp. Dresden-Strehlen
+      - Bf. Dresden Hbf
+      - Hp. Dresden Freiberger Straße
+      - Bf. Dresden Mitte
+      - Bahnhof Dresden-Neustadt
+      - Dresden Bischofsplatz
+      - Hp. Dresden-Pieschen
+      - Hp. Dresden-Trachau
+      - Hp. Radebeul Ost
+      - Hp. Radebeul-Weintraube
+      - Hp. Radebeul-Kötzschenbroda
+      - Hp. Radebeul-Zitzschewig
+      - Bahnhof Coswig (b Dresden)
+      - S-Bahnhof Neusörnewitz
+      - Meißen
+      - S-Bahnhof Meißen Altstadt
+      - S-Bahnhof Meißen Triebischtal
 
-    ref: S 1
-    station_count: 33
     itineraries: 
       r3562518: 
         - Schöna (n2736597774)
@@ -165,30 +161,30 @@ routes:
 
 
     name: 'S-Bahn S 1: Schöna <> Meißen'
-  - 
-    colour: '#b8282e'
+    station_count: 33
+    ref: S 1
+    colour: '#f36421'
     type: train
+  - 
     stations: 
-      - Bhf. Pirna
-      - Hp. Heidenau-Großsedlitz
-      - Hp. Heidenau Süd
-      - Heidenau
-      - Hp. Dresden-Zschachwitz
-      - Hp. Dresden-Niedersedlitz
-      - Hp. Dresden-Dobritz
-      - Bf. Dresden-Reick
-      - Hp. Dresden-Strehlen
-      - Bf. Dresden Hbf
-      - Hp. Dresden Freiberger Straße
-      - Bf. Dresden Mitte
-      - Bahnhof Dresden-Neustadt
-      - Hp. Dresden Industriegelände
-      - Bf Dresden-Klotzsche
-      - Bf Dresden Grenzstraße
       - Bf Dresden Flughafen
+      - Bf Dresden Grenzstraße
+      - Bf Dresden-Klotzsche
+      - Hp. Dresden Industriegelände
+      - Bahnhof Dresden-Neustadt
+      - Bf. Dresden Mitte
+      - Hp. Dresden Freiberger Straße
+      - Bf. Dresden Hbf
+      - Hp. Dresden-Strehlen
+      - Bf. Dresden-Reick
+      - Hp. Dresden-Dobritz
+      - Hp. Dresden-Niedersedlitz
+      - Hp. Dresden-Zschachwitz
+      - Heidenau
+      - Hp. Heidenau Süd
+      - Hp. Heidenau-Großsedlitz
+      - Bhf. Pirna
 
-    ref: S 2
-    station_count: 17
     itineraries: 
       r66354: 
         - Dresden Flughafen (n2746933618)
@@ -230,9 +226,11 @@ routes:
 
 
     name: 'S-Bahn S 2: Dresden Flughafen <> Pirna'
-  - 
-    colour: '#ed0172'
+    station_count: 17
+    ref: S 2
+    colour: '#b8282e'
     type: train
+  - 
     stations: 
       - Bf. Dresden Hbf
       - Hp. Dresden-Plauen
@@ -247,8 +245,6 @@ routes:
       - Hp. Muldenhütten
       - Freiberg (Sachsen)
 
-    ref: S 3
-    station_count: 12
     itineraries: 
       r67556: 
         - Freiberg (Sachsen) (n2749430565)
@@ -280,4 +276,8 @@ routes:
 
 
     name: 'S-Bahn S 3: Dresden <> Freiberg'
+    station_count: 12
+    ref: S 3
+    colour: '#ed0172'
+    type: train
 

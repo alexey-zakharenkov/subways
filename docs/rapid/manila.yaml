@@ -1,15 +1,4 @@
 
-transfers: 
-  - 
-    - 'Araneta - Cubao (r8000181)'
-    - 'Araneta Center - Cubao (r8000208)'
-  - 
-    - Doroteo Jose (r7683920)
-    - Recto (r8000239)
-  - 
-    - EDSA (r3873772)
-    - Taft Avenue (r8000203)
-
 stations: 
   - 5th Avenue (w288086563)
   - Abad Santos (w288085512)
@@ -52,10 +41,19 @@ stations:
   - Vito Cruz (w288126518)
   - Yamaha Monumento (w288086841)
 
+transfers: 
+  - 
+    - 'Araneta - Cubao (r8000181)'
+    - 'Araneta Center - Cubao (r8000208)'
+  - 
+    - Doroteo Jose (r7683920)
+    - Recto (r8000239)
+  - 
+    - EDSA (r3873772)
+    - Taft Avenue (r8000203)
+
 routes: 
   - 
-    colour: '#008000'
-    type: light_rail
     stations: 
       - Baclaran
       - EDSA
@@ -77,29 +75,7 @@ routes:
       - Yamaha Monumento
       - Balintawak
 
-    ref: 1
-    station_count: 19
     itineraries: 
-      r10463195: 
-        - Baclaran (w290189159)
-        - EDSA (w222628891)
-        - Libertad (w290088413)
-        - Gil Puyat (w288127159)
-        - Vito Cruz (w288126518)
-        - Quirino (w288126517)
-        - Pedro Gil (w288126519)
-        - United Nations (w288091194)
-        - Central Terminal (w179251377)
-        - Carriedo (w288089644)
-        - Doroteo Jose (w112644274)
-        - Bambang (w187134601)
-        - Tayuman (w288010747)
-        - Blumentritt (w288085179)
-        - Abad Santos (w288085512)
-        - R. Papa (w288087278)
-        - 5th Avenue (w288086563)
-        - Yamaha Monumento (w288086841)
-
       r8000260: 
         - Baclaran (w290189159)
         - EDSA (w222628891)
@@ -162,36 +138,45 @@ routes:
         - EDSA (w222628891)
         - Baclaran (w290189159)
 
+      r10463195: 
+        - Baclaran (w290189159)
+        - EDSA (w222628891)
+        - Libertad (w290088413)
+        - Gil Puyat (w288127159)
+        - Vito Cruz (w288126518)
+        - Quirino (w288126517)
+        - Pedro Gil (w288126519)
+        - United Nations (w288091194)
+        - Central Terminal (w179251377)
+        - Carriedo (w288089644)
+        - Doroteo Jose (w112644274)
+        - Bambang (w187134601)
+        - Tayuman (w288010747)
+        - Blumentritt (w288085179)
+        - Abad Santos (w288085512)
+        - R. Papa (w288087278)
+        - 5th Avenue (w288086563)
+        - Yamaha Monumento (w288086841)
+
 
     name: LRT Line 1
+    station_count: 19
+    ref: 1
+    colour: '#008000'
+    type: light_rail
   - 
-    colour: '#800080'
-    type: subway
     stations: 
-      - Recto
-      - Legarda
-      - Pureza
-      - V. Mapa
-      - J. Ruiz
-      - Gilmore
-      - 'Betty Go - Belmonte'
-      - 'Araneta Center - Cubao'
       - Katipunan
+      - 'Araneta Center - Cubao'
+      - 'Betty Go - Belmonte'
+      - Gilmore
+      - J. Ruiz
+      - V. Mapa
+      - Pureza
+      - Legarda
+      - Recto
 
-    ref: 2
-    station_count: 9
     itineraries: 
-      r8000264: 
-        - Recto (w179240108)
-        - Legarda (w28788659)
-        - Pureza (w188168854)
-        - V. Mapa (w188168855)
-        - J. Ruiz (w188168853)
-        - Gilmore (w188169761)
-        - Betty Go-Belmonte (w113358959)
-        - 'Araneta Center - Cubao (w184582280)'
-        - Katipunan (n5377269277)
-
       r110410: 
         - Katipunan (n5377269277)
         - 'Araneta Center - Cubao (w184582280)'
@@ -203,42 +188,39 @@ routes:
         - Legarda (w28788659)
         - Recto (w179240108)
 
+      r8000264: 
+        - Recto (w179240108)
+        - Legarda (w28788659)
+        - Pureza (w188168854)
+        - V. Mapa (w188168855)
+        - J. Ruiz (w188168853)
+        - Gilmore (w188169761)
+        - Betty Go-Belmonte (w113358959)
+        - 'Araneta Center - Cubao (w184582280)'
+        - Katipunan (n5377269277)
+
 
     name: LRT Line 2
+    station_count: 9
+    ref: 2
+    colour: '#800080'
+    type: subway
   - 
-    colour: '#ffcc00'
-    type: light_rail
     stations: 
-      - Taft Avenue
-      - Magallanes
-      - Ayala
-      - Buendia
-      - Guadalupe
-      - Boni/Pioneer
-      - Shaw Boulevard
-      - Ortigas
-      - Santolan
-      - 'Araneta - Cubao'
-      - GMA Kamuning
       - North Avenue
+      - GMA Kamuning
+      - 'Araneta - Cubao'
+      - Santolan
+      - Ortigas
+      - Shaw Boulevard
+      - Boni/Pioneer
+      - Guadalupe
+      - Buendia
+      - Ayala
+      - Magallanes
+      - Taft Avenue
 
-    ref: 3
-    station_count: 12
     itineraries: 
-      r8000253: 
-        - Taft Avenue (w222628889)
-        - Magallanes (w222628890)
-        - Ayala (w27663063)
-        - Buendia (w112320439)
-        - Guadalupe (w60618740)
-        - Boni (w60198083)
-        - Shaw Boulevard (w112315687)
-        - Ortigas (w60194145)
-        - Santolan (w95496202)
-        - 'Araneta - Cubao (w127506881)'
-        - GMA Kamuning (w30262758)
-        - North Avenue (w222628892)
-
       r109159: 
         - North Avenue (w222628892)
         - GMA Kamuning (w30262758)
@@ -253,6 +235,24 @@ routes:
         - Magallanes (w222628890)
         - Taft Avenue (w222628889)
 
+      r8000253: 
+        - Taft Avenue (w222628889)
+        - Magallanes (w222628890)
+        - Ayala (w27663063)
+        - Buendia (w112320439)
+        - Guadalupe (w60618740)
+        - Boni (w60198083)
+        - Shaw Boulevard (w112315687)
+        - Ortigas (w60194145)
+        - Santolan (w95496202)
+        - 'Araneta - Cubao (w127506881)'
+        - GMA Kamuning (w30262758)
+        - North Avenue (w222628892)
+
 
     name: MRT Line 3
+    station_count: 12
+    ref: 3
+    colour: '#ffcc00'
+    type: light_rail
 

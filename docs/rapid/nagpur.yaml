@@ -1,9 +1,4 @@
 
-transfers: 
-  - 
-    - Sitabuldi (Aqua Line) (r10659363)
-    - Sitabuldi (Orange Line) (r10659364)
-
 stations: 
   - Airport (n6458275662)
   - Airport South (n6458275660)
@@ -23,10 +18,13 @@ stations:
   - Ujjwal Nagar (n6458275661)
   - Vasudev Nagar (n7175548060)
 
+transfers: 
+  - 
+    - Sitabuldi (Aqua Line) (r10659363)
+    - Sitabuldi (Orange Line) (r10659364)
+
 routes: 
   - 
-    colour: '#00ffff'
-    type: subway
     stations: 
       - Lokmanya Nagar
       - Vasudev Nagar
@@ -35,8 +33,6 @@ routes:
       - Jhasi Rani Square
       - Sitabuldi (Aqua Line)
 
-    ref: Aqua Line
-    station_count: 6
     itineraries: 
       r10659361: 
         - Sitabuldi (Aqua Line) (n7175548063)
@@ -56,24 +52,24 @@ routes:
 
 
     name: Aqua Line (East-West Corridor)
-  - 
-    colour: '#ffa500'
+    station_count: 6
+    ref: Aqua Line
+    colour: '#00ffff'
     type: subway
+  - 
     stations: 
-      - Sitabuldi (Orange Line)
-      - Congress Nagar
-      - Rahate Colony
-      - Ajni Square
-      - Chhatrapati Square
-      - Jaiprakash Nagar
-      - Ujjwal Nagar
-      - Airport
-      - Airport South
-      - New Airport
       - Khapri
+      - New Airport
+      - Airport South
+      - Airport
+      - Ujjwal Nagar
+      - Jaiprakash Nagar
+      - Chhatrapati Square
+      - Ajni Square
+      - Rahate Colony
+      - Congress Nagar
+      - Sitabuldi (Orange Line)
 
-    ref: Orange Line
-    station_count: 11
     itineraries: 
       r9565725: 
         - Khapri (n6453679371)
@@ -103,4 +99,8 @@ routes:
 
 
     name: Orange Line (North-South Corridor)
+    station_count: 11
+    ref: Orange Line
+    colour: '#ffa500'
+    type: subway
 

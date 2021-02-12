@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Alambagh (n3997322401)
   - Alambagh Bus Station (n3997322400)
@@ -24,10 +22,10 @@ stations:
   - Singar Nagar (n3997322776)
   - Transport Nagar (n8006089161)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#ff0000'
-    type: subway
     stations: 
       - Munshipulia
       - Indira Nagar
@@ -51,8 +49,6 @@ routes:
       - Amausi
       - Chaudhary Charan Singh International Airport
 
-    ref: 1
-    station_count: 21
     itineraries: 
       r8299496: 
         - Munshipulia (n6444506071)
@@ -102,4 +98,8 @@ routes:
 
 
     name: Red Line
+    station_count: 21
+    ref: 1
+    colour: '#ff0000'
+    type: subway
 

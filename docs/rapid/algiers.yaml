@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - 1er Mai (n532001411)
   - Ain Naâdja (n3589518209)
@@ -20,33 +18,33 @@ stations:
   - Place des Martyrs (n966535035)
   - Station des Ateliers (n3589500559)
   - 'Tafourah - Grande Poste (n532001382)'
+  - علي بومنجل (n966535048)
+
+transfers: 
 
 routes: 
   - 
-    colour: '#0033cc'
-    type: subway
     stations: 
-      - Place des Martyrs
-      - 'Tafourah - Grande Poste'
-      - Khelifa Boukhalfa
-      - 1er Mai
-      - Aïssat Idir
-      - Hamma
-      - Jardin d'essai
-      - Les fusillés
-      - Cité Amirouche
-      - Mer et Soleil
-      - Haï El Badr
-      - Station des Ateliers
-      - Gué de Constantine
       - Ain Naâdja
+      - Gué de Constantine
+      - Station des Ateliers
+      - Haï El Badr
+      - Mer et Soleil
+      - Cité Amirouche
+      - Les fusillés
+      - Jardin d'essai
+      - Hamma
+      - Aïssat Idir
+      - 1er Mai
+      - Khelifa Boukhalfa
+      - 'Tafourah - Grande Poste'
+      - Ali Boumendjel
+      - Place des Martyrs
       - El-Harrach Centre
       - El Harrach Gare
       - Bachdjerrah
       - 'Bachdjarah - Tennis'
 
-    ref: L1
-    station_count: 18
     itineraries: 
       r6545466: 
         - El-Harrach Centre (n6673464970)
@@ -63,6 +61,7 @@ routes:
         - 1er Mai (n532001411)
         - Khelifa Boukhalfa (n3603933963)
         - 'Tafourah - Grande Poste (n532001382)'
+        - علي بومنجل (n966535048)
         - Place des Martyrs (n966535035)
 
       r8210886: 
@@ -79,26 +78,12 @@ routes:
         - 1er Mai (n532001411)
         - Khelifa Boukhalfa (n3603933963)
         - 'Tafourah - Grande Poste (n532001382)'
+        - علي بومنجل (n966535048)
         - Place des Martyrs (n966535035)
-
-      r8210887: 
-        - Place des Martyrs (n966535035)
-        - 'Tafourah - Grande Poste (n532001382)'
-        - Khelifa Boukhalfa (n3603933963)
-        - 1er Mai (n532001411)
-        - Aïssat Idir (n532001427)
-        - Hamma (n532001439)
-        - Jardin d'essai (n532001464)
-        - Les fusillés (n532001481)
-        - Cité Amirouche (n532001496)
-        - Mer et Soleil (n3590827124)
-        - Haï El Badr (n5571463482)
-        - Station des Ateliers (n3589500559)
-        - Gué de Constantine (n2208811165)
-        - Ain Naâdja (n3589518209)
 
       r289331: 
         - Place des Martyrs (n966535035)
+        - علي بومنجل (n966535048)
         - 'Tafourah - Grande Poste (n532001382)'
         - Khelifa Boukhalfa (n3603933963)
         - 1er Mai (n532001411)
@@ -114,6 +99,27 @@ routes:
         - El Harrach Gare (n6673464971)
         - El-Harrach Centre (n6673464970)
 
+      r8210887: 
+        - Place des Martyrs (n966535035)
+        - علي بومنجل (n966535048)
+        - 'Tafourah - Grande Poste (n532001382)'
+        - Khelifa Boukhalfa (n3603933963)
+        - 1er Mai (n532001411)
+        - Aïssat Idir (n532001427)
+        - Hamma (n532001439)
+        - Jardin d'essai (n532001464)
+        - Les fusillés (n532001481)
+        - Cité Amirouche (n532001496)
+        - Mer et Soleil (n3590827124)
+        - Haï El Badr (n5571463482)
+        - Station des Ateliers (n3589500559)
+        - Gué de Constantine (n2208811165)
+        - Ain Naâdja (n3589518209)
+
 
     name: Metro L1R
+    station_count: 19
+    ref: L1
+    colour: '#0033cc'
+    type: subway
 

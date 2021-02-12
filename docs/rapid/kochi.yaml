@@ -1,6 +1,4 @@
 
-transfers: 
-
 stations: 
   - Aluva (n4903755238)
   - Ambattukavu (n4903755239)
@@ -25,10 +23,10 @@ stations:
   - Town Hall (n5242586672)
   - Vyttila (n7673847483)
 
+transfers: 
+
 routes: 
   - 
-    colour: '#7fffd4'
-    type: subway
     stations: 
       - Aluva
       - Pulinchodu
@@ -53,8 +51,6 @@ routes:
       - Thykoodam
       - Pettah
 
-    ref: I
-    station_count: 22
     itineraries: 
       r7834959: 
         - Pettah (n7883924233)
@@ -106,4 +102,8 @@ routes:
 
 
     name: Kochi Metro Phase I
+    station_count: 22
+    ref: I
+    colour: '#7fffd4'
+    type: subway
 
