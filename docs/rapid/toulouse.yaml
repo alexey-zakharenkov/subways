@@ -45,26 +45,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Basso Cambo
-      - Bellefontaine
-      - Reynerie
-      - Mirail-Université
-      - Bagatelle
-      - Mermoz
-      - Fontaine Lestang
-      - Arènes
-      - Patte d'Oie
-      - 'Saint-Cyprien - République'
-      - Esquirol
-      - Capitole
-      - Jean Jaurès A
-      - Marengo-SNCF
-      - Jolimont
-      - Roseraie
-      - Argoulets
-      - Balma-Gramont
-
+    name: 'Métro A: Basso Cambo/Balma Gramont'
+    type: subway
+    ref: A
+    station_count: 18
+    colour: '#db001b'
     itineraries: 
       r1557126: 
         - Basso Cambo (n7681108802)
@@ -107,34 +92,32 @@ routes:
         - Basso Cambo (n7681108802)
 
 
-    name: 'Métro A: Basso Cambo/Balma Gramont'
-    station_count: 18
-    ref: A
-    colour: '#db001b'
-    type: subway
-  - 
     stations: 
-      - Ramonville
-      - Université Paul Sabatier
-      - Faculté de Pharmacie
-      - Rangueil
-      - Saouzelong
-      - Saint-Agne SNCF
-      - Empalot
-      - 'Saint-Michel - Marcel Langer'
-      - Palais de Justice
-      - Carmes
-      - François Verdier
-      - Jean Jaurès B
-      - Jeanne d'Arc
-      - Compans-Caffarelli
-      - Canal du Midi
-      - 'Minimes - Claude Nougaro'
-      - Barrière de Paris
-      - La Vache
-      - Trois Cocus
-      - Borderouge
+      - Basso Cambo
+      - Bellefontaine
+      - Reynerie
+      - Mirail-Université
+      - Bagatelle
+      - Mermoz
+      - Fontaine Lestang
+      - Arènes
+      - Patte d'Oie
+      - 'Saint-Cyprien - République'
+      - Esquirol
+      - Capitole
+      - Jean Jaurès A
+      - Marengo-SNCF
+      - Jolimont
+      - Roseraie
+      - Argoulets
+      - Balma-Gramont
 
+  - 
+    name: 'Métro B: Borderouge/Ramonville'
+    type: subway
+    ref: B
+    station_count: 20
+    colour: '#ffd900'
     itineraries: 
       r179514: 
         - Borderouge (n231716614)
@@ -181,9 +164,26 @@ routes:
         - Borderouge (n231716614)
 
 
-    name: 'Métro B: Borderouge/Ramonville'
-    station_count: 20
-    ref: B
-    colour: '#ffd900'
-    type: subway
+    stations: 
+      - Ramonville
+      - Université Paul Sabatier
+      - Faculté de Pharmacie
+      - Rangueil
+      - Saouzelong
+      - Saint-Agne SNCF
+      - Empalot
+      - 'Saint-Michel - Marcel Langer'
+      - Palais de Justice
+      - Carmes
+      - François Verdier
+      - Jean Jaurès B
+      - Jeanne d'Arc
+      - Compans-Caffarelli
+      - Canal du Midi
+      - 'Minimes - Claude Nougaro'
+      - Barrière de Paris
+      - La Vache
+      - Trois Cocus
+      - Borderouge
+
 

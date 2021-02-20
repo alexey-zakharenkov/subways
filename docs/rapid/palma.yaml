@@ -21,29 +21,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - UIB
-      - Son Sardina
-      - Camí dels Reis
-      - Gran via Asima
-      - Son Castelló
-      - Son Fuster Vell
-      - 'Son Costa - Son Fortesa'
-      - Jacint Verdaguer
-      - Plaça d'Espanya (light rail/train station)
-
+    name: Metro M1
+    type: light_rail
+    ref: M1
+    station_count: 9
+    colour: '#f1b03e'
     itineraries: 
-      r1664324: 
-        - Plaça d'Espanya (n5263686386)
-        - Jacint Verdaguer (n8043190541)
-        - 'Son Costa - Son Fortesa (n8048727321)'
-        - Son Fuster Vell (n1362173666)
-        - Son Castelló (n1362173665)
-        - Gran via Asima (n1362173662)
-        - Camí dels Reis (n1362173663)
-        - Son Sardina (n5263686385)
-        - UIB (n1362170795)
-
       r7781525: 
         - UIB (n1362170795)
         - Son Sardina (n5263686385)
@@ -55,38 +38,36 @@ routes:
         - Jacint Verdaguer (n8043190541)
         - Plaça d'Espanya (n5263686386)
 
+      r1664324: 
+        - Plaça d'Espanya (n5263686386)
+        - Jacint Verdaguer (n8043190541)
+        - 'Son Costa - Son Fortesa (n8048727321)'
+        - Son Fuster Vell (n1362173666)
+        - Son Castelló (n1362173665)
+        - Gran via Asima (n1362173662)
+        - Camí dels Reis (n1362173663)
+        - Son Sardina (n5263686385)
+        - UIB (n1362170795)
 
-    name: Metro M1
-    station_count: 9
-    ref: M1
-    colour: '#f1b03e'
-    type: light_rail
-  - 
+
     stations: 
       - Plaça d'Espanya (light rail/train station)
       - Jacint Verdaguer
       - 'Son Costa - Son Fortesa'
-      - Son Fuster
-      - Son Cladera
-      - Verge de Lluc
-      - es Pont d'Inca
-      - Es Pont d'Inca Nou
-      - Polígon de Marratxí
-      - Marratxí
+      - Son Fuster Vell
+      - Son Castelló
+      - Gran via Asima
+      - Camí dels Reis
+      - Son Sardina
+      - UIB
 
+  - 
+    name: Metro M2
+    type: light_rail
+    ref: M2
+    station_count: 10
+    colour: '#e93324'
     itineraries: 
-      r7781524: 
-        - Marratxí (n8048771641)
-        - Polígon de Marratxí (n8048743013)
-        - Es Pont d'Inca Nou (n8048752171)
-        - es Pont d'Inca (n8048726800)
-        - Verge de Lluc (n8048748498)
-        - 'Son Cladera - Es Vivero (n8045413471)'
-        - Son Fuster (n8048740478)
-        - 'Son Costa - Son Fortesa (n8048727321)'
-        - Jacint Verdaguer (n8043190541)
-        - Plaça d'Espanya (n5263686386)
-
       r4635401: 
         - Plaça d'Espanya (n5263686386)
         - Jacint Verdaguer (n8043190541)
@@ -99,10 +80,29 @@ routes:
         - Polígon de Marratxí (n8048743013)
         - Marratxí (n8048771641)
 
+      r7781524: 
+        - Marratxí (n8048771641)
+        - Polígon de Marratxí (n8048743013)
+        - Es Pont d'Inca Nou (n8048752171)
+        - es Pont d'Inca (n8048726800)
+        - Verge de Lluc (n8048748498)
+        - 'Son Cladera - Es Vivero (n8045413471)'
+        - Son Fuster (n8048740478)
+        - 'Son Costa - Son Fortesa (n8048727321)'
+        - Jacint Verdaguer (n8043190541)
+        - Plaça d'Espanya (n5263686386)
 
-    name: Metro M2
-    station_count: 10
-    ref: M2
-    colour: '#e93324'
-    type: light_rail
+
+    stations: 
+      - Marratxí
+      - Polígon de Marratxí
+      - Es Pont d'Inca Nou
+      - es Pont d'Inca
+      - Verge de Lluc
+      - Son Cladera
+      - Son Fuster
+      - 'Son Costa - Son Fortesa'
+      - Jacint Verdaguer
+      - Plaça d'Espanya (light rail/train station)
+
 

@@ -18,21 +18,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Tunney's Pasture
-      - Bayview
-      - Pimisi
-      - Lyon
-      - Parliament
-      - Rideau
-      - UOttawa
-      - Lees
-      - Hurdman
-      - Tremblay
-      - St-Laurent
-      - Cyrville
-      - Blair
-
+    name: Light Rail 1
+    type: light_rail
+    ref: 1
+    station_count: 13
+    colour: '#ee1b2e'
     itineraries: 
       r10036401: 
         - Tunney's Pasture (n6793866762)
@@ -65,9 +55,19 @@ routes:
         - Tunney's Pasture (n6793866762)
 
 
-    name: Light Rail 1
-    station_count: 13
-    ref: 1
-    colour: '#ee1b2e'
-    type: light_rail
+    stations: 
+      - Tunney's Pasture
+      - Bayview
+      - Pimisi
+      - Lyon
+      - Parliament
+      - Rideau
+      - UOttawa
+      - Lees
+      - Hurdman
+      - Tremblay
+      - St-Laurent
+      - Cyrville
+      - Blair
+
 

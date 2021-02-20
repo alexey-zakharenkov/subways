@@ -32,26 +32,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Central
-      - Galeria
-      - 102 Sul
-      - 106 Sul
-      - 108 Sul
-      - 110 Sul
-      - 112 Sul
-      - 114 Sul
-      - Asa Sul
-      - Shopping
-      - Feira
-      - Estação Guará
-      - Arniqueiras
-      - Águas Claras
-      - Taguatinga Sul
-      - Furnas
-      - Samambaia Sul
-      - Samambaia
-
+    name: Linha Laranja
+    type: subway
+    ref: Laranja
+    station_count: 18
+    colour: '#eb9710'
     itineraries: 
       r420556: 
         - Central (n516640062)
@@ -94,37 +79,32 @@ routes:
         - Central (n516640062)
 
 
-    name: Linha Laranja
-    station_count: 18
-    ref: Laranja
-    colour: '#eb9710'
-    type: subway
-  - 
     stations: 
-      - Ceilândia
-      - Ceilândia Norte
-      - Ceilândia Centro
-      - Guariroba
-      - Ceilândia Sul
-      - Centro Metropolitano
-      - Praça do Relógio
-      - Estrada Parque
-      - Concessionárias
-      - Águas Claras
-      - Arniqueiras
-      - Estação Guará
-      - Feira
-      - Shopping
-      - Asa Sul
-      - 114 Sul
-      - 112 Sul
-      - 110 Sul
-      - 108 Sul
-      - 106 Sul
-      - 102 Sul
-      - Galeria
       - Central
+      - Galeria
+      - 102 Sul
+      - 106 Sul
+      - 108 Sul
+      - 110 Sul
+      - 112 Sul
+      - 114 Sul
+      - Asa Sul
+      - Shopping
+      - Feira
+      - Estação Guará
+      - Arniqueiras
+      - Águas Claras
+      - Taguatinga Sul
+      - Furnas
+      - Samambaia Sul
+      - Samambaia
 
+  - 
+    name: Linha Verde
+    type: subway
+    ref: Verde
+    station_count: 23
+    colour: '#076c57'
     itineraries: 
       r420554: 
         - Central (n516640062)
@@ -177,9 +157,29 @@ routes:
         - Central (n516640062)
 
 
-    name: Linha Verde
-    station_count: 23
-    ref: Verde
-    colour: '#076c57'
-    type: subway
+    stations: 
+      - Ceilândia
+      - Ceilândia Norte
+      - Ceilândia Centro
+      - Guariroba
+      - Ceilândia Sul
+      - Centro Metropolitano
+      - Praça do Relógio
+      - Estrada Parque
+      - Concessionárias
+      - Águas Claras
+      - Arniqueiras
+      - Estação Guará
+      - Feira
+      - Shopping
+      - Asa Sul
+      - 114 Sul
+      - 112 Sul
+      - 110 Sul
+      - 108 Sul
+      - 106 Sul
+      - 102 Sul
+      - Galeria
+      - Central
+
 

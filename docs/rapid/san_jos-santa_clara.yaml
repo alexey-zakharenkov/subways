@@ -64,34 +64,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Santa Teresa
-      - Cottle
-      - Snell
-      - Blossom Hill
-      - Ohlone/Chynoweth
-      - Branham
-      - Capitol
-      - Curtner
-      - Tamien
-      - Virginia
-      - Children’s Discovery Museum
-      - Convention Center
-      - San Antonio
-      - Santa Clara
-      - Saint James
-      - Japantown/Ayer
-      - Civic Center
-      - Gish
-      - Metro/Airport
-      - Karina
-      - Component
-      - Bonaventura
-      - Orchard
-      - River Oaks
-      - Tasman
-      - Baypointe
-
+    name: Blue Line
+    type: light_rail
+    ref: Blue
+    station_count: 26
+    colour: '#00a4e2'
     itineraries: 
       r9897507: 
         - Santa Teresa (n6309491945)
@@ -150,21 +127,18 @@ routes:
         - Santa Teresa (n6309491945)
 
 
-    name: Blue Line
-    station_count: 26
-    ref: Blue
-    colour: '#00a4e2'
-    type: light_rail
-  - 
     stations: 
-      - Winchester
-      - Campbell
-      - Hamilton
-      - Bascom
-      - Fruitdale
-      - Race
-      - San Jose Diridon
-      - San Fernando
+      - Santa Teresa
+      - Cottle
+      - Snell
+      - Blossom Hill
+      - Ohlone/Chynoweth
+      - Branham
+      - Capitol
+      - Curtner
+      - Tamien
+      - Virginia
+      - Children’s Discovery Museum
       - Convention Center
       - San Antonio
       - Santa Clara
@@ -179,40 +153,15 @@ routes:
       - Orchard
       - River Oaks
       - Tasman
-      - Champion
-      - Lick Mill
-      - Great America
-      - Old Ironsides
+      - Baypointe
 
+  - 
+    name: Green Line
+    type: light_rail
+    ref: Green
+    station_count: 26
+    colour: '#76c761'
     itineraries: 
-      r2989877: 
-        - Winchester (n6309491955)
-        - Campbell (n6309491956)
-        - Hamilton (n6309491977)
-        - Bascom (n6309491957)
-        - Fruitdale (n6309491958)
-        - Race (n6309492415)
-        - San Jose Diridon (n6644531666)
-        - San Fernando (n6309491959)
-        - Convention Center (n6309492416)
-        - San Antonio (n6309492413)
-        - Santa Clara (n6309491960)
-        - Saint James (n6309491962)
-        - Japantown/Ayer (n6309492427)
-        - Civic Center (n6309492412)
-        - Gish (n6309492426)
-        - Metro/Airport (n6309492431)
-        - Karina (n6309492429)
-        - Component (n6309492423)
-        - Bonaventura (n6309491978)
-        - Orchard (n6309492428)
-        - River Oaks (n6309492424)
-        - Tasman (n6309491975)
-        - Champion (n6309492422)
-        - Lick Mill (n6309492434)
-        - Great America (n6309491974)
-        - Old Ironsides (n6309491973)
-
       r9897506: 
         - Old Ironsides (n6309491973)
         - Great America (n6309491974)
@@ -241,70 +190,70 @@ routes:
         - Campbell (n6309491956)
         - Winchester (n6309491955)
 
-
-    name: Green Line
-    station_count: 26
-    ref: Green
-    colour: '#76c761'
-    type: light_rail
-  - 
-    stations: 
-      - Mountain View
-      - Whisman
-      - Middlefield
-      - Bayshore/NASA
-      - Moffett Park
-      - Lockheed Martin
-      - Borregas
-      - Crossman
-      - Fair Oaks
-      - Vienna
-      - Reamwood
-      - Old Ironsides
-      - Great America
-      - Lick Mill
-      - Champion
-      - Baypointe
-      - Cisco Way
-      - Alder
-      - Great Mall/Main
-      - Milpitas
-      - Cropley
-      - Hostetter
-      - Berryessa
-      - Penitencia Creek
-      - McKee
-      - Alum Rock
-
-    itineraries: 
-      r10561835: 
-        - Alum Rock (n6309491963)
-        - McKee (n6309491979)
-        - Penitencia Creek (n6309491964)
-        - Berryessa (n6309492411)
-        - Hostetter (n6309492435)
-        - Cropley (n6309491965)
-        - Milpitas (n6309491976)
-        - Great Mall/Main (n6309492432)
-        - Alder (n6309491966)
-        - Cisco Way (n6309491967)
-        - Baypointe (n6309492419)
+      r2989877: 
+        - Winchester (n6309491955)
+        - Campbell (n6309491956)
+        - Hamilton (n6309491977)
+        - Bascom (n6309491957)
+        - Fruitdale (n6309491958)
+        - Race (n6309492415)
+        - San Jose Diridon (n6644531666)
+        - San Fernando (n6309491959)
+        - Convention Center (n6309492416)
+        - San Antonio (n6309492413)
+        - Santa Clara (n6309491960)
+        - Saint James (n6309491962)
+        - Japantown/Ayer (n6309492427)
+        - Civic Center (n6309492412)
+        - Gish (n6309492426)
+        - Metro/Airport (n6309492431)
+        - Karina (n6309492429)
+        - Component (n6309492423)
+        - Bonaventura (n6309491978)
+        - Orchard (n6309492428)
+        - River Oaks (n6309492424)
+        - Tasman (n6309491975)
         - Champion (n6309492422)
         - Lick Mill (n6309492434)
         - Great America (n6309491974)
         - Old Ironsides (n6309491973)
-        - Reamwood (n6309492425)
-        - Vienna (n6309492417)
-        - Fair Oaks (n6309492430)
-        - Crossman (n6309842162)
-        - Borregas (n6309492420)
-        - Lockheed Martin (n6309492410)
-        - Moffett Park (n6309491980)
-        - Bayshore/NASA (n6309492409)
-        - Middlefield (n6309492421)
-        - Whisman (n6309492414)
-        - Mountain View (n6644366979)
 
+
+    stations: 
+      - Winchester
+      - Campbell
+      - Hamilton
+      - Bascom
+      - Fruitdale
+      - Race
+      - San Jose Diridon
+      - San Fernando
+      - Convention Center
+      - San Antonio
+      - Santa Clara
+      - Saint James
+      - Japantown/Ayer
+      - Civic Center
+      - Gish
+      - Metro/Airport
+      - Karina
+      - Component
+      - Bonaventura
+      - Orchard
+      - River Oaks
+      - Tasman
+      - Champion
+      - Lick Mill
+      - Great America
+      - Old Ironsides
+
+  - 
+    name: Orange Line
+    type: light_rail
+    ref: Orange
+    station_count: 26
+    colour: '#f9661e'
+    itineraries: 
       r10561836: 
         - Mountain View (n6644366979)
         - Whisman (n6309492414)
@@ -333,10 +282,61 @@ routes:
         - McKee (n6309491979)
         - Alum Rock (n6309491963)
 
+      r10561835: 
+        - Alum Rock (n6309491963)
+        - McKee (n6309491979)
+        - Penitencia Creek (n6309491964)
+        - Berryessa (n6309492411)
+        - Hostetter (n6309492435)
+        - Cropley (n6309491965)
+        - Milpitas (n6309491976)
+        - Great Mall/Main (n6309492432)
+        - Alder (n6309491966)
+        - Cisco Way (n6309491967)
+        - Baypointe (n6309492419)
+        - Champion (n6309492422)
+        - Lick Mill (n6309492434)
+        - Great America (n6309491974)
+        - Old Ironsides (n6309491973)
+        - Reamwood (n6309492425)
+        - Vienna (n6309492417)
+        - Fair Oaks (n6309492430)
+        - Crossman (n6309842162)
+        - Borregas (n6309492420)
+        - Lockheed Martin (n6309492410)
+        - Moffett Park (n6309491980)
+        - Bayshore/NASA (n6309492409)
+        - Middlefield (n6309492421)
+        - Whisman (n6309492414)
+        - Mountain View (n6644366979)
 
-    name: Orange Line
-    station_count: 26
-    ref: Orange
-    colour: '#f9661e'
-    type: light_rail
+
+    stations: 
+      - Alum Rock
+      - McKee
+      - Penitencia Creek
+      - Berryessa
+      - Hostetter
+      - Cropley
+      - Milpitas
+      - Great Mall/Main
+      - Alder
+      - Cisco Way
+      - Baypointe
+      - Champion
+      - Lick Mill
+      - Great America
+      - Old Ironsides
+      - Reamwood
+      - Vienna
+      - Fair Oaks
+      - Crossman
+      - Borregas
+      - Lockheed Martin
+      - Moffett Park
+      - Bayshore/NASA
+      - Middlefield
+      - Whisman
+      - Mountain View
+
 

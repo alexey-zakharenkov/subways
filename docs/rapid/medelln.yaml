@@ -35,29 +35,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - La Estrella
-      - Sabaneta
-      - Itagüí
-      - Envigado
-      - Ayurá
-      - Aguacatala
-      - Poblado
-      - Industriales (Metro)
-      - Exposiciones
-      - Alpujarra
-      - San Antonio
-      - Parque Berrío
-      - Prado
-      - Hospital (Metro)
-      - Universidad
-      - Caribe
-      - Tricentenario
-      - Acevedo
-      - Madera
-      - Bello
-      - Niquía
-
+    name: Metro Línea A
+    type: subway
+    ref: A
+    station_count: 21
+    colour: '#0000ff'
     itineraries: 
       r1502510: 
         - Niquía (w363347843)
@@ -106,31 +88,36 @@ routes:
         - Niquía (w363347843)
 
 
-    name: Metro Línea A
-    station_count: 21
-    ref: A
-    colour: '#0000ff'
-    type: subway
-  - 
     stations: 
-      - San Javier
-      - Santa Lucía
-      - Floresta
-      - Estadio
-      - Suramericana
-      - Cisneros (Metro)
+      - Niquía
+      - Bello
+      - Madera
+      - Acevedo
+      - Tricentenario
+      - Caribe
+      - Universidad
+      - Hospital (Metro)
+      - Prado
+      - Parque Berrío
       - San Antonio
+      - Alpujarra
+      - Exposiciones
+      - Industriales (Metro)
+      - Poblado
+      - Aguacatala
+      - Ayurá
+      - Envigado
+      - Itagüí
+      - Sabaneta
+      - La Estrella
 
+  - 
+    name: Metro Línea B
+    type: subway
+    ref: B
+    station_count: 7
+    colour: '#ffa500'
     itineraries: 
-      r1504096: 
-        - San Antonio (n1214418069)
-        - Cisneros (n1215434362)
-        - Suramericana (n309027638)
-        - Estadio (n309027642)
-        - Floresta (n309027653)
-        - Santa Lucía (n309027658)
-        - San Javier (n3502845071)
-
       r1504257: 
         - San Javier (n3502845071)
         - Santa Lucía (n309027658)
@@ -140,10 +127,23 @@ routes:
         - Cisneros (n1215434362)
         - San Antonio (n1214418069)
 
+      r1504096: 
+        - San Antonio (n1214418069)
+        - Cisneros (n1215434362)
+        - Suramericana (n309027638)
+        - Estadio (n309027642)
+        - Floresta (n309027653)
+        - Santa Lucía (n309027658)
+        - San Javier (n3502845071)
 
-    name: Metro Línea B
-    station_count: 7
-    ref: B
-    colour: '#ffa500'
-    type: subway
+
+    stations: 
+      - San Antonio
+      - Cisneros (Metro)
+      - Suramericana
+      - Estadio
+      - Floresta
+      - Santa Lucía
+      - San Javier
+
 

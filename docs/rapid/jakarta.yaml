@@ -18,21 +18,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Bundaran HI
-      - Dukuh Atas
-      - Setiabudi
-      - Bendungan Hilir
-      - Istora
-      - Senayan
-      - ASEAN
-      - Blok M
-      - Blok A
-      - Haji Nawi
-      - Cipete Raya
-      - Fatmawati
-      - Lebak Bulus
-
+    name: North-South Line
+    type: subway
+    ref: NS
+    station_count: 13
+    colour: '#ce0037'
     itineraries: 
       r9677670: 
         - Bundaran HI (n6196107719)
@@ -65,9 +55,19 @@ routes:
         - Bundaran HI (n6196107719)
 
 
-    name: North-South Line
-    station_count: 13
-    ref: NS
-    colour: '#ce0037'
-    type: subway
+    stations: 
+      - Bundaran HI
+      - Dukuh Atas
+      - Setiabudi
+      - Bendungan Hilir
+      - Istora
+      - Senayan
+      - ASEAN
+      - Blok M
+      - Blok A
+      - Haji Nawi
+      - Cipete Raya
+      - Fatmawati
+      - Lebak Bulus
+
 

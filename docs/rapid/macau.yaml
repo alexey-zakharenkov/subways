@@ -16,19 +16,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 氹仔碼頭 Terminal Marítimo da Taipa
-      - 機場 Aeroporto
-      - 科大 UCTM
-      - 路氹東 Cotai Leste
-      - 東亞運 Jogos da Ásia Oriental
-      - 蓮花口岸 Posto Fronteiriço de Lótus
-      - 路氹西 Cotai Oeste
-      - 排角 Pai Kok
-      - 運動場 Estádio
-      - 馬會 Jockey Clube
-      - 海洋 Oceano
-
+    name: 氹仔線 Linha da Taipa
+    type: light_rail
+    ref: Taipa
+    station_count: 11
+    colour: '#96c93c'
     itineraries: 
       r10402173: 
         - 海洋 Oceano (n7051569813)
@@ -57,9 +49,17 @@ routes:
         - 海洋 Oceano (n7051569813)
 
 
-    name: 氹仔線 Linha da Taipa
-    station_count: 11
-    ref: Taipa
-    colour: '#96c93c'
-    type: light_rail
+    stations: 
+      - 氹仔碼頭 Terminal Marítimo da Taipa
+      - 機場 Aeroporto
+      - 科大 UCTM
+      - 路氹東 Cotai Leste
+      - 東亞運 Jogos da Ásia Oriental
+      - 蓮花口岸 Posto Fronteiriço de Lótus
+      - 路氹西 Cotai Oeste
+      - 排角 Pai Kok
+      - 運動場 Estádio
+      - 馬會 Jockey Clube
+      - 海洋 Oceano
+
 

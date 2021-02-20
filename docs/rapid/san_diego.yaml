@@ -62,47 +62,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - America Plaza
-      - Civic Center
-      - 5th Avenue
-      - City College
-      - Park & Market
-      - 12th & Imperial Transit Center
-      - Barrio Logan
-      - Harborside
-      - Pacific Fleet
-      - 8th Street
-      - 24th Street
-      - Bayfront/E Street
-      - H Street
-      - Palomar Street (Trolley)
-      - Palm Avenue
-      - Iris Avenue
-      - Beyer Boulevard Trolley Station
-      - San Ysidro Transit Center
-
+    name: UC San Diego Blue Line
+    type: light_rail
+    ref: 510
+    station_count: 18
+    colour: '#0000ff'
     itineraries: 
-      r7572437: 
-        - San Ysidro Transit Center (n6184516710)
-        - Beyer Boulevard Trolley Station (n6184516265)
-        - Iris Avenue Trolley Station (n6184516240)
-        - Palm Avenue (n6184516239)
-        - Palomar Street (n6184516238)
-        - H Street (n6184516692)
-        - Bayfront/E Street (n6184516709)
-        - 24th Street (n5103752095)
-        - 8th Street (n6184516704)
-        - Pacific Fleet (n6184516260)
-        - Harborside (n6184516276)
-        - Barrio Logan (n6184516284)
-        - 12th & Imperial Transit Center (n6184516244)
-        - Park & Market (n6184516702)
-        - City College (n6184516705)
-        - 5th Avenue (n6184516242)
-        - Civic Center (n6184516282)
-        - America Plaza (n6184516237)
-
       r7572436: 
         - America Plaza (n6184516237)
         - Civic Center (n6184516282)
@@ -123,56 +88,54 @@ routes:
         - Beyer Boulevard Trolley Station (n6184516265)
         - San Ysidro Transit Center (n6184516710)
 
-
-    name: UC San Diego Blue Line
-    station_count: 18
-    ref: 510
-    colour: '#0000ff'
-    type: light_rail
-  - 
-    stations: 
-      - Courthouse
-      - Civic Center
-      - 5th Avenue
-      - City College
-      - Park & Market
-      - 12th & Imperial Transit Center
-      - 25th/Commercial
-      - 32nd/Commercial
-      - 47th Street
-      - Euclid Avenue
-      - Encanto/62nd Street
-      - Massachusetts Avenue
-      - Lemon Grove Depot
-      - Spring Street
-      - La Mesa Boulevard
-      - Grossmont Transit Center
-      - Amaya Drive
-      - El Cajon Transit Center
-      - Arnele Avenue
-
-    itineraries: 
-      r9946499: 
-        - Arnele Avenue (n6184516686)
-        - El Cajon (n6184516279)
-        - Amaya Drive (n6184516270)
-        - Grossmont (n6184516687)
-        - La Mesa Boulevard (n6184516697)
-        - Spring Street (n6184516275)
-        - Lemon Grove Depot (n6184516283)
-        - Massachusetts Avenue (n6184516281)
-        - Encanto/62nd Street (n6184515857)
-        - Euclid Avenue (n6184516691)
-        - 47th Street (n6184516703)
-        - 32nd/Commercial (n6184516689)
-        - 25th/Commercial (n6184516700)
+      r7572437: 
+        - San Ysidro Transit Center (n6184516710)
+        - Beyer Boulevard Trolley Station (n6184516265)
+        - Iris Avenue Trolley Station (n6184516240)
+        - Palm Avenue (n6184516239)
+        - Palomar Street (n6184516238)
+        - H Street (n6184516692)
+        - Bayfront/E Street (n6184516709)
+        - 24th Street (n5103752095)
+        - 8th Street (n6184516704)
+        - Pacific Fleet (n6184516260)
+        - Harborside (n6184516276)
+        - Barrio Logan (n6184516284)
         - 12th & Imperial Transit Center (n6184516244)
         - Park & Market (n6184516702)
         - City College (n6184516705)
         - 5th Avenue (n6184516242)
         - Civic Center (n6184516282)
-        - Courthouse (n6184516227)
+        - America Plaza (n6184516237)
 
+
+    stations: 
+      - San Ysidro Transit Center
+      - Beyer Boulevard Trolley Station
+      - Iris Avenue
+      - Palm Avenue
+      - Palomar Street (Trolley)
+      - H Street
+      - Bayfront/E Street
+      - 24th Street
+      - 8th Street
+      - Pacific Fleet
+      - Harborside
+      - Barrio Logan
+      - 12th & Imperial Transit Center
+      - Park & Market
+      - City College
+      - 5th Avenue
+      - Civic Center
+      - America Plaza
+
+  - 
+    name: Orange Line
+    type: light_rail
+    ref: 520
+    station_count: 19
+    colour: '#ffa500'
+    itineraries: 
       r2846984: 
         - Courthouse (n6184516227)
         - Civic Center (n6184516282)
@@ -194,42 +157,55 @@ routes:
         - El Cajon (n6184516279)
         - Arnele Avenue (n6184516686)
 
+      r9946499: 
+        - Arnele Avenue (n6184516686)
+        - El Cajon (n6184516279)
+        - Amaya Drive (n6184516270)
+        - Grossmont (n6184516687)
+        - La Mesa Boulevard (n6184516697)
+        - Spring Street (n6184516275)
+        - Lemon Grove Depot (n6184516283)
+        - Massachusetts Avenue (n6184516281)
+        - Encanto/62nd Street (n6184515857)
+        - Euclid Avenue (n6184516691)
+        - 47th Street (n6184516703)
+        - 32nd/Commercial (n6184516689)
+        - 25th/Commercial (n6184516700)
+        - 12th & Imperial Transit Center (n6184516244)
+        - Park & Market (n6184516702)
+        - City College (n6184516705)
+        - 5th Avenue (n6184516242)
+        - Civic Center (n6184516282)
+        - Courthouse (n6184516227)
 
-    name: Orange Line
-    station_count: 19
-    ref: 520
-    colour: '#ffa500'
-    type: light_rail
-  - 
+
     stations: 
-      - Santee Town Center
-      - Gillespie Field
       - Arnele Avenue
       - El Cajon Transit Center
       - Amaya Drive
       - Grossmont Transit Center
-      - 70th Street
-      - Alvarado Medical Center
-      - SDSU Transit Center
-      - Grantville
-      - Mission San Diego
-      - Qualcomm Stadium
-      - Fenton Parkway
-      - Rio Vista
-      - Mission Valley Center
-      - Hazard Center
-      - Fashion Valley Transit Center
-      - Morena/Linda Vista
-      - San Diego Old Town Transit Center
-      - Washington Street
-      - Middletown
-      - County Center/Little Italy
-      - Santa Fe Depot
-      - Seaport Village
-      - Convention Center
-      - Gaslamp Quarter
+      - La Mesa Boulevard
+      - Spring Street
+      - Lemon Grove Depot
+      - Massachusetts Avenue
+      - Encanto/62nd Street
+      - Euclid Avenue
+      - 47th Street
+      - 32nd/Commercial
+      - 25th/Commercial
       - 12th & Imperial Transit Center
+      - Park & Market
+      - City College
+      - 5th Avenue
+      - Civic Center
+      - Courthouse
 
+  - 
+    name: Sycuan Green Line
+    type: light_rail
+    ref: 530
+    station_count: 27
+    colour: '#008000'
     itineraries: 
       r2847013: 
         - Santee Town Center (n6184516708)
@@ -290,23 +266,41 @@ routes:
         - Santee Town Center (n6184516708)
 
 
-    name: Sycuan Green Line
-    station_count: 27
-    ref: 530
-    colour: '#008000'
-    type: light_rail
-  - 
     stations: 
       - 12th & Imperial Transit Center
       - Gaslamp Quarter
       - Convention Center
       - Seaport Village
-      - America Plaza
-      - Civic Center
-      - 5th Avenue
-      - City College
-      - Park & Market
+      - Santa Fe Depot
+      - County Center/Little Italy
+      - Middletown
+      - Washington Street
+      - San Diego Old Town Transit Center
+      - Morena/Linda Vista
+      - Fashion Valley Transit Center
+      - Hazard Center
+      - Mission Valley Center
+      - Rio Vista
+      - Fenton Parkway
+      - Qualcomm Stadium
+      - Mission San Diego
+      - Grantville
+      - SDSU Transit Center
+      - Alvarado Medical Center
+      - 70th Street
+      - Grossmont Transit Center
+      - Amaya Drive
+      - El Cajon Transit Center
+      - Arnele Avenue
+      - Gillespie Field
+      - Santee Town Center
 
+  - 
+    name: San Diego Trolley
+    type: light_rail
+    ref: MTS Silver
+    station_count: 9
+    colour: '#cccccc'
     itineraries: 
       r4729047: 
         - 12th & Imperial Transit Center (n6184516244)
@@ -321,9 +315,15 @@ routes:
         - 12th & Imperial Transit Center (n6184516244)
 
 
-    name: San Diego Trolley
-    station_count: 9
-    ref: MTS Silver
-    colour: '#cccccc'
-    type: light_rail
+    stations: 
+      - 12th & Imperial Transit Center
+      - Gaslamp Quarter
+      - Convention Center
+      - Seaport Village
+      - America Plaza
+      - Civic Center
+      - 5th Avenue
+      - City College
+      - Park & Market
+
 

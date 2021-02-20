@@ -64,35 +64,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Cosumnes River College
-      - Center Parkway
-      - Franklin
-      - Meadowview
-      - Florin
-      - 47th Avenue
-      - Fruitridge
-      - City College
-      - 4th Avenue/Wayne Hultgren
-      - Broadway
-      - 16th Street
-      - 13th Street
-      - Archives Plaza
-      - 7th & Capitol
-      - St. Rose of Lima Park
-      - Cathedral Square
-      - 12th & I
-      - Alkali Flat/La Valentina
-      - Globe
-      - Arden/Del Paso
-      - Royal Oaks
-      - Swanston
-      - Marconi/Arcade
-      - Roseville Road
-      - Watt/I-80 West
-      - Watt/I-80
-      - 8th & O
-
+    name: Blue Line
+    type: light_rail
+    ref: Blue
+    station_count: 27
+    colour: '#0000c0'
     itineraries: 
       r2378981: 
         - Cosumnes River College (n6159583688)
@@ -151,42 +127,41 @@ routes:
         - Cosumnes River College (n6159583688)
 
 
-    name: Blue Line
-    station_count: 27
-    ref: Blue
-    colour: '#0000c0'
-    type: light_rail
-  - 
     stations: 
-      - Sacramento Valley Station
-      - 8th & H/County Center
-      - 8th & Capitol
-      - 8th & O
-      - Archives Plaza
-      - 13th Street
+      - Cosumnes River College
+      - Center Parkway
+      - Franklin
+      - Meadowview
+      - Florin
+      - 47th Avenue
+      - Fruitridge
+      - City College
+      - 4th Avenue/Wayne Hultgren
+      - Broadway
       - 16th Street
-      - 23rd Street
-      - 29th Street
-      - 39th Street
-      - 48th Street
-      - 59th Street
-      - University/65th Street
-      - Power Inn
-      - College Greens
-      - Watt/Manlove
-      - Starfire
-      - Tiber
-      - Butterfield
-      - Mather Field/Mills
-      - Zinfandel
-      - Cordova Town Center
-      - Sunrise
-      - Hazel
-      - Iron Point
-      - Glenn/Robert G Holderness
-      - Historic Folsom
-      - 8th & K
+      - 13th Street
+      - Archives Plaza
+      - 7th & Capitol
+      - St. Rose of Lima Park
+      - Cathedral Square
+      - 12th & I
+      - Alkali Flat/La Valentina
+      - Globe
+      - Arden/Del Paso
+      - Royal Oaks
+      - Swanston
+      - Marconi/Arcade
+      - Roseville Road
+      - Watt/I-80 West
+      - Watt/I-80
+      - 8th & O
 
+  - 
+    name: Gold Line
+    type: light_rail
+    ref: Gold
+    station_count: 28
+    colour: '#c0ba00'
     itineraries: 
       r2352701: 
         - Sacramento Valley Station (n6157430338)
@@ -247,21 +222,42 @@ routes:
         - Sacramento Valley Station (n6157430338)
 
 
-    name: Gold Line
-    station_count: 28
-    ref: Gold
-    colour: '#c0ba00'
-    type: light_rail
-  - 
     stations: 
-      - 7th & Richards/Township 9
+      - Sacramento Valley Station
       - 8th & H/County Center
       - 8th & Capitol
       - 8th & O
       - Archives Plaza
       - 13th Street
+      - 16th Street
+      - 23rd Street
+      - 29th Street
+      - 39th Street
+      - 48th Street
+      - 59th Street
+      - University/65th Street
+      - Power Inn
+      - College Greens
+      - Watt/Manlove
+      - Starfire
+      - Tiber
+      - Butterfield
+      - Mather Field/Mills
+      - Zinfandel
+      - Cordova Town Center
+      - Sunrise
+      - Hazel
+      - Iron Point
+      - Glenn/Robert G Holderness
+      - Historic Folsom
       - 8th & K
 
+  - 
+    name: Green Line
+    type: light_rail
+    ref: Green
+    station_count: 7
+    colour: '#00c000'
     itineraries: 
       r2379221: 
         - 7th & Richards/Township 9 (n6157430341)
@@ -280,9 +276,13 @@ routes:
         - 7th & Richards/Township 9 (n6157430341)
 
 
-    name: Green Line
-    station_count: 7
-    ref: Green
-    colour: '#00c000'
-    type: light_rail
+    stations: 
+      - 7th & Richards/Township 9
+      - 8th & H/County Center
+      - 8th & Capitol
+      - 8th & O
+      - Archives Plaza
+      - 13th Street
+      - 8th & K
+
 

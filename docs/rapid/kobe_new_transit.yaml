@@ -23,20 +23,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 神戸新交通三宮
-      - 貿易センター
-      - ポートターミナル
-      - 中公園
-      - みなとじま
-      - 市民広場
-      - 南公園駅
-      - 中埠頭
-      - 北埠頭
-      - 神戸空港
-      - 京コンピュータ前
-      - 医療センター
-
+    name: ポートライナー
+    type: light_rail
+    ref: P
+    station_count: 12
+    colour: '#3573bd'
     itineraries: 
       r6031863: 
         - 三宮 (n4044964917)
@@ -76,20 +67,26 @@ routes:
         - 三宮 (n4044964917)
 
 
-    name: ポートライナー
-    station_count: 12
-    ref: P
-    colour: '#3573bd'
-    type: light_rail
-  - 
     stations: 
-      - 住吉
-      - 魚崎
-      - 南魚崎
-      - アイランド北口
-      - アイランドセンター
-      - マリンパーク
+      - 神戸新交通三宮
+      - 貿易センター
+      - ポートターミナル
+      - 中公園
+      - みなとじま
+      - 市民広場
+      - 医療センター
+      - 京コンピュータ前
+      - 神戸空港
+      - 南公園駅
+      - 中埠頭
+      - 北埠頭
 
+  - 
+    name: 六甲ライナー
+    type: light_rail
+    ref: R
+    station_count: 6
+    colour: '#3e754e'
     itineraries: 
       r6015207: 
         - 住吉 (n5214160713)
@@ -108,9 +105,12 @@ routes:
         - 住吉 (n5214160713)
 
 
-    name: 六甲ライナー
-    station_count: 6
-    ref: R
-    colour: '#3e754e'
-    type: light_rail
+    stations: 
+      - マリンパーク
+      - アイランドセンター
+      - アイランド北口
+      - 南魚崎
+      - 魚崎
+      - 住吉
+
 

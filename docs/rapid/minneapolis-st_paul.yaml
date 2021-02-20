@@ -42,49 +42,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Target Field (Metro Light Rail)
-      - Warehouse District/Hennepin Avenue
-      - Nicollet Mall
-      - Government Plaza
-      - U.S. Bank Stadium Station
-      - Cedar-Riverside
-      - Franklin Avenue Station
-      - Lake Street/Midtown
-      - 38th Street
-      - 46th Street
-      - 50th Street/Minnehaha Park
-      - VA Medical Center
-      - Fort Snelling
-      - 'Terminal 1 - Lindbergh'
-      - 'Terminal 2 - Humphrey'
-      - American Boulevard
-      - Bloomington Central
-      - 28th Avenue
-      - Mall of America
-
+    name: Blue Line (Hiawatha)
+    type: light_rail
+    ref: 901
+    station_count: 19
+    colour: '#0000ff'
     itineraries: 
-      r2440420: 
-        - Mall of America (n1605300941)
-        - 28th Avenue (n1936899153)
-        - Bloomington Central (n1936899078)
-        - American Boulevard (n1720052645)
-        - 'Terminal 2 - Humphrey (n1819190086)'
-        - 'Terminal 1 - Lindbergh (n6576997972)'
-        - Fort Snelling (n1819190084)
-        - VA Medical Center (n1819190087)
-        - 50th Street/Minnehaha Park (n1819190090)
-        - 46th Street (n1819190089)
-        - 38th Street (n1819190088)
-        - Lake Street/Midtown (n1819190085)
-        - Franklin Avenue (n1819182328)
-        - Cedar-Riverside (n1819182327)
-        - U.S. Bank Stadium (n1819181065)
-        - Government Plaza (n1819181070)
-        - Nicollet Mall (n1819181072)
-        - Warehouse District/Hennepin Avenue (n1819181071)
-        - 'Target Field - Platform 1 (n4305375756)'
-
       r2440419: 
         - 'Target Field - Platform 1 (n4305375756)'
         - Warehouse District/Hennepin Avenue (n1819181071)
@@ -106,38 +69,55 @@ routes:
         - 28th Avenue (n1936899153)
         - Mall of America (n1605300941)
 
+      r2440420: 
+        - Mall of America (n1605300941)
+        - 28th Avenue (n1936899153)
+        - Bloomington Central (n1936899078)
+        - American Boulevard (n1720052645)
+        - 'Terminal 2 - Humphrey (n1819190086)'
+        - 'Terminal 1 - Lindbergh (n6576997972)'
+        - Fort Snelling (n1819190084)
+        - VA Medical Center (n1819190087)
+        - 50th Street/Minnehaha Park (n1819190090)
+        - 46th Street (n1819190089)
+        - 38th Street (n1819190088)
+        - Lake Street/Midtown (n1819190085)
+        - Franklin Avenue (n1819182328)
+        - Cedar-Riverside (n1819182327)
+        - U.S. Bank Stadium (n1819181065)
+        - Government Plaza (n1819181070)
+        - Nicollet Mall (n1819181072)
+        - Warehouse District/Hennepin Avenue (n1819181071)
+        - 'Target Field - Platform 1 (n4305375756)'
 
-    name: Blue Line (Hiawatha)
-    station_count: 19
-    ref: 901
-    colour: '#0000ff'
-    type: light_rail
-  - 
+
     stations: 
-      - Saint Paul Union Depot (light rail)
-      - Central Station
-      - 10th Street
-      - Robert Street
-      - Capitol/Rice Street
-      - Western Avenue
-      - Dale Street
-      - Victoria Street
-      - Lexington Parkway
-      - Hamline Avenue
-      - Snelling Avenue
-      - Fairview Avenue
-      - Raymond Avenue
-      - Westgate
-      - Prospect Park
-      - Stadium Village
-      - East Bank
-      - West Bank
+      - Mall of America
+      - 28th Avenue
+      - Bloomington Central
+      - American Boulevard
+      - 'Terminal 2 - Humphrey'
+      - 'Terminal 1 - Lindbergh'
+      - Fort Snelling
+      - VA Medical Center
+      - 50th Street/Minnehaha Park
+      - 46th Street
+      - 38th Street
+      - Lake Street/Midtown
+      - Franklin Avenue Station
+      - Cedar-Riverside
       - U.S. Bank Stadium Station
       - Government Plaza
       - Nicollet Mall
       - Warehouse District/Hennepin Avenue
       - Target Field (Metro Light Rail)
 
+  - 
+    name: Green Line
+    type: light_rail
+    ref: 902
+    station_count: 23
+    colour: '#008144'
     itineraries: 
       r3817120: 
         - Union Depot Station (n4305375753)
@@ -190,9 +170,29 @@ routes:
         - Union Depot Station (n4305375753)
 
 
-    name: Green Line
-    station_count: 23
-    ref: 902
-    colour: '#008144'
-    type: light_rail
+    stations: 
+      - Saint Paul Union Depot (light rail)
+      - Central Station
+      - 10th Street
+      - Robert Street
+      - Capitol/Rice Street
+      - Western Avenue
+      - Dale Street
+      - Victoria Street
+      - Lexington Parkway
+      - Hamline Avenue
+      - Snelling Avenue
+      - Fairview Avenue
+      - Raymond Avenue
+      - Westgate
+      - Prospect Park
+      - Stadium Village
+      - East Bank
+      - West Bank
+      - U.S. Bank Stadium Station
+      - Government Plaza
+      - Nicollet Mall
+      - Warehouse District/Hennepin Avenue
+      - Target Field (Metro Light Rail)
+
 

@@ -44,30 +44,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Tor Hailoch
-      - Cocacola
-      - St. Lideta
-      - Tegbared
-      - Mexico
-      - Leghar
-      - Stadium
-      - St. Estifanos
-      - Bambis
-      - St. Urael
-      - Hayahulet 2
-      - Hayahulet 1
-      - Lem Hotel
-      - Megenagna
-      - Gurd Sholla 2
-      - Gurd Sholla 1
-      - Management Institute
-      - Civil Service College
-      - St. Michael
-      - C.M.C
-      - Meri
-      - Ayat
-
+    name: 'AA-LRT : Ayat <-> Tor Hailoch'
+    type: light_rail
+    ref: E-W
+    station_count: 22
+    colour: '#008000'
     itineraries: 
       r5696983: 
         - Ayat (n3752876606)
@@ -118,61 +99,37 @@ routes:
         - Ayat (n3752876606)
 
 
-    name: 'AA-LRT : Ayat <-> Tor Hailoch'
-    station_count: 22
-    ref: E-W
-    colour: '#008000'
-    type: light_rail
-  - 
     stations: 
-      - Kality
-      - Abo Junction
-      - Saris
-      - Adey Abeba
-      - Nifas Silk 1
-      - Nifas Silk 2
-      - Lancha
-      - Temenja Yazh
-      - Riche
-      - Meshwalekya
-      - Stadium
-      - Leghar
-      - Mexico
-      - Tegbared
+      - Tor Hailoch
+      - Cocacola
       - St. Lideta
-      - Darmar
-      - Abnet
-      - Sebategna
-      - Autobus Tera
-      - Gojam Berenda
-      - Atikilt Tera
-      - Menelik II Square
+      - Tegbared
+      - Mexico
+      - Leghar
+      - Stadium
+      - St. Estifanos
+      - Bambis
+      - St. Urael
+      - Hayahulet 2
+      - Hayahulet 1
+      - Lem Hotel
+      - Megenagna
+      - Gurd Sholla 2
+      - Gurd Sholla 1
+      - Management Institute
+      - Civil Service College
+      - St. Michael
+      - C.M.C
+      - Meri
+      - Ayat
 
+  - 
+    name: 'AA-LRT : Menelik II Square <-> Kality'
+    type: light_rail
+    ref: S-N
+    station_count: 22
+    colour: '#0000ff'
     itineraries: 
-      r5696986: 
-        - Menelik II Square (n5732559680)
-        - Atikilt Tera (n4778994700)
-        - Gojam Berenda (n4778994699)
-        - Autobus Tera (n4070433624)
-        - Sebategna (n4070433625)
-        - Abnet (n5741184632)
-        - Darmar (n5741184631)
-        - St. Lideta (n3752876825)
-        - Tegbared (n3752876624)
-        - Mexico (n3752876623)
-        - Leghar (n3752876622)
-        - Stadium (n3752876621)
-        - Meshwalekya (n3752876828)
-        - Riche (n3752876829)
-        - Temenja Yazh (n3752876830)
-        - Lancha (n3752876831)
-        - Nifas Silk 2 (n3752876832)
-        - Nifas Silk 1 (n3752876833)
-        - Adey Abeba (n5741184630)
-        - Saris (n3752876835)
-        - Abo Junction (n3752876836)
-        - Kality (n3752876837)
-
       r5696985: 
         - Kality (n3752876837)
         - Abo Junction (n3752876836)
@@ -197,10 +154,53 @@ routes:
         - Atikilt Tera (n4778994700)
         - Menelik II Square (n5732559680)
 
+      r5696986: 
+        - Menelik II Square (n5732559680)
+        - Atikilt Tera (n4778994700)
+        - Gojam Berenda (n4778994699)
+        - Autobus Tera (n4070433624)
+        - Sebategna (n4070433625)
+        - Abnet (n5741184632)
+        - Darmar (n5741184631)
+        - St. Lideta (n3752876825)
+        - Tegbared (n3752876624)
+        - Mexico (n3752876623)
+        - Leghar (n3752876622)
+        - Stadium (n3752876621)
+        - Meshwalekya (n3752876828)
+        - Riche (n3752876829)
+        - Temenja Yazh (n3752876830)
+        - Lancha (n3752876831)
+        - Nifas Silk 2 (n3752876832)
+        - Nifas Silk 1 (n3752876833)
+        - Adey Abeba (n5741184630)
+        - Saris (n3752876835)
+        - Abo Junction (n3752876836)
+        - Kality (n3752876837)
 
-    name: 'AA-LRT : Menelik II Square <-> Kality'
-    station_count: 22
-    ref: S-N
-    colour: '#0000ff'
-    type: light_rail
+
+    stations: 
+      - Menelik II Square
+      - Atikilt Tera
+      - Gojam Berenda
+      - Autobus Tera
+      - Sebategna
+      - Abnet
+      - Darmar
+      - St. Lideta
+      - Tegbared
+      - Mexico
+      - Leghar
+      - Stadium
+      - Meshwalekya
+      - Riche
+      - Temenja Yazh
+      - Lancha
+      - Nifas Silk 2
+      - Nifas Silk 1
+      - Adey Abeba
+      - Saris
+      - Abo Junction
+      - Kality
+
 

@@ -13,16 +13,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Brignole
-      - De Ferrari
-      - Sarzano/Sant'Agostino
-      - San Giorgio
-      - Darsena
-      - Principe
-      - Dinegro
-      - Brin
-
+    name: Genoa Metro
+    type: subway
+    ref: Metropolitana
+    station_count: 8
+    colour: '#ff0000'
     itineraries: 
       r2177189: 
         - Brin (n282709549)
@@ -45,9 +40,14 @@ routes:
         - Brin (n282709549)
 
 
-    name: Genoa Metro
-    station_count: 8
-    ref: Metropolitana
-    colour: '#ff0000'
-    type: subway
+    stations: 
+      - Brignole
+      - De Ferrari
+      - Sarzano/Sant'Agostino
+      - San Giorgio
+      - Darsena
+      - Principe
+      - Dinegro
+      - Brin
+
 

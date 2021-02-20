@@ -79,66 +79,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Minden (Westf)
-      - Bückeburg
-      - Kirchhorsten
-      - Stadhagen
-      - Lindhorst
-      - Haste
-      - Wunstorf
-      - Dedensen-Gümmer
-      - Seelze
-      - Letter/Bahnhof
-      - Bahnhof Leinhausen
-      - Hannover/Nordstadt
-      - Hannover Hauptbahnhof
-      - Hannover Bismarckstraße
-      - Hannover Linden/Fischerhof
-      - Hannover Bornum
-      - Empelde
-      - Ronnenberg
-      - Weetzen
-      - Lemmie
-      - Wennigsen (Deister)
-      - Egestorf
-      - Kirchdorf (Deister)
-      - Barsinghausen
-      - Winninghausen
-      - Bantorf
-      - Bad Nenndorf
-
+    name: 'S1 Minden (Westf) - Haste'
+    type: train
+    ref: S1
+    station_count: 27
+    colour: '#7760b0'
     itineraries: 
-      r2548860: 
-        - Minden (Westf) (n1202746817)
-        - Bückeburg (n2983200608)
-        - Kirchhorsten (n292912676)
-        - Stadthagen (n162056714)
-        - Lindhorst (n206146297)
-        - Haste (n57821469)
-        - Wunstorf (n25268512)
-        - Dedensen/Gümmer (n4127018079)
-        - Seelze (n3694246851)
-        - Letter (n4124416281)
-        - Hannover-Leinhausen (n4079935770)
-        - Hannover-Nordstadt (n3653355754)
-        - Hannover Hauptbahnhof (n3059639307)
-        - Hannover Bismarckstraße (n3273798353)
-        - Hannover-Linden/Fischerhof (n3277702951)
-        - Hannover-Bornum (n3273798354)
-        - Empelde (n2097020288)
-        - Ronnenberg (n3273798355)
-        - Weetzen (n2717715248)
-        - Lemmie (n3277702953)
-        - Wennigsen (Deister) (n48172337)
-        - Egestorf (Deister) (n2286071919)
-        - Kirchdorf (Deister) (n48172488)
-        - Barsinghausen (n3273798352)
-        - Winninghausen (n3284803083)
-        - Bantorf (n3277702948)
-        - Bad Nenndorf (n3284803078)
-        - Haste (n57821469)
-
       r54014: 
         - Haste (n57821469)
         - Bad Nenndorf (n3284803078)
@@ -169,20 +115,44 @@ routes:
         - Bückeburg (n2983200608)
         - Minden (Westf) (n1202746817)
 
+      r2548860: 
+        - Minden (Westf) (n1202746817)
+        - Bückeburg (n2983200608)
+        - Kirchhorsten (n292912676)
+        - Stadthagen (n162056714)
+        - Lindhorst (n206146297)
+        - Haste (n57821469)
+        - Wunstorf (n25268512)
+        - Dedensen/Gümmer (n4127018079)
+        - Seelze (n3694246851)
+        - Letter (n4124416281)
+        - Hannover-Leinhausen (n4079935770)
+        - Hannover-Nordstadt (n3653355754)
+        - Hannover Hauptbahnhof (n3059639307)
+        - Hannover Bismarckstraße (n3273798353)
+        - Hannover-Linden/Fischerhof (n3277702951)
+        - Hannover-Bornum (n3273798354)
+        - Empelde (n2097020288)
+        - Ronnenberg (n3273798355)
+        - Weetzen (n2717715248)
+        - Lemmie (n3277702953)
+        - Wennigsen (Deister) (n48172337)
+        - Egestorf (Deister) (n2286071919)
+        - Kirchdorf (Deister) (n48172488)
+        - Barsinghausen (n3273798352)
+        - Winninghausen (n3284803083)
+        - Bantorf (n3277702948)
+        - Bad Nenndorf (n3284803078)
+        - Haste (n57821469)
 
-    name: 'S1 Minden (Westf) - Haste'
-    station_count: 27
-    ref: S1
-    colour: '#7760b0'
-    type: train
-  - 
+
     stations: 
-      - Nienburg (Weser)
-      - Linsburg
-      - Hagen (Hannover)
-      - Eilvese
-      - Neustadt am Rübenberge
-      - Poggenhagen
+      - Minden (Westf)
+      - Bückeburg
+      - Kirchhorsten
+      - Stadhagen
+      - Lindhorst
+      - Haste
       - Wunstorf
       - Dedensen-Gümmer
       - Seelze
@@ -204,8 +174,13 @@ routes:
       - Winninghausen
       - Bantorf
       - Bad Nenndorf
-      - Haste
 
+  - 
+    name: 'S2 Nienburg - Haste'
+    type: train
+    ref: S2
+    station_count: 28
+    colour: '#118349'
     itineraries: 
       r54021: 
         - Nienburg (Weser) (n4530820001)
@@ -268,21 +243,42 @@ routes:
         - Nienburg (Weser) (n4530820001)
 
 
-    name: 'S2 Nienburg - Haste'
-    station_count: 28
-    ref: S2
-    colour: '#118349'
-    type: train
-  - 
     stations: 
+      - Nienburg (Weser)
+      - Linsburg
+      - Hagen (Hannover)
+      - Eilvese
+      - Neustadt am Rübenberge
+      - Poggenhagen
+      - Wunstorf
+      - Dedensen-Gümmer
+      - Seelze
+      - Letter/Bahnhof
+      - Bahnhof Leinhausen
+      - Hannover/Nordstadt
       - Hannover Hauptbahnhof
       - Hannover Bismarckstraße
       - Hannover Linden/Fischerhof
+      - Hannover Bornum
       - Empelde
+      - Ronnenberg
       - Weetzen
+      - Lemmie
       - Wennigsen (Deister)
+      - Egestorf
+      - Kirchdorf (Deister)
       - Barsinghausen
+      - Winninghausen
+      - Bantorf
+      - Bad Nenndorf
+      - Haste
 
+  - 
+    name: 'S21 Hannover Hbf - Barsinghausen'
+    type: train
+    ref: S21
+    station_count: 7
+    colour: '#118349'
     itineraries: 
       r4435866: 
         - Hannover Hauptbahnhof (n3059639307)
@@ -303,24 +299,21 @@ routes:
         - Hannover Hauptbahnhof (n3059639307)
 
 
-    name: 'S21 Hannover Hbf - Barsinghausen'
-    station_count: 7
-    ref: S21
-    colour: '#118349'
-    type: train
-  - 
     stations: 
       - Hannover Hauptbahnhof
-      - Hannover-Kleefeld
-      - Bahnhof Karl-Wiechert-Allee
-      - Hannover Anderten/Misburg
-      - Ahlten
-      - Lehrte
-      - Sehnde
-      - Algermissen
-      - Harsum
-      - Hildesheim Hbf
+      - Hannover Bismarckstraße
+      - Hannover Linden/Fischerhof
+      - Empelde
+      - Weetzen
+      - Wennigsen (Deister)
+      - Barsinghausen
 
+  - 
+    name: 'S3 Hannover - Hildesheim'
+    type: train
+    ref: S3
+    station_count: 10
+    colour: '#db6eab'
     itineraries: 
       r2474188: 
         - Hildesheim Hauptbahnhof (n3616040153)
@@ -347,31 +340,24 @@ routes:
         - Hildesheim Hauptbahnhof (n3616040153)
 
 
-    name: 'S3 Hannover - Hildesheim'
-    station_count: 10
-    ref: S3
-    colour: '#db6eab'
-    type: train
-  - 
     stations: 
       - Hildesheim Hbf
-      - Emmerke
-      - Barnten
-      - Sarstedt
-      - Rethen (Leine)
-      - Hannover Messe/Laatzen
-      - Hannover Bismarckstraße
+      - Harsum
+      - Algermissen
+      - Sehnde
+      - Lehrte
+      - Ahlten
+      - Hannover Anderten/Misburg
+      - Bahnhof Karl-Wiechert-Allee
+      - Hannover-Kleefeld
       - Hannover Hauptbahnhof
-      - Hannover/Nordstadt
-      - Hannover-Ledeburg
-      - Hannover/Vinnhorst
-      - Langenhagen Mitte
-      - Langenhagen Pferdemarkt
-      - Langenhagen-Kaltenweide
-      - Bissendorf
-      - Mellendorf
-      - Bennemühlen
 
+  - 
+    name: 'S4 Hildesheim - Bennemühlen'
+    type: train
+    ref: S4
+    station_count: 17
+    colour: '#972f50'
     itineraries: 
       r54009: 
         - Hildesheim Hauptbahnhof (n3616040153)
@@ -412,39 +398,49 @@ routes:
         - Hildesheim Hauptbahnhof (n3616040153)
 
 
-    name: 'S4 Hildesheim - Bennemühlen'
-    station_count: 17
-    ref: S4
-    colour: '#972f50'
-    type: train
-  - 
     stations: 
-      - Paderborn Hbf
-      - Altenbeken
-      - Steinheim (Westf)
-      - Schieder
-      - Lügde
-      - Bad Pyrmont
-      - Emmerthal
-      - Hameln
-      - Bad Münder (Deister)
-      - Springe
-      - Völksen/Eldagsen
-      - Bennigsen/Bahnhof
-      - Holtensen/Linderte
-      - Weetzen
-      - Hannover Linden/Fischerhof
-      - Hannover Bismarckstraße
-      - Hannover Hauptbahnhof
-      - Hannover/Nordstadt
-      - Hannover-Ledeburg
-      - Hannover/Vinnhorst
-      - Langenhagen Mitte
+      - Bennemühlen
+      - Mellendorf
+      - Bissendorf
+      - Langenhagen-Kaltenweide
       - Langenhagen Pferdemarkt
-      - Hannover Flughafen
+      - Langenhagen Mitte
+      - Hannover/Vinnhorst
+      - Hannover-Ledeburg
+      - Hannover/Nordstadt
+      - Hannover Hauptbahnhof
+      - Hannover Bismarckstraße
+      - Hannover Messe/Laatzen
+      - Rethen (Leine)
+      - Sarstedt
+      - Barnten
+      - Emmerke
+      - Hildesheim Hbf
 
+  - 
+    name: 'S5 Hannover - Paderborn'
+    type: train
+    ref: S5
+    station_count: 23
+    colour: '#f78a18'
     itineraries: 
-      r4467130: 
+      r2417905: 
+        - Paderborn Hauptbahnhof (n2675283037)
+        - Altenbeken (n3493177832)
+        - Steinheim (Westf) (n4588578252)
+        - Schieder (n3537016721)
+        - Lügde (n3275265433)
+        - Bad Pyrmont (n3275265429)
+        - Emmerthal (n3275265432)
+        - Hameln (n2691929445)
+        - Bad Münder (Deister) (n4005502925)
+        - Springe (n4005502942)
+        - Völksen/Eldagsen (n83066702)
+        - Bennigsen (n3275265430)
+        - Holtensen/Linderte (n83066553)
+        - Weetzen (n2717715248)
+        - Hannover-Linden/Fischerhof (n3277702951)
+        - Hannover Bismarckstraße (n3273798353)
         - Hannover Hauptbahnhof (n3059639307)
         - Hannover-Nordstadt (n3653355754)
         - Hannover-Ledeburg (n3653395748)
@@ -478,61 +474,27 @@ routes:
         - Altenbeken (n3493177832)
         - Paderborn Hauptbahnhof (n2675283037)
 
-      r2417905: 
-        - Paderborn Hauptbahnhof (n2675283037)
-        - Altenbeken (n3493177832)
-        - Steinheim (Westf) (n4588578252)
-        - Schieder (n3537016721)
-        - Lügde (n3275265433)
-        - Bad Pyrmont (n3275265429)
-        - Emmerthal (n3275265432)
-        - Hameln (n2691929445)
-        - Bad Münder (Deister) (n4005502925)
-        - Springe (n4005502942)
-        - Völksen/Eldagsen (n83066702)
-        - Bennigsen (n3275265430)
-        - Holtensen/Linderte (n83066553)
-        - Weetzen (n2717715248)
-        - Hannover-Linden/Fischerhof (n3277702951)
-        - Hannover Bismarckstraße (n3273798353)
-        - Hannover Hauptbahnhof (n3059639307)
-        - Hannover-Nordstadt (n3653355754)
-        - Hannover-Ledeburg (n3653395748)
-        - Hannover-Vinnhorst (n29363851)
-        - Langenhagen Mitte (n3059966341)
-        - Langenhagen Pferdemarkt (n29363849)
+      r4437465: 
         - Hannover Flughafen (n3242483385)
+        - Langenhagen Pferdemarkt (n29363849)
+        - Langenhagen Mitte (n3059966341)
+        - Hannover-Vinnhorst (n29363851)
+        - Hannover-Ledeburg (n3653395748)
+        - Hannover-Nordstadt (n3653355754)
+        - Hannover Hauptbahnhof (n3059639307)
+        - Hannover Bismarckstraße (n3273798353)
+        - Hannover-Linden/Fischerhof (n3277702951)
+        - Weetzen (n2717715248)
+        - Holtensen/Linderte (n83066553)
+        - Bennigsen (n3275265430)
+        - Völksen/Eldagsen (n83066702)
+        - Springe (n4005502942)
+        - Bad Münder (Deister) (n4005502925)
+        - Hameln (n2691929445)
+        - Emmerthal (n3275265432)
+        - Bad Pyrmont (n3275265429)
 
       r4467128: 
-        - Hameln (n2691929445)
-        - Bad Münder (Deister) (n4005502925)
-        - Springe (n4005502942)
-        - Völksen/Eldagsen (n83066702)
-        - Bennigsen (n3275265430)
-        - Holtensen/Linderte (n83066553)
-        - Weetzen (n2717715248)
-        - Hannover-Linden/Fischerhof (n3277702951)
-        - Hannover Bismarckstraße (n3273798353)
-        - Hannover Hauptbahnhof (n3059639307)
-        - Hannover-Nordstadt (n3653355754)
-        - Hannover-Ledeburg (n3653395748)
-        - Hannover-Vinnhorst (n29363851)
-        - Langenhagen Mitte (n3059966341)
-        - Langenhagen Pferdemarkt (n29363849)
-        - Hannover Flughafen (n3242483385)
-
-      r4467129: 
-        - Hannover Flughafen (n3242483385)
-        - Langenhagen Pferdemarkt (n29363849)
-        - Langenhagen Mitte (n3059966341)
-        - Hannover-Vinnhorst (n29363851)
-        - Hannover-Ledeburg (n3653395748)
-        - Hannover-Nordstadt (n3653355754)
-        - Hannover Hauptbahnhof (n3059639307)
-
-      r4467127: 
-        - Bad Pyrmont (n3275265429)
-        - Emmerthal (n3275265432)
         - Hameln (n2691929445)
         - Bad Münder (Deister) (n4005502925)
         - Springe (n4005502942)
@@ -568,7 +530,36 @@ routes:
         - Bad Münder (Deister) (n4005502925)
         - Hameln (n2691929445)
 
-      r4437465: 
+      r4467130: 
+        - Hannover Hauptbahnhof (n3059639307)
+        - Hannover-Nordstadt (n3653355754)
+        - Hannover-Ledeburg (n3653395748)
+        - Hannover-Vinnhorst (n29363851)
+        - Langenhagen Mitte (n3059966341)
+        - Langenhagen Pferdemarkt (n29363849)
+        - Hannover Flughafen (n3242483385)
+
+      r4467127: 
+        - Bad Pyrmont (n3275265429)
+        - Emmerthal (n3275265432)
+        - Hameln (n2691929445)
+        - Bad Münder (Deister) (n4005502925)
+        - Springe (n4005502942)
+        - Völksen/Eldagsen (n83066702)
+        - Bennigsen (n3275265430)
+        - Holtensen/Linderte (n83066553)
+        - Weetzen (n2717715248)
+        - Hannover-Linden/Fischerhof (n3277702951)
+        - Hannover Bismarckstraße (n3273798353)
+        - Hannover Hauptbahnhof (n3059639307)
+        - Hannover-Nordstadt (n3653355754)
+        - Hannover-Ledeburg (n3653395748)
+        - Hannover-Vinnhorst (n29363851)
+        - Langenhagen Mitte (n3059966341)
+        - Langenhagen Pferdemarkt (n29363849)
+        - Hannover Flughafen (n3242483385)
+
+      r4467129: 
         - Hannover Flughafen (n3242483385)
         - Langenhagen Pferdemarkt (n29363849)
         - Langenhagen Mitte (n3059966341)
@@ -576,44 +567,40 @@ routes:
         - Hannover-Ledeburg (n3653395748)
         - Hannover-Nordstadt (n3653355754)
         - Hannover Hauptbahnhof (n3059639307)
-        - Hannover Bismarckstraße (n3273798353)
-        - Hannover-Linden/Fischerhof (n3277702951)
-        - Weetzen (n2717715248)
-        - Holtensen/Linderte (n83066553)
-        - Bennigsen (n3275265430)
-        - Völksen/Eldagsen (n83066702)
-        - Springe (n4005502942)
-        - Bad Münder (Deister) (n4005502925)
-        - Hameln (n2691929445)
-        - Emmerthal (n3275265432)
-        - Bad Pyrmont (n3275265429)
 
 
-    name: 'S5 Hannover - Paderborn'
-    station_count: 23
-    ref: S5
-    colour: '#f78a18'
-    type: train
-  - 
     stations: 
-      - Hameln
-      - Springe
-      - Hannover Linden/Fischerhof
-      - Hannover Bismarckstraße
+      - Hannover Flughafen
+      - Langenhagen Pferdemarkt
+      - Langenhagen Mitte
+      - Hannover/Vinnhorst
+      - Hannover-Ledeburg
+      - Hannover/Nordstadt
       - Hannover Hauptbahnhof
-      - Letter/Bahnhof
-      - Seelze
+      - Hannover Bismarckstraße
+      - Hannover Linden/Fischerhof
+      - Weetzen
+      - Holtensen/Linderte
+      - Bennigsen/Bahnhof
+      - Völksen/Eldagsen
+      - Springe
+      - Bad Münder (Deister)
+      - Hameln
+      - Emmerthal
+      - Bad Pyrmont
+      - Lügde
+      - Schieder
+      - Steinheim (Westf)
+      - Altenbeken
+      - Paderborn Hbf
 
+  - 
+    name: 'S51 Seelze - Hameln'
+    type: train
+    ref: S51
+    station_count: 7
+    colour: '#f78a18'
     itineraries: 
-      r4447844: 
-        - Hameln (n2691929445)
-        - Springe (n4005502942)
-        - Hannover-Linden/Fischerhof (n3277702951)
-        - Hannover Bismarckstraße (n3273798353)
-        - Hannover Hauptbahnhof (n3059639307)
-        - Letter (n4124416281)
-        - Seelze (n3694246851)
-
       r4437467: 
         - Seelze (n3694246851)
         - Letter (n4124416281)
@@ -623,22 +610,31 @@ routes:
         - Springe (n4005502942)
         - Hameln (n2691929445)
 
+      r4447844: 
+        - Hameln (n2691929445)
+        - Springe (n4005502942)
+        - Hannover-Linden/Fischerhof (n3277702951)
+        - Hannover Bismarckstraße (n3273798353)
+        - Hannover Hauptbahnhof (n3059639307)
+        - Letter (n4124416281)
+        - Seelze (n3694246851)
 
-    name: 'S51 Seelze - Hameln'
-    station_count: 7
-    ref: S51
-    colour: '#f78a18'
-    type: train
-  - 
+
     stations: 
+      - Seelze
+      - Letter/Bahnhof
       - Hannover Hauptbahnhof
-      - Bahnhof Karl-Wiechert-Allee
-      - Aligse
-      - Burgdorf (Han)
-      - Otze
-      - Ehlershausen
-      - Bahnhof Celle
+      - Hannover Bismarckstraße
+      - Hannover Linden/Fischerhof
+      - Springe
+      - Hameln
 
+  - 
+    name: 'S6 Hannover - Celle'
+    type: train
+    ref: S6
+    station_count: 7
+    colour: '#005aab'
     itineraries: 
       r2557419: 
         - Hannover Hauptbahnhof (n3059639307)
@@ -659,39 +655,22 @@ routes:
         - Hannover Hauptbahnhof (n3059639307)
 
 
-    name: 'S6 Hannover - Celle'
-    station_count: 7
-    ref: S6
-    colour: '#005aab'
-    type: train
-  - 
     stations: 
       - Hannover Hauptbahnhof
-      - Hannover-Kleefeld
       - Bahnhof Karl-Wiechert-Allee
-      - Hannover Anderten/Misburg
-      - Ahlten
-      - Lehrte
       - Aligse
       - Burgdorf (Han)
       - Otze
       - Ehlershausen
       - Bahnhof Celle
 
+  - 
+    name: S7 Hannover <=> Lehrte <=> Celle
+    type: train
+    ref: S7
+    station_count: 11
+    colour: '#a5ce43'
     itineraries: 
-      r54126: 
-        - Hannover Hauptbahnhof (n3059639307)
-        - Hannover-Kleefeld (n3277702952)
-        - Hannover Karl-Wiechert-Allee (n3277702950)
-        - Hannover Anderten/Misburg (n21306303)
-        - Ahlten (n3277702947)
-        - Lehrte (n21306328)
-        - Aligse (n3275265428)
-        - Burgdorf (Han) (n3277702949)
-        - Otze (n5810960356)
-        - Ehlershausen (n3275265431)
-        - Celle (n252367716)
-
       r3168051: 
         - Celle (n252367716)
         - Ehlershausen (n3275265431)
@@ -705,21 +684,39 @@ routes:
         - Hannover-Kleefeld (n3277702952)
         - Hannover Hauptbahnhof (n3059639307)
 
+      r54126: 
+        - Hannover Hauptbahnhof (n3059639307)
+        - Hannover-Kleefeld (n3277702952)
+        - Hannover Karl-Wiechert-Allee (n3277702950)
+        - Hannover Anderten/Misburg (n21306303)
+        - Ahlten (n3277702947)
+        - Lehrte (n21306328)
+        - Aligse (n3275265428)
+        - Burgdorf (Han) (n3277702949)
+        - Otze (n5810960356)
+        - Ehlershausen (n3275265431)
+        - Celle (n252367716)
 
-    name: S7 Hannover <=> Lehrte <=> Celle
-    station_count: 11
-    ref: S7
-    colour: '#a5ce43'
-    type: train
-  - 
+
     stations: 
-      - Hannover Messe/Laatzen
-      - Hannover Bismarckstraße
       - Hannover Hauptbahnhof
-      - Hannover/Nordstadt
-      - Langenhagen Mitte
-      - Hannover Flughafen
+      - Hannover-Kleefeld
+      - Bahnhof Karl-Wiechert-Allee
+      - Hannover Anderten/Misburg
+      - Ahlten
+      - Lehrte
+      - Aligse
+      - Burgdorf (Han)
+      - Otze
+      - Ehlershausen
+      - Bahnhof Celle
 
+  - 
+    name: 'S8 Hannover Flughafen - Hannover Messe/Laatzen'
+    type: train
+    ref: S8
+    station_count: 6
+    colour: '#8ec7e8'
     itineraries: 
       r54004: 
         - Hannover Messe/Laatzen (n250587750)
@@ -738,9 +735,12 @@ routes:
         - Hannover Messe/Laatzen (n250587750)
 
 
-    name: 'S8 Hannover Flughafen - Hannover Messe/Laatzen'
-    station_count: 6
-    ref: S8
-    colour: '#8ec7e8'
-    type: train
+    stations: 
+      - Hannover Flughafen
+      - Langenhagen Mitte
+      - Hannover/Nordstadt
+      - Hannover Hauptbahnhof
+      - Hannover Bismarckstraße
+      - Hannover Messe/Laatzen
+
 

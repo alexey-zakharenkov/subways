@@ -479,33 +479,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Château de Vincennes (Métro de Paris)
-      - Bérault
-      - Saint-Mandé
-      - Porte de Vincennes
-      - Nation (1)
-      - 'Reuilly - Diderot (1)'
-      - Gare de Lyon
-      - Bastille (Métro 1)
-      - Saint-Paul
-      - Hôtel de Ville (Métro 1)
-      - Châtelet (Métro 1)
-      - Louvre — Rivoli
-      - 'Palais Royal - Musée du Louvre (1)'
-      - Tuileries
-      - Concorde (1)
-      - 'Champs-Élysées - Clemenceau (1)'
-      - Franklin D. Roosevelt (1)
-      - George V
-      - Charles de Gaulle — Étoile (1)
-      - Argentine
-      - Porte Mailllot
-      - Les Sablons
-      - Pont de Neuilly
-      - Esplanade de La Défense
-      - 'La Défense - Grande Arche (Métro 1)'
-
+    name: Métro 1
+    type: subway
+    ref: 1
+    station_count: 25
+    colour: '#f2c931'
     itineraries: 
       r123784: 
         - Château de Vincennes (n241928757)
@@ -562,38 +540,62 @@ routes:
         - Château de Vincennes (n241928757)
 
 
-    name: Métro 1
-    station_count: 25
-    ref: 1
-    colour: '#f2c931'
-    type: subway
-  - 
     stations: 
-      - Gare d'Austerlitz (10)
-      - Jussieu
-      - Cardinal Lemoine
-      - Maubert Mutualité
-      - 'Cluny - La Sorbonne'
-      - Odéon
-      - Mabillon
-      - 'Sèvres - Babylone (10)'
-      - Vaneau
-      - Duroc (10)
-      - Ségur
-      - 'La Motte-Picquet - Grenelle (8, 10)'
-      - Avenue Émile Zola
-      - Charles Michels
-      - 'Javel - André Citroën'
-      - Mirabeau
-      - Église d'Auteuil
-      - 'Michel-Ange - Auteuil (10)'
-      - Porte d'Auteuil
-      - 'Boulogne - Jean Jaurès'
-      - 'Boulogne - Pont de Saint-Cloud'
-      - 'Michel-Ange - Molitor (10)'
-      - Chardon Lagache
+      - 'La Défense - Grande Arche (Métro 1)'
+      - Esplanade de La Défense
+      - Pont de Neuilly
+      - Les Sablons
+      - Porte Mailllot
+      - Argentine
+      - Charles de Gaulle — Étoile (1)
+      - George V
+      - Franklin D. Roosevelt (1)
+      - 'Champs-Élysées - Clemenceau (1)'
+      - Concorde (1)
+      - Tuileries
+      - 'Palais Royal - Musée du Louvre (1)'
+      - Louvre — Rivoli
+      - Châtelet (Métro 1)
+      - Hôtel de Ville (Métro 1)
+      - Saint-Paul
+      - Bastille (Métro 1)
+      - Gare de Lyon
+      - 'Reuilly - Diderot (1)'
+      - Nation (1)
+      - Porte de Vincennes
+      - Saint-Mandé
+      - Bérault
+      - Château de Vincennes (Métro de Paris)
 
+  - 
+    name: Métro 10
+    type: subway
+    ref: 10
+    station_count: 23
+    colour: '#dfb039'
     itineraries: 
+      r123768: 
+        - 'Boulogne - Pont de Saint-Cloud (n264541617)'
+        - 'Boulogne - Jean Jaurès (n264539964)'
+        - 'Michel-Ange - Molitor (n260767428)'
+        - Chardon-Lagache (n264537727)
+        - Mirabeau (n264538576)
+        - 'Javel - André Citroën (n264534424)'
+        - Charles Michels (n264534423)
+        - Avenue Émile Zola (n261666122)
+        - 'La Motte-Picquet - Grenelle (n34909170)'
+        - Ségur (n261665825)
+        - Duroc (n245250755)
+        - Vaneau (n473070143)
+        - Sèvres-Babylone (n261162833)
+        - Mabillon (n260079322)
+        - Odéon (n260079008)
+        - Cluny-La Sorbonne (n260078622)
+        - 'Maubert - Mutualité (n260078619)'
+        - Cardinal Lemoine (n260078615)
+        - Jussieu (n4083286998)
+        - Gare d'Austerlitz (n3493828793)
+
       r3328740: 
         - Gare d'Austerlitz (n3493828793)
         - Jussieu (n4083286998)
@@ -617,50 +619,38 @@ routes:
         - 'Boulogne - Jean Jaurès (n264539964)'
         - 'Boulogne - Pont de Saint-Cloud (n264541617)'
 
-      r123768: 
-        - 'Boulogne - Pont de Saint-Cloud (n264541617)'
-        - 'Boulogne - Jean Jaurès (n264539964)'
-        - 'Michel-Ange - Molitor (n260767428)'
-        - Chardon-Lagache (n264537727)
-        - Mirabeau (n264538576)
-        - 'Javel - André Citroën (n264534424)'
-        - Charles Michels (n264534423)
-        - Avenue Émile Zola (n261666122)
-        - 'La Motte-Picquet - Grenelle (n34909170)'
-        - Ségur (n261665825)
-        - Duroc (n245250755)
-        - Vaneau (n473070143)
-        - Sèvres-Babylone (n261162833)
-        - Mabillon (n260079322)
-        - Odéon (n260079008)
-        - Cluny-La Sorbonne (n260078622)
-        - 'Maubert - Mutualité (n260078619)'
-        - Cardinal Lemoine (n260078615)
-        - Jussieu (n4083286998)
-        - Gare d'Austerlitz (n3493828793)
 
-
-    name: Métro 10
-    station_count: 23
-    ref: 10
-    colour: '#dfb039'
-    type: subway
-  - 
     stations: 
-      - Châtelet (Métro 11)
-      - Hôtel de Ville (Métro 11)
-      - Rambuteau
-      - Arts et Métiers (11)
-      - République (11)
-      - Goncourt
-      - Belleville (11)
-      - Pyrénées
-      - Jourdain
-      - Place des Fêtes
-      - Télégraphe
-      - Porte des Lilas (11)
-      - Mairie Des Lilas
+      - 'Boulogne - Pont de Saint-Cloud'
+      - 'Boulogne - Jean Jaurès'
+      - 'Michel-Ange - Molitor (10)'
+      - Chardon Lagache
+      - Mirabeau
+      - 'Javel - André Citroën'
+      - Charles Michels
+      - Avenue Émile Zola
+      - 'La Motte-Picquet - Grenelle (8, 10)'
+      - Ségur
+      - Duroc (10)
+      - Vaneau
+      - 'Sèvres - Babylone (10)'
+      - Mabillon
+      - Odéon
+      - 'Cluny - La Sorbonne'
+      - Maubert Mutualité
+      - Cardinal Lemoine
+      - Jussieu
+      - Gare d'Austerlitz (10)
+      - Église d'Auteuil
+      - 'Michel-Ange - Auteuil (10)'
+      - Porte d'Auteuil
 
+  - 
+    name: Métro 11
+    type: subway
+    ref: 11
+    station_count: 13
+    colour: '#8e6538'
     itineraries: 
       r5456634: 
         - Mairie des Lilas (n264795933)
@@ -693,75 +683,28 @@ routes:
         - Mairie des Lilas (n264795933)
 
 
-    name: Métro 11
-    station_count: 13
-    ref: 11
-    colour: '#8e6538'
-    type: subway
-  - 
     stations: 
-      - Mairie d'Issy
-      - Corentin Celton
-      - Porte de Versailles
-      - Convention
-      - Vaugirard
-      - Volontaires
-      - Pasteur
-      - Falguière
-      - Montparnasse-Bienvenüe (12)
-      - Notre-Dame des Champs
-      - Rennes
-      - 'Sèvres - Babylone (12)'
-      - Rue du Bac
-      - Solférino
-      - Assemblée Nationale
-      - Concorde (12)
-      - Madeleine (12)
-      - Saint-Lazare (12)
-      - Trinité d'Estienne d'Orves
-      - Notre-Dame de Lorette
-      - Saint-Georges
-      - Pigalle (12)
-      - Abbesses
-      - 'Lamarck - Caulaincourt'
-      - Jules Joffrin
-      - Marcadet-Poissonniers (Métro 12)
-      - Marx Dormoy
-      - Porte de la Chapelle
-      - Front Populaire
+      - Châtelet (Métro 11)
+      - Hôtel de Ville (Métro 11)
+      - Rambuteau
+      - Arts et Métiers (11)
+      - République (11)
+      - Goncourt
+      - Belleville (11)
+      - Pyrénées
+      - Jourdain
+      - Place des Fêtes
+      - Télégraphe
+      - Porte des Lilas (11)
+      - Mairie Des Lilas
 
+  - 
+    name: Métro 12
+    type: subway
+    ref: 12
+    station_count: 29
+    colour: '#328e5b'
     itineraries: 
-      r7731178: 
-        - Mairie d'Issy (n134299001)
-        - Corentin Celton (n134299013)
-        - Porte de Versailles (n6724170732)
-        - Convention (n134305198)
-        - Vaugirard (n244494486)
-        - Volontaires (n244494489)
-        - Pasteur (n260764273)
-        - Falguière (n244494496)
-        - Montparnasse-Bienvenüe (n5226630378)
-        - Notre-Dame des Champs (n263499471)
-        - Rennes (n263499468)
-        - Sèvres-Babylone (n261162833)
-        - Rue du Bac (n7058553626)
-        - Solférino (n263497272)
-        - Assemblée Nationale (n263497271)
-        - Concorde (n3763562357)
-        - Madeleine (n6400672882)
-        - Saint-Lazare (n3542631493)
-        - Trinité d'Estienne d'Orves (n264495077)
-        - Notre-Dame de Lorette (n264495078)
-        - Saint-Georges (n264504832)
-        - Pigalle (n4067925155)
-        - Abbesses (n264505115)
-        - 'Lamarck - Caulaincourt (n264505153)'
-        - Jules Joffrin (n264505450)
-        - 'Marcadet - Poissonniers (n1481147746)'
-        - Marx Dormoy (n249335596)
-        - Porte de la Chapelle (n264505930)
-        - Front Populaire (n5726284556)
-
       r123775: 
         - Front Populaire (n5726284556)
         - Porte de la Chapelle (n264505930)
@@ -793,48 +736,130 @@ routes:
         - Corentin Celton (n134299013)
         - Mairie d'Issy (n134299001)
 
+      r7731178: 
+        - Mairie d'Issy (n134299001)
+        - Corentin Celton (n134299013)
+        - Porte de Versailles (n6724170732)
+        - Convention (n134305198)
+        - Vaugirard (n244494486)
+        - Volontaires (n244494489)
+        - Pasteur (n260764273)
+        - Falguière (n244494496)
+        - Montparnasse-Bienvenüe (n5226630378)
+        - Notre-Dame des Champs (n263499471)
+        - Rennes (n263499468)
+        - Sèvres-Babylone (n261162833)
+        - Rue du Bac (n7058553626)
+        - Solférino (n263497272)
+        - Assemblée Nationale (n263497271)
+        - Concorde (n3763562357)
+        - Madeleine (n6400672882)
+        - Saint-Lazare (n3542631493)
+        - Trinité d'Estienne d'Orves (n264495077)
+        - Notre-Dame de Lorette (n264495078)
+        - Saint-Georges (n264504832)
+        - Pigalle (n4067925155)
+        - Abbesses (n264505115)
+        - 'Lamarck - Caulaincourt (n264505153)'
+        - Jules Joffrin (n264505450)
+        - 'Marcadet - Poissonniers (n1481147746)'
+        - Marx Dormoy (n249335596)
+        - Porte de la Chapelle (n264505930)
+        - Front Populaire (n5726284556)
 
-    name: Métro 12
-    station_count: 29
-    ref: 12
-    colour: '#328e5b'
-    type: subway
-  - 
+
     stations: 
-      - Les Courtilles (Métro)
-      - Les Agnettes
-      - Gabriel Péri
-      - Mairie de Clichy
-      - Porte de Clichy (13)
-      - Brochant
-      - La Fourche
-      - Place de Clichy (13)
-      - Liège
-      - Saint-Lazare (13)
-      - Miromesnil (13)
-      - 'Champs-Élysées - Clemenceau (13)'
-      - Invalides (13)
-      - Varenne
-      - Saint-François-Xavier
-      - Duroc (13)
-      - Montparnasse-Bienvenüe (13)
-      - Gaîté
-      - Pernety
-      - Plaisance
-      - Porte de Vanves
-      - 'Malakoff - Plateau de Vanves'
-      - 'Malakoff - Rue Étienne Dolet'
-      - Châtillon-Montrouge
-      - Guy Môquet
-      - Porte de Saint-Ouen
-      - Garibaldi
-      - Mairie de Saint-Ouen (Line 13)
-      - Carrefour Pleyel
-      - 'Saint-Denis - Porte de Paris'
-      - Basilique de Saint-Denis
-      - 'Saint-Denis - Université'
+      - Front Populaire
+      - Porte de la Chapelle
+      - Marx Dormoy
+      - Marcadet-Poissonniers (Métro 12)
+      - Jules Joffrin
+      - 'Lamarck - Caulaincourt'
+      - Abbesses
+      - Pigalle (12)
+      - Saint-Georges
+      - Notre-Dame de Lorette
+      - Trinité d'Estienne d'Orves
+      - Saint-Lazare (12)
+      - Madeleine (12)
+      - Concorde (12)
+      - Assemblée Nationale
+      - Solférino
+      - Rue du Bac
+      - 'Sèvres - Babylone (12)'
+      - Rennes
+      - Notre-Dame des Champs
+      - Montparnasse-Bienvenüe (12)
+      - Falguière
+      - Pasteur
+      - Volontaires
+      - Vaugirard
+      - Convention
+      - Porte de Versailles
+      - Corentin Celton
+      - Mairie d'Issy
 
+  - 
+    name: Métro 13
+    type: subway
+    ref: 13
+    station_count: 32
+    colour: '#89c7d6'
     itineraries: 
+      r7731235: 
+        - Asnières-Gennevilliers–Les Courtilles (w744736617)
+        - Les Agnettes (n269337980)
+        - Gabriel Péri (n249524554)
+        - Mairie de Clichy (n261611470)
+        - Porte de Clichy (n7131960238)
+        - Brochant (n261611884)
+        - La Fourche (n261612240)
+        - Place de Clichy (n243496027)
+        - Liège (n331514770)
+        - Saint-Lazare (n3542631493)
+        - Miromesnil (n260769652)
+        - 'Champs-Élysées - Clemenceau (n282635141)'
+        - Invalides (n3931967758)
+        - Varenne (n245250759)
+        - Saint-François-Xavier (n245250758)
+        - Duroc (n245250755)
+        - Montparnasse-Bienvenüe (n1805529567)
+        - Gaîté (n264704365)
+        - Pernety (n264712433)
+        - Plaisance (n264712432)
+        - Porte de Vanves (n2023231831)
+        - 'Malakoff - Plateau de Vanves (n264717964)'
+        - 'Malakoff - Rue Étienne Dolet (n12388534)'
+        - Châtillon-Montrouge (n7762923585)
+
+      r123799: 
+        - 'Saint-Denis - Université (n6236790342)'
+        - Basilique de Saint-Denis (n5363612136)
+        - 'Saint-Denis - Porte de Paris (n5363612128)'
+        - Carrefour Pleyel (n5363612127)
+        - Mairie de Saint-Ouen (n5363611404)
+        - Garibaldi (n265060965)
+        - Porte de Saint-Ouen (n265060832)
+        - Guy Môquet (n265060052)
+        - La Fourche (n261612240)
+        - Place de Clichy (n243496027)
+        - Liège (n331514770)
+        - Saint-Lazare (n3542631493)
+        - Miromesnil (n260769652)
+        - 'Champs-Élysées - Clemenceau (n282635141)'
+        - Invalides (n3931967758)
+        - Varenne (n245250759)
+        - Saint-François-Xavier (n245250758)
+        - Duroc (n245250755)
+        - Montparnasse-Bienvenüe (n1805529567)
+        - Gaîté (n264704365)
+        - Pernety (n264712433)
+        - Plaisance (n264712432)
+        - Porte de Vanves (n2023231831)
+        - 'Malakoff - Plateau de Vanves (n264717964)'
+        - 'Malakoff - Rue Étienne Dolet (n12388534)'
+        - Châtillon-Montrouge (n7762923585)
+
       r7731234: 
         - Châtillon-Montrouge (n7762923585)
         - 'Malakoff - Rue Étienne Dolet (n12388534)'
@@ -889,80 +914,47 @@ routes:
         - Basilique de Saint-Denis (n5363612136)
         - 'Saint-Denis - Université (n6236790342)'
 
-      r123799: 
-        - 'Saint-Denis - Université (n6236790342)'
-        - Basilique de Saint-Denis (n5363612136)
-        - 'Saint-Denis - Porte de Paris (n5363612128)'
-        - Carrefour Pleyel (n5363612127)
-        - Mairie de Saint-Ouen (n5363611404)
-        - Garibaldi (n265060965)
-        - Porte de Saint-Ouen (n265060832)
-        - Guy Môquet (n265060052)
-        - La Fourche (n261612240)
-        - Place de Clichy (n243496027)
-        - Liège (n331514770)
-        - Saint-Lazare (n3542631493)
-        - Miromesnil (n260769652)
-        - 'Champs-Élysées - Clemenceau (n282635141)'
-        - Invalides (n3931967758)
-        - Varenne (n245250759)
-        - Saint-François-Xavier (n245250758)
-        - Duroc (n245250755)
-        - Montparnasse-Bienvenüe (n1805529567)
-        - Gaîté (n264704365)
-        - Pernety (n264712433)
-        - Plaisance (n264712432)
-        - Porte de Vanves (n2023231831)
-        - 'Malakoff - Plateau de Vanves (n264717964)'
-        - 'Malakoff - Rue Étienne Dolet (n12388534)'
-        - Châtillon-Montrouge (n7762923585)
 
-      r7731235: 
-        - Asnières-Gennevilliers–Les Courtilles (w744736617)
-        - Les Agnettes (n269337980)
-        - Gabriel Péri (n249524554)
-        - Mairie de Clichy (n261611470)
-        - Porte de Clichy (n7131960238)
-        - Brochant (n261611884)
-        - La Fourche (n261612240)
-        - Place de Clichy (n243496027)
-        - Liège (n331514770)
-        - Saint-Lazare (n3542631493)
-        - Miromesnil (n260769652)
-        - 'Champs-Élysées - Clemenceau (n282635141)'
-        - Invalides (n3931967758)
-        - Varenne (n245250759)
-        - Saint-François-Xavier (n245250758)
-        - Duroc (n245250755)
-        - Montparnasse-Bienvenüe (n1805529567)
-        - Gaîté (n264704365)
-        - Pernety (n264712433)
-        - Plaisance (n264712432)
-        - Porte de Vanves (n2023231831)
-        - 'Malakoff - Plateau de Vanves (n264717964)'
-        - 'Malakoff - Rue Étienne Dolet (n12388534)'
-        - Châtillon-Montrouge (n7762923585)
-
-
-    name: Métro 13
-    station_count: 32
-    ref: 13
-    colour: '#89c7d6'
-    type: subway
-  - 
     stations: 
-      - Olympiades
-      - Bibliothèque Francois Mitterrand (subway)
-      - Cour Saint-Émilion
-      - Bercy (14)
-      - Gare de Lyon
-      - Châtelet (Métro 14)
-      - Pyramides (14)
-      - Madeleine (14)
-      - Saint-Lazare (14)
-      - Saint-Ouen
-      - Mairie de Saint-Ouen (Line 14)
+      - 'Saint-Denis - Université'
+      - Basilique de Saint-Denis
+      - 'Saint-Denis - Porte de Paris'
+      - Carrefour Pleyel
+      - Mairie de Saint-Ouen (Line 13)
+      - Garibaldi
+      - Porte de Saint-Ouen
+      - Guy Môquet
+      - La Fourche
+      - Place de Clichy (13)
+      - Liège
+      - Saint-Lazare (13)
+      - Miromesnil (13)
+      - 'Champs-Élysées - Clemenceau (13)'
+      - Invalides (13)
+      - Varenne
+      - Saint-François-Xavier
+      - Duroc (13)
+      - Montparnasse-Bienvenüe (13)
+      - Gaîté
+      - Pernety
+      - Plaisance
+      - Porte de Vanves
+      - 'Malakoff - Plateau de Vanves'
+      - 'Malakoff - Rue Étienne Dolet'
+      - Châtillon-Montrouge
+      - Brochant
+      - Porte de Clichy (13)
+      - Mairie de Clichy
+      - Gabriel Péri
+      - Les Agnettes
+      - Les Courtilles (Métro)
 
+  - 
+    name: Métro 14
+    type: subway
+    ref: 14
+    station_count: 11
+    colour: '#67328e'
     itineraries: 
       r123737: 
         - Mairie de Saint-Ouen (r12044363)
@@ -991,67 +983,26 @@ routes:
         - Mairie de Saint-Ouen (r12044363)
 
 
-    name: Métro 14
-    station_count: 11
-    ref: 14
-    colour: '#67328e'
-    type: subway
-  - 
     stations: 
-      - Porte Dauphine
-      - Victor Hugo
-      - Charles de Gaulle — Étoile (2)
-      - Ternes
-      - Courcelles
-      - Monceau
-      - Villiers
-      - Rome
-      - Place de Clichy (2)
-      - Blanche
-      - Pigalle (2)
-      - Anvers
-      - 'Barbès - Rochechouart (Métro 2)'
-      - La Chapelle
-      - Stalingrad (2)
-      - Jaurès (2)
-      - Colonel Fabien
-      - Belleville (2)
-      - Couronnes
-      - Ménilmontant
-      - Père Lachaise (2)
-      - Philippe Auguste
-      - Alexandre Dumas
-      - Avron
-      - Nation (2)
+      - Mairie de Saint-Ouen (Line 14)
+      - Saint-Ouen
+      - Saint-Lazare (14)
+      - Madeleine (14)
+      - Pyramides (14)
+      - Châtelet (Métro 14)
+      - Gare de Lyon
+      - Bercy (14)
+      - Cour Saint-Émilion
+      - Bibliothèque Francois Mitterrand (subway)
+      - Olympiades
 
+  - 
+    name: Métro 2
+    type: subway
+    ref: 2
+    station_count: 25
+    colour: '#216eb4'
     itineraries: 
-      r123917: 
-        - Nation (n241928557)
-        - Avron (n1224788605)
-        - Alexandre Dumas (n243490764)
-        - Philippe Auguste (n243490763)
-        - Père Lachaise (n243490762)
-        - Ménilmontant (n243490761)
-        - Couronnes (n243493846)
-        - Belleville (n243493845)
-        - Colonel Fabien (n243493916)
-        - Jaurès (n1997722992)
-        - Stalingrad (n235377792)
-        - La Chapelle (n3417692501)
-        - 'Barbès - Rochechouart (n5226708287)'
-        - Anvers (n3417692493)
-        - Pigalle (n4067925155)
-        - Blanche (n243496025)
-        - Place de Clichy (n243496027)
-        - Rome (n243496028)
-        - Villiers (n243496029)
-        - Monceau (n243496030)
-        - Courcelles (n6528747892)
-        - Ternes (n838533003)
-        - Charles de Gaulle — Étoile (n4317589118)
-        - Victor Hugo (n3703620036)
-        - Porte Dauphine (n243496729)
-
       r4728208: 
         - Porte Dauphine (n243496729)
         - Victor Hugo (n3703620036)
@@ -1079,68 +1030,68 @@ routes:
         - Avron (n1224788605)
         - Nation (n241928557)
 
-
-    name: Métro 2
-    station_count: 25
-    ref: 2
-    colour: '#216eb4'
-    type: subway
-  - 
-    stations: 
-      - Pont de Levallois
-      - Anatole France
-      - Louise Michel
-      - Porte de Champerret
-      - Pereire
-      - Wagram
-      - Malesherbes
-      - Villiers
-      - Europe
-      - Saint-Lazare (3)
-      - 'Havre - Caumartin (3)'
-      - Opéra (3)
-      - Quatre Septembre
-      - Bourse
-      - Sentier
-      - 'Réaumur - Sébastopol (3)'
-      - Arts et Métiers (3)
-      - Temple
-      - République (3)
-      - Parmentier
-      - Rue Saint-Maur
-      - Père Lachaise (3)
-      - Gambetta (3)
-      - Porte de Bagnolet
-      - Gallieni
-
-    itineraries: 
-      r7731250: 
-        - Gallieni (n7658079725)
-        - Porte de Bagnolet (n6539594776)
-        - Gambetta (n6281344902)
+      r123917: 
+        - Nation (n241928557)
+        - Avron (n1224788605)
+        - Alexandre Dumas (n243490764)
+        - Philippe Auguste (n243490763)
         - Père Lachaise (n243490762)
-        - Rue Saint-Maur (n243507789)
-        - Parmentier (n243507790)
-        - République (n3197007911)
-        - Temple (n243507792)
-        - Arts et Métiers (n243507793)
-        - 'Réaumur - Sébastopol (n5527829149)'
-        - Sentier (n3430515272)
-        - Bourse (n243510334)
-        - Quatre Septembre (n243510335)
-        - Opéra (n243510336)
-        - 'Havre - Caumartin (n243510337)'
-        - Saint-Lazare (n3542631493)
-        - Europe (n1981222779)
+        - Ménilmontant (n243490761)
+        - Couronnes (n243493846)
+        - Belleville (n243493845)
+        - Colonel Fabien (n243493916)
+        - Jaurès (n1997722992)
+        - Stalingrad (n235377792)
+        - La Chapelle (n3417692501)
+        - 'Barbès - Rochechouart (n5226708287)'
+        - Anvers (n3417692493)
+        - Pigalle (n4067925155)
+        - Blanche (n243496025)
+        - Place de Clichy (n243496027)
+        - Rome (n243496028)
         - Villiers (n243496029)
-        - Malesherbes (n243510678)
-        - Wagram (n243510679)
-        - Pereire (n243510680)
-        - Porte de Champerret (n243510681)
-        - Louise Michel (n255162203)
-        - Anatole France (n255000799)
-        - Pont de Levallois – Bécon (n255161921)
+        - Monceau (n243496030)
+        - Courcelles (n6528747892)
+        - Ternes (n838533003)
+        - Charles de Gaulle — Étoile (n4317589118)
+        - Victor Hugo (n3703620036)
+        - Porte Dauphine (n243496729)
 
+
+    stations: 
+      - Porte Dauphine
+      - Victor Hugo
+      - Charles de Gaulle — Étoile (2)
+      - Ternes
+      - Courcelles
+      - Monceau
+      - Villiers
+      - Rome
+      - Place de Clichy (2)
+      - Blanche
+      - Pigalle (2)
+      - Anvers
+      - 'Barbès - Rochechouart (Métro 2)'
+      - La Chapelle
+      - Stalingrad (2)
+      - Jaurès (2)
+      - Colonel Fabien
+      - Belleville (2)
+      - Couronnes
+      - Ménilmontant
+      - Père Lachaise (2)
+      - Philippe Auguste
+      - Alexandre Dumas
+      - Avron
+      - Nation (2)
+
+  - 
+    name: Métro 3
+    type: subway
+    ref: 3
+    station_count: 25
+    colour: '#9a9940'
+    itineraries: 
       r123789: 
         - Pont de Levallois – Bécon (n255161921)
         - Anatole France (n255000799)
@@ -1168,19 +1119,67 @@ routes:
         - Porte de Bagnolet (n6539594776)
         - Gallieni (n7658079725)
 
+      r7731250: 
+        - Gallieni (n7658079725)
+        - Porte de Bagnolet (n6539594776)
+        - Gambetta (n6281344902)
+        - Père Lachaise (n243490762)
+        - Rue Saint-Maur (n243507789)
+        - Parmentier (n243507790)
+        - République (n3197007911)
+        - Temple (n243507792)
+        - Arts et Métiers (n243507793)
+        - 'Réaumur - Sébastopol (n5527829149)'
+        - Sentier (n3430515272)
+        - Bourse (n243510334)
+        - Quatre Septembre (n243510335)
+        - Opéra (n243510336)
+        - 'Havre - Caumartin (n243510337)'
+        - Saint-Lazare (n3542631493)
+        - Europe (n1981222779)
+        - Villiers (n243496029)
+        - Malesherbes (n243510678)
+        - Wagram (n243510679)
+        - Pereire (n243510680)
+        - Porte de Champerret (n243510681)
+        - Louise Michel (n255162203)
+        - Anatole France (n255000799)
+        - Pont de Levallois – Bécon (n255161921)
 
-    name: Métro 3
-    station_count: 25
-    ref: 3
-    colour: '#9a9940'
-    type: subway
-  - 
+
     stations: 
-      - Porte des Lilas (3bis)
-      - Saint-Fargeau
-      - Pelleport
-      - Gambetta (3bis)
+      - Gallieni
+      - Porte de Bagnolet
+      - Gambetta (3)
+      - Père Lachaise (3)
+      - Rue Saint-Maur
+      - Parmentier
+      - République (3)
+      - Temple
+      - Arts et Métiers (3)
+      - 'Réaumur - Sébastopol (3)'
+      - Sentier
+      - Bourse
+      - Quatre Septembre
+      - Opéra (3)
+      - 'Havre - Caumartin (3)'
+      - Saint-Lazare (3)
+      - Europe
+      - Villiers
+      - Malesherbes
+      - Wagram
+      - Pereire
+      - Porte de Champerret
+      - Louise Michel
+      - Anatole France
+      - Pont de Levallois
 
+  - 
+    name: Métro 3bis
+    type: subway
+    ref: 3bis
+    station_count: 4
+    colour: '#89c7d6'
     itineraries: 
       r5456573: 
         - Gambetta (n6281344902)
@@ -1195,70 +1194,19 @@ routes:
         - Gambetta (n6281344902)
 
 
-    name: Métro 3bis
-    station_count: 4
-    ref: 3bis
-    colour: '#89c7d6'
-    type: subway
-  - 
     stations: 
-      - Porte de Clignancourt
-      - Simplon
-      - Marcadet-Poissonniers (Métro 4)
-      - Château Rouge
-      - 'Barbès - Rochechouart (Métro 4)'
-      - Gare du Nord (4)
-      - Gare de L'Est (4)
-      - Château d'Eau
-      - 'Strasbourg - Saint-Denis (4)'
-      - 'Réaumur - Sébastopol (4)'
-      - Etienne Marcel
-      - Châtelet (Métro 4)
-      - Cité
-      - Saint-Michel (Metro 4)
-      - Odéon
-      - Saint-Germain des Prés
-      - Saint-Sulpice
-      - Saint-Placide
-      - Montparnasse-Bienvenüe (4)
-      - Vavin
-      - Raspail
-      - Denfert-Rochereau (4)
-      - Mouton-Duvernet
-      - Alésia
-      - Porte d'Orléans
-      - Mairie de Montrouge
+      - Gambetta (3bis)
+      - Pelleport
+      - Saint-Fargeau
+      - Porte des Lilas (3bis)
 
+  - 
+    name: Métro 4
+    type: subway
+    ref: 4
+    station_count: 26
+    colour: '#bb4d98'
     itineraries: 
-      r3326844: 
-        - Mairie de Montrouge (n2188235051)
-        - Porte d'Orléans (n220289379)
-        - Alésia (n220289382)
-        - Mouton-Duvernet (n220289385)
-        - Denfert-Rochereau (n220289387)
-        - Raspail (n220289389)
-        - Vavin (n264526095)
-        - Montparnasse-Bienvenüe (n5226630378)
-        - Saint-Placide (n264520061)
-        - Saint-Sulpice (n324352448)
-        - Saint-Germain-des-Prés (n264519782)
-        - Odéon (n260079008)
-        - Saint-Michel (n264515098)
-        - Cité (n264514896)
-        - Châtelet (n27371862)
-        - Les Halles (n5527816419)
-        - Étienne Marcel (n5527829165)
-        - 'Réaumur - Sébastopol (n5527829149)'
-        - 'Strasbourg - Saint-Denis (n5226630386)'
-        - Château d'Eau (n5527859168)
-        - Gare de l'Est (n264508548)
-        - Gare du Nord (Métro) (n5364676905)
-        - 'Barbès - Rochechouart (n5226708287)'
-        - Château Rouge (n4075421186)
-        - 'Marcadet - Poissonniers (n1481147746)'
-        - Simplon (n264505993)
-        - Porte de Clignancourt (n1780486821)
-
       r123767: 
         - Porte de Clignancourt (n1780486821)
         - Simplon (n264505993)
@@ -1288,37 +1236,70 @@ routes:
         - Porte d'Orléans (n220289379)
         - Mairie de Montrouge (n2188235051)
 
+      r3326844: 
+        - Mairie de Montrouge (n2188235051)
+        - Porte d'Orléans (n220289379)
+        - Alésia (n220289382)
+        - Mouton-Duvernet (n220289385)
+        - Denfert-Rochereau (n220289387)
+        - Raspail (n220289389)
+        - Vavin (n264526095)
+        - Montparnasse-Bienvenüe (n5226630378)
+        - Saint-Placide (n264520061)
+        - Saint-Sulpice (n324352448)
+        - Saint-Germain-des-Prés (n264519782)
+        - Odéon (n260079008)
+        - Saint-Michel (n264515098)
+        - Cité (n264514896)
+        - Châtelet (n27371862)
+        - Les Halles (n5527816419)
+        - Étienne Marcel (n5527829165)
+        - 'Réaumur - Sébastopol (n5527829149)'
+        - 'Strasbourg - Saint-Denis (n5226630386)'
+        - Château d'Eau (n5527859168)
+        - Gare de l'Est (n264508548)
+        - Gare du Nord (Métro) (n5364676905)
+        - 'Barbès - Rochechouart (n5226708287)'
+        - Château Rouge (n4075421186)
+        - 'Marcadet - Poissonniers (n1481147746)'
+        - Simplon (n264505993)
+        - Porte de Clignancourt (n1780486821)
 
-    name: Métro 4
-    station_count: 26
-    ref: 4
-    colour: '#bb4d98'
-    type: subway
-  - 
+
     stations: 
-      - Place d'Italie (5)
-      - Campo-Formio
-      - Saint-Marcel
-      - Gare d'Austerlitz (5)
-      - Quai de la Rapée
-      - Bastille (Métro 5)
-      - Bréguet-Sabin
-      - Richard Lenoir
-      - Oberkampf
-      - République (5)
-      - Jacques Bonsergent
-      - Gare de L'Est (5)
-      - Gare du Nord (5)
-      - Stalingrad (5)
-      - Jaurès (5)
-      - Laumière
-      - Ourcq
-      - Porte de Pantin
-      - Hoche
-      - Église de Pantin
-      - 'Bobigny - Pantin - Raymond Queneau'
-      - Bobigny — Pablo Picasso
+      - Mairie de Montrouge
+      - Porte d'Orléans
+      - Alésia
+      - Mouton-Duvernet
+      - Denfert-Rochereau (4)
+      - Raspail
+      - Vavin
+      - Montparnasse-Bienvenüe (4)
+      - Saint-Placide
+      - Saint-Sulpice
+      - Saint-Germain des Prés
+      - Odéon
+      - Saint-Michel (Metro 4)
+      - Cité
+      - Les Halles
+      - Etienne Marcel
+      - 'Réaumur - Sébastopol (4)'
+      - 'Strasbourg - Saint-Denis (4)'
+      - Château d'Eau
+      - Gare de L'Est (4)
+      - Gare du Nord (4)
+      - 'Barbès - Rochechouart (Métro 4)'
+      - Château Rouge
+      - Marcadet-Poissonniers (Métro 4)
+      - Simplon
+      - Porte de Clignancourt
 
+  - 
+    name: Métro 5
+    type: subway
+    ref: 5
+    station_count: 22
+    colour: '#de8b53'
     itineraries: 
       r4730854: 
         - Place d'Italie (n235371392)
@@ -1369,42 +1350,36 @@ routes:
         - Place d'Italie (n235371392)
 
 
-    name: Métro 5
-    station_count: 22
-    ref: 5
-    colour: '#de8b53'
-    type: subway
-  - 
     stations: 
-      - Charles de Gaulle — Étoile (6)
-      - Kléber
-      - Boissière
-      - Trocadéro (6)
-      - Passy
-      - Bir-Hakeim
-      - Dupleix
-      - 'La Motte-Picquet - Grenelle (6)'
-      - Cambronne
-      - Sèvres-Lecourbe
-      - Pasteur
-      - Montparnasse-Bienvenüe (6)
-      - Edgar Quinet
-      - Raspail
-      - Denfert-Rochereau (6)
-      - Saint-Jacques
-      - Glacière
-      - Corvisart
-      - Place d'Italie (6)
-      - Nationale
-      - Chevaleret
-      - Quai de la Gare
-      - Bercy (6)
-      - Dugommier
-      - Daumesnil (6)
-      - Bel-Air
-      - Picpus
-      - Nation (6)
+      - Bobigny — Pablo Picasso
+      - 'Bobigny - Pantin - Raymond Queneau'
+      - Église de Pantin
+      - Hoche
+      - Porte de Pantin
+      - Ourcq
+      - Laumière
+      - Jaurès (5)
+      - Stalingrad (5)
+      - Gare du Nord (5)
+      - Gare de L'Est (5)
+      - Jacques Bonsergent
+      - République (5)
+      - Oberkampf
+      - Richard Lenoir
+      - Bréguet-Sabin
+      - Bastille (Métro 5)
+      - Quai de la Rapée
+      - Gare d'Austerlitz (5)
+      - Saint-Marcel
+      - Campo-Formio
+      - Place d'Italie (5)
 
+  - 
+    name: Métro 6
+    type: subway
+    ref: 6
+    station_count: 28
+    colour: '#75c695'
     itineraries: 
       r123912: 
         - Charles de Gaulle — Étoile (n4317589118)
@@ -1467,129 +1442,48 @@ routes:
         - Charles de Gaulle — Étoile (n4317589118)
 
 
-    name: Métro 6
-    station_count: 28
-    ref: 6
-    colour: '#75c695'
-    type: subway
-  - 
     stations: 
-      - 'La Courneuve - 8 mai 1945'
-      - Fort d'Aubervilliers
-      - 'Aubervilliers - Pantin - Quatre Chemins'
-      - Porte de la Villette
-      - Corentin Cariou
-      - Crimée
-      - Riquet
-      - Stalingrad (7)
-      - Louis Blanc (7)
-      - Château Landon
-      - Gare de L'Est (7)
-      - Poissonnière
-      - Cadet
-      - Le Peletier
-      - 'Chaussée d''Antin - La Fayette (7)'
-      - Opéra (7)
-      - Pyramides (7)
-      - 'Palais Royal - Musée du Louvre (7)'
-      - Pont Neuf
-      - Châtelet (Métro 7)
-      - Pont Marie
-      - 'Sully - Morland'
-      - Jussieu
-      - Place Monge
-      - Censier Daubenton
-      - Les Gobelins
-      - Place d'Italie (7)
-      - Tolbiac
-      - Maison Blanche
-      - Le Kremlin-Bicêtre
-      - 'Villejuif - Léo Lagrange'
-      - 'Villejuif - Paul Vaillant Couturier'
-      - Villejuif–Louis Aragon
-      - Mairie d'Ivry
-      - Pierre et Marie Curie
-      - Porte d'Ivry
-      - Porte de Choisy
-      - Porte d'Italie
+      - Charles de Gaulle — Étoile (6)
+      - Kléber
+      - Boissière
+      - Trocadéro (6)
+      - Passy
+      - Bir-Hakeim
+      - Dupleix
+      - 'La Motte-Picquet - Grenelle (6)'
+      - Cambronne
+      - Sèvres-Lecourbe
+      - Pasteur
+      - Montparnasse-Bienvenüe (6)
+      - Edgar Quinet
+      - Raspail
+      - Denfert-Rochereau (6)
+      - Saint-Jacques
+      - Glacière
+      - Corvisart
+      - Place d'Italie (6)
+      - Nationale
+      - Chevaleret
+      - Quai de la Gare
+      - Bercy (6)
+      - Dugommier
+      - Daumesnil (6)
+      - Bel-Air
+      - Picpus
+      - Nation (6)
 
+  - 
+    name: Métro 7
+    type: subway
+    ref: 7
+    station_count: 38
+    colour: '#fa9aba'
     itineraries: 
       r3328811: 
         - 'Villejuif - Louis Aragon (n318536848)'
         - 'Villejuif - Paul Vaillant-Couturier (n318536943)'
         - 'Villejuif - Léo Lagrange (n318536832)'
         - Le Kremlin-Bicêtre (n318537042)
-        - Maison Blanche (n268467526)
-        - Tolbiac (n268467197)
-        - Place d'Italie (n235371392)
-        - Les Gobelins (n264790337)
-        - 'Censier - Daubenton (n264789025)'
-        - Place Monge (n264786014)
-        - Jussieu (n4083286998)
-        - 'Sully - Morland (n264785951)'
-        - Pont Marie (n264785952)
-        - Châtelet (n27371862)
-        - Pont Neuf (n5527702547)
-        - 'Palais Royal - Musée du Louvre (n5155172764)'
-        - Pyramides (n5528264337)
-        - Opéra (n243510336)
-        - 'Chaussée d''Antin - La Fayette (n5528174509)'
-        - Le Peletier (n5528174511)
-        - Cadet (n5528174520)
-        - Poissonnière (n5528176223)
-        - Gare de l'Est (n264508548)
-        - Château Landon (n326309672)
-        - Louis Blanc (n5228032207)
-        - Stalingrad (n235377792)
-        - Riquet (n264776028)
-        - Crimée (n264776029)
-        - Corentin Cariou (n264776910)
-        - Porte de la Villette (n264778142)
-        - 'Aubervilliers - Pantin - Quatre Chemins (n270244436)'
-        - Fort d'Aubervilliers (n270244435)
-        - 'La Courneuve - 8 mai 1945 (n270244850)'
-
-      r3328812: 
-        - 'La Courneuve - 8 mai 1945 (n270244850)'
-        - Fort d'Aubervilliers (n270244435)
-        - 'Aubervilliers - Pantin - Quatre Chemins (n270244436)'
-        - Porte de la Villette (n264778142)
-        - Corentin Cariou (n264776910)
-        - Crimée (n264776029)
-        - Riquet (n264776028)
-        - Stalingrad (n235377792)
-        - Louis Blanc (n5228032207)
-        - Château Landon (n326309672)
-        - Gare de l'Est (n264508548)
-        - Poissonnière (n5528176223)
-        - Cadet (n5528174520)
-        - Le Peletier (n5528174511)
-        - 'Chaussée d''Antin - La Fayette (n5528174509)'
-        - Opéra (n243510336)
-        - Pyramides (n5528264337)
-        - 'Palais Royal - Musée du Louvre (n5155172764)'
-        - Pont Neuf (n5527702547)
-        - Châtelet (n27371862)
-        - Pont Marie (n264785952)
-        - 'Sully - Morland (n264785951)'
-        - Jussieu (n4083286998)
-        - Place Monge (n264786014)
-        - 'Censier - Daubenton (n264789025)'
-        - Les Gobelins (n264790337)
-        - Place d'Italie (n235371392)
-        - Tolbiac (n268467197)
-        - Maison Blanche (n268467526)
-        - Le Kremlin-Bicêtre (n318537042)
-        - 'Villejuif - Léo Lagrange (n318536832)'
-        - 'Villejuif - Paul Vaillant-Couturier (n318536943)'
-        - 'Villejuif - Louis Aragon (n318536848)'
-
-      r3328804: 
-        - Mairie d'Ivry (n6539580357)
-        - Pierre et Marie Curie (n472985885)
-        - Porte d'Ivry (n5726246818)
-        - Porte de Choisy (n472985883)
-        - Porte d'Italie (n268467559)
         - Maison Blanche (n268467526)
         - Tolbiac (n268467197)
         - Place d'Italie (n235371392)
@@ -1656,23 +1550,124 @@ routes:
         - Pierre et Marie Curie (n472985885)
         - Mairie d'Ivry (n6539580357)
 
+      r3328804: 
+        - Mairie d'Ivry (n6539580357)
+        - Pierre et Marie Curie (n472985885)
+        - Porte d'Ivry (n5726246818)
+        - Porte de Choisy (n472985883)
+        - Porte d'Italie (n268467559)
+        - Maison Blanche (n268467526)
+        - Tolbiac (n268467197)
+        - Place d'Italie (n235371392)
+        - Les Gobelins (n264790337)
+        - 'Censier - Daubenton (n264789025)'
+        - Place Monge (n264786014)
+        - Jussieu (n4083286998)
+        - 'Sully - Morland (n264785951)'
+        - Pont Marie (n264785952)
+        - Châtelet (n27371862)
+        - Pont Neuf (n5527702547)
+        - 'Palais Royal - Musée du Louvre (n5155172764)'
+        - Pyramides (n5528264337)
+        - Opéra (n243510336)
+        - 'Chaussée d''Antin - La Fayette (n5528174509)'
+        - Le Peletier (n5528174511)
+        - Cadet (n5528174520)
+        - Poissonnière (n5528176223)
+        - Gare de l'Est (n264508548)
+        - Château Landon (n326309672)
+        - Louis Blanc (n5228032207)
+        - Stalingrad (n235377792)
+        - Riquet (n264776028)
+        - Crimée (n264776029)
+        - Corentin Cariou (n264776910)
+        - Porte de la Villette (n264778142)
+        - 'Aubervilliers - Pantin - Quatre Chemins (n270244436)'
+        - Fort d'Aubervilliers (n270244435)
+        - 'La Courneuve - 8 mai 1945 (n270244850)'
 
-    name: Métro 7
-    station_count: 38
-    ref: 7
-    colour: '#fa9aba'
-    type: subway
-  - 
+      r3328812: 
+        - 'La Courneuve - 8 mai 1945 (n270244850)'
+        - Fort d'Aubervilliers (n270244435)
+        - 'Aubervilliers - Pantin - Quatre Chemins (n270244436)'
+        - Porte de la Villette (n264778142)
+        - Corentin Cariou (n264776910)
+        - Crimée (n264776029)
+        - Riquet (n264776028)
+        - Stalingrad (n235377792)
+        - Louis Blanc (n5228032207)
+        - Château Landon (n326309672)
+        - Gare de l'Est (n264508548)
+        - Poissonnière (n5528176223)
+        - Cadet (n5528174520)
+        - Le Peletier (n5528174511)
+        - 'Chaussée d''Antin - La Fayette (n5528174509)'
+        - Opéra (n243510336)
+        - Pyramides (n5528264337)
+        - 'Palais Royal - Musée du Louvre (n5155172764)'
+        - Pont Neuf (n5527702547)
+        - Châtelet (n27371862)
+        - Pont Marie (n264785952)
+        - 'Sully - Morland (n264785951)'
+        - Jussieu (n4083286998)
+        - Place Monge (n264786014)
+        - 'Censier - Daubenton (n264789025)'
+        - Les Gobelins (n264790337)
+        - Place d'Italie (n235371392)
+        - Tolbiac (n268467197)
+        - Maison Blanche (n268467526)
+        - Le Kremlin-Bicêtre (n318537042)
+        - 'Villejuif - Léo Lagrange (n318536832)'
+        - 'Villejuif - Paul Vaillant-Couturier (n318536943)'
+        - 'Villejuif - Louis Aragon (n318536848)'
+
+
     stations: 
-      - Louis Blanc (7bis)
-      - Jaurès (7b)
-      - Bolivar
-      - Buttes Chaumont
-      - Botzaris
-      - Place des Fêtes
-      - Pré Saint-Gervais
-      - Danube
+      - 'La Courneuve - 8 mai 1945'
+      - Fort d'Aubervilliers
+      - 'Aubervilliers - Pantin - Quatre Chemins'
+      - Porte de la Villette
+      - Corentin Cariou
+      - Crimée
+      - Riquet
+      - Stalingrad (7)
+      - Louis Blanc (7)
+      - Château Landon
+      - Gare de L'Est (7)
+      - Poissonnière
+      - Cadet
+      - Le Peletier
+      - 'Chaussée d''Antin - La Fayette (7)'
+      - Opéra (7)
+      - Pyramides (7)
+      - 'Palais Royal - Musée du Louvre (7)'
+      - Pont Neuf
+      - Châtelet (Métro 7)
+      - Pont Marie
+      - 'Sully - Morland'
+      - Jussieu
+      - Place Monge
+      - Censier Daubenton
+      - Les Gobelins
+      - Place d'Italie (7)
+      - Tolbiac
+      - Maison Blanche
+      - Le Kremlin-Bicêtre
+      - 'Villejuif - Léo Lagrange'
+      - 'Villejuif - Paul Vaillant Couturier'
+      - Villejuif–Louis Aragon
+      - Porte d'Italie
+      - Porte de Choisy
+      - Porte d'Ivry
+      - Pierre et Marie Curie
+      - Mairie d'Ivry
 
+  - 
+    name: Métro 7 bis
+    type: subway
+    ref: 7bis
+    station_count: 8
+    colour: '#79bb92'
     itineraries: 
       r2554093: 
         - Louis Blanc (n5228032207)
@@ -1690,52 +1685,22 @@ routes:
         - Louis Blanc (n5228032207)
 
 
-    name: Métro 7 bis
-    station_count: 8
-    ref: 7bis
-    colour: '#79bb92'
-    type: subway
-  - 
     stations: 
-      - Balard
-      - Lourmel
-      - Boucicaut
-      - Félix Faure
-      - Commerce
-      - 'La Motte-Picquet - Grenelle (8, 10)'
-      - École Militaire
-      - La Tour Maubourg
-      - Invalides (8)
-      - Concorde (8)
-      - Madeleine (8)
-      - Opéra (8)
-      - Richelieu Drouot
-      - Grands Boulevards
-      - Bonne Nouvelle
-      - 'Strasbourg - Saint-Denis (8, 9)'
-      - République (8, 9)
-      - Filles du Calvaire
-      - 'Saint-Sébastien - Froissart'
-      - Chemin Vert
-      - Bastille (Métro 8)
-      - Ledru-Rollin
-      - Faidherbe — Chaligny
-      - 'Reuilly - Diderot (8)'
-      - Montgallet
-      - Daumesnil (8)
-      - Michel Bizot
-      - Porte Dorée
-      - Porte de Charenton
-      - Liberté
-      - Charenton-Écoles (métro de Paris)
-      - École Vétérinaire de Maisons-Alfort
-      - Maisons-Alfort — Stade
-      - Maisons-Alfort — Les Juilliottes
-      - Créteil-L'Échat (Hopital Henri Mondor)
-      - Créteil Université
-      - Créteil-Préfecture (Hôtel de Ville)
-      - Créteil-Pointe du Lac
+      - Louis Blanc (7bis)
+      - Jaurès (7b)
+      - Bolivar
+      - Buttes Chaumont
+      - Botzaris
+      - Place des Fêtes
+      - Pré Saint-Gervais
+      - Danube
 
+  - 
+    name: Métro 8
+    type: subway
+    ref: 8
+    station_count: 38
+    colour: '#c5a3ca'
     itineraries: 
       r123564: 
         - Créteil-Pointe du Lac (n928458344)
@@ -1818,91 +1783,53 @@ routes:
         - Créteil-Pointe du Lac (n928458344)
 
 
-    name: Métro 8
-    station_count: 38
-    ref: 8
-    colour: '#c5a3ca'
-    type: subway
-  - 
     stations: 
-      - Pont de Sèvres
-      - Billancourt
-      - Marcel Sembat
-      - Porte de Saint-Cloud
-      - Exelmans
-      - 'Michel-Ange - Molitor (9)'
-      - 'Michel-Ange - Auteuil (9)'
-      - Jasmin
-      - Ranelagh
-      - 'La Muette - Boulainvilliers'
-      - Rue de la Pompe
-      - Trocadéro (9)
-      - Iéna
-      - Alma-Marceau
-      - Franklin D. Roosevelt (9)
-      - Saint-Philippe du Roule
-      - Miromesnil (9)
-      - Saint-Augustin
-      - 'Havre - Caumartin (9)'
-      - 'Chaussée d''Antin - La Fayette (9)'
-      - Richelieu Drouot
-      - Grands Boulevards
-      - Bonne Nouvelle
-      - 'Strasbourg - Saint-Denis (8, 9)'
+      - Créteil-Pointe du Lac
+      - Créteil-Préfecture (Hôtel de Ville)
+      - Créteil Université
+      - Créteil-L'Échat (Hopital Henri Mondor)
+      - Maisons-Alfort — Les Juilliottes
+      - Maisons-Alfort — Stade
+      - École Vétérinaire de Maisons-Alfort
+      - Charenton-Écoles (métro de Paris)
+      - Liberté
+      - Porte de Charenton
+      - Porte Dorée
+      - Michel Bizot
+      - Daumesnil (8)
+      - Montgallet
+      - 'Reuilly - Diderot (8)'
+      - Faidherbe — Chaligny
+      - Ledru-Rollin
+      - Bastille (Métro 8)
+      - Chemin Vert
+      - 'Saint-Sébastien - Froissart'
+      - Filles du Calvaire
       - République (8, 9)
-      - Oberkampf
-      - Saint-Ambroise
-      - Voltaire
-      - Charonne
-      - Rue des Boulets
-      - Nation (9)
-      - Buzenval
-      - Maraîchers
-      - Porte de Montreuil
-      - Robespierre
-      - Croix de Chavaux
-      - Mairie de Montreuil
+      - 'Strasbourg - Saint-Denis (8, 9)'
+      - Bonne Nouvelle
+      - Grands Boulevards
+      - Richelieu Drouot
+      - Opéra (8)
+      - Madeleine (8)
+      - Concorde (8)
+      - Invalides (8)
+      - La Tour Maubourg
+      - École Militaire
+      - 'La Motte-Picquet - Grenelle (8, 10)'
+      - Commerce
+      - Félix Faure
+      - Boucicaut
+      - Lourmel
+      - Balard
 
+  - 
+    name: Métro 9
+    type: subway
+    ref: 9
+    station_count: 37
+    colour: '#cdc83f'
     itineraries: 
-      r3328716: 
-        - Mairie de Montreuil (n255160722)
-        - Croix de Chavaux (n255160720)
-        - Robespierre (n256442845)
-        - Porte de Montreuil (n2282582663)
-        - Maraîchers (n256441194)
-        - Buzenval (n243486950)
-        - Nation (n241928557)
-        - Rue des Boulets (n256443205)
-        - Charonne (n256443438)
-        - Voltaire (n256895321)
-        - Saint-Ambroise (n256895609)
-        - Oberkampf (n256896059)
-        - République (n3197007911)
-        - 'Strasbourg - Saint-Denis (n5226630386)'
-        - Bonne Nouvelle (n256897078)
-        - Grands Boulevards (n256897079)
-        - Richelieu Drouot (n256897080)
-        - 'Chaussée d''Antin - La Fayette (n5528174509)'
-        - 'Havre - Caumartin (n243510337)'
-        - Saint-Augustin (n256897554)
-        - Miromesnil (n260769652)
-        - Saint-Philippe du Roule (n260769651)
-        - Franklin D. Roosevelt (n27362251)
-        - Alma-Marceau (n260769132)
-        - Iéna (n260767422)
-        - Trocadéro (n4058783101)
-        - Rue de la Pompe (n260767423)
-        - La Muette (n260767424)
-        - Ranelagh (n260767425)
-        - Jasmin (n260767426)
-        - 'Michel-Ange - Auteuil (n260767427)'
-        - 'Michel-Ange - Molitor (n260767428)'
-        - Exelmans (n260767429)
-        - Porte de Saint-Cloud (n260767430)
-        - Marcel Sembat (n29588070)
-        - Billancourt (n355153536)
-        - Pont de Sèvres (n370455978)
-
       r123782: 
         - Pont de Sèvres (n370455978)
         - Billancourt (n355153536)
@@ -1942,10 +1869,83 @@ routes:
         - Croix de Chavaux (n255160720)
         - Mairie de Montreuil (n255160722)
 
+      r3328716: 
+        - Mairie de Montreuil (n255160722)
+        - Croix de Chavaux (n255160720)
+        - Robespierre (n256442845)
+        - Porte de Montreuil (n2282582663)
+        - Maraîchers (n256441194)
+        - Buzenval (n243486950)
+        - Nation (n241928557)
+        - Rue des Boulets (n256443205)
+        - Charonne (n256443438)
+        - Voltaire (n256895321)
+        - Saint-Ambroise (n256895609)
+        - Oberkampf (n256896059)
+        - République (n3197007911)
+        - 'Strasbourg - Saint-Denis (n5226630386)'
+        - Bonne Nouvelle (n256897078)
+        - Grands Boulevards (n256897079)
+        - Richelieu Drouot (n256897080)
+        - 'Chaussée d''Antin - La Fayette (n5528174509)'
+        - 'Havre - Caumartin (n243510337)'
+        - Saint-Augustin (n256897554)
+        - Miromesnil (n260769652)
+        - Saint-Philippe du Roule (n260769651)
+        - Franklin D. Roosevelt (n27362251)
+        - Alma-Marceau (n260769132)
+        - Iéna (n260767422)
+        - Trocadéro (n4058783101)
+        - Rue de la Pompe (n260767423)
+        - La Muette (n260767424)
+        - Ranelagh (n260767425)
+        - Jasmin (n260767426)
+        - 'Michel-Ange - Auteuil (n260767427)'
+        - 'Michel-Ange - Molitor (n260767428)'
+        - Exelmans (n260767429)
+        - Porte de Saint-Cloud (n260767430)
+        - Marcel Sembat (n29588070)
+        - Billancourt (n355153536)
+        - Pont de Sèvres (n370455978)
 
-    name: Métro 9
-    station_count: 37
-    ref: 9
-    colour: '#cdc83f'
-    type: subway
+
+    stations: 
+      - Pont de Sèvres
+      - Billancourt
+      - Marcel Sembat
+      - Porte de Saint-Cloud
+      - Exelmans
+      - 'Michel-Ange - Molitor (9)'
+      - 'Michel-Ange - Auteuil (9)'
+      - Jasmin
+      - Ranelagh
+      - 'La Muette - Boulainvilliers'
+      - Rue de la Pompe
+      - Trocadéro (9)
+      - Iéna
+      - Alma-Marceau
+      - Franklin D. Roosevelt (9)
+      - Saint-Philippe du Roule
+      - Miromesnil (9)
+      - Saint-Augustin
+      - 'Havre - Caumartin (9)'
+      - 'Chaussée d''Antin - La Fayette (9)'
+      - Richelieu Drouot
+      - Grands Boulevards
+      - Bonne Nouvelle
+      - 'Strasbourg - Saint-Denis (8, 9)'
+      - République (8, 9)
+      - Oberkampf
+      - Saint-Ambroise
+      - Voltaire
+      - Charonne
+      - Rue des Boulets
+      - Nation (9)
+      - Buzenval
+      - Maraîchers
+      - Porte de Montreuil
+      - Robespierre
+      - Croix de Chavaux
+      - Mairie de Montreuil
+
 

@@ -42,24 +42,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Mama Tingò
-      - Gregorio Urbano Gilbert Suero
-      - Gregorio Luperón
-      - Peña Gómez
-      - Hermanas Mirabal
-      - Máximo Gómez
-      - Los Taínos
-      - Pedro Livio Cedeño
-      - Peña Batlle
-      - Centro Olímpico Juan Pablo Duarte
-      - Profesor Juan Bosch
-      - Casandra Damirón
-      - Joaquín Balaguer
-      - Amín Abel Hasbún
-      - Francisco Alberto Caamaño Deñó
-      - Centro De Los Héroes
-
+    name: Línea 1
+    type: subway
+    ref: 1
+    station_count: 16
+    colour: '#0000ff'
     itineraries: 
       r7734059: 
         - Centro de los Héroes (n2382875701)
@@ -98,32 +85,30 @@ routes:
         - Centro de los Héroes (n2382875701)
 
 
-    name: Línea 1
-    station_count: 16
-    ref: 1
-    colour: '#0000ff'
-    type: subway
-  - 
     stations: 
-      - Concepción Bona
-      - Trina de Moya de Vásquez
-      - Rosa Duarte
-      - Ercilia Pepín
-      - Eduardo Brito
-      - Manuel de Jesús Abreu Galván
-      - Horacio Vásquez
-      - Ramón Cáceres
-      - Mauricio Báez
-      - Coronel Rafael Tomás Fernández Domínguez
+      - Mama Tingò
+      - Gregorio Urbano Gilbert Suero
+      - Gregorio Luperón
+      - Peña Gómez
+      - Hermanas Mirabal
+      - Máximo Gómez
+      - Los Taínos
+      - Pedro Livio Cedeño
+      - Peña Batlle
       - Centro Olímpico Juan Pablo Duarte
-      - Juan Ulises García Saleta
-      - 'Freddy Beras - Goico'
-      - Pedro Mir
-      - Ulises Fransico Espalliat
-      - Francisco Gregorio Billini
-      - Pedro Francisco Bonó
-      - María Móntez
+      - Profesor Juan Bosch
+      - Casandra Damirón
+      - Joaquín Balaguer
+      - Amín Abel Hasbún
+      - Francisco Alberto Caamaño Deñó
+      - Centro De Los Héroes
 
+  - 
+    name: Línea 2
+    type: subway
+    ref: 2
+    station_count: 18
+    colour: '#ff0000'
     itineraries: 
       r7730098: 
         - María Móntez (n2324956457)
@@ -166,9 +151,24 @@ routes:
         - María Móntez (n2324956457)
 
 
-    name: Línea 2
-    station_count: 18
-    ref: 2
-    colour: '#ff0000'
-    type: subway
+    stations: 
+      - Concepción Bona
+      - Trina de Moya de Vásquez
+      - Rosa Duarte
+      - Ercilia Pepín
+      - Eduardo Brito
+      - Manuel de Jesús Abreu Galván
+      - Horacio Vásquez
+      - Ramón Cáceres
+      - Mauricio Báez
+      - Coronel Rafael Tomás Fernández Domínguez
+      - Centro Olímpico Juan Pablo Duarte
+      - Juan Ulises García Saleta
+      - 'Freddy Beras - Goico'
+      - Pedro Mir
+      - Ulises Fransico Espalliat
+      - Francisco Gregorio Billini
+      - Pedro Francisco Bonó
+      - María Móntez
+
 

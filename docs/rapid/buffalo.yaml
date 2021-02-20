@@ -18,37 +18,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - University
-      - LaSalle
-      - Amherst Street
-      - Humboldt–Hospital
-      - Delavan/Canisius College
-      - Utica
-      - Summer–Best Station
-      - Allen/Medical Campus
-      - Fountain Plaza
-      - Lafayette Square
-      - Church
-      - Seneca
-      - Erie Canal Harbor
-
+    name: NFTA Metro Rail
+    type: light_rail
+    ref: Metro
+    station_count: 13
+    colour: '#73757d'
     itineraries: 
-      r11364343: 
-        - University (n256821989)
-        - LaSalle (n347412810)
-        - Amherst Street (n347412808)
-        - Humboldt–Hospital (n347412806)
-        - Delavan/Canisius College (n306394201)
-        - Utica (n347412733)
-        - Summer–Best (n304893295)
-        - Allen/Medical Campus (n306391081)
-        - Fountain Plaza (n111582398)
-        - Lafayette Square (n111582022)
-        - Church (n486769916)
-        - Seneca (n5844253031)
-        - Erie Canal Harbor (n111456195)
-
       r3517747: 
         - Erie Canal Harbor (n111456195)
         - Seneca (n5844253031)
@@ -64,10 +39,35 @@ routes:
         - LaSalle (n347412810)
         - University (n256821989)
 
+      r11364343: 
+        - University (n256821989)
+        - LaSalle (n347412810)
+        - Amherst Street (n347412808)
+        - Humboldt–Hospital (n347412806)
+        - Delavan/Canisius College (n306394201)
+        - Utica (n347412733)
+        - Summer–Best (n304893295)
+        - Allen/Medical Campus (n306391081)
+        - Fountain Plaza (n111582398)
+        - Lafayette Square (n111582022)
+        - Church (n486769916)
+        - Seneca (n5844253031)
+        - Erie Canal Harbor (n111456195)
 
-    name: NFTA Metro Rail
-    station_count: 13
-    ref: Metro
-    colour: '#73757d'
-    type: light_rail
+
+    stations: 
+      - Erie Canal Harbor
+      - Seneca
+      - Church
+      - Lafayette Square
+      - Fountain Plaza
+      - Allen/Medical Campus
+      - Summer–Best Station
+      - Utica
+      - Delavan/Canisius College
+      - Humboldt–Hospital
+      - Amherst Street
+      - LaSalle
+      - University
+
 

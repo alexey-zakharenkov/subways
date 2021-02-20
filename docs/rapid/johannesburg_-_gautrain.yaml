@@ -15,34 +15,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Sandton
-      - Marlboro
-      - Rhodesfield (Gautrain)
-
-    itineraries: 
-      r1694561: 
-        - Sandton (n6983509221)
-        - Marlboro (n326083326)
-        - Rhodesfield (n6983349355)
-
-      r10305544: 
-        - Rhodesfield (n6983349355)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
-
-
-    name: East-West Commuter Line
-    station_count: 3
-    ref: GAUTRAIN
-    colour: '#0000ff'
+    name: Airport Line
     type: train
-  - 
-    stations: 
-      - Sandton
-      - Marlboro
-      - O.R. Tambo International Airport
-
+    ref: GAUTRAIN
+    station_count: 3
+    colour: '#9d8b57'
     itineraries: 
       r10305561: 
         - O.R. Tambo International Airport (n6983349354)
@@ -55,22 +32,40 @@ routes:
         - O.R. Tambo International Airport (n6983349354)
 
 
-    name: Airport Line
-    station_count: 3
-    ref: GAUTRAIN
-    colour: '#9d8b57'
-    type: train
-  - 
     stations: 
-      - Park Station
-      - Rosebank
-      - Sandton
+      - O.R. Tambo International Airport
       - Marlboro
-      - Midrand
-      - Centurion
-      - Pretoria
-      - Hatfield
+      - Sandton
 
+  - 
+    name: East-West Commuter Line
+    type: train
+    ref: GAUTRAIN
+    station_count: 3
+    colour: '#0000ff'
+    itineraries: 
+      r10305544: 
+        - Rhodesfield (n6983349355)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
+
+      r1694561: 
+        - Sandton (n6983509221)
+        - Marlboro (n326083326)
+        - Rhodesfield (n6983349355)
+
+
+    stations: 
+      - Rhodesfield (Gautrain)
+      - Marlboro
+      - Sandton
+
+  - 
+    name: North-South Commuter Line
+    type: train
+    ref: GAUTRAIN
+    station_count: 8
+    colour: '#ff0000'
     itineraries: 
       r1021770: 
         - Park Station (n6983463551)
@@ -93,9 +88,14 @@ routes:
         - Park Station (n6983463551)
 
 
-    name: North-South Commuter Line
-    station_count: 8
-    ref: GAUTRAIN
-    colour: '#ff0000'
-    type: train
+    stations: 
+      - Park Station
+      - Rosebank
+      - Sandton
+      - Marlboro
+      - Midrand
+      - Centurion
+      - Pretoria
+      - Hatfield
+
 

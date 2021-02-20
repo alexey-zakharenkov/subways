@@ -13,16 +13,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 上海南
-      - 春申 (金山线)
-      - 新桥
-      - 车墩
-      - 叶榭
-      - 亭林
-      - 金山园区
-      - 金山卫
-
+    name: CR 金山线
+    type: train
+    ref: 金山(Jinshan)
+    station_count: 8
+    colour: '#11385b'
     itineraries: 
       r8019732: 
         - 金山卫 (w438159037)
@@ -45,9 +40,14 @@ routes:
         - 金山卫 (w438159037)
 
 
-    name: CR 金山线
-    station_count: 8
-    ref: 金山(Jinshan)
-    colour: '#11385b'
-    type: train
+    stations: 
+      - 上海南
+      - 春申 (金山线)
+      - 新桥
+      - 车墩
+      - 叶榭
+      - 亭林
+      - 金山园区
+      - 金山卫
+
 

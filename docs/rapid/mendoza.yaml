@@ -29,32 +29,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Avellaneda
-      - Marcos Burgos
-      - General Espejo
-      - Patricias Mendocinas
-      - San Miguel
-      - Damián Hudson
-      - Lugones
-      - Coronel Moldes
-      - Coronel Plaza
-      - Estación Mendoza
-      - Belgrano
-      - Pedro Molina
-      - 25 de Mayo
-      - Pellegrini
-      - San Martín
-      - Godoy Cruz
-      - Progreso
-      - Independencia
-      - 9 de Julio
-      - Luzuriaga
-      - Piedra Buena
-      - Alta Italia
-      - Maza
-      - Gutiérrez
-
+    name: Metrotranvía Urbano
+    type: light_rail
+    ref: Metrotranvía
+    station_count: 24
+    colour: '#ff0000'
     itineraries: 
       r3413331: 
         - Gutiérrez (n7098749745)
@@ -109,9 +88,30 @@ routes:
         - Gutiérrez (n7098749745)
 
 
-    name: Metrotranvía Urbano
-    station_count: 24
-    ref: Metrotranvía
-    colour: '#ff0000'
-    type: light_rail
+    stations: 
+      - Avellaneda
+      - Marcos Burgos
+      - General Espejo
+      - Patricias Mendocinas
+      - San Miguel
+      - Damián Hudson
+      - Lugones
+      - Coronel Moldes
+      - Coronel Plaza
+      - Estación Mendoza
+      - Belgrano
+      - Pedro Molina
+      - 25 de Mayo
+      - Pellegrini
+      - San Martín
+      - Godoy Cruz
+      - Progreso
+      - Independencia
+      - 9 de Julio
+      - Luzuriaga
+      - Piedra Buena
+      - Alta Italia
+      - Maza
+      - Gutiérrez
+
 

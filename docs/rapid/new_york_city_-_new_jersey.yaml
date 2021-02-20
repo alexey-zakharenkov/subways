@@ -29,163 +29,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 8th Street
-      - 22nd Street
-      - 34th Street
-      - 45th Street
-      - Danforth Avenue
-      - Richard Street
-      - Liberty State Park
-      - Jersey Avenue
-      - Marin Boulevard
-      - Essex Street
-      - Exchange Place (HBLR)
-      - Harborside Financial Center
-      - Harsimus Cove
-      - Newport (HBLR)
-      - Hoboken Terminal (HBLR)
-
-    itineraries: 
-      r1378219: 
-        - Hoboken Terminal (w634012795)
-        - Newport (n2731261234)
-        - Harsimus Cove (n2063107809)
-        - Harborside Financial Center (n295870178)
-        - Exchange Place (n295870180)
-        - Essex Street (n295870181)
-        - Marin Boulevard (n295870188)
-        - Jersey Avenue (n6996754371)
-        - Liberty State Park (n295870191)
-        - Richard Street (n6996696685)
-        - Danforth Avenue (n6996555657)
-        - 45th Street (n7681854805)
-        - 34th Street (n4875287262)
-        - 22nd Street (n6992955946)
-        - 8th Street (n2063107836)
-
-      r9997058: 
-        - 8th Street (n2063107836)
-        - 22nd Street (n6992955946)
-        - 34th Street (n4875287262)
-        - 45th Street (n7681854805)
-        - Danforth Avenue (n6996555657)
-        - Richard Street (n6996696685)
-        - Liberty State Park (n295870191)
-        - Jersey Avenue (n6996754371)
-        - Marin Boulevard (n295870188)
-        - Essex Street (n295870181)
-        - Exchange Place (n295870180)
-        - Harborside Financial Center (n295870178)
-        - Harsimus Cove (n2063107809)
-        - Newport (n2731261234)
-        - Hoboken Terminal (w634012795)
-
-
-    name: Hudson–Bergen Light Rail (8th Street–Hoboken)
-    station_count: 15
-    ref: HBLR
-    colour: '#00aeef'
+    name: Hudson–Bergen Light Rail (West Side–Tonnelle)
     type: light_rail
-  - 
-    stations: 
-      - Tonnelle Avenue
-      - Bergenline Avenue
-      - Port Imperial
-      - Lincoln Harbor
-      - 9th Street–Congress Street
-      - 2nd Street
-      - Hoboken Terminal (HBLR)
-
-    itineraries: 
-      r2634556: 
-        - Hoboken Terminal (w634012795)
-        - 2nd Street (n6996721553)
-        - 9th Street–Congress Street (n7681854809)
-        - Lincoln Harbor (n7681854810)
-        - Port Imperial (n6996783949)
-        - Bergenline Avenue (n2731319074)
-        - Tonnelle Avenue (n2731306623)
-
-      r9997057: 
-        - Tonnelle Avenue (n2731306623)
-        - Bergenline Avenue (n2731319074)
-        - Port Imperial (n6996783949)
-        - Lincoln Harbor (n7681854810)
-        - 9th Street–Congress Street (n7681854809)
-        - 2nd Street (n6996721553)
-        - Hoboken Terminal (w634012795)
-
-
-    name: Hudson–Bergen Light Rail (Hoboken–Tonnelle)
-    station_count: 7
     ref: HBLR
-    colour: '#008c4e'
-    type: light_rail
-  - 
-    stations: 
-      - 8th Street
-      - 22nd Street
-      - 34th Street
-      - 45th Street
-      - Liberty State Park
-      - Essex Street
-      - Exchange Place (HBLR)
-      - Harborside Financial Center
-      - Newport (HBLR)
-      - Hoboken Terminal (HBLR)
-
-    itineraries: 
-      r11269264: 
-        - Hoboken Terminal (w634012795)
-        - Newport (n2731261234)
-        - Harborside Financial Center (n295870178)
-        - Exchange Place (n295870180)
-        - Essex Street (n295870181)
-        - Liberty State Park (n295870191)
-        - 45th Street (n7681854805)
-        - 34th Street (n4875287262)
-        - 22nd Street (n6992955946)
-        - 8th Street (n2063107836)
-
-      r11269265: 
-        - 8th Street (n2063107836)
-        - 22nd Street (n6992955946)
-        - 34th Street (n4875287262)
-        - 45th Street (n7681854805)
-        - Liberty State Park (n295870191)
-        - Essex Street (n295870181)
-        - Exchange Place (n295870180)
-        - Harborside Financial Center (n295870178)
-        - Newport (n2731261234)
-        - Hoboken Terminal (w634012795)
-
-
-    name: Hudson–Bergen Light Rail (Bayonne Flyer)
-    station_count: 10
-    ref: HBLR
-    colour: '#00aeef'
-    type: light_rail
-  - 
-    stations: 
-      - Tonnelle Avenue
-      - Bergenline Avenue
-      - Port Imperial
-      - Lincoln Harbor
-      - 9th Street–Congress Street
-      - 2nd Street
-      - Newport (HBLR)
-      - Harsimus Cove
-      - Harborside Financial Center
-      - Exchange Place (HBLR)
-      - Essex Street
-      - Marin Boulevard
-      - Jersey Avenue
-      - Liberty State Park
-      - Garfield Avenue
-      - Martin Luther King Drive
-      - West Side Avenue
-
+    station_count: 17
+    colour: '#fbb03f'
     itineraries: 
       r1468928: 
         - Tonnelle Avenue (n2731306623)
@@ -226,9 +74,161 @@ routes:
         - Tonnelle Avenue (n2731306623)
 
 
-    name: Hudson–Bergen Light Rail (West Side–Tonnelle)
-    station_count: 17
-    ref: HBLR
-    colour: '#fbb03f'
+    stations: 
+      - West Side Avenue
+      - Martin Luther King Drive
+      - Garfield Avenue
+      - Liberty State Park
+      - Jersey Avenue
+      - Marin Boulevard
+      - Essex Street
+      - Exchange Place (HBLR)
+      - Harborside Financial Center
+      - Harsimus Cove
+      - Newport (HBLR)
+      - 2nd Street
+      - 9th Street–Congress Street
+      - Lincoln Harbor
+      - Port Imperial
+      - Bergenline Avenue
+      - Tonnelle Avenue
+
+  - 
+    name: Hudson–Bergen Light Rail (Hoboken–Tonnelle)
     type: light_rail
+    ref: HBLR
+    station_count: 7
+    colour: '#008c4e'
+    itineraries: 
+      r9997057: 
+        - Tonnelle Avenue (n2731306623)
+        - Bergenline Avenue (n2731319074)
+        - Port Imperial (n6996783949)
+        - Lincoln Harbor (n7681854810)
+        - 9th Street–Congress Street (n7681854809)
+        - 2nd Street (n6996721553)
+        - Hoboken Terminal (w634012795)
+
+      r2634556: 
+        - Hoboken Terminal (w634012795)
+        - 2nd Street (n6996721553)
+        - 9th Street–Congress Street (n7681854809)
+        - Lincoln Harbor (n7681854810)
+        - Port Imperial (n6996783949)
+        - Bergenline Avenue (n2731319074)
+        - Tonnelle Avenue (n2731306623)
+
+
+    stations: 
+      - Tonnelle Avenue
+      - Bergenline Avenue
+      - Port Imperial
+      - Lincoln Harbor
+      - 9th Street–Congress Street
+      - 2nd Street
+      - Hoboken Terminal (HBLR)
+
+  - 
+    name: Hudson–Bergen Light Rail (Bayonne Flyer)
+    type: light_rail
+    ref: HBLR
+    station_count: 10
+    colour: '#00aeef'
+    itineraries: 
+      r11269264: 
+        - Hoboken Terminal (w634012795)
+        - Newport (n2731261234)
+        - Harborside Financial Center (n295870178)
+        - Exchange Place (n295870180)
+        - Essex Street (n295870181)
+        - Liberty State Park (n295870191)
+        - 45th Street (n7681854805)
+        - 34th Street (n4875287262)
+        - 22nd Street (n6992955946)
+        - 8th Street (n2063107836)
+
+      r11269265: 
+        - 8th Street (n2063107836)
+        - 22nd Street (n6992955946)
+        - 34th Street (n4875287262)
+        - 45th Street (n7681854805)
+        - Liberty State Park (n295870191)
+        - Essex Street (n295870181)
+        - Exchange Place (n295870180)
+        - Harborside Financial Center (n295870178)
+        - Newport (n2731261234)
+        - Hoboken Terminal (w634012795)
+
+
+    stations: 
+      - Hoboken Terminal (HBLR)
+      - Newport (HBLR)
+      - Harborside Financial Center
+      - Exchange Place (HBLR)
+      - Essex Street
+      - Liberty State Park
+      - 45th Street
+      - 34th Street
+      - 22nd Street
+      - 8th Street
+
+  - 
+    name: Hudson–Bergen Light Rail (8th Street–Hoboken)
+    type: light_rail
+    ref: HBLR
+    station_count: 15
+    colour: '#00aeef'
+    itineraries: 
+      r1378219: 
+        - Hoboken Terminal (w634012795)
+        - Newport (n2731261234)
+        - Harsimus Cove (n2063107809)
+        - Harborside Financial Center (n295870178)
+        - Exchange Place (n295870180)
+        - Essex Street (n295870181)
+        - Marin Boulevard (n295870188)
+        - Jersey Avenue (n6996754371)
+        - Liberty State Park (n295870191)
+        - Richard Street (n6996696685)
+        - Danforth Avenue (n6996555657)
+        - 45th Street (n7681854805)
+        - 34th Street (n4875287262)
+        - 22nd Street (n6992955946)
+        - 8th Street (n2063107836)
+
+      r9997058: 
+        - 8th Street (n2063107836)
+        - 22nd Street (n6992955946)
+        - 34th Street (n4875287262)
+        - 45th Street (n7681854805)
+        - Danforth Avenue (n6996555657)
+        - Richard Street (n6996696685)
+        - Liberty State Park (n295870191)
+        - Jersey Avenue (n6996754371)
+        - Marin Boulevard (n295870188)
+        - Essex Street (n295870181)
+        - Exchange Place (n295870180)
+        - Harborside Financial Center (n295870178)
+        - Harsimus Cove (n2063107809)
+        - Newport (n2731261234)
+        - Hoboken Terminal (w634012795)
+
+
+    stations: 
+      - 8th Street
+      - 22nd Street
+      - 34th Street
+      - 45th Street
+      - Danforth Avenue
+      - Richard Street
+      - Liberty State Park
+      - Jersey Avenue
+      - Marin Boulevard
+      - Essex Street
+      - Exchange Place (HBLR)
+      - Harborside Financial Center
+      - Harsimus Cove
+      - Newport (HBLR)
+      - Hoboken Terminal (HBLR)
+
 

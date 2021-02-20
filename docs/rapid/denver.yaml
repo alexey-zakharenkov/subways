@@ -90,16 +90,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Union Station Train Hall
-      - 38th & Blake
-      - 40th & Colorado
-      - Central Park
-      - Peoria Railway Station
-      - 40th & Airport/Gateway Park
-      - 61st & Peña
-      - Denver Airport
-
+    name: RTD A Line
+    type: train
+    ref: A
+    station_count: 8
+    colour: '#57c0e8'
     itineraries: 
       r4836346: 
         - Union Station (n7327224311)
@@ -122,18 +117,22 @@ routes:
         - Union Station (n7327224311)
 
 
-    name: RTD A Line
-    station_count: 8
-    ref: A
-    colour: '#57c0e8'
-    type: train
-  - 
     stations: 
       - Union Station Train Hall
-      - 41st & Fox
-      - Pecos Junction
-      - Westminster
+      - 38th & Blake
+      - 40th & Colorado
+      - Central Park
+      - Peoria Railway Station
+      - 40th & Airport/Gateway Park
+      - 61st & Peña
+      - Denver Airport
 
+  - 
+    name: RTD B Line
+    type: train
+    ref: B
+    station_count: 4
+    colour: '#008000'
     itineraries: 
       r6483384: 
         - Union Station (n7327224311)
@@ -148,26 +147,18 @@ routes:
         - Union Station (n7327224311)
 
 
-    name: RTD B Line
-    station_count: 4
-    ref: B
-    colour: '#008000'
-    type: train
-  - 
     stations: 
-      - 'Littleton - Mineral'
-      - Littleton Downtown
-      - 'Oxford - City of Sheridan'
-      - Englewood
-      - Evans
-      - I-25 & Broadway
-      - Alameda
-      - 10th & Osage
-      - Auraria West Campus
-      - Empower Field at Mile High
-      - Pepsi Center / Elitch Gardens
-      - Union Station Light Rail Plaza
+      - Westminster
+      - Pecos Junction
+      - 41st & Fox
+      - Union Station Train Hall
 
+  - 
+    name: RTD C Line
+    type: light_rail
+    ref: C
+    station_count: 12
+    colour: '#f79239'
     itineraries: 
       r9947501: 
         - 'Littleton - Mineral (n439647509)'
@@ -198,12 +189,56 @@ routes:
         - 'Littleton - Mineral (n439647509)'
 
 
-    name: RTD C Line
-    station_count: 12
-    ref: C
-    colour: '#f79239'
-    type: light_rail
+    stations: 
+      - 'Littleton - Mineral'
+      - Littleton Downtown
+      - 'Oxford - City of Sheridan'
+      - Englewood
+      - Evans
+      - I-25 & Broadway
+      - Alameda
+      - 10th & Osage
+      - Auraria West Campus
+      - Empower Field at Mile High
+      - Pepsi Center / Elitch Gardens
+      - Union Station Light Rail Plaza
+
   - 
+    name: RTD D Line
+    type: light_rail
+    ref: D
+    station_count: 14
+    colour: '#008348'
+    itineraries: 
+      r1661227: 
+        - 'Littleton - Mineral (n439647509)'
+        - Littleton Downtown (n439983297)
+        - 'Oxford - City of Sheridan (n442756974)'
+        - Englewood (n1362259732)
+        - Evans (n442756657)
+        - I-25 & Broadway (n1362259733)
+        - Alameda (n1362259728)
+        - 10th & Osage (n649985468)
+        - Colfax at Auraria (n1362259730)
+        - Theatre District / Convention Center (n1362259738)
+        - 16th & California (n983926555)
+        - 18th & California (n983926564)
+
+      r9947500: 
+        - 18th & Stout (n983926566)
+        - 16th & Stout (n983926553)
+        - Theatre District / Convention Center (n1362259738)
+        - Colfax at Auraria (n1362259730)
+        - 10th & Osage (n649985468)
+        - Alameda (n1362259728)
+        - I-25 & Broadway (n1362259733)
+        - Evans (n442756657)
+        - Englewood (n1362259732)
+        - 'Oxford - City of Sheridan (n442756974)'
+        - Littleton Downtown (n439983297)
+        - 'Littleton - Mineral (n439647509)'
+
+
     stations: 
       - 'Littleton - Mineral'
       - Littleton Downtown
@@ -220,65 +255,12 @@ routes:
       - 18th & Stout
       - 16th & Stout
 
-    itineraries: 
-      r9947500: 
-        - 18th & Stout (n983926566)
-        - 16th & Stout (n983926553)
-        - Theatre District / Convention Center (n1362259738)
-        - Colfax at Auraria (n1362259730)
-        - 10th & Osage (n649985468)
-        - Alameda (n1362259728)
-        - I-25 & Broadway (n1362259733)
-        - Evans (n442756657)
-        - Englewood (n1362259732)
-        - 'Oxford - City of Sheridan (n442756974)'
-        - Littleton Downtown (n439983297)
-        - 'Littleton - Mineral (n439647509)'
-
-      r1661227: 
-        - 'Littleton - Mineral (n439647509)'
-        - Littleton Downtown (n439983297)
-        - 'Oxford - City of Sheridan (n442756974)'
-        - Englewood (n1362259732)
-        - Evans (n442756657)
-        - I-25 & Broadway (n1362259733)
-        - Alameda (n1362259728)
-        - 10th & Osage (n649985468)
-        - Colfax at Auraria (n1362259730)
-        - Theatre District / Convention Center (n1362259738)
-        - 16th & California (n983926555)
-        - 18th & California (n983926564)
-
-
-    name: RTD D Line
-    station_count: 14
-    ref: D
-    colour: '#008348'
-    type: light_rail
   - 
-    stations: 
-      - RidgeGate Parkway
-      - Lone Tree City Center
-      - Sky Ridge Station
-      - Lincoln
-      - County Line
-      - Dry Creek
-      - Arapahoe at Village Center
-      - Orchard
-      - Belleview
-      - Southmoor
-      - Yale
-      - Colorado
-      - University of Denver
-      - Louisiana/Pearl
-      - I-25 & Broadway
-      - Alameda
-      - 10th & Osage
-      - Auraria West Campus
-      - Empower Field at Mile High
-      - Pepsi Center / Elitch Gardens
-      - Union Station Light Rail Plaza
-
+    name: RTD E Line
+    type: light_rail
+    ref: E
+    station_count: 21
+    colour: '#552683'
     itineraries: 
       r9947506: 
         - RidgeGate Parkway (n6778215204)
@@ -327,12 +309,6 @@ routes:
         - RidgeGate Parkway (n6778215204)
 
 
-    name: RTD E Line
-    station_count: 21
-    ref: E
-    colour: '#552683'
-    type: light_rail
-  - 
     stations: 
       - RidgeGate Parkway
       - Lone Tree City Center
@@ -351,13 +327,17 @@ routes:
       - I-25 & Broadway
       - Alameda
       - 10th & Osage
-      - Colfax at Auraria
-      - Theatre District / Convention Center
-      - 16th & California
-      - 18th & California
-      - 18th & Stout
-      - 16th & Stout
+      - Auraria West Campus
+      - Empower Field at Mile High
+      - Pepsi Center / Elitch Gardens
+      - Union Station Light Rail Plaza
 
+  - 
+    name: RTD F Line
+    type: light_rail
+    ref: F
+    station_count: 23
+    colour: '#ee3e33'
     itineraries: 
       r9947519: 
         - RidgeGate Parkway (n6778215204)
@@ -406,33 +386,38 @@ routes:
         - RidgeGate Parkway (n6778215204)
 
 
-    name: RTD F Line
-    station_count: 23
-    ref: F
-    colour: '#ee3e33'
-    type: light_rail
-  - 
     stations: 
-      - Union Station Train Hall
-      - 41st & Fox
-      - Pecos Junction
-      - 'Clear Creek - Federal'
-      - '60th & Sheridan - Arvada Gold Strike'
-      - Olde Town Arvada
-      - Arvada Ridge
-      - Wheat Ridge / Ward Road
+      - 18th & Stout
+      - 16th & Stout
+      - Theatre District / Convention Center
+      - Colfax at Auraria
+      - 10th & Osage
+      - Alameda
+      - I-25 & Broadway
+      - Louisiana/Pearl
+      - University of Denver
+      - Colorado
+      - Yale
+      - Southmoor
+      - Belleview
+      - Orchard
+      - Arapahoe at Village Center
+      - Dry Creek
+      - County Line
+      - Lincoln
+      - Sky Ridge Station
+      - Lone Tree City Center
+      - RidgeGate Parkway
+      - 16th & California
+      - 18th & California
 
+  - 
+    name: RTD G Line
+    type: train
+    ref: G
+    station_count: 8
+    colour: '#ffd700'
     itineraries: 
-      r4846845: 
-        - Union Station (n7327224311)
-        - 41st & Fox (n3032349499)
-        - Pecos Junction (n4345414465)
-        - 'Clear Creek - Federal (n5286898995)'
-        - '60th & Sheridan - Arvada Gold Strike (n5601586822)'
-        - Olde Town Arvada (n7125062195)
-        - Arvada Ridge (n6778373834)
-        - Wheat Ridge / Ward Road (n6346234714)
-
       r9104574: 
         - Wheat Ridge / Ward Road (n6346234714)
         - Arvada Ridge (n6778373834)
@@ -443,52 +428,34 @@ routes:
         - 41st & Fox (n3032349499)
         - Union Station (n7327224311)
 
+      r4846845: 
+        - Union Station (n7327224311)
+        - 41st & Fox (n3032349499)
+        - Pecos Junction (n4345414465)
+        - 'Clear Creek - Federal (n5286898995)'
+        - '60th & Sheridan - Arvada Gold Strike (n5601586822)'
+        - Olde Town Arvada (n7125062195)
+        - Arvada Ridge (n6778373834)
+        - Wheat Ridge / Ward Road (n6346234714)
 
-    name: RTD G Line
-    station_count: 8
-    ref: G
-    colour: '#ffd700'
-    type: train
-  - 
+
     stations: 
-      - Florida
-      - Iliff
-      - Nine Mile
-      - Dayton
-      - Southmoor
-      - Yale
-      - Colorado
-      - University of Denver
-      - Louisiana/Pearl
-      - I-25 & Broadway
-      - Alameda
-      - 10th & Osage
-      - Colfax at Auraria
-      - Theatre District / Convention Center
-      - 16th & California
-      - 18th & California
-      - 18th & Stout
-      - 16th & Stout
+      - Wheat Ridge / Ward Road
+      - Arvada Ridge
+      - Olde Town Arvada
+      - '60th & Sheridan - Arvada Gold Strike'
+      - 'Clear Creek - Federal'
+      - Pecos Junction
+      - 41st & Fox
+      - Union Station Train Hall
 
+  - 
+    name: RTD H Line
+    type: light_rail
+    ref: H
+    station_count: 18
+    colour: '#0075bf'
     itineraries: 
-      r1661472: 
-        - 18th & Stout (n983926566)
-        - 16th & Stout (n983926553)
-        - Theatre District / Convention Center (n1362259738)
-        - Colfax at Auraria (n1362259730)
-        - 10th & Osage (n649985468)
-        - Alameda (n1362259728)
-        - I-25 & Broadway (n1362259733)
-        - Louisiana & Pearl (n1362259736)
-        - University of Denver (n1362259740)
-        - Colorado (n1362259731)
-        - Yale (n442726016)
-        - Southmoor (n442726036)
-        - Dayton (n6778269474)
-        - Nine Mile (n6775305387)
-        - Iliff (n6499091299)
-        - Florida (n3250421986)
-
       r9947524: 
         - Florida (n3250421986)
         - Iliff (n6499091299)
@@ -507,23 +474,51 @@ routes:
         - 16th & California (n983926555)
         - 18th & California (n983926564)
 
+      r1661472: 
+        - 18th & Stout (n983926566)
+        - 16th & Stout (n983926553)
+        - Theatre District / Convention Center (n1362259738)
+        - Colfax at Auraria (n1362259730)
+        - 10th & Osage (n649985468)
+        - Alameda (n1362259728)
+        - I-25 & Broadway (n1362259733)
+        - Louisiana & Pearl (n1362259736)
+        - University of Denver (n1362259740)
+        - Colorado (n1362259731)
+        - Yale (n442726016)
+        - Southmoor (n442726036)
+        - Dayton (n6778269474)
+        - Nine Mile (n6775305387)
+        - Iliff (n6499091299)
+        - Florida (n3250421986)
 
-    name: RTD H Line
-    station_count: 18
-    ref: H
-    colour: '#0075bf'
-    type: light_rail
-  - 
+
     stations: 
-      - 30th & Downing
-      - 27th & Welton
-      - 25th & Welton
-      - 20th & Welton
       - 18th & Stout
       - 16th & Stout
+      - Theatre District / Convention Center
+      - Colfax at Auraria
+      - 10th & Osage
+      - Alameda
+      - I-25 & Broadway
+      - Louisiana/Pearl
+      - University of Denver
+      - Colorado
+      - Yale
+      - Southmoor
+      - Dayton
+      - Nine Mile
+      - Iliff
+      - Florida
       - 16th & California
       - 18th & California
 
+  - 
+    name: RTD L Line
+    type: light_rail
+    ref: L
+    station_count: 8
+    colour: '#ffff00'
     itineraries: 
       r8668341: 
         - 30th & Downing (n461804741)
@@ -542,21 +537,22 @@ routes:
         - 30th & Downing (n461804741)
 
 
-    name: RTD L Line
-    station_count: 8
-    ref: L
-    colour: '#ffff00'
-    type: light_rail
-  - 
     stations: 
-      - Union Station Train Hall
-      - 48th & Brighton at National Western Center
-      - Commerce City & 72nd
-      - Original Thornton & 88th
-      - Thornton Crossroads & 104th
-      - Northglenn & 112th
-      - Eastlake & 124th
+      - 30th & Downing
+      - 27th & Welton
+      - 25th & Welton
+      - 20th & Welton
+      - 18th & Stout
+      - 16th & Stout
+      - 16th & California
+      - 18th & California
 
+  - 
+    name: RTD N Line
+    type: train
+    ref: N
+    station_count: 7
+    colour: '#9f26b4'
     itineraries: 
       r4846846: 
         - Union Station (n7327224311)
@@ -577,33 +573,21 @@ routes:
         - Union Station (n7327224311)
 
 
-    name: RTD N Line
-    station_count: 7
-    ref: N
-    colour: '#9f26b4'
-    type: train
-  - 
     stations: 
-      - Peoria Light Rail Station
-      - Fitzsimons
-      - Colfax
-      - 13th Avenue
-      - 2nd Avenue & Abilene
-      - Aurora Metro Center
-      - Florida
-      - Iliff
-      - Nine Mile
-      - Dayton
-      - Belleview
-      - Orchard
-      - Arapahoe at Village Center
-      - Dry Creek
-      - County Line
-      - Lincoln
-      - Sky Ridge Station
-      - Lone Tree City Center
-      - RidgeGate Parkway
+      - Eastlake & 124th
+      - Northglenn & 112th
+      - Thornton Crossroads & 104th
+      - Original Thornton & 88th
+      - Commerce City & 72nd
+      - 48th & Brighton at National Western Center
+      - Union Station Train Hall
 
+  - 
+    name: RTD R Line
+    type: light_rail
+    ref: R
+    station_count: 19
+    colour: '#b7f037'
     itineraries: 
       r6942623: 
         - RidgeGate Parkway (n6778215204)
@@ -648,47 +632,34 @@ routes:
         - RidgeGate Parkway (n6778215204)
 
 
-    name: RTD R Line
-    station_count: 19
-    ref: R
-    colour: '#b7f037'
-    type: light_rail
-  - 
     stations: 
-      - Union Station Light Rail Plaza
-      - Pepsi Center / Elitch Gardens
-      - Empower Field at Mile High
-      - Auraria West Campus
-      - Decatur Federal
-      - Knox
-      - Perry
-      - Sheridan
-      - Lamar
-      - 'Lakewood - Wadsworth'
-      - Garrison
-      - Oak
-      - Federal Center
-      - Red Rocks College
-      - Jeffco Government Center
+      - RidgeGate Parkway
+      - Lone Tree City Center
+      - Sky Ridge Station
+      - Lincoln
+      - County Line
+      - Dry Creek
+      - Arapahoe at Village Center
+      - Orchard
+      - Belleview
+      - Dayton
+      - Nine Mile
+      - Iliff
+      - Florida
+      - Aurora Metro Center
+      - 2nd Avenue & Abilene
+      - 13th Avenue
+      - Colfax
+      - Fitzsimons
+      - Peoria Light Rail Station
 
+  - 
+    name: RTD W Line
+    type: light_rail
+    ref: W
+    station_count: 15
+    colour: '#37b5a5'
     itineraries: 
-      r2512641: 
-        - Union Station Light Rail Plaza (n3254826511)
-        - Pepsi Center / Elitch Gardens (n3016608826)
-        - Empower Field at Mile High (n1362259734)
-        - Auraria West Campus (n1362259729)
-        - Decatur Federal (n2376710053)
-        - Knox (n2376710233)
-        - Perry (n2376710288)
-        - Sheridan (n2376710310)
-        - Lamar (n2375617610)
-        - 'Lakewood - Wadsworth (n2375622010)'
-        - Garrison (n2375621013)
-        - Oak (n2376710507)
-        - Federal Center (n2376710603)
-        - Red Rocks College (n2376710795)
-        - Jeffco Government Center (n2377305079)
-
       r9947531: 
         - Jeffco Government Center (n2377305079)
         - Red Rocks College (n2376710795)
@@ -706,10 +677,39 @@ routes:
         - Pepsi Center / Elitch Gardens (n3016608826)
         - Union Station Light Rail Plaza (n3254826511)
 
+      r2512641: 
+        - Union Station Light Rail Plaza (n3254826511)
+        - Pepsi Center / Elitch Gardens (n3016608826)
+        - Empower Field at Mile High (n1362259734)
+        - Auraria West Campus (n1362259729)
+        - Decatur Federal (n2376710053)
+        - Knox (n2376710233)
+        - Perry (n2376710288)
+        - Sheridan (n2376710310)
+        - Lamar (n2375617610)
+        - 'Lakewood - Wadsworth (n2375622010)'
+        - Garrison (n2375621013)
+        - Oak (n2376710507)
+        - Federal Center (n2376710603)
+        - Red Rocks College (n2376710795)
+        - Jeffco Government Center (n2377305079)
 
-    name: RTD W Line
-    station_count: 15
-    ref: W
-    colour: '#37b5a5'
-    type: light_rail
+
+    stations: 
+      - Jeffco Government Center
+      - Red Rocks College
+      - Federal Center
+      - Oak
+      - Garrison
+      - 'Lakewood - Wadsworth'
+      - Lamar
+      - Sheridan
+      - Perry
+      - Knox
+      - Decatur Federal
+      - Auraria West Campus
+      - Empower Field at Mile High
+      - Pepsi Center / Elitch Gardens
+      - Union Station Light Rail Plaza
+
 

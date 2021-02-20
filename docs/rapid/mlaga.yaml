@@ -22,62 +22,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - El Perchel
-      - La Unión
-      - Barbarela
-      - Carranque
-      - Portada Alta
-      - Ciudad de la Justicia
-      - Universidad
-      - Clínico
-      - El Cónsul
-      - Paraninfo
-      - Andalucía Tech
-
-    itineraries: 
-      r4484360: 
-        - Andalucía Tech (n1625341623)
-        - Paraninfo (n2897360350)
-        - El Cónsul (n1625341605)
-        - Clínico (n1912826078)
-        - Universidad (n4943984613)
-        - Ciudad de la Justicia (n1625341600)
-        - Portada Alta (n1625341635)
-        - Carranque (n4408159190)
-        - Barbarela (n4408155456)
-        - La Unión (n1625341615)
-        - El Perchel (n4408112018)
-
-      r7781441: 
-        - El Perchel (n4408112018)
-        - La Unión (n1625341615)
-        - Barbarela (n4408155456)
-        - Carranque (n4408159190)
-        - Portada Alta (n1625341635)
-        - Ciudad de la Justicia (n1625341600)
-        - Universidad (n4943984613)
-        - Clínico (n1912826078)
-        - El Cónsul (n1625341605)
-        - Paraninfo (n2897360350)
-        - Andalucía Tech (n1625341623)
-
-
-    name: Línea 1
-    station_count: 11
-    ref: L2
-    colour: '#ff0000'
+    name: Línea 2
     type: subway
-  - 
-    stations: 
-      - Palacio de los Deportes
-      - Puerta Blanca
-      - 'La Luz - La Paz'
-      - El Torcal
-      - 'Princesa - Huelin'
-      - La Isla
-      - El Perchel
-
+    ref: L2
+    station_count: 7
+    colour: '#0000ff'
     itineraries: 
       r6598364: 
         - El Perchel (n4408112018)
@@ -98,9 +47,60 @@ routes:
         - El Perchel (n4408112018)
 
 
-    name: Línea 2
-    station_count: 7
-    ref: L2
-    colour: '#0000ff'
+    stations: 
+      - Palacio de los Deportes
+      - Puerta Blanca
+      - 'La Luz - La Paz'
+      - El Torcal
+      - 'Princesa - Huelin'
+      - La Isla
+      - El Perchel
+
+  - 
+    name: Línea 1
     type: subway
+    ref: L2
+    station_count: 11
+    colour: '#ff0000'
+    itineraries: 
+      r7781441: 
+        - El Perchel (n4408112018)
+        - La Unión (n1625341615)
+        - Barbarela (n4408155456)
+        - Carranque (n4408159190)
+        - Portada Alta (n1625341635)
+        - Ciudad de la Justicia (n1625341600)
+        - Universidad (n4943984613)
+        - Clínico (n1912826078)
+        - El Cónsul (n1625341605)
+        - Paraninfo (n2897360350)
+        - Andalucía Tech (n1625341623)
+
+      r4484360: 
+        - Andalucía Tech (n1625341623)
+        - Paraninfo (n2897360350)
+        - El Cónsul (n1625341605)
+        - Clínico (n1912826078)
+        - Universidad (n4943984613)
+        - Ciudad de la Justicia (n1625341600)
+        - Portada Alta (n1625341635)
+        - Carranque (n4408159190)
+        - Barbarela (n4408155456)
+        - La Unión (n1625341615)
+        - El Perchel (n4408112018)
+
+
+    stations: 
+      - Andalucía Tech
+      - Paraninfo
+      - El Cónsul
+      - Clínico
+      - Universidad
+      - Ciudad de la Justicia
+      - Portada Alta
+      - Carranque
+      - Barbarela
+      - La Unión
+      - El Perchel
+
 

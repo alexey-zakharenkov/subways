@@ -13,16 +13,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 大船
-      - 富士見町
-      - 湘南町屋
-      - 湘南深沢
-      - 西鎌倉
-      - 片瀬山
-      - 目白山下
-      - 湘南江の島
-
+    name: 湘南モノレール
+    type: monorail
+    ref: SMR
+    station_count: 8
+    colour: '#a52a2a'
     itineraries: 
       r9499966: 
         - 湘南江の島 (n263262808)
@@ -45,9 +40,14 @@ routes:
         - 湘南江の島 (n263262808)
 
 
-    name: 湘南モノレール
-    station_count: 8
-    ref: SMR
-    colour: '#a52a2a'
-    type: monorail
+    stations: 
+      - 湘南江の島
+      - 目白山下
+      - 片瀬山
+      - 西鎌倉
+      - 湘南深沢
+      - 湘南町屋
+      - 富士見町
+      - 大船
+
 

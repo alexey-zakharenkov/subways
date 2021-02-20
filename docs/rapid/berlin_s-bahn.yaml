@@ -197,81 +197,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Oranienburg, S-Bahnhof
-      - 'Lehnitz,S- Bahnhof'
-      - Borgsdorf, S-Bahnhof
-      - Birkenwerder, S-Bahnhof
-      - Hohen Neuendorf, S-Bahnhof
-      - Berlin, S Frohnau
-      - Berlin, S Hermsdorf
-      - Berlin, S Waidmannslust
-      - Berlin, S Wittenau
-      - Berlin, S Wilhelmsruh
-      - Berlin, S Schönholz
-      - Berlin, S Wollankstraße
-      - Berlin, S Bornholmer Straße
-      - Berlin, S Gesundbrunnen
-      - Berlin, S Humboldthain
-      - Berlin, S Nordbahnhof
-      - Berlin, S Oranienburger Straße
-      - Berlin, S Friedrichstraße (Tunnel)
-      - Berlin, S Brandenburger Tor
-      - Berlin, S Potsdamer Platz
-      - Berlin, S Anhalter Bahnhof
-      - Berlin, S Yorckstraße (Großgörschenstraße)
-      - Berlin, S Julius-Leber-Brücke
-      - Berlin, S Schöneberg (Wannseebahn)
-      - Berlin, S Friedenau
-      - Berlin, S Feuerbachstraße
-      - Berlin, S Rathaus Steglitz
-      - Berlin, S Botanischer Garten
-      - Berlin, S Lichterfelde West
-      - Berlin, S Sundgauer Straße
-      - Berlin, S Zehlendorf
-      - Berlin, S Mexikoplatz
-      - Berlin, S Schlachtensee
-      - Berlin, S Nikolassee (S1)
-      - Berlin, S Wannsee
-
+    name: 'S1: S Wannsee <=> S Oranienburg'
+    type: train
+    ref: S1
+    station_count: 35
+    colour: '#d474ae'
     itineraries: 
-      r1929071: 
-        - S Wannsee (n26603219)
-        - S Nikolassee (n1132192014)
-        - S Schlachtensee (n1731759740)
-        - S Mexikoplatz (n2468796165)
-        - S Zehlendorf (n3961281931)
-        - S Sundgauer Straße (n2465354489)
-        - S Lichterfelde West (n2808666091)
-        - S Botanischer Garten (n4959163245)
-        - S Rathaus Steglitz (n30019733)
-        - S Feuerbachstraße (n1390287336)
-        - S Friedenau (n3874806029)
-        - S Schöneberg (n2808272930)
-        - S Julius-Leber-Brücke (n111541810)
-        - S Yorckstraße (Großgörschenstraße) (n5318173096)
-        - S Anhalter Bahnhof (n3854590993)
-        - S Potsdamer Platz (n3854590996)
-        - S Brandenburger Tor (n30353086)
-        - S Friedrichstraße (n5320311289)
-        - S Oranienburger Straße (n2134525648)
-        - S Nordbahnhof (n1947340096)
-        - S Humboldthain (n2567991413)
-        - S Gesundbrunnen (n1127966981)
-        - S Bornholmer Straße (n2567991414)
-        - S Wollankstraße (n3896342607)
-        - S Schönholz (n3154117524)
-        - S Wilhelmsruh (n3093801263)
-        - S Wittenau (n3092585150)
-        - S Waidmannslust (n3092447211)
-        - S Hermsdorf (n3092387751)
-        - S Frohnau (n3092283379)
-        - S Hohen Neuendorf (b Berlin) (n59282120)
-        - S Birkenwerder (n30245150)
-        - S Borgsdorf (n3086255390)
-        - S Lehnitz (n3086164692)
-        - S Oranienburg (n3086103738)
-
       r1929070: 
         - S Oranienburg (n3086103738)
         - S Lehnitz (n3086164692)
@@ -309,44 +240,112 @@ routes:
         - S Nikolassee (n1132192014)
         - S Wannsee (n26603219)
 
+      r1929071: 
+        - S Wannsee (n26603219)
+        - S Nikolassee (n1132192014)
+        - S Schlachtensee (n1731759740)
+        - S Mexikoplatz (n2468796165)
+        - S Zehlendorf (n3961281931)
+        - S Sundgauer Straße (n2465354489)
+        - S Lichterfelde West (n2808666091)
+        - S Botanischer Garten (n4959163245)
+        - S Rathaus Steglitz (n30019733)
+        - S Feuerbachstraße (n1390287336)
+        - S Friedenau (n3874806029)
+        - S Schöneberg (n2808272930)
+        - S Julius-Leber-Brücke (n111541810)
+        - S Yorckstraße (Großgörschenstraße) (n5318173096)
+        - S Anhalter Bahnhof (n3854590993)
+        - S Potsdamer Platz (n3854590996)
+        - S Brandenburger Tor (n30353086)
+        - S Friedrichstraße (n5320311289)
+        - S Oranienburger Straße (n2134525648)
+        - S Nordbahnhof (n1947340096)
+        - S Humboldthain (n2567991413)
+        - S Gesundbrunnen (n1127966981)
+        - S Bornholmer Straße (n2567991414)
+        - S Wollankstraße (n3896342607)
+        - S Schönholz (n3154117524)
+        - S Wilhelmsruh (n3093801263)
+        - S Wittenau (n3092585150)
+        - S Waidmannslust (n3092447211)
+        - S Hermsdorf (n3092387751)
+        - S Frohnau (n3092283379)
+        - S Hohen Neuendorf (b Berlin) (n59282120)
+        - S Birkenwerder (n30245150)
+        - S Borgsdorf (n3086255390)
+        - S Lehnitz (n3086164692)
+        - S Oranienburg (n3086103738)
 
-    name: 'S1: S Wannsee <=> S Oranienburg'
-    station_count: 35
-    ref: S1
-    colour: '#d474ae'
-    type: train
-  - 
+
     stations: 
-      - Berlin, S Buch
-      - Berlin, S Karow
-      - Berlin, S Blankenburg
-      - Berlin, S Pankow-Heinersdorf
-      - Berlin, S Pankow
-      - Berlin, S Bornholmer Straße
-      - Berlin, S Gesundbrunnen
-      - Berlin, S Humboldthain
-      - Berlin, S Nordbahnhof
-      - Berlin, S Oranienburger Straße
-      - Berlin, S Friedrichstraße (Tunnel)
-      - Berlin, S Brandenburger Tor
-      - Berlin, S Potsdamer Platz
+      - Berlin, S Wannsee
+      - Berlin, S Nikolassee (S1)
+      - Berlin, S Schlachtensee
+      - Berlin, S Mexikoplatz
+      - Berlin, S Zehlendorf
+      - Berlin, S Sundgauer Straße
+      - Berlin, S Lichterfelde West
+      - Berlin, S Botanischer Garten
+      - Berlin, S Rathaus Steglitz
+      - Berlin, S Feuerbachstraße
+      - Berlin, S Friedenau
+      - Berlin, S Schöneberg (Wannseebahn)
+      - Berlin, S Julius-Leber-Brücke
+      - Berlin, S Yorckstraße (Großgörschenstraße)
       - Berlin, S Anhalter Bahnhof
-      - Berlin, S Yorckstraße
-      - Berlin, S Südkreuz (Nord-Süd)
-      - Berlin, S Priesterweg
-      - Berlin, S Attilastraße
-      - Berlin, S Marienfelde
-      - Berlin, S Buckower Chaussee
-      - Berlin, S Schichauweg
-      - Berlin, S Lichtenrade
-      - Blankenfelde (TF), S-Bahnhof
-      - Mahlow, S-Bahnhof
-      - Röntgental, S-Bahnhof
-      - Zepernick, S-Bahnhof
-      - Bernau-Friedenstal, S-Bahnhof
-      - Bernau, S-Bahnhof
+      - Berlin, S Potsdamer Platz
+      - Berlin, S Brandenburger Tor
+      - Berlin, S Friedrichstraße (Tunnel)
+      - Berlin, S Oranienburger Straße
+      - Berlin, S Nordbahnhof
+      - Berlin, S Humboldthain
+      - Berlin, S Gesundbrunnen
+      - Berlin, S Bornholmer Straße
+      - Berlin, S Wollankstraße
+      - Berlin, S Schönholz
+      - Berlin, S Wilhelmsruh
+      - Berlin, S Wittenau
+      - Berlin, S Waidmannslust
+      - Berlin, S Hermsdorf
+      - Berlin, S Frohnau
+      - Hohen Neuendorf, S-Bahnhof
+      - Birkenwerder, S-Bahnhof
+      - Borgsdorf, S-Bahnhof
+      - 'Lehnitz,S- Bahnhof'
+      - Oranienburg, S-Bahnhof
 
+  - 
+    name: 'S2: S Blankenfelde <=> S Bernau'
+    type: train
+    ref: S2
+    station_count: 28
+    colour: '#018a47'
     itineraries: 
+      r3019044: 
+        - S Buch (n4027945653)
+        - S Karow (n28830281)
+        - S Blankenburg (n2909563126)
+        - S Pankow-Heinersdorf (n1127967053)
+        - S Pankow (n4949971070)
+        - S Bornholmer Straße (n2567991414)
+        - S Gesundbrunnen (n1127966981)
+        - S Humboldthain (n2567991413)
+        - S Nordbahnhof (n1947340096)
+        - S Oranienburger Straße (n2134525648)
+        - S Friedrichstraße (n5320311289)
+        - S Brandenburger Tor (n30353086)
+        - S Potsdamer Platz (n3854590996)
+        - S Anhalter Bahnhof (n3854590993)
+        - S Yorckstraße (n3899306096)
+        - S Südkreuz (Nord-Süd) (n7103322725)
+        - S Priesterweg (n4012713682)
+        - S Attilastraße (n3234856203)
+        - S Marienfelde (n30739613)
+        - S Buckower Chaussee (n2613268560)
+        - S Schichauweg (n3842232853)
+        - S Lichtenrade (n3858390219)
+
       r2269237: 
         - S Bernau (n611634744)
         - S Bernau-Friedenstal (n28830220)
@@ -435,47 +434,13 @@ routes:
         - S Bernau-Friedenstal (n28830220)
         - S Bernau (n611634744)
 
-      r3019044: 
-        - S Buch (n4027945653)
-        - S Karow (n28830281)
-        - S Blankenburg (n2909563126)
-        - S Pankow-Heinersdorf (n1127967053)
-        - S Pankow (n4949971070)
-        - S Bornholmer Straße (n2567991414)
-        - S Gesundbrunnen (n1127966981)
-        - S Humboldthain (n2567991413)
-        - S Nordbahnhof (n1947340096)
-        - S Oranienburger Straße (n2134525648)
-        - S Friedrichstraße (n5320311289)
-        - S Brandenburger Tor (n30353086)
-        - S Potsdamer Platz (n3854590996)
-        - S Anhalter Bahnhof (n3854590993)
-        - S Yorckstraße (n3899306096)
-        - S Südkreuz (Nord-Süd) (n7103322725)
-        - S Priesterweg (n4012713682)
-        - S Attilastraße (n3234856203)
-        - S Marienfelde (n30739613)
-        - S Buckower Chaussee (n2613268560)
-        - S Schichauweg (n3842232853)
-        - S Lichtenrade (n3858390219)
 
-
-    name: 'S2: S Blankenfelde <=> S Bernau'
-    station_count: 28
-    ref: S2
-    colour: '#018a47'
-    type: train
-  - 
     stations: 
-      - Hennigsdorf, S-Bahnhof
-      - Berlin, S Heiligensee
-      - Berlin, S Schulzendorf
-      - Berlin, S Tegel
-      - Berlin, S Eichborndamm
-      - Berlin, S Karl-Bonhoeffer-Nervenklinik
-      - Berlin, S Alt-Reinickendorf
-      - Berlin, S Schönholz
-      - Berlin, S Wollankstraße
+      - Berlin, S Buch
+      - Berlin, S Karow
+      - Berlin, S Blankenburg
+      - Berlin, S Pankow-Heinersdorf
+      - Berlin, S Pankow
       - Berlin, S Bornholmer Straße
       - Berlin, S Gesundbrunnen
       - Berlin, S Humboldthain
@@ -488,43 +453,25 @@ routes:
       - Berlin, S Yorckstraße
       - Berlin, S Südkreuz (Nord-Süd)
       - Berlin, S Priesterweg
-      - Berlin, S Südende
-      - Berlin, S Lankwitz
-      - Berlin, S Lichterfelde Ost
-      - Berlin, S Osdorfer Straße
-      - Berlin, S Lichterfelde Süd
-      - Teltow, S Teltow Stadt
+      - Berlin, S Attilastraße
+      - Berlin, S Marienfelde
+      - Berlin, S Buckower Chaussee
+      - Berlin, S Schichauweg
+      - Berlin, S Lichtenrade
+      - Bernau, S-Bahnhof
+      - Bernau-Friedenstal, S-Bahnhof
+      - Zepernick, S-Bahnhof
+      - Röntgental, S-Bahnhof
+      - Mahlow, S-Bahnhof
+      - Blankenfelde (TF), S-Bahnhof
 
+  - 
+    name: 'S25: S Teltow Stadt< => S Hennigsdorf'
+    type: train
+    ref: S25
+    station_count: 27
+    colour: '#018a47'
     itineraries: 
-      r2422951: 
-        - S Teltow Stadt (n2514084207)
-        - S Lichterfelde Süd (n4011129259)
-        - S Osdorfer Straße (n4010887467)
-        - S Lichterfelde Ost (n3846358177)
-        - S Lankwitz (n2625828055)
-        - S Südende (n4011336129)
-        - S Priesterweg (n4012713682)
-        - S Südkreuz (Nord-Süd) (n7103322725)
-        - S Yorckstraße (n3899306096)
-        - S Anhalter Bahnhof (n3854590993)
-        - S Potsdamer Platz (n3854590996)
-        - S Brandenburger Tor (n30353086)
-        - S Friedrichstraße (n5320311289)
-        - S Oranienburger Straße (n2134525648)
-        - S Nordbahnhof (n1947340096)
-        - S Humboldthain (n2567991413)
-        - S Gesundbrunnen (n1127966981)
-        - S Bornholmer Straße (n2567991414)
-        - S Wollankstraße (n3896342607)
-        - S Schönholz (n3154117524)
-        - S Alt-Reinickendorf (n2568010568)
-        - S Karl-Bonhoeffer-Nervenklinik (n2568014740)
-        - S Eichborndamm (n2568016351)
-        - S Tegel (n2568020195)
-        - S Schulzendorf (b Tegel) (n268680429)
-        - S Heiligensee (n2634929378)
-        - S Hennigsdorf (bei Berlin) (n2340684843)
-
       r2422950: 
         - S Hennigsdorf (bei Berlin) (n2340684843)
         - S Heiligensee (n2634929378)
@@ -554,38 +501,71 @@ routes:
         - S Lichterfelde Süd (n4011129259)
         - S Teltow Stadt (n2514084207)
 
+      r2422951: 
+        - S Teltow Stadt (n2514084207)
+        - S Lichterfelde Süd (n4011129259)
+        - S Osdorfer Straße (n4010887467)
+        - S Lichterfelde Ost (n3846358177)
+        - S Lankwitz (n2625828055)
+        - S Südende (n4011336129)
+        - S Priesterweg (n4012713682)
+        - S Südkreuz (Nord-Süd) (n7103322725)
+        - S Yorckstraße (n3899306096)
+        - S Anhalter Bahnhof (n3854590993)
+        - S Potsdamer Platz (n3854590996)
+        - S Brandenburger Tor (n30353086)
+        - S Friedrichstraße (n5320311289)
+        - S Oranienburger Straße (n2134525648)
+        - S Nordbahnhof (n1947340096)
+        - S Humboldthain (n2567991413)
+        - S Gesundbrunnen (n1127966981)
+        - S Bornholmer Straße (n2567991414)
+        - S Wollankstraße (n3896342607)
+        - S Schönholz (n3154117524)
+        - S Alt-Reinickendorf (n2568010568)
+        - S Karl-Bonhoeffer-Nervenklinik (n2568014740)
+        - S Eichborndamm (n2568016351)
+        - S Tegel (n2568020195)
+        - S Schulzendorf (b Tegel) (n268680429)
+        - S Heiligensee (n2634929378)
+        - S Hennigsdorf (bei Berlin) (n2340684843)
 
-    name: 'S25: S Teltow Stadt< => S Hennigsdorf'
-    station_count: 27
-    ref: S25
-    colour: '#018a47'
-    type: train
-  - 
+
     stations: 
-      - Teltow, S Teltow Stadt
-      - Berlin, S Lichterfelde Süd
-      - Berlin, S Osdorfer Straße
-      - Berlin, S Lichterfelde Ost
-      - Berlin, S Lankwitz
-      - Berlin, S Südende
-      - Berlin, S Priesterweg
-      - Berlin, S Südkreuz (Nord-Süd)
-      - Berlin, S Yorckstraße
-      - Berlin, S Anhalter Bahnhof
-      - Berlin, S Potsdamer Platz
-      - Berlin, S Brandenburger Tor
-      - Berlin, S Friedrichstraße (Tunnel)
-      - Berlin, S Oranienburger Straße
-      - Berlin, S Nordbahnhof
-      - Berlin, S Humboldthain
-      - Berlin, S Gesundbrunnen
-      - Berlin, S Bornholmer Straße
-      - Berlin, S Wollankstraße
+      - Hennigsdorf, S-Bahnhof
+      - Berlin, S Heiligensee
+      - Berlin, S Schulzendorf
+      - Berlin, S Tegel
+      - Berlin, S Eichborndamm
+      - Berlin, S Karl-Bonhoeffer-Nervenklinik
+      - Berlin, S Alt-Reinickendorf
       - Berlin, S Schönholz
-      - Berlin, S Wilhelmsruh
-      - Berlin, S Wittenau
-      - Berlin, S Waidmannslust
+      - Berlin, S Wollankstraße
+      - Berlin, S Bornholmer Straße
+      - Berlin, S Gesundbrunnen
+      - Berlin, S Humboldthain
+      - Berlin, S Nordbahnhof
+      - Berlin, S Oranienburger Straße
+      - Berlin, S Friedrichstraße (Tunnel)
+      - Berlin, S Brandenburger Tor
+      - Berlin, S Potsdamer Platz
+      - Berlin, S Anhalter Bahnhof
+      - Berlin, S Yorckstraße
+      - Berlin, S Südkreuz (Nord-Süd)
+      - Berlin, S Priesterweg
+      - Berlin, S Südende
+      - Berlin, S Lankwitz
+      - Berlin, S Lichterfelde Ost
+      - Berlin, S Osdorfer Straße
+      - Berlin, S Lichterfelde Süd
+      - Teltow, S Teltow Stadt
 
+  - 
+    name: 'S26: S Teltow Stadt <=> S Waidmannslust'
+    type: train
+    ref: S26
+    station_count: 23
+    colour: '#018a47'
     itineraries: 
       r7794032: 
         - S Waidmannslust (n3092447211)
@@ -638,57 +618,38 @@ routes:
         - S Waidmannslust (n3092447211)
 
 
-    name: 'S26: S Teltow Stadt <=> S Waidmannslust'
-    station_count: 23
-    ref: S26
-    colour: '#018a47'
-    type: train
-  - 
     stations: 
-      - Erkner, S-Bahnhof
-      - Berlin, S Wilhelmshagen
-      - Berlin, S Rahnsdorf
-      - Berlin, S Friedrichshagen
-      - Berlin, S Hirschgarten
-      - Berlin, S Köpenick
-      - Berlin, S Wuhlheide
-      - Berlin, S Karlshorst
-      - Berlin, S Betriebsbahnhof Rummelsburg
-      - Berlin, S Rummelsburg
-      - Berlin, S Ostkreuz (Ost-West)
-      - Berlin, S Warschauer Straße
-      - Berlin, S Ostbahnhof
-      - Berlin, S Jannowitzbrücke
-      - Berlin, S Alexanderplatz
-      - Berlin, S Hackescher Markt
-      - Berlin, S Friedrichstraße (Stadtbahn)
-      - Berlin, S Hauptbahnhof
-      - Berlin, S Bellevue
-      - Berlin, S Tiergarten
-      - Berlin, S Zoologischer Garten
-      - Berlin, S Savignyplatz
-      - Berlin, S Charlottenburg
-      - Berlin, S Westkreuz (S3,S7)
-      - Berlin, S Messe Süd (Eichkamp)
-      - Berlin, S Heerstraße
-      - Berlin, S Olympiastadion
-      - Berlin, S Pichelsberg
-      - Berlin, S Stresow
-      - Berlin, S Spandau
+      - Teltow, S Teltow Stadt
+      - Berlin, S Lichterfelde Süd
+      - Berlin, S Osdorfer Straße
+      - Berlin, S Lichterfelde Ost
+      - Berlin, S Lankwitz
+      - Berlin, S Südende
+      - Berlin, S Priesterweg
+      - Berlin, S Südkreuz (Nord-Süd)
+      - Berlin, S Yorckstraße
+      - Berlin, S Anhalter Bahnhof
+      - Berlin, S Potsdamer Platz
+      - Berlin, S Brandenburger Tor
+      - Berlin, S Friedrichstraße (Tunnel)
+      - Berlin, S Oranienburger Straße
+      - Berlin, S Nordbahnhof
+      - Berlin, S Humboldthain
+      - Berlin, S Gesundbrunnen
+      - Berlin, S Bornholmer Straße
+      - Berlin, S Wollankstraße
+      - Berlin, S Schönholz
+      - Berlin, S Wilhelmsruh
+      - Berlin, S Wittenau
+      - Berlin, S Waidmannslust
 
+  - 
+    name: 'S3: S Erkner< => S Spandau'
+    type: train
+    ref: S3
+    station_count: 30
+    colour: '#055a99'
     itineraries: 
-      r9434101: 
-        - S Friedrichshagen (n348348641)
-        - S Hirschgarten (n29919745)
-        - S Köpenick (n523045813)
-        - S Wuhlheide (n353664768)
-        - S Karlshorst (n523045806)
-        - S Betriebsbahnhof Rummelsburg (n523959557)
-        - S Rummelsburg (n29803428)
-        - S Ostkreuz (n670801913)
-        - S Warschauer Straße (n3658970189)
-        - S Ostbahnhof (n2837556546)
-
       r2343465: 
         - S Erkner (n670750126)
         - S Wilhelmshagen (n4012502920)
@@ -733,6 +694,18 @@ routes:
         - S Hirschgarten (n29919745)
         - S Friedrichshagen (n348348641)
 
+      r9434101: 
+        - S Friedrichshagen (n348348641)
+        - S Hirschgarten (n29919745)
+        - S Köpenick (n523045813)
+        - S Wuhlheide (n353664768)
+        - S Karlshorst (n523045806)
+        - S Betriebsbahnhof Rummelsburg (n523959557)
+        - S Rummelsburg (n29803428)
+        - S Ostkreuz (n670801913)
+        - S Warschauer Straße (n3658970189)
+        - S Ostbahnhof (n2837556546)
+
       r2343466: 
         - S Spandau (n4208739688)
         - S Stresow (n2974219763)
@@ -766,41 +739,44 @@ routes:
         - S Erkner (n670750126)
 
 
-    name: 'S3: S Erkner< => S Spandau'
-    station_count: 30
-    ref: S3
-    colour: '#055a99'
-    type: train
-  - 
     stations: 
-      - Berlin, S Gesundbrunnen
-      - Berlin, S Schönhauser Allee
-      - Berlin, S Prenzlauer Allee
-      - Berlin, S Greifswalder Straße
-      - Berlin, S Landsberger Allee
-      - Berlin, S Storkower Straße
-      - Berlin, S Frankfurter Allee
-      - Berlin, S Ostkreuz (Nord-Süd)
-      - Berlin, S Treptower Park
-      - Berlin, S Sonnenallee
-      - Berlin, S Neukölln
-      - Berlin, S Hermannstraße
-      - Berlin, S Tempelhof
-      - Berlin, S Südkreuz (Ringbahn)
-      - Berlin, S Schöneberg (Ringbahn)
-      - Berlin, S Innsbrucker Platz
-      - Berlin, S Bundesplatz
-      - Berlin, S Heidelberger Platz
-      - Berlin, S Hohenzollerndamm
-      - Berlin, S Halensee
-      - Berlin, S Westkreuz (S4)
-      - Berlin, S Messe Nord/ICC
-      - Berlin, S Westend
-      - Berlin, S Jungfernheide
-      - Berlin, S Beusselstraße
-      - Berlin, S Westhafen
-      - Berlin, S Wedding
+      - Erkner, S-Bahnhof
+      - Berlin, S Wilhelmshagen
+      - Berlin, S Rahnsdorf
+      - Berlin, S Friedrichshagen
+      - Berlin, S Hirschgarten
+      - Berlin, S Köpenick
+      - Berlin, S Wuhlheide
+      - Berlin, S Karlshorst
+      - Berlin, S Betriebsbahnhof Rummelsburg
+      - Berlin, S Rummelsburg
+      - Berlin, S Ostkreuz (Ost-West)
+      - Berlin, S Warschauer Straße
+      - Berlin, S Ostbahnhof
+      - Berlin, S Jannowitzbrücke
+      - Berlin, S Alexanderplatz
+      - Berlin, S Hackescher Markt
+      - Berlin, S Friedrichstraße (Stadtbahn)
+      - Berlin, S Hauptbahnhof
+      - Berlin, S Bellevue
+      - Berlin, S Tiergarten
+      - Berlin, S Zoologischer Garten
+      - Berlin, S Savignyplatz
+      - Berlin, S Charlottenburg
+      - Berlin, S Westkreuz (S3,S7)
+      - Berlin, S Messe Süd (Eichkamp)
+      - Berlin, S Heerstraße
+      - Berlin, S Olympiastadion
+      - Berlin, S Pichelsberg
+      - Berlin, S Stresow
+      - Berlin, S Spandau
 
+  - 
+    name: 'S41: Ring im Uhrzeigersinn'
+    type: train
+    ref: S41
+    station_count: 27
+    colour: '#9f4c37'
     itineraries: 
       r14981: 
         - S Gesundbrunnen (n1127966981)
@@ -833,41 +809,41 @@ routes:
         - S Gesundbrunnen (n1127966981)
 
 
-    name: 'S41: Ring im Uhrzeigersinn'
-    station_count: 27
-    ref: S41
-    colour: '#9f4c37'
-    type: train
-  - 
     stations: 
       - Berlin, S Gesundbrunnen
-      - Berlin, S Wedding
-      - Berlin, S Westhafen
-      - Berlin, S Beusselstraße
-      - Berlin, S Jungfernheide
-      - Berlin, S Westend
-      - Berlin, S Messe Nord/ICC
-      - Berlin, S Westkreuz (S4)
-      - Berlin, S Halensee
-      - Berlin, S Hohenzollerndamm
-      - Berlin, S Heidelberger Platz
-      - Berlin, S Bundesplatz
-      - Berlin, S Innsbrucker Platz
-      - Berlin, S Schöneberg (Ringbahn)
-      - Berlin, S Südkreuz (Ringbahn)
-      - Berlin, S Tempelhof
-      - Berlin, S Hermannstraße
-      - Berlin, S Neukölln
-      - Berlin, S Sonnenallee
-      - Berlin, S Treptower Park
-      - Berlin, S Ostkreuz (Nord-Süd)
-      - Berlin, S Frankfurter Allee
-      - Berlin, S Storkower Straße
-      - Berlin, S Landsberger Allee
-      - Berlin, S Greifswalder Straße
-      - Berlin, S Prenzlauer Allee
       - Berlin, S Schönhauser Allee
+      - Berlin, S Prenzlauer Allee
+      - Berlin, S Greifswalder Straße
+      - Berlin, S Landsberger Allee
+      - Berlin, S Storkower Straße
+      - Berlin, S Frankfurter Allee
+      - Berlin, S Ostkreuz (Nord-Süd)
+      - Berlin, S Treptower Park
+      - Berlin, S Sonnenallee
+      - Berlin, S Neukölln
+      - Berlin, S Hermannstraße
+      - Berlin, S Tempelhof
+      - Berlin, S Südkreuz (Ringbahn)
+      - Berlin, S Schöneberg (Ringbahn)
+      - Berlin, S Innsbrucker Platz
+      - Berlin, S Bundesplatz
+      - Berlin, S Heidelberger Platz
+      - Berlin, S Hohenzollerndamm
+      - Berlin, S Halensee
+      - Berlin, S Westkreuz (S4)
+      - Berlin, S Messe Nord/ICC
+      - Berlin, S Westend
+      - Berlin, S Jungfernheide
+      - Berlin, S Beusselstraße
+      - Berlin, S Westhafen
+      - Berlin, S Wedding
 
+  - 
+    name: 'S42: Ring gegen den Uhrzeigersinn'
+    type: train
+    ref: S42
+    station_count: 27
+    colour: '#c36939'
     itineraries: 
       r14983: 
         - S Gesundbrunnen (n1127966981)
@@ -900,45 +876,42 @@ routes:
         - S Gesundbrunnen (n1127966981)
 
 
-    name: 'S42: Ring gegen den Uhrzeigersinn'
-    station_count: 27
-    ref: S42
-    colour: '#c36939'
-    type: train
-  - 
     stations: 
+      - Berlin, S Gesundbrunnen
+      - Berlin, S Wedding
+      - Berlin, S Westhafen
+      - Berlin, S Beusselstraße
+      - Berlin, S Jungfernheide
+      - Berlin, S Westend
+      - Berlin, S Messe Nord/ICC
+      - Berlin, S Westkreuz (S4)
+      - Berlin, S Halensee
+      - Berlin, S Hohenzollerndamm
+      - Berlin, S Heidelberger Platz
+      - Berlin, S Bundesplatz
+      - Berlin, S Innsbrucker Platz
+      - Berlin, S Schöneberg (Ringbahn)
       - Berlin, S Südkreuz (Ringbahn)
       - Berlin, S Tempelhof
       - Berlin, S Hermannstraße
       - Berlin, S Neukölln
-      - Berlin, Köllnische Heide
-      - Berlin, S Baumschulenweg
-      - Berlin, S Schöneweide
-      - Berlin, S Johannisthal
-      - Berlin, S Adlershof
-      - Berlin, S Altglienicke
-      - Berlin, S Grünbergallee
-      - 'Flughafen BER - Terminal 5 [Bahnhof] (S-Bahn)'
-      - Waßmannsdorf, S-Bahnhof
-      - 'Flughafen BER - Terminal 1-2, S-Bahnhof'
+      - Berlin, S Sonnenallee
+      - Berlin, S Treptower Park
+      - Berlin, S Ostkreuz (Nord-Süd)
+      - Berlin, S Frankfurter Allee
+      - Berlin, S Storkower Straße
+      - Berlin, S Landsberger Allee
+      - Berlin, S Greifswalder Straße
+      - Berlin, S Prenzlauer Allee
+      - Berlin, S Schönhauser Allee
 
+  - 
+    name: 'S45: S Flughafen BER - Terminal 1-2 <=> S Südkreuz'
+    type: train
+    ref: S45
+    station_count: 14
+    colour: '#ba8a4d'
     itineraries: 
-      r2139598: 
-        - 'S Flughafen BER - Terminal 1-2 (n1450481793)'
-        - S Waßmannsdorf (n943519070)
-        - 'S Flughafen BER - Terminal 5 (n3541526943)'
-        - S Grünbergallee (n429354074)
-        - S Altglienicke (n3508654676)
-        - S Adlershof (n3508654674)
-        - S Johannisthal (n3140154697)
-        - S Schöneweide (n3508654680)
-        - S Baumschulenweg (n3515302610)
-        - S Köllnische Heide (n3515302613)
-        - S Neukölln (n3515302614)
-        - S Hermannstraße (n3778075167)
-        - S Tempelhof (n1871042745)
-        - S Südkreuz (Ringbahn) (n1095078202)
-
       r2139599: 
         - S Südkreuz (Ringbahn) (n1095078202)
         - S Tempelhof (n1871042745)
@@ -955,19 +928,29 @@ routes:
         - S Waßmannsdorf (n943519070)
         - 'S Flughafen BER - Terminal 1-2 (n1450481793)'
 
+      r2139598: 
+        - 'S Flughafen BER - Terminal 1-2 (n1450481793)'
+        - S Waßmannsdorf (n943519070)
+        - 'S Flughafen BER - Terminal 5 (n3541526943)'
+        - S Grünbergallee (n429354074)
+        - S Altglienicke (n3508654676)
+        - S Adlershof (n3508654674)
+        - S Johannisthal (n3140154697)
+        - S Schöneweide (n3508654680)
+        - S Baumschulenweg (n3515302610)
+        - S Köllnische Heide (n3515302613)
+        - S Neukölln (n3515302614)
+        - S Hermannstraße (n3778075167)
+        - S Tempelhof (n1871042745)
+        - S Südkreuz (Ringbahn) (n1095078202)
 
-    name: 'S45: S Flughafen BER - Terminal 1-2 <=> S Südkreuz'
-    station_count: 14
-    ref: S45
-    colour: '#ba8a4d'
-    type: train
-  - 
+
     stations: 
-      - Königs Wusterhausen, Bahnhof
-      - Wildau,S-Bahnhof
-      - Zeuthen, S-Bahnhof
-      - Eichwalde, S-Bahnhof
-      - Berlin, S Grünau
+      - 'Flughafen BER - Terminal 1-2, S-Bahnhof'
+      - Waßmannsdorf, S-Bahnhof
+      - 'Flughafen BER - Terminal 5 [Bahnhof] (S-Bahn)'
+      - Berlin, S Grünbergallee
+      - Berlin, S Altglienicke
       - Berlin, S Adlershof
       - Berlin, S Johannisthal
       - Berlin, S Schöneweide
@@ -977,16 +960,13 @@ routes:
       - Berlin, S Hermannstraße
       - Berlin, S Tempelhof
       - Berlin, S Südkreuz (Ringbahn)
-      - Berlin, S Schöneberg (Ringbahn)
-      - Berlin, S Innsbrucker Platz
-      - Berlin, S Bundesplatz
-      - Berlin, S Heidelberger Platz
-      - Berlin, S Hohenzollerndamm
-      - Berlin, S Halensee
-      - Berlin, S Westkreuz (S4)
-      - Berlin, S Messe Nord/ICC
-      - Berlin, S Westend
 
+  - 
+    name: 'S46: S Königs Wusterhausen <=> S Westend'
+    type: train
+    ref: S46
+    station_count: 23
+    colour: '#ba8a4d'
     itineraries: 
       r2422929: 
         - S Westend (n26124376)
@@ -1039,31 +1019,38 @@ routes:
         - S Westend (n26124376)
 
 
-    name: 'S46: S Königs Wusterhausen <=> S Westend'
-    station_count: 23
-    ref: S46
-    colour: '#ba8a4d'
-    type: train
-  - 
     stations: 
-      - Berlin, S Hermannstraße
-      - Berlin, S Neukölln
-      - Berlin, Köllnische Heide
-      - Berlin, S Baumschulenweg
+      - Königs Wusterhausen, Bahnhof
+      - Wildau,S-Bahnhof
+      - Zeuthen, S-Bahnhof
+      - Eichwalde, S-Bahnhof
+      - Berlin, S Grünau
+      - Berlin, S Adlershof
+      - Berlin, S Johannisthal
       - Berlin, S Schöneweide
-      - Berlin, S Oberspree
-      - Berlin, S Spindlersfeld
+      - Berlin, S Baumschulenweg
+      - Berlin, Köllnische Heide
+      - Berlin, S Neukölln
+      - Berlin, S Hermannstraße
+      - Berlin, S Tempelhof
+      - Berlin, S Südkreuz (Ringbahn)
+      - Berlin, S Schöneberg (Ringbahn)
+      - Berlin, S Innsbrucker Platz
+      - Berlin, S Bundesplatz
+      - Berlin, S Heidelberger Platz
+      - Berlin, S Hohenzollerndamm
+      - Berlin, S Halensee
+      - Berlin, S Westkreuz (S4)
+      - Berlin, S Messe Nord/ICC
+      - Berlin, S Westend
 
+  - 
+    name: 'S47: S Spindlersfeld <=> S Hermannstraße'
+    type: train
+    ref: S47
+    station_count: 7
+    colour: '#ba8a4d'
     itineraries: 
-      r2413846: 
-        - S Spindlersfeld (n29921519)
-        - S Oberspree (n3515302615)
-        - S Schöneweide (n3508654680)
-        - S Baumschulenweg (n3515302610)
-        - S Köllnische Heide (n3515302613)
-        - S Neukölln (n3515302614)
-        - S Hermannstraße (n3778075167)
-
       r64050: 
         - S Hermannstraße (n3778075167)
         - S Neukölln (n3515302614)
@@ -1073,78 +1060,32 @@ routes:
         - S Oberspree (n3515302615)
         - S Spindlersfeld (n29921519)
 
+      r2413846: 
+        - S Spindlersfeld (n29921519)
+        - S Oberspree (n3515302615)
+        - S Schöneweide (n3508654680)
+        - S Baumschulenweg (n3515302610)
+        - S Köllnische Heide (n3515302613)
+        - S Neukölln (n3515302614)
+        - S Hermannstraße (n3778075167)
 
-    name: 'S47: S Spindlersfeld <=> S Hermannstraße'
-    station_count: 7
-    ref: S47
-    colour: '#ba8a4d'
-    type: train
-  - 
+
     stations: 
-      - Berlin, S Westkreuz (S3,S7)
-      - Berlin, S Charlottenburg
-      - Berlin, S Savignyplatz
-      - Berlin, S Zoologischer Garten
-      - Berlin, S Tiergarten
-      - Berlin, S Bellevue
-      - Berlin, S Hauptbahnhof
-      - Berlin, S Friedrichstraße (Stadtbahn)
-      - Berlin, S Hackescher Markt
-      - Berlin, S Alexanderplatz
-      - Berlin, S Jannowitzbrücke
-      - Berlin, S Ostbahnhof
-      - Berlin, S Warschauer Straße
-      - Berlin, S Ostkreuz (Ost-West)
-      - Berlin, S Nöldnerplatz
-      - Berlin, S Lichtenberg
-      - Berlin, S Friedrichsfelde Ost
-      - Berlin, S Biesdorf
-      - Berlin, S+U Wuhletal
-      - Berlin, S Kaulsdorf
-      - Berlin, S Mahlsdorf
-      - Birkenstein, S-Bahnhof
-      - Hoppegarten, S-Bahnhof
-      - Neuenhagen, S-Bahnhof
-      - Fredersdorf, S-Bahnhof
-      - Petershagen Nord, S-Bahnhof
-      - Strausberg, S-Bahnhof
-      - Hegermühle, S-Bahnhof
-      - Strausberg, S Strausberg Stadt
-      - Strausberg, S Strausberg Nord
+      - Berlin, S Hermannstraße
+      - Berlin, S Neukölln
+      - Berlin, Köllnische Heide
+      - Berlin, S Baumschulenweg
+      - Berlin, S Schöneweide
+      - Berlin, S Oberspree
+      - Berlin, S Spindlersfeld
 
+  - 
+    name: 'S5: S Strausberg Nord <=> S Westkreuz'
+    type: train
+    ref: S5
+    station_count: 30
+    colour: '#f25721'
     itineraries: 
-      r2015959: 
-        - S Westkreuz (n34666754)
-        - S Charlottenburg (n3808290434)
-        - S Savignyplatz (n610324733)
-        - S Zoologischer Garten (n1351158702)
-        - S Tiergarten (n21302157)
-        - S Bellevue (n27528155)
-        - S Hauptbahnhof (n3856100106)
-        - S Friedrichstraße (n3869306763)
-        - S Hackescher Markt (n3867910430)
-        - S Alexanderplatz (n3908141014)
-        - S Jannowitzbrücke (n21487225)
-        - S Ostbahnhof (n2837556546)
-        - S Warschauer Straße (n3658970189)
-        - S Ostkreuz (n670801913)
-        - S Nöldnerplatz (n4999499312)
-        - S Lichtenberg (n3995738144)
-        - S Friedrichsfelde Ost (n29807251)
-        - S Biesdorf (n3998913024)
-        - S+U Wuhletal (n29881358)
-        - S Kaulsdorf (n3866864060)
-        - S Mahlsdorf (n29918297)
-        - S Birkenstein (n4445425988)
-        - S Hoppegarten (Mark) (n3204488807)
-        - S Neuenhagen (n6570284077)
-        - S Fredersdorf (b Berlin) (n59719386)
-        - S Petershagen Nord (n268428524)
-        - S Strausberg (n424261960)
-        - S Hegermühle (n201979104)
-        - S Strausberg Stadt (n31012646)
-        - S Strausberg Nord (n3556219972)
-
       r2015944: 
         - S Strausberg Nord (n3556219972)
         - S Strausberg Stadt (n31012646)
@@ -1177,20 +1118,53 @@ routes:
         - S Charlottenburg (n3808290434)
         - S Westkreuz (n34666754)
 
+      r2015959: 
+        - S Westkreuz (n34666754)
+        - S Charlottenburg (n3808290434)
+        - S Savignyplatz (n610324733)
+        - S Zoologischer Garten (n1351158702)
+        - S Tiergarten (n21302157)
+        - S Bellevue (n27528155)
+        - S Hauptbahnhof (n3856100106)
+        - S Friedrichstraße (n3869306763)
+        - S Hackescher Markt (n3867910430)
+        - S Alexanderplatz (n3908141014)
+        - S Jannowitzbrücke (n21487225)
+        - S Ostbahnhof (n2837556546)
+        - S Warschauer Straße (n3658970189)
+        - S Ostkreuz (n670801913)
+        - S Nöldnerplatz (n4999499312)
+        - S Lichtenberg (n3995738144)
+        - S Friedrichsfelde Ost (n29807251)
+        - S Biesdorf (n3998913024)
+        - S+U Wuhletal (n29881358)
+        - S Kaulsdorf (n3866864060)
+        - S Mahlsdorf (n29918297)
+        - S Birkenstein (n4445425988)
+        - S Hoppegarten (Mark) (n3204488807)
+        - S Neuenhagen (n6570284077)
+        - S Fredersdorf (b Berlin) (n59719386)
+        - S Petershagen Nord (n268428524)
+        - S Strausberg (n424261960)
+        - S Hegermühle (n201979104)
+        - S Strausberg Stadt (n31012646)
+        - S Strausberg Nord (n3556219972)
 
-    name: 'S5: S Strausberg Nord <=> S Westkreuz'
-    station_count: 30
-    ref: S5
-    colour: '#f25721'
-    type: train
-  - 
+
     stations: 
-      - Berlin, S Ahrensfelde
-      - Berlin, S Mehrower Allee
-      - Berlin, S Raoul-Wallenberg-Straße
-      - Berlin, S Marzahn
-      - Berlin, S Poelchaustraße
-      - Berlin, S Springpfuhl
+      - Strausberg, S Strausberg Nord
+      - Strausberg, S Strausberg Stadt
+      - Hegermühle, S-Bahnhof
+      - Strausberg, S-Bahnhof
+      - Petershagen Nord, S-Bahnhof
+      - Fredersdorf, S-Bahnhof
+      - Neuenhagen, S-Bahnhof
+      - Hoppegarten, S-Bahnhof
+      - Birkenstein, S-Bahnhof
+      - Berlin, S Mahlsdorf
+      - Berlin, S Kaulsdorf
+      - Berlin, S+U Wuhletal
+      - Berlin, S Biesdorf
       - Berlin, S Friedrichsfelde Ost
       - Berlin, S Lichtenberg
       - Berlin, S Nöldnerplatz
@@ -1208,13 +1182,13 @@ routes:
       - Berlin, S Savignyplatz
       - Berlin, S Charlottenburg
       - Berlin, S Westkreuz (S3,S7)
-      - Berlin, S Grunewald
-      - Berlin, S Nikolassee (S7)
-      - Berlin, S Wannsee
-      - Griebnitzsee, S-Bahnhof
-      - Babelsberg, S-Bahnhof
-      - Potsdam, S Hauptbahnhof
 
+  - 
+    name: 'S7: S Ahrensfelde <=> S Potsdam Hauptbahnhof'
+    type: train
+    ref: S7
+    station_count: 29
+    colour: '#8070b7'
     itineraries: 
       r2017024: 
         - S Potsdam Hauptbahnhof (n30232718)
@@ -1279,37 +1253,44 @@ routes:
         - S Potsdam Hauptbahnhof (n30232718)
 
 
-    name: 'S7: S Ahrensfelde <=> S Potsdam Hauptbahnhof'
-    station_count: 29
-    ref: S7
-    colour: '#8070b7'
-    type: train
-  - 
     stations: 
-      - Berlin, S Ostbahnhof
-      - Berlin, S Warschauer Straße
-      - Berlin, S Ostkreuz (Ost-West)
-      - Berlin, S Nöldnerplatz
-      - Berlin, S Lichtenberg
-      - Berlin, S Friedrichsfelde Ost
+      - Berlin, S Ahrensfelde
+      - Berlin, S Mehrower Allee
+      - Berlin, S Raoul-Wallenberg-Straße
+      - Berlin, S Marzahn
+      - Berlin, S Poelchaustraße
       - Berlin, S Springpfuhl
-      - Berlin, S Gehrenseestraße
-      - Berlin, S Hohenschönhausen
-      - Berlin, S Wartenberg
+      - Berlin, S Friedrichsfelde Ost
+      - Berlin, S Lichtenberg
+      - Berlin, S Nöldnerplatz
+      - Berlin, S Ostkreuz (Ost-West)
+      - Berlin, S Warschauer Straße
+      - Berlin, S Ostbahnhof
+      - Berlin, S Jannowitzbrücke
+      - Berlin, S Alexanderplatz
+      - Berlin, S Hackescher Markt
+      - Berlin, S Friedrichstraße (Stadtbahn)
+      - Berlin, S Hauptbahnhof
+      - Berlin, S Bellevue
+      - Berlin, S Tiergarten
+      - Berlin, S Zoologischer Garten
+      - Berlin, S Savignyplatz
+      - Berlin, S Charlottenburg
+      - Berlin, S Westkreuz (S3,S7)
+      - Berlin, S Grunewald
+      - Berlin, S Nikolassee (S7)
+      - Berlin, S Wannsee
+      - Griebnitzsee, S-Bahnhof
+      - Babelsberg, S-Bahnhof
+      - Potsdam, S Hauptbahnhof
 
+  - 
+    name: 'S75: S Wartenberg <=> S Ostbahnhof'
+    type: train
+    ref: S75
+    station_count: 10
+    colour: '#8070b7'
     itineraries: 
-      r2174798: 
-        - S Wartenberg (n30688292)
-        - S Hohenschönhausen (n30688290)
-        - S Gehrenseestraße (n30688242)
-        - S Springpfuhl (n4071360788)
-        - S Friedrichsfelde Ost (n29807251)
-        - S Lichtenberg (n3995738144)
-        - S Nöldnerplatz (n4999499312)
-        - S Ostkreuz (n670801913)
-        - S Warschauer Straße (n3658970189)
-        - S Ostbahnhof (n2837556546)
-
       r2174797: 
         - S Ostbahnhof (n2837556546)
         - S Warschauer Straße (n3658970189)
@@ -1322,40 +1303,37 @@ routes:
         - S Hohenschönhausen (n30688290)
         - S Wartenberg (n30688292)
 
+      r2174798: 
+        - S Wartenberg (n30688292)
+        - S Hohenschönhausen (n30688290)
+        - S Gehrenseestraße (n30688242)
+        - S Springpfuhl (n4071360788)
+        - S Friedrichsfelde Ost (n29807251)
+        - S Lichtenberg (n3995738144)
+        - S Nöldnerplatz (n4999499312)
+        - S Ostkreuz (n670801913)
+        - S Warschauer Straße (n3658970189)
+        - S Ostbahnhof (n2837556546)
 
-    name: 'S75: S Wartenberg <=> S Ostbahnhof'
-    station_count: 10
-    ref: S75
-    colour: '#8070b7'
-    type: train
-  - 
+
     stations: 
-      - Birkenwerder, S-Bahnhof
-      - Hohen Neuendorf, S-Bahnhof
-      - Bergfelde, S-Bahnhof
-      - Schönfließ, S-Bahnhof
-      - Mühlenbeck-Mönchmühle, S-Bahnhof
-      - Berlin, S Blankenburg
-      - Berlin, S Pankow-Heinersdorf
-      - Berlin, S Pankow
-      - Berlin, S Bornholmer Straße
-      - Berlin, S Schönhauser Allee
-      - Berlin, S Prenzlauer Allee
-      - Berlin, S Greifswalder Straße
-      - Berlin, S Landsberger Allee
-      - Berlin, S Storkower Straße
-      - Berlin, S Frankfurter Allee
-      - Berlin, S Ostkreuz (Nord-Süd)
-      - Berlin, S Treptower Park
-      - Berlin, S Plänterwald
-      - Berlin, S Baumschulenweg
-      - Berlin, S Schöneweide
-      - Berlin, S Johannisthal
-      - Berlin, S Adlershof
-      - Berlin, S Grünau
-      - Eichwalde, S-Bahnhof
-      - Zeuthen, S-Bahnhof
+      - Berlin, S Wartenberg
+      - Berlin, S Hohenschönhausen
+      - Berlin, S Gehrenseestraße
+      - Berlin, S Springpfuhl
+      - Berlin, S Friedrichsfelde Ost
+      - Berlin, S Lichtenberg
+      - Berlin, S Nöldnerplatz
+      - Berlin, S Ostkreuz (Ost-West)
+      - Berlin, S Warschauer Straße
+      - Berlin, S Ostbahnhof
 
+  - 
+    name: 'S8: S Zeuthen <=> S Birkenwerder'
+    type: train
+    ref: S8
+    station_count: 25
+    colour: '#52b447'
     itineraries: 
       r2269252: 
         - S Zeuthen (n3508978359)
@@ -1412,13 +1390,14 @@ routes:
         - S Zeuthen (n3508978359)
 
 
-    name: 'S8: S Zeuthen <=> S Birkenwerder'
-    station_count: 25
-    ref: S8
-    colour: '#52b447'
-    type: train
-  - 
     stations: 
+      - Birkenwerder, S-Bahnhof
+      - Hohen Neuendorf, S-Bahnhof
+      - Bergfelde, S-Bahnhof
+      - Schönfließ, S-Bahnhof
+      - Mühlenbeck-Mönchmühle, S-Bahnhof
+      - Berlin, S Blankenburg
+      - Berlin, S Pankow-Heinersdorf
       - Berlin, S Pankow
       - Berlin, S Bornholmer Straße
       - Berlin, S Schönhauser Allee
@@ -1435,8 +1414,52 @@ routes:
       - Berlin, S Johannisthal
       - Berlin, S Adlershof
       - Berlin, S Grünau
+      - Eichwalde, S-Bahnhof
+      - Zeuthen, S-Bahnhof
 
+  - 
+    name: 'S85: S Grünau <=> S Pankow'
+    type: train
+    ref: S85
+    station_count: 16
+    colour: '#52b447'
     itineraries: 
+      r2979451: 
+        - S Pankow (n4949971070)
+        - S Bornholmer Straße (n2567991414)
+        - S Schönhauser Allee (n316785013)
+        - S Prenzlauer Allee (n3154211735)
+        - S Greifswalder Straße (n3659830181)
+        - S Landsberger Allee (n3872632789)
+        - S Storkower Straße (n21385751)
+        - S Frankfurter Allee (n257981401)
+        - S Ostkreuz (Ringbahn) (n5284961126)
+        - S Treptower Park (n261941954)
+        - S Plänterwald (n3515302616)
+        - S Baumschulenweg (n3515302610)
+        - S Schöneweide (n3508654680)
+        - S Johannisthal (n3140154697)
+        - S Adlershof (n3508654674)
+        - S Grünau (n3508654679)
+
+      r2979449: 
+        - S Grünau (n3508654679)
+        - S Adlershof (n3508654674)
+        - S Johannisthal (n3140154697)
+        - S Schöneweide (n3508654680)
+        - S Baumschulenweg (n3515302610)
+        - S Plänterwald (n3515302616)
+        - S Treptower Park (n261941954)
+        - S Ostkreuz (Ringbahn) (n5284961126)
+        - S Frankfurter Allee (n257981401)
+        - S Storkower Straße (n21385751)
+        - S Landsberger Allee (n3872632789)
+        - S Greifswalder Straße (n3659830181)
+        - S Prenzlauer Allee (n3154211735)
+        - S Schönhauser Allee (n316785013)
+        - S Bornholmer Straße (n2567991414)
+        - S Pankow (n4949971070)
+
       r2979450: 
         - S Schöneweide (n3508654680)
         - S Baumschulenweg (n3515302610)
@@ -1467,81 +1490,31 @@ routes:
         - S Baumschulenweg (n3515302610)
         - S Schöneweide (n3508654680)
 
-      r2979449: 
-        - S Grünau (n3508654679)
-        - S Adlershof (n3508654674)
-        - S Johannisthal (n3140154697)
-        - S Schöneweide (n3508654680)
-        - S Baumschulenweg (n3515302610)
-        - S Plänterwald (n3515302616)
-        - S Treptower Park (n261941954)
-        - S Ostkreuz (Ringbahn) (n5284961126)
-        - S Frankfurter Allee (n257981401)
-        - S Storkower Straße (n21385751)
-        - S Landsberger Allee (n3872632789)
-        - S Greifswalder Straße (n3659830181)
-        - S Prenzlauer Allee (n3154211735)
-        - S Schönhauser Allee (n316785013)
-        - S Bornholmer Straße (n2567991414)
-        - S Pankow (n4949971070)
 
-      r2979451: 
-        - S Pankow (n4949971070)
-        - S Bornholmer Straße (n2567991414)
-        - S Schönhauser Allee (n316785013)
-        - S Prenzlauer Allee (n3154211735)
-        - S Greifswalder Straße (n3659830181)
-        - S Landsberger Allee (n3872632789)
-        - S Storkower Straße (n21385751)
-        - S Frankfurter Allee (n257981401)
-        - S Ostkreuz (Ringbahn) (n5284961126)
-        - S Treptower Park (n261941954)
-        - S Plänterwald (n3515302616)
-        - S Baumschulenweg (n3515302610)
-        - S Schöneweide (n3508654680)
-        - S Johannisthal (n3140154697)
-        - S Adlershof (n3508654674)
-        - S Grünau (n3508654679)
-
-
-    name: 'S85: S Grünau <=> S Pankow'
-    station_count: 16
-    ref: S85
-    colour: '#52b447'
-    type: train
-  - 
     stations: 
-      - Berlin, S Spandau
-      - Berlin, S Stresow
-      - Berlin, S Pichelsberg
-      - Berlin, S Olympiastadion
-      - Berlin, S Heerstraße
-      - Berlin, S Messe Süd (Eichkamp)
-      - Berlin, S Westkreuz (S3,S7)
-      - Berlin, S Charlottenburg
-      - Berlin, S Savignyplatz
-      - Berlin, S Zoologischer Garten
-      - Berlin, S Tiergarten
-      - Berlin, S Bellevue
-      - Berlin, S Hauptbahnhof
-      - Berlin, S Friedrichstraße (Stadtbahn)
-      - Berlin, S Hackescher Markt
-      - Berlin, S Alexanderplatz
-      - Berlin, S Jannowitzbrücke
-      - Berlin, S Ostbahnhof
-      - Berlin, S Warschauer Straße
-      - Berlin, S Treptower Park
-      - Berlin, S Plänterwald
-      - Berlin, S Baumschulenweg
-      - Berlin, S Schöneweide
-      - Berlin, S Johannisthal
+      - Berlin, S Grünau
       - Berlin, S Adlershof
-      - Berlin, S Altglienicke
-      - Berlin, S Grünbergallee
-      - 'Flughafen BER - Terminal 5 [Bahnhof] (S-Bahn)'
-      - Waßmannsdorf, S-Bahnhof
-      - 'Flughafen BER - Terminal 1-2, S-Bahnhof'
+      - Berlin, S Johannisthal
+      - Berlin, S Schöneweide
+      - Berlin, S Baumschulenweg
+      - Berlin, S Plänterwald
+      - Berlin, S Treptower Park
+      - Berlin, S Ostkreuz (Nord-Süd)
+      - Berlin, S Frankfurter Allee
+      - Berlin, S Storkower Straße
+      - Berlin, S Landsberger Allee
+      - Berlin, S Greifswalder Straße
+      - Berlin, S Prenzlauer Allee
+      - Berlin, S Schönhauser Allee
+      - Berlin, S Bornholmer Straße
+      - Berlin, S Pankow
 
+  - 
+    name: 'S9: S Flughafen BER - Terminal 1-2 <=> S Spandau'
+    type: train
+    ref: S9
+    station_count: 30
+    colour: '#9a3052'
     itineraries: 
       r2389945: 
         - 'S Flughafen BER - Terminal 1-2 (n1450481793)'
@@ -1608,9 +1581,36 @@ routes:
         - 'S Flughafen BER - Terminal 1-2 (n1450481793)'
 
 
-    name: 'S9: S Flughafen BER - Terminal 1-2 <=> S Spandau'
-    station_count: 30
-    ref: S9
-    colour: '#9a3052'
-    type: train
+    stations: 
+      - Berlin, S Spandau
+      - Berlin, S Stresow
+      - Berlin, S Pichelsberg
+      - Berlin, S Olympiastadion
+      - Berlin, S Heerstraße
+      - Berlin, S Messe Süd (Eichkamp)
+      - Berlin, S Westkreuz (S3,S7)
+      - Berlin, S Charlottenburg
+      - Berlin, S Savignyplatz
+      - Berlin, S Zoologischer Garten
+      - Berlin, S Tiergarten
+      - Berlin, S Bellevue
+      - Berlin, S Hauptbahnhof
+      - Berlin, S Friedrichstraße (Stadtbahn)
+      - Berlin, S Hackescher Markt
+      - Berlin, S Alexanderplatz
+      - Berlin, S Jannowitzbrücke
+      - Berlin, S Ostbahnhof
+      - Berlin, S Warschauer Straße
+      - Berlin, S Treptower Park
+      - Berlin, S Plänterwald
+      - Berlin, S Baumschulenweg
+      - Berlin, S Schöneweide
+      - Berlin, S Johannisthal
+      - Berlin, S Adlershof
+      - Berlin, S Altglienicke
+      - Berlin, S Grünbergallee
+      - 'Flughafen BER - Terminal 5 [Bahnhof] (S-Bahn)'
+      - Waßmannsdorf, S-Bahnhof
+      - 'Flughafen BER - Terminal 1-2, S-Bahnhof'
+
 

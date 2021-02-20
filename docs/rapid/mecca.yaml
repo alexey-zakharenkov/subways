@@ -14,29 +14,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - محطة عرفات رقم 1
-      - محطة عرفات رقم 2
-      - محطة عرفات رقم 3
-      - محطة مزدلفة رقم 1
-      - محطة مزدلفة رقم 2
-      - محطة مزدلفة رقم 3
-      - محطة منى رقم 1
-      - محطة منى رقم 2
-      - الجمرات
-
+    name: قطار المشاعر المقدسة الخط الجنوبي
+    type: subway
+    ref: S
+    station_count: 9
+    colour: '#ffc0cb'
     itineraries: 
-      r7734267: 
-        - Jamarat (Mina Station 3) (n6024783454)
-        - Mina Station 2 (n4534822205)
-        - Mina Station 1 (n4534822206)
-        - Muzdalifah Station 3 (n4534824625)
-        - Muzdalifah Station 2 (n4534834974)
-        - Muzdalifah Station 1 (n4534838647)
-        - Arafat Station 3 (n4534861098)
-        - Arafat Station 2 (n4534861099)
-        - Arafat Station 1 (n4534861100)
-
       r1273546: 
         - Arafat Station 1 (n4534861100)
         - Arafat Station 2 (n4534861099)
@@ -48,10 +31,27 @@ routes:
         - Mina Station 2 (n4534822205)
         - Jamarat (Mina Station 3) (n6024783454)
 
+      r7734267: 
+        - Jamarat (Mina Station 3) (n6024783454)
+        - Mina Station 2 (n4534822205)
+        - Mina Station 1 (n4534822206)
+        - Muzdalifah Station 3 (n4534824625)
+        - Muzdalifah Station 2 (n4534834974)
+        - Muzdalifah Station 1 (n4534838647)
+        - Arafat Station 3 (n4534861098)
+        - Arafat Station 2 (n4534861099)
+        - Arafat Station 1 (n4534861100)
 
-    name: قطار المشاعر المقدسة الخط الجنوبي
-    station_count: 9
-    ref: S
-    colour: '#ffc0cb'
-    type: subway
+
+    stations: 
+      - الجمرات
+      - محطة منى رقم 2
+      - محطة منى رقم 1
+      - محطة مزدلفة رقم 3
+      - محطة مزدلفة رقم 2
+      - محطة مزدلفة رقم 1
+      - محطة عرفات رقم 3
+      - محطة عرفات رقم 2
+      - محطة عرفات رقم 1
+
 

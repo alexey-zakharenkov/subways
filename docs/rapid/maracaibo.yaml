@@ -11,14 +11,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Altos de la Vanega
-      - El Varillal
-      - El Guayabal
-      - Sabaneta
-      - Urdaneta
-      - Estación Libertador
-
+    name: Línea 1
+    type: light_rail
+    ref: 1
+    station_count: 6
+    colour: '#008000'
     itineraries: 
       r7734068: 
         - Estación Libertador (n1214877477)
@@ -37,9 +34,12 @@ routes:
         - Estación Libertador (n1214877477)
 
 
-    name: Línea 1
-    station_count: 6
-    ref: 1
-    colour: '#008000'
-    type: light_rail
+    stations: 
+      - Estación Libertador
+      - Urdaneta
+      - Sabaneta
+      - El Guayabal
+      - El Varillal
+      - Altos de la Vanega
+
 

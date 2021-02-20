@@ -26,14 +26,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 千葉みなと
-      - 市役所前
-      - 千葉
-      - 栄町
-      - 葭川公園
-      - 県庁前
-
+    name: 千葉都市モノレール1号線
+    type: monorail
+    ref: 1号線
+    station_count: 6
+    colour: '#23ac38'
     itineraries: 
       r7715379: 
         - 千葉みなと (n2706937295)
@@ -52,29 +49,20 @@ routes:
         - 千葉みなと (n2706937295)
 
 
-    name: 千葉都市モノレール1号線
-    station_count: 6
-    ref: 1号線
-    colour: '#23ac38'
-    type: monorail
-  - 
     stations: 
-      - 千城台
-      - 千城台北
-      - 小倉台
-      - 桜木
-      - 都賀
-      - みつわ台
-      - 動物公園
-      - スポーツセンター
-      - 穴川
-      - 天台
-      - 作草部
-      - 千葉公園
-      - 千葉
-      - 市役所前
       - 千葉みなと
+      - 市役所前
+      - 千葉
+      - 栄町
+      - 葭川公園
+      - 県庁前
 
+  - 
+    name: 千葉都市モノレール2号線
+    type: monorail
+    ref: 2号線
+    station_count: 15
+    colour: '#ea5413'
     itineraries: 
       r3952117: 
         - 千葉みなと (n2706937295)
@@ -111,9 +99,21 @@ routes:
         - 千葉みなと (n2706937295)
 
 
-    name: 千葉都市モノレール2号線
-    station_count: 15
-    ref: 2号線
-    colour: '#ea5413'
-    type: monorail
+    stations: 
+      - 千城台
+      - 千城台北
+      - 小倉台
+      - 桜木
+      - 都賀
+      - みつわ台
+      - 動物公園
+      - スポーツセンター
+      - 穴川
+      - 天台
+      - 作草部
+      - 千葉公園
+      - 千葉
+      - 市役所前
+      - 千葉みなと
+
 

@@ -22,25 +22,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 'Sant''Eufemia - Buffalora'
-      - Sanpolino
-      - San Polo
-      - San Polo Parco
-      - Poliambulanza
-      - Volta
-      - Lamarmora
-      - Bresciadue
-      - Stazione FS
-      - Vittoria
-      - San Faustino
-      - Marconi
-      - Ospedale
-      - Europa
-      - Mompiano
-      - Casazza
-      - Prealpino
-
+    name: Brescia Metro
+    type: subway
+    ref: Metropolitana
+    station_count: 17
+    colour: '#030f3f'
     itineraries: 
       r2797902: 
         - 'Sant''Eufemia - Buffalora (n1719862292)'
@@ -81,9 +67,23 @@ routes:
         - 'Sant''Eufemia - Buffalora (n1719862292)'
 
 
-    name: Brescia Metro
-    station_count: 17
-    ref: Metropolitana
-    colour: '#030f3f'
-    type: subway
+    stations: 
+      - Prealpino
+      - Casazza
+      - Mompiano
+      - Europa
+      - Ospedale
+      - Marconi
+      - San Faustino
+      - Vittoria
+      - Stazione FS
+      - Bresciadue
+      - Lamarmora
+      - Volta
+      - Poliambulanza
+      - San Polo Parco
+      - San Polo
+      - Sanpolino
+      - 'Sant''Eufemia - Buffalora'
+
 

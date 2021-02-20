@@ -27,30 +27,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Aluva
-      - Pulinchodu
-      - Companypady
-      - Ambattukavu
-      - Muttom
-      - Kalamassery Town
-      - Cochin University
-      - Pathadipalam
-      - Edapally
-      - Changampuzha Park
-      - Palarivattom
-      - JLN Stadium
-      - Kaloor
-      - Lissie
-      - M. G. Road
-      - Maharaja's College
-      - Ernakulam South
-      - Kadavanthra
-      - Elamkulam
-      - Vyttila
-      - Thykoodam
-      - Pettah
-
+    name: Kochi Metro Phase I
+    type: subway
+    ref: I
+    station_count: 22
+    colour: '#7fffd4'
     itineraries: 
       r7834959: 
         - Pettah (n7883924233)
@@ -101,9 +82,28 @@ routes:
         - Pettah (n7883924233)
 
 
-    name: Kochi Metro Phase I
-    station_count: 22
-    ref: I
-    colour: '#7fffd4'
-    type: subway
+    stations: 
+      - Pettah
+      - Thykoodam
+      - Vyttila
+      - Elamkulam
+      - Kadavanthra
+      - Ernakulam South
+      - Maharaja's College
+      - M. G. Road
+      - Lissie
+      - Kaloor
+      - JLN Stadium
+      - Palarivattom
+      - Changampuzha Park
+      - Edapally
+      - Pathadipalam
+      - Cochin University
+      - Kalamassery Town
+      - Muttom
+      - Ambattukavu
+      - Companypady
+      - Pulinchodu
+      - Aluva
+
 

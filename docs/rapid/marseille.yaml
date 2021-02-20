@@ -37,47 +37,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - La Rose
-      - Frais Vallon
-      - Malpassé
-      - 'Saint-Just - Hôtel de Région'
-      - Chartreux
-      - Cinq Avenues
-      - 'Réformés - Canebière'
-      - Gare de Marseille-Saint-Charles
-      - Colbert
-      - Vieux Port
-      - 'Estrangin - Préfecture'
-      - Castellane — M1
-      - Baille
-      - Métro La Timone
-      - Gare de Marseille-Blancarde
-      - Louis Armand
-      - Saint-Barnabé
-      - La Fourragère
-
+    name: Métro 1
+    type: subway
+    ref: M1
+    station_count: 18
+    colour: '#0075be'
     itineraries: 
-      r6274530: 
-        - La Fourragère (w420359087)
-        - Saint-Barnabé (w420371086)
-        - Louis Armand (w420622796)
-        - La Blancarde (w417386008)
-        - La Timone (w420876804)
-        - Baille (w420876794)
-        - Castellane (w419323764)
-        - 'Estrangin - Préfecture (r6259015)'
-        - Vieux Port (w421161746)
-        - Colbert (w421354629)
-        - Saint-Charles (r6261852)
-        - 'Réformés - Canebière (w421543469)'
-        - Cinq Avenues Longchamp (w421543456)
-        - Chartreux (w421543446)
-        - Saint-Just (w421631063)
-        - Malpassé (w421630988)
-        - Frais Vallon (n5423852350)
-        - La Rose (w421630984)
-
       r6274531: 
         - La Rose (w421630984)
         - Frais Vallon (n5423852350)
@@ -98,28 +63,53 @@ routes:
         - Saint-Barnabé (w420371086)
         - La Fourragère (w420359087)
 
+      r6274530: 
+        - La Fourragère (w420359087)
+        - Saint-Barnabé (w420371086)
+        - Louis Armand (w420622796)
+        - La Blancarde (w417386008)
+        - La Timone (w420876804)
+        - Baille (w420876794)
+        - Castellane (w419323764)
+        - 'Estrangin - Préfecture (r6259015)'
+        - Vieux Port (w421161746)
+        - Colbert (w421354629)
+        - Saint-Charles (r6261852)
+        - 'Réformés - Canebière (w421543469)'
+        - Cinq Avenues Longchamp (w421543456)
+        - Chartreux (w421543446)
+        - Saint-Just (w421631063)
+        - Malpassé (w421630988)
+        - Frais Vallon (n5423852350)
+        - La Rose (w421630984)
 
-    name: Métro 1
-    station_count: 18
-    ref: M1
-    colour: '#0075be'
-    type: subway
-  - 
+
     stations: 
-      - Métro Gèze
-      - Bougainville
-      - National
-      - Désirée Clary
-      - Joliette
-      - Jules Guesde
+      - La Fourragère
+      - Saint-Barnabé
+      - Louis Armand
+      - Gare de Marseille-Blancarde
+      - Métro La Timone
+      - Baille
+      - Castellane — M1
+      - 'Estrangin - Préfecture'
+      - Vieux Port
+      - Colbert
       - Gare de Marseille-Saint-Charles
-      - 'Noailles - Canebière-Garibaldi'
-      - 'Notre-Dame-du-Mont - Cours Julien'
-      - Castellane — M2
-      - Prado-Périer
-      - Rond-Point du Prado
-      - Sainte-Marguerite Dromel
+      - 'Réformés - Canebière'
+      - Cinq Avenues
+      - Chartreux
+      - 'Saint-Just - Hôtel de Région'
+      - Malpassé
+      - Frais Vallon
+      - La Rose
 
+  - 
+    name: Metro 2
+    type: subway
+    ref: M2
+    station_count: 13
+    colour: '#e30513'
     itineraries: 
       r6274533: 
         - Sainte-Marguerite Dromel (w419035089)
@@ -152,9 +142,19 @@ routes:
         - Sainte-Marguerite Dromel (w419035089)
 
 
-    name: Metro 2
-    station_count: 13
-    ref: M2
-    colour: '#e30513'
-    type: subway
+    stations: 
+      - Métro Gèze
+      - Bougainville
+      - National
+      - Désirée Clary
+      - Joliette
+      - Jules Guesde
+      - Gare de Marseille-Saint-Charles
+      - 'Noailles - Canebière-Garibaldi'
+      - 'Notre-Dame-du-Mont - Cours Julien'
+      - Castellane — M2
+      - Prado-Périer
+      - Rond-Point du Prado
+      - Sainte-Marguerite Dromel
+
 

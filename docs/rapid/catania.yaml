@@ -15,18 +15,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Stesicoro
-      - Giovanni XXIII
-      - Galatea
-      - Italia
-      - Giuffrida
-      - Borgo
-      - Milo
-      - Cibali
-      - San Nullo
-      - Nesima
-
+    name: Metropolitana di Catania
+    type: subway
+    ref: 1
+    station_count: 10
+    colour: '#ff0000'
     itineraries: 
       r6878036: 
         - Stesicoro (n8388857187)
@@ -41,9 +34,16 @@ routes:
         - Nesima (n8388857178)
 
 
-    name: Metropolitana di Catania
-    station_count: 10
-    ref: 1
-    colour: '#ff0000'
-    type: subway
+    stations: 
+      - Stesicoro
+      - Giovanni XXIII
+      - Galatea
+      - Italia
+      - Giuffrida
+      - Borgo
+      - Milo
+      - Cibali
+      - San Nullo
+      - Nesima
+
 

@@ -20,23 +20,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 东莞火车站
-      - 茶山
-      - 榴花公园
-      - 下桥
-      - 天宝
-      - 东城
-      - 旗峰公园
-      - 鸿福路
-      - 西平
-      - 蛤地
-      - 陈屋
-      - 寮厦
-      - 珊美
-      - 展览中心
-      - 虎门火车
-
+    name: 东莞轨道交通2号线
+    type: subway
+    ref: 2
+    station_count: 15
+    colour: '#ed1c24'
     itineraries: 
       r7986214: 
         - 虎门火车站 (n7942711900)
@@ -73,9 +61,21 @@ routes:
         - 虎门火车站 (n7942711900)
 
 
-    name: 东莞轨道交通2号线
-    station_count: 15
-    ref: 2
-    colour: '#ed1c24'
-    type: subway
+    stations: 
+      - 虎门火车
+      - 展览中心
+      - 珊美
+      - 寮厦
+      - 陈屋
+      - 蛤地
+      - 西平
+      - 鸿福路
+      - 旗峰公园
+      - 东城
+      - 天宝
+      - 下桥
+      - 榴花公园
+      - 茶山
+      - 东莞火车站
+
 

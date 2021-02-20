@@ -26,22 +26,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Natal
-      - Alecrim I
-      - Quintas
-      - Igapó
-      - Santa Catarina
-      - Soledade
-      - Nova Natal
-      - Nordelândia
-      - Estrela do Mar
-      - Extremoz
-      - Raposa
-      - Massangana
-      - Lagoa Grande
-      - Ceará-Mirim
-
+    name: Linha Norte
+    type: light_rail
+    ref: Norte
+    station_count: 14
+    colour: '#0000ff'
     itineraries: 
       r1229611: 
         - Natal (r9471190)
@@ -76,33 +65,29 @@ routes:
         - Natal (r9471190)
 
 
-    name: Linha Norte
-    station_count: 14
-    ref: Norte
-    colour: '#0000ff'
-    type: light_rail
-  - 
     stations: 
-      - Cidade Satélite
-      - Pitimbu
-      - Prómorar
-      - Cidade Esperança
-      - Bom Pastor
-      - Padre João Maria
-      - Alecrim II
+      - Ceará-Mirim
+      - Lagoa Grande
+      - Massangana
+      - Raposa
+      - Extremoz
+      - Estrela do Mar
+      - Nordelândia
+      - Nova Natal
+      - Soledade
+      - Santa Catarina
+      - Igapó
+      - Quintas
+      - Alecrim I
       - Natal
 
+  - 
+    name: Linha Sul
+    type: light_rail
+    ref: Sul
+    station_count: 8
+    colour: '#0000ff'
     itineraries: 
-      r9881790: 
-        - Natal (r9471190)
-        - Alecrim II (r9471192)
-        - Padre João Maria (w180048912)
-        - Bom Pastor (n317024128)
-        - Cidade Esperança (n6080723226)
-        - Prómorar (w180006258)
-        - Pitimbu (n6680674500)
-        - Cidade Satélite (n6080723244)
-
       r1229613: 
         - Cidade Satélite (n6080723244)
         - Pitimbu (n6680674500)
@@ -113,10 +98,25 @@ routes:
         - Alecrim II (r9471192)
         - Natal (r9471190)
 
+      r9881790: 
+        - Natal (r9471190)
+        - Alecrim II (r9471192)
+        - Padre João Maria (w180048912)
+        - Bom Pastor (n317024128)
+        - Cidade Esperança (n6080723226)
+        - Prómorar (w180006258)
+        - Pitimbu (n6680674500)
+        - Cidade Satélite (n6080723244)
 
-    name: Linha Sul
-    station_count: 8
-    ref: Sul
-    colour: '#0000ff'
-    type: light_rail
+
+    stations: 
+      - Cidade Satélite
+      - Pitimbu
+      - Prómorar
+      - Cidade Esperança
+      - Bom Pastor
+      - Padre João Maria
+      - Alecrim II
+      - Natal
+
 

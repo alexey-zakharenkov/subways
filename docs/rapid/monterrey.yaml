@@ -39,27 +39,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Exposición
-      - Lerdo de Tejada
-      - Eloy Cavazos
-      - Y Griega
-      - Parque Fundidora
-      - Félix U. Gomez
-      - Del Golfo
-      - Cuauhtémoc
-      - Central
-      - Edison
-      - Hospital
-      - Simón Bolivar
-      - Mitras
-      - Alfonso Reyes
-      - Penitenciaria
-      - Aztlan
-      - Unidad Modelo
-      - San Bernabé
-      - Talleres
-
+    name: Línea 1
+    type: subway
+    ref: 1
+    station_count: 19
+    colour: '#fec04f'
     itineraries: 
       r7890221: 
         - Exposición (n308521283)
@@ -104,27 +88,33 @@ routes:
         - Exposición (n308521283)
 
 
-    name: Línea 1
-    station_count: 19
-    ref: 1
-    colour: '#fec04f'
-    type: subway
-  - 
     stations: 
-      - General I. Zaragoza
-      - Padre Mier
-      - Fundadores
-      - Alameda
+      - Talleres
+      - San Bernabé
+      - Unidad Modelo
+      - Aztlan
+      - Penitenciaria
+      - Alfonso Reyes
+      - Mitras
+      - Simón Bolivar
+      - Hospital
+      - Edison
+      - Central
       - Cuauhtémoc
-      - General Anaya
-      - Regina
-      - Niños Heroes
-      - Universidad
-      - Anáhuac
-      - San Nicolás
-      - Santiago Tapia
-      - Sendero
+      - Del Golfo
+      - Félix U. Gomez
+      - Parque Fundidora
+      - Y Griega
+      - Eloy Cavazos
+      - Lerdo de Tejada
+      - Exposición
 
+  - 
+    name: Línea 2
+    type: subway
+    ref: 2
+    station_count: 13
+    colour: '#6bc069'
     itineraries: 
       r3403903: 
         - Sendero (n1041636979)
@@ -157,9 +147,19 @@ routes:
         - Sendero (n1041636979)
 
 
-    name: Línea 2
-    station_count: 13
-    ref: 2
-    colour: '#6bc069'
-    type: subway
+    stations: 
+      - Sendero
+      - Santiago Tapia
+      - San Nicolás
+      - Anáhuac
+      - Universidad
+      - Niños Heroes
+      - Regina
+      - General Anaya
+      - Cuauhtémoc
+      - Alameda
+      - Fundadores
+      - Padre Mier
+      - General I. Zaragoza
+
 

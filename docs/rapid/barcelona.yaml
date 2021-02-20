@@ -267,71 +267,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Fondo (L1)
-      - Santa Coloma
-      - Baró de Viver
-      - Trinitat Vella
-      - Torras i Bages
-      - Sant Andreu
-      - Fabra i Puig
-      - La Sagrera (L1)
-      - Navas
-      - Clot L1 (Metro)
-      - Glòries (Metro)
-      - Marina
-      - Arc de Triomf L1 (Metro)
-      - Urquinaona (L1)
-      - Catalunya (L1)
-      - Universitat (L1)
-      - Urgell
-      - Rocafort
-      - Espanya L1 (metro)
-      - Hostafrancs
-      - Plaça de Sants (L1)
-      - Mercat Nou
-      - Santa Eulàlia
-      - Torrassa (L1)
-      - Florida
-      - Can Serra
-      - Rambla Just Oliveras
-      - Avinguda Carrilet (L1)
-      - Bellvitge
-      - Hospital de Bellvitge
-
+    name: L1
+    type: subway
+    ref: L1
+    station_count: 30
+    colour: '#e33638'
     itineraries: 
-      r195711: 
-        - Hospital de Bellvitge (n5296477082)
-        - Bellvitge (n5305515771)
-        - Avinguda Carrilet (n5305562114)
-        - Rambla Just Oliveras (n3979312391)
-        - Can Serra (n5305586823)
-        - Florida (n5305619081)
-        - Torrassa (n5306327174)
-        - Santa Eulàlia (n5306572501)
-        - Mercat Nou (n5306568873)
-        - Plaça de Sants (n5306846302)
-        - Hostafrancs (n5306846276)
-        - Espanya (n5306885845)
-        - Rocafort (n5307549252)
-        - Urgell (n5318185973)
-        - Universitat (n5264057222)
-        - Catalunya (w555806662)
-        - Urquinaona (n5313819558)
-        - 'Barcelona - Arc de Triomf (n5264057227)'
-        - Marina (n5318792450)
-        - Glòries (n5318926007)
-        - Clot (n5313434190)
-        - Navas (n5319133652)
-        - La Sagrera (L1) (n5308480500)
-        - Fabra i Puig (n5310387159)
-        - Sant Andreu (n5319156658)
-        - Torras i Bages (n5310442668)
-        - Trinitat Vella (n5319167399)
-        - Baró de Viver (n5296577420)
-        - Santa Coloma (n5313328855)
-        - Fondo (L1) (n5309027419)
-
       r4673507: 
         - Fondo (L1) (n5309027419)
         - Santa Coloma (n5313328855)
@@ -364,30 +305,78 @@ routes:
         - Bellvitge (n5305515771)
         - Hospital de Bellvitge (n5296477082)
 
+      r195711: 
+        - Hospital de Bellvitge (n5296477082)
+        - Bellvitge (n5305515771)
+        - Avinguda Carrilet (n5305562114)
+        - Rambla Just Oliveras (n3979312391)
+        - Can Serra (n5305586823)
+        - Florida (n5305619081)
+        - Torrassa (n5306327174)
+        - Santa Eulàlia (n5306572501)
+        - Mercat Nou (n5306568873)
+        - Plaça de Sants (n5306846302)
+        - Hostafrancs (n5306846276)
+        - Espanya (n5306885845)
+        - Rocafort (n5307549252)
+        - Urgell (n5318185973)
+        - Universitat (n5264057222)
+        - Catalunya (w555806662)
+        - Urquinaona (n5313819558)
+        - 'Barcelona - Arc de Triomf (n5264057227)'
+        - Marina (n5318792450)
+        - Glòries (n5318926007)
+        - Clot (n5313434190)
+        - Navas (n5319133652)
+        - La Sagrera (L1) (n5308480500)
+        - Fabra i Puig (n5310387159)
+        - Sant Andreu (n5319156658)
+        - Torras i Bages (n5310442668)
+        - Trinitat Vella (n5319167399)
+        - Baró de Viver (n5296577420)
+        - Santa Coloma (n5313328855)
+        - Fondo (L1) (n5309027419)
 
-    name: L1
-    station_count: 30
-    ref: L1
-    colour: '#e33638'
-    type: subway
-  - 
+
     stations: 
-      - Gorg (L10)
-      - la Salut
-      - Llefià
-      - Bon Pastor
-      - Onze de Setembre
-      - La Sagrera (L9N-L10)
+      - Fondo (L1)
+      - Santa Coloma
+      - Baró de Viver
+      - Trinitat Vella
+      - Torras i Bages
+      - Sant Andreu
+      - Fabra i Puig
+      - La Sagrera (L1)
+      - Navas
+      - Clot L1 (Metro)
+      - Glòries (Metro)
+      - Marina
+      - Arc de Triomf L1 (Metro)
+      - Urquinaona (L1)
+      - Catalunya (L1)
+      - Universitat (L1)
+      - Urgell
+      - Rocafort
+      - Espanya L1 (metro)
+      - Hostafrancs
+      - Plaça de Sants (L1)
+      - Mercat Nou
+      - Santa Eulàlia
+      - Torrassa (L1)
+      - Florida
+      - Can Serra
+      - Rambla Just Oliveras
+      - Avinguda Carrilet (L1)
+      - Bellvitge
+      - Hospital de Bellvitge
 
+  - 
+    name: L10
+    type: subway
+    ref: L10
+    station_count: 6
+    colour: '#00adef'
     itineraries: 
-      r2063280: 
-        - La Sagrera (L9N-L10) (n5308481070)
-        - Onze de Setembre (n3397396633)
-        - Bon Pastor (n3397396373)
-        - Llefià (n3397396622)
-        - la Salut (n3397396687)
-        - Gorg (n5331527850)
-
       r4673505: 
         - Gorg (n5331527850)
         - la Salut (n3397396687)
@@ -396,23 +385,29 @@ routes:
         - Onze de Setembre (n3397396633)
         - La Sagrera (L9N-L10) (n5308481070)
 
+      r2063280: 
+        - La Sagrera (L9N-L10) (n5308481070)
+        - Onze de Setembre (n3397396633)
+        - Bon Pastor (n3397396373)
+        - Llefià (n3397396622)
+        - la Salut (n3397396687)
+        - Gorg (n5331527850)
 
-    name: L10
-    station_count: 6
-    ref: L10
-    colour: '#00adef'
-    type: subway
-  - 
+
     stations: 
-      - Zona Franca
-      - Foc
-      - Foneria
-      - Ciutat de la Justícia
-      - Provençana
-      - 'Can Tries - Gornal'
-      - Torrassa (L9)
-      - Collblanc (L9S)
+      - La Sagrera (L9N-L10)
+      - Onze de Setembre
+      - Bon Pastor
+      - Llefià
+      - la Salut
+      - Gorg (L10)
 
+  - 
+    name: L10 Sud
+    type: subway
+    ref: L10 Sud
+    station_count: 8
+    colour: '#009fe3'
     itineraries: 
       r8663603: 
         - Collblanc (n3397396384)
@@ -435,27 +430,23 @@ routes:
         - Collblanc (n3397396384)
 
 
-    name: L10 Sud
-    station_count: 8
-    ref: L10 Sud
-    colour: '#009fe3'
-    type: subway
-  - 
     stations: 
-      - Can Cuiàs
-      - Ciutat Meridiana
-      - Torre Baró | Vallbona
-      - Casa de l'Aigua
-      - Trinitat Nova (L4-L11)
+      - Collblanc (L9S)
+      - Torrassa (L9)
+      - 'Can Tries - Gornal'
+      - Provençana
+      - Ciutat de la Justícia
+      - Foneria
+      - Foc
+      - Zona Franca
 
+  - 
+    name: L11
+    type: subway
+    ref: L11
+    station_count: 5
+    colour: '#9ed74c'
     itineraries: 
-      r197493: 
-        - Trinitat Nova (n5314022322)
-        - Casa de l'Aigua (n5314022323)
-        - Torre Baró | Vallbona (n5314022324)
-        - Ciutat Meridiana (n5314022326)
-        - Can Cuiàs (n5314022325)
-
       r4673506: 
         - Can Cuiàs (n5314022325)
         - Ciutat Meridiana (n5314022326)
@@ -463,53 +454,47 @@ routes:
         - Casa de l'Aigua (n5314022323)
         - Trinitat Nova (n5314022322)
 
+      r197493: 
+        - Trinitat Nova (n5314022322)
+        - Casa de l'Aigua (n5314022323)
+        - Torre Baró | Vallbona (n5314022324)
+        - Ciutat Meridiana (n5314022326)
+        - Can Cuiàs (n5314022325)
 
-    name: L11
-    station_count: 5
-    ref: L11
-    colour: '#9ed74c'
-    type: subway
-  - 
+
     stations: 
-      - Reina Elisenda
-      - Sarrià
+      - Can Cuiàs
+      - Ciutat Meridiana
+      - Torre Baró | Vallbona
+      - Casa de l'Aigua
+      - Trinitat Nova (L4-L11)
 
+  - 
+    name: 'L12: Sarrià - Reina Elisenda'
+    type: subway
+    ref: L12
+    station_count: 2
+    colour: '#b2aed3'
     itineraries: 
-      r6699915: 
-        - Sarrià (n4710195127)
-        - Reina Elisenda (n5310507552)
-
       r6699914: 
         - Reina Elisenda (n5310507552)
         - Sarrià (n4710195127)
 
+      r6699915: 
+        - Sarrià (n4710195127)
+        - Reina Elisenda (n5310507552)
 
-    name: 'L12: Sarrià - Reina Elisenda'
-    station_count: 2
-    ref: L12
-    colour: '#b2aed3'
-    type: subway
-  - 
+
     stations: 
-      - Paral·lel (L2)
-      - Sant Antoni
-      - Universitat (L2)
-      - Passeig de Gràcia (L2) metro
-      - Tetuan
-      - Monumental
-      - Sagrada Família (L2)
-      - Encants
-      - Clot L2 (Metro)
-      - Bac de Roda
-      - Sant Martí
-      - La Pau (L2) metro
-      - Verneda
-      - Artigues | Sant Adrià
-      - Sant Roc
-      - Gorg (L2)
-      - Pep Ventura
-      - Badalona Pompeu Fabra
+      - Reina Elisenda
+      - Sarrià
 
+  - 
+    name: L2
+    type: subway
+    ref: L2
+    station_count: 18
+    colour: '#992f9c'
     itineraries: 
       r4671268: 
         - Badalona Pompeu Fabra (n5311871042)
@@ -552,40 +537,32 @@ routes:
         - Badalona Pompeu Fabra (n5311871042)
 
 
-    name: L2
-    station_count: 18
-    ref: L2
-    colour: '#992f9c'
-    type: subway
-  - 
     stations: 
-      - Trinitat Nova (L3)
-      - Roquetes
-      - Canyelles
-      - Valldaura
-      - Mundet
-      - Montbau
-      - Vall d'Hebron (L3)
-      - Penitents
-      - Vallcarca
-      - Lesseps
-      - Fontana
-      - Diagonal (L3)
-      - Passeig de Gràcia (L3) metro
-      - Catalunya L3 (Metro)
-      - Liceu
-      - Drassanes
-      - Paral·lel (L3)
-      - Poble Sec
-      - Espanya L3 (metro)
-      - Tarragona
-      - Sants Estació (L3)
-      - Plaça del Centre
-      - les Corts
-      - Maria Cristina
-      - Palau Reial
-      - Zona Universitària (L3)
+      - Badalona Pompeu Fabra
+      - Pep Ventura
+      - Gorg (L2)
+      - Sant Roc
+      - Artigues | Sant Adrià
+      - Verneda
+      - La Pau (L2) metro
+      - Sant Martí
+      - Bac de Roda
+      - Clot L2 (Metro)
+      - Encants
+      - Sagrada Família (L2)
+      - Monumental
+      - Tetuan
+      - Passeig de Gràcia (L2) metro
+      - Universitat (L2)
+      - Sant Antoni
+      - Paral·lel (L2)
 
+  - 
+    name: L3
+    type: subway
+    ref: L3
+    station_count: 26
+    colour: '#39af57'
     itineraries: 
       r4673508: 
         - Zona Universitària (n3397396686)
@@ -644,61 +621,41 @@ routes:
         - Zona Universitària (n3397396686)
 
 
-    name: L3
-    station_count: 26
-    ref: L3
-    colour: '#39af57'
-    type: subway
-  - 
     stations: 
-      - La Pau (L4) metro
-      - Besòs
-      - Besòs Mar
-      - El Maresme | Fòrum
-      - Selva de Mar
-      - Poblenou
-      - Llacuna
-      - Bogatell
-      - Ciutadella | Vila Olímpica
-      - Barceloneta
-      - Jaume I
-      - Urquinaona (L4)
-      - Passeig de Gràcia (L4) metro
-      - Girona
-      - Verdaguer (L4)
-      - Joanic
-      - Alfons X
-      - Guinardó | Hospital de Sant Pau
-      - Maragall (L4)
-      - Llucmajor
-      - Via Júlia
-      - Trinitat Nova (L4-L11)
+      - Zona Universitària (L3)
+      - Palau Reial
+      - Maria Cristina
+      - les Corts
+      - Plaça del Centre
+      - Sants Estació (L3)
+      - Tarragona
+      - Espanya L3 (metro)
+      - Poble Sec
+      - Paral·lel (L3)
+      - Drassanes
+      - Liceu
+      - Catalunya L3 (Metro)
+      - Passeig de Gràcia (L3) metro
+      - Diagonal (L3)
+      - Fontana
+      - Lesseps
+      - Vallcarca
+      - Penitents
+      - Vall d'Hebron (L3)
+      - Montbau
+      - Mundet
+      - Valldaura
+      - Canyelles
+      - Roquetes
+      - Trinitat Nova (L3)
 
+  - 
+    name: L4
+    type: subway
+    ref: L4
+    station_count: 22
+    colour: '#fab70a'
     itineraries: 
-      r195706: 
-        - La Pau (n5319269956)
-        - Besòs (n5313340305)
-        - Besòs Mar (n5313340306)
-        - El Maresme | Fòrum (n5313340304)
-        - Selva de Mar (n5313340303)
-        - Poblenou (n5313340302)
-        - Llacuna (n5313340301)
-        - Bogatell (n5313340300)
-        - Ciutadella | Vila Olímpica (n5313340299)
-        - Barceloneta (n5313340298)
-        - Jaume I (n5313340297)
-        - Urquinaona (n5313340296)
-        - Passeig de Gràcia (L4) (w555575476)
-        - Girona (n5264057221)
-        - Verdaguer (n5264057229)
-        - Joanic (n5315505598)
-        - Alfons X (n5315505602)
-        - Guinardó | Hospital de Sant Pau (n5315505599)
-        - Maragall (n5314028226)
-        - Llucmajor (n5308350664)
-        - Via Júlia (n5314022321)
-        - Trinitat Nova (n5314022322)
-
       r4671320: 
         - Trinitat Nova (n5314022322)
         - Via Júlia (n5314022321)
@@ -723,70 +680,62 @@ routes:
         - Besòs (n5313340305)
         - La Pau (n5319269956)
 
+      r195706: 
+        - La Pau (n5319269956)
+        - Besòs (n5313340305)
+        - Besòs Mar (n5313340306)
+        - El Maresme | Fòrum (n5313340304)
+        - Selva de Mar (n5313340303)
+        - Poblenou (n5313340302)
+        - Llacuna (n5313340301)
+        - Bogatell (n5313340300)
+        - Ciutadella | Vila Olímpica (n5313340299)
+        - Barceloneta (n5313340298)
+        - Jaume I (n5313340297)
+        - Urquinaona (n5313340296)
+        - Passeig de Gràcia (L4) (w555575476)
+        - Girona (n5264057221)
+        - Verdaguer (n5264057229)
+        - Joanic (n5315505598)
+        - Alfons X (n5315505602)
+        - Guinardó | Hospital de Sant Pau (n5315505599)
+        - Maragall (n5314028226)
+        - Llucmajor (n5308350664)
+        - Via Júlia (n5314022321)
+        - Trinitat Nova (n5314022322)
 
-    name: L4
-    station_count: 22
-    ref: L4
-    colour: '#fab70a'
-    type: subway
-  - 
+
     stations: 
-      - Vall d'Hebron (L5)
-      - El Coll | La Teixonera
-      - El Carmel
-      - Horta
-      - Vilapicina
-      - Virrei Amat
-      - Maragall (L5)
-      - Congrés
-      - La Sagrera (L5)
-      - Camp de l'Arpa
-      - Sant Pau | Dos de Maig
-      - Sagrada Família (L5)
-      - Verdaguer (L5)
-      - Diagonal (L5)
-      - Hospital Clínic
-      - Entença
-      - Sants Estació (L5)
-      - Plaça de Sants (L5)
-      - Badal
-      - Collblanc (L5)
-      - Pubilla Cases
-      - Can Vidalet
-      - Can Boixeres
-      - Sant Ildefons
-      - Gavarra
-      - Cornellà Centre (L5)
+      - La Pau (L4) metro
+      - Besòs
+      - Besòs Mar
+      - El Maresme | Fòrum
+      - Selva de Mar
+      - Poblenou
+      - Llacuna
+      - Bogatell
+      - Ciutadella | Vila Olímpica
+      - Barceloneta
+      - Jaume I
+      - Urquinaona (L4)
+      - Passeig de Gràcia (L4) metro
+      - Girona
+      - Verdaguer (L4)
+      - Joanic
+      - Alfons X
+      - Guinardó | Hospital de Sant Pau
+      - Maragall (L4)
+      - Llucmajor
+      - Via Júlia
+      - Trinitat Nova (L4-L11)
 
+  - 
+    name: L5
+    type: subway
+    ref: L5
+    station_count: 26
+    colour: '#317bc8'
     itineraries: 
-      r4673509: 
-        - Vall d'Hebron (n5331527849)
-        - El Coll | La Teixonera (n5296569385)
-        - El Carmel (n5314028225)
-        - Horta (n3397396608)
-        - Vilapicina (n3397396684)
-        - Virrei Amat (n5308768761)
-        - Maragall (n3397396625)
-        - Congrés (n3397396385)
-        - La Sagrera (L5) (n5308481074)
-        - Camp de l'Arpa (n3397396374)
-        - Sant Pau | Dos de Maig (n5314028227)
-        - Sagrada Família (n5308859849)
-        - Verdaguer (n5331527848)
-        - Diagonal (n5331527852)
-        - Hospital Clínic (n3397396609)
-        - Entença (n3397396595)
-        - Sants Estació (n5313865123)
-        - Plaça de Sants (n3397396643)
-        - Badal (n3397396364)
-        - Collblanc (n5312832884)
-        - Pubilla Cases (n3397396647)
-        - Can Vidalet (n5314017684)
-        - Can Boixeres (n3397396375)
-        - Sant Ildefons (n5314017683)
-        - Gavarra (n3397396602)
-        - Cornellà Centre (n5227216905)
-
       r195713: 
         - Cornellà Centre (n5227216905)
         - Gavarra (n3397396602)
@@ -815,23 +764,69 @@ routes:
         - El Coll | La Teixonera (n5296569385)
         - Vall d'Hebron (n5331527849)
 
+      r4673509: 
+        - Vall d'Hebron (n5331527849)
+        - El Coll | La Teixonera (n5296569385)
+        - El Carmel (n5314028225)
+        - Horta (n3397396608)
+        - Vilapicina (n3397396684)
+        - Virrei Amat (n5308768761)
+        - Maragall (n3397396625)
+        - Congrés (n3397396385)
+        - La Sagrera (L5) (n5308481074)
+        - Camp de l'Arpa (n3397396374)
+        - Sant Pau | Dos de Maig (n5314028227)
+        - Sagrada Família (n5308859849)
+        - Verdaguer (n5331527848)
+        - Diagonal (n5331527852)
+        - Hospital Clínic (n3397396609)
+        - Entença (n3397396595)
+        - Sants Estació (n5313865123)
+        - Plaça de Sants (n3397396643)
+        - Badal (n3397396364)
+        - Collblanc (n5312832884)
+        - Pubilla Cases (n3397396647)
+        - Can Vidalet (n5314017684)
+        - Can Boixeres (n3397396375)
+        - Sant Ildefons (n5314017683)
+        - Gavarra (n3397396602)
+        - Cornellà Centre (n5227216905)
 
-    name: L5
-    station_count: 26
-    ref: L5
-    colour: '#317bc8'
-    type: subway
-  - 
+
     stations: 
-      - Sarrià
-      - les Tres Torres
-      - la Bonanova
-      - Muntaner
-      - Sant Gervasi
-      - Gràcia
-      - Provença (FGC)
-      - Catalunya (FGC)
+      - Cornellà Centre (L5)
+      - Gavarra
+      - Sant Ildefons
+      - Can Boixeres
+      - Can Vidalet
+      - Pubilla Cases
+      - Collblanc (L5)
+      - Badal
+      - Plaça de Sants (L5)
+      - Sants Estació (L5)
+      - Entença
+      - Hospital Clínic
+      - Diagonal (L5)
+      - Verdaguer (L5)
+      - Sagrada Família (L5)
+      - Sant Pau | Dos de Maig
+      - Camp de l'Arpa
+      - La Sagrera (L5)
+      - Congrés
+      - Maragall (L5)
+      - Virrei Amat
+      - Vilapicina
+      - Horta
+      - El Carmel (L3)
+      - El Coll | La Teixonera
+      - Vall d'Hebron (L5)
 
+  - 
+    name: L6
+    type: subway
+    ref: L6
+    station_count: 8
+    colour: '#7280c0'
     itineraries: 
       r4673510: 
         - Sarrià (n4710195127)
@@ -854,31 +849,23 @@ routes:
         - Sarrià (n4710195127)
 
 
-    name: L6
-    station_count: 8
-    ref: L6
-    colour: '#7280c0'
-    type: subway
-  - 
     stations: 
-      - Catalunya (FGC)
-      - Provença (FGC)
+      - Sarrià
+      - les Tres Torres
+      - la Bonanova
+      - Muntaner
+      - Sant Gervasi
       - Gràcia
-      - Plaça Molina
-      - Pàdua
-      - el Putxet
-      - Avinguda Tibidabo
+      - Provença (FGC)
+      - Catalunya (FGC)
 
+  - 
+    name: L7
+    type: subway
+    ref: L7
+    station_count: 7
+    colour: '#ac5414'
     itineraries: 
-      r5402007: 
-        - Avinguda Tibidabo (n5314011847)
-        - el Putxet (n5314011846)
-        - Pàdua (n5314011845)
-        - Plaça Molina (n5314011844)
-        - Gràcia (n4771857434)
-        - Provença (n5264057236)
-        - Plaça de Catalunya (FGC) (n5307617521)
-
       r197476: 
         - Plaça de Catalunya (FGC) (n5307617521)
         - Provença (n5264057236)
@@ -888,26 +875,31 @@ routes:
         - el Putxet (n5314011846)
         - Avinguda Tibidabo (n5314011847)
 
+      r5402007: 
+        - Avinguda Tibidabo (n5314011847)
+        - el Putxet (n5314011846)
+        - Pàdua (n5314011845)
+        - Plaça Molina (n5314011844)
+        - Gràcia (n4771857434)
+        - Provença (n5264057236)
+        - Plaça de Catalunya (FGC) (n5307617521)
 
-    name: L7
-    station_count: 7
-    ref: L7
-    colour: '#ac5414'
-    type: subway
-  - 
+
     stations: 
-      - Molí Nou | Ciutat Cooperativa
-      - Sant Boi
-      - Cornellà-Riera
-      - Almeda
-      - Avinguda Carrilet (L8)
-      - Sant Josep
-      - Gornal
-      - Europa-Fira (FGC)
-      - Ildefons Cerdà
-      - 'Magòria - la Campana'
-      - Espanya (FGC)
+      - Avinguda Tibidabo
+      - el Putxet
+      - Pàdua
+      - Plaça Molina
+      - Gràcia
+      - Provença (FGC)
+      - Catalunya (FGC)
 
+  - 
+    name: L8
+    type: subway
+    ref: L8
+    station_count: 11
+    colour: '#d5578f'
     itineraries: 
       r195712: 
         - Plaça Espanya (n5307631366)
@@ -936,23 +928,25 @@ routes:
         - Plaça Espanya (n5307631366)
 
 
-    name: L8
-    station_count: 11
-    ref: L8
-    colour: '#d5578f'
-    type: subway
-  - 
     stations: 
-      - Can Zam
-      - Singuerlín
-      - Església Major
-      - Fondo (L9)
-      - Santa Rosa
-      - Can Peixauet
-      - Bon Pastor
-      - Onze de Setembre
-      - La Sagrera (L9N-L10)
+      - Molí Nou | Ciutat Cooperativa
+      - Sant Boi
+      - Cornellà-Riera
+      - Almeda
+      - Avinguda Carrilet (L8)
+      - Sant Josep
+      - Gornal
+      - Europa-Fira (FGC)
+      - Ildefons Cerdà
+      - 'Magòria - la Campana'
+      - Espanya (FGC)
 
+  - 
+    name: L9 Nord
+    type: subway
+    ref: L9 Nord
+    station_count: 9
+    colour: '#f6842a'
     itineraries: 
       r4673513: 
         - Can Zam (n5310802488)
@@ -977,47 +971,24 @@ routes:
         - Can Zam (n5310802488)
 
 
-    name: L9 Nord
-    station_count: 9
-    ref: L9 Nord
-    colour: '#f6842a'
-    type: subway
-  - 
     stations: 
-      - Aeroport T1
-      - Aeroport T2 (L9S)
-      - Mas Blau
-      - Parc Nou
-      - Cèntric
-      - El Prat Estació
-      - Les Moreres
-      - Mercabarna
-      - Parc Logístic
-      - Fira
-      - Europa-Fira (L9S)
-      - 'Can Tries - Gornal'
-      - Torrassa (L9)
-      - Collblanc (L9S)
-      - Zona Universitària (L9)
+      - La Sagrera (L9N-L10)
+      - Onze de Setembre
+      - Bon Pastor
+      - Can Peixauet
+      - Santa Rosa
+      - Fondo (L9)
+      - Església Major
+      - Singuerlín
+      - Can Zam
 
+  - 
+    name: L9 Sud
+    type: subway
+    ref: L9 Sud
+    station_count: 15
+    colour: '#f6842a'
     itineraries: 
-      r5972745: 
-        - Aeroport T1 (n5264057230)
-        - Aeroport T2 (n5264057231)
-        - Mas Blau (n5312699735)
-        - Parc Nou (n5312699736)
-        - Cèntric (n5312699737)
-        - El Prat Estació (n2992332327)
-        - Les Moreres (n2992332329)
-        - Mercabarna (n2992352638)
-        - Parc Logístic (n5312699738)
-        - Fira (n5312699739)
-        - Europa-Fira (n5312699740)
-        - 'Can Tries - Gornal (n5312699741)'
-        - Torrassa (n5264057232)
-        - Collblanc (n3397396384)
-        - Zona Universitària (n5331527847)
-
       r5972746: 
         - Zona Universitària (n5331527847)
         - Collblanc (n3397396384)
@@ -1035,10 +1006,39 @@ routes:
         - Aeroport T2 (n5264057231)
         - Aeroport T1 (n5264057230)
 
+      r5972745: 
+        - Aeroport T1 (n5264057230)
+        - Aeroport T2 (n5264057231)
+        - Mas Blau (n5312699735)
+        - Parc Nou (n5312699736)
+        - Cèntric (n5312699737)
+        - El Prat Estació (n2992332327)
+        - Les Moreres (n2992332329)
+        - Mercabarna (n2992352638)
+        - Parc Logístic (n5312699738)
+        - Fira (n5312699739)
+        - Europa-Fira (n5312699740)
+        - 'Can Tries - Gornal (n5312699741)'
+        - Torrassa (n5264057232)
+        - Collblanc (n3397396384)
+        - Zona Universitària (n5331527847)
 
-    name: L9 Sud
-    station_count: 15
-    ref: L9 Sud
-    colour: '#f6842a'
-    type: subway
+
+    stations: 
+      - Aeroport T1
+      - Aeroport T2 (L9S)
+      - Mas Blau
+      - Parc Nou
+      - Cèntric
+      - El Prat Estació
+      - Les Moreres
+      - Mercabarna
+      - Parc Logístic
+      - Fira
+      - Europa-Fira (L9S)
+      - 'Can Tries - Gornal'
+      - Torrassa (L9)
+      - Collblanc (L9S)
+      - Zona Universitària (L9)
+
 

@@ -140,59 +140,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Leopoldau
-      - Großfeldsiedlung
-      - Aderklaaer Straße
-      - Rennbahnweg
-      - Kagraner Platz
-      - Kagran
-      - Alte Donau
-      - Kaisermühlen VIC
-      - Donauinsel
-      - Vorgartenstraße
-      - Praterstern U1
-      - Nestroyplatz
-      - Schwedenplatz U1
-      - Stephansplatz U1
-      - Karlsplatz U1
-      - Taubstummengasse
-      - Hauptbahnhof
-      - Keplerplatz
-      - Reumannplatz
-      - Troststraße
-      - Altes Landgut
-      - Alaudagasse
-      - Neulaa
-      - Oberlaa
-
+    name: U1 Oberlaa <=> Leopoldau
+    type: subway
+    ref: U1
+    station_count: 24
+    colour: '#e20613'
     itineraries: 
-      r2928586: 
-        - Leopoldau (n67029576)
-        - Großfeldsiedlung (n4140677491)
-        - Aderklaaer Straße (n4155298891)
-        - Rennbahnweg (n4155452193)
-        - Kagraner Platz (n4155868489)
-        - Kagran (n4160807391)
-        - Alte Donau (n4161088301)
-        - Kaisermühlen VIC (n4169259989)
-        - Donauinsel (n4169472889)
-        - Vorgartenstraße (n4169757308)
-        - Praterstern (n3862884757)
-        - Nestroyplatz (n4174037289)
-        - Schwedenplatz (n4560869524)
-        - Stephansplatz (n4560869722)
-        - Karlsplatz (n4560843526)
-        - Taubstummengasse (n3500582336)
-        - Südtiroler Platz-Hauptbahnhof (n3124681405)
-        - Keplerplatz (n4167184427)
-        - Reumannplatz (n4167184437)
-        - Troststraße (n2018072723)
-        - Altes Landgut (n2018072720)
-        - Alaudagasse (n2018072719)
-        - Neulaa (n2018072721)
-        - Oberlaa (n2018072722)
-
       r22494: 
         - Oberlaa (n2018072722)
         - Neulaa (n2018072721)
@@ -219,58 +172,66 @@ routes:
         - Großfeldsiedlung (n4140677491)
         - Leopoldau (n67029576)
 
+      r2928586: 
+        - Leopoldau (n67029576)
+        - Großfeldsiedlung (n4140677491)
+        - Aderklaaer Straße (n4155298891)
+        - Rennbahnweg (n4155452193)
+        - Kagraner Platz (n4155868489)
+        - Kagran (n4160807391)
+        - Alte Donau (n4161088301)
+        - Kaisermühlen VIC (n4169259989)
+        - Donauinsel (n4169472889)
+        - Vorgartenstraße (n4169757308)
+        - Praterstern (n3862884757)
+        - Nestroyplatz (n4174037289)
+        - Schwedenplatz (n4560869524)
+        - Stephansplatz (n4560869722)
+        - Karlsplatz (n4560843526)
+        - Taubstummengasse (n3500582336)
+        - Südtiroler Platz-Hauptbahnhof (n3124681405)
+        - Keplerplatz (n4167184427)
+        - Reumannplatz (n4167184437)
+        - Troststraße (n2018072723)
+        - Altes Landgut (n2018072720)
+        - Alaudagasse (n2018072719)
+        - Neulaa (n2018072721)
+        - Oberlaa (n2018072722)
 
-    name: U1 Oberlaa <=> Leopoldau
-    station_count: 24
-    ref: U1
-    colour: '#e20613'
-    type: subway
-  - 
+
     stations: 
-      - Karlsplatz U2
-      - Museumsquartier
-      - Volkstheater U2
-      - Rathaus
-      - Schottentor
-      - Schottenring U2
-      - Taborstraße
-      - Praterstern U2
-      - Messe-Prater
-      - Krieau
-      - Stadion
-      - Donaumarina
-      - Donaustadtbrücke
-      - Stadlau
-      - Hardeggasse
-      - Donauspital
-      - Aspernstraße
-      - Hausfeldstraße
-      - Aspern Nord
-      - Seestadt
+      - Leopoldau
+      - Großfeldsiedlung
+      - Aderklaaer Straße
+      - Rennbahnweg
+      - Kagraner Platz
+      - Kagran
+      - Alte Donau
+      - Kaisermühlen VIC
+      - Donauinsel
+      - Vorgartenstraße
+      - Praterstern U1
+      - Nestroyplatz
+      - Schwedenplatz U1
+      - Stephansplatz U1
+      - Karlsplatz U1
+      - Taubstummengasse
+      - Hauptbahnhof
+      - Keplerplatz
+      - Reumannplatz
+      - Troststraße
+      - Altes Landgut
+      - Alaudagasse
+      - Neulaa
+      - Oberlaa
 
+  - 
+    name: U2 Seestadt <=> Karlsplatz
+    type: subway
+    ref: U2
+    station_count: 20
+    colour: '#a762a4'
     itineraries: 
-      r2919734: 
-        - Seestadt (n3598308198)
-        - Aspern Nord (n3598290667)
-        - Hausfeldstraße (n3598290671)
-        - Aspernstraße (n4076415290)
-        - Donauspital (n4076631293)
-        - Hardeggasse (n4076716391)
-        - Stadlau (n4077783491)
-        - Donaustadtbrücke (n4078094389)
-        - Donaumarina (n4073135889)
-        - Stadion (n4073027290)
-        - Krieau (n4073146389)
-        - Messe-Prater (n3862884256)
-        - Praterstern (n3862884758)
-        - Taborstraße (n4086541541)
-        - Schottenring (n4003977155)
-        - Schottentor (n4347738147)
-        - Rathaus (n4104690590)
-        - Volkstheater (n4113713892)
-        - Museumsquartier (n4123615290)
-        - Karlsplatz (n4560843527)
-
       r27114: 
         - Karlsplatz (n4560843527)
         - Museumsquartier (n4123615290)
@@ -293,36 +254,57 @@ routes:
         - Aspern Nord (n3598290667)
         - Seestadt (n3598308198)
 
+      r2919734: 
+        - Seestadt (n3598308198)
+        - Aspern Nord (n3598290667)
+        - Hausfeldstraße (n3598290671)
+        - Aspernstraße (n4076415290)
+        - Donauspital (n4076631293)
+        - Hardeggasse (n4076716391)
+        - Stadlau (n4077783491)
+        - Donaustadtbrücke (n4078094389)
+        - Donaumarina (n4073135889)
+        - Stadion (n4073027290)
+        - Krieau (n4073146389)
+        - Messe-Prater (n3862884256)
+        - Praterstern (n3862884758)
+        - Taborstraße (n4086541541)
+        - Schottenring (n4003977155)
+        - Schottentor (n4347738147)
+        - Rathaus (n4104690590)
+        - Volkstheater (n4113713892)
+        - Museumsquartier (n4123615290)
+        - Karlsplatz (n4560843527)
 
-    name: U2 Seestadt <=> Karlsplatz
-    station_count: 20
-    ref: U2
-    colour: '#a762a4'
-    type: subway
-  - 
+
     stations: 
-      - Ottakring
-      - Wien Kendlerstraße
-      - Wien Hütteldorfer Straße
-      - Johnstraße
-      - Schweglerstraße
-      - Westbahnhof U3
-      - Wien Zieglergasse
-      - Neubaugasse
-      - Volkstheater U3
-      - Herrengasse
-      - Stephansplatz U3
-      - Stubentor
-      - Landstraße U3
-      - Rochusgasse
-      - Kardinal-Nagl-Platz
-      - Schlachthausgasse
-      - Wien Erdberg
-      - Gasometer
-      - Wien Zippererstraße
-      - Enkplatz
-      - Simmering
+      - Seestadt
+      - Aspern Nord
+      - Hausfeldstraße
+      - Aspernstraße
+      - Donauspital
+      - Hardeggasse
+      - Stadlau
+      - Donaustadtbrücke
+      - Donaumarina
+      - Stadion
+      - Krieau
+      - Messe-Prater
+      - Praterstern U2
+      - Taborstraße
+      - Schottenring U2
+      - Schottentor
+      - Rathaus
+      - Volkstheater U2
+      - Museumsquartier
+      - Karlsplatz U2
 
+  - 
+    name: U3 Ottakring <=> Simmering
+    type: subway
+    ref: U3
+    station_count: 21
+    colour: '#ef7c00'
     itineraries: 
       r2928575: 
         - Simmering (n117527786)
@@ -371,33 +353,35 @@ routes:
         - Simmering (n117527786)
 
 
-    name: U3 Ottakring <=> Simmering
-    station_count: 21
-    ref: U3
-    colour: '#ef7c00'
-    type: subway
-  - 
     stations: 
-      - Hütteldorf
-      - Ober St. Veit
-      - Unter St. Veit
-      - Wien Braunschweiggasse
-      - Hietzing
-      - Schönbrunn
-      - Meidling Hauptstraße
-      - Längenfeldgasse
-      - Wien Margaretengürtel
-      - Kettenbrückengasse
-      - Karlsplatz U4
-      - Wien Stadtpark
-      - Landstraße U4
-      - Schwedenplatz U4
-      - Schottenring U4
-      - Wien Roßauer Lände
-      - Wien Friedensbrücke
-      - Spittelau U4
-      - Bahnhof Heiligenstadt
+      - Ottakring
+      - Wien Kendlerstraße
+      - Wien Hütteldorfer Straße
+      - Johnstraße
+      - Schweglerstraße
+      - Westbahnhof U3
+      - Wien Zieglergasse
+      - Neubaugasse
+      - Volkstheater U3
+      - Herrengasse
+      - Stephansplatz U3
+      - Stubentor
+      - Landstraße U3
+      - Rochusgasse
+      - Kardinal-Nagl-Platz
+      - Schlachthausgasse
+      - Wien Erdberg
+      - Gasometer
+      - Wien Zippererstraße
+      - Enkplatz
+      - Simmering
 
+  - 
+    name: U4 Hütteldorf <=> Heiligenstadt
+    type: subway
+    ref: U4
+    station_count: 19
+    colour: '#029540'
     itineraries: 
       r5954448: 
         - Heiligenstadt (n3488454904)
@@ -442,65 +426,34 @@ routes:
         - Heiligenstadt (n3488454904)
 
 
-    name: U4 Hütteldorf <=> Heiligenstadt
-    station_count: 19
-    ref: U4
-    colour: '#029540'
-    type: subway
-  - 
     stations: 
-      - Floridsdorf
-      - Neue Donau
-      - Handelskai
-      - Dresdner Straße
-      - Jägerstraße
-      - Spittelau U6
-      - Nußdorfer Straße
-      - Währinger Straße-Volksoper
-      - Wien Michelbeuern-AKH
-      - Wien Alser Straße
-      - Josefstädter Straße
-      - Thaliastraße
-      - Burggasse-Stadthalle
-      - Westbahnhof U6
-      - Gumpendorfer Straße
+      - Hütteldorf
+      - Ober St. Veit
+      - Unter St. Veit
+      - Wien Braunschweiggasse
+      - Hietzing
+      - Schönbrunn
+      - Meidling Hauptstraße
       - Längenfeldgasse
-      - Niederhofstraße
-      - Wien Meidling
-      - Wien Tscherttegasse
-      - Am Schöpfwerk
-      - Alterlaa (U-Bahn)
-      - Wien Erlaaer Straße
-      - Perfektastraße
-      - Wien Siebenhirten
+      - Wien Margaretengürtel
+      - Kettenbrückengasse
+      - Karlsplatz U4
+      - Wien Stadtpark
+      - Landstraße U4
+      - Schwedenplatz U4
+      - Schottenring U4
+      - Wien Roßauer Lände
+      - Wien Friedensbrücke
+      - Spittelau U4
+      - Bahnhof Heiligenstadt
 
+  - 
+    name: U6 Siebenhirten <=> Floridsdorf
+    type: subway
+    ref: U6
+    station_count: 24
+    colour: '#9c6830'
     itineraries: 
-      r2853012: 
-        - Siebenhirten (n4005731390)
-        - Perfektastraße (n4008355782)
-        - Erlaaer Straße (n4008355781)
-        - Alterlaa (n4008355779)
-        - Am Schöpfwerk (n4008355780)
-        - Tscherttegasse (n4008355785)
-        - Bahnhof Meidling (n3071028227)
-        - Niederhofstraße (n4012141489)
-        - Längenfeldgasse (n3993274359)
-        - Gumpendorfer Straße (n4281875074)
-        - Westbahnhof (n4281897753)
-        - Burggasse-Stadthalle (n4281904637)
-        - Thaliastraße (n4283722993)
-        - Josefstädter Straße (n4283722990)
-        - Alser Straße (n4283722989)
-        - Michelbeuern-AKH (n4283722991)
-        - Währinger Straße-Volksoper (n4283722994)
-        - Nußdorfer Straße (n4283722992)
-        - Spittelau (n3488513522)
-        - Jägerstraße (n4281932864)
-        - Dresdner Straße (n4281939061)
-        - Handelskai (n3324474915)
-        - Neue Donau (n4281927209)
-        - Floridsdorf (n4005736525)
-
       r5954449: 
         - Floridsdorf (n4005736525)
         - Neue Donau (n4281927209)
@@ -527,10 +480,57 @@ routes:
         - Perfektastraße (n4008355782)
         - Siebenhirten (n4005731390)
 
+      r2853012: 
+        - Siebenhirten (n4005731390)
+        - Perfektastraße (n4008355782)
+        - Erlaaer Straße (n4008355781)
+        - Alterlaa (n4008355779)
+        - Am Schöpfwerk (n4008355780)
+        - Tscherttegasse (n4008355785)
+        - Bahnhof Meidling (n3071028227)
+        - Niederhofstraße (n4012141489)
+        - Längenfeldgasse (n3993274359)
+        - Gumpendorfer Straße (n4281875074)
+        - Westbahnhof (n4281897753)
+        - Burggasse-Stadthalle (n4281904637)
+        - Thaliastraße (n4283722993)
+        - Josefstädter Straße (n4283722990)
+        - Alser Straße (n4283722989)
+        - Michelbeuern-AKH (n4283722991)
+        - Währinger Straße-Volksoper (n4283722994)
+        - Nußdorfer Straße (n4283722992)
+        - Spittelau (n3488513522)
+        - Jägerstraße (n4281932864)
+        - Dresdner Straße (n4281939061)
+        - Handelskai (n3324474915)
+        - Neue Donau (n4281927209)
+        - Floridsdorf (n4005736525)
 
-    name: U6 Siebenhirten <=> Floridsdorf
-    station_count: 24
-    ref: U6
-    colour: '#9c6830'
-    type: subway
+
+    stations: 
+      - Floridsdorf
+      - Neue Donau
+      - Handelskai
+      - Dresdner Straße
+      - Jägerstraße
+      - Spittelau U6
+      - Nußdorfer Straße
+      - Währinger Straße-Volksoper
+      - Wien Michelbeuern-AKH
+      - Wien Alser Straße
+      - Josefstädter Straße
+      - Thaliastraße
+      - Burggasse-Stadthalle
+      - Westbahnhof U6
+      - Gumpendorfer Straße
+      - Längenfeldgasse
+      - Niederhofstraße
+      - Wien Meidling
+      - Wien Tscherttegasse
+      - Am Schöpfwerk
+      - Alterlaa (U-Bahn)
+      - Wien Erlaaer Straße
+      - Perfektastraße
+      - Wien Siebenhirten
+
 

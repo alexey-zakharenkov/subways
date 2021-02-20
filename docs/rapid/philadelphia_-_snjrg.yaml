@@ -26,29 +26,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Trenton (River Line)
-      - Hamilton Avenue
-      - Cass Street
-      - Bordentown
-      - Roebling
-      - Florence
-      - Burlington Towne Centre
-      - Burlington South
-      - Beverly–Edgewater Park
-      - Delanco
-      - Riverside
-      - Cinnaminson
-      - Riverton
-      - Palmyra
-      - Pennsauken–Route 73
-      - Pennsauken Transit Center (River Line)
-      - 36th Street
-      - Walter Rand Transportation Center (light rail)
-      - Cooper Street–Rutgers
-      - Adventure Aquarium
-      - Entertainment Center
-
+    name: River Line
+    type: light_rail
+    ref: River Line
+    station_count: 21
+    colour: '#015698'
     itineraries: 
       r10213648: 
         - Trenton (n7703677001)
@@ -97,9 +79,27 @@ routes:
         - Trenton (n7703677001)
 
 
-    name: River Line
-    station_count: 21
-    ref: River Line
-    colour: '#015698'
-    type: light_rail
+    stations: 
+      - Trenton (River Line)
+      - Hamilton Avenue
+      - Cass Street
+      - Bordentown
+      - Roebling
+      - Florence
+      - Burlington Towne Centre
+      - Burlington South
+      - Beverly–Edgewater Park
+      - Delanco
+      - Riverside
+      - Cinnaminson
+      - Riverton
+      - Palmyra
+      - Pennsauken–Route 73
+      - Pennsauken Transit Center (River Line)
+      - 36th Street
+      - Walter Rand Transportation Center (light rail)
+      - Cooper Street–Rutgers
+      - Adventure Aquarium
+      - Entertainment Center
+
 

@@ -91,37 +91,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Herrenberg
-      - Nufringen
-      - Gärtringen
-      - Ehningen (bei Böblingen)
-      - Hulb
-      - Böblingen
-      - Goldberg
-      - Stuttgart Rohr
-      - Stuttgart Vaihingen
-      - Stuttgart Österfeld
-      - Stuttgart Universität
-      - Stuttgart Schwabstraße
-      - Stuttgart Feuersee
-      - Stuttgart Stadtmitte
-      - Stuttgart Hauptbahnhof (tief)
-      - Stuttgart-Bad Cannstatt
-      - Stuttgart Neckarpark (Mercedes-Benz)
-      - Untertürkheim, Bahnsteig 4+5
-      - Obertürkheim Bahnhof
-      - Esslingen-Mettingen
-      - Esslingen (Neckar)
-      - Oberesslingen
-      - Esslingen-Zell
-      - Altbach
-      - Plochingen
-      - Wernau
-      - Wendlingen (Neckar)
-      - Kirchheim (Teck)-Ötlingen
-      - Kirchheim unter Teck
-
+    name: 'S1: Kirchheim (Teck) <=> Herrenberg'
+    type: train
+    ref: S1
+    station_count: 29
+    colour: '#5c8e3c'
     itineraries: 
       r35595: 
         - Kirchheim (Teck) (n255437245)
@@ -186,12 +160,6 @@ routes:
         - Kirchheim (Teck) (n255437245)
 
 
-    name: 'S1: Kirchheim (Teck) <=> Herrenberg'
-    station_count: 29
-    ref: S1
-    colour: '#5c8e3c'
-    type: train
-  - 
     stations: 
       - Herrenberg
       - Nufringen
@@ -210,7 +178,25 @@ routes:
       - Stuttgart Hauptbahnhof (tief)
       - Stuttgart-Bad Cannstatt
       - Stuttgart Neckarpark (Mercedes-Benz)
+      - Untertürkheim, Bahnsteig 4+5
+      - Obertürkheim Bahnhof
+      - Esslingen-Mettingen
+      - Esslingen (Neckar)
+      - Oberesslingen
+      - Esslingen-Zell
+      - Altbach
+      - Plochingen
+      - Wernau
+      - Wendlingen (Neckar)
+      - Kirchheim (Teck)-Ötlingen
+      - Kirchheim unter Teck
 
+  - 
+    name: 'S11: Herrenberg <=> Stuttgart Neckarpark'
+    type: train
+    ref: S11
+    station_count: 17
+    colour: '#59b243'
     itineraries: 
       r8525096: 
         - Stuttgart Neckarpark (Mercedes-Benz) (n3068189388)
@@ -251,26 +237,8 @@ routes:
         - Stuttgart Neckarpark (Mercedes-Benz) (n3068189388)
 
 
-    name: 'S11: Herrenberg <=> Stuttgart Neckarpark'
-    station_count: 17
-    ref: S11
-    colour: '#59b243'
-    type: train
-  - 
     stations: 
-      - Schorndorf
-      - Weiler
-      - Winterbach
-      - Geradstetten
-      - Grunbach
-      - Beutelsbach
-      - Endersbach
-      - Stetten-Beinstein
-      - Rommelshausen
-      - Waiblingen
-      - Fellbach
-      - Stuttgart-Sommerrain
-      - Stuttgart Nürnberger Straße
+      - Stuttgart Neckarpark (Mercedes-Benz)
       - Stuttgart-Bad Cannstatt
       - Stuttgart Hauptbahnhof (tief)
       - Stuttgart Stadtmitte
@@ -280,42 +248,21 @@ routes:
       - Stuttgart Österfeld
       - Stuttgart Vaihingen
       - Stuttgart Rohr
-      - Oberaichen
-      - Leinfelden
-      - Echterdingen
-      - Stuttgart Flughafen/Messe
-      - Filderstadt
+      - Goldberg
+      - Böblingen
+      - Hulb
+      - Ehningen (bei Böblingen)
+      - Gärtringen
+      - Nufringen
+      - Herrenberg
 
+  - 
+    name: 'S2: Filderstadt <=> Schorndorf'
+    type: train
+    ref: S2
+    station_count: 27
+    colour: '#ff2e1d'
     itineraries: 
-      r35606: 
-        - Filderstadt (n149285759)
-        - Stuttgart Flughafen/Messe (n27312362)
-        - Echterdingen (n243771569)
-        - Leinfelden (n103011354)
-        - Oberaichen (n3043366695)
-        - Stuttgart-Rohr (n3043348659)
-        - Stuttgart-Vaihingen (n2521443817)
-        - Stuttgart Österfeld (n3034811520)
-        - Stuttgart Universität (n3034741424)
-        - Stuttgart Schwabstraße (n2432321160)
-        - Stuttgart Feuersee (n3027565242)
-        - Stuttgart Stadtmitte (n278553729)
-        - Stuttgart Hauptbahnhof (tief) (n278553741)
-        - Stuttgart-Bad Cannstatt (n3043452988)
-        - Stuttgart Nürnberger Straße (n3045280857)
-        - Stuttgart-Sommerrain (n3045304520)
-        - Fellbach (n3045348184)
-        - Waiblingen (n3045410353)
-        - Rommelshausen (n864079976)
-        - Stetten-Beinstein (n302014303)
-        - Endersbach (n28156535)
-        - Beutelsbach (n302009528)
-        - Grunbach (n3060997851)
-        - Geradstetten (n302009471)
-        - Winterbach (b Schorndorf) (n302009455)
-        - Weiler (Rems) (n302009449)
-        - Schorndorf (n3061260240)
-
       r34809: 
         - Schorndorf (n3061260240)
         - Weiler (Rems) (n302009449)
@@ -345,38 +292,71 @@ routes:
         - Stuttgart Flughafen/Messe (n27312362)
         - Filderstadt (n149285759)
 
+      r35606: 
+        - Filderstadt (n149285759)
+        - Stuttgart Flughafen/Messe (n27312362)
+        - Echterdingen (n243771569)
+        - Leinfelden (n103011354)
+        - Oberaichen (n3043366695)
+        - Stuttgart-Rohr (n3043348659)
+        - Stuttgart-Vaihingen (n2521443817)
+        - Stuttgart Österfeld (n3034811520)
+        - Stuttgart Universität (n3034741424)
+        - Stuttgart Schwabstraße (n2432321160)
+        - Stuttgart Feuersee (n3027565242)
+        - Stuttgart Stadtmitte (n278553729)
+        - Stuttgart Hauptbahnhof (tief) (n278553741)
+        - Stuttgart-Bad Cannstatt (n3043452988)
+        - Stuttgart Nürnberger Straße (n3045280857)
+        - Stuttgart-Sommerrain (n3045304520)
+        - Fellbach (n3045348184)
+        - Waiblingen (n3045410353)
+        - Rommelshausen (n864079976)
+        - Stetten-Beinstein (n302014303)
+        - Endersbach (n28156535)
+        - Beutelsbach (n302009528)
+        - Grunbach (n3060997851)
+        - Geradstetten (n302009471)
+        - Winterbach (b Schorndorf) (n302009455)
+        - Weiler (Rems) (n302009449)
+        - Schorndorf (n3061260240)
 
-    name: 'S2: Filderstadt <=> Schorndorf'
-    station_count: 27
-    ref: S2
-    colour: '#ff2e1d'
-    type: train
-  - 
+
     stations: 
-      - Stuttgart Flughafen/Messe
-      - Echterdingen
-      - Leinfelden
-      - Oberaichen
-      - Stuttgart Rohr
-      - Stuttgart Vaihingen
-      - Stuttgart Österfeld
-      - Stuttgart Universität
-      - Stuttgart Schwabstraße
-      - Stuttgart Feuersee
-      - Stuttgart Stadtmitte
-      - Stuttgart Hauptbahnhof (tief)
-      - Stuttgart-Bad Cannstatt
-      - Stuttgart Nürnberger Straße
-      - Stuttgart-Sommerrain
-      - Fellbach
+      - Schorndorf
+      - Weiler
+      - Winterbach
+      - Geradstetten
+      - Grunbach
+      - Beutelsbach
+      - Endersbach
+      - Stetten-Beinstein
+      - Rommelshausen
       - Waiblingen
-      - Neustadt-Hohenacker
-      - Schwaikheim
-      - Winnenden
-      - Nellmersbach
-      - Maubach
-      - Backnang
+      - Fellbach
+      - Stuttgart-Sommerrain
+      - Stuttgart Nürnberger Straße
+      - Stuttgart-Bad Cannstatt
+      - Stuttgart Hauptbahnhof (tief)
+      - Stuttgart Stadtmitte
+      - Stuttgart Feuersee
+      - Stuttgart Schwabstraße
+      - Stuttgart Universität
+      - Stuttgart Österfeld
+      - Stuttgart Vaihingen
+      - Stuttgart Rohr
+      - Oberaichen
+      - Leinfelden
+      - Echterdingen
+      - Stuttgart Flughafen/Messe
+      - Filderstadt
 
+  - 
+    name: 'S3: Backnang <=> Stuttgart Flughafen/Messe'
+    type: train
+    ref: S3
+    station_count: 23
+    colour: '#ff7d24'
     itineraries: 
       r35605: 
         - Stuttgart Flughafen/Messe (n27312362)
@@ -429,31 +409,37 @@ routes:
         - Stuttgart Flughafen/Messe (n27312362)
 
 
-    name: 'S3: Backnang <=> Stuttgart Flughafen/Messe'
-    station_count: 23
-    ref: S3
-    colour: '#ff7d24'
-    type: train
-  - 
     stations: 
       - Backnang
-      - Burgstall (Murr)
-      - Kirchberg (Murr)
-      - Erdmannhausen
-      - Marbach (Neckar)
-      - Benningen (Neckar)
-      - Freiberg (Neckar)
-      - Favoritepark
-      - Ludwigsburg
-      - Kornwestheim Pbf
-      - Stuttgart-Zuffenhausen
-      - Feuerbach Bahnhof
-      - S Nordbahnhof
+      - Maubach
+      - Nellmersbach
+      - Winnenden
+      - Schwaikheim
+      - Neustadt-Hohenacker
+      - Waiblingen
+      - Fellbach
+      - Stuttgart-Sommerrain
+      - Stuttgart Nürnberger Straße
+      - Stuttgart-Bad Cannstatt
       - Stuttgart Hauptbahnhof (tief)
       - Stuttgart Stadtmitte
       - Stuttgart Feuersee
       - Stuttgart Schwabstraße
+      - Stuttgart Universität
+      - Stuttgart Österfeld
+      - Stuttgart Vaihingen
+      - Stuttgart Rohr
+      - Oberaichen
+      - Leinfelden
+      - Echterdingen
+      - Stuttgart Flughafen/Messe
 
+  - 
+    name: 'S4: Backnang <=> Stuttgart Schwabstraße'
+    type: train
+    ref: S4
+    station_count: 17
+    colour: '#0065b7'
     itineraries: 
       r66838: 
         - Backnang (n3060765256)
@@ -494,12 +480,6 @@ routes:
         - Backnang (n3060765256)
 
 
-    name: 'S4: Backnang <=> Stuttgart Schwabstraße'
-    station_count: 17
-    ref: S4
-    colour: '#0065b7'
-    type: train
-  - 
     stations: 
       - Stuttgart Schwabstraße
       - Stuttgart Feuersee
@@ -510,10 +490,21 @@ routes:
       - Stuttgart-Zuffenhausen
       - Kornwestheim Pbf
       - Ludwigsburg
-      - Asperg
-      - Tamm (Württ)
-      - Bietigheim-Bissingen
+      - Favoritepark
+      - Freiberg (Neckar)
+      - Benningen (Neckar)
+      - Marbach (Neckar)
+      - Erdmannhausen
+      - Kirchberg (Murr)
+      - Burgstall (Murr)
+      - Backnang
 
+  - 
+    name: 'S5: Bietigheim-Bissingen <=> Stuttgart Schwabstraße'
+    type: train
+    ref: S5
+    station_count: 12
+    colour: '#00b7e1'
     itineraries: 
       r67280: 
         - Stuttgart Schwabstraße (n2432321160)
@@ -544,23 +535,12 @@ routes:
         - Stuttgart Schwabstraße (n2432321160)
 
 
-    name: 'S5: Bietigheim-Bissingen <=> Stuttgart Schwabstraße'
-    station_count: 12
-    ref: S5
-    colour: '#00b7e1'
-    type: train
-  - 
     stations: 
-      - Weil der Stadt
-      - Malmsheim
-      - Renningen
-      - Rutesheim
-      - Leonberg
-      - Höfingen
-      - Ditzingen
-      - Weilimdorf
-      - Korntal
-      - Neuwirtshaus (Porscheplatz)
+      - Bietigheim-Bissingen
+      - Tamm (Württ)
+      - Asperg
+      - Ludwigsburg
+      - Kornwestheim Pbf
       - Stuttgart-Zuffenhausen
       - Feuerbach Bahnhof
       - S Nordbahnhof
@@ -569,26 +549,13 @@ routes:
       - Stuttgart Feuersee
       - Stuttgart Schwabstraße
 
+  - 
+    name: 'S6: Stuttgart Schwabstraße <=> Weil der Stadt'
+    type: train
+    ref: S6
+    station_count: 17
+    colour: '#874a0a'
     itineraries: 
-      r37418: 
-        - Weil der Stadt (n3034314606)
-        - Malmsheim (n305641035)
-        - Renningen (n41345804)
-        - Rutesheim (n304199447)
-        - Leonberg (n304196007)
-        - Höfingen (n305629619)
-        - Ditzingen (n3045595163)
-        - Weilimdorf (n304359311)
-        - Korntal (n304367932)
-        - Neuwirtshaus (Porscheplatz) (n3043128922)
-        - Stuttgart-Zuffenhausen (n2661524407)
-        - Stuttgart-Feuerbach (n303467028)
-        - Stuttgart Nord (n263346985)
-        - Stuttgart Hauptbahnhof (tief) (n278553741)
-        - Stuttgart Stadtmitte (n278553729)
-        - Stuttgart Feuersee (n3027565242)
-        - Stuttgart Schwabstraße (n2432321160)
-
       r37417: 
         - Stuttgart Schwabstraße (n2432321160)
         - Stuttgart Feuersee (n3027565242)
@@ -608,13 +575,26 @@ routes:
         - Malmsheim (n305641035)
         - Weil der Stadt (n3034314606)
 
+      r37418: 
+        - Weil der Stadt (n3034314606)
+        - Malmsheim (n305641035)
+        - Renningen (n41345804)
+        - Rutesheim (n304199447)
+        - Leonberg (n304196007)
+        - Höfingen (n305629619)
+        - Ditzingen (n3045595163)
+        - Weilimdorf (n304359311)
+        - Korntal (n304367932)
+        - Neuwirtshaus (Porscheplatz) (n3043128922)
+        - Stuttgart-Zuffenhausen (n2661524407)
+        - Stuttgart-Feuerbach (n303467028)
+        - Stuttgart Nord (n263346985)
+        - Stuttgart Hauptbahnhof (tief) (n278553741)
+        - Stuttgart Stadtmitte (n278553729)
+        - Stuttgart Feuersee (n3027565242)
+        - Stuttgart Schwabstraße (n2432321160)
 
-    name: 'S6: Stuttgart Schwabstraße <=> Weil der Stadt'
-    station_count: 17
-    ref: S6
-    colour: '#874a0a'
-    type: train
-  - 
+
     stations: 
       - Stuttgart Schwabstraße
       - Stuttgart Feuersee
@@ -631,13 +611,15 @@ routes:
       - Leonberg
       - Rutesheim
       - Renningen
-      - Renningen Süd
-      - Magstadt
-      - Maichingen Nord
-      - Maichingen
-      - Sindelfingen
-      - Böblingen
+      - Malmsheim
+      - Weil der Stadt
 
+  - 
+    name: 'S60: Böblingen <=> Stuttgart Schwabstraße'
+    type: train
+    ref: S60
+    station_count: 21
+    colour: '#928d1d'
     itineraries: 
       r544243: 
         - Böblingen (n2711388096)
@@ -686,9 +668,27 @@ routes:
         - Böblingen (n2711388096)
 
 
-    name: 'S60: Böblingen <=> Stuttgart Schwabstraße'
-    station_count: 21
-    ref: S60
-    colour: '#928d1d'
-    type: train
+    stations: 
+      - Böblingen
+      - Sindelfingen
+      - Maichingen
+      - Maichingen Nord
+      - Magstadt
+      - Renningen Süd
+      - Renningen
+      - Rutesheim
+      - Leonberg
+      - Höfingen
+      - Ditzingen
+      - Weilimdorf
+      - Korntal
+      - Neuwirtshaus (Porscheplatz)
+      - Stuttgart-Zuffenhausen
+      - Feuerbach Bahnhof
+      - S Nordbahnhof
+      - Stuttgart Hauptbahnhof (tief)
+      - Stuttgart Stadtmitte
+      - Stuttgart Feuersee
+      - Stuttgart Schwabstraße
+
 

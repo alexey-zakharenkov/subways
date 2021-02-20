@@ -36,32 +36,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Kavi Subhash
-      - Shahid Khudiram
-      - Kavi Nazrul
-      - Geetanjali
-      - Masterda Surya Sen
-      - Netaji
-      - Mahanayak Uttam Kumar
-      - Rabindra Sarobar
-      - Kalighat
-      - Jatin Das Park
-      - Netaji Bhavan
-      - Rabindra Sadan
-      - Maidan
-      - Park Street
-      - Esplanade
-      - Chandni Chowk
-      - Central
-      - Mahatma Gandhi Road
-      - Girish Park
-      - Shobhabazar Sutanuti
-      - Shyambazar
-      - Belgachia
-      - Dum Dum
-      - Noapara
-
+    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
+    type: subway
+    ref: 1
+    station_count: 24
+    colour: '#008000'
     itineraries: 
       r8034180: 
         - Noapara (n5421551283)
@@ -116,21 +95,38 @@ routes:
         - Noapara (n5421551283)
 
 
-    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
-    station_count: 24
-    ref: 1
-    colour: '#008000'
-    type: subway
-  - 
     stations: 
-      - Phoolbagan
-      - Salt Lake Stadium
-      - Bengal Chemical
-      - City Centre
-      - Central Park
-      - Karunamoyee
-      - Salt Lake Sector V
+      - Kavi Subhash
+      - Shahid Khudiram
+      - Kavi Nazrul
+      - Geetanjali
+      - Masterda Surya Sen
+      - Netaji
+      - Mahanayak Uttam Kumar
+      - Rabindra Sarobar
+      - Kalighat
+      - Jatin Das Park
+      - Netaji Bhavan
+      - Rabindra Sadan
+      - Maidan
+      - Park Street
+      - Esplanade
+      - Chandni Chowk
+      - Central
+      - Mahatma Gandhi Road
+      - Girish Park
+      - Shobhabazar Sutanuti
+      - Shyambazar
+      - Belgachia
+      - Dum Dum
+      - Noapara
 
+  - 
+    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
+    type: subway
+    ref: 2
+    station_count: 7
+    colour: '#ff0000'
     itineraries: 
       r11720072: 
         - Salt Lake Sector V (n7976140073)
@@ -151,9 +147,13 @@ routes:
         - Salt Lake Sector V (n7976140073)
 
 
-    name: Kolkata Metro Line 2 (Phoolbagan ↔ Salt Lake Sector V)
-    station_count: 7
-    ref: 2
-    colour: '#ff0000'
-    type: subway
+    stations: 
+      - Phoolbagan
+      - Salt Lake Stadium
+      - Bengal Chemical
+      - City Centre
+      - Central Park
+      - Karunamoyee
+      - Salt Lake Sector V
+
 

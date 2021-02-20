@@ -191,65 +191,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - San Pablo (1)
-      - Entradas Metro Neptuno
-      - Entradas Metro Pajaritos
-      - Entradas Metro Las Rejas
-      - Entradas Metro Ecuador
-      - Entradas Metro San Alberto Hurtado
-      - Entradas Metro República
-      - Estación Central (Metro)
-      - Entradas estación ULA
-      - Entradas Metro República
-      - Los Héroes (1)
-      - Entradas Metro Moneda
-      - Universidad de Chile (1)
-      - Entradas Metro Santa Lucía
-      - Entradas Metro Universidad Católica
-      - Baquedano (1)
-      - Entradas Metro Salvador
-      - Entradas Metro Manuel Montt
-      - Entradas Metro Pedro de Valdivia
-      - Los Leones (1)
-      - Tobalaba (1)
-      - Entradas Metro el Golf
-      - Entradas Metro Alcántara
-      - Entradas Metro Escuela Militar
-      - Entradas Metro Manquehue
-      - Entrada Metro Hernando de Magallanes
-      - Entradas Metro Los Dominicos
-
+    name: Línea 1 del Metro de Santiago
+    type: subway
+    ref: 1
+    station_count: 27
+    colour: '#cc0000'
     itineraries: 
-      r2943868: 
-        - San Pablo (n668141380)
-        - Neptuno (n4519746485)
-        - Pajaritos (n253282383)
-        - Las Rejas (n253282379)
-        - Ecuador (n253282361)
-        - San Alberto Hurtado (n253282358)
-        - Universidad de Santiago (n253282351)
-        - Estación Central (n252528391)
-        - Unión Latinoamericana (n252528387)
-        - República (n252528383)
-        - Los Héroes (n2307244234)
-        - La Moneda (n3391796062)
-        - Universidad de Chile (n6506316372)
-        - Santa Lucía (n252527604)
-        - Universidad Católica (n252527603)
-        - Baquedano (n1157168087)
-        - Salvador (n520459156)
-        - Manuel Montt (n252527600)
-        - Pedro de Valdivia (n252527599)
-        - Los Leones (n5227884071)
-        - Tobalaba (n252527597)
-        - El Golf (n252527596)
-        - Alcántara (n252527592)
-        - Escuela Militar (n252527589)
-        - Manquehue (n390998417)
-        - Hernando de Magallanes (n390998425)
-        - Los Dominicos (n390998430)
-
       r444963: 
         - Los Dominicos (n390998430)
         - Hernando de Magallanes (n390998425)
@@ -279,37 +226,71 @@ routes:
         - Neptuno (n4519746485)
         - San Pablo (n668141380)
 
+      r2943868: 
+        - San Pablo (n668141380)
+        - Neptuno (n4519746485)
+        - Pajaritos (n253282383)
+        - Las Rejas (n253282379)
+        - Ecuador (n253282361)
+        - San Alberto Hurtado (n253282358)
+        - Universidad de Santiago (n253282351)
+        - Estación Central (n252528391)
+        - Unión Latinoamericana (n252528387)
+        - República (n252528383)
+        - Los Héroes (n2307244234)
+        - La Moneda (n3391796062)
+        - Universidad de Chile (n6506316372)
+        - Santa Lucía (n252527604)
+        - Universidad Católica (n252527603)
+        - Baquedano (n1157168087)
+        - Salvador (n520459156)
+        - Manuel Montt (n252527600)
+        - Pedro de Valdivia (n252527599)
+        - Los Leones (n5227884071)
+        - Tobalaba (n252527597)
+        - El Golf (n252527596)
+        - Alcántara (n252527592)
+        - Escuela Militar (n252527589)
+        - Manquehue (n390998417)
+        - Hernando de Magallanes (n390998425)
+        - Los Dominicos (n390998430)
 
-    name: Línea 1 del Metro de Santiago
-    station_count: 27
-    ref: 1
-    colour: '#cc0000'
-    type: subway
-  - 
+
     stations: 
-      - Vespucio Norte
-      - Entradas Metro Zapadores
-      - Entradas Metro Dorsal
-      - Entradas Metro Einstein
-      - Entradas Metro Cementerios
-      - Entradas Metro Cerro Blanco
-      - Entradas Metro Patronato
-      - Metro Cal y Canto (2)
-      - Santa Ana (2)
-      - Los Héroes (2)
-      - Entradas Metro Toesca
-      - Entrada Metro Parque Ohiggins
-      - Entrada Metro Rondizzoni
-      - Franklin (2)
-      - Entradas Metro El Llano
-      - Entradas Metro San Miguel
-      - Entradas Metro Lo Vial
-      - Entradas Metro Departamental
-      - Entradas Metro Ciudad de Niño
-      - Entradas Metro Lo Ovalle
-      - Entradas Metro El Parrón
-      - La Cisterna (2)
+      - San Pablo (1)
+      - Entradas Metro Neptuno
+      - Entradas Metro Pajaritos
+      - Entradas Metro Las Rejas
+      - Entradas Metro Ecuador
+      - Entradas Metro San Alberto Hurtado
+      - Entradas Metro República
+      - Estación Central (Metro)
+      - Entradas estación ULA
+      - Entradas Metro República
+      - Los Héroes (1)
+      - Entradas Metro Moneda
+      - Universidad de Chile (1)
+      - Entradas Metro Santa Lucía
+      - Entradas Metro Universidad Católica
+      - Baquedano (1)
+      - Entradas Metro Salvador
+      - Entradas Metro Manuel Montt
+      - Entradas Metro Pedro de Valdivia
+      - Los Leones (1)
+      - Tobalaba (1)
+      - Entradas Metro el Golf
+      - Entradas Metro Alcántara
+      - Entradas Metro Escuela Militar
+      - Entradas Metro Manquehue
+      - Entrada Metro Hernando de Magallanes
+      - Entradas Metro Los Dominicos
 
+  - 
+    name: Línea 2 del Metro de Santiago
+    type: subway
+    ref: 2
+    station_count: 22
+    colour: '#ffbe2e'
     itineraries: 
       r3636603: 
         - Vespucio Norte (n267078399)
@@ -360,53 +341,37 @@ routes:
         - Vespucio Norte (n267078399)
 
 
-    name: Línea 2 del Metro de Santiago
-    station_count: 22
-    ref: 2
-    colour: '#ffbe2e'
-    type: subway
-  - 
     stations: 
-      - Entradas Metro Fernando Castillo Velasco
-      - Plaza Egaña (3)
-      - Entradas Metro Villa Frei
-      - Chile España
-      - Ñuñoa (3)
-      - Entradas Estación Monseñor Eyzaguirre
-      - Irarrázabal (3)
-      - Matta
-      - Parque Almagro
-      - Universidad de Chile (3)
-      - Plaza de Armas (3)
-      - Metro Cal y Canto (3)
-      - Hospitales
-      - Plaza Chacabuco
-      - Conchalí
-      - Vivaceta
-      - Cardenal Caro
-      - Entradas Metro Los Libertadores
+      - La Cisterna (2)
+      - Entradas Metro El Parrón
+      - Entradas Metro Lo Ovalle
+      - Entradas Metro Ciudad de Niño
+      - Entradas Metro Departamental
+      - Entradas Metro Lo Vial
+      - Entradas Metro San Miguel
+      - Entradas Metro El Llano
+      - Franklin (2)
+      - Entrada Metro Rondizzoni
+      - Entrada Metro Parque Ohiggins
+      - Entradas Metro Toesca
+      - Los Héroes (2)
+      - Santa Ana (2)
+      - Metro Cal y Canto (2)
+      - Entradas Metro Patronato
+      - Entradas Metro Cerro Blanco
+      - Entradas Metro Cementerios
+      - Entradas Metro Einstein
+      - Entradas Metro Dorsal
+      - Entradas Metro Zapadores
+      - Vespucio Norte
 
+  - 
+    name: Línea 3 del Metro de Santiago
+    type: subway
+    ref: 3
+    station_count: 18
+    colour: '#8b4513'
     itineraries: 
-      r9633217: 
-        - Fernando Castillo Velasco (n6512675039)
-        - Plaza Egaña (n6506316379)
-        - Villa Frei (n1894900066)
-        - Chile España (n1894898784)
-        - Ñuñoa (n6506316376)
-        - Monseñor Eyzaguirre (n1363217828)
-        - Irarrázaval (n6506316374)
-        - Matta (n6228531275)
-        - Parque Almagro (n6228531277)
-        - Universidad de Chile (n6506316372)
-        - Plaza de Armas (n6231367141)
-        - Puente Cal y Canto (n6506316370)
-        - Hospitales (n6228531279)
-        - Plaza Chacabuco (n6228531280)
-        - Conchalí (n6228531283)
-        - Vivaceta (n6228531486)
-        - Cardenal Caro (n6228531487)
-        - Los Libertadores (n2390287915)
-
       r2193874: 
         - Los Libertadores (n2390287915)
         - Cardenal Caro (n6228531487)
@@ -427,64 +392,54 @@ routes:
         - Plaza Egaña (n6506316379)
         - Fernando Castillo Velasco (n6512675039)
 
-
-    name: Línea 3 del Metro de Santiago
-    station_count: 18
-    ref: 3
-    colour: '#8b4513'
-    type: subway
-  - 
-    stations: 
-      - Entrada Metro Plaza Puente Alto
-      - Entradas Metro Las Mercedes
-      - Entrada Metro Protectora de la Infacia
-      - Entradas Metro Hospital Sótero del Río
-      - Entradas Metro Elisa Correa
-      - Entradas Metro Quillayes
-      - Entradas Metro José de la Estrella
-      - Entradas Metro Trinidad
-      - Entradas Metro Rojas Magallanes
-      - Vicente Valdés
-      - Vicuña Mackena
-      - Entrada Metro Macul
-      - Entradas Metro Las Torres
-      - Entradas Metro Quilín
-      - Entradas Metro Los Presidentes
-      - Entradas Metro Grecia
-      - Entradas Metro Los Orientales
-      - Plaza Egaña (4)
-      - Entradas Metro Simón Bolivar
-      - Entradas Metro Príncipe de Gales
-      - Francisco Bilbao
-      - Cristóbal Colón
-      - Tobalaba (4)
-
-    itineraries: 
-      r444961: 
-        - Tobalaba (n252527597)
-        - Cristóbal Colón (n252981526)
-        - Francisco Bilbao (n252981531)
-        - Príncipe de Gales (n252981541)
-        - Simón Bolívar (n252981546)
+      r9633217: 
+        - Fernando Castillo Velasco (n6512675039)
         - Plaza Egaña (n6506316379)
-        - Los Orientales (n256372838)
-        - Grecia (n256372848)
-        - Los Presidentes (n256373484)
-        - Quilín (n256374109)
-        - Las Torres (n256374120)
-        - Macul (n256374127)
-        - Vicuña Mackenna (n6514765510)
-        - Vicente Valdés (n6514737770)
-        - Rojas Magallanes (n256377241)
-        - Trinidad (n256377430)
-        - San José de la Estrella (n470378182)
-        - Los Quillayes (n256377970)
-        - Elisa Correa (n256378408)
-        - Hospital Sótero del Río (n256378595)
-        - Protectora de la Infancia (n256379524)
-        - Las Mercedes (n463165229)
-        - Plaza de Puente Alto (n491641302)
+        - Villa Frei (n1894900066)
+        - Chile España (n1894898784)
+        - Ñuñoa (n6506316376)
+        - Monseñor Eyzaguirre (n1363217828)
+        - Irarrázaval (n6506316374)
+        - Matta (n6228531275)
+        - Parque Almagro (n6228531277)
+        - Universidad de Chile (n6506316372)
+        - Plaza de Armas (n6231367141)
+        - Puente Cal y Canto (n6506316370)
+        - Hospitales (n6228531279)
+        - Plaza Chacabuco (n6228531280)
+        - Conchalí (n6228531283)
+        - Vivaceta (n6228531486)
+        - Cardenal Caro (n6228531487)
+        - Los Libertadores (n2390287915)
 
+
+    stations: 
+      - Entradas Metro Los Libertadores
+      - Cardenal Caro
+      - Vivaceta
+      - Conchalí
+      - Plaza Chacabuco
+      - Hospitales
+      - Metro Cal y Canto (3)
+      - Plaza de Armas (3)
+      - Universidad de Chile (3)
+      - Parque Almagro
+      - Matta
+      - Irarrázabal (3)
+      - Entradas Estación Monseñor Eyzaguirre
+      - Ñuñoa (3)
+      - Chile España
+      - Entradas Metro Villa Frei
+      - Plaza Egaña (3)
+      - Entradas Metro Fernando Castillo Velasco
+
+  - 
+    name: Línea 4 del Metro de Santiago
+    type: subway
+    ref: 4
+    station_count: 23
+    colour: '#292d91'
+    itineraries: 
       r6657239: 
         - Plaza de Puente Alto (n491641302)
         - Las Mercedes (n463165229)
@@ -510,21 +465,63 @@ routes:
         - Cristóbal Colón (n252981526)
         - Tobalaba (n252527597)
 
+      r444961: 
+        - Tobalaba (n252527597)
+        - Cristóbal Colón (n252981526)
+        - Francisco Bilbao (n252981531)
+        - Príncipe de Gales (n252981541)
+        - Simón Bolívar (n252981546)
+        - Plaza Egaña (n6506316379)
+        - Los Orientales (n256372838)
+        - Grecia (n256372848)
+        - Los Presidentes (n256373484)
+        - Quilín (n256374109)
+        - Las Torres (n256374120)
+        - Macul (n256374127)
+        - Vicuña Mackenna (n6514765510)
+        - Vicente Valdés (n6514737770)
+        - Rojas Magallanes (n256377241)
+        - Trinidad (n256377430)
+        - San José de la Estrella (n470378182)
+        - Los Quillayes (n256377970)
+        - Elisa Correa (n256378408)
+        - Hospital Sótero del Río (n256378595)
+        - Protectora de la Infancia (n256379524)
+        - Las Mercedes (n463165229)
+        - Plaza de Puente Alto (n491641302)
 
-    name: Línea 4 del Metro de Santiago
-    station_count: 23
-    ref: 4
-    colour: '#292d91'
-    type: subway
-  - 
+
     stations: 
+      - Tobalaba (4)
+      - Cristóbal Colón
+      - Francisco Bilbao
+      - Entradas Metro Príncipe de Gales
+      - Entradas Metro Simón Bolivar
+      - Plaza Egaña (4)
+      - Entradas Metro Los Orientales
+      - Entradas Metro Grecia
+      - Entradas Metro Los Presidentes
+      - Entradas Metro Quilín
+      - Entradas Metro Las Torres
+      - Entrada Metro Macul
       - Vicuña Mackena
-      - Entradas Metro Santa Julia
-      - Entradas Metro La Granja
-      - Entradas Metro Santa Rosa
-      - Entradas Metro San Ramón
-      - La Cisterna (4A)
+      - Vicente Valdés
+      - Entradas Metro Rojas Magallanes
+      - Entradas Metro Trinidad
+      - Entradas Metro José de la Estrella
+      - Entradas Metro Quillayes
+      - Entradas Metro Elisa Correa
+      - Entradas Metro Hospital Sótero del Río
+      - Entrada Metro Protectora de la Infacia
+      - Entradas Metro Las Mercedes
+      - Entrada Metro Plaza Puente Alto
 
+  - 
+    name: 'Línea 4A: Vicuña Mackenna → La Cisterna'
+    type: subway
+    ref: 4A
+    station_count: 6
+    colour: '#0099ff'
     itineraries: 
       r444982: 
         - Vicuña Mackenna (n6514765510)
@@ -543,77 +540,21 @@ routes:
         - Vicuña Mackenna (n6514765510)
 
 
-    name: 'Línea 4A: Vicuña Mackenna → La Cisterna'
-    station_count: 6
-    ref: 4A
-    colour: '#0099ff'
-    type: subway
-  - 
     stations: 
-      - Entradas Metro Plaza
-      - Entrada Metro Santiago Bueras
-      - Entradas Metro del Sol
-      - Entrada Metro Montetabor
-      - Entrada Metro Las Parcelas
-      - Entrada Metro Laguna Sur
-      - Entradas Metro Barrancas
-      - Entrada Metro Pudahuel
-      - San Pablo (5)
-      - Entradas Metro Lo Prado
-      - Entrada Metro Blanqueado
-      - Entradas Metro Gruta Lourdes
-      - Entradas Metro Quinta Normal
-      - Entradas Metro Cumming
-      - Santa Ana (5)
-      - Plaza de Armas (5)
-      - Entrada Metro Bellas Artes
-      - Baquedano (5)
-      - Entradas Metro Parque Bustamente
-      - Entradas Metro Santa Isabel
-      - Irarrázabal (5)
-      - Ñuble (5)
-      - Entrada Metro Rodrigo de Araya
-      - Entradas Metro Carlos Valdovinos
-      - Entrada Metro Camino Agrícola
-      - Entradas Metro San Joaquín
-      - Entrada Metro Pedrero
-      - Entradas Metro Mirador
-      - Entradas Metro Bellavista de la Florida
-      - Vicente Valdés
+      - Vicuña Mackena
+      - Entradas Metro Santa Julia
+      - Entradas Metro La Granja
+      - Entradas Metro Santa Rosa
+      - Entradas Metro San Ramón
+      - La Cisterna (4A)
 
+  - 
+    name: Línea 5 del Metro de Santiago
+    type: subway
+    ref: 5
+    station_count: 30
+    colour: '#006633'
     itineraries: 
-      r6657266: 
-        - Vicente Valdés (n6514737770)
-        - Bellavista de La Florida (n256999811)
-        - Mirador (n253295159)
-        - Pedrero (n253295163)
-        - San Joaquín (n4593692288)
-        - Camino Agrícola (n253295175)
-        - Carlos Valdovinos (n253295179)
-        - Rodrigo de Araya (n253295184)
-        - Ñuble (n615092336)
-        - Irarrázaval (n6506316374)
-        - Santa Isabel (n253294531)
-        - Parque Bustamante (n475497992)
-        - Baquedano (n1157168087)
-        - Bellas Artes (n253281389)
-        - Plaza de Armas (n6231367141)
-        - Santa Ana (n477827069)
-        - Cumming (n253281419)
-        - Quinta Normal (n254343697)
-        - Gruta de Lourdes (n475498004)
-        - Blanqueado (n475498009)
-        - Lo Prado (n476909750)
-        - San Pablo (n668141380)
-        - Pudahuel (n475498017)
-        - Barrancas (n391007642)
-        - Laguna Sur (n391008466)
-        - Las Parcelas (n463084774)
-        - Monte Tabor (n463084780)
-        - Del Sol (n549216801)
-        - Santiago Bueras (n476917797)
-        - Plaza de Maipú (n3587889955)
-
       r444964: 
         - Plaza de Maipú (n3587889955)
         - Santiago Bueras (n476917797)
@@ -646,25 +587,77 @@ routes:
         - Bellavista de La Florida (n256999811)
         - Vicente Valdés (n6514737770)
 
+      r6657266: 
+        - Vicente Valdés (n6514737770)
+        - Bellavista de La Florida (n256999811)
+        - Mirador (n253295159)
+        - Pedrero (n253295163)
+        - San Joaquín (n4593692288)
+        - Camino Agrícola (n253295175)
+        - Carlos Valdovinos (n253295179)
+        - Rodrigo de Araya (n253295184)
+        - Ñuble (n615092336)
+        - Irarrázaval (n6506316374)
+        - Santa Isabel (n253294531)
+        - Parque Bustamante (n475497992)
+        - Baquedano (n1157168087)
+        - Bellas Artes (n253281389)
+        - Plaza de Armas (n6231367141)
+        - Santa Ana (n477827069)
+        - Cumming (n253281419)
+        - Quinta Normal (n254343697)
+        - Gruta de Lourdes (n475498004)
+        - Blanqueado (n475498009)
+        - Lo Prado (n476909750)
+        - San Pablo (n668141380)
+        - Pudahuel (n475498017)
+        - Barrancas (n391007642)
+        - Laguna Sur (n391008466)
+        - Las Parcelas (n463084774)
+        - Monte Tabor (n463084780)
+        - Del Sol (n549216801)
+        - Santiago Bueras (n476917797)
+        - Plaza de Maipú (n3587889955)
 
-    name: Línea 5 del Metro de Santiago
-    station_count: 30
-    ref: 5
-    colour: '#006633'
-    type: subway
-  - 
+
     stations: 
-      - Cerrillos
-      - Lo Valledor (Metro)
-      - Presidente Pedro Aguirre Cerda
-      - Franklin (6)
-      - Bío Bío
-      - Ñuble (6)
-      - Estadio Nacional
-      - Ñuñoa (6)
-      - Inés de Suárez
-      - Los Leones (6)
+      - Vicente Valdés
+      - Entradas Metro Bellavista de la Florida
+      - Entradas Metro Mirador
+      - Entrada Metro Pedrero
+      - Entradas Metro San Joaquín
+      - Entrada Metro Camino Agrícola
+      - Entradas Metro Carlos Valdovinos
+      - Entrada Metro Rodrigo de Araya
+      - Ñuble (5)
+      - Irarrázabal (5)
+      - Entradas Metro Santa Isabel
+      - Entradas Metro Parque Bustamente
+      - Baquedano (5)
+      - Entrada Metro Bellas Artes
+      - Plaza de Armas (5)
+      - Santa Ana (5)
+      - Entradas Metro Cumming
+      - Entradas Metro Quinta Normal
+      - Entradas Metro Gruta Lourdes
+      - Entrada Metro Blanqueado
+      - Entradas Metro Lo Prado
+      - San Pablo (5)
+      - Entrada Metro Pudahuel
+      - Entradas Metro Barrancas
+      - Entrada Metro Laguna Sur
+      - Entrada Metro Las Parcelas
+      - Entrada Metro Montetabor
+      - Entradas Metro del Sol
+      - Entrada Metro Santiago Bueras
+      - Entradas Metro Plaza
 
+  - 
+    name: Línea 6 del Metro de Santiago
+    type: subway
+    ref: 6
+    station_count: 10
+    colour: '#8e16a1'
     itineraries: 
       r444976: 
         - Cerrillos (n2776463407)
@@ -691,24 +684,24 @@ routes:
         - Cerrillos (n2776463407)
 
 
-    name: Línea 6 del Metro de Santiago
-    station_count: 10
-    ref: 6
-    colour: '#8e16a1'
-    type: subway
-  - 
     stations: 
-      - Alameda (Metrotren)
-      - Lo Valledor (Metrotren)
-      - Pedro Aguirre Cerda
-      - Lo Espejo
-      - Lo Blanco
-      - Freire
-      - San Bernardo
-      - Maestranza
-      - 5 Pinos
-      - Nos
+      - Cerrillos
+      - Lo Valledor (Metro)
+      - Presidente Pedro Aguirre Cerda
+      - Franklin (6)
+      - Bío Bío
+      - Ñuble (6)
+      - Estadio Nacional
+      - Ñuñoa (6)
+      - Inés de Suárez
+      - Los Leones (6)
 
+  - 
+    name: Metrotren Nos
+    type: train
+    ref: Nos
+    station_count: 10
+    colour: '#0000ff'
     itineraries: 
       r7106219: 
         - Nos (n4747704104)
@@ -735,9 +728,16 @@ routes:
         - Nos (n4747704104)
 
 
-    name: Metrotren Nos
-    station_count: 10
-    ref: Nos
-    colour: '#0000ff'
-    type: train
+    stations: 
+      - Nos
+      - 5 Pinos
+      - Maestranza
+      - San Bernardo
+      - Freire
+      - Lo Blanco
+      - Lo Espejo
+      - Pedro Aguirre Cerda
+      - Lo Valledor (Metrotren)
+      - Alameda (Metrotren)
+
 

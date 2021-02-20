@@ -24,27 +24,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 那覇空港
-      - 赤嶺
-      - 小禄
-      - 奥武山公園
-      - 壺川
-      - 旭橋
-      - 県庁前
-      - 美栄橋
-      - 牧志
-      - 安里
-      - おもろまち
-      - 古島
-      - 市立病院前
-      - 儀保
-      - 首里
-      - 石嶺
-      - 経塚
-      - 浦添前田
-      - てだこ浦西
-
+    name: 沖縄都市モノレール
+    type: monorail
+    ref: Yui Rail
+    station_count: 19
+    colour: '#e70f3f'
     itineraries: 
       r9637967: 
         - 那覇空港 (n6540630178)
@@ -89,9 +73,25 @@ routes:
         - 那覇空港 (n6540630178)
 
 
-    name: 沖縄都市モノレール
-    station_count: 19
-    ref: Yui Rail
-    colour: '#e70f3f'
-    type: monorail
+    stations: 
+      - てだこ浦西
+      - 浦添前田
+      - 経塚
+      - 石嶺
+      - 首里
+      - 儀保
+      - 市立病院前
+      - 古島
+      - おもろまち
+      - 安里
+      - 牧志
+      - 美栄橋
+      - 県庁前
+      - 旭橋
+      - 壺川
+      - 奥武山公園
+      - 小禄
+      - 赤嶺
+      - 那覇空港
+
 

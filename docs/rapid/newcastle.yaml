@@ -68,39 +68,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - South Hylton
-      - Pallion
-      - Millfield
-      - University
-      - Park Lane
-      - Sunderland
-      - St Peter's
-      - Stadium of Light
-      - Seaburn
-      - East Boldon
-      - Brockley Whins
-      - Fellgate
-      - Pelaw
-      - Heworth
-      - Felling
-      - Gateshead
-      - Gateshead
-      - Central Station
-      - Monument (upper)
-      - Haymarket
-      - Jesmond
-      - West Jesmond
-      - Ilford Road
-      - South Gosforth
-      - Regent Centre
-      - Wansbeck Road
-      - Fawdon
-      - Kingston Park
-      - Bank Foot
-      - Callerton Parkway
-      - Airport
-
+    name: Green Line
+    type: light_rail
+    ref: Green
+    station_count: 31
+    colour: '#009933'
     itineraries: 
       r172927: 
         - Airport (n4523857055)
@@ -169,55 +141,45 @@ routes:
         - Airport (n4523857055)
 
 
-    name: Green Line
-    station_count: 31
-    ref: Green
-    colour: '#009933'
-    type: light_rail
-  - 
     stations: 
-      - St James
-      - Monument (upper)
-      - Manors
-      - Byker
-      - Chillingham Road
-      - Walkergate
-      - Wallsend
-      - Hadrian Road
-      - Howdon
-      - Percy Main
-      - Meadow Well
-      - North Shields
-      - Tynemouth
-      - Cullercoats
-      - Whitley Bay
-      - Monkseaton
-      - West Monkseaton
-      - Shiremoor
-      - Northumberland Park
-      - Palmersville
-      - Benton
-      - Four Lane Ends
-      - Longbenton
-      - South Gosforth
-      - Ilford Road
-      - West Jesmond
-      - Jesmond
-      - Haymarket
-      - Central Station
-      - Gateshead
-      - Gateshead
-      - Felling
-      - Heworth
+      - South Hylton
+      - Pallion
+      - Millfield
+      - University
+      - Park Lane
+      - Sunderland
+      - St Peter's
+      - Stadium of Light
+      - Seaburn
+      - East Boldon
+      - Brockley Whins
+      - Fellgate
       - Pelaw
-      - Hebburn
-      - Jarrow
-      - Bede
-      - Simonside
-      - Tyne Dock
-      - Chichester
-      - South Shields
+      - Heworth
+      - Felling
+      - Gateshead
+      - Gateshead
+      - Central Station
+      - Monument (upper)
+      - Haymarket
+      - Jesmond
+      - West Jesmond
+      - Ilford Road
+      - South Gosforth
+      - Regent Centre
+      - Wansbeck Road
+      - Fawdon
+      - Kingston Park
+      - Bank Foot
+      - Callerton Parkway
+      - Airport
 
+  - 
+    name: Yellow Line
+    type: light_rail
+    ref: Yellow
+    station_count: 41
+    colour: '#d39f06'
     itineraries: 
       r8215233: 
         - South Shields (n7350826844)
@@ -308,9 +270,47 @@ routes:
         - South Shields (n7350826844)
 
 
-    name: Yellow Line
-    station_count: 41
-    ref: Yellow
-    colour: '#d39f06'
-    type: light_rail
+    stations: 
+      - St James
+      - Monument (upper)
+      - Manors
+      - Byker
+      - Chillingham Road
+      - Walkergate
+      - Wallsend
+      - Hadrian Road
+      - Howdon
+      - Percy Main
+      - Meadow Well
+      - North Shields
+      - Tynemouth
+      - Cullercoats
+      - Whitley Bay
+      - Monkseaton
+      - West Monkseaton
+      - Shiremoor
+      - Northumberland Park
+      - Palmersville
+      - Benton
+      - Four Lane Ends
+      - Longbenton
+      - South Gosforth
+      - Ilford Road
+      - West Jesmond
+      - Jesmond
+      - Haymarket
+      - Central Station
+      - Gateshead
+      - Gateshead
+      - Felling
+      - Heworth
+      - Pelaw
+      - Hebburn
+      - Jarrow
+      - Bede
+      - Simonside
+      - Tyne Dock
+      - Chichester
+      - South Shields
+
 

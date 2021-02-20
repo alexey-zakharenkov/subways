@@ -9,12 +9,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - 成田空港 (京成)
-      - 空港第2ビル (京成)
-      - 日暮里
-      - 京成上野
-
+    name: 京成スカイライナー
+    type: train
+    ref: KS
+    station_count: 4
+    colour: '#073686'
     itineraries: 
       r3120358: 
         - 成田空港 (n1950613882)
@@ -29,9 +28,10 @@ routes:
         - 成田空港 (n1950613882)
 
 
-    name: 京成スカイライナー
-    station_count: 4
-    ref: KS
-    colour: '#073686'
-    type: train
+    stations: 
+      - 京成上野
+      - 日暮里
+      - 空港第2ビル (京成)
+      - 成田空港 (京成)
+
 

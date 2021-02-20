@@ -23,23 +23,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Clareview
-      - Belvedere
-      - Coliseum
-      - Stadium
-      - Churchill
-      - Central
-      - Bay/Enterprise Square
-      - Corona
-      - Grandin
-      - University
-      - Health Sciences/Jubilee
-      - McKernan/Belgravia
-      - South Campus/Fort Edmonton Park LRT Station
-      - Southgate LRT Station
-      - Century Park Transit Centre
-
+    name: Capital Line
+    type: light_rail
+    ref: 501
+    station_count: 15
+    colour: '#3a59a9'
     itineraries: 
       r9730135: 
         - Century Park (n6799872965)
@@ -76,16 +64,11 @@ routes:
         - Century Park (n6799872965)
 
 
-    name: Capital Line
-    station_count: 15
-    ref: 501
-    colour: '#3a59a9'
-    type: light_rail
-  - 
     stations: 
-      - NAIT
-      - Kingsway/Royal Alex
-      - MacEwan LRT Station
+      - Clareview
+      - Belvedere
+      - Coliseum
+      - Stadium
       - Churchill
       - Central
       - Bay/Enterprise Square
@@ -93,20 +76,18 @@ routes:
       - Grandin
       - University
       - Health Sciences/Jubilee
+      - McKernan/Belgravia
+      - South Campus/Fort Edmonton Park LRT Station
+      - Southgate LRT Station
+      - Century Park Transit Centre
 
+  - 
+    name: Metro Line
+    type: light_rail
+    ref: 502
+    station_count: 10
+    colour: '#fc6357'
     itineraries: 
-      r9730136: 
-        - NAIT (w718989056)
-        - Kingsway/Royal Alex (n7317542150)
-        - MacEwan (n2448234427)
-        - Churchill (n3225243182)
-        - Central (n247678643)
-        - Bay/Enterprise Square (n247678712)
-        - Corona (n247678753)
-        - Grandin (n6501293444)
-        - University (n2525716100)
-        - Health Sciences/Jubilee (n4237213143)
-
       r6305415: 
         - Health Sciences/Jubilee (n4237213143)
         - University (n2525716100)
@@ -119,10 +100,29 @@ routes:
         - Kingsway/Royal Alex (n7317542150)
         - NAIT (w718989056)
 
+      r9730136: 
+        - NAIT (w718989056)
+        - Kingsway/Royal Alex (n7317542150)
+        - MacEwan (n2448234427)
+        - Churchill (n3225243182)
+        - Central (n247678643)
+        - Bay/Enterprise Square (n247678712)
+        - Corona (n247678753)
+        - Grandin (n6501293444)
+        - University (n2525716100)
+        - Health Sciences/Jubilee (n4237213143)
 
-    name: Metro Line
-    station_count: 10
-    ref: 502
-    colour: '#fc6357'
-    type: light_rail
+
+    stations: 
+      - NAIT
+      - Kingsway/Royal Alex
+      - MacEwan LRT Station
+      - Churchill
+      - Central
+      - Bay/Enterprise Square
+      - Corona
+      - Grandin
+      - University
+      - Health Sciences/Jubilee
+
 

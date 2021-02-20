@@ -61,25 +61,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Washermanpet
-      - Mannadi
-      - High Court
-      - Central Metro (Line 1)
-      - Government Estate
-      - LIC
-      - Thousand Lights
-      - AG-DMS
-      - Teynampet
-      - Nandanam
-      - Saidapet
-      - Little Mount
-      - Guindy Metro
-      - Alandur (Blue Line)
-      - Nanganallur Road
-      - Meenambakkam Metro
-      - Airport
-
+    name: Chennai Metro Blue Line
+    type: subway
+    ref: 1
+    station_count: 17
+    colour: '#3281c4'
     itineraries: 
       r8037595: 
         - Washermanpet (n5337658099)
@@ -120,32 +106,31 @@ routes:
         - Washermanpet (n5337658099)
 
 
-    name: Chennai Metro Blue Line
-    station_count: 17
-    ref: 1
-    colour: '#3281c4'
-    type: subway
-  - 
     stations: 
-      - Velachery
-      - Perungudi
-      - Taramani
-      - Tiruvanmiyur
-      - Indira Nagar
-      - Kasturiba Nagar
-      - Kotturpuram
-      - Greenways Road
-      - Mandaveli
-      - Thirumayilai
-      - Mundakakanni Amman Koil
-      - Light House
-      - Thiruvallikeni
-      - Chepauk
-      - Chintadaripet
-      - Chennai Park Town
-      - Chennai Fort
-      - Chennai Beach
+      - Airport
+      - Meenambakkam Metro
+      - Nanganallur Road
+      - Alandur (Blue Line)
+      - Guindy Metro
+      - Little Mount
+      - Saidapet
+      - Nandanam
+      - Teynampet
+      - AG-DMS
+      - Thousand Lights
+      - LIC
+      - Government Estate
+      - Central Metro (Line 1)
+      - High Court
+      - Mannadi
+      - Washermanpet
 
+  - 
+    name: Chennai MRTS
+    type: light_rail
+    ref: 1
+    station_count: 18
+    colour: ff9900
     itineraries: 
       r7849319: 
         - Chennai Beach (n5050380090)
@@ -188,31 +173,32 @@ routes:
         - Chennai Beach (n5050380090)
 
 
-    name: Chennai MRTS
-    station_count: 18
-    ref: 1
-    colour: ff9900
-    type: light_rail
-  - 
     stations: 
-      - St. Thomas Mount Metro
-      - Alandur (Green Line)
-      - Ekkattuthangal
-      - Ashok Nagar
-      - Vadapalani
-      - Arumbakkam
-      - CMBT
-      - Koyambedu Metro Station
-      - Thirumangalam
-      - Anna Nagar Tower
-      - Anna Nagar East
-      - Shenoy Nagar
-      - Pachaiyappa's College
-      - Kilpauk
-      - Nehru Park
-      - Egmore Metro
-      - Central Metro (Line 2)
+      - Velachery
+      - Perungudi
+      - Taramani
+      - Tiruvanmiyur
+      - Indira Nagar
+      - Kasturiba Nagar
+      - Kotturpuram
+      - Greenways Road
+      - Mandaveli
+      - Thirumayilai
+      - Mundakakanni Amman Koil
+      - Light House
+      - Thiruvallikeni
+      - Chepauk
+      - Chintadaripet
+      - Chennai Park Town
+      - Chennai Fort
+      - Chennai Beach
 
+  - 
+    name: Chennai Metro Green Line
+    type: subway
+    ref: 2
+    station_count: 17
+    colour: '#53b848'
     itineraries: 
       r7845612: 
         - St. Thomas Mount Metro (n5319202812)
@@ -253,9 +239,23 @@ routes:
         - St. Thomas Mount Metro (n5319202812)
 
 
-    name: Chennai Metro Green Line
-    station_count: 17
-    ref: 2
-    colour: '#53b848'
-    type: subway
+    stations: 
+      - St. Thomas Mount Metro
+      - Alandur (Green Line)
+      - Ekkattuthangal
+      - Ashok Nagar
+      - Vadapalani
+      - Arumbakkam
+      - CMBT
+      - Koyambedu Metro Station
+      - Thirumangalam
+      - Anna Nagar Tower
+      - Anna Nagar East
+      - Shenoy Nagar
+      - Pachaiyappa's College
+      - Kilpauk
+      - Nehru Park
+      - Egmore Metro
+      - Central Metro (Line 2)
+
 

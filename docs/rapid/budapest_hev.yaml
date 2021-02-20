@@ -73,25 +73,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Batthyány tér H
-      - Margit híd, budai hídfő
-      - Szépvölgyí út
-      - Tímár utca
-      - Szentlélek tér
-      - Filatorigát
-      - Kaszásdűlő
-      - Aquincum
-      - Romaifürdő
-      - Csillaghegy
-      - Békásmegyer
-      - Budakalász
-      - Budakalász, Lenfonó
-      - Szent István-telep
-      - Pomáz
-      - Pannoniatelep
-      - Szentendre
-
+    name: Szentendrei HÉV
+    type: light_rail
+    ref: H5
+    station_count: 17
+    colour: '#a72a75'
     itineraries: 
       r1103017: 
         - Szentendre (n6349856961)
@@ -110,6 +96,19 @@ routes:
         - Szépvölgyi út (n6347508739)
         - Margit híd, budai hídfő (n6347519924)
         - Batthyány tér (n7792484799)
+
+      r5752945: 
+        - Batthyány tér (n7792484799)
+        - Margit híd, budai hídfő (n6347519924)
+        - Szépvölgyi út (n6347508739)
+        - Tímár utca (n6347508738)
+        - Szentlélek tér (n6347395095)
+        - Filatorigát (n6349828887)
+        - Kaszásdűlő (n6349828888)
+        - Aquincum (n6349834611)
+        - Rómaifürdő (n6349834609)
+        - Csillaghegy (n6349834608)
+        - Békásmegyer (n6345447451)
 
       r5752944: 
         - Békásmegyer (n6345447451)
@@ -142,140 +141,35 @@ routes:
         - Pannóniatelep (n6349852055)
         - Szentendre (n6349856961)
 
-      r5752945: 
-        - Batthyány tér (n7792484799)
-        - Margit híd, budai hídfő (n6347519924)
-        - Szépvölgyi út (n6347508739)
-        - Tímár utca (n6347508738)
-        - Szentlélek tér (n6347395095)
-        - Filatorigát (n6349828887)
-        - Kaszásdűlő (n6349828888)
-        - Aquincum (n6349834611)
-        - Rómaifürdő (n6349834609)
-        - Csillaghegy (n6349834608)
-        - Békásmegyer (n6345447451)
 
-
-    name: Szentendrei HÉV
-    station_count: 17
-    ref: H5
-    colour: '#a72a75'
-    type: light_rail
-  - 
     stations: 
-      - Tököl
-      - Szigethalom alsó
-      - Szigetszentmiklós-Gyártelep
-      - József Attila-telep
-      - Szigetszentmiklós
-      - Dunaharaszti külső
-      - Közvágóhíd
-      - Pesterzsébet felső
-      - Torontál utca
-      - Soroksár felső
-      - Soroksár, Hősök tere
-      - Szent István utca
-      - Millenniumtelep
-      - Dunaharaszti felső
-      - Szigetszentmiklós alsó
-      - Szigethalom
-      - Szigetcsép
-      - Szigetszentmárton-Szigetújfalu
-      - Ráckeve
-      - Kén utca
-      - Horgásztanyák
-      - Angyalisziget
+      - Batthyány tér H
+      - Margit híd, budai hídfő
+      - Szépvölgyí út
+      - Tímár utca
+      - Szentlélek tér
+      - Filatorigát
+      - Kaszásdűlő
+      - Aquincum
+      - Romaifürdő
+      - Csillaghegy
+      - Békásmegyer
+      - Szentendre
+      - Pannoniatelep
+      - Pomáz
+      - Szent István-telep
+      - Budakalász, Lenfonó
+      - Budakalász
 
+  - 
+    name: H6
+    type: light_rail
+    ref: H6
+    station_count: 22
+    colour: '#824b00'
     itineraries: 
-      r5752969: 
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-
-      r5752966: 
+      r7347929: 
         - Közvágóhíd (n7248589323)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-        - Szigetcsép (n6697934937)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Horgásztanyák (n6697934935)
-        - Angyalisziget (n6697934934)
-        - Ráckeve (n7251642634)
-
-      r5752946: 
-        - Közvágóhíd (n7248589323)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-
-      r5752971: 
-        - Közvágóhíd (n7248589323)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-
-      r7347923: 
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
-        - Közvágóhíd (n7248589323)
-
-      r5752952: 
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
-        - Közvágóhíd (n7248589323)
-
-      r5752972: 
-        - Közvágóhíd (n7248589323)
-        - Kén utca (n7248617430)
         - Pesterzsébet felső (n6990971884)
         - Torontál utca (n7251538928)
         - Soroksár felső (n7251565401)
@@ -291,6 +185,75 @@ routes:
         - Szigethalom (n7251611441)
         - Szigethalom alsó (n7251628006)
         - Tököl (n5589074564)
+        - Szigetcsép (n6697934937)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Ráckeve (n7251642634)
+
+      r5752960: 
+        - Ráckeve (n7251642634)
+        - Angyalisziget (n6697934934)
+        - Horgásztanyák (n6697934935)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Szigetcsép (n6697934937)
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Kén utca (n7248617430)
+        - Közvágóhíd (n7248589323)
+
+      r5752962: 
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
+        - Szigetcsép (n6697934937)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Ráckeve (n7251642634)
+
+      r5752946: 
+        - Közvágóhíd (n7248589323)
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
+        - Dunaharaszti külső (n7251616133)
+
+      r7347925: 
+        - Ráckeve (n7251642634)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Szigetcsép (n6697934937)
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Közvágóhíd (n7248589323)
 
       r5752955: 
         - Tököl (n5589074564)
@@ -309,26 +272,15 @@ routes:
         - Pesterzsébet felső (n6990971884)
         - Közvágóhíd (n7248589323)
 
-      r7347924: 
-        - Ráckeve (n7251642634)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Szigetcsép (n6697934937)
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
+      r7347927: 
         - Közvágóhíd (n7248589323)
-
-      r5752970: 
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
         - Dunaharaszti külső (n7251616133)
         - Szigetszentmiklós (n6365601881)
         - József Attila-telep (n7251614790)
@@ -338,16 +290,32 @@ routes:
         - Szigethalom alsó (n7251628006)
         - Tököl (n5589074564)
 
-      r7347926: 
-        - Ráckeve (n7251642634)
-        - Angyalisziget (n6697934934)
-        - Horgásztanyák (n6697934935)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
+      r5752965: 
+        - Közvágóhíd (n7248589323)
+        - Kén utca (n7248617430)
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós alsó (n5589079417)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
         - Szigetcsép (n6697934937)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Ráckeve (n7251642634)
+
+      r7347923: 
         - Tököl (n5589074564)
         - Szigethalom alsó (n7251628006)
         - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
         - József Attila-telep (n7251614790)
         - Szigetszentmiklós (n6365601881)
         - Dunaharaszti külső (n7251616133)
@@ -383,21 +351,42 @@ routes:
         - Angyalisziget (n6697934934)
         - Ráckeve (n7251642634)
 
-      r5752951: 
-        - Ráckeve (n7251642634)
-        - Angyalisziget (n6697934934)
+      r5752963: 
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós alsó (n5589079417)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
+        - Szigetcsép (n6697934937)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
         - Horgásztanyák (n6697934935)
+        - Angyalisziget (n6697934934)
+        - Ráckeve (n7251642634)
+
+      r5752957: 
+        - Ráckeve (n7251642634)
         - Szigetszentmárton-Szigetújfalu (n6697934936)
         - Szigetcsép (n6697934937)
         - Tököl (n5589074564)
         - Szigethalom alsó (n7251628006)
         - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
         - József Attila-telep (n7251614790)
         - Szigetszentmiklós (n6365601881)
         - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Kén utca (n7248617430)
+        - Közvágóhíd (n7248589323)
 
-      r5752965: 
+      r5752972: 
         - Közvágóhíd (n7248589323)
         - Kén utca (n7248617430)
         - Pesterzsébet felső (n6990971884)
@@ -415,9 +404,56 @@ routes:
         - Szigethalom (n7251611441)
         - Szigethalom alsó (n7251628006)
         - Tököl (n5589074564)
+
+      r5752966: 
+        - Közvágóhíd (n7248589323)
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
         - Szigetcsép (n6697934937)
         - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Horgásztanyák (n6697934935)
+        - Angyalisziget (n6697934934)
         - Ráckeve (n7251642634)
+
+      r5752949: 
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+
+      r5752969: 
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
+
+      r5752970: 
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós alsó (n5589079417)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
 
       r5752964: 
         - Közvágóhíd (n7248589323)
@@ -439,8 +475,125 @@ routes:
         - Szigetszentmárton-Szigetújfalu (n6697934936)
         - Ráckeve (n7251642634)
 
-      r7347925: 
+      r5752968: 
+        - Közvágóhíd (n7248589323)
+        - Kén utca (n7248617430)
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós alsó (n5589079417)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
+        - Szigetcsép (n6697934937)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Horgásztanyák (n6697934935)
+        - Angyalisziget (n6697934934)
         - Ráckeve (n7251642634)
+
+      r5752971: 
+        - Közvágóhíd (n7248589323)
+        - Pesterzsébet felső (n6990971884)
+        - Torontál utca (n7251538928)
+        - Soroksár felső (n7251565401)
+        - Soroksár, Hősök tere (n7251571254)
+        - Szent István utca (n7251552805)
+        - Millenniumtelep (n7251595708)
+        - Dunaharaszti felső (n7251592650)
+        - Dunaharaszti külső (n7251616133)
+        - Szigetszentmiklós (n6365601881)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigethalom (n7251611441)
+        - Szigethalom alsó (n7251628006)
+        - Tököl (n5589074564)
+
+      r5752961: 
+        - Ráckeve (n7251642634)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Szigetcsép (n6697934937)
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Kén utca (n7248617430)
+        - Közvágóhíd (n7248589323)
+
+      r5752959: 
+        - Ráckeve (n7251642634)
+        - Angyalisziget (n6697934934)
+        - Horgásztanyák (n6697934935)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Szigetcsép (n6697934937)
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Közvágóhíd (n7248589323)
+
+      r5752951: 
+        - Ráckeve (n7251642634)
+        - Angyalisziget (n6697934934)
+        - Horgásztanyák (n6697934935)
+        - Szigetszentmárton-Szigetújfalu (n6697934936)
+        - Szigetcsép (n6697934937)
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+
+      r7687040: 
+        - Tököl (n5589074564)
+        - Szigethalom alsó (n7251628006)
+        - Szigetszentmiklós-Gyártelep (n6697934938)
+        - Szigetszentmiklós alsó (n5589079417)
+        - József Attila-telep (n7251614790)
+        - Szigetszentmiklós (n6365601881)
+        - Dunaharaszti külső (n7251616133)
+        - Dunaharaszti felső (n7251592650)
+        - Millenniumtelep (n7251595708)
+        - Szent István utca (n7251552805)
+        - Soroksár, Hősök tere (n7251571254)
+        - Soroksár felső (n7251565401)
+        - Torontál utca (n7251538928)
+        - Pesterzsébet felső (n6990971884)
+        - Kén utca (n7248617430)
+        - Közvágóhíd (n7248589323)
+
+      r7347926: 
+        - Ráckeve (n7251642634)
+        - Angyalisziget (n6697934934)
+        - Horgásztanyák (n6697934935)
         - Szigetszentmárton-Szigetújfalu (n6697934936)
         - Szigetcsép (n6697934937)
         - Tököl (n5589074564)
@@ -476,96 +629,7 @@ routes:
         - Kén utca (n7248617430)
         - Közvágóhíd (n7248589323)
 
-      r5752948: 
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-
-      r5752968: 
-        - Közvágóhíd (n7248589323)
-        - Kén utca (n7248617430)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós alsó (n5589079417)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-        - Szigetcsép (n6697934937)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Horgásztanyák (n6697934935)
-        - Angyalisziget (n6697934934)
-        - Ráckeve (n7251642634)
-
-      r7687040: 
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
-        - Kén utca (n7248617430)
-        - Közvágóhíd (n7248589323)
-
-      r7347927: 
-        - Közvágóhíd (n7248589323)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós alsó (n5589079417)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-
-      r5752961: 
-        - Ráckeve (n7251642634)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Szigetcsép (n6697934937)
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
-        - Kén utca (n7248617430)
-        - Közvágóhíd (n7248589323)
-
-      r5752957: 
+      r7347924: 
         - Ráckeve (n7251642634)
         - Szigetszentmárton-Szigetújfalu (n6697934936)
         - Szigetcsép (n6697934937)
@@ -582,41 +646,9 @@ routes:
         - Soroksár felső (n7251565401)
         - Torontál utca (n7251538928)
         - Pesterzsébet felső (n6990971884)
-        - Kén utca (n7248617430)
         - Közvágóhíd (n7248589323)
 
-      r7347929: 
-        - Közvágóhíd (n7248589323)
-        - Pesterzsébet felső (n6990971884)
-        - Torontál utca (n7251538928)
-        - Soroksár felső (n7251565401)
-        - Soroksár, Hősök tere (n7251571254)
-        - Szent István utca (n7251552805)
-        - Millenniumtelep (n7251595708)
-        - Dunaharaszti felső (n7251592650)
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós alsó (n5589079417)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-        - Szigetcsép (n6697934937)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Ráckeve (n7251642634)
-
-      r5752959: 
-        - Ráckeve (n7251642634)
-        - Angyalisziget (n6697934934)
-        - Horgásztanyák (n6697934935)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Szigetcsép (n6697934937)
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
+      r5752952: 
         - Dunaharaszti külső (n7251616133)
         - Dunaharaszti felső (n7251592650)
         - Millenniumtelep (n7251595708)
@@ -639,79 +671,45 @@ routes:
         - Szigetszentmiklós (n6365601881)
         - Dunaharaszti külső (n7251616133)
 
-      r5752962: 
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-        - Szigetcsép (n6697934937)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Ráckeve (n7251642634)
-
-      r5752949: 
+      r5752948: 
         - Tököl (n5589074564)
         - Szigethalom alsó (n7251628006)
         - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
         - József Attila-telep (n7251614790)
         - Szigetszentmiklós (n6365601881)
         - Dunaharaszti külső (n7251616133)
 
-      r5752960: 
-        - Ráckeve (n7251642634)
-        - Angyalisziget (n6697934934)
-        - Horgásztanyák (n6697934935)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Szigetcsép (n6697934937)
-        - Tököl (n5589074564)
-        - Szigethalom alsó (n7251628006)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigetszentmiklós alsó (n5589079417)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós (n6365601881)
-        - Dunaharaszti külső (n7251616133)
-        - Dunaharaszti felső (n7251592650)
-        - Millenniumtelep (n7251595708)
-        - Szent István utca (n7251552805)
-        - Soroksár, Hősök tere (n7251571254)
-        - Soroksár felső (n7251565401)
-        - Torontál utca (n7251538928)
-        - Pesterzsébet felső (n6990971884)
-        - Kén utca (n7248617430)
-        - Közvágóhíd (n7248589323)
 
-      r5752963: 
-        - Dunaharaszti külső (n7251616133)
-        - Szigetszentmiklós (n6365601881)
-        - József Attila-telep (n7251614790)
-        - Szigetszentmiklós alsó (n5589079417)
-        - Szigetszentmiklós-Gyártelep (n6697934938)
-        - Szigethalom (n7251611441)
-        - Szigethalom alsó (n7251628006)
-        - Tököl (n5589074564)
-        - Szigetcsép (n6697934937)
-        - Szigetszentmárton-Szigetújfalu (n6697934936)
-        - Horgásztanyák (n6697934935)
-        - Angyalisziget (n6697934934)
-        - Ráckeve (n7251642634)
-
-
-    name: H6
-    station_count: 22
-    ref: H6
-    colour: '#824b00'
-    type: light_rail
-  - 
     stations: 
-      - Csepel
-      - Karácsony Sándor utca
-      - Szent Imre tér
-      - Szabadkikötő
-      - Kvassay híd
+      - Ráckeve
+      - Angyalisziget
+      - Horgásztanyák
+      - Szigetszentmárton-Szigetújfalu
+      - Szigetcsép
+      - Tököl
+      - Szigethalom alsó
+      - Szigetszentmiklós-Gyártelep
+      - Szigetszentmiklós alsó
+      - József Attila-telep
+      - Szigetszentmiklós
+      - Dunaharaszti külső
+      - Dunaharaszti felső
+      - Millenniumtelep
+      - Szent István utca
+      - Soroksár, Hősök tere
+      - Soroksár felső
+      - Torontál utca
+      - Pesterzsébet felső
+      - Közvágóhíd
+      - Kén utca
+      - Szigethalom
 
+  - 
+    name: H7 => Csepel
+    type: light_rail
+    ref: H7
+    station_count: 5
+    colour: '#ee701b'
     itineraries: 
       r11224667: 
         - Kvassay híd (n7575679791)
@@ -728,34 +726,19 @@ routes:
         - Kvassay híd (n7575679791)
 
 
-    name: H7 => Kvassay híd
-    station_count: 5
-    ref: H7
-    colour: '#ee701b'
-    type: light_rail
-  - 
     stations: 
-      - Örs vezér tere H
-      - Rákosfalva
-      - Nagyicce
-      - Sashalom
-      - Mátyásföld, repülőtér
-      - Mátyásföld, Imre utca
-      - Mátyásföld alsó
-      - Cinkota
-      - Ilonatelep
-      - Kistarcsa, kórház
-      - Kistarcsa
-      - Zsófialiget
-      - Kerepes
-      - Szilasliget
-      - Mogyoród
-      - Szentjakab
-      - Gödöllő, Erzsébet park
-      - Gödöllő, Szabadság tér
-      - Gödöllő, Palotakert
-      - Gödöllő
+      - Kvassay híd
+      - Szabadkikötő
+      - Szent Imre tér
+      - Karácsony Sándor utca
+      - Csepel
 
+  - 
+    name: Gödöllői HÉV
+    type: light_rail
+    ref: H8
+    station_count: 20
+    colour: '#ed677e'
     itineraries: 
       r5752977: 
         - Cinkota (n6607085804)
@@ -772,7 +755,7 @@ routes:
         - Gödöllő, Palotakert (n6607085801)
         - Gödöllő (n6607085788)
 
-      r1647375: 
+      r5752976: 
         - Örs vezér tere (n6407374805)
         - Rákosfalva (n6607085796)
         - Nagyicce (n6607085789)
@@ -781,18 +764,6 @@ routes:
         - Mátyásföld, Imre utca (n6607085809)
         - Mátyásföld alsó (n6607085798)
         - Cinkota (n6607085804)
-        - Ilonatelep (n6607085792)
-        - Kistarcsa, kórház (n6607085803)
-        - Kistarcsa (n6607085810)
-        - Zsófialiget (n6607085797)
-        - Kerepes (n6607085799)
-        - Szilasliget (n6607085791)
-        - Mogyoród (n6607085806)
-        - Szentjakab (n6607085790)
-        - Gödöllő, Erzsébet park (n6607085800)
-        - Gödöllő, Szabadság tér (n6607085808)
-        - Gödöllő, Palotakert (n6607085801)
-        - Gödöllő (n6607085788)
 
       r9768484: 
         - Gödöllő (n6607085788)
@@ -819,17 +790,8 @@ routes:
         - Rákosfalva (n6607085796)
         - Örs vezér tere (n6407374805)
 
-      r5752976: 
-        - Örs vezér tere (n6407374805)
-        - Rákosfalva (n6607085796)
-        - Nagyicce (n6607085789)
-        - Sashalom (n6607085794)
-        - Mátyásföld, repülőtér (n6607085802)
-        - Mátyásföld, Imre utca (n6607085809)
-        - Mátyásföld alsó (n6607085798)
-        - Cinkota (n6607085804)
-
       r1647374: 
+        - Gödöllő (n6607085788)
         - Gödöllő, Palotakert (n6607085801)
         - Gödöllő, Szabadság tér (n6607085808)
         - Gödöllő, Erzsébet park (n6607085800)
@@ -850,38 +812,58 @@ routes:
         - Rákosfalva (n6607085796)
         - Örs vezér tere (n6407374805)
 
-
-    name: Gödöllői HÉV
-    station_count: 20
-    ref: H8
-    colour: '#ed677e'
-    type: light_rail
-  - 
-    stations: 
-      - Csömör
-      - Szabadságtelep
-      - Árpádföld
-      - Cinkota-Újtelep
-      - Cinkota
-      - Mátyásföld alsó
-      - Mátyásföld, Imre utca
-      - Mátyásföld, repülőtér
-      - Sashalom
-      - Nagyicce
-      - Rákosfalva
-      - Örs vezér tere H
-
-    itineraries: 
-      r5752982: 
-        - Cinkota (n6607085804)
-        - Mátyásföld alsó (n6607085798)
-        - Mátyásföld, Imre utca (n6607085809)
-        - Mátyásföld, repülőtér (n6607085802)
-        - Sashalom (n6607085794)
-        - Nagyicce (n6607085789)
-        - Rákosfalva (n6607085796)
+      r1647375: 
         - Örs vezér tere (n6407374805)
+        - Rákosfalva (n6607085796)
+        - Nagyicce (n6607085789)
+        - Sashalom (n6607085794)
+        - Mátyásföld, repülőtér (n6607085802)
+        - Mátyásföld, Imre utca (n6607085809)
+        - Mátyásföld alsó (n6607085798)
+        - Cinkota (n6607085804)
+        - Ilonatelep (n6607085792)
+        - Kistarcsa, kórház (n6607085803)
+        - Kistarcsa (n6607085810)
+        - Zsófialiget (n6607085797)
+        - Kerepes (n6607085799)
+        - Szilasliget (n6607085791)
+        - Mogyoród (n6607085806)
+        - Szentjakab (n6607085790)
+        - Gödöllő, Erzsébet park (n6607085800)
+        - Gödöllő, Szabadság tér (n6607085808)
+        - Gödöllő, Palotakert (n6607085801)
+        - Gödöllő (n6607085788)
 
+
+    stations: 
+      - Örs vezér tere H
+      - Rákosfalva
+      - Nagyicce
+      - Sashalom
+      - Mátyásföld, repülőtér
+      - Mátyásföld, Imre utca
+      - Mátyásföld alsó
+      - Cinkota
+      - Gödöllő
+      - Gödöllő, Palotakert
+      - Gödöllő, Szabadság tér
+      - Gödöllő, Erzsébet park
+      - Szentjakab
+      - Mogyoród
+      - Szilasliget
+      - Kerepes
+      - Zsófialiget
+      - Kistarcsa
+      - Kistarcsa, kórház
+      - Ilonatelep
+
+  - 
+    name: Csömöri HÉV
+    type: light_rail
+    ref: H9
+    station_count: 12
+    colour: '#ed677e'
+    itineraries: 
       r5752979: 
         - Csömör (n6607085807)
         - Szabadságtelep (n6607085795)
@@ -897,6 +879,13 @@ routes:
         - Mátyásföld, repülőtér (n6607085802)
         - Mátyásföld, Imre utca (n6607085809)
         - Mátyásföld alsó (n6607085798)
+        - Cinkota (n6607085804)
+        - Cinkota alsó (n6607085805)
+        - Árpádföld (n6607085793)
+        - Szabadságtelep (n6607085795)
+        - Csömör (n6607085807)
+
+      r5752981: 
         - Cinkota (n6607085804)
         - Cinkota alsó (n6607085805)
         - Árpádföld (n6607085793)
@@ -927,17 +916,29 @@ routes:
         - Mátyásföld alsó (n6607085798)
         - Cinkota (n6607085804)
 
-      r5752981: 
+      r5752982: 
         - Cinkota (n6607085804)
-        - Cinkota alsó (n6607085805)
-        - Árpádföld (n6607085793)
-        - Szabadságtelep (n6607085795)
-        - Csömör (n6607085807)
+        - Mátyásföld alsó (n6607085798)
+        - Mátyásföld, Imre utca (n6607085809)
+        - Mátyásföld, repülőtér (n6607085802)
+        - Sashalom (n6607085794)
+        - Nagyicce (n6607085789)
+        - Rákosfalva (n6607085796)
+        - Örs vezér tere (n6407374805)
 
 
-    name: Csömöri HÉV
-    station_count: 12
-    ref: H9
-    colour: '#ed677e'
-    type: light_rail
+    stations: 
+      - Örs vezér tere H
+      - Rákosfalva
+      - Nagyicce
+      - Sashalom
+      - Mátyásföld, repülőtér
+      - Mátyásföld, Imre utca
+      - Mátyásföld alsó
+      - Cinkota
+      - Cinkota-Újtelep
+      - Árpádföld
+      - Szabadságtelep
+      - Csömör
+
 

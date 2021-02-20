@@ -206,67 +206,32 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Seyrantepe
-      - Vadi İstanbul
-
+    name: 'Seyrantepe - Vadi İstanbul Füniküler Hattı (F3)'
+    type: light_rail
+    ref: F3
+    station_count: 2
+    colour: '#7a745a'
     itineraries: 
-      r9476599: 
-        - Seyrantepe (n6398327971)
-        - Vadi İstanbul (n6251280785)
-
       r9488735: 
         - Vadi İstanbul (n6251280785)
         - Seyrantepe (n6398327971)
 
+      r9476599: 
+        - Seyrantepe (n6398327971)
+        - Vadi İstanbul (n6251280785)
 
-    name: 'Seyrantepe - Vadi İstanbul Füniküler Hattı (F3)'
-    station_count: 2
-    ref: F3
-    colour: '#7a745a'
-    type: light_rail
-  - 
+
     stations: 
-      - Yenikapı (M1)
-      - Aksaray
-      - 'Emniyet - Fatih'
-      - Topkapı Ulubatlı
-      - Bayrampaşa-Maltepe
-      - Sağmalcılar
-      - Kocatepe
-      - Otogar
-      - Terazidere
-      - YTÜ-Davutpaşa
-      - Merter
-      - Zeytinburnu
-      - Bakırköy-İncirli
-      - Bahçelievler
-      - Ataköy-Şirinevler
-      - Yenibosna
-      - DTM-İstanbul Fuar Merkezi
-      - Atatürk Havalimanı
+      - Seyrantepe
+      - Vadi İstanbul
 
+  - 
+    name: 'M1A: Havalimanı - Yenikapı'
+    type: subway
+    ref: M1A
+    station_count: 18
+    colour: '#e32726'
     itineraries: 
-      r305496: 
-        - Yenikapı (n7722103255)
-        - Aksaray (n7722103254)
-        - 'Emniyet - Fatih (n1302508988)'
-        - Topkapı Ulubatlı (n7722103251)
-        - Bayrampaşa-Maltepe (n7722103250)
-        - Sağmalcılar (n7722103249)
-        - Kocatepe (n7722103248)
-        - Otogar (n7722103247)
-        - Terazidere (n7722103256)
-        - 'Davutpaşa - YTÜ (n6763426869)'
-        - Merter (n7722103258)
-        - Zeytinburnu (n7722103257)
-        - Bakırköy-İncirli (n6763426870)
-        - Bahçelievler (n7722103259)
-        - Ataköy-Şirinevler (n7722103260)
-        - Yenibosna (n7722103261)
-        - DTM-İstanbul Fuar Merkezi (n7722103262)
-        - Atatürk Havalimanı (n7722103263)
-
       r7719077: 
         - Atatürk Havalimanı (n7722103263)
         - DTM-İstanbul Fuar Merkezi (n7722103262)
@@ -287,19 +252,38 @@ routes:
         - Aksaray (n7722103254)
         - Yenikapı (n7722103255)
 
+      r305496: 
+        - Yenikapı (n7722103255)
+        - Aksaray (n7722103254)
+        - 'Emniyet - Fatih (n1302508988)'
+        - Topkapı Ulubatlı (n7722103251)
+        - Bayrampaşa-Maltepe (n7722103250)
+        - Sağmalcılar (n7722103249)
+        - Kocatepe (n7722103248)
+        - Otogar (n7722103247)
+        - Terazidere (n7722103256)
+        - 'Davutpaşa - YTÜ (n6763426869)'
+        - Merter (n7722103258)
+        - Zeytinburnu (n7722103257)
+        - Bakırköy-İncirli (n6763426870)
+        - Bahçelievler (n7722103259)
+        - Ataköy-Şirinevler (n7722103260)
+        - Yenibosna (n7722103261)
+        - DTM-İstanbul Fuar Merkezi (n7722103262)
+        - Atatürk Havalimanı (n7722103263)
 
-    name: 'M1A: Yenikapı - Havalimanı'
-    station_count: 18
-    ref: M1A
-    colour: '#e32726'
-    type: subway
-  - 
+
     stations: 
-      - Kirazlı (M1)
-      - Bağcılar Meydan
-      - Üçyüzlü
-      - Menderes
-      - Esenler
+      - Atatürk Havalimanı
+      - DTM-İstanbul Fuar Merkezi
+      - Yenibosna
+      - Ataköy-Şirinevler
+      - Bahçelievler
+      - Bakırköy-İncirli
+      - Zeytinburnu
+      - Merter
+      - YTÜ-Davutpaşa
+      - Terazidere
       - Otogar
       - Kocatepe
       - Sağmalcılar
@@ -309,6 +293,12 @@ routes:
       - Aksaray
       - Yenikapı (M1)
 
+  - 
+    name: M1 Metro Hattı
+    type: subway
+    ref: M1B
+    station_count: 13
+    colour: '#e32726'
     itineraries: 
       r4289712: 
         - Yenikapı (n7722103255)
@@ -341,47 +331,48 @@ routes:
         - Yenikapı (n7722103255)
 
 
-    name: M1 Metro Hattı
-    station_count: 13
-    ref: M1B
-    colour: '#e32726'
-    type: subway
-  - 
     stations: 
-      - Yenikapı (M2)
-      - Vezneciler-İstanbul Üniversitesi
-      - Haliç
-      - Şişhane
-      - Taksim
-      - Osmanbey
-      - Şişli
-      - Gayrettepe
-      - Levent (M2)
-      - 4. Levent
-      - Sanayi
-      - 'İTÜ - Ayazağa'
-      - Atatürk Oto Sanayi
-      - Darüşşafaka
-      - Hacıosman
-      - Seyrantepe
+      - Kirazlı (M1)
+      - Bağcılar Meydan
+      - Üçyüzlü
+      - Menderes
+      - Esenler
+      - Otogar
+      - Kocatepe
+      - Sağmalcılar
+      - Bayrampaşa-Maltepe
+      - Topkapı Ulubatlı
+      - 'Emniyet - Fatih'
+      - Aksaray
+      - Yenikapı (M1)
 
+  - 
+    name: 'M2: Seyrantepe - Sanayi'
+    type: subway
+    ref: M2
+    station_count: 16
+    colour: '#009a4c'
     itineraries: 
-      r7719074: 
-        - Hacıosman (n7725394072)
-        - Darüşşafaka (n7725394070)
-        - Atatürk Oto Sanayi (n2239404700)
-        - 'İTÜ - Ayazağa (n7725394066)'
-        - Sanayi (n2171927596)
-        - 4. Levent (n7725394063)
-        - Levent (n5218796192)
-        - Gayrettepe (n670233794)
-        - Şişli (n7721147954)
-        - Osmanbey (n7721147951)
-        - Taksim (n7721147949)
-        - Şişhane-Zemin İstanbul (n7721147948)
-        - Haliç (n7721147946)
-        - Vezneciler-İstanbul Üniversitesi (n3892496903)
+      r11341406: 
         - Yenikapı (n7597279541)
+        - Vezneciler-İstanbul Üniversitesi (n3892496903)
+        - Haliç (n7721147946)
+        - Şişhane-Zemin İstanbul (n7721147948)
+        - Taksim (n7721147949)
+        - Osmanbey (n7721147951)
+        - Şişli (n7721147954)
+        - Gayrettepe (n670233794)
+        - Levent (n5218796192)
+        - 4. Levent (n7725394063)
+        - Sanayi (n2171927596)
+        - 'İTÜ - Ayazağa (n7725394066)'
+        - Atatürk Oto Sanayi (n2239404700)
+        - Darüşşafaka (n7725394070)
+        - Hacıosman (n7725394072)
+
+      r7719795: 
+        - Seyrantepe (n2171927595)
+        - Sanayi (n2171927596)
 
       r11341407: 
         - Hacıosman (n7725394072)
@@ -400,30 +391,9 @@ routes:
         - Vezneciler-İstanbul Üniversitesi (n3892496903)
         - Yenikapı (n7597279541)
 
-      r11341406: 
-        - Yenikapı (n7597279541)
-        - Vezneciler-İstanbul Üniversitesi (n3892496903)
-        - Haliç (n7721147946)
-        - Şişhane-Zemin İstanbul (n7721147948)
-        - Taksim (n7721147949)
-        - Osmanbey (n7721147951)
-        - Şişli (n7721147954)
-        - Gayrettepe (n670233794)
-        - Levent (n5218796192)
-        - 4. Levent (n7725394063)
-        - Sanayi (n2171927596)
-        - 'İTÜ - Ayazağa (n7725394066)'
-        - Atatürk Oto Sanayi (n2239404700)
-        - Darüşşafaka (n7725394070)
-        - Hacıosman (n7725394072)
-
       r7719796: 
         - Sanayi (n2171927596)
         - Seyrantepe (n2171927595)
-
-      r7719795: 
-        - Seyrantepe (n2171927595)
-        - Sanayi (n2171927596)
 
       r456692: 
         - Yenikapı (n7597279541)
@@ -442,26 +412,48 @@ routes:
         - Darüşşafaka (n7725394070)
         - Hacıosman (n7725394072)
 
+      r7719074: 
+        - Hacıosman (n7725394072)
+        - Darüşşafaka (n7725394070)
+        - Atatürk Oto Sanayi (n2239404700)
+        - 'İTÜ - Ayazağa (n7725394066)'
+        - Sanayi (n2171927596)
+        - 4. Levent (n7725394063)
+        - Levent (n5218796192)
+        - Gayrettepe (n670233794)
+        - Şişli (n7721147954)
+        - Osmanbey (n7721147951)
+        - Taksim (n7721147949)
+        - Şişhane-Zemin İstanbul (n7721147948)
+        - Haliç (n7721147946)
+        - Vezneciler-İstanbul Üniversitesi (n3892496903)
+        - Yenikapı (n7597279541)
 
-    name: 'M2: Yenikapı - Hacıosman'
-    station_count: 16
-    ref: M2
-    colour: '#009a4c'
-    type: subway
-  - 
+
     stations: 
-      - Kirazlı (M3)
-      - Yeni Mahalle
-      - Mahmutbey
-      - İstoç
-      - İkitelli Sanayi
-      - Turgut Özal
-      - Siteler
-      - Başak Konutları
-      - Metrokent
-      - Ziya Gökalp
-      - Olimpiyat Stadı
+      - Seyrantepe
+      - Sanayi
+      - Yenikapı (M2)
+      - Vezneciler-İstanbul Üniversitesi
+      - Haliç
+      - Şişhane
+      - Taksim
+      - Osmanbey
+      - Şişli
+      - Gayrettepe
+      - Levent (M2)
+      - 4. Levent
+      - 'İTÜ - Ayazağa'
+      - Atatürk Oto Sanayi
+      - Darüşşafaka
+      - Hacıosman
 
+  - 
+    name: 'M3: MetroKent → Kirazli'
+    type: subway
+    ref: M3
+    station_count: 11
+    colour: '#00a8e1'
     itineraries: 
       r4289797: 
         - Kirazlı (n7673925409)
@@ -474,10 +466,10 @@ routes:
         - Başak Konutları (n3243585071)
         - Metrokent (n3243585072)
 
-      r4289800: 
-        - İkitelli Sanayi (n3243585073)
-        - Ziya Gökalp (n3219831111)
+      r7719072: 
         - Olimpiyat (n3208558101)
+        - Ziya Gökalp (n3219831111)
+        - İkitelli Sanayi (n3243585073)
 
       r7719073: 
         - Metrokent (n3243585072)
@@ -490,60 +482,52 @@ routes:
         - Yeni Mahalle (n4304511881)
         - Kirazlı (n7673925409)
 
-      r7719072: 
-        - Olimpiyat (n3208558101)
-        - Ziya Gökalp (n3219831111)
+      r4289800: 
         - İkitelli Sanayi (n3243585073)
+        - Ziya Gökalp (n3219831111)
+        - Olimpiyat (n3208558101)
 
 
-    name: 'M3: Kirazli → MetroKent'
-    station_count: 11
-    ref: M3
-    colour: '#00a8e1'
-    type: subway
-  - 
     stations: 
-      - Kadıköy
-      - Ayrılık Çeşmesi
-      - Acıbadem
-      - Ünalan
-      - Göztepe
-      - Yenisahra
-      - Kozyatağı
-      - Bostancı
-      - Küçükyalı
-      - Maltepe
-      - Huzurevi
-      - Gülsuyu
-      - Esenkent
-      - Hastane Adliye
-      - Soğanlık
-      - Kartal
-      - Yakacık—Adnan Kahveci
-      - Pendik
-      - Tavşantepe
+      - Metrokent
+      - Başak Konutları
+      - Siteler
+      - Turgut Özal
+      - İkitelli Sanayi
+      - İstoç
+      - Mahmutbey
+      - Yeni Mahalle
+      - Kirazlı (M3)
+      - Olimpiyat Stadı
+      - Ziya Gökalp
 
+  - 
+    name: 'M4: Tavşantepe - Kadıköy'
+    type: subway
+    ref: M4
+    station_count: 19
+    colour: '#e91e76'
     itineraries: 
-      r2396287: 
-        - Kadıköy (n1898299271)
-        - Ayrılık Çeşmesi (n1898304351)
-        - Acıbadem (n1898314736)
-        - Ünalan (n4213777340)
-        - Göztepe (n1898314734)
-        - Yenisahra (n1898314728)
-        - Kozyatağı (n7563017056)
-        - Bostancı (n1898314743)
-        - Küçükyalı (n1988218799)
-        - Maltepe (n1988218793)
-        - Huzurevi (n7736966921)
-        - Gülsuyu (n7736966922)
-        - Esenkent (n7736966924)
-        - Hastane Adliye (n7713018888)
-        - Soğanlık (n7736966926)
-        - Kartal (n1988218796)
-        - Yakacık—Adnan Kahveci (n4442132431)
-        - Pendik (n4439882732)
+      r11341395: 
         - Tavşantepe (n4440049391)
+        - Pendik (n4439882732)
+        - Yakacık—Adnan Kahveci (n4442132431)
+        - Kartal (n1988218796)
+        - Soğanlık (n7736966926)
+        - Hastane Adliye (n7713018888)
+        - Esenkent (n7736966924)
+        - Gülsuyu (n7736966922)
+        - Huzurevi (n7736966921)
+        - Maltepe (n1988218793)
+        - Küçükyalı (n1988218799)
+        - Bostancı (n1898314743)
+        - Kozyatağı (n7563017056)
+        - Yenisahra (n1898314728)
+        - Göztepe (n1898314734)
+        - Ünalan (n4213777340)
+        - Acıbadem (n1898314736)
+        - Ayrılık Çeşmesi (n1898304351)
+        - Kadıköy (n1898299271)
 
       r11341394: 
         - Kadıköy (n1898299271)
@@ -587,71 +571,56 @@ routes:
         - Ayrılık Çeşmesi (n1898304351)
         - Kadıköy (n1898299271)
 
-      r11341395: 
-        - Tavşantepe (n4440049391)
-        - Pendik (n4439882732)
-        - Yakacık—Adnan Kahveci (n4442132431)
-        - Kartal (n1988218796)
-        - Soğanlık (n7736966926)
-        - Hastane Adliye (n7713018888)
-        - Esenkent (n7736966924)
-        - Gülsuyu (n7736966922)
-        - Huzurevi (n7736966921)
-        - Maltepe (n1988218793)
-        - Küçükyalı (n1988218799)
-        - Bostancı (n1898314743)
-        - Kozyatağı (n7563017056)
-        - Yenisahra (n1898314728)
-        - Göztepe (n1898314734)
-        - Ünalan (n4213777340)
-        - Acıbadem (n1898314736)
-        - Ayrılık Çeşmesi (n1898304351)
+      r2396287: 
         - Kadıköy (n1898299271)
+        - Ayrılık Çeşmesi (n1898304351)
+        - Acıbadem (n1898314736)
+        - Ünalan (n4213777340)
+        - Göztepe (n1898314734)
+        - Yenisahra (n1898314728)
+        - Kozyatağı (n7563017056)
+        - Bostancı (n1898314743)
+        - Küçükyalı (n1988218799)
+        - Maltepe (n1988218793)
+        - Huzurevi (n7736966921)
+        - Gülsuyu (n7736966922)
+        - Esenkent (n7736966924)
+        - Hastane Adliye (n7713018888)
+        - Soğanlık (n7736966926)
+        - Kartal (n1988218796)
+        - Yakacık—Adnan Kahveci (n4442132431)
+        - Pendik (n4439882732)
+        - Tavşantepe (n4440049391)
 
 
-    name: 'M4: Kadıköy - Tavşantepe'
-    station_count: 19
-    ref: M4
-    colour: '#e91e76'
-    type: subway
-  - 
     stations: 
-      - Çekmeköy
-      - Necip Fazıl
-      - Dudullu
-      - İmam Hatip
-      - Altınşehir
-      - Ihlamurkuyu
-      - Çakmak
-      - Yamanevler
-      - Çarşı
-      - Ümraniye
-      - Bulgurlu
-      - Kısıklı
-      - Altunizade
-      - Bağlarbaşı
-      - Fıstıkağacı
-      - Üsküdar (M5)
+      - Tavşantepe
+      - Pendik
+      - Yakacık—Adnan Kahveci
+      - Kartal
+      - Soğanlık
+      - Hastane Adliye
+      - Esenkent
+      - Gülsuyu
+      - Huzurevi
+      - Maltepe
+      - Küçükyalı
+      - Bostancı
+      - Kozyatağı
+      - Yenisahra
+      - Göztepe
+      - Ünalan
+      - Acıbadem
+      - Ayrılık Çeşmesi
+      - Kadıköy
 
+  - 
+    name: 'M5: Üsküdar - Çekmeköy'
+    type: subway
+    ref: M5
+    station_count: 16
+    colour: '#683064'
     itineraries: 
-      r8061289: 
-        - Üsküdar (n7680399992)
-        - Fıstıkağacı (n2370143084)
-        - Bağlarbaşı (n5286349761)
-        - Altunizade (n5286349760)
-        - Kısıklı (n5286349759)
-        - Bulgurlu (n5286349758)
-        - Ümraniye (n7592073076)
-        - Çarşı (n7592762370)
-        - Yamanevler (n5286349755)
-        - Çakmak (n6004548611)
-        - Ihlamurkuyu (n6004548610)
-        - Altınşehir (n6004548609)
-        - İmam Hatip (n6004548608)
-        - Dudullu (n6004548607)
-        - Necip Fazıl (n6004548606)
-        - Çekmeköy (n6004548605)
-
       r8061288: 
         - Çekmeköy (n6004548605)
         - Necip Fazıl (n6004548606)
@@ -688,6 +657,24 @@ routes:
         - Fıstıkağacı (n2370143084)
         - Üsküdar (n7680399992)
 
+      r8061289: 
+        - Üsküdar (n7680399992)
+        - Fıstıkağacı (n2370143084)
+        - Bağlarbaşı (n5286349761)
+        - Altunizade (n5286349760)
+        - Kısıklı (n5286349759)
+        - Bulgurlu (n5286349758)
+        - Ümraniye (n7592073076)
+        - Çarşı (n7592762370)
+        - Yamanevler (n5286349755)
+        - Çakmak (n6004548611)
+        - Ihlamurkuyu (n6004548610)
+        - Altınşehir (n6004548609)
+        - İmam Hatip (n6004548608)
+        - Dudullu (n6004548607)
+        - Necip Fazıl (n6004548606)
+        - Çekmeköy (n6004548605)
+
       r11344904: 
         - Üsküdar (n7680399992)
         - Fıstıkağacı (n2370143084)
@@ -707,18 +694,30 @@ routes:
         - Çekmeköy (n6004548605)
 
 
-    name: 'M5: Çekmeköy - Üsküdar'
-    station_count: 16
-    ref: M5
-    colour: '#683064'
-    type: subway
-  - 
     stations: 
-      - Boğaziçi Üniversitesi
-      - Etiler
-      - Nispetiye
-      - Levent (M6)
+      - Üsküdar (M5)
+      - Fıstıkağacı
+      - Bağlarbaşı
+      - Altunizade
+      - Kısıklı
+      - Bulgurlu
+      - Ümraniye
+      - Çarşı
+      - Yamanevler
+      - Çakmak
+      - Ihlamurkuyu
+      - Altınşehir
+      - İmam Hatip
+      - Dudullu
+      - Necip Fazıl
+      - Çekmeköy
 
+  - 
+    name: 'M6: Levent → Boğaziçi Üniversitesi'
+    type: subway
+    ref: M6
+    station_count: 4
+    colour: '#caaa79'
     itineraries: 
       r7719781: 
         - Levent (n3755456221)
@@ -733,47 +732,19 @@ routes:
         - Levent (n3755456221)
 
 
-    name: 'M6: Boğaziçi Üniversitesi → Levent'
-    station_count: 4
-    ref: M6
-    colour: '#caaa79'
-    type: subway
-  - 
     stations: 
-      - Mahmutbey
-      - Göztepe
-      - Yüzyıl-Oruç Reis
-      - Giyimkent-Tekstilkent
-      - Karadeniz Mahallesi
-      - Yenimahalle
-      - Kâzım Karabekir
-      - Yeşilpınar
-      - Veysel Karani-Akşemsettin
-      - Çırçır Mahallesi
-      - Alibeyköy
-      - Nurtepe
-      - Kağıthane
-      - Çağlayan
-      - Mecidiyeköy
+      - Levent (M6)
+      - Nispetiye
+      - Etiler
+      - Boğaziçi Üniversitesi
 
+  - 
+    name: 'M7 Mecidiyeköy - Mahmutbey Metro Hattı'
+    type: subway
+    ref: M7
+    station_count: 15
+    colour: '#f19ebf'
     itineraries: 
-      r11799410: 
-        - Mahmutbey (n8064883742)
-        - Göztepe (n7726686093)
-        - Yüzyıl-Oruç Reis (n7726686090)
-        - Giyimkent-Tekstilkent (n6507323101)
-        - Karadeniz Mahallesi (n6507323102)
-        - Yenimahalle (n6507323109)
-        - Kâzım Karabekir (n6507323108)
-        - Yeşilpınar (n6507323107)
-        - Veysel Karani-Akşemsettin (n6507323106)
-        - Çırçır Mahallesi (n6507323105)
-        - Alibeyköy (n6507303853)
-        - Nurtepe (n6507303852)
-        - Kağıthane (n6507303868)
-        - Çağlayan (n6507340892)
-        - Mecidiyeköy (n8050455173)
-
       r11799409: 
         - Mecidiyeköy (n8050455173)
         - Çağlayan (n6507340892)
@@ -791,58 +762,47 @@ routes:
         - Göztepe (n7726686093)
         - Mahmutbey (n8064883742)
 
+      r11799410: 
+        - Mahmutbey (n8064883742)
+        - Göztepe (n7726686093)
+        - Yüzyıl-Oruç Reis (n7726686090)
+        - Giyimkent-Tekstilkent (n6507323101)
+        - Karadeniz Mahallesi (n6507323102)
+        - Yenimahalle (n6507323109)
+        - Kâzım Karabekir (n6507323108)
+        - Yeşilpınar (n6507323107)
+        - Veysel Karani-Akşemsettin (n6507323106)
+        - Çırçır Mahallesi (n6507323105)
+        - Alibeyköy (n6507303853)
+        - Nurtepe (n6507303852)
+        - Kağıthane (n6507303868)
+        - Çağlayan (n6507340892)
+        - Mecidiyeköy (n8050455173)
 
-    name: 'M7 Mecidiyeköy - Mahmutbey Metro Hattı'
-    station_count: 15
-    ref: M7
-    colour: '#f19ebf'
-    type: subway
-  - 
+
     stations: 
-      - Gebze
-      - Darıca
-      - Osmangazi
-      - GTÜ-Fatih
-      - Çayırova
-      - İçmeler
-      - Aydıntepe
-      - Güzelyalı
-      - Tersane
-      - Kaynarca
-      - Pendik
-      - Yunus
-      - Kartal
-      - Başak
-      - Atalar
-      - Cevizli
-      - Maltepe
-      - Süreyya Plajı
-      - İdealtepe
-      - Küçükyalı
-      - Bostancı
-      - Suadiye
-      - Erenköy
-      - Göztepe
-      - Feneryolu
-      - Söğütlüçeşme
-      - Ayrılık Çeşmesi
-      - Üsküdar (Marmaray)
-      - Sirkeci
-      - Yenikapı (Marmaray)
-      - Kazlıçeşme
-      - Zeytinburnu
+      - Mecidiyeköy
+      - Çağlayan
+      - Kağıthane
+      - Nurtepe
+      - Alibeyköy
+      - Çırçır Mahallesi
+      - Veysel Karani-Akşemsettin
+      - Yeşilpınar
+      - Kâzım Karabekir
       - Yenimahalle
-      - Bakırköy
-      - Ataköy
-      - Yeşilyurt
-      - Yeşilköy
-      - Florya Akvaryum
-      - Florya
-      - Küçükçekmece
-      - Mustafa Kemal
-      - Halkalı
-      - Tuzla
+      - Karadeniz Mahallesi
+      - Giyimkent-Tekstilkent
+      - Yüzyıl-Oruç Reis
+      - Göztepe
+      - Mahmutbey
 
+  - 
+    name: Marmaray
+    type: train
+    ref: Marmaray
+    station_count: 43
+    colour: '#808080'
     itineraries: 
       r4511012: 
         - Maltepe (n617374899)
@@ -860,23 +820,6 @@ routes:
         - Yenikapı (n2511296163)
         - Kazlıçeşme (n3305442183)
         - Zeytinburnu (n251733019)
-
-      r4289742: 
-        - Zeytinburnu (n251733019)
-        - Kazlıçeşme (n3305442183)
-        - Yenikapı (n2511296163)
-        - Üsküdar (n5442551070)
-        - Ayrılık Çeşmesi (n1898304351)
-        - Söğütlüçeşme (n6321654790)
-        - Feneryolu (n6328169452)
-        - Göztepe (n6690847579)
-        - Erenköy (n1908362611)
-        - Suadiye (n5298185983)
-        - Bostancı (n5272471218)
-        - Küçükyalı (n282903538)
-        - İdealtepe (n617374869)
-        - Süreyya Plajı (n617374883)
-        - Maltepe (n617374899)
 
       r9468040: 
         - Gebze (n6764109168)
@@ -921,6 +864,23 @@ routes:
         - Küçükçekmece (n6328169451)
         - Mustafa Kemal (n6328169450)
         - Halkalı (n2253949587)
+
+      r4289742: 
+        - Zeytinburnu (n251733019)
+        - Kazlıçeşme (n3305442183)
+        - Yenikapı (n2511296163)
+        - Üsküdar (n5442551070)
+        - Ayrılık Çeşmesi (n1898304351)
+        - Söğütlüçeşme (n6321654790)
+        - Feneryolu (n6328169452)
+        - Göztepe (n6690847579)
+        - Erenköy (n1908362611)
+        - Suadiye (n5298185983)
+        - Bostancı (n5272471218)
+        - Küçükyalı (n282903538)
+        - İdealtepe (n617374869)
+        - Süreyya Plajı (n617374883)
+        - Maltepe (n617374899)
 
       r9987139: 
         - Halkalı (n2253949587)
@@ -968,61 +928,58 @@ routes:
         - Gebze (n6764109168)
 
 
-    name: Marmaray
-    station_count: 43
-    ref: Marmaray
-    colour: '#808080'
-    type: train
-  - 
     stations: 
-      - Topkapı
-      - Fetihkapı
-      - Vatan
-      - Edirnekapı
-      - Şehitlik
-      - Demirkapı
-      - Topçular
-      - Rami
-      - Uluyol-Bereç
-      - Sağmalclar
-      - Bosna-Çukurçeşme
-      - Ali Fuat Başgil
-      - Taşköprü
-      - Karadeniz
-      - Kiptaş Venezia
-      - Cumhuriyet Mahallesi
-      - 50. Yıl-Baştabya
-      - Hacı Şükrü
-      - Yeni Mahalle
-      - Sultançiftliği
-      - Cebeci
-      - Mescid-i Selam
+      - Zeytinburnu
+      - Kazlıçeşme
+      - Yenikapı (Marmaray)
+      - Üsküdar (Marmaray)
+      - Ayrılık Çeşmesi
+      - Söğütlüçeşme
+      - Feneryolu
+      - Göztepe
+      - Erenköy
+      - Suadiye
+      - Bostancı
+      - Küçükyalı
+      - İdealtepe
+      - Süreyya Plajı
+      - Maltepe
+      - Gebze
+      - Darıca
+      - Osmangazi
+      - GTÜ-Fatih
+      - Çayırova
+      - İçmeler
+      - Aydıntepe
+      - Güzelyalı
+      - Tersane
+      - Kaynarca
+      - Pendik
+      - Yunus
+      - Kartal
+      - Başak
+      - Atalar
+      - Cevizli
+      - Sirkeci
+      - Yenimahalle
+      - Bakırköy
+      - Ataköy
+      - Yeşilyurt
+      - Yeşilköy
+      - Florya Akvaryum
+      - Florya
+      - Küçükçekmece
+      - Mustafa Kemal
+      - Halkalı
+      - Tuzla
 
+  - 
+    name: 'T4: Mescid-i Selam → Topkapı'
+    type: light_rail
+    ref: T4
+    station_count: 22
+    colour: '#ffa500'
     itineraries: 
-      r7420265: 
-        - Topkapı (n6779704049)
-        - Fetihkapı (n7726516627)
-        - Vatan (n7726516653)
-        - Edirnekapı (n7734901017)
-        - Şehitlik (n7734901018)
-        - Demirkapı (n7734901027)
-        - Topçular (n7734901032)
-        - Rami (n7734901037)
-        - Uluyol-Bereç (n7282802769)
-        - Sağmalclar (n7281859175)
-        - Bosna-Çukurçeşme (n7271396690)
-        - Ali Fuat Başgil (n7734901048)
-        - Taşköprü (n7734901051)
-        - Karadeniz (n7734901054)
-        - KİPTAŞ Venezia (n7734901058)
-        - Cumhuriyet Mahallesi (n7734901062)
-        - 50. Yıl-Baştabya (n7734901070)
-        - Hacı Şükrü (n7734901075)
-        - Yeni Mahalle (n7734901080)
-        - Sultançiftliği (n7734928085)
-        - Cebeci (n7734928090)
-        - Mescid-i Selam (n7282802768)
-
       r11344897: 
         - Topkapı (n6779704049)
         - Fetihkapı (n7726516627)
@@ -1046,30 +1003,6 @@ routes:
         - Sultançiftliği (n7734928085)
         - Cebeci (n7734928090)
         - Mescid-i Selam (n7282802768)
-
-      r11344896: 
-        - Mescid-i Selam (n7282802768)
-        - Cebeci (n7734928090)
-        - Sultançiftliği (n7734928085)
-        - Yeni Mahalle (n7734901080)
-        - Hacı Şükrü (n7734901075)
-        - 50. Yıl-Baştabya (n7734901070)
-        - Cumhuriyet Mahallesi (n7734901062)
-        - KİPTAŞ Venezia (n7734901058)
-        - Karadeniz (n7734901054)
-        - Taşköprü (n7734901051)
-        - Ali Fuat Başgil (n7734901048)
-        - Bosna-Çukurçeşme (n7271396690)
-        - Sağmalclar (n7281859175)
-        - Uluyol-Bereç (n7282802769)
-        - Rami (n7734901037)
-        - Topçular (n7734901032)
-        - Demirkapı (n7734901027)
-        - Şehitlik (n7734901018)
-        - Edirnekapı (n7734901017)
-        - Vatan (n7726516653)
-        - Fetihkapı (n7726516627)
-        - Topkapı (n6779704049)
 
       r7420264: 
         - Mescid-i Selam (n7282802768)
@@ -1095,10 +1028,77 @@ routes:
         - Fetihkapı (n7726516627)
         - Topkapı (n6779704049)
 
+      r11344896: 
+        - Mescid-i Selam (n7282802768)
+        - Cebeci (n7734928090)
+        - Sultançiftliği (n7734928085)
+        - Yeni Mahalle (n7734901080)
+        - Hacı Şükrü (n7734901075)
+        - 50. Yıl-Baştabya (n7734901070)
+        - Cumhuriyet Mahallesi (n7734901062)
+        - KİPTAŞ Venezia (n7734901058)
+        - Karadeniz (n7734901054)
+        - Taşköprü (n7734901051)
+        - Ali Fuat Başgil (n7734901048)
+        - Bosna-Çukurçeşme (n7271396690)
+        - Sağmalclar (n7281859175)
+        - Uluyol-Bereç (n7282802769)
+        - Rami (n7734901037)
+        - Topçular (n7734901032)
+        - Demirkapı (n7734901027)
+        - Şehitlik (n7734901018)
+        - Edirnekapı (n7734901017)
+        - Vatan (n7726516653)
+        - Fetihkapı (n7726516627)
+        - Topkapı (n6779704049)
 
-    name: 'T4: Topkapı → Mescid-i Selam'
-    station_count: 22
-    ref: T4
-    colour: '#ffa500'
-    type: light_rail
+      r7420265: 
+        - Topkapı (n6779704049)
+        - Fetihkapı (n7726516627)
+        - Vatan (n7726516653)
+        - Edirnekapı (n7734901017)
+        - Şehitlik (n7734901018)
+        - Demirkapı (n7734901027)
+        - Topçular (n7734901032)
+        - Rami (n7734901037)
+        - Uluyol-Bereç (n7282802769)
+        - Sağmalclar (n7281859175)
+        - Bosna-Çukurçeşme (n7271396690)
+        - Ali Fuat Başgil (n7734901048)
+        - Taşköprü (n7734901051)
+        - Karadeniz (n7734901054)
+        - KİPTAŞ Venezia (n7734901058)
+        - Cumhuriyet Mahallesi (n7734901062)
+        - 50. Yıl-Baştabya (n7734901070)
+        - Hacı Şükrü (n7734901075)
+        - Yeni Mahalle (n7734901080)
+        - Sultançiftliği (n7734928085)
+        - Cebeci (n7734928090)
+        - Mescid-i Selam (n7282802768)
+
+
+    stations: 
+      - Mescid-i Selam
+      - Cebeci
+      - Sultançiftliği
+      - Yeni Mahalle
+      - Hacı Şükrü
+      - 50. Yıl-Baştabya
+      - Cumhuriyet Mahallesi
+      - Kiptaş Venezia
+      - Karadeniz
+      - Taşköprü
+      - Ali Fuat Başgil
+      - Bosna-Çukurçeşme
+      - Sağmalclar
+      - Uluyol-Bereç
+      - Rami
+      - Topçular
+      - Demirkapı
+      - Şehitlik
+      - Edirnekapı
+      - Vatan
+      - Fetihkapı
+      - Topkapı
+
 

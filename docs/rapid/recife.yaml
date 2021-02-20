@@ -52,41 +52,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Camaragibe
-      - Cosme e Damião
-      - Rodoviária
-      - Curado
-      - Alto do Céu
-      - Coqueiral
-      - Tejipió
-      - Barro
-      - Werneck
-      - Santa Luzia
-      - Mangueira
-      - Ipiranga
-      - Afogados
-      - 'Joana Bezerra (Linha Centro -1 / Linha Centro - 2)'
-      - Recife
-
+    name: 'Linha Centro - 1'
+    type: subway
+    ref: 1
+    station_count: 15
+    colour: '#e77405'
     itineraries: 
-      r7869351: 
-        - Camaragibe (n5279927406)
-        - Cosme e Damião (n5279927410)
-        - Rodoviária (n5279927412)
-        - Curado (n5279927418)
-        - Alto do Céu (n5279927420)
-        - Coqueiral (n5279929221)
-        - Tejipió (n5279929225)
-        - Barro (n5279929229)
-        - Werneck (n5279929231)
-        - Santa Luzia (n5279929233)
-        - Mangueira (n5279929236)
-        - Ipiranga (n5279929232)
-        - Afogados (n5279929241)
-        - Joana Bezerra (n5279929242)
-        - Recife (n5279929237)
-
       r420618: 
         - Recife (n5279929237)
         - Joana Bezerra (n5279929242)
@@ -104,29 +75,47 @@ routes:
         - Cosme e Damião (n5279927410)
         - Camaragibe (n5279927406)
 
+      r7869351: 
+        - Camaragibe (n5279927406)
+        - Cosme e Damião (n5279927410)
+        - Rodoviária (n5279927412)
+        - Curado (n5279927418)
+        - Alto do Céu (n5279927420)
+        - Coqueiral (n5279929221)
+        - Tejipió (n5279929225)
+        - Barro (n5279929229)
+        - Werneck (n5279929231)
+        - Santa Luzia (n5279929233)
+        - Mangueira (n5279929236)
+        - Ipiranga (n5279929232)
+        - Afogados (n5279929241)
+        - Joana Bezerra (n5279929242)
+        - Recife (n5279929237)
 
-    name: 'Linha Centro - 1'
-    station_count: 15
-    ref: 1
-    colour: '#e77405'
-    type: subway
-  - 
+
     stations: 
-      - Recife
-      - 'Joana Bezerra (Linha Centro -1 / Linha Centro - 2)'
-      - Afogados
-      - Ipiranga
-      - Mangueira
-      - Santa Luzia
-      - Werneck
-      - Barro
-      - Tejipió
+      - Camaragibe
+      - Cosme e Damião
+      - Rodoviária
+      - Curado
+      - Alto do Céu
       - Coqueiral
-      - Cavaleiro
-      - Floriano
-      - Engenho Velho
-      - Jaboatão
+      - Tejipió
+      - Barro
+      - Werneck
+      - Santa Luzia
+      - Mangueira
+      - Ipiranga
+      - Afogados
+      - 'Joana Bezerra (Linha Centro -1 / Linha Centro - 2)'
+      - Recife
 
+  - 
+    name: 'Linha Centro - 2'
+    type: subway
+    ref: 2
+    station_count: 14
+    colour: '#d9001c'
     itineraries: 
       r7869333: 
         - Recife (n5279929237)
@@ -161,41 +150,29 @@ routes:
         - Recife (n5279929237)
 
 
-    name: 'Linha Centro - 2'
-    station_count: 14
-    ref: 2
-    colour: '#d9001c'
-    type: subway
-  - 
     stations: 
+      - Jaboatão
+      - Engenho Velho
+      - Floriano
+      - Cavaleiro
+      - Coqueiral
+      - Tejipió
+      - Barro
+      - Werneck
+      - Santa Luzia
+      - Mangueira
+      - Ipiranga
+      - Afogados
+      - 'Joana Bezerra (Linha Centro -1 / Linha Centro - 2)'
       - Recife
-      - Joana Bezerra (Linha Sul)
-      - Largo da Paz
-      - Imbiribeira
-      - Antônio Falcão
-      - Shopping
-      - Tancredo Neves
-      - Aeroporto
-      - Porta Larga
-      - Monte dos Guararapes
-      - Prazeres
-      - Cajueiro Seco (subway)
 
+  - 
+    name: Linha Sul
+    type: subway
+    ref: Sul
+    station_count: 12
+    colour: '#1a5ba3'
     itineraries: 
-      r7869373: 
-        - Cajueiro Seco (n5280081368)
-        - Prazeres (n5280081370)
-        - Monte dos Guararapes (n5280081366)
-        - Porta Larga (n5280081371)
-        - Aeroporto (n5280081375)
-        - Tancredo Neves (n2497744692)
-        - Shopping (n5280081373)
-        - Antônio Falcão (n1418921322)
-        - Imbiribeira (n5280081384)
-        - Largo da Paz (w625817765)
-        - Joana Bezerra (n5279929242)
-        - Recife (n5279929237)
-
       r4510097: 
         - Recife (n5279929237)
         - Joana Bezerra (n5279929242)
@@ -210,30 +187,42 @@ routes:
         - Prazeres (n5280081370)
         - Cajueiro Seco (n5280081368)
 
+      r7869373: 
+        - Cajueiro Seco (n5280081368)
+        - Prazeres (n5280081370)
+        - Monte dos Guararapes (n5280081366)
+        - Porta Larga (n5280081371)
+        - Aeroporto (n5280081375)
+        - Tancredo Neves (n2497744692)
+        - Shopping (n5280081373)
+        - Antônio Falcão (n1418921322)
+        - Imbiribeira (n5280081384)
+        - Largo da Paz (w625817765)
+        - Joana Bezerra (n5279929242)
+        - Recife (n5279929237)
 
-    name: Linha Sul
-    station_count: 12
-    ref: Sul
-    colour: '#1a5ba3'
-    type: subway
-  - 
+
     stations: 
-      - Cajueiro Seco (light rail)
-      - Ângelo de Souza
-      - Pontezinha
-      - Ponte dos Carvalhos
-      - Santo Inácio
-      - Cabo
+      - Recife
+      - Joana Bezerra (Linha Sul)
+      - Largo da Paz
+      - Imbiribeira
+      - Antônio Falcão
+      - Shopping
+      - Tancredo Neves
+      - Aeroporto
+      - Porta Larga
+      - Monte dos Guararapes
+      - Prazeres
+      - Cajueiro Seco (subway)
 
+  - 
+    name: 'VLT Cabo - Cajueiro Seco'
+    type: light_rail
+    ref: 'VLT Cabo - Cajueiro Seco'
+    station_count: 6
+    colour: '#008000'
     itineraries: 
-      r4510254: 
-        - Cajueiro Seco (n6557201686)
-        - Ângelo de Souza (n6554813281)
-        - Pontezinha (n6554813280)
-        - Ponte dos Carvalhos (n6554813282)
-        - Santo Inácio (n6554813279)
-        - Cabo (n1689602072)
-
       r9699109: 
         - Cabo (n1689602072)
         - Santo Inácio (n6554813279)
@@ -242,36 +231,47 @@ routes:
         - Ângelo de Souza (n6554813281)
         - Cajueiro Seco (n6557201686)
 
-
-    name: 'VLT Cabo - Cajueiro Seco'
-    station_count: 6
-    ref: 'VLT Cabo - Cajueiro Seco'
-    colour: '#008000'
-    type: light_rail
-  - 
-    stations: 
-      - Cajueiro Seco (light rail)
-      - Marcos Freire
-      - Jorge Lins
-      - Curado (light rail)
-
-    itineraries: 
-      r7945216: 
+      r4510254: 
         - Cajueiro Seco (n6557201686)
-        - Marcos Freire (n6325990982)
-        - Jorge Lins (w675502126)
-        - Curado (w640352924)
+        - Ângelo de Souza (n6554813281)
+        - Pontezinha (n6554813280)
+        - Ponte dos Carvalhos (n6554813282)
+        - Santo Inácio (n6554813279)
+        - Cabo (n1689602072)
 
+
+    stations: 
+      - Cabo
+      - Santo Inácio
+      - Ponte dos Carvalhos
+      - Pontezinha
+      - Ângelo de Souza
+      - Cajueiro Seco (light rail)
+
+  - 
+    name: 'VLT Curado - Cajueiro Seco'
+    type: light_rail
+    ref: 'VLT Curado - Cajueiro Seco'
+    station_count: 4
+    colour: '#999e9e'
+    itineraries: 
       r4510189: 
         - Curado (w640352924)
         - Jorge Lins (w675502126)
         - Marcos Freire (n6325990982)
         - Cajueiro Seco (n6557201686)
 
+      r7945216: 
+        - Cajueiro Seco (n6557201686)
+        - Marcos Freire (n6325990982)
+        - Jorge Lins (w675502126)
+        - Curado (w640352924)
 
-    name: 'VLT Curado - Cajueiro Seco'
-    station_count: 4
-    ref: 'VLT Curado - Cajueiro Seco'
-    colour: '#999e9e'
-    type: light_rail
+
+    stations: 
+      - Cajueiro Seco (light rail)
+      - Marcos Freire
+      - Jorge Lins
+      - Curado (light rail)
+
 

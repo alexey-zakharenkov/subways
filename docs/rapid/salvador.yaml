@@ -27,27 +27,12 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Pirajá
-      - Bom Juá
-      - Retiro
-      - Acesso Norte
-      - Bonocô
-      - Brotas
-      - Campo da Pólvora
-      - Lapa
-
+    name: Linha 1
+    type: subway
+    ref: 1
+    station_count: 8
+    colour: '#791714'
     itineraries: 
-      r4511874: 
-        - Lapa (n5800854929)
-        - Campo da Pólvora (n5800854928)
-        - Brotas (w103595147)
-        - Bonocô (n1196075755)
-        - Acesso Norte (n5330886492)
-        - Retiro (w303051460)
-        - Bom Juá (w514627272)
-        - Pirajá (w514871898)
-
       r6774703: 
         - Pirajá (w514871898)
         - Bom Juá (w514627272)
@@ -58,27 +43,33 @@ routes:
         - Campo da Pólvora (n5800854928)
         - Lapa (n5800854929)
 
+      r4511874: 
+        - Lapa (n5800854929)
+        - Campo da Pólvora (n5800854928)
+        - Brotas (w103595147)
+        - Bonocô (n1196075755)
+        - Acesso Norte (n5330886492)
+        - Retiro (w303051460)
+        - Bom Juá (w514627272)
+        - Pirajá (w514871898)
 
-    name: Linha 1
-    station_count: 8
-    ref: 1
-    colour: '#791714'
-    type: subway
-  - 
+
     stations: 
+      - Pirajá
+      - Bom Juá
+      - Retiro
       - Acesso Norte
-      - Detran
-      - Rodoviária
-      - Pernambués
-      - Imbuí
-      - CAB
-      - Pituaçu
-      - Flamboyant
-      - Tamburugy
-      - Estação Bairro da Paz
-      - Estação Mussurunga
-      - Aeroporto
+      - Bonocô
+      - Brotas
+      - Campo da Pólvora
+      - Lapa
 
+  - 
+    name: Linha 2
+    type: subway
+    ref: 2
+    station_count: 12
+    colour: '#02406f'
     itineraries: 
       r7857257: 
         - Aeroporto (w531671017)
@@ -109,9 +100,18 @@ routes:
         - Aeroporto (w531671017)
 
 
-    name: Linha 2
-    station_count: 12
-    ref: 2
-    colour: '#02406f'
-    type: subway
+    stations: 
+      - Acesso Norte
+      - Detran
+      - Rodoviária
+      - Pernambués
+      - Imbuí
+      - CAB
+      - Pituaçu
+      - Flamboyant
+      - Tamburugy
+      - Estação Bairro da Paz
+      - Estação Mussurunga
+      - Aeroporto
+
 

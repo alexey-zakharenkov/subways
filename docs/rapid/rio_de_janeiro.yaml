@@ -49,28 +49,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - General Osório (Linha 1)
-      - Cantagalo
-      - Siqueira Campos
-      - Cardeal Arcoverde
-      - Botafogo
-      - Flamengo
-      - Largo do Machado
-      - Catete
-      - Glória
-      - Cinelândia
-      - Carioca
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Presidente Vargas
-      - Central
-      - Praça Onze
-      - Estácio
-      - Afonso Pena
-      - São Francisco Xavier
-      - Saens Peña
-      - Estação de Metrô Uruguai
-
+    name: Metrô Rio Linha 1
+    type: subway
+    ref: 1
+    station_count: 20
+    colour: '#e77405'
     itineraries: 
       r7944060: 
         - General Osório (n5367720224)
@@ -117,40 +100,34 @@ routes:
         - General Osório (n5367720224)
 
 
-    name: Metrô Rio Linha 1
-    station_count: 20
-    ref: 1
-    colour: '#e77405'
-    type: subway
-  - 
     stations: 
-      - Pavuna
-      - Engenheiro Rubens Paiva
-      - Acari / Fazenda Botafogo
-      - Coelho Neto
-      - Colégio
-      - Irajá
-      - Vicente de Carvalho
-      - Thomáz Coelho
-      - Engenho da Rainha
-      - Inhaúma
-      - Nova América / Del Castilho
-      - Maria da Graça
-      - Triagem (Metrô)
-      - Maracanã (Metrô)
-      - São Cristóvão (Metrô)
-      - Cidade Nova
-      - Central
-      - Presidente Vargas
-      - 'Uruguaiana - Engenheiro Fernando MacDowell'
-      - Carioca
-      - Cinelândia
-      - Glória
-      - Catete
-      - Largo do Machado
-      - Flamengo
+      - General Osório (Linha 1)
+      - Cantagalo
+      - Siqueira Campos
+      - Cardeal Arcoverde
       - Botafogo
+      - Flamengo
+      - Largo do Machado
+      - Catete
+      - Glória
+      - Cinelândia
+      - Carioca
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Presidente Vargas
+      - Central
+      - Praça Onze
+      - Estácio
+      - Afonso Pena
+      - São Francisco Xavier
+      - Saens Peña
+      - Estação de Metrô Uruguai
 
+  - 
+    name: Metrô Rio Linha 2
+    type: subway
+    ref: 2
+    station_count: 26
+    colour: '#028f34'
     itineraries: 
       r4292975: 
         - Botafogo (n506848463)
@@ -209,29 +186,41 @@ routes:
         - Botafogo (n506848463)
 
 
-    name: Metrô Rio Linha 2
-    station_count: 26
-    ref: 2
-    colour: '#028f34'
-    type: subway
-  - 
     stations: 
-      - General Osório (Linha 4)
-      - Nossa Senhora da Paz
-      - Jardim de Alah
-      - Antero de Quental
-      - São Conrado
-      - Jardim Oceânico
+      - Pavuna
+      - Engenheiro Rubens Paiva
+      - Acari / Fazenda Botafogo
+      - Coelho Neto
+      - Colégio
+      - Irajá
+      - Vicente de Carvalho
+      - Thomáz Coelho
+      - Engenho da Rainha
+      - Inhaúma
+      - Nova América / Del Castilho
+      - Maria da Graça
+      - Triagem (Metrô)
+      - Maracanã (Metrô)
+      - São Cristóvão (Metrô)
+      - Cidade Nova
+      - Central
+      - Presidente Vargas
+      - 'Uruguaiana - Engenheiro Fernando MacDowell'
+      - Carioca
+      - Cinelândia
+      - Glória
+      - Catete
+      - Largo do Machado
+      - Flamengo
+      - Botafogo
 
+  - 
+    name: 'Linha 4: General Osório ↔ Jardim Oceânico'
+    type: subway
+    ref: 4
+    station_count: 6
+    colour: '#ffcc29'
     itineraries: 
-      r6432700: 
-        - General Osório (n5367720224)
-        - Nossa Senhora da Paz (n4317159360)
-        - Jardim de Alah (n4317159359)
-        - Antero de Quental (n4317159358)
-        - São Conrado (n4317159361)
-        - Jardim Oceânico (n5302148205)
-
       r6432701: 
         - Jardim Oceânico (n5302148205)
         - São Conrado (n4317159361)
@@ -240,10 +229,21 @@ routes:
         - Nossa Senhora da Paz (n4317159360)
         - General Osório (n5367720224)
 
+      r6432700: 
+        - General Osório (n5367720224)
+        - Nossa Senhora da Paz (n4317159360)
+        - Jardim de Alah (n4317159359)
+        - Antero de Quental (n4317159358)
+        - São Conrado (n4317159361)
+        - Jardim Oceânico (n5302148205)
 
-    name: 'Linha 4: General Osório ↔ Jardim Oceânico'
-    station_count: 6
-    ref: 4
-    colour: '#ffcc29'
-    type: subway
+
+    stations: 
+      - General Osório (Linha 4)
+      - Nossa Senhora da Paz
+      - Jardim de Alah
+      - Antero de Quental
+      - São Conrado
+      - Jardim Oceânico
+
 

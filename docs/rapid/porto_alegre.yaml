@@ -31,30 +31,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Sapucaia
-      - Luiz Pasteur
-      - Esteio
-      - Petrobras
-      - São Luís
-      - Mathias Velho
-      - Canoas / La Salle
-      - Fátima
-      - Niterói
-      - Anchieta
-      - Aeroporto (Trensurb)
-      - Farrapos
-      - São Pedro
-      - Rodoviária
-      - Mercado
-      - Unisinos
-      - São Leopoldo
-      - Rio dos Sinos
-      - Santo Afonso
-      - Industrial / Tintas Killing
-      - Fenac
-      - Novo Hamburgo
-
+    name: Linha 1
+    type: subway
+    ref: 1
+    station_count: 22
+    colour: '#000080'
     itineraries: 
       r7886190: 
         - Mercado (n5317023252)
@@ -72,30 +53,6 @@ routes:
         - Esteio (n5320204165)
         - Luiz Pasteur (n5320204168)
         - Sapucaia (n5320204171)
-
-      r420335: 
-        - Novo Hamburgo (n5317023262)
-        - Fenac (n5320204166)
-        - Industrial / Tintas Killing (n5320204167)
-        - Santo Afonso (n5320204170)
-        - Rio dos Sinos (n5317023239)
-        - São Leopoldo (n5317023240)
-        - Unisinos (n5317023241)
-        - Sapucaia (n5320204171)
-        - Luiz Pasteur (n5320204168)
-        - Esteio (n5320204165)
-        - Petrobras (n5320204169)
-        - São Luís (n5317023242)
-        - Mathias Velho (n5317023243)
-        - Canoas / La Salle (n5317023245)
-        - Fátima (n5317023244)
-        - Niterói (n5317023247)
-        - Anchieta (n5317023246)
-        - Aeroporto (n5317023261)
-        - Farrapos (n5317023248)
-        - São Pedro (n5317023249)
-        - Rodoviária (n5317023250)
-        - Mercado (n5317023252)
 
       r7875374: 
         - Mercado (n5317023252)
@@ -121,6 +78,30 @@ routes:
         - Fenac (n5320204166)
         - Novo Hamburgo (n5317023262)
 
+      r420335: 
+        - Novo Hamburgo (n5317023262)
+        - Fenac (n5320204166)
+        - Industrial / Tintas Killing (n5320204167)
+        - Santo Afonso (n5320204170)
+        - Rio dos Sinos (n5317023239)
+        - São Leopoldo (n5317023240)
+        - Unisinos (n5317023241)
+        - Sapucaia (n5320204171)
+        - Luiz Pasteur (n5320204168)
+        - Esteio (n5320204165)
+        - Petrobras (n5320204169)
+        - São Luís (n5317023242)
+        - Mathias Velho (n5317023243)
+        - Canoas / La Salle (n5317023245)
+        - Fátima (n5317023244)
+        - Niterói (n5317023247)
+        - Anchieta (n5317023246)
+        - Aeroporto (n5317023261)
+        - Farrapos (n5317023248)
+        - São Pedro (n5317023249)
+        - Rodoviária (n5317023250)
+        - Mercado (n5317023252)
+
       r7886191: 
         - Sapucaia (n5320204171)
         - Luiz Pasteur (n5320204168)
@@ -139,29 +120,48 @@ routes:
         - Mercado (n5317023252)
 
 
-    name: Linha 1
-    station_count: 22
-    ref: 1
-    colour: '#000080'
-    type: subway
-  - 
     stations: 
-      - Aeromóvel
-      - Aeroporto (Aeromóvel)
+      - Mercado
+      - Rodoviária
+      - São Pedro
+      - Farrapos
+      - Aeroporto (Trensurb)
+      - Anchieta
+      - Niterói
+      - Fátima
+      - Canoas / La Salle
+      - Mathias Velho
+      - São Luís
+      - Petrobras
+      - Esteio
+      - Luiz Pasteur
+      - Sapucaia
+      - Novo Hamburgo
+      - Fenac
+      - Industrial / Tintas Killing
+      - Santo Afonso
+      - Rio dos Sinos
+      - São Leopoldo
+      - Unisinos
 
+  - 
+    name: Conexão Metrô-Aeroporto
+    type: subway
+    ref: Conexão Metrô-Aeroporto
+    station_count: 2
+    colour: '#000000'
     itineraries: 
-      r7889061: 
-        - Aeroporto (n5317023261)
-        - Aeromóvel (n5317023255)
-
       r5465620: 
         - Aeromóvel (n5317023255)
         - Aeroporto (n5317023261)
 
+      r7889061: 
+        - Aeroporto (n5317023261)
+        - Aeromóvel (n5317023255)
 
-    name: Conexão Metrô-Aeroporto
-    station_count: 2
-    ref: Conexão Metrô-Aeroporto
-    colour: '#000000'
-    type: subway
+
+    stations: 
+      - Aeromóvel
+      - Aeroporto (Aeromóvel)
+
 

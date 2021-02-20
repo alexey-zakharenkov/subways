@@ -61,23 +61,11 @@ transfers:
 
 routes: 
   - 
-    stations: 
-      - Hamilton E. Holmes
-      - West Lake
-      - Ashby
-      - Vine City
-      - GWCC/CNN Center
-      - Five Points (East-West Line)
-      - Georgia State
-      - King Memorial
-      - Inman Park/Reynoldstown
-      - Edgewood/Candler Park
-      - East Lake
-      - Decatur
-      - Avondale
-      - Kensington
-      - Indian Creek
-
+    name: MARTA Blue Line
+    type: subway
+    ref: Blue
+    station_count: 15
+    colour: '#0274ba'
     itineraries: 
       r4439527: 
         - Indian Creek (n4172459857)
@@ -114,32 +102,29 @@ routes:
         - Indian Creek (n4172459857)
 
 
-    name: MARTA Blue Line
-    station_count: 15
-    ref: Blue
-    colour: '#0274ba'
-    type: subway
-  - 
     stations: 
-      - Airport
-      - College Park
-      - East Point
-      - Lakewood/Fort McPherson
-      - Oakland City
-      - West End
-      - Garnett
-      - Five Points (North-South Line)
-      - Peachtree Center
-      - Civic Center
-      - North Avenue
-      - Midtown
-      - Arts Center
-      - Lindbergh Center
-      - Lenox
-      - Brookhaven
-      - Chamblee
-      - Doraville
+      - Indian Creek
+      - Kensington
+      - Avondale
+      - Decatur
+      - East Lake
+      - Edgewood/Candler Park
+      - Inman Park/Reynoldstown
+      - King Memorial
+      - Georgia State
+      - Five Points (East-West Line)
+      - GWCC/CNN Center
+      - Vine City
+      - Ashby
+      - West Lake
+      - Hamilton E. Holmes
 
+  - 
+    name: MARTA Gold Line
+    type: subway
+    ref: Gold
+    station_count: 18
+    colour: '#f67705'
     itineraries: 
       r4439528: 
         - Airport (n4172450831)
@@ -182,45 +167,46 @@ routes:
         - Airport (n4172450831)
 
 
-    name: MARTA Gold Line
-    station_count: 18
-    ref: Gold
-    colour: '#f67705'
-    type: subway
-  - 
     stations: 
-      - Bankhead
-      - Ashby
-      - Vine City
-      - King Memorial
-      - Georgia State
-      - Five Points (East-West Line)
-      - GWCC/CNN Center
-      - Inman Park/Reynoldstown
-      - Edgewood/Candler Park
-      - Avondale
+      - Doraville
+      - Chamblee
+      - Brookhaven
+      - Lenox
+      - Lindbergh Center
+      - Arts Center
+      - Midtown
+      - North Avenue
+      - Civic Center
+      - Peachtree Center
+      - Five Points (North-South Line)
+      - Garnett
+      - West End
+      - Oakland City
+      - Lakewood/Fort McPherson
+      - East Point
+      - College Park
+      - Airport
 
+  - 
+    name: MARTA Green Line
+    type: subway
+    ref: Green
+    station_count: 10
+    colour: '#009544'
     itineraries: 
-      r12300722: 
-        - Bankhead (n4082290806)
-        - Ashby (n6863544212)
-        - Vine City (n7745032438)
-        - GWCC/CNN Center (n6863551312)
-        - Five Points (n318451223)
-        - Georgia State (n4172458490)
+      r12300723: 
         - King Memorial (n4172458489)
+        - Georgia State (n4172458490)
+        - Five Points (n318451223)
+        - GWCC/CNN Center (n6863551312)
+        - Vine City (n7745032438)
+        - Ashby (n6863544212)
+        - Bankhead (n4082290806)
 
-      r12300721: 
-        - Avondale (n4172458457)
-        - Edgewood/Candler Park (n4172458492)
-        - Inman Park/Reynoldstown (n4172458491)
-        - King Memorial (n4172458489)
-        - Georgia State (n4172458490)
-        - Five Points (n318451223)
-        - GWCC/CNN Center (n6863551312)
-        - Vine City (n7745032438)
-        - Ashby (n6863544212)
+      r12300724: 
         - Bankhead (n4082290806)
+        - Ashby (n6863544212)
+        - Vine City (n7745032438)
 
       r12300720: 
         - Bankhead (n4082290806)
@@ -234,12 +220,19 @@ routes:
         - Edgewood/Candler Park (n4172458492)
         - Avondale (n4172458457)
 
-      r12300724: 
-        - Bankhead (n4082290806)
-        - Ashby (n6863544212)
+      r12300721: 
+        - Avondale (n4172458457)
+        - Edgewood/Candler Park (n4172458492)
+        - Inman Park/Reynoldstown (n4172458491)
+        - King Memorial (n4172458489)
+        - Georgia State (n4172458490)
+        - Five Points (n318451223)
+        - GWCC/CNN Center (n6863551312)
         - Vine City (n7745032438)
+        - Ashby (n6863544212)
+        - Bankhead (n4082290806)
 
-      r304604: 
+      r12300722: 
         - Bankhead (n4082290806)
         - Ashby (n6863544212)
         - Vine City (n7745032438)
@@ -247,10 +240,10 @@ routes:
         - Five Points (n318451223)
         - Georgia State (n4172458490)
         - King Memorial (n4172458489)
-        - Inman Park/Reynoldstown (n4172458491)
-        - Edgewood/Candler Park (n4172458492)
 
-      r12300723: 
+      r4439530: 
+        - Edgewood/Candler Park (n4172458492)
+        - Inman Park/Reynoldstown (n4172458491)
         - King Memorial (n4172458489)
         - Georgia State (n4172458490)
         - Five Points (n318451223)
@@ -264,34 +257,36 @@ routes:
         - Ashby (n6863544212)
         - Bankhead (n4082290806)
 
-      r4439530: 
-        - Edgewood/Candler Park (n4172458492)
-        - Inman Park/Reynoldstown (n4172458491)
-        - King Memorial (n4172458489)
-        - Georgia State (n4172458490)
-        - Five Points (n318451223)
-        - GWCC/CNN Center (n6863551312)
-        - Vine City (n7745032438)
-        - Ashby (n6863544212)
+      r304604: 
         - Bankhead (n4082290806)
+        - Ashby (n6863544212)
+        - Vine City (n7745032438)
+        - GWCC/CNN Center (n6863551312)
+        - Five Points (n318451223)
+        - Georgia State (n4172458490)
+        - King Memorial (n4172458489)
+        - Inman Park/Reynoldstown (n4172458491)
+        - Edgewood/Candler Park (n4172458492)
 
 
-    name: MARTA Green Line
-    station_count: 10
-    ref: Green
-    colour: '#009544'
-    type: subway
-  - 
     stations: 
-      - Domestic Baggage Claim
-      - T Gates
-      - A Gates
-      - B Gates
-      - C Gates
-      - D Gates
-      - E Gates
-      - F Gates & International Terminal
+      - King Memorial
+      - Georgia State
+      - Five Points (East-West Line)
+      - GWCC/CNN Center
+      - Vine City
+      - Ashby
+      - Bankhead
+      - Edgewood/Candler Park
+      - Inman Park/Reynoldstown
+      - Avondale
 
+  - 
+    name: The Plane Train
+    type: monorail
+    ref: Plane Train
+    station_count: 8
+    colour: '#76253d'
     itineraries: 
       r8863419: 
         - Domestic Terminal (n1235734762)
@@ -314,55 +309,23 @@ routes:
         - Domestic Terminal (n1235734762)
 
 
-    name: The Plane Train
-    station_count: 8
-    ref: Plane Train
-    colour: '#76253d'
-    type: monorail
-  - 
     stations: 
-      - Airport
-      - College Park
-      - East Point
-      - Lakewood/Fort McPherson
-      - Oakland City
-      - West End
-      - Garnett
-      - Five Points (North-South Line)
-      - Peachtree Center
-      - Civic Center
-      - North Avenue
-      - Midtown
-      - Arts Center
-      - Lindbergh Center
-      - Buckhead
-      - Medical Center
-      - Dunwoody
-      - Sandy Springs
-      - North Springs
+      - F Gates & International Terminal
+      - E Gates
+      - D Gates
+      - C Gates
+      - B Gates
+      - A Gates
+      - T Gates
+      - Domestic Baggage Claim
 
+  - 
+    name: MARTA Red Line
+    type: subway
+    ref: Red
+    station_count: 19
+    colour: '#cc0000'
     itineraries: 
-      r304619: 
-        - North Springs (n5346206680)
-        - Sandy Springs (n5195035485)
-        - Dunwoody (n5195035484)
-        - Medical Center (n4172164017)
-        - Buckhead (n4172164016)
-        - Lindbergh Center (n5346210486)
-        - Arts Center (n4172450835)
-        - Midtown (n4172450834)
-        - North Avenue (n4172450833)
-        - Civic Center (n4172450832)
-        - Peachtree Center (n4170221445)
-        - Five Points (n318451223)
-        - Garnett (n5346183223)
-        - West End (n4172450826)
-        - Oakland City (n4172450827)
-        - Lakewood/Fort McPherson (n5346180632)
-        - East Point (n4172450829)
-        - College Park (n4172450830)
-        - Airport (n4172450831)
-
       r12300718: 
         - Lindbergh Center (n5346210486)
         - Buckhead (n4172164016)
@@ -370,6 +333,14 @@ routes:
         - Dunwoody (n5195035484)
         - Sandy Springs (n5195035485)
         - North Springs (n5346206680)
+
+      r12300719: 
+        - North Springs (n5346206680)
+        - Sandy Springs (n5195035485)
+        - Dunwoody (n5195035484)
+        - Medical Center (n4172164017)
+        - Buckhead (n4172164016)
+        - Lindbergh Center (n5346210486)
 
       r4439531: 
         - Airport (n4172450831)
@@ -392,26 +363,55 @@ routes:
         - Sandy Springs (n5195035485)
         - North Springs (n5346206680)
 
-      r12300719: 
+      r304619: 
         - North Springs (n5346206680)
         - Sandy Springs (n5195035485)
         - Dunwoody (n5195035484)
         - Medical Center (n4172164017)
         - Buckhead (n4172164016)
         - Lindbergh Center (n5346210486)
+        - Arts Center (n4172450835)
+        - Midtown (n4172450834)
+        - North Avenue (n4172450833)
+        - Civic Center (n4172450832)
+        - Peachtree Center (n4170221445)
+        - Five Points (n318451223)
+        - Garnett (n5346183223)
+        - West End (n4172450826)
+        - Oakland City (n4172450827)
+        - Lakewood/Fort McPherson (n5346180632)
+        - East Point (n4172450829)
+        - College Park (n4172450830)
+        - Airport (n4172450831)
 
 
-    name: MARTA Red Line
-    station_count: 19
-    ref: Red
-    colour: '#cc0000'
-    type: subway
-  - 
     stations: 
+      - North Springs
+      - Sandy Springs
+      - Dunwoody
+      - Medical Center
+      - Buckhead
+      - Lindbergh Center
+      - Arts Center
+      - Midtown
+      - North Avenue
+      - Civic Center
+      - Peachtree Center
+      - Five Points (North-South Line)
+      - Garnett
+      - West End
+      - Oakland City
+      - Lakewood/Fort McPherson
+      - East Point
+      - College Park
       - Airport
-      - GICC/Gateway Center
-      - Rental Car Center
 
+  - 
+    name: ATL SkyTrain
+    type: monorail
+    ref: SkyTrain
+    station_count: 3
+    colour: '#0000ff'
     itineraries: 
       r8863388: 
         - Airport (n5348303511)
@@ -424,9 +424,9 @@ routes:
         - Airport (n5348303511)
 
 
-    name: ATL SkyTrain
-    station_count: 3
-    ref: SkyTrain
-    colour: '#0000ff'
-    type: monorail
+    stations: 
+      - Rental Car Center
+      - GICC/Gateway Center
+      - Airport
+
 
