@@ -64,11 +64,40 @@ transfers:
 
 routes: 
   - 
-    name: Blue Line
     type: light_rail
     ref: Blue
-    station_count: 27
+    name: Blue Line
     colour: '#0000c0'
+    station_count: 27
+    stations: 
+      - Cosumnes River College
+      - Center Parkway
+      - Franklin
+      - Meadowview
+      - Florin
+      - 47th Avenue
+      - Fruitridge
+      - City College
+      - 4th Avenue/Wayne Hultgren
+      - Broadway
+      - 16th Street
+      - 13th Street
+      - Archives Plaza
+      - 7th & Capitol
+      - St. Rose of Lima Park
+      - Cathedral Square
+      - 12th & I
+      - Alkali Flat/La Valentina
+      - Globe
+      - Arden/Del Paso
+      - Royal Oaks
+      - Swanston
+      - Marconi/Arcade
+      - Roseville Road
+      - Watt/I-80 West
+      - Watt/I-80
+      - 8th & O
+
     itineraries: 
       r2378981: 
         - Cosumnes River College (n6159583688)
@@ -127,41 +156,42 @@ routes:
         - Cosumnes River College (n6159583688)
 
 
-    stations: 
-      - Cosumnes River College
-      - Center Parkway
-      - Franklin
-      - Meadowview
-      - Florin
-      - 47th Avenue
-      - Fruitridge
-      - City College
-      - 4th Avenue/Wayne Hultgren
-      - Broadway
-      - 16th Street
-      - 13th Street
-      - Archives Plaza
-      - 7th & Capitol
-      - St. Rose of Lima Park
-      - Cathedral Square
-      - 12th & I
-      - Alkali Flat/La Valentina
-      - Globe
-      - Arden/Del Paso
-      - Royal Oaks
-      - Swanston
-      - Marconi/Arcade
-      - Roseville Road
-      - Watt/I-80 West
-      - Watt/I-80
-      - 8th & O
-
   - 
-    name: Gold Line
     type: light_rail
     ref: Gold
-    station_count: 28
+    name: Gold Line
     colour: '#c0ba00'
+    station_count: 28
+    stations: 
+      - Sacramento Valley Station
+      - 8th & H/County Center
+      - 8th & Capitol
+      - 8th & O
+      - Archives Plaza
+      - 13th Street
+      - 16th Street
+      - 23rd Street
+      - 29th Street
+      - 39th Street
+      - 48th Street
+      - 59th Street
+      - University/65th Street
+      - Power Inn
+      - College Greens
+      - Watt/Manlove
+      - Starfire
+      - Tiber
+      - Butterfield
+      - Mather Field/Mills
+      - Zinfandel
+      - Cordova Town Center
+      - Sunrise
+      - Hazel
+      - Iron Point
+      - Glenn/Robert G Holderness
+      - Historic Folsom
+      - 8th & K
+
     itineraries: 
       r2352701: 
         - Sacramento Valley Station (n6157430338)
@@ -222,51 +252,22 @@ routes:
         - Sacramento Valley Station (n6157430338)
 
 
-    stations: 
-      - Sacramento Valley Station
-      - 8th & H/County Center
-      - 8th & Capitol
-      - 8th & O
-      - Archives Plaza
-      - 13th Street
-      - 16th Street
-      - 23rd Street
-      - 29th Street
-      - 39th Street
-      - 48th Street
-      - 59th Street
-      - University/65th Street
-      - Power Inn
-      - College Greens
-      - Watt/Manlove
-      - Starfire
-      - Tiber
-      - Butterfield
-      - Mather Field/Mills
-      - Zinfandel
-      - Cordova Town Center
-      - Sunrise
-      - Hazel
-      - Iron Point
-      - Glenn/Robert G Holderness
-      - Historic Folsom
-      - 8th & K
-
   - 
-    name: Green Line
     type: light_rail
     ref: Green
-    station_count: 7
+    name: Green Line
     colour: '#00c000'
-    itineraries: 
-      r2379221: 
-        - 7th & Richards/Township 9 (n6157430341)
-        - 7th & I/County Center (n6157430100)
-        - 7th & Capitol (n6157429174)
-        - 8th & O (n6157430099)
-        - Archives Plaza (n6157430139)
-        - 13th Street (n6157429166)
+    station_count: 7
+    stations: 
+      - 13th Street
+      - Archives Plaza
+      - 7th & Capitol
+      - 8th & K
+      - 7th & I/County Center
+      - 7th & Richards/Township 9
+      - 8th & O
 
+    itineraries: 
       r2379220: 
         - 13th Street (n6157429166)
         - Archives Plaza (n6157430139)
@@ -275,14 +276,13 @@ routes:
         - 8th & H/County Center (n6157430101)
         - 7th & Richards/Township 9 (n6157430341)
 
+      r2379221: 
+        - 7th & Richards/Township 9 (n6157430341)
+        - 7th & I/County Center (n6157430100)
+        - 7th & Capitol (n6157429174)
+        - 8th & O (n6157430099)
+        - Archives Plaza (n6157430139)
+        - 13th Street (n6157429166)
 
-    stations: 
-      - 7th & Richards/Township 9
-      - 8th & H/County Center
-      - 8th & Capitol
-      - 8th & O
-      - Archives Plaza
-      - 13th Street
-      - 8th & K
 
 

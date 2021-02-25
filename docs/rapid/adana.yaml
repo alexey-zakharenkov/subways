@@ -18,11 +18,26 @@ transfers:
 
 routes: 
   - 
-    name: M1
     type: subway
     ref: M1
-    station_count: 13
+    name: M1
     colour: '#ffa500'
+    station_count: 13
+    stations: 
+      - Akıncılar
+      - Cumhuriyet
+      - Hürriyet
+      - Kocavezir
+      - İstiklal
+      - Vilayet
+      - Fatih
+      - Yeşilyurt
+      - Yurt
+      - Mavi Bulvar
+      - Huzurevi
+      - Anadolu Lisesi
+      - Hastane
+
     itineraries: 
       r7838816: 
         - Akıncılar (n5303110898)
@@ -54,20 +69,5 @@ routes:
         - Cumhuriyet (n5303110883)
         - Akıncılar (n5303110898)
 
-
-    stations: 
-      - Hastane
-      - Anadolu Lisesi
-      - Huzurevi
-      - Mavi Bulvar
-      - Yurt
-      - Yeşilyurt
-      - Fatih
-      - Vilayet
-      - İstiklal
-      - Kocavezir
-      - Hürriyet
-      - Cumhuriyet
-      - Akıncılar
 
 

@@ -11,11 +11,19 @@ transfers:
 
 routes: 
   - 
-    name: Linea 2 (Pozzuoli Solfatara → San Giovanni-Barra)
     type: train
     ref: 2
-    station_count: 6
+    name: Linea 2 (Pozzuoli Solfatara → San Giovanni-Barra)
     colour: '#0000ff'
+    station_count: 6
+    stations: 
+      - Pozzuoli Solfatara
+      - Bagnoli-Agnano Terme
+      - Napoli Mergellina
+      - Napoli Gianturco
+      - Napoli San Giovanni-Barra
+      - Piazza Leopardi
+
     itineraries: 
       r445980: 
         - Pozzuoli Solfatara (n6817792727)
@@ -33,13 +41,5 @@ routes:
         - Pozzuoli Solfatara (n6817792727)
         - Napoli Piazza Leopardi (n6817760441)
 
-
-    stations: 
-      - Pozzuoli Solfatara
-      - Bagnoli-Agnano Terme
-      - Napoli Mergellina
-      - Napoli Gianturco
-      - Napoli San Giovanni-Barra
-      - Piazza Leopardi
 
 

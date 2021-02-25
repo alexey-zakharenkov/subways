@@ -38,8 +38,25 @@ routes:
   - 
     type: light_rail
     ref: m1
-    station_count: 15
     colour: '#0000ff'
+    station_count: 15
+    stations: 
+      - Lausanne-Flon
+      - Vigie
+      - Montelly
+      - Provence
+      - Malley
+      - Bourdonnette
+      - UNIL-Chamberonne
+      - UNIL-Mouline
+      - UNIL-Sorge
+      - EPFL
+      - Bassenges
+      - Cerisaie
+      - Crochy
+      - Epenex
+      - Renens-Gare
+
     itineraries: 
       r79742: 
         - Lausanne-Flon (n3200281819)
@@ -76,46 +93,29 @@ routes:
         - Lausanne-Flon (n3200281819)
 
 
-    stations: 
-      - Lausanne-Flon
-      - Vigie
-      - Montelly
-      - Provence
-      - Malley
-      - Bourdonnette
-      - UNIL-Chamberonne
-      - UNIL-Mouline
-      - UNIL-Sorge
-      - EPFL
-      - Bassenges
-      - Cerisaie
-      - Crochy
-      - Epenex
-      - Renens-Gare
-
   - 
-    name: m2
     type: subway
     ref: m2
-    station_count: 14
+    name: m2
     colour: '#ff0000'
-    itineraries: 
-      r4250695: 
-        - Croisettes (n3219060209)
-        - Vennes (n5644519812)
-        - Fourmi (n3219060210)
-        - Sallaz (n3214217412)
-        - CHUV (n3473930277)
-        - Ours (n3218963143)
-        - Bessières (n3200281817)
-        - 'Riponne - Maurice Béjart (n3200281821)'
-        - Lausanne-Flon (n3200281819)
-        - Lausanne-Gare (n3200281818)
-        - Grancy (n3218868152)
-        - Délices (n3218868151)
-        - Jordils (n3218892757)
-        - Ouchy-Olympique (n3218892758)
+    station_count: 14
+    stations: 
+      - Ouchy
+      - Jordils
+      - Délices
+      - Grancy
+      - 'Lausanne - Gare'
+      - Lausanne-Flon
+      - 'Riponne - Maurice Béjart'
+      - Bessières
+      - Ours
+      - CHUV
+      - Sallaz
+      - Fourmi
+      - Vennes
+      - Croisettes
 
+    itineraries: 
       r79743: 
         - Ouchy-Olympique (n3218892758)
         - Jordils (n3218892757)
@@ -132,21 +132,21 @@ routes:
         - Vennes (n5644519812)
         - Croisettes (n3219060209)
 
+      r4250695: 
+        - Croisettes (n3219060209)
+        - Vennes (n5644519812)
+        - Fourmi (n3219060210)
+        - Sallaz (n3214217412)
+        - CHUV (n3473930277)
+        - Ours (n3218963143)
+        - Bessières (n3200281817)
+        - 'Riponne - Maurice Béjart (n3200281821)'
+        - Lausanne-Flon (n3200281819)
+        - Lausanne-Gare (n3200281818)
+        - Grancy (n3218868152)
+        - Délices (n3218868151)
+        - Jordils (n3218892757)
+        - Ouchy-Olympique (n3218892758)
 
-    stations: 
-      - Ouchy
-      - Jordils
-      - Délices
-      - Grancy
-      - 'Lausanne - Gare'
-      - Lausanne-Flon
-      - 'Riponne - Maurice Béjart'
-      - Bessières
-      - Ours
-      - CHUV
-      - Sallaz
-      - Fourmi
-      - Vennes
-      - Croisettes
 
 

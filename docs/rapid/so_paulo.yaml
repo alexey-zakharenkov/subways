@@ -118,37 +118,37 @@ transfers:
 
 routes: 
   - 
-    name: 'Linha 1 - Azul'
     type: subway
     ref: 1
-    station_count: 23
+    name: 'Linha 1 - Azul'
     colour: '#1a5ba3'
-    itineraries: 
-      r3596994: 
-        - Tucuruvi (n4924472501)
-        - Parada Inglesa (w16644748)
-        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
-        - Santana (r3308953)
-        - Carandiru (w16644515)
-        - 'Portuguesa - Tietê (r6545983)'
-        - Armênia (w16645299)
-        - Tiradentes (n5153819541)
-        - Luz (n5368677484)
-        - São Bento (n5369277944)
-        - Sé (n4311073828)
-        - 'Japão - Liberdade (n5369277070)'
-        - São Joaquim (n7717276955)
-        - Vergueiro (n4897835958)
-        - Paraíso (n4861900294)
-        - Ana Rosa (n4924478010)
-        - Vila Mariana (n4964592035)
-        - Santa Cruz (n5153871131)
-        - Praça da Árvore (n5153861800)
-        - Saúde (n5153861350)
-        - São Judas (n5153855592)
-        - Conceição (n4922664269)
-        - Jabaquara (n4962907887)
+    station_count: 23
+    stations: 
+      - Jabaquara
+      - Conceição
+      - São Judas
+      - Saúde
+      - Praça da Árvore
+      - Santa Cruz
+      - Vila Mariana
+      - Ana Rosa
+      - Paraíso
+      - Vergueiro
+      - São Joaquim
+      - Japão-Liberdade
+      - Sé (Linha 1)
+      - São Bento
+      - Luz (Linha 1)
+      - Tiradentes
+      - Armênia
+      - 'Portuguesa - Tietê'
+      - Carandiru
+      - Santana
+      - 'Jardim São Paulo - Ayrton Senna'
+      - Parada Inglesa
+      - Tucuruvi
 
+    itineraries: 
       r2144052: 
         - Jabaquara (n4962907887)
         - Conceição (n4922664269)
@@ -174,38 +174,50 @@ routes:
         - Parada Inglesa (w16644748)
         - Tucuruvi (n4924472501)
 
+      r3596994: 
+        - Tucuruvi (n4924472501)
+        - Parada Inglesa (w16644748)
+        - 'Jardim São Paulo - Ayrton Senna (n4964617785)'
+        - Santana (r3308953)
+        - Carandiru (w16644515)
+        - 'Portuguesa - Tietê (r6545983)'
+        - Armênia (w16645299)
+        - Tiradentes (n5153819541)
+        - Luz (n5368677484)
+        - São Bento (n5369277944)
+        - Sé (n4311073828)
+        - 'Japão - Liberdade (n5369277070)'
+        - São Joaquim (n7717276955)
+        - Vergueiro (n4897835958)
+        - Paraíso (n4861900294)
+        - Ana Rosa (n4924478010)
+        - Vila Mariana (n4964592035)
+        - Santa Cruz (n5153871131)
+        - Praça da Árvore (n5153861800)
+        - Saúde (n5153861350)
+        - São Judas (n5153855592)
+        - Conceição (n4922664269)
+        - Jabaquara (n4962907887)
 
-    stations: 
-      - Tucuruvi
-      - Parada Inglesa
-      - 'Jardim São Paulo - Ayrton Senna'
-      - Santana
-      - Carandiru
-      - 'Portuguesa - Tietê'
-      - Armênia
-      - Tiradentes
-      - Luz (Linha 1)
-      - São Bento
-      - Sé (Linha 1)
-      - Japão-Liberdade
-      - São Joaquim
-      - Vergueiro
-      - Paraíso
-      - Ana Rosa
-      - Vila Mariana
-      - Santa Cruz
-      - Praça da Árvore
-      - Saúde
-      - São Judas
-      - Conceição
-      - Jabaquara
 
   - 
-    name: 'Linha 15 - Prata'
     type: monorail
     ref: 15
-    station_count: 10
+    name: 'Linha 15 - Prata'
     colour: '#899194'
+    station_count: 10
+    stations: 
+      - São Mateus
+      - Fazenda da Juta
+      - Sapopemba
+      - Jardim Planalto
+      - Vila União
+      - Vila Tolstói
+      - Camilo Haddad
+      - São Lucas
+      - Oratório
+      - Vila Prudente (Linha 15)
+
     itineraries: 
       r5887353: 
         - São Mateus (n6571970481)
@@ -232,24 +244,28 @@ routes:
         - São Mateus (n6571970481)
 
 
-    stations: 
-      - Vila Prudente (Linha 15)
-      - Oratório
-      - São Lucas
-      - Camilo Haddad
-      - Vila Tolstói
-      - Vila União
-      - Jardim Planalto
-      - Sapopemba
-      - Fazenda da Juta
-      - São Mateus
-
   - 
-    name: 'Linha 2 - Verde'
     type: subway
     ref: 2
-    station_count: 14
+    name: 'Linha 2 - Verde'
     colour: '#008000'
+    station_count: 14
+    stations: 
+      - Vila Prudente (Linha 2)
+      - Tamanduateí (Linha 2)
+      - Sacomã
+      - Alto do Ipiranga
+      - 'Santos - Imigrantes'
+      - Chácara Klabin
+      - Ana Rosa
+      - Paraíso
+      - Brigadeiro
+      - Trianon-Masp
+      - Consolação
+      - Clínicas
+      - 'Santuário Nossa Senhora de Fátima - Sumaré'
+      - Vila Madalena
+
     itineraries: 
       r419276: 
         - Vila Prudente (n4924500191)
@@ -284,28 +300,32 @@ routes:
         - Vila Prudente (n4924500191)
 
 
-    stations: 
-      - Vila Madalena
-      - 'Santuário Nossa Senhora de Fátima - Sumaré'
-      - Clínicas
-      - Consolação
-      - Trianon-Masp
-      - Brigadeiro
-      - Paraíso
-      - Ana Rosa
-      - Chácara Klabin
-      - 'Santos - Imigrantes'
-      - Alto do Ipiranga
-      - Sacomã
-      - Tamanduateí (Linha 2)
-      - Vila Prudente (Linha 2)
-
   - 
-    name: 'Linha 3 - Vermelha'
     type: subway
     ref: 3
-    station_count: 18
+    name: 'Linha 3 - Vermelha'
     colour: '#d9001c'
+    station_count: 18
+    stations: 
+      - 'Palmeiras - Barra Funda (Metrô)'
+      - Marechal Deodoro
+      - Santa Cecília
+      - República (Linha 3)
+      - Anhangabaú
+      - Sé (Linha 3)
+      - Pedro II
+      - Brás (Linha 3)
+      - Bresser-Mooca
+      - Belém
+      - Tatuapé
+      - Carrão
+      - Penha
+      - Vila Matilde
+      - Guilhermina-Esperança
+      - Patriarca • Vila Ré
+      - Arthur Alvim
+      - Corinthians-Itaquera
+
     itineraries: 
       r419274: 
         - 'Palmeiras - Barra Funda (n4593556119)'
@@ -348,32 +368,24 @@ routes:
         - 'Palmeiras - Barra Funda (n4593556119)'
 
 
-    stations: 
-      - 'Palmeiras - Barra Funda (Metrô)'
-      - Marechal Deodoro
-      - Santa Cecília
-      - República (Linha 3)
-      - Anhangabaú
-      - Sé (Linha 3)
-      - Pedro II
-      - Brás (Linha 3)
-      - Bresser-Mooca
-      - Belém
-      - Tatuapé
-      - Carrão
-      - Penha
-      - Vila Matilde
-      - Guilhermina-Esperança
-      - Patriarca • Vila Ré
-      - Arthur Alvim
-      - Corinthians-Itaquera
-
   - 
-    name: 'Linha 4 - Amarela'
     type: subway
     ref: 4
-    station_count: 10
+    name: 'Linha 4 - Amarela'
     colour: '#ffd700'
+    station_count: 10
+    stations: 
+      - Luz (Linha 4)
+      - República (Linha 4)
+      - Higienópolis-Mackenzie
+      - Paulista
+      - Oscar Freire
+      - Fradique Coutinho
+      - Faria Lima
+      - Pinheiros
+      - Butantã
+      - São Paulo • Morumbi
+
     itineraries: 
       r419281: 
         - Luz (n5368677484)
@@ -400,24 +412,31 @@ routes:
         - Luz (n5368677484)
 
 
-    stations: 
-      - Luz (Linha 4)
-      - República (Linha 4)
-      - Higienópolis-Mackenzie
-      - Paulista
-      - Oscar Freire
-      - Fradique Coutinho
-      - Faria Lima
-      - Pinheiros
-      - Butantã
-      - São Paulo • Morumbi
-
   - 
-    name: 'Linha 5 - Lilás'
     type: subway
     ref: 5
-    station_count: 17
+    name: 'Linha 5 - Lilás'
     colour: '#9200c3'
+    station_count: 17
+    stations: 
+      - Capão Redondo
+      - Campo Limpo
+      - Vila das Belezas
+      - Giovanni Gronchi
+      - Santo Amaro (Metrô)
+      - Largo Treze
+      - Adolfo Pinheiro
+      - Alto da Boa Vista
+      - Borba Gato
+      - Brooklin
+      - Campo Belo
+      - Eucaliptos
+      - Moema
+      - AACD – Servidor
+      - Hospital São Paulo
+      - Santa Cruz
+      - Chácara Klabin
+
     itineraries: 
       r419266: 
         - Capão Redondo (n5368613746)
@@ -457,24 +476,5 @@ routes:
         - Campo Limpo (n8000500360)
         - Capão Redondo (n5368613746)
 
-
-    stations: 
-      - Capão Redondo
-      - Campo Limpo
-      - Vila das Belezas
-      - Giovanni Gronchi
-      - Santo Amaro (Metrô)
-      - Largo Treze
-      - Adolfo Pinheiro
-      - Alto da Boa Vista
-      - Borba Gato
-      - Brooklin
-      - Campo Belo
-      - Eucaliptos
-      - Moema
-      - AACD – Servidor
-      - Hospital São Paulo
-      - Santa Cruz
-      - Chácara Klabin
 
 

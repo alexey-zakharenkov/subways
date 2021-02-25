@@ -20,11 +20,28 @@ transfers:
 
 routes: 
   - 
-    name: Métro Rennes Ligne a
     type: subway
     ref: a
-    station_count: 15
+    name: Métro Rennes Ligne a
     colour: '#ed1c24'
+    station_count: 15
+    stations: 
+      - J.F. Kennedy
+      - 'Villejean - Université'
+      - Pontchaillou
+      - Anatole France
+      - Sainte-Anne
+      - République
+      - Charles de Gaulle
+      - Gares
+      - Jacques Cartier
+      - Clemenceau
+      - Henri Fréville
+      - Italie
+      - Triangle
+      - Le Blosne
+      - La Poterie
+
     itineraries: 
       r23518: 
         - J.F. Kennedy (n8261608361)
@@ -60,22 +77,5 @@ routes:
         - 'Villejean - Université (n8261608358)'
         - J.F. Kennedy (n8261608361)
 
-
-    stations: 
-      - J.F. Kennedy
-      - 'Villejean - Université'
-      - Pontchaillou
-      - Anatole France
-      - Sainte-Anne
-      - République
-      - Charles de Gaulle
-      - Gares
-      - Jacques Cartier
-      - Clemenceau
-      - Henri Fréville
-      - Italie
-      - Triangle
-      - Le Blosne
-      - La Poterie
 
 

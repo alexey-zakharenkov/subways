@@ -21,11 +21,29 @@ transfers:
 
 routes: 
   - 
-    name: Tren Urbano
     type: subway
     ref: Tren Urbano
-    station_count: 16
+    name: Tren Urbano
     colour: '#800080'
+    station_count: 16
+    stations: 
+      - Sagrado Corazón
+      - Hato Rey
+      - Roosevelt
+      - Domenech
+      - Piñero
+      - Universidad
+      - Río Piedras
+      - Cupey
+      - Centro Médico
+      - San Francisco
+      - Las Lomas
+      - Martínez Nadal
+      - Torrimar
+      - Jardines
+      - Deportivo
+      - Bayamón
+
     itineraries: 
       r2623662: 
         - Sagrado Corazón (n5356326078)
@@ -63,23 +81,5 @@ routes:
         - Hato Rey (n5356336924)
         - Sagrado Corazón (n5356326078)
 
-
-    stations: 
-      - Sagrado Corazón
-      - Hato Rey
-      - Roosevelt
-      - Domenech
-      - Piñero
-      - Universidad
-      - Río Piedras
-      - Cupey
-      - Centro Médico
-      - San Francisco
-      - Las Lomas
-      - Martínez Nadal
-      - Torrimar
-      - Jardines
-      - Deportivo
-      - Bayamón
 
 

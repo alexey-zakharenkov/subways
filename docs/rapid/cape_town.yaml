@@ -109,11 +109,29 @@ transfers:
 
 routes: 
   - 
-    name: Cape Flats Line
     type: train
     ref: CFL
-    station_count: 16
+    name: Cape Flats Line
     colour: '#8c493a'
+    station_count: 16
+    stations: 
+      - Cape Town
+      - Woodstock
+      - Salt River
+      - Koeberg Road
+      - Maitland
+      - Ndabeni
+      - Hazendal
+      - Athlone
+      - Crawford
+      - Lansdowne
+      - Wetton
+      - Ottery
+      - Southfield
+      - Heathfield
+      - Retreat
+      - Pinelands
+
     itineraries: 
       r952458: 
         - Cape Town Station (n288676470)
@@ -151,6 +169,12 @@ routes:
         - Cape Town Station (n288676470)
 
 
+  - 
+    type: train
+    ref: CL
+    name: Central Line
+    colour: '#33bef3'
+    station_count: 26
     stations: 
       - Cape Town
       - Woodstock
@@ -158,23 +182,27 @@ routes:
       - Koeberg Road
       - Maitland
       - Ndabeni
-      - Hazendal
-      - Athlone
-      - Crawford
-      - Lansdowne
-      - Wetton
-      - Ottery
-      - Southfield
-      - Heathfield
-      - Retreat
       - Pinelands
+      - Langa
+      - Bonteheuwel
+      - Netreg
+      - Heideveld
+      - Nyanga
+      - Philippi
+      - Lentegeur
+      - Mitchell's Plain
+      - Kapteinsklip Station
+      - Esplanade
+      - Ysterplaat
+      - Mutual
+      - Stock Road
+      - Mandalay
+      - Nolungile
+      - Nonkqubela
+      - Khayelitsha
+      - Kuyasa
+      - Chris Hani
 
-  - 
-    name: Central Line
-    type: train
-    ref: CL
-    station_count: 26
-    colour: '#33bef3'
     itineraries: 
       r952470: 
         - Cape Town Station (n288676470)
@@ -193,43 +221,6 @@ routes:
         - Lentegeur (n125365367)
         - Mitchell's Plain (n125365006)
         - Kapteinsklip Station (n6859255902)
-
-      r10671154: 
-        - Kapteinsklip Station (n6859255902)
-        - Mitchell's Plain (n125365006)
-        - Lentegeur (n125365367)
-        - Philippi (n288681832)
-        - Nyanga (n288681146)
-        - Heideveld (n56360109)
-        - Netreg (n7400828907)
-        - Bonteheuwel (n56360081)
-        - Langa (n25884626)
-        - Pinelands (n291327406)
-        - Ndabeni (n288679264)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
-        - Cape Town Station (n288676470)
-
-      r9822423: 
-        - Chris Hani (n522277965)
-        - Kuyasa (n7035268831)
-        - Khayelitsha (n125368155)
-        - Nonkqubela (n125368254)
-        - Nolungile (n125366984)
-        - Mandalay (n7400813381)
-        - Stock Road (n125366195)
-        - Philippi (n288681832)
-        - Nyanga (n288681146)
-        - Heideveld (n56360109)
-        - Netreg (n7400828907)
-        - Bonteheuwel (n56360081)
-        - Langa (n25884626)
-        - Mutual (n288679159)
-        - Ysterplaat (n35991191)
-        - Esplanade (n288678132)
-        - Cape Town Station (n288676470)
 
       r952471: 
         - Cape Town Station (n288676470)
@@ -265,28 +256,6 @@ routes:
         - Mitchell's Plain (n125365006)
         - Kapteinsklip Station (n6859255902)
 
-      r10671153: 
-        - Chris Hani (n522277965)
-        - Kuyasa (n7035268831)
-        - Khayelitsha (n125368155)
-        - Nonkqubela (n125368254)
-        - Nolungile (n125366984)
-        - Mandalay (n7400813381)
-        - Stock Road (n125366195)
-        - Philippi (n288681832)
-        - Nyanga (n288681146)
-        - Heideveld (n56360109)
-        - Netreg (n7400828907)
-        - Bonteheuwel (n56360081)
-        - Langa (n25884626)
-        - Pinelands (n291327406)
-        - Ndabeni (n288679264)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
-        - Cape Town Station (n288676470)
-
       r1112509: 
         - Cape Town Station (n288676470)
         - Woodstock (n288676995)
@@ -309,6 +278,65 @@ routes:
         - Kuyasa (n7035268831)
         - Chris Hani (n522277965)
 
+      r9822423: 
+        - Chris Hani (n522277965)
+        - Kuyasa (n7035268831)
+        - Khayelitsha (n125368155)
+        - Nonkqubela (n125368254)
+        - Nolungile (n125366984)
+        - Mandalay (n7400813381)
+        - Stock Road (n125366195)
+        - Philippi (n288681832)
+        - Nyanga (n288681146)
+        - Heideveld (n56360109)
+        - Netreg (n7400828907)
+        - Bonteheuwel (n56360081)
+        - Langa (n25884626)
+        - Mutual (n288679159)
+        - Ysterplaat (n35991191)
+        - Esplanade (n288678132)
+        - Cape Town Station (n288676470)
+
+      r10671153: 
+        - Chris Hani (n522277965)
+        - Kuyasa (n7035268831)
+        - Khayelitsha (n125368155)
+        - Nonkqubela (n125368254)
+        - Nolungile (n125366984)
+        - Mandalay (n7400813381)
+        - Stock Road (n125366195)
+        - Philippi (n288681832)
+        - Nyanga (n288681146)
+        - Heideveld (n56360109)
+        - Netreg (n7400828907)
+        - Bonteheuwel (n56360081)
+        - Langa (n25884626)
+        - Pinelands (n291327406)
+        - Ndabeni (n288679264)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
+
+      r10671154: 
+        - Kapteinsklip Station (n6859255902)
+        - Mitchell's Plain (n125365006)
+        - Lentegeur (n125365367)
+        - Philippi (n288681832)
+        - Nyanga (n288681146)
+        - Heideveld (n56360109)
+        - Netreg (n7400828907)
+        - Bonteheuwel (n56360081)
+        - Langa (n25884626)
+        - Pinelands (n291327406)
+        - Ndabeni (n288679264)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
+
       r10671155: 
         - Kapteinsklip Station (n6859255902)
         - Mitchell's Plain (n125365006)
@@ -325,67 +353,91 @@ routes:
         - Cape Town Station (n288676470)
 
 
-    stations: 
-      - Kapteinsklip Station
-      - Mitchell's Plain
-      - Lentegeur
-      - Philippi
-      - Nyanga
-      - Heideveld
-      - Netreg
-      - Bonteheuwel
-      - Langa
-      - Mutual
-      - Ysterplaat
-      - Esplanade
-      - Cape Town
-      - Pinelands
-      - Ndabeni
-      - Maitland
-      - Koeberg Road
-      - Salt River
-      - Woodstock
-      - Chris Hani
-      - Kuyasa
-      - Khayelitsha
-      - Nonkqubela
-      - Nolungile
-      - Mandalay
-      - Stock Road
-
   - 
-    name: Northern Line
     type: train
     ref: NL
-    station_count: 51
+    name: Northern Line
     colour: '#99d420'
+    station_count: 51
+    stations: 
+      - Cape Town
+      - Woodstock
+      - Salt River
+      - Koeberg Road
+      - Maitland
+      - Woltemade
+      - Mutual
+      - Thornton
+      - Goodwood
+      - Vasco
+      - Elsies River
+      - Parow
+      - Tygerberg
+      - Bellville
+      - Kuils River
+      - Blackheath
+      - Meltonrose
+      - Eerste River
+      - Lynedoch
+      - Vlottenburg
+      - Stellenbosch
+      - Du Toit
+      - Koelenhof
+      - Muldersvlei
+      - Stikland
+      - Brackenfell
+      - Eikenfontein
+      - Kraaifontein
+      - Klapmuts
+      - Paarl
+      - Huguenot
+      - Dal Josafat
+      - Mbekweni
+      - Wellington
+      - Esplanade
+      - Ysterplaat
+      - Kentemade
+      - Century City
+      - Acacia Park
+      - Monte Vista
+      - De Grendel
+      - Avondale
+      - Oosterzee
+      - Fisantkraal
+      - Mellish
+      - Mikpunt
+      - Klipheuwel
+      - Wintervogel
+      - Kalbaskraal
+      - Abbotsdale
+      - Malmesbury
+
     itineraries: 
-      r10671160: 
-        - Wellington (n6863009243)
-        - Mbekweni (n6863052615)
-        - Dal Josafat (n6863028440)
-        - Huguenot (n6863077960)
-        - Paarl (n3041795353)
-        - Klapmuts (n33501350)
-        - Muldersvlei (n33153972)
-        - Kraaifontein (n33493457)
-        - Eikenfontein (n33496025)
-        - Brackenfell (n36048261)
-        - Stikland (n36048228)
-        - Bellville (n36058142)
-        - Tygerberg (n36048162)
-        - Parow (n6863005225)
-        - Elsies River (n6863005234)
-        - Vasco (n288682152)
-        - Goodwood (n6863005235)
-        - Thornton (n6863005236)
-        - Mutual (n288679173)
-        - Woltemade (n768092873)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
+      r956847: 
         - Cape Town Station (n288676470)
+        - Woodstock (n288676995)
+        - Salt River (n349078745)
+        - Koeberg Road (n288678018)
+        - Maitland (n288678029)
+        - Woltemade (n768092873)
+        - Mutual (n288679173)
+        - Thornton (n6863005236)
+        - Goodwood (n6863005235)
+        - Vasco (n288682152)
+        - Elsies River (n6863005234)
+        - Parow (n6863005225)
+        - Tygerberg (n36048162)
+        - Bellville (n36058142)
+        - Kuils River (n56214185)
+        - Blackheath (n56213365)
+        - Meltonrose (n56213353)
+        - Eerste River (n33184145)
+        - Lynedoch (n33184105)
+        - Vlottenburg (n33184082)
+        - Stellenbosch (n33085339)
+        - Du Toit (n33085350)
+        - Koelenhof (n33153921)
+        - Muldersvlei (n33153972)
 
       r956850: 
         - Cape Town Station (n288676470)
@@ -414,31 +466,18 @@ routes:
         - Mbekweni (n6863052615)
         - Wellington (n6863009243)
 
-      r10671158: 
-        - Muldersvlei (n33153972)
-        - Koelenhof (n33153921)
-        - Du Toit (n33085350)
-        - Stellenbosch (n33085339)
-        - Vlottenburg (n33184082)
-        - Lynedoch (n33184105)
-        - Eerste River (n33184145)
-        - Meltonrose (n56213353)
-        - Blackheath (n56213365)
-        - Kuils River (n56214185)
-        - Bellville (n36058142)
-        - Tygerberg (n36048162)
-        - Parow (n6863005225)
-        - Elsies River (n6863005234)
-        - Vasco (n288682152)
-        - Goodwood (n6863005235)
-        - Thornton (n6863005236)
-        - Mutual (n288679173)
-        - Woltemade (n768092873)
-        - Maitland (n288678029)
-        - Koeberg Road (n288678018)
-        - Salt River (n349078745)
-        - Woodstock (n288676995)
+      r957035: 
         - Cape Town Station (n288676470)
+        - Esplanade (n288678132)
+        - Ysterplaat (n35991191)
+        - Kentemade (n6637164079)
+        - Century City (n6637181688)
+        - Acacia Park (n35992613)
+        - Monte Vista (n35992923)
+        - De Grendel (n35993122)
+        - Avondale (n36058069)
+        - Oosterzee (n36058092)
+        - Bellville (n36058142)
 
       r957085: 
         - Cape Town Station (n288676470)
@@ -465,19 +504,6 @@ routes:
         - Abbotsdale (n240259351)
         - Malmesbury (n240268935)
 
-      r957035: 
-        - Cape Town Station (n288676470)
-        - Esplanade (n288678132)
-        - Ysterplaat (n35991191)
-        - Kentemade (n6637164079)
-        - Century City (n6637181688)
-        - Acacia Park (n35992613)
-        - Monte Vista (n35992923)
-        - De Grendel (n35993122)
-        - Avondale (n36058069)
-        - Oosterzee (n36058092)
-        - Bellville (n36058142)
-
       r9822435: 
         - Malmesbury (n240268935)
         - Abbotsdale (n240259351)
@@ -502,6 +528,32 @@ routes:
         - Ysterplaat (n35991191)
         - Cape Town Station (n288676470)
 
+      r10671158: 
+        - Muldersvlei (n33153972)
+        - Koelenhof (n33153921)
+        - Du Toit (n33085350)
+        - Stellenbosch (n33085339)
+        - Vlottenburg (n33184082)
+        - Lynedoch (n33184105)
+        - Eerste River (n33184145)
+        - Meltonrose (n56213353)
+        - Blackheath (n56213365)
+        - Kuils River (n56214185)
+        - Bellville (n36058142)
+        - Tygerberg (n36048162)
+        - Parow (n6863005225)
+        - Elsies River (n6863005234)
+        - Vasco (n288682152)
+        - Goodwood (n6863005235)
+        - Thornton (n6863005236)
+        - Mutual (n288679173)
+        - Woltemade (n768092873)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
+
       r10671159: 
         - Bellville (n36058142)
         - Oosterzee (n36058092)
@@ -515,92 +567,69 @@ routes:
         - Esplanade (n288678132)
         - Cape Town Station (n288676470)
 
-      r956847: 
-        - Cape Town Station (n288676470)
-        - Woodstock (n288676995)
-        - Salt River (n349078745)
-        - Koeberg Road (n288678018)
-        - Maitland (n288678029)
-        - Woltemade (n768092873)
-        - Mutual (n288679173)
-        - Thornton (n6863005236)
-        - Goodwood (n6863005235)
-        - Vasco (n288682152)
-        - Elsies River (n6863005234)
-        - Parow (n6863005225)
-        - Tygerberg (n36048162)
-        - Bellville (n36058142)
-        - Kuils River (n56214185)
-        - Blackheath (n56213365)
-        - Meltonrose (n56213353)
-        - Eerste River (n33184145)
-        - Lynedoch (n33184105)
-        - Vlottenburg (n33184082)
-        - Stellenbosch (n33085339)
-        - Du Toit (n33085350)
-        - Koelenhof (n33153921)
+      r10671160: 
+        - Wellington (n6863009243)
+        - Mbekweni (n6863052615)
+        - Dal Josafat (n6863028440)
+        - Huguenot (n6863077960)
+        - Paarl (n3041795353)
+        - Klapmuts (n33501350)
         - Muldersvlei (n33153972)
+        - Kraaifontein (n33493457)
+        - Eikenfontein (n33496025)
+        - Brackenfell (n36048261)
+        - Stikland (n36048228)
+        - Bellville (n36058142)
+        - Tygerberg (n36048162)
+        - Parow (n6863005225)
+        - Elsies River (n6863005234)
+        - Vasco (n288682152)
+        - Goodwood (n6863005235)
+        - Thornton (n6863005236)
+        - Mutual (n288679173)
+        - Woltemade (n768092873)
+        - Maitland (n288678029)
+        - Koeberg Road (n288678018)
+        - Salt River (n349078745)
+        - Woodstock (n288676995)
+        - Cape Town Station (n288676470)
 
 
+  - 
+    type: train
+    ref: SL
+    name: Southern Line
+    colour: '#ed1c24'
+    station_count: 27
     stations: 
       - Cape Town
       - Woodstock
       - Salt River
-      - Koeberg Road
-      - Maitland
-      - Woltemade
-      - Mutual
-      - Thornton
-      - Goodwood
-      - Vasco
-      - Elsies River
-      - Parow
-      - Tygerberg
-      - Bellville
-      - Kuils River
-      - Blackheath
-      - Meltonrose
-      - Eerste River
-      - Lynedoch
-      - Vlottenburg
-      - Stellenbosch
-      - Du Toit
-      - Koelenhof
-      - Muldersvlei
-      - Esplanade
-      - Ysterplaat
-      - Kentemade
-      - Century City
-      - Acacia Park
-      - Monte Vista
-      - De Grendel
-      - Avondale
-      - Oosterzee
-      - Stikland
-      - Brackenfell
-      - Eikenfontein
-      - Kraaifontein
-      - Fisantkraal
-      - Mellish
-      - Mikpunt
-      - Klipheuwel
-      - Wintervogel
-      - Kalbaskraal
-      - Abbotsdale
-      - Malmesbury
-      - Klapmuts
-      - Paarl
-      - Huguenot
-      - Dal Josafat
-      - Mbekweni
-      - Wellington
+      - Observatory
+      - Mowbray
+      - Rosebank
+      - Rondebosch
+      - Newlands
+      - Harfield Road
+      - Kenilworth
+      - Wynberg
+      - Wittebome
+      - Plumstead
+      - Steurhof
+      - Diep River
+      - Heathfield
+      - Retreat
+      - Steenberg
+      - Lakeside
+      - False Bay
+      - Muizenberg
+      - St James
+      - Kalk Bay
+      - Fish Hoek
+      - Sunny Cove
+      - Glencairn
+      - Simon's Town
 
-  - 
-    name: Southern Line
-    type: train
-    ref: SL
-    station_count: 27
-    colour: '#ed1c24'
     itineraries: 
       r948941: 
         - Cape Town Station (n288676470)
@@ -660,34 +689,5 @@ routes:
         - Woodstock (n288676995)
         - Cape Town Station (n288676470)
 
-
-    stations: 
-      - Cape Town
-      - Woodstock
-      - Salt River
-      - Observatory
-      - Mowbray
-      - Rosebank
-      - Rondebosch
-      - Newlands
-      - Harfield Road
-      - Kenilworth
-      - Wynberg
-      - Wittebome
-      - Plumstead
-      - Steurhof
-      - Diep River
-      - Heathfield
-      - Retreat
-      - Steenberg
-      - Lakeside
-      - False Bay
-      - Muizenberg
-      - St James
-      - Kalk Bay
-      - Fish Hoek
-      - Sunny Cove
-      - Glencairn
-      - Simon's Town
 
 

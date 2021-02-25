@@ -21,11 +21,29 @@ transfers:
 
 routes: 
   - 
-    name: VLT de Maceió
     type: light_rail
     ref: CBTU
-    station_count: 16
+    name: VLT de Maceió
     colour: '#0000ff'
+    station_count: 16
+    stations: 
+      - Lourenço de Albuquerque
+      - Rio Largo
+      - Gustavo Paiva
+      - Utinga
+      - Satuba
+      - Rio Novo
+      - ABC
+      - Fernão Velho
+      - Goiabeira
+      - Sururu de Capote
+      - Bebedouro
+      - Mutange
+      - Bom Parto
+      - Estação Mercado do Artesanato
+      - Maceió
+      - Jaraguá
+
     itineraries: 
       r6636196: 
         - Lourenço de Albuquerque (n4987882471)
@@ -63,23 +81,5 @@ routes:
         - Rio Largo (n5807315996)
         - Lourenço de Albuquerque (n4987882471)
 
-
-    stations: 
-      - Lourenço de Albuquerque
-      - Rio Largo
-      - Gustavo Paiva
-      - Utinga
-      - Satuba
-      - Rio Novo
-      - ABC
-      - Fernão Velho
-      - Goiabeira
-      - Sururu de Capote
-      - Bebedouro
-      - Mutange
-      - Bom Parto
-      - Estação Mercado do Artesanato
-      - Maceió
-      - Jaraguá
 
 

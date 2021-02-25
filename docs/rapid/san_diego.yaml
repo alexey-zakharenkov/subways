@@ -62,11 +62,31 @@ transfers:
 
 routes: 
   - 
-    name: UC San Diego Blue Line
     type: light_rail
     ref: 510
-    station_count: 18
+    name: UC San Diego Blue Line
     colour: '#0000ff'
+    station_count: 18
+    stations: 
+      - America Plaza
+      - Civic Center
+      - 5th Avenue
+      - City College
+      - Park & Market
+      - 12th & Imperial Transit Center
+      - Barrio Logan
+      - Harborside
+      - Pacific Fleet
+      - 8th Street
+      - 24th Street
+      - Bayfront/E Street
+      - H Street
+      - Palomar Street (Trolley)
+      - Palm Avenue
+      - Iris Avenue
+      - Beyer Boulevard Trolley Station
+      - San Ysidro Transit Center
+
     itineraries: 
       r7572436: 
         - America Plaza (n6184516237)
@@ -109,32 +129,33 @@ routes:
         - America Plaza (n6184516237)
 
 
-    stations: 
-      - San Ysidro Transit Center
-      - Beyer Boulevard Trolley Station
-      - Iris Avenue
-      - Palm Avenue
-      - Palomar Street (Trolley)
-      - H Street
-      - Bayfront/E Street
-      - 24th Street
-      - 8th Street
-      - Pacific Fleet
-      - Harborside
-      - Barrio Logan
-      - 12th & Imperial Transit Center
-      - Park & Market
-      - City College
-      - 5th Avenue
-      - Civic Center
-      - America Plaza
-
   - 
-    name: Orange Line
     type: light_rail
     ref: 520
-    station_count: 19
+    name: Orange Line
     colour: '#ffa500'
+    station_count: 19
+    stations: 
+      - Courthouse
+      - Civic Center
+      - 5th Avenue
+      - City College
+      - Park & Market
+      - 12th & Imperial Transit Center
+      - 25th/Commercial
+      - 32nd/Commercial
+      - 47th Street
+      - Euclid Avenue
+      - Encanto/62nd Street
+      - Massachusetts Avenue
+      - Lemon Grove Depot
+      - Spring Street
+      - La Mesa Boulevard
+      - Grossmont Transit Center
+      - Amaya Drive
+      - El Cajon Transit Center
+      - Arnele Avenue
+
     itineraries: 
       r2846984: 
         - Courthouse (n6184516227)
@@ -179,33 +200,41 @@ routes:
         - Courthouse (n6184516227)
 
 
+  - 
+    type: light_rail
+    ref: 530
+    name: Sycuan Green Line
+    colour: '#008000'
+    station_count: 27
     stations: 
+      - Santee Town Center
+      - Gillespie Field
       - Arnele Avenue
       - El Cajon Transit Center
       - Amaya Drive
       - Grossmont Transit Center
-      - La Mesa Boulevard
-      - Spring Street
-      - Lemon Grove Depot
-      - Massachusetts Avenue
-      - Encanto/62nd Street
-      - Euclid Avenue
-      - 47th Street
-      - 32nd/Commercial
-      - 25th/Commercial
+      - 70th Street
+      - Alvarado Medical Center
+      - SDSU Transit Center
+      - Grantville
+      - Mission San Diego
+      - Qualcomm Stadium
+      - Fenton Parkway
+      - Rio Vista
+      - Mission Valley Center
+      - Hazard Center
+      - Fashion Valley Transit Center
+      - Morena/Linda Vista
+      - San Diego Old Town Transit Center
+      - Washington Street
+      - Middletown
+      - County Center/Little Italy
+      - Santa Fe Depot
+      - Seaport Village
+      - Convention Center
+      - Gaslamp Quarter
       - 12th & Imperial Transit Center
-      - Park & Market
-      - City College
-      - 5th Avenue
-      - Civic Center
-      - Courthouse
 
-  - 
-    name: Sycuan Green Line
-    type: light_rail
-    ref: 530
-    station_count: 27
-    colour: '#008000'
     itineraries: 
       r2847013: 
         - Santee Town Center (n6184516708)
@@ -266,41 +295,23 @@ routes:
         - Santee Town Center (n6184516708)
 
 
+  - 
+    type: light_rail
+    ref: MTS Silver
+    name: San Diego Trolley
+    colour: '#cccccc'
+    station_count: 9
     stations: 
       - 12th & Imperial Transit Center
       - Gaslamp Quarter
       - Convention Center
       - Seaport Village
-      - Santa Fe Depot
-      - County Center/Little Italy
-      - Middletown
-      - Washington Street
-      - San Diego Old Town Transit Center
-      - Morena/Linda Vista
-      - Fashion Valley Transit Center
-      - Hazard Center
-      - Mission Valley Center
-      - Rio Vista
-      - Fenton Parkway
-      - Qualcomm Stadium
-      - Mission San Diego
-      - Grantville
-      - SDSU Transit Center
-      - Alvarado Medical Center
-      - 70th Street
-      - Grossmont Transit Center
-      - Amaya Drive
-      - El Cajon Transit Center
-      - Arnele Avenue
-      - Gillespie Field
-      - Santee Town Center
+      - America Plaza
+      - Civic Center
+      - 5th Avenue
+      - City College
+      - Park & Market
 
-  - 
-    name: San Diego Trolley
-    type: light_rail
-    ref: MTS Silver
-    station_count: 9
-    colour: '#cccccc'
     itineraries: 
       r4729047: 
         - 12th & Imperial Transit Center (n6184516244)
@@ -314,16 +325,5 @@ routes:
         - Park & Market (n6184516702)
         - 12th & Imperial Transit Center (n6184516244)
 
-
-    stations: 
-      - 12th & Imperial Transit Center
-      - Gaslamp Quarter
-      - Convention Center
-      - Seaport Village
-      - America Plaza
-      - Civic Center
-      - 5th Avenue
-      - City College
-      - Park & Market
 
 

@@ -34,11 +34,33 @@ transfers:
 
 routes: 
   - 
-    name: Schwebebahn Wuppertal
     type: monorail
     ref: 60
-    station_count: 20
+    name: Schwebebahn Wuppertal
     colour: '#00ffff'
+    station_count: 20
+    stations: 
+      - Schwebebahnstation Vohwinkel
+      - Bruch
+      - Hammerstein
+      - Sonnborner Straße
+      - Zoo/Stadion (monorail)
+      - Varresbecker Straße (monorail)
+      - Westende (monorail)
+      - Pestalozzistraße (monorail)
+      - Robert-Daum-Platz (monorail)
+      - Ohligsmühle
+      - Wuppertal Hauptbahnhof
+      - Kluse
+      - Landgericht
+      - Völklinger Straße
+      - Loher Brücke
+      - Adlerbrücke
+      - Alter Markt Schwebebahn
+      - Werther Brücke
+      - Wupperfeld
+      - Oberbarmen Bahnhof (monorail)
+
     itineraries: 
       r146380: 
         - Vohwinkel Schwebebahn (n6577465471)
@@ -85,34 +107,18 @@ routes:
         - Vohwinkel Schwebebahn (n6577465471)
 
 
-    stations: 
-      - Oberbarmen Bahnhof (monorail)
-      - Wupperfeld
-      - Werther Brücke
-      - Alter Markt Schwebebahn
-      - Adlerbrücke
-      - Loher Brücke
-      - Völklinger Straße
-      - Landgericht
-      - Kluse
-      - Wuppertal Hauptbahnhof
-      - Ohligsmühle
-      - Robert-Daum-Platz (monorail)
-      - Pestalozzistraße (monorail)
-      - Westende (monorail)
-      - Varresbecker Straße (monorail)
-      - Zoo/Stadion (monorail)
-      - Sonnborner Straße
-      - Hammerstein
-      - Bruch
-      - Schwebebahnstation Vohwinkel
-
   - 
-    name: Monorail H1
     type: monorail
     ref: H1
-    station_count: 4
+    name: Monorail H1
     colour: '#c31313'
+    station_count: 4
+    stations: 
+      - Eichlinghofen H-Bahn
+      - Campus Süd
+      - Universität S
+      - Technologiezentrum
+
     itineraries: 
       r93947: 
         - Eichlinghofen H-Bahn (n1444292627)
@@ -127,56 +133,50 @@ routes:
         - Eichlinghofen H-Bahn (n1444292627)
 
 
-    stations: 
-      - Technologiezentrum
-      - Universität S
-      - Campus Süd
-      - Eichlinghofen H-Bahn
-
   - 
-    name: Monorail H2
     type: monorail
     ref: H2
-    station_count: 2
+    name: Monorail H2
     colour: '#c31313'
-    itineraries: 
-      r1901045: 
-        - Campus Nord (n6708312340)
-        - Campus Süd (n1444302733)
-
-      r1901044: 
-        - Campus Süd (n1444302733)
-        - Campus Nord (n6708312340)
-
-
+    station_count: 2
     stations: 
       - Campus Süd
       - Campus Nord
 
+    itineraries: 
+      r1901044: 
+        - Campus Süd (n1444302733)
+        - Campus Nord (n6708312340)
+
+      r1901045: 
+        - Campus Nord (n6708312340)
+        - Campus Süd (n1444302733)
+
+
   - 
-    name: Skytrain
     type: monorail
     ref: Skytrain
-    station_count: 4
+    name: Skytrain
     colour: '#ff0000'
-    itineraries: 
-      r4101840: 
-        - Flughafen Bahnhof (n6709863535)
-        - Flughafen Parkhaus 4 (n6708283863)
-        - Flughafen Terminal A/B (n6708283865)
-        - Flughafen Terminal C (n6708283864)
+    station_count: 4
+    stations: 
+      - Flughafen Terminal C
+      - Flughafen Terminal A/B
+      - Flughafen Parkhaus 4
+      - Flughafen Bahnhof
 
+    itineraries: 
       r72578: 
         - Flughafen Terminal C (n6708283864)
         - Flughafen Terminal A/B (n6708283865)
         - Flughafen Parkhaus 4 (n6708283863)
         - Flughafen Bahnhof (n6709863535)
 
+      r4101840: 
+        - Flughafen Bahnhof (n6709863535)
+        - Flughafen Parkhaus 4 (n6708283863)
+        - Flughafen Terminal A/B (n6708283865)
+        - Flughafen Terminal C (n6708283864)
 
-    stations: 
-      - Flughafen Terminal C
-      - Flughafen Terminal A/B
-      - Flughafen Parkhaus 4
-      - Flughafen Bahnhof
 
 

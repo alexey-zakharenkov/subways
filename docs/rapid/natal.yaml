@@ -26,11 +26,27 @@ transfers:
 
 routes: 
   - 
-    name: Linha Norte
     type: light_rail
     ref: Norte
-    station_count: 14
+    name: Linha Norte
     colour: '#0000ff'
+    station_count: 14
+    stations: 
+      - Natal
+      - Alecrim I
+      - Quintas
+      - Igapó
+      - Santa Catarina
+      - Soledade
+      - Nova Natal
+      - Nordelândia
+      - Estrela do Mar
+      - Extremoz
+      - Raposa
+      - Massangana
+      - Lagoa Grande
+      - Ceará-Mirim
+
     itineraries: 
       r1229611: 
         - Natal (r9471190)
@@ -65,28 +81,22 @@ routes:
         - Natal (r9471190)
 
 
-    stations: 
-      - Ceará-Mirim
-      - Lagoa Grande
-      - Massangana
-      - Raposa
-      - Extremoz
-      - Estrela do Mar
-      - Nordelândia
-      - Nova Natal
-      - Soledade
-      - Santa Catarina
-      - Igapó
-      - Quintas
-      - Alecrim I
-      - Natal
-
   - 
-    name: Linha Sul
     type: light_rail
     ref: Sul
-    station_count: 8
+    name: Linha Sul
     colour: '#0000ff'
+    station_count: 8
+    stations: 
+      - Cidade Satélite
+      - Pitimbu
+      - Prómorar
+      - Cidade Esperança
+      - Bom Pastor
+      - Padre João Maria
+      - Alecrim II
+      - Natal
+
     itineraries: 
       r1229613: 
         - Cidade Satélite (n6080723244)
@@ -108,15 +118,5 @@ routes:
         - Pitimbu (n6680674500)
         - Cidade Satélite (n6080723244)
 
-
-    stations: 
-      - Cidade Satélite
-      - Pitimbu
-      - Prómorar
-      - Cidade Esperança
-      - Bom Pastor
-      - Padre João Maria
-      - Alecrim II
-      - Natal
 
 

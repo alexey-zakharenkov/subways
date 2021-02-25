@@ -127,31 +127,32 @@ transfers:
 
 routes: 
   - 
-    name: Línea A
     type: subway
     ref: A
-    station_count: 18
+    name: Línea A
     colour: '#1ca4cb'
-    itineraries: 
-      r1637477: 
-        - San Pedrito (n3449220584)
-        - San José de Flores (n3449220583)
-        - Carabobo (n3449220576)
-        - Puan (n3449220581)
-        - Primera Junta (n3449220580)
-        - Acoyte (n3449220575)
-        - Río de Janeiro (n3449220582)
-        - Castro Barros (n3449220577)
-        - Loria (n3449220578)
-        - Plaza Miserere (n3449220579)
-        - Pasco (n3449341470)
-        - Congreso (n3449235011)
-        - Sáenz Peña (n3449235016)
-        - Lima (n3449235012)
-        - Piedras (n3449235014)
-        - Perú (n3449235013)
-        - Plaza de Mayo (n3449235015)
+    station_count: 18
+    stations: 
+      - Estación Plaza de Mayo
+      - Estación Perú
+      - Estación Piedras
+      - Estación Lima
+      - Estación Sáenz Peña
+      - Estación Congreso
+      - Estación Alberti
+      - Estación Plaza Miserere
+      - Estación Loria
+      - Estación Castro Barros
+      - Estación Río de Janeiro
+      - Estación Acoyte
+      - Estación Primera Junta
+      - Estación Puan
+      - Estación Carabobo
+      - Estación San José de Flores
+      - Estación San Pedrito
+      - Estación Pasco
 
+    itineraries: 
       r421696: 
         - Plaza de Mayo (n3449235015)
         - Perú (n3449235013)
@@ -171,33 +172,51 @@ routes:
         - San José de Flores (n3449220583)
         - San Pedrito (n3449220584)
 
+      r1637477: 
+        - San Pedrito (n3449220584)
+        - San José de Flores (n3449220583)
+        - Carabobo (n3449220576)
+        - Puan (n3449220581)
+        - Primera Junta (n3449220580)
+        - Acoyte (n3449220575)
+        - Río de Janeiro (n3449220582)
+        - Castro Barros (n3449220577)
+        - Loria (n3449220578)
+        - Plaza Miserere (n3449220579)
+        - Pasco (n3449341470)
+        - Congreso (n3449235011)
+        - Sáenz Peña (n3449235016)
+        - Lima (n3449235012)
+        - Piedras (n3449235014)
+        - Perú (n3449235013)
+        - Plaza de Mayo (n3449235015)
 
-    stations: 
-      - Estación San Pedrito
-      - Estación San José de Flores
-      - Estación Carabobo
-      - Estación Puan
-      - Estación Primera Junta
-      - Estación Acoyte
-      - Estación Río de Janeiro
-      - Estación Castro Barros
-      - Estación Loria
-      - Estación Plaza Miserere
-      - Estación Pasco
-      - Estación Congreso
-      - Estación Sáenz Peña
-      - Estación Lima
-      - Estación Piedras
-      - Estación Perú
-      - Estación Plaza de Mayo
-      - Estación Alberti
 
   - 
-    name: Línea B
     type: subway
     ref: B
-    station_count: 17
+    name: Línea B
     colour: '#c20924'
+    station_count: 17
+    stations: 
+      - Estación Leandro N. Alem
+      - Estación Florida
+      - Estación Carlos Pellegrini
+      - Estación Uruguay
+      - Estación Callao
+      - Estación Pasteur – AMIA
+      - Estación Pueyrredón
+      - Estación Carlos Gardel
+      - 'Estación Medrano - Almagro'
+      - Estación Ángel Gallardo
+      - 'Estación Malabia - Osvaldo Pugliese'
+      - Estación Dorrego
+      - Estación Federico Lacroze
+      - 'Tronador - Villa Ortúzar'
+      - 'Estación Los Incas - Parque Chas'
+      - Estación Echeverría
+      - Estación Juan Manuel de Rosas
+
     itineraries: 
       r421697: 
         - Leandro N. Alem (n5267306824)
@@ -238,43 +257,24 @@ routes:
         - Leandro N. Alem (n5267306824)
 
 
-    stations: 
-      - Estación Leandro N. Alem
-      - Estación Florida
-      - Estación Carlos Pellegrini
-      - Estación Uruguay
-      - Estación Callao
-      - Estación Pasteur – AMIA
-      - Estación Pueyrredón
-      - Estación Carlos Gardel
-      - 'Estación Medrano - Almagro'
-      - Estación Ángel Gallardo
-      - 'Estación Malabia - Osvaldo Pugliese'
-      - Estación Dorrego
-      - Estación Federico Lacroze
-      - 'Tronador - Villa Ortúzar'
-      - 'Estación Los Incas - Parque Chas'
-      - Estación Echeverría
-      - Estación Juan Manuel de Rosas
-
   - 
-    name: Línea C
     type: subway
     ref: C
-    station_count: 9
+    name: Línea C
     colour: '#003ea1'
-    itineraries: 
-      r2931138: 
-        - Constitución (n256242125)
-        - San Juan (n256242143)
-        - Independencia (C) (n256242160)
-        - Moreno (w440129374)
-        - Avenida de Mayo (n310353386)
-        - Diagonal Norte (n256242251)
-        - Lavalle (n256244943)
-        - General San Martín (n3447885516)
-        - Retiro (C) (n5272710067)
+    station_count: 9
+    stations: 
+      - Estación Retiro
+      - Estación General San Martín
+      - Estación Lavalle
+      - Estación Diagonal Norte
+      - Estación Avenida de Mayo
+      - Estación Moreno
+      - Estación Independencia
+      - Estación San Juan
+      - Estación Constitución
 
+    itineraries: 
       r421698: 
         - Retiro (C) (n5272710067)
         - General San Martín (n3447885516)
@@ -286,43 +286,43 @@ routes:
         - San Juan (n256242143)
         - Constitución (n256242125)
 
+      r2931138: 
+        - Constitución (n256242125)
+        - San Juan (n256242143)
+        - Independencia (C) (n256242160)
+        - Moreno (w440129374)
+        - Avenida de Mayo (n310353386)
+        - Diagonal Norte (n256242251)
+        - Lavalle (n256244943)
+        - General San Martín (n3447885516)
+        - Retiro (C) (n5272710067)
 
-    stations: 
-      - Estación Constitución
-      - Estación San Juan
-      - Estación Independencia
-      - Estación Moreno
-      - Estación Avenida de Mayo
-      - Estación Diagonal Norte
-      - Estación Lavalle
-      - Estación General San Martín
-      - Estación Retiro
 
   - 
-    name: Línea D
     type: subway
     ref: D
-    station_count: 16
+    name: Línea D
     colour: '#217861'
-    itineraries: 
-      r2934098: 
-        - Congreso de Tucumán (n3475506076)
-        - Juramento (n5272972076)
-        - José Hernández (n3475506077)
-        - Olleros (n5272972081)
-        - Ministro Carranza (n3475502534)
-        - Palermo (n3475502536)
-        - Plaza Italia (n3475502538)
-        - Scalabrini Ortiz (n3475502797)
-        - Bulnes (n3475502523)
-        - Agüero (n5272846982)
-        - Pueyrredón (D) (n7684209870)
-        - Facultad de Medicina (n3475502530)
-        - Callao (D) (n3475502524)
-        - 'Tribunales - Teatro Colón (n3475502800)'
-        - 9 de Julio (n3475502801)
-        - Catedral (n3475502526)
+    station_count: 16
+    stations: 
+      - Estación Catedral
+      - Estación 9 de Julio
+      - 'Estación Tribunales - Teatro Colón'
+      - Estación Callao
+      - Estación Facultad de Medicina
+      - Estación Pueyrredón
+      - Estación Agüero
+      - Estación Bulnes
+      - Estación Scalabrini Ortiz
+      - Estación Plaza Italia
+      - Estación Palermo
+      - Estación Ministro Carranza
+      - Estación Olleros
+      - Estación José Hernández
+      - Estación Juramento
+      - Estación Congreso de Tucumán
 
+    itineraries: 
       r421699: 
         - Catedral (n3475502526)
         - 9 de Julio (n3475502801)
@@ -341,31 +341,51 @@ routes:
         - Juramento (n5272972076)
         - Congreso de Tucumán (n3475506076)
 
+      r2934098: 
+        - Congreso de Tucumán (n3475506076)
+        - Juramento (n5272972076)
+        - José Hernández (n3475506077)
+        - Olleros (n5272972081)
+        - Ministro Carranza (n3475502534)
+        - Palermo (n3475502536)
+        - Plaza Italia (n3475502538)
+        - Scalabrini Ortiz (n3475502797)
+        - Bulnes (n3475502523)
+        - Agüero (n5272846982)
+        - Pueyrredón (D) (n7684209870)
+        - Facultad de Medicina (n3475502530)
+        - Callao (D) (n3475502524)
+        - 'Tribunales - Teatro Colón (n3475502800)'
+        - 9 de Julio (n3475502801)
+        - Catedral (n3475502526)
 
-    stations: 
-      - Estación Congreso de Tucumán
-      - Estación Juramento
-      - Estación José Hernández
-      - Estación Olleros
-      - Estación Ministro Carranza
-      - Estación Palermo
-      - Estación Plaza Italia
-      - Estación Scalabrini Ortiz
-      - Estación Bulnes
-      - Estación Agüero
-      - Estación Pueyrredón
-      - Estación Facultad de Medicina
-      - Estación Callao
-      - 'Estación Tribunales - Teatro Colón'
-      - Estación 9 de Julio
-      - Estación Catedral
 
   - 
-    name: Línea E
     type: subway
     ref: E
-    station_count: 18
+    name: Línea E
     colour: '#6b297e'
+    station_count: 18
+    stations: 
+      - 'Estación Plaza de los Virreyes - Eva Perón'
+      - Estación Varela
+      - Estación Medalla Milagrosa
+      - Estación Emilio Mitre
+      - Estación José María Moreno
+      - Estación La Plata
+      - Estación Boedo
+      - Estación General Urquiza
+      - Estación Jujuy
+      - Estación Pichincha
+      - Entre Ríos-Rodolfo Walsh
+      - Estación San José
+      - Estación Independencia
+      - Estación Belgrano
+      - Estación Bolívar
+      - Estación Correo Central
+      - Estación Catalinas
+      - Estación Retiro
+
     itineraries: 
       r421700: 
         - 'Plaza de los Virreyes - Eva Perón (n5281196398)'
@@ -408,32 +428,26 @@ routes:
         - 'Plaza de los Virreyes - Eva Perón (n5281196398)'
 
 
-    stations: 
-      - Estación Retiro
-      - Estación Catalinas
-      - Estación Correo Central
-      - Estación Bolívar
-      - Estación Belgrano
-      - Estación Independencia
-      - Estación San José
-      - Entre Ríos-Rodolfo Walsh
-      - Estación Pichincha
-      - Estación Jujuy
-      - Estación General Urquiza
-      - Estación Boedo
-      - Estación La Plata
-      - Estación José María Moreno
-      - Estación Emilio Mitre
-      - Estación Medalla Milagrosa
-      - Estación Varela
-      - 'Estación Plaza de los Virreyes - Eva Perón'
-
   - 
-    name: Línea H
     type: subway
     ref: H
-    station_count: 12
+    name: Línea H
     colour: '#f4cc21'
+    station_count: 12
+    stations: 
+      - 'Estación Facultad de Derecho - Julieta Lanteri'
+      - Estación Las Heras
+      - 'Estación Santa Fe - Carlos Jáuregui'
+      - Estación Córdoba
+      - Estación Corrientes
+      - 'Estación Once - 30 de Diciembre'
+      - Estación Venezuela
+      - Estación Humberto I
+      - Estación Inclán-Mezquita Al Ahmad
+      - Estación Caseros
+      - Estación Parque Patricios
+      - Estación Hospitales
+
     itineraries: 
       r421701: 
         - 'Facultad de Derecho - Julieta Lanteri (n5624730306)'
@@ -463,19 +477,5 @@ routes:
         - Las Heras (n4601987135)
         - 'Facultad de Derecho - Julieta Lanteri (n5624730306)'
 
-
-    stations: 
-      - Estación Hospitales
-      - Estación Parque Patricios
-      - Estación Caseros
-      - Estación Inclán-Mezquita Al Ahmad
-      - Estación Humberto I
-      - Estación Venezuela
-      - 'Estación Once - 30 de Diciembre'
-      - Estación Corrientes
-      - Estación Córdoba
-      - 'Estación Santa Fe - Carlos Jáuregui'
-      - Estación Las Heras
-      - 'Estación Facultad de Derecho - Julieta Lanteri'
 
 

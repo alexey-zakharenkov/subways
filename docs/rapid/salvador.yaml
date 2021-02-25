@@ -27,22 +27,22 @@ transfers:
 
 routes: 
   - 
-    name: Linha 1
     type: subway
     ref: 1
-    station_count: 8
+    name: Linha 1
     colour: '#791714'
-    itineraries: 
-      r6774703: 
-        - Pirajá (w514871898)
-        - Bom Juá (w514627272)
-        - Retiro (w303051460)
-        - Acesso Norte (n5330886492)
-        - Bonocô (n1196075755)
-        - Brotas (w103595147)
-        - Campo da Pólvora (n5800854928)
-        - Lapa (n5800854929)
+    station_count: 8
+    stations: 
+      - Lapa
+      - Campo da Pólvora
+      - Brotas
+      - Bonocô
+      - Acesso Norte
+      - Retiro
+      - Bom Juá
+      - Pirajá
 
+    itineraries: 
       r4511874: 
         - Lapa (n5800854929)
         - Campo da Pólvora (n5800854928)
@@ -53,38 +53,38 @@ routes:
         - Bom Juá (w514627272)
         - Pirajá (w514871898)
 
+      r6774703: 
+        - Pirajá (w514871898)
+        - Bom Juá (w514627272)
+        - Retiro (w303051460)
+        - Acesso Norte (n5330886492)
+        - Bonocô (n1196075755)
+        - Brotas (w103595147)
+        - Campo da Pólvora (n5800854928)
+        - Lapa (n5800854929)
 
-    stations: 
-      - Pirajá
-      - Bom Juá
-      - Retiro
-      - Acesso Norte
-      - Bonocô
-      - Brotas
-      - Campo da Pólvora
-      - Lapa
 
   - 
-    name: Linha 2
     type: subway
     ref: 2
-    station_count: 12
+    name: Linha 2
     colour: '#02406f'
-    itineraries: 
-      r7857257: 
-        - Aeroporto (w531671017)
-        - Mussurunga (w492578619)
-        - Bairro da Paz (w525007248)
-        - Tamburugy (w492578621)
-        - Flamboyant (w492578622)
-        - Pituaçu (w492578624)
-        - CAB (w492578626)
-        - Imbuí (w460845823)
-        - Pernambués (w432297470)
-        - Rodoviária (w116425037)
-        - Detran (n4313768777)
-        - Acesso Norte (n5330886492)
+    station_count: 12
+    stations: 
+      - Acesso Norte
+      - Detran
+      - Rodoviária
+      - Pernambués
+      - Imbuí
+      - CAB
+      - Pituaçu
+      - Flamboyant
+      - Tamburugy
+      - Estação Bairro da Paz
+      - Estação Mussurunga
+      - Aeroporto
 
+    itineraries: 
       r6771624: 
         - Acesso Norte (n5330886492)
         - Detran (n4313768777)
@@ -99,19 +99,19 @@ routes:
         - Mussurunga (w492578619)
         - Aeroporto (w531671017)
 
+      r7857257: 
+        - Aeroporto (w531671017)
+        - Mussurunga (w492578619)
+        - Bairro da Paz (w525007248)
+        - Tamburugy (w492578621)
+        - Flamboyant (w492578622)
+        - Pituaçu (w492578624)
+        - CAB (w492578626)
+        - Imbuí (w460845823)
+        - Pernambués (w432297470)
+        - Rodoviária (w116425037)
+        - Detran (n4313768777)
+        - Acesso Norte (n5330886492)
 
-    stations: 
-      - Acesso Norte
-      - Detran
-      - Rodoviária
-      - Pernambués
-      - Imbuí
-      - CAB
-      - Pituaçu
-      - Flamboyant
-      - Tamburugy
-      - Estação Bairro da Paz
-      - Estação Mussurunga
-      - Aeroporto
 
 

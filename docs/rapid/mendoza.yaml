@@ -29,38 +29,38 @@ transfers:
 
 routes: 
   - 
-    name: Metrotranvía Urbano
     type: light_rail
     ref: Metrotranvía
-    station_count: 24
+    name: Metrotranvía Urbano
     colour: '#ff0000'
-    itineraries: 
-      r3413331: 
-        - Gutiérrez (n7098749745)
-        - Maza (n7066080934)
-        - Alta Italia (n7066080936)
-        - Piedra Buena (n7066080933)
-        - Luzuriaga (n7066080932)
-        - 9 de Julio (n7066080931)
-        - Independencia (n7066080930)
-        - Progreso (n7066080935)
-        - Godoy Cruz (n7080840925)
-        - San Martín (n7067998375)
-        - Pellegrini (n7067998373)
-        - 25 de Mayo (n7063747984)
-        - Pedro Molina (n7063747983)
-        - Belgrano (n7063751286)
-        - Mendoza (n7063751287)
-        - Suipacha (n7089853255)
-        - Coronel Moldes (n7089852934)
-        - Lugones (n7063751285)
-        - Damián Hudson (n7089862693)
-        - San Miguel (n7089844998)
-        - Patricias Mendocinas (n7089844999)
-        - General Espejo (n7089845000)
-        - Marcos Burgos (n7067998371)
-        - Avellaneda (n7067998372)
+    station_count: 24
+    stations: 
+      - Avellaneda
+      - Marcos Burgos
+      - General Espejo
+      - Patricias Mendocinas
+      - San Miguel
+      - Damián Hudson
+      - Lugones
+      - Coronel Moldes
+      - Coronel Plaza
+      - Estación Mendoza
+      - Belgrano
+      - Pedro Molina
+      - 25 de Mayo
+      - Pellegrini
+      - San Martín
+      - Godoy Cruz
+      - Progreso
+      - Independencia
+      - 9 de Julio
+      - Luzuriaga
+      - Piedra Buena
+      - Alta Italia
+      - Maza
+      - Gutiérrez
 
+    itineraries: 
       r2119332: 
         - Avellaneda (n7067998372)
         - Marcos Burgos (n7067998371)
@@ -87,31 +87,31 @@ routes:
         - Maza (n7066080934)
         - Gutiérrez (n7098749745)
 
+      r3413331: 
+        - Gutiérrez (n7098749745)
+        - Maza (n7066080934)
+        - Alta Italia (n7066080936)
+        - Piedra Buena (n7066080933)
+        - Luzuriaga (n7066080932)
+        - 9 de Julio (n7066080931)
+        - Independencia (n7066080930)
+        - Progreso (n7066080935)
+        - Godoy Cruz (n7080840925)
+        - San Martín (n7067998375)
+        - Pellegrini (n7067998373)
+        - 25 de Mayo (n7063747984)
+        - Pedro Molina (n7063747983)
+        - Belgrano (n7063751286)
+        - Mendoza (n7063751287)
+        - Suipacha (n7089853255)
+        - Coronel Moldes (n7089852934)
+        - Lugones (n7063751285)
+        - Damián Hudson (n7089862693)
+        - San Miguel (n7089844998)
+        - Patricias Mendocinas (n7089844999)
+        - General Espejo (n7089845000)
+        - Marcos Burgos (n7067998371)
+        - Avellaneda (n7067998372)
 
-    stations: 
-      - Avellaneda
-      - Marcos Burgos
-      - General Espejo
-      - Patricias Mendocinas
-      - San Miguel
-      - Damián Hudson
-      - Lugones
-      - Coronel Moldes
-      - Coronel Plaza
-      - Estación Mendoza
-      - Belgrano
-      - Pedro Molina
-      - 25 de Mayo
-      - Pellegrini
-      - San Martín
-      - Godoy Cruz
-      - Progreso
-      - Independencia
-      - 9 de Julio
-      - Luzuriaga
-      - Piedra Buena
-      - Alta Italia
-      - Maza
-      - Gutiérrez
 
 

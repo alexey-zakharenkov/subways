@@ -28,11 +28,35 @@ transfers:
 
 routes: 
   - 
-    name: Green Line
     type: subway
     ref: Green
-    station_count: 22
+    name: Green Line
     colour: '#62bb46'
+    station_count: 22
+    stations: 
+      - Palmetto
+      - Okeechobee
+      - Hialeah
+      - Tri-Rail Transfer
+      - Northside
+      - Dr. Martin Luther King, Jr.
+      - Brownsville
+      - Earlington Heights
+      - Allapattah
+      - Santa Clara
+      - Civic Center
+      - Culmer
+      - Historic Overtown/Lyric Theatre
+      - Government Center (Metrorail)
+      - Brickell (Metrorail)
+      - Vizcaya
+      - Coconut Grove (Metrorail)
+      - Douglas Road (Metrorail)
+      - University
+      - South Miami (Metrorail)
+      - Dadeland North
+      - Dadeland South
+
     itineraries: 
       r4499117: 
         - Palmetto (n462721823)
@@ -83,6 +107,12 @@ routes:
         - Palmetto (n462721823)
 
 
+  - 
+    type: subway
+    ref: Orange
+    name: Orange Line
+    colour: '#f78f1e'
+    station_count: 16
     stations: 
       - Dadeland South
       - Dadeland North
@@ -99,20 +129,8 @@ routes:
       - Santa Clara
       - Allapattah
       - Earlington Heights
-      - Brownsville
-      - Dr. Martin Luther King, Jr.
-      - Northside
-      - Tri-Rail Transfer
-      - Hialeah
-      - Okeechobee
-      - Palmetto
+      - Miami International Airport
 
-  - 
-    name: Orange Line
-    type: subway
-    ref: Orange
-    station_count: 16
-    colour: '#f78f1e'
     itineraries: 
       r1589528: 
         - Dadeland South (n462234896)
@@ -150,23 +168,5 @@ routes:
         - Dadeland North (n462237456)
         - Dadeland South (n462234896)
 
-
-    stations: 
-      - Miami International Airport
-      - Earlington Heights
-      - Allapattah
-      - Santa Clara
-      - Civic Center
-      - Culmer
-      - Historic Overtown/Lyric Theatre
-      - Government Center (Metrorail)
-      - Brickell (Metrorail)
-      - Vizcaya
-      - Coconut Grove (Metrorail)
-      - Douglas Road (Metrorail)
-      - University
-      - South Miami (Metrorail)
-      - Dadeland North
-      - Dadeland South
 
 

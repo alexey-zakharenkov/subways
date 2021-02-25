@@ -18,27 +18,27 @@ transfers:
 
 routes: 
   - 
-    name: Light Rail 1
     type: light_rail
     ref: 1
-    station_count: 13
+    name: Light Rail 1
     colour: '#ee1b2e'
-    itineraries: 
-      r10036401: 
-        - Tunney's Pasture (n6793866762)
-        - Bayview (n6754818685)
-        - Pimisi (n6754843426)
-        - Lyon (n6103696127)
-        - Parliament (n6103696126)
-        - Rideau (n6103696125)
-        - uOttawa (n6793852656)
-        - Lees (n6793866767)
-        - Hurdman (n6793866766)
-        - Tremblay (n6793866765)
-        - St-Laurent (n6793866764)
-        - Cyrville (n6793851911)
-        - Blair (n6793866763)
+    station_count: 13
+    stations: 
+      - Blair
+      - Cyrville
+      - St-Laurent
+      - Tremblay
+      - Hurdman
+      - Lees
+      - UOttawa
+      - Rideau
+      - Parliament
+      - Lyon
+      - Pimisi
+      - Bayview
+      - Tunney's Pasture
 
+    itineraries: 
       r10036392: 
         - Blair (n6793866763)
         - Cyrville (n6793851911)
@@ -54,20 +54,20 @@ routes:
         - Bayview (n6754818685)
         - Tunney's Pasture (n6793866762)
 
+      r10036401: 
+        - Tunney's Pasture (n6793866762)
+        - Bayview (n6754818685)
+        - Pimisi (n6754843426)
+        - Lyon (n6103696127)
+        - Parliament (n6103696126)
+        - Rideau (n6103696125)
+        - uOttawa (n6793852656)
+        - Lees (n6793866767)
+        - Hurdman (n6793866766)
+        - Tremblay (n6793866765)
+        - St-Laurent (n6793866764)
+        - Cyrville (n6793851911)
+        - Blair (n6793866763)
 
-    stations: 
-      - Tunney's Pasture
-      - Bayview
-      - Pimisi
-      - Lyon
-      - Parliament
-      - Rideau
-      - UOttawa
-      - Lees
-      - Hurdman
-      - Tremblay
-      - St-Laurent
-      - Cyrville
-      - Blair
 
 

@@ -22,11 +22,25 @@ transfers:
 
 routes: 
   - 
-    name: Newark Light Rail (Newark City Subway)
     type: light_rail
     ref: NLR
-    station_count: 12
+    name: Newark Light Rail (Newark City Subway)
     colour: '#3096c2'
+    station_count: 12
+    stations: 
+      - Newark Penn Station (Light rail)
+      - Military Park
+      - Washington Street
+      - Warren Street/NJIT
+      - Norfolk Street
+      - Orange Street
+      - Park Avenue
+      - Bloomfield Avenue
+      - Davenport Avenue
+      - Branch Brook Park
+      - Silver Lake
+      - Grove Street
+
     itineraries: 
       r1380716: 
         - Newark Penn Station (n6633504672)
@@ -57,41 +71,12 @@ routes:
         - Newark Penn Station (n6633504672)
 
 
-    stations: 
-      - Newark Penn Station (Light rail)
-      - Military Park
-      - Washington Street
-      - Warren Street/NJIT
-      - Norfolk Street
-      - Orange Street
-      - Park Avenue
-      - Bloomfield Avenue
-      - Davenport Avenue
-      - Branch Brook Park
-      - Silver Lake
-      - Grove Street
-
   - 
-    name: Newark Light Rail (Broad Street Extension)
     type: light_rail
     ref: NLR
-    station_count: 6
+    name: Newark Light Rail (Broad Street Extension)
     colour: '#ffcb35'
-    itineraries: 
-      r9821064: 
-        - Broad Street Station (n6633504681)
-        - Washington Park (n7682101463)
-        - NJPAC/Center Street (n6633504674)
-        - Newark Penn Station (n6633504672)
-
-      r2634557: 
-        - Newark Penn Station (n6633504672)
-        - NJPAC/Center Street (n6633504674)
-        - Atlantic Street (n7682101462)
-        - Riverfront Stadium (n7682101461)
-        - Broad Street Station (n6633504681)
-
-
+    station_count: 6
     stations: 
       - Newark Penn Station (Light rail)
       - NJPAC/Center Street
@@ -99,5 +84,20 @@ routes:
       - Riverfront Stadium
       - Broad Street Station
       - Washington Park
+
+    itineraries: 
+      r2634557: 
+        - Newark Penn Station (n6633504672)
+        - NJPAC/Center Street (n6633504674)
+        - Atlantic Street (n7682101462)
+        - Riverfront Stadium (n7682101461)
+        - Broad Street Station (n6633504681)
+
+      r9821064: 
+        - Broad Street Station (n6633504681)
+        - Washington Park (n7682101463)
+        - NJPAC/Center Street (n6633504674)
+        - Newark Penn Station (n6633504672)
+
 
 

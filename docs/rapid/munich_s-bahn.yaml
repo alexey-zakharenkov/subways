@@ -154,61 +154,63 @@ transfers:
 
 routes: 
   - 
-    name: S-Bahn S1
     type: train
     ref: S1
-    station_count: 23
+    name: S-Bahn S1
     colour: '#36caec'
+    station_count: 23
+    stations: 
+      - Flughafen
+      - Besucherpark
+      - Neufahrn (bei Freising)
+      - Eching
+      - Lohhof
+      - Unterschleißheim
+      - Oberschleißheim
+      - Feldmoching
+      - Fasanerie
+      - Moosach
+      - Laim
+      - Hirschgarten
+      - Donnersbergerbrücke
+      - Hackerbrücke
+      - Hauptbahnhof (tief)
+      - Karlsplatz (Stachus)
+      - Marienplatz
+      - Isartor
+      - Rosenheimer Platz
+      - München Ost
+      - Leuchtenbergring
+      - Freising
+      - Pulling (bei Freising)
+
     itineraries: 
-      r1773070: 
-        - Freising (n260406611)
-        - Pulling (bei Freising) (n2499425075)
-        - Neufahrn (bei Freising) (n2499417211)
-        - Eching (n2499494176)
-        - Lohhof (n2499507474)
-        - Unterschleißheim (n2370556367)
-        - Oberschleißheim (n2370556201)
-        - Feldmoching (n2499552238)
-        - Fasanerie (n2499566263)
-        - Moosach (n2499632761)
-        - Laim (n2468901141)
-        - Hirschgarten (n2468901140)
-        - Donnersbergerbrücke (n2470092007)
-        - Hackerbrücke (n2470092008)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Marienplatz (n2941687118)
-        - Isartor (n2473615158)
-        - Rosenheimer Platz (n2473550316)
-        - München Ost (n2465304880)
-        - Leuchtenbergring (n2488169605)
-
-      r1773072: 
-        - Leuchtenbergring (n2488169605)
-        - München Ost (n2465304880)
-        - Rosenheimer Platz (n2473550316)
-        - Isartor (n2473615158)
-        - Marienplatz (n2941687118)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Hackerbrücke (n2470092008)
-        - Donnersbergerbrücke (n2470092007)
-        - Hirschgarten (n2468901140)
-        - Laim (n2468901141)
-        - Moosach (n2499632761)
-        - Fasanerie (n2499566263)
-        - Feldmoching (n2499552238)
-        - Oberschleißheim (n2370556201)
-        - Unterschleißheim (n2370556367)
-        - Lohhof (n2499507474)
-        - Eching (n2499494176)
-        - Neufahrn (bei Freising) (n2499417211)
-        - Pulling (bei Freising) (n2499425075)
-        - Freising (n260406611)
-
       r1773068: 
         - Flughafen München (n2499357757)
         - Besucherpark (n2499384741)
+        - Neufahrn (bei Freising) (n2499417211)
+        - Eching (n2499494176)
+        - Lohhof (n2499507474)
+        - Unterschleißheim (n2370556367)
+        - Oberschleißheim (n2370556201)
+        - Feldmoching (n2499552238)
+        - Fasanerie (n2499566263)
+        - Moosach (n2499632761)
+        - Laim (n2468901141)
+        - Hirschgarten (n2468901140)
+        - Donnersbergerbrücke (n2470092007)
+        - Hackerbrücke (n2470092008)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Marienplatz (n2941687118)
+        - Isartor (n2473615158)
+        - Rosenheimer Platz (n2473550316)
+        - München Ost (n2465304880)
+        - Leuchtenbergring (n2488169605)
+
+      r1773070: 
+        - Freising (n260406611)
+        - Pulling (bei Freising) (n2499425075)
         - Neufahrn (bei Freising) (n2499417211)
         - Eching (n2499494176)
         - Lohhof (n2499507474)
@@ -252,8 +254,49 @@ routes:
         - Besucherpark (n2499384741)
         - Flughafen München (n2499357757)
 
+      r1773072: 
+        - Leuchtenbergring (n2488169605)
+        - München Ost (n2465304880)
+        - Rosenheimer Platz (n2473550316)
+        - Isartor (n2473615158)
+        - Marienplatz (n2941687118)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Hackerbrücke (n2470092008)
+        - Donnersbergerbrücke (n2470092007)
+        - Hirschgarten (n2468901140)
+        - Laim (n2468901141)
+        - Moosach (n2499632761)
+        - Fasanerie (n2499566263)
+        - Feldmoching (n2499552238)
+        - Oberschleißheim (n2370556201)
+        - Unterschleißheim (n2370556367)
+        - Lohhof (n2499507474)
+        - Eching (n2499494176)
+        - Neufahrn (bei Freising) (n2499417211)
+        - Pulling (bei Freising) (n2499425075)
+        - Freising (n260406611)
 
+
+  - 
+    type: train
+    ref: S2
+    name: S-Bahn S2
+    colour: '#6cc247'
+    station_count: 41
     stations: 
+      - Erding
+      - Altenerding
+      - Aufhausen
+      - St. Koloman
+      - Ottenhofen
+      - Markt Schwaben
+      - Poing
+      - Grub
+      - Heimstetten
+      - Feldkirchen
+      - Riem
+      - Berg am Laim
       - Leuchtenbergring
       - München Ost
       - Rosenheimer Platz
@@ -265,60 +308,26 @@ routes:
       - Donnersbergerbrücke
       - Hirschgarten
       - Laim
-      - Moosach
-      - Fasanerie
-      - Feldmoching
-      - Oberschleißheim
-      - Unterschleißheim
-      - Lohhof
-      - Eching
-      - Neufahrn (bei Freising)
-      - Pulling (bei Freising)
-      - Freising
-      - Besucherpark
-      - Flughafen
+      - Obermenzing
+      - Untermenzing
+      - Allach
+      - Karlsfeld
+      - Dachau Bahnhof
+      - Hebertshausen
+      - Röhrmoos
+      - Vierkirchen-Esterhofen
+      - Petershausen
+      - Altomünster
+      - Kleinberghofen
+      - Erdweg
+      - Arnbach
+      - Markt Indersdorf (S-Bahn)
+      - Niederroth
+      - Schwabhausen
+      - Bachern
+      - Dachau Stadt
 
-  - 
-    name: S-Bahn S2
-    type: train
-    ref: S2
-    station_count: 41
-    colour: '#6cc247'
     itineraries: 
-      r1782541: 
-        - Petershausen (Oberbay) (n2486534320)
-        - Vierkirchen-Esterhofen (n3732245431)
-        - Röhrmoos (n2487774303)
-        - Hebertshausen (n2487839136)
-        - Dachau (n2480024215)
-        - Karlsfeld (n2487884333)
-        - Allach (n2488012710)
-        - Untermenzing (n2488012895)
-        - Obermenzing (n2699799616)
-        - Laim (n2468901141)
-        - Hirschgarten (n2468901140)
-        - Donnersbergerbrücke (n2470092007)
-        - Hackerbrücke (n2470092008)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Marienplatz (n2941687118)
-        - Isartor (n2473615158)
-        - Rosenheimer Platz (n2473550316)
-        - München Ost (n2465304880)
-        - Leuchtenbergring (n2488169605)
-        - Berg am Laim (n3033367121)
-        - Riem (n2472241431)
-        - Feldkirchen (n2472263298)
-        - Heimstetten (n2472272777)
-        - Grub (n2488296604)
-        - Poing (n2489108782)
-        - Markt Schwaben (n2489196975)
-        - Ottenhofen (n2489217450)
-        - St. Koloman (n2489232964)
-        - Aufhausen (n2489242612)
-        - Altenerding (n2489283332)
-        - Erding (n4564836146)
-
       r1782540: 
         - Erding (n4564836146)
         - Altenerding (n2489283332)
@@ -353,44 +362,39 @@ routes:
         - Vierkirchen-Esterhofen (n3732245431)
         - Petershausen (Oberbay) (n2486534320)
 
-      r1854800: 
-        - Erding (n4564836146)
-        - Altenerding (n2489283332)
-        - Aufhausen (n2489242612)
-        - St. Koloman (n2489232964)
-        - Ottenhofen (n2489217450)
-        - Markt Schwaben (n2489196975)
-        - Poing (n2489108782)
-        - Grub (n2488296604)
-        - Heimstetten (n2472272777)
-        - Feldkirchen (n2472263298)
-        - Riem (n2472241431)
-        - Berg am Laim (n3033367121)
-        - Leuchtenbergring (n2488169605)
-        - München Ost (n2465304880)
-        - Rosenheimer Platz (n2473550316)
-        - Isartor (n2473615158)
-        - Marienplatz (n2941687118)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Hackerbrücke (n2470092008)
-        - Donnersbergerbrücke (n2470092007)
-        - Hirschgarten (n2468901140)
-        - Laim (n2468901141)
-        - Obermenzing (n2699799616)
-        - Untermenzing (n2488012895)
-        - Allach (n2488012710)
-        - Karlsfeld (n2487884333)
+      r1782541: 
+        - Petershausen (Oberbay) (n2486534320)
+        - Vierkirchen-Esterhofen (n3732245431)
+        - Röhrmoos (n2487774303)
+        - Hebertshausen (n2487839136)
         - Dachau (n2480024215)
-        - Dachau Stadt (n2479918440)
-        - Bachern (n361452501)
-        - Schwabhausen (n2479902473)
-        - Niederroth (n2479866588)
-        - Markt Indersdorf (n3309582576)
-        - Arnbach (n2479113521)
-        - Erdweg (n2479100100)
-        - Kleinberghofen (n2479079267)
-        - Altomünster (n2479062144)
+        - Karlsfeld (n2487884333)
+        - Allach (n2488012710)
+        - Untermenzing (n2488012895)
+        - Obermenzing (n2699799616)
+        - Laim (n2468901141)
+        - Hirschgarten (n2468901140)
+        - Donnersbergerbrücke (n2470092007)
+        - Hackerbrücke (n2470092008)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Marienplatz (n2941687118)
+        - Isartor (n2473615158)
+        - Rosenheimer Platz (n2473550316)
+        - München Ost (n2465304880)
+        - Leuchtenbergring (n2488169605)
+        - Berg am Laim (n3033367121)
+        - Riem (n2472241431)
+        - Feldkirchen (n2472263298)
+        - Heimstetten (n2472272777)
+        - Grub (n2488296604)
+        - Poing (n2489108782)
+        - Markt Schwaben (n2489196975)
+        - Ottenhofen (n2489217450)
+        - St. Koloman (n2489232964)
+        - Aufhausen (n2489242612)
+        - Altenerding (n2489283332)
+        - Erding (n4564836146)
 
       r1854799: 
         - Altomünster (n2479062144)
@@ -431,56 +435,62 @@ routes:
         - Altenerding (n2489283332)
         - Erding (n4564836146)
 
+      r1854800: 
+        - Erding (n4564836146)
+        - Altenerding (n2489283332)
+        - Aufhausen (n2489242612)
+        - St. Koloman (n2489232964)
+        - Ottenhofen (n2489217450)
+        - Markt Schwaben (n2489196975)
+        - Poing (n2489108782)
+        - Grub (n2488296604)
+        - Heimstetten (n2472272777)
+        - Feldkirchen (n2472263298)
+        - Riem (n2472241431)
+        - Berg am Laim (n3033367121)
+        - Leuchtenbergring (n2488169605)
+        - München Ost (n2465304880)
+        - Rosenheimer Platz (n2473550316)
+        - Isartor (n2473615158)
+        - Marienplatz (n2941687118)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Hackerbrücke (n2470092008)
+        - Donnersbergerbrücke (n2470092007)
+        - Hirschgarten (n2468901140)
+        - Laim (n2468901141)
+        - Obermenzing (n2699799616)
+        - Untermenzing (n2488012895)
+        - Allach (n2488012710)
+        - Karlsfeld (n2487884333)
+        - Dachau (n2480024215)
+        - Dachau Stadt (n2479918440)
+        - Bachern (n361452501)
+        - Schwabhausen (n2479902473)
+        - Niederroth (n2479866588)
+        - Markt Indersdorf (n3309582576)
+        - Arnbach (n2479113521)
+        - Erdweg (n2479100100)
+        - Kleinberghofen (n2479079267)
+        - Altomünster (n2479062144)
 
-    stations: 
-      - Erding
-      - Altenerding
-      - Aufhausen
-      - St. Koloman
-      - Ottenhofen
-      - Markt Schwaben
-      - Poing
-      - Grub
-      - Heimstetten
-      - Feldkirchen
-      - Riem
-      - Berg am Laim
-      - Leuchtenbergring
-      - München Ost
-      - Rosenheimer Platz
-      - Isartor
-      - Marienplatz
-      - Karlsplatz (Stachus)
-      - Hauptbahnhof (tief)
-      - Hackerbrücke
-      - Donnersbergerbrücke
-      - Hirschgarten
-      - Laim
-      - Obermenzing
-      - Untermenzing
-      - Allach
-      - Karlsfeld
-      - Dachau Bahnhof
-      - Dachau Stadt
-      - Bachern
-      - Schwabhausen
-      - Niederroth
-      - Markt Indersdorf (S-Bahn)
-      - Arnbach
-      - Erdweg
-      - Kleinberghofen
-      - Altomünster
-      - Hebertshausen
-      - Röhrmoos
-      - Vierkirchen-Esterhofen
-      - Petershausen
 
   - 
-    name: S-Bahn S20
     type: train
     ref: S20
-    station_count: 8
+    name: S-Bahn S20
     colour: '#e7526b'
+    station_count: 8
+    stations: 
+      - Höllriegelskreuth
+      - Pullach
+      - Großhesselohe Isartalbahnhof
+      - Solln
+      - Siemenswerke
+      - Mittersendling
+      - Heimeranplatz
+      - München-Pasing
+
     itineraries: 
       r1844088: 
         - Höllriegelskreuth (n2514399802)
@@ -503,56 +513,46 @@ routes:
         - Höllriegelskreuth (n2514399802)
 
 
-    stations: 
-      - München-Pasing
-      - Heimeranplatz
-      - Mittersendling
-      - Siemenswerke
-      - Solln
-      - Großhesselohe Isartalbahnhof
-      - Pullach
-      - Höllriegelskreuth
-
   - 
-    name: S-Bahn S3
     type: train
     ref: S3
-    station_count: 31
+    name: S-Bahn S3
     colour: '#862996'
-    itineraries: 
-      r1792663: 
-        - Mammendorf (n2465523013)
-        - Malching (Oberbayern) (n3183198628)
-        - Maisach (n2465615595)
-        - Gernlinden (n2465664469)
-        - Esting (n2468550865)
-        - Olching (n2468550866)
-        - Gröbenzell (n3183204819)
-        - Lochhausen (n2468655152)
-        - Langwied (n2468831364)
-        - München-Pasing (n2476438979)
-        - Laim (n2468901141)
-        - Hirschgarten (n2468901140)
-        - Donnersbergerbrücke (n2470092007)
-        - Hackerbrücke (n2470092008)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Marienplatz (n2941687118)
-        - Isartor (n2473615158)
-        - Rosenheimer Platz (n2473550316)
-        - München Ost (n2465304880)
-        - Sankt-Martin-Straße (n2411834909)
-        - Giesing (n2473495234)
-        - Fasangarten (n2478760680)
-        - Fasanenpark (n2478776540)
-        - Unterhaching (n2478799738)
-        - Taufkirchen (n2478817175)
-        - Furth (n2478865164)
-        - Deisenhofen (n2478915914)
-        - Sauerlach (n2514899300)
-        - Otterfing (n2478976739)
-        - Holzkirchen (n2479039859)
+    station_count: 31
+    stations: 
+      - Holzkirchen
+      - Otterfing
+      - Sauerlach
+      - Deisenhofen
+      - Furth
+      - Taufkirchen
+      - Unterhaching
+      - Fasanenpark
+      - Fasangarten
+      - Giesing
+      - Sankt-Martin-Straße
+      - München Ost
+      - Rosenheimer Platz
+      - Isartor
+      - Marienplatz
+      - Karlsplatz (Stachus)
+      - Hauptbahnhof (tief)
+      - Hackerbrücke
+      - Donnersbergerbrücke
+      - Hirschgarten
+      - Laim
+      - München-Pasing
+      - Langwied
+      - Lochhausen
+      - Gröbenzell
+      - Olching
+      - Esting
+      - Gernlinden
+      - Maisach
+      - Malching
+      - Mammendorf
 
+    itineraries: 
       r1792662: 
         - Holzkirchen (n2479039859)
         - Otterfing (n2478976739)
@@ -586,46 +586,82 @@ routes:
         - Malching (Oberbayern) (n3183198628)
         - Mammendorf (n2465523013)
 
+      r1792663: 
+        - Mammendorf (n2465523013)
+        - Malching (Oberbayern) (n3183198628)
+        - Maisach (n2465615595)
+        - Gernlinden (n2465664469)
+        - Esting (n2468550865)
+        - Olching (n2468550866)
+        - Gröbenzell (n3183204819)
+        - Lochhausen (n2468655152)
+        - Langwied (n2468831364)
+        - München-Pasing (n2476438979)
+        - Laim (n2468901141)
+        - Hirschgarten (n2468901140)
+        - Donnersbergerbrücke (n2470092007)
+        - Hackerbrücke (n2470092008)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Marienplatz (n2941687118)
+        - Isartor (n2473615158)
+        - Rosenheimer Platz (n2473550316)
+        - München Ost (n2465304880)
+        - Sankt-Martin-Straße (n2411834909)
+        - Giesing (n2473495234)
+        - Fasangarten (n2478760680)
+        - Fasanenpark (n2478776540)
+        - Unterhaching (n2478799738)
+        - Taufkirchen (n2478817175)
+        - Furth (n2478865164)
+        - Deisenhofen (n2478915914)
+        - Sauerlach (n2514899300)
+        - Otterfing (n2478976739)
+        - Holzkirchen (n2479039859)
 
-    stations: 
-      - Mammendorf
-      - Malching
-      - Maisach
-      - Gernlinden
-      - Esting
-      - Olching
-      - Gröbenzell
-      - Lochhausen
-      - Langwied
-      - München-Pasing
-      - Laim
-      - Hirschgarten
-      - Donnersbergerbrücke
-      - Hackerbrücke
-      - Hauptbahnhof (tief)
-      - Karlsplatz (Stachus)
-      - Marienplatz
-      - Isartor
-      - Rosenheimer Platz
-      - München Ost
-      - Sankt-Martin-Straße
-      - Giesing
-      - Fasangarten
-      - Fasanenpark
-      - Unterhaching
-      - Taufkirchen
-      - Furth
-      - Deisenhofen
-      - Sauerlach
-      - Otterfing
-      - Holzkirchen
 
   - 
-    name: S-Bahn S4
     type: train
     ref: S4
-    station_count: 34
+    name: S-Bahn S4
     colour: '#ff2d1d'
+    station_count: 34
+    stations: 
+      - Ebersberg
+      - Grafing Stadt
+      - Grafing Bahnhof
+      - Kirchseeon
+      - Eglharting
+      - Zorneding
+      - Baldham
+      - Vaterstetten
+      - Haar
+      - Gronsdorf
+      - Trudering S4-S6
+      - Berg am Laim
+      - Leuchtenbergring
+      - München Ost
+      - Rosenheimer Platz
+      - Isartor
+      - Marienplatz
+      - Karlsplatz (Stachus)
+      - Hauptbahnhof (tief)
+      - Hackerbrücke
+      - Donnersbergerbrücke
+      - Hirschgarten
+      - Laim
+      - München-Pasing
+      - Leienfelsstraße
+      - Aubing
+      - Puchheim
+      - Eichenau
+      - Fürstenfeldbruck
+      - Buchenau
+      - Schöngeising
+      - Grafrath
+      - Türkenfeld
+      - Geltendorf
+
     itineraries: 
       r1794890: 
         - Ebersberg (n2492198080)
@@ -700,17 +736,24 @@ routes:
         - Ebersberg (n2492198080)
 
 
+  - 
+    type: train
+    ref: S6
+    name: S-Bahn S6
+    colour: '#00ac6f'
+    station_count: 35
     stations: 
-      - Geltendorf
-      - Türkenfeld
-      - Grafrath
-      - Schöngeising
-      - Buchenau
-      - Fürstenfeldbruck
-      - Eichenau
-      - Puchheim
-      - Aubing
-      - Leienfelsstraße
+      - Tutzing
+      - Feldafing
+      - Possenhofen
+      - Starnberg S
+      - Starnberg Nord
+      - Gauting
+      - Stockdorf
+      - Planegg S
+      - Gräfelfing
+      - Lochham S-Bahn
+      - Westkreuz
       - München-Pasing
       - Laim
       - Hirschgarten
@@ -736,12 +779,6 @@ routes:
       - Grafing Stadt
       - Ebersberg
 
-  - 
-    name: S-Bahn S6
-    type: train
-    ref: S6
-    station_count: 35
-    colour: '#00ac6f'
     itineraries: 
       r1796136: 
         - Tutzing (n2497168220)
@@ -818,88 +855,51 @@ routes:
         - Tutzing (n2497168220)
 
 
-    stations: 
-      - Tutzing
-      - Feldafing
-      - Possenhofen
-      - Starnberg S
-      - Starnberg Nord
-      - Gauting
-      - Stockdorf
-      - Planegg S
-      - Gräfelfing
-      - Lochham S-Bahn
-      - Westkreuz
-      - München-Pasing
-      - Laim
-      - Hirschgarten
-      - Donnersbergerbrücke
-      - Hackerbrücke
-      - Hauptbahnhof (tief)
-      - Karlsplatz (Stachus)
-      - Marienplatz
-      - Isartor
-      - Rosenheimer Platz
-      - München Ost
-      - Leuchtenbergring
-      - Berg am Laim
-      - Trudering S4-S6
-      - Gronsdorf
-      - Haar
-      - Vaterstetten
-      - Baldham
-      - Zorneding
-      - Eglharting
-      - Kirchseeon
-      - Grafing Bahnhof
-      - Grafing Stadt
-      - Ebersberg
-
   - 
-    name: S-Bahn S7
     type: train
     ref: S7
-    station_count: 36
+    name: S-Bahn S7
     colour: '#983224'
-    itineraries: 
-      r1796425: 
-        - Wolfratshausen (n2512798123)
-        - Icking (n2512859204)
-        - Ebenhausen-Schäftlarn (n2512923190)
-        - Hohenschäftlarn (n1686221616)
-        - Baierbrunn (n2512971339)
-        - Buchenhain (n27563383)
-        - Höllriegelskreuth (n2514399802)
-        - Pullach (n2515066266)
-        - Großhesselohe Isartalbahnhof (n2515098593)
-        - Solln (n2500732468)
-        - Siemenswerke (n2500671102)
-        - Mittersendling (n2500623009)
-        - Harras (n3189921361)
-        - Heimeranplatz (n2499689861)
-        - Donnersbergerbrücke (n2470092007)
-        - Hackerbrücke (n2470092008)
-        - Hauptbahnhof (tief) (n3183012396)
-        - Karlsplatz (Stachus) (n2473297785)
-        - Marienplatz (n2941687118)
-        - Isartor (n2473615158)
-        - Rosenheimer Platz (n2473550316)
-        - München Ost (n2465304880)
-        - Sankt-Martin-Straße (n2411834909)
-        - Giesing (n2473495234)
-        - Perlach (n2476467539)
-        - Neuperlach Süd (n2476467535)
-        - Neubiberg (n2476467534)
-        - Ottobrunn (n2476467537)
-        - Hohenbrunn (n2476467532)
-        - Wächterhof (n2476455538)
-        - Höhenkirchen-Siegertsbrunn (n2476467533)
-        - Dürrnhaar (n2476467530)
-        - Aying (n2476467529)
-        - Peiß (n5159103742)
-        - Großhelfendorf (n2476467531)
-        - Kreuzstraße (n1329539689)
+    station_count: 36
+    stations: 
+      - Kreuzstraße
+      - Großhelfendorf
+      - Peiß
+      - Aying
+      - Dürrnhaar
+      - Höhenkirchen-Siegertsbrunn
+      - Wächterhof
+      - Hohenbrunn
+      - Ottobrunn
+      - Neubiberg
+      - Neuperlach Süd
+      - Perlach
+      - Giesing
+      - Sankt-Martin-Straße
+      - München Ost
+      - Rosenheimer Platz
+      - Isartor
+      - Marienplatz
+      - Karlsplatz (Stachus)
+      - Hauptbahnhof (tief)
+      - Hackerbrücke
+      - Donnersbergerbrücke
+      - Heimeranplatz
+      - Harras
+      - Mittersendling
+      - Siemenswerke
+      - Solln
+      - Großhesselohe Isartalbahnhof
+      - Pullach
+      - Höllriegelskreuth
+      - Buchenhain
+      - Baierbrunn
+      - Hohenschäftlarn
+      - Ebenhausen-Schäftlarn
+      - Icking
+      - Wolfratshausen
 
+    itineraries: 
       r1796424: 
         - Kreuzstraße (n1329539689)
         - Großhelfendorf (n2476467531)
@@ -938,68 +938,21 @@ routes:
         - Icking (n2512859204)
         - Wolfratshausen (n2512798123)
 
-
-    stations: 
-      - Wolfratshausen
-      - Icking
-      - Ebenhausen-Schäftlarn
-      - Hohenschäftlarn
-      - Baierbrunn
-      - Buchenhain
-      - Höllriegelskreuth
-      - Pullach
-      - Großhesselohe Isartalbahnhof
-      - Solln
-      - Siemenswerke
-      - Mittersendling
-      - Harras
-      - Heimeranplatz
-      - Donnersbergerbrücke
-      - Hackerbrücke
-      - Hauptbahnhof (tief)
-      - Karlsplatz (Stachus)
-      - Marienplatz
-      - Isartor
-      - Rosenheimer Platz
-      - München Ost
-      - Sankt-Martin-Straße
-      - Giesing
-      - Perlach
-      - Neuperlach Süd
-      - Neubiberg
-      - Ottobrunn
-      - Hohenbrunn
-      - Wächterhof
-      - Höhenkirchen-Siegertsbrunn
-      - Dürrnhaar
-      - Aying
-      - Peiß
-      - Großhelfendorf
-      - Kreuzstraße
-
-  - 
-    name: S-Bahn S8
-    type: train
-    ref: S8
-    station_count: 32
-    colour: '#ffc734'
-    itineraries: 
-      r1843976: 
-        - Herrsching (n2508260701)
-        - Seefeld-Hechendorf (n2508183287)
-        - Steinebach (n2508141990)
-        - Weßling (n2507429246)
-        - Neugilching (n2507403407)
-        - Gilching-Argelsried (n2507403406)
-        - Geisenbrunn (n2507328818)
-        - Germering-Unterpfaffenhofen (n2507300536)
-        - Harthaus (n2507170368)
-        - Freiham (n2507006563)
-        - Neuaubing (n2507009458)
-        - Westkreuz (n2499527320)
-        - München-Pasing (n2476438979)
-        - Laim (n2468901141)
-        - Hirschgarten (n2468901140)
+      r1796425: 
+        - Wolfratshausen (n2512798123)
+        - Icking (n2512859204)
+        - Ebenhausen-Schäftlarn (n2512923190)
+        - Hohenschäftlarn (n1686221616)
+        - Baierbrunn (n2512971339)
+        - Buchenhain (n27563383)
+        - Höllriegelskreuth (n2514399802)
+        - Pullach (n2515066266)
+        - Großhesselohe Isartalbahnhof (n2515098593)
+        - Solln (n2500732468)
+        - Siemenswerke (n2500671102)
+        - Mittersendling (n2500623009)
+        - Harras (n3189921361)
+        - Heimeranplatz (n2499689861)
         - Donnersbergerbrücke (n2470092007)
         - Hackerbrücke (n2470092008)
         - Hauptbahnhof (tief) (n3183012396)
@@ -1008,16 +961,63 @@ routes:
         - Isartor (n2473615158)
         - Rosenheimer Platz (n2473550316)
         - München Ost (n2465304880)
-        - Leuchtenbergring (n2488169605)
-        - Daglfing (n2504953877)
-        - Englschalking (n2504953878)
-        - Johanneskirchen (n2515108020)
-        - Unterföhring (n2515107583)
-        - Ismaning (n2504796336)
-        - Hallbergmoos (n2500789319)
-        - Besucherpark (n2499384741)
-        - Flughafen München (n2499357757)
+        - Sankt-Martin-Straße (n2411834909)
+        - Giesing (n2473495234)
+        - Perlach (n2476467539)
+        - Neuperlach Süd (n2476467535)
+        - Neubiberg (n2476467534)
+        - Ottobrunn (n2476467537)
+        - Hohenbrunn (n2476467532)
+        - Wächterhof (n2476455538)
+        - Höhenkirchen-Siegertsbrunn (n2476467533)
+        - Dürrnhaar (n2476467530)
+        - Aying (n2476467529)
+        - Peiß (n5159103742)
+        - Großhelfendorf (n2476467531)
+        - Kreuzstraße (n1329539689)
 
+
+  - 
+    type: train
+    ref: S8
+    name: S-Bahn S8
+    colour: '#ffc734'
+    station_count: 32
+    stations: 
+      - Flughafen
+      - Besucherpark
+      - Hallbergmoos
+      - Ismaning
+      - Unterföhring
+      - Johanneskirchen
+      - Englschalking
+      - Daglfing
+      - Leuchtenbergring
+      - München Ost
+      - Rosenheimer Platz
+      - Isartor
+      - Marienplatz
+      - Karlsplatz (Stachus)
+      - Hauptbahnhof (tief)
+      - Hackerbrücke
+      - Donnersbergerbrücke
+      - Hirschgarten
+      - Laim
+      - München-Pasing
+      - Westkreuz
+      - Neuaubing
+      - Freiham
+      - Harthaus
+      - Germering-Unterpfaffenhofen
+      - Geisenbrunn
+      - Gilching-Argelsried
+      - Neugilching
+      - Weßling
+      - Steinebach
+      - Seefeld-Hechendorf
+      - Herrsching
+
+    itineraries: 
       r1843975: 
         - Flughafen München (n2499357757)
         - Besucherpark (n2499384741)
@@ -1052,39 +1052,39 @@ routes:
         - Seefeld-Hechendorf (n2508183287)
         - Herrsching (n2508260701)
 
+      r1843976: 
+        - Herrsching (n2508260701)
+        - Seefeld-Hechendorf (n2508183287)
+        - Steinebach (n2508141990)
+        - Weßling (n2507429246)
+        - Neugilching (n2507403407)
+        - Gilching-Argelsried (n2507403406)
+        - Geisenbrunn (n2507328818)
+        - Germering-Unterpfaffenhofen (n2507300536)
+        - Harthaus (n2507170368)
+        - Freiham (n2507006563)
+        - Neuaubing (n2507009458)
+        - Westkreuz (n2499527320)
+        - München-Pasing (n2476438979)
+        - Laim (n2468901141)
+        - Hirschgarten (n2468901140)
+        - Donnersbergerbrücke (n2470092007)
+        - Hackerbrücke (n2470092008)
+        - Hauptbahnhof (tief) (n3183012396)
+        - Karlsplatz (Stachus) (n2473297785)
+        - Marienplatz (n2941687118)
+        - Isartor (n2473615158)
+        - Rosenheimer Platz (n2473550316)
+        - München Ost (n2465304880)
+        - Leuchtenbergring (n2488169605)
+        - Daglfing (n2504953877)
+        - Englschalking (n2504953878)
+        - Johanneskirchen (n2515108020)
+        - Unterföhring (n2515107583)
+        - Ismaning (n2504796336)
+        - Hallbergmoos (n2500789319)
+        - Besucherpark (n2499384741)
+        - Flughafen München (n2499357757)
 
-    stations: 
-      - Flughafen
-      - Besucherpark
-      - Hallbergmoos
-      - Ismaning
-      - Unterföhring
-      - Johanneskirchen
-      - Englschalking
-      - Daglfing
-      - Leuchtenbergring
-      - München Ost
-      - Rosenheimer Platz
-      - Isartor
-      - Marienplatz
-      - Karlsplatz (Stachus)
-      - Hauptbahnhof (tief)
-      - Hackerbrücke
-      - Donnersbergerbrücke
-      - Hirschgarten
-      - Laim
-      - München-Pasing
-      - Westkreuz
-      - Neuaubing
-      - Freiham
-      - Harthaus
-      - Germering-Unterpfaffenhofen
-      - Geisenbrunn
-      - Gilching-Argelsried
-      - Neugilching
-      - Weßling
-      - Steinebach
-      - Seefeld-Hechendorf
-      - Herrsching
 
 

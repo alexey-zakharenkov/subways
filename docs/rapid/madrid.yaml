@@ -415,11 +415,46 @@ transfers:
 
 routes: 
   - 
-    name: Línea 1
     type: subway
     ref: L1
-    station_count: 33
+    name: Línea 1
     colour: '#67c0dd'
+    station_count: 33
+    stations: 
+      - Pinar de Chamartín L1
+      - Bambú
+      - Chamartín L1
+      - Plaza de Castilla L1
+      - Valdeacederas
+      - Tetuán
+      - Estrecho
+      - Alvarado
+      - Cuatro Caminos L1
+      - Ríos Rosas
+      - Iglesia
+      - Bilbao L1
+      - Tribunal L1
+      - Gran Vía L1
+      - Sol L1
+      - Tirso de Molina
+      - Antón Martín
+      - Estación del Arte
+      - Atocha Renfe
+      - Menéndez Pelayo
+      - Pacífico L1
+      - Puente de Vallecas
+      - Nueva Numancia
+      - Portazgo
+      - Buenos Aires
+      - Alto del Arenal
+      - Miguel Hernández
+      - Sierra de Guadalupe
+      - Villa de Vallecas
+      - Congosto
+      - La Gavia
+      - Las Suertes
+      - Valdecarros
+
     itineraries: 
       r62146: 
         - Pinar de Chamartín (n5299262126)
@@ -492,115 +527,12 @@ routes:
         - Pinar de Chamartín (n5299262126)
 
 
-    stations: 
-      - Valdecarros
-      - Las Suertes
-      - La Gavia
-      - Congosto
-      - Villa de Vallecas
-      - Sierra de Guadalupe
-      - Miguel Hernández
-      - Alto del Arenal
-      - Buenos Aires
-      - Portazgo
-      - Nueva Numancia
-      - Puente de Vallecas
-      - Pacífico L1
-      - Menéndez Pelayo
-      - Atocha Renfe
-      - Estación del Arte
-      - Antón Martín
-      - Tirso de Molina
-      - Sol L1
-      - Gran Vía L1
-      - Tribunal L1
-      - Bilbao L1
-      - Iglesia
-      - Ríos Rosas
-      - Cuatro Caminos L1
-      - Alvarado
-      - Estrecho
-      - Tetuán
-      - Valdeacederas
-      - Plaza de Castilla L1
-      - Chamartín L1
-      - Bambú
-      - Pinar de Chamartín L1
-
   - 
-    name: Línea 10
     type: subway
     ref: L10
-    station_count: 31
+    name: Línea 10
     colour: '#015396'
-    itineraries: 
-      r3113079: 
-        - Puerta del Sur (n5305116632)
-        - Joaquín Vilumbrales (n5310153776)
-        - Cuatro Vientos (n5310153777)
-        - Aviación Española (n5310153778)
-        - Colonia Jardín (n5310153779)
-        - Casa de Campo (n5303127327)
-        - Batán (n5310153781)
-        - Lago (n5310126818)
-        - Príncipe Pío (n5304749212)
-        - Plaza de España (n5303173541)
-        - Tribunal (n5299314583)
-        - Alonso Martínez (n5302296738)
-        - Gregorio Marañón (n5304690736)
-        - Nuevos Ministerios (n4998670036)
-        - Santiago Bernabéu (n5310126819)
-        - Cuzco (n5310126820)
-        - Plaza de Castilla (n5299262123)
-        - Chamartín (n5299262124)
-        - Begoña (n5310127221)
-        - Fuencarral (n5310127222)
-        - Tres Olivos (n5310127223)
-        - Montecarmelo (n5310127224)
-        - Las Tablas (n5310127225)
-        - Ronda de la Comunicación (n5310127226)
-        - La Granja (n5310127227)
-        - La Moraleja (n5310127228)
-        - Marqués de la Valdavia (n5310127229)
-        - Manuel de Falla (n5310127230)
-        - Baunatal (n5310127231)
-        - Reyes Católicos (n5310127232)
-        - Hospital Infanta Sofía (n5310127233)
-
-      r58267: 
-        - Hospital Infanta Sofía (n5310127233)
-        - Reyes Católicos (n5310127232)
-        - Baunatal (n5310127231)
-        - Manuel de Falla (n5310127230)
-        - Marqués de la Valdavia (n5310127229)
-        - La Moraleja (n5310127228)
-        - La Granja (n5310127227)
-        - Ronda de la Comunicación (n5310127226)
-        - Las Tablas (n5310127225)
-        - Montecarmelo (n5310127224)
-        - Tres Olivos (n5310127223)
-        - Fuencarral (n5310127222)
-        - Begoña (n5310127221)
-        - Chamartín (n5299262124)
-        - Plaza de Castilla (n5299262123)
-        - Cuzco (n5310126820)
-        - Santiago Bernabéu (n5310126819)
-        - Nuevos Ministerios (n4998670036)
-        - Gregorio Marañón (n5304690736)
-        - Alonso Martínez (n5302296738)
-        - Tribunal (n5299314583)
-        - Plaza de España (n5303173541)
-        - Príncipe Pío (n5304749212)
-        - Lago (n5310126818)
-        - Batán (n5310153781)
-        - Casa de Campo (n5303127327)
-        - Colonia Jardín (n5310153779)
-        - Aviación Española (n5310153778)
-        - Cuatro Vientos (n5310153777)
-        - Joaquín Vilumbrales (n5310153776)
-        - Puerta del Sur (n5305116632)
-
-
+    station_count: 31
     stations: 
       - Hospital Infanta Sofía
       - Reyes Católicos
@@ -634,12 +566,89 @@ routes:
       - Joaquín Vilumbrales
       - Puerta del Sur L10
 
+    itineraries: 
+      r58267: 
+        - Hospital Infanta Sofía (n5310127233)
+        - Reyes Católicos (n5310127232)
+        - Baunatal (n5310127231)
+        - Manuel de Falla (n5310127230)
+        - Marqués de la Valdavia (n5310127229)
+        - La Moraleja (n5310127228)
+        - La Granja (n5310127227)
+        - Ronda de la Comunicación (n5310127226)
+        - Las Tablas (n5310127225)
+        - Montecarmelo (n5310127224)
+        - Tres Olivos (n5310127223)
+        - Fuencarral (n5310127222)
+        - Begoña (n5310127221)
+        - Chamartín (n5299262124)
+        - Plaza de Castilla (n5299262123)
+        - Cuzco (n5310126820)
+        - Santiago Bernabéu (n5310126819)
+        - Nuevos Ministerios (n4998670036)
+        - Gregorio Marañón (n5304690736)
+        - Alonso Martínez (n5302296738)
+        - Tribunal (n5299314583)
+        - Plaza de España (n5303173541)
+        - Príncipe Pío (n5304749212)
+        - Lago (n5310126818)
+        - Batán (n5310153781)
+        - Casa de Campo (n5303127327)
+        - Colonia Jardín (n5310153779)
+        - Aviación Española (n5310153778)
+        - Cuatro Vientos (n5310153777)
+        - Joaquín Vilumbrales (n5310153776)
+        - Puerta del Sur (n5305116632)
+
+      r3113079: 
+        - Puerta del Sur (n5305116632)
+        - Joaquín Vilumbrales (n5310153776)
+        - Cuatro Vientos (n5310153777)
+        - Aviación Española (n5310153778)
+        - Colonia Jardín (n5310153779)
+        - Casa de Campo (n5303127327)
+        - Batán (n5310153781)
+        - Lago (n5310126818)
+        - Príncipe Pío (n5304749212)
+        - Plaza de España (n5303173541)
+        - Tribunal (n5299314583)
+        - Alonso Martínez (n5302296738)
+        - Gregorio Marañón (n5304690736)
+        - Nuevos Ministerios (n4998670036)
+        - Santiago Bernabéu (n5310126819)
+        - Cuzco (n5310126820)
+        - Plaza de Castilla (n5299262123)
+        - Chamartín (n5299262124)
+        - Begoña (n5310127221)
+        - Fuencarral (n5310127222)
+        - Tres Olivos (n5310127223)
+        - Montecarmelo (n5310127224)
+        - Las Tablas (n5310127225)
+        - Ronda de la Comunicación (n5310127226)
+        - La Granja (n5310127227)
+        - La Moraleja (n5310127228)
+        - Marqués de la Valdavia (n5310127229)
+        - Manuel de Falla (n5310127230)
+        - Baunatal (n5310127231)
+        - Reyes Católicos (n5310127232)
+        - Hospital Infanta Sofía (n5310127233)
+
+
   - 
-    name: Línea 11
     type: subway
     ref: L11
-    station_count: 7
+    name: Línea 11
     colour: '#006400'
+    station_count: 7
+    stations: 
+      - Plaza Elíptica L11
+      - Abrantes
+      - Pan Bendito
+      - San Francisco
+      - Carabanchel Alto
+      - La Peseta
+      - La Fortuna
+
     itineraries: 
       r56044: 
         - Plaza Elíptica (n5305486989)
@@ -660,53 +669,43 @@ routes:
         - Plaza Elíptica (n5305486989)
 
 
-    stations: 
-      - La Fortuna
-      - La Peseta
-      - Carabanchel Alto
-      - San Francisco
-      - Pan Bendito
-      - Abrantes
-      - Plaza Elíptica L11
-
   - 
-    name: Línea 12. Metrosur
     type: subway
     ref: L12
-    station_count: 28
+    name: Línea 12. Metrosur
     colour: '#a49a00'
-    itineraries: 
-      r7841410: 
-        - Puerta del Sur (n5305116632)
-        - Parque Lisboa (n5305116629)
-        - Alcorcón Central (n2112127610)
-        - Parque Oeste (n4912161023)
-        - Universidad Rey Juan Carlos (n5305116658)
-        - Móstoles Central (n5305116657)
-        - Pradillo (n5305116656)
-        - Hospital de Móstoles (n5305116655)
-        - Manuela Malasaña (n5305116654)
-        - Loranca (n5305116653)
-        - Hospital de Fuenlabrada (n5305116652)
-        - Parque Europa (n5305116651)
-        - Fuenlabrada Central (n5305116650)
-        - Parque de los Estados (n5305116649)
-        - Arroyo Culebro (n5305116648)
-        - Conservatorio (n5305116647)
-        - Alonso de Mendoza (n5305116646)
-        - Getafe Centro (n5305116645)
-        - Juan de la Cierva (n5305116644)
-        - El Casar (n5305116642)
-        - Los Espartales (n5305116641)
-        - El Bercial (n5305116640)
-        - El Carrascal (n6354922794)
-        - Julián Besteiro (n5305116638)
-        - Casa del Reloj (n5305116637)
-        - Hospital Severo Ochoa (n5305116636)
-        - Leganés Central (n5305116635)
-        - San Nicasio (n5305116634)
-        - Puerta del Sur (n5305116632)
+    station_count: 28
+    stations: 
+      - Puerta del Sur L12
+      - San Nicasio
+      - Leganés Central
+      - Hospital Severo Ochoa
+      - Casa del Reloj
+      - Julián Besteiro
+      - El Carrascal
+      - El Bercial
+      - Los Espartales
+      - El Casar (Metro)
+      - Juan de la Cierva
+      - Getafe Central
+      - Alonso de Mendoza
+      - Conservatorio
+      - Arroyo Culebro
+      - Parque de los Estados
+      - Fuenlabrada Central
+      - Parque Europa
+      - Hospital de Fuenlabrada
+      - Loranca
+      - Manuela Malasaña
+      - Hospital de Móstoles
+      - Pradillo
+      - Móstoles Central
+      - Universidad Rey Juan Carlos
+      - Estación de Parque Oeste
+      - Alcorcón Central
+      - Parque Lisboa
 
+    itineraries: 
       r2325279: 
         - Puerta del Sur (n5305116632)
         - San Nicasio (n5305116634)
@@ -738,43 +737,66 @@ routes:
         - Parque Lisboa (n5305116629)
         - Puerta del Sur (n5305116632)
 
+      r7841410: 
+        - Puerta del Sur (n5305116632)
+        - Parque Lisboa (n5305116629)
+        - Alcorcón Central (n2112127610)
+        - Parque Oeste (n4912161023)
+        - Universidad Rey Juan Carlos (n5305116658)
+        - Móstoles Central (n5305116657)
+        - Pradillo (n5305116656)
+        - Hospital de Móstoles (n5305116655)
+        - Manuela Malasaña (n5305116654)
+        - Loranca (n5305116653)
+        - Hospital de Fuenlabrada (n5305116652)
+        - Parque Europa (n5305116651)
+        - Fuenlabrada Central (n5305116650)
+        - Parque de los Estados (n5305116649)
+        - Arroyo Culebro (n5305116648)
+        - Conservatorio (n5305116647)
+        - Alonso de Mendoza (n5305116646)
+        - Getafe Centro (n5305116645)
+        - Juan de la Cierva (n5305116644)
+        - El Casar (n5305116642)
+        - Los Espartales (n5305116641)
+        - El Bercial (n5305116640)
+        - El Carrascal (n6354922794)
+        - Julián Besteiro (n5305116638)
+        - Casa del Reloj (n5305116637)
+        - Hospital Severo Ochoa (n5305116636)
+        - Leganés Central (n5305116635)
+        - San Nicasio (n5305116634)
+        - Puerta del Sur (n5305116632)
 
-    stations: 
-      - Puerta del Sur L12
-      - San Nicasio
-      - Leganés Central
-      - Hospital Severo Ochoa
-      - Casa del Reloj
-      - Julián Besteiro
-      - El Carrascal
-      - El Bercial
-      - Los Espartales
-      - El Casar (Metro)
-      - Juan de la Cierva
-      - Getafe Central
-      - Alonso de Mendoza
-      - Conservatorio
-      - Arroyo Culebro
-      - Parque de los Estados
-      - Fuenlabrada Central
-      - Parque Europa
-      - Hospital de Fuenlabrada
-      - Loranca
-      - Manuela Malasaña
-      - Hospital de Móstoles
-      - Pradillo
-      - Móstoles Central
-      - Universidad Rey Juan Carlos
-      - Estación de Parque Oeste
-      - Alcorcón Central
-      - Parque Lisboa
 
   - 
-    name: Línea 2
     type: subway
     ref: L2
-    station_count: 20
+    name: Línea 2
     colour: '#fb0f0c'
+    station_count: 20
+    stations: 
+      - Cuatro Caminos L2
+      - Canal L2
+      - Quevedo
+      - San Bernardo L2
+      - Noviciado
+      - Santo Domingo
+      - Ópera L2
+      - Sol L2
+      - Sevilla
+      - Banco de España
+      - Retiro
+      - Príncipe de Vergara L2
+      - Goya L2
+      - Manuel Becerra L2
+      - Ventas L2
+      - La Elipa
+      - La Almudena
+      - Alsacia
+      - Avenida de Guadalajara
+      - Las Rosas
+
     itineraries: 
       r61833: 
         - Cuatro Caminos (n5303271991)
@@ -821,34 +843,32 @@ routes:
         - Cuatro Caminos (n5303271991)
 
 
-    stations: 
-      - Las Rosas
-      - Avenida de Guadalajara
-      - Alsacia
-      - La Almudena
-      - La Elipa
-      - Ventas L2
-      - Manuel Becerra L2
-      - Goya L2
-      - Príncipe de Vergara L2
-      - Retiro
-      - Banco de España
-      - Sevilla
-      - Sol L2
-      - Ópera L2
-      - Santo Domingo
-      - Noviciado
-      - San Bernardo L2
-      - Quevedo
-      - Canal L2
-      - Cuatro Caminos L2
-
   - 
-    name: Línea 3
     type: subway
     ref: L3
-    station_count: 18
+    name: Línea 3
     colour: '#ffdf00'
+    station_count: 18
+    stations: 
+      - Moncloa L3
+      - Argüelles L3
+      - Ventura Rodríguez
+      - Plaza de España L3
+      - Callao L3
+      - Sol L3
+      - Lavapiés
+      - Embajadores L3
+      - Palos de la Frontera
+      - Delicias
+      - Legazpi L3
+      - Almendrales
+      - Hospital 12 de Octubre
+      - San Fermín-Orcasur
+      - Ciudad de los Ángeles
+      - 'Villaverde Bajo - Cruce'
+      - San Cristóbal
+      - Villaverde Alto L3
+
     itineraries: 
       r57356: 
         - Moncloa (n5303173537)
@@ -891,84 +911,12 @@ routes:
         - Moncloa (n5303173537)
 
 
-    stations: 
-      - Villaverde Alto L3
-      - San Cristóbal
-      - 'Villaverde Bajo - Cruce'
-      - Ciudad de los Ángeles
-      - San Fermín-Orcasur
-      - Hospital 12 de Octubre
-      - Almendrales
-      - Legazpi L3
-      - Delicias
-      - Palos de la Frontera
-      - Embajadores L3
-      - Lavapiés
-      - Sol L3
-      - Callao L3
-      - Plaza de España L3
-      - Ventura Rodríguez
-      - Argüelles L3
-      - Moncloa L3
-
   - 
-    name: Línea 4
     type: subway
     ref: L4
-    station_count: 23
+    name: Línea 4
     colour: '#824100'
-    itineraries: 
-      r7827779: 
-        - Argüelles (n5302296743)
-        - San Bernardo (n5302296740)
-        - Bilbao (n5423856839)
-        - Alonso Martínez (n5302296738)
-        - Colón (n5302296737)
-        - Serrano (n5302296736)
-        - Velázquez (n5302296735)
-        - Goya (n5302296734)
-        - Lista (n5302296733)
-        - Diego de León (n5302296732)
-        - Avenida de América (n5302313738)
-        - Prosperidad (n5302296731)
-        - Alfonso XIII (n5302296730)
-        - Avenida de la Paz (n5302296729)
-        - Arturo Soria (n5302296728)
-        - Esperanza (n5302296727)
-        - Canillas (n5302296726)
-        - Mar de Cristal (n5302030279)
-        - San Lorenzo (n5302296724)
-        - Parque de Santa María (n5302296722)
-        - Hortaleza (n5302296721)
-        - Manoteras (n5302296020)
-        - Pinar de Chamartín (n5299262126)
-
-      r2588492: 
-        - Pinar de Chamartín (n5299262126)
-        - Manoteras (n5302296020)
-        - Hortaleza (n5302296721)
-        - Parque de Santa María (n5302296722)
-        - San Lorenzo (n5302296724)
-        - Mar de Cristal (n5302030279)
-        - Canillas (n5302296726)
-        - Esperanza (n5302296727)
-        - Arturo Soria (n5302296728)
-        - Avenida de la Paz (n5302296729)
-        - Alfonso XIII (n5302296730)
-        - Prosperidad (n5302296731)
-        - Avenida de América (n5302313738)
-        - Diego de León (n5302296732)
-        - Lista (n5302296733)
-        - Goya (n5302296734)
-        - Velázquez (n5302296735)
-        - Serrano (n5302296736)
-        - Colón (n5302296737)
-        - Alonso Martínez (n5302296738)
-        - Bilbao (n5423856839)
-        - San Bernardo (n5302296740)
-        - Argüelles (n5302296743)
-
-
+    station_count: 23
     stations: 
       - Pinar de Chamartín L4
       - Manoteras
@@ -994,47 +942,99 @@ routes:
       - San Bernardo L4
       - Argüelles L4
 
+    itineraries: 
+      r2588492: 
+        - Pinar de Chamartín (n5299262126)
+        - Manoteras (n5302296020)
+        - Hortaleza (n5302296721)
+        - Parque de Santa María (n5302296722)
+        - San Lorenzo (n5302296724)
+        - Mar de Cristal (n5302030279)
+        - Canillas (n5302296726)
+        - Esperanza (n5302296727)
+        - Arturo Soria (n5302296728)
+        - Avenida de la Paz (n5302296729)
+        - Alfonso XIII (n5302296730)
+        - Prosperidad (n5302296731)
+        - Avenida de América (n5302313738)
+        - Diego de León (n5302296732)
+        - Lista (n5302296733)
+        - Goya (n5302296734)
+        - Velázquez (n5302296735)
+        - Serrano (n5302296736)
+        - Colón (n5302296737)
+        - Alonso Martínez (n5302296738)
+        - Bilbao (n5423856839)
+        - San Bernardo (n5302296740)
+        - Argüelles (n5302296743)
+
+      r7827779: 
+        - Argüelles (n5302296743)
+        - San Bernardo (n5302296740)
+        - Bilbao (n5423856839)
+        - Alonso Martínez (n5302296738)
+        - Colón (n5302296737)
+        - Serrano (n5302296736)
+        - Velázquez (n5302296735)
+        - Goya (n5302296734)
+        - Lista (n5302296733)
+        - Diego de León (n5302296732)
+        - Avenida de América (n5302313738)
+        - Prosperidad (n5302296731)
+        - Alfonso XIII (n5302296730)
+        - Avenida de la Paz (n5302296729)
+        - Arturo Soria (n5302296728)
+        - Esperanza (n5302296727)
+        - Canillas (n5302296726)
+        - Mar de Cristal (n5302030279)
+        - San Lorenzo (n5302296724)
+        - Parque de Santa María (n5302296722)
+        - Hortaleza (n5302296721)
+        - Manoteras (n5302296020)
+        - Pinar de Chamartín (n5299262126)
+
+
   - 
-    name: Línea 5
     type: subway
     ref: L5
-    station_count: 32
+    name: Línea 5
     colour: '#96bf0d'
-    itineraries: 
-      r7838613: 
-        - Alameda de Osuna (n5303127372)
-        - El Capricho (n5303127371)
-        - Canillejas (n5303127368)
-        - Torre Arias (n5303127367)
-        - Suanzes (n5303127366)
-        - Ciudad Lineal (n5303127365)
-        - Pueblo Nuevo (n5303127363)
-        - Quintana (n5303127362)
-        - El Carmen (n5303127361)
-        - Ventas (n5303127359)
-        - Diego de León (n5302296732)
-        - Núñez de Balboa (n5303127357)
-        - Rubén Darío (n5303127356)
-        - Alonso Martínez (n5302296738)
-        - Chueca (n5303127354)
-        - Gran Vía (n5299314581)
-        - Callao (n5303127352)
-        - Ópera (n5303127351)
-        - La Latina (n5303127348)
-        - Puerta de Toledo (n5303127347)
-        - Acacias (n5303127346)
-        - Pirámides (n5303127344)
-        - Marqués de Vadillo (n5303127343)
-        - Urgel (n5303127342)
-        - Oporto (n5303127340)
-        - Vista Alegre (n5303127339)
-        - Carabanchel (n5303127338)
-        - Eugenia de Montijo (n5303127337)
-        - Aluche (w23952327)
-        - Empalme (n5303127330)
-        - Campamento (n5303127329)
-        - Casa de Campo (n5303127327)
+    station_count: 32
+    stations: 
+      - Casa de Campo L5
+      - Campamento
+      - Empalme
+      - Aluche
+      - Eugenia de Montijo
+      - Carabanchel
+      - Vista Alegre
+      - Oporto L5
+      - Urgel
+      - Marqués de Vadillo
+      - Pirámides L5
+      - Acacias
+      - Puerta de Toledo
+      - La Latina
+      - Ópera L5
+      - Callao L5
+      - Gran Vía L5
+      - Chueca
+      - Alonso Martínez L5
+      - Rubén Darío
+      - Núñez de Balboa L5
+      - Diego de León L5
+      - Ventas L5
+      - El Carmen
+      - Quintana
+      - Pueblo Nuevo L5
+      - Ciudad Lineal
+      - Suanzes
+      - Torre Arias
+      - Canillejas
+      - El Capricho
+      - Alameda de Osuna
 
+    itineraries: 
       r61834: 
         - Casa de Campo (n5303127327)
         - Campamento (n5303127329)
@@ -1069,47 +1069,77 @@ routes:
         - El Capricho (n5303127371)
         - Alameda de Osuna (n5303127372)
 
+      r7838613: 
+        - Alameda de Osuna (n5303127372)
+        - El Capricho (n5303127371)
+        - Canillejas (n5303127368)
+        - Torre Arias (n5303127367)
+        - Suanzes (n5303127366)
+        - Ciudad Lineal (n5303127365)
+        - Pueblo Nuevo (n5303127363)
+        - Quintana (n5303127362)
+        - El Carmen (n5303127361)
+        - Ventas (n5303127359)
+        - Diego de León (n5302296732)
+        - Núñez de Balboa (n5303127357)
+        - Rubén Darío (n5303127356)
+        - Alonso Martínez (n5302296738)
+        - Chueca (n5303127354)
+        - Gran Vía (n5299314581)
+        - Callao (n5303127352)
+        - Ópera (n5303127351)
+        - La Latina (n5303127348)
+        - Puerta de Toledo (n5303127347)
+        - Acacias (n5303127346)
+        - Pirámides (n5303127344)
+        - Marqués de Vadillo (n5303127343)
+        - Urgel (n5303127342)
+        - Oporto (n5303127340)
+        - Vista Alegre (n5303127339)
+        - Carabanchel (n5303127338)
+        - Eugenia de Montijo (n5303127337)
+        - Aluche (w23952327)
+        - Empalme (n5303127330)
+        - Campamento (n5303127329)
+        - Casa de Campo (n5303127327)
 
-    stations: 
-      - Alameda de Osuna
-      - El Capricho
-      - Canillejas
-      - Torre Arias
-      - Suanzes
-      - Ciudad Lineal
-      - Pueblo Nuevo L5
-      - Quintana
-      - El Carmen
-      - Ventas L5
-      - Diego de León L5
-      - Núñez de Balboa L5
-      - Rubén Darío
-      - Alonso Martínez L5
-      - Chueca
-      - Gran Vía L5
-      - Callao L5
-      - Ópera L5
-      - La Latina
-      - Puerta de Toledo
-      - Acacias
-      - Pirámides L5
-      - Marqués de Vadillo
-      - Urgel
-      - Oporto L5
-      - Vista Alegre
-      - Carabanchel
-      - Eugenia de Montijo
-      - Aluche
-      - Empalme
-      - Campamento
-      - Casa de Campo L5
 
   - 
-    name: Línea 6
     type: subway
     ref: L6
-    station_count: 28
+    name: Línea 6
     colour: '#939393'
+    station_count: 28
+    stations: 
+      - Laguna (Metro)
+      - Lucero
+      - Alto de Extremadura
+      - Puerta del Ángel
+      - Príncipe Pío L6
+      - Argüelles L6
+      - Moncloa L6
+      - Ciudad Universitaria
+      - Metropolitano
+      - Guzmán el Bueno L6
+      - Cuatro Caminos L6
+      - Nuevos Ministerios L6
+      - República Argentina
+      - Avenida de América L6
+      - Diego de León L6
+      - Manuel Becerra L6
+      - O'Donnell
+      - Sainz de Baranda L6
+      - Conde de Casal
+      - Pacífico L6
+      - Méndez Álvaro Metro
+      - Arganzuela-Planetario
+      - Legazpi L6
+      - Usera
+      - Plaza Elíptica L6
+      - Opañel
+      - Oporto L6
+      - Carpetana
+
     itineraries: 
       r56791: 
         - Laguna (n5305486974)
@@ -1174,110 +1204,12 @@ routes:
         - Laguna (n5305486974)
 
 
-    stations: 
-      - Laguna (Metro)
-      - Lucero
-      - Alto de Extremadura
-      - Puerta del Ángel
-      - Príncipe Pío L6
-      - Argüelles L6
-      - Moncloa L6
-      - Ciudad Universitaria
-      - Metropolitano
-      - Guzmán el Bueno L6
-      - Cuatro Caminos L6
-      - Nuevos Ministerios L6
-      - República Argentina
-      - Avenida de América L6
-      - Diego de León L6
-      - Manuel Becerra L6
-      - O'Donnell
-      - Sainz de Baranda L6
-      - Conde de Casal
-      - Pacífico L6
-      - Méndez Álvaro Metro
-      - Arganzuela-Planetario
-      - Legazpi L6
-      - Usera
-      - Plaza Elíptica L6
-      - Opañel
-      - Oporto L6
-      - Carpetana
-
   - 
-    name: Línea 7
     type: subway
     ref: L7
-    station_count: 31
+    name: Línea 7
     colour: '#ed7b24'
-    itineraries: 
-      r7840622: 
-        - Hospital del Henares (n5304689519)
-        - Henares (n5304689520)
-        - Jarama (n5304690721)
-        - San Fernando (n5304690722)
-        - La Rambla (n5304690723)
-        - Coslada Central (n5304690724)
-        - Barrio del Puerto (n5304690725)
-        - Estadio Metropolitano (n5304690726)
-        - Las Musas (n5304690727)
-        - San Blas (n5304690728)
-        - Simancas (n5304690729)
-        - García Noblejas (n5304690730)
-        - Ascao (n5304690731)
-        - Pueblo Nuevo (n5303127363)
-        - Barrio de la Concepción (n5304690732)
-        - Parque de las Avenidas (n5304690733)
-        - Cartagena (n5304690734)
-        - Avenida de América (n5302313738)
-        - Gregorio Marañón (n5304690736)
-        - Alonso Cano (n5304690738)
-        - Canal (n5303271993)
-        - Islas Filipinas (n5304690739)
-        - Guzmán el Bueno (n5304690740)
-        - Francos Rodríguez (n5304690742)
-        - Valdezarza (n5304690743)
-        - Antonio Machado (n5304690744)
-        - Peñagrande (n5304690745)
-        - Avenida de la Ilustración (n5304690746)
-        - Lacoma (n5304690747)
-        - Arroyofresno (n5306531886)
-        - Pitis (n6393976871)
-
-      r62901: 
-        - Pitis (n6393976871)
-        - Arroyofresno (n5306531886)
-        - Lacoma (n5304690747)
-        - Avenida de la Ilustración (n5304690746)
-        - Peñagrande (n5304690745)
-        - Antonio Machado (n5304690744)
-        - Valdezarza (n5304690743)
-        - Francos Rodríguez (n5304690742)
-        - Guzmán el Bueno (n5304690740)
-        - Islas Filipinas (n5304690739)
-        - Canal (n5303271993)
-        - Alonso Cano (n5304690738)
-        - Gregorio Marañón (n5304690736)
-        - Avenida de América (n5302313738)
-        - Cartagena (n5304690734)
-        - Parque de las Avenidas (n5304690733)
-        - Barrio de la Concepción (n5304690732)
-        - Pueblo Nuevo (n5303127363)
-        - Ascao (n5304690731)
-        - García Noblejas (n5304690730)
-        - Simancas (n5304690729)
-        - San Blas (n5304690728)
-        - Las Musas (n5304690727)
-        - Estadio Metropolitano (n5304690726)
-        - Barrio del Puerto (n5304690725)
-        - Coslada Central (n5304690724)
-        - La Rambla (n5304690723)
-        - San Fernando (n5304690722)
-        - Jarama (n5304690721)
-        - Henares (n5304689520)
-        - Hospital del Henares (n5304689519)
-
-
+    station_count: 31
     stations: 
       - Pitis (Metro)
       - Arroyo Fresno
@@ -1311,12 +1243,90 @@ routes:
       - Henares
       - Hospital de Henares
 
+    itineraries: 
+      r62901: 
+        - Pitis (n6393976871)
+        - Arroyofresno (n5306531886)
+        - Lacoma (n5304690747)
+        - Avenida de la Ilustración (n5304690746)
+        - Peñagrande (n5304690745)
+        - Antonio Machado (n5304690744)
+        - Valdezarza (n5304690743)
+        - Francos Rodríguez (n5304690742)
+        - Guzmán el Bueno (n5304690740)
+        - Islas Filipinas (n5304690739)
+        - Canal (n5303271993)
+        - Alonso Cano (n5304690738)
+        - Gregorio Marañón (n5304690736)
+        - Avenida de América (n5302313738)
+        - Cartagena (n5304690734)
+        - Parque de las Avenidas (n5304690733)
+        - Barrio de la Concepción (n5304690732)
+        - Pueblo Nuevo (n5303127363)
+        - Ascao (n5304690731)
+        - García Noblejas (n5304690730)
+        - Simancas (n5304690729)
+        - San Blas (n5304690728)
+        - Las Musas (n5304690727)
+        - Estadio Metropolitano (n5304690726)
+        - Barrio del Puerto (n5304690725)
+        - Coslada Central (n5304690724)
+        - La Rambla (n5304690723)
+        - San Fernando (n5304690722)
+        - Jarama (n5304690721)
+        - Henares (n5304689520)
+        - Hospital del Henares (n5304689519)
+
+      r7840622: 
+        - Hospital del Henares (n5304689519)
+        - Henares (n5304689520)
+        - Jarama (n5304690721)
+        - San Fernando (n5304690722)
+        - La Rambla (n5304690723)
+        - Coslada Central (n5304690724)
+        - Barrio del Puerto (n5304690725)
+        - Estadio Metropolitano (n5304690726)
+        - Las Musas (n5304690727)
+        - San Blas (n5304690728)
+        - Simancas (n5304690729)
+        - García Noblejas (n5304690730)
+        - Ascao (n5304690731)
+        - Pueblo Nuevo (n5303127363)
+        - Barrio de la Concepción (n5304690732)
+        - Parque de las Avenidas (n5304690733)
+        - Cartagena (n5304690734)
+        - Avenida de América (n5302313738)
+        - Gregorio Marañón (n5304690736)
+        - Alonso Cano (n5304690738)
+        - Canal (n5303271993)
+        - Islas Filipinas (n5304690739)
+        - Guzmán el Bueno (n5304690740)
+        - Francos Rodríguez (n5304690742)
+        - Valdezarza (n5304690743)
+        - Antonio Machado (n5304690744)
+        - Peñagrande (n5304690745)
+        - Avenida de la Ilustración (n5304690746)
+        - Lacoma (n5304690747)
+        - Arroyofresno (n5306531886)
+        - Pitis (n6393976871)
+
+
   - 
-    name: Línea 8
     type: subway
     ref: L8
-    station_count: 8
+    name: Línea 8
     colour: '#ff0080'
+    station_count: 8
+    stations: 
+      - Nuevos Ministerios L8
+      - Colombia L8
+      - Pinar del Rey
+      - Mar de Cristal L8
+      - Feria de Madrid
+      - Aeropuerto T1-T2-T3
+      - Barajas
+      - Aeropuerto T4 (Metro)
+
     itineraries: 
       r62917: 
         - Nuevos Ministerios (n4998670036)
@@ -1339,22 +1349,43 @@ routes:
         - Nuevos Ministerios (n4998670036)
 
 
-    stations: 
-      - Aeropuerto T4 (Metro)
-      - Barajas
-      - Aeropuerto T1-T2-T3
-      - Feria de Madrid
-      - Mar de Cristal L8
-      - Pinar del Rey
-      - Colombia L8
-      - Nuevos Ministerios L8
-
   - 
-    name: Línea 9
     type: subway
     ref: L9
-    station_count: 29
+    name: Línea 9
     colour: '#9c3293'
+    station_count: 29
+    stations: 
+      - Paco de Lucía (metro)
+      - Mirasierra
+      - Herrera Oria
+      - Barrio del Pilar
+      - Ventilla
+      - Plaza de Castilla L9
+      - Duque de Pastrana
+      - Pío XII
+      - Colombia L9
+      - Concha Espina
+      - Cruz del Rayo
+      - Avenida de América L9
+      - Núñez de Balboa L9
+      - Príncipe de Vergara L9
+      - Ibiza
+      - Sainz de Baranda L9
+      - Estrella
+      - Vinateros
+      - Artilleros
+      - Pavones
+      - Valdebernardo
+      - Vicálvaro
+      - San Cipriano
+      - Puerta de Arganda
+      - Rivas Urbanizaciones
+      - Rivas Futura
+      - Rivas Vaciamadrid
+      - La Poveda
+      - Arganda del Rey
+
     itineraries: 
       r85222: 
         - Paco de Lucía (w559228756)
@@ -1419,43 +1450,23 @@ routes:
         - Paco de Lucía (w559228756)
 
 
-    stations: 
-      - Arganda del Rey
-      - La Poveda
-      - Rivas Vaciamadrid
-      - Rivas Futura
-      - Rivas Urbanizaciones
-      - Puerta de Arganda
-      - San Cipriano
-      - Vicálvaro
-      - Valdebernardo
-      - Pavones
-      - Artilleros
-      - Vinateros
-      - Estrella
-      - Sainz de Baranda L9
-      - Ibiza
-      - Príncipe de Vergara L9
-      - Núñez de Balboa L9
-      - Avenida de América L9
-      - Cruz del Rayo
-      - Concha Espina
-      - Colombia L9
-      - Pío XII
-      - Duque de Pastrana
-      - Plaza de Castilla L9
-      - Ventilla
-      - Barrio del Pilar
-      - Herrera Oria
-      - Mirasierra
-      - Paco de Lucía (metro)
-
   - 
-    name: Línea ML-1
     type: light_rail
     ref: ML1
-    station_count: 9
+    name: Línea ML-1
     colour: '#4682b4'
+    station_count: 9
+    stations: 
+      - Pinar de Chamartín ML1
+      - Fuente de la Mora ML1
+      - Virgen del Cortijo
+      - Antonio Saura
+      - Álvarez de Villaamil
+      - Blasco Ibáñez
+      - María Tudor
+      - Palas de Rey
+      - Las Tablas ML1
+
     itineraries: 
       r87128: 
         - Pinar de Chamartín (n5299262126)
@@ -1480,39 +1491,28 @@ routes:
         - Pinar de Chamartín (n5299262126)
 
 
-    stations: 
-      - Pinar de Chamartín ML1
-      - Fuente de la Mora ML1
-      - Virgen del Cortijo
-      - Antonio Saura
-      - Álvarez de Villaamil
-      - Blasco Ibáñez
-      - María Tudor
-      - Palas de Rey
-      - Las Tablas ML1
-
   - 
-    name: Línea ML-2
     type: light_rail
     ref: ML2
-    station_count: 13
+    name: Línea ML-2
     colour: '#660066'
-    itineraries: 
-      r7853071: 
-        - Colonia Jardín (n5310153779)
-        - Prado de la Vega (n5311950985)
-        - Colonia de los Ángeles (n5311950988)
-        - Prado del Rey (n5311950991)
-        - Somosaguas Sur (n5311950992)
-        - Somosaguas Centro (n5311950993)
-        - Pozuelo Oeste (n5311950994)
-        - Bélgica (n5311950995)
-        - Dos Castillas (n5311950998)
-        - Campus de Somosaguas (n5311950999)
-        - Avenida de Europa (n5311951000)
-        - Berna (n5311951001)
-        - Estación de Aravaca (w125224817)
+    station_count: 13
+    stations: 
+      - Aravaca
+      - Aravaca
+      - Avenida de Europa
+      - Campus de Somosaguas
+      - Dos Castillas
+      - Bélgica
+      - Pozuelo Oeste
+      - Somosaguas Centro
+      - Somosaguas Sur
+      - Prado del Rey
+      - Colonia de los Ángeles
+      - Prado de la Vega
+      - Colonia Jardín ML-2
 
+    itineraries: 
       r61879: 
         - Estación de Aravaca (w125224817)
         - Berna (n5311951001)
@@ -1528,66 +1528,28 @@ routes:
         - Prado de la Vega (n5311950985)
         - Colonia Jardín (n5310153779)
 
+      r7853071: 
+        - Colonia Jardín (n5310153779)
+        - Prado de la Vega (n5311950985)
+        - Colonia de los Ángeles (n5311950988)
+        - Prado del Rey (n5311950991)
+        - Somosaguas Sur (n5311950992)
+        - Somosaguas Centro (n5311950993)
+        - Pozuelo Oeste (n5311950994)
+        - Bélgica (n5311950995)
+        - Dos Castillas (n5311950998)
+        - Campus de Somosaguas (n5311950999)
+        - Avenida de Europa (n5311951000)
+        - Berna (n5311951001)
+        - Estación de Aravaca (w125224817)
 
-    stations: 
-      - Colonia Jardín ML-2
-      - Prado de la Vega
-      - Colonia de los Ángeles
-      - Prado del Rey
-      - Somosaguas Sur
-      - Somosaguas Centro
-      - Pozuelo Oeste
-      - Bélgica
-      - Dos Castillas
-      - Campus de Somosaguas
-      - Avenida de Europa
-      - Aravaca
-      - Aravaca
 
   - 
-    name: Línea ML-3
     type: light_rail
     ref: ML3
-    station_count: 16
+    name: Línea ML-3
     colour: '#ff0000'
-    itineraries: 
-      r7853482: 
-        - Colonia Jardín (n5310153779)
-        - Ciudad de la Imagen (n5312202311)
-        - José Isbert (n5312202310)
-        - Ciudad del Cine (n5312202309)
-        - Cocheras (n5312202308)
-        - Retamares (n5312202307)
-        - Montepríncipe (n5312202306)
-        - Ventorro del Cano (n5312202305)
-        - Prado del Espino (n5312202304)
-        - Cantabria (n5312202303)
-        - Ferial de Boadilla (n5312202302)
-        - Boadilla centro (n5312202301)
-        - Nuevo Mundo (n5312202300)
-        - Siglo XXI (n5312202299)
-        - Infante Don Luis (n5312202298)
-        - Puerta de Boadilla (n5312202297)
-
-      r61878: 
-        - Puerta de Boadilla (n5312202297)
-        - Infante Don Luis (n5312202298)
-        - Siglo XXI (n5312202299)
-        - Nuevo Mundo (n5312202300)
-        - Boadilla centro (n5312202301)
-        - Ferial de Boadilla (n5312202302)
-        - Cantabria (n5312202303)
-        - Prado del Espino (n5312202304)
-        - Ventorro del Cano (n5312202305)
-        - Montepríncipe (n5312202306)
-        - Retamares (n5312202307)
-        - Cocheras (n5312202308)
-        - Ciudad del Cine (n5312202309)
-        - José Isbert (n5312202310)
-        - Ciudad de la Imagen (n5312202311)
-        - Colonia Jardín (n5310153779)
-
-
+    station_count: 16
     stations: 
       - Puerta de Boadilla
       - Infante Don Luis
@@ -1606,24 +1568,62 @@ routes:
       - Ciudad de la Imagen
       - Colonia Jardín ML3
 
+    itineraries: 
+      r61878: 
+        - Puerta de Boadilla (n5312202297)
+        - Infante Don Luis (n5312202298)
+        - Siglo XXI (n5312202299)
+        - Nuevo Mundo (n5312202300)
+        - Boadilla centro (n5312202301)
+        - Ferial de Boadilla (n5312202302)
+        - Cantabria (n5312202303)
+        - Prado del Espino (n5312202304)
+        - Ventorro del Cano (n5312202305)
+        - Montepríncipe (n5312202306)
+        - Retamares (n5312202307)
+        - Cocheras (n5312202308)
+        - Ciudad del Cine (n5312202309)
+        - José Isbert (n5312202310)
+        - Ciudad de la Imagen (n5312202311)
+        - Colonia Jardín (n5310153779)
+
+      r7853482: 
+        - Colonia Jardín (n5310153779)
+        - Ciudad de la Imagen (n5312202311)
+        - José Isbert (n5312202310)
+        - Ciudad del Cine (n5312202309)
+        - Cocheras (n5312202308)
+        - Retamares (n5312202307)
+        - Montepríncipe (n5312202306)
+        - Ventorro del Cano (n5312202305)
+        - Prado del Espino (n5312202304)
+        - Cantabria (n5312202303)
+        - Ferial de Boadilla (n5312202302)
+        - Boadilla centro (n5312202301)
+        - Nuevo Mundo (n5312202300)
+        - Siglo XXI (n5312202299)
+        - Infante Don Luis (n5312202298)
+        - Puerta de Boadilla (n5312202297)
+
+
   - 
-    name: 'Línea Ramal: Ópera - Príncipe Pío'
     type: subway
     ref: R
-    station_count: 2
+    name: 'Línea Ramal: Ópera - Príncipe Pío'
     colour: '#ffffff'
-    itineraries: 
-      r7840746: 
-        - Príncipe Pío (n5304749212)
-        - Ópera (n5303127351)
+    station_count: 2
+    stations: 
+      - Ópera R
+      - Príncipe Pío R
 
+    itineraries: 
       r61836: 
         - Ópera (n5303127351)
         - Príncipe Pío (n5304749212)
 
+      r7840746: 
+        - Príncipe Pío (n5304749212)
+        - Ópera (n5303127351)
 
-    stations: 
-      - Príncipe Pío R
-      - Ópera R
 
 

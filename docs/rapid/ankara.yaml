@@ -68,39 +68,11 @@ transfers:
 
 routes: 
   - 
-    name: Ankaray
     type: subway
     ref: A
-    station_count: 11
+    name: Ankaray
     colour: '#008000'
-    itineraries: 
-      r7877738: 
-        - AŞTİ (n2722494903)
-        - Emek (n670252468)
-        - Bahçelievler (w231384806)
-        - Beşevler (n1437395982)
-        - Anadolu (n2400068302)
-        - Maltepe (n4544835059)
-        - Demirtepe (n4347223415)
-        - Kızılay (n6554580491)
-        - Kolej (n4540821444)
-        - Kurtuluş (n2722447845)
-        - Dikimevi (n2722447843)
-
-      r456693: 
-        - Dikimevi (n2722447843)
-        - Kurtuluş (n2722447845)
-        - Kolej (n4540821444)
-        - Kızılay (n6554580491)
-        - Demirtepe (n4347223415)
-        - Maltepe (n4544835059)
-        - Anadolu (n2400068302)
-        - Beşevler (n1437395982)
-        - Bahçelievler (w231384806)
-        - Emek (n670252468)
-        - AŞTİ (n2722494903)
-
-
+    station_count: 11
     stations: 
       - Dikimevi
       - Kurtuluş (Metro)
@@ -114,12 +86,54 @@ routes:
       - Emek
       - AŞTİ
 
+    itineraries: 
+      r456693: 
+        - Dikimevi (n2722447843)
+        - Kurtuluş (n2722447845)
+        - Kolej (n4540821444)
+        - Kızılay (n6554580491)
+        - Demirtepe (n4347223415)
+        - Maltepe (n4544835059)
+        - Anadolu (n2400068302)
+        - Beşevler (n1437395982)
+        - Bahçelievler (w231384806)
+        - Emek (n670252468)
+        - AŞTİ (n2722494903)
+
+      r7877738: 
+        - AŞTİ (n2722494903)
+        - Emek (n670252468)
+        - Bahçelievler (w231384806)
+        - Beşevler (n1437395982)
+        - Anadolu (n2400068302)
+        - Maltepe (n4544835059)
+        - Demirtepe (n4347223415)
+        - Kızılay (n6554580491)
+        - Kolej (n4540821444)
+        - Kurtuluş (n2722447845)
+        - Dikimevi (n2722447843)
+
+
   - 
-    name: 'M1 Kızılay - Batıkent Metro Hattı'
     type: subway
     ref: M1
-    station_count: 12
+    name: 'M1 Kızılay - Batıkent Metro Hattı'
     colour: '#ff0000'
+    station_count: 12
+    stations: 
+      - Kızılay (M1)
+      - Sıhhiye
+      - Ulus
+      - Atatürk Kültür Merkezi (M1)
+      - Akköprü
+      - İvedik
+      - Yenimahalle
+      - Demetevler
+      - Hastane
+      - Macunköy
+      - Ostim
+      - Batıkent (M1)
+
     itineraries: 
       r456707: 
         - Kızılay (n6554580491)
@@ -150,26 +164,26 @@ routes:
         - Kızılay (n6554580491)
 
 
-    stations: 
-      - Kızılay (M1)
-      - Sıhhiye
-      - Ulus
-      - Atatürk Kültür Merkezi (M1)
-      - Akköprü
-      - İvedik
-      - Yenimahalle
-      - Demetevler
-      - Hastane
-      - Macunköy
-      - Ostim
-      - Batıkent (M1)
-
   - 
-    name: M2 metro hattı
     type: subway
     ref: M2
-    station_count: 12
+    name: M2 metro hattı
     colour: '#ffff00'
+    station_count: 12
+    stations: 
+      - Kızılay (M2)
+      - Necatibey
+      - Milli Kütüphane
+      - Söğütözü
+      - MTA
+      - Orta Doğu Teknik Üniversitesi
+      - Bilkent
+      - Tarım Bakanlığı-Danıştay
+      - Beytepe
+      - Ümitköy
+      - Çayyolu
+      - Koru
+
     itineraries: 
       r3604162: 
         - Kızılay (n6554580491)
@@ -200,41 +214,27 @@ routes:
         - Kızılay (n6554580491)
 
 
-    stations: 
-      - Kızılay (M2)
-      - Necatibey
-      - Milli Kütüphane
-      - Söğütözü
-      - MTA
-      - Orta Doğu Teknik Üniversitesi
-      - Bilkent
-      - Tarım Bakanlığı-Danıştay
-      - Beytepe
-      - Ümitköy
-      - Çayyolu
-      - Koru
-
   - 
-    name: M3 Batıkent-OSB/Törekent Metro Hattı
     type: subway
     ref: M3
-    station_count: 12
+    name: M3 Batıkent-OSB/Törekent Metro Hattı
     colour: '#1e90ff'
-    itineraries: 
-      r7981706: 
-        - Batıkent (n5388669628)
-        - Batı Merkezi (n2588377331)
-        - Mesa (n5322442817)
-        - Botanik (n2588377342)
-        - İstanbul Yolu (n2588336399)
-        - Eryaman 1-2 (n8100531118)
-        - Eryaman 5 (n2588336393)
-        - Devlet Mahallesi (n8100504872)
-        - Harikalar Diyarı (n8100473444)
-        - Fatih (n5377335269)
-        - GOP (n5377342267)
-        - OSB-Törekent (n5377342886)
+    station_count: 12
+    stations: 
+      - OSB-Törekent
+      - GOP
+      - Fatih
+      - Harikalar Diyarı
+      - Devlet Mahallesi
+      - Eryaman 5
+      - Eryaman 1-2
+      - İstanbul Yolu
+      - Botanik
+      - Mesa
+      - Batı Merkezi
+      - Batıkent (M3)
 
+    itineraries: 
       r7878077: 
         - OSB-Törekent (n5377342886)
         - GOP (n5377342267)
@@ -249,27 +249,38 @@ routes:
         - Batı Merkezi (n2588377331)
         - Batıkent (n5388669628)
 
+      r7981706: 
+        - Batıkent (n5388669628)
+        - Batı Merkezi (n2588377331)
+        - Mesa (n5322442817)
+        - Botanik (n2588377342)
+        - İstanbul Yolu (n2588336399)
+        - Eryaman 1-2 (n8100531118)
+        - Eryaman 5 (n2588336393)
+        - Devlet Mahallesi (n8100504872)
+        - Harikalar Diyarı (n8100473444)
+        - Fatih (n5377335269)
+        - GOP (n5377342267)
+        - OSB-Törekent (n5377342886)
 
-    stations: 
-      - Batıkent (M3)
-      - Batı Merkezi
-      - Mesa
-      - Botanik
-      - İstanbul Yolu
-      - Eryaman 1-2
-      - Eryaman 5
-      - Devlet Mahallesi
-      - Harikalar Diyarı
-      - Fatih
-      - GOP
-      - OSB-Törekent
 
   - 
-    name: M4 Ankara Metrosu
     type: subway
     ref: M4
-    station_count: 9
+    name: M4 Ankara Metrosu
     colour: '#800080'
+    station_count: 9
+    stations: 
+      - Atatürk Kültür Merkezi (M4)
+      - ASKİ
+      - Dışkapı
+      - Meteoroloji
+      - Belediye
+      - Mecidiye
+      - Kuyubaşı
+      - Dutluk
+      - Şehitler
+
     itineraries: 
       r7981739: 
         - Atatürk Kültür Merkezi (n4590812435)
@@ -293,16 +304,5 @@ routes:
         - ASKİ (n4597987424)
         - Atatürk Kültür Merkezi (n4590812435)
 
-
-    stations: 
-      - Atatürk Kültür Merkezi (M4)
-      - ASKİ
-      - Dışkapı
-      - Meteoroloji
-      - Belediye
-      - Mecidiye
-      - Kuyubaşı
-      - Dutluk
-      - Şehitler
 
 

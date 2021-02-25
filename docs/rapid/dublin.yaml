@@ -36,11 +36,44 @@ transfers:
 
 routes: 
   - 
-    name: Dublin Area Rapid Transit (DART)
     type: train
     ref: DART
-    station_count: 31
+    name: Dublin Area Rapid Transit (DART)
     colour: '#68c56b'
+    station_count: 31
+    stations: 
+      - Malahide
+      - Portmarnock
+      - Clongriffin
+      - Howth Junction
+      - Kilbarrack
+      - Raheny
+      - Harmonstown
+      - Killester
+      - Clontarf Road
+      - Connolly Station
+      - Tara Street
+      - Dublin Pearse
+      - Grand Canal Dock
+      - Lansdowne Road
+      - Sandymount
+      - Sydney Parade
+      - Booterstown
+      - Blackrock
+      - Seapoint
+      - Salthill and Monkstown
+      - Dún Laoghaire
+      - Sandycove and Glasthule
+      - Glenageary
+      - Dalkey
+      - Killiney
+      - Shankill
+      - Bray
+      - Greystones
+      - Bayside
+      - Sutton
+      - Howth
+
     itineraries: 
       r6979124: 
         - Malahide (n7176421929)
@@ -102,36 +135,6 @@ routes:
         - Portmarnock (n5519221177)
         - Malahide (n7176421929)
 
-      r6979127: 
-        - Howth (n5519218141)
-        - Sutton (n7176421928)
-        - Bayside (n5403835845)
-        - Howth Junction and Donaghmede (n7176421930)
-        - Kilbarrack (n5519213828)
-        - Raheny (n5519210321)
-        - Harmonstown (n5403904825)
-        - Killester (n7176421919)
-        - Clontarf Road (n5403851296)
-        - Dublin Connolly (n7198337980)
-        - Tara Street (w228284417)
-        - Dublin Pearse (n7176421920)
-        - Grand Canal Dock (n7184996494)
-        - Lansdowne Road (n7176421921)
-        - Sandymount (n7176421918)
-        - Sydney Parade (n7176421922)
-        - Booterstown (n7176421923)
-        - Blackrock (n7176421924)
-        - Seapoint (n7176421925)
-        - Salthill and Monkstown (n7176421917)
-        - Dún Laoghaire (n7184996489)
-        - Sandycove and Glasthule (n7176421926)
-        - Glenageary (n7184996492)
-        - Dalkey (n7184996493)
-        - Killiney (n7184996490)
-        - Shankill (n7184996491)
-        - Bray Daly (n5403839993)
-        - Greystones (n7176421927)
-
       r6979126: 
         - Greystones (n7176421927)
         - Bray Daly (n5403839993)
@@ -162,38 +165,35 @@ routes:
         - Sutton (n7176421928)
         - Howth (n5519218141)
 
+      r6979127: 
+        - Howth (n5519218141)
+        - Sutton (n7176421928)
+        - Bayside (n5403835845)
+        - Howth Junction and Donaghmede (n7176421930)
+        - Kilbarrack (n5519213828)
+        - Raheny (n5519210321)
+        - Harmonstown (n5403904825)
+        - Killester (n7176421919)
+        - Clontarf Road (n5403851296)
+        - Dublin Connolly (n7198337980)
+        - Tara Street (w228284417)
+        - Dublin Pearse (n7176421920)
+        - Grand Canal Dock (n7184996494)
+        - Lansdowne Road (n7176421921)
+        - Sandymount (n7176421918)
+        - Sydney Parade (n7176421922)
+        - Booterstown (n7176421923)
+        - Blackrock (n7176421924)
+        - Seapoint (n7176421925)
+        - Salthill and Monkstown (n7176421917)
+        - Dún Laoghaire (n7184996489)
+        - Sandycove and Glasthule (n7176421926)
+        - Glenageary (n7184996492)
+        - Dalkey (n7184996493)
+        - Killiney (n7184996490)
+        - Shankill (n7184996491)
+        - Bray Daly (n5403839993)
+        - Greystones (n7176421927)
 
-    stations: 
-      - Greystones
-      - Bray
-      - Shankill
-      - Killiney
-      - Dalkey
-      - Glenageary
-      - Sandycove and Glasthule
-      - Dún Laoghaire
-      - Salthill and Monkstown
-      - Seapoint
-      - Blackrock
-      - Booterstown
-      - Sydney Parade
-      - Sandymount
-      - Lansdowne Road
-      - Grand Canal Dock
-      - Dublin Pearse
-      - Tara Street
-      - Connolly Station
-      - Clontarf Road
-      - Killester
-      - Harmonstown
-      - Raheny
-      - Kilbarrack
-      - Howth Junction
-      - Bayside
-      - Sutton
-      - Howth
-      - Malahide
-      - Portmarnock
-      - Clongriffin
 
 

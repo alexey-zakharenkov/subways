@@ -18,11 +18,26 @@ transfers:
 
 routes: 
   - 
-    name: NFTA Metro Rail
     type: light_rail
     ref: Metro
-    station_count: 13
+    name: NFTA Metro Rail
     colour: '#73757d'
+    station_count: 13
+    stations: 
+      - Erie Canal Harbor
+      - Seneca
+      - Church
+      - Lafayette Square
+      - Fountain Plaza
+      - Allen/Medical Campus
+      - Summer–Best Station
+      - Utica
+      - Delavan/Canisius College
+      - Humboldt–Hospital
+      - Amherst Street
+      - LaSalle
+      - University
+
     itineraries: 
       r3517747: 
         - Erie Canal Harbor (n111456195)
@@ -54,20 +69,5 @@ routes:
         - Seneca (n5844253031)
         - Erie Canal Harbor (n111456195)
 
-
-    stations: 
-      - Erie Canal Harbor
-      - Seneca
-      - Church
-      - Lafayette Square
-      - Fountain Plaza
-      - Allen/Medical Campus
-      - Summer–Best Station
-      - Utica
-      - Delavan/Canisius College
-      - Humboldt–Hospital
-      - Amherst Street
-      - LaSalle
-      - University
 
 

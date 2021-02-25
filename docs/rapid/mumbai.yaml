@@ -34,41 +34,11 @@ transfers:
 
 routes: 
   - 
-    name: Mumbai Metro Line 1
     type: subway
     ref: 1
-    station_count: 12
+    name: Mumbai Metro Line 1
     colour: '#0000ff'
-    itineraries: 
-      r7684032: 
-        - Ghatkopar (w151205149)
-        - Jagruti Nagar (w311841875)
-        - Asalpha (w331827626)
-        - Saki Naka (w331824155)
-        - Marol Naka (w311841876)
-        - Airport Road (w311841874)
-        - 'Chakala - J.B. Nagar (w331824153)'
-        - Western Express Highway (w331815671)
-        - Andheri (n6020955334)
-        - Azad Nagar (w331815667)
-        - D.N. Nagar (w287299866)
-        - Versova (w287299861)
-
-      r3808111: 
-        - Versova (w287299861)
-        - D.N. Nagar (w287299866)
-        - Azad Nagar (w331815667)
-        - Andheri (n6020955334)
-        - Western Express Highway (w331815671)
-        - 'Chakala - J.B. Nagar (w331824153)'
-        - Airport Road (w311841874)
-        - Marol Naka (w311841876)
-        - Saki Naka (w331824155)
-        - Asalpha (w331827626)
-        - Jagruti Nagar (w311841875)
-        - Ghatkopar (w151205149)
-
-
+    station_count: 12
     stations: 
       - Versova
       - D. N. Nagar
@@ -83,12 +53,61 @@ routes:
       - Jagruti Nagar
       - Ghatkopar (Metro)
 
+    itineraries: 
+      r3808111: 
+        - Versova (w287299861)
+        - D.N. Nagar (w287299866)
+        - Azad Nagar (w331815667)
+        - Andheri (n6020955334)
+        - Western Express Highway (w331815671)
+        - 'Chakala - J.B. Nagar (w331824153)'
+        - Airport Road (w311841874)
+        - Marol Naka (w311841876)
+        - Saki Naka (w331824155)
+        - Asalpha (w331827626)
+        - Jagruti Nagar (w311841875)
+        - Ghatkopar (w151205149)
+
+      r7684032: 
+        - Ghatkopar (w151205149)
+        - Jagruti Nagar (w311841875)
+        - Asalpha (w331827626)
+        - Saki Naka (w331824155)
+        - Marol Naka (w311841876)
+        - Airport Road (w311841874)
+        - 'Chakala - J.B. Nagar (w331824153)'
+        - Western Express Highway (w331815671)
+        - Andheri (n6020955334)
+        - Azad Nagar (w331815667)
+        - D.N. Nagar (w287299866)
+        - Versova (w287299861)
+
+
   - 
-    name: Mumbai Monorail Line 1
     type: monorail
     ref: Mono 1
-    station_count: 17
+    name: Mumbai Monorail Line 1
     colour: '#00ffff'
+    station_count: 17
+    stations: 
+      - Chembur
+      - VNP & RC Marg Junction
+      - Fertilizer Township
+      - Bharat Petroleum
+      - Mysore Colony
+      - Bhakti Park
+      - Wadala Depot
+      - Guru Tegh Bahadur Nagar
+      - Antop Hill
+      - Acharya Atre Nagar
+      - Wadala Bridge
+      - Dadar East
+      - Naigaon
+      - Ambedkar Nagar
+      - Mint Colony
+      - Lower Parel
+      - Sant Gadge Maharaj Chok
+
     itineraries: 
       r6567848: 
         - Chembur (n632337506)
@@ -128,24 +147,5 @@ routes:
         - VNP & RC Marg Junction (n2647295140)
         - Chembur (n632337506)
 
-
-    stations: 
-      - Chembur
-      - VNP & RC Marg Junction
-      - Fertilizer Township
-      - Bharat Petroleum
-      - Mysore Colony
-      - Bhakti Park
-      - Wadala Depot
-      - Guru Tegh Bahadur Nagar
-      - Antop Hill
-      - Acharya Atre Nagar
-      - Wadala Bridge
-      - Dadar East
-      - Naigaon
-      - Ambedkar Nagar
-      - Mint Colony
-      - Lower Parel
-      - Sant Gadge Maharaj Chok
 
 

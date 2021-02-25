@@ -257,11 +257,26 @@ transfers:
 
 routes: 
   - 
-    name: LRT Bukit Panjang Line
     type: monorail
     ref: BPLRT
-    station_count: 13
+    name: LRT Bukit Panjang Line
     colour: '#748477'
+    station_count: 13
+    stations: 
+      - Choa Chu Kang (LRT)
+      - South View
+      - Keat Hong
+      - Teck Whye
+      - Phoenix
+      - Bukit Panjang (LRT)
+      - Senja
+      - Jelapang
+      - Segar
+      - Fajar
+      - Bangkit
+      - Pending
+      - Petir
+
     itineraries: 
       r1159434: 
         - Choa Chu Kang (n4939484913)
@@ -306,27 +321,44 @@ routes:
         - Choa Chu Kang (n4939484913)
 
 
-    stations: 
-      - Choa Chu Kang (LRT)
-      - South View
-      - Keat Hong
-      - Teck Whye
-      - Phoenix
-      - Bukit Panjang (LRT)
-      - Senja
-      - Jelapang
-      - Segar
-      - Fajar
-      - Bangkit
-      - Pending
-      - Petir
-
   - 
-    name: MRT Circle Line
     type: subway
     ref: CCL
-    station_count: 30
+    name: MRT Circle Line
     colour: '#ff9a00'
+    station_count: 30
+    stations: 
+      - Marina Bay (CCL)
+      - Bayfront (CCL)
+      - Promenade (CCL)
+      - Nicoll Highway
+      - Stadium
+      - Mountbatten
+      - Dakota
+      - Paya Lebar (CCL)
+      - MacPherson (CCL)
+      - Tai Seng (CCL)
+      - Bartley
+      - Serangoon (Circle Line MRT)
+      - Lorong Chuan
+      - Bishan (Circle Line)
+      - Marymount (CCL)
+      - Caldecott
+      - Botanic Gardens (CCL)
+      - Farrer Road
+      - Holland Village
+      - Buona Vista (CCL)
+      - One-North
+      - Kent Ridge
+      - Haw Par Villa
+      - Pasir Panjang
+      - Labrador Park
+      - Telok Blangah
+      - HarbourFront (CCL)
+      - Esplanade
+      - Bras Basah
+      - Dhoby Ghaut (CCL)
+
     itineraries: 
       r2076291: 
         - Marina Bay (w298087574)
@@ -357,35 +389,6 @@ routes:
         - Telok Blangah (w823789586)
         - HarbourFront (w823789587)
 
-      r7981668: 
-        - HarbourFront (w823789587)
-        - Telok Blangah (w823789586)
-        - Labrador Park (w823789585)
-        - Pasir Panjang (w743648511)
-        - Haw Par Villa (w823759111)
-        - Kent Ridge (w823759110)
-        - one-north (w823759109)
-        - Buona Vista (w823046125)
-        - Holland Village (w743554288)
-        - Farrer Road (w743554290)
-        - Botanic Gardens (w743554291)
-        - Caldecott (w663177167)
-        - Marymount (w823759108)
-        - Bishan (w665452427)
-        - Lorong Chuan (w823759107)
-        - Serangoon (w743648501)
-        - Bartley (w743648503)
-        - Tai Seng (w823759106)
-        - MacPherson (w534060665)
-        - Paya Lebar (w823759101)
-        - Dakota (w743648507)
-        - Mountbatten (w823759105)
-        - Stadium (w172473528)
-        - Nicoll Highway (w823759104)
-        - Promenade (w823759103)
-        - Bayfront (w743622459)
-        - Marina Bay (w298087574)
-
       r7981667: 
         - HarbourFront (w823789587)
         - Telok Blangah (w823789586)
@@ -415,6 +418,35 @@ routes:
         - Esplanade (w823759102)
         - Bras Basah (w743763992)
         - Dhoby Ghaut (w739472746)
+
+      r7981668: 
+        - HarbourFront (w823789587)
+        - Telok Blangah (w823789586)
+        - Labrador Park (w823789585)
+        - Pasir Panjang (w743648511)
+        - Haw Par Villa (w823759111)
+        - Kent Ridge (w823759110)
+        - one-north (w823759109)
+        - Buona Vista (w823046125)
+        - Holland Village (w743554288)
+        - Farrer Road (w743554290)
+        - Botanic Gardens (w743554291)
+        - Caldecott (w663177167)
+        - Marymount (w823759108)
+        - Bishan (w665452427)
+        - Lorong Chuan (w823759107)
+        - Serangoon (w743648501)
+        - Bartley (w743648503)
+        - Tai Seng (w823759106)
+        - MacPherson (w534060665)
+        - Paya Lebar (w823759101)
+        - Dakota (w743648507)
+        - Mountbatten (w823759105)
+        - Stadium (w172473528)
+        - Nicoll Highway (w823759104)
+        - Promenade (w823759103)
+        - Bayfront (w743622459)
+        - Marina Bay (w298087574)
 
       r7981669: 
         - Dhoby Ghaut (w739472746)
@@ -447,118 +479,12 @@ routes:
         - HarbourFront (w823789587)
 
 
-    stations: 
-      - Dhoby Ghaut (CCL)
-      - Bras Basah
-      - Esplanade
-      - Promenade (CCL)
-      - Nicoll Highway
-      - Stadium
-      - Mountbatten
-      - Dakota
-      - Paya Lebar (CCL)
-      - MacPherson (CCL)
-      - Tai Seng (CCL)
-      - Bartley
-      - Serangoon (Circle Line MRT)
-      - Lorong Chuan
-      - Bishan (Circle Line)
-      - Marymount (CCL)
-      - Caldecott
-      - Botanic Gardens (CCL)
-      - Farrer Road
-      - Holland Village
-      - Buona Vista (CCL)
-      - One-North
-      - Kent Ridge
-      - Haw Par Villa
-      - Pasir Panjang
-      - Labrador Park
-      - Telok Blangah
-      - HarbourFront (CCL)
-      - Marina Bay (CCL)
-      - Bayfront (CCL)
-
   - 
-    name: MRT Downtown Line
     type: subway
     ref: DTL
-    station_count: 34
+    name: MRT Downtown Line
     colour: '#0354a6'
-    itineraries: 
-      r7981642: 
-        - Expo (w534060681)
-        - Upper Changi (w534060678)
-        - Tampines East (w534060674)
-        - Tampines (w397901195)
-        - Tampines West (w534060671)
-        - Bedok Reservoir (w607376584)
-        - Bedok North (w534060687)
-        - Kaki Bukit (w398116872)
-        - Ubi (w534060668)
-        - MacPherson (w534060665)
-        - Mattar (w534060662)
-        - Geylang Bahru (w627548969)
-        - Bendemeer (w398116869)
-        - Jalan Besar (w739472748)
-        - Bencoolen (w824481778)
-        - Fort Canning (w743648516)
-        - Chinatown (w743599219)
-        - Telok Ayer (w743622458)
-        - Downtown (w743599218)
-        - Bayfront (w743622459)
-        - Promenade (w823759103)
-        - Bugis (w743564833)
-        - Rochor (w739472747)
-        - Little India (w743566214)
-        - Newton (w665452941)
-        - Stevens (w298087596)
-        - Botanic Gardens (w743554291)
-        - Tan Kah Kee (w743648515)
-        - Sixth Avenue (w824481777)
-        - King Albert Park (w824481775)
-        - Beauty World (w743648514)
-        - Hillview (w743648513)
-        - Cashew (w743648512)
-        - Bukit Panjang (w743551048)
-
-      r2313458: 
-        - Bukit Panjang (w743551048)
-        - Cashew (w743648512)
-        - Hillview (w743648513)
-        - Beauty World (w743648514)
-        - King Albert Park (w824481775)
-        - Sixth Avenue (w824481777)
-        - Tan Kah Kee (w743648515)
-        - Botanic Gardens (w743554291)
-        - Stevens (w298087596)
-        - Newton (w665452941)
-        - Little India (w743566214)
-        - Rochor (w739472747)
-        - Bugis (w743564833)
-        - Promenade (w823759103)
-        - Bayfront (w743622459)
-        - Downtown (w743599218)
-        - Telok Ayer (w743622458)
-        - Chinatown (w743599219)
-        - Fort Canning (w743648516)
-        - Bencoolen (w824481778)
-        - Jalan Besar (w739472748)
-        - Bendemeer (w398116869)
-        - Geylang Bahru (w627548969)
-        - Mattar (w534060662)
-        - MacPherson (w534060665)
-        - Ubi (w534060668)
-        - Kaki Bukit (w398116872)
-        - Bedok North (w534060687)
-        - Bedok Reservoir (w607376584)
-        - Tampines West (w534060671)
-        - Tampines (w397901195)
-        - Tampines East (w534060674)
-        - Upper Changi (w534060678)
-        - Expo (w534060681)
-
-
+    station_count: 34
     stations: 
       - Bukit Panjang (MRT)
       - Cashew (DTL)
@@ -595,12 +521,123 @@ routes:
       - Upper Changi (DTL)
       - Expo (DTL)
 
+    itineraries: 
+      r2313458: 
+        - Bukit Panjang (w743551048)
+        - Cashew (w743648512)
+        - Hillview (w743648513)
+        - Beauty World (w743648514)
+        - King Albert Park (w824481775)
+        - Sixth Avenue (w824481777)
+        - Tan Kah Kee (w743648515)
+        - Botanic Gardens (w743554291)
+        - Stevens (w298087596)
+        - Newton (w665452941)
+        - Little India (w743566214)
+        - Rochor (w739472747)
+        - Bugis (w743564833)
+        - Promenade (w823759103)
+        - Bayfront (w743622459)
+        - Downtown (w743599218)
+        - Telok Ayer (w743622458)
+        - Chinatown (w743599219)
+        - Fort Canning (w743648516)
+        - Bencoolen (w824481778)
+        - Jalan Besar (w739472748)
+        - Bendemeer (w398116869)
+        - Geylang Bahru (w627548969)
+        - Mattar (w534060662)
+        - MacPherson (w534060665)
+        - Ubi (w534060668)
+        - Kaki Bukit (w398116872)
+        - Bedok North (w534060687)
+        - Bedok Reservoir (w607376584)
+        - Tampines West (w534060671)
+        - Tampines (w397901195)
+        - Tampines East (w534060674)
+        - Upper Changi (w534060678)
+        - Expo (w534060681)
+
+      r7981642: 
+        - Expo (w534060681)
+        - Upper Changi (w534060678)
+        - Tampines East (w534060674)
+        - Tampines (w397901195)
+        - Tampines West (w534060671)
+        - Bedok Reservoir (w607376584)
+        - Bedok North (w534060687)
+        - Kaki Bukit (w398116872)
+        - Ubi (w534060668)
+        - MacPherson (w534060665)
+        - Mattar (w534060662)
+        - Geylang Bahru (w627548969)
+        - Bendemeer (w398116869)
+        - Jalan Besar (w739472748)
+        - Bencoolen (w824481778)
+        - Fort Canning (w743648516)
+        - Chinatown (w743599219)
+        - Telok Ayer (w743622458)
+        - Downtown (w743599218)
+        - Bayfront (w743622459)
+        - Promenade (w823759103)
+        - Bugis (w743564833)
+        - Rochor (w739472747)
+        - Little India (w743566214)
+        - Newton (w665452941)
+        - Stevens (w298087596)
+        - Botanic Gardens (w743554291)
+        - Tan Kah Kee (w743648515)
+        - Sixth Avenue (w824481777)
+        - King Albert Park (w824481775)
+        - Beauty World (w743648514)
+        - Hillview (w743648513)
+        - Cashew (w743648512)
+        - Bukit Panjang (w743551048)
+
+
   - 
-    name: MRT East-West Line
     type: subway
     ref: EWL
-    station_count: 35
+    name: MRT East-West Line
     colour: '#009530'
+    station_count: 35
+    stations: 
+      - Tuas Link
+      - Tuas West Road
+      - Tuas Crescent
+      - Gul Circle
+      - Joo Koon
+      - Pioneer
+      - Boon Lay
+      - Lakeside
+      - Chinese Garden
+      - Jurong East (EW)
+      - Clementi
+      - Dover
+      - Buona Vista (EWL)
+      - Commonwealth
+      - Queenstown
+      - Redhill
+      - Tiong Bahru
+      - Outram Park (EWL)
+      - Tanjong Pagar
+      - Raffles Place (EWL)
+      - City Hall (EW)
+      - Bugis (EWL)
+      - Lavender
+      - Kallang
+      - Aljunied
+      - Paya Lebar (EWL)
+      - Eunos
+      - Kembangan
+      - Bedok
+      - Tanah Merah
+      - Simei
+      - Tampines (EWL)
+      - Pasir Ris
+      - Expo (EWL)
+      - Changi Airport
+
     itineraries: 
       r445764: 
         - Tuas Link (n1547550796)
@@ -672,60 +709,41 @@ routes:
         - Tuas West Road (n1547519833)
         - Tuas Link (n1547550796)
 
-      r7981691: 
-        - Changi Airport (w231290543)
-        - Expo (w534060681)
-        - Tanah Merah (n207725954)
-
       r7981690: 
         - Tanah Merah (n207725954)
         - Expo (w534060681)
         - Changi Airport (w231290543)
 
+      r7981691: 
+        - Changi Airport (w231290543)
+        - Expo (w534060681)
+        - Tanah Merah (n207725954)
 
-    stations: 
-      - Tanah Merah
-      - Expo (EWL)
-      - Changi Airport
-      - Pasir Ris
-      - Tampines (EWL)
-      - Simei
-      - Bedok
-      - Kembangan
-      - Eunos
-      - Paya Lebar (EWL)
-      - Aljunied
-      - Kallang
-      - Lavender
-      - Bugis (EWL)
-      - City Hall (EW)
-      - Raffles Place (EWL)
-      - Tanjong Pagar
-      - Outram Park (EWL)
-      - Tiong Bahru
-      - Redhill
-      - Queenstown
-      - Commonwealth
-      - Buona Vista (EWL)
-      - Dover
-      - Clementi
-      - Jurong East (NS)
-      - Chinese Garden
-      - Lakeside
-      - Boon Lay
-      - Pioneer
-      - Joo Koon
-      - Gul Circle
-      - Tuas Crescent
-      - Tuas West Road
-      - Tuas Link
 
   - 
-    name: MRT North East Line
     type: subway
     ref: NEL
-    station_count: 16
+    name: MRT North East Line
     colour: '#9016b2'
+    station_count: 16
+    stations: 
+      - HarbourFront (NEL)
+      - Outram Park (NEL)
+      - Chinatown (NEL)
+      - Clarke Quay
+      - Dhoby Ghaut (NEL)
+      - Little India (NEL)
+      - Farrer Park
+      - Boon Keng
+      - Potong Pasir
+      - Woodleigh (NEL)
+      - Serangoon (North East Line)
+      - Kovan (NEL)
+      - Hougang
+      - Buangkok
+      - Sengkang (MRT)
+      - Punggol (MRT)
+
     itineraries: 
       r2293545: 
         - HarbourFront (w823789587)
@@ -764,30 +782,41 @@ routes:
         - HarbourFront (w823789587)
 
 
-    stations: 
-      - Punggol (MRT)
-      - Sengkang (MRT)
-      - Buangkok
-      - Hougang
-      - Kovan (NEL)
-      - Serangoon (North East Line)
-      - Woodleigh (NEL)
-      - Potong Pasir
-      - Boon Keng
-      - Farrer Park
-      - Little India (NEL)
-      - Dhoby Ghaut (NEL)
-      - Clarke Quay
-      - Chinatown (NEL)
-      - Outram Park (NEL)
-      - HarbourFront (NEL)
-
   - 
-    name: MRT North-South Line
     type: subway
     ref: NSL
-    station_count: 27
+    name: MRT North-South Line
     colour: '#dc241f'
+    station_count: 27
+    stations: 
+      - Marina South Pier
+      - Marina Bay (NSL)
+      - Raffles Place (NSL)
+      - City Hall (NS)
+      - Dhoby Ghaut (NSL)
+      - Somerset
+      - Orchard (NSL)
+      - Newton (NSL)
+      - Novena
+      - Toa Payoh
+      - Braddell
+      - Bishan (NS)
+      - Ang Mo Kio
+      - Yio Chu Kang
+      - Khatib
+      - Yishun
+      - Canberra
+      - Sembawang
+      - Admiralty
+      - Woodlands (NSL)
+      - Marsiling
+      - Kranji
+      - Yew Tee
+      - Choa Chu Kang (MRT)
+      - Bukit Gombak
+      - Bukit Batok
+      - Jurong East (NS)
+
     itineraries: 
       r445768: 
         - Marina South Pier (w665451220)
@@ -848,41 +877,28 @@ routes:
         - Marina South Pier (w665451220)
 
 
-    stations: 
-      - Jurong East (NS)
-      - Bukit Batok
-      - Bukit Gombak
-      - Choa Chu Kang (MRT)
-      - Yew Tee
-      - Kranji
-      - Marsiling
-      - Woodlands (NSL)
-      - Admiralty
-      - Sembawang
-      - Canberra
-      - Yishun
-      - Khatib
-      - Yio Chu Kang
-      - Ang Mo Kio
-      - Bishan (NS)
-      - Braddell
-      - Toa Payoh
-      - Novena
-      - Newton (NSL)
-      - Orchard (NSL)
-      - Somerset
-      - Dhoby Ghaut (NSL)
-      - City Hall (NS)
-      - Raffles Place (NSL)
-      - Marina Bay (NSL)
-      - Marina South Pier
-
   - 
-    name: LRT Punggol Line
     type: monorail
     ref: PGLRT
-    station_count: 14
+    name: LRT Punggol Line
     colour: '#748477'
+    station_count: 14
+    stations: 
+      - Punggol (LRT)
+      - Damai
+      - Oasis
+      - Kadaloor
+      - Riviera
+      - Coral Edge
+      - Meridian
+      - Cove
+      - Soo Teck
+      - Sumang
+      - Nibong
+      - Samudera
+      - Punggol Point
+      - Sam Kee
+
     itineraries: 
       r1146942: 
         - Punggol (w35091648)
@@ -895,14 +911,14 @@ routes:
         - Cove (n1840734592)
         - Punggol (w35091648)
 
-      r9663920: 
+      r2312984: 
         - Punggol (w35091648)
-        - Sam Kee (n1840734606)
-        - Punggol Point (n1840734600)
-        - Samudera (n1840734607)
-        - Nibong (n1840734598)
-        - Sumang (n1840734610)
         - Soo Teck (n1840734608)
+        - Sumang (n1840734610)
+        - Nibong (n1840734598)
+        - Samudera (n1840734607)
+        - Punggol Point (n1840734600)
+        - Sam Kee (n1840734606)
         - Punggol (w35091648)
 
       r9663919: 
@@ -916,39 +932,39 @@ routes:
         - Damai (n1840734593)
         - Punggol (w35091648)
 
-      r2312984: 
+      r9663920: 
         - Punggol (w35091648)
-        - Soo Teck (n1840734608)
-        - Sumang (n1840734610)
-        - Nibong (n1840734598)
-        - Samudera (n1840734607)
-        - Punggol Point (n1840734600)
         - Sam Kee (n1840734606)
+        - Punggol Point (n1840734600)
+        - Samudera (n1840734607)
+        - Nibong (n1840734598)
+        - Sumang (n1840734610)
+        - Soo Teck (n1840734608)
         - Punggol (w35091648)
 
-
-    stations: 
-      - Punggol (LRT)
-      - Cove
-      - Meridian
-      - Coral Edge
-      - Riviera
-      - Kadaloor
-      - Oasis
-      - Damai
-      - Soo Teck
-      - Sumang
-      - Nibong
-      - Samudera
-      - Punggol Point
-      - Sam Kee
 
   - 
-    name: LRT Sengkang Line
     type: monorail
     ref: SKLRT
-    station_count: 14
+    name: LRT Sengkang Line
     colour: '#748477'
+    station_count: 14
+    stations: 
+      - Sengkang (LRT)
+      - Renjong
+      - Tongkang
+      - Layar
+      - Fernvale
+      - Thanggam
+      - Kupang
+      - Farmway
+      - Cheng Lim
+      - Compassvale
+      - Rumbia
+      - Bakau
+      - Kangkar
+      - Ranggung
+
     itineraries: 
       r1146941: 
         - Sengkang (w824237598)
@@ -960,18 +976,6 @@ routes:
         - Kupang (n391188031)
         - Farmway (n390918399)
         - Cheng Lim (n390912052)
-        - Sengkang (w824237598)
-
-      r9663108: 
-        - Sengkang (w824237598)
-        - Cheng Lim (n390912052)
-        - Farmway (n390918399)
-        - Kupang (n391188031)
-        - Thanggam (n391188200)
-        - Fernvale (n391187489)
-        - Layar (n391189258)
-        - Tongkang (n391189922)
-        - Renjong (n391190166)
         - Sengkang (w824237598)
 
       r2312985: 
@@ -992,29 +996,31 @@ routes:
         - Compassvale (n1840734575)
         - Sengkang (w824237598)
 
+      r9663108: 
+        - Sengkang (w824237598)
+        - Cheng Lim (n390912052)
+        - Farmway (n390918399)
+        - Kupang (n391188031)
+        - Thanggam (n391188200)
+        - Fernvale (n391187489)
+        - Layar (n391189258)
+        - Tongkang (n391189922)
+        - Renjong (n391190166)
+        - Sengkang (w824237598)
 
-    stations: 
-      - Sengkang (LRT)
-      - Cheng Lim
-      - Farmway
-      - Kupang
-      - Thanggam
-      - Fernvale
-      - Layar
-      - Tongkang
-      - Renjong
-      - Ranggung
-      - Kangkar
-      - Bakau
-      - Rumbia
-      - Compassvale
 
   - 
-    name: Sentosa Express
     type: monorail
     ref: Sentosa Express
-    station_count: 4
+    name: Sentosa Express
     colour: '#dd0b61'
+    station_count: 4
+    stations: 
+      - VivoCity
+      - Waterfront
+      - Imbiah
+      - Beach
+
     itineraries: 
       r2353581: 
         - VivoCity (n1868203037)
@@ -1029,38 +1035,61 @@ routes:
         - VivoCity (n1868203037)
 
 
-    stations: 
-      - VivoCity
-      - Waterfront
-      - Imbiah
-      - Beach
-
   - 
-    name: Changi Airport Skytrain
     type: monorail
     ref: Skytrain
-    station_count: 7
+    name: Changi Airport Skytrain
     colour: '#757575'
+    station_count: 7
+    stations: 
+      - Station C
+      - Station B
+      - Station D
+      - Station E
+      - Station F
+      - Station A
+      - Station A South
+
     itineraries: 
       r9664403: 
         - C (n6532304174)
         - B (n6532304169)
 
-      r9664410: 
+      r9664404: 
         - B (n6532304169)
+        - C (n6532304174)
+
+      r9664405: 
+        - D (n6532304178)
+        - E (n6532304181)
+
+      r9664406: 
+        - E (n6532304181)
+        - D (n6532304178)
+
+      r9664407: 
+        - E (n6532304181)
+        - D (n6532304178)
+
+      r9664408: 
+        - D (n6532304178)
         - E (n6532304181)
 
       r9664409: 
         - E (n6532304181)
         - B (n6532304169)
 
-      r9664407: 
+      r9664410: 
+        - B (n6532304169)
         - E (n6532304181)
-        - D (n6532304178)
 
       r9664416: 
         - F (n6532304182)
         - A (n6532332890)
+
+      r9664417: 
+        - A (n6532332890)
+        - F (n6532304182)
 
       r9664418: 
         - A (n6532332890)
@@ -1070,42 +1099,18 @@ routes:
         - A South (n6532332886)
         - A (n6532332890)
 
-      r9664405: 
-        - D (n6532304178)
-        - E (n6532304181)
-
-      r9664417: 
-        - A (n6532332890)
-        - F (n6532304182)
-
-      r9664408: 
-        - D (n6532304178)
-        - E (n6532304181)
-
-      r9664406: 
-        - E (n6532304181)
-        - D (n6532304178)
-
-      r9664404: 
-        - B (n6532304169)
-        - C (n6532304174)
-
-
-    stations: 
-      - Station B
-      - Station C
-      - Station E
-      - Station D
-      - Station A South
-      - Station A
-      - Station F
 
   - 
-    name: MRT Thomson–East Coast Line
     type: subway
     ref: TEL
-    station_count: 3
+    name: MRT Thomson–East Coast Line
     colour: '#734538'
+    station_count: 3
+    stations: 
+      - Woodlands North
+      - Woodlands (TEL)
+      - Woodlands South
+
     itineraries: 
       r2383439: 
         - Woodlands North (w298087604)
@@ -1117,10 +1122,5 @@ routes:
         - Woodlands (w298087607)
         - Woodlands North (w298087604)
 
-
-    stations: 
-      - Woodlands North
-      - Woodlands (TEL)
-      - Woodlands South
 
 

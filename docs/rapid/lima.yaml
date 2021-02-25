@@ -31,11 +31,39 @@ transfers:
 
 routes: 
   - 
-    name: Línea 1
     type: subway
     ref: L1
-    station_count: 26
+    name: Línea 1
     colour: '#228b22'
+    station_count: 26
+    stations: 
+      - Estación "Villa El Salvador"
+      - Estación "Parque Industrial"
+      - Estación "Pumacahua"
+      - Estación "Villa María"
+      - Estación "María Auxiliadora"
+      - Estación "San Juan"
+      - Estación "Atocongo"
+      - Estación "Jorge Chávez"
+      - Estación "Ayacucho"
+      - Estación "Cabitos"
+      - Estación Angamos
+      - Estación "San Borja Sur"
+      - Estación "La Cultura"
+      - Estación "Arrola"
+      - Estación "Gamarra"
+      - Estación "Miguel Grau"
+      - Estación "El Ángel"
+      - Estación "Presbítero Maestro"
+      - Estación "Caja de Agua"
+      - Estación "Pirámide del Sol"
+      - Estación "Los Jardines"
+      - Estación "Los Postes"
+      - Estación "San Carlos"
+      - Estación "San Martín"
+      - Estación "Santa Rosa"
+      - Estación "Bayóvar"
+
     itineraries: 
       r1408101: 
         - Estación Villa El Salvador (n5309263907)
@@ -93,33 +121,5 @@ routes:
         - Estación Parque Industrial (n5309284750)
         - Estación Villa El Salvador (n5309263907)
 
-
-    stations: 
-      - Estación "Bayóvar"
-      - Estación "Santa Rosa"
-      - Estación "San Martín"
-      - Estación "San Carlos"
-      - Estación "Los Postes"
-      - Estación "Los Jardines"
-      - Estación "Pirámide del Sol"
-      - Estación "Caja de Agua"
-      - Estación "Presbítero Maestro"
-      - Estación "El Ángel"
-      - Estación "Miguel Grau"
-      - Estación "Gamarra"
-      - Estación "Arrola"
-      - Estación "La Cultura"
-      - Estación "San Borja Sur"
-      - Estación Angamos
-      - Estación "Cabitos"
-      - Estación "Ayacucho"
-      - Estación "Jorge Chávez"
-      - Estación "Atocongo"
-      - Estación "San Juan"
-      - Estación "María Auxiliadora"
-      - Estación "Villa María"
-      - Estación "Pumacahua"
-      - Estación "Parque Industrial"
-      - Estación "Villa El Salvador"
 
 

@@ -15,57 +15,44 @@ transfers:
 
 routes: 
   - 
-    name: Airport Line
     type: train
     ref: GAUTRAIN
-    station_count: 3
+    name: Airport Line
     colour: '#9d8b57'
-    itineraries: 
-      r10305561: 
-        - O.R. Tambo International Airport (n6983349354)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
+    station_count: 3
+    stations: 
+      - Sandton
+      - Marlboro
+      - O.R. Tambo International Airport
 
+    itineraries: 
       r457029: 
         - Sandton (n6983509221)
         - Marlboro (n326083326)
         - O.R. Tambo International Airport (n6983349354)
 
+      r10305561: 
+        - O.R. Tambo International Airport (n6983349354)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
 
-    stations: 
-      - O.R. Tambo International Airport
-      - Marlboro
-      - Sandton
 
   - 
-    name: East-West Commuter Line
     type: train
     ref: GAUTRAIN
-    station_count: 3
-    colour: '#0000ff'
-    itineraries: 
-      r10305544: 
-        - Rhodesfield (n6983349355)
-        - Marlboro (n326083326)
-        - Sandton (n6983509221)
-
-      r1694561: 
-        - Sandton (n6983509221)
-        - Marlboro (n326083326)
-        - Rhodesfield (n6983349355)
-
-
-    stations: 
-      - Rhodesfield (Gautrain)
-      - Marlboro
-      - Sandton
-
-  - 
     name: North-South Commuter Line
-    type: train
-    ref: GAUTRAIN
-    station_count: 8
     colour: '#ff0000'
+    station_count: 8
+    stations: 
+      - Park Station
+      - Rosebank
+      - Sandton
+      - Marlboro
+      - Midrand
+      - Centurion
+      - Pretoria
+      - Hatfield
+
     itineraries: 
       r1021770: 
         - Park Station (n6983463551)
@@ -88,14 +75,27 @@ routes:
         - Park Station (n6983463551)
 
 
+  - 
+    type: train
+    ref: GAUTRAIN
+    name: East-West Commuter Line
+    colour: '#0000ff'
+    station_count: 3
     stations: 
-      - Park Station
-      - Rosebank
       - Sandton
       - Marlboro
-      - Midrand
-      - Centurion
-      - Pretoria
-      - Hatfield
+      - Rhodesfield (Gautrain)
+
+    itineraries: 
+      r1694561: 
+        - Sandton (n6983509221)
+        - Marlboro (n326083326)
+        - Rhodesfield (n6983349355)
+
+      r10305544: 
+        - Rhodesfield (n6983349355)
+        - Marlboro (n326083326)
+        - Sandton (n6983509221)
+
 
 

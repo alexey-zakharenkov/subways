@@ -18,11 +18,26 @@ transfers:
 
 routes: 
   - 
-    name: 小倉線
     type: monorail
     ref: Kokura
-    station_count: 13
+    name: 小倉線
     colour: '#3333ff'
+    station_count: 13
+    stations: 
+      - 企救丘
+      - 志井
+      - 徳力嵐山口
+      - 徳力公団前
+      - 守恒
+      - 競馬場前
+      - 北方
+      - 城野
+      - 片野
+      - 香春口三萩野
+      - 旦過
+      - 平和通
+      - 小倉 (Monorail)
+
     itineraries: 
       r4567944: 
         - 企救丘 (n265931202)
@@ -54,20 +69,5 @@ routes:
         - 志井 (n6704349573)
         - 企救丘 (n265931202)
 
-
-    stations: 
-      - 小倉 (Monorail)
-      - 平和通
-      - 旦過
-      - 香春口三萩野
-      - 片野
-      - 城野
-      - 北方
-      - 競馬場前
-      - 守恒
-      - 徳力公団前
-      - 徳力嵐山口
-      - 志井
-      - 企救丘
 
 

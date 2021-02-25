@@ -13,11 +13,21 @@ transfers:
 
 routes: 
   - 
-    name: 埼玉高速鉄道線
     type: subway
     ref: SR
-    station_count: 8
+    name: 埼玉高速鉄道線
     colour: '#3564af'
+    station_count: 8
+    stations: 
+      - 赤羽岩淵
+      - 川口元郷
+      - 南鳩ヶ谷
+      - 鳩ヶ谷
+      - 新井宿
+      - 戸塚安行
+      - 東川口
+      - 浦和美園
+
     itineraries: 
       r7002081: 
         - 赤羽岩淵 (n5406718981)
@@ -39,15 +49,5 @@ routes:
         - 川口元郷 (n7777248385)
         - 赤羽岩淵 (n5406718981)
 
-
-    stations: 
-      - 赤羽岩淵
-      - 川口元郷
-      - 南鳩ヶ谷
-      - 鳩ヶ谷
-      - 新井宿
-      - 戸塚安行
-      - 東川口
-      - 浦和美園
 
 

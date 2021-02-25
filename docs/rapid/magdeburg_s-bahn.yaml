@@ -33,31 +33,42 @@ transfers:
 
 routes: 
   - 
-    name: S-Bahn S 1
     type: train
     ref: S 1
-    station_count: 28
+    name: S-Bahn S 1
     colour: '#408040'
-    itineraries: 
-      r2379146: 
-        - Schönebeck-Bad Salzelmen (n417328783)
-        - Schönebeck Süd (n4367495838)
-        - Schönebeck (Elbe) (n4465796002)
-        - Schönebeck-Frohse (n32879631)
-        - Magdeburg Südost (n4303444332)
-        - Magdeburg-Salbke (n32879629)
-        - Magdeburg SKET Industriepark (n32879628)
-        - Magdeburg-Buckau (n3381427934)
-        - Magdeburg Hasselbachplatz (n5682467380)
-        - Magdeburg Hauptbahnhof (n3087634633)
-        - Magdeburg-Neustadt (n2776195491)
-        - Magdeburg-Eichenweiler (n5682467383)
-        - Magdeburg-Rothensee (n5682467384)
-        - Barleber See (n5682467385)
-        - Wolmirstedt (n5682467386)
-        - Zielitz Ort (n5682467387)
-        - Zielitz (n5682467388)
+    station_count: 28
+    stations: 
+      - Schönebeck-Bad Salzelmen
+      - Schönebeck Süd
+      - Schönebeck (Elbe)
+      - Schönebeck-Frohse
+      - Magdeburg Südost
+      - Magdeburg-Salbke
+      - Magdeburg SKET Industriepark
+      - Magdeburg-Buckau
+      - Magdeburg Hasselbachplatz
+      - Magdeburg Hauptbahnhof
+      - Magdeburg-Neustadt
+      - Magdeburg-Eichenweiler
+      - Magdeburg-Rothensee
+      - Barleber See
+      - Wolmirstedt
+      - Zielitz Ort
+      - Angern-Rogätz
+      - Mahlwinkel
+      - Tangerhütte
+      - Demker
+      - Stendal Hbf
+      - Stendal-Stadtsee
+      - Eichstedt
+      - Osterburg
+      - Seehausen
+      - Geestgottberg
+      - Wittenberge, Bahnhof
+      - Zielitz
 
+    itineraries: 
       r178795: 
         - Schönebeck-Bad Salzelmen (n417328783)
         - Schönebeck Süd (n4367495838)
@@ -105,6 +116,25 @@ routes:
         - Schönebeck Süd (n4367495838)
         - Schönebeck-Bad Salzelmen (n417328783)
 
+      r2379146: 
+        - Schönebeck-Bad Salzelmen (n417328783)
+        - Schönebeck Süd (n4367495838)
+        - Schönebeck (Elbe) (n4465796002)
+        - Schönebeck-Frohse (n32879631)
+        - Magdeburg Südost (n4303444332)
+        - Magdeburg-Salbke (n32879629)
+        - Magdeburg SKET Industriepark (n32879628)
+        - Magdeburg-Buckau (n3381427934)
+        - Magdeburg Hasselbachplatz (n5682467380)
+        - Magdeburg Hauptbahnhof (n3087634633)
+        - Magdeburg-Neustadt (n2776195491)
+        - Magdeburg-Eichenweiler (n5682467383)
+        - Magdeburg-Rothensee (n5682467384)
+        - Barleber See (n5682467385)
+        - Wolmirstedt (n5682467386)
+        - Zielitz Ort (n5682467387)
+        - Zielitz (n5682467388)
+
       r6604729: 
         - Wittenberge (n3620887012)
         - Geestgottberg (n30226697)
@@ -134,35 +164,5 @@ routes:
         - Schönebeck Süd (n4367495838)
         - Schönebeck-Bad Salzelmen (n417328783)
 
-
-    stations: 
-      - Wittenberge, Bahnhof
-      - Geestgottberg
-      - Seehausen
-      - Osterburg
-      - Eichstedt
-      - Stendal-Stadtsee
-      - Stendal Hbf
-      - Demker
-      - Tangerhütte
-      - Mahlwinkel
-      - Angern-Rogätz
-      - Zielitz Ort
-      - Wolmirstedt
-      - Barleber See
-      - Magdeburg-Rothensee
-      - Magdeburg-Eichenweiler
-      - Magdeburg-Neustadt
-      - Magdeburg Hauptbahnhof
-      - Magdeburg Hasselbachplatz
-      - Magdeburg-Buckau
-      - Magdeburg SKET Industriepark
-      - Magdeburg-Salbke
-      - Magdeburg Südost
-      - Schönebeck-Frohse
-      - Schönebeck (Elbe)
-      - Schönebeck Süd
-      - Schönebeck-Bad Salzelmen
-      - Zielitz
 
 

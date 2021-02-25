@@ -21,35 +21,11 @@ transfers:
 
 routes: 
   - 
-    name: Metro M1
     type: light_rail
     ref: M1
-    station_count: 9
+    name: Metro M1
     colour: '#f1b03e'
-    itineraries: 
-      r7781525: 
-        - UIB (n1362170795)
-        - Son Sardina (n5263686385)
-        - Camí dels Reis (n1362173663)
-        - Gran via Asima (n1362173662)
-        - Son Castelló (n1362173665)
-        - Son Fuster Vell (n1362173666)
-        - 'Son Costa - Son Fortesa (n8048727321)'
-        - Jacint Verdaguer (n8043190541)
-        - Plaça d'Espanya (n5263686386)
-
-      r1664324: 
-        - Plaça d'Espanya (n5263686386)
-        - Jacint Verdaguer (n8043190541)
-        - 'Son Costa - Son Fortesa (n8048727321)'
-        - Son Fuster Vell (n1362173666)
-        - Son Castelló (n1362173665)
-        - Gran via Asima (n1362173662)
-        - Camí dels Reis (n1362173663)
-        - Son Sardina (n5263686385)
-        - UIB (n1362170795)
-
-
+    station_count: 9
     stations: 
       - Plaça d'Espanya (light rail/train station)
       - Jacint Verdaguer
@@ -61,12 +37,48 @@ routes:
       - Son Sardina
       - UIB
 
+    itineraries: 
+      r1664324: 
+        - Plaça d'Espanya (n5263686386)
+        - Jacint Verdaguer (n8043190541)
+        - 'Son Costa - Son Fortesa (n8048727321)'
+        - Son Fuster Vell (n1362173666)
+        - Son Castelló (n1362173665)
+        - Gran via Asima (n1362173662)
+        - Camí dels Reis (n1362173663)
+        - Son Sardina (n5263686385)
+        - UIB (n1362170795)
+
+      r7781525: 
+        - UIB (n1362170795)
+        - Son Sardina (n5263686385)
+        - Camí dels Reis (n1362173663)
+        - Gran via Asima (n1362173662)
+        - Son Castelló (n1362173665)
+        - Son Fuster Vell (n1362173666)
+        - 'Son Costa - Son Fortesa (n8048727321)'
+        - Jacint Verdaguer (n8043190541)
+        - Plaça d'Espanya (n5263686386)
+
+
   - 
-    name: Metro M2
     type: light_rail
     ref: M2
-    station_count: 10
+    name: Metro M2
     colour: '#e93324'
+    station_count: 10
+    stations: 
+      - Plaça d'Espanya (light rail/train station)
+      - Jacint Verdaguer
+      - 'Son Costa - Son Fortesa'
+      - Son Fuster
+      - Son Cladera
+      - Verge de Lluc
+      - es Pont d'Inca
+      - Es Pont d'Inca Nou
+      - Polígon de Marratxí
+      - Marratxí
+
     itineraries: 
       r4635401: 
         - Plaça d'Espanya (n5263686386)
@@ -92,17 +104,5 @@ routes:
         - Jacint Verdaguer (n8043190541)
         - Plaça d'Espanya (n5263686386)
 
-
-    stations: 
-      - Marratxí
-      - Polígon de Marratxí
-      - Es Pont d'Inca Nou
-      - es Pont d'Inca
-      - Verge de Lluc
-      - Son Cladera
-      - Son Fuster
-      - 'Son Costa - Son Fortesa'
-      - Jacint Verdaguer
-      - Plaça d'Espanya (light rail/train station)
 
 

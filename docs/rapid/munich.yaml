@@ -13,7 +13,6 @@ stations:
   - Dülferstraße (n3095464861)
   - Feldmoching (n3189921161)
   - Forstenrieder Allee (n2650093404)
-  - Frankfurter Ring (n28201749)
   - Fraunhoferstraße (n73783822)
   - Freimann (n1594808593)
   - Friedenheimer Straße (n2660339816)
@@ -117,47 +116,11 @@ transfers:
 
 routes: 
   - 
-    name: U-Bahn U1
     type: subway
     ref: U1
-    station_count: 15
+    name: U-Bahn U1
     colour: '#448137'
-    itineraries: 
-      r3502654: 
-        - Olympia-Einkaufszentrum (n3500554803)
-        - Georg-Brauchle-Ring (n28238954)
-        - Westfriedhof (n1189888870)
-        - Gern (n84322745)
-        - Rotkreuzplatz (n84322749)
-        - Maillingerstraße (n84322751)
-        - Stiglmaierplatz (n84322752)
-        - Hauptbahnhof (n3278115861)
-        - Sendlinger Tor (n3372671694)
-        - Fraunhoferstraße (n73783822)
-        - Kolumbusplatz (n2524117388)
-        - Candidplatz (n73793044)
-        - Wettersteinplatz (n2554223954)
-        - Sankt-Quirin-Platz (n73800960)
-        - Mangfallplatz (n73800962)
-
-      r3502653: 
-        - Mangfallplatz (n73800962)
-        - Sankt-Quirin-Platz (n73800960)
-        - Wettersteinplatz (n2554223954)
-        - Candidplatz (n73793044)
-        - Kolumbusplatz (n2524117388)
-        - Fraunhoferstraße (n73783822)
-        - Sendlinger Tor (n3372671694)
-        - Hauptbahnhof (n3278115861)
-        - Stiglmaierplatz (n84322752)
-        - Maillingerstraße (n84322751)
-        - Rotkreuzplatz (n84322749)
-        - Gern (n84322745)
-        - Westfriedhof (n1189888870)
-        - Georg-Brauchle-Ring (n28238954)
-        - Olympia-Einkaufszentrum (n3500554803)
-
-
+    station_count: 15
     stations: 
       - Mangfallplatz
       - Sankt-Quirin-Platz
@@ -175,79 +138,54 @@ routes:
       - Georg-Brauchle-Ring
       - Olympia-Einkaufszentrum
 
+    itineraries: 
+      r3502653: 
+        - Mangfallplatz (n73800962)
+        - Sankt-Quirin-Platz (n73800960)
+        - Wettersteinplatz (n2554223954)
+        - Candidplatz (n73793044)
+        - Kolumbusplatz (n2524117388)
+        - Fraunhoferstraße (n73783822)
+        - Sendlinger Tor (n3372671694)
+        - Hauptbahnhof (n3278115861)
+        - Stiglmaierplatz (n84322752)
+        - Maillingerstraße (n84322751)
+        - Rotkreuzplatz (n84322749)
+        - Gern (n84322745)
+        - Westfriedhof (n1189888870)
+        - Georg-Brauchle-Ring (n28238954)
+        - Olympia-Einkaufszentrum (n3500554803)
+
+      r3502654: 
+        - Olympia-Einkaufszentrum (n3500554803)
+        - Georg-Brauchle-Ring (n28238954)
+        - Westfriedhof (n1189888870)
+        - Gern (n84322745)
+        - Rotkreuzplatz (n84322749)
+        - Maillingerstraße (n84322751)
+        - Stiglmaierplatz (n84322752)
+        - Hauptbahnhof (n3278115861)
+        - Sendlinger Tor (n3372671694)
+        - Fraunhoferstraße (n73783822)
+        - Kolumbusplatz (n2524117388)
+        - Candidplatz (n73793044)
+        - Wettersteinplatz (n2554223954)
+        - Sankt-Quirin-Platz (n73800960)
+        - Mangfallplatz (n73800962)
+
+
   - 
-    name: U-Bahn U2
     type: subway
     ref: U2
-    station_count: 27
+    name: U-Bahn U2
     colour: '#c40f39'
-    itineraries: 
-      r3502585: 
-        - Messestadt Ost (n1692348440)
-        - Messestadt West (n1692348451)
-        - Moosfeld (n1692348456)
-        - Trudering (n3189921562)
-        - Kreillerstraße (n4726482189)
-        - Josephsburg (n1692348402)
-        - Innsbrucker Ring (n4711533262)
-        - Karl-Preis-Platz (n68655296)
-        - Giesing (n3189921261)
-        - Untersbergstraße (n73778052)
-        - Silberhornstraße (n99191054)
-        - Kolumbusplatz (n2524117388)
-        - Fraunhoferstraße (n73783822)
-        - Sendlinger Tor (n3372671694)
-        - Hauptbahnhof (n3278115861)
-        - Königsplatz (n3114658668)
-        - Theresienstraße (n211557411)
-        - Josephsplatz (n247674448)
-        - Hohenzollernplatz (n3142725229)
-        - Scheidplatz (n1927183970)
-        - Milbertshofen (n28202314)
-        - Frankfurter Ring (n28201749)
-        - Am Hart (n28201702)
-        - Harthof (n28205595)
-        - Dülferstraße (n3095464861)
-        - Hasenbergl (n28205626)
-        - Feldmoching (n3189921161)
-
-      r3502584: 
-        - Feldmoching (n3189921161)
-        - Hasenbergl (n28205626)
-        - Dülferstraße (n3095464861)
-        - Harthof (n28205595)
-        - Am Hart (n28201702)
-        - Frankfurter Ring (n28201749)
-        - Milbertshofen (n28202314)
-        - Scheidplatz (n1927183970)
-        - Hohenzollernplatz (n3142725229)
-        - Josephsplatz (n247674448)
-        - Theresienstraße (n211557411)
-        - Königsplatz (n3114658668)
-        - Hauptbahnhof (n3278115861)
-        - Sendlinger Tor (n3372671694)
-        - Fraunhoferstraße (n73783822)
-        - Kolumbusplatz (n2524117388)
-        - Silberhornstraße (n99191054)
-        - Untersbergstraße (n73778052)
-        - Giesing (n3189921261)
-        - Karl-Preis-Platz (n68655296)
-        - Innsbrucker Ring (n4711533262)
-        - Josephsburg (n1692348402)
-        - Kreillerstraße (n4726482189)
-        - Trudering (n3189921562)
-        - Moosfeld (n1692348456)
-        - Messestadt West (n1692348451)
-        - Messestadt Ost (n1692348440)
-
-
+    station_count: 26
     stations: 
       - Feldmoching
       - Hasenbergl
       - Dülferstraße
       - Harthof
       - Am Hart
-      - Frankfurter Ring
       - Milbertshofen
       - Scheidplatz
       - Hohenzollernplatz
@@ -270,68 +208,70 @@ routes:
       - Messestadt West
       - Messestadt Ost
 
+    itineraries: 
+      r3502584: 
+        - Feldmoching (n3189921161)
+        - Hasenbergl (n28205626)
+        - Dülferstraße (n3095464861)
+        - Harthof (n28205595)
+        - Am Hart (n28201702)
+        - Milbertshofen (n28202314)
+        - Scheidplatz (n1927183970)
+        - Hohenzollernplatz (n3142725229)
+        - Josephsplatz (n247674448)
+        - Theresienstraße (n211557411)
+        - Königsplatz (n3114658668)
+        - Hauptbahnhof (n3278115861)
+        - Sendlinger Tor (n3372671694)
+        - Fraunhoferstraße (n73783822)
+        - Kolumbusplatz (n2524117388)
+        - Silberhornstraße (n99191054)
+        - Untersbergstraße (n73778052)
+        - Giesing (n3189921261)
+        - Karl-Preis-Platz (n68655296)
+        - Innsbrucker Ring (n4711533262)
+        - Josephsburg (n1692348402)
+        - Kreillerstraße (n4726482189)
+        - Trudering (n3189921562)
+        - Moosfeld (n1692348456)
+        - Messestadt West (n1692348451)
+        - Messestadt Ost (n1692348440)
+
+      r3502585: 
+        - Messestadt Ost (n1692348440)
+        - Messestadt West (n1692348451)
+        - Moosfeld (n1692348456)
+        - Trudering (n3189921562)
+        - Kreillerstraße (n4726482189)
+        - Josephsburg (n1692348402)
+        - Innsbrucker Ring (n4711533262)
+        - Karl-Preis-Platz (n68655296)
+        - Giesing (n3189921261)
+        - Untersbergstraße (n73778052)
+        - Silberhornstraße (n99191054)
+        - Kolumbusplatz (n2524117388)
+        - Fraunhoferstraße (n73783822)
+        - Sendlinger Tor (n3372671694)
+        - Hauptbahnhof (n3278115861)
+        - Königsplatz (n3114658668)
+        - Theresienstraße (n211557411)
+        - Josephsplatz (n247674448)
+        - Hohenzollernplatz (n3142725229)
+        - Scheidplatz (n1927183970)
+        - Milbertshofen (n28202314)
+        - Am Hart (n28201702)
+        - Harthof (n28205595)
+        - Dülferstraße (n3095464861)
+        - Hasenbergl (n28205626)
+        - Feldmoching (n3189921161)
+
+
   - 
-    name: U-Bahn U3
     type: subway
     ref: U3
-    station_count: 25
+    name: U-Bahn U3
     colour: '#f36f33'
-    itineraries: 
-      r3484046: 
-        - Moosach (n3157666761)
-        - Moosacher Sankt-Martins-Platz (n2650093421)
-        - Olympia-Einkaufszentrum (n2541407104)
-        - Oberwiesenfeld (n2650093433)
-        - Olympiazentrum (n2650093438)
-        - Petuelring (n2650093444)
-        - Scheidplatz (n1927183970)
-        - Bonner Platz (n2650093393)
-        - Münchner Freiheit (n2644689618)
-        - Giselastraße (n2644689600)
-        - Universität (n2644689645)
-        - Odeonsplatz (n1927202337)
-        - Marienplatz (n3189921461)
-        - Sendlinger Tor (n2539850174)
-        - Goetheplatz (n2644689602)
-        - Poccistraße (n2644689622)
-        - Implerstraße (n2562202514)
-        - Brudermühlstraße (n2650093399)
-        - Thalkirchen (n2650093598)
-        - Obersendling (n2650093427)
-        - Aidenbachstraße (n2650093383)
-        - Machtlfinger Straße (n2650093415)
-        - Forstenrieder Allee (n2650093404)
-        - Basler Straße (n2650093388)
-        - Fürstenried West (n2650093410)
-
-      r3484043: 
-        - Fürstenried West (n2650093410)
-        - Basler Straße (n2650093388)
-        - Forstenrieder Allee (n2650093404)
-        - Machtlfinger Straße (n2650093415)
-        - Aidenbachstraße (n2650093383)
-        - Obersendling (n2650093427)
-        - Thalkirchen (n2650093598)
-        - Brudermühlstraße (n2650093399)
-        - Implerstraße (n2562202514)
-        - Poccistraße (n2644689622)
-        - Goetheplatz (n2644689602)
-        - Sendlinger Tor (n2539850174)
-        - Marienplatz (n3189921461)
-        - Odeonsplatz (n1927202337)
-        - Universität (n2644689645)
-        - Giselastraße (n2644689600)
-        - Münchner Freiheit (n2644689618)
-        - Bonner Platz (n2650093393)
-        - Scheidplatz (n1927183970)
-        - Petuelring (n2650093444)
-        - Olympiazentrum (n2650093438)
-        - Oberwiesenfeld (n2650093433)
-        - Olympia-Einkaufszentrum (n2541407104)
-        - Moosacher Sankt-Martins-Platz (n2650093421)
-        - Moosach (n3157666761)
-
-
+    station_count: 25
     stations: 
       - Fürstenried West
       - Basler Straße
@@ -359,12 +299,83 @@ routes:
       - Moosacher Sankt-Martins-Platz
       - Moosach
 
+    itineraries: 
+      r3484043: 
+        - Fürstenried West (n2650093410)
+        - Basler Straße (n2650093388)
+        - Forstenrieder Allee (n2650093404)
+        - Machtlfinger Straße (n2650093415)
+        - Aidenbachstraße (n2650093383)
+        - Obersendling (n2650093427)
+        - Thalkirchen (n2650093598)
+        - Brudermühlstraße (n2650093399)
+        - Implerstraße (n2562202514)
+        - Poccistraße (n2644689622)
+        - Goetheplatz (n2644689602)
+        - Sendlinger Tor (n2539850174)
+        - Marienplatz (n3189921461)
+        - Odeonsplatz (n1927202337)
+        - Universität (n2644689645)
+        - Giselastraße (n2644689600)
+        - Münchner Freiheit (n2644689618)
+        - Bonner Platz (n2650093393)
+        - Scheidplatz (n1927183970)
+        - Petuelring (n2650093444)
+        - Olympiazentrum (n2650093438)
+        - Oberwiesenfeld (n2650093433)
+        - Olympia-Einkaufszentrum (n2541407104)
+        - Moosacher Sankt-Martins-Platz (n2650093421)
+        - Moosach (n3157666761)
+
+      r3484046: 
+        - Moosach (n3157666761)
+        - Moosacher Sankt-Martins-Platz (n2650093421)
+        - Olympia-Einkaufszentrum (n2541407104)
+        - Oberwiesenfeld (n2650093433)
+        - Olympiazentrum (n2650093438)
+        - Petuelring (n2650093444)
+        - Scheidplatz (n1927183970)
+        - Bonner Platz (n2650093393)
+        - Münchner Freiheit (n2644689618)
+        - Giselastraße (n2644689600)
+        - Universität (n2644689645)
+        - Odeonsplatz (n1927202337)
+        - Marienplatz (n3189921461)
+        - Sendlinger Tor (n2539850174)
+        - Goetheplatz (n2644689602)
+        - Poccistraße (n2644689622)
+        - Implerstraße (n2562202514)
+        - Brudermühlstraße (n2650093399)
+        - Thalkirchen (n2650093598)
+        - Obersendling (n2650093427)
+        - Aidenbachstraße (n2650093383)
+        - Machtlfinger Straße (n2650093415)
+        - Forstenrieder Allee (n2650093404)
+        - Basler Straße (n2650093388)
+        - Fürstenried West (n2650093410)
+
+
   - 
-    name: U-Bahn U4
     type: subway
     ref: U4
-    station_count: 13
+    name: U-Bahn U4
     colour: '#10b48d'
+    station_count: 13
+    stations: 
+      - Arabellapark
+      - Richard-Strauss-Straße
+      - Böhmerwaldplatz
+      - Prinzregentenplatz
+      - Max-Weber-Platz
+      - Lehel
+      - Odeonsplatz
+      - Karlsplatz (Stachus)
+      - Hauptbahnhof
+      - Theresienwiese
+      - Schwanthalerhöhe
+      - Heimeranplatz
+      - Westendstraße
+
     itineraries: 
       r3328722: 
         - Arabellapark (n2660339813)
@@ -397,69 +408,12 @@ routes:
         - Arabellapark (n2660339813)
 
 
-    stations: 
-      - Arabellapark
-      - Richard-Strauss-Straße
-      - Böhmerwaldplatz
-      - Prinzregentenplatz
-      - Max-Weber-Platz
-      - Lehel
-      - Odeonsplatz
-      - Karlsplatz (Stachus)
-      - Hauptbahnhof
-      - Theresienwiese
-      - Schwanthalerhöhe
-      - Heimeranplatz
-      - Westendstraße
-
   - 
-    name: U-Bahn U5
     type: subway
     ref: U5
-    station_count: 18
+    name: U-Bahn U5
     colour: '#b77510'
-    itineraries: 
-      r3475205: 
-        - Neuperlach Süd (n3419919093)
-        - Therese-Giehse-Allee (n2660339824)
-        - Neuperlach Zentrum (n2568050650)
-        - Quiddestraße (n1544801370)
-        - Michaelibad (n27214338)
-        - Innsbrucker Ring (n4711533262)
-        - Ostbahnhof (n3189921561)
-        - Max-Weber-Platz (n5184176689)
-        - Lehel (n2660339818)
-        - Odeonsplatz (n3372671294)
-        - Karlsplatz (Stachus) (n2473297786)
-        - Hauptbahnhof (n3278115761)
-        - Theresienwiese (n2660347912)
-        - Schwanthalerhöhe (n2660339823)
-        - Heimeranplatz (n3189921262)
-        - Westendstraße (n2660347913)
-        - Friedenheimer Straße (n2660339816)
-        - Laimer Platz (n2660339821)
-
-      r3475204: 
-        - Laimer Platz (n2660339821)
-        - Friedenheimer Straße (n2660339816)
-        - Westendstraße (n2660347913)
-        - Heimeranplatz (n3189921262)
-        - Schwanthalerhöhe (n2660339823)
-        - Theresienwiese (n2660347912)
-        - Hauptbahnhof (n3278115761)
-        - Karlsplatz (Stachus) (n2473297786)
-        - Odeonsplatz (n3372671294)
-        - Lehel (n2660339818)
-        - Max-Weber-Platz (n5184176689)
-        - Ostbahnhof (n3189921561)
-        - Innsbrucker Ring (n4711533262)
-        - Michaelibad (n27214338)
-        - Quiddestraße (n1544801370)
-        - Neuperlach Zentrum (n2568050650)
-        - Therese-Giehse-Allee (n2660339824)
-        - Neuperlach Süd (n3419919093)
-
-
+    station_count: 18
     stations: 
       - Laimer Platz
       - Friedenheimer Straße
@@ -480,41 +434,83 @@ routes:
       - Therese-Giehse-Allee
       - Neuperlach Süd
 
+    itineraries: 
+      r3475204: 
+        - Laimer Platz (n2660339821)
+        - Friedenheimer Straße (n2660339816)
+        - Westendstraße (n2660347913)
+        - Heimeranplatz (n3189921262)
+        - Schwanthalerhöhe (n2660339823)
+        - Theresienwiese (n2660347912)
+        - Hauptbahnhof (n3278115761)
+        - Karlsplatz (Stachus) (n2473297786)
+        - Odeonsplatz (n3372671294)
+        - Lehel (n2660339818)
+        - Max-Weber-Platz (n5184176689)
+        - Ostbahnhof (n3189921561)
+        - Innsbrucker Ring (n4711533262)
+        - Michaelibad (n27214338)
+        - Quiddestraße (n1544801370)
+        - Neuperlach Zentrum (n2568050650)
+        - Therese-Giehse-Allee (n2660339824)
+        - Neuperlach Süd (n3419919093)
+
+      r3475205: 
+        - Neuperlach Süd (n3419919093)
+        - Therese-Giehse-Allee (n2660339824)
+        - Neuperlach Zentrum (n2568050650)
+        - Quiddestraße (n1544801370)
+        - Michaelibad (n27214338)
+        - Innsbrucker Ring (n4711533262)
+        - Ostbahnhof (n3189921561)
+        - Max-Weber-Platz (n5184176689)
+        - Lehel (n2660339818)
+        - Odeonsplatz (n3372671294)
+        - Karlsplatz (Stachus) (n2473297786)
+        - Hauptbahnhof (n3278115761)
+        - Theresienwiese (n2660347912)
+        - Schwanthalerhöhe (n2660339823)
+        - Heimeranplatz (n3189921262)
+        - Westendstraße (n2660347913)
+        - Friedenheimer Straße (n2660339816)
+        - Laimer Platz (n2660339821)
+
+
   - 
-    name: U-Bahn U6
     type: subway
     ref: U6
-    station_count: 26
+    name: U-Bahn U6
     colour: '#0071bb'
-    itineraries: 
-      r3477961: 
-        - Klinikum Großhadern (n2644689613)
-        - Großhadern (n2644689605)
-        - Haderner Stern (n2644689606)
-        - Holzapfelkreuth (n2644689608)
-        - Westpark (n2644689647)
-        - Partnachplatz (n2644689619)
-        - Harras (n2500604016)
-        - Implerstraße (n2562202514)
-        - Poccistraße (n2644689622)
-        - Goetheplatz (n2644689602)
-        - Sendlinger Tor (n2539850174)
-        - Marienplatz (n3189921461)
-        - Odeonsplatz (n1927202337)
-        - Universität (n2644689645)
-        - Giselastraße (n2644689600)
-        - Münchner Freiheit (n2644689618)
-        - Dietlindenstraße (n2660339815)
-        - Nordfriedhof (n3157044270)
-        - Alte Heide (n1927202335)
-        - Studentenstadt (n1927202338)
-        - Freimann (n1594808593)
-        - Kieferngarten (n2056183985)
-        - Fröttmaning (n2644689596)
-        - Garching-Hochbrück (n2644689599)
-        - Garching (n2644689597)
-        - Garching-Forschungszentrum (n2643681873)
+    station_count: 26
+    stations: 
+      - Garching-Forschungszentrum
+      - Garching
+      - Garching-Hochbrück
+      - Fröttmaning
+      - Kieferngarten
+      - Freimann
+      - Studentenstadt
+      - Alte Heide
+      - Nordfriedhof
+      - Dietlindenstraße
+      - Münchner Freiheit
+      - Giselastraße
+      - Universität
+      - Odeonsplatz
+      - Marienplatz
+      - Sendlinger Tor
+      - Goetheplatz
+      - Poccistraße
+      - Implerstraße
+      - Harras
+      - Partnachplatz
+      - Westpark
+      - Holzapfelkreuth
+      - Haderner Stern
+      - Großhadern
+      - Klinikum Großhadern
 
+    itineraries: 
       r3476787: 
         - Garching-Forschungszentrum (n2643681873)
         - Garching (n2644689597)
@@ -543,41 +539,62 @@ routes:
         - Großhadern (n2644689605)
         - Klinikum Großhadern (n2644689613)
 
+      r3477961: 
+        - Klinikum Großhadern (n2644689613)
+        - Großhadern (n2644689605)
+        - Haderner Stern (n2644689606)
+        - Holzapfelkreuth (n2644689608)
+        - Westpark (n2644689647)
+        - Partnachplatz (n2644689619)
+        - Harras (n2500604016)
+        - Implerstraße (n2562202514)
+        - Poccistraße (n2644689622)
+        - Goetheplatz (n2644689602)
+        - Sendlinger Tor (n2539850174)
+        - Marienplatz (n3189921461)
+        - Odeonsplatz (n1927202337)
+        - Universität (n2644689645)
+        - Giselastraße (n2644689600)
+        - Münchner Freiheit (n2644689618)
+        - Dietlindenstraße (n2660339815)
+        - Nordfriedhof (n3157044270)
+        - Alte Heide (n1927202335)
+        - Studentenstadt (n1927202338)
+        - Freimann (n1594808593)
+        - Kieferngarten (n2056183985)
+        - Fröttmaning (n2644689596)
+        - Garching-Hochbrück (n2644689599)
+        - Garching (n2644689597)
+        - Garching-Forschungszentrum (n2643681873)
 
-    stations: 
-      - Klinikum Großhadern
-      - Großhadern
-      - Haderner Stern
-      - Holzapfelkreuth
-      - Westpark
-      - Partnachplatz
-      - Harras
-      - Implerstraße
-      - Poccistraße
-      - Goetheplatz
-      - Sendlinger Tor
-      - Marienplatz
-      - Odeonsplatz
-      - Universität
-      - Giselastraße
-      - Münchner Freiheit
-      - Dietlindenstraße
-      - Nordfriedhof
-      - Alte Heide
-      - Studentenstadt
-      - Freimann
-      - Kieferngarten
-      - Fröttmaning
-      - Garching-Hochbrück
-      - Garching
-      - Garching-Forschungszentrum
 
   - 
-    name: U-Bahn U7
     type: subway
     ref: U7
-    station_count: 19
+    name: U-Bahn U7
     colour: '#468037'
+    station_count: 19
+    stations: 
+      - Neuperlach Zentrum
+      - Quiddestraße
+      - Michaelibad
+      - Innsbrucker Ring
+      - Karl-Preis-Platz
+      - Giesing
+      - Untersbergstraße
+      - Silberhornstraße
+      - Kolumbusplatz
+      - Fraunhoferstraße
+      - Sendlinger Tor
+      - Hauptbahnhof
+      - Stiglmaierplatz
+      - Maillingerstraße
+      - Rotkreuzplatz
+      - Gern
+      - Westfriedhof
+      - Georg-Brauchle-Ring
+      - Olympia-Einkaufszentrum
+
     itineraries: 
       r3502705: 
         - Neuperlach Zentrum (n2568050650)
@@ -622,14 +639,20 @@ routes:
         - Neuperlach Zentrum (n2568050650)
 
 
+  - 
+    type: subway
+    ref: U8
+    name: U-Bahn U8
+    colour: '#ff6a2f'
+    station_count: 19
     stations: 
-      - Olympia-Einkaufszentrum
-      - Georg-Brauchle-Ring
-      - Westfriedhof
-      - Gern
-      - Rotkreuzplatz
-      - Maillingerstraße
-      - Stiglmaierplatz
+      - Olympiazentrum
+      - Petuelring
+      - Scheidplatz
+      - Hohenzollernplatz
+      - Josephsplatz
+      - Theresienstraße
+      - Königsplatz
       - Hauptbahnhof
       - Sendlinger Tor
       - Fraunhoferstraße
@@ -643,34 +666,7 @@ routes:
       - Quiddestraße
       - Neuperlach Zentrum
 
-  - 
-    name: U-Bahn U8
-    type: subway
-    ref: U8
-    station_count: 19
-    colour: '#ff6a2f'
     itineraries: 
-      r3502708: 
-        - Neuperlach Zentrum (n2568050650)
-        - Quiddestraße (n1544801370)
-        - Michaelibad (n27214338)
-        - Innsbrucker Ring (n4711533262)
-        - Karl-Preis-Platz (n68655296)
-        - Giesing (n3189921261)
-        - Untersbergstraße (n73778052)
-        - Silberhornstraße (n99191054)
-        - Kolumbusplatz (n2524117388)
-        - Fraunhoferstraße (n73783822)
-        - Sendlinger Tor (n3372671694)
-        - Hauptbahnhof (n3278115861)
-        - Königsplatz (n3114658668)
-        - Theresienstraße (n211557411)
-        - Josephsplatz (n247674448)
-        - Hohenzollernplatz (n3142725229)
-        - Scheidplatz (n1927183970)
-        - Petuelring (n2650093444)
-        - Olympiazentrum (n2650093438)
-
       r3502707: 
         - Olympiazentrum (n2650093438)
         - Petuelring (n2650093444)
@@ -692,26 +688,26 @@ routes:
         - Quiddestraße (n1544801370)
         - Neuperlach Zentrum (n2568050650)
 
+      r3502708: 
+        - Neuperlach Zentrum (n2568050650)
+        - Quiddestraße (n1544801370)
+        - Michaelibad (n27214338)
+        - Innsbrucker Ring (n4711533262)
+        - Karl-Preis-Platz (n68655296)
+        - Giesing (n3189921261)
+        - Untersbergstraße (n73778052)
+        - Silberhornstraße (n99191054)
+        - Kolumbusplatz (n2524117388)
+        - Fraunhoferstraße (n73783822)
+        - Sendlinger Tor (n3372671694)
+        - Hauptbahnhof (n3278115861)
+        - Königsplatz (n3114658668)
+        - Theresienstraße (n211557411)
+        - Josephsplatz (n247674448)
+        - Hohenzollernplatz (n3142725229)
+        - Scheidplatz (n1927183970)
+        - Petuelring (n2650093444)
+        - Olympiazentrum (n2650093438)
 
-    stations: 
-      - Neuperlach Zentrum
-      - Quiddestraße
-      - Michaelibad
-      - Innsbrucker Ring
-      - Karl-Preis-Platz
-      - Giesing
-      - Untersbergstraße
-      - Silberhornstraße
-      - Kolumbusplatz
-      - Fraunhoferstraße
-      - Sendlinger Tor
-      - Hauptbahnhof
-      - Königsplatz
-      - Theresienstraße
-      - Josephsplatz
-      - Hohenzollernplatz
-      - Scheidplatz
-      - Petuelring
-      - Olympiazentrum
 
 

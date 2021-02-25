@@ -84,38 +84,158 @@ transfers:
 
 routes: 
   - 
-    name: 'S-Bahn S1: Bamberg <=> Hartmannshof'
     type: train
     ref: S1
-    station_count: 36
+    name: 'S-Bahn S1: Bamberg <=> Hartmannshof'
     colour: '#800000'
+    station_count: 36
+    stations: 
+      - Bamberg
+      - Strullendorf, Bahnhof
+      - Hirschaid Bahnhof
+      - Buttenheim
+      - Eggolsheim
+      - Forchheim (Oberfr.)
+      - Kersbach
+      - Baiersdorf
+      - Bubenreuth
+      - Erlangen
+      - Paul-Gossen-Straße
+      - Erlangen-Bruck
+      - 'Erlangen- Eltersdorf'
+      - Vach
+      - Fürth-Unterfarrnbach
+      - Fürth Hauptbahnhof (train)
+      - Nürnberg Rothenburger Straße
+      - Nürnberg-Steinbühl
+      - Nürnberg Hauptbahnhof
+      - Nürnberg-Dürrenhof
+      - Nürnberg Ostring
+      - Mögeldorf Bahnhof
+      - Nürnberg Rehhof
+      - Nürnberg Laufamholz
+      - Schwaig Bahnhof
+      - Röthenbach an der Pegnitz
+      - Röthenbach Steinberg
+      - Röthenbach Seespitz
+      - Lauf West
+      - Lauf (links der Pegnitz)
+      - Ottensoos
+      - Henfenfeld
+      - Hersbruck (links der Pegnitz)
+      - Happurg
+      - Pommelsbrunn
+      - Hartmannshof
+
     itineraries: 
-      r10466930: 
-        - Lauf (links der Pegnitz) (n4723905508)
-        - Lauf West (n3932344178)
-        - Röthenbach-Seespitze (n3932341379)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Schwaig (n2939764648)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Rothenburger Straße (n1496410277)
-        - Fürth (Bayern) Hauptbahnhof (n32972254)
-        - Fürth-Unterfarrnbach (n4484042260)
+      r539311: 
+        - Bamberg (n2835627177)
+        - Strullendorf (n383748096)
+        - Hirschaid (n4750518792)
+        - Buttenheim (n5406563536)
+        - Eggolsheim (n2649390775)
+        - Forchheim (Oberfr.) (n5318930367)
+        - Kersbach (n4750433288)
+        - Baiersdorf (n4436626591)
+        - Bubenreuth (n244058378)
+        - Erlangen (n4530820005)
+        - Paul-Gossen-Straße (n3896228619)
+        - Erlangen-Bruck (n3733083716)
+        - Erlangen-Eltersdorf (n4403420507)
         - Vach (n4748491835)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Fürth (Bayern) Hauptbahnhof (n32972254)
+        - Nürnberg Rothenburger Straße (n1496410277)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Schwaig (n2939764648)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach-Seespitze (n3932341379)
+        - Lauf West (n3932344178)
+        - Lauf (links der Pegnitz) (n4723905508)
+        - Ottensoos (n3933687319)
+        - Henfenfeld (n4413048448)
+        - Hersbruck (links der Pegnitz) (n2793597405)
+        - Happurg (n3934288457)
+        - Pommelsbrunn (n1081843468)
+        - Hartmannshof (n3934288458)
+
+      r539312: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Fürth-Unterfarrnbach (n4484042260)
         - Erlangen-Eltersdorf (n4403420507)
         - Erlangen-Bruck (n3733083716)
-        - Paul-Gossen-Straße (n3896228619)
         - Erlangen (n4530820005)
-        - Bubenreuth (n244058378)
-        - Baiersdorf (n4436626591)
-        - Kersbach (n4750433288)
+
+      r10452312: 
         - Forchheim (Oberfr.) (n5318930367)
+        - Kersbach (n4750433288)
+        - Baiersdorf (n4436626591)
+        - Bubenreuth (n244058378)
+        - Erlangen (n4530820005)
+        - Paul-Gossen-Straße (n3896228619)
+        - Erlangen-Bruck (n3733083716)
+        - Erlangen-Eltersdorf (n4403420507)
+        - Vach (n4748491835)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Fürth (Bayern) Hauptbahnhof (n32972254)
+        - Nürnberg Rothenburger Straße (n1496410277)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Schwaig (n2939764648)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach-Seespitze (n3932341379)
+        - Lauf West (n3932344178)
+        - Lauf (links der Pegnitz) (n4723905508)
+
+      r10452313: 
+        - Forchheim (Oberfr.) (n5318930367)
+        - Kersbach (n4750433288)
+        - Baiersdorf (n4436626591)
+        - Bubenreuth (n244058378)
+        - Erlangen (n4530820005)
+        - Paul-Gossen-Straße (n3896228619)
+        - Erlangen-Bruck (n3733083716)
+        - Erlangen-Eltersdorf (n4403420507)
+        - Vach (n4748491835)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Fürth (Bayern) Hauptbahnhof (n32972254)
+        - Nürnberg Rothenburger Straße (n1496410277)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg Hauptbahnhof (n4543919208)
+
+      r10452314: 
+        - Erlangen (n4530820005)
+        - Erlangen-Bruck (n3733083716)
+        - Erlangen-Eltersdorf (n4403420507)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Nürnberg Hauptbahnhof (n4543919208)
+
+      r10452315: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Schwaig (n2939764648)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach-Seespitze (n3932341379)
+        - Lauf West (n3932344178)
+        - Lauf (links der Pegnitz) (n4723905508)
 
       r10452316: 
         - Bamberg (n2835627177)
@@ -199,68 +319,6 @@ routes:
         - Henfenfeld (n4413048448)
         - Hersbruck (links der Pegnitz) (n2793597405)
 
-      r10452313: 
-        - Forchheim (Oberfr.) (n5318930367)
-        - Kersbach (n4750433288)
-        - Baiersdorf (n4436626591)
-        - Bubenreuth (n244058378)
-        - Erlangen (n4530820005)
-        - Paul-Gossen-Straße (n3896228619)
-        - Erlangen-Bruck (n3733083716)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Vach (n4748491835)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Fürth (Bayern) Hauptbahnhof (n32972254)
-        - Nürnberg Rothenburger Straße (n1496410277)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Hauptbahnhof (n4543919208)
-
-      r10452384: 
-        - Lauf (links der Pegnitz) (n4723905508)
-        - Lauf West (n3932344178)
-        - Röthenbach-Seespitze (n3932341379)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Schwaig (n2939764648)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Rothenburger Straße (n1496410277)
-        - Fürth (Bayern) Hauptbahnhof (n32972254)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Vach (n4748491835)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Erlangen-Bruck (n3733083716)
-        - Paul-Gossen-Straße (n3896228619)
-        - Erlangen (n4530820005)
-        - Bubenreuth (n244058378)
-        - Baiersdorf (n4436626591)
-        - Kersbach (n4750433288)
-        - Forchheim (Oberfr.) (n5318930367)
-        - Eggolsheim (n2649390775)
-        - Buttenheim (n5406563536)
-        - Hirschaid (n4750518792)
-        - Strullendorf (n383748096)
-        - Bamberg (n2835627177)
-
-      r539312: 
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Erlangen-Bruck (n3733083716)
-        - Erlangen (n4530820005)
-
-      r10452314: 
-        - Erlangen (n4530820005)
-        - Erlangen-Bruck (n3733083716)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Nürnberg Hauptbahnhof (n4543919208)
-
       r10452319: 
         - Nürnberg Hauptbahnhof (n4543919208)
         - Nürnberg-Dürrenhof (n4344458146)
@@ -280,6 +338,34 @@ routes:
         - Happurg (n3934288457)
         - Pommelsbrunn (n1081843468)
         - Hartmannshof (n3934288458)
+
+      r10452377: 
+        - Hersbruck (links der Pegnitz) (n2793597405)
+        - Henfenfeld (n4413048448)
+        - Ottensoos (n3933687319)
+        - Lauf (links der Pegnitz) (n4723905508)
+        - Lauf West (n3932344178)
+        - Röthenbach-Seespitze (n3932341379)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Schwaig (n2939764648)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg Hauptbahnhof (n4543919208)
+
+      r10452378: 
+        - Lauf (links der Pegnitz) (n4723905508)
+        - Lauf West (n3932344178)
+        - Röthenbach-Seespitze (n3932341379)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Schwaig (n2939764648)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Hauptbahnhof (n4543919208)
 
       r10452379: 
         - Hartmannshof (n3934288458)
@@ -318,67 +404,6 @@ routes:
         - Hirschaid (n4750518792)
         - Strullendorf (n383748096)
         - Bamberg (n2835627177)
-
-      r10452382: 
-        - Hartmannshof (n3934288458)
-        - Pommelsbrunn (n1081843468)
-        - Happurg (n3934288457)
-        - Hersbruck (links der Pegnitz) (n2793597405)
-        - Henfenfeld (n4413048448)
-        - Ottensoos (n3933687319)
-        - Lauf (links der Pegnitz) (n4723905508)
-        - Lauf West (n3932344178)
-        - Röthenbach-Seespitze (n3932341379)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Schwaig (n2939764648)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
-
-      r10452312: 
-        - Forchheim (Oberfr.) (n5318930367)
-        - Kersbach (n4750433288)
-        - Baiersdorf (n4436626591)
-        - Bubenreuth (n244058378)
-        - Erlangen (n4530820005)
-        - Paul-Gossen-Straße (n3896228619)
-        - Erlangen-Bruck (n3733083716)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Vach (n4748491835)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Fürth (Bayern) Hauptbahnhof (n32972254)
-        - Nürnberg Rothenburger Straße (n1496410277)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Schwaig (n2939764648)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach-Seespitze (n3932341379)
-        - Lauf West (n3932344178)
-        - Lauf (links der Pegnitz) (n4723905508)
-
-      r10452378: 
-        - Lauf (links der Pegnitz) (n4723905508)
-        - Lauf West (n3932344178)
-        - Röthenbach-Seespitze (n3932341379)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Schwaig (n2939764648)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
 
       r10452380: 
         - Nürnberg Hauptbahnhof (n4543919208)
@@ -426,7 +451,10 @@ routes:
         - Kersbach (n4750433288)
         - Forchheim (Oberfr.) (n5318930367)
 
-      r10452377: 
+      r10452382: 
+        - Hartmannshof (n3934288458)
+        - Pommelsbrunn (n1081843468)
+        - Happurg (n3934288457)
         - Hersbruck (links der Pegnitz) (n2793597405)
         - Henfenfeld (n4413048448)
         - Ottensoos (n3933687319)
@@ -438,7 +466,42 @@ routes:
         - Schwaig (n2939764648)
         - Nürnberg-Laufamholz (n2617507584)
         - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Dürrenhof (n4344458146)
         - Nürnberg Hauptbahnhof (n4543919208)
+
+      r10452384: 
+        - Lauf (links der Pegnitz) (n4723905508)
+        - Lauf West (n3932344178)
+        - Röthenbach-Seespitze (n3932341379)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Schwaig (n2939764648)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg Rothenburger Straße (n1496410277)
+        - Fürth (Bayern) Hauptbahnhof (n32972254)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Vach (n4748491835)
+        - Erlangen-Eltersdorf (n4403420507)
+        - Erlangen-Bruck (n3733083716)
+        - Paul-Gossen-Straße (n3896228619)
+        - Erlangen (n4530820005)
+        - Bubenreuth (n244058378)
+        - Baiersdorf (n4436626591)
+        - Kersbach (n4750433288)
+        - Forchheim (Oberfr.) (n5318930367)
+        - Eggolsheim (n2649390775)
+        - Buttenheim (n5406563536)
+        - Hirschaid (n4750518792)
+        - Strullendorf (n383748096)
+        - Bamberg (n2835627177)
 
       r10466929: 
         - Nürnberg Hauptbahnhof (n4543919208)
@@ -461,128 +524,66 @@ routes:
         - Strullendorf (n383748096)
         - Bamberg (n2835627177)
 
-      r539311: 
-        - Bamberg (n2835627177)
-        - Strullendorf (n383748096)
-        - Hirschaid (n4750518792)
-        - Buttenheim (n5406563536)
-        - Eggolsheim (n2649390775)
-        - Forchheim (Oberfr.) (n5318930367)
-        - Kersbach (n4750433288)
-        - Baiersdorf (n4436626591)
-        - Bubenreuth (n244058378)
-        - Erlangen (n4530820005)
-        - Paul-Gossen-Straße (n3896228619)
-        - Erlangen-Bruck (n3733083716)
-        - Erlangen-Eltersdorf (n4403420507)
-        - Vach (n4748491835)
-        - Fürth-Unterfarrnbach (n4484042260)
-        - Fürth (Bayern) Hauptbahnhof (n32972254)
-        - Nürnberg Rothenburger Straße (n1496410277)
+      r10466930: 
+        - Lauf (links der Pegnitz) (n4723905508)
+        - Lauf West (n3932344178)
+        - Röthenbach-Seespitze (n3932341379)
+        - Röthenbach-Steinberg (n4696884850)
+        - Röthenbach an der Pegnitz (n3932341378)
+        - Schwaig (n2939764648)
+        - Nürnberg-Laufamholz (n2617507584)
+        - Nürnberg Rehhof (n771990192)
+        - Nürnberg-Mögeldorf (n2617584782)
+        - Nürnberg Ostring (n5406590095)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Hauptbahnhof (n4543919208)
         - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Schwaig (n2939764648)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach-Seespitze (n3932341379)
-        - Lauf West (n3932344178)
-        - Lauf (links der Pegnitz) (n4723905508)
-        - Ottensoos (n3933687319)
-        - Henfenfeld (n4413048448)
-        - Hersbruck (links der Pegnitz) (n2793597405)
-        - Happurg (n3934288457)
-        - Pommelsbrunn (n1081843468)
-        - Hartmannshof (n3934288458)
+        - Nürnberg Rothenburger Straße (n1496410277)
+        - Fürth (Bayern) Hauptbahnhof (n32972254)
+        - Fürth-Unterfarrnbach (n4484042260)
+        - Vach (n4748491835)
+        - Erlangen-Eltersdorf (n4403420507)
+        - Erlangen-Bruck (n3733083716)
+        - Paul-Gossen-Straße (n3896228619)
+        - Erlangen (n4530820005)
+        - Bubenreuth (n244058378)
+        - Baiersdorf (n4436626591)
+        - Kersbach (n4750433288)
+        - Forchheim (Oberfr.) (n5318930367)
 
-      r10452315: 
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Ostring (n5406590095)
-        - Nürnberg-Mögeldorf (n2617584782)
-        - Nürnberg Rehhof (n771990192)
-        - Nürnberg-Laufamholz (n2617507584)
-        - Schwaig (n2939764648)
-        - Röthenbach an der Pegnitz (n3932341378)
-        - Röthenbach-Steinberg (n4696884850)
-        - Röthenbach-Seespitze (n3932341379)
-        - Lauf West (n3932344178)
-        - Lauf (links der Pegnitz) (n4723905508)
-
-
-    stations: 
-      - Forchheim (Oberfr.)
-      - Kersbach
-      - Baiersdorf
-      - Bubenreuth
-      - Erlangen
-      - Paul-Gossen-Straße
-      - Erlangen-Bruck
-      - 'Erlangen- Eltersdorf'
-      - Vach
-      - Fürth-Unterfarrnbach
-      - Fürth Hauptbahnhof (train)
-      - Nürnberg Rothenburger Straße
-      - Nürnberg-Steinbühl
-      - Nürnberg Hauptbahnhof
-      - Nürnberg-Dürrenhof
-      - Nürnberg Ostring
-      - Mögeldorf Bahnhof
-      - Nürnberg Rehhof
-      - Nürnberg Laufamholz
-      - Schwaig Bahnhof
-      - Röthenbach an der Pegnitz
-      - Röthenbach Steinberg
-      - Röthenbach Seespitz
-      - Lauf West
-      - Lauf (links der Pegnitz)
-      - Ottensoos
-      - Henfenfeld
-      - Hersbruck (links der Pegnitz)
-      - Happurg
-      - Pommelsbrunn
-      - Hartmannshof
-      - Bamberg
-      - Strullendorf, Bahnhof
-      - Hirschaid Bahnhof
-      - Buttenheim
-      - Eggolsheim
 
   - 
-    name: 'S-Bahn S2: Roth <=> Altdorf (bei Nürnberg)'
     type: train
     ref: S2
-    station_count: 23
+    name: 'S-Bahn S2: Roth <=> Altdorf (bei Nürnberg)'
     colour: '#65b949'
-    itineraries: 
-      r544078: 
-        - Roth (n6535087920)
-        - Büchenbach (n319806465)
-        - Rednitzhembach (n33678165)
-        - Schwabach (n661014636)
-        - Schwabach-Limbach (n5461042403)
-        - Katzwang (n33325342)
-        - Reichelsdorfer Keller (n33555744)
-        - Nürnberg-Reichelsdorf (n317951337)
-        - Nürnberg-Eibach (n2617379474)
-        - Nürnberg-Sandreuth (n5320396623)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg-Gleißhammer (n5406591841)
-        - Nürnberg-Dutzendteich (n5320406444)
-        - Nürnberg Frankenstadion (n2975445573)
-        - Feucht (n3739665784)
-        - Feucht-Moosbach (n48860925)
-        - Winkelhaid (n4748522923)
-        - Ludersheim (n4739542462)
-        - Altdorf West (n6752608691)
-        - Altdorf (b Nürnberg) (n5318924226)
+    station_count: 23
+    stations: 
+      - Altdorf (b Nürnberg)
+      - Altdorf West
+      - Ludersheim
+      - Winkelhaid
+      - Feucht-Moosbach
+      - Feucht
+      - Fischbach (bei Nürnberg)
+      - Frankenstadion
+      - Nürnberg-Dutzendteich
+      - Nürnberg-Gleißhammer
+      - Nürnberg-Dürrenhof
+      - Nürnberg Hauptbahnhof
+      - Nürnberg-Steinbühl
+      - Nürnberg-Sandreuth
+      - Nürnberg-Eibach
+      - Nürnberg-Reichelsdorf
+      - Reichelsdorfer Keller
+      - Katzwang
+      - Schwabach-Limbach
+      - Schwabach
+      - Rednitzhembach
+      - Büchenbach
+      - Roth
 
+    itineraries: 
       r453601: 
         - Altdorf (b Nürnberg) (n5318924226)
         - Altdorf West (n6752608691)
@@ -608,48 +609,23 @@ routes:
         - Büchenbach (n319806465)
         - Roth (n6535087920)
 
-      r10517551: 
-        - Altdorf (b Nürnberg) (n5318924226)
-        - Altdorf West (n6752608691)
-        - Ludersheim (n4739542462)
-        - Winkelhaid (n4748522923)
-        - Feucht-Moosbach (n48860925)
-        - Feucht (n3739665784)
-        - Fischbach (bei Nürnberg) (n1367866577)
-        - Nürnberg Frankenstadion (n2975445573)
-        - Nürnberg-Dutzendteich (n5320406444)
-        - Nürnberg-Gleißhammer (n5406591841)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg-Sandreuth (n5320396623)
-        - Nürnberg-Eibach (n2617379474)
-        - Nürnberg-Reichelsdorf (n317951337)
-        - Reichelsdorfer Keller (n33555744)
-        - Katzwang (n33325342)
-        - Schwabach-Limbach (n5461042403)
-        - Schwabach (n661014636)
-
-      r10517552: 
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Steinbühl (n303382157)
-        - Nürnberg-Sandreuth (n5320396623)
-        - Nürnberg-Eibach (n2617379474)
-        - Nürnberg-Reichelsdorf (n317951337)
-        - Katzwang (n33325342)
-        - Schwabach-Limbach (n5461042403)
-        - Schwabach (n661014636)
-        - Rednitzhembach (n33678165)
-        - Büchenbach (n319806465)
+      r544078: 
         - Roth (n6535087920)
-
-      r10512099: 
+        - Büchenbach (n319806465)
+        - Rednitzhembach (n33678165)
+        - Schwabach (n661014636)
+        - Schwabach-Limbach (n5461042403)
+        - Katzwang (n33325342)
+        - Reichelsdorfer Keller (n33555744)
+        - Nürnberg-Reichelsdorf (n317951337)
+        - Nürnberg-Eibach (n2617379474)
+        - Nürnberg-Sandreuth (n5320396623)
+        - Nürnberg-Steinbühl (n303382157)
         - Nürnberg Hauptbahnhof (n4543919208)
         - Nürnberg-Dürrenhof (n4344458146)
         - Nürnberg-Gleißhammer (n5406591841)
         - Nürnberg-Dutzendteich (n5320406444)
         - Nürnberg Frankenstadion (n2975445573)
-        - Fischbach (bei Nürnberg) (n1367866577)
         - Feucht (n3739665784)
         - Feucht-Moosbach (n48860925)
         - Winkelhaid (n4748522923)
@@ -671,20 +647,6 @@ routes:
         - Nürnberg-Steinbühl (n303382157)
         - Nürnberg Hauptbahnhof (n4543919208)
 
-      r10517548: 
-        - Altdorf (b Nürnberg) (n5318924226)
-        - Altdorf West (n6752608691)
-        - Ludersheim (n4739542462)
-        - Winkelhaid (n4748522923)
-        - Feucht-Moosbach (n48860925)
-        - Feucht (n3739665784)
-        - Fischbach (bei Nürnberg) (n1367866577)
-        - Nürnberg Frankenstadion (n2975445573)
-        - Nürnberg-Dutzendteich (n5320406444)
-        - Nürnberg-Gleißhammer (n5406591841)
-        - Nürnberg-Dürrenhof (n4344458146)
-        - Nürnberg Hauptbahnhof (n4543919208)
-
       r10512098: 
         - Schwabach (n661014636)
         - Schwabach-Limbach (n5461042403)
@@ -700,6 +662,34 @@ routes:
         - Nürnberg-Dutzendteich (n5320406444)
         - Nürnberg Frankenstadion (n2975445573)
         - Feucht (n3739665784)
+
+      r10512099: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg-Gleißhammer (n5406591841)
+        - Nürnberg-Dutzendteich (n5320406444)
+        - Nürnberg Frankenstadion (n2975445573)
+        - Fischbach (bei Nürnberg) (n1367866577)
+        - Feucht (n3739665784)
+        - Feucht-Moosbach (n48860925)
+        - Winkelhaid (n4748522923)
+        - Ludersheim (n4739542462)
+        - Altdorf West (n6752608691)
+        - Altdorf (b Nürnberg) (n5318924226)
+
+      r10517548: 
+        - Altdorf (b Nürnberg) (n5318924226)
+        - Altdorf West (n6752608691)
+        - Ludersheim (n4739542462)
+        - Winkelhaid (n4748522923)
+        - Feucht-Moosbach (n48860925)
+        - Feucht (n3739665784)
+        - Fischbach (bei Nürnberg) (n1367866577)
+        - Nürnberg Frankenstadion (n2975445573)
+        - Nürnberg-Dutzendteich (n5320406444)
+        - Nürnberg-Gleißhammer (n5406591841)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Hauptbahnhof (n4543919208)
 
       r10517549: 
         - Feucht (n3739665784)
@@ -738,51 +728,61 @@ routes:
         - Schwabach-Limbach (n5461042403)
         - Schwabach (n661014636)
 
+      r10517551: 
+        - Altdorf (b Nürnberg) (n5318924226)
+        - Altdorf West (n6752608691)
+        - Ludersheim (n4739542462)
+        - Winkelhaid (n4748522923)
+        - Feucht-Moosbach (n48860925)
+        - Feucht (n3739665784)
+        - Fischbach (bei Nürnberg) (n1367866577)
+        - Nürnberg Frankenstadion (n2975445573)
+        - Nürnberg-Dutzendteich (n5320406444)
+        - Nürnberg-Gleißhammer (n5406591841)
+        - Nürnberg-Dürrenhof (n4344458146)
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg-Sandreuth (n5320396623)
+        - Nürnberg-Eibach (n2617379474)
+        - Nürnberg-Reichelsdorf (n317951337)
+        - Reichelsdorfer Keller (n33555744)
+        - Katzwang (n33325342)
+        - Schwabach-Limbach (n5461042403)
+        - Schwabach (n661014636)
 
-    stations: 
-      - Altdorf (b Nürnberg)
-      - Altdorf West
-      - Ludersheim
-      - Winkelhaid
-      - Feucht-Moosbach
-      - Feucht
-      - Fischbach (bei Nürnberg)
-      - Frankenstadion
-      - Nürnberg-Dutzendteich
-      - Nürnberg-Gleißhammer
-      - Nürnberg-Dürrenhof
-      - Nürnberg Hauptbahnhof
-      - Nürnberg-Steinbühl
-      - Nürnberg-Sandreuth
-      - Nürnberg-Eibach
-      - Nürnberg-Reichelsdorf
-      - Reichelsdorfer Keller
-      - Katzwang
-      - Schwabach-Limbach
-      - Schwabach
-      - Rednitzhembach
-      - Büchenbach
-      - Roth
+      r10517552: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Steinbühl (n303382157)
+        - Nürnberg-Sandreuth (n5320396623)
+        - Nürnberg-Eibach (n2617379474)
+        - Nürnberg-Reichelsdorf (n317951337)
+        - Katzwang (n33325342)
+        - Schwabach-Limbach (n5461042403)
+        - Schwabach (n661014636)
+        - Rednitzhembach (n33678165)
+        - Büchenbach (n319806465)
+        - Roth (n6535087920)
+
 
   - 
-    name: 'S-Bahn S3: Nürnberg <=> Neumarkt (Oberpf)'
     type: train
     ref: S3
-    station_count: 10
+    name: 'S-Bahn S3: Nürnberg <=> Neumarkt (Oberpf)'
     colour: '#f05c3d'
-    itineraries: 
-      r536799: 
-        - Neumarkt (Oberpf) (n34003277)
-        - Pölling (n5584767317)
-        - Postbauer-Heng (n5585746660)
-        - Oberferrieden (n5585746947)
-        - Burgthann (n4735884324)
-        - Mimberg (n5585745660)
-        - Ochenbruck (n5585742580)
-        - Feucht Ost (n1041544206)
-        - Feucht (n3739665784)
-        - Nürnberg Hauptbahnhof (n4543919208)
+    station_count: 10
+    stations: 
+      - Nürnberg Hauptbahnhof
+      - Feucht
+      - Feucht Ost
+      - Ochenbruck
+      - Mimberg
+      - Burgthann
+      - Oberferrieden
+      - Postbauer-Heng
+      - Pölling
+      - Neumarkt (Oberpf)
 
+    itineraries: 
       r536798: 
         - Nürnberg Hauptbahnhof (n4543919208)
         - Feucht (n3739665784)
@@ -794,6 +794,18 @@ routes:
         - Postbauer-Heng (n5585746660)
         - Pölling (n5584767317)
         - Neumarkt (Oberpf) (n34003277)
+
+      r536799: 
+        - Neumarkt (Oberpf) (n34003277)
+        - Pölling (n5584767317)
+        - Postbauer-Heng (n5585746660)
+        - Oberferrieden (n5585746947)
+        - Burgthann (n4735884324)
+        - Mimberg (n5585745660)
+        - Ochenbruck (n5585742580)
+        - Feucht Ost (n1041544206)
+        - Feucht (n3739665784)
+        - Nürnberg Hauptbahnhof (n4543919208)
 
       r10511994: 
         - Nürnberg Hauptbahnhof (n4543919208)
@@ -808,69 +820,31 @@ routes:
         - Neumarkt (Oberpf) (n34003277)
 
 
-    stations: 
-      - Nürnberg Hauptbahnhof
-      - Feucht
-      - Feucht Ost
-      - Ochenbruck
-      - Mimberg
-      - Burgthann
-      - Oberferrieden
-      - Postbauer-Heng
-      - Pölling
-      - Neumarkt (Oberpf)
-
   - 
-    name: 'S-Bahn S4: Nürnberg <=> Dombühl'
     type: train
     ref: S4
-    station_count: 16
+    name: 'S-Bahn S4: Nürnberg <=> Dombühl'
     colour: '#000080'
+    station_count: 16
+    stations: 
+      - Nürnberg Hauptbahnhof
+      - Nürnberg-Schweinau
+      - Nürnberg-Stein
+      - Unterasbach
+      - Oberasbach
+      - Anwanden
+      - Roßtal
+      - Roßtal-Wegbrücke
+      - Raitersaich
+      - Heilsbronn
+      - Petersaurach Nord
+      - Wicklesgreuth
+      - Sachsen (bei Ansbach)
+      - Ansbach
+      - Leutershausen-Wiedersbach
+      - Dombühl
+
     itineraries: 
-      r2199208: 
-        - Dombühl (n33648505)
-        - Leutershausen-Wiedersbach (n5267852456)
-        - Ansbach (n15431109)
-        - Sachsen (bei Ansbach) (n5585779224)
-        - Wicklesgreuth (n4611446952)
-        - Petersaurach Nord (n2721530333)
-        - Heilsbronn (n2606266334)
-        - Raitersaich (n696951223)
-        - Roßtal-Wegbrücke (n724314322)
-        - Roßtal (n321375205)
-        - Anwanden (n2606266333)
-        - Oberasbach (n2606266336)
-        - Unterasbach (n1846499856)
-        - Nürnberg-Stein (n15432249)
-        - Nürnberg-Schweinau (n2606266335)
-        - Nürnberg Hauptbahnhof (n4543919208)
-
-      r10511963: 
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Schweinau (n2606266335)
-        - Nürnberg-Stein (n15432249)
-        - Unterasbach (n1846499856)
-        - Oberasbach (n2606266336)
-        - Anwanden (n2606266333)
-        - Roßtal (n321375205)
-        - Roßtal-Wegbrücke (n724314322)
-        - Raitersaich (n696951223)
-        - Heilsbronn (n2606266334)
-        - Petersaurach Nord (n2721530333)
-        - Wicklesgreuth (n4611446952)
-        - Sachsen (bei Ansbach) (n5585779224)
-        - Ansbach (n15431109)
-
-      r10511962: 
-        - Nürnberg Hauptbahnhof (n4543919208)
-        - Nürnberg-Stein (n15432249)
-        - Roßtal (n321375205)
-        - Raitersaich (n696951223)
-        - Heilsbronn (n2606266334)
-        - Petersaurach Nord (n2721530333)
-        - Wicklesgreuth (n4611446952)
-        - Ansbach (n15431109)
-
       r2199151: 
         - Nürnberg Hauptbahnhof (n4543919208)
         - Nürnberg-Schweinau (n2606266335)
@@ -889,6 +863,24 @@ routes:
         - Leutershausen-Wiedersbach (n5267852456)
         - Dombühl (n33648505)
 
+      r2199208: 
+        - Dombühl (n33648505)
+        - Leutershausen-Wiedersbach (n5267852456)
+        - Ansbach (n15431109)
+        - Sachsen (bei Ansbach) (n5585779224)
+        - Wicklesgreuth (n4611446952)
+        - Petersaurach Nord (n2721530333)
+        - Heilsbronn (n2606266334)
+        - Raitersaich (n696951223)
+        - Roßtal-Wegbrücke (n724314322)
+        - Roßtal (n321375205)
+        - Anwanden (n2606266333)
+        - Oberasbach (n2606266336)
+        - Unterasbach (n1846499856)
+        - Nürnberg-Stein (n15432249)
+        - Nürnberg-Schweinau (n2606266335)
+        - Nürnberg Hauptbahnhof (n4543919208)
+
       r10511961: 
         - Ansbach (n15431109)
         - Sachsen (bei Ansbach) (n5585779224)
@@ -905,23 +897,31 @@ routes:
         - Nürnberg-Schweinau (n2606266335)
         - Nürnberg Hauptbahnhof (n4543919208)
 
+      r10511962: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Stein (n15432249)
+        - Roßtal (n321375205)
+        - Raitersaich (n696951223)
+        - Heilsbronn (n2606266334)
+        - Petersaurach Nord (n2721530333)
+        - Wicklesgreuth (n4611446952)
+        - Ansbach (n15431109)
 
-    stations: 
-      - Nürnberg Hauptbahnhof
-      - Nürnberg-Schweinau
-      - Nürnberg-Stein
-      - Unterasbach
-      - Oberasbach
-      - Anwanden
-      - Roßtal
-      - Roßtal-Wegbrücke
-      - Raitersaich
-      - Heilsbronn
-      - Petersaurach Nord
-      - Wicklesgreuth
-      - Sachsen (bei Ansbach)
-      - Ansbach
-      - Leutershausen-Wiedersbach
-      - Dombühl
+      r10511963: 
+        - Nürnberg Hauptbahnhof (n4543919208)
+        - Nürnberg-Schweinau (n2606266335)
+        - Nürnberg-Stein (n15432249)
+        - Unterasbach (n1846499856)
+        - Oberasbach (n2606266336)
+        - Anwanden (n2606266333)
+        - Roßtal (n321375205)
+        - Roßtal-Wegbrücke (n724314322)
+        - Raitersaich (n696951223)
+        - Heilsbronn (n2606266334)
+        - Petersaurach Nord (n2721530333)
+        - Wicklesgreuth (n4611446952)
+        - Sachsen (bei Ansbach) (n5585779224)
+        - Ansbach (n15431109)
+
 
 

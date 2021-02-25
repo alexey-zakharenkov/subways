@@ -58,45 +58,11 @@ transfers:
 
 routes: 
   - 
-    name: Metro A
     type: subway
     ref: A
-    station_count: 14
+    name: Metro A
     colour: '#ee3898'
-    itineraries: 
-      r3687319: 
-        - 'Vaulx-en-Velin - La Soie (n5365154886)'
-        - 'Laurent Bonnevay - Astroballe (n5385038134)'
-        - Cusset (n5385037838)
-        - 'Flachet - Alain Gilles (n5385037696)'
-        - Gratte-Ciel (n5385037695)
-        - 'République - Villeurbanne (n5385037619)'
-        - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
-        - Masséna (n5365589507)
-        - Foch (n5385037483)
-        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
-        - Cordeliers (w332823084)
-        - Bellecour (n5365148732)
-        - 'Ampère - Victor Hugo (n5385036748)'
-        - Perrache (n5385006337)
-
-      r153123: 
-        - Perrache (n5385006337)
-        - 'Ampère - Victor Hugo (n5385036748)'
-        - Bellecour (n5365148732)
-        - Cordeliers (w332823084)
-        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
-        - Foch (n5385037483)
-        - Masséna (n5365589507)
-        - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
-        - 'République - Villeurbanne (n5385037619)'
-        - Gratte-Ciel (n5385037695)
-        - 'Flachet - Alain Gilles (n5385037696)'
-        - Cusset (n5385037838)
-        - 'Laurent Bonnevay - Astroballe (n5385038134)'
-        - 'Vaulx-en-Velin - La Soie (n5365154886)'
-
-
+    station_count: 14
     stations: 
       - Perrache (subway)
       - 'Ampère - Victor Hugo'
@@ -113,25 +79,59 @@ routes:
       - 'Laurent Bonnevay - Astroballe (Ligne A)'
       - 'Vaulx-en-Velin - La Soie'
 
+    itineraries: 
+      r153123: 
+        - Perrache (n5385006337)
+        - 'Ampère - Victor Hugo (n5385036748)'
+        - Bellecour (n5365148732)
+        - Cordeliers (w332823084)
+        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
+        - Foch (n5385037483)
+        - Masséna (n5365589507)
+        - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
+        - 'République - Villeurbanne (n5385037619)'
+        - Gratte-Ciel (n5385037695)
+        - 'Flachet - Alain Gilles (n5385037696)'
+        - Cusset (n5385037838)
+        - 'Laurent Bonnevay - Astroballe (n5385038134)'
+        - 'Vaulx-en-Velin - La Soie (n5365154886)'
+
+      r3687319: 
+        - 'Vaulx-en-Velin - La Soie (n5365154886)'
+        - 'Laurent Bonnevay - Astroballe (n5385038134)'
+        - Cusset (n5385037838)
+        - 'Flachet - Alain Gilles (n5385037696)'
+        - Gratte-Ciel (n5385037695)
+        - 'République - Villeurbanne (n5385037619)'
+        - 'Charpennes - Charles Hernu (Ligne A) (n6022264659)'
+        - Masséna (n5365589507)
+        - Foch (n5385037483)
+        - 'Hôtel de Ville - Louis Pradel (n5365157959)'
+        - Cordeliers (w332823084)
+        - Bellecour (n5365148732)
+        - 'Ampère - Victor Hugo (n5385036748)'
+        - Perrache (n5385006337)
+
+
   - 
-    name: Metro B
     type: subway
     ref: B
-    station_count: 10
+    name: Metro B
     colour: '#007dc5'
-    itineraries: 
-      r3687320: 
-        - Gare d'Oullins (n5365146848)
-        - Stade de Gerland—Le LOU (n5365165135)
-        - Debourg (n5365142247)
-        - Place Jean Jaurès (n5365143994)
-        - Jean Macé (n5385052292)
-        - 'Saxe - Gambetta (n5380092139)'
-        - 'Place Guichard - Bourse du Travail (w337016053)'
-        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
-        - Brotteaux (n5385029707)
-        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
+    station_count: 10
+    stations: 
+      - 'Charpennes - Charles Hernu (Ligne B)'
+      - Brotteaux
+      - 'Gare Part-Dieu - Vivier Merle (Ligne B)'
+      - Place Guichard
+      - 'Saxe - Gambetta (Ligne B)'
+      - Jean Macé
+      - Place Jean Jaurès
+      - Debourg
+      - Stade de Gerland
+      - Pôle Multimodal d'Oullins
 
+    itineraries: 
       r113907: 
         - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
         - Brotteaux (n5385029707)
@@ -144,25 +144,32 @@ routes:
         - Stade de Gerland—Le LOU (n5365165135)
         - Gare d'Oullins (n5365146848)
 
+      r3687320: 
+        - Gare d'Oullins (n5365146848)
+        - Stade de Gerland—Le LOU (n5365165135)
+        - Debourg (n5365142247)
+        - Place Jean Jaurès (n5365143994)
+        - Jean Macé (n5385052292)
+        - 'Saxe - Gambetta (n5380092139)'
+        - 'Place Guichard - Bourse du Travail (w337016053)'
+        - 'Gare Part-Dieu - Vivier Merle (n5385032105)'
+        - Brotteaux (n5385029707)
+        - 'Charpennes - Charles Hernu (Ligne B) (n5365164472)'
 
-    stations: 
-      - Pôle Multimodal d'Oullins
-      - Stade de Gerland
-      - Debourg
-      - Place Jean Jaurès
-      - Jean Macé
-      - 'Saxe - Gambetta (Ligne B)'
-      - Place Guichard
-      - 'Gare Part-Dieu - Vivier Merle (Ligne B)'
-      - Brotteaux
-      - 'Charpennes - Charles Hernu (Ligne B)'
 
   - 
-    name: Metro C
     type: subway
     ref: C
-    station_count: 5
+    name: Metro C
     colour: '#f99d1d'
+    station_count: 5
+    stations: 
+      - 'Hôtel de Ville - Louis Pradel (Ligne C)'
+      - Croix-Paquet
+      - Croix-Rousse
+      - Hénon
+      - Cuire
+
     itineraries: 
       r113906: 
         - 'Hôtel de Ville - Louis Pradel (n5365157959)'
@@ -179,37 +186,30 @@ routes:
         - 'Hôtel de Ville - Louis Pradel (n5365157959)'
 
 
-    stations: 
-      - 'Hôtel de Ville - Louis Pradel (Ligne C)'
-      - Croix-Paquet
-      - Croix-Rousse
-      - Hénon
-      - Cuire
-
   - 
-    name: Metro D
     type: subway
     ref: D
-    station_count: 15
+    name: Metro D
     colour: '#00ac4d'
-    itineraries: 
-      r3687322: 
-        - Vénissieux (n5390305237)
-        - Parilly (n5385027363)
-        - 'Mermoz - Pinel (n5385026358)'
-        - Laennec (n5385022793)
-        - Grange Blanche (n5385025382)
-        - 'Monplaisir - Lumière (n5365180454)'
-        - Sans Souci (n5385025439)
-        - Garibaldi (n5385025147)
-        - 'Saxe - Gambetta (n5380092139)'
-        - Guillotière (n5380090834)
-        - Bellecour (n5365148732)
-        - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
-        - Gorge de Loup (n5365180176)
-        - Valmy (n5380086325)
-        - Gare de Vaise (n5385023672)
+    station_count: 15
+    stations: 
+      - Pôle d'échanges Gare de Vaise
+      - Valmy
+      - Pôle d'échanges Gorge de Loup
+      - 'Vieux Lyon - Cathédrale Saint-Jean'
+      - Bellecour (Ligne D)
+      - Guillotière
+      - 'Saxe - Gambetta (Ligne D)'
+      - Garibaldi (subway)
+      - Sans Souci
+      - 'Monplaisir - Lumière'
+      - Grange Blanche
+      - Laennec
+      - 'Mermoz - Pinel'
+      - Parilly
+      - Gare de Vénissieux
 
+    itineraries: 
       r113903: 
         - Gare de Vaise (n5385023672)
         - Valmy (n5380086325)
@@ -227,22 +227,22 @@ routes:
         - Parilly (n5385027363)
         - Vénissieux (n5390305237)
 
+      r3687322: 
+        - Vénissieux (n5390305237)
+        - Parilly (n5385027363)
+        - 'Mermoz - Pinel (n5385026358)'
+        - Laennec (n5385022793)
+        - Grange Blanche (n5385025382)
+        - 'Monplaisir - Lumière (n5365180454)'
+        - Sans Souci (n5385025439)
+        - Garibaldi (n5385025147)
+        - 'Saxe - Gambetta (n5380092139)'
+        - Guillotière (n5380090834)
+        - Bellecour (n5365148732)
+        - 'Vieux Lyon - Cathédrale Saint-Jean (n5365152101)'
+        - Gorge de Loup (n5365180176)
+        - Valmy (n5380086325)
+        - Gare de Vaise (n5385023672)
 
-    stations: 
-      - Pôle d'échanges Gare de Vaise
-      - Valmy
-      - Pôle d'échanges Gorge de Loup
-      - 'Vieux Lyon - Cathédrale Saint-Jean'
-      - Bellecour (Ligne D)
-      - Guillotière
-      - 'Saxe - Gambetta (Ligne D)'
-      - Garibaldi (subway)
-      - Sans Souci
-      - 'Monplaisir - Lumière'
-      - Grange Blanche
-      - Laennec
-      - 'Mermoz - Pinel'
-      - Parilly
-      - Gare de Vénissieux
 
 

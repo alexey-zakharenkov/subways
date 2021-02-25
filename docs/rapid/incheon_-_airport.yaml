@@ -11,11 +11,19 @@ transfers:
 
 routes: 
   - 
-    name: 인천공항 자기부상철도
     type: monorail
     ref: AM
-    station_count: 6
+    name: 인천공항 자기부상철도
     colour: '#ffff00'
+    station_count: 6
+    stations: 
+      - 인천국제공항
+      - 장기주차장
+      - 합동청사
+      - 파라다이스시티
+      - 워터파크
+      - 용유
+
     itineraries: 
       r7701183: 
         - 인천공항1터미널 (n3832481411)
@@ -33,13 +41,5 @@ routes:
         - 장기주차장 (n7844830751)
         - 인천공항1터미널 (n3832481411)
 
-
-    stations: 
-      - 용유
-      - 워터파크
-      - 파라다이스시티
-      - 합동청사
-      - 장기주차장
-      - 인천국제공항
 
 

@@ -24,13 +24,34 @@ transfers:
 
 routes: 
   - 
-    name: Metro L1R
     type: subway
     ref: L1
-    station_count: 19
+    name: Metro L1R
     colour: '#0033cc'
+    station_count: 19
+    stations: 
+      - Place des Martyrs
+      - Ali Boumendjel
+      - 'Tafourah - Grande Poste'
+      - Khelifa Boukhalfa
+      - 1er Mai
+      - Aïssat Idir
+      - Hamma
+      - Jardin d'essai
+      - Les fusillés
+      - Cité Amirouche
+      - Mer et Soleil
+      - Haï El Badr
+      - 'Bachdjarah - Tennis'
+      - Bachdjerrah
+      - El Harrach Gare
+      - El-Harrach Centre
+      - Ain Naâdja
+      - Gué de Constantine
+      - Station des Ateliers
+
     itineraries: 
-      r8210887: 
+      r289331: 
         - Place des Martyrs (n966535035)
         - علي بومنجل (n966535048)
         - 'Tafourah - Grande Poste (n532001382)'
@@ -43,9 +64,10 @@ routes:
         - Cité Amirouche (n532001496)
         - Mer et Soleil (n3590827124)
         - Haï El Badr (n5571463482)
-        - Station des Ateliers (n3589500559)
-        - Gué de Constantine (n2208811165)
-        - Ain Naâdja (n3589518209)
+        - 'Bachdjarah - Tennis (n6673464969)'
+        - Bachdjerrah (n6673464972)
+        - El Harrach Gare (n6673464971)
+        - El-Harrach Centre (n6673464970)
 
       r6545466: 
         - El-Harrach Centre (n6673464970)
@@ -82,7 +104,7 @@ routes:
         - علي بومنجل (n966535048)
         - Place des Martyrs (n966535035)
 
-      r289331: 
+      r8210887: 
         - Place des Martyrs (n966535035)
         - علي بومنجل (n966535048)
         - 'Tafourah - Grande Poste (n532001382)'
@@ -95,31 +117,9 @@ routes:
         - Cité Amirouche (n532001496)
         - Mer et Soleil (n3590827124)
         - Haï El Badr (n5571463482)
-        - 'Bachdjarah - Tennis (n6673464969)'
-        - Bachdjerrah (n6673464972)
-        - El Harrach Gare (n6673464971)
-        - El-Harrach Centre (n6673464970)
+        - Station des Ateliers (n3589500559)
+        - Gué de Constantine (n2208811165)
+        - Ain Naâdja (n3589518209)
 
-
-    stations: 
-      - El-Harrach Centre
-      - El Harrach Gare
-      - Bachdjerrah
-      - 'Bachdjarah - Tennis'
-      - Haï El Badr
-      - Mer et Soleil
-      - Cité Amirouche
-      - Les fusillés
-      - Jardin d'essai
-      - Hamma
-      - Aïssat Idir
-      - 1er Mai
-      - Khelifa Boukhalfa
-      - 'Tafourah - Grande Poste'
-      - Ali Boumendjel
-      - Place des Martyrs
-      - Station des Ateliers
-      - Gué de Constantine
-      - Ain Naâdja
 
 

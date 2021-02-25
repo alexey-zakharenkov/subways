@@ -568,12 +568,30 @@ transfers:
 
 routes: 
   - 
-    name: 'DLR: Bank - Lewisham'
     type: light_rail
-    infill: '#ffffff'
     ref: B-L
-    station_count: 16
+    name: 'DLR: Bank - Lewisham'
     colour: '#00afad'
+    infill: '#ffffff'
+    station_count: 16
+    stations: 
+      - Lewisham DLR
+      - Elverson Road
+      - Deptford Bridge
+      - Greenwich DLR
+      - Cutty Sark for Maritime Greenwich
+      - Island Gardens
+      - Mudchute
+      - Crossharbour
+      - South Quay
+      - Heron Quays
+      - Canary Wharf DLR
+      - West India Quay
+      - Westferry
+      - Limehouse DLR
+      - Shadwell DLR
+      - Bank DLR
+
     itineraries: 
       r7772555: 
         - Lewisham DLR (n4571439709)
@@ -611,63 +629,13 @@ routes:
         - Lewisham DLR (n4571439709)
 
 
-    stations: 
-      - Bank DLR
-      - Shadwell DLR
-      - Limehouse DLR
-      - Westferry
-      - Canary Wharf DLR
-      - Heron Quays
-      - South Quay
-      - Crossharbour
-      - Mudchute
-      - Island Gardens
-      - Cutty Sark for Maritime Greenwich
-      - Greenwich DLR
-      - Deptford Bridge
-      - Elverson Road
-      - Lewisham DLR
-      - West India Quay
-
   - 
-    name: 'DLR: Bank - Woolwich Arsenal'
     type: light_rail
-    infill: '#ffffff'
     ref: B-WA
-    station_count: 13
+    name: 'DLR: Bank - Woolwich Arsenal'
     colour: '#00afad'
-    itineraries: 
-      r7772558: 
-        - Bank (n1637578440)
-        - Shadwell DLR (n7147489879)
-        - Limehouse DLR (n5469620129)
-        - Westferry (n7132098495)
-        - Poplar (n7147562182)
-        - Blackwall (n6143889611)
-        - East India (n6143889612)
-        - Canning Town (n5585799426)
-        - West Silvertown (n6143889614)
-        - Pontoon Dock (n6143889615)
-        - London City Airport (n6143889613)
-        - King George V (n6143849772)
-        - Woolwich Arsenal DLR (n7132087124)
-
-      r7772557: 
-        - Woolwich Arsenal DLR (n7132087124)
-        - King George V (n6143849772)
-        - London City Airport (n6143889613)
-        - Pontoon Dock (n6143889615)
-        - West Silvertown (n6143889614)
-        - Canning Town (n5585799426)
-        - East India (n6143889612)
-        - Blackwall (n6143889611)
-        - Poplar (n7147562182)
-        - Westferry (n7132098495)
-        - Limehouse DLR (n5469620129)
-        - Shadwell DLR (n7147489879)
-        - Bank (n1637578440)
-
-
+    infill: '#ffffff'
+    station_count: 13
     stations: 
       - Woolwich Arsenal DLR
       - King George V
@@ -683,12 +651,71 @@ routes:
       - Shadwell DLR
       - Bank DLR
 
+    itineraries: 
+      r7772557: 
+        - Woolwich Arsenal DLR (n7132087124)
+        - King George V (n6143849772)
+        - London City Airport (n6143889613)
+        - Pontoon Dock (n6143889615)
+        - West Silvertown (n6143889614)
+        - Canning Town (n5585799426)
+        - East India (n6143889612)
+        - Blackwall (n6143889611)
+        - Poplar (n7147562182)
+        - Westferry (n7132098495)
+        - Limehouse DLR (n5469620129)
+        - Shadwell DLR (n7147489879)
+        - Bank (n1637578440)
+
+      r7772558: 
+        - Bank (n1637578440)
+        - Shadwell DLR (n7147489879)
+        - Limehouse DLR (n5469620129)
+        - Westferry (n7132098495)
+        - Poplar (n7147562182)
+        - Blackwall (n6143889611)
+        - East India (n6143889612)
+        - Canning Town (n5585799426)
+        - West Silvertown (n6143889614)
+        - Pontoon Dock (n6143889615)
+        - London City Airport (n6143889613)
+        - King George V (n6143849772)
+        - Woolwich Arsenal DLR (n7132087124)
+
+
   - 
-    name: Bakerloo line
     type: subway
     ref: Bakerloo
-    station_count: 25
+    name: Bakerloo line
     colour: '#ae6017'
+    station_count: 25
+    stations: 
+      - Harrow & Wealdstone
+      - Kenton
+      - South Kenton
+      - North Wembley
+      - Wembley Central
+      - Stonebridge Park
+      - Harlesden
+      - 'Willesden Junction (Overground - Watford line and Bakerloo line)'
+      - Kensal Green (Overground and Bakerloo line)
+      - Queen's Park
+      - Kilburn Park
+      - Maida Vale
+      - Warwick Avenue
+      - Paddington (Bakerloo line)
+      - Edgware Road (Bakerloo line)
+      - Marylebone (Bakerloo line)
+      - Baker Street (Bakerloo and Jubilee lines)
+      - Regent's Park
+      - Oxford Circus (Bakerloo and Victoria lines)
+      - Piccadilly Circus (Bakerloo line)
+      - Charing Cross (Bakerloo line)
+      - Embankment (Bakerloo line)
+      - Waterloo (Bakerloo and Northern lines)
+      - Lambeth North
+      - Elephant & Castle (Bakerloo line)
+
     itineraries: 
       r102771: 
         - Harrow & Wealdstone (n20455533)
@@ -745,47 +772,208 @@ routes:
         - Harrow & Wealdstone (n20455533)
 
 
-    stations: 
-      - Harrow & Wealdstone
-      - Kenton
-      - South Kenton
-      - North Wembley
-      - Wembley Central
-      - Stonebridge Park
-      - Harlesden
-      - 'Willesden Junction (Overground - Watford line and Bakerloo line)'
-      - Kensal Green (Overground and Bakerloo line)
-      - Queen's Park
-      - Kilburn Park
-      - Maida Vale
-      - Warwick Avenue
-      - Paddington (Bakerloo line)
-      - Edgware Road (Bakerloo line)
-      - Marylebone (Bakerloo line)
-      - Baker Street (Bakerloo and Jubilee lines)
-      - Regent's Park
-      - Oxford Circus (Bakerloo and Victoria lines)
-      - Piccadilly Circus (Bakerloo line)
-      - Charing Cross (Bakerloo line)
-      - Embankment (Bakerloo line)
-      - Waterloo (Bakerloo and Northern lines)
-      - Lambeth North
-      - Elephant & Castle (Bakerloo line)
-
   - 
-    name: Central line
     type: subway
-    infill: '#ffffff'
     ref: Central
-    station_count: 49
+    name: Central line
     colour: '#e42313'
+    infill: '#ffffff'
+    station_count: 49
+    stations: 
+      - Epping
+      - Theydon Bois
+      - Debden
+      - Loughton
+      - Buckhurst Hill
+      - Woodford
+      - South Woodford
+      - Snaresbrook
+      - Leytonstone
+      - Leyton
+      - Stratford (Central line)
+      - Mile End (Central line)
+      - Bethnal Green
+      - Liverpool Street (Central line)
+      - Bank (Central line)
+      - St. Paul's
+      - Chancery Lane
+      - Holborn (Central line)
+      - Tottenham Court Road (Central line)
+      - Oxford Circus (Central line)
+      - Bond Street (Central line)
+      - Marble Arch
+      - Lancaster Gate
+      - Queensway
+      - Notting Hill Gate (Central line)
+      - Holland Park
+      - Shepherd's Bush (Central line)
+      - White City
+      - East Acton
+      - North Acton
+      - Hanger Lane
+      - Perivale
+      - Greenford
+      - Northolt
+      - South Ruislip
+      - Ruislip Gardens
+      - West Ruislip
+      - Wanstead
+      - Redbridge
+      - Gants Hill
+      - Newbury Park
+      - Barkingside
+      - Farlop
+      - Hainault
+      - West Acton
+      - Ealing Broadway
+      - Roding Valley
+      - Chigwell
+      - Grange Hill
+
     itineraries: 
+      r102768: 
+        - Epping (n1950186711)
+        - Theydon Bois (n6353325014)
+        - Debden (n3076573917)
+        - Loughton (n6353329614)
+        - Buckhurst Hill (n3076573914)
+        - Woodford (n6353333968)
+        - South Woodford (n4860750355)
+        - Snaresbrook (n1586683103)
+        - Leytonstone (n5183791821)
+        - Leyton (n6367227349)
+        - Stratford (n5257403774)
+        - Mile End (n3076574236)
+        - Bethnal Green (n6932246807)
+        - London Liverpool Street (n3637436408)
+        - Bank (n1637578440)
+        - St. Paul's (n5475675298)
+        - Chancery Lane (n3076573915)
+        - Holborn (n3693265703)
+        - Tottenham Court Road (n5462552522)
+        - Oxford Circus (n5614077964)
+        - Bond Street (n3076573913)
+        - Marble Arch (n6414013291)
+        - Lancaster Gate (n5183350488)
+        - Queensway (n6486933493)
+        - Notting Hill Gate (n5207201516)
+        - Holland Park (n6472438171)
+        - Shepherd's Bush (n6410181628)
+        - White City (n4514968602)
+        - East Acton (n1525365505)
+        - North Acton (n6150502124)
+        - Hanger Lane (n6357988569)
+        - Perivale (n6346221304)
+        - Greenford (n1736548313)
+        - Northolt (n6343726718)
+        - South Ruislip (n6095751323)
+        - Ruislip Gardens (n21123677)
+        - West Ruislip (n4866262553)
+
+      r7667064: 
+        - White City (n4514968602)
+        - Shepherd's Bush (n6410181628)
+        - Holland Park (n6472438171)
+        - Notting Hill Gate (n5207201516)
+        - Queensway (n6486933493)
+        - Lancaster Gate (n5183350488)
+        - Marble Arch (n6414013291)
+        - Bond Street (n3076573913)
+        - Oxford Circus (n5614077964)
+        - Tottenham Court Road (n5462552522)
+        - Holborn (n3693265703)
+        - Chancery Lane (n3076573915)
+        - St. Paul's (n5475675298)
+        - Bank (n1637578440)
+        - London Liverpool Street (n3637436408)
+        - Bethnal Green (n6932246807)
+        - Mile End (n3076574236)
+        - Stratford (n5257403774)
+        - Leyton (n6367227349)
+        - Leytonstone (n5183791821)
+        - Wanstead (n6486933492)
+        - Redbridge (n34595046)
+        - Gants Hill (n3076573925)
+        - Newbury Park (n5183350489)
+        - Barkingside (n3076573911)
+        - Fairlop (n3076573924)
+        - Hainault (n3076573927)
+
+      r7667065: 
+        - Hainault (n3076573927)
+        - Fairlop (n3076573924)
+        - Barkingside (n3076573911)
+        - Newbury Park (n5183350489)
+        - Gants Hill (n3076573925)
+        - Redbridge (n34595046)
+        - Wanstead (n6486933492)
+        - Leytonstone (n5183791821)
+        - Leyton (n6367227349)
+        - Stratford (n5257403774)
+        - Mile End (n3076574236)
+        - Bethnal Green (n6932246807)
+        - London Liverpool Street (n3637436408)
+        - Bank (n1637578440)
+        - St. Paul's (n5475675298)
+        - Chancery Lane (n3076573915)
+        - Holborn (n3693265703)
+        - Tottenham Court Road (n5462552522)
+        - Oxford Circus (n5614077964)
+        - Bond Street (n3076573913)
+        - Marble Arch (n6414013291)
+        - Lancaster Gate (n5183350488)
+        - Queensway (n6486933493)
+        - Notting Hill Gate (n5207201516)
+        - Holland Park (n6472438171)
+        - Shepherd's Bush (n6410181628)
+        - White City (n4514968602)
+        - East Acton (n1525365505)
+        - North Acton (n6150502124)
+        - West Acton (n6436743186)
+        - Ealing Broadway (n5585821560)
+
+      r7667066: 
+        - Woodford (n6353333968)
+        - Roding Valley (n3076574238)
+        - Chigwell (n3076573916)
+        - Grange Hill (n3076573926)
+        - Hainault (n3076573927)
+
       r7667067: 
         - Hainault (n3076573927)
         - Grange Hill (n3076573926)
         - Chigwell (n3076573916)
         - Roding Valley (n3076574238)
         - Woodford (n6353333968)
+
+      r7667068: 
+        - Hainault (n3076573927)
+        - Fairlop (n3076573924)
+        - Barkingside (n3076573911)
+        - Newbury Park (n5183350489)
+        - Gants Hill (n3076573925)
+        - Redbridge (n34595046)
+        - Wanstead (n6486933492)
+        - Leytonstone (n5183791821)
+        - Leyton (n6367227349)
+        - Stratford (n5257403774)
+        - Mile End (n3076574236)
+        - Bethnal Green (n6932246807)
+        - London Liverpool Street (n3637436408)
+        - Bank (n1637578440)
+        - St. Paul's (n5475675298)
+        - Chancery Lane (n3076573915)
+        - Holborn (n3693265703)
+        - Tottenham Court Road (n5462552522)
+        - Oxford Circus (n5614077964)
+        - Bond Street (n3076573913)
+        - Marble Arch (n6414013291)
+        - Lancaster Gate (n5183350488)
+        - Queensway (n6486933493)
+        - Notting Hill Gate (n5207201516)
+        - Holland Park (n6472438171)
+        - Shepherd's Bush (n6410181628)
+        - White City (n4514968602)
 
       r7667069: 
         - Ealing Broadway (n5585821560)
@@ -859,241 +1047,51 @@ routes:
         - Theydon Bois (n6353325014)
         - Epping (n1950186711)
 
-      r7667068: 
-        - Hainault (n3076573927)
-        - Fairlop (n3076573924)
-        - Barkingside (n3076573911)
-        - Newbury Park (n5183350489)
-        - Gants Hill (n3076573925)
-        - Redbridge (n34595046)
-        - Wanstead (n6486933492)
-        - Leytonstone (n5183791821)
-        - Leyton (n6367227349)
-        - Stratford (n5257403774)
-        - Mile End (n3076574236)
-        - Bethnal Green (n6932246807)
-        - London Liverpool Street (n3637436408)
-        - Bank (n1637578440)
-        - St. Paul's (n5475675298)
-        - Chancery Lane (n3076573915)
-        - Holborn (n3693265703)
-        - Tottenham Court Road (n5462552522)
-        - Oxford Circus (n5614077964)
-        - Bond Street (n3076573913)
-        - Marble Arch (n6414013291)
-        - Lancaster Gate (n5183350488)
-        - Queensway (n6486933493)
-        - Notting Hill Gate (n5207201516)
-        - Holland Park (n6472438171)
-        - Shepherd's Bush (n6410181628)
-        - White City (n4514968602)
-
-      r7667064: 
-        - White City (n4514968602)
-        - Shepherd's Bush (n6410181628)
-        - Holland Park (n6472438171)
-        - Notting Hill Gate (n5207201516)
-        - Queensway (n6486933493)
-        - Lancaster Gate (n5183350488)
-        - Marble Arch (n6414013291)
-        - Bond Street (n3076573913)
-        - Oxford Circus (n5614077964)
-        - Tottenham Court Road (n5462552522)
-        - Holborn (n3693265703)
-        - Chancery Lane (n3076573915)
-        - St. Paul's (n5475675298)
-        - Bank (n1637578440)
-        - London Liverpool Street (n3637436408)
-        - Bethnal Green (n6932246807)
-        - Mile End (n3076574236)
-        - Stratford (n5257403774)
-        - Leyton (n6367227349)
-        - Leytonstone (n5183791821)
-        - Wanstead (n6486933492)
-        - Redbridge (n34595046)
-        - Gants Hill (n3076573925)
-        - Newbury Park (n5183350489)
-        - Barkingside (n3076573911)
-        - Fairlop (n3076573924)
-        - Hainault (n3076573927)
-
-      r7667066: 
-        - Woodford (n6353333968)
-        - Roding Valley (n3076574238)
-        - Chigwell (n3076573916)
-        - Grange Hill (n3076573926)
-        - Hainault (n3076573927)
-
-      r102768: 
-        - Epping (n1950186711)
-        - Theydon Bois (n6353325014)
-        - Debden (n3076573917)
-        - Loughton (n6353329614)
-        - Buckhurst Hill (n3076573914)
-        - Woodford (n6353333968)
-        - South Woodford (n4860750355)
-        - Snaresbrook (n1586683103)
-        - Leytonstone (n5183791821)
-        - Leyton (n6367227349)
-        - Stratford (n5257403774)
-        - Mile End (n3076574236)
-        - Bethnal Green (n6932246807)
-        - London Liverpool Street (n3637436408)
-        - Bank (n1637578440)
-        - St. Paul's (n5475675298)
-        - Chancery Lane (n3076573915)
-        - Holborn (n3693265703)
-        - Tottenham Court Road (n5462552522)
-        - Oxford Circus (n5614077964)
-        - Bond Street (n3076573913)
-        - Marble Arch (n6414013291)
-        - Lancaster Gate (n5183350488)
-        - Queensway (n6486933493)
-        - Notting Hill Gate (n5207201516)
-        - Holland Park (n6472438171)
-        - Shepherd's Bush (n6410181628)
-        - White City (n4514968602)
-        - East Acton (n1525365505)
-        - North Acton (n6150502124)
-        - Hanger Lane (n6357988569)
-        - Perivale (n6346221304)
-        - Greenford (n1736548313)
-        - Northolt (n6343726718)
-        - South Ruislip (n6095751323)
-        - Ruislip Gardens (n21123677)
-        - West Ruislip (n4866262553)
-
-      r7667065: 
-        - Hainault (n3076573927)
-        - Fairlop (n3076573924)
-        - Barkingside (n3076573911)
-        - Newbury Park (n5183350489)
-        - Gants Hill (n3076573925)
-        - Redbridge (n34595046)
-        - Wanstead (n6486933492)
-        - Leytonstone (n5183791821)
-        - Leyton (n6367227349)
-        - Stratford (n5257403774)
-        - Mile End (n3076574236)
-        - Bethnal Green (n6932246807)
-        - London Liverpool Street (n3637436408)
-        - Bank (n1637578440)
-        - St. Paul's (n5475675298)
-        - Chancery Lane (n3076573915)
-        - Holborn (n3693265703)
-        - Tottenham Court Road (n5462552522)
-        - Oxford Circus (n5614077964)
-        - Bond Street (n3076573913)
-        - Marble Arch (n6414013291)
-        - Lancaster Gate (n5183350488)
-        - Queensway (n6486933493)
-        - Notting Hill Gate (n5207201516)
-        - Holland Park (n6472438171)
-        - Shepherd's Bush (n6410181628)
-        - White City (n4514968602)
-        - East Acton (n1525365505)
-        - North Acton (n6150502124)
-        - West Acton (n6436743186)
-        - Ealing Broadway (n5585821560)
-
-
-    stations: 
-      - Hainault
-      - Farlop
-      - Barkingside
-      - Newbury Park
-      - Gants Hill
-      - Redbridge
-      - Wanstead
-      - Leytonstone
-      - Leyton
-      - Stratford (Central line)
-      - Mile End (Central line)
-      - Bethnal Green
-      - Liverpool Street (Central line)
-      - Bank (Central line)
-      - St. Paul's
-      - Chancery Lane
-      - Holborn (Central line)
-      - Tottenham Court Road (Central line)
-      - Oxford Circus (Central line)
-      - Bond Street (Central line)
-      - Marble Arch
-      - Lancaster Gate
-      - Queensway
-      - Notting Hill Gate (Central line)
-      - Holland Park
-      - Shepherd's Bush (Central line)
-      - White City
-      - East Acton
-      - North Acton
-      - West Acton
-      - Ealing Broadway
-      - Woodford
-      - Roding Valley
-      - Chigwell
-      - Grange Hill
-      - West Ruislip
-      - Ruislip Gardens
-      - South Ruislip
-      - Northolt
-      - Greenford
-      - Perivale
-      - Hanger Lane
-      - Snaresbrook
-      - South Woodford
-      - Buckhurst Hill
-      - Loughton
-      - Debden
-      - Theydon Bois
-      - Epping
 
   - 
-    name: Circle line
     type: subway
     ref: Circle
-    station_count: 35
+    name: Circle line
     colour: '#ffd329'
-    itineraries: 
-      r7671006: 
-        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
-        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
-        - Bayswater (n6411776703)
-        - Notting Hill Gate (n5207201516)
-        - High Street Kensington (n6411792033)
-        - Gloucester Road (n6411992668)
-        - South Kensington (n5183897519)
-        - Sloane Square (n15026054)
-        - Victoria (n441947584)
-        - St. James's Park (n25524263)
-        - Westminster (n25534427)
-        - Embankment (n5207123395)
-        - Temple (n6368951709)
-        - Blackfriars (n3763522921)
-        - Mansion House (n18395696)
-        - Cannon Street (n3637449659)
-        - Monument (n3076574237)
-        - Tower Hill (n6260922569)
-        - Aldgate (n3788735981)
-        - London Liverpool Street (n3637436408)
-        - Moorgate (n5702714876)
-        - Barbican (n3076573910)
-        - Farringdon (n3284103165)
-        - King's Cross St Pancras (n119274464)
-        - Euston Square (n6472516924)
-        - Great Portland Street (n6414039764)
-        - Baker Street (n1264468143)
-        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
-        - Paddington (Circle and Hammersmith & City lines) (n4635572117)
-        - Royal Oak (n6411718929)
-        - Westbourne Park (n6440680616)
-        - Ladbroke Grove (n6460794385)
-        - Latimer Road (n6410209280)
-        - Wood Lane (n5504917479)
-        - Shepherd's Bush Market (n780856)
-        - Goldhawk Road (n6410165090)
-        - Hammersmith (Circle and Hammersmith & City lines) (n5474926328)
+    station_count: 35
+    stations: 
+      - Hammersmith (Circle and Hammersmith & City lines)
+      - Goldhawk Road
+      - Shepherd's Bush Market
+      - Wood Lane
+      - Latimer Road
+      - Ladbroke Grove
+      - Westbourne Park
+      - Royal Oak
+      - Paddington (Circle and District lines)
+      - Edgware Road (Circle, District and Hammersmith & City lines)
+      - Baker Street (Circle and Hammersmith & City lines)
+      - Great Portland Street
+      - Euston Square
+      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
+      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
+      - Barbican
+      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
+      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
+      - Aldgate
+      - Tower Hill
+      - Monument
+      - Cannon Street (Circle and District lines)
+      - Mansion House
+      - Blackfriars
+      - Temple
+      - Embankment (Circle and District lines)
+      - Westminster (Circle and District lines)
+      - St. James's Park
+      - Victoria (Circle and District lines)
+      - Sloane Square
+      - South Kensington (Circle and District lines)
+      - Gloucester Road
+      - High Street Kensington
+      - Notting Hill Gate (Circle and District lines)
+      - Bayswater
 
+    itineraries: 
       r102769: 
         - Hammersmith (Circle and Hammersmith & City lines) (n5474926328)
         - Goldhawk Road (n6410165090)
@@ -1133,51 +1131,197 @@ routes:
         - Paddington (Bakerloo, Circle and District lines) (n1264482797)
         - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
 
+      r7671006: 
+        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
+        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
+        - Bayswater (n6411776703)
+        - Notting Hill Gate (n5207201516)
+        - High Street Kensington (n6411792033)
+        - Gloucester Road (n6411992668)
+        - South Kensington (n5183897519)
+        - Sloane Square (n15026054)
+        - Victoria (n441947584)
+        - St. James's Park (n25524263)
+        - Westminster (n25534427)
+        - Embankment (n5207123395)
+        - Temple (n6368951709)
+        - Blackfriars (n3763522921)
+        - Mansion House (n18395696)
+        - Cannon Street (n3637449659)
+        - Monument (n3076574237)
+        - Tower Hill (n6260922569)
+        - Aldgate (n3788735981)
+        - London Liverpool Street (n3637436408)
+        - Moorgate (n5702714876)
+        - Barbican (n3076573910)
+        - Farringdon (n3284103165)
+        - King's Cross St Pancras (n119274464)
+        - Euston Square (n6472516924)
+        - Great Portland Street (n6414039764)
+        - Baker Street (n1264468143)
+        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
+        - Paddington (Circle and Hammersmith & City lines) (n4635572117)
+        - Royal Oak (n6411718929)
+        - Westbourne Park (n6440680616)
+        - Ladbroke Grove (n6460794385)
+        - Latimer Road (n6410209280)
+        - Wood Lane (n5504917479)
+        - Shepherd's Bush Market (n780856)
+        - Goldhawk Road (n6410165090)
+        - Hammersmith (Circle and Hammersmith & City lines) (n5474926328)
 
-    stations: 
-      - Hammersmith (Circle and Hammersmith & City lines)
-      - Goldhawk Road
-      - Shepherd's Bush Market
-      - Wood Lane
-      - Latimer Road
-      - Ladbroke Grove
-      - Westbourne Park
-      - Royal Oak
-      - Paddington (Circle and District lines)
-      - Edgware Road (Circle, District and Hammersmith & City lines)
-      - Baker Street (Circle and Hammersmith & City lines)
-      - Great Portland Street
-      - Euston Square
-      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
-      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
-      - Barbican
-      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
-      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
-      - Aldgate
-      - Tower Hill
-      - Monument
-      - Cannon Street (Circle and District lines)
-      - Mansion House
-      - Blackfriars
-      - Temple
-      - Embankment (Circle and District lines)
-      - Westminster (Circle and District lines)
-      - St. James's Park
-      - Victoria (Circle and District lines)
-      - Sloane Square
-      - South Kensington (Circle and District lines)
-      - Gloucester Road
-      - High Street Kensington
-      - Notting Hill Gate (Circle and District lines)
-      - Bayswater
 
   - 
-    name: District line
     type: subway
     ref: District
-    station_count: 60
+    name: District line
     colour: '#00a166'
+    station_count: 60
+    stations: 
+      - Ealing Broadway
+      - Ealing Common
+      - Acton Town
+      - Chiswick Park
+      - Turnham Green
+      - Stamford Brook
+      - Ravenscourt Park
+      - Hammersmith (District & Piccadilly lines)
+      - Barons Court
+      - West Kensington
+      - Earl's Court
+      - Gloucester Road
+      - South Kensington (Circle and District lines)
+      - Sloane Square
+      - Victoria (Circle and District lines)
+      - St. James's Park
+      - Westminster (Circle and District lines)
+      - Embankment (Circle and District lines)
+      - Temple
+      - Blackfriars
+      - Mansion House
+      - Cannon Street (Circle and District lines)
+      - Monument
+      - Tower Hill
+      - Aldgate East
+      - Whitechapel
+      - Stepney Green
+      - Mile End (District and Hammersmith & City lines)
+      - Bow Road
+      - Bromley-By-Bow
+      - West Ham (District and Hammersmith & City lines)
+      - Plaistow
+      - Upton Park
+      - East Ham
+      - Barking (District and Hammersmith & City lines)
+      - Upney
+      - Becontree
+      - Dagenham Heathway
+      - Dagenham East
+      - Elm Park
+      - Hornchurch
+      - Upminster Bridge
+      - Upminster (District line)
+      - Edgware Road (Circle, District and Hammersmith & City lines)
+      - Paddington (Circle and District lines)
+      - Bayswater
+      - Notting Hill Gate (Circle and District lines)
+      - High Street Kensington
+      - West Brompton (District line)
+      - Fulham Broadway
+      - Parsons Green
+      - Putney Bridge
+      - East Putney
+      - Southfields
+      - Wimbledon Park
+      - Wimbledon
+      - Kensington (Olympia) (District line)
+      - Gunnersbury
+      - Kew Gardens
+      - Richmond (District line)
+
     itineraries: 
+      r102770: 
+        - Ealing Broadway (n5585821560)
+        - Ealing Common (n5183350492)
+        - Acton Town (n5183843299)
+        - Chiswick Park (n6312813707)
+        - Turnham Green (n6312813706)
+        - Stamford Brook (n6312813705)
+        - Ravenscourt Park (n3749079080)
+        - Hammersmith (District and Piccadilly lines) (n6195731433)
+        - Barons Court (n1651498764)
+        - West Kensington (n5182384968)
+        - Earl's Court (n6340616347)
+        - Gloucester Road (n6411992668)
+        - South Kensington (n5183897519)
+        - Sloane Square (n15026054)
+        - Victoria (n441947584)
+        - St. James's Park (n25524263)
+        - Westminster (n25534427)
+        - Embankment (n5207123395)
+        - Temple (n6368951709)
+        - Blackfriars (n3763522921)
+        - Mansion House (n18395696)
+        - Cannon Street (n3637449659)
+        - Monument (n3076574237)
+        - Tower Hill (n6260922569)
+        - Aldgate East (n4984999298)
+        - Whitechapel (n2426825788)
+        - Stepney Green (n5178413116)
+        - Mile End (n3076574236)
+        - Bow Road (n5178413115)
+        - Bromley-by-Bow (n6402176065)
+        - West Ham (n5252083983)
+        - Plaistow (n5178413114)
+        - Upton Park (n4451063672)
+        - East Ham (n6402129352)
+        - Barking (n6452489646)
+        - Upney (n6466252813)
+        - Becontree (n6340707455)
+        - Dagenham Heathway (n6358827604)
+        - Dagenham East (n6358823742)
+        - Elm Park (n6365838769)
+        - Hornchurch (n6358789875)
+        - Upminster Bridge (n6358768337)
+        - Upminster (n443640800)
+
+      r7677091: 
+        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
+        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
+        - Bayswater (n6411776703)
+        - Notting Hill Gate (n5207201516)
+        - High Street Kensington (n6411792033)
+        - Earl's Court (n6340616347)
+        - West Brompton (n5182384969)
+        - Fulham Broadway (n5142610270)
+        - Parsons Green (n5107248193)
+        - Putney Bridge (n5182424569)
+        - East Putney (n6367262958)
+        - Southfields (n3808897466)
+        - Wimbledon Park (n3748134854)
+        - Wimbledon (n18089211)
+
+      r7677092: 
+        - High Street Kensington (n6411792033)
+        - Earl's Court (n6340616347)
+        - Kensington (Olympia) (n6091112768)
+
+      r7677093: 
+        - Wimbledon (n18089211)
+        - Wimbledon Park (n3748134854)
+        - Southfields (n3808897466)
+        - East Putney (n6367262958)
+        - Putney Bridge (n5182424569)
+        - Parsons Green (n5107248193)
+        - Fulham Broadway (n5142610270)
+        - West Brompton (n5182384969)
+        - Earl's Court (n6340616347)
+        - High Street Kensington (n6411792033)
+        - Notting Hill Gate (n5207201516)
+        - Bayswater (n6411776703)
+        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
+        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
+
       r7677094: 
         - Kensington (Olympia) (n6091112768)
         - Earl's Court (n6340616347)
@@ -1227,21 +1371,49 @@ routes:
         - Kew Gardens (n6448645467)
         - Richmond (n6438780655)
 
-      r7677091: 
-        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
-        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
-        - Bayswater (n6411776703)
-        - Notting Hill Gate (n5207201516)
-        - High Street Kensington (n6411792033)
+      r7677290: 
+        - Richmond (n6438780655)
+        - Kew Gardens (n6448645467)
+        - Gunnersbury (n6438904139)
+        - Turnham Green (n6312813706)
+        - Stamford Brook (n6312813705)
+        - Ravenscourt Park (n3749079080)
+        - Hammersmith (District and Piccadilly lines) (n6195731433)
+        - Barons Court (n1651498764)
+        - West Kensington (n5182384968)
         - Earl's Court (n6340616347)
-        - West Brompton (n5182384969)
-        - Fulham Broadway (n5142610270)
-        - Parsons Green (n5107248193)
-        - Putney Bridge (n5182424569)
-        - East Putney (n6367262958)
-        - Southfields (n3808897466)
-        - Wimbledon Park (n3748134854)
-        - Wimbledon (n18089211)
+        - Gloucester Road (n6411992668)
+        - South Kensington (n5183897519)
+        - Sloane Square (n15026054)
+        - Victoria (n441947584)
+        - St. James's Park (n25524263)
+        - Westminster (n25534427)
+        - Embankment (n5207123395)
+        - Temple (n6368951709)
+        - Blackfriars (n3763522921)
+        - Mansion House (n18395696)
+        - Cannon Street (n3637449659)
+        - Monument (n3076574237)
+        - Tower Hill (n6260922569)
+        - Aldgate East (n4984999298)
+        - Whitechapel (n2426825788)
+        - Stepney Green (n5178413116)
+        - Mile End (n3076574236)
+        - Bow Road (n5178413115)
+        - Bromley-by-Bow (n6402176065)
+        - West Ham (n5252083983)
+        - Plaistow (n5178413114)
+        - Upton Park (n4451063672)
+        - East Ham (n6402129352)
+        - Barking (n6452489646)
+        - Upney (n6466252813)
+        - Becontree (n6340707455)
+        - Dagenham Heathway (n6358827604)
+        - Dagenham East (n6358823742)
+        - Elm Park (n6365838769)
+        - Hornchurch (n6358789875)
+        - Upminster Bridge (n6358768337)
+        - Upminster (n443640800)
 
       r7677292: 
         - Upminster (n443640800)
@@ -1288,50 +1460,40 @@ routes:
         - Ealing Common (n5183350492)
         - Ealing Broadway (n5585821560)
 
-      r102770: 
-        - Ealing Broadway (n5585821560)
-        - Ealing Common (n5183350492)
-        - Acton Town (n5183843299)
-        - Chiswick Park (n6312813707)
-        - Turnham Green (n6312813706)
-        - Stamford Brook (n6312813705)
-        - Ravenscourt Park (n3749079080)
-        - Hammersmith (District and Piccadilly lines) (n6195731433)
-        - Barons Court (n1651498764)
-        - West Kensington (n5182384968)
-        - Earl's Court (n6340616347)
-        - Gloucester Road (n6411992668)
-        - South Kensington (n5183897519)
-        - Sloane Square (n15026054)
-        - Victoria (n441947584)
-        - St. James's Park (n25524263)
-        - Westminster (n25534427)
-        - Embankment (n5207123395)
-        - Temple (n6368951709)
-        - Blackfriars (n3763522921)
-        - Mansion House (n18395696)
-        - Cannon Street (n3637449659)
-        - Monument (n3076574237)
-        - Tower Hill (n6260922569)
-        - Aldgate East (n4984999298)
-        - Whitechapel (n2426825788)
-        - Stepney Green (n5178413116)
-        - Mile End (n3076574236)
-        - Bow Road (n5178413115)
-        - Bromley-by-Bow (n6402176065)
-        - West Ham (n5252083983)
-        - Plaistow (n5178413114)
-        - Upton Park (n4451063672)
-        - East Ham (n6402129352)
+      r11550818: 
         - Barking (n6452489646)
-        - Upney (n6466252813)
-        - Becontree (n6340707455)
-        - Dagenham Heathway (n6358827604)
-        - Dagenham East (n6358823742)
-        - Elm Park (n6365838769)
-        - Hornchurch (n6358789875)
-        - Upminster Bridge (n6358768337)
-        - Upminster (n443640800)
+        - East Ham (n6402129352)
+        - Upton Park (n4451063672)
+        - Plaistow (n5178413114)
+        - West Ham (n5252083983)
+        - Bromley-by-Bow (n6402176065)
+        - Bow Road (n5178413115)
+        - Mile End (n3076574236)
+        - Stepney Green (n5178413116)
+        - Whitechapel (n2426825788)
+        - Aldgate East (n4984999298)
+        - Tower Hill (n6260922569)
+        - Monument (n3076574237)
+        - Cannon Street (n3637449659)
+        - Mansion House (n18395696)
+        - Blackfriars (n3763522921)
+        - Temple (n6368951709)
+        - Embankment (n5207123395)
+        - Westminster (n25534427)
+        - St. James's Park (n25524263)
+        - Victoria (n441947584)
+        - Sloane Square (n15026054)
+        - South Kensington (n5183897519)
+        - Gloucester Road (n6411992668)
+        - Earl's Court (n6340616347)
+        - West Brompton (n5182384969)
+        - Fulham Broadway (n5142610270)
+        - Parsons Green (n5107248193)
+        - Putney Bridge (n5182424569)
+        - East Putney (n6367262958)
+        - Southfields (n3808897466)
+        - Wimbledon Park (n3748134854)
+        - Wimbledon (n18089211)
 
       r11550819: 
         - Wimbledon (n18089211)
@@ -1368,136 +1530,32 @@ routes:
         - East Ham (n6402129352)
         - Barking (n6452489646)
 
-      r11550818: 
-        - Barking (n6452489646)
-        - East Ham (n6402129352)
-        - Upton Park (n4451063672)
-        - Plaistow (n5178413114)
-        - West Ham (n5252083983)
-        - Bromley-by-Bow (n6402176065)
-        - Bow Road (n5178413115)
-        - Mile End (n3076574236)
-        - Stepney Green (n5178413116)
-        - Whitechapel (n2426825788)
-        - Aldgate East (n4984999298)
-        - Tower Hill (n6260922569)
-        - Monument (n3076574237)
-        - Cannon Street (n3637449659)
-        - Mansion House (n18395696)
-        - Blackfriars (n3763522921)
-        - Temple (n6368951709)
-        - Embankment (n5207123395)
-        - Westminster (n25534427)
-        - St. James's Park (n25524263)
-        - Victoria (n441947584)
-        - Sloane Square (n15026054)
-        - South Kensington (n5183897519)
-        - Gloucester Road (n6411992668)
-        - Earl's Court (n6340616347)
-        - West Brompton (n5182384969)
-        - Fulham Broadway (n5142610270)
-        - Parsons Green (n5107248193)
-        - Putney Bridge (n5182424569)
-        - East Putney (n6367262958)
-        - Southfields (n3808897466)
-        - Wimbledon Park (n3748134854)
-        - Wimbledon (n18089211)
 
-      r7677290: 
-        - Richmond (n6438780655)
-        - Kew Gardens (n6448645467)
-        - Gunnersbury (n6438904139)
-        - Turnham Green (n6312813706)
-        - Stamford Brook (n6312813705)
-        - Ravenscourt Park (n3749079080)
-        - Hammersmith (District and Piccadilly lines) (n6195731433)
-        - Barons Court (n1651498764)
-        - West Kensington (n5182384968)
-        - Earl's Court (n6340616347)
-        - Gloucester Road (n6411992668)
-        - South Kensington (n5183897519)
-        - Sloane Square (n15026054)
-        - Victoria (n441947584)
-        - St. James's Park (n25524263)
-        - Westminster (n25534427)
-        - Embankment (n5207123395)
-        - Temple (n6368951709)
-        - Blackfriars (n3763522921)
-        - Mansion House (n18395696)
-        - Cannon Street (n3637449659)
-        - Monument (n3076574237)
-        - Tower Hill (n6260922569)
-        - Aldgate East (n4984999298)
-        - Whitechapel (n2426825788)
-        - Stepney Green (n5178413116)
-        - Mile End (n3076574236)
-        - Bow Road (n5178413115)
-        - Bromley-by-Bow (n6402176065)
-        - West Ham (n5252083983)
-        - Plaistow (n5178413114)
-        - Upton Park (n4451063672)
-        - East Ham (n6402129352)
-        - Barking (n6452489646)
-        - Upney (n6466252813)
-        - Becontree (n6340707455)
-        - Dagenham Heathway (n6358827604)
-        - Dagenham East (n6358823742)
-        - Elm Park (n6365838769)
-        - Hornchurch (n6358789875)
-        - Upminster Bridge (n6358768337)
-        - Upminster (n443640800)
-
-      r7677092: 
-        - High Street Kensington (n6411792033)
-        - Earl's Court (n6340616347)
-        - Kensington (Olympia) (n6091112768)
-
-      r7677093: 
-        - Wimbledon (n18089211)
-        - Wimbledon Park (n3748134854)
-        - Southfields (n3808897466)
-        - East Putney (n6367262958)
-        - Putney Bridge (n5182424569)
-        - Parsons Green (n5107248193)
-        - Fulham Broadway (n5142610270)
-        - West Brompton (n5182384969)
-        - Earl's Court (n6340616347)
-        - High Street Kensington (n6411792033)
-        - Notting Hill Gate (n5207201516)
-        - Bayswater (n6411776703)
-        - Paddington (Bakerloo, Circle and District lines) (n1264482797)
-        - Edgware Road (Circle, District and Hammersmith & City lines) (n2314512860)
-
-
+  - 
+    type: subway
+    ref: Hammersmith & City
+    name: Hammersmith & City line
+    colour: '#f4a9be'
+    station_count: 29
     stations: 
-      - High Street Kensington
-      - Earl's Court
-      - Kensington (Olympia) (District line)
+      - Hammersmith (Circle and Hammersmith & City lines)
+      - Goldhawk Road
+      - Shepherd's Bush Market
+      - Wood Lane
+      - Latimer Road
+      - Ladbroke Grove
+      - Westbourne Park
+      - Royal Oak
+      - Paddington (Circle and Hammersmith & City lines)
       - Edgware Road (Circle, District and Hammersmith & City lines)
-      - Paddington (Circle and District lines)
-      - Bayswater
-      - Notting Hill Gate (Circle and District lines)
-      - West Brompton (District line)
-      - Fulham Broadway
-      - Parsons Green
-      - Putney Bridge
-      - East Putney
-      - Southfields
-      - Wimbledon Park
-      - Wimbledon
-      - Gloucester Road
-      - South Kensington (Circle and District lines)
-      - Sloane Square
-      - Victoria (Circle and District lines)
-      - St. James's Park
-      - Westminster (Circle and District lines)
-      - Embankment (Circle and District lines)
-      - Temple
-      - Blackfriars
-      - Mansion House
-      - Cannon Street (Circle and District lines)
-      - Monument
-      - Tower Hill
+      - Baker Street (Circle and Hammersmith & City lines)
+      - Great Portland Street
+      - Euston Square
+      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
+      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
+      - Barbican
+      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
+      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
       - Aldgate East
       - Whitechapel
       - Stepney Green
@@ -1509,34 +1567,7 @@ routes:
       - Upton Park
       - East Ham
       - Barking (District and Hammersmith & City lines)
-      - Upminster (District line)
-      - Upminster Bridge
-      - Hornchurch
-      - Elm Park
-      - Dagenham East
-      - Dagenham Heathway
-      - Becontree
-      - Upney
-      - West Kensington
-      - Barons Court
-      - Hammersmith (District & Piccadilly lines)
-      - Ravenscourt Park
-      - Stamford Brook
-      - Turnham Green
-      - Gunnersbury
-      - Kew Gardens
-      - Richmond (District line)
-      - Chiswick Park
-      - Acton Town
-      - Ealing Common
-      - Ealing Broadway
 
-  - 
-    name: Hammersmith & City line
-    type: subway
-    ref: Hammersmith & City
-    station_count: 29
-    colour: '#f4a9be'
     itineraries: 
       r102787: 
         - Hammersmith (Circle and Hammersmith & City lines) (n5474926328)
@@ -1601,43 +1632,41 @@ routes:
         - Hammersmith (Circle and Hammersmith & City lines) (n5474926328)
 
 
-    stations: 
-      - Hammersmith (Circle and Hammersmith & City lines)
-      - Goldhawk Road
-      - Shepherd's Bush Market
-      - Wood Lane
-      - Latimer Road
-      - Ladbroke Grove
-      - Westbourne Park
-      - Royal Oak
-      - Paddington (Circle and Hammersmith & City lines)
-      - Edgware Road (Circle, District and Hammersmith & City lines)
-      - Baker Street (Circle and Hammersmith & City lines)
-      - Great Portland Street
-      - Euston Square
-      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
-      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
-      - Barbican
-      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
-      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
-      - Aldgate East
-      - Whitechapel
-      - Stepney Green
-      - Mile End (District and Hammersmith & City lines)
-      - Bow Road
-      - Bromley-By-Bow
-      - West Ham (District and Hammersmith & City lines)
-      - Plaistow
-      - Upton Park
-      - East Ham
-      - Barking (District and Hammersmith & City lines)
-
   - 
-    name: Jubilee line
     type: subway
     ref: Jubilee
-    station_count: 27
+    name: Jubilee line
     colour: '#949699'
+    station_count: 27
+    stations: 
+      - Stratford (Jubilee line)
+      - West Ham (Jubilee line)
+      - Canning Town (Jubilee line)
+      - North Greenwich
+      - Canary Wharf (Jubilee line)
+      - Canada Water (Jubilee line)
+      - Bermondsey
+      - London Bridge (Jubilee line)
+      - Southwark
+      - Waterloo (Jubilee line)
+      - Westminster (Jubilee line)
+      - Green Park (Jubilee line)
+      - Bond Street (Jubilee line)
+      - Baker Street (Bakerloo and Jubilee lines)
+      - St. John's Wood
+      - Swiss Cottage
+      - Finchley Road
+      - West Hampstead
+      - Kilburn
+      - Willesden Green
+      - Dollis Hill
+      - Neasden
+      - Wembley Park
+      - Kingsbury
+      - Queensbury
+      - Canons Park
+      - Stanmore
+
     itineraries: 
       r102773: 
         - Stratford (n5257403774)
@@ -1698,43 +1727,58 @@ routes:
         - Stratford (n5257403774)
 
 
-    stations: 
-      - Stratford (Jubilee line)
-      - West Ham (Jubilee line)
-      - Canning Town (Jubilee line)
-      - North Greenwich
-      - Canary Wharf (Jubilee line)
-      - Canada Water (Jubilee line)
-      - Bermondsey
-      - London Bridge (Jubilee line)
-      - Southwark
-      - Waterloo (Jubilee line)
-      - Westminster (Jubilee line)
-      - Green Park (Jubilee line)
-      - Bond Street (Jubilee line)
-      - Baker Street (Bakerloo and Jubilee lines)
-      - St. John's Wood
-      - Swiss Cottage
-      - Finchley Road
-      - West Hampstead
-      - Kilburn
-      - Willesden Green
-      - Dollis Hill
-      - Neasden
-      - Wembley Park
-      - Kingsbury
-      - Queensbury
-      - Canons Park
-      - Stanmore
-
   - 
-    name: Metropolitan line
     type: subway
     ref: Metropolitan
-    station_count: 34
+    name: Metropolitan line
     colour: '#91005a'
+    station_count: 34
+    stations: 
+      - Aldgate
+      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
+      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
+      - Barbican
+      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
+      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
+      - Euston Square
+      - Great Portland Street
+      - Baker Street (Metropolitan line)
+      - Finchley Road
+      - Wembley Park
+      - Preston Road
+      - Northwick Park
+      - Harrow-on-the-Hill
+      - North Harrow
+      - Pinner
+      - Northwood Hills
+      - Northwood
+      - Moor Park
+      - Rickmansworth
+      - Chorleywood
+      - Chalfont & Latimer
+      - Amersham
+      - Chesham
+      - Watford
+      - Croxley
+      - West Harrow
+      - Rayners Lane
+      - Eastcote
+      - Ruislip Manor
+      - Ruislip
+      - Ickenham
+      - Hillingdon
+      - Uxbridge
+
     itineraries: 
-      r7673619: 
+      r102783: 
+        - Aldgate (n3788735981)
+        - London Liverpool Street (n3637436408)
+        - Moorgate (n5702714876)
+        - Barbican (n3076573910)
+        - Farringdon (n3284103165)
+        - King's Cross St Pancras (n119274464)
+        - Euston Square (n6472516924)
+        - Great Portland Street (n6414039764)
         - Baker Street (n1264468143)
         - Finchley Road (n5183760375)
         - Wembley Park (n469760990)
@@ -1746,72 +1790,10 @@ routes:
         - Northwood Hills (n5183760382)
         - Northwood (n5183760383)
         - Moor Park (n5183350490)
-        - Croxley (n5183760384)
-        - Watford (n5183760385)
-
-      r7673622: 
-        - Amersham (n3501388948)
-        - Chalfont & Latimer (n3517235821)
-        - Chorleywood (n5182456570)
         - Rickmansworth (n5183350491)
-        - Moor Park (n5183350490)
-        - Northwood (n5183760383)
-        - Northwood Hills (n5183760382)
-        - Pinner (n5183760381)
-        - North Harrow (n19135534)
-        - Harrow-on-the-Hill (n5183810356)
-        - Northwick Park (n5183760369)
-        - Preston Road (n5183760370)
-        - Wembley Park (n469760990)
-        - Finchley Road (n5183760375)
-        - Baker Street (n1264468143)
-        - Great Portland Street (n6414039764)
-        - Euston Square (n6472516924)
-        - King's Cross St Pancras (n119274464)
-        - Farringdon (n3284103165)
-        - Barbican (n3076573910)
-        - Moorgate (n5702714876)
-        - London Liverpool Street (n3637436408)
-        - Aldgate (n3788735981)
-
-      r7673617: 
-        - Aldgate (n3788735981)
-        - London Liverpool Street (n3637436408)
-        - Moorgate (n5702714876)
-        - Barbican (n3076573910)
-        - Farringdon (n3284103165)
-        - King's Cross St Pancras (n119274464)
-        - Euston Square (n6472516924)
-        - Great Portland Street (n6414039764)
-        - Baker Street (n1264468143)
-        - Finchley Road (n5183760375)
-        - Wembley Park (n469760990)
-        - Preston Road (n5183760370)
-        - Northwick Park (n5183760369)
-        - Harrow-on-the-Hill (n5183810356)
-        - West Harrow (n5183760376)
-        - Rayners Lane (n6307053733)
-        - Eastcote (n5183760378)
-        - Ruislip Manor (n6342098119)
-        - Ruislip (n6307053732)
-        - Ickenham (n5183760379)
-        - Hillingdon (n6410109228)
-        - Uxbridge (n6410085030)
-
-      r7673616: 
-        - Watford (n5183760385)
-        - Croxley (n5183760384)
-        - Moor Park (n5183350490)
-        - Northwood (n5183760383)
-        - Northwood Hills (n5183760382)
-        - Pinner (n5183760381)
-        - North Harrow (n19135534)
-        - Harrow-on-the-Hill (n5183810356)
-        - Northwick Park (n5183760369)
-        - Preston Road (n5183760370)
-        - Wembley Park (n469760990)
-        - Finchley Road (n5183760375)
-        - Baker Street (n1264468143)
+        - Chorleywood (n5182456570)
+        - Chalfont & Latimer (n3517235821)
+        - Amersham (n3501388948)
 
       r7673614: 
         - Aldgate (n3788735981)
@@ -1838,30 +1820,6 @@ routes:
         - Chalfont & Latimer (n3517235821)
         - Chesham (n4844666610)
 
-      r7673620: 
-        - Uxbridge (n6410085030)
-        - Hillingdon (n6410109228)
-        - Ickenham (n5183760379)
-        - Ruislip (n6307053732)
-        - Ruislip Manor (n6342098119)
-        - Eastcote (n5183760378)
-        - Rayners Lane (n6307053733)
-        - West Harrow (n5183760376)
-        - Harrow-on-the-Hill (n5183810356)
-        - Northwick Park (n5183760369)
-        - Preston Road (n5183760370)
-        - Wembley Park (n469760990)
-        - Finchley Road (n5183760375)
-        - Baker Street (n1264468143)
-        - Great Portland Street (n6414039764)
-        - Euston Square (n6472516924)
-        - King's Cross St Pancras (n119274464)
-        - Farringdon (n3284103165)
-        - Barbican (n3076573910)
-        - Moorgate (n5702714876)
-        - London Liverpool Street (n3637436408)
-        - Aldgate (n3788735981)
-
       r7673615: 
         - Chesham (n4844666610)
         - Chalfont & Latimer (n3517235821)
@@ -1887,7 +1845,22 @@ routes:
         - London Liverpool Street (n3637436408)
         - Aldgate (n3788735981)
 
-      r102783: 
+      r7673616: 
+        - Watford (n5183760385)
+        - Croxley (n5183760384)
+        - Moor Park (n5183350490)
+        - Northwood (n5183760383)
+        - Northwood Hills (n5183760382)
+        - Pinner (n5183760381)
+        - North Harrow (n19135534)
+        - Harrow-on-the-Hill (n5183810356)
+        - Northwick Park (n5183760369)
+        - Preston Road (n5183760370)
+        - Wembley Park (n469760990)
+        - Finchley Road (n5183760375)
+        - Baker Street (n1264468143)
+
+      r7673617: 
         - Aldgate (n3788735981)
         - London Liverpool Street (n3637436408)
         - Moorgate (n5702714876)
@@ -1902,116 +1875,139 @@ routes:
         - Preston Road (n5183760370)
         - Northwick Park (n5183760369)
         - Harrow-on-the-Hill (n5183810356)
+        - West Harrow (n5183760376)
+        - Rayners Lane (n6307053733)
+        - Eastcote (n5183760378)
+        - Ruislip Manor (n6342098119)
+        - Ruislip (n6307053732)
+        - Ickenham (n5183760379)
+        - Hillingdon (n6410109228)
+        - Uxbridge (n6410085030)
+
+      r7673619: 
+        - Baker Street (n1264468143)
+        - Finchley Road (n5183760375)
+        - Wembley Park (n469760990)
+        - Preston Road (n5183760370)
+        - Northwick Park (n5183760369)
+        - Harrow-on-the-Hill (n5183810356)
         - North Harrow (n19135534)
         - Pinner (n5183760381)
         - Northwood Hills (n5183760382)
         - Northwood (n5183760383)
         - Moor Park (n5183350490)
-        - Rickmansworth (n5183350491)
-        - Chorleywood (n5182456570)
-        - Chalfont & Latimer (n3517235821)
+        - Croxley (n5183760384)
+        - Watford (n5183760385)
+
+      r7673620: 
+        - Uxbridge (n6410085030)
+        - Hillingdon (n6410109228)
+        - Ickenham (n5183760379)
+        - Ruislip (n6307053732)
+        - Ruislip Manor (n6342098119)
+        - Eastcote (n5183760378)
+        - Rayners Lane (n6307053733)
+        - West Harrow (n5183760376)
+        - Harrow-on-the-Hill (n5183810356)
+        - Northwick Park (n5183760369)
+        - Preston Road (n5183760370)
+        - Wembley Park (n469760990)
+        - Finchley Road (n5183760375)
+        - Baker Street (n1264468143)
+        - Great Portland Street (n6414039764)
+        - Euston Square (n6472516924)
+        - King's Cross St Pancras (n119274464)
+        - Farringdon (n3284103165)
+        - Barbican (n3076573910)
+        - Moorgate (n5702714876)
+        - London Liverpool Street (n3637436408)
+        - Aldgate (n3788735981)
+
+      r7673622: 
         - Amersham (n3501388948)
+        - Chalfont & Latimer (n3517235821)
+        - Chorleywood (n5182456570)
+        - Rickmansworth (n5183350491)
+        - Moor Park (n5183350490)
+        - Northwood (n5183760383)
+        - Northwood Hills (n5183760382)
+        - Pinner (n5183760381)
+        - North Harrow (n19135534)
+        - Harrow-on-the-Hill (n5183810356)
+        - Northwick Park (n5183760369)
+        - Preston Road (n5183760370)
+        - Wembley Park (n469760990)
+        - Finchley Road (n5183760375)
+        - Baker Street (n1264468143)
+        - Great Portland Street (n6414039764)
+        - Euston Square (n6472516924)
+        - King's Cross St Pancras (n119274464)
+        - Farringdon (n3284103165)
+        - Barbican (n3076573910)
+        - Moorgate (n5702714876)
+        - London Liverpool Street (n3637436408)
+        - Aldgate (n3788735981)
 
-
-    stations: 
-      - Aldgate
-      - Liverpool Street (Circle, Hammersmith & City and Metropolitan lines)
-      - Moorgate (Circle, Hammersmith & City and Metropolitan lines)
-      - Barbican
-      - Farringdon (Circle, Hammersmith & City and Metropolitan lines)
-      - King's Cross St Pancras (Circle, Hammersmith & City and Metropolitan lines)
-      - Euston Square
-      - Great Portland Street
-      - Baker Street (Metropolitan line)
-      - Finchley Road
-      - Wembley Park
-      - Preston Road
-      - Northwick Park
-      - Harrow-on-the-Hill
-      - North Harrow
-      - Pinner
-      - Northwood Hills
-      - Northwood
-      - Moor Park
-      - Rickmansworth
-      - Chorleywood
-      - Chalfont & Latimer
-      - Chesham
-      - Uxbridge
-      - Hillingdon
-      - Ickenham
-      - Ruislip
-      - Ruislip Manor
-      - Eastcote
-      - Rayners Lane
-      - West Harrow
-      - Amersham
-      - Croxley
-      - Watford
 
   - 
-    name: Northern line
     type: subway
     ref: Northern
-    station_count: 50
+    name: Northern line
     colour: '#000000'
+    station_count: 50
+    stations: 
+      - Edgware
+      - Burnt Oak
+      - Colindale
+      - Hendon Central
+      - Brent Cross
+      - Golders Green
+      - Hampstead
+      - Belsize Park
+      - Chalk Farm
+      - Camden Town (Northern line High Barnet branch)
+      - Mornington Crescent
+      - Euston (Northern line Bank branch)
+      - Warren Street (Northern line)
+      - Goodge Street
+      - Tottenham Court Road (Northern line)
+      - Leicester Square (Northern line)
+      - Charing Cross (Northern line)
+      - Embankment (Northern line)
+      - Waterloo (Bakerloo and Northern lines)
+      - Kennington
+      - Morden
+      - South Wimbledon
+      - Colliers Wood
+      - Tooting Broadway
+      - Tooting Bec
+      - Balham
+      - Clapham South
+      - Clapham Common
+      - Clapham North
+      - Stockwell
+      - Oval
+      - Elephant & Castle (Northern line)
+      - Borough
+      - London Bridge (Northern line)
+      - Bank (Northern line)
+      - Moorgate (Northern line)
+      - Old Street
+      - Angel
+      - King's Cross St Pancras (Northern line)
+      - Finchley Central
+      - Mill Hill East
+      - Kentish Town (Northern line)
+      - Tufnell Park
+      - Archway
+      - Highgate
+      - East Finchley
+      - West Finchley
+      - Woodside Park
+      - Totteridge & Whetstone
+      - High Barnet
+
     itineraries: 
-      r7702941: 
-        - Edgware (n5355174730)
-        - Burnt Oak (n5182424568)
-        - Colindale (n6306871525)
-        - Hendon Central (n1678368302)
-        - Brent Cross (n1693158540)
-        - Golders Green (n6306871529)
-        - Hampstead (n5482891928)
-        - Belsize Park (n5482891929)
-        - Chalk Farm (n5585857405)
-        - Camden Town (n1670707917)
-        - Euston (n3663368461)
-        - King's Cross St Pancras (n119274464)
-        - Angel (n1670707904)
-        - Old Street (n70804547)
-        - Moorgate (n5702714876)
-        - Bank (n1637578440)
-        - London Bridge (n4290857012)
-        - Borough (n6797794418)
-        - Elephant & Castle (n3660623413)
-        - Kennington (n21507827)
-        - Oval (n21507733)
-        - Stockwell (n181662604)
-        - Clapham North (n21507731)
-        - Clapham Common (n4503057074)
-        - Clapham South (n34006946)
-        - Balham (n34007928)
-        - Tooting Bec (n21442171)
-        - Tooting Broadway (n34037748)
-        - Colliers Wood (n34037750)
-        - South Wimbledon (n34037860)
-        - Morden (n5571724044)
-
-      r7702972: 
-        - High Barnet (n1687814967)
-        - Totteridge & Whetstone (n5585853828)
-        - Woodside Park (n1825273066)
-        - West Finchley (n1825273052)
-        - Finchley Central (n2013971)
-        - East Finchley (n1670707933)
-        - Highgate (n1670707949)
-        - Archway (n1389887370)
-        - Tufnell Park (n1670707975)
-        - Kentish Town (n5359714471)
-        - Camden Town (n1670707917)
-        - Mornington Crescent (n5182424563)
-        - Euston (n3663368461)
-        - Warren Street (n6414086721)
-        - Goodge Street (n6414100096)
-        - Tottenham Court Road (n5462552522)
-        - Leicester Square (n3370671078)
-        - Charing Cross (n3660442172)
-        - Embankment (n5207123395)
-        - Waterloo (n3638795618)
-        - Kennington (n21507827)
-
       r102767: 
         - Edgware (n5355174730)
         - Burnt Oak (n5182424568)
@@ -2067,25 +2063,42 @@ routes:
         - Burnt Oak (n5182424568)
         - Edgware (n5355174730)
 
+      r7702938: 
+        - Kennington (n21507827)
+        - Waterloo (n3638795618)
+        - Embankment (n5207123395)
+        - Charing Cross (n3660442172)
+        - Leicester Square (n3370671078)
+        - Tottenham Court Road (n5462552522)
+        - Goodge Street (n6414100096)
+        - Warren Street (n6414086721)
+        - Euston (n3663368461)
+        - Mornington Crescent (n5182424563)
+        - Camden Town (n1670707917)
+        - Chalk Farm (n5585857405)
+        - Belsize Park (n5482891929)
+        - Hampstead (n5482891928)
+        - Golders Green (n6306871529)
+        - Brent Cross (n1693158540)
+        - Hendon Central (n1678368302)
+        - Colindale (n6306871525)
+        - Burnt Oak (n5182424568)
+        - Edgware (n5355174730)
+
       r7702939: 
         - Finchley Central (n2013971)
         - Mill Hill East (n1825273032)
 
-      r7702942: 
-        - Mill Hill East (n1825273032)
-        - Finchley Central (n2013971)
-
-      r7702971: 
-        - High Barnet (n1687814967)
-        - Totteridge & Whetstone (n5585853828)
-        - Woodside Park (n1825273066)
-        - West Finchley (n1825273052)
-        - Finchley Central (n2013971)
-        - East Finchley (n1670707933)
-        - Highgate (n1670707949)
-        - Archway (n1389887370)
-        - Tufnell Park (n1670707975)
-        - Kentish Town (n5359714471)
+      r7702941: 
+        - Edgware (n5355174730)
+        - Burnt Oak (n5182424568)
+        - Colindale (n6306871525)
+        - Hendon Central (n1678368302)
+        - Brent Cross (n1693158540)
+        - Golders Green (n6306871529)
+        - Hampstead (n5482891928)
+        - Belsize Park (n5482891929)
+        - Chalk Farm (n5585857405)
         - Camden Town (n1670707917)
         - Euston (n3663368461)
         - King's Cross St Pancras (n119274464)
@@ -2109,7 +2122,11 @@ routes:
         - South Wimbledon (n34037860)
         - Morden (n5571724044)
 
-      r7702938: 
+      r7702942: 
+        - Mill Hill East (n1825273032)
+        - Finchley Central (n2013971)
+
+      r7702943: 
         - Kennington (n21507827)
         - Waterloo (n3638795618)
         - Embankment (n5207123395)
@@ -2121,15 +2138,16 @@ routes:
         - Euston (n3663368461)
         - Mornington Crescent (n5182424563)
         - Camden Town (n1670707917)
-        - Chalk Farm (n5585857405)
-        - Belsize Park (n5482891929)
-        - Hampstead (n5482891928)
-        - Golders Green (n6306871529)
-        - Brent Cross (n1693158540)
-        - Hendon Central (n1678368302)
-        - Colindale (n6306871525)
-        - Burnt Oak (n5182424568)
-        - Edgware (n5355174730)
+        - Kentish Town (n5359714471)
+        - Tufnell Park (n1670707975)
+        - Archway (n1389887370)
+        - Highgate (n1670707949)
+        - East Finchley (n1670707933)
+        - Finchley Central (n2013971)
+        - West Finchley (n1825273052)
+        - Woodside Park (n1825273066)
+        - Totteridge & Whetstone (n5585853828)
+        - High Barnet (n1687814967)
 
       r7702970: 
         - Morden (n5571724044)
@@ -2165,506 +2183,95 @@ routes:
         - Totteridge & Whetstone (n5585853828)
         - High Barnet (n1687814967)
 
-      r7702943: 
-        - Kennington (n21507827)
-        - Waterloo (n3638795618)
-        - Embankment (n5207123395)
-        - Charing Cross (n3660442172)
-        - Leicester Square (n3370671078)
-        - Tottenham Court Road (n5462552522)
-        - Goodge Street (n6414100096)
-        - Warren Street (n6414086721)
-        - Euston (n3663368461)
-        - Mornington Crescent (n5182424563)
-        - Camden Town (n1670707917)
-        - Kentish Town (n5359714471)
-        - Tufnell Park (n1670707975)
-        - Archway (n1389887370)
-        - Highgate (n1670707949)
-        - East Finchley (n1670707933)
-        - Finchley Central (n2013971)
-        - West Finchley (n1825273052)
-        - Woodside Park (n1825273066)
-        - Totteridge & Whetstone (n5585853828)
+      r7702971: 
         - High Barnet (n1687814967)
+        - Totteridge & Whetstone (n5585853828)
+        - Woodside Park (n1825273066)
+        - West Finchley (n1825273052)
+        - Finchley Central (n2013971)
+        - East Finchley (n1670707933)
+        - Highgate (n1670707949)
+        - Archway (n1389887370)
+        - Tufnell Park (n1670707975)
+        - Kentish Town (n5359714471)
+        - Camden Town (n1670707917)
+        - Euston (n3663368461)
+        - King's Cross St Pancras (n119274464)
+        - Angel (n1670707904)
+        - Old Street (n70804547)
+        - Moorgate (n5702714876)
+        - Bank (n1637578440)
+        - London Bridge (n4290857012)
+        - Borough (n6797794418)
+        - Elephant & Castle (n3660623413)
+        - Kennington (n21507827)
+        - Oval (n21507733)
+        - Stockwell (n181662604)
+        - Clapham North (n21507731)
+        - Clapham Common (n4503057074)
+        - Clapham South (n34006946)
+        - Balham (n34007928)
+        - Tooting Bec (n21442171)
+        - Tooting Broadway (n34037748)
+        - Colliers Wood (n34037750)
+        - South Wimbledon (n34037860)
+        - Morden (n5571724044)
 
+      r7702972: 
+        - High Barnet (n1687814967)
+        - Totteridge & Whetstone (n5585853828)
+        - Woodside Park (n1825273066)
+        - West Finchley (n1825273052)
+        - Finchley Central (n2013971)
+        - East Finchley (n1670707933)
+        - Highgate (n1670707949)
+        - Archway (n1389887370)
+        - Tufnell Park (n1670707975)
+        - Kentish Town (n5359714471)
+        - Camden Town (n1670707917)
+        - Mornington Crescent (n5182424563)
+        - Euston (n3663368461)
+        - Warren Street (n6414086721)
+        - Goodge Street (n6414100096)
+        - Tottenham Court Road (n5462552522)
+        - Leicester Square (n3370671078)
+        - Charing Cross (n3660442172)
+        - Embankment (n5207123395)
+        - Waterloo (n3638795618)
+        - Kennington (n21507827)
 
-    stations: 
-      - Morden
-      - South Wimbledon
-      - Colliers Wood
-      - Tooting Broadway
-      - Tooting Bec
-      - Balham
-      - Clapham South
-      - Clapham Common
-      - Clapham North
-      - Stockwell
-      - Oval
-      - Kennington
-      - Elephant & Castle (Northern line)
-      - Borough
-      - London Bridge (Northern line)
-      - Bank (Northern line)
-      - Moorgate (Northern line)
-      - Old Street
-      - Angel
-      - King's Cross St Pancras (Northern line)
-      - Euston (Northern line Charing Cross branch)
-      - Camden Town (Northern line High Barnet branch)
-      - Chalk Farm
-      - Belsize Park
-      - Hampstead
-      - Golders Green
-      - Brent Cross
-      - Hendon Central
-      - Colindale
-      - Burnt Oak
-      - Edgware
-      - Finchley Central
-      - Mill Hill East
-      - Kentish Town (Northern line)
-      - Tufnell Park
-      - Archway
-      - Highgate
-      - East Finchley
-      - West Finchley
-      - Woodside Park
-      - Totteridge & Whetstone
-      - High Barnet
-      - Mornington Crescent
-      - Warren Street (Northern line)
-      - Goodge Street
-      - Tottenham Court Road (Northern line)
-      - Leicester Square (Northern line)
-      - Charing Cross (Northern line)
-      - Embankment (Northern line)
-      - Waterloo (Bakerloo and Northern lines)
 
   - 
-    name: 'Overground: Liverpool Street - Enfield Town'
     type: train
-    infill: '#ffffff'
     ref: Overground
-    station_count: 15
+    name: 'Overground: Romford - Upminster'
     colour: '#ef7b10'
-    itineraries: 
-      r9105025: 
-        - Enfield Town (n6831378185)
-        - Bush Hill Park (n7147523091)
-        - Edmonton Green (n2459211077)
-        - Silver Street (n6993506571)
-        - White Hart Lane (n6135489704)
-        - Bruce Grove (n6135938660)
-        - Seven Sisters (n3803245041)
-        - Stamford Hill (n6135938653)
-        - Stoke Newington (n6135938654)
-        - Rectory Road (n6135938661)
-        - Hackney Downs (n7147507684)
-        - London Fields (n7147535476)
-        - Cambridge Heath (n6997686912)
-        - Bethnal Green (n6831303077)
-        - London Liverpool Street (n3637436408)
-
-      r9105028: 
-        - London Liverpool Street (n3637436408)
-        - Bethnal Green (n6831303077)
-        - Cambridge Heath (n6997686912)
-        - London Fields (n7147535476)
-        - Hackney Downs (n7147507684)
-        - Rectory Road (n6135938661)
-        - Stoke Newington (n6135938654)
-        - Stamford Hill (n6135938653)
-        - Seven Sisters (n3803245041)
-        - Bruce Grove (n6135938660)
-        - White Hart Lane (n6135489704)
-        - Silver Street (n6993506571)
-        - Edmonton Green (n2459211077)
-        - Bush Hill Park (n7147523091)
-        - Enfield Town (n6831378185)
-
-
+    infill: '#ffffff'
+    station_count: 3
     stations: 
-      - Enfield Town
-      - Bush Hill Park
-      - Edmonton Green
-      - Silver Street
-      - White Hart Lane
-      - Bruce Grove
-      - Seven Sisters
-      - Stamford Hill
-      - Stoke Newington
-      - Rectory Road
-      - Hackney Downs
-      - London Fields
-      - Cambridge Heath
-      - Bethnal Green
-      - Liverpool Street (National Rail, Overground and TfL Rail)
+      - Romford
+      - Emerson Park
+      - Upminster (Overground)
+
+    itineraries: 
+      r141910: 
+        - Romford (n31072288)
+        - Emerson Park (n6906130548)
+        - Upminster (n443640800)
+
+      r9752356: 
+        - Upminster (n443640800)
+        - Emerson Park (n6906130548)
+        - Romford (n31072288)
+
 
   - 
-    name: 'Overground: Clapham Junction - Stratford'
     type: train
-    infill: '#ffffff'
     ref: Overground
-    station_count: 23
-    colour: '#ef7b10'
-    itineraries: 
-      r9674325: 
-        - Clapham Junction (n5735001231)
-        - Imperial Wharf (n3749159483)
-        - West Brompton (n5182384969)
-        - Kensington (Olympia) (n6091112768)
-        - Shepherd's Bush (n6991125994)
-        - Willesden Junction (n6438961931)
-        - Kensal Rise (n7147498859)
-        - Brondesbury Park (n7147511743)
-        - Brondesbury (n7147478680)
-        - West Hampstead (n6514252665)
-        - Finchley Road & Frognal (n6878672847)
-        - Hampstead Heath (n6991113888)
-        - Gospel Oak (n6753787771)
-        - Kentish Town West (n6993498103)
-        - Camden Road (n6474389245)
-        - Caledonian Road & Barnsbury (n6993522055)
-        - Highbury & Islington (n6414163635)
-        - Canonbury (n7147509511)
-        - Dalston Kingsland (n6991113897)
-        - Hackney Central (n6997712296)
-        - Homerton (n7147509462)
-        - Hackney Wick (n7147521855)
-        - Stratford (n5257403774)
-
-      r9674326: 
-        - Stratford (n5257403774)
-        - Hackney Wick (n7147521855)
-        - Homerton (n7147509462)
-        - Hackney Central (n6997712296)
-        - Dalston Kingsland (n6991113897)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-        - Caledonian Road & Barnsbury (n6993522055)
-        - Camden Road (n6474389245)
-        - Kentish Town West (n6993498103)
-        - Gospel Oak (n6753787771)
-        - Hampstead Heath (n6991113888)
-        - Finchley Road & Frognal (n6878672847)
-        - West Hampstead (n6514252665)
-        - Brondesbury (n7147478680)
-        - Brondesbury Park (n7147511743)
-        - Kensal Rise (n7147498859)
-        - Willesden Junction (n6438961931)
-        - Shepherd's Bush (n6991125994)
-        - Kensington (Olympia) (n6091112768)
-        - West Brompton (n5182384969)
-        - Imperial Wharf (n3749159483)
-        - Clapham Junction (n5735001231)
-
-
-    stations: 
-      - Stratford (Overground)
-      - Hackney Wick
-      - Homerton Station
-      - Hackney Central
-      - Dalston Kingsland
-      - Canonbury
-      - Highbury & Islington (Overground)
-      - Caledonian Road & Barnsbury
-      - Camden Road
-      - Kentish Town West
-      - Gospel Oak
-      - Hampstead Heath
-      - Finchley Road and Frognal
-      - West Hampstead (Overground)
-      - Brondesbury
-      - Brondesbury Park
-      - Kensal Rise
-      - 'Willesden Junction (Overground - Stratford line)'
-      - Shepherd's Bush
-      - Kensington (Olympia) (Overground)
-      - West Brompton (Overground and National Rail)
-      - Imperial Wharf
-      - Clapham Junction (Overground)
-
-  - 
-    name: 'Overground: Crystal Palace - Highbury & Islington'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 18
-    colour: '#ef7b10'
-    itineraries: 
-      r10111207: 
-        - Crystal Palace (n5790633431)
-        - Sydenham (n5871218006)
-        - Forest Hill (n5871218007)
-        - Honor Oak Park (n5871218008)
-        - Brockley (n6585461978)
-        - New Cross Gate (n5871218009)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-
-      r10111208: 
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - New Cross Gate (n5871218009)
-        - Brockley (n6585461978)
-        - Honor Oak Park (n5871218008)
-        - Forest Hill (n5871218007)
-        - Sydenham (n5871218006)
-        - Crystal Palace (n5790633431)
-
-      r10735352: 
-        - Highbury & Islington (n6414163635)
-        - Canonbury (n7147509511)
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - New Cross Gate (n5871218009)
-
-      r10114722: 
-        - New Cross Gate (n5871218009)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-
-      r9683128: 
-        - Crystal Palace (n5790633431)
-        - Sydenham (n5871218006)
-        - Forest Hill (n5871218007)
-        - Honor Oak Park (n5871218008)
-        - Brockley (n6585461978)
-        - New Cross Gate (n5871218009)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-
-      r959677: 
-        - Highbury & Islington (n6414163635)
-        - Canonbury (n7147509511)
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - New Cross Gate (n5871218009)
-        - Brockley (n6585461978)
-        - Honor Oak Park (n5871218008)
-        - Forest Hill (n5871218007)
-        - Sydenham (n5871218006)
-        - Crystal Palace (n5790633431)
-
-
-    stations: 
-      - Crystal Palace
-      - Sydenham
-      - Forest Hill (Overground)
-      - Honor Oak Park
-      - Brockley
-      - New Cross Gate
-      - Surrey Quays
-      - Canada Water (Overground)
-      - Rotherhithe
-      - Wapping
-      - Shadwell
-      - Whitechapel
-      - Shoreditch High Street
-      - Hoxton
-      - Haggerston
-      - Dalston Junction
-      - Canonbury
-      - Highbury & Islington (Overground)
-
-  - 
-    name: 'Overground: Liverpool Street - Chingford'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 9
-    colour: '#ef7b10'
-    itineraries: 
-      r9683729: 
-        - London Liverpool Street (n3637436408)
-        - Bethnal Green (n6831303077)
-        - Hackney Downs (n7147507684)
-        - Clapton (n6137852387)
-        - St James Street (n7147521584)
-        - Walthamstow Central (n6391246144)
-        - Wood Street (n6543594082)
-        - Highams Park (n6997680159)
-        - Chingford (n6997675368)
-
-      r9683722: 
-        - Chingford (n6997675368)
-        - Highams Park (n6997680159)
-        - Wood Street (n6543594082)
-        - Walthamstow Central (n6391246144)
-        - St James Street (n7147521584)
-        - Clapton (n6137852387)
-        - Hackney Downs (n7147507684)
-        - Bethnal Green (n6831303077)
-        - London Liverpool Street (n3637436408)
-
-
-    stations: 
-      - Liverpool Street (National Rail, Overground and TfL Rail)
-      - Bethnal Green
-      - Hackney Downs
-      - Clapton
-      - St James Street
-      - Walthamstow Central (Overground)
-      - Wood Street
-      - Highams Park
-      - Chingford
-
-  - 
-    name: 'Overground: Liverpool Street - Cheshunt'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 17
-    colour: '#ef7b10'
-    itineraries: 
-      r9105026: 
-        - Cheshunt (n3749263909)
-        - Theobalds Grove (n6135938648)
-        - Turkey Street (n6135938647)
-        - Southbury (n7147509522)
-        - Edmonton Green (n2459211077)
-        - Silver Street (n6993506571)
-        - White Hart Lane (n6135489704)
-        - Bruce Grove (n6135938660)
-        - Seven Sisters (n3803245041)
-        - Stamford Hill (n6135938653)
-        - Stoke Newington (n6135938654)
-        - Rectory Road (n6135938661)
-        - Hackney Downs (n7147507684)
-        - London Fields (n7147535476)
-        - Cambridge Heath (n6997686912)
-        - Bethnal Green (n6831303077)
-        - London Liverpool Street (n3637436408)
-
-      r9105027: 
-        - London Liverpool Street (n3637436408)
-        - Bethnal Green (n6831303077)
-        - Cambridge Heath (n6997686912)
-        - London Fields (n7147535476)
-        - Hackney Downs (n7147507684)
-        - Rectory Road (n6135938661)
-        - Stoke Newington (n6135938654)
-        - Stamford Hill (n6135938653)
-        - Seven Sisters (n3803245041)
-        - Bruce Grove (n6135938660)
-        - White Hart Lane (n6135489704)
-        - Silver Street (n6993506571)
-        - Edmonton Green (n2459211077)
-        - Southbury (n7147509522)
-        - Turkey Street (n6135938647)
-        - Theobalds Grove (n6135938648)
-        - Cheshunt (n3749263909)
-
-
-    stations: 
-      - Cheshunt
-      - Theobald's Grove
-      - Turkey Street
-      - Southbury
-      - Edmonton Green
-      - Silver Street
-      - White Hart Lane
-      - Bruce Grove
-      - Seven Sisters
-      - Stamford Hill
-      - Stoke Newington
-      - Rectory Road
-      - Hackney Downs
-      - London Fields
-      - Cambridge Heath
-      - Bethnal Green
-      - Liverpool Street (National Rail, Overground and TfL Rail)
-
-  - 
     name: 'Overground: Gospel Oak - Barking'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 12
     colour: '#ef7b10'
-    itineraries: 
-      r9683819: 
-        - Barking (n6452489646)
-        - Woodgrange Park (n6753887325)
-        - Wanstead Park (n1742840596)
-        - Leytonstone High Road (n1742846162)
-        - Leyton Midland Road (n6997668561)
-        - Walthamstow Queen's Road (n25316887)
-        - Blackhorse Road (n29859288)
-        - South Tottenham (n7147518905)
-        - Harringay Green Lanes (n6993490520)
-        - Crouch Hill (n6724844051)
-        - Upper Holloway (n6724844050)
-        - Gospel Oak (n6753787771)
-
-      r419512: 
-        - Gospel Oak (n6753787771)
-        - Upper Holloway (n6724844050)
-        - Crouch Hill (n6724844051)
-        - Harringay Green Lanes (n6993490520)
-        - South Tottenham (n7147518905)
-        - Blackhorse Road (n29859288)
-        - Walthamstow Queen's Road (n25316887)
-        - Leyton Midland Road (n6997668561)
-        - Leytonstone High Road (n1742846162)
-        - Wanstead Park (n1742840596)
-        - Woodgrange Park (n6753887325)
-        - Barking (n6452489646)
-
-
+    infill: '#ffffff'
+    station_count: 12
     stations: 
       - Gospel Oak
       - Upper Holloway (Overground)
@@ -2679,98 +2286,130 @@ routes:
       - Woodgrange Park
       - Barking (Overground)
 
-  - 
-    name: 'Overground: Richmond - Stratford'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 23
-    colour: '#ef7b10'
     itineraries: 
-      r6413186: 
-        - Stratford (n5257403774)
-        - Hackney Wick (n7147521855)
-        - Homerton (n7147509462)
-        - Hackney Central (n6997712296)
-        - Dalston Kingsland (n6991113897)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-        - Caledonian Road & Barnsbury (n6993522055)
-        - Camden Road (n6474389245)
-        - Kentish Town West (n6993498103)
+      r419512: 
         - Gospel Oak (n6753787771)
-        - Hampstead Heath (n6991113888)
-        - Finchley Road & Frognal (n6878672847)
-        - West Hampstead (n6514252665)
-        - Brondesbury (n7147478680)
-        - Brondesbury Park (n7147511743)
-        - Kensal Rise (n7147498859)
-        - Willesden Junction (n6438961931)
-        - Acton Central (n2266399032)
-        - South Acton (n6441033567)
-        - Gunnersbury (n6438904139)
-        - Kew Gardens (n6448645467)
-        - Richmond (n6438780655)
+        - Upper Holloway (n6724844050)
+        - Crouch Hill (n6724844051)
+        - Harringay Green Lanes (n6993490520)
+        - South Tottenham (n7147518905)
+        - Blackhorse Road (n29859288)
+        - Walthamstow Queen's Road (n25316887)
+        - Leyton Midland Road (n6997668561)
+        - Leytonstone High Road (n1742846162)
+        - Wanstead Park (n1742840596)
+        - Woodgrange Park (n6753887325)
+        - Barking (n6452489646)
 
-      r6413187: 
-        - Richmond (n6438780655)
-        - Kew Gardens (n6448645467)
-        - Gunnersbury (n6438904139)
-        - South Acton (n6441033567)
-        - Acton Central (n2266399032)
-        - Willesden Junction (n6438961931)
-        - Kensal Rise (n7147498859)
-        - Brondesbury Park (n7147511743)
-        - Brondesbury (n7147478680)
-        - West Hampstead (n6514252665)
-        - Finchley Road & Frognal (n6878672847)
-        - Hampstead Heath (n6991113888)
+      r9683819: 
+        - Barking (n6452489646)
+        - Woodgrange Park (n6753887325)
+        - Wanstead Park (n1742840596)
+        - Leytonstone High Road (n1742846162)
+        - Leyton Midland Road (n6997668561)
+        - Walthamstow Queen's Road (n25316887)
+        - Blackhorse Road (n29859288)
+        - South Tottenham (n7147518905)
+        - Harringay Green Lanes (n6993490520)
+        - Crouch Hill (n6724844051)
+        - Upper Holloway (n6724844050)
         - Gospel Oak (n6753787771)
-        - Kentish Town West (n6993498103)
-        - Camden Road (n6474389245)
-        - Caledonian Road & Barnsbury (n6993522055)
-        - Highbury & Islington (n6414163635)
-        - Canonbury (n7147509511)
-        - Dalston Kingsland (n6991113897)
-        - Hackney Central (n6997712296)
-        - Homerton (n7147509462)
-        - Hackney Wick (n7147521855)
-        - Stratford (n5257403774)
 
 
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: West Croydon - Highbury & Islington'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 21
     stations: 
-      - Stratford (Overground)
-      - Hackney Wick
-      - Homerton Station
-      - Hackney Central
-      - Dalston Kingsland
+      - Dalston Junction
+      - Haggerston
+      - Hoxton
+      - Shoreditch High Street
+      - Whitechapel
+      - Shadwell
+      - Wapping
+      - Rotherhithe
+      - Canada Water (Overground)
+      - Surrey Quays
+      - New Cross Gate
+      - Brockley
+      - Honor Oak Park
+      - Forest Hill (Overground)
+      - Sydenham
+      - Penge West
+      - Anerley
+      - Norwood Junction
+      - West Croydon
       - Canonbury
       - Highbury & Islington (Overground)
-      - Caledonian Road & Barnsbury
-      - Camden Road
-      - Kentish Town West
-      - Gospel Oak
-      - Hampstead Heath
-      - Finchley Road and Frognal
-      - West Hampstead (Overground)
-      - Brondesbury
-      - Brondesbury Park
-      - Kensal Rise
-      - 'Willesden Junction (Overground - Stratford line)'
-      - Acton Central
-      - South Acton
-      - Gunnersbury
-      - Kew Gardens
-      - Richmond (Overground)
 
-  - 
-    name: 'Overground: West Croydon - Highbury & Islington'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 21
-    colour: '#ef7b10'
     itineraries: 
+      r660462: 
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - New Cross Gate (n5871218009)
+        - Brockley (n6585461978)
+        - Honor Oak Park (n5871218008)
+        - Forest Hill (n5871218007)
+        - Sydenham (n5871218006)
+        - Penge West (n3572247866)
+        - Anerley (n6391499992)
+        - Norwood Junction (n5882165493)
+        - West Croydon (n270091541)
+
+      r9942198: 
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - New Cross Gate (n5871218009)
+        - Brockley (n6585461978)
+        - Honor Oak Park (n5871218008)
+        - Forest Hill (n5871218007)
+        - Sydenham (n5871218006)
+        - Penge West (n3572247866)
+        - Anerley (n6391499992)
+        - Norwood Junction (n5882165493)
+        - West Croydon (n270091541)
+
+      r9942536: 
+        - West Croydon (n270091541)
+        - Norwood Junction (n5882165493)
+        - Anerley (n6391499992)
+        - Penge West (n3572247866)
+        - Sydenham (n5871218006)
+        - Forest Hill (n5871218007)
+        - Honor Oak Park (n5871218008)
+        - Brockley (n6585461978)
+        - New Cross Gate (n5871218009)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+
       r9942537: 
         - West Croydon (n270091541)
         - Norwood Junction (n5882165493)
@@ -2838,402 +2477,29 @@ routes:
         - Norwood Junction (n5882165493)
         - West Croydon (n270091541)
 
-      r660462: 
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - New Cross Gate (n5871218009)
-        - Brockley (n6585461978)
-        - Honor Oak Park (n5871218008)
-        - Forest Hill (n5871218007)
-        - Sydenham (n5871218006)
-        - Penge West (n3572247866)
-        - Anerley (n6391499992)
-        - Norwood Junction (n5882165493)
-        - West Croydon (n270091541)
-
-      r9942198: 
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - New Cross Gate (n5871218009)
-        - Brockley (n6585461978)
-        - Honor Oak Park (n5871218008)
-        - Forest Hill (n5871218007)
-        - Sydenham (n5871218006)
-        - Penge West (n3572247866)
-        - Anerley (n6391499992)
-        - Norwood Junction (n5882165493)
-        - West Croydon (n270091541)
-
-      r9942536: 
-        - West Croydon (n270091541)
-        - Norwood Junction (n5882165493)
-        - Anerley (n6391499992)
-        - Penge West (n3572247866)
-        - Sydenham (n5871218006)
-        - Forest Hill (n5871218007)
-        - Honor Oak Park (n5871218008)
-        - Brockley (n6585461978)
-        - New Cross Gate (n5871218009)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-
-
-    stations: 
-      - Dalston Junction
-      - Haggerston
-      - Hoxton
-      - Shoreditch High Street
-      - Whitechapel
-      - Shadwell
-      - Wapping
-      - Rotherhithe
-      - Canada Water (Overground)
-      - Surrey Quays
-      - New Cross Gate
-      - Brockley
-      - Honor Oak Park
-      - Forest Hill (Overground)
-      - Sydenham
-      - Penge West
-      - Anerley
-      - Norwood Junction
-      - West Croydon
-      - Highbury & Islington (Overground)
-      - Canonbury
 
   - 
-    name: 'Overground: Romford - Upminster'
     type: train
-    infill: '#ffffff'
     ref: Overground
-    station_count: 3
-    colour: '#ef7b10'
-    itineraries: 
-      r141910: 
-        - Romford (n31072288)
-        - Emerson Park (n6906130548)
-        - Upminster (n443640800)
-
-      r9752356: 
-        - Upminster (n443640800)
-        - Emerson Park (n6906130548)
-        - Romford (n31072288)
-
-
-    stations: 
-      - Upminster (Overground)
-      - Emerson Park
-      - Romford
-
-  - 
-    name: 'Overground: Clapham Junction - Highbury & Islington'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 18
-    colour: '#ef7b10'
-    itineraries: 
-      r2755611: 
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - Queens Road Peckham (n2446751285)
-        - Peckham Rye (n6991125522)
-        - Denmark Hill (n2438280276)
-        - Clapham High Street (n2438288086)
-        - Wandsworth Road (n2438286491)
-        - Clapham Junction (n5735001231)
-
-      r10107560: 
-        - Clapham Junction (n5735001231)
-        - Wandsworth Road (n2438286491)
-        - Clapham High Street (n2438288086)
-        - Denmark Hill (n2438280276)
-        - Peckham Rye (n6991125522)
-        - Queens Road Peckham (n2446751285)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-
-      r9683129: 
-        - Clapham Junction (n5735001231)
-        - Wandsworth Road (n2438286491)
-        - Clapham High Street (n2438288086)
-        - Denmark Hill (n2438280276)
-        - Peckham Rye (n6991125522)
-        - Queens Road Peckham (n2446751285)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-
-      r10107561: 
-        - Highbury & Islington (n6414163635)
-        - Canonbury (n7147509511)
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - Queens Road Peckham (n2446751285)
-        - Peckham Rye (n6991125522)
-        - Denmark Hill (n2438280276)
-        - Clapham High Street (n2438288086)
-        - Wandsworth Road (n2438286491)
-        - Clapham Junction (n5735001231)
-
-
-    stations: 
-      - Clapham Junction (Overground)
-      - Wandsworth Road
-      - Clapham High Street
-      - Denmark Hill
-      - Peckham Rye
-      - Queens Road Peckham
-      - Surrey Quays
-      - Canada Water (Overground)
-      - Rotherhithe
-      - Wapping
-      - Shadwell
-      - Whitechapel
-      - Shoreditch High Street
-      - Hoxton
-      - Haggerston
-      - Dalston Junction
-      - Highbury & Islington (Overground)
-      - Canonbury
-
-  - 
-    name: 'Overground: Battersea Park - Highbury & Islington'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 18
-    colour: '#ef7b10'
-    itineraries: 
-      r10028997: 
-        - Dalston Junction (n21596119)
-        - Haggerston (n2438234411)
-        - Hoxton (n2441957067)
-        - Shoreditch High Street (n6991130547)
-        - Whitechapel (n2426825788)
-        - Shadwell (n3729401291)
-        - Wapping (n2438276350)
-        - Rotherhithe (n2438248384)
-        - Canada Water (n5700149213)
-        - Surrey Quays (n2438262362)
-        - Queens Road Peckham (n2446751285)
-        - Peckham Rye (n6991125522)
-        - Denmark Hill (n2438280276)
-        - Clapham High Street (n2438288086)
-        - Wandsworth Road (n2438286491)
-        - Battersea Park (n2324453845)
-
-      r10106423: 
-        - Battersea Park (n2324453845)
-        - Wandsworth Road (n2438286491)
-        - Clapham High Street (n2438288086)
-        - Denmark Hill (n2438280276)
-        - Peckham Rye (n6991125522)
-        - Queens Road Peckham (n2446751285)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-        - Canonbury (n7147509511)
-        - Highbury & Islington (n6414163635)
-
-      r10028998: 
-        - Battersea Park (n2324453845)
-        - Wandsworth Road (n2438286491)
-        - Clapham High Street (n2438288086)
-        - Denmark Hill (n2438280276)
-        - Peckham Rye (n6991125522)
-        - Queens Road Peckham (n2446751285)
-        - Surrey Quays (n2438262362)
-        - Canada Water (n5700149213)
-        - Rotherhithe (n2438248384)
-        - Wapping (n2438276350)
-        - Shadwell (n3729401291)
-        - Whitechapel (n2426825788)
-        - Shoreditch High Street (n6991130547)
-        - Hoxton (n2441957067)
-        - Haggerston (n2438234411)
-        - Dalston Junction (n21596119)
-
-
-    stations: 
-      - Battersea Park
-      - Wandsworth Road
-      - Clapham High Street
-      - Denmark Hill
-      - Peckham Rye
-      - Queens Road Peckham
-      - Surrey Quays
-      - Canada Water (Overground)
-      - Rotherhithe
-      - Wapping
-      - Shadwell
-      - Whitechapel
-      - Shoreditch High Street
-      - Hoxton
-      - Haggerston
-      - Dalston Junction
-      - Canonbury
-      - Highbury & Islington (Overground)
-
-  - 
-    name: 'Overground: Euston - Watford Junction'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 19
-    colour: '#ef7b10'
-    itineraries: 
-      r1242272: 
-        - London Euston (n3663368460)
-        - South Hampstead (n7147537626)
-        - Kilburn High Road (n6993429382)
-        - Queen's Park (n6468357440)
-        - Kensal Green (n6403994178)
-        - Willesden Junction (n6438961931)
-        - Harlesden (n6404013964)
-        - Stonebridge Park (n6438945825)
-        - Wembley Central (n7175566127)
-        - North Wembley (n21141346)
-        - South Kenton (n21141345)
-        - Kenton (n89137908)
-        - Harrow & Wealdstone (n20455533)
-        - Headstone Lane (n6543594083)
-        - Hatch End (n6543594084)
-        - Carpenders Park (n6661446188)
-        - Bushey (n1104903773)
-        - Watford High Street (n20992532)
-        - Watford Junction (n3139881254)
-
-      r9752359: 
-        - Watford Junction (n3139881254)
-        - Watford High Street (n20992532)
-        - Bushey (n1104903773)
-        - Carpenders Park (n6661446188)
-        - Hatch End (n6543594084)
-        - Headstone Lane (n6543594083)
-        - Harrow & Wealdstone (n20455533)
-        - Kenton (n89137908)
-        - South Kenton (n21141345)
-        - North Wembley (n21141346)
-        - Wembley Central (n7175566127)
-        - Stonebridge Park (n6438945825)
-        - Harlesden (n6404013964)
-        - Willesden Junction (n6438961931)
-        - Kensal Green (n6403994178)
-        - Queen's Park (n6468357440)
-        - Kilburn High Road (n6993429382)
-        - South Hampstead (n7147537626)
-        - London Euston (n3663368460)
-
-      r9752357: 
-        - Willesden Junction (n6438961931)
-        - Kensal Green (n6403994178)
-        - Queen's Park (n6468357440)
-        - Kilburn High Road (n6993429382)
-        - South Hampstead (n7147537626)
-        - London Euston (n3663368460)
-
-      r9752358: 
-        - London Euston (n3663368460)
-        - South Hampstead (n7147537626)
-        - Kilburn High Road (n6993429382)
-        - Queen's Park (n6468357440)
-        - Kensal Green (n6403994178)
-        - Willesden Junction (n6438961931)
-
-
-    stations: 
-      - 'Willesden Junction (Overground - Watford line and Bakerloo line)'
-      - Kensal Green (Overground and Bakerloo line)
-      - Queen's Park
-      - Kilburn High Road
-      - South Hampstead
-      - Euston (Overground)
-      - Harlesden
-      - Stonebridge Park
-      - Wembley Central
-      - North Wembley
-      - South Kenton
-      - Kenton
-      - Harrow & Wealdstone
-      - Headstone Lane
-      - Hatch End
-      - Carpenders Park
-      - Bushey
-      - Watford High Street
-      - Watford Junction
-
-  - 
     name: 'Overground: New Cross - Highbury & Islington'
-    type: train
-    infill: '#ffffff'
-    ref: Overground
-    station_count: 13
     colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 13
+    stations: 
+      - Dalston Junction
+      - Haggerston
+      - Hoxton
+      - Shoreditch High Street
+      - Whitechapel
+      - Shadwell
+      - Wapping
+      - Rotherhithe
+      - Canada Water (Overground)
+      - Surrey Quays
+      - New Cross
+      - Canonbury
+      - Highbury & Islington (Overground)
+
     itineraries: 
       r660463: 
         - Dalston Junction (n21596119)
@@ -3261,7 +2527,7 @@ routes:
         - Surrey Quays (n2438262362)
         - New Cross (n5871218010)
 
-      r9942535: 
+      r9942534: 
         - New Cross (n5871218010)
         - Surrey Quays (n2438262362)
         - Canada Water (n5700149213)
@@ -3274,7 +2540,7 @@ routes:
         - Haggerston (n2438234411)
         - Dalston Junction (n21596119)
 
-      r9942534: 
+      r9942535: 
         - New Cross (n5871218010)
         - Surrey Quays (n2438262362)
         - Canada Water (n5700149213)
@@ -3303,27 +2569,816 @@ routes:
         - Highbury & Islington (n6414163635)
 
 
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Crystal Palace - Highbury & Islington'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 18
     stations: 
-      - New Cross
-      - Surrey Quays
-      - Canada Water (Overground)
-      - Rotherhithe
-      - Wapping
-      - Shadwell
-      - Whitechapel
-      - Shoreditch High Street
-      - Hoxton
-      - Haggerston
+      - Highbury & Islington (Overground)
+      - Canonbury
       - Dalston Junction
+      - Haggerston
+      - Hoxton
+      - Shoreditch High Street
+      - Whitechapel
+      - Shadwell
+      - Wapping
+      - Rotherhithe
+      - Canada Water (Overground)
+      - Surrey Quays
+      - New Cross Gate
+      - Brockley
+      - Honor Oak Park
+      - Forest Hill (Overground)
+      - Sydenham
+      - Crystal Palace
+
+    itineraries: 
+      r959677: 
+        - Highbury & Islington (n6414163635)
+        - Canonbury (n7147509511)
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - New Cross Gate (n5871218009)
+        - Brockley (n6585461978)
+        - Honor Oak Park (n5871218008)
+        - Forest Hill (n5871218007)
+        - Sydenham (n5871218006)
+        - Crystal Palace (n5790633431)
+
+      r9683128: 
+        - Crystal Palace (n5790633431)
+        - Sydenham (n5871218006)
+        - Forest Hill (n5871218007)
+        - Honor Oak Park (n5871218008)
+        - Brockley (n6585461978)
+        - New Cross Gate (n5871218009)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+
+      r10111207: 
+        - Crystal Palace (n5790633431)
+        - Sydenham (n5871218006)
+        - Forest Hill (n5871218007)
+        - Honor Oak Park (n5871218008)
+        - Brockley (n6585461978)
+        - New Cross Gate (n5871218009)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+
+      r10111208: 
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - New Cross Gate (n5871218009)
+        - Brockley (n6585461978)
+        - Honor Oak Park (n5871218008)
+        - Forest Hill (n5871218007)
+        - Sydenham (n5871218006)
+        - Crystal Palace (n5790633431)
+
+      r10114722: 
+        - New Cross Gate (n5871218009)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+
+      r10735352: 
+        - Highbury & Islington (n6414163635)
+        - Canonbury (n7147509511)
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - New Cross Gate (n5871218009)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Euston - Watford Junction'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 19
+    stations: 
+      - Euston (Overground)
+      - South Hampstead
+      - Kilburn High Road
+      - Queen's Park
+      - Kensal Green (Overground and Bakerloo line)
+      - 'Willesden Junction (Overground - Watford line and Bakerloo line)'
+      - Harlesden
+      - Stonebridge Park
+      - Wembley Central
+      - North Wembley
+      - South Kenton
+      - Kenton
+      - Harrow & Wealdstone
+      - Headstone Lane
+      - Hatch End
+      - Carpenders Park
+      - Bushey
+      - Watford High Street
+      - Watford Junction
+
+    itineraries: 
+      r1242272: 
+        - London Euston (n3663368460)
+        - South Hampstead (n7147537626)
+        - Kilburn High Road (n6993429382)
+        - Queen's Park (n6468357440)
+        - Kensal Green (n6403994178)
+        - Willesden Junction (n6438961931)
+        - Harlesden (n6404013964)
+        - Stonebridge Park (n6438945825)
+        - Wembley Central (n7175566127)
+        - North Wembley (n21141346)
+        - South Kenton (n21141345)
+        - Kenton (n89137908)
+        - Harrow & Wealdstone (n20455533)
+        - Headstone Lane (n6543594083)
+        - Hatch End (n6543594084)
+        - Carpenders Park (n6661446188)
+        - Bushey (n1104903773)
+        - Watford High Street (n20992532)
+        - Watford Junction (n3139881254)
+
+      r9752357: 
+        - Willesden Junction (n6438961931)
+        - Kensal Green (n6403994178)
+        - Queen's Park (n6468357440)
+        - Kilburn High Road (n6993429382)
+        - South Hampstead (n7147537626)
+        - London Euston (n3663368460)
+
+      r9752358: 
+        - London Euston (n3663368460)
+        - South Hampstead (n7147537626)
+        - Kilburn High Road (n6993429382)
+        - Queen's Park (n6468357440)
+        - Kensal Green (n6403994178)
+        - Willesden Junction (n6438961931)
+
+      r9752359: 
+        - Watford Junction (n3139881254)
+        - Watford High Street (n20992532)
+        - Bushey (n1104903773)
+        - Carpenders Park (n6661446188)
+        - Hatch End (n6543594084)
+        - Headstone Lane (n6543594083)
+        - Harrow & Wealdstone (n20455533)
+        - Kenton (n89137908)
+        - South Kenton (n21141345)
+        - North Wembley (n21141346)
+        - Wembley Central (n7175566127)
+        - Stonebridge Park (n6438945825)
+        - Harlesden (n6404013964)
+        - Willesden Junction (n6438961931)
+        - Kensal Green (n6403994178)
+        - Queen's Park (n6468357440)
+        - Kilburn High Road (n6993429382)
+        - South Hampstead (n7147537626)
+        - London Euston (n3663368460)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Clapham Junction - Highbury & Islington'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 18
+    stations: 
+      - Dalston Junction
+      - Haggerston
+      - Hoxton
+      - Shoreditch High Street
+      - Whitechapel
+      - Shadwell
+      - Wapping
+      - Rotherhithe
+      - Canada Water (Overground)
+      - Surrey Quays
+      - Queens Road Peckham
+      - Peckham Rye
+      - Denmark Hill
+      - Clapham High Street
+      - Wandsworth Road
+      - Clapham Junction (Overground)
       - Canonbury
       - Highbury & Islington (Overground)
 
+    itineraries: 
+      r2755611: 
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - Queens Road Peckham (n2446751285)
+        - Peckham Rye (n6991125522)
+        - Denmark Hill (n2438280276)
+        - Clapham High Street (n2438288086)
+        - Wandsworth Road (n2438286491)
+        - Clapham Junction (n5735001231)
+
+      r9683129: 
+        - Clapham Junction (n5735001231)
+        - Wandsworth Road (n2438286491)
+        - Clapham High Street (n2438288086)
+        - Denmark Hill (n2438280276)
+        - Peckham Rye (n6991125522)
+        - Queens Road Peckham (n2446751285)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+
+      r10107560: 
+        - Clapham Junction (n5735001231)
+        - Wandsworth Road (n2438286491)
+        - Clapham High Street (n2438288086)
+        - Denmark Hill (n2438280276)
+        - Peckham Rye (n6991125522)
+        - Queens Road Peckham (n2446751285)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+
+      r10107561: 
+        - Highbury & Islington (n6414163635)
+        - Canonbury (n7147509511)
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - Queens Road Peckham (n2446751285)
+        - Peckham Rye (n6991125522)
+        - Denmark Hill (n2438280276)
+        - Clapham High Street (n2438288086)
+        - Wandsworth Road (n2438286491)
+        - Clapham Junction (n5735001231)
+
+
   - 
-    name: Piccadilly line
+    type: train
+    ref: Overground
+    name: 'Overground: Richmond - Stratford'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 23
+    stations: 
+      - Stratford (Overground)
+      - Hackney Wick
+      - Homerton Station
+      - Hackney Central
+      - Dalston Kingsland
+      - Canonbury
+      - Highbury & Islington (Overground)
+      - Caledonian Road & Barnsbury
+      - Camden Road
+      - Kentish Town West
+      - Gospel Oak
+      - Hampstead Heath
+      - Finchley Road and Frognal
+      - West Hampstead (Overground)
+      - Brondesbury
+      - Brondesbury Park
+      - Kensal Rise
+      - 'Willesden Junction (Overground - Stratford line)'
+      - Acton Central
+      - South Acton
+      - Gunnersbury
+      - Kew Gardens
+      - Richmond (Overground)
+
+    itineraries: 
+      r6413186: 
+        - Stratford (n5257403774)
+        - Hackney Wick (n7147521855)
+        - Homerton (n7147509462)
+        - Hackney Central (n6997712296)
+        - Dalston Kingsland (n6991113897)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+        - Caledonian Road & Barnsbury (n6993522055)
+        - Camden Road (n6474389245)
+        - Kentish Town West (n6993498103)
+        - Gospel Oak (n6753787771)
+        - Hampstead Heath (n6991113888)
+        - Finchley Road & Frognal (n6878672847)
+        - West Hampstead (n6514252665)
+        - Brondesbury (n7147478680)
+        - Brondesbury Park (n7147511743)
+        - Kensal Rise (n7147498859)
+        - Willesden Junction (n6438961931)
+        - Acton Central (n2266399032)
+        - South Acton (n6441033567)
+        - Gunnersbury (n6438904139)
+        - Kew Gardens (n6448645467)
+        - Richmond (n6438780655)
+
+      r6413187: 
+        - Richmond (n6438780655)
+        - Kew Gardens (n6448645467)
+        - Gunnersbury (n6438904139)
+        - South Acton (n6441033567)
+        - Acton Central (n2266399032)
+        - Willesden Junction (n6438961931)
+        - Kensal Rise (n7147498859)
+        - Brondesbury Park (n7147511743)
+        - Brondesbury (n7147478680)
+        - West Hampstead (n6514252665)
+        - Finchley Road & Frognal (n6878672847)
+        - Hampstead Heath (n6991113888)
+        - Gospel Oak (n6753787771)
+        - Kentish Town West (n6993498103)
+        - Camden Road (n6474389245)
+        - Caledonian Road & Barnsbury (n6993522055)
+        - Highbury & Islington (n6414163635)
+        - Canonbury (n7147509511)
+        - Dalston Kingsland (n6991113897)
+        - Hackney Central (n6997712296)
+        - Homerton (n7147509462)
+        - Hackney Wick (n7147521855)
+        - Stratford (n5257403774)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Liverpool Street - Enfield Town'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 15
+    stations: 
+      - Enfield Town
+      - Bush Hill Park
+      - Edmonton Green
+      - Silver Street
+      - White Hart Lane
+      - Bruce Grove
+      - Seven Sisters
+      - Stamford Hill
+      - Stoke Newington
+      - Rectory Road
+      - Hackney Downs
+      - London Fields
+      - Cambridge Heath
+      - Bethnal Green
+      - Liverpool Street (National Rail, Overground and TfL Rail)
+
+    itineraries: 
+      r9105025: 
+        - Enfield Town (n6831378185)
+        - Bush Hill Park (n7147523091)
+        - Edmonton Green (n2459211077)
+        - Silver Street (n6993506571)
+        - White Hart Lane (n6135489704)
+        - Bruce Grove (n6135938660)
+        - Seven Sisters (n3803245041)
+        - Stamford Hill (n6135938653)
+        - Stoke Newington (n6135938654)
+        - Rectory Road (n6135938661)
+        - Hackney Downs (n7147507684)
+        - London Fields (n7147535476)
+        - Cambridge Heath (n6997686912)
+        - Bethnal Green (n6831303077)
+        - London Liverpool Street (n3637436408)
+
+      r9105028: 
+        - London Liverpool Street (n3637436408)
+        - Bethnal Green (n6831303077)
+        - Cambridge Heath (n6997686912)
+        - London Fields (n7147535476)
+        - Hackney Downs (n7147507684)
+        - Rectory Road (n6135938661)
+        - Stoke Newington (n6135938654)
+        - Stamford Hill (n6135938653)
+        - Seven Sisters (n3803245041)
+        - Bruce Grove (n6135938660)
+        - White Hart Lane (n6135489704)
+        - Silver Street (n6993506571)
+        - Edmonton Green (n2459211077)
+        - Bush Hill Park (n7147523091)
+        - Enfield Town (n6831378185)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Liverpool Street - Cheshunt'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 17
+    stations: 
+      - Cheshunt
+      - Theobald's Grove
+      - Turkey Street
+      - Southbury
+      - Edmonton Green
+      - Silver Street
+      - White Hart Lane
+      - Bruce Grove
+      - Seven Sisters
+      - Stamford Hill
+      - Stoke Newington
+      - Rectory Road
+      - Hackney Downs
+      - London Fields
+      - Cambridge Heath
+      - Bethnal Green
+      - Liverpool Street (National Rail, Overground and TfL Rail)
+
+    itineraries: 
+      r9105026: 
+        - Cheshunt (n3749263909)
+        - Theobalds Grove (n6135938648)
+        - Turkey Street (n6135938647)
+        - Southbury (n7147509522)
+        - Edmonton Green (n2459211077)
+        - Silver Street (n6993506571)
+        - White Hart Lane (n6135489704)
+        - Bruce Grove (n6135938660)
+        - Seven Sisters (n3803245041)
+        - Stamford Hill (n6135938653)
+        - Stoke Newington (n6135938654)
+        - Rectory Road (n6135938661)
+        - Hackney Downs (n7147507684)
+        - London Fields (n7147535476)
+        - Cambridge Heath (n6997686912)
+        - Bethnal Green (n6831303077)
+        - London Liverpool Street (n3637436408)
+
+      r9105027: 
+        - London Liverpool Street (n3637436408)
+        - Bethnal Green (n6831303077)
+        - Cambridge Heath (n6997686912)
+        - London Fields (n7147535476)
+        - Hackney Downs (n7147507684)
+        - Rectory Road (n6135938661)
+        - Stoke Newington (n6135938654)
+        - Stamford Hill (n6135938653)
+        - Seven Sisters (n3803245041)
+        - Bruce Grove (n6135938660)
+        - White Hart Lane (n6135489704)
+        - Silver Street (n6993506571)
+        - Edmonton Green (n2459211077)
+        - Southbury (n7147509522)
+        - Turkey Street (n6135938647)
+        - Theobalds Grove (n6135938648)
+        - Cheshunt (n3749263909)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Clapham Junction - Stratford'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 23
+    stations: 
+      - Clapham Junction (Overground)
+      - Imperial Wharf
+      - West Brompton (Overground and National Rail)
+      - Kensington (Olympia) (Overground)
+      - Shepherd's Bush
+      - 'Willesden Junction (Overground - Stratford line)'
+      - Kensal Rise
+      - Brondesbury Park
+      - Brondesbury
+      - West Hampstead (Overground)
+      - Finchley Road and Frognal
+      - Hampstead Heath
+      - Gospel Oak
+      - Kentish Town West
+      - Camden Road
+      - Caledonian Road & Barnsbury
+      - Highbury & Islington (Overground)
+      - Canonbury
+      - Dalston Kingsland
+      - Hackney Central
+      - Homerton Station
+      - Hackney Wick
+      - Stratford (Overground)
+
+    itineraries: 
+      r9674325: 
+        - Clapham Junction (n5735001231)
+        - Imperial Wharf (n3749159483)
+        - West Brompton (n5182384969)
+        - Kensington (Olympia) (n6091112768)
+        - Shepherd's Bush (n6991125994)
+        - Willesden Junction (n6438961931)
+        - Kensal Rise (n7147498859)
+        - Brondesbury Park (n7147511743)
+        - Brondesbury (n7147478680)
+        - West Hampstead (n6514252665)
+        - Finchley Road & Frognal (n6878672847)
+        - Hampstead Heath (n6991113888)
+        - Gospel Oak (n6753787771)
+        - Kentish Town West (n6993498103)
+        - Camden Road (n6474389245)
+        - Caledonian Road & Barnsbury (n6993522055)
+        - Highbury & Islington (n6414163635)
+        - Canonbury (n7147509511)
+        - Dalston Kingsland (n6991113897)
+        - Hackney Central (n6997712296)
+        - Homerton (n7147509462)
+        - Hackney Wick (n7147521855)
+        - Stratford (n5257403774)
+
+      r9674326: 
+        - Stratford (n5257403774)
+        - Hackney Wick (n7147521855)
+        - Homerton (n7147509462)
+        - Hackney Central (n6997712296)
+        - Dalston Kingsland (n6991113897)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+        - Caledonian Road & Barnsbury (n6993522055)
+        - Camden Road (n6474389245)
+        - Kentish Town West (n6993498103)
+        - Gospel Oak (n6753787771)
+        - Hampstead Heath (n6991113888)
+        - Finchley Road & Frognal (n6878672847)
+        - West Hampstead (n6514252665)
+        - Brondesbury (n7147478680)
+        - Brondesbury Park (n7147511743)
+        - Kensal Rise (n7147498859)
+        - Willesden Junction (n6438961931)
+        - Shepherd's Bush (n6991125994)
+        - Kensington (Olympia) (n6091112768)
+        - West Brompton (n5182384969)
+        - Imperial Wharf (n3749159483)
+        - Clapham Junction (n5735001231)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Liverpool Street - Chingford'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 9
+    stations: 
+      - Chingford
+      - Highams Park
+      - Wood Street
+      - Walthamstow Central (Overground)
+      - St James Street
+      - Clapton
+      - Hackney Downs
+      - Bethnal Green
+      - Liverpool Street (National Rail, Overground and TfL Rail)
+
+    itineraries: 
+      r9683722: 
+        - Chingford (n6997675368)
+        - Highams Park (n6997680159)
+        - Wood Street (n6543594082)
+        - Walthamstow Central (n6391246144)
+        - St James Street (n7147521584)
+        - Clapton (n6137852387)
+        - Hackney Downs (n7147507684)
+        - Bethnal Green (n6831303077)
+        - London Liverpool Street (n3637436408)
+
+      r9683729: 
+        - London Liverpool Street (n3637436408)
+        - Bethnal Green (n6831303077)
+        - Hackney Downs (n7147507684)
+        - Clapton (n6137852387)
+        - St James Street (n7147521584)
+        - Walthamstow Central (n6391246144)
+        - Wood Street (n6543594082)
+        - Highams Park (n6997680159)
+        - Chingford (n6997675368)
+
+
+  - 
+    type: train
+    ref: Overground
+    name: 'Overground: Battersea Park - Highbury & Islington'
+    colour: '#ef7b10'
+    infill: '#ffffff'
+    station_count: 18
+    stations: 
+      - Dalston Junction
+      - Haggerston
+      - Hoxton
+      - Shoreditch High Street
+      - Whitechapel
+      - Shadwell
+      - Wapping
+      - Rotherhithe
+      - Canada Water (Overground)
+      - Surrey Quays
+      - Queens Road Peckham
+      - Peckham Rye
+      - Denmark Hill
+      - Clapham High Street
+      - Wandsworth Road
+      - Battersea Park
+      - Canonbury
+      - Highbury & Islington (Overground)
+
+    itineraries: 
+      r10028997: 
+        - Dalston Junction (n21596119)
+        - Haggerston (n2438234411)
+        - Hoxton (n2441957067)
+        - Shoreditch High Street (n6991130547)
+        - Whitechapel (n2426825788)
+        - Shadwell (n3729401291)
+        - Wapping (n2438276350)
+        - Rotherhithe (n2438248384)
+        - Canada Water (n5700149213)
+        - Surrey Quays (n2438262362)
+        - Queens Road Peckham (n2446751285)
+        - Peckham Rye (n6991125522)
+        - Denmark Hill (n2438280276)
+        - Clapham High Street (n2438288086)
+        - Wandsworth Road (n2438286491)
+        - Battersea Park (n2324453845)
+
+      r10028998: 
+        - Battersea Park (n2324453845)
+        - Wandsworth Road (n2438286491)
+        - Clapham High Street (n2438288086)
+        - Denmark Hill (n2438280276)
+        - Peckham Rye (n6991125522)
+        - Queens Road Peckham (n2446751285)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+
+      r10106423: 
+        - Battersea Park (n2324453845)
+        - Wandsworth Road (n2438286491)
+        - Clapham High Street (n2438288086)
+        - Denmark Hill (n2438280276)
+        - Peckham Rye (n6991125522)
+        - Queens Road Peckham (n2446751285)
+        - Surrey Quays (n2438262362)
+        - Canada Water (n5700149213)
+        - Rotherhithe (n2438248384)
+        - Wapping (n2438276350)
+        - Shadwell (n3729401291)
+        - Whitechapel (n2426825788)
+        - Shoreditch High Street (n6991130547)
+        - Hoxton (n2441957067)
+        - Haggerston (n2438234411)
+        - Dalston Junction (n21596119)
+        - Canonbury (n7147509511)
+        - Highbury & Islington (n6414163635)
+
+
+  - 
     type: subway
     ref: Piccadilly
-    station_count: 53
+    name: Piccadilly line
     colour: '#094fa3'
+    station_count: 53
+    stations: 
+      - Cockfosters
+      - Oakwood
+      - Southgate
+      - Arnos Grove
+      - Bounds Green
+      - Wood Green
+      - Turnpike Lane
+      - Manor House
+      - Finsbury Park
+      - Arsenal
+      - Holloway Road
+      - Caledonian Road
+      - King's Cross St Pancras (Piccadilly line)
+      - Russell Square
+      - Holborn (Piccadilly line)
+      - Covent Garden
+      - Leicester Square (Piccadilly line)
+      - Piccadilly Circus (Piccadilly line)
+      - Green Park (Piccadilly line)
+      - Hyde Park Corner
+      - Knightsbridge
+      - South Kensington (Piccadilly line)
+      - Gloucester Road
+      - Earl's Court
+      - Barons Court
+      - Hammersmith (District & Piccadilly lines)
+      - Turnham Green
+      - Acton Town
+      - South Ealing
+      - Northfields
+      - Boston Manor
+      - Osterley
+      - Hounslow East
+      - Hounslow Central
+      - Hounslow West
+      - Hatton Cross
+      - Heathrow Terminals 2 & 3 (Piccadilly line)
+      - Heathrow Terminal 5 (Piccadilly line)
+      - Heathrow Terminal 4 (Piccadilly line)
+      - Uxbridge
+      - Hillingdon
+      - Ickenham
+      - Ruislip
+      - Ruislip Manor
+      - Eastcote
+      - Rayners Lane
+      - South Harrow
+      - Sudbury Hill
+      - Sudbury Town
+      - Alperton
+      - Park Royal
+      - North Ealing
+      - Ealing Common
+
     itineraries: 
       r102788: 
         - Cockfosters (n5182424567)
@@ -3365,45 +3420,6 @@ routes:
         - Heathrow Terminals 2 & 3 (n5182384971)
         - Heathrow Terminal 5 (n5182384972)
 
-      r7703381: 
-        - Cockfosters (n5182424567)
-        - Oakwood (n5182384967)
-        - Southgate (n5182424566)
-        - Arnos Grove (n1651504140)
-        - Bounds Green (n5472303633)
-        - Wood Green (n6761071700)
-        - Turnpike Lane (n5507411660)
-        - Manor House (n6761076726)
-        - Finsbury Park (n561297695)
-        - Arsenal (n186194628)
-        - Holloway Road (n5482915472)
-        - Caledonian Road (n5585825355)
-        - King's Cross St Pancras (n119274464)
-        - Russell Square (n5585825335)
-        - Holborn (n3693265703)
-        - Covent Garden (n6400752013)
-        - Leicester Square (n3370671078)
-        - Piccadilly Circus (n3638779316)
-        - Green Park (n6407577779)
-        - Hyde Park Corner (n5182456574)
-        - Knightsbridge (n5182384973)
-        - South Kensington (n5183897519)
-        - Gloucester Road (n6411992668)
-        - Earl's Court (n6340616347)
-        - Barons Court (n1651498764)
-        - Hammersmith (District and Piccadilly lines) (n6195731433)
-        - Turnham Green (n6312813706)
-        - Acton Town (n5183843299)
-        - South Ealing (n3956577242)
-        - Northfields (n5182424577)
-        - Boston Manor (n5182384970)
-        - Osterley (n6312645092)
-        - Hounslow East (n5182424564)
-        - Hounslow Central (n5182424565)
-        - Hounslow West (n5182384974)
-        - Hatton Cross (n6312643867)
-        - Heathrow Terminal 4 (n1645907858)
-
       r7703380: 
         - Heathrow Terminal 4 (n1645907858)
         - Heathrow Terminals 2 & 3 (n5182384971)
@@ -3444,17 +3460,60 @@ routes:
         - Oakwood (n5182384967)
         - Cockfosters (n5182424567)
 
-      r7703383: 
-        - Heathrow Terminal 5 (n5182384972)
-        - Heathrow Terminals 2 & 3 (n5182384971)
-        - Hatton Cross (n6312643867)
-        - Hounslow West (n5182384974)
-        - Hounslow Central (n5182424565)
-        - Hounslow East (n5182424564)
-        - Osterley (n6312645092)
-        - Boston Manor (n5182384970)
-        - Northfields (n5182424577)
+      r7703381: 
+        - Cockfosters (n5182424567)
+        - Oakwood (n5182384967)
+        - Southgate (n5182424566)
+        - Arnos Grove (n1651504140)
+        - Bounds Green (n5472303633)
+        - Wood Green (n6761071700)
+        - Turnpike Lane (n5507411660)
+        - Manor House (n6761076726)
+        - Finsbury Park (n561297695)
+        - Arsenal (n186194628)
+        - Holloway Road (n5482915472)
+        - Caledonian Road (n5585825355)
+        - King's Cross St Pancras (n119274464)
+        - Russell Square (n5585825335)
+        - Holborn (n3693265703)
+        - Covent Garden (n6400752013)
+        - Leicester Square (n3370671078)
+        - Piccadilly Circus (n3638779316)
+        - Green Park (n6407577779)
+        - Hyde Park Corner (n5182456574)
+        - Knightsbridge (n5182384973)
+        - South Kensington (n5183897519)
+        - Gloucester Road (n6411992668)
+        - Earl's Court (n6340616347)
+        - Barons Court (n1651498764)
+        - Hammersmith (District and Piccadilly lines) (n6195731433)
+        - Turnham Green (n6312813706)
+        - Acton Town (n5183843299)
         - South Ealing (n3956577242)
+        - Northfields (n5182424577)
+        - Boston Manor (n5182384970)
+        - Osterley (n6312645092)
+        - Hounslow East (n5182424564)
+        - Hounslow Central (n5182424565)
+        - Hounslow West (n5182384974)
+        - Hatton Cross (n6312643867)
+        - Heathrow Terminal 4 (n1645907858)
+
+      r7703382: 
+        - Uxbridge (n6410085030)
+        - Hillingdon (n6410109228)
+        - Ickenham (n5183760379)
+        - Ruislip (n6307053732)
+        - Ruislip Manor (n6342098119)
+        - Eastcote (n5183760378)
+        - Rayners Lane (n6307053733)
+        - South Harrow (n2158280269)
+        - Sudbury Hill (n2288456779)
+        - Sudbury Town (n2158280270)
+        - Alperton (n6399598539)
+        - Park Royal (n5495828135)
+        - North Ealing (n20698948)
+        - Ealing Common (n5183350492)
         - Acton Town (n5183843299)
         - Turnham Green (n6312813706)
         - Hammersmith (District and Piccadilly lines) (n6195731433)
@@ -3484,21 +3543,17 @@ routes:
         - Oakwood (n5182384967)
         - Cockfosters (n5182424567)
 
-      r7703382: 
-        - Uxbridge (n6410085030)
-        - Hillingdon (n6410109228)
-        - Ickenham (n5183760379)
-        - Ruislip (n6307053732)
-        - Ruislip Manor (n6342098119)
-        - Eastcote (n5183760378)
-        - Rayners Lane (n6307053733)
-        - South Harrow (n2158280269)
-        - Sudbury Hill (n2288456779)
-        - Sudbury Town (n2158280270)
-        - Alperton (n6399598539)
-        - Park Royal (n5495828135)
-        - North Ealing (n20698948)
-        - Ealing Common (n5183350492)
+      r7703383: 
+        - Heathrow Terminal 5 (n5182384972)
+        - Heathrow Terminals 2 & 3 (n5182384971)
+        - Hatton Cross (n6312643867)
+        - Hounslow West (n5182384974)
+        - Hounslow Central (n5182424565)
+        - Hounslow East (n5182424564)
+        - Osterley (n6312645092)
+        - Boston Manor (n5182384970)
+        - Northfields (n5182424577)
+        - South Ealing (n3956577242)
         - Acton Town (n5183843299)
         - Turnham Green (n6312813706)
         - Hammersmith (District and Piccadilly lines) (n6195731433)
@@ -3573,80 +3628,36 @@ routes:
         - Uxbridge (n6410085030)
 
 
-    stations: 
-      - Heathrow Terminal 5 (Piccadilly line)
-      - Heathrow Terminals 2 & 3 (Piccadilly line)
-      - Hatton Cross
-      - Hounslow West
-      - Hounslow Central
-      - Hounslow East
-      - Osterley
-      - Boston Manor
-      - Northfields
-      - South Ealing
-      - Acton Town
-      - Turnham Green
-      - Hammersmith (District & Piccadilly lines)
-      - Barons Court
-      - Earl's Court
-      - Gloucester Road
-      - South Kensington (Piccadilly line)
-      - Knightsbridge
-      - Hyde Park Corner
-      - Green Park (Piccadilly line)
-      - Piccadilly Circus (Piccadilly line)
-      - Leicester Square (Piccadilly line)
-      - Covent Garden
-      - Holborn (Piccadilly line)
-      - Russell Square
-      - King's Cross St Pancras (Piccadilly line)
-      - Caledonian Road
-      - Holloway Road
-      - Arsenal
-      - Finsbury Park
-      - Manor House
-      - Turnpike Lane
-      - Wood Green
-      - Bounds Green
-      - Arnos Grove
-      - Southgate
-      - Oakwood
-      - Cockfosters
-      - Heathrow Terminal 4 (Piccadilly line)
-      - Uxbridge
-      - Hillingdon
-      - Ickenham
-      - Ruislip
-      - Ruislip Manor
-      - Eastcote
-      - Rayners Lane
-      - South Harrow
-      - Sudbury Hill
-      - Sudbury Town
-      - Alperton
-      - Park Royal
-      - North Ealing
-      - Ealing Common
-
   - 
-    name: 'DLR: Stratford - Lewisham'
     type: light_rail
-    infill: '#ffffff'
     ref: S-L
-    station_count: 19
+    name: 'DLR: Stratford - Lewisham'
     colour: '#00afad'
+    infill: '#ffffff'
+    station_count: 19
+    stations: 
+      - Canary Wharf DLR
+      - West India Quay
+      - Poplar Platforms 2 & 3
+      - All Saints
+      - Langdon Park
+      - Devons Road
+      - Bow Church
+      - Pudding Mill Lane
+      - Stratford DLR Platforms 4a & 4b
+      - Lewisham DLR
+      - Elverson Road
+      - Deptford Bridge
+      - Greenwich DLR
+      - Cutty Sark for Maritime Greenwich
+      - Island Gardens
+      - Mudchute
+      - Crossharbour
+      - South Quay
+      - Heron Quays
+
     itineraries: 
-      r7772553: 
-        - Lewisham DLR (n4571439709)
-        - Elverson Road (n6143744007)
-        - Deptford Bridge (n6143744008)
-        - Greenwich (n5469512667)
-        - Cutty Sark for Maritime Greenwich (n6489626917)
-        - Island Gardens (n7132099274)
-        - Mudchute (n5320449851)
-        - Crossharbour (n6143744009)
-        - South Quay (n6143744010)
-        - Heron Quays (n7132027957)
+      r7772549: 
         - Canary Wharf DLR (n5469508777)
         - West India Quay (n5469532954)
         - Poplar (n7147562182)
@@ -3668,7 +3679,17 @@ routes:
         - West India Quay (n5469532954)
         - Canary Wharf DLR (n5469508777)
 
-      r7772549: 
+      r7772553: 
+        - Lewisham DLR (n4571439709)
+        - Elverson Road (n6143744007)
+        - Deptford Bridge (n6143744008)
+        - Greenwich (n5469512667)
+        - Cutty Sark for Maritime Greenwich (n6489626917)
+        - Island Gardens (n7132099274)
+        - Mudchute (n5320449851)
+        - Crossharbour (n6143744009)
+        - South Quay (n6143744010)
+        - Heron Quays (n7132027957)
         - Canary Wharf DLR (n5469508777)
         - West India Quay (n5469532954)
         - Poplar (n7147562182)
@@ -3701,49 +3722,28 @@ routes:
         - Lewisham DLR (n4571439709)
 
 
-    stations: 
-      - Stratford DLR Platforms 4a & 4b
-      - Pudding Mill Lane
-      - Bow Church
-      - Devons Road
-      - Langdon Park
-      - All Saints
-      - Poplar Platforms 2 & 3
-      - West India Quay
-      - Canary Wharf DLR
-      - Heron Quays
-      - South Quay
-      - Crossharbour
-      - Mudchute
-      - Island Gardens
-      - Cutty Sark for Maritime Greenwich
-      - Greenwich DLR
-      - Deptford Bridge
-      - Elverson Road
-      - Lewisham DLR
-
   - 
-    name: 'DLR: Stratford International - Woolwich Arsenal'
     type: light_rail
-    infill: '#ffffff'
     ref: SI-WA
-    station_count: 12
+    name: 'DLR: Stratford International - Woolwich Arsenal'
     colour: '#00afad'
-    itineraries: 
-      r7772552: 
-        - Stratford International DLR (n5483374935)
-        - Stratford (n5257403774)
-        - Stratford High Street (n5469588771)
-        - Abbey Road (n5469584669)
-        - West Ham (n5252083983)
-        - Star Lane (n7147489878)
-        - Canning Town (n5585799426)
-        - West Silvertown (n6143889614)
-        - Pontoon Dock (n6143889615)
-        - London City Airport (n6143889613)
-        - King George V (n6143849772)
-        - Woolwich Arsenal DLR (n7132087124)
+    infill: '#ffffff'
+    station_count: 12
+    stations: 
+      - Woolwich Arsenal DLR
+      - King George V
+      - London City Airport
+      - Pontoon Dock
+      - West Silvertown
+      - Canning Town DLR Platforms 1 & 2
+      - Star Lane
+      - West Ham DLR
+      - Abbey Road
+      - Stratford High Street
+      - Stratford DLR Platforms 16 & 17
+      - Stratford International DLR
 
+    itineraries: 
       r7772551: 
         - Woolwich Arsenal DLR (n7132087124)
         - King George V (n6143849772)
@@ -3758,66 +3758,28 @@ routes:
         - Stratford (n5257403774)
         - Stratford International DLR (n5483374935)
 
+      r7772552: 
+        - Stratford International DLR (n5483374935)
+        - Stratford (n5257403774)
+        - Stratford High Street (n5469588771)
+        - Abbey Road (n5469584669)
+        - West Ham (n5252083983)
+        - Star Lane (n7147489878)
+        - Canning Town (n5585799426)
+        - West Silvertown (n6143889614)
+        - Pontoon Dock (n6143889615)
+        - London City Airport (n6143889613)
+        - King George V (n6143849772)
+        - Woolwich Arsenal DLR (n7132087124)
 
-    stations: 
-      - Stratford International DLR
-      - Stratford DLR Platforms 16 & 17
-      - Stratford High Street
-      - Abbey Road
-      - West Ham DLR
-      - Star Lane
-      - Canning Town DLR Platforms 1 & 2
-      - West Silvertown
-      - Pontoon Dock
-      - London City Airport
-      - King George V
-      - Woolwich Arsenal DLR
 
   - 
-    name: 'DLR: Tower Gateway - Beckton'
     type: light_rail
-    infill: '#ffffff'
     ref: TG-B
-    station_count: 16
+    name: 'DLR: Tower Gateway - Beckton'
     colour: '#00afad'
-    itineraries: 
-      r7772560: 
-        - Tower Gateway (n6514289544)
-        - Shadwell DLR (n7147489879)
-        - Limehouse DLR (n5469620129)
-        - Westferry (n7132098495)
-        - Poplar (n7147562182)
-        - Blackwall (n6143889611)
-        - East India (n6143889612)
-        - Canning Town (n5585799426)
-        - Royal Victoria (n6143889602)
-        - Custom House for ExCeL (n6143889603)
-        - Prince Regent (n6143889604)
-        - Royal Albert (n6143889605)
-        - Beckton Park (n290511221)
-        - Cyprus (n18049583)
-        - Gallions Reach (n6143889606)
-        - Beckton (n6143889609)
-
-      r7772559: 
-        - Beckton (n6143889609)
-        - Gallions Reach (n6143889606)
-        - Cyprus (n18049583)
-        - Beckton Park (n290511221)
-        - Royal Albert (n6143889605)
-        - Prince Regent (n6143889604)
-        - Custom House for ExCeL (n6143889603)
-        - Royal Victoria (n6143889602)
-        - Canning Town (n5585799426)
-        - East India (n6143889612)
-        - Blackwall (n6143889611)
-        - Poplar (n7147562182)
-        - Westferry (n7132098495)
-        - Limehouse DLR (n5469620129)
-        - Shadwell DLR (n7147489879)
-        - Tower Gateway (n6514289544)
-
-
+    infill: '#ffffff'
+    station_count: 16
     stations: 
       - Beckton
       - Gallions Reach
@@ -3836,28 +3798,69 @@ routes:
       - Shadwell DLR
       - Tower Gateway
 
+    itineraries: 
+      r7772559: 
+        - Beckton (n6143889609)
+        - Gallions Reach (n6143889606)
+        - Cyprus (n18049583)
+        - Beckton Park (n290511221)
+        - Royal Albert (n6143889605)
+        - Prince Regent (n6143889604)
+        - Custom House for ExCeL (n6143889603)
+        - Royal Victoria (n6143889602)
+        - Canning Town (n5585799426)
+        - East India (n6143889612)
+        - Blackwall (n6143889611)
+        - Poplar (n7147562182)
+        - Westferry (n7132098495)
+        - Limehouse DLR (n5469620129)
+        - Shadwell DLR (n7147489879)
+        - Tower Gateway (n6514289544)
+
+      r7772560: 
+        - Tower Gateway (n6514289544)
+        - Shadwell DLR (n7147489879)
+        - Limehouse DLR (n5469620129)
+        - Westferry (n7132098495)
+        - Poplar (n7147562182)
+        - Blackwall (n6143889611)
+        - East India (n6143889612)
+        - Canning Town (n5585799426)
+        - Royal Victoria (n6143889602)
+        - Custom House for ExCeL (n6143889603)
+        - Prince Regent (n6143889604)
+        - Royal Albert (n6143889605)
+        - Beckton Park (n290511221)
+        - Cyprus (n18049583)
+        - Gallions Reach (n6143889606)
+        - Beckton (n6143889609)
+
+
   - 
-    name: Victoria line
     type: subway
     ref: Victoria
-    station_count: 16
+    name: Victoria line
     colour: '#0a9cda'
-    itineraries: 
-      r7672073: 
-        - Brixton (n26652919)
-        - Stockwell (n181662604)
-        - Vauxhall (n3817850257)
-        - Pimlico (n273210309)
-        - Victoria (n441947584)
-        - Green Park (n6407577779)
-        - Oxford Circus (n5614077964)
-        - Warren Street (n6414086721)
-        - Euston (n3663368461)
-        - King's Cross St Pancras (n119274464)
-        - Highbury & Islington (n6414163635)
-        - Finsbury Park (n561297695)
-        - Seven Sisters (n3803245041)
+    station_count: 16
+    stations: 
+      - Brixton
+      - Stockwell
+      - Vauxhall
+      - Pimlico
+      - Victoria (Victoria line)
+      - Green Park (Victoria line)
+      - Oxford Circus (Bakerloo and Victoria lines)
+      - Warren Street (Victoria line)
+      - Euston (Victoria line)
+      - King's Cross St Pancras (Victoria line)
+      - Highbury & Islington
+      - Finsbury Park
+      - Seven Sisters
+      - Tottenham Hale
+      - Blackhorse Road (Victoria line)
+      - Walthamstow Central (Victoria line)
 
+    itineraries: 
       r6354920: 
         - Brixton (n26652919)
         - Stockwell (n181662604)
@@ -3909,31 +3912,32 @@ routes:
         - Stockwell (n181662604)
         - Brixton (n26652919)
 
+      r7672073: 
+        - Brixton (n26652919)
+        - Stockwell (n181662604)
+        - Vauxhall (n3817850257)
+        - Pimlico (n273210309)
+        - Victoria (n441947584)
+        - Green Park (n6407577779)
+        - Oxford Circus (n5614077964)
+        - Warren Street (n6414086721)
+        - Euston (n3663368461)
+        - King's Cross St Pancras (n119274464)
+        - Highbury & Islington (n6414163635)
+        - Finsbury Park (n561297695)
+        - Seven Sisters (n3803245041)
 
-    stations: 
-      - Walthamstow Central (Victoria line)
-      - Blackhorse Road (Victoria line)
-      - Tottenham Hale
-      - Seven Sisters
-      - Finsbury Park
-      - Highbury & Islington
-      - King's Cross St Pancras (Victoria line)
-      - Euston (Victoria line)
-      - Warren Street (Victoria line)
-      - Oxford Circus (Bakerloo and Victoria lines)
-      - Green Park (Victoria line)
-      - Victoria (Victoria line)
-      - Pimlico
-      - Vauxhall
-      - Stockwell
-      - Brixton
 
   - 
-    name: Waterloo & City line
     type: subway
     ref: Waterloo & City
-    station_count: 2
+    name: Waterloo & City line
     colour: '#93ceba'
+    station_count: 2
+    stations: 
+      - Waterloo (Waterloo & City line)
+      - Bank (Waterloo & City line)
+
     itineraries: 
       r102762: 
         - Waterloo (n3638795618)
@@ -3943,9 +3947,5 @@ routes:
         - Bank (n1637578440)
         - Waterloo (n3638795618)
 
-
-    stations: 
-      - Waterloo (Waterloo & City line)
-      - Bank (Waterloo & City line)
 
 

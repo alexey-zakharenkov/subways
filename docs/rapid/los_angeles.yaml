@@ -108,11 +108,35 @@ transfers:
 
 routes: 
   - 
-    name: A Line (Blue)
     type: light_rail
     ref: 801
-    station_count: 22
+    name: A Line (Blue)
     colour: '#0171b7'
+    station_count: 22
+    stations: 
+      - Downtown Long Beach
+      - Pacific Avenue
+      - Anaheim Street
+      - Pacific Coast Highway
+      - Willow Street
+      - Wardlow
+      - Del Amo
+      - Artesia
+      - Compton
+      - Willowbrook/Rosa Parks
+      - 103rd Street/Watts Towers
+      - Firestone
+      - Florence
+      - Slauson
+      - Vernon
+      - Washington
+      - San Pedro Street
+      - Grand/LATTC
+      - Pico
+      - 7th Street/Metro Center
+      - 5th Street
+      - 1st Street
+
     itineraries: 
       r2351005: 
         - Downtown Long Beach (n17680230)
@@ -160,36 +184,28 @@ routes:
         - Downtown Long Beach (n17680230)
 
 
-    stations: 
-      - 7th Street/Metro Center
-      - Pico
-      - Grand/LATTC
-      - San Pedro Street
-      - Washington
-      - Vernon
-      - Slauson
-      - Florence
-      - Firestone
-      - 103rd Street/Watts Towers
-      - Willowbrook/Rosa Parks
-      - Compton
-      - Artesia
-      - Del Amo
-      - Wardlow
-      - Willow Street
-      - Pacific Coast Highway
-      - Anaheim Street
-      - 5th Street
-      - 1st Street
-      - Downtown Long Beach
-      - Pacific Avenue
-
   - 
-    name: Metro Red Line (B)
     type: subway
     ref: 802
-    station_count: 14
+    name: Metro Red Line (B)
     colour: '#ff0000'
+    station_count: 14
+    stations: 
+      - North Hollywood
+      - Universal City
+      - Hollywood/Highland
+      - Hollywood/Vine
+      - Hollywood/Western
+      - Vermont/Sunset
+      - Vermont/Santa Monica
+      - Vermont/Beverly
+      - Wilshire/Vermont
+      - Westlake/MacArthur Park
+      - 7th Street/Metro Center
+      - Pershing Square
+      - Civic Center/Grand Park
+      - Union Station (subway)
+
     itineraries: 
       r2810818: 
         - North Hollywood (n6204929388)
@@ -224,45 +240,29 @@ routes:
         - North Hollywood (n6204929388)
 
 
-    stations: 
-      - North Hollywood
-      - Universal City
-      - Hollywood/Highland
-      - Hollywood/Vine
-      - Hollywood/Western
-      - Vermont/Sunset
-      - Vermont/Santa Monica
-      - Vermont/Beverly
-      - Wilshire/Vermont
-      - Westlake/MacArthur Park
-      - 7th Street/Metro Center
-      - Pershing Square
-      - Civic Center/Grand Park
-      - Union Station (subway)
-
   - 
-    name: Metro Green Line (C)
     type: light_rail
     ref: 803
-    station_count: 14
+    name: Metro Green Line (C)
     colour: '#008000'
-    itineraries: 
-      r7935052: 
-        - Norwalk (n5360575853)
-        - Lakewood Boulevard (n5360574904)
-        - Long Beach Boulevard (n5360571297)
-        - Willowbrook/Rosa Parks (n5360566257)
-        - Avalon (n5360555156)
-        - Harbor Freeway (n5360553490)
-        - Vermont/Athens (n5360549737)
-        - Crenshaw (n5360549248)
-        - Hawthorne/Lennox (n5360547375)
-        - Aviation/LAX (n1768112047)
-        - Mariposa (n5360540476)
-        - El Segundo (n5360533318)
-        - Douglas (n5360530767)
-        - Redondo Beach (n5360527586)
+    station_count: 14
+    stations: 
+      - Redondo Beach
+      - Douglas
+      - El Segundo
+      - Mariposa
+      - Aviation/LAX
+      - Hawthorne/Lennox
+      - Crenshaw
+      - Vermont/Athens
+      - Harbor Freeway
+      - Avalon
+      - Willowbrook/Rosa Parks
+      - Long Beach Boulevard
+      - Lakewood Boulevard
+      - Norwalk
 
+    itineraries: 
       r2377889: 
         - Redondo Beach (n5360527586)
         - Douglas (n5360530767)
@@ -279,29 +279,58 @@ routes:
         - Lakewood Boulevard (n5360574904)
         - Norwalk (n5360575853)
 
+      r7935052: 
+        - Norwalk (n5360575853)
+        - Lakewood Boulevard (n5360574904)
+        - Long Beach Boulevard (n5360571297)
+        - Willowbrook/Rosa Parks (n5360566257)
+        - Avalon (n5360555156)
+        - Harbor Freeway (n5360553490)
+        - Vermont/Athens (n5360549737)
+        - Crenshaw (n5360549248)
+        - Hawthorne/Lennox (n5360547375)
+        - Aviation/LAX (n1768112047)
+        - Mariposa (n5360540476)
+        - El Segundo (n5360533318)
+        - Douglas (n5360530767)
+        - Redondo Beach (n5360527586)
 
-    stations: 
-      - Norwalk
-      - Lakewood Boulevard
-      - Long Beach Boulevard
-      - Willowbrook/Rosa Parks
-      - Avalon
-      - Harbor Freeway
-      - Vermont/Athens
-      - Crenshaw
-      - Hawthorne/Lennox
-      - Aviation/LAX
-      - Mariposa
-      - El Segundo
-      - Douglas
-      - Redondo Beach
 
   - 
-    name: Metro Gold Line (L)
     type: light_rail
     ref: 804
-    station_count: 27
+    name: Metro Gold Line (L)
     colour: '#ffd700'
+    station_count: 27
+    stations: 
+      - APU/Citrus College
+      - Azusa Downtown
+      - Irwindale
+      - Duarte/City of Hope
+      - Monrovia
+      - Arcadia
+      - Sierra Madre Villa
+      - Allen
+      - Lake
+      - Memorial Park
+      - Del Mar
+      - Fillmore
+      - South Pasadena
+      - Highland Park
+      - Southwest Museum
+      - Heritage Square
+      - Lincoln/Cypress
+      - Chinatown
+      - Union Station (light rail)
+      - Little Tokyo/Arts District
+      - Pico/Aliso
+      - Mariachi Plaza
+      - Soto
+      - Indiana
+      - Maravilla
+      - East Los Angeles Civic Center
+      - Atlantic
+
     itineraries: 
       r326426: 
         - APU/Citrus College (n3176155735)
@@ -360,41 +389,22 @@ routes:
         - APU/Citrus College (n3176155735)
 
 
-    stations: 
-      - Atlantic
-      - East Los Angeles Civic Center
-      - Maravilla
-      - Indiana
-      - Soto
-      - Mariachi Plaza
-      - Pico/Aliso
-      - Little Tokyo/Arts District
-      - Union Station (light rail)
-      - Chinatown
-      - Lincoln/Cypress
-      - Heritage Square
-      - Southwest Museum
-      - Highland Park
-      - South Pasadena
-      - Del Mar
-      - Memorial Park
-      - Lake
-      - Allen
-      - Sierra Madre Villa
-      - Monrovia
-      - Duarte/City of Hope
-      - Irwindale
-      - Azusa Downtown
-      - APU/Citrus College
-      - Arcadia
-      - Fillmore
-
   - 
-    name: Metro Purple Line (D)
     type: subway
     ref: 805
-    station_count: 8
+    name: Metro Purple Line (D)
     colour: '#800080'
+    station_count: 8
+    stations: 
+      - Wilshire/Western
+      - Wilshire/Normandie
+      - Wilshire/Vermont
+      - Westlake/MacArthur Park
+      - 7th Street/Metro Center
+      - Pershing Square
+      - Civic Center/Grand Park
+      - Union Station (subway)
+
     itineraries: 
       r2810819: 
         - Wilshire/Western (n6217648790)
@@ -417,22 +427,33 @@ routes:
         - Wilshire/Western (n6217648790)
 
 
-    stations: 
-      - Union Station (subway)
-      - Civic Center/Grand Park
-      - Pershing Square
-      - 7th Street/Metro Center
-      - Westlake/MacArthur Park
-      - Wilshire/Vermont
-      - Wilshire/Normandie
-      - Wilshire/Western
-
   - 
-    name: E Line (Expo)
     type: light_rail
     ref: 806
-    station_count: 19
+    name: E Line (Expo)
     colour: '#00a5db'
+    station_count: 19
+    stations: 
+      - 7th Street/Metro Center
+      - Pico
+      - LATTC/Ortho Institute
+      - Jefferson/USC
+      - Expo Park/USC
+      - Expo/Vermont
+      - Expo/Western
+      - Expo/Crenshaw
+      - Farmdale
+      - Expo/La Brea
+      - La Cienega/Jefferson
+      - Culver City
+      - Palms
+      - Westwood/Rancho Park
+      - Expo/Sepulveda
+      - Expo/Bundy
+      - 26th Street/Bergamot
+      - 17th Street/Santa Monica College
+      - Downtown Santa Monica
+
     itineraries: 
       r2351006: 
         - 7th Street/Metro Center (n268372325)
@@ -476,26 +497,5 @@ routes:
         - Pico (n2199141362)
         - 7th Street/Metro Center (n268372325)
 
-
-    stations: 
-      - Downtown Santa Monica
-      - 17th Street/Santa Monica College
-      - 26th Street/Bergamot
-      - Expo/Bundy
-      - Expo/Sepulveda
-      - Westwood/Rancho Park
-      - Palms
-      - Culver City
-      - La Cienega/Jefferson
-      - Expo/La Brea
-      - Farmdale
-      - Expo/Crenshaw
-      - Expo/Western
-      - Expo/Vermont
-      - Expo Park/USC
-      - Jefferson/USC
-      - LATTC/Ortho Institute
-      - Pico
-      - 7th Street/Metro Center
 
 

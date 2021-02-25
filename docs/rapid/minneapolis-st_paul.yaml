@@ -27,10 +27,11 @@ stations:
   - Snelling Avenue (n4065219555)
   - Stadium Village (n2913631282)
   - 'Target Field - Platform 1 (n4305375756)'
+  - 'Target Field - Platform 2 (n8365570101)'
   - 'Terminal 1 - Lindbergh (n6576997972)'
   - 'Terminal 2 - Humphrey (n1819190086)'
   - U.S. Bank Stadium (n1819181065)
-  - Union Depot Station (n4305375753)
+  - Union Depot (n4305375753)
   - VA Medical Center (n1819190087)
   - Victoria Street (n2913631283)
   - Warehouse District/Hennepin Avenue (n1819181071)
@@ -39,16 +40,41 @@ stations:
   - Westgate (n2913631286)
 
 transfers: 
+  - 
+    - 'Target Field - Platform 1 (r9731281)'
+    - 'Target Field - Platform 2 (r12308776)'
 
 routes: 
   - 
-    name: Blue Line (Hiawatha)
     type: light_rail
     ref: 901
-    station_count: 19
+    name: Blue Line (Hiawatha)
     colour: '#0000ff'
+    station_count: 19
+    stations: 
+      - 'Target Field - Platform 1'
+      - Warehouse District/Hennepin Avenue
+      - Nicollet Mall
+      - Government Plaza
+      - U.S. Bank Stadium
+      - Cedar-Riverside
+      - Franklin Avenue
+      - Lake Street/Midtown
+      - 38th Street
+      - 46th Street
+      - 50th Street/Minnehaha Park
+      - VA Medical Center
+      - Fort Snelling
+      - 'Terminal 1 - Lindbergh'
+      - 'Terminal 2 - Humphrey'
+      - American Boulevard
+      - Bloomington Central
+      - 28th Avenue
+      - Mall of America
+
     itineraries: 
       r2440419: 
+        - 'Target Field - Platform 2 (n8365570101)'
         - 'Target Field - Platform 1 (n4305375756)'
         - Warehouse District/Hennepin Avenue (n1819181071)
         - Nicollet Mall (n1819181072)
@@ -89,89 +115,17 @@ routes:
         - Nicollet Mall (n1819181072)
         - Warehouse District/Hennepin Avenue (n1819181071)
         - 'Target Field - Platform 1 (n4305375756)'
+        - 'Target Field - Platform 2 (n8365570101)'
 
-
-    stations: 
-      - Mall of America
-      - 28th Avenue
-      - Bloomington Central
-      - American Boulevard
-      - 'Terminal 2 - Humphrey'
-      - 'Terminal 1 - Lindbergh'
-      - Fort Snelling
-      - VA Medical Center
-      - 50th Street/Minnehaha Park
-      - 46th Street
-      - 38th Street
-      - Lake Street/Midtown
-      - Franklin Avenue Station
-      - Cedar-Riverside
-      - U.S. Bank Stadium Station
-      - Government Plaza
-      - Nicollet Mall
-      - Warehouse District/Hennepin Avenue
-      - Target Field (Metro Light Rail)
 
   - 
-    name: Green Line
     type: light_rail
     ref: 902
-    station_count: 23
+    name: Green Line
     colour: '#008144'
-    itineraries: 
-      r3817120: 
-        - Union Depot Station (n4305375753)
-        - Central Station (n2913631272)
-        - 10th Street (n2913631290)
-        - Robert Street (n2913631279)
-        - Capitol/Rice Street (n2913631271)
-        - Western Avenue (n2913631285)
-        - Dale Street (n2913631273)
-        - Victoria Street (n2913631283)
-        - Lexington Parkway (n2913631276)
-        - Hamline Avenue (n2913631275)
-        - Snelling Avenue (n4065219555)
-        - Fairview Avenue (n2913631274)
-        - Raymond Avenue (n2913631278)
-        - Westgate (n2913631286)
-        - Prospect Park (n2913631277)
-        - Stadium Village (n2913631282)
-        - East Bank (n2913631281)
-        - West Bank (n4254534424)
-        - U.S. Bank Stadium (n1819181065)
-        - Government Plaza (n1819181070)
-        - Nicollet Mall (n1819181072)
-        - Warehouse District/Hennepin Avenue (n1819181071)
-        - 'Target Field - Platform 1 (n4305375756)'
-
-      r3817130: 
-        - 'Target Field - Platform 1 (n4305375756)'
-        - Warehouse District/Hennepin Avenue (n1819181071)
-        - Nicollet Mall (n1819181072)
-        - Government Plaza (n1819181070)
-        - U.S. Bank Stadium (n1819181065)
-        - West Bank (n4254534424)
-        - East Bank (n2913631281)
-        - Stadium Village (n2913631282)
-        - Prospect Park (n2913631277)
-        - Westgate (n2913631286)
-        - Raymond Avenue (n2913631278)
-        - Fairview Avenue (n2913631274)
-        - Snelling Avenue (n4065219555)
-        - Hamline Avenue (n2913631275)
-        - Lexington Parkway (n2913631276)
-        - Victoria Street (n2913631283)
-        - Dale Street (n2913631273)
-        - Western Avenue (n2913631285)
-        - Capitol/Rice Street (n2913631271)
-        - Robert Street (n2913631279)
-        - 10th Street (n2913631290)
-        - Central Station (n2913631272)
-        - Union Depot Station (n4305375753)
-
-
+    station_count: 23
     stations: 
-      - Saint Paul Union Depot (light rail)
+      - Union Depot
       - Central Station
       - 10th Street
       - Robert Street
@@ -189,10 +143,64 @@ routes:
       - Stadium Village
       - East Bank
       - West Bank
-      - U.S. Bank Stadium Station
+      - U.S. Bank Stadium
       - Government Plaza
       - Nicollet Mall
       - Warehouse District/Hennepin Avenue
-      - Target Field (Metro Light Rail)
+      - 'Target Field - Platform 2'
+
+    itineraries: 
+      r3817120: 
+        - Union Depot (n4305375753)
+        - Central Station (n2913631272)
+        - 10th Street (n2913631290)
+        - Robert Street (n2913631279)
+        - Capitol/Rice Street (n2913631271)
+        - Western Avenue (n2913631285)
+        - Dale Street (n2913631273)
+        - Victoria Street (n2913631283)
+        - Lexington Parkway (n2913631276)
+        - Hamline Avenue (n2913631275)
+        - Snelling Avenue (n4065219555)
+        - Fairview Avenue (n2913631274)
+        - Raymond Avenue (n2913631278)
+        - Westgate (n2913631286)
+        - Prospect Park (n2913631277)
+        - Stadium Village (n2913631282)
+        - East Bank (n2913631281)
+        - West Bank (n4254534424)
+        - U.S. Bank Stadium (n1819181065)
+        - Government Plaza (n1819181070)
+        - Nicollet Mall (n1819181072)
+        - Warehouse District/Hennepin Avenue (n1819181071)
+        - 'Target Field - Platform 1 (n4305375756)'
+        - 'Target Field - Platform 2 (n8365570101)'
+
+      r3817130: 
+        - 'Target Field - Platform 2 (n8365570101)'
+        - 'Target Field - Platform 1 (n4305375756)'
+        - Warehouse District/Hennepin Avenue (n1819181071)
+        - Nicollet Mall (n1819181072)
+        - Government Plaza (n1819181070)
+        - U.S. Bank Stadium (n1819181065)
+        - West Bank (n4254534424)
+        - East Bank (n2913631281)
+        - Stadium Village (n2913631282)
+        - Prospect Park (n2913631277)
+        - Westgate (n2913631286)
+        - Raymond Avenue (n2913631278)
+        - Fairview Avenue (n2913631274)
+        - Snelling Avenue (n4065219555)
+        - Hamline Avenue (n2913631275)
+        - Lexington Parkway (n2913631276)
+        - Victoria Street (n2913631283)
+        - Dale Street (n2913631273)
+        - Western Avenue (n2913631285)
+        - Capitol/Rice Street (n2913631271)
+        - Robert Street (n2913631279)
+        - 10th Street (n2913631290)
+        - Central Station (n2913631272)
+        - Union Depot (n4305375753)
+
 
 

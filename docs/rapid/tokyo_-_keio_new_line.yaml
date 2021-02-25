@@ -9,11 +9,17 @@ transfers:
 
 routes: 
   - 
-    name: 京王新線
     type: train
     ref: KO
-    station_count: 4
+    name: 京王新線
     colour: '#e50b84'
+    station_count: 4
+    stations: 
+      - 新宿 (都営地下鉄新宿線-京王新線)
+      - 初台
+      - 幡ヶ谷
+      - 笹塚
+
     itineraries: 
       r10056053: 
         - 新宿 (n281417661)
@@ -27,11 +33,5 @@ routes:
         - 初台 (n7872741440)
         - 新宿 (n281417661)
 
-
-    stations: 
-      - 笹塚
-      - 幡ヶ谷
-      - 初台
-      - 新宿 (都営地下鉄新宿線-京王新線)
 
 

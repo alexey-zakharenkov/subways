@@ -43,11 +43,33 @@ transfers:
 
 routes: 
   - 
-    name: Metro 50
     type: subway
     ref: 50
-    station_count: 20
+    name: Metro 50
     colour: '#29ab4d'
+    station_count: 20
+    stations: 
+      - Gein
+      - Reigersbos
+      - Holendrecht
+      - Bullewijk
+      - Bijlmer ArenA
+      - Strandvliet
+      - Duivendrecht
+      - Van der Madeweg
+      - Overamstel
+      - Station RAI
+      - Zuid
+      - Amstelveenseweg
+      - Henk Sneevlietweg
+      - Heemstedestraat
+      - Amsterdam Lelylaan
+      - Postjesweg
+      - Jan van Galenstraat
+      - De Vlugtlaan
+      - Amsterdam Sloterdijk (Metro)
+      - Isolatorweg
+
     itineraries: 
       r18683: 
         - Gein (n4041640589)
@@ -94,34 +116,32 @@ routes:
         - Gein (n4041640589)
 
 
-    stations: 
-      - Isolatorweg
-      - Amsterdam Sloterdijk (Metro)
-      - De Vlugtlaan
-      - Jan van Galenstraat
-      - Postjesweg
-      - Amsterdam Lelylaan
-      - Heemstedestraat
-      - Henk Sneevlietweg
-      - Amstelveenseweg
-      - Zuid
-      - Station RAI
-      - Overamstel
-      - Van der Madeweg
-      - Duivendrecht
-      - Strandvliet
-      - Bijlmer ArenA
-      - Bullewijk
-      - Holendrecht
-      - Reigersbos
-      - Gein
-
   - 
-    name: Metro 51
     type: subway
     ref: 51
-    station_count: 18
+    name: Metro 51
     colour: '#f69931'
+    station_count: 18
+    stations: 
+      - Nieuwmarkt
+      - Waterlooplein
+      - Weesperplein
+      - Wibautstraat
+      - Amsterdam Amstel
+      - Spaklerweg
+      - Overamstel
+      - Station RAI
+      - Zuid
+      - Amstelveenseweg
+      - Henk Sneevlietweg
+      - Heemstedestraat
+      - Amsterdam Lelylaan
+      - Postjesweg
+      - Jan van Galenstraat
+      - De Vlugtlaan
+      - Amsterdam Sloterdijk (Metro)
+      - Isolatorweg
+
     itineraries: 
       r31249: 
         - Nieuwmarkt (n4073743506)
@@ -164,32 +184,21 @@ routes:
         - Nieuwmarkt (n4073743506)
 
 
-    stations: 
-      - Isolatorweg
-      - Amsterdam Sloterdijk (Metro)
-      - De Vlugtlaan
-      - Jan van Galenstraat
-      - Postjesweg
-      - Amsterdam Lelylaan
-      - Heemstedestraat
-      - Henk Sneevlietweg
-      - Amstelveenseweg
-      - Zuid
-      - Station RAI
-      - Overamstel
-      - Spaklerweg
-      - Amsterdam Amstel
-      - Wibautstraat
-      - Weesperplein
-      - Waterlooplein
-      - Nieuwmarkt
-
   - 
-    name: Metro 52
     type: subway
     ref: 52
-    station_count: 7
+    name: Metro 52
     colour: '#00adef'
+    station_count: 7
+    stations: 
+      - Noord
+      - Noorderpark
+      - Rokin
+      - Vijzelgracht
+      - De Pijp
+      - Europaplein
+      - Zuid
+
     itineraries: 
       r8466667: 
         - Noord (n5737467961)
@@ -210,37 +219,28 @@ routes:
         - Noord (n5737467961)
 
 
-    stations: 
-      - Noord
-      - Noorderpark
-      - Rokin
-      - Vijzelgracht
-      - De Pijp
-      - Europaplein
-      - Zuid
-
   - 
-    name: Metro 53
     type: subway
     ref: 53
-    station_count: 13
+    name: Metro 53
     colour: '#ff0000'
-    itineraries: 
-      r4515356: 
-        - Gaasperplas (n4041642874)
-        - Kraaiennest (n4041662265)
-        - Ganzenhoef (n4041662264)
-        - Verrijn Stuartweg (n4064153245)
-        - Diemen Zuid (n46199966)
-        - Venserpolder (n4041664287)
-        - Van der Madeweg (n289445435)
-        - Spaklerweg (n4073693626)
-        - Amsterdam Amstel (n4040491812)
-        - Wibautstraat (n4073693628)
-        - Weesperplein (w268998785)
-        - Waterlooplein (w268782305)
-        - Nieuwmarkt (n4073743506)
+    station_count: 13
+    stations: 
+      - Nieuwmarkt
+      - Waterlooplein
+      - Weesperplein
+      - Wibautstraat
+      - Amsterdam Amstel
+      - Spaklerweg
+      - Van der Madeweg
+      - Venserpolder
+      - Diemen Zuid
+      - Verrijn Stuartweg
+      - Ganzenhoef
+      - Kraaiennest
+      - Gaasperplas
 
+    itineraries: 
       r18532: 
         - Nieuwmarkt (n4073743506)
         - Waterlooplein (w268782305)
@@ -256,37 +256,13 @@ routes:
         - Kraaiennest (n4041662265)
         - Gaasperplas (n4041642874)
 
-
-    stations: 
-      - Gaasperplas
-      - Kraaiennest
-      - Ganzenhoef
-      - Verrijn Stuartweg
-      - Diemen Zuid
-      - Venserpolder
-      - Van der Madeweg
-      - Spaklerweg
-      - Amsterdam Amstel
-      - Wibautstraat
-      - Weesperplein
-      - Waterlooplein
-      - Nieuwmarkt
-
-  - 
-    name: Metro 54
-    type: subway
-    ref: 54
-    station_count: 14
-    colour: '#fcfb05'
-    itineraries: 
-      r4515357: 
-        - Gein (n4041640589)
-        - Reigersbos (n4041640590)
-        - Amsterdam Holendrecht (n250233810)
-        - Bullewijk (n4046388677)
-        - Amsterdam Bijlmer ArenA (n4005961975)
-        - Strandvliet (n4046383465)
-        - Duivendrecht (n4041666291)
+      r4515356: 
+        - Gaasperplas (n4041642874)
+        - Kraaiennest (n4041662265)
+        - Ganzenhoef (n4041662264)
+        - Verrijn Stuartweg (n4064153245)
+        - Diemen Zuid (n46199966)
+        - Venserpolder (n4041664287)
         - Van der Madeweg (n289445435)
         - Spaklerweg (n4073693626)
         - Amsterdam Amstel (n4040491812)
@@ -295,6 +271,30 @@ routes:
         - Waterlooplein (w268782305)
         - Nieuwmarkt (n4073743506)
 
+
+  - 
+    type: subway
+    ref: 54
+    name: Metro 54
+    colour: '#fcfb05'
+    station_count: 14
+    stations: 
+      - Nieuwmarkt
+      - Waterlooplein
+      - Weesperplein
+      - Wibautstraat
+      - Amsterdam Amstel
+      - Spaklerweg
+      - Van der Madeweg
+      - Duivendrecht
+      - Strandvliet
+      - Bijlmer ArenA
+      - Bullewijk
+      - Holendrecht
+      - Reigersbos
+      - Gein
+
+    itineraries: 
       r18423: 
         - Nieuwmarkt (n4073743506)
         - Waterlooplein (w268782305)
@@ -311,21 +311,21 @@ routes:
         - Reigersbos (n4041640590)
         - Gein (n4041640589)
 
+      r4515357: 
+        - Gein (n4041640589)
+        - Reigersbos (n4041640590)
+        - Amsterdam Holendrecht (n250233810)
+        - Bullewijk (n4046388677)
+        - Amsterdam Bijlmer ArenA (n4005961975)
+        - Strandvliet (n4046383465)
+        - Duivendrecht (n4041666291)
+        - Van der Madeweg (n289445435)
+        - Spaklerweg (n4073693626)
+        - Amsterdam Amstel (n4040491812)
+        - Wibautstraat (n4073693628)
+        - Weesperplein (w268998785)
+        - Waterlooplein (w268782305)
+        - Nieuwmarkt (n4073743506)
 
-    stations: 
-      - Gein
-      - Reigersbos
-      - Holendrecht
-      - Bullewijk
-      - Bijlmer ArenA
-      - Strandvliet
-      - Duivendrecht
-      - Van der Madeweg
-      - Spaklerweg
-      - Amsterdam Amstel
-      - Wibautstraat
-      - Weesperplein
-      - Waterlooplein
-      - Nieuwmarkt
 
 

@@ -42,49 +42,11 @@ transfers:
 
 routes: 
   - 
-    name: Línea 1
     type: subway
     ref: 1
-    station_count: 16
+    name: Línea 1
     colour: '#0000ff'
-    itineraries: 
-      r7734059: 
-        - Centro de los Héroes (n2382875701)
-        - Francisco Alberto Caamaño Deñó (n2382875707)
-        - Amín Abel Hasbún (n2382433212)
-        - Joaquín Balaguer (n2382356033)
-        - Casandra Damirón (n2382351269)
-        - Profesor Juan Bosch (n2382351268)
-        - Juan Pablo Duarte (n2324959085)
-        - Peña Batlle (n312855286)
-        - Pedro Livio Cedeño (n312855983)
-        - Los Taínos (n312855599)
-        - Máximo Gómez (n2104800000)
-        - Hermanas Mirabal (n2385996177)
-        - Peña Gómez (n2385996813)
-        - Gregorio Luperón (n2104800239)
-        - Gregorio Urbano Gilbert Suero (n4042570077)
-        - Mamá Tingó (n2104800307)
-
-      r1325782: 
-        - Mamá Tingó (n2104800307)
-        - Gregorio Urbano Gilbert Suero (n4042570077)
-        - Gregorio Luperón (n2104800239)
-        - Peña Gómez (n2385996813)
-        - Hermanas Mirabal (n2385996177)
-        - Máximo Gómez (n2104800000)
-        - Los Taínos (n312855599)
-        - Pedro Livio Cedeño (n312855983)
-        - Peña Batlle (n312855286)
-        - Juan Pablo Duarte (n2324959085)
-        - Profesor Juan Bosch (n2382351268)
-        - Casandra Damirón (n2382351269)
-        - Joaquín Balaguer (n2382356033)
-        - Amín Abel Hasbún (n2382433212)
-        - Francisco Alberto Caamaño Deñó (n2382875707)
-        - Centro de los Héroes (n2382875701)
-
-
+    station_count: 16
     stations: 
       - Mama Tingò
       - Gregorio Urbano Gilbert Suero
@@ -103,12 +65,70 @@ routes:
       - Francisco Alberto Caamaño Deñó
       - Centro De Los Héroes
 
+    itineraries: 
+      r1325782: 
+        - Mamá Tingó (n2104800307)
+        - Gregorio Urbano Gilbert Suero (n4042570077)
+        - Gregorio Luperón (n2104800239)
+        - Peña Gómez (n2385996813)
+        - Hermanas Mirabal (n2385996177)
+        - Máximo Gómez (n2104800000)
+        - Los Taínos (n312855599)
+        - Pedro Livio Cedeño (n312855983)
+        - Peña Batlle (n312855286)
+        - Juan Pablo Duarte (n2324959085)
+        - Profesor Juan Bosch (n2382351268)
+        - Casandra Damirón (n2382351269)
+        - Joaquín Balaguer (n2382356033)
+        - Amín Abel Hasbún (n2382433212)
+        - Francisco Alberto Caamaño Deñó (n2382875707)
+        - Centro de los Héroes (n2382875701)
+
+      r7734059: 
+        - Centro de los Héroes (n2382875701)
+        - Francisco Alberto Caamaño Deñó (n2382875707)
+        - Amín Abel Hasbún (n2382433212)
+        - Joaquín Balaguer (n2382356033)
+        - Casandra Damirón (n2382351269)
+        - Profesor Juan Bosch (n2382351268)
+        - Juan Pablo Duarte (n2324959085)
+        - Peña Batlle (n312855286)
+        - Pedro Livio Cedeño (n312855983)
+        - Los Taínos (n312855599)
+        - Máximo Gómez (n2104800000)
+        - Hermanas Mirabal (n2385996177)
+        - Peña Gómez (n2385996813)
+        - Gregorio Luperón (n2104800239)
+        - Gregorio Urbano Gilbert Suero (n4042570077)
+        - Mamá Tingó (n2104800307)
+
+
   - 
-    name: Línea 2
     type: subway
     ref: 2
-    station_count: 18
+    name: Línea 2
     colour: '#ff0000'
+    station_count: 18
+    stations: 
+      - María Móntez
+      - Pedro Francisco Bonó
+      - Francisco Gregorio Billini
+      - Ulises Fransico Espalliat
+      - Pedro Mir
+      - 'Freddy Beras - Goico'
+      - Juan Ulises García Saleta
+      - Centro Olímpico Juan Pablo Duarte
+      - Coronel Rafael Tomás Fernández Domínguez
+      - Mauricio Báez
+      - Ramón Cáceres
+      - Horacio Vásquez
+      - Manuel de Jesús Abreu Galván
+      - Eduardo Brito
+      - Ercilia Pepín
+      - Rosa Duarte
+      - Trina de Moya de Vásquez
+      - Concepción Bona
+
     itineraries: 
       r7730098: 
         - María Móntez (n2324956457)
@@ -150,25 +170,5 @@ routes:
         - Pedro Francisco Bonó (n4119545007)
         - María Móntez (n2324956457)
 
-
-    stations: 
-      - Concepción Bona
-      - Trina de Moya de Vásquez
-      - Rosa Duarte
-      - Ercilia Pepín
-      - Eduardo Brito
-      - Manuel de Jesús Abreu Galván
-      - Horacio Vásquez
-      - Ramón Cáceres
-      - Mauricio Báez
-      - Coronel Rafael Tomás Fernández Domínguez
-      - Centro Olímpico Juan Pablo Duarte
-      - Juan Ulises García Saleta
-      - 'Freddy Beras - Goico'
-      - Pedro Mir
-      - Ulises Fransico Espalliat
-      - Francisco Gregorio Billini
-      - Pedro Francisco Bonó
-      - María Móntez
 
 

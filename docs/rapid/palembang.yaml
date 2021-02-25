@@ -19,28 +19,28 @@ transfers:
 
 routes: 
   - 
-    name: LRT Palembang
     type: light_rail
     ref: 1
-    station_count: 14
+    name: LRT Palembang
     colour: '#0000ff'
-    itineraries: 
-      r9732463: 
-        - Bandara (n5984721327)
-        - Asrama Haji (n5984721326)
-        - Punti Kayu (n5984721325)
-        - RSUD (n5984721324)
-        - Garuda Dempo (n5984721323)
-        - Demang (n5984721322)
-        - Bumi Sriwijaya (n5984721321)
-        - Dishub (n5984721320)
-        - Cinde (n5984721319)
-        - Ampera (n5984721318)
-        - Polresta (n5984721317)
-        - Jakabaring (n5984721316)
-        - DJKA (n5984721315)
-        - Depo (n5984721314)
+    station_count: 14
+    stations: 
+      - Depo
+      - DJKA
+      - Jakabaring
+      - Polresta
+      - Ampera
+      - Cinde
+      - Dishub
+      - Bumi Sriwijaya
+      - Demang
+      - Garuda Dempo
+      - RSUD
+      - Punti Kayu
+      - Asrama Haji
+      - Bandara
 
+    itineraries: 
       r9732461: 
         - Depo (n5984721314)
         - DJKA (n5984721315)
@@ -57,21 +57,21 @@ routes:
         - Asrama Haji (n5984721326)
         - Bandara (n5984721327)
 
+      r9732463: 
+        - Bandara (n5984721327)
+        - Asrama Haji (n5984721326)
+        - Punti Kayu (n5984721325)
+        - RSUD (n5984721324)
+        - Garuda Dempo (n5984721323)
+        - Demang (n5984721322)
+        - Bumi Sriwijaya (n5984721321)
+        - Dishub (n5984721320)
+        - Cinde (n5984721319)
+        - Ampera (n5984721318)
+        - Polresta (n5984721317)
+        - Jakabaring (n5984721316)
+        - DJKA (n5984721315)
+        - Depo (n5984721314)
 
-    stations: 
-      - Bandara
-      - Asrama Haji
-      - Punti Kayu
-      - RSUD
-      - Garuda Dempo
-      - Demang
-      - Bumi Sriwijaya
-      - Dishub
-      - Cinde
-      - Ampera
-      - Polresta
-      - Jakabaring
-      - DJKA
-      - Depo
 
 

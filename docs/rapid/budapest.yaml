@@ -54,39 +54,11 @@ transfers:
 
 routes: 
   - 
-    name: Millenniumi Földalatti Vasút
     type: subway
     ref: M1
-    station_count: 11
+    name: Millenniumi Földalatti Vasút
     colour: '#ffe507'
-    itineraries: 
-      r1771522: 
-        - Mexikói út (n5217774759)
-        - Széchenyi fürdő (n5217774760)
-        - Hősök tere (n5217774761)
-        - Bajza utca (n5217774762)
-        - Kodály körönd (n5217774763)
-        - Vörösmarty utca (n5217774764)
-        - Oktogon (n5217774765)
-        - Opera (n5217774777)
-        - Bajcsy-Zsilinszky út (n5217774776)
-        - Deák Ferenc tér (n5217774796)
-        - Vörösmarty tér (n5217774775)
-
-      r1771521: 
-        - Vörösmarty tér (n5217774775)
-        - Deák Ferenc tér (n5217774796)
-        - Bajcsy-Zsilinszky út (n5217774776)
-        - Opera (n5217774777)
-        - Oktogon (n5217774765)
-        - Vörösmarty utca (n5217774764)
-        - Kodály körönd (n5217774763)
-        - Bajza utca (n5217774762)
-        - Hősök tere (n5217774761)
-        - Széchenyi fürdő (n5217774760)
-        - Mexikói út (n5217774759)
-
-
+    station_count: 11
     stations: 
       - Vörösmarty tér
       - Deák Ferenc tér M1
@@ -100,12 +72,53 @@ routes:
       - Széchenyi fürdő
       - Mexikói út
 
+    itineraries: 
+      r1771521: 
+        - Vörösmarty tér (n5217774775)
+        - Deák Ferenc tér (n5217774796)
+        - Bajcsy-Zsilinszky út (n5217774776)
+        - Opera (n5217774777)
+        - Oktogon (n5217774765)
+        - Vörösmarty utca (n5217774764)
+        - Kodály körönd (n5217774763)
+        - Bajza utca (n5217774762)
+        - Hősök tere (n5217774761)
+        - Széchenyi fürdő (n5217774760)
+        - Mexikói út (n5217774759)
+
+      r1771522: 
+        - Mexikói út (n5217774759)
+        - Széchenyi fürdő (n5217774760)
+        - Hősök tere (n5217774761)
+        - Bajza utca (n5217774762)
+        - Kodály körönd (n5217774763)
+        - Vörösmarty utca (n5217774764)
+        - Oktogon (n5217774765)
+        - Opera (n5217774777)
+        - Bajcsy-Zsilinszky út (n5217774776)
+        - Deák Ferenc tér (n5217774796)
+        - Vörösmarty tér (n5217774775)
+
+
   - 
-    name: M2 => Déli pályaudvar
     type: subway
     ref: M2
-    station_count: 11
+    name: M2 => Örs vezér tere
     colour: '#d50a0e'
+    station_count: 11
+    stations: 
+      - Déli pályaudvar
+      - Széll Kálmán tér
+      - Batthyány tér M
+      - Kossuth Lajos tér
+      - Deák Ferenc tér M2
+      - Astoria
+      - Blaha Lujza tér
+      - Keleti pályaudvar M2
+      - Puskás Ferenc Stadion
+      - Pillangó utca
+      - Örs vezér tere M2
+
     itineraries: 
       r4121431: 
         - Déli pályaudvar (n5217774800)
@@ -134,26 +147,36 @@ routes:
         - Déli pályaudvar (n5217774800)
 
 
-    stations: 
-      - Örs vezér tere M2
-      - Pillangó utca
-      - Puskás Ferenc Stadion
-      - Keleti pályaudvar M2
-      - Blaha Lujza tér
-      - Astoria
-      - Deák Ferenc tér M2
-      - Kossuth Lajos tér
-      - Batthyány tér M
-      - Széll Kálmán tér
-      - Déli pályaudvar
-
   - 
-    name: M3 => Nagyvárad tér (ideiglenes)
     type: subway
     ref: M3
-    station_count: 13
+    name: M3 => Kőbánya-Kispest (ideiglenes)
     colour: '#0a0e65'
+    station_count: 13
+    stations: 
+      - Nagyvárad tér
+      - Népliget
+      - Ecseri út
+      - Pöttyös utca
+      - Határ út
+      - Kőbánya-Kispest M
+      - Lehel tér
+      - Dózsa György út
+      - Árpád híd
+      - Forgách utca
+      - Gyöngyösi utca
+      - Újpest-városkapu
+      - Újpest-Központ M
+
     itineraries: 
+      r7697183: 
+        - Nagyvárad tér (n5217774771)
+        - Népliget (n5217774770)
+        - Ecseri út (n5217774769)
+        - Pöttyös utca (n5217774768)
+        - Határ út (n5217774767)
+        - Kőbánya-Kispest (n5217774766)
+
       r7697184: 
         - Kőbánya-Kispest (n5217774766)
         - Határ út (n5217774767)
@@ -171,14 +194,6 @@ routes:
         - Újpest-városkapu (n5217848813)
         - Újpest-központ (n6372285730)
 
-      r7697183: 
-        - Nagyvárad tér (n5217774771)
-        - Népliget (n5217774770)
-        - Ecseri út (n5217774769)
-        - Pöttyös utca (n5217774768)
-        - Határ út (n5217774767)
-        - Kőbánya-Kispest (n5217774766)
-
       r9443822: 
         - Újpest-központ (n6372285730)
         - Újpest-városkapu (n5217848813)
@@ -189,27 +204,24 @@ routes:
         - Lehel tér (n5217774780)
 
 
-    stations: 
-      - Kőbánya-Kispest M
-      - Határ út
-      - Pöttyös utca
-      - Ecseri út
-      - Népliget
-      - Nagyvárad tér
-      - Újpest-Központ M
-      - Újpest-városkapu
-      - Gyöngyösi utca
-      - Forgách utca
-      - Árpád híd
-      - Dózsa György út
-      - Lehel tér
-
   - 
-    name: M4 => Kelenföld vasútállomás
     type: subway
     ref: M4
-    station_count: 10
+    name: M4 => Keleti pályaudvar
     colour: '#007b1c'
+    station_count: 10
+    stations: 
+      - Kelenföld vasútállomás
+      - Bikás park
+      - Újbuda-központ
+      - Móricz Zsigmond körtér
+      - Szent Gellért tér
+      - Fővám tér
+      - Kálvin tér M4
+      - Rákóczi tér
+      - II. János Pál pápa tér
+      - Keleti pályaudvar M4
+
     itineraries: 
       r4121435: 
         - Kelenföld vasútállomás (n5217774781)
@@ -235,17 +247,5 @@ routes:
         - Bikás park (n5217774782)
         - Kelenföld vasútállomás (n5217774781)
 
-
-    stations: 
-      - Keleti pályaudvar M4
-      - II. János Pál pápa tér
-      - Rákóczi tér
-      - Kálvin tér M4
-      - Fővám tér
-      - Szent Gellért tér
-      - Móricz Zsigmond körtér
-      - Újbuda-központ
-      - Bikás park
-      - Kelenföld vasútállomás
 
 

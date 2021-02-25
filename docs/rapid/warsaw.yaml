@@ -97,11 +97,34 @@ transfers:
 
 routes: 
   - 
-    name: Linia metra M1
     type: subway
     ref: M1
-    station_count: 21
+    name: Linia metra M1
     colour: '#0000ff'
+    station_count: 21
+    stations: 
+      - Młociny
+      - Wawrzyszew
+      - Stare Bielany
+      - Słodowiec
+      - Marymont
+      - Plac Wilsona
+      - Dworzec Gdański
+      - Ratusz Arsenał
+      - Świętokrzyska — M1
+      - Centrum
+      - Politechnika
+      - Pole Mokotowskie
+      - Racławicka
+      - Wierzbno
+      - Wilanowska
+      - Służew
+      - Ursynów
+      - Stokłosy
+      - Imielin
+      - Natolin
+      - Kabaty
+
     itineraries: 
       r4236800: 
         - Młociny (n307389116)
@@ -149,51 +172,28 @@ routes:
         - Młociny (n307389116)
 
 
-    stations: 
-      - Młociny
-      - Wawrzyszew
-      - Stare Bielany
-      - Słodowiec
-      - Marymont
-      - Plac Wilsona
-      - Dworzec Gdański
-      - Ratusz Arsenał
-      - Świętokrzyska — M1
-      - Centrum
-      - Politechnika
-      - Pole Mokotowskie
-      - Racławicka
-      - Wierzbno
-      - Wilanowska
-      - Służew
-      - Ursynów
-      - Stokłosy
-      - Imielin
-      - Natolin
-      - Kabaty
-
   - 
-    name: II linia metra
     type: subway
     ref: M2
-    station_count: 13
+    name: II linia metra
     colour: '#ff0000'
-    itineraries: 
-      r4232534: 
-        - Księcia Janusza (n5907821373)
-        - Młynów (n5907821374)
-        - Płocka (n4930657482)
-        - Rondo Daszyńskiego (n3390267294)
-        - Rondo ONZ (n3390266492)
-        - Świętokrzyska (n5117464830)
-        - Nowy Świat-Uniwersytet (n3390237898)
-        - Centrum Nauki Kopernik (n3390230685)
-        - Stadion Narodowy (n3390197100)
-        - Dworzec Wileński (n3390187815)
-        - Szwedzka (n6053348692)
-        - Targówek Mieszkaniowy (n6564265270)
-        - Trocka (n4930657487)
+    station_count: 13
+    stations: 
+      - Trocka
+      - Targówek Mieszkaniowy
+      - Szwedzka
+      - Dworzec Wileński
+      - Stadion Narodowy
+      - Centrum Nauki Kopernik
+      - Nowy Świat-Uniwersytet
+      - Świętokrzyska — M2
+      - Rondo Daszyńskiego
+      - Rondo Daszyńskiego
+      - Płocka
+      - Młynów
+      - Księcia Janusza
 
+    itineraries: 
       r4232533: 
         - Trocka (n4930657487)
         - Targówek Mieszkaniowy (n6564265270)
@@ -209,28 +209,53 @@ routes:
         - Młynów (n5907821374)
         - Księcia Janusza (n5907821373)
 
+      r4232534: 
+        - Księcia Janusza (n5907821373)
+        - Młynów (n5907821374)
+        - Płocka (n4930657482)
+        - Rondo Daszyńskiego (n3390267294)
+        - Rondo ONZ (n3390266492)
+        - Świętokrzyska (n5117464830)
+        - Nowy Świat-Uniwersytet (n3390237898)
+        - Centrum Nauki Kopernik (n3390230685)
+        - Stadion Narodowy (n3390197100)
+        - Dworzec Wileński (n3390187815)
+        - Szwedzka (n6053348692)
+        - Targówek Mieszkaniowy (n6564265270)
+        - Trocka (n4930657487)
 
-    stations: 
-      - Księcia Janusza
-      - Młynów
-      - Płocka
-      - Rondo Daszyńskiego
-      - Rondo Daszyńskiego
-      - Świętokrzyska — M2
-      - Nowy Świat-Uniwersytet
-      - Centrum Nauki Kopernik
-      - Stadion Narodowy
-      - Dworzec Wileński
-      - Szwedzka
-      - Targówek Mieszkaniowy
-      - Trocka
 
   - 
-    name: 'S1 (Otwock - Pruszków)'
     type: train
     ref: S1
-    station_count: 23
+    name: 'S1 (Otwock - Pruszków)'
     colour: '#e74a4a'
+    station_count: 23
+    stations: 
+      - Pruszków
+      - Piastów
+      - Warszawa Ursus Niedźwiadek
+      - Warszawa Ursus
+      - Warszawa Włochy
+      - Warszawa Zachodnia
+      - Warszawa Ochota
+      - Warszawa Śródmieście
+      - Warszawa Powiśle
+      - Warszawa Stadion
+      - Warszawa Wschodnia
+      - Warszawa Olszynka Grochowska
+      - Warszawa Gocławek
+      - Warszawa Wawer
+      - Warszawa Anin
+      - Warszawa Międzylesie
+      - Warszawa Radość
+      - Warszawa Miedzeszyn
+      - Warszawa Falenica
+      - Michalin
+      - Józefów
+      - Świder
+      - Otwock
+
     itineraries: 
       r6747861: 
         - Pruszków (n3455517789)
@@ -283,75 +308,12 @@ routes:
         - Pruszków (n3455517789)
 
 
-    stations: 
-      - Otwock
-      - Świder
-      - Józefów
-      - Michalin
-      - Warszawa Falenica
-      - Warszawa Miedzeszyn
-      - Warszawa Radość
-      - Warszawa Międzylesie
-      - Warszawa Anin
-      - Warszawa Wawer
-      - Warszawa Gocławek
-      - Warszawa Olszynka Grochowska
-      - Warszawa Wschodnia
-      - Warszawa Stadion
-      - Warszawa Powiśle
-      - Warszawa Śródmieście
-      - Warszawa Ochota
-      - Warszawa Zachodnia
-      - Warszawa Włochy
-      - Warszawa Ursus
-      - Warszawa Ursus Niedźwiadek
-      - Piastów
-      - Pruszków
-
   - 
-    name: 'S2 (Warszawa Lotnisko Chopina - Sulejówek Miłosna)'
     type: train
     ref: S2
-    station_count: 16
+    name: 'S2 (Warszawa Lotnisko Chopina - Sulejówek Miłosna)'
     colour: '#2e8ec7'
-    itineraries: 
-      r2569256: 
-        - Warszawa Lotnisko Chopina (n2043558695)
-        - Warszawa Służewiec (n3414320862)
-        - Warszawa Żwirki i Wigury (n3414299259)
-        - Warszawa Rakowiec (n3414297957)
-        - Warszawa Aleje Jerozolimskie (n3241851873)
-        - Warszawa Zachodnia (n3390821831)
-        - Warszawa Ochota (n3390898176)
-        - Warszawa Śródmieście (n2351113017)
-        - Warszawa Powiśle (n4358027098)
-        - Warszawa Stadion (n3390793459)
-        - Warszawa Wschodnia (n33210583)
-        - Warszawa Rembertów (n3401904483)
-        - Warszawa Wesoła (n2181074450)
-        - Warszawa Wola Grzybowska (n1883105343)
-        - Sulejówek (n3402180090)
-        - Sulejówek Miłosna (n2181018756)
-
-      r77728: 
-        - Sulejówek Miłosna (n2181018756)
-        - Sulejówek (n3402180090)
-        - Warszawa Wola Grzybowska (n1883105343)
-        - Warszawa Wesoła (n2181074450)
-        - Warszawa Rembertów (n3401904483)
-        - Warszawa Wschodnia (n33210583)
-        - Warszawa Stadion (n3390793459)
-        - Warszawa Powiśle (n4358027098)
-        - Warszawa Śródmieście (n2351113017)
-        - Warszawa Ochota (n3390898176)
-        - Warszawa Zachodnia (n3390821831)
-        - Warszawa Aleje Jerozolimskie (n3241851873)
-        - Warszawa Rakowiec (n3414297957)
-        - Warszawa Żwirki i Wigury (n3414299259)
-        - Warszawa Służewiec (n3414320862)
-        - Warszawa Lotnisko Chopina (n2043558695)
-
-
+    station_count: 16
     stations: 
       - Sulejówek Miłosna
       - Sulejówek
@@ -370,25 +332,18 @@ routes:
       - Warszawa Służewiec
       - Warszawa Lotnisko Chopina
 
-  - 
-    name: 'S3 (Warszawa Lotnisko Chopina - Wieliszew)'
-    type: train
-    ref: S3
-    station_count: 17
-    colour: '#ffae00'
     itineraries: 
-      r6931733: 
-        - Wieliszew (n3421323572)
-        - Michałów Reginów (n3421303595)
-        - Legionowo Piaski (n3421284258)
-        - Legionowo (n3458200366)
-        - Warszawa Choszczówka (n2889019486)
-        - Warszawa Płudy (n2889005397)
-        - Warszawa Żerań (n3439023519)
-        - Warszawa Toruńska (n3438881727)
-        - Warszawa Praga (n3438082486)
+      r77728: 
+        - Sulejówek Miłosna (n2181018756)
+        - Sulejówek (n3402180090)
+        - Warszawa Wola Grzybowska (n1883105343)
+        - Warszawa Wesoła (n2181074450)
+        - Warszawa Rembertów (n3401904483)
         - Warszawa Wschodnia (n33210583)
-        - Warszawa Centralna (w575701389)
+        - Warszawa Stadion (n3390793459)
+        - Warszawa Powiśle (n4358027098)
+        - Warszawa Śródmieście (n2351113017)
+        - Warszawa Ochota (n3390898176)
         - Warszawa Zachodnia (n3390821831)
         - Warszawa Aleje Jerozolimskie (n3241851873)
         - Warszawa Rakowiec (n3414297957)
@@ -396,6 +351,51 @@ routes:
         - Warszawa Służewiec (n3414320862)
         - Warszawa Lotnisko Chopina (n2043558695)
 
+      r2569256: 
+        - Warszawa Lotnisko Chopina (n2043558695)
+        - Warszawa Służewiec (n3414320862)
+        - Warszawa Żwirki i Wigury (n3414299259)
+        - Warszawa Rakowiec (n3414297957)
+        - Warszawa Aleje Jerozolimskie (n3241851873)
+        - Warszawa Zachodnia (n3390821831)
+        - Warszawa Ochota (n3390898176)
+        - Warszawa Śródmieście (n2351113017)
+        - Warszawa Powiśle (n4358027098)
+        - Warszawa Stadion (n3390793459)
+        - Warszawa Wschodnia (n33210583)
+        - Warszawa Rembertów (n3401904483)
+        - Warszawa Wesoła (n2181074450)
+        - Warszawa Wola Grzybowska (n1883105343)
+        - Sulejówek (n3402180090)
+        - Sulejówek Miłosna (n2181018756)
+
+
+  - 
+    type: train
+    ref: S3
+    name: 'S3 (Warszawa Lotnisko Chopina - Wieliszew)'
+    colour: '#ffae00'
+    station_count: 17
+    stations: 
+      - Warszawa Lotnisko Chopina
+      - Warszawa Służewiec
+      - Warszawa Żwirki i Wigury
+      - Warszawa Rakowiec
+      - Warszawa Aleje Jerozolimskie
+      - Warszawa Zachodnia
+      - Warszawa Centralna
+      - Warszawa Wschodnia
+      - Warszawa Praga
+      - Warszawa Toruńska
+      - Warszawa Żerań
+      - Warszawa Płudy
+      - Warszawa Choszczówka
+      - Legionowo
+      - Legionowo Piaski
+      - Michałów-Reginów
+      - Wieliszew
+
+    itineraries: 
       r6931732: 
         - Warszawa Lotnisko Chopina (n2043558695)
         - Warszawa Służewiec (n3414320862)
@@ -415,7 +415,32 @@ routes:
         - Michałów Reginów (n3421303595)
         - Wieliszew (n3421323572)
 
+      r6931733: 
+        - Wieliszew (n3421323572)
+        - Michałów Reginów (n3421303595)
+        - Legionowo Piaski (n3421284258)
+        - Legionowo (n3458200366)
+        - Warszawa Choszczówka (n2889019486)
+        - Warszawa Płudy (n2889005397)
+        - Warszawa Żerań (n3439023519)
+        - Warszawa Toruńska (n3438881727)
+        - Warszawa Praga (n3438082486)
+        - Warszawa Wschodnia (n33210583)
+        - Warszawa Centralna (w575701389)
+        - Warszawa Zachodnia (n3390821831)
+        - Warszawa Aleje Jerozolimskie (n3241851873)
+        - Warszawa Rakowiec (n3414297957)
+        - Warszawa Żwirki i Wigury (n3414299259)
+        - Warszawa Służewiec (n3414320862)
+        - Warszawa Lotnisko Chopina (n2043558695)
 
+
+  - 
+    type: train
+    ref: S9
+    name: 'S9 (Warszawa Zachodnia - Wieliszew)'
+    colour: '#e77800'
+    station_count: 16
     stations: 
       - Wieliszew
       - Michałów-Reginów
@@ -426,40 +451,15 @@ routes:
       - Warszawa Żerań
       - Warszawa Toruńska
       - Warszawa Praga
-      - Warszawa Wschodnia
-      - Warszawa Centralna
+      - Warszawa Zoo
+      - Warszawa Gdańska
+      - Warszawa Powązki
+      - Warszawa Koło
+      - Warszawa Młynów
+      - Warszawa Wola
       - Warszawa Zachodnia
-      - Warszawa Aleje Jerozolimskie
-      - Warszawa Rakowiec
-      - Warszawa Żwirki i Wigury
-      - Warszawa Służewiec
-      - Warszawa Lotnisko Chopina
 
-  - 
-    name: 'S9 (Warszawa Zachodnia - Wieliszew)'
-    type: train
-    ref: S9
-    station_count: 16
-    colour: '#e77800'
     itineraries: 
-      r2393196: 
-        - Warszawa Zachodnia (n3390821831)
-        - Warszawa Wola (n3437788326)
-        - Warszawa Młynów (n3437806988)
-        - Warszawa Koło (n6002636000)
-        - Warszawa Powązki (n6944998109)
-        - Warszawa Gdańska (n3416823373)
-        - Warszawa Zoo (n3437958812)
-        - Warszawa Praga (n3438082486)
-        - Warszawa Toruńska (n3438881727)
-        - Warszawa Żerań (n3439023519)
-        - Warszawa Płudy (n2889005397)
-        - Warszawa Choszczówka (n2889019486)
-        - Legionowo (n3458200366)
-        - Legionowo Piaski (n3421284258)
-        - Michałów Reginów (n3421303595)
-        - Wieliszew (n3421323572)
-
       r2393195: 
         - Wieliszew (n3421323572)
         - Michałów Reginów (n3421303595)
@@ -478,23 +478,23 @@ routes:
         - Warszawa Wola (n3437788326)
         - Warszawa Zachodnia (n3390821831)
 
+      r2393196: 
+        - Warszawa Zachodnia (n3390821831)
+        - Warszawa Wola (n3437788326)
+        - Warszawa Młynów (n3437806988)
+        - Warszawa Koło (n6002636000)
+        - Warszawa Powązki (n6944998109)
+        - Warszawa Gdańska (n3416823373)
+        - Warszawa Zoo (n3437958812)
+        - Warszawa Praga (n3438082486)
+        - Warszawa Toruńska (n3438881727)
+        - Warszawa Żerań (n3439023519)
+        - Warszawa Płudy (n2889005397)
+        - Warszawa Choszczówka (n2889019486)
+        - Legionowo (n3458200366)
+        - Legionowo Piaski (n3421284258)
+        - Michałów Reginów (n3421303595)
+        - Wieliszew (n3421323572)
 
-    stations: 
-      - Wieliszew
-      - Michałów-Reginów
-      - Legionowo Piaski
-      - Legionowo
-      - Warszawa Choszczówka
-      - Warszawa Płudy
-      - Warszawa Żerań
-      - Warszawa Toruńska
-      - Warszawa Praga
-      - Warszawa Zoo
-      - Warszawa Gdańska
-      - Warszawa Powązki
-      - Warszawa Koło
-      - Warszawa Młynów
-      - Warszawa Wola
-      - Warszawa Zachodnia
 
 

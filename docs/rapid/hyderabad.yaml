@@ -74,37 +74,11 @@ transfers:
 
 routes: 
   - 
-    name: Green Line
     type: subway
     ref: 2
-    station_count: 10
+    name: Green Line
     colour: '#008000'
-    itineraries: 
-      r10692235: 
-        - JBS (n7201054971)
-        - Parade Grounds (Green Line) (n7195061310)
-        - Secunderabad West (n7358663518)
-        - Gandhi Hospital (n7358663506)
-        - Musheerabad (n7358663503)
-        - RTC Cross Roads (n7206794919)
-        - Chikkadpally (n7358663502)
-        - Narayanaguda (n7358663501)
-        - Sultan Bazar (n7358663499)
-        - Mahatma Gandhi Bus Station (Green Line) (n7208768627)
-
-      r10692234: 
-        - Mahatma Gandhi Bus Station (Green Line) (n7208768627)
-        - Sultan Bazar (n7358663499)
-        - Narayanaguda (n7358663501)
-        - Chikkadpally (n7358663502)
-        - RTC Cross Roads (n7206794919)
-        - Musheerabad (n7358663503)
-        - Gandhi Hospital (n7358663506)
-        - Secunderabad West (n7358663518)
-        - Parade Grounds (Green Line) (n7195061310)
-        - JBS (n7201054971)
-
-
+    station_count: 10
     stations: 
       - Mahatma Gandhi Bus Station (Green Line)
       - Sultan Bazar
@@ -117,12 +91,63 @@ routes:
       - Parade Grounds (Green Line)
       - JBS
 
+    itineraries: 
+      r10692234: 
+        - Mahatma Gandhi Bus Station (Green Line) (n7208768627)
+        - Sultan Bazar (n7358663499)
+        - Narayanaguda (n7358663501)
+        - Chikkadpally (n7358663502)
+        - RTC Cross Roads (n7206794919)
+        - Musheerabad (n7358663503)
+        - Gandhi Hospital (n7358663506)
+        - Secunderabad West (n7358663518)
+        - Parade Grounds (Green Line) (n7195061310)
+        - JBS (n7201054971)
+
+      r10692235: 
+        - JBS (n7201054971)
+        - Parade Grounds (Green Line) (n7195061310)
+        - Secunderabad West (n7358663518)
+        - Gandhi Hospital (n7358663506)
+        - Musheerabad (n7358663503)
+        - RTC Cross Roads (n7206794919)
+        - Chikkadpally (n7358663502)
+        - Narayanaguda (n7358663501)
+        - Sultan Bazar (n7358663499)
+        - Mahatma Gandhi Bus Station (Green Line) (n7208768627)
+
+
   - 
-    name: Blue Line (Raidurg –-> Nagole)
     type: subway
     ref: 3
-    station_count: 23
+    name: Blue Line (Raidurg –-> Nagole)
     colour: '#0000ff'
+    station_count: 23
+    stations: 
+      - Raidurg
+      - HITEC City
+      - Durgam Cheruvu
+      - Madhapur
+      - Peddamma Gudi
+      - Jubilee Hills Checkpost
+      - Road No 5 Jubilee Hills
+      - Yusufguda
+      - Madhura Nagar
+      - Ameerpet (Blue Line)
+      - Begumpet
+      - Prakash Nagar
+      - Rasoolpura
+      - Paradise
+      - Parade Grounds (Blue Line)
+      - Secunderabad East
+      - Mettuguda
+      - Tarnaka
+      - Habsiguda
+      - NGRI
+      - Stadium
+      - Uppal
+      - Nagole
+
     itineraries: 
       r5468841: 
         - Raidurg (n7052069775)
@@ -175,37 +200,41 @@ routes:
         - Raidurg (n7052069775)
 
 
-    stations: 
-      - Raidurg
-      - HITEC City
-      - Durgam Cheruvu
-      - Madhapur
-      - Peddamma Gudi
-      - Jubilee Hills Checkpost
-      - Road No 5 Jubilee Hills
-      - Yusufguda
-      - Madhura Nagar
-      - Ameerpet (Blue Line)
-      - Begumpet
-      - Prakash Nagar
-      - Rasoolpura
-      - Paradise
-      - Parade Grounds (Blue Line)
-      - Secunderabad East
-      - Mettuguda
-      - Tarnaka
-      - Habsiguda
-      - NGRI
-      - Stadium
-      - Uppal
-      - Nagole
-
   - 
-    name: Red Line
     type: subway
     ref: Red Line
-    station_count: 27
+    name: Red Line
     colour: '#ff0000'
+    station_count: 27
+    stations: 
+      - Miyapur
+      - JNTU College
+      - KPHB Colony
+      - Kukatpally
+      - Balanagar
+      - Moosapet
+      - Bharat Nagar
+      - Erragadda
+      - ESI Hospital
+      - S. R. Nagar
+      - Ameerpet (Red Line)
+      - Panjagutta
+      - Erra Manzil
+      - Khairatabad
+      - Lakdi-ka-pul
+      - Assembly
+      - Nampally
+      - Gandhi Bhavan
+      - Osmania Medical College
+      - M. G. Bus Station (Red Line)
+      - Malakpet
+      - New Market
+      - Musarambagh
+      - Dilsukh Nagar
+      - Chaitanyapuri
+      - Victoria Memorial
+      - L. B. Nagar
+
     itineraries: 
       r8297636: 
         - Miyapur (n4343036182)
@@ -265,34 +294,5 @@ routes:
         - JNTU College (n4343145632)
         - Miyapur (n4343036182)
 
-
-    stations: 
-      - Miyapur
-      - JNTU College
-      - KPHB Colony
-      - Kukatpally
-      - Balanagar
-      - Moosapet
-      - Bharat Nagar
-      - Erragadda
-      - ESI Hospital
-      - S. R. Nagar
-      - Ameerpet (Red Line)
-      - Panjagutta
-      - Erra Manzil
-      - Khairatabad
-      - Lakdi-ka-pul
-      - Assembly
-      - Nampally
-      - Gandhi Bhavan
-      - Osmania Medical College
-      - M. G. Bus Station (Red Line)
-      - Malakpet
-      - New Market
-      - Musarambagh
-      - Dilsukh Nagar
-      - Chaitanyapuri
-      - Victoria Memorial
-      - L. B. Nagar
 
 

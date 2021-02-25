@@ -69,11 +69,26 @@ transfers:
 
 routes: 
   - 
-    name: Linha Amarela
     type: subway
     ref: Amarela
-    station_count: 13
+    name: Linha Amarela
     colour: '#f4bc18'
+    station_count: 13
+    stations: 
+      - Rato
+      - Marquês de Pombal
+      - Picoas
+      - Saldanha — Amarela
+      - Campo Pequeno
+      - Entrecampos
+      - Cidade Universitária
+      - Campo Grande
+      - Quinta das Conchas
+      - Lumiar
+      - Ameixoeira
+      - Senhor Roubado
+      - Odivelas
+
     itineraries: 
       r370761: 
         - Rato (n247051839)
@@ -106,27 +121,32 @@ routes:
         - Rato (n247051839)
 
 
-    stations: 
-      - Odivelas
-      - Senhor Roubado
-      - Ameixoeira
-      - Lumiar
-      - Quinta das Conchas
-      - Campo Grande
-      - Cidade Universitária
-      - Entrecampos
-      - Campo Pequeno
-      - Saldanha — Amarela
-      - Picoas
-      - Marquês de Pombal
-      - Rato
-
   - 
-    name: Linha Azul
     type: subway
     ref: Azul
-    station_count: 18
+    name: Linha Azul
     colour: '#5e82c4'
+    station_count: 18
+    stations: 
+      - Santa Apolónia
+      - 'Terreiro do Paço - Metro'
+      - Baixa-Chiado
+      - Restauradores
+      - Avenida
+      - Marquês de Pombal
+      - Parque
+      - São Sebastião — Azul
+      - Praça de Espanha
+      - Jardim Zoológico
+      - Laranjeira
+      - Alto dos Moínhos
+      - Colégio Militar/Luz
+      - Carnide
+      - Pontinha
+      - Alfornelos
+      - Amadora Este
+      - Reboleira
+
     itineraries: 
       r371021: 
         - Santa Apolónia (n1696909109)
@@ -169,32 +189,27 @@ routes:
         - Santa Apolónia (n1696909109)
 
 
-    stations: 
-      - Reboleira
-      - Amadora Este
-      - Alfornelos
-      - Pontinha
-      - Carnide
-      - Colégio Militar/Luz
-      - Alto dos Moínhos
-      - Laranjeira
-      - Jardim Zoológico
-      - Praça de Espanha
-      - São Sebastião — Azul
-      - Parque
-      - Marquês de Pombal
-      - Avenida
-      - Restauradores
-      - Baixa-Chiado
-      - 'Terreiro do Paço - Metro'
-      - Santa Apolónia
-
   - 
-    name: Linha Verde
     type: subway
     ref: Verde
-    station_count: 13
+    name: Linha Verde
     colour: '#2f9b9c'
+    station_count: 13
+    stations: 
+      - 'Cais do Sodré - Metro'
+      - Baixa-Chiado
+      - Rossio
+      - Martim Moniz
+      - Intendente
+      - Anjos
+      - Arroios
+      - Alameda
+      - Areeiro
+      - Roma
+      - Alvalade
+      - Campo Grande
+      - Telheiras
+
     itineraries: 
       r371080: 
         - Cais do Sodré (n256673563)
@@ -227,27 +242,26 @@ routes:
         - Cais do Sodré (n256673563)
 
 
-    stations: 
-      - 'Cais do Sodré - Metro'
-      - Baixa-Chiado
-      - Rossio
-      - Martim Moniz
-      - Intendente
-      - Anjos
-      - Arroios
-      - Alameda
-      - Areeiro
-      - Roma
-      - Alvalade
-      - Campo Grande
-      - Telheiras
-
   - 
-    name: Linha Vermelha
     type: subway
     ref: Vermelha
-    station_count: 12
+    name: Linha Vermelha
     colour: '#df096f'
+    station_count: 12
+    stations: 
+      - São Sebastião — Vermelha
+      - Saldanha — Vermelha
+      - Alameda
+      - Olaias
+      - Bela Vista
+      - Chelas
+      - Olivais
+      - Cabo Ruivo
+      - Oriente
+      - Moscavide
+      - Encarnação
+      - Aeroporto
+
     itineraries: 
       r371084: 
         - São Sebastião (n6417780991)
@@ -277,19 +291,5 @@ routes:
         - Saldanha (n6417780993)
         - São Sebastião (n6417780991)
 
-
-    stations: 
-      - São Sebastião — Vermelha
-      - Saldanha — Vermelha
-      - Alameda
-      - Olaias
-      - Bela Vista
-      - Chelas
-      - Olivais
-      - Cabo Ruivo
-      - Oriente
-      - Moscavide
-      - Encarnação
-      - Aeroporto
 
 

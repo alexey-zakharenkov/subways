@@ -50,11 +50,41 @@ transfers:
 
 routes: 
   - 
-    name: CTrain Red Line
     type: light_rail
     ref: 201
-    station_count: 28
+    name: CTrain Red Line
     colour: '#ff0000'
+    station_count: 28
+    stations: 
+      - 'Somerset - Bridlewood'
+      - Shawnessy
+      - 'Fish Creek - Lacombe'
+      - Canyon Meadows
+      - Anderson
+      - Southland
+      - Heritage
+      - Chinook (CTrain)
+      - 39 Avenue
+      - Erlton / Stampede
+      - Victoria Park / Stampede
+      - City Hall
+      - 1 Street SW
+      - 4 Street SW
+      - 7 Street SW
+      - Sunnyside
+      - SAIT / AUArts / Jubilee
+      - Lions Park
+      - Banff Trail
+      - University
+      - Brentwood
+      - Dalhousie
+      - Crowfoot
+      - Tuscany
+      - 8 Street SW
+      - 6 Street SW
+      - 3 Street SW
+      - Centre Street
+
     itineraries: 
       r2653243: 
         - 'Somerset - Bridlewood (n6575607872)'
@@ -110,42 +140,39 @@ routes:
         - 'Somerset - Bridlewood (n6575607872)'
 
 
+  - 
+    type: light_rail
+    ref: 202
+    name: CTrain Blue Line
+    colour: '#0000ff'
+    station_count: 25
     stations: 
-      - Tuscany
-      - Crowfoot
-      - Dalhousie
-      - Brentwood
-      - University
-      - Banff Trail
-      - Lions Park
-      - SAIT / AUArts / Jubilee
-      - Sunnyside
+      - 69 Street
+      - Sirocco
+      - 45 Street
+      - Westbrook
+      - Shaganappi Point
+      - Sunalta
+      - 'Downtown West - Kerby'
       - 8 Street SW
       - 6 Street SW
       - 3 Street SW
       - Centre Street
       - City Hall
-      - Victoria Park / Stampede
-      - Erlton / Stampede
-      - 39 Avenue
-      - Chinook (CTrain)
-      - Heritage
-      - Southland
-      - Anderson
-      - Canyon Meadows
-      - 'Fish Creek - Lacombe'
-      - Shawnessy
-      - 'Somerset - Bridlewood'
+      - Bridgeland / Memorial
+      - Calgary Zoo
+      - Barlow / Max Bell
+      - Franklin
+      - Marlborough
+      - Rundle
+      - Whitehorn
+      - McKnight-Westwinds
+      - Martindale
+      - Saddletowne
       - 1 Street SW
       - 4 Street SW
       - 7 Street SW
 
-  - 
-    name: CTrain Blue Line
-    type: light_rail
-    ref: 202
-    station_count: 25
-    colour: '#0000ff'
     itineraries: 
       r1924533: 
         - 69th Street (n6575523316)
@@ -194,32 +221,5 @@ routes:
         - Sirocco (n5319519500)
         - 69th Street (n6575523316)
 
-
-    stations: 
-      - 69 Street
-      - Sirocco
-      - 45 Street
-      - Westbrook
-      - Shaganappi Point
-      - Sunalta
-      - 'Downtown West - Kerby'
-      - 8 Street SW
-      - 6 Street SW
-      - 3 Street SW
-      - Centre Street
-      - City Hall
-      - Bridgeland / Memorial
-      - Calgary Zoo
-      - Barlow / Max Bell
-      - Franklin
-      - Marlborough
-      - Rundle
-      - Whitehorn
-      - McKnight-Westwinds
-      - Martindale
-      - Saddletowne
-      - 1 Street SW
-      - 4 Street SW
-      - 7 Street SW
 
 

@@ -38,11 +38,27 @@ transfers:
 
 routes: 
   - 
-    name: Línea 1
     type: subway
     ref: 1
-    station_count: 14
+    name: Línea 1
     colour: '#ff0000'
+    station_count: 14
+    stations: 
+      - San Isidro
+      - Los Andes
+      - Pan de Azúcar
+      - San Miguelito
+      - Pueblo Nuevo
+      - 12 de Octubre
+      - El Ingenio
+      - Fernández de Córdoba
+      - Vía Argentina
+      - Iglesia del Carmen
+      - Santo Tomás
+      - Lotería
+      - Cinco de Mayo
+      - Albrook
+
     itineraries: 
       r7706228: 
         - San Isidro (w684889038)
@@ -77,28 +93,30 @@ routes:
         - San Isidro (w684889038)
 
 
-    stations: 
-      - Albrook
-      - Cinco de Mayo
-      - Lotería
-      - Santo Tomás
-      - Iglesia del Carmen
-      - Vía Argentina
-      - Fernández de Córdoba
-      - El Ingenio
-      - 12 de Octubre
-      - Pueblo Nuevo
-      - San Miguelito
-      - Pan de Azúcar
-      - Los Andes
-      - San Isidro
-
   - 
-    name: Línea 2
     type: subway
     ref: L2
-    station_count: 16
+    name: Línea 2
     colour: '#008000'
+    station_count: 16
+    stations: 
+      - Nuevo Tocumen
+      - 24 de Diciembre
+      - Altos de Tocumen
+      - Hospital del Este
+      - Las Mañanitas
+      - Corredor Sur
+      - Don Bosco
+      - 'Pedregal - Las Acacias'
+      - San Antonio
+      - Cerro Viento
+      - Brisas Del Golf
+      - El Crisol
+      - Villa Lucre
+      - Cincuentenario
+      - Paraiso
+      - San Miguelito
+
     itineraries: 
       r9502695: 
         - Nuevo Tocumen (w684868231)
@@ -136,23 +154,5 @@ routes:
         - 24 de Diciembre (w684868238)
         - Nuevo Tocumen (w684868231)
 
-
-    stations: 
-      - Nuevo Tocumen
-      - 24 de Diciembre
-      - Altos de Tocumen
-      - Hospital del Este
-      - Las Mañanitas
-      - Corredor Sur
-      - Don Bosco
-      - 'Pedregal - Las Acacias'
-      - San Antonio
-      - Cerro Viento
-      - Brisas Del Golf
-      - El Crisol
-      - Villa Lucre
-      - Cincuentenario
-      - Paraiso
-      - San Miguelito
 
 

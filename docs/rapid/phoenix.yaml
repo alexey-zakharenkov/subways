@@ -55,11 +55,17 @@ transfers:
 
 routes: 
   - 
-    name: PHX Sky Train
     type: monorail
     ref: PST
-    station_count: 4
+    name: PHX Sky Train
     colour: '#b0c4de'
+    station_count: 4
+    stations: 
+      - PHX Sky Train Station
+      - East Economy Parking
+      - Terminal 4
+      - Terminal 3
+
     itineraries: 
       r4499553: 
         - 44th Street (n1904374451)
@@ -74,18 +80,57 @@ routes:
         - 44th Street (n1904374451)
 
 
-    stations: 
-      - PHX Sky Train Station
-      - East Economy Parking
-      - Terminal 4
-      - Terminal 3
-
   - 
-    name: Light Rail
     type: light_rail
     ref: VMLR
-    station_count: 43
+    name: Light Rail
     colour: '#89728e'
+    station_count: 43
+    stations: 
+      - Gilbert Road / Main Street
+      - Stapley/ Main St
+      - Mesa Dr/ Main St
+      - Center/ Main St
+      - Country Club/ Main St
+      - Alma School/ Main Street
+      - Sycamore/ Main St
+      - Price-101 Fwy/ Apache Blvd
+      - Smith-Martin/ Apache Blvd
+      - McClintock/ Apache Blvd
+      - Dorsey/ Apache Blvd
+      - University Dr / Rural Rd
+      - Veterans Way/ College
+      - Mill Ave/ 3rd St
+      - Center Pkwy/ Washington
+      - Priest Dr/ Washington
+      - 50th Street/ Washington
+      - 44th Street/Washington station
+      - 38th St/ Washington
+      - 24th St/ Jefferson
+      - 12th St/ Washington (N)
+      - 3rd St/ Washington
+      - Washington/ Central Ave
+      - Van Buren/ 1st Ave (W)
+      - Roosevelt/ Central Ave
+      - McDowell/ Central Ave
+      - Encanto/ Central Ave
+      - Thomas/ Central Ave
+      - Osborn/ Central Ave
+      - Indian School/ Central Ave
+      - Campbell/ Central Ave
+      - Central Ave/ Camelback
+      - 7th Ave/ Camelback
+      - 19th Ave/ Camelback
+      - 19th Ave/ Montebello
+      - Glendale/ 19th Ave
+      - Northern/ 19th Ave
+      - 19th Ave/ Dunlap
+      - Van Buren/ 1st Ave (E)
+      - Jefferson/ 1st Ave
+      - 3rd St/ Jefferson
+      - 12th St/ Washington (S)
+      - 24th St/ Jefferson
+
     itineraries: 
       r7728594: 
         - Gilbert Rd/ Main St (n6239618606)
@@ -167,50 +212,5 @@ routes:
         - Stapley/ Main St (n6239618609)
         - Gilbert Rd/ Main St (n6239618606)
 
-
-    stations: 
-      - Gilbert Road / Main Street
-      - Stapley/ Main St
-      - Mesa Dr/ Main St
-      - Center/ Main St
-      - Country Club/ Main St
-      - Alma School/ Main Street
-      - Sycamore/ Main St
-      - Price-101 Fwy/ Apache Blvd
-      - Smith-Martin/ Apache Blvd
-      - McClintock/ Apache Blvd
-      - Dorsey/ Apache Blvd
-      - University Dr / Rural Rd
-      - Veterans Way/ College
-      - Mill Ave/ 3rd St
-      - Center Pkwy/ Washington
-      - Priest Dr/ Washington
-      - 50th Street/ Washington
-      - 44th Street/Washington station
-      - 38th St/ Washington
-      - 24th St/ Jefferson
-      - 12th St/ Washington (N)
-      - 3rd St/ Washington
-      - Washington/ Central Ave
-      - Van Buren/ 1st Ave (W)
-      - Roosevelt/ Central Ave
-      - McDowell/ Central Ave
-      - Encanto/ Central Ave
-      - Thomas/ Central Ave
-      - Osborn/ Central Ave
-      - Indian School/ Central Ave
-      - Campbell/ Central Ave
-      - Central Ave/ Camelback
-      - 7th Ave/ Camelback
-      - 19th Ave/ Camelback
-      - 19th Ave/ Montebello
-      - Glendale/ 19th Ave
-      - Northern/ 19th Ave
-      - 19th Ave/ Dunlap
-      - Van Buren/ 1st Ave (E)
-      - Jefferson/ 1st Ave
-      - 3rd St/ Jefferson
-      - 12th St/ Washington (S)
-      - 24th St/ Jefferson
 
 

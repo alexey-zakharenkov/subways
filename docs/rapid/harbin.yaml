@@ -16,11 +16,17 @@ transfers:
 
 routes: 
   - 
-    name: 哈尔滨地铁1号线
     type: subway
     ref: 1
-    station_count: 4
+    name: 哈尔滨地铁1号线
     colour: '#ff0000'
+    station_count: 4
+    stations: 
+      - 学府路
+      - 理工大学
+      - 黑龙江大学
+      - 医大二院
+
     itineraries: 
       r5490209: 
         - 学府路 (n2538010652)
@@ -35,18 +41,18 @@ routes:
         - 学府路 (n2538010652)
 
 
-    stations: 
-      - 医大二院
-      - 黑龙江大学
-      - 理工大学
-      - 学府路
-
   - 
-    name: 哈尔滨地铁3号线
     type: subway
     ref: 3
-    station_count: 4
+    name: 哈尔滨地铁3号线
     colour: '#ffa500'
+    station_count: 4
+    stations: 
+      - 医大二院
+      - 哈西大街
+      - 哈尔滨大街
+      - 哈尔滨西站
+
     itineraries: 
       r7949017: 
         - 医大二院 (n6487470238)
@@ -60,11 +66,5 @@ routes:
         - 哈西大街 (n4632683309)
         - 医大二院 (n6487470238)
 
-
-    stations: 
-      - 医大二院
-      - 哈西大街
-      - 哈尔滨大街
-      - 哈尔滨西站
 
 

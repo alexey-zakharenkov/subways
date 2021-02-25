@@ -26,35 +26,35 @@ transfers:
 
 routes: 
   - 
-    name: 'M1: Fermi - Lingotto'
     type: subway
     ref: M1
-    station_count: 21
+    name: 'M1: Fermi - Lingotto'
     colour: '#ffff00'
-    itineraries: 
-      r1204590: 
-        - Lingotto (n4076608590)
-        - Spezia (n1621378603)
-        - Carducci-Molinette (n3253332071)
-        - Dante (n893193542)
-        - Nizza (n1621697594)
-        - Marconi (n1622042729)
-        - Porta Nuova (n254594415)
-        - Re Umberto (n254594416)
-        - Vinzaglio (n543360161)
-        - Porta Susa (n432803701)
-        - XVIII Dicembre (n432803698)
-        - Principi D'Acaja (n2081499942)
-        - Bernini (n332648606)
-        - Racconigi (n1095052533)
-        - Rivoli (n332648726)
-        - Monte Grappa (n496268558)
-        - Pozzo Strada (n496268559)
-        - Massaua (n496268560)
-        - Marche (n496268561)
-        - Paradiso (n332648897)
-        - Fermi (n1481306407)
+    station_count: 21
+    stations: 
+      - Fermi
+      - Paradiso
+      - Marche
+      - Marche
+      - Pozzo Strada
+      - Monte Grappa
+      - Rivoli
+      - Racconigi
+      - Bernini
+      - Principi D'Acaja
+      - XVIII Dicembre
+      - Porta Susa
+      - Vinzaglio
+      - Re Umberto
+      - Porta Nuova
+      - Marconi
+      - Nizza
+      - Dante
+      - Carducci-Molinette
+      - Spezia
+      - Lingotto
 
+    itineraries: 
       r386242: 
         - Fermi (n1481306407)
         - Paradiso (n332648897)
@@ -78,28 +78,28 @@ routes:
         - Spezia (n1621378603)
         - Lingotto (n4076608590)
 
+      r1204590: 
+        - Lingotto (n4076608590)
+        - Spezia (n1621378603)
+        - Carducci-Molinette (n3253332071)
+        - Dante (n893193542)
+        - Nizza (n1621697594)
+        - Marconi (n1622042729)
+        - Porta Nuova (n254594415)
+        - Re Umberto (n254594416)
+        - Vinzaglio (n543360161)
+        - Porta Susa (n432803701)
+        - XVIII Dicembre (n432803698)
+        - Principi D'Acaja (n2081499942)
+        - Bernini (n332648606)
+        - Racconigi (n1095052533)
+        - Rivoli (n332648726)
+        - Monte Grappa (n496268558)
+        - Pozzo Strada (n496268559)
+        - Massaua (n496268560)
+        - Marche (n496268561)
+        - Paradiso (n332648897)
+        - Fermi (n1481306407)
 
-    stations: 
-      - Fermi
-      - Paradiso
-      - Marche
-      - Marche
-      - Pozzo Strada
-      - Monte Grappa
-      - Rivoli
-      - Racconigi
-      - Bernini
-      - Principi D'Acaja
-      - XVIII Dicembre
-      - Porta Susa
-      - Vinzaglio
-      - Re Umberto
-      - Porta Nuova
-      - Marconi
-      - Nizza
-      - Dante
-      - Carducci-Molinette
-      - Spezia
-      - Lingotto
 
 

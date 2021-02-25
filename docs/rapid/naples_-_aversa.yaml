@@ -9,11 +9,17 @@ transfers:
 
 routes: 
   - 
-    name: Linea Arcobaleno
     type: subway
     ref: Arcobaleno
-    station_count: 4
+    name: Linea Arcobaleno
     colour: '#ffffff'
+    station_count: 4
+    stations: 
+      - Mugnano
+      - Giugliano
+      - Aversa Ippodromo
+      - Aversa Centro
+
     itineraries: 
       r1815018: 
         - Mugnano (n1483514214)
@@ -27,11 +33,5 @@ routes:
         - Giugliano (n846951034)
         - Mugnano (n1483514214)
 
-
-    stations: 
-      - Aversa Centro
-      - Aversa Ippodromo
-      - Giugliano
-      - Mugnano
 
 

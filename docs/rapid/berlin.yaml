@@ -237,11 +237,26 @@ transfers:
 
 routes: 
   - 
-    name: 'U1: S+U Warschauer Straße <=> U Uhlandstraße'
     type: subway
     ref: U1
-    station_count: 13
+    name: 'U1: S+U Warschauer Straße <=> U Uhlandstraße'
     colour: '#52b447'
+    station_count: 13
+    stations: 
+      - Berlin, U Uhlandstraße
+      - Berlin, U Kurfürstendamm (U1)
+      - Berlin, U Wittenbergplatz
+      - Berlin, U Nollendorfplatz (U1,U3)
+      - Berlin, U Kurfürstenstraße
+      - Berlin, U Gleisdreieck (U1/U3)
+      - Berlin, U Möckernbrücke (U1)
+      - U Hallesches Tor (U1)
+      - U Prinzenstraße
+      - Berlin, U Kottbusser Tor (U1, U3)
+      - U Görlitzer Bahnhof
+      - Berlin, U Schlesisches Tor
+      - Berlin, U Warschauer Straße
+
     itineraries: 
       r2669205: 
         - U Uhlandstraße (n3957757603)
@@ -274,59 +289,44 @@ routes:
         - U Uhlandstraße (n3957757603)
 
 
-    stations: 
-      - Berlin, U Warschauer Straße
-      - Berlin, U Schlesisches Tor
-      - U Görlitzer Bahnhof
-      - Berlin, U Kottbusser Tor (U1, U3)
-      - U Prinzenstraße
-      - U Hallesches Tor (U1)
-      - Berlin, U Möckernbrücke (U1)
-      - Berlin, U Gleisdreieck (U1/U3)
-      - Berlin, U Kurfürstenstraße
-      - Berlin, U Nollendorfplatz (U1,U3,U4)
-      - Berlin, U Wittenbergplatz
-      - Berlin, U Kurfürstendamm (U1)
-      - Berlin, U Uhlandstraße
-
   - 
-    name: 'U2: S+U Pankow <=> U Ruhleben'
     type: subway
     ref: U2
-    station_count: 29
+    name: 'U2: S+U Pankow <=> U Ruhleben'
     colour: '#ff3300'
-    itineraries: 
-      r2669184: 
-        - U Ruhleben (n27586255)
-        - U Olympia-Stadion (n5713678268)
-        - U Neu-Westend (n29123761)
-        - U Theodor-Heuss-Platz (n29123754)
-        - U Kaiserdamm (n316021790)
-        - U Sophie-Charlotte-Platz (n3900580952)
-        - U Bismarckstraße (n31207787)
-        - U Deutsche Oper (n29123763)
-        - U Ernst-Reuter-Platz (n29123764)
-        - U Zoologischer Garten (n29046450)
-        - U Wittenbergplatz (n3957757604)
-        - U Nollendorfplatz (n3901824902)
-        - U Bülowstraße (n3946122064)
-        - U Gleisdreieck (n2102139395)
-        - U Mendelssohn-Bartholdy-Park (n3933855820)
-        - U Potsdamer Platz (n3854591000)
-        - U Mohrenstraße (n3870475231)
-        - U Stadtmitte (U2) (n3352091173)
-        - U Hausvogteiplatz (n3947836158)
-        - U Spittelmarkt (n3904674211)
-        - U Märkisches Museum (n4940731304)
-        - U Klosterstraße (n3876077784)
-        - U Alexanderplatz (n4598414751)
-        - U Rosa-Luxemburg-Platz (n5219756617)
-        - U Senefelderplatz (n3916325095)
-        - U Eberswalder Straße (n5713678270)
-        - U Schönhauser Allee (n5219721336)
-        - U Vinetastraße (n3896661775)
-        - U Pankow (n5220107618)
+    station_count: 29
+    stations: 
+      - Berlin, U Pankow
+      - Berlin, U Vinetastraße
+      - Berlin, U Schonhauser Allee
+      - Berlin, U Eberswalder Straße
+      - Berlin, U Senefelderplatz
+      - Berlin, U Rosa-Luxemburg-Platz
+      - Berlin, U Alexanderplatz (U2)
+      - Berlin, U Klosterstraße
+      - Berlin, U Märkisches Museum
+      - Berlin, U Spittelmarkt
+      - Berlin, U Hausvogteiplatz
+      - Berlin, U Stadtmitte U2
+      - Berlin, U Mohrenstraße
+      - Berlin, U Potsdamer Platz
+      - Berlin, U Mendelssohn-Bartholdy-Park
+      - Berlin, U Gleisdreieck (U2)
+      - Berlin, U Bülowstraße
+      - Berlin, U Nollendorfplatz (U2)
+      - Berlin, U Wittenbergplatz
+      - Berlin, U Zoologischer Garten (U2)
+      - Berlin, U Ernst-Reuter-Platz
+      - Berlin, U Deutsche Oper
+      - Berlin, U Bismarckstraße (U2)
+      - Berlin, U Sophie-Charlotte-Platz
+      - Berlin, U Kaiserdamm
+      - Berlin, U Theodor-Heuss-Platz
+      - Berlin, U Neu-Westend
+      - Berlin, U Olympia-Stadion
+      - Berlin, U Ruhleben
 
+    itineraries: 
       r2669183: 
         - U Pankow (n5220107618)
         - U Vinetastraße (n3896661775)
@@ -358,71 +358,71 @@ routes:
         - U Olympia-Stadion (n5713678268)
         - U Ruhleben (n27586255)
 
+      r2669184: 
+        - U Ruhleben (n27586255)
+        - U Olympia-Stadion (n5713678268)
+        - U Neu-Westend (n29123761)
+        - U Theodor-Heuss-Platz (n29123754)
+        - U Kaiserdamm (n316021790)
+        - U Sophie-Charlotte-Platz (n3900580952)
+        - U Bismarckstraße (n31207787)
+        - U Deutsche Oper (n29123763)
+        - U Ernst-Reuter-Platz (n29123764)
+        - U Zoologischer Garten (n29046450)
+        - U Wittenbergplatz (n3957757604)
+        - U Nollendorfplatz (n3901824902)
+        - U Bülowstraße (n3946122064)
+        - U Gleisdreieck (n2102139395)
+        - U Mendelssohn-Bartholdy-Park (n3933855820)
+        - U Potsdamer Platz (n3854591000)
+        - U Mohrenstraße (n3870475231)
+        - U Stadtmitte (U2) (n3352091173)
+        - U Hausvogteiplatz (n3947836158)
+        - U Spittelmarkt (n3904674211)
+        - U Märkisches Museum (n4940731304)
+        - U Klosterstraße (n3876077784)
+        - U Alexanderplatz (n4598414751)
+        - U Rosa-Luxemburg-Platz (n5219756617)
+        - U Senefelderplatz (n3916325095)
+        - U Eberswalder Straße (n5713678270)
+        - U Schönhauser Allee (n5219721336)
+        - U Vinetastraße (n3896661775)
+        - U Pankow (n5220107618)
 
-    stations: 
-      - Berlin, U Ruhleben
-      - Berlin, U Olympia-Stadion
-      - Berlin, U Neu-Westend
-      - Berlin, U Theodor-Heuss-Platz
-      - Berlin, U Kaiserdamm
-      - Berlin, U Sophie-Charlotte-Platz
-      - Berlin, U Bismarckstraße (U2)
-      - Berlin, U Deutsche Oper
-      - Berlin, U Ernst-Reuter-Platz
-      - Berlin, U Zoologischer Garten (U2)
-      - Berlin, U Wittenbergplatz
-      - Berlin, U Nollendorfplatz (U2)
-      - Berlin, U Bülowstraße
-      - Berlin, U Gleisdreieck (U2)
-      - Berlin, U Mendelssohn-Bartholdy-Park
-      - Berlin, U Potsdamer Platz
-      - Berlin, U Mohrenstraße
-      - Berlin, U Stadtmitte U2
-      - Berlin, U Hausvogteiplatz
-      - Berlin, U Spittelmarkt
-      - Berlin, U Märkisches Museum
-      - Berlin, U Klosterstraße
-      - Berlin, U Alexanderplatz (U2)
-      - Berlin, U Rosa-Luxemburg-Platz
-      - Berlin, U Senefelderplatz
-      - Berlin, U Eberswalder Straße
-      - Berlin, U Schonhauser Allee
-      - Berlin, U Vinetastraße
-      - Berlin, U Pankow
 
   - 
-    name: 'U3: S+U Warschauer Straße <=> U Krumme Lanke'
     type: subway
     ref: U3
-    station_count: 24
+    name: 'U3: S+U Warschauer Straße <=> U Krumme Lanke'
     colour: '#15ac99'
-    itineraries: 
-      r2669208: 
-        - U Warschauer Straße (n3870914569)
-        - U Schlesisches Tor (n3876481637)
-        - U Görlitzer Bahnhof (n3875882001)
-        - U Kottbusser Tor (n3900136339)
-        - U Prinzenstraße (n3881590700)
-        - U Hallesches Tor (U1, U3) (n3854590997)
-        - U Möckernbrücke (U7) (n3933855823)
-        - U Gleisdreieck (n2102139395)
-        - U Kurfürstenstraße (n3906622702)
-        - U Nollendorfplatz (n3901824902)
-        - U Wittenbergplatz (n3957757604)
-        - U Augsburger Straße (n5162689183)
-        - U Spichernstraße (n5162689571)
-        - U Hohenzollernplatz (n5162689220)
-        - U Fehrbelliner Platz (n5162689572)
-        - U Heidelberger Platz (n5162689184)
-        - U Rüdesheimer Platz (n5149137347)
-        - U Breitenbachplatz (n3959895235)
-        - U Podbielskiallee (n5160531362)
-        - U Dahlem-Dorf (n3846748389)
-        - U Freie Universität (Thielplatz) (n3955368095)
-        - U Oskar-Helene-Heim (n3955368093)
-        - U Onkel Toms Hütte (n3955368088)
-        - U Krumme Lanke (n3872477458)
+    station_count: 24
+    stations: 
+      - Berlin, U Krumme Lanke
+      - U Onkel Toms Hütte
+      - Berlin, U Oskar-Helene-Heim
+      - U Freie Universität (Thielplatz)
+      - Berlin, U Dahlem-Dorf
+      - U Podbielskiallee
+      - Berlin, U Breitenbachplatz
+      - Berlin, U Rüdesheimer Platz
+      - Berlin, U Heidelberger Platz
+      - Berlin, U Fehrbelliner Platz (U3)
+      - Berlin, U Hohenzollernplatz
+      - Berlin, U Spichernstraße (U3)
+      - U Augsburger Straße
+      - Berlin, U Wittenbergplatz
+      - Berlin, U Nollendorfplatz (U1,U3)
+      - Berlin, U Kurfürstenstraße
+      - Berlin, U Gleisdreieck (U1/U3)
+      - Berlin, U Möckernbrücke (U1)
+      - U Hallesches Tor (U1)
+      - U Prinzenstraße
+      - Berlin, U Kottbusser Tor (U1, U3)
+      - U Görlitzer Bahnhof
+      - Berlin, U Schlesisches Tor
+      - Berlin, U Warschauer Straße
 
+    itineraries: 
       r2669207: 
         - U Krumme Lanke (n3872477458)
         - U Onkel Toms Hütte (n3955368088)
@@ -449,47 +449,47 @@ routes:
         - U Schlesisches Tor (n3876481637)
         - U Warschauer Straße (n3870914569)
 
+      r2669208: 
+        - U Warschauer Straße (n3870914569)
+        - U Schlesisches Tor (n3876481637)
+        - U Görlitzer Bahnhof (n3875882001)
+        - U Kottbusser Tor (n3900136339)
+        - U Prinzenstraße (n3881590700)
+        - U Hallesches Tor (U1, U3) (n3854590997)
+        - U Möckernbrücke (U7) (n3933855823)
+        - U Gleisdreieck (n2102139395)
+        - U Kurfürstenstraße (n3906622702)
+        - U Nollendorfplatz (n3901824902)
+        - U Wittenbergplatz (n3957757604)
+        - U Augsburger Straße (n5162689183)
+        - U Spichernstraße (n5162689571)
+        - U Hohenzollernplatz (n5162689220)
+        - U Fehrbelliner Platz (n5162689572)
+        - U Heidelberger Platz (n5162689184)
+        - U Rüdesheimer Platz (n5149137347)
+        - U Breitenbachplatz (n3959895235)
+        - U Podbielskiallee (n5160531362)
+        - U Dahlem-Dorf (n3846748389)
+        - U Freie Universität (Thielplatz) (n3955368095)
+        - U Oskar-Helene-Heim (n3955368093)
+        - U Onkel Toms Hütte (n3955368088)
+        - U Krumme Lanke (n3872477458)
 
-    stations: 
-      - Berlin, U Warschauer Straße
-      - Berlin, U Schlesisches Tor
-      - U Görlitzer Bahnhof
-      - Berlin, U Kottbusser Tor (U1, U3)
-      - U Prinzenstraße
-      - U Hallesches Tor (U1)
-      - Berlin, U Möckernbrücke (U1)
-      - Berlin, U Gleisdreieck (U1/U3)
-      - Berlin, U Kurfürstenstraße
-      - Berlin, U Nollendorfplatz (U1,U3,U4)
-      - Berlin, U Wittenbergplatz
-      - U Augsburger Straße
-      - Berlin, U Spichernstraße (U3)
-      - Berlin, U Hohenzollernplatz
-      - Berlin, U Fehrbelliner Platz (U3)
-      - Berlin, U Heidelberger Platz
-      - Berlin, U Rüdesheimer Platz
-      - Berlin, U Breitenbachplatz
-      - U Podbielskiallee
-      - Berlin, U Dahlem-Dorf
-      - U Freie Universität (Thielplatz)
-      - Berlin, U Oskar-Helene-Heim
-      - U Onkel Toms Hütte
-      - Berlin, U Krumme Lanke
 
   - 
-    name: 'U4: U Nollendorfplatz <=> S+U Innsbrucker Platz'
     type: subway
     ref: U4
-    station_count: 5
+    name: 'U4: U Nollendorfplatz <=> S+U Innsbrucker Platz'
     colour: '#ffcd00'
-    itineraries: 
-      r2676945: 
-        - U Nollendorfplatz (n3901824902)
-        - U Viktoria-Luise-Platz (n5134716875)
-        - U Bayerischer Platz (n29833469)
-        - U Rathaus Schöneberg (n5134482957)
-        - U Innsbrucker Platz (n29497638)
+    station_count: 5
+    stations: 
+      - Berlin, U Innsbrucker Platz
+      - Berlin, U Rathaus Schöneberg
+      - Berlin, U Bayerischer Platz (U4)
+      - Berlin, U Viktoria-Luise-Platz
+      - Berlin, U Nollendorfplatz (U1,U3,U4)
 
+    itineraries: 
       r2676944: 
         - U Innsbrucker Platz (n29497638)
         - U Rathaus Schöneberg (n5134482957)
@@ -497,20 +497,47 @@ routes:
         - U Viktoria-Luise-Platz (n5134716875)
         - U Nollendorfplatz (n3901824902)
 
+      r2676945: 
+        - U Nollendorfplatz (n3901824902)
+        - U Viktoria-Luise-Platz (n5134716875)
+        - U Bayerischer Platz (n29833469)
+        - U Rathaus Schöneberg (n5134482957)
+        - U Innsbrucker Platz (n29497638)
 
-    stations: 
-      - Berlin, U Nollendorfplatz (U1,U3,U4)
-      - Berlin, U Viktoria-Luise-Platz
-      - Berlin, U Bayerischer Platz (U4)
-      - Berlin, U Rathaus Schöneberg
-      - Berlin, U Innsbrucker Platz
 
   - 
-    name: 'U5: U Hönow <=> U Hauptbahnhof'
     type: subway
     ref: U5
-    station_count: 25
+    name: 'U5: U Hönow <=> U Hauptbahnhof'
     colour: '#7d533d'
+    station_count: 25
+    stations: 
+      - Berlin, U Hauptbahnhof
+      - Berlin, U Bundestag
+      - Berlin, U Brandenburger Tor
+      - Berlin, U Unter den Linden (U5)
+      - Berlin, U Rotes Rathaus
+      - Berlin, U Alexanderplatz (U5)
+      - Berlin, U Schillingstraße
+      - Berlin, U Strausberger Platz
+      - Berlin, U Weberwiese
+      - Berlin, U Frankfurter Tor
+      - Berlin, U Samariterstraße
+      - Berlin, U Frankfurter Allee
+      - Berlin, U Magdalenenstraße
+      - Berlin, U Lichtenberg
+      - Berlin, U Friedrichsfelde
+      - Berlin, U Tierpark
+      - Berlin, U Biesdorf-Süd
+      - Berlin, U Elsterwerdaer Platz
+      - Berlin, S+U Wuhletal
+      - Berlin, U Kaulsdorf-Nord
+      - Berlin, U Kienberg (Gärten der Welt)
+      - Berlin, U Cottbusser Platz
+      - Berlin, U Hellersdorf
+      - Berlin, U Louis-Lewin-Straße
+      - Berlin, U Hönow
+
     itineraries: 
       r2227743: 
         - U Hauptbahnhof (n3856100108)
@@ -567,39 +594,43 @@ routes:
         - U Hauptbahnhof (n3856100108)
 
 
-    stations: 
-      - Berlin, U Hauptbahnhof
-      - Berlin, U Bundestag
-      - Berlin, U Brandenburger Tor
-      - Berlin, U Unter den Linden (U5)
-      - Berlin, U Rotes Rathaus
-      - Berlin, U Alexanderplatz (U5)
-      - Berlin, U Schillingstraße
-      - Berlin, U Strausberger Platz
-      - Berlin, U Weberwiese
-      - Berlin, U Frankfurter Tor
-      - Berlin, U Samariterstraße
-      - Berlin, U Frankfurter Allee
-      - Berlin, U Magdalenenstraße
-      - Berlin, U Lichtenberg
-      - Berlin, U Friedrichsfelde
-      - Berlin, U Tierpark
-      - Berlin, U Biesdorf-Süd
-      - Berlin, U Elsterwerdaer Platz
-      - Berlin, S+U Wuhletal
-      - Berlin, U Kaulsdorf-Nord
-      - Berlin, U Kienberg (Gärten der Welt)
-      - Berlin, U Cottbusser Platz
-      - Berlin, U Hellersdorf
-      - Berlin, U Louis-Lewin-Straße
-      - Berlin, U Hönow
-
   - 
-    name: 'U6: U Alt-Tegel <=> U Alt-Mariendorf'
     type: subway
     ref: U6
-    station_count: 29
+    name: 'U6: U Alt-Tegel <=> U Alt-Mariendorf'
     colour: '#8070b7'
+    station_count: 29
+    stations: 
+      - Berlin, U Alt-Mariendorf
+      - Berlin, U Westphalweg
+      - Berlin, U Ullsteinstraße
+      - Berlin, U Kaiserin-Augusta-Straße
+      - Berlin, U Alt-Tempelhof
+      - Berlin, U Tempelhof
+      - U Paradestraße
+      - Berlin, U Platz der Luftbrücke
+      - Berlin, U Mehringdamm
+      - U Hallesches Tor (U6)
+      - Berlin, U Kochstraße/Checkpoint Charlie
+      - Berlin, U Stadtmitte (U6)
+      - Berlin, U Unter den Linden (U6)
+      - Berlin, U Friedrichstraße
+      - Berlin, U Oranienburger Tor
+      - Berlin, U Naturkundemuseum
+      - Berlin, U Schwartzkopffstraße
+      - Berlin, U Reinickendorfer Straße
+      - Berlin, U Wedding
+      - Berlin, U Leopoldplatz (U6)
+      - Berlin, U Seestraße
+      - Berlin, U Rehberge
+      - Berlin, U Afrikanische Straße
+      - Berlin, U Kurt-Schumacher-Platz
+      - Berlin, U Scharnweberstraße
+      - Berlin, U Otisstraße
+      - Berlin, U Holzhauser Straße
+      - Berlin, U Borsigwerke
+      - Berlin, U Alt-Tegel
+
     itineraries: 
       r2679163: 
         - U Alt-Mariendorf (n3884823930)
@@ -663,43 +694,54 @@ routes:
         - U Alt-Mariendorf (n3884823930)
 
 
-    stations: 
-      - Berlin, U Alt-Tegel
-      - Berlin, U Borsigwerke
-      - Berlin, U Holzhauser Straße
-      - Berlin, U Otisstraße
-      - Berlin, U Scharnweberstraße
-      - Berlin, U Kurt-Schumacher-Platz
-      - Berlin, U Afrikanische Straße
-      - Berlin, U Rehberge
-      - Berlin, U Seestraße
-      - Berlin, U Leopoldplatz (U6)
-      - Berlin, U Wedding
-      - Berlin, U Reinickendorfer Straße
-      - Berlin, U Schwartzkopffstraße
-      - Berlin, U Naturkundemuseum
-      - Berlin, U Oranienburger Tor
-      - Berlin, U Friedrichstraße
-      - Berlin, U Unter den Linden (U6)
-      - Berlin, U Stadtmitte (U6)
-      - Berlin, U Kochstraße/Checkpoint Charlie
-      - U Hallesches Tor (U6)
-      - Berlin, U Mehringdamm
-      - U Paradestraße
-      - Berlin, U Tempelhof
-      - Berlin, U Alt-Tempelhof
-      - Berlin, U Kaiserin-Augusta-Straße
-      - Berlin, U Ullsteinstraße
-      - Berlin, U Westphalweg
-      - Berlin, U Alt-Mariendorf
-      - Berlin, U Platz der Luftbrücke
-
   - 
-    name: 'U7: S+U Rathaus Spandau <=> U Rudow'
     type: subway
     ref: U7
-    station_count: 40
+    name: 'U7: S+U Rathaus Spandau <=> U Rudow'
     colour: '#0b9ada'
+    station_count: 40
+    stations: 
+      - Berlin, U Rudow
+      - Berlin, U Zwickauer Damm
+      - Berlin, U Wutzkyallee
+      - Berlin, U Lipschitzallee
+      - Berlin, U Johannisthaler Chaussee
+      - Berlin, U Britz-Süd
+      - U Parchimer Allee
+      - Berlin, U Blaschkoallee
+      - Berlin, U Grenzallee
+      - Berlin, U Neukölln
+      - Berlin, U Karl-Marx-Straße
+      - Berlin, U Rathaus Neukölln
+      - Berlin, U Hermannplatz (U7)
+      - U Südstern
+      - Berlin, U Gneisenaustraße
+      - Berlin, U Mehringdamm
+      - Berlin, U Möckernbrücke (U7)
+      - Berlin, U Yorckstraße
+      - Berlin, U Kleistpark
+      - Berlin, U Eisenacher Straße
+      - Berlin, U Bayerischer Platz (U7)
+      - Berlin, U Berliner Straße (U7)
+      - Berlin, U Blissestraße
+      - Berlin, U Fehrbelliner Platz (U7)
+      - Berlin, U Konstanzer Straße
+      - Berlin, U Adenauerplatz
+      - Berlin, U Wilmersdorfer Straße
+      - Berlin, U Bismarckstraße (U7)
+      - Berlin, U Richard-Wagner-Platz
+      - Berlin, U Mierendorffplatz
+      - Berlin, U Jungfernheide
+      - Berlin, U Jakob-Kaiser-Platz
+      - Berlin, U Halemweg
+      - Berlin, U Siemensdamm
+      - Berlin, U Rohrdamm
+      - Berlin, U Paulsternstraße
+      - Berlin, U Haselhorst
+      - Berlin, U Zitadelle
+      - Berlin, U Altstadt Spandau
+      - Berlin, U Rathaus Spandau
+
     itineraries: 
       r2678985: 
         - U Rudow (n3856551771)
@@ -786,54 +828,38 @@ routes:
         - U Rudow (n3856551771)
 
 
-    stations: 
-      - Berlin, U Rathaus Spandau
-      - Berlin, U Altstadt Spandau
-      - Berlin, U Zitadelle
-      - Berlin, U Haselhorst
-      - Berlin, U Paulsternstraße
-      - Berlin, U Rohrdamm
-      - Berlin, U Siemensdamm
-      - Berlin, U Halemweg
-      - Berlin, U Jakob-Kaiser-Platz
-      - Berlin, U Jungfernheide
-      - Berlin, U Mierendorffplatz
-      - Berlin, U Richard-Wagner-Platz
-      - Berlin, U Bismarckstraße (U7)
-      - Berlin, U Wilmersdorfer Straße
-      - Berlin, U Adenauerplatz
-      - Berlin, U Konstanzer Straße
-      - Berlin, U Fehrbelliner Platz (U7)
-      - Berlin, U Blissestraße
-      - Berlin, U Berliner Straße (U7)
-      - Berlin, U Bayerischer Platz (U7)
-      - Berlin, U Eisenacher Straße
-      - Berlin, U Kleistpark
-      - Berlin, U Yorckstraße
-      - Berlin, U Möckernbrücke (U7)
-      - Berlin, U Mehringdamm
-      - Berlin, U Gneisenaustraße
-      - U Südstern
-      - Berlin, U Hermannplatz (U7)
-      - Berlin, U Rathaus Neukölln
-      - Berlin, U Karl-Marx-Straße
-      - Berlin, U Neukölln
-      - Berlin, U Grenzallee
-      - Berlin, U Blaschkoallee
-      - U Parchimer Allee
-      - Berlin, U Britz-Süd
-      - Berlin, U Johannisthaler Chaussee
-      - Berlin, U Lipschitzallee
-      - Berlin, U Wutzkyallee
-      - Berlin, U Zwickauer Damm
-      - Berlin, U Rudow
-
   - 
-    name: 'U8: S+U Wittenau <=> S+U Hermannstraße'
     type: subway
     ref: U8
-    station_count: 24
+    name: 'U8: S+U Wittenau <=> S+U Hermannstraße'
     colour: '#055a99'
+    station_count: 24
+    stations: 
+      - Berlin, U Hermannstraße
+      - Berlin, U Leinestraße
+      - Berlin, U Boddinstraße
+      - Berlin, U Hermannplatz (U8)
+      - Berlin, U Schönleinstraße
+      - Berlin, U Kottbusser Tor (U8)
+      - Berlin, U Moritzplatz
+      - Berlin, U Heinrich-Heine-Straße
+      - Berlin, U Jannowitzbrücke
+      - Berlin, U Alexanderplatz (U8)
+      - Berlin, U Weinmeisterstraße
+      - Berlin, U Rosenthaler Platz
+      - Berlin, U Bernauer Straße
+      - Berlin, U Voltastraße
+      - Berlin, U Gesundbrunnen
+      - Berlin, U Pankstraße
+      - Berlin, U Osloer Straße (U8)
+      - Berlin, U Franz-Neumann-Platz
+      - Berlin, U Residenzstraße
+      - Berlin, U Paracelsus-Bad
+      - Berlin, U Lindauer Allee
+      - Berlin, U Karl-Bonhoeffer-Nervenklinik
+      - Berlin, U Rathaus Reinickendorf
+      - Berlin, U Wittenau
+
     itineraries: 
       r2679013: 
         - U Hermannstraße (n31048718)
@@ -888,59 +914,33 @@ routes:
         - U Hermannstraße (n31048718)
 
 
-    stations: 
-      - Berlin, U Hermannstraße
-      - Berlin, U Leinestraße
-      - Berlin, U Boddinstraße
-      - Berlin, U Hermannplatz (U8)
-      - Berlin, U Schönleinstraße
-      - Berlin, U Kottbusser Tor (U8)
-      - Berlin, U Moritzplatz
-      - Berlin, U Heinrich-Heine-Straße
-      - Berlin, U Jannowitzbrücke
-      - Berlin, U Alexanderplatz (U8)
-      - Berlin, U Weinmeisterstraße
-      - Berlin, U Rosenthaler Platz
-      - Berlin, U Bernauer Straße
-      - Berlin, U Voltastraße
-      - Berlin, U Gesundbrunnen
-      - Berlin, U Pankstraße
-      - Berlin, U Osloer Straße (U8)
-      - Berlin, U Franz-Neumann-Platz
-      - Berlin, U Residenzstraße
-      - Berlin, U Paracelsus-Bad
-      - Berlin, U Lindauer Allee
-      - Berlin, U Karl-Bonhoeffer-Nervenklinik
-      - Berlin, U Rathaus Reinickendorf
-      - Berlin, U Wittenau
-
   - 
-    name: 'U9: U Osloer Straße <=> S+U Rathaus Steglitz'
     type: subway
     ref: U9
-    station_count: 18
+    name: 'U9: U Osloer Straße <=> S+U Rathaus Steglitz'
     colour: '#ff7300'
-    itineraries: 
-      r2679017: 
-        - U Rathaus Steglitz (n29047047)
-        - U Schloßstraße (n29047045)
-        - U Walther-Schreiber-Platz (n29047043)
-        - U Friedrich-Wilhelm-Platz (n29046999)
-        - U Bundesplatz (n5324318370)
-        - U Berliner Straße (n29046979)
-        - U Güntzelstraße (n29046976)
-        - U Spichernstraße (n5162689571)
-        - U Kurfürstendamm (n29046970)
-        - U Zoologischer Garten (n29046450)
-        - U Hansaplatz (n3957897529)
-        - U Turmstraße (n4440948591)
-        - U Birkenstraße (n3959201657)
-        - U Westhafen (n3876909306)
-        - U Amrumer Straße (n29045595)
-        - U Leopoldplatz (n3772836700)
-        - U Nauener Platz (n3933566460)
-        - U Osloer Straße (n3983548303)
+    station_count: 18
+    stations: 
+      - Berlin, U Osloer Straße (U9)
+      - Berlin, U Nauener Platz
+      - Berlin, U Leopoldplatz (U9)
+      - Berlin, U Amrumer Straße
+      - Berlin, U Westhafen
+      - Berlin, U Birkenstraße
+      - Berlin, U Turmstraße
+      - Berlin, U Hansaplatz
+      - Berlin, U Zoologischer Garten (U9)
+      - Berlin, U Kurfürstendamm (U9)
+      - Berlin, U Spichernstraße (U9)
+      - Berlin, U Güntzelstraße
+      - Berlin, U Berliner Straße (U9)
+      - Berlin, U Bundesplatz
+      - Berlin, U Friedrich-Wilhelm-Platz
+      - Berlin, U Walther-Schreiber-Platz
+      - Berlin, U Schloßstraße
+      - Berlin, U Rathaus Steglitz
 
+    itineraries: 
       r2679016: 
         - U Osloer Straße (n3983548303)
         - U Nauener Platz (n3933566460)
@@ -961,25 +961,25 @@ routes:
         - U Schloßstraße (n29047045)
         - U Rathaus Steglitz (n29047047)
 
+      r2679017: 
+        - U Rathaus Steglitz (n29047047)
+        - U Schloßstraße (n29047045)
+        - U Walther-Schreiber-Platz (n29047043)
+        - U Friedrich-Wilhelm-Platz (n29046999)
+        - U Bundesplatz (n5324318370)
+        - U Berliner Straße (n29046979)
+        - U Güntzelstraße (n29046976)
+        - U Spichernstraße (n5162689571)
+        - U Kurfürstendamm (n29046970)
+        - U Zoologischer Garten (n29046450)
+        - U Hansaplatz (n3957897529)
+        - U Turmstraße (n4440948591)
+        - U Birkenstraße (n3959201657)
+        - U Westhafen (n3876909306)
+        - U Amrumer Straße (n29045595)
+        - U Leopoldplatz (n3772836700)
+        - U Nauener Platz (n3933566460)
+        - U Osloer Straße (n3983548303)
 
-    stations: 
-      - Berlin, U Rathaus Steglitz
-      - Berlin, U Schloßstraße
-      - Berlin, U Walther-Schreiber-Platz
-      - Berlin, U Friedrich-Wilhelm-Platz
-      - Berlin, U Bundesplatz
-      - Berlin, U Berliner Straße (U9)
-      - Berlin, U Güntzelstraße
-      - Berlin, U Spichernstraße (U9)
-      - Berlin, U Kurfürstendamm (U9)
-      - Berlin, U Zoologischer Garten (U9)
-      - Berlin, U Hansaplatz
-      - Berlin, U Turmstraße
-      - Berlin, U Birkenstraße
-      - Berlin, U Westhafen
-      - Berlin, U Amrumer Straße
-      - Berlin, U Leopoldplatz (U9)
-      - Berlin, U Nauener Platz
-      - Berlin, U Osloer Straße (U9)
 
 

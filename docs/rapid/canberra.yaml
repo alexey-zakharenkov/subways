@@ -18,27 +18,27 @@ transfers:
 
 routes: 
   - 
-    name: Canberra Metro
     type: light_rail
     ref: CMET
-    station_count: 13
+    name: Canberra Metro
     colour: '#343f4b'
-    itineraries: 
-      r10271386: 
-        - Gungahlin Place (n6355817330)
-        - Manning Clark North (n6355817334)
-        - Mapleton Avenue (n6355817333)
-        - Nullarbor Avenue (n6355817335)
-        - Well Station Drive (n6355817341)
-        - EPIC and Racecourse (n6355817329)
-        - Phillip Avenue (n6355817337)
-        - Swinden Street (n6355817339)
-        - Dickson Interchange (n6355817338)
-        - Macarthur Avenue (n6355817331)
-        - Ipima Street (n6355817332)
-        - Elouera Street (n6355817340)
-        - Alinga Street (n6355817336)
+    station_count: 13
+    stations: 
+      - Alinga Street
+      - Elouera Street
+      - Ipima Street
+      - Macarthur Avenue
+      - Dickson Interchange
+      - Swinden Street
+      - Phillip Avenue
+      - EPIC and Racecourse
+      - Well Station Drive
+      - Nullarbor Avenue
+      - Mapleton Avenue
+      - Manning Clark North
+      - Gungahlin Place
 
+    itineraries: 
       r10271385: 
         - Alinga Street (n6355817336)
         - Elouera Street (n6355817340)
@@ -54,20 +54,20 @@ routes:
         - Manning Clark North (n6355817334)
         - Gungahlin Place (n6355817330)
 
+      r10271386: 
+        - Gungahlin Place (n6355817330)
+        - Manning Clark North (n6355817334)
+        - Mapleton Avenue (n6355817333)
+        - Nullarbor Avenue (n6355817335)
+        - Well Station Drive (n6355817341)
+        - EPIC and Racecourse (n6355817329)
+        - Phillip Avenue (n6355817337)
+        - Swinden Street (n6355817339)
+        - Dickson Interchange (n6355817338)
+        - Macarthur Avenue (n6355817331)
+        - Ipima Street (n6355817332)
+        - Elouera Street (n6355817340)
+        - Alinga Street (n6355817336)
 
-    stations: 
-      - Gungahlin Place
-      - Manning Clark North
-      - Mapleton Avenue
-      - Nullarbor Avenue
-      - Well Station Drive
-      - EPIC and Racecourse
-      - Phillip Avenue
-      - Swinden Street
-      - Dickson Interchange
-      - Macarthur Avenue
-      - Ipima Street
-      - Elouera Street
-      - Alinga Street
 
 
