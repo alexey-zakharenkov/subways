@@ -1,50 +1,32 @@
 
 stations: 
   - Bassenges (n253201479)
-  - Bessières (n3200281817)
   - Bourdonnette (n2775838578)
-  - CHUV (n3473930277)
   - Cerisaie (n2775838585)
   - Crochy (n2775838594)
-  - Croisettes (n3219060209)
-  - Délices (n3218868151)
   - EPFL (n2775838598)
   - Epenex (n2775838604)
-  - Fourmi (n3219060210)
-  - Grancy (n3218868152)
-  - Jordils (n3218892757)
   - Lausanne-Flon (n3200281819)
-  - Lausanne-Gare (n3200281818)
   - Malley (n2775717931)
   - Montelly (n2775717937)
-  - Ouchy-Olympique (n3218892758)
-  - Ours (n3218963143)
-  - Provence (n568325798)
-  - Renens-Gare (n2774909911)
-  - 'Riponne - Maurice Béjart (n3200281821)'
-  - Sallaz (n3214217412)
   - UNIL-Chamberonne (n2775838608)
   - UNIL-Mouline (n2775838616)
   - UNIL-Sorge (n253201490)
-  - Vennes (n5644519812)
   - Vigie (n2775717943)
 
 transfers: 
-  - 
-    - Lausanne-Flon (r4217890)
-    - Lausanne-Flon (r7680786)
 
 routes: 
   - 
     type: light_rail
     ref: m1
+    name: Metro m1
     colour: '#0000ff'
-    station_count: 15
+    station_count: 13
     stations: 
       - Lausanne-Flon
       - Vigie
       - Montelly
-      - Provence
       - Malley
       - Bourdonnette
       - UNIL-Chamberonne
@@ -55,14 +37,12 @@ routes:
       - Cerisaie
       - Crochy
       - Epenex
-      - Renens-Gare
 
     itineraries: 
       r79742: 
         - Lausanne-Flon (n3200281819)
         - Vigie (n2775717943)
         - Montelly (n2775717937)
-        - Provence (n568325798)
         - Malley (n2775717931)
         - Bourdonnette (n2775838578)
         - UNIL-Chamberonne (n2775838608)
@@ -73,10 +53,8 @@ routes:
         - Cerisaie (n2775838585)
         - Crochy (n2775838594)
         - Epenex (n2775838604)
-        - Renens-Gare (n2774909911)
 
       r7664061: 
-        - Renens-Gare (n2774909911)
         - Epenex (n2775838604)
         - Crochy (n2775838594)
         - Cerisaie (n2775838585)
@@ -87,66 +65,9 @@ routes:
         - UNIL-Chamberonne (n2775838608)
         - Bourdonnette (n2775838578)
         - Malley (n2775717931)
-        - Provence (n568325798)
         - Montelly (n2775717937)
         - Vigie (n2775717943)
         - Lausanne-Flon (n3200281819)
-
-
-  - 
-    type: subway
-    ref: m2
-    name: m2
-    colour: '#ff0000'
-    station_count: 14
-    stations: 
-      - Ouchy
-      - Jordils
-      - Délices
-      - Grancy
-      - 'Lausanne - Gare'
-      - Lausanne-Flon
-      - 'Riponne - Maurice Béjart'
-      - Bessières
-      - Ours
-      - CHUV
-      - Sallaz
-      - Fourmi
-      - Vennes
-      - Croisettes
-
-    itineraries: 
-      r79743: 
-        - Ouchy-Olympique (n3218892758)
-        - Jordils (n3218892757)
-        - Délices (n3218868151)
-        - Grancy (n3218868152)
-        - Lausanne-Gare (n3200281818)
-        - Lausanne-Flon (n3200281819)
-        - 'Riponne - Maurice Béjart (n3200281821)'
-        - Bessières (n3200281817)
-        - Ours (n3218963143)
-        - CHUV (n3473930277)
-        - Sallaz (n3214217412)
-        - Fourmi (n3219060210)
-        - Vennes (n5644519812)
-        - Croisettes (n3219060209)
-
-      r4250695: 
-        - Croisettes (n3219060209)
-        - Vennes (n5644519812)
-        - Fourmi (n3219060210)
-        - Sallaz (n3214217412)
-        - CHUV (n3473930277)
-        - Ours (n3218963143)
-        - Bessières (n3200281817)
-        - 'Riponne - Maurice Béjart (n3200281821)'
-        - Lausanne-Flon (n3200281819)
-        - Lausanne-Gare (n3200281818)
-        - Grancy (n3218868152)
-        - Délices (n3218868151)
-        - Jordils (n3218892757)
-        - Ouchy-Olympique (n3218892758)
 
 
 

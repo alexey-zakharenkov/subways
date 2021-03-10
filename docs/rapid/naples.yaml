@@ -1,6 +1,7 @@
 
 stations: 
   - Bagnoli-Agnano Terme (n6817755819)
+  - Napoli Campi Flegrei (n6817740560)
   - Napoli Gianturco (n4459023928)
   - Napoli Mergellina (n6536935424)
   - Napoli Piazza Leopardi (n6817760441)
@@ -15,31 +16,34 @@ routes:
     ref: 2
     name: Linea 2 (Pozzuoli Solfatara → San Giovanni-Barra)
     colour: '#0000ff'
-    station_count: 6
+    station_count: 7
     stations: 
       - Pozzuoli Solfatara
       - Bagnoli-Agnano Terme
+      - Napoli Campi Flegrei
+      - Piazza Leopardi
       - Napoli Mergellina
       - Napoli Gianturco
       - Napoli San Giovanni-Barra
-      - Piazza Leopardi
 
     itineraries: 
       r445980: 
         - Pozzuoli Solfatara (n6817792727)
         - Bagnoli-Agnano Terme (n6817755819)
+        - Napoli Campi Flegrei (n6817740560)
+        - Napoli Piazza Leopardi (n6817760441)
         - Napoli Mergellina (n6536935424)
         - Napoli Gianturco (n4459023928)
         - Napoli San Giovanni-Barra (n4459022870)
-        - Napoli Piazza Leopardi (n6817760441)
 
       r2168103: 
         - Napoli San Giovanni-Barra (n4459022870)
         - Napoli Gianturco (n4459023928)
         - Napoli Mergellina (n6536935424)
+        - Napoli Piazza Leopardi (n6817760441)
+        - Napoli Campi Flegrei (n6817740560)
         - Bagnoli-Agnano Terme (n6817755819)
         - Pozzuoli Solfatara (n6817792727)
-        - Napoli Piazza Leopardi (n6817760441)
 
 
 

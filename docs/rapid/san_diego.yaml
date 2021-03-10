@@ -14,7 +14,7 @@ stations:
   - Arnele Avenue (n6184516686)
   - Barrio Logan (n6184516284)
   - Bayfront/E Street (n6184516709)
-  - Beyer Boulevard Trolley Station (n6184516265)
+  - Beyer Boulevard (n6184516265)
   - City College (n6184516705)
   - Civic Center (n6184516282)
   - Convention Center (n6184516685)
@@ -32,7 +32,7 @@ stations:
   - H Street (n6184516692)
   - Harborside (n6184516276)
   - Hazard Center (n6184516277)
-  - Iris Avenue Trolley Station (n6184516240)
+  - Iris Avenue (n6184516240)
   - La Mesa Boulevard (n6184516697)
   - Lemon Grove Depot (n6184516283)
   - Massachusetts Avenue (n6184516281)
@@ -84,7 +84,7 @@ routes:
       - Palomar Street (Trolley)
       - Palm Avenue
       - Iris Avenue
-      - Beyer Boulevard Trolley Station
+      - Beyer Boulevard
       - San Ysidro Transit Center
 
     itineraries: 
@@ -104,14 +104,14 @@ routes:
         - H Street (n6184516692)
         - Palomar Street (n6184516238)
         - Palm Avenue (n6184516239)
-        - Iris Avenue Trolley Station (n6184516240)
-        - Beyer Boulevard Trolley Station (n6184516265)
+        - Iris Avenue (n6184516240)
+        - Beyer Boulevard (n6184516265)
         - San Ysidro Transit Center (n6184516710)
 
       r7572437: 
         - San Ysidro Transit Center (n6184516710)
-        - Beyer Boulevard Trolley Station (n6184516265)
-        - Iris Avenue Trolley Station (n6184516240)
+        - Beyer Boulevard (n6184516265)
+        - Iris Avenue (n6184516240)
         - Palm Avenue (n6184516239)
         - Palomar Street (n6184516238)
         - H Street (n6184516692)
@@ -293,37 +293,6 @@ routes:
         - Arnele Avenue (n6184516686)
         - Gillespie Field (n6184516696)
         - Santee Town Center (n6184516708)
-
-
-  - 
-    type: light_rail
-    ref: MTS Silver
-    name: San Diego Trolley
-    colour: '#cccccc'
-    station_count: 9
-    stations: 
-      - 12th & Imperial Transit Center
-      - Gaslamp Quarter
-      - Convention Center
-      - Seaport Village
-      - America Plaza
-      - Civic Center
-      - 5th Avenue
-      - City College
-      - Park & Market
-
-    itineraries: 
-      r4729047: 
-        - 12th & Imperial Transit Center (n6184516244)
-        - Gaslamp Quarter (n6184516699)
-        - Convention Center (n6184516685)
-        - Seaport Village (n6184516208)
-        - America Plaza (n6184516237)
-        - Civic Center (n6184516282)
-        - 5th Avenue (n6184516242)
-        - City College (n6184516705)
-        - Park & Market (n6184516702)
-        - 12th & Imperial Transit Center (n6184516244)
 
 
 

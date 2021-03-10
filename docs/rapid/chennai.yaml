@@ -21,6 +21,7 @@ stations:
   - Guindy Metro (n6285857248)
   - High Court (n5337658083)
   - Indira Nagar (n5311755238)
+  - Kaladipet (n8430636715)
   - Kasturiba Nagar (n5311755237)
   - Kilpauk (n5329907487)
   - Kotturpuram (n5274913769)
@@ -35,21 +36,27 @@ stations:
   - Nandanam (n6285857243)
   - Nanganallur Road (n6285857237)
   - Nehru Park (n5329907490)
+  - New Washermanpet (n8430636817)
   - Pachaiyappa's College (n5329907482)
   - Perungudi (n5311755241)
   - Saidapet (n6285857244)
   - Shenoy Nagar (n5329907479)
+  - Sir Theagaraya College (n8430632406)
   - St. Thomas Mount Metro (n5319202812)
   - Taramani (n5311755240)
   - Teynampet (n6285857242)
   - Thirumangalam (n5329907476)
   - Thirumayilai (n5311755234)
   - Thiruvallikeni (n2486239288)
+  - Thiruvottriyur Metro (n8430636714)
   - Thousand Lights (n5337407346)
   - Tiruvanmiyur (n5311755239)
+  - Tollgate (n8430636716)
+  - Tondiarpet Metro (n8430632416)
   - Vadapalani (n5319972798)
   - Velachery (n5311755242)
   - Washermanpet (n5337658099)
+  - Wimco Nagar Metro (n8430636713)
 
 transfers: 
   - 
@@ -65,7 +72,7 @@ routes:
     ref: 1
     name: Chennai Metro Blue Line
     colour: '#3281c4'
-    station_count: 17
+    station_count: 24
     stations: 
       - Airport
       - Meenambakkam Metro
@@ -84,6 +91,13 @@ routes:
       - High Court
       - Mannadi
       - Washermanpet
+      - Sir Theagaraya College
+      - Tondiarpet Metro
+      - New Washermanpet
+      - Tollgate
+      - Kaladipet
+      - Thiruvottiyur Metro
+      - Wimco Nagar Metro
 
     itineraries: 
       r7845610: 
@@ -104,8 +118,22 @@ routes:
         - High Court (n5337658083)
         - Mannadi (n5337658088)
         - Washermanpet (n5337658099)
+        - Sir Theagaraya College (n8430632406)
+        - Tondiarpet Metro (n8430632416)
+        - New Washermanpet (n8430636817)
+        - Tollgate (n8430636716)
+        - Kaladipet (n8430636715)
+        - Thiruvottriyur Metro (n8430636714)
+        - Wimco Nagar Metro (n8430636713)
 
       r8037595: 
+        - Wimco Nagar Metro (n8430636713)
+        - Thiruvottriyur Metro (n8430636714)
+        - Kaladipet (n8430636715)
+        - Tollgate (n8430636716)
+        - New Washermanpet (n8430636817)
+        - Tondiarpet Metro (n8430632416)
+        - Sir Theagaraya College (n8430632406)
         - Washermanpet (n5337658099)
         - Mannadi (n5337658088)
         - High Court (n5337658083)

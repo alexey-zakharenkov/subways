@@ -1,11 +1,13 @@
 
 stations: 
+  - Baranagar (n8475640176)
   - Belgachia (n5421548359)
   - Bengal Chemical (n7976140066)
   - Central (n5421528426)
   - Central Park (n7976140060)
   - Chandni Chowk (n5421543316)
   - City Centre (n7976140063)
+  - Dakshineshwar (n8475640177)
   - Dum Dum (n5421537963)
   - Esplanade (n5421545051)
   - Geetanjali (n5421533680)
@@ -38,9 +40,9 @@ routes:
   - 
     type: subway
     ref: 1
-    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Noapara)
+    name: Kolkata Metro Line 1 (Kavi Subhash ↔ Dakshineshwar)
     colour: '#008000'
-    station_count: 24
+    station_count: 26
     stations: 
       - Kavi Subhash
       - Shahid Khudiram
@@ -66,6 +68,8 @@ routes:
       - Belgachia
       - Dum Dum
       - Noapara
+      - Baranagar
+      - Dakshineshwar
 
     itineraries: 
       r8033916: 
@@ -93,8 +97,12 @@ routes:
         - Belgachia (n5421548359)
         - Dum Dum (n5421537963)
         - Noapara (n5421551283)
+        - Baranagar (n8475640176)
+        - Dakshineshwar (n8475640177)
 
       r8034180: 
+        - Dakshineshwar (n8475640177)
+        - Baranagar (n8475640176)
         - Noapara (n5421551283)
         - Dum Dum (n5421537963)
         - Belgachia (n5421548359)
