@@ -11,6 +11,7 @@ stations:
   - Burrard (n5324651729)
   - Columbia (n5324471829)
   - Commercial–Broadway (n3956040167)
+  - Commercial–Broadway (n8576664379)
   - Coquitlam Central (n5324742207)
   - Edmonds (n5324545412)
   - Gateway (n5324415604)
@@ -51,13 +52,14 @@ stations:
   - VCC-Clark (n5324621993)
   - Vancouver City Centre (n5324838897)
   - Waterfront (n3831781786)
+  - Waterfront (n8576664378)
   - YVR–Airport (n5330999693)
   - Yaletown–Roundhouse (n5324837598)
 
 transfers: 
   - 
-    - Commercial-Broadway Platforms 1 & 2 (r7882534)
-    - Commercial-Broadway Platforms 3 & 4 (r7882533)
+    - Commercial-Broadway (Expo Line) (r7882533)
+    - Commercial-Broadway (Millennium Line) (r7882534)
   - 
     - Waterfront (Canada Line) (r7882599)
     - Waterfront (Expo Line) (r7882589)
@@ -71,25 +73,25 @@ routes:
     station_count: 16
     stations: 
       - Waterfront (Canada Line)
-      - Vancouver City Centre station
-      - Yaletown–Roundhouse station
+      - Vancouver City Centre
+      - Yaletown–Roundhouse
       - Olympic Village
-      - Broadway–City Hall station
-      - King Edward station
-      - Oakridge-41st Avenue station
-      - Langara-49th Avenue station
-      - Marine Drive station
-      - Bridgeport station
-      - Templeton station
-      - Sea Island Centre station
+      - Broadway–City Hall
+      - King Edward
+      - Oakridge-41st Avenue
+      - Langara-49th Avenue
+      - Marine Drive
+      - Bridgeport
+      - Templeton
+      - Sea Island Centre
       - YVR-Airport
-      - Richmond–Brighouse station
-      - Lansdowne station
-      - Aberdeen station
+      - Richmond–Brighouse
+      - Lansdowne
+      - Aberdeen
 
     itineraries: 
       r207798: 
-        - Waterfront (n3831781786)
+        - Waterfront (n8576664378)
         - Vancouver City Centre (n5324838897)
         - Yaletown–Roundhouse (n5324837598)
         - Olympic Village (n5324798857)
@@ -116,10 +118,10 @@ routes:
         - Olympic Village (n5324798857)
         - Yaletown–Roundhouse (n5324837598)
         - Vancouver City Centre (n5324838897)
-        - Waterfront (n3831781786)
+        - Waterfront (n8576664378)
 
       r5881437: 
-        - Waterfront (n3831781786)
+        - Waterfront (n8576664378)
         - Vancouver City Centre (n5324838897)
         - Yaletown–Roundhouse (n5324837598)
         - Olympic Village (n5324798857)
@@ -146,7 +148,7 @@ routes:
         - Olympic Village (n5324798857)
         - Yaletown–Roundhouse (n5324837598)
         - Vancouver City Centre (n5324838897)
-        - Waterfront (n3831781786)
+        - Waterfront (n8576664378)
 
 
   - 
@@ -156,30 +158,30 @@ routes:
     colour: '#0060a9'
     station_count: 24
     stations: 
-      - King George station
-      - Surrey Central station
+      - King George
+      - Surrey Central
       - Gateway
       - Scott Road
-      - Columbia station
-      - New Westminster Station
-      - 22nd Street Station
-      - Edmonds Station
-      - Royal Oak station
-      - Metrotown station
-      - Patterson station
-      - Joyce–Collingwood station
-      - 29th Avenue Station
-      - Nanaimo station
-      - Commercial-Broadway Platforms 3 & 4
+      - Columbia
+      - New Westminster
+      - 22nd Street
+      - Edmonds
+      - Royal Oak
+      - Metrotown
+      - Patterson
+      - Joyce–Collingwood
+      - 29th Avenue
+      - Nanaimo
+      - Commercial-Broadway (Expo Line)
       - Main Street-Science World
-      - Stadium-Chinatown station
-      - Granville Station
-      - Burrard Station
+      - Stadium-Chinatown
+      - Granville
+      - Burrard
       - Waterfront (Expo Line)
-      - Production Way-University station
-      - Lougheed Town Centre station
-      - Braid station
-      - Sapperton station
+      - Production Way-University
+      - Lougheed Town Centre
+      - Braid
+      - Sapperton
 
     itineraries: 
       r207813: 
@@ -278,23 +280,23 @@ routes:
     colour: '#ffd520'
     station_count: 17
     stations: 
-      - Lafarge Lake–Douglas station
-      - Lincoln station
-      - Coquitlam Central (Rapid Transit)
-      - Inlet Centre station
-      - Moody Centre (Rapid Transit)
-      - Burquitlam station
-      - Lougheed Town Centre station
-      - Production Way-University station
-      - Lake City Way station
-      - Sperling–Burnaby Lake station
-      - Holdom station
-      - Brentwood Town Centre station
-      - Gilmore station
-      - Rupert station
-      - Renfrew station
-      - Commercial-Broadway Platforms 1 & 2
-      - VCC-Clark station
+      - Lafarge Lake–Douglas
+      - Lincoln
+      - Coquitlam Central (Millennium Line)
+      - Inlet Centre
+      - Moody Centre (Millennium Line)
+      - Burquitlam
+      - Lougheed Town Centre
+      - Production Way-University
+      - Lake City Way
+      - Sperling–Burnaby Lake
+      - Holdom
+      - Brentwood Town Centre
+      - Gilmore
+      - Rupert
+      - Renfrew
+      - Commercial-Broadway (Millennium Line)
+      - VCC-Clark
 
     itineraries: 
       r5881418: 
@@ -313,12 +315,12 @@ routes:
         - Gilmore (n25325833)
         - Rupert (n5324730259)
         - Renfrew (n5324734517)
-        - Commercial–Broadway (n3956040167)
+        - Commercial–Broadway (n8576664379)
         - VCC-Clark (n5324621993)
 
       r7252767: 
         - VCC-Clark (n5324621993)
-        - Commercial–Broadway (n3956040167)
+        - Commercial–Broadway (n8576664379)
         - Renfrew (n5324734517)
         - Rupert (n5324730259)
         - Gilmore (n25325833)

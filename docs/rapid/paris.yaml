@@ -26,7 +26,6 @@ stations:
   - Blanche (n243496025)
   - 'Bobigny - Pablo Picasso (n1771632724)'
   - 'Bobigny - Pantin - Raymond Queneau (n6539766952)'
-  - Boissière (n260765387)
   - Bolivar (n243358029)
   - Bonne Nouvelle (n256897078)
   - Botzaris (n1997722983)
@@ -68,7 +67,6 @@ stations:
   - Convention (n134305198)
   - Corentin Cariou (n264776910)
   - Corentin Celton (n134299013)
-  - Corvisart (n235370505)
   - Cour Saint-Émilion (n3146958064)
   - Courcelles (n6528747892)
   - Couronnes (n243493846)
@@ -79,9 +77,7 @@ stations:
   - Créteil-Pointe du Lac (n928458344)
   - Créteil-Préfecture (w78545135)
   - Danube (n264794354)
-  - Daumesnil (n260762379)
   - Denfert-Rochereau (n220289387)
-  - Dugommier (n260762378)
   - Dupleix (n34909187)
   - Duroc (n245250755)
   - Edgar Quinet (n6539671936)
@@ -172,7 +168,6 @@ stations:
   - Miromesnil (n260769652)
   - Monceau (n243496030)
   - Montgallet (n264481854)
-  - Montparnasse-Bienvenüe (n1805529567)
   - Montparnasse-Bienvenüe (n5226630378)
   - Mouton-Duvernet (n220289385)
   - Ménilmontant (n243490761)
@@ -193,11 +188,9 @@ stations:
   - Pereire (n243510680)
   - Pernety (n264712433)
   - Philippe Auguste (n243490763)
-  - Picpus (n264490283)
   - Pierre et Marie Curie (n472985885)
   - Pigalle (n4067925155)
   - Place Monge (n264786014)
-  - Place d'Italie (n235371392)
   - Place de Clichy (n243496027)
   - Place des Fêtes (n2066461402)
   - Plaisance (n264712432)
@@ -267,7 +260,6 @@ stations:
   - Saint-Marcel (n265055434)
   - Saint-Michel (n264515098)
   - Saint-Ouen (n8290592945)
-  - Saint-Paul (n27371867)
   - Saint-Philippe du Roule (n260769651)
   - Saint-Placide (n264520061)
   - Saint-Sulpice (n324352448)
@@ -285,7 +277,6 @@ stations:
   - Ternes (n838533003)
   - Tolbiac (n268467197)
   - Trinité d'Estienne d'Orves (n264495077)
-  - Trocadéro (n4058783101)
   - Tuileries (n27362258)
   - Télégraphe (n264690370)
   - Vaneau (n473070143)
@@ -318,9 +309,6 @@ transfers:
     - Belleville (11) (r965971)
     - Belleville (2) (r7731227)
   - 
-    - Bercy (14) (r7731269)
-    - Bercy (6) (r7731306)
-  - 
     - 'Champs-Élysées - Clemenceau (1) (r7731262)'
     - 'Champs-Élysées - Clemenceau (13) (r7731284)'
   - 
@@ -341,9 +329,6 @@ transfers:
     - Concorde (1) (r7731268)
     - Concorde (12) (r7731267)
     - Concorde (8) (r379422)
-  - 
-    - Daumesnil (6) (r7731228)
-    - Daumesnil (8) (r2574202)
   - 
     - Denfert-Rochereau (4) (r7731311)
     - Denfert-Rochereau (6) (r7731488)
@@ -411,12 +396,8 @@ transfers:
     - Montparnasse-Bienvenüe (12) (r7731209)
     - Montparnasse-Bienvenüe (4) (r7731211)
   - 
-    - Montparnasse-Bienvenüe (13) (r62906)
-    - Montparnasse-Bienvenüe (6) (r7731210)
-  - 
     - Nation (1) (r7731219)
     - Nation (2) (r2572756)
-    - Nation (6) (r7731218)
     - Nation (9) (r7731217)
   - 
     - Opéra (3) (r7731242)
@@ -431,10 +412,6 @@ transfers:
   - 
     - Pigalle (12) (r7731231)
     - Pigalle (2) (r7731230)
-  - 
-    - Place d'Italie (5) (r7731238)
-    - Place d'Italie (6) (r7731239)
-    - Place d'Italie (7) (r7731237)
   - 
     - Place de Clichy (13) (r7731236)
     - Place de Clichy (2) (r965960)
@@ -473,9 +450,6 @@ transfers:
   - 
     - 'Sèvres - Babylone (10) (r7731259)'
     - 'Sèvres - Babylone (12) (r7731260)'
-  - 
-    - Trocadéro (6) (r7731300)
-    - Trocadéro (9) (r7731266)
 
 routes: 
   - 
@@ -483,7 +457,7 @@ routes:
     ref: 1
     name: Métro 1
     colour: '#f2c931'
-    station_count: 25
+    station_count: 24
     stations: 
       - Château de Vincennes (Métro de Paris)
       - Bérault
@@ -493,7 +467,6 @@ routes:
       - 'Reuilly - Diderot (1)'
       - Gare de Lyon
       - Bastille (Métro 1)
-      - Saint-Paul
       - Hôtel de Ville (Métro 1)
       - Châtelet (Métro 1)
       - Louvre — Rivoli
@@ -521,7 +494,6 @@ routes:
         - Reuilly — Diderot (n27371892)
         - Gare de Lyon (n5228032209)
         - Bastille (n5226630382)
-        - Saint-Paul (n27371867)
         - Hôtel de Ville (n5226630385)
         - Châtelet (n27371862)
         - Louvre — Rivoli (n27362260)
@@ -556,7 +528,6 @@ routes:
         - Louvre — Rivoli (n27362260)
         - Châtelet (n27371862)
         - Hôtel de Ville (n5226630385)
-        - Saint-Paul (n27371867)
         - Bastille (n5226630382)
         - Gare de Lyon (n5228032209)
         - Reuilly — Diderot (n27371892)
@@ -804,7 +775,7 @@ routes:
     ref: 13
     name: Métro 13
     colour: '#89c7d6'
-    station_count: 32
+    station_count: 31
     stations: 
       - 'Saint-Denis - Université'
       - Basilique de Saint-Denis
@@ -824,7 +795,6 @@ routes:
       - Varenne
       - Saint-François-Xavier
       - Duroc (13)
-      - Montparnasse-Bienvenüe (13)
       - Gaîté
       - Pernety
       - Plaisance
@@ -859,7 +829,6 @@ routes:
         - Varenne (n245250759)
         - Saint-François-Xavier (n245250758)
         - Duroc (n245250755)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Gaîté (n264704365)
         - Pernety (n264712433)
         - Plaisance (n264712432)
@@ -876,7 +845,6 @@ routes:
         - Plaisance (n264712432)
         - Pernety (n264712433)
         - Gaîté (n264704365)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Duroc (n245250755)
         - Saint-François-Xavier (n245250758)
         - Varenne (n245250759)
@@ -904,7 +872,6 @@ routes:
         - Plaisance (n264712432)
         - Pernety (n264712433)
         - Gaîté (n264704365)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Duroc (n245250755)
         - Saint-François-Xavier (n245250758)
         - Varenne (n245250759)
@@ -939,7 +906,6 @@ routes:
         - Varenne (n245250759)
         - Saint-François-Xavier (n245250758)
         - Duroc (n245250755)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Gaîté (n264704365)
         - Pernety (n264712433)
         - Plaisance (n264712432)
@@ -1299,7 +1265,7 @@ routes:
     ref: 5
     name: Métro 5
     colour: '#de8b53'
-    station_count: 22
+    station_count: 21
     stations: 
       - Bobigny — Pablo Picasso
       - 'Bobigny - Pantin - Raymond Queneau'
@@ -1322,7 +1288,6 @@ routes:
       - Gare d'Austerlitz (5)
       - Saint-Marcel
       - Campo-Formio
-      - Place d'Italie (5)
 
     itineraries: 
       r123674: 
@@ -1347,10 +1312,8 @@ routes:
         - Gare d'Austerlitz (n3493828793)
         - Saint-Marcel (n265055434)
         - Campo-Formio (n265055750)
-        - Place d'Italie (n235371392)
 
       r4730854: 
-        - Place d'Italie (n235371392)
         - Campo-Formio (n265055750)
         - Saint-Marcel (n265055434)
         - Gare d'Austerlitz (n3493828793)
@@ -1379,12 +1342,10 @@ routes:
     ref: 6
     name: Métro 6
     colour: '#75c695'
-    station_count: 28
+    station_count: 18
     stations: 
       - Charles de Gaulle — Étoile (6)
       - Kléber
-      - Boissière
-      - Trocadéro (6)
       - Passy
       - Bir-Hakeim
       - Dupleix
@@ -1392,30 +1353,20 @@ routes:
       - Cambronne
       - Sèvres-Lecourbe
       - Pasteur
-      - Montparnasse-Bienvenüe (6)
       - Edgar Quinet
       - Raspail
       - Denfert-Rochereau (6)
       - Saint-Jacques
       - Glacière
-      - Corvisart
-      - Place d'Italie (6)
       - Nationale
       - Chevaleret
       - Quai de la Gare
-      - Bercy (6)
-      - Dugommier
-      - Daumesnil (6)
       - Bel-Air
-      - Picpus
-      - Nation (6)
 
     itineraries: 
       r123912: 
         - Charles de Gaulle — Étoile (n4317589118)
         - Kléber (n260765385)
-        - Boissière (n260765387)
-        - Trocadéro (n4058783101)
         - Passy (n260765390)
         - Bir-Hakeim (n338930214)
         - Dupleix (n34909187)
@@ -1423,42 +1374,26 @@ routes:
         - Cambronne (n34909171)
         - Sèvres-Lecourbe (n1659843199)
         - Pasteur (n260764273)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Edgar Quinet (n6539671936)
         - Raspail (n220289389)
         - Denfert-Rochereau (n220289387)
         - Saint-Jacques (n235369898)
         - Glacière (n235370184)
-        - Corvisart (n235370505)
-        - Place d'Italie (n235371392)
         - Nationale (n235371394)
         - Chevaleret (n235371395)
         - Quai de la Gare (n235374383)
-        - Bercy (n260762540)
-        - Dugommier (n260762378)
-        - Daumesnil (n260762379)
         - Bel-Air (n245455187)
-        - Picpus (n264490283)
-        - Nation (n241928557)
 
       r3328764: 
-        - Nation (n241928557)
-        - Picpus (n264490283)
         - Bel-Air (n245455187)
-        - Daumesnil (n260762379)
-        - Dugommier (n260762378)
-        - Bercy (n260762540)
         - Quai de la Gare (n235374383)
         - Chevaleret (n235371395)
         - Nationale (n235371394)
-        - Place d'Italie (n235371392)
-        - Corvisart (n235370505)
         - Glacière (n235370184)
         - Saint-Jacques (n235369898)
         - Denfert-Rochereau (n220289387)
         - Raspail (n220289389)
         - Edgar Quinet (n6539671936)
-        - Montparnasse-Bienvenüe (n1805529567)
         - Pasteur (n260764273)
         - Sèvres-Lecourbe (n1659843199)
         - Cambronne (n34909171)
@@ -1466,8 +1401,6 @@ routes:
         - Dupleix (n34909187)
         - Bir-Hakeim (n338930214)
         - Passy (n260765390)
-        - Trocadéro (n4058783101)
-        - Boissière (n260765387)
         - Kléber (n260765385)
         - Charles de Gaulle — Étoile (n4317589118)
 
@@ -1477,7 +1410,7 @@ routes:
     ref: 7
     name: Métro 7
     colour: '#fa9aba'
-    station_count: 38
+    station_count: 37
     stations: 
       - 'La Courneuve - 8 mai 1945'
       - Fort d'Aubervilliers
@@ -1505,7 +1438,6 @@ routes:
       - Place Monge
       - Censier Daubenton
       - Les Gobelins
-      - Place d'Italie (7)
       - Tolbiac
       - Maison Blanche
       - Porte d'Italie
@@ -1546,7 +1478,6 @@ routes:
         - Place Monge (n264786014)
         - 'Censier - Daubenton (n264789025)'
         - Les Gobelins (n264790337)
-        - Place d'Italie (n235371392)
         - Tolbiac (n268467197)
         - Maison Blanche (n268467526)
         - Porte d'Italie (n268467559)
@@ -1563,7 +1494,6 @@ routes:
         - Porte d'Italie (n268467559)
         - Maison Blanche (n268467526)
         - Tolbiac (n268467197)
-        - Place d'Italie (n235371392)
         - Les Gobelins (n264790337)
         - 'Censier - Daubenton (n264789025)'
         - Place Monge (n264786014)
@@ -1598,7 +1528,6 @@ routes:
         - Le Kremlin-Bicêtre (n318537042)
         - Maison Blanche (n268467526)
         - Tolbiac (n268467197)
-        - Place d'Italie (n235371392)
         - Les Gobelins (n264790337)
         - 'Censier - Daubenton (n264789025)'
         - Place Monge (n264786014)
@@ -1653,7 +1582,6 @@ routes:
         - Place Monge (n264786014)
         - 'Censier - Daubenton (n264789025)'
         - Les Gobelins (n264790337)
-        - Place d'Italie (n235371392)
         - Tolbiac (n268467197)
         - Maison Blanche (n268467526)
         - Le Kremlin-Bicêtre (n318537042)
@@ -1700,7 +1628,7 @@ routes:
     ref: 8
     name: Métro 8
     colour: '#c5a3ca'
-    station_count: 38
+    station_count: 37
     stations: 
       - 'Richelieu - Drouot'
       - Créteil-Pointe du Lac
@@ -1715,7 +1643,6 @@ routes:
       - Porte de Charenton
       - Porte Dorée
       - Michel Bizot
-      - Daumesnil (8)
       - Montgallet
       - 'Reuilly - Diderot (8)'
       - Faidherbe — Chaligny
@@ -1756,7 +1683,6 @@ routes:
         - Porte de Charenton (n264491320)
         - Porte Dorée (n264482297)
         - Michel Bizot (n264482226)
-        - Daumesnil (n260762379)
         - Montgallet (n264481854)
         - Reuilly — Diderot (n27371892)
         - Faidherbe — Chaligny (n264481019)
@@ -1809,7 +1735,6 @@ routes:
         - Faidherbe — Chaligny (n264481019)
         - Reuilly — Diderot (n27371892)
         - Montgallet (n264481854)
-        - Daumesnil (n260762379)
         - Michel Bizot (n264482226)
         - Porte Dorée (n264482297)
         - Porte de Charenton (n264491320)
@@ -1829,7 +1754,7 @@ routes:
     ref: 9
     name: Métro 9
     colour: '#cdc83f'
-    station_count: 37
+    station_count: 36
     stations: 
       - 'Richelieu - Drouot'
       - Pont de Sèvres
@@ -1843,7 +1768,6 @@ routes:
       - Ranelagh
       - 'La Muette - Boulainvilliers'
       - Rue de la Pompe
-      - Trocadéro (9)
       - Iéna
       - Alma-Marceau
       - Franklin D. Roosevelt (9)
@@ -1883,7 +1807,6 @@ routes:
         - Ranelagh (n260767425)
         - La Muette (n260767424)
         - Rue de la Pompe (n260767423)
-        - Trocadéro (n4058783101)
         - Iéna (n260767422)
         - Alma-Marceau (n260769132)
         - Franklin D. Roosevelt (n27362251)
@@ -1935,7 +1858,6 @@ routes:
         - Franklin D. Roosevelt (n27362251)
         - Alma-Marceau (n260769132)
         - Iéna (n260767422)
-        - Trocadéro (n4058783101)
         - Rue de la Pompe (n260767423)
         - La Muette (n260767424)
         - Ranelagh (n260767425)
