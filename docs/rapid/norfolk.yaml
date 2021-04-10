@@ -1,7 +1,65 @@
 
 stations: 
+  - Ballentine/Broad Creek (n6766890685)
+  - Civic Plaza (n6766842465)
+  - EVMC/Fort Norfolk (n8413533280)
+  - Harbor Park (n6766842466)
+  - Ingleside Road (n5186963644)
+  - MacArthur Square (n6766842464)
+  - Military Highway (n6766890686)
+  - Monticello (n6766842463)
+  - NSU (n6754424666)
+  - Newtown Road (n8413533238)
+  - York Street/Freemason (n6766842462)
 
 transfers: 
 
 routes: 
+  - 
+    type: light_rail
+    ref: Tide
+    name: HRT Tide
+    colour: '#004d9f'
+    station_count: 11
+    stations: 
+      - Newtown Road
+      - Military Highway
+      - Ingleside Road
+      - Ballentine/Broad Creek
+      - NSU
+      - Harbor Park
+      - Civic Plaza
+      - MacArthur Square
+      - Monticello
+      - York Street/Freemason
+      - EVMC/Fort Norfolk
+
+    itineraries: 
+      r6950523: 
+        - Newtown Road (n8413533238)
+        - Military Highway (n6766890686)
+        - Ingleside Road (n5186963644)
+        - Ballentine/Broad Creek (n6766890685)
+        - NSU (n6754424666)
+        - Harbor Park (n6766842466)
+        - Civic Plaza (n6766842465)
+        - MacArthur Square (n6766842464)
+        - Monticello (n6766842463)
+        - York Street/Freemason (n6766842462)
+        - EVMC/Fort Norfolk (n8413533280)
+
+      r6950524: 
+        - EVMC/Fort Norfolk (n8413533280)
+        - York Street/Freemason (n6766842462)
+        - Monticello (n6766842463)
+        - MacArthur Square (n6766842464)
+        - Civic Plaza (n6766842465)
+        - Harbor Park (n6766842466)
+        - NSU (n6754424666)
+        - Ballentine/Broad Creek (n6766890685)
+        - Ingleside Road (n5186963644)
+        - Military Highway (n6766890686)
+        - Newtown Road (n8413533238)
+
+
 

@@ -5,6 +5,7 @@ stations:
   - Anáhuac (n1041636956)
   - Aztlan (n308520684)
   - Central (n308516817)
+  - Colonia Obrera (n3788005135)
   - Cuauhtémoc (n8475590852)
   - Del Golfo (n308516813)
   - Edison (n308520653)
@@ -12,6 +13,7 @@ stations:
   - Exposición (n308521283)
   - Fundadores (n1041599626)
   - Félix U. Gomez (n3788005136)
+  - Félix U. Gómez (n4366974200)
   - General Anaya (n1041636993)
   - General I. Zaragoza (n1041599589)
   - Hospital (n308520670)
@@ -26,6 +28,7 @@ stations:
   - Parque Fundidora (n308521309)
   - Penitenciaria (n308520675)
   - Regina (n1041637024)
+  - Ruiz Cortinez (n4366974201)
   - San Bernabé (n308520693)
   - San Nicolás (n1041637014)
   - Santa Lucía (n5108553595)
@@ -41,6 +44,9 @@ transfers:
   - 
     - Cuauhtémoc (r10791445)
     - Cuauhtémoc (r7923859)
+  - 
+    - Félix U. Gomez (r12380645)
+    - Félix U. Gomez (r12380646)
 
 routes: 
   - 
@@ -172,12 +178,15 @@ routes:
     ref: 3
     name: Línea 3
     colour: '#ff8000'
-    station_count: 6
+    station_count: 9
     stations: 
       - Hospital Metropolitano
       - Los Ángeles
+      - Ruiz Cortinez
       - Moderna
       - Metalúrgicos
+      - Félix U. Gomez
+      - Colonia Obrera
       - Santa Lucía
       - General I. Zaragoza
 
@@ -185,16 +194,22 @@ routes:
       r12380644: 
         - Hospital Metropolitano (n3788005141)
         - Los Ángeles (n3786396125)
+        - Ruiz Cortinez (n4366974201)
         - Moderna (n3788005139)
         - Metalúrgicos (n3788005137)
+        - Félix U. Gómez (n4366974200)
+        - Colonia Obrera (n3788005135)
         - Santa Lucía (n5108553595)
         - General I. Zaragoza (n1041599589)
 
       r12380647: 
         - General I. Zaragoza (n1041599589)
         - Santa Lucía (n5108553595)
+        - Colonia Obrera (n3788005135)
+        - Félix U. Gómez (n4366974200)
         - Metalúrgicos (n3788005137)
         - Moderna (n3788005139)
+        - Ruiz Cortinez (n4366974201)
         - Los Ángeles (n3786396125)
         - Hospital Metropolitano (n3788005141)
 

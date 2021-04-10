@@ -1,29 +1,28 @@
 
 stations: 
-  - 1 Street SW (n6575466746)
-  - 3 Street SW (n6575466755)
+  - 1 Street Southwest (n6575466746)
+  - 3 Street Southwest (n6575466755)
   - 39 Avenue (n6575573990)
-  - 4 Street SW (n6575466756)
-  - 45th Street (n5319519499)
-  - 6 Street SW (n6575440356)
-  - 69th Street (n6575523316)
-  - 7 Street SW (n8589911889)
-  - 8 Street SW (n8589911890)
+  - 4 Street Southwest (n6575466756)
+  - 45 Street (n5319519499)
+  - 6 Street Southwest (n6575440356)
+  - 69 Street (n6575523316)
+  - 7 Street Southwest (n8589911889)
+  - 8 Street Southwest (n8589911890)
   - Anderson (n6575591954)
   - Banff Trail (n3167127887)
   - Barlow/Max Bell (n7061611332)
   - Brentwood (n6575665571)
   - Bridgeland/Memorial (n7061611328)
-  - Calgary Zoo (n7061611330)
   - Canyon Meadows (n6575595186)
   - Centre Street (n6575466745)
   - Chinook (n6575588313)
   - City Hall (n6575466744)
   - Crowfoot (n6575593129)
   - Dalhousie (n6575616772)
-  - Downtown West / Kerby (n4232063301)
-  - Erlton / Stampede (n6575522464)
-  - 'Fish Creek - Lacombe (n6712140298)'
+  - Downtown West–Kerby (n4232063301)
+  - Erlton/Stampede (n6575522464)
+  - Fish Creek–Lacombe (n6712140298)
   - Franklin (n6575504166)
   - Heritage (n6575588314)
   - Lions Park (n3185972587)
@@ -36,17 +35,27 @@ stations:
   - Shaganappi Point (n6575497065)
   - Shawnessy (n3684428765)
   - Sirocco (n5319519500)
-  - 'Somerset - Bridlewood (n6575607872)'
+  - Somerset–Bridlewood (n6575607872)
   - Southland (n6575591953)
   - Sunalta (n6575497064)
   - Sunnyside (n3185974854)
   - Tuscany (n6575621430)
   - University (n6575591757)
-  - Victoria Park / Stampede (n6575549333)
+  - Victoria Park/Stampede (n6575549333)
   - Westbrook (n2637733856)
   - Whitehorn (n6575547071)
+  - Zoo (n7061611330)
 
 transfers: 
+  - 
+    - 1 Street Southwest (r9729632)
+    - Centre Street (r9729631)
+  - 
+    - 4 Street Southwest (r9729634)
+    - 6 Street Southwest (r9729642)
+  - 
+    - 7 Street Southwest (r9729643)
+    - 8 Street Southwest (r9729644)
 
 routes: 
   - 
@@ -54,25 +63,25 @@ routes:
     ref: 201
     name: CTrain Red Line
     colour: '#ff0000'
-    station_count: 28
+    station_count: 25
     stations: 
-      - 'Somerset - Bridlewood'
+      - Somerset–Bridlewood
       - Shawnessy
-      - 'Fish Creek - Lacombe'
+      - Fish Creek–Lacombe
       - Canyon Meadows
       - Anderson
       - Southland
       - Heritage
       - Chinook (CTrain)
       - 39 Avenue
-      - Erlton / Stampede
-      - Victoria Park / Stampede
+      - Erlton/Stampede
+      - Victoria Park/Stampede
       - City Hall
-      - 1 Street SW
-      - 4 Street SW
-      - 7 Street SW
+      - Centre Street
+      - 6 Street Southwest
+      - 8 Street Southwest
       - Sunnyside
-      - SAIT / AUArts / Jubilee
+      - SAIT/AUArts/Jubilee
       - Lions Park
       - Banff Trail
       - University
@@ -80,28 +89,25 @@ routes:
       - Dalhousie
       - Crowfoot
       - Tuscany
-      - 8 Street SW
-      - 6 Street SW
-      - 3 Street SW
-      - Centre Street
+      - 3 Street Southwest
 
     itineraries: 
       r2653243: 
-        - 'Somerset - Bridlewood (n6575607872)'
+        - Somerset–Bridlewood (n6575607872)
         - Shawnessy (n3684428765)
-        - 'Fish Creek - Lacombe (n6712140298)'
+        - Fish Creek–Lacombe (n6712140298)
         - Canyon Meadows (n6575595186)
         - Anderson (n6575591954)
         - Southland (n6575591953)
         - Heritage (n6575588314)
         - Chinook (n6575588313)
         - 39 Avenue (n6575573990)
-        - Erlton / Stampede (n6575522464)
-        - Victoria Park / Stampede (n6575549333)
+        - Erlton/Stampede (n6575522464)
+        - Victoria Park/Stampede (n6575549333)
         - City Hall (n6575466744)
-        - 1 Street SW (n6575466746)
-        - 4 Street SW (n6575466756)
-        - 7 Street SW (n8589911889)
+        - 1 Street Southwest (n6575466746)
+        - 4 Street Southwest (n6575466756)
+        - 7 Street Southwest (n8589911889)
         - Sunnyside (n3185974854)
         - SAIT/AUArts/Jubilee (n6575604646)
         - Lions Park (n3185972587)
@@ -122,22 +128,22 @@ routes:
         - Lions Park (n3185972587)
         - SAIT/AUArts/Jubilee (n6575604646)
         - Sunnyside (n3185974854)
-        - 8 Street SW (n8589911890)
-        - 6 Street SW (n6575440356)
-        - 3 Street SW (n6575466755)
+        - 8 Street Southwest (n8589911890)
+        - 6 Street Southwest (n6575440356)
+        - 3 Street Southwest (n6575466755)
         - Centre Street (n6575466745)
         - City Hall (n6575466744)
-        - Victoria Park / Stampede (n6575549333)
-        - Erlton / Stampede (n6575522464)
+        - Victoria Park/Stampede (n6575549333)
+        - Erlton/Stampede (n6575522464)
         - 39 Avenue (n6575573990)
         - Chinook (n6575588313)
         - Heritage (n6575588314)
         - Southland (n6575591953)
         - Anderson (n6575591954)
         - Canyon Meadows (n6575595186)
-        - 'Fish Creek - Lacombe (n6712140298)'
+        - Fish Creek–Lacombe (n6712140298)
         - Shawnessy (n3684428765)
-        - 'Somerset - Bridlewood (n6575607872)'
+        - Somerset–Bridlewood (n6575607872)
 
 
   - 
@@ -145,7 +151,7 @@ routes:
     ref: 202
     name: CTrain Blue Line
     colour: '#0000ff'
-    station_count: 25
+    station_count: 22
     stations: 
       - 69 Street
       - Sirocco
@@ -153,14 +159,14 @@ routes:
       - Westbrook
       - Shaganappi Point
       - Sunalta
-      - 'Downtown West - Kerby'
-      - 8 Street SW
-      - 6 Street SW
-      - 3 Street SW
-      - Centre Street
+      - Downtown West–Kerby
+      - 7 Street Southwest
+      - 4 Street Southwest
+      - 3 Street Southwest
+      - 1 Street Southwest
       - City Hall
-      - Bridgeland / Memorial
-      - Calgary Zoo
+      - Bridgeland/Memorial
+      - Zoo
       - Barlow / Max Bell
       - Franklin
       - Marlborough
@@ -169,26 +175,23 @@ routes:
       - McKnight-Westwinds
       - Martindale
       - Saddletowne
-      - 1 Street SW
-      - 4 Street SW
-      - 7 Street SW
 
     itineraries: 
       r1924533: 
-        - 69th Street (n6575523316)
+        - 69 Street (n6575523316)
         - Sirocco (n5319519500)
-        - 45th Street (n5319519499)
+        - 45 Street (n5319519499)
         - Westbrook (n2637733856)
         - Shaganappi Point (n6575497065)
         - Sunalta (n6575497064)
-        - Downtown West / Kerby (n4232063301)
-        - 8 Street SW (n8589911890)
-        - 6 Street SW (n6575440356)
-        - 3 Street SW (n6575466755)
+        - Downtown West–Kerby (n4232063301)
+        - 8 Street Southwest (n8589911890)
+        - 6 Street Southwest (n6575440356)
+        - 3 Street Southwest (n6575466755)
         - Centre Street (n6575466745)
         - City Hall (n6575466744)
         - Bridgeland/Memorial (n7061611328)
-        - Calgary Zoo (n7061611330)
+        - Zoo (n7061611330)
         - Barlow/Max Bell (n7061611332)
         - Franklin (n6575504166)
         - Marlborough (n6575504167)
@@ -207,19 +210,19 @@ routes:
         - Marlborough (n6575504167)
         - Franklin (n6575504166)
         - Barlow/Max Bell (n7061611332)
-        - Calgary Zoo (n7061611330)
+        - Zoo (n7061611330)
         - Bridgeland/Memorial (n7061611328)
         - City Hall (n6575466744)
-        - 1 Street SW (n6575466746)
-        - 4 Street SW (n6575466756)
-        - 7 Street SW (n8589911889)
-        - Downtown West / Kerby (n4232063301)
+        - 1 Street Southwest (n6575466746)
+        - 4 Street Southwest (n6575466756)
+        - 7 Street Southwest (n8589911889)
+        - Downtown West–Kerby (n4232063301)
         - Sunalta (n6575497064)
         - Shaganappi Point (n6575497065)
         - Westbrook (n2637733856)
-        - 45th Street (n5319519499)
+        - 45 Street (n5319519499)
         - Sirocco (n5319519500)
-        - 69th Street (n6575523316)
+        - 69 Street (n6575523316)
 
 
 

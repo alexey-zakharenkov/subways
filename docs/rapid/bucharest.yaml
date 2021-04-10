@@ -6,8 +6,11 @@ stations:
   - Constantin Brâncuși (n7925090332)
   - Crângași (n610929150)
   - Dristor 2 (n610921654)
+  - Eroilor (n2817781098)
+  - Eroilor 2 (n7925090295)
   - Favorit (n7925090298)
   - Gara de Nord 1 (n304917380)
+  - Gorjului (n582984656)
   - Grivița (n5257635108)
   - Grozăvești (n582975264)
   - Izvor (n305109365)
@@ -29,6 +32,9 @@ stations:
   - Ștefan cel Mare (n582992954)
 
 transfers: 
+  - 
+    - Eroilor (r11697880)
+    - Eroilor (r11697881)
 
 routes: 
   - 
@@ -36,9 +42,10 @@ routes:
     ref: M1
     name: Magistrala 1
     colour: '#ffff00'
-    station_count: 12
+    station_count: 13
     stations: 
       - Metrou Izvor
+      - Eroilor
       - Metrou Grozăvești
       - Petrache Poenaru
       - Metrou Crângași
@@ -54,6 +61,7 @@ routes:
     itineraries: 
       r358046: 
         - Izvor (n305109365)
+        - Eroilor (n2817781098)
         - Grozăvești (n582975264)
         - Petrache Poenaru (n305136011)
         - Crângași (n610929150)
@@ -78,6 +86,7 @@ routes:
         - Crângași (n610929150)
         - Petrache Poenaru (n305136011)
         - Grozăvești (n582975264)
+        - Eroilor (n2817781098)
         - Izvor (n305109365)
 
 
@@ -100,23 +109,29 @@ routes:
     ref: M3
     name: Magistrala 3
     colour: '#bc1725'
-    station_count: 4
+    station_count: 6
     stations: 
       - Metrou Preciziei
       - Metrou Păcii
+      - Metrou Gorjului
       - Politehnica
+      - Eroilor
       - Metrou Izvor
 
     itineraries: 
       r358039: 
         - Preciziei (n301687829)
         - Păcii (n7023063629)
+        - Gorjului (n582984656)
         - Politehnica (n5190721296)
+        - Eroilor (n2817781098)
         - Izvor (n305109365)
 
       r7772843: 
         - Izvor (n305109365)
+        - Eroilor (n2817781098)
         - Politehnica (n5190721296)
+        - Gorjului (n582984656)
         - Păcii (n7023063629)
         - Preciziei (n301687829)
 
@@ -149,7 +164,7 @@ routes:
     ref: M5
     name: Magistrala 5
     colour: '#ff8040'
-    station_count: 9
+    station_count: 10
     stations: 
       - Valea Ialomiței
       - Romancierilor
@@ -158,6 +173,7 @@ routes:
       - Favorit
       - Orizont
       - Academia Militară
+      - Eroilor
       - Râul Doamnei
       - Constantin Brâncuși
 
@@ -170,8 +186,10 @@ routes:
         - Favorit (n7925090298)
         - Orizont (n7925084860)
         - Academia Militară (n7925090296)
+        - Eroilor 2 (n7925090295)
 
       r11697879: 
+        - Eroilor 2 (n7925090295)
         - Academia Militară (n7925090296)
         - Orizont (n7925084860)
         - Favorit (n7925090298)
@@ -189,8 +207,10 @@ routes:
         - Favorit (n7925090298)
         - Orizont (n7925084860)
         - Academia Militară (n7925090296)
+        - Eroilor 2 (n7925090295)
 
       r11697884: 
+        - Eroilor 2 (n7925090295)
         - Academia Militară (n7925090296)
         - Orizont (n7925084860)
         - Favorit (n7925090298)

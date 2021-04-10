@@ -13,7 +13,7 @@ stations:
   - Kingsway/Royal Alex (n7317542150)
   - MacEwan (n2448234427)
   - McKernan/Belgravia (n2067535175)
-  - NAIT (w718989056)
+  - NAIT (n8600083582)
   - South Campus/Fort Edmonton Park (n2067529107)
   - Southgate (n1813432369)
   - Stadium (n4237411866)
@@ -41,9 +41,9 @@ routes:
       - University
       - Health Sciences/Jubilee
       - McKernan/Belgravia
-      - South Campus/Fort Edmonton Park LRT Station
-      - Southgate LRT Station
-      - Century Park Transit Centre
+      - South Campus/Fort Edmonton Park
+      - Southgate
+      - Century Park
 
     itineraries: 
       r1861588: 
@@ -86,7 +86,7 @@ routes:
     ref: 502
     name: Metro Line
     colour: '#fc6357'
-    station_count: 10
+    station_count: 14
     stations: 
       - Health Sciences/Jubilee
       - University
@@ -95,9 +95,13 @@ routes:
       - Bay/Enterprise Square
       - Central
       - Churchill
-      - MacEwan LRT Station
+      - MacEwan
       - Kingsway/Royal Alex
       - NAIT
+      - Century Park
+      - Southgate
+      - South Campus/Fort Edmonton Park
+      - McKernan/Belgravia
 
     itineraries: 
       r6305415: 
@@ -110,10 +114,10 @@ routes:
         - Churchill (n3225243182)
         - MacEwan (n2448234427)
         - Kingsway/Royal Alex (n7317542150)
-        - NAIT (w718989056)
+        - NAIT (n8600083582)
 
       r9730136: 
-        - NAIT (w718989056)
+        - NAIT (n8600083582)
         - Kingsway/Royal Alex (n7317542150)
         - MacEwan (n2448234427)
         - Churchill (n3225243182)
@@ -123,6 +127,38 @@ routes:
         - Grandin (n6501293444)
         - University (n2525716100)
         - Health Sciences/Jubilee (n4237213143)
+
+      r12544921: 
+        - Century Park (n6799872965)
+        - Southgate (n1813432369)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - McKernan/Belgravia (n2067535175)
+        - Health Sciences/Jubilee (n4237213143)
+        - University (n2525716100)
+        - Grandin (n6501293444)
+        - Corona (n247678753)
+        - Bay/Enterprise Square (n247678712)
+        - Central (n247678643)
+        - Churchill (n3225243182)
+        - MacEwan (n2448234427)
+        - Kingsway/Royal Alex (n7317542150)
+        - NAIT (n8600083582)
+
+      r12544922: 
+        - NAIT (n8600083582)
+        - Kingsway/Royal Alex (n7317542150)
+        - MacEwan (n2448234427)
+        - Churchill (n3225243182)
+        - Central (n247678643)
+        - Bay/Enterprise Square (n247678712)
+        - Corona (n247678753)
+        - Grandin (n6501293444)
+        - University (n2525716100)
+        - Health Sciences/Jubilee (n4237213143)
+        - McKernan/Belgravia (n2067535175)
+        - South Campus/Fort Edmonton Park (n2067529107)
+        - Southgate (n1813432369)
+        - Century Park (n6799872965)
 
 
 
