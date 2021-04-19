@@ -6,7 +6,6 @@ stations:
   - Ayurá (n1214396495)
   - Bello (w607681834)
   - Caribe (w36836715)
-  - Cisneros (n1215434362)
   - Envigado (w44685163)
   - Estadio (n309027642)
   - Exposiciones (n1214400199)
@@ -16,14 +15,13 @@ stations:
   - Itagüí (w393886700)
   - La Estrella (n3665674641)
   - Madera (w607683610)
+  - Niquía (n8621185731)
   - Parque Berrío (n1214419507)
   - Poblado (n1214399411)
   - Prado (n1214420524)
   - Sabaneta (n3665674642)
   - San Antonio (n1214418069)
-  - San Javier (n3502845071)
   - Santa Lucía (n309027658)
-  - Suramericana (n309027638)
   - Tricentenario (w504572294)
   - Universidad (n1214422296)
 
@@ -38,7 +36,7 @@ routes:
     ref: A
     name: Metro Línea A
     colour: '#0000ff'
-    station_count: 20
+    station_count: 21
     stations: 
       - La Estrella
       - Sabaneta
@@ -60,6 +58,7 @@ routes:
       - Acevedo
       - Madera
       - Bello
+      - Niquía
 
     itineraries: 
       r1502460: 
@@ -83,8 +82,10 @@ routes:
         - Acevedo (w363347844)
         - Madera (w607683610)
         - Bello (w607681834)
+        - Niquía (n8621185731)
 
       r1502510: 
+        - Niquía (n8621185731)
         - Bello (w607681834)
         - Madera (w607683610)
         - Acevedo (w363347844)
@@ -112,33 +113,24 @@ routes:
     ref: B
     name: Metro Línea B
     colour: '#ffa500'
-    station_count: 7
+    station_count: 4
     stations: 
       - San Antonio
-      - Cisneros (Metro)
-      - Suramericana
       - Estadio
       - Floresta
       - Santa Lucía
-      - San Javier
 
     itineraries: 
       r1504096: 
         - San Antonio (n1214418069)
-        - Cisneros (n1215434362)
-        - Suramericana (n309027638)
         - Estadio (n309027642)
         - Floresta (n309027653)
         - Santa Lucía (n309027658)
-        - San Javier (n3502845071)
 
       r1504257: 
-        - San Javier (n3502845071)
         - Santa Lucía (n309027658)
         - Floresta (n309027653)
         - Estadio (n309027642)
-        - Suramericana (n309027638)
-        - Cisneros (n1215434362)
         - San Antonio (n1214418069)
 
 

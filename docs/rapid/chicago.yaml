@@ -113,7 +113,7 @@ stations:
   - O'Hare Multi-Modal Facility (n8419201645)
   - Oak Park (n737746111)
   - Oak Park (n7758320414)
-  - Oakton (n2587095874)
+  - Oakton-Skokie (n2587095874)
   - Paulina (n4697817170)
   - Polk (n7758309686)
   - Pulaski (n2042977745)
@@ -200,7 +200,7 @@ routes:
   - 
     type: subway
     ref: Blue
-    name: Blue Line
+    name: CTA Blue Line
     colour: '#00a1de'
     station_count: 33
     stations: 
@@ -313,7 +313,7 @@ routes:
   - 
     type: subway
     ref: Brown
-    name: Ravenswood Branch
+    name: CTA Brown Line
     colour: '#62361b'
     station_count: 27
     stations: 
@@ -366,6 +366,14 @@ routes:
         - Sedgwick (n7758428037)
         - Chicago (n5349571275)
         - Merchandise Mart (n5349574577)
+        - Washington/Wells (n258940051)
+        - Quincy (n258940052)
+        - LaSalle/Van Buren (n258940056)
+        - Harold Washington Library-State/Van Buren (n258940057)
+        - Adams/Wabash (n258940060)
+        - Washington/Wabash (n5091005359)
+        - State/Lake (n258296349)
+        - Clark/Lake (n258940066)
 
       r2562970: 
         - Washington/Wells (n258940051)
@@ -400,7 +408,7 @@ routes:
   - 
     type: subway
     ref: Green
-    name: Green Line
+    name: CTA Green Line
     colour: '#009b3a'
     station_count: 30
     stations: 
@@ -560,7 +568,7 @@ routes:
   - 
     type: subway
     ref: Orange
-    name: Orange Line
+    name: CTA Orange Line
     colour: '#f9461c'
     station_count: 16
     stations: 
@@ -591,6 +599,14 @@ routes:
         - Ashland (n5745254807)
         - Halsted (n5745254805)
         - Roosevelt (n6509194108)
+        - Harold Washington Library-State/Van Buren (n258940057)
+        - LaSalle/Van Buren (n258940056)
+        - Quincy (n258940052)
+        - Washington/Wells (n258940051)
+        - Clark/Lake (n258940066)
+        - State/Lake (n258296349)
+        - Washington/Wabash (n5091005359)
+        - Adams/Wabash (n258940060)
 
       r2578311: 
         - Harold Washington Library-State/Van Buren (n258940057)
@@ -614,7 +630,7 @@ routes:
   - 
     type: subway
     ref: Pink
-    name: Pink Line
+    name: CTA Pink Line
     colour: '#e27ea6'
     station_count: 22
     stations: 
@@ -681,12 +697,20 @@ routes:
         - Ashland (n258942196)
         - Morgan (n1762400891)
         - Clinton (n258942193)
+        - Clark/Lake (n258940066)
+        - State/Lake (n258296349)
+        - Washington/Wabash (n5091005359)
+        - Adams/Wabash (n258940060)
+        - Harold Washington Library-State/Van Buren (n258940057)
+        - LaSalle/Van Buren (n258940056)
+        - Quincy (n258940052)
+        - Washington/Wells (n258940051)
 
 
   - 
     type: subway
     ref: Purple
-    name: Purple Line
+    name: CTA Purple Line
     colour: '#522398'
     station_count: 26
     stations: 
@@ -765,12 +789,42 @@ routes:
         - Sedgwick (n7758428037)
         - Chicago (n5349571275)
         - Merchandise Mart (n5349574577)
+        - Clark/Lake (n258940066)
+        - State/Lake (n258296349)
+        - Washington/Wabash (n5091005359)
+        - Adams/Wabash (n258940060)
+        - Harold Washington Library-State/Van Buren (n258940057)
+        - LaSalle/Van Buren (n258940056)
+        - Quincy (n258940052)
+        - Washington/Wells (n258940051)
+
+      r12594572: 
+        - Linden (n7758315717)
+        - Central (n249656713)
+        - Noyes (n2091745257)
+        - Foster (n3882686491)
+        - Davis (n2092506200)
+        - Dempster (n7758315715)
+        - Main (n7132414064)
+        - South Boulevard (n2092525316)
+        - Howard (n4060906740)
+
+      r12594573: 
+        - Howard (n4060906740)
+        - South Boulevard (n2092525316)
+        - Main (n7132414064)
+        - Dempster (n7758315715)
+        - Davis (n2092506200)
+        - Foster (n3882686491)
+        - Noyes (n2091745257)
+        - Central (n249656713)
+        - Linden (n7758315717)
 
 
   - 
     type: subway
     ref: Red
-    name: Red Line
+    name: CTA Red Line
     colour: '#c60c30'
     station_count: 33
     stations: 
@@ -883,7 +937,7 @@ routes:
   - 
     type: subway
     ref: Yellow
-    name: Yellow Line
+    name: CTA Yellow Line
     colour: '#f9e300'
     station_count: 3
     stations: 
@@ -894,14 +948,13 @@ routes:
     itineraries: 
       r92653: 
         - Dempster-Skokie (n7758315716)
-        - Oakton (n2587095874)
+        - Oakton-Skokie (n2587095874)
         - Howard (n4060906740)
 
       r2400823: 
         - Howard (n4060906740)
-        - Oakton (n2587095874)
+        - Oakton-Skokie (n2587095874)
         - Dempster-Skokie (n7758315716)
-        - Howard (n4060906740)
 
 
 

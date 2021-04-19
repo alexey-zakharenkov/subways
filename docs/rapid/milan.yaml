@@ -1,6 +1,5 @@
 
 stations: 
-  - Abbiategrasso (n1739767077)
   - Affori Centro (n1029570927)
   - Affori FN (n1277834213)
   - Amendola (n21226123)
@@ -16,8 +15,6 @@ stations:
   - Bussero (n4031019906)
   - 'Ca'' Granda - Pratocentenaro (n441118971)'
   - Cadorna (n1272557583)
-  - Cadorna (n21306358)
-  - Caiazzo (n1725942573)
   - Cairoli (n232864604)
   - Cascina Antonietta (n4066582557)
   - Cascina Burrona (n3681299728)
@@ -35,27 +32,22 @@ stations:
   - Conciliazione (n21226008)
   - Cordusio (n232864605)
   - Corvetto (n340061063)
-  - Crescenzago (n1916755350)
   - Crocetta (n257898306)
   - De Angeli (n21226111)
   - Dergano (n441109563)
   - Domodossola (n674079898)
   - Duomo (n257900140)
   - Duomo (n5216248523)
-  - Famagosta (n456344433)
   - Gambara (n21227049)
   - Garibaldi FS (n2344518511)
   - Garibaldi FS (n3935647345)
   - Gerusalemme (n674079899)
-  - Gioia (n91567648)
   - Gorgonzola (n257553064)
   - Gorla (n270443358)
   - Inganni (n29463264)
   - Isola (n441118965)
   - Istria (n441118969)
-  - Lambrate FS (n1746151180)
   - Lampugnano (n301102111)
-  - Lanza (n21555749)
   - Lima (n307809735)
   - Lodi T.I.B.B. (n257898307)
   - Loreto (n1725942582)
@@ -69,14 +61,11 @@ stations:
   - Molino Dorino (n344551806)
   - Montenapoleone (n257900141)
   - Monumentale (n674079901)
-  - Moscova (n1725740868)
   - Pagano (n21226654)
   - Palestro (n307809395)
   - Pasteur (n267034934)
   - Pero (n791819611)
-  - Piola (n1722078727)
   - Ponale (n441118976)
-  - Porta Genova FS (n1739767084)
   - Porta Romana (n257898305)
   - Porta Venezia (n4942466113)
   - Portello (n3001245476)
@@ -86,15 +75,12 @@ stations:
   - QT8 (n344550581)
   - Repubblica (n2344518514)
   - Rho-Fiera (n344552615)
-  - Romolo (n1759883432)
   - Rovereto (n295548092)
   - San Babila (n307809391)
   - San Donato (n318013353)
   - San Leonardo (n301102639)
   - San Siro Ippodromo (n992935276)
   - San Siro Stadio (n992935284)
-  - Sant'Agostino (n1739767086)
-  - Sant'Ambrogio (n21555708)
   - Segesta (n992935273)
   - Sesto 1º Maggio F.S. (n256384526)
   - Sesto Marelli (n302941608)
@@ -103,7 +89,6 @@ stations:
   - Tre Torri (n992935286)
   - Turati (n257900143)
   - Turro (n434849658)
-  - Udine (n249586436)
   - Uruguay (n301102148)
   - Villa Fiorita (n1515869614)
   - Villa Pompea (n4031014791)
@@ -114,9 +99,6 @@ stations:
   - Zara (n5216248522)
 
 transfers: 
-  - 
-    - Cadorna (r7646785)
-    - Cadorna (r7646786)
   - 
     - Centrale M2 (r7646801)
     - Centrale M3 (r7715455)
@@ -314,27 +296,12 @@ routes:
     ref: M2
     name: Linea M2
     colour: '#82bb32'
-    station_count: 34
+    station_count: 19
     stations: 
-      - Abbiategrasso
-      - Famagosta
-      - Romolo
-      - Porta Genova FS
-      - Sant'Agostino
-      - Sant'Ambrogio
-      - Cadorna
-      - Lanza
-      - Moscova
       - Garibaldi FS
-      - Gioia
       - Centrale M2
-      - Caiazzo
       - Loreto M2
-      - Piola
-      - Lambrate FS
-      - Udine
       - Cimiano
-      - Crescenzago
       - Cascina Gobba
       - Vimodrone
       - Cascina Burrona
@@ -353,25 +320,10 @@ routes:
 
     itineraries: 
       r919290: 
-        - Abbiategrasso (n1739767077)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
         - Garibaldi FS (n3935647345)
-        - Gioia (n91567648)
         - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
         - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
         - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
         - Cascina Gobba (n2356329672)
         - Vimodrone (n257553602)
         - Cascina Burrona (n3681299728)
@@ -394,45 +346,15 @@ routes:
         - Cascina Burrona (n3681299728)
         - Vimodrone (n257553602)
         - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
         - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
         - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
         - Centrale FS (n91567650)
-        - Gioia (n91567648)
         - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
-        - Abbiategrasso (n1739767077)
 
       r919292: 
-        - Abbiategrasso (n1739767077)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
-        - Gioia (n91567648)
         - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
         - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
         - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
         - Cascina Gobba (n2356329672)
         - Cologno Sud (n5216255290)
         - Cologno Centro (n340494761)
@@ -443,47 +365,18 @@ routes:
         - Cologno Centro (n340494761)
         - Cologno Sud (n5216255290)
         - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
         - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
         - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
         - Centrale FS (n91567650)
-        - Gioia (n91567648)
         - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
-        - Abbiategrasso (n1739767077)
 
       r1576143: 
         - Assago Milanofiori Forum (n1164736020)
         - Assago Milanofiori Nord (n1164734238)
-        - Famagosta (n456344433)
-        - Romolo (n1759883432)
-        - Porta Genova FS (n1739767084)
-        - Sant'Agostino (n1739767086)
-        - Sant'Ambrogio (n21555708)
-        - Cadorna (n21306358)
-        - Lanza (n21555749)
-        - Moscova (n1725740868)
         - Garibaldi FS (n3935647345)
-        - Gioia (n91567648)
         - Centrale FS (n91567650)
-        - Caiazzo (n1725942573)
         - Loreto (n5216248524)
-        - Piola (n1722078727)
-        - Lambrate FS (n1746151180)
-        - Udine (n249586436)
         - Cimiano (n2631107193)
-        - Crescenzago (n1916755350)
         - Cascina Gobba (n2356329672)
         - Cologno Sud (n5216255290)
         - Cologno Centro (n340494761)
@@ -494,24 +387,10 @@ routes:
         - Cologno Centro (n340494761)
         - Cologno Sud (n5216255290)
         - Cascina Gobba (n2356329672)
-        - Crescenzago (n1916755350)
         - Cimiano (n2631107193)
-        - Udine (n249586436)
-        - Lambrate FS (n1746151180)
-        - Piola (n1722078727)
         - Loreto (n5216248524)
-        - Caiazzo (n1725942573)
         - Centrale FS (n91567650)
-        - Gioia (n91567648)
         - Garibaldi FS (n3935647345)
-        - Moscova (n1725740868)
-        - Lanza (n21555749)
-        - Cadorna (n21306358)
-        - Sant'Ambrogio (n21555708)
-        - Sant'Agostino (n1739767086)
-        - Porta Genova FS (n1739767084)
-        - Romolo (n1759883432)
-        - Famagosta (n456344433)
         - Assago Milanofiori Nord (n1164734238)
         - Assago Milanofiori Forum (n1164736020)
 
