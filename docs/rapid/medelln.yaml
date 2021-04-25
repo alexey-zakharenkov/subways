@@ -6,24 +6,23 @@ stations:
   - Ayurá (n1214396495)
   - Bello (w607681834)
   - Caribe (w36836715)
+  - Cisneros (n8660247117)
   - Envigado (w44685163)
-  - Estadio (n309027642)
   - Exposiciones (n1214400199)
-  - Floresta (n309027653)
+  - Floresta (w918213505)
   - Hospital (w921531897)
   - Industriales (n1214399891)
   - Itagüí (w393886700)
   - La Estrella (n3665674641)
   - Madera (w607683610)
   - Niquía (n8621185731)
-  - Parque Berrío (n1214419507)
+  - Parque Berrío (w934504294)
   - Poblado (n1214399411)
-  - Prado (n1214420524)
+  - Prado (w934500124)
   - Sabaneta (n3665674642)
-  - San Antonio (n1214418069)
-  - Santa Lucía (n309027658)
+  - San Antonio (w408040656)
+  - Santa Lucía (w932453764)
   - Tricentenario (w504572294)
-  - Universidad (n1214422296)
 
 transfers: 
   - 
@@ -36,7 +35,7 @@ routes:
     ref: A
     name: Metro Línea A
     colour: '#0000ff'
-    station_count: 21
+    station_count: 20
     stations: 
       - La Estrella
       - Sabaneta
@@ -52,7 +51,6 @@ routes:
       - Parque Berrío
       - Prado
       - Hospital (Metro)
-      - Universidad
       - Caribe
       - Tricentenario
       - Acevedo
@@ -72,11 +70,10 @@ routes:
         - Industriales (n1214399891)
         - Exposiciones (n1214400199)
         - Alpujarra (n1214417209)
-        - San Antonio (n1214418069)
-        - Parque Berrío (n1214419507)
-        - Prado (n1214420524)
+        - San Antonio (w408040656)
+        - Parque Berrío (w934504294)
+        - Prado (w934500124)
         - Hospital (w921531897)
-        - Universidad (n1214422296)
         - Caribe (w36836715)
         - Tricentenario (w504572294)
         - Acevedo (w363347844)
@@ -91,11 +88,10 @@ routes:
         - Acevedo (w363347844)
         - Tricentenario (w504572294)
         - Caribe (w36836715)
-        - Universidad (n1214422296)
         - Hospital (w921531897)
-        - Prado (n1214420524)
-        - Parque Berrío (n1214419507)
-        - San Antonio (n1214418069)
+        - Prado (w934500124)
+        - Parque Berrío (w934504294)
+        - San Antonio (w408040656)
         - Alpujarra (n1214417209)
         - Exposiciones (n1214400199)
         - Industriales (n1214399891)
@@ -116,22 +112,22 @@ routes:
     station_count: 4
     stations: 
       - San Antonio
-      - Estadio
+      - Cisneros (Metro)
       - Floresta
       - Santa Lucía
 
     itineraries: 
       r1504096: 
-        - San Antonio (n1214418069)
-        - Estadio (n309027642)
-        - Floresta (n309027653)
-        - Santa Lucía (n309027658)
+        - San Antonio (w408040656)
+        - Cisneros (n8660247117)
+        - Floresta (w918213505)
+        - Santa Lucía (w932453764)
 
       r1504257: 
-        - Santa Lucía (n309027658)
-        - Floresta (n309027653)
-        - Estadio (n309027642)
-        - San Antonio (n1214418069)
+        - Santa Lucía (w932453764)
+        - Floresta (w918213505)
+        - Cisneros (n8660247117)
+        - San Antonio (w408040656)
 
 
 

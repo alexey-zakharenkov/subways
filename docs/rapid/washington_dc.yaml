@@ -1,6 +1,5 @@
 
 stations: 
-  - '? (n738189385)'
   - Addison Road (n738189387)
   - Anacostia (n738189399)
   - Archives (n738189394)
@@ -22,7 +21,7 @@ stations:
   - Court House (n738189396)
   - Crystal City (n738189355)
   - Deanwood (n738189333)
-  - Dunn Loring (n5351693108)
+  - Dunn Loring–Merrifield (n5351693108)
   - Dupont Circle (n738182031)
   - East Falls Church (n738189328)
   - Eastern Market (n738189400)
@@ -34,8 +33,10 @@ stations:
   - Foggy Bottom–GWU (n738189359)
   - Forest Glen (n738189324)
   - Fort Totten (n738189367)
+  - Fort Totten (n7788485986)
   - Franconia–Springfield (n738189366)
   - Friendship Heights (n738189372)
+  - Gallery Place (n738189362)
   - Gallery Place (n7788485987)
   - Georgia Avenue–Petworth (n738189374)
   - Glenmont (n738189379)
@@ -46,12 +47,14 @@ stations:
   - Judiciary Square (n738189406)
   - King Street–Old Town (n738189339)
   - L'Enfant Plaza (n738189393)
+  - L'Enfant Plaza (n7788485988)
   - Landover (n738189404)
   - Largo Town Center (n810813923)
   - McLean (n5351736893)
   - McPherson Square (n738189342)
   - Medical Center (n738189354)
   - Metro Center (n738189329)
+  - Metro Center (n7788485989)
   - Minnesota Avenue (n738189371)
   - Morgan Boulevard (n738189322)
   - Mount Vernon Square (n738189363)
@@ -63,7 +66,7 @@ stations:
   - Pentagon City (n738189357)
   - Potomac Avenue (n738189360)
   - Prince George's Plaza (n738189345)
-  - Rhode Island Avenue (n5276250837)
+  - Rhode Island Avenue–Brentwood (n5276250837)
   - Rockville (n7015066751)
   - Ronald Reagan Washington National Airport (n738189386)
   - Rosslyn (n738189319)
@@ -79,13 +82,14 @@ stations:
   - Tenleytown–AU (n738189341)
   - Twinbrook (n738189388)
   - Tysons Corner (n5351730606)
+  - U Street (n738189385)
   - Union Station (n738189330)
   - Van Dorn Street (n738189365)
   - Van Ness–UDC (n738189407)
-  - Vienna (n738189340)
+  - Vienna/Fairfax–GMU (n738189340)
   - Virginia Square–GMU (n738189346)
   - Waterfront (n5284068378)
-  - West Falls Church (n2367269727)
+  - West Falls Church–VT/UVA (n2367269727)
   - West Hyattsville (n738189383)
   - Wheaton (n738189337)
   - White Flint (n738189389)
@@ -96,6 +100,18 @@ transfers:
   - 
     - Farragut North (r6135570)
     - Farragut West (r7924586)
+  - 
+    - Fort Totten (Red) (r7945937)
+    - Fort Totten (Yellow / Green) (r7945936)
+  - 
+    - Gallery Place (Red) (r7945932)
+    - Gallery Place (Yellow/Green) (r359558)
+  - 
+    - L'Enfant Plaza (Blue/Orange/Silver) (r7945929)
+    - L'Enfant Plaza (Green/Yellow) (r7921908)
+  - 
+    - Metro Center (Blue/Orange/Silver) (r7924554)
+    - Metro Center (Red) (r359557)
 
 routes: 
   - 
@@ -118,10 +134,10 @@ routes:
       - Foggy Bottom–GWU
       - Farragut West
       - McPherson Square
-      - Metro Center
+      - Metro Center (Blue/Orange/Silver)
       - Federal Triangle
       - Smithsonian
-      - L'Enfant Plaza
+      - L'Enfant Plaza (Blue/Orange/Silver)
       - Federal Center Southwest
       - Capitol South
       - Eastern Market
@@ -148,7 +164,7 @@ routes:
         - Foggy Bottom–GWU (n738189359)
         - Farragut West (n738189326)
         - McPherson Square (n738189342)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - Federal Triangle (n738189343)
         - Smithsonian (n1844430184)
         - L'Enfant Plaza (n738189393)
@@ -177,7 +193,7 @@ routes:
         - L'Enfant Plaza (n738189393)
         - Smithsonian (n1844430184)
         - Federal Triangle (n738189343)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - McPherson Square (n738189342)
         - Farragut West (n738189326)
         - Foggy Bottom–GWU (n738189359)
@@ -204,15 +220,15 @@ routes:
       - College Park–University of Maryland
       - Prince George's Plaza
       - West Hyattsville
-      - Fort Totten
+      - Fort Totten (Yellow / Green)
       - Georgia Avenue–Petworth
       - Columbia Heights
       - U Street
       - Shaw–Howard University
       - Mount Vernon Square
-      - Gallery Place
+      - Gallery Place (Yellow/Green)
       - Archives
-      - L'Enfant Plaza
+      - L'Enfant Plaza (Green/Yellow)
       - Waterfront
       - Navy Yard–Ballpark
       - Anacostia
@@ -228,15 +244,15 @@ routes:
         - College Park–University of Maryland (n738189344)
         - Prince George's Plaza (n738189345)
         - West Hyattsville (n738189383)
-        - Fort Totten (n738189367)
+        - Fort Totten (n7788485986)
         - Georgia Avenue–Petworth (n738189374)
         - Columbia Heights (n1333688926)
-        - '? (n738189385)'
+        - U Street (n738189385)
         - Shaw–Howard University (n738189352)
         - Mount Vernon Square (n738189363)
-        - Gallery Place (n7788485987)
+        - Gallery Place (n738189362)
         - Archives (n738189394)
-        - L'Enfant Plaza (n738189393)
+        - L'Enfant Plaza (n7788485988)
         - Waterfront (n5284068378)
         - Navy Yard–Ballpark (n738189401)
         - Anacostia (n738189399)
@@ -255,15 +271,15 @@ routes:
         - Anacostia (n738189399)
         - Navy Yard–Ballpark (n738189401)
         - Waterfront (n5284068378)
-        - L'Enfant Plaza (n738189393)
+        - L'Enfant Plaza (n7788485988)
         - Archives (n738189394)
-        - Gallery Place (n7788485987)
+        - Gallery Place (n738189362)
         - Mount Vernon Square (n738189363)
         - Shaw–Howard University (n738189352)
-        - '? (n738189385)'
+        - U Street (n738189385)
         - Columbia Heights (n1333688926)
         - Georgia Avenue–Petworth (n738189374)
-        - Fort Totten (n738189367)
+        - Fort Totten (n7788485986)
         - West Hyattsville (n738189383)
         - Prince George's Plaza (n738189345)
         - College Park–University of Maryland (n738189344)
@@ -277,9 +293,9 @@ routes:
     colour: '#e89038'
     station_count: 26
     stations: 
-      - Vienna
-      - Dunn Loring
-      - West Falls Church
+      - Vienna/Fairfax–GMU
+      - Dunn Loring–Merrifield
+      - West Falls Church–VT/UVA
       - East Falls Church
       - Ballston–MU
       - Virginia Square–GMU
@@ -289,10 +305,10 @@ routes:
       - Foggy Bottom–GWU
       - Farragut West
       - McPherson Square
-      - Metro Center
+      - Metro Center (Blue/Orange/Silver)
       - Federal Triangle
       - Smithsonian
-      - L'Enfant Plaza
+      - L'Enfant Plaza (Blue/Orange/Silver)
       - Federal Center Southwest
       - Capitol South
       - Eastern Market
@@ -306,9 +322,9 @@ routes:
 
     itineraries: 
       r400284: 
-        - Vienna (n738189340)
-        - Dunn Loring (n5351693108)
-        - West Falls Church (n2367269727)
+        - Vienna/Fairfax–GMU (n738189340)
+        - Dunn Loring–Merrifield (n5351693108)
+        - West Falls Church–VT/UVA (n2367269727)
         - East Falls Church (n738189328)
         - Ballston–MU (n738189325)
         - Virginia Square–GMU (n738189346)
@@ -318,7 +334,7 @@ routes:
         - Foggy Bottom–GWU (n738189359)
         - Farragut West (n738189326)
         - McPherson Square (n738189342)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - Federal Triangle (n738189343)
         - Smithsonian (n1844430184)
         - L'Enfant Plaza (n738189393)
@@ -347,7 +363,7 @@ routes:
         - L'Enfant Plaza (n738189393)
         - Smithsonian (n1844430184)
         - Federal Triangle (n738189343)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - McPherson Square (n738189342)
         - Farragut West (n738189326)
         - Foggy Bottom–GWU (n738189359)
@@ -357,9 +373,9 @@ routes:
         - Virginia Square–GMU (n738189346)
         - Ballston–MU (n738189325)
         - East Falls Church (n738189328)
-        - West Falls Church (n2367269727)
-        - Dunn Loring (n5351693108)
-        - Vienna (n738189340)
+        - West Falls Church–VT/UVA (n2367269727)
+        - Dunn Loring–Merrifield (n5351693108)
+        - Vienna/Fairfax–GMU (n738189340)
 
 
   - 
@@ -374,14 +390,14 @@ routes:
       - Forest Glen
       - Silver Spring (Metro)
       - Takoma
-      - Fort Totten
+      - Fort Totten (Red)
       - Brookland–CUA
       - Rhode Island Avenue–Brentwood
       - NoMa–Gallaudet U
       - Union Station (Metro)
       - Judiciary Square
-      - Gallery Place
-      - Metro Center
+      - Gallery Place (Red)
+      - Metro Center (Red)
       - Farragut North
       - Dupont Circle
       - Woodley Park
@@ -406,7 +422,7 @@ routes:
         - Takoma (n738189358)
         - Fort Totten (n738189367)
         - Brookland–CUA (n738189398)
-        - Rhode Island Avenue (n5276250837)
+        - Rhode Island Avenue–Brentwood (n5276250837)
         - NoMa–Gallaudet U (n738189375)
         - Union Station (n738189330)
         - Judiciary Square (n738189406)
@@ -447,7 +463,7 @@ routes:
         - Judiciary Square (n738189406)
         - Union Station (n738189330)
         - NoMa–Gallaudet U (n738189375)
-        - Rhode Island Avenue (n5276250837)
+        - Rhode Island Avenue–Brentwood (n5276250837)
         - Brookland–CUA (n738189398)
         - Fort Totten (n738189367)
         - Takoma (n738189358)
@@ -474,10 +490,10 @@ routes:
       - Eastern Market
       - Capitol South
       - Federal Center Southwest
-      - L'Enfant Plaza
+      - L'Enfant Plaza (Blue/Orange/Silver)
       - Smithsonian
       - Federal Triangle
-      - Metro Center
+      - Metro Center (Blue/Orange/Silver)
       - McPherson Square
       - Farragut West
       - Foggy Bottom–GWU
@@ -508,7 +524,7 @@ routes:
         - L'Enfant Plaza (n738189393)
         - Smithsonian (n1844430184)
         - Federal Triangle (n738189343)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - McPherson Square (n738189342)
         - Farragut West (n738189326)
         - Foggy Bottom–GWU (n738189359)
@@ -539,7 +555,7 @@ routes:
         - Foggy Bottom–GWU (n738189359)
         - Farragut West (n738189326)
         - McPherson Square (n738189342)
-        - Metro Center (n738189329)
+        - Metro Center (n7788485989)
         - Federal Triangle (n738189343)
         - Smithsonian (n1844430184)
         - L'Enfant Plaza (n738189393)
@@ -566,15 +582,15 @@ routes:
       - College Park–University of Maryland
       - Prince George's Plaza
       - West Hyattsville
-      - Fort Totten
+      - Fort Totten (Yellow / Green)
       - Georgia Avenue–Petworth
       - Columbia Heights
       - U Street
       - Shaw–Howard University
       - Mount Vernon Square
-      - Gallery Place
+      - Gallery Place (Yellow/Green)
       - Archives
-      - L'Enfant Plaza
+      - L'Enfant Plaza (Green/Yellow)
       - Pentagon
       - Pentagon City
       - Crystal City (Metro)
@@ -590,15 +606,15 @@ routes:
         - College Park–University of Maryland (n738189344)
         - Prince George's Plaza (n738189345)
         - West Hyattsville (n738189383)
-        - Fort Totten (n738189367)
+        - Fort Totten (n7788485986)
         - Georgia Avenue–Petworth (n738189374)
         - Columbia Heights (n1333688926)
-        - '? (n738189385)'
+        - U Street (n738189385)
         - Shaw–Howard University (n738189352)
         - Mount Vernon Square (n738189363)
-        - Gallery Place (n7788485987)
+        - Gallery Place (n738189362)
         - Archives (n738189394)
-        - L'Enfant Plaza (n738189393)
+        - L'Enfant Plaza (n7788485988)
         - Pentagon (n453069888)
         - Pentagon City (n738189357)
         - Crystal City (n738189355)
@@ -617,15 +633,15 @@ routes:
         - Crystal City (n738189355)
         - Pentagon City (n738189357)
         - Pentagon (n453069888)
-        - L'Enfant Plaza (n738189393)
+        - L'Enfant Plaza (n7788485988)
         - Archives (n738189394)
-        - Gallery Place (n7788485987)
+        - Gallery Place (n738189362)
         - Mount Vernon Square (n738189363)
         - Shaw–Howard University (n738189352)
-        - '? (n738189385)'
+        - U Street (n738189385)
         - Columbia Heights (n1333688926)
         - Georgia Avenue–Petworth (n738189374)
-        - Fort Totten (n738189367)
+        - Fort Totten (n7788485986)
         - West Hyattsville (n738189383)
         - Prince George's Plaza (n738189345)
         - College Park–University of Maryland (n738189344)

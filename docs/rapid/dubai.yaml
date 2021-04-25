@@ -1,11 +1,9 @@
 
 stations: 
-  - Al Ittihad Park (n6474748997)
-  - Atlantis Aquaventure (n6474748995)
-  - Palm Gateway (n6474748998)
   - أبراج الإمارات Emirates Towers (n605500214)
   - أبو هيل Abu Hail (n6581397380)
   - أبوبكر الصديق Abu Baker Al Siddique (n6584833621)
+  - أكوافنتشر أتلانتس Atlantis Aquaventure (n6474748995)
   - أم الشيف Umm Al Sheif (n6588569788)
   - ابن بطوطة Ibn Battuta (n6588516080)
   - اتصالات Etisalat (n6472748545)
@@ -37,10 +35,12 @@ stations:
   - بني ياس Baniyas Square (n6584833626)
   - جبل علي Jabal Ali (n8625117828)
   - جي جي كو GGICO (n6588569793)
+  - حديقة الإتحاد Al Ittihad Park (n6474748997)
   - دانوب Danube (n6588381691)
   - دبي مارينا Dubai Marina (n6588516083)
   - دبي مول / برج خليفة Burj Khalifa/Dubai Mall (n604304348)
   - ديرة سيتي سنتر Deira City Centre (n6588569799)
+  - ذا بالم جيت واي The Palm Gateway (n6474748998)
   - سوق الذهب Gold Souq (n6584833627)
   - شرف دي جي Sharaf DG (n6584833631)
   - صلاح الدين Salah Al Din (n6584833624)
@@ -48,9 +48,10 @@ stations:
   - عود ميثاء Oud Metha (n6584833633)
   - مدينة دبي الطبية Dubai Healthcare City (n6584833635)
   - مدينة دبي للإنترنت Dubai Internet City (n6588569785)
-  - مركز الإمارات العربية المتحدة للصرافة (n6588381694)
+  - مركز الإمارات العربية المتحدة للصرافة UAE Exchange (n6588381694)
+  - مركز دبي للسلع المتعددة DMCC (n8641335749)
   - مول الإمارات Mall of the Emirates (n6588569787)
-  - نخيل مول (n6474748996)
+  - نخيل مول Nakheel Mall (n6474748996)
 
 transfers: 
   - 
@@ -149,16 +150,16 @@ routes:
 
     itineraries: 
       r7825237: 
-        - Palm Gateway (n6474748998)
-        - Al Ittihad Park (n6474748997)
-        - نخيل مول (n6474748996)
-        - Atlantis Aquaventure (n6474748995)
+        - ذا بالم جيت واي The Palm Gateway (n6474748998)
+        - حديقة الإتحاد Al Ittihad Park (n6474748997)
+        - نخيل مول Nakheel Mall (n6474748996)
+        - أكوافنتشر أتلانتس Atlantis Aquaventure (n6474748995)
 
       r7825238: 
-        - Atlantis Aquaventure (n6474748995)
-        - نخيل مول (n6474748996)
-        - Al Ittihad Park (n6474748997)
-        - Palm Gateway (n6474748998)
+        - أكوافنتشر أتلانتس Atlantis Aquaventure (n6474748995)
+        - نخيل مول Nakheel Mall (n6474748996)
+        - حديقة الإتحاد Al Ittihad Park (n6474748997)
+        - ذا بالم جيت واي The Palm Gateway (n6474748998)
 
 
   - 
@@ -166,7 +167,7 @@ routes:
     ref: Red
     name: Red Line
     colour: '#cc0000'
-    station_count: 28
+    station_count: 29
     stations: 
       - الراشدية
       - طيران الإمارات
@@ -196,6 +197,7 @@ routes:
       - الطاقة
       - دانوب
       - UAE Exchange
+      - مركز دبي للسلع المتعددة DMCC
 
     itineraries: 
       r420297: 
@@ -226,14 +228,15 @@ routes:
         - ابن بطوطة Ibn Battuta (n6588516080)
         - الطاقة Energy (n6588516079)
         - دانوب Danube (n6588381691)
-        - مركز الإمارات العربية المتحدة للصرافة (n6588381694)
+        - مركز الإمارات العربية المتحدة للصرافة UAE Exchange (n6588381694)
 
       r7734260: 
-        - مركز الإمارات العربية المتحدة للصرافة (n6588381694)
+        - مركز الإمارات العربية المتحدة للصرافة UAE Exchange (n6588381694)
         - دانوب Danube (n6588381691)
         - الطاقة Energy (n6588516079)
         - ابن بطوطة Ibn Battuta (n6588516080)
         - جبل علي Jabal Ali (n8625117828)
+        - مركز دبي للسلع المتعددة DMCC (n8641335749)
         - دبي مارينا Dubai Marina (n6588516083)
         - الخيل Al Khail (n6588516084)
         - مدينة دبي للإنترنت Dubai Internet City (n6588569785)

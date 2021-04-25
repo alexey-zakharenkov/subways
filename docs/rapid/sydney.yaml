@@ -121,6 +121,7 @@ stations:
   - Martin Place (n6601585113)
   - Mascot (n6560219244)
   - Meadowbank (n6544860724)
+  - Menangle Park (n792201303)
   - Merrylands (n1886255310)
   - Milsons Point (n1829323375)
   - Minto (n1886255311)
@@ -476,15 +477,17 @@ routes:
     type: train
     ref: Southern Highlands Line
     name: Southern Highlands Line
-    station_count: 2
+    station_count: 3
     stations: 
       - Campbelltown
       - Macarthur
+      - Menangle Park
 
     itineraries: 
       r11769385: 
         - Campbelltown (n1886255290)
         - Macarthur (n1886255308)
+        - Menangle Park (n792201303)
 
 
   - 
