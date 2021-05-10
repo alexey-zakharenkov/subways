@@ -77,6 +77,7 @@ stations:
   - Créteil-Pointe du Lac (n928458344)
   - Créteil-Préfecture (w78545135)
   - Danube (n264794354)
+  - Denfert-Rochereau (n220289387)
   - Dupleix (n34909187)
   - Duroc (n245250755)
   - Esplanade de La Défense (n5139949022)
@@ -230,6 +231,7 @@ stations:
   - Quatre Septembre (n243510335)
   - Rambuteau (n264592424)
   - Ranelagh (n260767425)
+  - Raspail (n220289389)
   - Rennes (n263499468)
   - Reuilly — Diderot (n27371892)
   - Richard Lenoir (n264769297)
@@ -326,6 +328,9 @@ transfers:
     - Concorde (1) (r7731268)
     - Concorde (12) (r7731267)
     - Concorde (8) (r379422)
+  - 
+    - Denfert-Rochereau (4) (r7731311)
+    - Denfert-Rochereau (6) (r7731488)
   - 
     - Duroc (10) (r7731207)
     - Duroc (13) (r7731208)
@@ -1165,7 +1170,7 @@ routes:
     ref: 4
     name: Métro 4
     colour: '#bb4d98'
-    station_count: 24
+    station_count: 26
     stations: 
       - Porte de Clignancourt
       - Simplon
@@ -1187,6 +1192,8 @@ routes:
       - Saint-Placide
       - Montparnasse-Bienvenüe (4)
       - Vavin
+      - Raspail
+      - Denfert-Rochereau (4)
       - Mouton-Duvernet
       - Alésia
       - Porte d'Orléans
@@ -1215,6 +1222,8 @@ routes:
         - Saint-Placide (n264520061)
         - Montparnasse-Bienvenüe (n5226630378)
         - Vavin (n264526095)
+        - Raspail (n220289389)
+        - Denfert-Rochereau (n220289387)
         - Mouton-Duvernet (n220289385)
         - Alésia (n220289382)
         - Porte d'Orléans (n220289379)
@@ -1225,6 +1234,8 @@ routes:
         - Porte d'Orléans (n220289379)
         - Alésia (n220289382)
         - Mouton-Duvernet (n220289385)
+        - Denfert-Rochereau (n220289387)
+        - Raspail (n220289389)
         - Vavin (n264526095)
         - Montparnasse-Bienvenüe (n5226630378)
         - Saint-Placide (n264520061)
@@ -1330,7 +1341,7 @@ routes:
     ref: 6
     name: Métro 6
     colour: '#75c695'
-    station_count: 15
+    station_count: 17
     stations: 
       - Charles de Gaulle — Étoile (6)
       - Kléber
@@ -1341,6 +1352,8 @@ routes:
       - Cambronne
       - Sèvres-Lecourbe
       - Pasteur
+      - Raspail
+      - Denfert-Rochereau (6)
       - Saint-Jacques
       - Glacière
       - Nationale
@@ -1359,6 +1372,8 @@ routes:
         - Cambronne (n34909171)
         - Sèvres-Lecourbe (n1659843199)
         - Pasteur (n260764273)
+        - Raspail (n220289389)
+        - Denfert-Rochereau (n220289387)
         - Saint-Jacques (n235369898)
         - Glacière (n235370184)
         - Nationale (n235371394)
@@ -1373,6 +1388,8 @@ routes:
         - Nationale (n235371394)
         - Glacière (n235370184)
         - Saint-Jacques (n235369898)
+        - Denfert-Rochereau (n220289387)
+        - Raspail (n220289389)
         - Pasteur (n260764273)
         - Sèvres-Lecourbe (n1659843199)
         - Cambronne (n34909171)
