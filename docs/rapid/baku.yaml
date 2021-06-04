@@ -2,6 +2,7 @@
 stations: 
   - 20 Yanvar (n1930089762)
   - 28 May (n5188836356)
+  - 8 Noyabr (n6010348738)
   - Avtovağzal mst (n4168101319)
   - Azadlıq prospekti (n1148914625)
   - Bakmil (n670220144)
@@ -224,17 +225,20 @@ routes:
     ref: 3
     name: Line 3
     colour: '#800080'
-    station_count: 2
+    station_count: 3
     stations: 
       - Avtovağzal mst
       - Memar Əcəmi
+      - 8 Noyabr
 
     itineraries: 
       r7664626: 
         - Avtovağzal mst (n4168101319)
         - Memar Əcəmi (n7279336593)
+        - 8 Noyabr (n6010348738)
 
       r7792466: 
+        - 8 Noyabr (n6010348738)
         - Memar Əcəmi (n7279336593)
         - Avtovağzal mst (n4168101319)
 

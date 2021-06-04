@@ -15,6 +15,7 @@ stations:
   - Atatürk Oto Sanayi (n2239404700)
   - Aydıntepe (n5084128493)
   - Ayrılık Çeşmesi (n1898304351)
+  - Bahariye (n8768427076)
   - Bahçelievler (n7722103259)
   - Bakırköy (n5885475439)
   - Bakırköy-İncirli (n6763426870)
@@ -84,6 +85,7 @@ stations:
   - Kısıklı (n5286349759)
   - Levent (n3755456221)
   - Levent (n5218796192)
+  - MASKO (n8768427077)
   - Mahmutbey (n3219831134)
   - Mahmutbey (n8064883742)
   - Maltepe (n1988218793)
@@ -165,7 +167,7 @@ stations:
   - 'İTÜ - Ayazağa (n7725394066)'
   - İdealtepe (n617374869)
   - İkitelli Sanayi (n3243585073)
-  - İmam Hatip (n6004548608)
+  - İmam Hatip Lisesi (n6004548608)
   - İçmeler (n5084138614)
   - Şehitlik (n7734901018)
   - Şişhane-Zemin İstanbul (n7721147948)
@@ -433,7 +435,7 @@ routes:
     ref: M3
     name: 'M3: Kirazli → MetroKent'
     colour: '#00a8e1'
-    station_count: 11
+    station_count: 9
     stations: 
       - Kirazlı (M3)
       - Yeni Mahalle
@@ -444,8 +446,6 @@ routes:
       - Siteler
       - Başak Konutları
       - Metrokent
-      - Ziya Gökalp
-      - Olimpiyat Stadı
 
     itineraries: 
       r4289797: 
@@ -458,16 +458,6 @@ routes:
         - Siteler (n4304536085)
         - Başak Konutları (n3243585071)
         - Metrokent (n3243585072)
-
-      r4289800: 
-        - İkitelli Sanayi (n3243585073)
-        - Ziya Gökalp (n3219831111)
-        - Olimpiyat (n3208558101)
-
-      r7719072: 
-        - Olimpiyat (n3208558101)
-        - Ziya Gökalp (n3219831111)
-        - İkitelli Sanayi (n3243585073)
 
       r7719073: 
         - Metrokent (n3243585072)
@@ -604,7 +594,7 @@ routes:
       - Çekmeköy
       - Necip Fazıl
       - Dudullu
-      - İmam Hatip
+      - İmam Hatip Lisesi
       - Altınşehir
       - Ihlamurkuyu
       - Çakmak
@@ -623,7 +613,7 @@ routes:
         - Çekmeköy (n6004548605)
         - Necip Fazıl (n6004548606)
         - Dudullu (n6004548607)
-        - İmam Hatip (n6004548608)
+        - İmam Hatip Lisesi (n6004548608)
         - Altınşehir (n6004548609)
         - Ihlamurkuyu (n6004548610)
         - Çakmak (n6004548611)
@@ -650,7 +640,7 @@ routes:
         - Çakmak (n6004548611)
         - Ihlamurkuyu (n6004548610)
         - Altınşehir (n6004548609)
-        - İmam Hatip (n6004548608)
+        - İmam Hatip Lisesi (n6004548608)
         - Dudullu (n6004548607)
         - Necip Fazıl (n6004548606)
         - Çekmeköy (n6004548605)
@@ -668,7 +658,7 @@ routes:
         - Çakmak (n6004548611)
         - Ihlamurkuyu (n6004548610)
         - Altınşehir (n6004548609)
-        - İmam Hatip (n6004548608)
+        - İmam Hatip Lisesi (n6004548608)
         - Dudullu (n6004548607)
         - Necip Fazıl (n6004548606)
         - Çekmeköy (n6004548605)
@@ -677,7 +667,7 @@ routes:
         - Çekmeköy (n6004548605)
         - Necip Fazıl (n6004548606)
         - Dudullu (n6004548607)
-        - İmam Hatip (n6004548608)
+        - İmam Hatip Lisesi (n6004548608)
         - Altınşehir (n6004548609)
         - Ihlamurkuyu (n6004548610)
         - Çakmak (n6004548611)
@@ -775,6 +765,34 @@ routes:
         - Kağıthane (n6507303868)
         - Çağlayan (n6507340892)
         - Mecidiyeköy (n8050455173)
+
+
+  - 
+    type: subway
+    ref: M9
+    name: 'M9: Bahariye → Olimpiyat'
+    colour: '#ffd400'
+    station_count: 5
+    stations: 
+      - Bahariye
+      - MASKO
+      - İkitelli Sanayi
+      - Ziya Gökalp
+      - Olimpiyat Stadı
+
+    itineraries: 
+      r4289800: 
+        - Bahariye (n8768427076)
+        - MASKO (n8768427077)
+        - İkitelli Sanayi (n3243585073)
+        - Ziya Gökalp (n3219831111)
+        - Olimpiyat (n3208558101)
+
+      r7719072: 
+        - Olimpiyat (n3208558101)
+        - Ziya Gökalp (n3219831111)
+        - İkitelli Sanayi (n3243585073)
+        - MASKO (n8768427077)
 
 
   - 

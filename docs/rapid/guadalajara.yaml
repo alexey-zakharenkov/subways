@@ -1,17 +1,16 @@
 
 stations: 
   - Belisario Dominguez (n4591386801)
-  - Cristobal de Oñate (n4591390009)
+  - Central Nueva (w838853823)
   - Estacion 18 de marzo (w839219554)
   - Estacion Arcos de Zapopan (w765854474)
   - Estacion Atemajac (w839533948)
   - Estacion Auditorio (w839533951)
   - Estacion Avila Camacho (w839533946)
-  - Estacion Catedral (n8011659023)
-  - Estacion Central Nueva (w838853823)
   - Estacion Dermatologico (w839533949)
   - Estacion Division del Norte (w839533947)
   - Estacion España (w839219551)
+  - Estacion Guadalajara Centro (n8011659023)
   - Estacion Independencia (w838853829)
   - Estacion Isla Raza (w839219553)
   - Estacion Juarez (w839533943)
@@ -27,7 +26,7 @@ stations:
   - Estacion Plaza Patria (w765854478)
   - Estacion Plaza de la Bandera (w838853828)
   - Estacion Refugio (w839533944)
-  - Estacion Revolucion (w838853827)
+  - Estacion Revolucion (w948125730)
   - Estacion Rio Nilo (w838853826)
   - Estacion Santuario (w838853831)
   - Estacion Tlaquepaque Centro (w838853825)
@@ -35,18 +34,15 @@ stations:
   - Estacion Urdaneta (w839219557)
   - Estacion Washington (w839533941)
   - Estación Avila Camacho (w765854480)
-  - Estación CUCEI L3 Tren Ligero (w537525845)
-  - Estación Circunvalación (w765854479)
+  - Estación CUCEI (w537525845)
+  - Estación Circunvalación Country (w765854479)
   - Estación Mercado del Mar (w765854476)
   - Estación Zapopan Centro (w765854477)
-  - La Aurora (n4591484245)
   - Oblatos (n4591386806)
   - Plaza Universidad (n4591349874)
-  - San Andrés (n4591396334)
-  - San Jacinto (n4591403681)
   - San Juan de Dios (n4591374873)
   - Santuario Martires de Cristo Rey (w839219550)
-  - Tetlán (n4591489679)
+  - Tetlan (w949863008)
 
 transfers: 
   - 
@@ -136,17 +132,13 @@ routes:
     ref: TL-2
     name: Tren Ligero Línea 2
     colour: '#008000'
-    station_count: 10
+    station_count: 6
     stations: 
       - Estacion Juarez (Line 2)
       - Plaza Universidad
       - San Juan de Dios
       - Belisario Dominguez
       - Oblatos
-      - Cristobal de Oñate
-      - San Andrés
-      - San Jacinto
-      - La Aurora
       - Tetlán
 
     itineraries: 
@@ -156,18 +148,10 @@ routes:
         - San Juan de Dios (n4591374873)
         - Belisario Dominguez (n4591386801)
         - Oblatos (n4591386806)
-        - Cristobal de Oñate (n4591390009)
-        - San Andrés (n4591396334)
-        - San Jacinto (n4591403681)
-        - La Aurora (n4591484245)
-        - Tetlán (n4591489679)
+        - Tetlan (w949863008)
 
       r6851906: 
-        - Tetlán (n4591489679)
-        - La Aurora (n4591484245)
-        - San Jacinto (n4591403681)
-        - San Andrés (n4591396334)
-        - Cristobal de Oñate (n4591390009)
+        - Tetlan (w949863008)
         - Oblatos (n4591386806)
         - Belisario Dominguez (n4591386801)
         - San Juan de Dios (n4591374873)
@@ -187,14 +171,14 @@ routes:
       - Estación Mercado del Mar
       - Estación Zapopan Centro
       - Estacion Plaza Patria
-      - Estación Circunvalación
+      - Estación Circunvalación Country
       - Avila Camacho (Line 3)
       - Estacion La Normal
       - Estacion Santuario
       - Catedral (Line 3)
       - Estacion Independencia
       - Estacion Plaza de la Bandera
-      - Estación CUCEI L3 Tren Ligero
+      - Estación CUCEI
       - Estacion Revolucion
       - Estacion Rio Nilo
       - Estacion Tlaquepaque Centro
@@ -208,34 +192,34 @@ routes:
         - Estación Mercado del Mar (w765854476)
         - Estación Zapopan Centro (w765854477)
         - Estacion Plaza Patria (w765854478)
-        - Estación Circunvalación (w765854479)
+        - Estación Circunvalación Country (w765854479)
         - Estación Avila Camacho (w765854480)
         - Estacion La Normal (w838853832)
         - Estacion Santuario (w838853831)
-        - Estacion Catedral (n8011659023)
+        - Estacion Guadalajara Centro (n8011659023)
         - Estacion Independencia (w838853829)
         - Estacion Plaza de la Bandera (w838853828)
-        - Estación CUCEI L3 Tren Ligero (w537525845)
-        - Estacion Revolucion (w838853827)
+        - Estación CUCEI (w537525845)
+        - Estacion Revolucion (w948125730)
         - Estacion Rio Nilo (w838853826)
         - Estacion Tlaquepaque Centro (w838853825)
         - Estacion Lazaro Cardenas (w838853824)
-        - Estacion Central Nueva (w838853823)
+        - Central Nueva (w838853823)
 
       r11637372: 
-        - Estacion Central Nueva (w838853823)
+        - Central Nueva (w838853823)
         - Estacion Lazaro Cardenas (w838853824)
         - Estacion Tlaquepaque Centro (w838853825)
         - Estacion Rio Nilo (w838853826)
-        - Estacion Revolucion (w838853827)
-        - Estación CUCEI L3 Tren Ligero (w537525845)
+        - Estacion Revolucion (w948125730)
+        - Estación CUCEI (w537525845)
         - Estacion Plaza de la Bandera (w838853828)
         - Estacion Independencia (w838853829)
-        - Estacion Catedral (n8011659023)
+        - Estacion Guadalajara Centro (n8011659023)
         - Estacion Santuario (w838853831)
         - Estacion La Normal (w838853832)
         - Estación Avila Camacho (w765854480)
-        - Estación Circunvalación (w765854479)
+        - Estación Circunvalación Country (w765854479)
         - Estacion Plaza Patria (w765854478)
         - Estación Zapopan Centro (w765854477)
         - Estación Mercado del Mar (w765854476)

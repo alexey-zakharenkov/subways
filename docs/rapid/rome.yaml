@@ -2,7 +2,6 @@
 stations: 
   - Acilia (n298116120)
   - Acqua Acetosa (n1313285439)
-  - Alessandrino (n1743137544)
   - Alessi (n5190702106)
   - Anagnina (n471020361)
   - Arco di Travertino (n471017084)
@@ -13,8 +12,6 @@ stations:
   - Battistini (n470961384)
   - Berardi (n5190702103)
   - Bologna (n295228833)
-  - Bolognetta (n1719260033)
-  - Borghesiana (n1719260034)
   - Campi Sportivi (n1313285446)
   - 'Casal Bernocchi - Centro Giano (n298115395)'
   - Castel Fusano (n332297384)
@@ -30,23 +27,17 @@ stations:
   - Conca d'Oro (n356699285)
   - Cornelia (n470961382)
   - Cristoforo Colombo (n390841960)
-  - 'Due Leoni - Fontana Candida (n1719260035)'
   - EUR Fermi (n252938414)
   - EUR Magliana (n1313285468)
   - EUR Palasport (n252935373)
   - Euclide (n1313285464)
   - Filarete (n5190702105)
-  - Finocchio (n1719260036)
   - Flaminio (n1313285452)
   - Flaminio (n354967241)
   - Furio Camillo (n471017079)
   - Garbatella (n248486493)
-  - Gardenie (n1743120122)
-  - Giardinetti (n1743112241)
   - Giulio Agricola (n471020354)
-  - Graniti (n1719260037)
   - Grottarossa (n1313285480)
-  - Grotte Celoni (n1280119807)
   - Jonio (n1788363341)
   - La Celsa (n1313285456)
   - La Giustiniana (n1313285443)
@@ -56,20 +47,15 @@ stations:
   - Libia (n623380963)
   - Lido Centro (n332297712)
   - Lido Nord (n388100723)
-  - Lodi (n1743120146)
   - Lucio Sestio (n471020353)
-  - Malatesta (n1743120163)
   - Manzoni (n471017058)
   - Marconi (n249506763)
-  - Mirti (n1743120170)
   - Monte Antenne (n1313285476)
-  - 'Monte Compatri - Pantano (n1719260038)'
   - Montebello (n1313285483)
   - Monti Tiburtini (n295228831)
   - Numidio Quadrato (n471020352)
   - Ostia Antica (n332292142)
   - Ottaviano (n430193417)
-  - Parco di Centocelle (n1743112267)
   - Pietralata (n260971792)
   - Pigneto (n1743120177)
   - Piramide (n247716803)
@@ -85,7 +71,6 @@ stations:
   - Rebibbia (n260970268)
   - Repubblica (n354964363)
   - Roma Porta San Paolo (n1313285442)
-  - San Giovanni (n3612947728)
   - San Giovanni (n471017071)
   - Sant'Agnese/Annibaliano (n1381077891)
   - Sant'Elena (n5190702108)
@@ -95,18 +80,14 @@ stations:
   - Spagna (n354966334)
   - Stella Polare (n332297665)
   - Subaugusta (n471020355)
-  - Teano (n1743120184)
   - Termini (n5216453777)
   - Termini Laziali (n5190702112)
   - Tiburtina FS (n302319663)
   - Tor di Quinto (n1158257603)
   - Tor di Valle (n1313285481)
   - Torpignattara (n5190702104)
-  - Torre Angela (n1719260039)
-  - Torre Gaia (n1719260040)
   - Torre Maura (n1743112280)
   - Torre Spaccata (n1743112292)
-  - Torrenova (n1719260041)
   - Valle Aurelia (n430193448)
   - Villini (n5190702107)
   - Vitinia (n1313285478)
@@ -119,9 +100,6 @@ transfers:
   - 
     - Piramide (r7646955)
     - Roma Porta San Paolo (r7715604)
-  - 
-    - San Giovanni (Linea A) (r7647008)
-    - San Giovanni (Linea C) (r7646953)
   - 
     - Termini A (r7646954)
     - Termini B (r7647001)
@@ -353,79 +331,22 @@ routes:
     ref: C
     name: Subway C
     colour: '#008752'
-    station_count: 22
+    station_count: 3
     stations: 
-      - San Giovanni (Linea C)
-      - Lodi
       - Pigneto
-      - Malatesta
-      - Teano
-      - Gardenie
-      - Mirti
-      - Parco di Centocelle
-      - Alessandrino
       - Torre Spaccata (metropolitana)
       - Torre Maura
-      - Giardinetti
-      - Torrenova
-      - Torre Angela
-      - Torre Gaia
-      - Grotte Celoni
-      - 'Due Leoni - Fontana Candida'
-      - Borghesiana
-      - Bolognetta
-      - Finocchio
-      - Graniti
-      - 'Monte Compatri - Pantano'
 
     itineraries: 
       r398053: 
-        - San Giovanni (n3612947728)
-        - Lodi (n1743120146)
         - Pigneto (n1743120177)
-        - Malatesta (n1743120163)
-        - Teano (n1743120184)
-        - Gardenie (n1743120122)
-        - Mirti (n1743120170)
-        - Parco di Centocelle (n1743112267)
-        - Alessandrino (n1743137544)
         - Torre Spaccata (n1743112292)
         - Torre Maura (n1743112280)
-        - Giardinetti (n1743112241)
-        - Torrenova (n1719260041)
-        - Torre Angela (n1719260039)
-        - Torre Gaia (n1719260040)
-        - Grotte Celoni (n1280119807)
-        - 'Due Leoni - Fontana Candida (n1719260035)'
-        - Borghesiana (n1719260034)
-        - Bolognetta (n1719260033)
-        - Finocchio (n1719260036)
-        - Graniti (n1719260037)
-        - 'Monte Compatri - Pantano (n1719260038)'
 
       r2172845: 
-        - 'Monte Compatri - Pantano (n1719260038)'
-        - Graniti (n1719260037)
-        - Finocchio (n1719260036)
-        - Bolognetta (n1719260033)
-        - Borghesiana (n1719260034)
-        - 'Due Leoni - Fontana Candida (n1719260035)'
-        - Grotte Celoni (n1280119807)
-        - Torre Gaia (n1719260040)
-        - Torre Angela (n1719260039)
-        - Torrenova (n1719260041)
-        - Giardinetti (n1743112241)
         - Torre Maura (n1743112280)
         - Torre Spaccata (n1743112292)
-        - Alessandrino (n1743137544)
-        - Parco di Centocelle (n1743112267)
-        - Mirti (n1743120170)
-        - Gardenie (n1743120122)
-        - Teano (n1743120184)
-        - Malatesta (n1743120163)
         - Pigneto (n1743120177)
-        - Lodi (n1743120146)
-        - San Giovanni (n3612947728)
 
 
   - 
