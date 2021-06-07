@@ -3,16 +3,25 @@ set -e -u
 
 if [ $# -lt 1 -a -z "${PLANET-}" ]; then
   echo "This script updates a planet or an extract, processes metro networks in it"
-  echo "and produses a set of HTML files with validation results."
+  echo "and produces a set of HTML files with validation results."
   echo
   echo "Usage: $0 <planet.o5m>"
   echo
-  echo "Variable reference:"
+  echo "Enveronment variable reference:"
   echo "- PLANET: path for the source o5m file (the entire planet or an extract)"
   echo "- CITY: name of a city to process"
   echo "- BBOX: bounding box of an extract; x1,y1,x2,y2"
-  echo "- DUMP: file name to dump city data"
+  echo "- POLY: *.poly file name with bounding [multi]polygon of an extract"
+  echo "- SKIP_PLANET_UPDATE: skip \$PLANET file update. Any non-empty string is True"
+  echo "- SKIP_FILTERING: skip filtering railway data. Any non-empty string is True"
+  echo "- FILTERED_DATA: path to filtered data. Defaults to \$TMPDIR/subways.osm"
   echo "- MAPSME: file name for maps.me json output"
+  echo "- DUMP: directory/file name to dump YAML city data. Do not set to omit dump"
+  echo "- GEOJSON: directory/file name to dump GeoJSON data. Do not set to omit dump"
+  echo "- ELEMENTS_CACHE: file name to elements cache. Allows OSM xml processing phase"
+  echo "- CITY_CACHE: json file with good cities obtained on previous validation runs"
+  echo "- RECOVERY_PATH: file with some data collected at previous validation runs that"
+  echo "    may help to recover some simple validation errors"
   echo "- OSMCTOOLS: path to osmconvert and osmupdate binaries"
   echo "- PYTHON: python 3 executable"
   echo "- GIT_PULL: set to 1 to update the scripts"
@@ -55,31 +64,37 @@ if [ -n "${GIT_PULL-}" ]; then (
 
 # Updating the planet file
 
-PLANET_ABS="$(cd "$(dirname "$PLANET")"; pwd)/$(basename "$PLANET")"
-pushd "$OSMCTOOLS" # osmupdate requires osmconvert in a current directory
-OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m "$PLANET_ABS" ${BBOX+"-b=$BBOX"} "$PLANET_ABS.new.o5m" 2>&1)
-if [ -n "$OSMUPDATE_ERRORS" ]; then
-  echo "osmupdate failed: $OSMUPDATE_ERRORS"
-  exit 5
+if [ "${SKIP_PLANET_UPDATE:-not_defined}" == "not_defined" ]; then
+  PLANET_ABS="$(cd "$(dirname "$PLANET")"; pwd)/$(basename "$PLANET")"
+  pushd "$OSMCTOOLS" # osmupdate requires osmconvert in a current directory
+  OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} ${POLY:+"-B=$POLY"} "$PLANET_ABS" "$PLANET_ABS.new.o5m" 2>&1)
+  if [ -n "$OSMUPDATE_ERRORS" ]; then
+    echo "osmupdate failed: $OSMUPDATE_ERRORS"
+    exit 5
+  fi
+  popd
+  mv "$PLANET_ABS.new.o5m" "$PLANET_ABS"
 fi
-popd
-mv "$PLANET_ABS.new.o5m" "$PLANET_ABS"
-
 
 # Filtering it
 
-FILTERED_DATA="$TMPDIR/subways.osm"
-QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
-QNODES="railway=station station=subway =light_rail =monorail railway=subway_entrance subway=yes light_rail=yes monorail=yes train=yes"
-"$OSMCTOOLS/osmfilter" "$PLANET" --keep= --keep-relations="$QRELATIONS" --keep-nodes="$QNODES" --drop-author -o="$FILTERED_DATA"
+if [ "${FILTERED_DATA:-not_defined}" == "not_defined" ]; then
+  FILTERED_DATA="$TMPDIR/subways.osm"
+fi
+
+if [ "${SKIP_FILTERING:-not_defined}" == "not_defined" ]; then
+  QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
+  QNODES="railway=station station=subway =light_rail =monorail railway=subway_entrance subway=yes light_rail=yes monorail=yes train=yes"
+  "$OSMCTOOLS/osmfilter" "$PLANET" --keep= --keep-relations="$QRELATIONS" --keep-nodes="$QNODES" --drop-author -o="$FILTERED_DATA"
+fi
 
 # Running the validation
 
 VALIDATION="$TMPDIR/validation.json"
-"$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q -x "$FILTERED_DATA" -l "$VALIDATION" ${MAPSME+-o "$MAPSME"}\
-    ${CITY+-c "$CITY"} ${DUMP+-d "$DUMP"} ${GEOJSON+-j "$GEOJSON"}\
-    ${ELEMENTS_CACHE+-i "$ELEMENTS_CACHE"} ${CITY_CACHE+--cache "$CITY_CACHE"}\
-    ${RECOVERY_PATH+-r "$RECOVERY_PATH"}
+"$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q -x "$FILTERED_DATA" -l "$VALIDATION" ${MAPSME:+-o "$MAPSME"}\
+    ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"}\
+    ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} ${CITY_CACHE:+--cache "$CITY_CACHE"}\
+    ${RECOVERY_PATH:+-r "$RECOVERY_PATH"}
 rm "$FILTERED_DATA"
 
 # Preparing HTML files
