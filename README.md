@@ -5,44 +5,86 @@ systems in the world from OpenStreetMap. `subway_structure.py` produces
 a list of disjunct systems that can be used for routing and for displaying
 of metro maps.
 
-## How To Validate
 
+## How To Validate
 
 * Choose transport data source:
   1. Download or update a planet file in o5m format (using `osmconvert` and `osmupdate`).
      Run `osmfilter` to extract a portion of data for all subways. Or
   2. If you don't specify `--xml` or `--source` option to the `process_subways.py` script
-     it tries to fetch data over [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API). **Not suitable for whole planet or large countries.**
+     it tries to fetch data over [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API).
+     **Not suitable for the whole planet or large countries.**
 * Run `process_subways.py` with appropriate set of command line arguments
   to build metro structures and receive a validation log.
 * Run `validation_to_html.py` on that log to create readable HTML tables.
 
-## Validation Script
 
-There is a `process_subways.sh` in the `scripts` directory. The author uses it for
-updating both the planet and a city he's working on. Here is an example of a script
-for updating the London Underground network:
+## Validating of all metro networks
+
+There is a `process_subways.sh` in the `scripts` directory that is suitable
+for validation of all or many metro networks. It relies on a bunch of
+environment variables and takes advantage of previous validation runs
+for effective recurring validations. See
+```bash
+./scripts/process_subways.sh --help
+```
+for details. Here is an example of the script usage:
 
 ```bash
-PLANET_PATH=$HOME/osm/planet
-export OSMCTOOLS="$PLANET_PATH"
-export PLANET="$PLANET_PATH/london.o5m"
-export HTML_DIR=tmp_html
-export BBOX=-0.681152,51.286758,0.334015,51.740636
-export CITY="London"
-export DUMP=london.yaml
+export PLANET=https://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-latest.osm.pbf
+export PLANET_METRO="$HOME/metro/planet-metro.o5m
+export OSMCTOOLS="$HOME/osmctools"
+export TMPDIR="$HOME/metro/tmp"
+export HTML_DIR="$HOME/metro/tmp_html"
+export DUMP="$HTML_DIR"
 
 scripts/process_subways.sh
 ```
 
-The bounding box can be found in the
-[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1-UHDzfBwHdeyFxgC5cE_MaNQotF3-Y0r1nW9IwpIEj8/edit?usp=sharing).
+Set the PLANET_METRO variable to avoid the whole planet processing each time.
+Delete the file (but not the variable) to re-generate it if a new city has been added or
+a city's bbox has been extended.
 
-This can be simplified by using the `build_city.sh` script, which fetches the bbox from the web:
 
-    scripts/build_city.sh london.o5m London
+## Validating of a single city
 
-Daily updates of validation results are available at [this website](http://osm-subway.maps.me).
+A single city or a country with few metro networks can be validated much faster
+if you allow the `process_subway.py` to fetch data from Overpass API. Here are the steps:
+
+1. Python3 interpreter required (3.5+)
+2. Clone the repo
+    ```
+    git clone https://github.com/alexey-zakharenkov/subways.git subways_validator
+    cd subways_validator
+   ```
+3. Execute
+    ```bash
+    python3 ./process_subways.py --bbox -c "London" \
+        -l validation.log -d London.yaml
+    ```
+    here
+    - `-c` stands for "city" i.e. network name from the google spreadsheet
+    - `-l`  - path to validation log file
+    - `-d` (optional) - path to dump network info in YAML format
+    - `-i` (optional) - path to save overpass-api JSON response
+    - `-j` (optional) - path to output network GeoJSON (used for rendering)
+
+    `validation.log` would contain the list of errors and warnings.
+    To convert it into pretty HTML format
+4. do
+    ```bash
+    mkdir html
+    python3 ./validation_to_html.py validation.log html
+    ```
+
+## Related external resources
+
+Summary information about all metro networks that are monitored is gathered in the
+[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k).
+
+Not so regular updates of validation results are available at
+[this website](https://alexey-zakharenkov.github.io/subways/rapid/).
+
 
 ## Adding Stop Areas To OSM
 
@@ -53,4 +95,7 @@ just upload it.
 
 ## Author and License
 
-All scripts were written by Ilya Zverev for MAPS.ME. Published under Apache Licence 2.0.
+The main scripts were originally written by Ilya Zverev for MAPS.ME
+and were published under Apache Licence 2.0 at https://github.com/mapsme/subways/.
+
+This fork is maintained by Alexey Zakharenkov and is also published under Apache Licence 2.0.

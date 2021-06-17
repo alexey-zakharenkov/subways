@@ -6,32 +6,34 @@ if [ $# -gt 0 -a \( "${1-}" = "-h" -o "${1-}" = '--help' \) ]; then
 This script updates a planet or an extract, processes metro networks in it
 and produces a set of HTML files with validation results.
 
-Usage: $0 <local/planet.{pbf,o5m} | http://mirror.osm.ru/planet.{pbf,o5m}>
+Usage: $0 [<local/planet.{pbf,o5m} | http://mirror.osm.ru/planet.{pbf,o5m}>]
 
 In more detail, the script does the following:
   - If \$PLANET is a remote file, downloads it.
-  - Unless \$POLY variable is set and the file exists, generates a *.poly file with union of bboxes of all cities having metro.
+  - If \$BBOX variable is set, proceeds with this setting for the planet clipping. Otherwise uses \$POLY:
+    unless \$POLY variable is set and the file exists, generates a *.poly file with union of bboxes of all cities having metro.
   - Makes a *.o5m extract of the \$PLANET using the *.poly file.
   - Updates the extract.
   - Filters railway infrastructure from the extract.
-  - Uses filtered file for validation and generates other output files.
-  - Copies results onto remove server, if it is set up.
+  - Uses filtered file for validation and generates a bunch of output files.
+  - Copies results onto remote server, if it is set up.
 
 During this procedure, as many steps are skipped as possible. Namely:
   - Making metro extract is skipped if \$PLANET_METRO variable is set and the file exists.
-  - Update with osmupdate is skipped if SKIP_PLANET_UPDATE or \$SKIP_FILTERING is set.
+  - Update with osmupdate is skipped if \$SKIP_PLANET_UPDATE or \$SKIP_FILTERING is set.
   - Filtering is skipped if \$SKIP_FILTERING is set and \$FILTERED_DATA is set and the file exists.
 
-Generated files \$POLY, \$PLANET_METRO, \$FILTERED_DATA are deleted if the correponding variable is not defined or is null, otherwise they are kept.
-The PLANET file from remote URL is saved to a tempfile and is removed at the end.
+Generated files \$POLY, \$PLANET_METRO, \$FILTERED_DATA are deleted if the corresponding
+variable is not defined or is null, otherwise they are kept.
+The \$PLANET file from remote URL is saved to a tempfile and is removed at the end.
 
 Environment variable reference:
   - PLANET: path to a local or remote o5m or pbf source file (the entire planet or an extract)
-  - PLANET_METRO: path to local o5m file with extract of cities having metro.
+  - PLANET_METRO: path to a local o5m file with extract of cities having metro
     It's used instead of \$PLANET if exists otherwise it's created first
   - CITY: name of a city/country to process
   - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
-  - POLY: *.poly file with [multi]polygon comprising cities with metro.
+  - POLY: *.poly file with [multi]polygon comprising cities with metro
     If neither \$BBOX nor \$POLY is set, then \$POLY is generated
   - SKIP_PLANET_UPDATE: skip \$PLANET file update. Any non-empty string is True
   - SKIP_FILTERING: skip filtering railway data. Any non-empty string is True
@@ -70,8 +72,8 @@ function check_osmctools() {
 
 
 function check_poly() {
-  # Checks or generates *.poly file with city bboxes where
-  # there is a metro but only once during script run
+  # Checks or generates *.poly file covering cities where
+  # there is a metro; does this only once during script run.
 
   if [ -z "${POLY_CHECKED-}" ]; then
     if [ -n "${BBOX-}" ]; then
