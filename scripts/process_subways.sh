@@ -1,101 +1,235 @@
 #!/bin/bash
 set -e -u
 
-if [ $# -lt 1 -a -z "${PLANET-}" ]; then
-  echo "This script updates a planet or an extract, processes metro networks in it"
-  echo "and produces a set of HTML files with validation results."
-  echo
-  echo "Usage: $0 <planet.o5m>"
-  echo
-  echo "Enveronment variable reference:"
-  echo "- PLANET: path for the source o5m file (the entire planet or an extract)"
-  echo "- CITY: name of a city to process"
-  echo "- BBOX: bounding box of an extract; x1,y1,x2,y2"
-  echo "- POLY: *.poly file name with bounding [multi]polygon of an extract"
-  echo "- SKIP_PLANET_UPDATE: skip \$PLANET file update. Any non-empty string is True"
-  echo "- SKIP_FILTERING: skip filtering railway data. Any non-empty string is True"
-  echo "- FILTERED_DATA: path to filtered data. Defaults to \$TMPDIR/subways.osm"
-  echo "- MAPSME: file name for maps.me json output"
-  echo "- DUMP: directory/file name to dump YAML city data. Do not set to omit dump"
-  echo "- GEOJSON: directory/file name to dump GeoJSON data. Do not set to omit dump"
-  echo "- ELEMENTS_CACHE: file name to elements cache. Allows OSM xml processing phase"
-  echo "- CITY_CACHE: json file with good cities obtained on previous validation runs"
-  echo "- RECOVERY_PATH: file with some data collected at previous validation runs that"
-  echo "    may help to recover some simple validation errors"
-  echo "- OSMCTOOLS: path to osmconvert and osmupdate binaries"
-  echo "- PYTHON: python 3 executable"
-  echo "- GIT_PULL: set to 1 to update the scripts"
-  echo "- TMPDIR: path to temporary files"
-  echo "- HTML_DIR: target path for generated HTML files"
-  echo "- SERVER: server name and path to upload HTML files (e.g. ilya@osmz.ru:/var/www/)"
-  echo "- SERVER_KEY: rsa key to supply for uploading the files"
-  echo "- REMOVE_HTML: set to 1 to remove HTML_DIR after uploading"
-  exit 1
+if [ $# -gt 0 -a \( "${1-}" = "-h" -o "${1-}" = '--help' \) ]; then
+  cat << EOF
+This script updates a planet or an extract, processes metro networks in it
+and produces a set of HTML files with validation results.
+
+Usage: $0 <local/planet.{pbf,o5m} | http://mirror.osm.ru/planet.{pbf,o5m}>
+
+In more detail, the script does the following:
+  - If \$PLANET is a remote file, downloads it.
+  - Unless \$POLY variable is set and the file exists, generates a *.poly file with union of bboxes of all cities having metro.
+  - Makes a *.o5m extract of the \$PLANET using the *.poly file.
+  - Updates the extract.
+  - Filters railway infrastructure from the extract.
+  - Uses filtered file for validation and generates other output files.
+  - Copies results onto remove server, if it is set up.
+
+During this procedure, as many steps are skipped as possible. Namely:
+  - Making metro extract is skipped if \$PLANET_METRO variable is set and the file exists.
+  - Update with osmupdate is skipped if SKIP_PLANET_UPDATE or \$SKIP_FILTERING is set.
+  - Filtering is skipped if \$SKIP_FILTERING is set and \$FILTERED_DATA is set and the file exists.
+
+Generated files \$POLY, \$PLANET_METRO, \$FILTERED_DATA are deleted if the correponding variable is not defined or is null, otherwise they are kept.
+The PLANET file from remote URL is saved to a tempfile and is removed at the end.
+
+Environment variable reference:
+  - PLANET: path to a local or remote o5m or pbf source file (the entire planet or an extract)
+  - PLANET_METRO: path to local o5m file with extract of cities having metro.
+    It's used instead of \$PLANET if exists otherwise it's created first
+  - CITY: name of a city/country to process
+  - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
+  - POLY: *.poly file with [multi]polygon comprising cities with metro.
+    If neither \$BBOX nor \$POLY is set, then \$POLY is generated
+  - SKIP_PLANET_UPDATE: skip \$PLANET file update. Any non-empty string is True
+  - SKIP_FILTERING: skip filtering railway data. Any non-empty string is True
+  - FILTERED_DATA: path to filtered data. Defaults to \$TMPDIR/subways.osm
+  - MAPSME: file name for maps.me json output
+  - DUMP: directory/file name to dump YAML city data. Do not set to omit dump
+  - GEOJSON: directory/file name to dump GeoJSON data. Do not set to omit dump
+  - ELEMENTS_CACHE: file name to elements cache. Allows OSM xml processing phase
+  - CITY_CACHE: json file with good cities obtained on previous validation runs
+  - RECOVERY_PATH: file with some data collected at previous validation runs that
+    may help to recover some simple validation errors
+  - OSMCTOOLS: path to osmconvert and osmupdate binaries
+  - PYTHON: python 3 executable
+  - GIT_PULL: set to 1 to update the scripts
+  - TMPDIR: path to temporary files
+  - HTML_DIR: target path for generated HTML files
+  - SERVER: server name and path to upload HTML files (e.g. ilya@osmz.ru:/var/www/)
+  - SERVER_KEY: rsa key to supply for uploading the files
+  - REMOVE_HTML: set to 1 to remove \$HTML_DIR after uploading
+EOF
+  exit
 fi
 
-[ -n "${WHAT-}" ] && echo WHAT
 
-PLANET="${PLANET:-${1-}}"
-[ ! -f "$PLANET" ] && echo "Cannot find planet file $PLANET" && exit 2
-OSMCTOOLS="${OSMCTOOLS:-$HOME/osmctools}"
-if [ ! -f "$OSMCTOOLS/osmupdate" ]; then
-  if which osmupdate > /dev/null; then
-    OSMCTOOLS="$(dirname "$(which osmupdate)")"
-  else
-    echo "Please compile osmctools to $OSMCTOOLS"
-    exit 3
+function check_osmctools() {
+  OSMCTOOLS="${OSMCTOOLS:-$HOME/osmctools}"
+  if [ ! -f "$OSMCTOOLS/osmupdate" ]; then
+    if which osmupdate > /dev/null; then
+      OSMCTOOLS="$(dirname "$(which osmupdate)")"
+    else
+      echo "Please compile osmctools to $OSMCTOOLS"
+      exit 1
+    fi
   fi
-fi
+}
+
+
+function check_poly() {
+  # Checks or generates *.poly file with city bboxes where
+  # there is a metro but only once during script run
+
+  if [ -z "${POLY_CHECKED-}" ]; then
+    if [ -n "${BBOX-}" ]; then
+      # If BBOX is set, then exclude POLY at all from processing
+      POLY=""
+    else
+      if [ -z "${POLY-}" ]; then
+        NEED_TO_REMOVE_POLY=1
+      fi
+
+      if [ -z "${POLY-}" -o ! -f "${POLY-}" ]; then
+        POLY=${POLY:-$(mktemp "$TMPDIR/all-metro.XXXXXXXX.poly")}
+        if [ -n "$("$PYTHON" -c "import shapely" 2>&1)" ]; then
+          "$PYTHON" -m pip install shapely
+        fi
+        "$PYTHON" "$SUBWAYS_PATH"/make_all_metro_poly.py > "$POLY"
+      fi
+    fi
+    POLY_CHECKED=1
+  fi
+}
+
+
 PYTHON=${PYTHON:-python3}
 # This will fail if there is no python
 "$PYTHON" --version > /dev/null
+
 SUBWAYS_PATH="$(dirname "$0")/.."
-[ ! -f "$SUBWAYS_PATH/process_subways.py" ] && echo "Please clone the subways repo to $SUBWAYS_PATH" && exit 4
+if [ ! -f "$SUBWAYS_PATH/process_subways.py" ]; then
+  echo "Please clone the subways repo to $SUBWAYS_PATH"
+  exit 2
+fi
+
 TMPDIR="${TMPDIR:-$SUBWAYS_PATH}"
 
 # Downloading the latest version of the subways script
-
-
 if [ -n "${GIT_PULL-}" ]; then (
   cd "$SUBWAYS_PATH"
   git pull origin master
 ) fi
 
+if [ -z "${FILTERED_DATA-}" ]; then
+  FILTERED_DATA="$TMPDIR/subways.osm"
+  NEED_TO_REMOVE_FILTERED_DATA=1
+fi
 
-# Updating the planet file
+if [ -z "${SKIP_FILTERING-}" -o ! -f "$FILTERED_DATA" ]; then
+  NEED_FILTER=1
+fi
 
-if [ "${SKIP_PLANET_UPDATE:-not_defined}" == "not_defined" ]; then
-  PLANET_ABS="$(cd "$(dirname "$PLANET")"; pwd)/$(basename "$PLANET")"
+
+if [ -n "${NEED_FILTER-}" ]; then
+
+  # If $PLANET_METRO file doesn't exist, create it
+  
+  if [ -n "${PLANET_METRO-}" ]; then
+    EXT=${PLANET_METRO##*.}
+    if [ ! "$EXT" = "osm" -a ! "$EXT" == "xml" -a ! "$EXT" = "o5m" ]; then
+      echo "Only o5m/xml/osm file formats are supported for filtering."
+      exit 3
+    fi
+  fi
+
+  if [ ! -f "${PLANET_METRO-}" ]; then
+    check_osmctools
+    check_poly
+
+    PLANET="${PLANET:-${1-}}"
+    EXT="${PLANET##*.}"
+    if [ ! "$EXT" = "pbf" -a ! "$EXT" = "o5m" ]; then
+      echo "Cannot process '$PLANET' planet file."
+      echo "Only pbf/o5m source planet files are supported."
+      exit 4
+    fi
+
+    if [ "${PLANET:0:7}" = "http://" -o \
+         "${PLANET:0:8}" = "https://" -o \
+         "${PLANET:0:6}" = "ftp://" ]; then
+      PLANET_TEMP=$(mktemp "$TMPDIR/planet.XXXXXXXX.$EXT")
+      wget -O "$PLANET_TEMP" "$PLANET"
+      PLANET="$PLANET_TEMP"
+    elif [ ! -f "$PLANET" ]; then
+      echo "Cannot find planet file '$PLANET'";
+      exit 5
+    fi
+
+    if [ -z "${PLANET_METRO-}" ]; then
+      PLANET_METRO=$(mktemp "$TMPDIR/planet-metro.XXXXXXXX.o5m")
+      NEED_TO_REMOVE_PLANET_METRO=1
+    fi
+
+    if [ "$PLANET" = "$PLANET_METRO" ]; then
+      echo "PLANET_METRO parameter shouldn't point to PLANET."
+      exit 6
+    fi
+
+    "$OSMCTOOLS"/osmconvert "$PLANET" \
+        ${BBOX:+"-b=$BBOX"} ${POLY:+"-B=$POLY"} -o="$PLANET_METRO"
+  fi
+fi
+
+if [ -n "${PLANET_TEMP-}" ]; then
+  rm "$PLANET_TEMP"
+fi
+
+# Updating the planet-metro file
+
+# If there's no need to filter, then update is also unnecessary
+if [ -z "${SKIP_PLANET_UPDATE-}" -a -n "${NEED_FILTER-}" ]; then
+  check_osmctools
+  check_poly
+  PLANET_METRO_ABS="$(cd "$(dirname "$PLANET_METRO")"; pwd)/$(basename "$PLANET_METRO")"
   pushd "$OSMCTOOLS" # osmupdate requires osmconvert in a current directory
-  OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} ${POLY:+"-B=$POLY"} "$PLANET_ABS" "$PLANET_ABS.new.o5m" 2>&1)
+  OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} \
+                                 ${POLY:+"-B=$POLY"} "$PLANET_METRO_ABS" \
+                                 "$PLANET_METRO_ABS.new.o5m" 2>&1)
   if [ -n "$OSMUPDATE_ERRORS" ]; then
     echo "osmupdate failed: $OSMUPDATE_ERRORS"
-    exit 5
+    exit 7
   fi
   popd
-  mv "$PLANET_ABS.new.o5m" "$PLANET_ABS"
+  mv "$PLANET_METRO_ABS.new.o5m" "$PLANET_METRO_ABS"
 fi
 
-# Filtering it
+# Filtering planet-metro
 
-if [ "${FILTERED_DATA:-not_defined}" == "not_defined" ]; then
-  FILTERED_DATA="$TMPDIR/subways.osm"
-fi
-
-if [ "${SKIP_FILTERING:-not_defined}" == "not_defined" ]; then
+if [ -n "${NEED_FILTER-}" ]; then
   QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
   QNODES="railway=station station=subway =light_rail =monorail railway=subway_entrance subway=yes light_rail=yes monorail=yes train=yes"
-  "$OSMCTOOLS/osmfilter" "$PLANET" --keep= --keep-relations="$QRELATIONS" --keep-nodes="$QNODES" --drop-author -o="$FILTERED_DATA"
+  "$OSMCTOOLS/osmfilter" "$PLANET_METRO" \
+      --keep= \
+      --keep-relations="$QRELATIONS" \
+      --keep-nodes="$QNODES" \
+      --drop-author \
+      -o="$FILTERED_DATA"
+fi
+
+if [ -n "${NEED_TO_REMOVE_PLANET_METRO-}" ]; then
+  rm $PLANET_METRO
+fi
+if [ -n "${NEED_TO_REMOVE_POLY-}" ]; then
+  rm $POLY
 fi
 
 # Running the validation
 
 VALIDATION="$TMPDIR/validation.json"
-"$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q -x "$FILTERED_DATA" -l "$VALIDATION" ${MAPSME:+-o "$MAPSME"}\
-    ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"}\
-    ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} ${CITY_CACHE:+--cache "$CITY_CACHE"}\
+"$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q \
+    -x "$FILTERED_DATA" -l "$VALIDATION" \
+    ${MAPSME:+-o "$MAPSME"} \
+    ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"} \
+    ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} \
+    ${CITY_CACHE:+--cache "$CITY_CACHE"} \
     ${RECOVERY_PATH:+-r "$RECOVERY_PATH"}
-rm "$FILTERED_DATA"
+
+if [ -n "${NEED_TO_REMOVE_FILTERED_DATA-}" ]; then
+  rm "$FILTERED_DATA"
+fi
 
 # Preparing HTML files
 
@@ -107,7 +241,6 @@ fi
 mkdir -p $HTML_DIR
 rm -f "$HTML_DIR"/*.html
 "$PYTHON" "$SUBWAYS_PATH/validation_to_html.py" "$VALIDATION" "$HTML_DIR"
-rm "$VALIDATION"
 
 # Uploading files to the server
 
@@ -117,3 +250,4 @@ if [ -n "${SERVER-}" ]; then
     rm -r "$HTML_DIR"
   fi
 fi
+
