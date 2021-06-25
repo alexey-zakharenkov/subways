@@ -59,7 +59,7 @@ if you allow the `process_subway.py` to fetch data from Overpass API. Here are t
    ```
 3. Execute
     ```bash
-    python3 ./process_subways.py --bbox -c "London" \
+    python3 ./process_subways.py -c "London" \
         -l validation.log -d London.yaml
     ```
     here

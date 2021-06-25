@@ -26,13 +26,11 @@ from subway_structure import (
 )
 
 
-def overpass_request(overground, overpass_api, bboxes=None):
+def overpass_request(overground, overpass_api, bboxes):
     query = '[out:json][timeout:1000];('
-    if bboxes is None:
-        bboxes = [None]
     modes = MODES_OVERGROUND if overground else MODES_RAPID
     for bbox in bboxes:
-        bbox_part = '' if not bbox else '({})'.format(','.join(str(coord) for coord in bbox))
+        bbox_part = '({})'.format(','.join(str(coord) for coord in bbox))
         query += '('
         for mode in modes:
             query += 'rel[route="{}"]{};'.format(mode, bbox_part)
@@ -52,13 +50,12 @@ def overpass_request(overground, overpass_api, bboxes=None):
 
 
 def multi_overpass(overground, overpass_api, bboxes):
-    if not bboxes:
-        return overpass_request(overground, overpass_api, None)
     SLICE_SIZE = 10
+    INTERREQUEST_WAIT = 5  # in seconds
     result = []
     for i in range(0, len(bboxes) + SLICE_SIZE - 1, SLICE_SIZE):
         if i > 0:
-            time.sleep(5)
+            time.sleep(INTERREQUEST_WAIT)
         result.extend(overpass_request(overground, overpass_api, bboxes[i:i+SLICE_SIZE]))
     return result
 
@@ -167,9 +164,6 @@ if __name__ == '__main__':
     parser.add_argument('--overpass-api',
                         default='http://overpass-api.de/api/interpreter',
                         help="Overpass API URL")
-    parser.add_argument(
-        '-b', '--bbox', action='store_true',
-        help='Use city boundaries to query Overpass API instead of querying the world')
     parser.add_argument('-q', '--quiet', action='store_true', help='Show only warnings and errors')
     parser.add_argument('-c', '--city', help='Validate only a single city or a country')
     parser.add_argument('-t', '--overground', action='store_true',
@@ -232,10 +226,7 @@ if __name__ == '__main__':
             logging.error('Would not download that many cities from Overpass API, '
                           'choose a smaller set')
             sys.exit(3)
-        if options.bbox:
-            bboxes = [c.bbox for c in cities]
-        else:
-            bboxes = None
+        bboxes = [c.bbox for c in cities]
         logging.info('Downloading data from Overpass API')
         osm = multi_overpass(options.overground, options.overpass_api, bboxes)
         calculate_centers(osm)
