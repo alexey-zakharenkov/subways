@@ -19,7 +19,7 @@ In more detail, the script does the following:
   - Copies results onto remote server, if it is set up.
 
 During this procedure, as many steps are skipped as possible. Namely:
-  - Making metro extract is skipped if \$PLANET_METRO variable is set and the file exists.
+  - Generation of metro extract is skipped if \$PLANET_METRO variable is set and the file exists.
   - Update with osmupdate is skipped if \$SKIP_PLANET_UPDATE or \$SKIP_FILTERING is set.
   - Filtering is skipped if \$SKIP_FILTERING is set and \$FILTERED_DATA is set and the file exists.
 

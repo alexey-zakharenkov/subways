@@ -3,15 +3,17 @@ import os
 import logging
 from collections import defaultdict
 from subway_structure import (
-    distance, el_center, Station,
-    DISPLACEMENT_TOLERANCE
+    distance,
+    el_center,
+    Station,
+    DISPLACEMENT_TOLERANCE,
 )
 
 
 OSM_TYPES = {'n': (0, 'node'), 'w': (2, 'way'), 'r': (3, 'relation')}
 ENTRANCE_PENALTY = 60  # seconds
 TRANSFER_PENALTY = 30  # seconds
-KMPH_TO_MPS = 1/3.6  # km/h to m/s conversion multiplier
+KMPH_TO_MPS = 1 / 3.6  # km/h to m/s conversion multiplier
 SPEED_TO_ENTRANCE = 5 * KMPH_TO_MPS  # m/s
 SPEED_ON_TRANSFER = 3.5 * KMPH_TO_MPS  # m/s
 SPEED_ON_LINE = 40 * KMPH_TO_MPS  # m/s
@@ -37,18 +39,22 @@ class DummyCache:
     def __getattr__(self, name):
         """This results in that a call to any method effectively does nothing
         and does not generate exceptions."""
+
         def method(*args, **kwargs):
             return None
+
         return method
 
 
 def if_object_is_used(method):
     """Decorator to skip method execution under certain condition.
     Relies on "is_used" object property."""
+
     def inner(self, *args, **kwargs):
         if not self.is_used:
             return
         return method(self, *args, **kwargs)
+
     return inner
 
 
@@ -66,8 +72,11 @@ class MapsmeCache:
                 with open(cache_path, 'r', encoding='utf-8') as f:
                     self.cache = json.load(f)
             except json.decoder.JSONDecodeError:
-                logging.warning("City cache '%s' is not a valid json file. "
-                                "Building cache from scratch.", cache_path)
+                logging.warning(
+                    "City cache '%s' is not a valid json file. "
+                    "Building cache from scratch.",
+                    cache_path,
+                )
         self.recovered_city_names = set()
         # One stoparea may participate in routes of different cities
         self.stop_cities = defaultdict(set)  # stoparea id -> city names
@@ -80,15 +89,20 @@ class MapsmeCache:
         """
         city_cache_data = self.cache[city.name]
         for stoparea_id, cached_stoparea in city_cache_data['stops'].items():
-            station_id = cached_stoparea['osm_type'][0] + str(cached_stoparea['osm_id'])
+            station_id = cached_stoparea['osm_type'][0] + str(
+                cached_stoparea['osm_id']
+            )
             city_station = city.elements.get(station_id)
-            if (not city_station or
-                    not Station.is_station(city_station, city.modes)):
+            if not city_station or not Station.is_station(
+                city_station, city.modes
+            ):
                 return False
             station_coords = el_center(city_station)
-            cached_station_coords = tuple(cached_stoparea[coord] for coord in ('lon', 'lat'))
+            cached_station_coords = tuple(
+                cached_stoparea[coord] for coord in ('lon', 'lat')
+            )
             displacement = distance(station_coords, cached_station_coords)
-            if  displacement > DISPLACEMENT_TOLERANCE:
+            if displacement > DISPLACEMENT_TOLERANCE:
                 return False
 
         return True
@@ -123,7 +137,7 @@ class MapsmeCache:
         self.cache[city_name] = {
             'network': network,
             'stops': {},  # stoparea el_id -> jsonified stop data
-            'transfers': []  # list of tuples (stoparea1_uid, stoparea2_uid, time); uid1 < uid2
+            'transfers': [],  # list of tuples (stoparea1_uid, stoparea2_uid, time); uid1 < uid2
         }
 
     @if_object_is_used
@@ -142,9 +156,11 @@ class MapsmeCache:
     @if_object_is_used
     def add_transfer(self, stoparea1_uid, stoparea2_uid, transfer_time):
         """If a transfer is inside a good city, add it to the city's cache."""
-        for city_name in (self.good_city_names &
-                          self.stop_cities[stoparea1_uid] &
-                          self.stop_cities[stoparea2_uid]):
+        for city_name in (
+            self.good_city_names
+            & self.stop_cities[stoparea1_uid]
+            & self.stop_cities[stoparea2_uid]
+        ):
             self.cache[city_name]['transfers'].append(
                 (stoparea1_uid, stoparea2_uid, transfer_time)
             )
@@ -186,7 +202,6 @@ def process(cities, transfers, cache_path):
                 exits.append(n)
         return exits
 
-
     cache = MapsmeCache(cache_path, cities)
 
     stop_areas = {}  # stoparea el_id -> StopArea instance
@@ -206,7 +221,7 @@ def process(cities, transfers, cache_path):
                 'name': route.name,
                 'colour': format_colour(route.colour),
                 'route_id': uid(route.id, 'r'),
-                'itineraries': []
+                'itineraries': [],
             }
             if route.infill:
                 routes['casing'] = routes['colour']
@@ -216,33 +231,62 @@ def process(cities, transfers, cache_path):
                 for stop in variant:
                     stop_areas[stop.stoparea.id] = stop.stoparea
                     cache.link_stop_with_city(stop.stoparea.id, city.name)
-                    itin.append([uid(stop.stoparea.id), round(stop.distance/SPEED_ON_LINE)])
+                    itin.append(
+                        [
+                            uid(stop.stoparea.id),
+                            round(stop.distance / SPEED_ON_LINE),
+                        ]
+                    )
                     # Make exits from platform nodes, if we don't have proper exits
-                    if len(stop.stoparea.entrances) + len(stop.stoparea.exits) == 0:
+                    if (
+                        len(stop.stoparea.entrances) + len(stop.stoparea.exits)
+                        == 0
+                    ):
                         for pl in stop.stoparea.platforms:
                             pl_el = city.elements[pl]
                             if pl_el['type'] == 'node':
                                 pl_nodes = [pl_el]
                             elif pl_el['type'] == 'way':
-                                pl_nodes = [city.elements.get('n{}'.format(n))
-                                            for n in pl_el['nodes']]
+                                pl_nodes = [
+                                    city.elements.get('n{}'.format(n))
+                                    for n in pl_el['nodes']
+                                ]
                             else:
                                 pl_nodes = []
                                 for m in pl_el['members']:
                                     if m['type'] == 'way':
-                                        if '{}{}'.format(m['type'][0], m['ref']) in city.elements:
+                                        if (
+                                            '{}{}'.format(
+                                                m['type'][0], m['ref']
+                                            )
+                                            in city.elements
+                                        ):
                                             pl_nodes.extend(
-                                                [city.elements.get('n{}'.format(n))
-                                                 for n in city.elements['{}{}'.format(
-                                                     m['type'][0], m['ref'])]['nodes']])
+                                                [
+                                                    city.elements.get(
+                                                        'n{}'.format(n)
+                                                    )
+                                                    for n in city.elements[
+                                                        '{}{}'.format(
+                                                            m['type'][0],
+                                                            m['ref'],
+                                                        )
+                                                    ]['nodes']
+                                                ]
+                                            )
                             pl_nodes = [n for n in pl_nodes if n]
                             platform_nodes[pl] = find_exits_for_platform(
-                                stop.stoparea.centers[pl], pl_nodes)
+                                stop.stoparea.centers[pl], pl_nodes
+                            )
 
-                routes['itineraries'].append({
-                    'stops': itin,
-                    'interval': round((variant.interval or DEFAULT_INTERVAL) * 60)
-                })
+                routes['itineraries'].append(
+                    {
+                        'stops': itin,
+                        'interval': round(
+                            (variant.interval or DEFAULT_INTERVAL) * 60
+                        ),
+                    }
+                )
             network['routes'].append(routes)
         networks.append(network)
 
@@ -261,41 +305,57 @@ def process(cities, transfers, cache_path):
         for e_l, k in ((stop.entrances, 'entrances'), (stop.exits, 'exits')):
             for e in e_l:
                 if e[0] == 'n':
-                    st[k].append({
-                        'osm_type': 'node',
-                        'osm_id': int(e[1:]),
-                        'lon': stop.centers[e][0],
-                        'lat': stop.centers[e][1],
-                        'distance': ENTRANCE_PENALTY + round(distance(
-                            stop.centers[e], stop.center)/SPEED_TO_ENTRANCE)
-                    })
+                    st[k].append(
+                        {
+                            'osm_type': 'node',
+                            'osm_id': int(e[1:]),
+                            'lon': stop.centers[e][0],
+                            'lat': stop.centers[e][1],
+                            'distance': ENTRANCE_PENALTY
+                            + round(
+                                distance(stop.centers[e], stop.center)
+                                / SPEED_TO_ENTRANCE
+                            ),
+                        }
+                    )
         if len(stop.entrances) + len(stop.exits) == 0:
             if stop.platforms:
                 for pl in stop.platforms:
                     for n in platform_nodes[pl]:
                         for k in ('entrances', 'exits'):
-                            st[k].append({
-                                'osm_type': n['type'],
-                                'osm_id': n['id'],
-                                'lon': n['lon'],
-                                'lat': n['lat'],
-                                'distance': ENTRANCE_PENALTY + round(distance(
-                                    (n['lon'], n['lat']), stop.center)/SPEED_TO_ENTRANCE)
-                            })
+                            st[k].append(
+                                {
+                                    'osm_type': n['type'],
+                                    'osm_id': n['id'],
+                                    'lon': n['lon'],
+                                    'lat': n['lat'],
+                                    'distance': ENTRANCE_PENALTY
+                                    + round(
+                                        distance(
+                                            (n['lon'], n['lat']), stop.center
+                                        )
+                                        / SPEED_TO_ENTRANCE
+                                    ),
+                                }
+                            )
             else:
                 for k in ('entrances', 'exits'):
-                    st[k].append({
-                        'osm_type': OSM_TYPES[stop.station.id[0]][1],
-                        'osm_id': int(stop.station.id[1:]),
-                        'lon': stop.centers[stop.id][0],
-                        'lat': stop.centers[stop.id][1],
-                        'distance': 60
-                    })
+                    st[k].append(
+                        {
+                            'osm_type': OSM_TYPES[stop.station.id[0]][1],
+                            'osm_id': int(stop.station.id[1:]),
+                            'lon': stop.centers[stop.id][0],
+                            'lat': stop.centers[stop.id][1],
+                            'distance': 60,
+                        }
+                    )
 
         stops[stop_id] = st
         cache.add_stop(stop_id, st)
 
-    pairwise_transfers = {}  # (stoparea1_uid, stoparea2_uid) -> time;  uid1 < uid2
+    pairwise_transfers = (
+        {}
+    )  # (stoparea1_uid, stoparea2_uid) -> time;  uid1 < uid2
     for t_set in transfers:
         t = list(t_set)
         for t_first in range(len(t) - 1):
@@ -306,23 +366,24 @@ def process(cities, transfers, cache_path):
                     uid1 = uid(stoparea1.id)
                     uid2 = uid(stoparea2.id)
                     uid1, uid2 = sorted([uid1, uid2])
-                    transfer_time = (TRANSFER_PENALTY
-                                     + round(distance(stoparea1.center,
-                                                      stoparea2.center)
-                                                      / SPEED_ON_TRANSFER))
+                    transfer_time = TRANSFER_PENALTY + round(
+                        distance(stoparea1.center, stoparea2.center)
+                        / SPEED_ON_TRANSFER
+                    )
                     pairwise_transfers[(uid1, uid2)] = transfer_time
                     cache.add_transfer(uid1, uid2, transfer_time)
 
     cache.provide_transfers(pairwise_transfers)
     cache.save()
 
-    pairwise_transfers = [(stop1_uid, stop2_uid, transfer_time)
-                            for (stop1_uid, stop2_uid), transfer_time
-                            in pairwise_transfers.items()]
+    pairwise_transfers = [
+        (stop1_uid, stop2_uid, transfer_time)
+        for (stop1_uid, stop2_uid), transfer_time in pairwise_transfers.items()
+    ]
 
     result = {
         'stops': list(stops.values()),
         'transfers': pairwise_transfers,
-        'networks': networks
+        'networks': networks,
     }
     return result

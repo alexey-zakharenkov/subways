@@ -39,13 +39,17 @@ def overpass_request(overground, overpass_api, bboxes):
         if not overground:
             query += 'node[railway=subway_entrance]{};'.format(bbox_part)
         query += 'rel[public_transport=stop_area]{};'.format(bbox_part)
-        query += 'rel(br)[type=public_transport][public_transport=stop_area_group];'
+        query += (
+            'rel(br)[type=public_transport][public_transport=stop_area_group];'
+        )
     query += ');(._;>>;);out body center qt;'
     logging.debug('Query: %s', query)
     url = '{}?data={}'.format(overpass_api, urllib.parse.quote(query))
     response = urllib.request.urlopen(url, timeout=1000)
     if response.getcode() != 200:
-        raise Exception('Failed to query Overpass API: HTTP {}'.format(response.getcode()))
+        raise Exception(
+            'Failed to query Overpass API: HTTP {}'.format(response.getcode())
+        )
     return json.load(response)['elements']
 
 
@@ -56,7 +60,11 @@ def multi_overpass(overground, overpass_api, bboxes):
     for i in range(0, len(bboxes) + SLICE_SIZE - 1, SLICE_SIZE):
         if i > 0:
             time.sleep(INTERREQUEST_WAIT)
-        result.extend(overpass_request(overground, overpass_api, bboxes[i:i+SLICE_SIZE]))
+        result.extend(
+            overpass_request(
+                overground, overpass_api, bboxes[i : i + SLICE_SIZE]
+            )
+        )
     return result
 
 
@@ -66,14 +74,14 @@ def slugify(name):
 
 def calculate_centers(elements):
     """Adds 'center' key to each way/relation in elements,
-       except for empty ways or relations.
-       Relies on nodes-ways-relations order in the elements list.
+    except for empty ways or relations.
+    Relies on nodes-ways-relations order in the elements list.
     """
-    nodes = {}      # id(int) => (lat, lon)
-    ways = {}       # id(int) => (lat, lon)
+    nodes = {}  # id(int) => (lat, lon)
+    ways = {}  # id(int) => (lat, lon)
     relations = {}  # id(int) => (lat, lon)
     empty_relations = set()  # ids(int) of relations without members
-                             # or containing only empty relations
+    # or containing only empty relations
 
     def calculate_way_center(el):
         # If element has been queried via overpass-api with 'out center;'
@@ -108,9 +116,13 @@ def calculate_centers(elements):
                 else:
                     # Center of child relation is not known yet
                     return False
-            member_container = (nodes if m['type'] == 'node' else
-                                ways if m['type'] == 'way' else
-                                relations)
+            member_container = (
+                nodes
+                if m['type'] == 'node'
+                else ways
+                if m['type'] == 'way'
+                else relations
+            )
             if m['ref'] in member_container:
                 center[0] += member_container[m['ref']][0]
                 center[1] += member_container[m['ref']][1]
@@ -145,54 +157,104 @@ def calculate_centers(elements):
         relations_without_center = new_relations_without_center
 
     if relations_without_center:
-        logging.error("Cannot calculate center for the relations (%d in total): %s%s",
-                      len(relations_without_center),
-                      ', '.join(str(rel['id']) for rel in relations_without_center[:20]),
-                      ", ..." if len(relations_without_center) > 20 else "")
+        logging.error(
+            "Cannot calculate center for the relations (%d in total): %s%s",
+            len(relations_without_center),
+            ', '.join(str(rel['id']) for rel in relations_without_center[:20]),
+            ", ..." if len(relations_without_center) > 20 else "",
+        )
     if empty_relations:
-        logging.warning("Empty relations (%d in total): %s%s",
-                        len(empty_relations),
-                        ', '.join(str(x) for x in list(empty_relations)[:20]),
-                        ", ..." if len(empty_relations) > 20 else "")
+        logging.warning(
+            "Empty relations (%d in total): %s%s",
+            len(empty_relations),
+            ', '.join(str(x) for x in list(empty_relations)[:20]),
+            ", ..." if len(empty_relations) > 20 else "",
+        )
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-i', '--source', help='File to write backup of OSM data, or to read data from')
-    parser.add_argument('-x', '--xml', help='OSM extract with routes, to read data from')
-    parser.add_argument('--overpass-api',
-                        default='http://overpass-api.de/api/interpreter',
-                        help="Overpass API URL")
-    parser.add_argument('-q', '--quiet', action='store_true', help='Show only warnings and errors')
-    parser.add_argument('-c', '--city', help='Validate only a single city or a country')
-    parser.add_argument('-t', '--overground', action='store_true',
-                        help='Process overground transport instead of subways')
-    parser.add_argument('-e', '--entrances', type=argparse.FileType('w', encoding='utf-8'),
-                        help='Export unused subway entrances as GeoJSON here')
-    parser.add_argument('-l', '--log', type=argparse.FileType('w', encoding='utf-8'),
-                        help='Validation JSON file name')
-    parser.add_argument('-o', '--output', type=argparse.FileType('w', encoding='utf-8'),
-                        help='Processed metro systems output')
+        '-i',
+        '--source',
+        help='File to write backup of OSM data, or to read data from',
+    )
+    parser.add_argument(
+        '-x', '--xml', help='OSM extract with routes, to read data from'
+    )
+    parser.add_argument(
+        '--overpass-api',
+        default='http://overpass-api.de/api/interpreter',
+        help="Overpass API URL",
+    )
+    parser.add_argument(
+        '-q',
+        '--quiet',
+        action='store_true',
+        help='Show only warnings and errors',
+    )
+    parser.add_argument(
+        '-c', '--city', help='Validate only a single city or a country'
+    )
+    parser.add_argument(
+        '-t',
+        '--overground',
+        action='store_true',
+        help='Process overground transport instead of subways',
+    )
+    parser.add_argument(
+        '-e',
+        '--entrances',
+        type=argparse.FileType('w', encoding='utf-8'),
+        help='Export unused subway entrances as GeoJSON here',
+    )
+    parser.add_argument(
+        '-l',
+        '--log',
+        type=argparse.FileType('w', encoding='utf-8'),
+        help='Validation JSON file name',
+    )
+    parser.add_argument(
+        '-o',
+        '--output',
+        type=argparse.FileType('w', encoding='utf-8'),
+        help='Processed metro systems output',
+    )
     parser.add_argument('--cache', help='Cache file name for processed data')
-    parser.add_argument('-r', '--recovery-path', help='Cache file name for error recovery')
-    parser.add_argument('-d', '--dump', help='Make a YAML file for a city data')
-    parser.add_argument('-j', '--geojson', help='Make a GeoJSON file for a city data')
-    parser.add_argument('--crude', action='store_true',
-                        help='Do not use OSM railway geometry for GeoJSON')
+    parser.add_argument(
+        '-r', '--recovery-path', help='Cache file name for error recovery'
+    )
+    parser.add_argument(
+        '-d', '--dump', help='Make a YAML file for a city data'
+    )
+    parser.add_argument(
+        '-j', '--geojson', help='Make a GeoJSON file for a city data'
+    )
+    parser.add_argument(
+        '--crude',
+        action='store_true',
+        help='Do not use OSM railway geometry for GeoJSON',
+    )
     options = parser.parse_args()
 
     if options.quiet:
         log_level = logging.WARNING
     else:
         log_level = logging.INFO
-    logging.basicConfig(level=log_level, datefmt='%H:%M:%S',
-                        format='%(asctime)s %(levelname)-7s  %(message)s')
+    logging.basicConfig(
+        level=log_level,
+        datefmt='%H:%M:%S',
+        format='%(asctime)s %(levelname)-7s  %(message)s',
+    )
 
     # Downloading cities from Google Spreadsheets
     cities = download_cities(options.overground)
     if options.city:
-        cities = [c for c in cities if c.name == options.city or c.country == options.city]
+        cities = [
+            c
+            for c in cities
+            if c.name == options.city or c.country == options.city
+        ]
     if not cities:
         logging.error('No cities to process')
         sys.exit(2)
@@ -223,8 +285,10 @@ if __name__ == '__main__':
                 json.dump(osm, f)
     else:
         if len(cities) > 10:
-            logging.error('Would not download that many cities from Overpass API, '
-                          'choose a smaller set')
+            logging.error(
+                'Would not download that many cities from Overpass API, '
+                'choose a smaller set'
+            )
             sys.exit(3)
         bboxes = [c.bbox for c in cities]
         logging.info('Downloading data from Overpass API')
@@ -247,10 +311,18 @@ if __name__ == '__main__':
         try:
             c.extract_routes()
         except CriticalValidationError as e:
-            logging.error("Critical validation error while processing %s: %s", c.name, str(e))
+            logging.error(
+                "Critical validation error while processing %s: %s",
+                c.name,
+                str(e),
+            )
             c.error(str(e))
         except AssertionError as e:
-            logging.error("Validation logic error while processing %s: %s", c.name, str(e))
+            logging.error(
+                "Validation logic error while processing %s: %s",
+                c.name,
+                str(e),
+            )
             c.error("Validation logic error: {}".format(str(e)))
         else:
             c.validate()
@@ -261,11 +333,17 @@ if __name__ == '__main__':
     transfers = find_transfers(osm, cities)
 
     good_city_names = set(c.name for c in good_cities)
-    logging.info('%s good cities: %s', len(good_city_names),
-                 ', '.join(sorted(good_city_names)))
+    logging.info(
+        '%s good cities: %s',
+        len(good_city_names),
+        ', '.join(sorted(good_city_names)),
+    )
     bad_city_names = set(c.name for c in cities) - good_city_names
-    logging.info('%s bad cities: %s', len(bad_city_names),
-                 ', '.join(sorted(bad_city_names)))
+    logging.info(
+        '%s bad cities: %s',
+        len(bad_city_names),
+        ', '.join(sorted(bad_city_names)),
+    )
 
     if options.recovery_path:
         write_recovery_data(options.recovery_path, recovery_data, cities)
@@ -276,8 +354,11 @@ if __name__ == '__main__':
     if options.dump:
         if os.path.isdir(options.dump):
             for c in cities:
-                with open(os.path.join(options.dump, slugify(c.name) + '.yaml'),
-                          'w', encoding='utf-8') as f:
+                with open(
+                    os.path.join(options.dump, slugify(c.name) + '.yaml'),
+                    'w',
+                    encoding='utf-8',
+                ) as f:
                     dump_yaml(c, f)
         elif len(cities) == 1:
             with open(options.dump, 'w', encoding='utf-8') as f:
@@ -288,14 +369,21 @@ if __name__ == '__main__':
     if options.geojson:
         if os.path.isdir(options.geojson):
             for c in cities:
-                with open(os.path.join(options.geojson, slugify(c.name) + '.geojson'),
-                          'w', encoding='utf-8') as f:
+                with open(
+                    os.path.join(
+                        options.geojson, slugify(c.name) + '.geojson'
+                    ),
+                    'w',
+                    encoding='utf-8',
+                ) as f:
                     json.dump(make_geojson(c, not options.crude), f)
         elif len(cities) == 1:
             with open(options.geojson, 'w', encoding='utf-8') as f:
                 json.dump(make_geojson(cities[0], not options.crude), f)
         else:
-            logging.error('Cannot make a geojson of %s cities at once', len(cities))
+            logging.error(
+                'Cannot make a geojson of %s cities at once', len(cities)
+            )
 
     if options.log:
         res = []
@@ -306,5 +394,9 @@ if __name__ == '__main__':
         json.dump(res, options.log, indent=2, ensure_ascii=False)
 
     if options.output:
-        json.dump(processor.process(cities, transfers, options.cache),
-                  options.output, indent=1, ensure_ascii=False)
+        json.dump(
+            processor.process(cities, transfers, options.cache),
+            options.output,
+            indent=1,
+            ensure_ascii=False,
+        )

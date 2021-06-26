@@ -18,7 +18,7 @@ if __name__ == '__main__':
     arg_parser.add_argument(
         'subway_json_file',
         type=argparse.FileType('r'),
-        help="Validator output defined by -o option of process_subways.py script"
+        help="Validator output defined by -o option of process_subways.py script",
     )
 
     arg_parser.add_argument(
@@ -33,7 +33,9 @@ if __name__ == '__main__':
     subway_json_file = args.subway_json_file
     subway_json = json.load(subway_json_file)
 
-    good_cities = set(n.get('network', n.get('title')) for n in subway_json['networks'])
+    good_cities = set(
+        n.get('network', n.get('title')) for n in subway_json['networks']
+    )
     cities = download_cities()
 
     lines = []

@@ -26,9 +26,13 @@ def load_xml(f):
                 elif sub.tag == 'nd':
                     nd.append(int(sub.get('ref')))
                 elif sub.tag == 'member':
-                    members.append({'type': sub.get('type'),
-                                    'ref': int(sub.get('ref')),
-                                    'role': sub.get('role', '')})
+                    members.append(
+                        {
+                            'type': sub.get('type'),
+                            'ref': int(sub.get('ref')),
+                            'role': sub.get('role', ''),
+                        }
+                    )
             if tags:
                 el['tags'] = tags
             if nd:
@@ -44,13 +48,15 @@ def load_xml(f):
 _YAML_SPECIAL_CHARACTERS = "!&*{}[],#|>@`'\""
 _YAML_SPECIAL_SEQUENCES = ("- ", ": ", "? ")
 
+
 def _get_yaml_compatible_string(scalar):
     """Enclose string in single quotes in some cases"""
     string = str(scalar)
-    if (string and
-            (string[0] in _YAML_SPECIAL_CHARACTERS
-             or any(seq in string for seq in _YAML_SPECIAL_SEQUENCES)
-             or string.endswith(':'))):
+    if string and (
+        string[0] in _YAML_SPECIAL_CHARACTERS
+        or any(seq in string for seq in _YAML_SPECIAL_SEQUENCES)
+        or string.endswith(':')
+    ):
         string = string.replace("'", "''")
         string = "'{}'".format(string)
     return string
@@ -81,7 +87,9 @@ def dump_yaml(city, f):
     stops = set()
     routes = []
     for route in city:
-        stations = OrderedDict([(sa.transfer or sa.id, sa.name) for sa in route.stop_areas()])
+        stations = OrderedDict(
+            [(sa.transfer or sa.id, sa.name) for sa in route.stop_areas()]
+        )
         rte = {
             'type': route.mode,
             'ref': route.ref,
@@ -90,7 +98,7 @@ def dump_yaml(city, f):
             'infill': route.infill,
             'station_count': len(stations),
             'stations': list(stations.values()),
-            'itineraries': {}
+            'itineraries': {},
         }
         for variant in route:
             if INCLUDE_STOP_AREAS:
@@ -98,14 +106,22 @@ def dump_yaml(city, f):
                 for st in variant:
                     s = st.stoparea
                     if s.id == s.station.id:
-                        v_stops.append('{} ({})'.format(s.station.name, s.station.id))
+                        v_stops.append(
+                            '{} ({})'.format(s.station.name, s.station.id)
+                        )
                     else:
-                        v_stops.append('{} ({}) in {} ({})'.format(s.station.name, s.station.id,
-                                                                   s.name, s.id))
+                        v_stops.append(
+                            '{} ({}) in {} ({})'.format(
+                                s.station.name, s.station.id, s.name, s.id
+                            )
+                        )
             else:
-                v_stops = ['{} ({})'.format(
-                    s.stoparea.station.name,
-                    s.stoparea.station.id) for s in variant]
+                v_stops = [
+                    '{} ({})'.format(
+                        s.stoparea.station.name, s.stoparea.station.id
+                    )
+                    for s in variant
+                ]
             rte['itineraries'][variant.id] = v_stops
             stops.update(v_stops)
         routes.append(rte)
@@ -132,62 +148,71 @@ def make_geojson(city, tracks=True):
     for rmaster in city:
         for variant in rmaster:
             if not tracks:
-                features.append({
-                    'type': 'Feature',
-                    'geometry': {
-                        'type': 'LineString',
-                        'coordinates': [s.stop for s in variant],
-                    },
-                    'properties': {
-                        'ref': variant.ref,
-                        'name': variant.name,
-                        'stroke': variant.colour
+                features.append(
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'LineString',
+                            'coordinates': [s.stop for s in variant],
+                        },
+                        'properties': {
+                            'ref': variant.ref,
+                            'name': variant.name,
+                            'stroke': variant.colour,
+                        },
                     }
-                })
+                )
             elif variant.tracks:
-                features.append({
-                    'type': 'Feature',
-                    'geometry': {
-                        'type': 'LineString',
-                        'coordinates': variant.tracks,
-                    },
-                    'properties': {
-                        'ref': variant.ref,
-                        'name': variant.name,
-                        'stroke': variant.colour
+                features.append(
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'LineString',
+                            'coordinates': variant.tracks,
+                        },
+                        'properties': {
+                            'ref': variant.ref,
+                            'name': variant.name,
+                            'stroke': variant.colour,
+                        },
                     }
-                })
+                )
             for st in variant:
                 stops.add(st.stop)
                 stopareas.add(st.stoparea)
 
     for stop in stops:
-        features.append({
-            'type': 'Feature',
-            'geometry': {
-                'type': 'Point',
-                'coordinates': stop,
-            },
-            'properties': {
-                'marker-size': 'small',
-                'marker-symbol': 'circle'
+        features.append(
+            {
+                'type': 'Feature',
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': stop,
+                },
+                'properties': {
+                    'marker-size': 'small',
+                    'marker-symbol': 'circle',
+                },
             }
-        })
+        )
     for stoparea in stopareas:
-        features.append({
-            'type': 'Feature',
-            'geometry': {
-                'type': 'Point',
-                'coordinates': stoparea.center,
-            },
-            'properties': {
-                'name': stoparea.name,
-                'marker-size': 'small',
-                'marker-color': '#ff2600' if stoparea in transfers else '#797979'
+        features.append(
+            {
+                'type': 'Feature',
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': stoparea.center,
+                },
+                'properties': {
+                    'name': stoparea.name,
+                    'marker-size': 'small',
+                    'marker-color': '#ff2600'
+                    if stoparea in transfers
+                    else '#797979',
+                },
             }
-        })
+        )
     return {'type': 'FeatureCollection', 'features': features}
-
 
 
 def _dumps_route_id(route_id):
@@ -223,9 +248,11 @@ def read_recovery_data(path):
         return {}
     else:
         data = {
-            city_name: {_loads_route_id(route_id): route_data
-                                 for route_id, route_data in routes.items()}
-                    for city_name, routes in data.items()
+            city_name: {
+                _loads_route_id(route_id): route_data
+                for route_id, route_data in routes.items()
+            }
+            for city_name, routes in data.items()
         }
         return data
 
@@ -241,20 +268,24 @@ def write_recovery_data(path, current_data, cities):
             route_id = (route.colour, route.ref)
             itineraries = []
             for variant in route:
-                itin = {'stations': [],
-                        'name': variant.name,
-                        'from': variant.element['tags'].get('from'),
-                        'to': variant.element['tags'].get('to')}
+                itin = {
+                    'stations': [],
+                    'name': variant.name,
+                    'from': variant.element['tags'].get('from'),
+                    'to': variant.element['tags'].get('to'),
+                }
                 for stop in variant:
                     station = stop.stoparea.station
                     station_name = station.name
                     if station_name == '?' and station.int_name:
                         station_name = station.int_name
-                    itin['stations'].append({
-                        'oms_id': station.id,
-                        'name': station_name,
-                        'center': station.center
-                    })
+                    itin['stations'].append(
+                        {
+                            'oms_id': station.id,
+                            'name': station_name,
+                            'center': station.center,
+                        }
+                    )
                 if itin is not None:
                     itineraries.append(itin)
             routes[route_id] = itineraries
@@ -267,12 +298,13 @@ def write_recovery_data(path, current_data, cities):
 
     try:
         data = {
-            city_name: {_dumps_route_id(route_id): route_data
-                        for route_id, route_data in routes.items()}
+            city_name: {
+                _dumps_route_id(route_id): route_data
+                for route_id, route_data in routes.items()
+            }
             for city_name, routes in data.items()
         }
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
         logging.warning("Cannot write recovery data to '%s': %s", path, str(e))
-

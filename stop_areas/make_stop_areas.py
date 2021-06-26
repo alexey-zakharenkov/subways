@@ -54,17 +54,21 @@ class StationWrapper:
     def distance(self, other):
         """Calculate distance in meters."""
         dx = math.radians(self[0] - other['lon']) * math.cos(
-            0.5 * math.radians(self[1] + other['lat']))
+            0.5 * math.radians(self[1] + other['lat'])
+        )
         dy = math.radians(self[1] - other['lat'])
-        return 6378137 * math.sqrt(dx*dx + dy*dy)
+        return 6378137 * math.sqrt(dx * dx + dy * dy)
 
 
 def overpass_request(bbox):
     url = 'http://overpass-api.de/api/interpreter?data={}'.format(
-        urllib.parse.quote(QUERY.replace('{{bbox}}', bbox)))
+        urllib.parse.quote(QUERY.replace('{{bbox}}', bbox))
+    )
     response = urllib.request.urlopen(url, timeout=1000)
     if response.getcode() != 200:
-        raise Exception('Failed to query Overpass API: HTTP {}'.format(response.getcode()))
+        raise Exception(
+            'Failed to query Overpass API: HTTP {}'.format(response.getcode())
+        )
     reader = codecs.getreader('utf-8')
     return json.load(reader(response))['elements']
 
@@ -80,8 +84,11 @@ def add_stop_areas(src):
             stations[el_id(el)] = el
 
     for el in src:
-        if (el['type'] == 'relation' and 'tags' in el and
-                el['tags'].get('route', None) in ('subway', 'light_rail')):
+        if (
+            el['type'] == 'relation'
+            and 'tags' in el
+            and el['tags'].get('route', None) in ('subway', 'light_rail')
+        ):
             for m in el['members']:
                 st = stations.get(el_id(m), None)
                 if st and 'station' not in st['tags']:
@@ -91,7 +98,10 @@ def add_stop_areas(src):
     # Create a kd-tree out of subway stations
     stations = kdtree.create(dimensions=2)
     for el in src:
-        if 'tags' in el and el['tags'].get('station', None) in ('subway', 'light_rail'):
+        if 'tags' in el and el['tags'].get('station', None) in (
+            'subway',
+            'light_rail',
+        ):
             stations.add(StationWrapper(el))
 
     if stations.is_leaf:
@@ -105,13 +115,21 @@ def add_stop_areas(src):
             continue
         if 'station' in el['tags']:
             continue
-        if (el['tags'].get('railway', None) not in ('subway_entrance', 'platform') and
-                el['tags'].get('public_transport', None) not in ('platform', 'stop_position')):
+        if el['tags'].get('railway', None) not in (
+            'subway_entrance',
+            'platform',
+        ) and el['tags'].get('public_transport', None) not in (
+            'platform',
+            'stop_position',
+        ):
             continue
         coords = el.get('center', el)
         station = stations.search_nn((coords['lon'], coords['lat']))[0].data
         if station.distance(coords) < MAX_DISTANCE:
-            k = (station.station['id'], station.station['tags'].get('name', 'station_with_no_name'))
+            k = (
+                station.station['id'],
+                station.station['tags'].get('name', 'station_with_no_name'),
+            )
             # Disregard exits and platforms that are differently named
             if el['tags'].get('name', k[1]) == k[1]:
                 if k not in stop_areas:
@@ -120,7 +138,10 @@ def add_stop_areas(src):
 
     # Find existing stop_area relations for stations and remove these stations
     for el in src:
-        if el['type'] == 'relation' and el['tags'].get('public_transport', None) == 'stop_area':
+        if (
+            el['type'] == 'relation'
+            and el['tags'].get('public_transport', None) == 'stop_area'
+        ):
             found = False
             for m in el['members']:
                 if found:
@@ -141,18 +162,35 @@ def add_stop_areas(src):
         etree.SubElement(rel, 'tag', k='public_transport', v='stop_area')
         etree.SubElement(rel, 'tag', k='name', v=st[1])
         for m in members.values():
-            if m['tags'].get('railway', m['tags'].get('public_transport', None)) == 'platform':
+            if (
+                m['tags'].get(
+                    'railway', m['tags'].get('public_transport', None)
+                )
+                == 'platform'
+            ):
                 role = 'platform'
             elif m['tags'].get('public_transport', None) == 'stop_position':
                 role = 'stop'
             else:
                 role = ''
-            etree.SubElement(rel, 'member', ref=str(m['id']), type=m['type'], role=role)
+            etree.SubElement(
+                rel, 'member', ref=str(m['id']), type=m['type'], role=role
+            )
 
     # Add all downloaded elements
     for el in src:
         obj = etree.SubElement(root, el['type'])
-        for a in ('id', 'type', 'user', 'uid', 'version', 'changeset', 'timestamp', 'lat', 'lon'):
+        for a in (
+            'id',
+            'type',
+            'user',
+            'uid',
+            'version',
+            'changeset',
+            'timestamp',
+            'lat',
+            'lon',
+        ):
             if a in el:
                 obj.set(a, str(el[a]))
         if 'modified' in el:
@@ -162,8 +200,13 @@ def add_stop_areas(src):
                 etree.SubElement(obj, 'tag', k=k, v=v)
         if 'members' in el:
             for m in el['members']:
-                etree.SubElement(obj, 'member', ref=str(m['ref']),
-                                 type=m['type'], role=m.get('role', ''))
+                etree.SubElement(
+                    obj,
+                    'member',
+                    ref=str(m['ref']),
+                    type=m['type'],
+                    role=m.get('role', ''),
+                )
         if 'nodes' in el:
             for n in el['nodes']:
                 etree.SubElement(obj, 'nd', ref=str(n))
@@ -173,8 +216,14 @@ def add_stop_areas(src):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('Read a JSON from Overpass and output JOSM OSM XML with added stop_area relations')
-        print('Usage: {} {{<export.json>|<bbox>}} [output.osm]'.format(sys.argv[0]))
+        print(
+            'Read a JSON from Overpass and output JOSM OSM XML with added stop_area relations'
+        )
+        print(
+            'Usage: {} {{<export.json>|<bbox>}} [output.osm]'.format(
+                sys.argv[0]
+            )
+        )
         sys.exit(1)
 
     if re.match(r'^[-0-9.,]+$', sys.argv[1]):

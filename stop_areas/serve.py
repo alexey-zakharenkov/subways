@@ -18,8 +18,11 @@ def convert():
         return 'No data from overpass, sorry.'
     result = add_stop_areas(src)
     response = make_response(result)
-    response.headers['Content-Disposition'] = 'attachment; filename="stop_areas.osm"'
+    response.headers['Content-Disposition'] = (
+        'attachment; filename="stop_areas.osm"'
+    )
     return response
+
 
 if __name__ == '__main__':
     app.run()

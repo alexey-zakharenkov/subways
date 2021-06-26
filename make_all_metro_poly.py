@@ -9,12 +9,14 @@ def make_disjoint_metro_polygons():
 
     polygons = []
     for c in cities:
-        polygon = shapely.geometry.Polygon([
-            (c.bbox[1], c.bbox[0]),
-            (c.bbox[1], c.bbox[2]),
-            (c.bbox[3], c.bbox[2]),
-            (c.bbox[3], c.bbox[0]),
-        ])
+        polygon = shapely.geometry.Polygon(
+            [
+                (c.bbox[1], c.bbox[0]),
+                (c.bbox[1], c.bbox[2]),
+                (c.bbox[3], c.bbox[2]),
+                (c.bbox[3], c.bbox[0]),
+            ]
+        )
         polygons.append(polygon)
 
     union = shapely.ops.unary_union(polygons)
