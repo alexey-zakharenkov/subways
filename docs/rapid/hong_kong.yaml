@@ -1083,7 +1083,7 @@ routes:
       - 大圍 Tai Wai
       - 九龍塘 Kowloon Tong
       - 旺角東 Mong Kok East
-      - 紅磡 Hung Hom
+      - 紅磡站 Hung Hom Station
       - 羅湖 Lo Wu
       - 馬場 Racecourse
 
@@ -1709,10 +1709,21 @@ routes:
   - 
     type: subway
     ref: TML
-    name: 屯馬綫一期 Tuen Ma Line Phase 1
+    name: 港鐵屯馬綫 MTR Tuen Ma Line
     colour: '#923011'
-    station_count: 12
+    station_count: 23
     stations: 
+      - 屯門 Tuen Mun
+      - 兆康 Siu Hong
+      - 天水圍 Tin Shui Wai
+      - 朗屏 Long Ping
+      - 元朗 Yuen Long
+      - 錦上路 Kam Sheung Road
+      - 荃灣西 Tsuen Wan West
+      - 美孚 Mei Foo
+      - 南昌 Nam Cheong
+      - 柯士甸 Austin
+      - 尖東 East Tsim Sha Tsui
       - 啟德 Kai Tak
       - 鑽石山 Diamond Hill
       - 顯徑 Hin Keng
@@ -1728,6 +1739,17 @@ routes:
 
     itineraries: 
       r6102298: 
+        - 屯門 Tuen Mun (w40430283)
+        - 兆康 Siu Hong (w41178206)
+        - 天水圍 Tin Shui Wai (w66467188)
+        - 朗屏 Long Ping (w230683401)
+        - 元朗 Yuen Long (w41707454)
+        - 錦上路 Kam Sheung Road (w192243898)
+        - 荃灣西 Tsuen Wan West (w40840437)
+        - 美孚 Mei Foo (w355013183)
+        - 南昌 Nam Cheong (n6605772868)
+        - 柯士甸 Austin (n6610744414)
+        - 尖東 East Tsim Sha Tsui (w724130074)
         - 啟德 Kai Tak (w772168466)
         - 鑽石山 Diamond Hill (r10711433)
         - 顯徑 Hin Keng (w227327486)
@@ -1754,6 +1776,17 @@ routes:
         - 顯徑 Hin Keng (w227327486)
         - 鑽石山 Diamond Hill (r10711433)
         - 啟德 Kai Tak (w772168466)
+        - 尖東 East Tsim Sha Tsui (w724130074)
+        - 柯士甸 Austin (n6610744414)
+        - 南昌 Nam Cheong (n6605772868)
+        - 美孚 Mei Foo (w355013183)
+        - 荃灣西 Tsuen Wan West (w40840437)
+        - 錦上路 Kam Sheung Road (w192243898)
+        - 元朗 Yuen Long (w41707454)
+        - 朗屏 Long Ping (w230683401)
+        - 天水圍 Tin Shui Wai (w66467188)
+        - 兆康 Siu Hong (w41178206)
+        - 屯門 Tuen Mun (w40430283)
 
 
   - 
@@ -1825,7 +1858,7 @@ routes:
     colour: '#a3238f'
     station_count: 12
     stations: 
-      - 紅磡 Hung Hom
+      - 紅磡站 Hung Hom Station
       - 尖東 East Tsim Sha Tsui
       - 柯士甸 Austin
       - 南昌 Nam Cheong

@@ -20,6 +20,7 @@ stations:
   - الصفا Al Safa (n6588569789)
   - الطاقة Energy (n6588516079)
   - الغبيبة (n6584833629)
+  - الفرجان Al Furjan (n5312499190)
   - القصيص Al Qusais (n6584833641)
   - القيادة (n6581397381)
   - المركز التجاري العالمي (n6588569798)
@@ -40,6 +41,7 @@ stations:
   - دبي مارينا Dubai Marina (n6588516083)
   - دبي مول / برج خليفة Burj Khalifa/Dubai Mall (n604304348)
   - ديرة سيتي سنتر Deira City Centre (n6588569799)
+  - ديسكفدي جاردنز Discovery Gardens (n5312499192)
   - ذا بالم جيت واي The Palm Gateway (n6474748998)
   - سوق الذهب (n6584833627)
   - شرف دي جي (n6584833631)
@@ -60,6 +62,9 @@ transfers:
   - 
     - الاتحاد (r7661339)
     - الاتحاد (r7661340)
+  - 
+    - جبل علي (r12820283)
+    - جبل علي (r9746207)
 
 routes: 
   - 
@@ -260,6 +265,29 @@ routes:
         - 'المطار- مبنى رقم 3 Airport Terminal 3 (n2017967833)'
         - طيران الإمارات Emirates (n6588569791)
         - الراشدية Rashidiya (n6588516078)
+
+
+  - 
+    type: subway
+    ref: Route 2020
+    name: Route 2020
+    colour: '#cc0000'
+    station_count: 3
+    stations: 
+      - Al Furjan
+      - ديسكفدي جاردنز
+      - جبل علي
+
+    itineraries: 
+      r12820284: 
+        - الفرجان Al Furjan (n5312499190)
+        - ديسكفدي جاردنز Discovery Gardens (n5312499192)
+        - جبل علي Jabal Ali (n8625117828)
+
+      r12820285: 
+        - جبل علي Jabal Ali (n8625117828)
+        - ديسكفدي جاردنز Discovery Gardens (n5312499192)
+        - الفرجان Al Furjan (n5312499190)
 
 
 
