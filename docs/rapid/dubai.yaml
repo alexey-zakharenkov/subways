@@ -5,12 +5,14 @@ stations:
   - أبو هيل (n6581397380)
   - أكوافنتشر أتلانتس Atlantis Aquaventure (n6474748995)
   - أم الشيف Umm Al Sheif (n6588569788)
+  - إكسبو 2020 Expo 2020 (n8882647591)
   - ابن بطوطة Ibn Battuta (n6588516080)
   - اتصالات Etisalat (n6472748545)
   - الاتحاد (n6584833623)
   - الاستاد Stadium (n6581397379)
   - الجافلية (n6588569797)
   - الجداف (n6584833637)
+  - الحدائق The Gardens (n8641061625)
   - الخليج التجاري Business Bay (n2418678459)
   - الخور (n6584833640)
   - الخيل Al Khail (n6588516084)
@@ -48,6 +50,7 @@ stations:
   - صلاح الدين Salah Al Din (n6584833624)
   - طيران الإمارات Emirates (n6588569791)
   - عود ميثاء (n6584833633)
+  - مجمع دبي للاستثمار Dubai Investment Park (n8660767717)
   - مدينة دبي الطبية (n6584833635)
   - مدينة دبي للإنترنت Dubai Internet City (n6588569785)
   - مركز الإمارات العربية المتحدة للصرافة UAE Exchange (n6588381694)
@@ -197,12 +200,12 @@ routes:
       - مدينة دبي للإنترنت
       - الخيل
       - دبي مارينا
+      - مركز دبي للسلع المتعددة DMCC
       - جبل علي
       - ابن بطوطة
       - الطاقة
       - دانوب
       - UAE Exchange
-      - مركز دبي للسلع المتعددة DMCC
 
     itineraries: 
       r420297: 
@@ -229,6 +232,7 @@ routes:
         - مدينة دبي للإنترنت Dubai Internet City (n6588569785)
         - الخيل Al Khail (n6588516084)
         - دبي مارينا Dubai Marina (n6588516083)
+        - مركز دبي للسلع المتعددة DMCC (n8641335749)
         - جبل علي Jabal Ali (n8625117828)
         - ابن بطوطة Ibn Battuta (n6588516080)
         - الطاقة Energy (n6588516079)
@@ -272,22 +276,31 @@ routes:
     ref: Route 2020
     name: Route 2020
     colour: '#cc0000'
-    station_count: 3
+    station_count: 6
     stations: 
+      - إكسبو 2020
+      - Dubai Investment Park
       - Al Furjan
       - ديسكفدي جاردنز
+      - الحدائق
       - جبل علي
 
     itineraries: 
       r12820284: 
+        - إكسبو 2020 Expo 2020 (n8882647591)
+        - مجمع دبي للاستثمار Dubai Investment Park (n8660767717)
         - الفرجان Al Furjan (n5312499190)
         - ديسكفدي جاردنز Discovery Gardens (n5312499192)
+        - الحدائق The Gardens (n8641061625)
         - جبل علي Jabal Ali (n8625117828)
 
       r12820285: 
         - جبل علي Jabal Ali (n8625117828)
+        - الحدائق The Gardens (n8641061625)
         - ديسكفدي جاردنز Discovery Gardens (n5312499192)
         - الفرجان Al Furjan (n5312499190)
+        - مجمع دبي للاستثمار Dubai Investment Park (n8660767717)
+        - إكسبو 2020 Expo 2020 (n8882647591)
 
 
 

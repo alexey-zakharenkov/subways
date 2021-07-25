@@ -47,6 +47,7 @@ stations:
   - Garibaldi FS (n2344518511)
   - Garibaldi FS (n3935647345)
   - Gerusalemme (n674079899)
+  - Gessate (n8895198051)
   - Gioia (n91567648)
   - Gorgonzola (n257553064)
   - Gorla (n270443358)
@@ -85,7 +86,7 @@ stations:
   - QT8 (n344550581)
   - Repubblica (n2344518514)
   - Rho-Fiera (n344552615)
-  - Rogoredo (n340059424)
+  - Rogoredo (n8930319218)
   - Romolo (n1759883432)
   - Rovereto (n295548092)
   - San Babila (n307809391)
@@ -137,6 +138,19 @@ transfers:
     - Zara M5 (r7715401)
 
 routes: 
+  - 
+    type: light_rail
+    ref: 179
+    name: 179 Limbiate Mombello
+    station_count: 0
+    stations: 
+
+    itineraries: 
+      r936654: 
+
+      r936655: 
+
+
   - 
     type: subway
     ref: M1
@@ -314,7 +328,7 @@ routes:
     ref: M2
     name: Linea M2
     colour: '#82bb32'
-    station_count: 34
+    station_count: 35
     stations: 
       - Abbiategrasso
       - Famagosta
@@ -345,6 +359,7 @@ routes:
       - Villa Pompea
       - Gorgonzola
       - Cascina Antonietta
+      - Gessate
       - Cologno Sud
       - Cologno Centro
       - Cologno Nord
@@ -382,8 +397,10 @@ routes:
         - Villa Pompea (n4031014791)
         - Gorgonzola (n257553064)
         - Cascina Antonietta (n4066582557)
+        - Gessate (n8895198051)
 
       r919291: 
+        - Gessate (n8895198051)
         - Cascina Antonietta (n4066582557)
         - Gorgonzola (n257553064)
         - Villa Pompea (n4031014791)
@@ -548,7 +565,7 @@ routes:
     itineraries: 
       r919311: 
         - San Donato (n318013353)
-        - Rogoredo (n340059424)
+        - Rogoredo (n8930319218)
         - Porto di Mare (n340060545)
         - Corvetto (n340061063)
         - Brenta (n340474842)
@@ -589,7 +606,7 @@ routes:
         - Brenta (n340474842)
         - Corvetto (n340061063)
         - Porto di Mare (n340060545)
-        - Rogoredo (n340059424)
+        - Rogoredo (n8930319218)
         - San Donato (n318013353)
 
 

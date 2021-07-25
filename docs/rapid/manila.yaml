@@ -2,6 +2,8 @@
 stations: 
   - 5th Avenue (w288086563)
   - Abad Santos (w288085512)
+  - Anonas (w188169786)
+  - Antipolo (w576938325)
   - 'Araneta - Cubao (w127506881)'
   - 'Araneta Center - Cubao (w184582280)'
   - Ayala (w27663063)
@@ -25,18 +27,22 @@ stations:
   - Legarda (w28788659)
   - Libertad (w290088413)
   - Magallanes (w222628890)
+  - Marikina (w513224845)
   - North Avenue (w222628892)
   - Ortigas (w60194145)
   - Pedro Gil (w288126519)
   - Pureza (w188168854)
+  - Quezon Avenue (r12200115)
   - Quirino (w288126517)
   - R. Papa (w288087278)
   - Recto (w179240108)
+  - Santolan (w30411347)
   - Santolan (w95496202)
   - Shaw Boulevard (w112315687)
   - Taft Avenue (w222628889)
   - Tayuman (w288010747)
   - United Nations (w288091194)
+  - V. Mapa (r12480558)
   - Vito Cruz (w288126518)
   - Yamaha Monumento (w288086841)
 
@@ -168,24 +174,34 @@ routes:
     ref: 2
     name: LRT Line 2
     colour: '#800080'
-    station_count: 8
+    station_count: 13
     stations: 
+      - Antipolo
+      - Marikina
+      - Santolan
       - Katipunan
+      - Anonas
       - 'Araneta Center - Cubao'
       - 'Betty Go - Belmonte'
       - Gilmore
       - J. Ruiz
+      - V. Mapa
       - Pureza
       - Legarda
       - Recto
 
     itineraries: 
       r110410: 
+        - Antipolo (w576938325)
+        - Marikina (w513224845)
+        - Santolan (w30411347)
         - Katipunan (n5377269277)
+        - Anonas (w188169786)
         - 'Araneta Center - Cubao (w184582280)'
         - Betty Go-Belmonte (w113358959)
         - Gilmore (w188169761)
         - J. Ruiz (w188168853)
+        - V. Mapa (r12480558)
         - Pureza (w188168854)
         - Legarda (w28788659)
         - Recto (w179240108)
@@ -194,11 +210,16 @@ routes:
         - Recto (w179240108)
         - Legarda (w28788659)
         - Pureza (w188168854)
+        - V. Mapa (r12480558)
         - J. Ruiz (w188168853)
         - Gilmore (w188169761)
         - Betty Go-Belmonte (w113358959)
         - 'Araneta Center - Cubao (w184582280)'
+        - Anonas (w188169786)
         - Katipunan (n5377269277)
+        - Santolan (w30411347)
+        - Marikina (w513224845)
+        - Antipolo (w576938325)
 
 
   - 
@@ -206,9 +227,10 @@ routes:
     ref: 3
     name: MRT Line 3
     colour: '#ffcc00'
-    station_count: 12
+    station_count: 13
     stations: 
       - North Avenue
+      - Quezon Avenue
       - GMA Kamuning
       - 'Araneta - Cubao'
       - Santolan
@@ -224,6 +246,7 @@ routes:
     itineraries: 
       r109159: 
         - North Avenue (w222628892)
+        - Quezon Avenue (r12200115)
         - GMA Kamuning (w30262758)
         - 'Araneta - Cubao (w127506881)'
         - Santolan (w95496202)
@@ -248,6 +271,7 @@ routes:
         - Santolan (w95496202)
         - 'Araneta - Cubao (w127506881)'
         - GMA Kamuning (w30262758)
+        - Quezon Avenue (r12200115)
         - North Avenue (w222628892)
 
 

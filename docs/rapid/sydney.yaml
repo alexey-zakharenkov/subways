@@ -121,7 +121,6 @@ stations:
   - Martin Place (n6601585113)
   - Mascot (n6560219244)
   - Meadowbank (n6544860724)
-  - Menangle Park (n792201303)
   - Merrylands (n1886255310)
   - Milsons Point (n1829323375)
   - Minto (n1886255311)
@@ -475,27 +474,10 @@ routes:
 
   - 
     type: train
-    ref: Southern Highlands Line
-    name: Southern Highlands Line
-    station_count: 3
-    stations: 
-      - Campbelltown
-      - Macarthur
-      - Menangle Park
-
-    itineraries: 
-      r11769385: 
-        - Campbelltown (n1886255290)
-        - Macarthur (n1886255308)
-        - Menangle Park (n792201303)
-
-
-  - 
-    type: train
     ref: T1
     name: North Shore & Western Line
     colour: '#f99d1c'
-    station_count: 55
+    station_count: 56
     stations: 
       - Emu Plains
       - Penrith
@@ -552,6 +534,7 @@ routes:
       - Schofields railway station
       - Quakers Hill
       - Marayong
+      - Redfern
 
     itineraries: 
       r8406989: 
@@ -675,6 +658,7 @@ routes:
         - Wynyard (n1886265379)
         - Town Hall (n1763901273)
         - Central (w34891023)
+        - Redfern (w585998416)
         - Strathfield (n618594832)
         - Lidcombe (n19164434)
         - Auburn (n60285987)
@@ -722,6 +706,7 @@ routes:
         - Wynyard (n1886265379)
         - Town Hall (n1763901273)
         - Central (w34891023)
+        - Redfern (w585998416)
         - Strathfield (n618594832)
         - Lidcombe (n19164434)
         - Auburn (n60285987)
@@ -1354,13 +1339,14 @@ routes:
     ref: T8
     name: Airport & South Line
     colour: '#00954c'
-    station_count: 32
+    station_count: 33
     stations: 
       - Town Hall
       - Wynyard
       - Circular Quay
       - St James
       - Museum
+      - Redfern
       - St Peters
       - Sydenham
       - Turrella
@@ -1396,6 +1382,7 @@ routes:
         - Circular Quay (n1692720118)
         - St James (n1763901272)
         - Museum (n6571334824)
+        - Redfern (w585998416)
         - St Peters (n1853644076)
         - Sydenham (n6571195040)
         - Turrella (n1886255327)
@@ -1514,7 +1501,7 @@ routes:
     ref: T9
     name: Northern Line
     colour: '#d11f2f'
-    station_count: 30
+    station_count: 31
     stations: 
       - Hornsby
       - Normanhurst
@@ -1546,6 +1533,7 @@ routes:
       - Lindfield
       - Killara
       - Gordon
+      - Redfern
 
     itineraries: 
       r3165664: 
@@ -1595,6 +1583,7 @@ routes:
         - Wynyard (n1886265379)
         - Town Hall (n1763901273)
         - Central (w34891023)
+        - Redfern (w585998416)
         - Burwood (n630744637)
         - Strathfield (n618594832)
         - North Strathfield (n6553012245)

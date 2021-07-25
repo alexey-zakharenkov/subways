@@ -10,6 +10,7 @@ stations:
   - CUCEI (w537525845)
   - Central de Autobuses (w838853823)
   - Circunvalación Country (w765854479)
+  - Cristobal de Oñate (w949863012)
   - Dermatologico (w839533949)
   - Division del Norte (w839533947)
   - España (w839219551)
@@ -19,6 +20,7 @@ stations:
   - Isla Raza (w839219553)
   - Juarez (w839533943)
   - Juarez (w848849276)
+  - La Aurora (w949863009)
   - La Normal (CETRAM) (w838853832)
   - Lazaro Cardenas (w838853824)
   - Mercado del Mar (w765854476)
@@ -35,6 +37,8 @@ stations:
   - Refugio (w839533944)
   - Revolucion (w948125730)
   - Rio Nilo (w838853826)
+  - San Andres (w949863011)
+  - San Jacinto (w949863010)
   - San Juan de Dios (n4591374873)
   - Santuario Martires de Cristo Rey (w839219550)
   - Tetlan (w949863008)
@@ -132,13 +136,17 @@ routes:
     ref: TL-2
     name: Tren Ligero Línea 2
     colour: '#008000'
-    station_count: 6
+    station_count: 10
     stations: 
       - Estacion Juarez (Line 2)
       - Plaza Universidad
       - San Juan de Dios
       - Belisario Dominguez
       - Oblatos
+      - Cristobal de Oñate
+      - San Andrés
+      - San Jacinto
+      - La Aurora
       - Tetlán
 
     itineraries: 
@@ -148,10 +156,18 @@ routes:
         - San Juan de Dios (n4591374873)
         - Belisario Dominguez (n4591386801)
         - Oblatos (n4591386806)
+        - Cristobal de Oñate (w949863012)
+        - San Andres (w949863011)
+        - San Jacinto (w949863010)
+        - La Aurora (w949863009)
         - Tetlan (w949863008)
 
       r6851906: 
         - Tetlan (w949863008)
+        - La Aurora (w949863009)
+        - San Jacinto (w949863010)
+        - San Andres (w949863011)
+        - Cristobal de Oñate (w949863012)
         - Oblatos (n4591386806)
         - Belisario Dominguez (n4591386801)
         - San Juan de Dios (n4591374873)

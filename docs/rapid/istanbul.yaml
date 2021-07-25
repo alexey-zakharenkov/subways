@@ -229,58 +229,10 @@ routes:
 
   - 
     type: subway
-    ref: M1A
-    name: 'M1A: Havalimanı - Yenikapı'
-    colour: '#e32726'
-    station_count: 18
-    stations: 
-      - Atatürk Havalimanı
-      - DTM-İstanbul Fuar Merkezi
-      - Yenibosna
-      - Ataköy-Şirinevler
-      - Bahçelievler
-      - Bakırköy-İncirli
-      - Zeytinburnu
-      - Merter
-      - YTÜ-Davutpaşa
-      - Terazidere
-      - Otogar
-      - Kocatepe
-      - Sağmalcılar
-      - Bayrampaşa-Maltepe
-      - Topkapı Ulubatlı
-      - 'Emniyet - Fatih'
-      - Aksaray
-      - Yenikapı (M1)
-
-    itineraries: 
-      r7719077: 
-        - Atatürk Havalimanı (n7722103263)
-        - DTM-İstanbul Fuar Merkezi (n7722103262)
-        - Yenibosna (n7722103261)
-        - Ataköy-Şirinevler (n7722103260)
-        - Bahçelievler (n7722103259)
-        - Bakırköy-İncirli (n6763426870)
-        - Zeytinburnu (n7722103257)
-        - Merter (n7722103258)
-        - 'Davutpaşa - YTÜ (n6763426869)'
-        - Terazidere (n7722103256)
-        - Otogar (n7722103247)
-        - Kocatepe (n7722103248)
-        - Sağmalcılar (n7722103249)
-        - Bayrampaşa-Maltepe (n7722103250)
-        - Topkapı Ulubatlı (n7722103251)
-        - 'Emniyet - Fatih (n1302508988)'
-        - Aksaray (n7722103254)
-        - Yenikapı (n7722103255)
-
-
-  - 
-    type: subway
-    ref: M1B
+    ref: M1
     name: M1 Metro Hattı
     colour: '#e32726'
-    station_count: 13
+    station_count: 23
     stations: 
       - Yenikapı (M1)
       - Aksaray
@@ -290,6 +242,16 @@ routes:
       - Sağmalcılar
       - Kocatepe
       - Otogar
+      - Terazidere
+      - YTÜ-Davutpaşa
+      - Merter
+      - Zeytinburnu
+      - Bakırköy-İncirli
+      - Bahçelievler
+      - Ataköy-Şirinevler
+      - Yenibosna
+      - DTM-İstanbul Fuar Merkezi
+      - Atatürk Havalimanı
       - Esenler
       - Menderes
       - Üçyüzlü
@@ -297,6 +259,26 @@ routes:
       - Kirazlı (M1)
 
     itineraries: 
+      r305496: 
+        - Yenikapı (n7722103255)
+        - Aksaray (n7722103254)
+        - 'Emniyet - Fatih (n1302508988)'
+        - Topkapı Ulubatlı (n7722103251)
+        - Bayrampaşa-Maltepe (n7722103250)
+        - Sağmalcılar (n7722103249)
+        - Kocatepe (n7722103248)
+        - Otogar (n7722103247)
+        - Terazidere (n7722103256)
+        - 'Davutpaşa - YTÜ (n6763426869)'
+        - Merter (n7722103258)
+        - Zeytinburnu (n7722103257)
+        - Bakırköy-İncirli (n6763426870)
+        - Bahçelievler (n7722103259)
+        - Ataköy-Şirinevler (n7722103260)
+        - Yenibosna (n7722103261)
+        - DTM-İstanbul Fuar Merkezi (n7722103262)
+        - Atatürk Havalimanı (n7722103263)
+
       r4289712: 
         - Yenikapı (n7722103255)
         - Aksaray (n7722103254)
@@ -318,6 +300,26 @@ routes:
         - Üçyüzlü (n7722103244)
         - Menderes (n7722103245)
         - Esenler (n7722103246)
+        - Otogar (n7722103247)
+        - Kocatepe (n7722103248)
+        - Sağmalcılar (n7722103249)
+        - Bayrampaşa-Maltepe (n7722103250)
+        - Topkapı Ulubatlı (n7722103251)
+        - 'Emniyet - Fatih (n1302508988)'
+        - Aksaray (n7722103254)
+        - Yenikapı (n7722103255)
+
+      r7719077: 
+        - Atatürk Havalimanı (n7722103263)
+        - DTM-İstanbul Fuar Merkezi (n7722103262)
+        - Yenibosna (n7722103261)
+        - Ataköy-Şirinevler (n7722103260)
+        - Bahçelievler (n7722103259)
+        - Bakırköy-İncirli (n6763426870)
+        - Zeytinburnu (n7722103257)
+        - Merter (n7722103258)
+        - 'Davutpaşa - YTÜ (n6763426869)'
+        - Terazidere (n7722103256)
         - Otogar (n7722103247)
         - Kocatepe (n7722103248)
         - Sağmalcılar (n7722103249)
@@ -793,6 +795,7 @@ routes:
         - Ziya Gökalp (n3219831111)
         - İkitelli Sanayi (n3243585073)
         - MASKO (n8768427077)
+        - Bahariye (n8768427076)
 
 
   - 
