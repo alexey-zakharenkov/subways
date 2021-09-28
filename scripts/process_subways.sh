@@ -31,6 +31,7 @@ Environment variable reference:
   - PLANET: path to a local or remote o5m or pbf source file (the entire planet or an extract)
   - PLANET_METRO: path to a local o5m file with extract of cities having metro
     It's used instead of \$PLANET if exists otherwise it's created first
+  - PLANET_UPDATE_SERVER: server to get replication data from. Defaults to https://planet.openstreetmap.org/replication/
   - CITY: name of a city/country to process
   - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
   - POLY: *.poly file with [multi]polygon comprising cities with metro
@@ -185,11 +186,15 @@ fi
 if [ -z "${SKIP_PLANET_UPDATE-}" -a -n "${NEED_FILTER-}" ]; then
   check_osmctools
   check_poly
+  PLANET_UPDATE_SERVER=${PLANET_UPDATE_SERVER:-https://planet.openstreetmap.org/replication/}
   PLANET_METRO_ABS="$(cd "$(dirname "$PLANET_METRO")"; pwd)/$(basename "$PLANET_METRO")"
+  mkdir -p $TMPDIR/osmupdate_temp/
   pushd "$OSMCTOOLS" # osmupdate requires osmconvert in a current directory
   OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} \
                                  ${POLY:+"-B=$POLY"} "$PLANET_METRO_ABS" \
-                                 "$PLANET_METRO_ABS.new.o5m" 2>&1)
+                                 --base-url=$PLANET_UPDATE_SERVER \
+                                 --tempfiles=$TMPDIR/osmupdate_temp/temp \
+                                 "$PLANET_METRO_ABS.new.o5m" 2>&1 || :)
   if [ -n "$OSMUPDATE_ERRORS" ]; then
     echo "osmupdate failed: $OSMUPDATE_ERRORS"
     exit 7
@@ -201,6 +206,7 @@ fi
 # Filtering planet-metro
 
 if [ -n "${NEED_FILTER-}" ]; then
+  check_osmctools
   QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
   QNODES="railway=station station=subway =light_rail =monorail railway=subway_entrance subway=yes light_rail=yes monorail=yes train=yes"
   "$OSMCTOOLS/osmfilter" "$PLANET_METRO" \
