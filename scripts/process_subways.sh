@@ -171,7 +171,9 @@ if [ -n "${NEED_FILTER-}" ]; then
       exit 6
     fi
 
+    mkdir -p $TMPDIR/osmconvert_temp/
     "$OSMCTOOLS"/osmconvert "$PLANET" \
+        -t=$TMPDIR/osmconvert_temp/temp \
         ${BBOX:+"-b=$BBOX"} ${POLY:+"-B=$POLY"} -o="$PLANET_METRO"
   fi
 fi
