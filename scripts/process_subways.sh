@@ -191,8 +191,9 @@ if [ -z "${SKIP_PLANET_UPDATE-}" -a -n "${NEED_FILTER-}" ]; then
   PLANET_UPDATE_SERVER=${PLANET_UPDATE_SERVER:-https://planet.openstreetmap.org/replication/}
   PLANET_METRO_ABS="$(cd "$(dirname "$PLANET_METRO")"; pwd)/$(basename "$PLANET_METRO")"
   mkdir -p $TMPDIR/osmupdate_temp/
-  pushd "$OSMCTOOLS" # osmupdate requires osmconvert in a current directory
-  OSMUPDATE_ERRORS=$(./osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} \
+  pushd $TMPDIR/osmupdate_temp/
+  export PATH="$PATH:$OSMCTOOLS"
+  OSMUPDATE_ERRORS=$(osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} \
                                  ${POLY:+"-B=$POLY"} "$PLANET_METRO_ABS" \
                                  --base-url=$PLANET_UPDATE_SERVER \
                                  --tempfiles=$TMPDIR/osmupdate_temp/temp \
@@ -209,6 +210,7 @@ fi
 
 if [ -n "${NEED_FILTER-}" ]; then
   check_osmctools
+  mkdir -p $TMPDIR/osmfilter_temp/
   QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
   QNODES="railway=station station=subway =light_rail =monorail railway=subway_entrance subway=yes light_rail=yes monorail=yes train=yes"
   "$OSMCTOOLS/osmfilter" "$PLANET_METRO" \
@@ -216,6 +218,7 @@ if [ -n "${NEED_FILTER-}" ]; then
       --keep-relations="$QRELATIONS" \
       --keep-nodes="$QNODES" \
       --drop-author \
+      -t=$TMPDIR/osmfilter_temp/temp \
       -o="$FILTERED_DATA"
 fi
 
