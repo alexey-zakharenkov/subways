@@ -82,8 +82,10 @@ if you allow the `process_subway.py` to fetch data from Overpass API. Here are t
 Summary information about all metro networks that are monitored is gathered in the
 [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k).
 
-Not so regular updates of validation results are available at
-[this website](https://alexey-zakharenkov.github.io/subways/rapid/).
+Regular updates of validation results are available at
+[this website](https://maps.mail.ru/osm/tools/subways/latest/).
+You can find more info about this validator instance in
+[OSM Wiki](https://wiki.openstreetmap.org/wiki/Quality_assurance#subway-preprocessor).
 
 
 ## Adding Stop Areas To OSM

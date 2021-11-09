@@ -121,7 +121,12 @@ INDEX_HEADER = '''
 <body>
 <main>
 <h1>Subway Validation Results</h1>
-<p>Total good metro networks: {good_cities} of {total_cities}.</p>
+<p><b>{good_cities}</b> of <b>{total_cities}</b> networks validated without errors.
+To make a network validate successfully please follow the
+<a href="https://wiki.openstreetmap.org/wiki/Metro_Mapping">metro mapping instructions</a>.
+Commit your changes to the OSM and then check back to the updated validation results after the next validation cycle, please.
+See <a href="https://wiki.openstreetmap.org/wiki/Quality_assurance#subway-preprocessor">the validator instance&#0040;s&#0041; description</a>
+for the schedule and capabilities.</p>
 <p><a href="render.html">View networks on a map</a></p>
 <table cellspacing="3" cellpadding="2" style="margin-bottom: 1em;">
 '''.replace('(s)', STYLE)
@@ -172,7 +177,7 @@ INDEX_COUNTRY = '''
 INDEX_FOOTER = '''
 </table>
 </main>
-<footer>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on {date}.
+<footer>Produced by <a href="https://github.com/alexey-zakharenkov/subways">Subway Preprocessor</a> on {date}.
 See <a href="{google}">this spreadsheet</a> for the reference metro statistics and
 <a href="https://en.wikipedia.org/wiki/List_of_metro_systems#List">this wiki page</a> for a list
 of all metro systems.</footer>
@@ -253,7 +258,7 @@ COUNTRY_CITY = '''
 COUNTRY_FOOTER = '''
 </table>
 </main>
-<footer>Produced by <a href="https://github.com/mapsme/subways">Subway Preprocessor</a> on {date}.</footer>
+<footer>Produced by <a href="https://github.com/alexey-zakharenkov/subways">Subway Preprocessor</a> on {date}.</footer>
 </body>
 </html>
 '''

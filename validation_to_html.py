@@ -7,8 +7,6 @@ import json
 from subway_structure import SPREADSHEET_ID
 from v2h_templates import *
 
-date = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
-
 
 class CityData:
     def __init__(self, city=None):
@@ -157,7 +155,7 @@ for c in data.values():
 world = sum(continents.values(), CityData())
 
 overground = 'traml_expected' in next(iter(data.values())).data
-date = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
+date = datetime.datetime.utcnow().strftime('%d.%m.%Y %H:%M UTC')
 path = '.' if len(sys.argv) < 3 else sys.argv[2]
 index = open(os.path.join(path, 'index.html'), 'w', encoding='utf-8')
 index.write(tmpl(INDEX_HEADER, world))
