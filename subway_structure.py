@@ -965,11 +965,7 @@ class Route:
                         ),
                         relation,
                     )
-        if not self.stops:
-            city.error('Route has no stops', relation)
-        elif len(self.stops) == 1:
-            city.error('Route has only one stop', relation)
-        else:
+        if len(self.stops) > 1:
             self.is_circular = (
                 self.stops[0].stoparea == self.stops[-1].stoparea
             )
@@ -1552,6 +1548,13 @@ class City:
                         continue
 
                 route = Route(el, self, master)
+                if not route.stops:
+                    self.warn('Route has no stops', el)
+                    continue
+                elif len(route.stops) == 1:
+                    self.warn('Route has only one stop', el)
+                    continue
+
                 k = el_id(master) if master else route.ref
                 if k not in self.routes:
                     self.routes[k] = RouteMaster(master)
