@@ -1,4 +1,5 @@
 import csv
+import itertools
 import logging
 import math
 import urllib.parse
@@ -1378,7 +1379,7 @@ class City:
 
         self.elements = {}  # Dict el_id → el
         self.stations = defaultdict(list)  # Dict el_id → list of StopAreas
-        self.routes = {}  # Dict route_ref → route
+        self.routes = {}  # Dict route_master_ref → RouteMaster
         self.masters = {}  # Dict el_id of route → route_master
         self.stop_areas = defaultdict(
             list
@@ -1715,6 +1716,18 @@ class City:
                 if t not in have_return:
                     self.notice('Route does not have a return direction', rel)
 
+    def validate_route_refs(self):
+        master_refs = sorted(m.ref for m in self.routes.values())
+        for ref, group in itertools.groupby(master_refs):
+            if len(list(group)) > 1:
+                # This can occur if some routes with some ref belong to
+                # a route_master, but other with the same ref doesn't.
+                self.error("Route masters {} have the same ref".format(
+                    ', '.join(
+                        m.id for m in self.routes.values() if m.ref == ref
+                    )
+                ))
+
     def validate_lines(self):
         self.found_light_lines = len(
             [x for x in self.routes.values() if x.mode != 'subway']
@@ -1780,6 +1793,8 @@ class City:
             )
         self.count_unused_entrances()
         self.found_interchanges = len(self.transfers)
+
+        self.validate_route_refs()
 
         if self.overground:
             self.validate_overground_lines()
