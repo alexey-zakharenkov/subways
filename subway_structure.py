@@ -534,10 +534,10 @@ class RouteStop:
             else:
                 if role != 'platform' and 'stop' not in role:
                     city.warn(
-                        "Platform with invalid role '{}' in a route".format(
-                            role
+                        "Platform \"{}\" ({}) with invalid role '{}' in route".format(
+                            el['tags'].get('name', ''), el_id(el), role,
                         ),
-                        el,
+                        relation,
                     )
                 multiple_check = self.seen_platform
                 self.seen_platform_entry = True
