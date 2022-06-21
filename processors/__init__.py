@@ -1,2 +1,2 @@
-# Here you can change the processor
-from . import mapsme as processor
+# Import only those processors (modules) you want to use
+from . import mapsme, gtfs

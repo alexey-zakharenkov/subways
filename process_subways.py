@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import inspect
 import json
 import logging
 import os
@@ -8,7 +9,9 @@ import sys
 import time
 import urllib.parse
 import urllib.request
-from processors import processor
+
+import processors
+
 from subway_io import (
     dump_yaml,
     load_xml,
@@ -214,12 +217,19 @@ if __name__ == '__main__':
         type=argparse.FileType('w', encoding='utf-8'),
         help='Validation JSON file name',
     )
-    parser.add_argument(
-        '-o',
-        '--output',
-        type=argparse.FileType('w', encoding='utf-8'),
-        help='Processed metro systems output',
-    )
+
+    for processor_name, processor in inspect.getmembers(
+            processors, inspect.ismodule
+    ):
+        if not processor_name.startswith("_"):
+            parser.add_argument(
+                f'--output-{processor_name}',
+                help=(
+                    'Processed metro systems output filename '
+                    f'in {processor_name.upper()} format'
+                ),
+            )
+
     parser.add_argument('--cache', help='Cache file name for processed data')
     parser.add_argument(
         '-r', '--recovery-path', help='Cache file name for error recovery'
@@ -393,10 +403,13 @@ if __name__ == '__main__':
             res.append(v)
         json.dump(res, options.log, indent=2, ensure_ascii=False)
 
-    if options.output:
-        json.dump(
-            processor.process(cities, transfers, options.cache),
-            options.output,
-            indent=1,
-            ensure_ascii=False,
-        )
+    for processor_name, processor in inspect.getmembers(
+            processors, inspect.ismodule
+    ):
+        option_name = f"output_{processor_name}"
+
+        if not hasattr(options, option_name):
+            continue
+
+        filename = getattr(options, option_name)
+        processor.process(cities, transfers, filename, options.cache)

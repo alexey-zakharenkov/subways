@@ -40,6 +40,7 @@ Environment variable reference:
   - SKIP_FILTERING: skip filtering railway data. Any non-empty string is True
   - FILTERED_DATA: path to filtered data. Defaults to \$TMPDIR/subways.osm
   - MAPSME: file name for maps.me json output
+  - GTFS: file name for GTFS output
   - DUMP: directory/file name to dump YAML city data. Do not set to omit dump
   - GEOJSON: directory/file name to dump GeoJSON data. Do not set to omit dump
   - ELEMENTS_CACHE: file name to elements cache. Allows OSM xml processing phase
@@ -234,7 +235,8 @@ fi
 VALIDATION="$TMPDIR/validation.json"
 "$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
-    ${MAPSME:+-o "$MAPSME"} \
+    ${MAPSME:+--output-mapsme "$MAPSME"} \
+    ${GTFS:+--output-gtfs "$GTFS"} \
     ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"} \
     ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} \
     ${CITY_CACHE:+--cache "$CITY_CACHE"} \

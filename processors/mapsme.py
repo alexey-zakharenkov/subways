@@ -1,7 +1,16 @@
 import json
 import os
 import logging
+
 from collections import defaultdict
+
+from ._common import (
+    DEFAULT_INTERVAL,
+    format_colour,
+    KMPH_TO_MPS,
+    SPEED_ON_TRANSFER,
+    TRANSFER_PENALTY,
+)
 from subway_structure import (
     distance,
     el_center,
@@ -12,12 +21,9 @@ from subway_structure import (
 
 OSM_TYPES = {'n': (0, 'node'), 'w': (2, 'way'), 'r': (3, 'relation')}
 ENTRANCE_PENALTY = 60  # seconds
-TRANSFER_PENALTY = 30  # seconds
-KMPH_TO_MPS = 1 / 3.6  # km/h to m/s conversion multiplier
 SPEED_TO_ENTRANCE = 5 * KMPH_TO_MPS  # m/s
-SPEED_ON_TRANSFER = 3.5 * KMPH_TO_MPS  # m/s
 SPEED_ON_LINE = 40 * KMPH_TO_MPS  # m/s
-DEFAULT_INTERVAL = 2.5  # minutes
+DEFAULT_INTERVAL = 2.5 * 60  # seconds
 
 
 def uid(elid, typ=None):
@@ -174,14 +180,13 @@ class MapsmeCache:
             logging.warning("Failed to save cache: %s", str(e))
 
 
-def process(cities, transfers, cache_path):
-    """cities - list of City instances;
-    transfers - list of sets of StopArea.id;
-    cache_path - path to json-file with good cities cache or None.
+def process(cities, transfers, filename, cache_path):
+    """Generate all output and save to file.
+    :param cities: List of City instances
+    :param transfers: List of sets of StopArea.id
+    :param filename: Path to file to save the result
+    :param cache_path: Path to json-file with good cities cache or None.
     """
-
-    def format_colour(c):
-        return c[1:] if c else None
 
     def find_exits_for_platform(center, nodes):
         exits = []
@@ -282,9 +287,7 @@ def process(cities, transfers, cache_path):
                 routes['itineraries'].append(
                     {
                         'stops': itin,
-                        'interval': round(
-                            (variant.interval or DEFAULT_INTERVAL) * 60
-                        ),
+                        'interval': round(variant.interval or DEFAULT_INTERVAL),
                     }
                 )
             network['routes'].append(routes)
@@ -386,4 +389,14 @@ def process(cities, transfers, cache_path):
         'transfers': pairwise_transfers,
         'networks': networks,
     }
-    return result
+
+    if not filename.lower().endswith("json"):
+        filename = f"{filename}.json"
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(
+            result,
+            f,
+            indent=1,
+            ensure_ascii=False,
+        )

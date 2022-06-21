@@ -1,6 +1,7 @@
 import csv
 import logging
 import math
+import re
 import urllib.parse
 import urllib.request
 from css_colours import normalize_colour
@@ -43,6 +44,47 @@ CONSTRUCTION_KEYS = (
 )
 
 used_entrances = set()
+
+
+START_END_TIMES_RE = re.compile(r'.*?(\d{2}:\d{2})-(\d{2}:\d{2}).*')
+
+
+def get_start_end_times(opening_hours):
+    """Very simplified method to parse OSM opening_hours tag.
+    We simply take the first HH:MM-HH:MM substring which is the most probable
+    opening hours interval for the most of weekdays.
+    """
+    m = START_END_TIMES_RE.match(opening_hours)
+    if m:
+        # Each group is HH:MM. We need HH:MM:SS.
+        return tuple(map(lambda t: f"{t}:00", m.groups()))
+    else:
+        return None, None
+
+
+def osm_interval_to_seconds(interval_str):
+    """Convert to int an OSM value for 'interval'/'headway' tag
+    which may be in these formats:
+    HH:MM:SS,
+    HH:MM,
+    MM,
+    M
+    (https://wiki.openstreetmap.org/wiki/Key:interval#Format)
+    """
+    hours, minutes, seconds = 0, 0, 0
+    semicolon_count = interval_str.count(':')
+    try:
+        if semicolon_count == 0:
+            minutes = int(interval_str)
+        elif semicolon_count == 1:
+            hours, minutes = map(int, interval_str.split(':'))
+        elif semicolon_count == 2:
+            hours, minutes, seconds = map(int, interval_str.split(':'))
+        else:
+            return None
+    except ValueError:
+        return None
+    return seconds + 60*minutes + 60*60*hours
 
 
 class CriticalValidationError(Exception):
@@ -606,10 +648,7 @@ class Route:
                         break
         if not v:
             return None
-        try:
-            return float(v)
-        except ValueError:
-            return None
+        return osm_interval_to_seconds(v)
 
     def build_longest_line(self, relation):
         line_nodes = set()
@@ -786,6 +825,11 @@ class Route:
         self.interval = Route.get_interval(
             relation['tags']
         ) or Route.get_interval(master_tags)
+        self.start_time, self.end_time = get_start_end_times(
+            relation['tags'].get(
+                'opening_hours', master_tags.get('opening_hours', '')
+            )
+        )
         if relation['tags'].get('public_transport:version') == '1':
             city.warn(
                 'Public transport version is 1, which means the route '
