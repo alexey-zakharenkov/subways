@@ -650,12 +650,36 @@ class Route:
             return None
         return osm_interval_to_seconds(v)
 
-    def build_longest_line(self, relation):
+    def __init__(self, relation, city, master=None):
+        assert Route.is_route(relation, city.modes), (
+           f'The relation does not seem to be a route: {relation}'
+        )
+        self.city = city
+        self.element = relation
+        self.id = el_id(relation)
+
+        self.ref = None
+        self.name = None
+        self.mode = None
+        self.colour = None
+        self.infill = None
+        self.network = None
+        self.interval = None
+        self.start_time = None
+        self.end_time = None
+        self.is_circular = False
+        self.stops = []  # List of RouteStop
+
+        self.process_tags(master)
+        stop_position_elements = self.process_stop_members()
+        self.process_tracks(stop_position_elements)
+
+    def build_longest_line(self):
         line_nodes = set()
         last_track = []
         track = []
         warned_about_holes = False
-        for m in relation['members']:
+        for m in self.element['members']:
             el = self.city.elements.get(el_id(m), None)
             if not el or not StopArea.is_track(el):
                 continue
@@ -692,7 +716,7 @@ class Route:
                             'Hole in route rails near node {}'.format(
                                 track[-1]
                             ),
-                            relation,
+                            self.element,
                         )
                         warned_about_holes = True
                     if len(track) > len(last_track):
@@ -783,17 +807,11 @@ class Route:
                     dist += round(direct)
             stop.distance = dist
 
-    def __init__(self, relation, city, master=None):
-        if not Route.is_route(relation, city.modes):
-            raise Exception(
-                'The relation does not seem a route: {}'.format(relation)
-            )
+    def process_tags(self, master):
+        relation = self.element
         master_tags = {} if not master else master['tags']
-        self.city = city
-        self.element = relation
-        self.id = el_id(relation)
         if 'ref' not in relation['tags'] and 'ref' not in master_tags:
-            city.notice('Missing ref on a route', relation)
+            self.city.notice('Missing ref on a route', relation)
         self.ref = relation['tags'].get(
             'ref', master_tags.get('ref', relation['tags'].get('name', None))
         )
@@ -804,14 +822,14 @@ class Route:
             and 'colour' not in master_tags
             and self.mode != 'tram'
         ):
-            city.notice('Missing colour on a route', relation)
+            self.city.notice('Missing colour on a route', relation)
         try:
             self.colour = normalize_colour(
                 relation['tags'].get('colour', master_tags.get('colour', None))
             )
         except ValueError as e:
             self.colour = None
-            city.warn(str(e), relation)
+            self.city.warn(str(e), relation)
         try:
             self.infill = normalize_colour(
                 relation['tags'].get(
@@ -820,7 +838,7 @@ class Route:
             )
         except ValueError as e:
             self.infill = None
-            city.warn(str(e), relation)
+            self.city.warn(str(e), relation)
         self.network = Route.get_network(relation)
         self.interval = Route.get_interval(
             relation['tags']
@@ -831,57 +849,42 @@ class Route:
             )
         )
         if relation['tags'].get('public_transport:version') == '1':
-            city.warn(
+            self.city.warn(
                 'Public transport version is 1, which means the route '
                 'is an unsorted pile of objects',
                 relation,
             )
-        self.is_circular = False
-        # self.tracks would be a list of (lon, lat) for the longest stretch. Can be empty
-        tracks, line_nodes = self.build_longest_line(relation)
-        self.tracks = [el_center(city.elements.get(k)) for k in tracks]
-        if (
-            None in self.tracks
-        ):  # usually, extending BBOX for the city is needed
-            self.tracks = []
-            for n in filter(lambda x: x not in city.elements, tracks):
-                city.warn(
-                    'The dataset is missing the railway tracks node {}'.format(
-                        n
-                    ),
-                    relation,
-                )
-                break
 
-        self.stops = []  # List of RouteStop
+    def process_stop_members(self):
         stations = set()  # temporary for recording stations
         seen_stops = False
         seen_platforms = False
         repeat_pos = None
-        for m in relation['members']:
+        stop_position_elements = []
+        for m in self.element['members']:
             if 'inactive' in m['role']:
                 continue
             k = el_id(m)
-            if k in city.stations:
-                st_list = city.stations[k]
+            if k in self.city.stations:
+                st_list = self.city.stations[k]
                 st = st_list[0]
                 if len(st_list) > 1:
-                    city.error(
-                        'Ambiguous station {} in route. Please use stop_position or split '
-                        'interchange stations'.format(st.name),
-                        relation,
+                    self.city.error(
+                        f'Ambiguous station {st.name} in route. Please '
+                        'use stop_position or split interchange stations',
+                        self.element,
                     )
-                el = city.elements[k]
+                el = self.city.elements[k]
                 actual_role = RouteStop.get_actual_role(
-                    el, m['role'], city.modes
+                    el, m['role'], self.city.modes
                 )
                 if actual_role:
                     if m['role'] and actual_role not in m['role']:
-                        city.warn(
+                        self.city.warn(
                             "Wrong role '{}' for {} {}".format(
                                 m['role'], actual_role, k
                             ),
-                            relation,
+                            self.element,
                         )
                     if repeat_pos is None:
                         if not self.stops or st not in stations:
@@ -916,11 +919,11 @@ class Route:
                         if (actual_role == 'stop' and seen_stops) or (
                             actual_role == 'platform' and seen_platforms
                         ):
-                            city.error(
+                            self.city.error(
                                 'Found an out-of-place {}: "{}" ({})'.format(
                                     actual_role, el['tags'].get('name', ''), k
                                 ),
-                                relation,
+                                self.element,
                             )
                             continue
                         # Find the matching stop starting with index repeat_pos
@@ -930,85 +933,109 @@ class Route:
                         ):
                             repeat_pos += 1
                         if repeat_pos >= len(self.stops):
-                            city.error(
+                            self.city.error(
                                 'Incorrect order of {}s at {}'.format(
                                     actual_role, k
                                 ),
-                                relation,
+                                self.element,
                             )
                             continue
                         stop = self.stops[repeat_pos]
 
-                    stop.add(m, relation, city)
+                    stop.add(m, self.element, self.city)
                     if repeat_pos is None:
                         seen_stops |= stop.seen_stop or stop.seen_station
                         seen_platforms |= stop.seen_platform
 
                     if StopArea.is_stop(el):
-                        if k not in line_nodes:
-                            city.warn(
-                                'Stop position "{}" ({}) is not on tracks'.format(
-                                    el['tags'].get('name', ''), k
-                                ),
-                                relation,
-                            )
+                        stop_position_elements.append(el)
+
                     continue
 
-            if k not in city.elements:
+            if k not in self.city.elements:
                 if 'stop' in m['role'] or 'platform' in m['role']:
                     raise CriticalValidationError(
-                        '{} {} {} for route relation {} is not in the dataset'.format(
-                            m['role'], m['type'], m['ref'], relation['id']
-                        )
+                        f"{m['role']} {m['type']} {m['ref']} for route "
+                        f"relation {self.element['id']} is not in the dataset"
                     )
                 continue
-            el = city.elements[k]
+            el = self.city.elements[k]
             if 'tags' not in el:
-                city.error('Untagged object {} in a route'.format(k), relation)
+                self.city.error(f'Untagged object {k} in a route', self.element)
                 continue
 
             is_under_construction = False
             for ck in CONSTRUCTION_KEYS:
                 if ck in el['tags']:
-                    city.warn(
+                    self.city.warn(
                         'Under construction {} {} in route. Consider '
                         'setting \'inactive\' role or removing construction attributes'.format(
                             m['role'] or 'feature', k
                         ),
-                        relation,
+                        self.element,
                     )
                     is_under_construction = True
                     break
             if is_under_construction:
                 continue
 
-            if Station.is_station(el, city.modes):
+            if Station.is_station(el, self.city.modes):
                 # A station may be not included into this route due to previous
                 # 'stop area has multiple stations' error. No other error message is needed.
                 pass
             elif el['tags'].get('railway') in ('station', 'halt'):
-                city.error(
+                self.city.error(
                     'Missing station={} on a {}'.format(self.mode, m['role']),
                     el,
                 )
             else:
                 actual_role = RouteStop.get_actual_role(
-                    el, m['role'], city.modes
+                    el, m['role'], self.city.modes
                 )
                 if actual_role:
-                    city.error(
+                    self.city.error(
                         '{} {} {} is not connected to a station in route'.format(
                             actual_role, m['type'], m['ref']
                         ),
-                        relation,
+                        self.element,
                     )
                 elif not StopArea.is_track(el):
-                    city.warn(
+                    self.city.warn(
                         'Unknown member type for {} {} in route'.format(
                             m['type'], m['ref']
                         ),
-                        relation,
+                        self.element,
                     )
+        return stop_position_elements
+
+    def process_tracks(self, stop_position_elements):
+
+        tracks, line_nodes = self.build_longest_line()
+
+        for stop_el in stop_position_elements:
+            stop_id = el_id(stop_el)
+            if stop_id not in line_nodes:
+                self.city.warn(
+                    'Stop position "{}" ({}) is not on tracks'.format(
+                        stop_el['tags'].get('name', ''), stop_id
+                    ),
+                    self.element,
+                )
+
+        # self.tracks would be a list of (lon, lat) for the longest stretch.
+        # Can be empty.
+        self.tracks = [el_center(self.city.elements.get(k)) for k in tracks]
+        if (
+                None in self.tracks
+        ):  # usually, extending BBOX for the city is needed
+            self.tracks = []
+            for n in filter(lambda x: x not in self.city.elements, tracks):
+                self.city.warn(
+                    f'The dataset is missing the railway tracks node {n}',
+                    self.element,
+                )
+                break
+
         if len(self.stops) > 1:
             self.is_circular = (
                 self.stops[0].stoparea == self.stops[-1].stoparea
