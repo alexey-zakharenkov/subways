@@ -1093,7 +1093,7 @@ class Route:
         first_stop_location = find_segment(self.stops[0].stop, tracks, 0)
         last_stop_location = find_segment(self.stops[-1].stop, tracks, 0)
 
-        if last_stop_location:
+        if last_stop_location != (None, None):
             seg2, u2 = last_stop_location
             if u2 == 0.0:
                 # Make seg2 the segment the last_stop_location is
@@ -1104,7 +1104,7 @@ class Route:
                 tracks = tracks[0:seg2 + 2]
             tracks[-1] = self.stops[-1].stop
 
-        if first_stop_location:
+        if first_stop_location != (None, None):
             seg1, u1 = first_stop_location
             if u1 == 1.0:
                 # Make seg1 the segment the first_stop_location is
