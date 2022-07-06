@@ -208,7 +208,7 @@ def find_segment(p, line, start_vertex=0):
     EPS = 1e-9
     for seg in range(start_vertex, len(line) - 1):
         if is_near(p, line[seg]):
-            return seg, 0
+            return seg, 0.0
         if line[seg][0] == line[seg + 1][0]:
             if not (p[0] - EPS <= line[seg][0] <= p[0] + EPS):
                 continue
@@ -233,7 +233,7 @@ def distance_on_line(p1, p2, line, start_vertex=0):
     of points p1 and p2. Returns a TUPLE of (d, vertex):
     d is the distance and vertex is the number of the second
     vertex, to continue calculations for the next point."""
-    line_copy = line
+    line_len = len(line)
     seg1, pos1 = find_segment(p1, line, start_vertex)
     if seg1 is None:
         # logging.warn('p1 %s is not projected, st=%s', p1, start_vertex)
@@ -258,7 +258,7 @@ def distance_on_line(p1, p2, line, start_vertex=0):
         d += distance(line[i], line[i + 1])
     if pos2 > 0:
         d += distance(line[seg2], line[seg2 + 1]) * pos2
-    return d, seg2 % len(line_copy)
+    return d, seg2 % line_len
 
 
 def angle_between(p1, c, p2):
@@ -669,6 +669,12 @@ class Route:
         self.end_time = None
         self.is_circular = False
         self.stops = []  # List of RouteStop
+        # Would be a list of (lon, lat) for the longest stretch. Can be empty.
+        self.tracks = None
+        # Index of the fist stop that is located on/near the self.tracks
+        self.first_stop_on_rails_index = None
+        # Index of the last stop that is located on/near the self.tracks
+        self.last_stop_on_rails_index = None
 
         self.process_tags(master)
         stop_position_elements = self.process_stop_members()
@@ -746,21 +752,28 @@ class Route:
                 <= MAX_DISTANCE_STOP_TO_LINE
             )
 
-        start = 0
-        while start < len(self.stops) and not is_stop_near_tracks(start):
-            start += 1
-        end = len(self.stops) - 1
-        while end > start and not is_stop_near_tracks(end):
-            end -= 1
-        tracks_start = []
-        tracks_end = []
+        self.first_stop_on_rails_index = 0
+        while (
+            self.first_stop_on_rails_index < len(self.stops)
+            and not is_stop_near_tracks(self.first_stop_on_rails_index)
+        ):
+            self.first_stop_on_rails_index += 1
+
+        self.last_stop_on_rails_index = len(self.stops) - 1
+        while (
+            self.last_stop_on_rails_index > self.first_stop_on_rails_index
+            and not is_stop_near_tracks(self.last_stop_on_rails_index)
+        ):
+            self.last_stop_on_rails_index -= 1
+
         stops_on_longest_line = []
         for i, route_stop in enumerate(self.stops):
-            if i < start:
-                tracks_start.append(route_stop.stop)
-            elif i > end:
-                tracks_end.append(route_stop.stop)
-            elif projected[i]['projected_point'] is None:
+            if i < self.first_stop_on_rails_index:
+                continue
+            elif i > self.last_stop_on_rails_index:
+                break
+
+            if projected[i]['projected_point'] is None:
                 self.city.error(
                     'Stop "{}" {} is nowhere near the tracks'.format(
                         route_stop.stoparea.name, route_stop.stop
@@ -785,10 +798,6 @@ class Route:
                     'positions_on_line'
                 ]
                 stops_on_longest_line.append(route_stop)
-        if start >= len(self.stops):
-            self.tracks = tracks_start
-        elif tracks_start or tracks_end:
-            self.tracks = tracks_start + self.tracks + tracks_end
         return stops_on_longest_line
 
     def calculate_distances(self):
@@ -797,9 +806,15 @@ class Route:
         for i, stop in enumerate(self.stops):
             if i > 0:
                 direct = distance(stop.stop, self.stops[i - 1].stop)
-                d_line = distance_on_line(
-                    self.stops[i - 1].stop, stop.stop, self.tracks, vertex
-                )
+                d_line = None
+                if (
+                        self.first_stop_on_rails_index
+                        <= i
+                        <= self.last_stop_on_rails_index
+                ):
+                    d_line = distance_on_line(
+                        self.stops[i - 1].stop, stop.stop, self.tracks, vertex
+                    )
                 if d_line and direct - 10 <= d_line[0] <= direct * 2:
                     vertex = d_line[1]
                     dist += round(d_line[0])
@@ -1044,6 +1059,64 @@ class Route:
             self.check_and_recover_stops_order(stops_on_longest_line)
             self.calculate_distances()
 
+    def get_extended_tracks(self):
+        """Amend tracks with points of leading/trailing self.stops
+        that were not projected onto the longest tracks line.
+        Return a new array.
+        """
+        if self.first_stop_on_rails_index >= len(self.stops):
+            tracks = [route_stop.stop for route_stop in self.stops]
+        else:
+            tracks = (
+                [
+                    route_stop.stop
+                    for i, route_stop in enumerate(self.stops)
+                    if i < self.first_stop_on_rails_index
+                ]
+                + self.tracks
+                + [
+                    route_stop.stop
+                    for i, route_stop in enumerate(self.stops)
+                    if i > self.last_stop_on_rails_index
+                ]
+            )
+        return tracks
+
+    def get_truncated_tracks(self, tracks):
+        """Truncate leading/trailing segments of `tracks` param
+        that are beyond the first and last stop locations.
+        Return a new array.
+        """
+        if self.is_circular:
+            return tracks.copy()
+
+        first_stop_location = find_segment(self.stops[0].stop, tracks, 0)
+        last_stop_location = find_segment(self.stops[-1].stop, tracks, 0)
+
+        if last_stop_location:
+            seg2, u2 = last_stop_location
+            if u2 == 0.0:
+                # Make seg2 the segment the last_stop_location is
+                # at the middle or end of
+                seg2 -= 1
+                # u2 = 1.0
+            if seg2 + 2 < len(tracks):
+                tracks = tracks[0:seg2 + 2]
+            tracks[-1] = self.stops[-1].stop
+
+        if first_stop_location:
+            seg1, u1 = first_stop_location
+            if u1 == 1.0:
+                # Make seg1 the segment the first_stop_location is
+                # at the beginning or middle of
+                seg1 += 1
+                # u1 = 0.0
+            if seg1 > 0:
+                tracks = tracks[seg1:]
+            tracks[0] = self.stops[0].stop
+
+        return tracks
+
     def check_stops_order_by_angle(self):
         disorder_warnings = []
         disorder_errors = []
@@ -1129,6 +1202,7 @@ class Route:
                     'Tracks seem to go in the opposite direction to stops',
                     self.element,
                 )
+                self.tracks.reverse()
         return error_message
 
     def check_stops_order(self, stops_on_longest_line):

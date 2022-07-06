@@ -408,7 +408,7 @@ if __name__ == '__main__':
     ):
         option_name = f"output_{processor_name}"
 
-        if not hasattr(options, option_name):
+        if not getattr(options, option_name, None):
             continue
 
         filename = getattr(options, option_name)

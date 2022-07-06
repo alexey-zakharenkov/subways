@@ -238,7 +238,10 @@ def process(cities, transfers, filename, cache_path):
                 }
                 gtfs_data["trips"].append(dict_to_row(trip, "trips"))
 
-                for i, (lon, lat) in enumerate(variant.tracks):
+                tracks = variant.get_extended_tracks()
+                tracks = variant.get_truncated_tracks(tracks)
+
+                for i, (lon, lat) in enumerate(tracks):
                     gtfs_data["shapes"].append(
                         dict_to_row(
                             {

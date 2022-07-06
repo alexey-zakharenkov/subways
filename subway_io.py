@@ -138,7 +138,7 @@ def dump_yaml(city, f):
     write_yaml(result, f)
 
 
-def make_geojson(city, tracks=True):
+def make_geojson(city, include_tracks_geometry=True):
     transfers = set()
     for t in city.transfers:
         transfers.update(t)
@@ -147,36 +147,25 @@ def make_geojson(city, tracks=True):
     stops = set()
     for rmaster in city:
         for variant in rmaster:
-            if not tracks:
-                features.append(
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'LineString',
-                            'coordinates': [s.stop for s in variant],
-                        },
-                        'properties': {
-                            'ref': variant.ref,
-                            'name': variant.name,
-                            'stroke': variant.colour,
-                        },
-                    }
-                )
-            elif variant.tracks:
-                features.append(
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'LineString',
-                            'coordinates': variant.tracks,
-                        },
-                        'properties': {
-                            'ref': variant.ref,
-                            'name': variant.name,
-                            'stroke': variant.colour,
-                        },
-                    }
-                )
+            tracks = (
+                variant.get_extended_tracks()
+                if include_tracks_geometry
+                else [s.stop for s in variant]
+            )
+            features.append(
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': tracks,
+                    },
+                    'properties': {
+                        'ref': variant.ref,
+                        'name': variant.name,
+                        'stroke': variant.colour,
+                    },
+                }
+            )
             for st in variant:
                 stops.add(st.stop)
                 stopareas.add(st.stoparea)
