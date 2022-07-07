@@ -20,22 +20,22 @@ from tests.sample_data import sample_networks
 class TestOneRouteTracks(unittest.TestCase):
     """Test tracks extending and truncating on one-route networks"""
 
-    STATION_COUNT_INDEX = 4
-    CITY_TEMPLATE = [
-        1,  # city id
-        "Null Island",  # name
-        "World",  # Country
-        "Africa",  # continent
-        None,  # station count. Would be taken from the sample network data under testing
-        1,  # subway line count
-        0,  # light rail line count
-        0,  # interchanges
-        "-179, -89, 179, 89",  # bbox
-    ]
+    CITY_TEMPLATE = {
+        "id": 1,
+        "name": "Null Island",
+        "country": "World",
+        "continent": "Africa",
+        "num_stations": None,  # Would be taken from the sample network data under testing
+        "num_lines": 1,
+        "num_light_lines": 0,
+        "num_interchanges": 0,
+        "bbox": "-179, -89, 179, 89",
+        "networks": "",
+    }
 
     def prepare_city_routes(self, network):
         city_data = self.CITY_TEMPLATE.copy()
-        city_data[self.STATION_COUNT_INDEX] = network["station_count"]
+        city_data["num_stations"] = network["station_count"]
         city = City(city_data)
         elements = load_xml(io.BytesIO(network["xml"].encode("utf-8")))
         for el in elements:
