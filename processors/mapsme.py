@@ -87,7 +87,7 @@ class MapsmeCache:
         # One stoparea may participate in routes of different cities
         self.stop_cities = defaultdict(set)  # stoparea id -> city names
         self.city_dict = {c.name: c for c in cities}
-        self.good_city_names = {c.name for c in cities if c.is_good()}
+        self.good_city_names = {c.name for c in cities if c.is_good}
 
     def _is_cached_city_usable(self, city):
         """Check if cached stations still exist in osm data and
@@ -118,7 +118,7 @@ class MapsmeCache:
         """Put stops and networks for bad cities into containers
         passed as arguments."""
         for city in self.city_dict.values():
-            if not city.is_good() and city.name in self.cache:
+            if not city.is_good and city.name in self.cache:
                 city_cached_data = self.cache[city.name]
                 if self._is_cached_city_usable(city):
                     stops.update(city_cached_data['stops'])
@@ -212,7 +212,7 @@ def process(cities, transfers, filename, cache_path):
     stop_areas = {}  # stoparea el_id -> StopArea instance
     stops = {}  # stoparea el_id -> stop jsonified data
     networks = []
-    good_cities = [c for c in cities if c.is_good()]
+    good_cities = [c for c in cities if c.is_good]
     platform_nodes = {}
     cache.provide_stops_and_networks(stops, networks)
 

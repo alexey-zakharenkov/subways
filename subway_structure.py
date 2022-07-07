@@ -1477,6 +1477,7 @@ class RouteMaster:
 
 class City:
     def __init__(self, city_data, overground=False):
+        self.validate_called = False
         self.errors = []
         self.warnings = []
         self.notices = []
@@ -1734,7 +1735,12 @@ class City:
     def __iter__(self):
         return iter(self.routes.values())
 
+    @property
     def is_good(self):
+        assert self.validate_called, (
+            "You mustn't refer to City.is_good property before calling "
+            "the City.validate() method."
+        )
         return len(self.errors) == 0
 
     def get_validation_result(self):
@@ -1971,6 +1977,8 @@ class City:
                 ['{} ({})'.format(k, v) for k, v in networks.items()]
             )
             self.notice('More than one network: {}'.format(n_str))
+
+        self.validate_called = True
 
 
 def find_transfers(elements, cities):

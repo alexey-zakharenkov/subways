@@ -336,7 +336,7 @@ if __name__ == '__main__':
             c.error("Validation logic error: {}".format(str(e)))
         else:
             c.validate()
-            if c.is_good():
+            if c.is_good:
                 good_cities.append(c)
 
     logging.info('Finding transfer stations')

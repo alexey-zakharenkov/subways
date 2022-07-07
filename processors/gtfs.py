@@ -171,7 +171,7 @@ def process(cities, transfers, filename, cache_path):
     )
 
     all_stops = {}  # stop (stop area center or station) el_id -> stop data
-    good_cities = [c for c in cities if c.is_good()]
+    good_cities = [c for c in cities if c.is_good]
 
     def add_stop_gtfs(route_stop):
         """Add stop to all_stops.

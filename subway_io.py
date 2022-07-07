@@ -282,7 +282,7 @@ def write_recovery_data(path, current_data, cities):
 
     data = current_data
     for city in cities:
-        if city.is_good():
+        if city.is_good:
             data[city.name] = make_city_recovery_data(city)
 
     try:

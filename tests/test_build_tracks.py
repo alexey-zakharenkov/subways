@@ -43,7 +43,7 @@ class TestOneRouteTracks(unittest.TestCase):
         city.extract_routes()
         city.validate()
 
-        self.assertTrue(city.is_good())
+        self.assertTrue(city.is_good)
 
         route_master = list(city.routes.values())[0]
         variants = route_master.routes
