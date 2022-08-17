@@ -10,11 +10,12 @@ from ._common import (
 )
 from subway_structure import (
     distance,
+    el_center,
 )
 
 
-DEFAULT_TRIP_START_TIME = "05:00:00"
-DEFAULT_TRIP_END_TIME = "01:00:00"
+DEFAULT_TRIP_START_TIME = (5, 0)  # 05:00
+DEFAULT_TRIP_END_TIME = (1, 0)  # 01:00
 COORDINATE_PRECISION = 7  # fractional digits. It's OSM precision, ~ 5 cm
 
 GTFS_COLUMNS = {
@@ -139,6 +140,12 @@ def dict_to_row(dict_data, record_type):
     return row
 
 
+def round_coords(coords_tuple):
+    return tuple(
+        map(lambda coord: round(coord, COORDINATE_PRECISION), coords_tuple)
+    )
+
+
 def process(cities, transfers, filename, cache_path):
     """Generate all output and save to file.
     :param cities: List of City instances
@@ -173,45 +180,83 @@ def process(cities, transfers, filename, cache_path):
     all_stops = {}  # stop (stop area center or station) el_id -> stop data
     good_cities = [c for c in cities if c.is_good]
 
-    def add_stop_gtfs(route_stop):
+    def add_stop_gtfs(route_stop, city):
         """Add stop to all_stops.
         If it's not a station, also add parent station
         if it has not been added yet. Return gtfs stop_id.
         """
-        is_real_stop_area = (
-            route_stop.stoparea.element["tags"].get("public_transport")
-            == "stop_area"
-        )
-        el_id_ = route_stop.stoparea.id
 
-        if el_id_ not in all_stops:
+        # For the case a StopArea is derived solely from railway=station
+        # object, we generate GTFS platform (stop), station and sometimes
+        # an entrance from the same object, so use suffixes
+        station_id = f"{route_stop.stoparea.id}_st"
+        platform_id = f"{route_stop.stoparea.id}_plt"
+
+        if station_id not in all_stops:
             station_name = route_stop.stoparea.station.name
-            center = route_stop.stoparea.center
-            location_type = 1 if is_real_stop_area else 0
-            stop_gtfs = {
-                "stop_id": el_id_,
-                "stop_code": el_id_,
+            station_center = round_coords(route_stop.stoparea.center)
+
+            station_gtfs = {
+                "stop_id": station_id,
+                "stop_code": station_id,
                 "stop_name": station_name,
-                "stop_lat": round(center[1], COORDINATE_PRECISION),
-                "stop_lon": round(center[0], COORDINATE_PRECISION),
-                "location_type": location_type,
+                "stop_lat": station_center[1],
+                "stop_lon": station_center[0],
+                "location_type": 1,  # station in GTFS terms
             }
-            if is_real_stop_area:
-                station_id = route_stop.stoparea.station.id
-                stop_gtfs["parent_station"] = station_id
-                if station_id not in all_stops:
-                    center = route_stop.stoparea.station.center
-                    station_gtfs = {
-                        "stop_id": station_id,
-                        "stop_code": station_id,
-                        "stop_name": station_name,
-                        "stop_lat": round(center[1], COORDINATE_PRECISION),
-                        "stop_lon": round(center[0], COORDINATE_PRECISION),
-                        "location_type": 1,
+            all_stops[station_id] = station_gtfs
+
+            platform_id = f"{route_stop.stoparea.id}_plt"
+            platform_gtfs = {
+                "stop_id": platform_id,
+                "stop_code": platform_id,
+                "stop_name": station_name,
+                "stop_lat": station_center[1],
+                "stop_lon": station_center[0],
+                "location_type": 0,  # stop/platform in GTFS terms
+                "parent_station": station_id,
+            }
+            all_stops[platform_id] = platform_gtfs
+
+            osm_entrance_ids = (
+                route_stop.stoparea.entrances | route_stop.stoparea.exits
+            )
+            if not osm_entrance_ids:
+                entrance_id = f"{route_stop.stoparea.id}_egress"
+                entrance_gtfs = {
+                    "stop_id": entrance_id,
+                    "stop_code": entrance_id,
+                    "stop_name": station_name,
+                    "stop_lat": station_center[1],
+                    "stop_lon": station_center[0],
+                    "location_type": 2,
+                    "parent_station": station_id,
+                }
+                all_stops[entrance_id] = entrance_gtfs
+            else:
+                for osm_entrance_id in osm_entrance_ids:
+                    entrance = city.elements[osm_entrance_id]
+                    entrance_id = f"{osm_entrance_id}_{route_stop.stoparea.id}"
+                    entrance_name = entrance["tags"].get("name")
+                    if not entrance_name:
+                        entrance_name = station_name
+                        ref = entrance["tags"].get("ref")
+                        if ref:
+                            entrance_name += f" {ref}"
+                    center = el_center(entrance)
+                    center = round_coords(center)
+                    entrance_gtfs = {
+                        "stop_id": entrance_id,
+                        "stop_code": entrance_id,
+                        "stop_name": entrance_name,
+                        "stop_lat": center[1],
+                        "stop_lon": center[0],
+                        "location_type": 2,
+                        "parent_station": station_id,
                     }
-                    all_stops[station_id] = station_gtfs
-            all_stops[el_id_] = stop_gtfs
-        return el_id_
+                    all_stops[entrance_id] = entrance_gtfs
+
+        return platform_id
 
     # agency, routes, trips, stop_times, frequencies, shapes
     for city in good_cities:
@@ -230,11 +275,12 @@ def process(cities, transfers, filename, cache_path):
             gtfs_data["routes"].append(dict_to_row(route, "routes"))
 
             for variant in city_route:
+                shape_id = variant.id[1:]  # truncate leading 'r'
                 trip = {
                     "trip_id": variant.id,
                     "route_id": route["route_id"],
                     "service_id": "always",
-                    "shape_id": None,
+                    "shape_id": shape_id,
                 }
                 gtfs_data["trips"].append(dict_to_row(trip, "trips"))
 
@@ -242,31 +288,33 @@ def process(cities, transfers, filename, cache_path):
                 tracks = variant.get_truncated_tracks(tracks)
 
                 for i, (lon, lat) in enumerate(tracks):
+                    lon, lat = round_coords((lon, lat))
                     gtfs_data["shapes"].append(
                         dict_to_row(
                             {
-                                "shape_id": variant.id,
+                                "shape_id": shape_id,
                                 "trip_id": variant.id,
-                                "shape_pt_lat": round(
-                                    lat, COORDINATE_PRECISION
-                                ),
-                                "shape_pt_lon": round(
-                                    lon, COORDINATE_PRECISION
-                                ),
+                                "shape_pt_lat": lat,
+                                "shape_pt_lon": lon,
                                 "shape_pt_sequence": i,
                             },
                             "shapes",
                         )
                     )
 
+                start_time = variant.start_time or DEFAULT_TRIP_START_TIME
+                end_time = variant.end_time or DEFAULT_TRIP_END_TIME
+                if end_time <= start_time:
+                    end_time = (end_time[0] + 24, end_time[1])
+                start_time = f"{start_time[0]:02d}:{start_time[1]:02d}:00"
+                end_time = f"{end_time[0]:02d}:{end_time[1]:02d}:00"
+
                 gtfs_data["frequencies"].append(
                     dict_to_row(
                         {
                             "trip_id": variant.id,
-                            "start_time": variant.start_time
-                            or DEFAULT_TRIP_START_TIME,
-                            "end_time": variant.end_time
-                            or DEFAULT_TRIP_END_TIME,
+                            "start_time": start_time,
+                            "end_time": end_time,
                             "headway_secs": variant.interval
                             or DEFAULT_INTERVAL,
                         },
@@ -275,17 +323,18 @@ def process(cities, transfers, filename, cache_path):
                 )
 
                 for stop_sequence, route_stop in enumerate(variant):
-                    gtfs_stop_id = add_stop_gtfs(route_stop)
-
-                    stop_time = {
-                        "trip_id": variant.id,
-                        "stop_sequence": stop_sequence,
-                        "shape_dist_traveled": route_stop.distance,
-                        "stop_id": gtfs_stop_id,
-                    }
+                    gtfs_platform_id = add_stop_gtfs(route_stop, city)
 
                     gtfs_data["stop_times"].append(
-                        dict_to_row(stop_time, "stop_times")
+                        dict_to_row(
+                            {
+                                "trip_id": variant.id,
+                                "stop_sequence": stop_sequence,
+                                "shape_dist_traveled": route_stop.distance,
+                                "stop_id": gtfs_platform_id,
+                            },
+                            "stop_times",
+                        )
                     )
 
     # stops
@@ -309,8 +358,8 @@ def process(cities, transfers, filename, cache_path):
                         gtfs_data["transfers"].append(
                             dict_to_row(
                                 {
-                                    "from_stop_id": id1,
-                                    "to_stop_id": id2,
+                                    "from_stop_id": f"{id1}_st",
+                                    "to_stop_id": f"{id2}_st",
                                     "transfer_type": 0,
                                     "min_transfer_time": transfer_time,
                                 },

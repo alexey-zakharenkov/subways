@@ -46,7 +46,7 @@ CONSTRUCTION_KEYS = (
 used_entrances = set()
 
 
-START_END_TIMES_RE = re.compile(r'.*?(\d{2}:\d{2})-(\d{2}:\d{2}).*')
+START_END_TIMES_RE = re.compile(r'.*?(\d{2}):(\d{2})-(\d{2}):(\d{2}).*')
 
 
 def get_start_end_times(opening_hours):
@@ -54,12 +54,13 @@ def get_start_end_times(opening_hours):
     We simply take the first HH:MM-HH:MM substring which is the most probable
     opening hours interval for the most of weekdays.
     """
+    start_time, end_time = None, None
     m = START_END_TIMES_RE.match(opening_hours)
     if m:
-        # Each group is HH:MM. We need HH:MM:SS.
-        return tuple(map(lambda t: f"{t}:00", m.groups()))
-    else:
-        return None, None
+        ints = tuple(map(int, m.groups()))
+        start_time = (ints[0], ints[1])
+        end_time = (ints[2], ints[3])
+    return start_time, end_time
 
 
 def osm_interval_to_seconds(interval_str):
