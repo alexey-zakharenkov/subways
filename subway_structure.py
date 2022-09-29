@@ -1740,10 +1740,11 @@ class City:
 
     @property
     def is_good(self):
-        assert self.validate_called, (
-            "You mustn't refer to City.is_good property before calling "
-            "the City.validate() method."
-        )
+        if not (self.errors or self.validate_called):
+            raise RuntimeError(
+                "You mustn't refer to City.is_good property before calling "
+                "the City.validate() method unless an error already occurred."
+            )
         return len(self.errors) == 0
 
     def get_validation_result(self):
