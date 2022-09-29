@@ -769,10 +769,12 @@ class Route:
 
         stops_on_longest_line = []
         for i, route_stop in enumerate(self.stops):
-            if i < self.first_stop_on_rails_index:
+            if not (
+                    self.first_stop_on_rails_index
+                    <= i
+                    <= self.last_stop_on_rails_index
+            ):
                 continue
-            elif i > self.last_stop_on_rails_index:
-                break
 
             if projected[i]['projected_point'] is None:
                 self.city.error(
