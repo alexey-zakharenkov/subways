@@ -1361,7 +1361,7 @@ class RouteMaster:
                     master['tags'].get('colour:infill', None)
                 )
             except ValueError:
-                self.colour = None
+                self.infill = None
             self.network = Route.get_network(master)
             self.mode = master['tags'].get(
                 'route_master', None
