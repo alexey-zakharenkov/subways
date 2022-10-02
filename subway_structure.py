@@ -740,30 +740,32 @@ class Route:
         ]
         return last_track, line_nodes
 
-    def project_stops_on_line(self):
+    def get_stop_projections(self):
         projected = [project_on_line(x.stop, self.tracks) for x in self.stops]
-
-        def is_stop_near_tracks(stop_index):
-            return (
-                projected[stop_index]['projected_point'] is not None
-                and distance(
-                    self.stops[stop_index].stop,
-                    projected[stop_index]['projected_point'],
-                )
-                <= MAX_DISTANCE_STOP_TO_LINE
+        stop_near_tracks_criterion = lambda stop_index: (
+            projected[stop_index]['projected_point'] is not None
+            and distance(
+                self.stops[stop_index].stop,
+                projected[stop_index]['projected_point'],
             )
+            <= MAX_DISTANCE_STOP_TO_LINE
+        )
+        return projected, stop_near_tracks_criterion
+
+    def project_stops_on_line(self):
+        projected, stop_near_tracks_criterion = self.get_stop_projections()
 
         self.first_stop_on_rails_index = 0
         while (
             self.first_stop_on_rails_index < len(self.stops)
-            and not is_stop_near_tracks(self.first_stop_on_rails_index)
+            and not stop_near_tracks_criterion(self.first_stop_on_rails_index)
         ):
             self.first_stop_on_rails_index += 1
 
         self.last_stop_on_rails_index = len(self.stops) - 1
         while (
             self.last_stop_on_rails_index > self.first_stop_on_rails_index
-            and not is_stop_near_tracks(self.last_stop_on_rails_index)
+            and not stop_near_tracks_criterion(self.last_stop_on_rails_index)
         ):
             self.last_stop_on_rails_index -= 1
 
