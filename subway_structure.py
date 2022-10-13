@@ -130,19 +130,21 @@ def is_near(p1, p2):
     )
 
 
-def project_on_line(p, line):
-    def project_on_segment(p, p1, p2):
-        dp = (p2[0] - p1[0], p2[1] - p1[1])
-        d2 = dp[0] * dp[0] + dp[1] * dp[1]
-        if d2 < 1e-14:
-            return None
-        # u is the position of projection of p point on line p1p2
-        # regarding point p1 and (p2-p1) direction vector
-        u = ((p[0] - p1[0]) * dp[0] + (p[1] - p1[1]) * dp[1]) / d2
-        if not 0 <= u <= 1:
-            return None
-        return u
+def project_on_segment(p, p1, p2):
+    """Given three points, return u - the position of projection of
+    point p onto segment p1p2 regarding point p1 and (p2-p1) direction vector
+    """
+    dp = (p2[0] - p1[0], p2[1] - p1[1])
+    d2 = dp[0] * dp[0] + dp[1] * dp[1]
+    if d2 < 1e-14:
+        return None
+    u = ((p[0] - p1[0]) * dp[0] + (p[1] - p1[1]) * dp[1]) / d2
+    if not 0 <= u <= 1:
+        return None
+    return u
 
+
+def project_on_line(p, line):
     result = {
         # In the first approximation, position on rails is the index of the
         # closest vertex of line to the point p. Fractional value means that
