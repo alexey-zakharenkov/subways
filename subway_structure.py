@@ -1060,6 +1060,16 @@ class Route:
             self.is_circular = (
                 self.stops[0].stoparea == self.stops[-1].stoparea
             )
+            if (
+                self.is_circular
+                and self.tracks
+                and self.tracks[0] != self.tracks[-1]
+            ):
+                self.city.warn(
+                    "Non-closed rail sequence in a circular route",
+                    self.element
+                )
+
             stops_on_longest_line = self.project_stops_on_line()
             self.check_and_recover_stops_order(stops_on_longest_line)
             self.calculate_distances()
@@ -1535,7 +1545,7 @@ class City:
         self.masters = {}  # Dict el_id of route → route_master
         self.stop_areas = defaultdict(
             list
-        )  # El_id → list of el_id of stop_area
+        )  # El_id → list of stop_area elements it belongs to
         self.transfers = []  # List of lists of stop areas
         self.station_ids = set()  # Set of stations' uid
         self.stops_and_platforms = set()  # Set of stops and platforms el_id
@@ -1581,24 +1591,38 @@ class City:
     def add(self, el):
         if el['type'] == 'relation' and 'members' not in el:
             return
+
         self.elements[el_id(el)] = el
-        if el['type'] == 'relation' and 'tags' in el:
-            if el['tags'].get('type') == 'route_master':
-                for m in el['members']:
-                    if m['type'] == 'relation':
-                        if el_id(m) in self.masters:
-                            self.error('Route in two route_masters', m)
-                        self.masters[el_id(m)] = el
-            elif el['tags'].get('public_transport') == 'stop_area':
-                warned_about_duplicates = False
-                for m in el['members']:
-                    stop_areas = self.stop_areas[el_id(m)]
-                    if el in stop_areas:
-                        if not warned_about_duplicates:
-                            self.warn('Duplicate element in a stop area', el)
-                            warned_about_duplicates = True
-                    else:
-                        stop_areas.append(el)
+        if not (el['type'] == 'relation' and 'tags' in el):
+            return
+
+        relation_type = el['tags'].get('type')
+        if relation_type == 'route_master':
+            for m in el['members']:
+                if m['type'] != 'relation':
+                    continue
+
+                if el_id(m) in self.masters:
+                    self.error('Route in two route_masters', m)
+                self.masters[el_id(m)] = el
+
+        elif el['tags'].get('public_transport') == 'stop_area':
+            if relation_type != 'public_transport':
+                self.warn(
+                    "stop_area relation with "
+                    f"type={relation_type}, needed type=public_transport",
+                    el
+                )
+                return
+
+            warned_about_duplicates = False
+            for m in el['members']:
+                stop_areas = self.stop_areas[el_id(m)]
+                if el in stop_areas and not warned_about_duplicates:
+                    self.warn('Duplicate element in a stop area', el)
+                    warned_about_duplicates = True
+                else:
+                    stop_areas.append(el)
 
     def make_transfer(self, sag):
         transfer = set()
