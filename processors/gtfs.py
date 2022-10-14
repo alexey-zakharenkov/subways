@@ -206,7 +206,6 @@ def process(cities, transfers, filename, cache_path):
             }
             all_stops[station_id] = station_gtfs
 
-            platform_id = f"{route_stop.stoparea.id}_plt"
             platform_gtfs = {
                 "stop_id": platform_id,
                 "stop_code": platform_id,
