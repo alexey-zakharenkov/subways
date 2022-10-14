@@ -94,11 +94,21 @@ def calculate_centers(elements):
             return
         center = [0, 0]
         count = 0
-        for nd in el['nodes']:
-            if nd in nodes:
-                center[0] += nodes[nd][0]
-                center[1] += nodes[nd][1]
-                count += 1
+        way_nodes = el['nodes']
+        way_nodes_len = len(el['nodes'])
+        for i, nd in enumerate(way_nodes):
+            if nd not in nodes:
+                continue
+            # Don't count the first node of a closed way twice
+            if (
+                i == way_nodes_len - 1
+                and way_nodes_len > 1
+                and way_nodes[0] == way_nodes[-1]
+            ):
+                break
+            center[0] += nodes[nd][0]
+            center[1] += nodes[nd][1]
+            count += 1
         if count > 0:
             el['center'] = {'lat': center[0] / count, 'lon': center[1] / count}
             ways[el['id']] = (el['center']['lat'], el['center']['lon'])
