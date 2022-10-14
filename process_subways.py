@@ -185,7 +185,42 @@ def calculate_centers(elements):
         )
 
 
-if __name__ == '__main__':
+def add_osm_elements_to_cities(osm_elements, cities):
+    for el in osm_elements:
+        for c in cities:
+            if c.contains(el):
+                c.add(el)
+
+
+def validate_cities(cities):
+    """Validate cities. Return list of good cities."""
+    good_cities = []
+    for c in cities:
+        try:
+            c.extract_routes()
+        except CriticalValidationError as e:
+            logging.error(
+                "Critical validation error while processing %s: %s",
+                c.name,
+                e,
+            )
+            c.error(str(e))
+        except AssertionError as e:
+            logging.error(
+                "Validation logic error while processing %s: %s",
+                c.name,
+                e,
+            )
+            c.error(f"Validation logic error: {e}")
+        else:
+            c.validate()
+            if c.is_good:
+                good_cities.append(c)
+
+    return good_cities
+
+
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '-i',
@@ -317,37 +352,13 @@ if __name__ == '__main__':
         if options.source:
             with open(options.source, 'w', encoding='utf-8') as f:
                 json.dump(osm, f)
-    logging.info('Downloaded %s elements, sorting by city', len(osm))
+    logging.info('Downloaded %s elements', len(osm))
 
-    # Sorting elements by city and prepare a dict
-    for el in osm:
-        for c in cities:
-            if c.contains(el):
-                c.add(el)
+    logging.info('Sorting elements by city')
+    add_osm_elements_to_cities(osm, cities)
 
     logging.info('Building routes for each city')
-    good_cities = []
-    for c in cities:
-        try:
-            c.extract_routes()
-        except CriticalValidationError as e:
-            logging.error(
-                "Critical validation error while processing %s: %s",
-                c.name,
-                str(e),
-            )
-            c.error(str(e))
-        except AssertionError as e:
-            logging.error(
-                "Validation logic error while processing %s: %s",
-                c.name,
-                str(e),
-            )
-            c.error("Validation logic error: {}".format(str(e)))
-        else:
-            c.validate()
-            if c.is_good:
-                good_cities.append(c)
+    good_cities = validate_cities(cities)
 
     logging.info('Finding transfer stations')
     transfers = find_transfers(osm, cities)
@@ -423,3 +434,7 @@ if __name__ == '__main__':
 
         filename = getattr(options, option_name)
         processor.process(cities, transfers, filename, options.cache)
+
+
+if __name__ == '__main__':
+    main()
