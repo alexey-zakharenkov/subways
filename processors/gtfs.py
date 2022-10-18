@@ -2,6 +2,8 @@ import csv
 import io
 import zipfile
 
+from itertools import permutations
+
 from ._common import (
     DEFAULT_INTERVAL,
     format_colour,
@@ -346,19 +348,20 @@ def process(cities, transfers, filename, cache_path):
         for stoparea1 in stoparea_set:
             for stoparea2 in stoparea_set:
                 if stoparea1.id < stoparea2.id:
+                    stop1_id = f"{stoparea1.id}_st"
+                    stop2_id = f"{stoparea2.id}_st"
+                    if not {stop1_id, stop2_id}.issubset(all_stops):
+                        continue
                     transfer_time = TRANSFER_PENALTY + round(
                         distance(stoparea1.center, stoparea2.center)
                         / SPEED_ON_TRANSFER
                     )
-                    for id1, id2 in (
-                        (stoparea1.id, stoparea2.id),
-                        (stoparea2.id, stoparea1.id),
-                    ):
+                    for id1, id2 in permutations((stop1_id, stop2_id)):
                         gtfs_data["transfers"].append(
                             dict_to_row(
                                 {
-                                    "from_stop_id": f"{id1}_st",
-                                    "to_stop_id": f"{id2}_st",
+                                    "from_stop_id": id1,
+                                    "to_stop_id": id2,
                                     "transfer_type": 0,
                                     "min_transfer_time": transfer_time,
                                 },
