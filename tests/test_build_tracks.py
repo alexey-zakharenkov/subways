@@ -33,7 +33,20 @@ class TestOneRouteTracks(unittest.TestCase):
         "networks": "",
     }
 
-    def prepare_city_routes(self, network):
+    def assertListAlmostEqual(self, list1, list2, places=10) -> None:
+        if not (isinstance(list1, list) and isinstance(list2, list)):
+            raise RuntimeError(
+                f"Not lists passed to the '{self.__class__.__name__}."
+                "assertListAlmostEqual' method"
+            )
+        self.assertEqual(len(list1), len(list2))
+        for a, b in zip(list1, list2):
+            if isinstance(a, list) and isinstance(b, list):
+                self.assertListAlmostEqual(a, b, places)
+            else:
+                self.assertAlmostEqual(a, b, places)
+
+    def prepare_city_routes(self, network) -> tuple:
         city_data = self.CITY_TEMPLATE.copy()
         city_data["num_stations"] = network["station_count"]
         city = City(city_data)
@@ -96,12 +109,45 @@ class TestOneRouteTracks(unittest.TestCase):
             "Wrong backward tracks after truncating",
         )
 
-    def test_tracks_extending(self):
+    def _test_stop_positions_on_rails_for_network(self, network_data):
+        fwd_route, bwd_route = self.prepare_city_routes(network_data)
+
+        for route, route_label in zip(
+            (fwd_route, bwd_route), ("forward", "backward")
+        ):
+            route_data = network_data[route_label]
+
+            for attr in (
+                "first_stop_on_rails_index",
+                "last_stop_on_rails_index",
+            ):
+                self.assertEqual(
+                    getattr(route, attr),
+                    route_data[attr],
+                    f"Wrong {attr} for {route_label} route",
+                )
+
+            first_index = route_data["first_stop_on_rails_index"]
+            last_index = route_data["last_stop_on_rails_index"]
+            positions_on_rails = [
+                rs.positions_on_rails
+                for rs in route.stops[first_index : last_index + 1]
+            ]
+            self.assertListAlmostEqual(
+                positions_on_rails, route_data["positions_on_rails"]
+            )
+
+    def test_tracks_extending(self) -> None:
         for network_name, network_data in sample_networks.items():
             with self.subTest(msg=network_name):
                 self._test_tracks_extending_for_network(network_data)
 
-    def test_tracks_truncating(self):
+    def test_tracks_truncating(self) -> None:
         for network_name, network_data in sample_networks.items():
             with self.subTest(msg=network_name):
                 self._test_tracks_truncating_for_network(network_data)
+
+    def test_stop_position_on_rails(self) -> None:
+        for network_name, network_data in sample_networks.items():
+            with self.subTest(msg=network_name):
+                self._test_stop_positions_on_rails_for_network(network_data)

@@ -757,27 +757,31 @@ class Route:
     def project_stops_on_line(self):
         projected, stop_near_tracks_criterion = self.get_stop_projections()
 
-        self.first_stop_on_rails_index = 0
+        projected_stops_data = {
+            'first_stop_on_rails_index': None,
+            'last_stop_on_rails_index': None,
+            'stops_on_longest_line': [],  # list [{'route_stop': RouteStop,
+                                          #        'coords': (lon, lat),
+                                          #        'positions_on_rails': [] }
+        }
+        first_index = 0
         while (
-            self.first_stop_on_rails_index < len(self.stops)
-            and not stop_near_tracks_criterion(self.first_stop_on_rails_index)
+            first_index < len(self.stops)
+            and not stop_near_tracks_criterion(first_index)
         ):
-            self.first_stop_on_rails_index += 1
+            first_index += 1
+        projected_stops_data['first_stop_on_rails_index'] = first_index
 
-        self.last_stop_on_rails_index = len(self.stops) - 1
+        last_index = len(self.stops) - 1
         while (
-            self.last_stop_on_rails_index > self.first_stop_on_rails_index
-            and not stop_near_tracks_criterion(self.last_stop_on_rails_index)
+            last_index > projected_stops_data['first_stop_on_rails_index']
+            and not stop_near_tracks_criterion(last_index)
         ):
-            self.last_stop_on_rails_index -= 1
+            last_index -= 1
+        projected_stops_data['last_stop_on_rails_index'] = last_index
 
-        stops_on_longest_line = []
         for i, route_stop in enumerate(self.stops):
-            if not (
-                    self.first_stop_on_rails_index
-                    <= i
-                    <= self.last_stop_on_rails_index
-            ):
+            if not first_index <= i <= last_index:
                 continue
 
             if projected[i]['projected_point'] is None:
@@ -788,6 +792,11 @@ class Route:
                     self.element,
                 )
             else:
+                stop_data = {
+                    'route_stop': route_stop,
+                    'coords': None,
+                    'positions_on_rails': None,
+                }
                 projected_point = projected[i]['projected_point']
                 # We've got two separate stations with a good stretch of
                 # railway tracks between them. Put these on tracks.
@@ -800,12 +809,12 @@ class Route:
                         self.element,
                     )
                 else:
-                    route_stop.stop = projected_point
-                route_stop.positions_on_rails = projected[i][
+                    stop_data['coords'] = projected_point
+                stop_data['positions_on_rails'] = projected[i][
                     'positions_on_line'
                 ]
-                stops_on_longest_line.append(route_stop)
-        return stops_on_longest_line
+                projected_stops_data['stops_on_longest_line'].append(stop_data)
+        return projected_stops_data
 
     def calculate_distances(self):
         dist = 0
@@ -1072,9 +1081,23 @@ class Route:
                     self.element
                 )
 
-            stops_on_longest_line = self.project_stops_on_line()
-            self.check_and_recover_stops_order(stops_on_longest_line)
+            projected_stops_data = self.project_stops_on_line()
+            self.check_and_recover_stops_order(projected_stops_data)
+            self.apply_projected_stops_data(projected_stops_data)
             self.calculate_distances()
+
+    def apply_projected_stops_data(self, projected_stops_data: dict) -> None:
+        """Store better stop coordinates and indexes of first/last stops
+        that lie on a continuous track line, to the instance attributes.
+        """
+        for attr in ('first_stop_on_rails_index', 'last_stop_on_rails_index'):
+            setattr(self, attr, projected_stops_data[attr])
+
+        for stop_data in projected_stops_data['stops_on_longest_line']:
+            route_stop = stop_data['route_stop']
+            route_stop.positions_on_rails = stop_data['positions_on_rails']
+            if stop_coords := stop_data['coords']:
+                route_stop.stop = stop_coords
 
     def get_extended_tracks(self):
         """Amend tracks with points of leading/trailing self.stops
@@ -1156,34 +1179,15 @@ class Route:
     def check_stops_order_on_tracks_direct(self, stop_sequence):
         """Checks stops order on tracks, following stop_sequence
         in direct order only.
-        :param stop_sequence: list of RouteStop that belong to the
-        longest contiguous sequence of tracks in a route.
+        :param stop_sequence: list of dict{'route_stop', 'positions_on_rails',
+            'coords'} for RouteStops that belong to the longest contiguous
+            sequence of tracks in a route.
         :return: error message on the first order violation or None.
         """
-
-        def make_assertion_error_msg(route_stop, error_type):
-            return (
-                "stop_area {} '{}' has {} 'positions_on_rails' "
-                "attribute in route {}".format(
-                    route_stop.stoparea.id,
-                    route_stop.stoparea.name,
-                    "no" if error_type == 1 else "empty",
-                    self.id,
-                )
-            )
-
         allowed_order_violations = 1 if self.is_circular else 0
         max_position_on_rails = -1
-        for route_stop in stop_sequence:
-            assert hasattr(
-                route_stop, 'positions_on_rails'
-            ), make_assertion_error_msg(route_stop, error_type=1)
-
-            positions_on_rails = route_stop.positions_on_rails
-            assert positions_on_rails, make_assertion_error_msg(
-                route_stop, error_type=2
-            )
-
+        for stop_data in stop_sequence:
+            positions_on_rails = stop_data['positions_on_rails']
             suitable_occurrence = 0
             while (
                 suitable_occurrence < len(positions_on_rails)
@@ -1196,22 +1200,26 @@ class Route:
                     suitable_occurrence -= 1
                     allowed_order_violations -= 1
                 else:
+                    route_stop = stop_data['route_stop']
                     return 'Stops on tracks are unordered near "{}" {}'.format(
                         route_stop.stoparea.name, route_stop.stop
                     )
             max_position_on_rails = positions_on_rails[suitable_occurrence]
 
-    def check_stops_order_on_tracks(self, stop_sequence):
+    def check_stops_order_on_tracks(self, projected_stops_data):
         """Checks stops order on tracks, trying direct and reversed
             order of stops in the stop_sequence.
-        :param stop_sequence: list of RouteStop that belong to the
-        longest contiguous sequence of tracks in a route.
+        :param projected_stops_data: info about RouteStops that belong to the
+        longest contiguous sequence of tracks in a route. May be changed
+        if tracks reversing is performed.
         :return: error message on the first order violation or None.
         """
-        error_message = self.check_stops_order_on_tracks_direct(stop_sequence)
+        error_message = self.check_stops_order_on_tracks_direct(
+            projected_stops_data['stops_on_longest_line']
+        )
         if error_message:
             error_message_reversed = self.check_stops_order_on_tracks_direct(
-                reversed(stop_sequence)
+                reversed(projected_stops_data['stops_on_longest_line'])
             )
             if error_message_reversed is None:
                 error_message = None
@@ -1220,15 +1228,18 @@ class Route:
                     self.element,
                 )
                 self.tracks.reverse()
+                new_projected_stops_data = self.project_stops_on_line()
+                projected_stops_data.update(new_projected_stops_data)
+
         return error_message
 
-    def check_stops_order(self, stops_on_longest_line):
+    def check_stops_order(self, projected_stops_data):
         (
             angle_disorder_warnings,
             angle_disorder_errors,
         ) = self.check_stops_order_by_angle()
         disorder_on_tracks_error = self.check_stops_order_on_tracks(
-            stops_on_longest_line
+            projected_stops_data
         )
         disorder_warnings = angle_disorder_warnings
         disorder_errors = angle_disorder_errors
@@ -1236,9 +1247,12 @@ class Route:
             disorder_errors.append(disorder_on_tracks_error)
         return disorder_warnings, disorder_errors
 
-    def check_and_recover_stops_order(self, stops_on_longest_line):
+    def check_and_recover_stops_order(self, projected_stops_data: dict):
+        """
+        :param projected_stops_data: may change if we need to reverse tracks
+        """
         disorder_warnings, disorder_errors = self.check_stops_order(
-            stops_on_longest_line
+            projected_stops_data
         )
         if disorder_warnings or disorder_errors:
             resort_success = False
