@@ -1507,6 +1507,9 @@ class RouteMaster:
 
 
 class City:
+
+    route_class = Route
+
     def __init__(self, city_data, overground=False):
         self.validate_called = False
         self.errors = []
@@ -1740,7 +1743,7 @@ class City:
                     ):
                         continue
 
-                route = Route(el, self, master)
+                route = self.route_class(el, self, master)
                 if not route.stops:
                     self.warn('Route has no stops', el)
                     continue
