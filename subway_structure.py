@@ -1157,6 +1157,11 @@ class Route:
 
         return tracks
 
+    def get_tracks_geometry(self):
+        tracks = self.get_extended_tracks()
+        tracks = self.get_truncated_tracks(tracks)
+        return tracks
+
     def check_stops_order_by_angle(self):
         disorder_warnings = []
         disorder_errors = []
