@@ -31,5 +31,5 @@ def make_disjoint_metro_polygons():
     print("END")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     make_disjoint_metro_polygons()

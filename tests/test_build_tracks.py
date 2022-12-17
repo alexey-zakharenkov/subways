@@ -25,7 +25,7 @@ class TestOneRouteTracks(unittest.TestCase):
         "name": "Null Island",
         "country": "World",
         "continent": "Africa",
-        "num_stations": None,  # Would be taken from the sample network data under testing
+        "num_stations": None,  # Would be taken from the sample network data
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -127,11 +127,11 @@ class TestOneRouteTracks(unittest.TestCase):
                     f"Wrong {attr} for {route_label} route",
                 )
 
-            first_index = route_data["first_stop_on_rails_index"]
-            last_index = route_data["last_stop_on_rails_index"]
+            first_ind = route_data["first_stop_on_rails_index"]
+            last_ind = route_data["last_stop_on_rails_index"]
             positions_on_rails = [
                 rs.positions_on_rails
-                for rs in route.stops[first_index : last_index + 1]
+                for rs in route.stops[first_ind : last_ind + 1]  # noqa E203
             ]
             self.assertListAlmostEqual(
                 positions_on_rails, route_data["positions_on_rails"]

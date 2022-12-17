@@ -328,7 +328,8 @@ def process(
     transit_data = transit_to_dict(cities, transfers)
     gtfs_data = transit_data_to_gtfs(transit_data)
 
-    # TODO: make universal cache for all processors, and apply the cache to GTFS
+    # TODO: make universal cache for all processors,
+    #       and apply the cache to GTFS
 
     make_gtfs(filename, gtfs_data)
 

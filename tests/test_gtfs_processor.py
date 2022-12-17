@@ -60,8 +60,8 @@ class TestGTFS(TestCase):
                 )
 
     def test__dict_to_row__numeric_values(self) -> None:
-        """Test that zero numeric values remain zeros in dict_to_row() function,
-        and not empty strings or None.
+        """Test that zero numeric values remain zeros in dict_to_row()
+        function, and not empty strings or None.
         """
 
         shapes = [

@@ -55,7 +55,6 @@ sample_networks = {
             "positions_on_rails": [],
         },
     },
-
     "Only 2 stations connected with rails": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -125,7 +124,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1]],
         },
     },
-
     "Only 6 stations, no rails": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -214,7 +212,6 @@ sample_networks = {
             "positions_on_rails": [],
         },
     },
-
     "One rail line connecting all stations": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -328,7 +325,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1], [2], [3], [4], [5]],
         },
     },
-
     "One rail line connecting all stations except the last": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -439,7 +435,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1], [2], [3], [4]],
         },
     },
-
     "One rail line connecting all stations except the fist": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -550,7 +545,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1], [2], [3], [4]],
         },
     },
-
     "One rail line connecting all stations except the fist and the last": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -658,7 +652,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1], [2], [3]],
         },
     },
-
     "One rail line connecting only 2 first stations": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -760,7 +753,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1]],
         },
     },
-
     "One rail line connecting only 2 last stations": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -862,7 +854,6 @@ sample_networks = {
             "positions_on_rails": [[0], [1]],
         },
     },
-
     "One rail connecting all stations and protruding at both ends": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -986,8 +977,10 @@ sample_networks = {
             "positions_on_rails": [[1], [2], [3], [4], [5], [6]],
         },
     },
-
-    "Several rails with reversed order for backward route, connecting all stations and protruding at both ends": {
+    (
+        "Several rails with reversed order for backward route, "
+        "connecting all stations and protruding at both ends"
+    ): {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -1116,8 +1109,10 @@ sample_networks = {
             "positions_on_rails": [[1], [2], [3], [4], [5], [6]],
         },
     },
-
-    "One rail laying near all stations requiring station projecting, protruding at both ends": {
+    (
+        "One rail laying near all stations requiring station projecting, "
+        "protruding at both ends"
+    ): {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0001' lon='0.0'>
@@ -1210,15 +1205,28 @@ sample_networks = {
         "forward": {
             "first_stop_on_rails_index": 0,
             "last_stop_on_rails_index": 5,
-            "positions_on_rails": [[1/7], [2/7], [3/7], [4/7], [5/7], [6/7]],
+            "positions_on_rails": [
+                [1 / 7],
+                [2 / 7],
+                [3 / 7],
+                [4 / 7],
+                [5 / 7],
+                [6 / 7],
+            ],
         },
         "backward": {
             "first_stop_on_rails_index": 0,
             "last_stop_on_rails_index": 5,
-            "positions_on_rails": [[1/7], [2/7], [3/7], [4/7], [5/7], [6/7]],
+            "positions_on_rails": [
+                [1 / 7],
+                [2 / 7],
+                [3 / 7],
+                [4 / 7],
+                [5 / 7],
+                [6 / 7],
+            ],
         },
     },
-
     "One rail laying near all stations except the first and last": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -1314,15 +1322,14 @@ sample_networks = {
         "forward": {
             "first_stop_on_rails_index": 1,
             "last_stop_on_rails_index": 4,
-            "positions_on_rails": [[0], [1/3], [2/3], [1]],
+            "positions_on_rails": [[0], [1 / 3], [2 / 3], [1]],
         },
         "backward": {
             "first_stop_on_rails_index": 1,
             "last_stop_on_rails_index": 4,
-            "positions_on_rails": [[0], [1/3], [2/3], [1]],
+            "positions_on_rails": [[0], [1 / 3], [2 / 3], [1]],
         },
     },
-
     "Circle route without rails": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
@@ -1391,7 +1398,6 @@ sample_networks = {
             "positions_on_rails": [],
         },
     },
-
     "Circle route with closed rail line connecting all stations": {
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>

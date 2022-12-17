@@ -133,7 +133,11 @@ class TestProjection(unittest.TestCase):
         """The tested function should accept points as any consecutive
         container with index operator.
         """
-        types = (tuple, list, collections.deque,)
+        types = (
+            tuple,
+            list,
+            collections.deque,
+        )
 
         point = (0, 0.5)
         segment_end1 = (0, 0)

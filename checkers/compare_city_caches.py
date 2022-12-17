@@ -10,10 +10,11 @@
    affect the process_subways.py output really doesn't change it.
 """
 
-import sys
 import json
 import logging
-from common import compare_stops, compare_transfers, compare_networks
+import sys
+
+from common import compare_networks, compare_stops, compare_transfers
 
 
 def compare_jsons(cache0, cache1):
@@ -28,21 +29,21 @@ def compare_jsons(cache0, cache1):
     for name in city_names0:
         city0 = cache0[name]
         city1 = cache1[name]
-        if not compare_networks(city0['network'], city1['network']):
+        if not compare_networks(city0["network"], city1["network"]):
             return False
 
-        stop_ids0 = sorted(city0['stops'].keys())
-        stop_ids1 = sorted(city1['stops'].keys())
+        stop_ids0 = sorted(city0["stops"].keys())
+        stop_ids1 = sorted(city1["stops"].keys())
         if stop_ids0 != stop_ids1:
             logging.debug("Different stop_ids")
             return False
-        stops0 = [v for k, v in sorted(city0['stops'].items())]
-        stops1 = [v for k, v in sorted(city1['stops'].items())]
+        stops0 = [v for k, v in sorted(city0["stops"].items())]
+        stops1 = [v for k, v in sorted(city1["stops"].items())]
         for stop0, stop1 in zip(stops0, stops1):
             if not compare_stops(stop0, stop1):
                 return False
 
-        if not compare_transfers(city0['transfers'], city1['transfers']):
+        if not compare_transfers(city0["transfers"], city1["transfers"]):
             return False
 
     return True
@@ -57,8 +58,8 @@ if __name__ == "__main__":
 
     path0, path1 = sys.argv[1:3]
 
-    j0 = json.load(open(path0, encoding='utf-8'))
-    j1 = json.load(open(path1, encoding='utf-8'))
+    j0 = json.load(open(path0, encoding="utf-8"))
+    j1 = json.load(open(path1, encoding="utf-8"))
 
     equal = compare_jsons(j0, j1)
 
