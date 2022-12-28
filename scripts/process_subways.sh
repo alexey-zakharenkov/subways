@@ -36,7 +36,7 @@ Environment variable reference:
   - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
   - POLY: *.poly file with [multi]polygon comprising cities with metro
     If neither \$BBOX nor \$POLY is set, then \$POLY is generated
-  - SKIP_PLANET_UPDATE: skip \$PLANET file update. Any non-empty string is True
+  - SKIP_PLANET_UPDATE: skip \$PLANET_METRO file update. Any non-empty string is True
   - SKIP_FILTERING: skip filtering railway data. Any non-empty string is True
   - FILTERED_DATA: path to filtered data. Defaults to \$TMPDIR/subways.osm
   - MAPSME: file name for maps.me json output
@@ -55,6 +55,7 @@ Environment variable reference:
   - SERVER: server name and path to upload HTML files (e.g. ilya@osmz.ru:/var/www/)
   - SERVER_KEY: rsa key to supply for uploading the files
   - REMOVE_HTML: set to 1 to remove \$HTML_DIR after uploading
+  - QUIET: set to any non-empty value to use WARNING log level in process_subways.py. Default is INFO.
 EOF
   exit
 fi
@@ -233,7 +234,7 @@ fi
 # Running the validation
 
 VALIDATION="$TMPDIR/validation.json"
-"$PYTHON" "$SUBWAYS_PATH/process_subways.py" -q \
+"$PYTHON" "$SUBWAYS_PATH/process_subways.py" ${QUIET:+-q} \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
     ${GTFS:+--output-gtfs "$GTFS"} \

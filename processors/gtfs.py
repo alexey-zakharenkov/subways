@@ -3,7 +3,7 @@ from functools import partial
 from io import BytesIO, StringIO
 from itertools import permutations
 from tarfile import TarFile, TarInfo
-from typing import List, Set
+from typing import List, Optional, Set
 from zipfile import ZipFile
 
 from ._common import (
@@ -344,7 +344,9 @@ def dict_to_row(dict_data: dict, record_type: str) -> list:
     ]
 
 
-def make_gtfs(filename: str, gtfs_data: dict, fmt: str = None) -> None:
+def make_gtfs(
+    filename: str, gtfs_data: dict, fmt: Optional[str] = None
+) -> None:
     if not fmt:
         fmt = "tar" if filename.endswith(".tar") else "zip"
 

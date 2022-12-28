@@ -9,6 +9,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from typing import Dict, List, Optional, Tuple
 
 import processors
 from subway_io import (
@@ -26,6 +27,9 @@ from subway_structure import (
     MODES_OVERGROUND,
     MODES_RAPID,
 )
+
+
+Point = Tuple[float, float]
 
 
 def overpass_request(overground, overpass_api, bboxes):
@@ -71,114 +75,155 @@ def slugify(name):
     return re.sub(r"[^a-z0-9_-]+", "", name.lower().replace(" ", "_"))
 
 
+def get_way_center(
+    element: dict, node_centers: Dict[int, Point]
+) -> Optional[Point]:
+    """
+    :param element: dict describing OSM element
+    :param node_centers: osm_id => (lat, lon)
+    :return: tuple with center coordinates, or None
+    """
+
+    # If elements have been queried via overpass-api with
+    # 'out center;' clause then ways already have 'center' attribute
+    if "center" in element:
+        return element["center"]["lat"], element["center"]["lon"]
+
+    if "nodes" not in element:
+        return None
+
+    center = [0, 0]
+    count = 0
+    way_nodes = element["nodes"]
+    way_nodes_len = len(element["nodes"])
+    for i, nd in enumerate(way_nodes):
+        if nd not in node_centers:
+            continue
+        # Don't count the first node of a closed way twice
+        if (
+            i == way_nodes_len - 1
+            and way_nodes_len > 1
+            and way_nodes[0] == way_nodes[-1]
+        ):
+            break
+        center[0] += node_centers[nd][0]
+        center[1] += node_centers[nd][1]
+        count += 1
+    if count == 0:
+        return None
+    element["center"] = {"lat": center[0] / count, "lon": center[1] / count}
+    return element["center"]["lat"], element["center"]["lon"]
+
+
+def get_relation_center(
+    element: dict,
+    node_centers: Dict[int, Point],
+    way_centers: Dict[int, Point],
+    relation_centers: Dict[int, Point],
+    ignore_unlocalized_child_relations: bool = False,
+) -> Optional[Point]:
+    """
+    :param element: dict describing OSM element
+    :param node_centers: osm_id => (lat, lon)
+    :param way_centers: osm_id => (lat, lon)
+    :param relation_centers: osm_id => (lat, lon)
+    :param ignore_unlocalized_child_relations: if a member that is a relation
+        has no center, skip it and calculate center based on member nodes,
+        ways and other, "localized" (with known centers), relations
+    :return: tuple with center coordinates, or None
+    """
+
+    # If elements have been queried via overpass-api with
+    # 'out center;' clause then some relations already have 'center'
+    # attribute. But this is not the case for relations composed only
+    # of other relations (e.g., route_master, stop_area_group or
+    # stop_area with only members that are multipolygons)
+    if "center" in element:
+        return element["center"]["lat"], element["center"]["lon"]
+
+    if "center" in element:
+        return element["center"]
+
+    center = [0, 0]
+    count = 0
+    for m in element.get("members", list()):
+        m_id = m["ref"]
+        m_type = m["type"]
+        if m_type == "relation" and m_id not in relation_centers:
+            if ignore_unlocalized_child_relations:
+                continue
+            else:
+                # Cannot calculate fair center because the center
+                # of a child relation is not known yet
+                return None
+        member_container = (
+            node_centers
+            if m_type == "node"
+            else way_centers
+            if m_type == "way"
+            else relation_centers
+        )
+        if m_id in member_container:
+            center[0] += member_container[m_id][0]
+            center[1] += member_container[m_id][1]
+            count += 1
+    if count == 0:
+        return None
+    element["center"] = {"lat": center[0] / count, "lon": center[1] / count}
+    return element["center"]["lat"], element["center"]["lon"]
+
+
 def calculate_centers(elements):
     """Adds 'center' key to each way/relation in elements,
     except for empty ways or relations.
     Relies on nodes-ways-relations order in the elements list.
     """
-    nodes = {}  # id(int) => (lat, lon)
-    ways = {}  # id(int) => (lat, lon)
-    relations = {}  # id(int) => (lat, lon)
-    empty_relations = set()  # ids(int) of relations without members
-    # or containing only empty relations
+    nodes: Dict[int, Point] = {}  # id => (lat, lon)
+    ways: Dict[int, Point] = {}  # id => (lat, lon)
+    relations: Dict[int, Point] = {}  # id => (lat, lon)
 
-    def calculate_way_center(el):
-        # If element has been queried via overpass-api with 'out center;'
-        # clause then ways already have 'center' attribute
-        if "center" in el:
-            ways[el["id"]] = (el["center"]["lat"], el["center"]["lon"])
-            return
-        center = [0, 0]
-        count = 0
-        way_nodes = el["nodes"]
-        way_nodes_len = len(el["nodes"])
-        for i, nd in enumerate(way_nodes):
-            if nd not in nodes:
-                continue
-            # Don't count the first node of a closed way twice
-            if (
-                i == way_nodes_len - 1
-                and way_nodes_len > 1
-                and way_nodes[0] == way_nodes[-1]
-            ):
-                break
-            center[0] += nodes[nd][0]
-            center[1] += nodes[nd][1]
-            count += 1
-        if count > 0:
-            el["center"] = {"lat": center[0] / count, "lon": center[1] / count}
-            ways[el["id"]] = (el["center"]["lat"], el["center"]["lon"])
-
-    def calculate_relation_center(el):
-        # If element has been queried via overpass-api with 'out center;'
-        # clause then some relations already have 'center' attribute
-        if "center" in el:
-            relations[el["id"]] = (el["center"]["lat"], el["center"]["lon"])
-            return True
-        center = [0, 0]
-        count = 0
-        for m in el.get("members", []):
-            if m["type"] == "relation" and m["ref"] not in relations:
-                if m["ref"] in empty_relations:
-                    # Ignore empty child relations
-                    continue
-                else:
-                    # Center of child relation is not known yet
-                    return False
-            member_container = (
-                nodes
-                if m["type"] == "node"
-                else ways
-                if m["type"] == "way"
-                else relations
-            )
-            if m["ref"] in member_container:
-                center[0] += member_container[m["ref"]][0]
-                center[1] += member_container[m["ref"]][1]
-                count += 1
-        if count == 0:
-            empty_relations.add(el["id"])
-        else:
-            el["center"] = {"lat": center[0] / count, "lon": center[1] / count}
-            relations[el["id"]] = (el["center"]["lat"], el["center"]["lon"])
-        return True
-
-    relations_without_center = []
+    unlocalized_relations = []  # 'unlocalized' means the center of the
+    # relation has not been calculated yet
 
     for el in elements:
         if el["type"] == "node":
             nodes[el["id"]] = (el["lat"], el["lon"])
         elif el["type"] == "way":
-            if "nodes" in el:
-                calculate_way_center(el)
+            if center := get_way_center(el, nodes):
+                ways[el["id"]] = center
         elif el["type"] == "relation":
-            if not calculate_relation_center(el):
-                relations_without_center.append(el)
+            if center := get_relation_center(el, nodes, ways, relations):
+                relations[el["id"]] = center
+            else:
+                unlocalized_relations.append(el)
+
+    def iterate_relation_centers_calculation(
+        ignore_unlocalized_child_relations: bool,
+    ) -> List[int]:
+        unlocalized_relations_upd = []
+        for rel in unlocalized_relations:
+            if center := get_relation_center(
+                rel, nodes, ways, relations, ignore_unlocalized_child_relations
+            ):
+                relations[rel["id"]] = center
+            else:
+                unlocalized_relations_upd.append(rel)
+        return unlocalized_relations_upd
 
     # Calculate centers for relations that have no one yet
-    while relations_without_center:
-        new_relations_without_center = []
-        for rel in relations_without_center:
-            if not calculate_relation_center(rel):
-                new_relations_without_center.append(rel)
-        if len(new_relations_without_center) == len(relations_without_center):
-            break
-        relations_without_center = new_relations_without_center
-
-    if relations_without_center:
-        logging.error(
-            "Cannot calculate center for the relations (%d in total): %s%s",
-            len(relations_without_center),
-            ", ".join(str(rel["id"]) for rel in relations_without_center[:20]),
-            ", ..." if len(relations_without_center) > 20 else "",
-        )
-    if empty_relations:
-        logging.warning(
-            "Empty relations (%d in total): %s%s",
-            len(empty_relations),
-            ", ".join(str(x) for x in list(empty_relations)[:20]),
-            ", ..." if len(empty_relations) > 20 else "",
-        )
+    while unlocalized_relations:
+        unlocalized_relations_upd = iterate_relation_centers_calculation(False)
+        progress = len(unlocalized_relations_upd) < len(unlocalized_relations)
+        if not progress:
+            unlocalized_relations_upd = iterate_relation_centers_calculation(
+                True
+            )
+            progress = len(unlocalized_relations_upd) < len(
+                unlocalized_relations
+            )
+            if not progress:
+                break
+        unlocalized_relations = unlocalized_relations_upd
 
 
 def add_osm_elements_to_cities(osm_elements, cities):
