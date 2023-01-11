@@ -111,6 +111,7 @@ if [ ! -f "$SUBWAYS_PATH/process_subways.py" ]; then
 fi
 
 TMPDIR="${TMPDIR:-$SUBWAYS_PATH}"
+mkdir -p "$TMPDIR"
 
 # Downloading the latest version of the subways script
 if [ -n "${GIT_PULL-}" ]; then (
@@ -232,6 +233,10 @@ if [ -n "${NEED_TO_REMOVE_POLY-}" ]; then
 fi
 
 # Running the validation
+
+if [ -n "${DUMP-}" ]; then
+   mkdir -p "$DUMP"
+fi
 
 VALIDATION="$TMPDIR/validation.json"
 "$PYTHON" "$SUBWAYS_PATH/process_subways.py" ${QUIET:+-q} \
