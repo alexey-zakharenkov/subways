@@ -1,7 +1,7 @@
 import argparse
 import json
 
-from process_subways import download_cities
+from process_subways import DEFAULT_CITIES_INFO_URL, get_cities_info
 
 
 if __name__ == "__main__":
@@ -26,6 +26,15 @@ if __name__ == "__main__":
     )
 
     arg_parser.add_argument(
+        "--cities-info-url",
+        default=DEFAULT_CITIES_INFO_URL,
+        help=(
+            "URL of CSV file with reference information about rapid transit "
+            "networks. file:// protocol is also supported."
+        ),
+    )
+
+    arg_parser.add_argument(
         "--with-bad",
         action="store_true",
         help="Whether to include cities validation of which was failed",
@@ -40,14 +49,14 @@ if __name__ == "__main__":
     good_cities = set(
         n.get("network", n.get("title")) for n in subway_json["networks"]
     )
-    cities = download_cities()
+    cities_info = get_cities_info(args.cities_info_url)
 
     lines = []
-    for c in cities:
-        if c.name in good_cities:
-            lines.append(f"{c.name}, {c.country}")
+    for ci in cities_info:
+        if ci["name"] in good_cities:
+            lines.append(f"{ci['name']}, {ci['country']}")
         elif with_bad:
-            lines.append(f"{c.name}, {c.country} (Bad)")
+            lines.append(f"{ci['name']}, {ci['country']} (Bad)")
 
     for line in sorted(lines):
         print(line)

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import csv
 import inspect
 import json
 import logging
@@ -9,6 +10,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from functools import partial
 from typing import Dict, List, Optional, Tuple
 
 import processors
@@ -20,14 +22,20 @@ from subway_io import (
     write_recovery_data,
 )
 from subway_structure import (
+    City,
     CriticalValidationError,
-    download_cities,
     find_transfers,
     get_unused_entrances_geojson,
     MODES_OVERGROUND,
     MODES_RAPID,
 )
 
+
+DEFAULT_SPREADSHEET_ID = "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"
+DEFAULT_CITIES_INFO_URL = (
+    "https://docs.google.com/spreadsheets/d/"
+    f"{DEFAULT_SPREADSHEET_ID}/export?format=csv"
+)
 
 Point = Tuple[float, float]
 
@@ -49,13 +57,11 @@ def overpass_request(overground, overpass_api, bboxes):
             "rel(br)[type=public_transport][public_transport=stop_area_group];"
         )
     query += ");(._;>>;);out body center qt;"
-    logging.info("Query: %s", query)
+    logging.debug("Query: %s", query)
     url = "{}?data={}".format(overpass_api, urllib.parse.quote(query))
     response = urllib.request.urlopen(url, timeout=1000)
-    if response.getcode() != 200:
-        raise Exception(
-            "Failed to query Overpass API: HTTP {}".format(response.getcode())
-        )
+    if (r_code := response.getcode()) != 200:
+        raise Exception(f"Failed to query Overpass API: HTTP {r_code}")
     return json.load(response)["elements"]
 
 
@@ -258,8 +264,69 @@ def validate_cities(cities):
     return good_cities
 
 
+def get_cities_info(
+    cities_info_url: str = DEFAULT_CITIES_INFO_URL,
+) -> List[dict]:
+    response = urllib.request.urlopen(cities_info_url)
+    if (
+        not cities_info_url.startswith("file://")
+        and (r_code := response.getcode()) != 200
+    ):
+        raise Exception(
+            f"Failed to download cities spreadsheet: HTTP {r_code}"
+        )
+    data = response.read().decode("utf-8")
+    reader = csv.DictReader(
+        data.splitlines(),
+        fieldnames=(
+            "id",
+            "name",
+            "country",
+            "continent",
+            "num_stations",
+            "num_lines",
+            "num_light_lines",
+            "num_interchanges",
+            "bbox",
+            "networks",
+        ),
+    )
+
+    cities_info = list()
+    names = set()
+    next(reader)  # skipping the header
+    for city_info in reader:
+        if city_info["id"] and city_info["bbox"]:
+            cities_info.append(city_info)
+            name = city_info["name"].strip()
+            if name in names:
+                logging.warning(
+                    "Duplicate city name in city list: %s",
+                    city_info,
+                )
+            names.add(name)
+    return cities_info
+
+
+def prepare_cities(
+    cities_info_url: str = DEFAULT_CITIES_INFO_URL, overground: bool = False
+) -> List[City]:
+    if overground:
+        raise NotImplementedError("Overground transit not implemented yet")
+    cities_info = get_cities_info(cities_info_url)
+    return list(map(partial(City, overground=overground), cities_info))
+
+
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--cities-info-url",
+        default=DEFAULT_CITIES_INFO_URL,
+        help=(
+            "URL of CSV file with reference information about rapid transit "
+            "networks. file:// protocol is also supported."
+        ),
+    )
     parser.add_argument(
         "-i",
         "--source",
@@ -340,8 +407,7 @@ def main():
         format="%(asctime)s %(levelname)-7s  %(message)s",
     )
 
-    # Downloading cities from Google Spreadsheets
-    cities = download_cities(options.overground)
+    cities = prepare_cities(options.cities_info_url, options.overground)
     if options.city:
         cities = [
             c

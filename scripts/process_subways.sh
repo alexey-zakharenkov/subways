@@ -32,6 +32,7 @@ Environment variable reference:
   - PLANET_METRO: path to a local o5m file with extract of cities having metro
     It's used instead of \$PLANET if exists otherwise it's created first
   - PLANET_UPDATE_SERVER: server to get replication data from. Defaults to https://planet.openstreetmap.org/replication/
+  - CITIES_INFO_URL: http(s) or "file://" URL to a CSV file with reference information about rapid transit systems. A default value is hammered into python code.
   - CITY: name of a city/country to process
   - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
   - POLY: *.poly file with [multi]polygon comprising cities with metro
@@ -92,7 +93,8 @@ function check_poly() {
         if [ -n "$("$PYTHON" -c "import shapely" 2>&1)" ]; then
           "$PYTHON" -m pip install shapely
         fi
-        "$PYTHON" "$SUBWAYS_PATH"/make_all_metro_poly.py > "$POLY"
+        "$PYTHON" "$SUBWAYS_PATH"/make_all_metro_poly.py \
+            ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} > "$POLY"
       fi
     fi
     POLY_CHECKED=1
@@ -241,6 +243,7 @@ fi
 VALIDATION="$TMPDIR/validation.json"
 "$PYTHON" "$SUBWAYS_PATH/process_subways.py" ${QUIET:+-q} \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
+    ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
     ${GTFS:+--output-gtfs "$GTFS"} \
     ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"} \
@@ -261,7 +264,9 @@ fi
 
 mkdir -p $HTML_DIR
 rm -f "$HTML_DIR"/*.html
-"$PYTHON" "$SUBWAYS_PATH/validation_to_html.py" "$VALIDATION" "$HTML_DIR"
+"$PYTHON" "$SUBWAYS_PATH/validation_to_html.py" \
+    ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
+    "$VALIDATION" "$HTML_DIR"
 
 # Uploading files to the server
 

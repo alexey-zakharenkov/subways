@@ -3,7 +3,7 @@ validator_osm_wiki_url = (
 )
 github_url = "https://github.com/alexey-zakharenkov/subways"
 produced_by = f"""Produced by
-<a href="{github_url}">Subway Preprocessor</a> on {{date}}."""
+<a href="{github_url}">Subway Preprocessor</a> on {{date}}"""
 metro_mapping_osm_article = "https://wiki.openstreetmap.org/wiki/Metro_Mapping"
 list_of_metro_systems_url = (
     "https://en.wikipedia.org/wiki/List_of_metro_systems#List"
@@ -191,8 +191,7 @@ INDEX_FOOTER = f"""
 </table>
 </main>
 <footer>{produced_by}
-See <a href="{{google}}">this spreadsheet</a> for the reference
-metro statistics and
+from <a href="{{cities_info_url}}">this reference metro statistics</a>. See
 <a href="{list_of_metro_systems_url}">
 this wiki page</a> for a list of all metro systems.</footer>
 </body>
@@ -292,7 +291,7 @@ COUNTRY_CITY = """
 COUNTRY_FOOTER = f"""
 </table>
 </main>
-<footer>{produced_by}</footer>
+<footer>{produced_by}.</footer>
 </body>
 </html>
 """

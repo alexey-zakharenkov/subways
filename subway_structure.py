@@ -1,15 +1,10 @@
-import csv
-import logging
 import math
 import re
-import urllib.parse
-import urllib.request
 from collections import Counter, defaultdict
 
 from css_colours import normalize_colour
 
 
-SPREADSHEET_ID = "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"
 MAX_DISTANCE_TO_ENTRANCES = 300  # in meters
 MAX_DISTANCE_STOP_TO_LINE = 50  # in meters
 ALLOWED_STATIONS_MISMATCH = 0.02  # part of total station count
@@ -2108,50 +2103,3 @@ def get_unused_entrances_geojson(elements):
                     }
                 )
     return {"type": "FeatureCollection", "features": features}
-
-
-def download_cities(overground=False):
-    assert not overground, "Overground transit not implemented yet"
-    url = (
-        "https://docs.google.com/spreadsheets/d/{}/export?format=csv{}".format(
-            SPREADSHEET_ID, "&gid=1881416409" if overground else ""
-        )
-    )
-    response = urllib.request.urlopen(url)
-    if response.getcode() != 200:
-        raise Exception(
-            "Failed to download cities spreadsheet: HTTP {}".format(
-                response.getcode()
-            )
-        )
-    data = response.read().decode("utf-8")
-    reader = csv.DictReader(
-        data.splitlines(),
-        fieldnames=(
-            "id",
-            "name",
-            "country",
-            "continent",
-            "num_stations",
-            "num_lines",
-            "num_light_lines",
-            "num_interchanges",
-            "bbox",
-            "networks",
-        ),
-    )
-
-    next(reader)  # skipping the header
-    names = set()
-    cities = []
-    for city_data in reader:
-        if city_data["id"] and city_data["bbox"]:
-            cities.append(City(city_data, overground))
-            name = city_data["name"].strip()
-            if name in names:
-                logging.warning(
-                    "Duplicate city name in the google spreadsheet: %s",
-                    city_data,
-                )
-            names.add(name)
-    return cities

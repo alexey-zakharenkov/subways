@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+import argparse
 import datetime
 import json
 import os
 import re
-import sys
 
-from subway_structure import SPREADSHEET_ID
+from process_subways import DEFAULT_SPREADSHEET_ID
 from v2h_templates import (
     COUNTRY_CITY,
     COUNTRY_FOOTER,
@@ -105,13 +105,6 @@ def tmpl(s, data=None, **kwargs):
                 s,
                 flags=re.DOTALL,
             )
-    s = s.replace("{date}", date)
-    google_url = (
-        "https://docs.google.com/spreadsheets/d/{}/edit?usp=sharing".format(
-            SPREADSHEET_ID
-        )
-    )
-    s = s.replace("{google}", google_url)
     return s
 
 
@@ -143,104 +136,128 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-if len(sys.argv) < 2:
-    print("Reads a log from subway validator and prepares HTML files.")
-    print(
-        "Usage: {} <validation.log> [<target_directory>]".format(sys.argv[0])
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Reads a log from subway validator and prepares HTML files."
+        )
     )
-    sys.exit(1)
+    parser.add_argument("validation_log")
+    parser.add_argument("target_directory", nargs="?", default=".")
+    parser.add_argument(
+        "--cities-info-url",
+        default=(
+            "https://docs.google.com/spreadsheets/d/"
+            f"{DEFAULT_SPREADSHEET_ID}/edit?usp=sharing"
+        ),
+    )
+    options = parser.parse_args()
+    target_dir = options.target_directory
+    cities_info_url = options.cities_info_url
 
-with open(sys.argv[1], "r", encoding="utf-8") as f:
-    data = {c["name"]: CityData(c) for c in json.load(f)}
+    with open(options.validation_log, "r", encoding="utf-8") as f:
+        data = {c["name"]: CityData(c) for c in json.load(f)}
 
-countries = {}
-continents = {}
-c_by_c = {}  # continent → set of countries
-for c in data.values():
-    countries[c.country] = c + countries.get(c.country, CityData())
-    continents[c.continent] = c + continents.get(c.continent, CityData())
-    if c.continent not in c_by_c:
-        c_by_c[c.continent] = set()
-    c_by_c[c.continent].add(c.country)
-world = sum(continents.values(), CityData())
+    countries = {}
+    continents = {}
+    c_by_c = {}  # continent → set of countries
+    for c in data.values():
+        countries[c.country] = c + countries.get(c.country, CityData())
+        continents[c.continent] = c + continents.get(c.continent, CityData())
+        if c.continent not in c_by_c:
+            c_by_c[c.continent] = set()
+        c_by_c[c.continent].add(c.country)
+    world = sum(continents.values(), CityData())
 
-overground = "traml_expected" in next(iter(data.values())).data
-date = datetime.datetime.utcnow().strftime("%d.%m.%Y %H:%M UTC")
-path = "." if len(sys.argv) < 3 else sys.argv[2]
-index = open(os.path.join(path, "index.html"), "w", encoding="utf-8")
-index.write(tmpl(INDEX_HEADER, world))
+    overground = "traml_expected" in next(iter(data.values())).data
+    date = datetime.datetime.utcnow().strftime("%d.%m.%Y %H:%M UTC")
+    index = open(os.path.join(target_dir, "index.html"), "w", encoding="utf-8")
+    index.write(tmpl(INDEX_HEADER, world))
 
-for continent in sorted(continents.keys()):
-    content = ""
-    for country in sorted(c_by_c[continent]):
-        country_file_name = country.lower().replace(" ", "-") + ".html"
-        content += tmpl(
-            INDEX_COUNTRY,
-            countries[country],
-            file=country_file_name,
-            country=country,
-            continent=continent,
-        )
-        country_file = open(
-            os.path.join(path, country_file_name), "w", encoding="utf-8"
-        )
-        country_file.write(
-            tmpl(
-                COUNTRY_HEADER,
+    for continent in sorted(continents.keys()):
+        content = ""
+        for country in sorted(c_by_c[continent]):
+            country_file_name = country.lower().replace(" ", "-") + ".html"
+            content += tmpl(
+                INDEX_COUNTRY,
+                countries[country],
+                file=country_file_name,
                 country=country,
                 continent=continent,
-                overground=overground,
-                subways=not overground,
+            )
+            country_file = open(
+                os.path.join(target_dir, country_file_name),
+                "w",
+                encoding="utf-8",
+            )
+            country_file.write(
+                tmpl(
+                    COUNTRY_HEADER,
+                    country=country,
+                    continent=continent,
+                    overground=overground,
+                    subways=not overground,
+                )
+            )
+            for name, city in sorted(data.items()):
+                if city.country == country:
+                    file_base = os.path.join(target_dir, city.slug)
+                    yaml_file = (
+                        city.slug + ".yaml"
+                        if os.path.exists(file_base + ".yaml")
+                        else None
+                    )
+                    json_file = (
+                        city.slug + ".geojson"
+                        if os.path.exists(file_base + ".geojson")
+                        else None
+                    )
+                    errors = "<br>".join(
+                        [osm_links(esc(e)) for e in city.errors]
+                    )
+                    warnings = "<br>".join(
+                        [osm_links(esc(w)) for w in city.warnings]
+                    )
+                    notices = "<br>".join(
+                        [osm_links(esc(n)) for n in city.notices]
+                    )
+                    country_file.write(
+                        tmpl(
+                            COUNTRY_CITY,
+                            city,
+                            city=name,
+                            country=country,
+                            continent=continent,
+                            yaml=yaml_file,
+                            json=json_file,
+                            subways=not overground,
+                            errors=errors,
+                            warnings=warnings,
+                            notices=notices,
+                            overground=overground,
+                        )
+                    )
+            country_file.write(
+                tmpl(
+                    COUNTRY_FOOTER,
+                    country=country,
+                    continent=continent,
+                    date=date,
+                )
+            )
+            country_file.close()
+        index.write(
+            tmpl(
+                INDEX_CONTINENT,
+                continents[continent],
+                content=content,
+                continent=continent,
             )
         )
-        for name, city in sorted(data.items()):
-            if city.country == country:
-                file_base = os.path.join(path, city.slug)
-                yaml_file = (
-                    city.slug + ".yaml"
-                    if os.path.exists(file_base + ".yaml")
-                    else None
-                )
-                json_file = (
-                    city.slug + ".geojson"
-                    if os.path.exists(file_base + ".geojson")
-                    else None
-                )
-                errors = "<br>".join([osm_links(esc(e)) for e in city.errors])
-                warnings = "<br>".join(
-                    [osm_links(esc(w)) for w in city.warnings]
-                )
-                notices = "<br>".join(
-                    [osm_links(esc(n)) for n in city.notices]
-                )
-                country_file.write(
-                    tmpl(
-                        COUNTRY_CITY,
-                        city,
-                        city=name,
-                        country=country,
-                        continent=continent,
-                        yaml=yaml_file,
-                        json=json_file,
-                        subways=not overground,
-                        errors=errors,
-                        warnings=warnings,
-                        notices=notices,
-                        overground=overground,
-                    )
-                )
-        country_file.write(
-            tmpl(COUNTRY_FOOTER, country=country, continent=continent)
-        )
-        country_file.close()
-    index.write(
-        tmpl(
-            INDEX_CONTINENT,
-            continents[continent],
-            content=content,
-            continent=continent,
-        )
-    )
 
-index.write(tmpl(INDEX_FOOTER))
-index.close()
+    index.write(tmpl(INDEX_FOOTER, date=date, cities_info_url=cities_info_url))
+    index.close()
+
+
+if __name__ == "__main__":
+    main()
