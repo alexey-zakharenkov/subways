@@ -141,9 +141,6 @@ def get_relation_center(
     if "center" in element:
         return element["center"]["lat"], element["center"]["lon"]
 
-    if "center" in element:
-        return element["center"]
-
     center = [0, 0]
     count = 0
     for m in element.get("members", list()):
