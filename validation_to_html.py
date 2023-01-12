@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import argparse
 import datetime
 import json
 import os
 import re
+from collections import defaultdict
+from typing import Any, Optional
 
 from process_subways import DEFAULT_SPREADSHEET_ID
 from v2h_templates import (
@@ -18,7 +22,7 @@ from v2h_templates import (
 
 
 class CityData:
-    def __init__(self, city=None):
+    def __init__(self, city: Optional[str] = None) -> None:
         self.city = city is not None
         self.data = {
             "good_cities": 0,
@@ -44,22 +48,17 @@ class CityData:
                 if "found" in k or "expected" in k or "unused" in k:
                     self.data[k] = v
 
-    def not__get__(self, i):
-        return self.data.get(i)
-
-    def not__set__(self, i, value):
-        self.data[i] = value
-
-    def __add__(self, other):
+    def __add__(self, other: CityData) -> CityData:
         d = CityData()
         for k in set(self.data.keys()) | set(other.data.keys()):
             d.data[k] = self.data.get(k, 0) + other.data.get(k, 0)
         return d
 
-    def format(self, s):
-        def test_eq(v1, v2):
-            return "1" if v1 == v2 else "0"
+    @staticmethod
+    def test_eq(v1: Any, v2: Any) -> str:
+        return "1" if v1 == v2 else "0"
 
+    def format(self, s: str) -> str:
         for k in self.data:
             s = s.replace("{" + k + "}", str(self.data[k]))
         s = s.replace("{slug}", self.slug or "")
@@ -76,23 +75,25 @@ class CityData:
             if k + "_expected" in self.data:
                 s = s.replace(
                     "{=" + k + "}",
-                    test_eq(
+                    self.test_eq(
                         self.data[k + "_found"], self.data[k + "_expected"]
                     ),
                 )
         s = s.replace(
             "{=cities}",
-            test_eq(self.data["good_cities"], self.data["total_cities"]),
+            self.test_eq(self.data["good_cities"], self.data["total_cities"]),
         )
         s = s.replace(
-            "{=entrances}", test_eq(self.data["unused_entrances"], 0)
+            "{=entrances}", self.test_eq(self.data["unused_entrances"], 0)
         )
         for k in ("errors", "warnings", "notices"):
-            s = s.replace("{=" + k + "}", test_eq(self.data["num_" + k], 0))
+            s = s.replace(
+                "{=" + k + "}", self.test_eq(self.data["num_" + k], 0)
+            )
         return s
 
 
-def tmpl(s, data=None, **kwargs):
+def tmpl(s: str, data: Optional[CityData] = None, **kwargs) -> str:
     if data:
         s = data.format(s)
     if kwargs:
@@ -114,12 +115,15 @@ RE_FULL = re.compile(r"\b(node|way|relation) (\d+)\b")
 RE_COORDS = re.compile(r"\((-?\d+\.\d+), (-?\d+\.\d+)\)")
 
 
-def osm_links(s):
+def osm_links(s: str) -> str:
     """Converts object mentions to HTML links."""
 
-    def link(m):
-        return '<a href="https://www.openstreetmap.org/{}/{}">{}</a>'.format(
-            EXPAND_OSM_TYPE[m.group(1)[0]], m.group(2), m.group(0)
+    def link(m: re.Match) -> str:
+        osm_type = EXPAND_OSM_TYPE[m.group(1)[0]]
+        osm_id = m.group(2)
+        return (
+            '<a href="https://www.openstreetmap.org/'
+            f'{osm_type}/{osm_id}">{m.group(0)}</a>'
         )
 
     s = RE_SHORT.sub(link, s)
@@ -132,11 +136,15 @@ def osm_links(s):
     return s
 
 
-def esc(s):
+def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def main():
+def br_osm_links(elems: list) -> str:
+    return "<br>".join(osm_links(esc(elem)) for elem in elems)
+
+
+def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Reads a log from subway validator and prepares HTML files."
@@ -155,17 +163,15 @@ def main():
     target_dir = options.target_directory
     cities_info_url = options.cities_info_url
 
-    with open(options.validation_log, "r", encoding="utf-8") as f:
+    with open(options.validation_log, encoding="utf-8") as f:
         data = {c["name"]: CityData(c) for c in json.load(f)}
 
     countries = {}
     continents = {}
-    c_by_c = {}  # continent → set of countries
+    c_by_c = defaultdict(set)  # continent → set of countries
     for c in data.values():
         countries[c.country] = c + countries.get(c.country, CityData())
         continents[c.continent] = c + continents.get(c.continent, CityData())
-        if c.continent not in c_by_c:
-            c_by_c[c.continent] = set()
         c_by_c[c.continent].add(c.country)
     world = sum(continents.values(), CityData())
 
@@ -199,44 +205,41 @@ def main():
                     subways=not overground,
                 )
             )
-            for name, city in sorted(data.items()):
-                if city.country == country:
-                    file_base = os.path.join(target_dir, city.slug)
-                    yaml_file = (
-                        city.slug + ".yaml"
-                        if os.path.exists(file_base + ".yaml")
-                        else None
+            for name, city in sorted(
+                (name, city)
+                for name, city in data.items()
+                if city.country == country
+            ):
+                file_base = os.path.join(target_dir, city.slug)
+                yaml_file = (
+                    city.slug + ".yaml"
+                    if os.path.exists(file_base + ".yaml")
+                    else None
+                )
+                json_file = (
+                    city.slug + ".geojson"
+                    if os.path.exists(file_base + ".geojson")
+                    else None
+                )
+                errors = br_osm_links(city.errors)
+                warnings = br_osm_links(city.warnings)
+                notices = br_osm_links(city.notices)
+                country_file.write(
+                    tmpl(
+                        COUNTRY_CITY,
+                        city,
+                        city=name,
+                        country=country,
+                        continent=continent,
+                        yaml=yaml_file,
+                        json=json_file,
+                        subways=not overground,
+                        errors=errors,
+                        warnings=warnings,
+                        notices=notices,
+                        overground=overground,
                     )
-                    json_file = (
-                        city.slug + ".geojson"
-                        if os.path.exists(file_base + ".geojson")
-                        else None
-                    )
-                    errors = "<br>".join(
-                        [osm_links(esc(e)) for e in city.errors]
-                    )
-                    warnings = "<br>".join(
-                        [osm_links(esc(w)) for w in city.warnings]
-                    )
-                    notices = "<br>".join(
-                        [osm_links(esc(n)) for n in city.notices]
-                    )
-                    country_file.write(
-                        tmpl(
-                            COUNTRY_CITY,
-                            city,
-                            city=name,
-                            country=country,
-                            continent=continent,
-                            yaml=yaml_file,
-                            json=json_file,
-                            subways=not overground,
-                            errors=errors,
-                            warnings=warnings,
-                            notices=notices,
-                            overground=overground,
-                        )
-                    )
+                )
             country_file.write(
                 tmpl(
                     COUNTRY_FOOTER,
