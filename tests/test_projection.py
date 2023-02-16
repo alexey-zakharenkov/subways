@@ -40,7 +40,6 @@ class TestProjection(unittest.TestCase):
                         )
 
     def test_projection_on_horizontal_segments(self):
-
         points = [
             (-2, 0),
             (-1 - self.SHIFT, 0),

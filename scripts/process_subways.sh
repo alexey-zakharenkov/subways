@@ -91,7 +91,7 @@ function check_poly() {
       if [ -z "${POLY-}" -o ! -f "${POLY-}" ]; then
         POLY=${POLY:-$(mktemp "$TMPDIR/all-metro.XXXXXXXX.poly")}
         if [ -n "$("$PYTHON" -c "import shapely" 2>&1)" ]; then
-          "$PYTHON" -m pip install shapely
+          "$PYTHON" -m pip install shapely==1.7.1
         fi
         "$PYTHON" "$SUBWAYS_PATH"/make_all_metro_poly.py \
             ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} > "$POLY"

@@ -1040,7 +1040,6 @@ class Route:
         return stop_position_elements
 
     def process_tracks(self, stop_position_elements):
-
         tracks, line_nodes = self.build_longest_line()
 
         for stop_el in stop_position_elements:
@@ -1511,7 +1510,6 @@ class RouteMaster:
 
 
 class City:
-
     route_class = Route
 
     def __init__(self, city_data, overground=False):
