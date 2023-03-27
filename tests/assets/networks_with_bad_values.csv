@@ -1,0 +1,12 @@
+#,City,Country,Region,Stations,Subway Lines,Light Rail +Monorail,Interchanges,"BBox (lon, lat)",Networks (opt.),Comment,Source,
+291,Moscow,Russia,Europe,335,14,3,66,,"subway,train:Московский метрополитен;МЦК;МЦД","No bbox - skip the city",
+,Moscow - Aeroexpress,Russia,Europe,22,0,3,0,"37.170,55.385,38.028,56.022",train:Аэроэкспресс,"No id - skip the city",https://aeroexpress.ru
+292,Nizhny Novgorod,Russia,Europe,16,2,0,,"43.759918,56.1662,44.13208,56.410862",,"No configuration errors",,,
+NBS,Novosibirsk,Russia,Europe,13,2,0,1,"82.774773,54.926747,83.059044,55.127864",,"Non-numeric ID",,,
+294,Saint Petersburg,Russia,Europe,72,,,,"30.0648,59.7509,30.5976,60.1292",,"Empty line counts - no problem at CSV parsing stage",,
+,,,,,,,,,,,,
+295,Samara,Russia,Europe,10x,1,0,0,"50.011826,53.094024,50.411453,53.384147",,"Non-numeric station count",,
+296,Volgograd,Russia,Europe,40,zero,2zero,0,"44.366704,48.636024,44.62302,48.81765",,"Non-numbers in subway and light_rail line counts",,
+297,Yekaterinburg,Russia,Europe,,1,0,0,"60.460854,56.730505,60.727272,56.920997",,"Empty station count",,
+,,,,,,,,,,,,
+

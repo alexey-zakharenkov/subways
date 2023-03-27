@@ -11,7 +11,6 @@ import time
 import urllib.parse
 import urllib.request
 from functools import partial
-from typing import Dict, List, Optional, Tuple
 
 import processors
 from subway_io import (
@@ -30,17 +29,18 @@ from subway_structure import (
     MODES_RAPID,
 )
 
-
 DEFAULT_SPREADSHEET_ID = "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"
 DEFAULT_CITIES_INFO_URL = (
     "https://docs.google.com/spreadsheets/d/"
     f"{DEFAULT_SPREADSHEET_ID}/export?format=csv"
 )
 
-Point = Tuple[float, float]
+Point = tuple[float, float]
 
 
-def overpass_request(overground, overpass_api, bboxes):
+def overpass_request(
+    overground: bool, overpass_api: str, bboxes: list[list[float]]
+) -> list[dict]:
     query = "[out:json][timeout:1000];("
     modes = MODES_OVERGROUND if overground else MODES_RAPID
     for bbox in bboxes:
@@ -65,7 +65,9 @@ def overpass_request(overground, overpass_api, bboxes):
     return json.load(response)["elements"]
 
 
-def multi_overpass(overground, overpass_api, bboxes):
+def multi_overpass(
+    overground: bool, overpass_api: str, bboxes: list[list[float]]
+) -> list[dict]:
     SLICE_SIZE = 10
     INTERREQUEST_WAIT = 5  # in seconds
     result = []
@@ -77,13 +79,13 @@ def multi_overpass(overground, overpass_api, bboxes):
     return result
 
 
-def slugify(name):
+def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9_-]+", "", name.lower().replace(" ", "_"))
 
 
 def get_way_center(
-    element: dict, node_centers: Dict[int, Point]
-) -> Optional[Point]:
+    element: dict, node_centers: dict[int, Point]
+) -> Point | None:
     """
     :param element: dict describing OSM element
     :param node_centers: osm_id => (lat, lon)
@@ -123,11 +125,11 @@ def get_way_center(
 
 def get_relation_center(
     element: dict,
-    node_centers: Dict[int, Point],
-    way_centers: Dict[int, Point],
-    relation_centers: Dict[int, Point],
+    node_centers: dict[int, Point],
+    way_centers: dict[int, Point],
+    relation_centers: dict[int, Point],
     ignore_unlocalized_child_relations: bool = False,
-) -> Optional[Point]:
+) -> Point | None:
     """
     :param element: dict describing OSM element
     :param node_centers: osm_id => (lat, lon)
@@ -176,14 +178,14 @@ def get_relation_center(
     return element["center"]["lat"], element["center"]["lon"]
 
 
-def calculate_centers(elements):
+def calculate_centers(elements: list[dict]) -> None:
     """Adds 'center' key to each way/relation in elements,
     except for empty ways or relations.
     Relies on nodes-ways-relations order in the elements list.
     """
-    nodes: Dict[int, Point] = {}  # id => (lat, lon)
-    ways: Dict[int, Point] = {}  # id => (lat, lon)
-    relations: Dict[int, Point] = {}  # id => (lat, lon)
+    nodes: dict[int, Point] = {}  # id => (lat, lon)
+    ways: dict[int, Point] = {}  # id => (lat, lon)
+    relations: dict[int, Point] = {}  # id => (lat, lon)
 
     unlocalized_relations = []  # 'unlocalized' means the center of the
     # relation has not been calculated yet
@@ -202,7 +204,7 @@ def calculate_centers(elements):
 
     def iterate_relation_centers_calculation(
         ignore_unlocalized_child_relations: bool,
-    ) -> List[int]:
+    ) -> list[dict]:
         unlocalized_relations_upd = []
         for rel in unlocalized_relations:
             if center := get_relation_center(
@@ -229,14 +231,16 @@ def calculate_centers(elements):
         unlocalized_relations = unlocalized_relations_upd
 
 
-def add_osm_elements_to_cities(osm_elements, cities):
+def add_osm_elements_to_cities(
+    osm_elements: list[dict], cities: list[City]
+) -> None:
     for el in osm_elements:
         for c in cities:
             if c.contains(el):
                 c.add(el)
 
 
-def validate_cities(cities):
+def validate_cities(cities: list[City]) -> list[City]:
     """Validate cities. Return list of good cities."""
     good_cities = []
     for c in cities:
@@ -266,7 +270,7 @@ def validate_cities(cities):
 
 def get_cities_info(
     cities_info_url: str = DEFAULT_CITIES_INFO_URL,
-) -> List[dict]:
+) -> list[dict]:
     response = urllib.request.urlopen(cities_info_url)
     if (
         not cities_info_url.startswith("file://")
@@ -310,14 +314,14 @@ def get_cities_info(
 
 def prepare_cities(
     cities_info_url: str = DEFAULT_CITIES_INFO_URL, overground: bool = False
-) -> List[City]:
+) -> list[City]:
     if overground:
         raise NotImplementedError("Overground transit not implemented yet")
     cities_info = get_cities_info(cities_info_url)
     return list(map(partial(City, overground=overground), cities_info))
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--cities-info-url",
