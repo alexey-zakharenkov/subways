@@ -1,6 +1,7 @@
 import math
 import re
 from collections import Counter, defaultdict
+from itertools import islice
 
 from css_colours import normalize_colour
 
@@ -1161,18 +1162,21 @@ class Route:
         tracks = self.get_truncated_tracks(tracks)
         return tracks
 
-    def check_stops_order_by_angle(self):
+    def check_stops_order_by_angle(self) -> tuple[list, list]:
         disorder_warnings = []
         disorder_errors = []
-        for si in range(len(self.stops) - 2):
+        for i, route_stop in enumerate(
+            islice(self.stops, 1, len(self.stops) - 1), start=1
+        ):
             angle = angle_between(
-                self.stops[si].stop,
-                self.stops[si + 1].stop,
-                self.stops[si + 2].stop,
+                self.stops[i - 1].stop,
+                route_stop.stop,
+                self.stops[i + 1].stop,
             )
             if angle < ALLOWED_ANGLE_BETWEEN_STOPS:
                 msg = (
-                    f'Angle between stops around "{self.stops[si + 1]}" '
+                    "Angle between stops around "
+                    f'"{route_stop.stoparea.name}" {route_stop.stop} '
                     f"is too narrow, {angle} degrees"
                 )
                 if angle < DISALLOWED_ANGLE_BETWEEN_STOPS:
@@ -1181,7 +1185,7 @@ class Route:
                     disorder_warnings.append(msg)
         return disorder_warnings, disorder_errors
 
-    def check_stops_order_on_tracks_direct(self, stop_sequence):
+    def check_stops_order_on_tracks_direct(self, stop_sequence) -> str | None:
         """Checks stops order on tracks, following stop_sequence
         in direct order only.
         :param stop_sequence: list of dict{'route_stop', 'positions_on_rails',
@@ -1206,12 +1210,13 @@ class Route:
                     allowed_order_violations -= 1
                 else:
                     route_stop = stop_data["route_stop"]
-                    return 'Stops on tracks are unordered near "{}" {}'.format(
-                        route_stop.stoparea.name, route_stop.stop
+                    return (
+                        "Stops on tracks are unordered near "
+                        f'"{route_stop.stoparea.name}" {route_stop.stop}'
                     )
             max_position_on_rails = positions_on_rails[suitable_occurrence]
 
-    def check_stops_order_on_tracks(self, projected_stops_data):
+    def check_stops_order_on_tracks(self, projected_stops_data) -> str | None:
         """Checks stops order on tracks, trying direct and reversed
             order of stops in the stop_sequence.
         :param projected_stops_data: info about RouteStops that belong to the
