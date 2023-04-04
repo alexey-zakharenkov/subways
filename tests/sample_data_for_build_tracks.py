@@ -37,7 +37,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 2,
+        "num_stations": 2,
         "tracks": [],
         "extended_tracks": [
             (0.0, 0.0),
@@ -100,7 +100,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 2,
+        "num_stations": 2,
         "tracks": [
             (0.0, 0.0),
             (1.0, 0.0),
@@ -190,7 +190,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [],
         "extended_tracks": [
             (0.0, 0.0),
@@ -289,7 +289,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (0.0, 0.0),
             (1.0, 0.0),
@@ -401,7 +401,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (0.0, 0.0),
             (1.0, 0.0),
@@ -511,7 +511,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (1.0, 0.0),
             (2.0, 0.0),
@@ -620,7 +620,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (1.0, 0.0),
             (2.0, 0.0),
@@ -725,7 +725,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (0.0, 0.0),
             (1.0, 0.0),
@@ -826,7 +826,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (4.0, 0.0),
             (5.0, 0.0),
@@ -937,7 +937,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (-1.0, 0.0),
             (0.0, 0.0),
@@ -1069,7 +1069,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (-1.0, 0.0),
             (0.0, 0.0),
@@ -1189,7 +1189,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (-1.0, 0.0),
             (6.0, 0.0),
@@ -1304,7 +1304,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 6,
+        "num_stations": 6,
         "tracks": [
             (1.0, 0.0),
             (4.0, 0.0),
@@ -1377,7 +1377,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 4,
+        "num_stations": 4,
         "tracks": [],
         "extended_tracks": [
             (0.0, 0.0),
@@ -1455,7 +1455,7 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "station_count": 4,
+        "num_stations": 4,
         "tracks": [
             (0.0, 0.0),
             (0.0, 1.0),

@@ -9,52 +9,16 @@ or simply
 > python -m unittest
 """
 
-import io
-import unittest
 
-from subway_structure import City
-from subway_io import load_xml
-from tests.sample_data import sample_networks
+from tests.sample_data_for_build_tracks import sample_networks
+from tests.util import TestCase
 
 
-class TestOneRouteTracks(unittest.TestCase):
+class TestOneRouteTracks(TestCase):
     """Test tracks extending and truncating on one-route networks"""
 
-    CITY_TEMPLATE = {
-        "id": 1,
-        "name": "Null Island",
-        "country": "World",
-        "continent": "Africa",
-        "num_stations": None,  # Would be taken from the sample network data
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
-        "bbox": "-179, -89, 179, 89",
-        "networks": "",
-    }
-
-    def assertListAlmostEqual(self, list1, list2, places=10) -> None:
-        if not (isinstance(list1, list) and isinstance(list2, list)):
-            raise RuntimeError(
-                f"Not lists passed to the '{self.__class__.__name__}."
-                "assertListAlmostEqual' method"
-            )
-        self.assertEqual(len(list1), len(list2))
-        for a, b in zip(list1, list2):
-            if isinstance(a, list) and isinstance(b, list):
-                self.assertListAlmostEqual(a, b, places)
-            else:
-                self.assertAlmostEqual(a, b, places)
-
     def prepare_city_routes(self, network) -> tuple:
-        city_data = self.CITY_TEMPLATE.copy()
-        city_data["num_stations"] = network["station_count"]
-        city = City(city_data)
-        elements = load_xml(io.BytesIO(network["xml"].encode("utf-8")))
-        for el in elements:
-            city.add(el)
-        city.extract_routes()
-        city.validate()
+        city = self.validate_city(network)
 
         self.assertTrue(city.is_good)
 
