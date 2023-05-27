@@ -263,6 +263,7 @@ def validate_cities(cities: list[City]) -> list[City]:
         else:
             c.validate()
             if c.is_good:
+                c.calculate_distances()
                 good_cities.append(c)
 
     return good_cities

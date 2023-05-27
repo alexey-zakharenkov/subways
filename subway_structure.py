@@ -1040,7 +1040,7 @@ class Route:
                     )
         return stop_position_elements
 
-    def process_tracks(self, stop_position_elements):
+    def process_tracks(self, stop_position_elements: list[dict]) -> None:
         tracks, line_nodes = self.build_longest_line()
 
         for stop_el in stop_position_elements:
@@ -1084,7 +1084,6 @@ class Route:
             projected_stops_data = self.project_stops_on_line()
             self.check_and_recover_stops_order(projected_stops_data)
             self.apply_projected_stops_data(projected_stops_data)
-            self.calculate_distances()
 
     def apply_projected_stops_data(self, projected_stops_data: dict) -> None:
         """Store better stop coordinates and indexes of first/last stops
@@ -2073,6 +2072,11 @@ class City:
             self.notice("More than one network: {}".format(n_str))
 
         self.validate_called = True
+
+    def calculate_distances(self) -> None:
+        for route_master in self:
+            for route in route_master:
+                route.calculate_distances()
 
 
 def find_transfers(elements, cities):
