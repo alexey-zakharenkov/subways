@@ -1,18 +1,21 @@
 import argparse
 
-import shapely.geometry
-import shapely.ops
+from shapely import unary_union
+from shapely.geometry import MultiPolygon, Polygon
 
 from process_subways import DEFAULT_CITIES_INFO_URL, get_cities_info
 
 
 def make_disjoint_metro_polygons(cities_info_url: str) -> None:
+    """Make disjoint polygon from cities bboxes and write them
+    in *.poly format to stdout.
+    """
     cities_info = get_cities_info(cities_info_url)
 
     polygons = []
     for ci in cities_info:
         bbox = tuple(map(float, ci["bbox"].split(",")))
-        polygon = shapely.geometry.Polygon(
+        polygon = Polygon(
             [
                 (bbox[0], bbox[1]),
                 (bbox[0], bbox[3]),
@@ -22,14 +25,17 @@ def make_disjoint_metro_polygons(cities_info_url: str) -> None:
         )
         polygons.append(polygon)
 
-    union = shapely.ops.unary_union(polygons)
+    union = unary_union(polygons)
+
+    if union.geom_type == "Polygon":
+        union = MultiPolygon([union])
 
     print("all metro")
-    for i, polygon in enumerate(union, start=1):
+    for i, polygon in enumerate(union.geoms, start=1):
         assert len(polygon.interiors) == 0
         print(i)
-        for point in polygon.exterior.coords:
-            print("  {lon} {lat}".format(lon=point[0], lat=point[1]))
+        for lon, lat in polygon.exterior.coords:
+            print(f"  {lon} {lat}")
         print("END")
     print("END")
 

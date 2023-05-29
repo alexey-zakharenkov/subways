@@ -10,7 +10,7 @@ class TestPrepareCities(TestCase):
         csv_path = (
             Path(inspect.getfile(self.__class__)).parent
             / "assets"
-            / "networks_with_bad_values.csv"
+            / "cities_info_with_bad_values.csv"
         )
 
         cities = prepare_cities(cities_info_url=f"file://{csv_path}")
