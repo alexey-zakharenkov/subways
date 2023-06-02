@@ -1,9 +1,13 @@
-from unittest import TestCase
+import codecs
+import csv
+from functools import partial
+from pathlib import Path
+from zipfile import ZipFile
 
-from processors.gtfs import (
-    dict_to_row,
-    GTFS_COLUMNS,
-)
+from processors._common import transit_to_dict
+from processors.gtfs import dict_to_row, GTFS_COLUMNS, transit_data_to_gtfs
+from tests.util import TestCase
+from tests.sample_data_for_outputs import metro_samples
 
 
 class TestGTFS(TestCase):
@@ -94,3 +98,62 @@ class TestGTFS(TestCase):
                 self.assertListEqual(
                     dict_to_row(shape["shape_data"], "shapes"), shape["answer"]
                 )
+
+    def test__transit_data_to_gtfs(self) -> None:
+        for metro_sample in metro_samples:
+            cities, transfers = self.prepare_cities(metro_sample)
+            calculated_transit_data = transit_to_dict(cities, transfers)
+            calculated_gtfs_data = transit_data_to_gtfs(
+                calculated_transit_data
+            )
+
+            control_gtfs_data = self._readGtfs(
+                Path(__file__).resolve().parent / metro_sample["gtfs_file"]
+            )
+            self._compareGtfs(calculated_gtfs_data, control_gtfs_data)
+
+    @staticmethod
+    def _readGtfs(filepath: str) -> dict:
+        gtfs_data = dict()
+        with ZipFile(filepath) as zf:
+            for gtfs_feature in GTFS_COLUMNS:
+                with zf.open(f"{gtfs_feature}.txt") as f:
+                    reader = csv.reader(codecs.iterdecode(f, "utf-8"))
+                    next(reader)  # read header
+                    rows = list(reader)
+                    gtfs_data[gtfs_feature] = rows
+        return gtfs_data
+
+    def _compareGtfs(
+        self, calculated_gtfs_data: dict, control_gtfs_data: dict
+    ) -> None:
+        for gtfs_feature in GTFS_COLUMNS:
+            calculated_rows = sorted(
+                map(
+                    partial(dict_to_row, record_type=gtfs_feature),
+                    calculated_gtfs_data[gtfs_feature],
+                )
+            )
+            control_rows = sorted(control_gtfs_data[gtfs_feature])
+
+            self.assertEqual(len(calculated_rows), len(control_rows))
+
+            for i, (calculated_row, control_row) in enumerate(
+                zip(calculated_rows, control_rows)
+            ):
+                self.assertEqual(
+                    len(calculated_row),
+                    len(control_row),
+                    f"Different length of {i}-th row of {gtfs_feature}",
+                )
+                for calculated_value, control_value in zip(
+                    calculated_row, control_row
+                ):
+                    if calculated_value is None:
+                        self.assertEqual(control_value, "", f"in {i}-th row")
+                    else:  # convert str to float/int/str
+                        self.assertAlmostEqual(
+                            calculated_value,
+                            type(calculated_value)(control_value),
+                            places=10,
+                        )

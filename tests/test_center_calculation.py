@@ -1,28 +1,28 @@
-import json
-from pathlib import Path
+import io
 from unittest import TestCase
 
 from process_subways import calculate_centers
 from subway_io import load_xml
+from tests.sample_data_for_center_calculation import metro_samples
 
 
 class TestCenterCalculation(TestCase):
     """Test center calculation. Test data [should] contain among others
     the following edge cases:
-      - an empty relation. It's element should not obtain "center" key.
-      - relation as member of relation, the child relation following the parent
-        in the OSM XML file.
+      - an empty relation. Its element should not obtain "center" key.
+      - relation as member of another relation, the child relation following
+        the parent in the OSM XML.
       - relation with incomplete members (broken references).
       - relations with cyclic references.
     """
 
-    ASSETS_PATH = Path(__file__).resolve().parent / "assets"
-    OSM_DATA = str(ASSETS_PATH / "kuntsevskaya_transfer.osm")
-    CORRECT_CENTERS = str(ASSETS_PATH / "kuntsevskaya_centers.json")
+    def test_calculate_centers(self) -> None:
+        for sample in metro_samples:
+            with self.subTest(msg=sample["name"]):
+                self._test_calculate_centers_for_sample(sample)
 
-    def test__calculate_centers(self) -> None:
-        elements = load_xml(self.OSM_DATA)
-
+    def _test_calculate_centers_for_sample(self, metro_sample: dict) -> None:
+        elements = load_xml(io.BytesIO(metro_sample["xml"].encode()))
         calculate_centers(elements)
 
         elements_dict = {
@@ -36,12 +36,11 @@ class TestCenterCalculation(TestCase):
             if "center" in el
         }
 
-        with open(self.CORRECT_CENTERS) as f:
-            correct_centers = json.load(f)
+        expected_centers = metro_sample["expected_centers"]
 
-        self.assertTrue(set(calculated_centers).issubset(correct_centers))
+        self.assertTrue(set(calculated_centers).issubset(expected_centers))
 
-        for k, correct_center in correct_centers.items():
+        for k, correct_center in expected_centers.items():
             if correct_center is None:
                 self.assertNotIn("center", elements_dict[k])
             else:

@@ -1,4 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
+metro_samples = [
+    {
+        "name": "Transfer at Kuntsevskaya",
+        "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='244036218' visible='true' version='27' lat='55.7306986' lon='37.4460134'>
     <tag k='public_transport' v='stop_position' />
@@ -80,3 +83,16 @@
     <tag k='description' v='only incomplete members' />
   </relation>
 </osm>
+""",  # noqa: E501
+        "expected_centers": {
+            "w38836456": {"lat": 55.73064775, "lon": 37.446065950000005},
+            "w489951237": {"lat": 55.730760724999996, "lon": 37.44602055},
+            "r7588527": {"lat": 55.73066371666667, "lon": 37.44604881666667},
+            "r7588528": {"lat": 55.73075192499999, "lon": 37.44609837},
+            "r7588561": {"lat": 55.73070782083333, "lon": 37.44607359333334},
+            "r13426423": {"lat": 55.730760724999996, "lon": 37.44602055},
+            "r100": None,
+            "r101": None,
+        },
+    },
+]

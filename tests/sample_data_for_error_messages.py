@@ -1,5 +1,6 @@
-sample_networks = {
-    "No errors": {
+metro_samples = [
+    {
+        "name": "No errors",
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -38,7 +39,11 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "num_stations": 2,
+        "cities_info": [
+            {
+                "num_stations": 2,
+            },
+        ],
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -46,7 +51,8 @@ sample_networks = {
         "warnings": [],
         "notices": [],
     },
-    "Bad station order": {
+    {
+        "name": "Bad station order",
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -99,7 +105,11 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "num_stations": 4,
+        "cities_info": [
+            {
+                "num_stations": 4,
+            },
+        ],
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -112,7 +122,8 @@ sample_networks = {
         "warnings": [],
         "notices": [],
     },
-    "Angle < 20 degrees": {
+    {
+        "name": "Angle < 20 degrees",
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -159,7 +170,11 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "num_stations": 3,
+        "cities_info": [
+            {
+                "num_stations": 3,
+            },
+        ],
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -172,7 +187,8 @@ sample_networks = {
         "warnings": [],
         "notices": [],
     },
-    "Angle between 20 and 45 degrees": {
+    {
+        "name": "Angle between 20 and 45 degrees",
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -219,7 +235,11 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "num_stations": 3,
+        "cities_info": [
+            {
+                "num_stations": 3,
+            },
+        ],
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -232,7 +252,8 @@ sample_networks = {
             'is too narrow, 27 degrees (relation 2, "Backward")',
         ],
     },
-    "Stops unordered along tracks provided each angle > 45 degrees": {
+    {
+        "name": "Unordered stops provided each angle > 45 degrees",
         "xml": """<?xml version='1.0' encoding='UTF-8'?>
 <osm version='0.6' generator='JOSM'>
   <node id='1' version='1' lat='0.0' lon='0.0'>
@@ -300,7 +321,11 @@ sample_networks = {
   </relation>
 </osm>
 """,
-        "num_stations": 4,
+        "cities_info": [
+            {
+                "num_stations": 4,
+            },
+        ],
         "num_lines": 1,
         "num_light_lines": 0,
         "num_interchanges": 0,
@@ -313,4 +338,4 @@ sample_networks = {
         "warnings": [],
         "notices": [],
     },
-}
+]

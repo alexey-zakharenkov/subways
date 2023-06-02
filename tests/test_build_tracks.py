@@ -1,24 +1,13 @@
-"""
-To perform tests manually, run this command from the top directory
-of the repository:
-
-> python -m unittest discover tests
-
-or simply
-
-> python -m unittest
-"""
-
-
-from tests.sample_data_for_build_tracks import sample_networks
+from tests.sample_data_for_build_tracks import metro_samples
 from tests.util import TestCase
 
 
 class TestOneRouteTracks(TestCase):
     """Test tracks extending and truncating on one-route networks"""
 
-    def prepare_city_routes(self, network) -> tuple:
-        city = self.validate_city(network)
+    def prepare_city_routes(self, metro_sample: dict) -> tuple:
+        cities, transfers = self.prepare_cities(metro_sample)
+        city = cities[0]
 
         self.assertTrue(city.is_good)
 
@@ -30,56 +19,56 @@ class TestOneRouteTracks(TestCase):
 
         return fwd_route, bwd_route
 
-    def _test_tracks_extending_for_network(self, network_data):
-        fwd_route, bwd_route = self.prepare_city_routes(network_data)
+    def _test_tracks_extending_for_network(self, metro_sample: dict) -> None:
+        fwd_route, bwd_route = self.prepare_city_routes(metro_sample)
 
         self.assertEqual(
             fwd_route.tracks,
-            network_data["tracks"],
+            metro_sample["tracks"],
             "Wrong tracks",
         )
         extended_tracks = fwd_route.get_extended_tracks()
         self.assertEqual(
             extended_tracks,
-            network_data["extended_tracks"],
+            metro_sample["extended_tracks"],
             "Wrong tracks after extending",
         )
 
         self.assertEqual(
             bwd_route.tracks,
-            network_data["tracks"][::-1],
+            metro_sample["tracks"][::-1],
             "Wrong backward tracks",
         )
         extended_tracks = bwd_route.get_extended_tracks()
         self.assertEqual(
             extended_tracks,
-            network_data["extended_tracks"][::-1],
+            metro_sample["extended_tracks"][::-1],
             "Wrong backward tracks after extending",
         )
 
-    def _test_tracks_truncating_for_network(self, network_data):
-        fwd_route, bwd_route = self.prepare_city_routes(network_data)
+    def _test_tracks_truncating_for_network(self, metro_sample: dict) -> None:
+        fwd_route, bwd_route = self.prepare_city_routes(metro_sample)
 
         truncated_tracks = fwd_route.get_truncated_tracks(fwd_route.tracks)
         self.assertEqual(
             truncated_tracks,
-            network_data["truncated_tracks"],
+            metro_sample["truncated_tracks"],
             "Wrong tracks after truncating",
         )
         truncated_tracks = bwd_route.get_truncated_tracks(bwd_route.tracks)
         self.assertEqual(
             truncated_tracks,
-            network_data["truncated_tracks"][::-1],
+            metro_sample["truncated_tracks"][::-1],
             "Wrong backward tracks after truncating",
         )
 
-    def _test_stop_positions_on_rails_for_network(self, network_data):
-        fwd_route, bwd_route = self.prepare_city_routes(network_data)
+    def _test_stop_positions_on_rails_for_network(self, sample: dict) -> None:
+        fwd_route, bwd_route = self.prepare_city_routes(sample)
 
         for route, route_label in zip(
             (fwd_route, bwd_route), ("forward", "backward")
         ):
-            route_data = network_data[route_label]
+            route_data = sample[route_label]
 
             for attr in (
                 "first_stop_on_rails_index",
@@ -97,21 +86,27 @@ class TestOneRouteTracks(TestCase):
                 rs.positions_on_rails
                 for rs in route.stops[first_ind : last_ind + 1]  # noqa E203
             ]
-            self.assertListAlmostEqual(
+            self.assertSequenceAlmostEqual(
                 positions_on_rails, route_data["positions_on_rails"]
             )
 
     def test_tracks_extending(self) -> None:
-        for network_name, network_data in sample_networks.items():
-            with self.subTest(msg=network_name):
-                self._test_tracks_extending_for_network(network_data)
+        for sample in metro_samples:
+            sample_name = sample["name"]
+            sample["cities_info"][0]["name"] = sample_name
+            with self.subTest(msg=sample_name):
+                self._test_tracks_extending_for_network(sample)
 
     def test_tracks_truncating(self) -> None:
-        for network_name, network_data in sample_networks.items():
-            with self.subTest(msg=network_name):
-                self._test_tracks_truncating_for_network(network_data)
+        for sample in metro_samples:
+            sample_name = sample["name"]
+            sample["cities_info"][0]["name"] = sample_name
+            with self.subTest(msg=sample_name):
+                self._test_tracks_truncating_for_network(sample)
 
     def test_stop_position_on_rails(self) -> None:
-        for network_name, network_data in sample_networks.items():
-            with self.subTest(msg=network_name):
-                self._test_stop_positions_on_rails_for_network(network_data)
+        for sample in metro_samples:
+            sample_name = sample["name"]
+            sample["cities_info"][0]["name"] = sample_name
+            with self.subTest(msg=sample_name):
+                self._test_stop_positions_on_rails_for_network(sample)

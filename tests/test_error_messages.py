@@ -1,4 +1,4 @@
-from tests.sample_data_for_error_messages import sample_networks
+from tests.sample_data_for_error_messages import metro_samples
 from tests.util import TestCase
 
 
@@ -7,16 +7,19 @@ class TestValidationMessages(TestCase):
     on different types of errors in input OSM data.
     """
 
-    def _test_validation_messages_for_network(self, network_data):
-        city = self.validate_city(network_data)
+    def _test_validation_messages_for_network(
+        self, metro_sample: dict
+    ) -> None:
+        cities, transfers = self.prepare_cities(metro_sample)
+        city = cities[0]
 
         for err_level in ("errors", "warnings", "notices"):
             self.assertListEqual(
                 sorted(getattr(city, err_level)),
-                sorted(network_data[err_level]),
+                sorted(metro_sample[err_level]),
             )
 
     def test_validation_messages(self) -> None:
-        for network_name, network_data in sample_networks.items():
-            with self.subTest(msg=network_name):
-                self._test_validation_messages_for_network(network_data)
+        for sample in metro_samples:
+            with self.subTest(msg=sample["name"]):
+                self._test_validation_messages_for_network(sample)

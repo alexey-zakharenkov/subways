@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='1' visible='true' version='1' lat='0.0' lon='0.0'>
+    <tag k='name' v='Station 1' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='2' visible='true' version='1' lat='0.00466930266' lon='0.00473815872'>
+    <tag k='name' v='Station 2' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='3' visible='true' version='1' lat='0.0097589171' lon='0.01012040581'>
+    <tag k='name' v='Station 3' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='4' visible='true' version='1' lat='0.01' lon='0.0'>
+    <tag k='name' v='Station 4' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='5' visible='true' version='1' lat='0.00514739839' lon='0.0047718624'>
+    <tag k='name' v='Station 5' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='6' visible='true' version='1' lat='0.0' lon='0.01'>
+    <tag k='name' v='Station 6' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='7' visible='true' version='1' lat='0.01028895507' lon='0.0097109364'>
+    <tag k='name' v='Station 7' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='light_rail' />
+  </node>
+  <node id='8' visible='true' version='1' lat='0.01433266979' lon='0.01236209024'>
+    <tag k='name' v='Station 8' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='light_rail' />
+  </node>
+  <node id='101' visible='true' version='1' lat='0.0047037307' lon='0.00470373068'>
+    <tag k='public_transport' v='stop_position' />
+    <tag k='subway' v='yes' />
+  </node>
+  <node id='102' visible='true' version='1' lat='0.01025306758' lon='0.00976752835'>
+    <tag k='railway' v='stop' />
+  </node>
+  <node id='103' visible='true' version='1' lat='0.01434446439' lon='0.01245616794'>
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='104' visible='true' version='1' lat='0.01031966791' lon='0.00966618028'>
+    <tag k='railway' v='stop' />
+  </node>
+  <node id='105' visible='true' version='1' lat='0.01441106473' lon='0.01235481987'>
+    <tag k='public_transport' v='stop_position' />
+  </node>
+  <node id='1001' visible='true' version='1' lat='0.01' lon='0.01' />
+  <way id='1' visible='true' version='1'>
+    <nd ref='1' />
+    <nd ref='101' />
+    <nd ref='1001' />
+    <tag k='layer' v='-2' />
+    <tag k='railway' v='subway' />
+    <tag k='tunnel' v='yes' />
+  </way>
+  <way id='2' visible='true' version='1'>
+    <nd ref='4' />
+    <nd ref='6' />
+    <tag k='layer' v='-3' />
+    <tag k='railway' v='subway' />
+    <tag k='tunnel' v='yes' />
+  </way>
+  <way id='3' visible='true' version='1'>
+    <nd ref='102' />
+    <nd ref='103' />
+    <tag k='railway' v='light_rail' />
+  </way>
+  <way id='4' visible='true' version='1'>
+    <nd ref='104' />
+    <nd ref='105' />
+    <tag k='railway' v='light_rail' />
+  </way>
+  <relation id='1' visible='true' version='1'>
+    <member type='node' ref='101' role='' />
+    <member type='node' ref='2' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='2' visible='true' version='1'>
+    <member type='node' ref='5' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='3' visible='true' version='1'>
+    <member type='node' ref='3' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='4' visible='true' version='1'>
+    <member type='node' ref='7' role='' />
+    <member type='node' ref='102' role='' />
+    <member type='node' ref='104' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='5' visible='true' version='1'>
+    <member type='relation' ref='2' role='' />
+    <member type='relation' ref='1' role='' />
+    <tag k='public_transport' v='stop_area_group' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='6' visible='true' version='1'>
+    <member type='relation' ref='4' role='' />
+    <member type='relation' ref='3' role='' />
+    <tag k='public_transport' v='stop_area_group' />
+    <tag k='type' v='public_transport' />
+  </relation>
+  <relation id='7' visible='true' version='1'>
+    <member type='node' ref='1' role='' />
+    <member type='node' ref='101' role='' />
+    <member type='node' ref='3' role='' />
+    <member type='way' ref='1' role='' />
+    <tag k='colour' v='#0000FF' />
+    <tag k='name' v='1 forward' />
+    <tag k='ref' v='1' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='8' visible='true' version='1'>
+    <member type='node' ref='3' role='' />
+    <member type='node' ref='101' role='' />
+    <member type='node' ref='1' role='' />
+    <member type='way' ref='1' role='' />
+    <tag k='colour' v='#0000FF' />
+    <tag k='name' v='1 backward' />
+    <tag k='ref' v='1' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='9' visible='true' version='1'>
+    <member type='node' ref='102' role='' />
+    <member type='node' ref='103' role='' />
+    <member type='way' ref='3' role='' />
+    <tag k='name' v='LR forward' />
+    <tag k='ref' v='LR' />
+    <tag k='route' v='light_rail' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='10' visible='true' version='1'>
+    <member type='node' ref='8' role='' />
+    <member type='node' ref='104' role='' />
+    <member type='way' ref='4' role='' />
+    <tag k='name' v='LR backward' />
+    <tag k='ref' v='LR' />
+    <tag k='route' v='light_rail' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='11' visible='true' version='1'>
+    <member type='relation' ref='10' role='' />
+    <member type='relation' ref='9' role='' />
+    <tag k='colour' v='brown' />
+    <tag k='colour:infill' v='white' />
+    <tag k='network' v='network-2' />
+    <tag k='ref' v='LR' />
+    <tag k='name' v='LR Line' />
+    <tag k='route_master' v='light_rail' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='12' visible='true' version='1'>
+    <member type='node' ref='4' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='6' role='' />
+    <member type='way' ref='2' role='' />
+    <tag k='name' v='2 forward' />
+    <tag k='ref' v='2' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='13' visible='true' version='1'>
+    <member type='node' ref='6' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='4' role='' />
+    <member type='way' ref='2' role='' />
+    <tag k='name' v='2 backward' />
+    <tag k='ref' v='2' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='14' visible='true' version='1'>
+    <member type='relation' ref='13' role='' />
+    <member type='relation' ref='12' role='' />
+    <tag k='colour' v='red' />
+    <tag k='network' v='network-1' />
+    <tag k='ref' v='2' />
+    <tag k='name' v='Red Line' />
+    <tag k='route_master' v='subway' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='15' visible='true' version='1'>
+    <member type='relation' ref='8' role='' />
+    <member type='relation' ref='7' role='' />
+    <tag k='network' v='network-1' />
+    <tag k='ref' v='1' />
+    <tag k='name' v='Blue Line' />
+    <tag k='route_master' v='subway' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='16' visible='true' version='1'>
+    <member type='node' ref='8' role='' />
+    <member type='node' ref='103' role='stop' />
+    <member type='node' ref='105' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+</osm>

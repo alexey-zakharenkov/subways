@@ -673,7 +673,7 @@ class Route:
         self.stops = []  # List of RouteStop
         # Would be a list of (lon, lat) for the longest stretch. Can be empty.
         self.tracks = None
-        # Index of the fist stop that is located on/near the self.tracks
+        # Index of the first stop that is located on/near the self.tracks
         self.first_stop_on_rails_index = None
         # Index of the last stop that is located on/near the self.tracks
         self.last_stop_on_rails_index = None
