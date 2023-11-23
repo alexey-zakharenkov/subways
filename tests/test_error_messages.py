@@ -1,4 +1,11 @@
-from tests.sample_data_for_error_messages import metro_samples
+import itertools
+
+from tests.sample_data_for_error_messages import (
+    metro_samples as metro_samples_error,
+)
+from tests.sample_data_for_twin_routes import (
+    metro_samples as metro_samples_route_masters,
+)
 from tests.util import TestCase
 
 
@@ -20,6 +27,10 @@ class TestValidationMessages(TestCase):
             )
 
     def test_validation_messages(self) -> None:
-        for sample in metro_samples:
+        for sample in itertools.chain(
+            metro_samples_error, metro_samples_route_masters
+        ):
+            if "errors" not in sample:
+                continue
             with self.subTest(msg=sample["name"]):
                 self._test_validation_messages_for_network(sample)

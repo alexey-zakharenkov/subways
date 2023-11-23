@@ -12,27 +12,26 @@ ALLOWED_STATIONS_MISMATCH = 0.02  # part of total station count
 ALLOWED_TRANSFERS_MISMATCH = 0.07  # part of total interchanges count
 ALLOWED_ANGLE_BETWEEN_STOPS = 45  # in degrees
 DISALLOWED_ANGLE_BETWEEN_STOPS = 20  # in degrees
+SUGGEST_TRANSFER_MIN_DISTANCE = 100  # in meters
 
 # If an object was moved not too far compared to previous script run,
 # it is likely the same object
 DISPLACEMENT_TOLERANCE = 300  # in meters
 
-MODES_RAPID = set(("subway", "light_rail", "monorail", "train"))
-MODES_OVERGROUND = set(("tram", "bus", "trolleybus", "aerialway", "ferry"))
-DEFAULT_MODES_RAPID = set(("subway", "light_rail"))
-DEFAULT_MODES_OVERGROUND = set(("tram",))  # TODO: bus and trolleybus?
+MODES_RAPID = {"subway", "light_rail", "monorail", "train"}
+MODES_OVERGROUND = {"tram", "bus", "trolleybus", "aerialway", "ferry"}
+DEFAULT_MODES_RAPID = {"subway", "light_rail"}
+DEFAULT_MODES_OVERGROUND = {"tram"}  # TODO: bus and trolleybus?
 ALL_MODES = MODES_RAPID | MODES_OVERGROUND
-RAILWAY_TYPES = set(
-    (
-        "rail",
-        "light_rail",
-        "subway",
-        "narrow_gauge",
-        "funicular",
-        "monorail",
-        "tram",
-    )
-)
+RAILWAY_TYPES = {
+    "rail",
+    "light_rail",
+    "subway",
+    "narrow_gauge",
+    "funicular",
+    "monorail",
+    "tram",
+}
 CONSTRUCTION_KEYS = (
     "construction",
     "proposed",
@@ -49,7 +48,7 @@ START_END_TIMES_RE = re.compile(r".*?(\d{2}):(\d{2})-(\d{2}):(\d{2}).*")
 def get_start_end_times(opening_hours):
     """Very simplified method to parse OSM opening_hours tag.
     We simply take the first HH:MM-HH:MM substring which is the most probable
-    opening hours interval for the most of weekdays.
+    opening hours interval for the most of the weekdays.
     """
     start_time, end_time = None, None
     m = START_END_TIMES_RE.match(opening_hours)
@@ -102,9 +101,9 @@ def el_center(el):
     if not el:
         return None
     if "lat" in el:
-        return (el["lon"], el["lat"])
+        return el["lon"], el["lat"]
     elif "center" in el:
-        return (el["center"]["lon"], el["center"]["lat"])
+        return el["center"]["lon"], el["center"]["lat"]
     return None
 
 
@@ -485,7 +484,7 @@ class StopArea:
                 self.center[i] /= len(self.stops) + len(self.platforms)
 
     def get_elements(self):
-        result = set([self.id, self.station.id])
+        result = {self.id, self.station.id}
         result.update(self.entrances)
         result.update(self.exits)
         result.update(self.stops)
@@ -1156,6 +1155,12 @@ class Route:
 
         return tracks
 
+    def are_tracks_complete(self) -> bool:
+        return (
+            self.first_stop_on_rails_index == 0
+            and self.last_stop_on_rails_index == len(self) - 1
+        )
+
     def get_tracks_geometry(self):
         tracks = self.get_extended_tracks()
         tracks = self.get_truncated_tracks(tracks)
@@ -1350,6 +1355,36 @@ class Route:
         ]
         return True
 
+    def get_end_transfers(self) -> tuple[str, str]:
+        """Using transfer ids because a train can arrive at different
+        stations within a transfer. But disregard transfer that may give
+        an impression of a circular route (for example,
+        Simonis / Elisabeth station and route 2 in Brussels).
+        """
+        return (
+            (self[0].stoparea.id, self[-1].stoparea.id)
+            if (
+                self[0].stoparea.transfer is not None
+                and self[0].stoparea.transfer == self[-1].stoparea.transfer
+            )
+            else (
+                self[0].stoparea.transfer or self[0].stoparea.id,
+                self[-1].stoparea.transfer or self[-1].stoparea.id,
+            )
+        )
+
+    def get_transfers_sequence(self) -> list[str]:
+        """Return a list of stoparea or transfer (if not None) ids."""
+        transfer_seq = [
+            stop.stoparea.transfer or stop.stoparea.id for stop in self
+        ]
+        if (
+            self[0].stoparea.transfer is not None
+            and self[0].stoparea.transfer == self[-1].stoparea.transfer
+        ):
+            transfer_seq[0], transfer_seq[-1] = self.get_end_transfers()
+        return transfer_seq
+
     def __len__(self):
         return len(self.stops)
 
@@ -1479,12 +1514,74 @@ class RouteMaster:
             else:
                 self.interval = min(self.interval, route.interval)
 
+        # Choose minimal id for determinancy
         if not self.has_master and (not self.id or self.id > route.id):
             self.id = route.id
 
         self.routes.append(route)
-        if not self.best or len(route.stops) > len(self.best.stops):
+        if (
+            not self.best
+            or len(route.stops) > len(self.best.stops)
+            or (
+                # Choose route with minimal id for determinancy
+                len(route.stops) == len(self.best.stops)
+                and route.element["id"] < self.best.element["id"]
+            )
+        ):
             self.best = route
+
+    def get_meaningful_routes(self) -> list[Route]:
+        return [route for route in self if len(route) >= 2]
+
+    def find_twin_routes(self) -> dict[Route, Route]:
+        """Two routes are twins if they have the same end stations
+        and opposite directions, and the number of stations is
+        the same or almost the same. We'll then find stops that are present
+        in one direction and is missing in another direction - to warn.
+        """
+
+        twin_routes = {}  # route => "twin" route
+
+        for route in self.get_meaningful_routes():
+            if route.is_circular:
+                continue  # Difficult to calculate. TODO(?) in the future
+            if route in twin_routes:
+                continue
+            if len(route) < 2:
+                continue
+
+            route_transfer_ids = set(route.get_transfers_sequence())
+            ends = route.get_end_transfers()
+            ends_reversed = ends[::-1]
+
+            twin_candidates = [
+                r
+                for r in self
+                if not r.is_circular
+                and r not in twin_routes
+                and r.get_end_transfers() == ends_reversed
+                # If absolute or relative difference in station count is large,
+                # possibly it's an express version of a route - skip it.
+                and (
+                    abs(len(r) - len(route)) <= 2
+                    or abs(len(r) - len(route)) / max(len(r), len(route))
+                    <= 0.2
+                )
+            ]
+
+            if not twin_candidates:
+                continue
+
+            twin_route = min(
+                twin_candidates,
+                key=lambda r: len(
+                    route_transfer_ids ^ set(r.get_transfers_sequence())
+                ),
+            )
+            twin_routes[route] = twin_route
+            twin_routes[twin_route] = route
+
+        return twin_routes
 
     def stop_areas(self):
         """Returns a list of all stations on all route variants."""
@@ -1521,6 +1618,7 @@ class City:
         self.errors = []
         self.warnings = []
         self.notices = []
+        self.id = None
         self.try_fill_int_attribute(city_data, "id")
         self.name = city_data["name"]
         self.country = city_data["country"]
@@ -1555,7 +1653,7 @@ class City:
             else:
                 self.modes = DEFAULT_MODES_RAPID
         else:
-            self.modes = set([x.strip() for x in networks[0].split(",")])
+            self.modes = {x.strip() for x in networks[0].split(",")}
 
         # Reversing bbox so it is (xmin, ymin, xmax, ymax)
         bbox = city_data["bbox"].split(",")
@@ -1627,7 +1725,7 @@ class City:
         self.warnings.append(msg)
 
     def error(self, message, el=None):
-        """Error if a critical problem that invalidates the city"""
+        """Error is a critical problem that invalidates the city."""
         msg = City.log_message(message, el)
         self.errors.append(msg)
 
@@ -1914,37 +2012,18 @@ class City:
                 f"relations: {format_elid_list(not_in_sa)}"
             )
 
-    def check_return_routes(self, rmaster):
-        variants = {}
-        have_return = set()
-        for variant in rmaster:
-            if len(variant) < 2:
-                continue
-            # Using transfer ids because a train can arrive at different
-            # stations within a transfer. But disregard transfer that may give
-            # an impression of a circular route (for example,
-            # Simonis / Elisabeth station and route 2 in Brussels)
-            if variant[0].stoparea.transfer == variant[-1].stoparea.transfer:
-                t = (variant[0].stoparea.id, variant[-1].stoparea.id)
-            else:
-                t = (
-                    variant[0].stoparea.transfer or variant[0].stoparea.id,
-                    variant[-1].stoparea.transfer or variant[-1].stoparea.id,
-                )
-            if t in variants:
-                continue
-            variants[t] = variant.element
-            tr = (t[1], t[0])
-            if tr in variants:
-                have_return.add(t)
-                have_return.add(tr)
+    def check_return_routes(self, rmaster: RouteMaster) -> None:
+        """Check if a route has return direction, and if twin routes
+        miss stations.
+        """
+        meaningful_routes = rmaster.get_meaningful_routes()
 
-        if len(variants) == 0:
+        if len(meaningful_routes) == 0:
             self.error(
-                "An empty route master {}. Please set construction:route "
-                "if it is under construction".format(rmaster.id)
+                f"An empty route master {rmaster.id}. "
+                "Please set construction:route if it is under construction"
             )
-        elif len(variants) == 1:
+        elif len(meaningful_routes) == 1:
             log_function = (
                 self.error if not rmaster.best.is_circular else self.notice
             )
@@ -1954,9 +2033,144 @@ class City:
                 rmaster.best.element,
             )
         else:
-            for t, rel in variants.items():
-                if t not in have_return:
-                    self.notice("Route does not have a return direction", rel)
+            all_ends = {
+                route.get_end_transfers(): route for route in meaningful_routes
+            }
+            for route in meaningful_routes:
+                ends = route.get_end_transfers()
+                if ends[::-1] not in all_ends:
+                    self.notice(
+                        "Route does not have a return direction", route.element
+                    )
+
+            twin_routes = rmaster.find_twin_routes()
+            for route1, route2 in twin_routes.items():
+                if route1.id > route2.id:
+                    continue  # to process a pair of routes only once
+                    # and to ensure the order of routes in the pair
+                self.alert_twin_routes_differ(route1, route2)
+
+    def alert_twin_routes_differ(self, route1: Route, route2: Route) -> None:
+        """Arguments are that route1.id < route2.id"""
+        (
+            stops_missing_from_route1,
+            stops_missing_from_route2,
+            stops_that_dont_match,
+        ) = self.calculate_twin_routes_diff(route1, route2)
+
+        for st in stops_missing_from_route1:
+            if (
+                not route1.are_tracks_complete()
+                or (
+                    projected_point := project_on_line(
+                        st.stoparea.center, route1.tracks
+                    )["projected_point"]
+                )
+                is not None
+                and distance(st.stoparea.center, projected_point)
+                <= MAX_DISTANCE_STOP_TO_LINE
+            ):
+                self.notice(
+                    f"Stop {st.stoparea.station.name} {st.stop} is included "
+                    f"into the {route2.id} but not included into {route1.id}",
+                    route1.element,
+                )
+
+        for st in stops_missing_from_route2:
+            if (
+                not route2.are_tracks_complete()
+                or (
+                    projected_point := project_on_line(
+                        st.stoparea.center, route2.tracks
+                    )["projected_point"]
+                )
+                is not None
+                and distance(st.stoparea.center, projected_point)
+                <= MAX_DISTANCE_STOP_TO_LINE
+            ):
+                self.notice(
+                    f"Stop {st.stoparea.station.name} {st.stop} is included "
+                    f"into the {route1.id} but not included into {route2.id}",
+                    route2.element,
+                )
+
+        for st1, st2 in stops_that_dont_match:
+            if (
+                st1.stoparea.station == st2.stoparea.station
+                or distance(st1.stop, st2.stop) < SUGGEST_TRANSFER_MIN_DISTANCE
+            ):
+                self.notice(
+                    "Should there be one stoparea or a transfer between "
+                    f"{st1.stoparea.station.name} {st1.stop} and "
+                    f"{st2.stoparea.station.name} {st2.stop}?",
+                    route1.element,
+                )
+
+    @staticmethod
+    def calculate_twin_routes_diff(route1: Route, route2: Route) -> tuple:
+        """Wagner–Fischer algorithm for stops diff in two twin routes."""
+
+        stops1 = route1.stops
+        stops2 = route2.stops[::-1]
+
+        def stops_match(stop1: RouteStop, stop2: RouteStop) -> bool:
+            return (
+                stop1.stoparea == stop2.stoparea
+                or stop1.stoparea.transfer is not None
+                and stop1.stoparea.transfer == stop2.stoparea.transfer
+            )
+
+        d = [[0] * (len(stops2) + 1) for _ in range(len(stops1) + 1)]
+        d[0] = list(range(len(stops2) + 1))
+        for i in range(len(stops1) + 1):
+            d[i][0] = i
+
+        for i in range(1, len(stops1) + 1):
+            for j in range(1, len(stops2) + 1):
+                d[i][j] = (
+                    d[i - 1][j - 1]
+                    if stops_match(stops1[i - 1], stops2[j - 1])
+                    else min((d[i - 1][j], d[i][j - 1], d[i - 1][j - 1])) + 1
+                )
+
+        stops_missing_from_route1: list[RouteStop] = []
+        stops_missing_from_route2: list[RouteStop] = []
+        stops_that_dont_match: list[tuple[RouteStop, RouteStop]] = []
+
+        i = len(stops1)
+        j = len(stops2)
+        while not (i == 0 and j == 0):
+            action = None
+            if i > 0 and j > 0:
+                match = stops_match(stops1[i - 1], stops2[j - 1])
+                if match and d[i - 1][j - 1] == d[i][j]:
+                    action = "no"
+                elif not match and d[i - 1][j - 1] + 1 == d[i][j]:
+                    action = "change"
+            if not action and i > 0 and d[i - 1][j] + 1 == d[i][j]:
+                action = "add_2"
+            if not action and j > 0 and d[i][j - 1] + 1 == d[i][j]:
+                action = "add_1"
+
+            match action:
+                case "add_1":
+                    stops_missing_from_route1.append(stops2[j - 1])
+                    j -= 1
+                case "add_2":
+                    stops_missing_from_route2.append(stops1[i - 1])
+                    i -= 1
+                case _:
+                    if action == "change":
+                        stops_that_dont_match.append(
+                            (stops1[i - 1], stops2[j - 1])
+                        )
+                    i -= 1
+                    j -= 1
+        return (
+            stops_missing_from_route1,
+            stops_missing_from_route2,
+            stops_that_dont_match,
+        )
 
     def validate_lines(self):
         self.found_light_lines = len(

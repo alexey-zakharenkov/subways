@@ -42,11 +42,11 @@ metro_samples = [
         "cities_info": [
             {
                 "num_stations": 2,
+                "num_lines": 1,
+                "num_light_lines": 0,
+                "num_interchanges": 0,
             },
         ],
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
         "errors": [],
         "warnings": [],
         "notices": [],
@@ -110,14 +110,9 @@ metro_samples = [
                 "num_stations": 4,
             },
         ],
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
         "errors": [
-            'Angle between stops around "Station 3" (2.0, 0.0) '
-            'is too narrow, 0 degrees (relation 1, "Forward")',
-            'Angle between stops around "Station 2" (1.0, 0.0) '
-            'is too narrow, 0 degrees (relation 1, "Forward")',
+            'Angle between stops around "Station 3" (2.0, 0.0) is too narrow, 0 degrees (relation 1, "Forward")',  # noqa: E501
+            'Angle between stops around "Station 2" (1.0, 0.0) is too narrow, 0 degrees (relation 1, "Forward")',  # noqa: E501
         ],
         "warnings": [],
         "notices": [],
@@ -175,14 +170,9 @@ metro_samples = [
                 "num_stations": 3,
             },
         ],
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
         "errors": [
-            'Angle between stops around "Station 2" (1.0, 0.0) '
-            'is too narrow, 11 degrees (relation 1, "Forward")',
-            'Angle between stops around "Station 2" (1.0, 0.0) '
-            'is too narrow, 11 degrees (relation 2, "Backward")',
+            'Angle between stops around "Station 2" (1.0, 0.0) is too narrow, 11 degrees (relation 1, "Forward")',  # noqa: E501
+            'Angle between stops around "Station 2" (1.0, 0.0) is too narrow, 11 degrees (relation 2, "Backward")',  # noqa: E501
         ],
         "warnings": [],
         "notices": [],
@@ -240,16 +230,11 @@ metro_samples = [
                 "num_stations": 3,
             },
         ],
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
         "errors": [],
         "warnings": [],
         "notices": [
-            'Angle between stops around "Station 2" (1.0, 0.0) '
-            'is too narrow, 27 degrees (relation 1, "Forward")',
-            'Angle between stops around "Station 2" (1.0, 0.0) '
-            'is too narrow, 27 degrees (relation 2, "Backward")',
+            'Angle between stops around "Station 2" (1.0, 0.0) is too narrow, 27 degrees (relation 1, "Forward")',  # noqa: E501
+            'Angle between stops around "Station 2" (1.0, 0.0) is too narrow, 27 degrees (relation 2, "Backward")',  # noqa: E501
         ],
     },
     {
@@ -326,16 +311,45 @@ metro_samples = [
                 "num_stations": 4,
             },
         ],
-        "num_lines": 1,
-        "num_light_lines": 0,
-        "num_interchanges": 0,
         "errors": [
-            'Stops on tracks are unordered near "Station 2" (1.0, 0.0) '
-            '(relation 1, "Forward")',
-            'Stops on tracks are unordered near "Station 3" (0.0, 0.5) '
-            '(relation 2, "Backward")',
+            'Stops on tracks are unordered near "Station 2" (1.0, 0.0) (relation 1, "Forward")',  # noqa: E501
+            'Stops on tracks are unordered near "Station 3" (0.0, 0.5) (relation 2, "Backward")',  # noqa: E501
         ],
         "warnings": [],
         "notices": [],
+    },
+    {
+        "name": (
+            "Many different route masters, both on naked stations and "
+            "stop_positions/stop_areas/transfers, both linear and circular"
+        ),
+        "xml_file": "assets/route_masters.osm",
+        "cities_info": [
+            {
+                "num_stations": (3 + 3 + 3 + 5 + 3 + 3 + 4)
+                + (3 + 3 + 3 + 3 + 3 + 3 + 4),
+                "num_lines": 7 + 7,
+                "num_interchanges": 0 + 1,
+            },
+        ],
+        "errors": [
+            'Only one route in route_master. Please check if it needs a return route (relation 162, "03: 1-2-3")'  # noqa: E501
+        ],
+        "warnings": [],
+        "notices": [
+            'Route does not have a return direction (relation 155, "02: 1-2-3")',  # noqa: E501
+            'Route does not have a return direction (relation 158, "02: 1-3 (2)")',  # noqa: E501
+            'Only one route in route_master. Please check if it needs a return route (relation 159, "C: 1-3-5-1")',  # noqa: E501
+            'Route does not have a return direction (relation 163, "04: 1-2-3")',  # noqa: E501
+            'Route does not have a return direction (relation 164, "04: 2-1")',  # noqa: E501
+            'Stop Station 2 (1.0, 0.0) is included into the r203 but not included into r204 (relation 204, "2: 3-1")',  # noqa: E501
+            'Route does not have a return direction (relation 205, "3: 1-2-3")',  # noqa: E501
+            'Route does not have a return direction (relation 206, "3: 1-2-3")',  # noqa: E501
+            'Route does not have a return direction (relation 207, "4: 4-3-2-1")',  # noqa: E501
+            'Route does not have a return direction (relation 208, "4: 1-2-3-4")',  # noqa: E501
+            'Route does not have a return direction (relation 209, "5: 1-2-3")',  # noqa: E501
+            'Route does not have a return direction (relation 210, "5: 2-1")',  # noqa: E501
+            'Only one route in route_master. Please check if it needs a return route (relation 213, "C3: 1-2-3-8-1")',  # noqa: E501
+        ],
     },
 ]
