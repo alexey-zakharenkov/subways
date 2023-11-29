@@ -56,6 +56,27 @@
   <node id='105' visible='true' version='1' lat='0.01441106473' lon='0.01235481987'>
     <tag k='public_transport' v='stop_position' />
   </node>
+  <node id='201' visible='true' version='1' lat='0.00967473055' lon='0.01007169217'>
+    <tag k='railway' v='subway_entrance' />
+    <tag k='ref' v='3-1' />
+  </node>
+  <node id='202' visible='true' version='1' lat='0.00966936613' lon='0.01018702716'>
+    <tag k='railway' v='train_station_entrance' />
+    <tag k='ref' v='3-2' />
+  </node>
+  <node id='203' visible='true' version='1' lat='0.01042574907' lon='0.00959962338'>
+    <tag k='railway' v='train_station_entrance' />
+    <tag k='ref' v='7-2' />
+  </node>
+  <node id='204' visible='true' version='1' lat='0.01034796501' lon='0.00952183932'>
+    <tag k='railway' v='subway_entrance' />
+    <tag k='ref' v='7-1' />
+  </node>
+  <node id='205' visible='true' version='1' lat='0.01015484596' lon='0.000201163'>
+    <tag k='note' v='Though the entrance is not in the stop_area, the preprocessor should add the entrance to it' />
+    <tag k='railway' v='subway_entrance' />
+    <tag k='ref' v='4-1' />
+  </node>
   <node id='1001' visible='true' version='1' lat='0.01' lon='0.01' />
   <way id='1' visible='true' version='1'>
     <nd ref='1' />
@@ -95,6 +116,8 @@
   </relation>
   <relation id='3' visible='true' version='1'>
     <member type='node' ref='3' role='' />
+    <member type='node' ref='201' role='' />
+    <member type='node' ref='202' role='' />
     <tag k='public_transport' v='stop_area' />
     <tag k='type' v='public_transport' />
   </relation>
@@ -102,6 +125,8 @@
     <member type='node' ref='7' role='' />
     <member type='node' ref='102' role='' />
     <member type='node' ref='104' role='' />
+    <member type='node' ref='203' role='' />
+    <member type='node' ref='204' role='' />
     <tag k='public_transport' v='stop_area' />
     <tag k='type' v='public_transport' />
   </relation>

@@ -20,7 +20,7 @@ metro_samples = [
                 "networks": "network-2",
             },
         ],
-        "gtfs_file": "assets/tiny_world_gtfs.zip",
+        "gtfs_dir": "assets/tiny_world_gtfs",
         "json_dump": """
 {
   "stopareas": {
@@ -49,7 +49,20 @@ metro_samples = [
         0.0097589171
       ],
       "name": "Station 3",
-      "entrances": []
+      "entrances": [
+        {
+          "id": "n201",
+          "name": null,
+          "ref": "3-1",
+          "center": [0.01007169217, 0.00967473055]
+        },
+        {
+          "id": "n202",
+          "name": null,
+          "ref": "3-2",
+          "center": [0.01018702716, 0.00966936613]
+        }
+      ]
     },
     "n4": {
       "id": "n4",
@@ -58,7 +71,14 @@ metro_samples = [
         0.01
       ],
       "name": "Station 4",
-      "entrances": []
+      "entrances": [
+        {
+          "id": "n205",
+          "name": null,
+          "ref": "4-1",
+          "center": [0.000201163, 0.01015484596]
+        }
+      ]
     },
     "r2": {
       "id": "r2",
@@ -85,7 +105,20 @@ metro_samples = [
         0.010286367745
       ],
       "name": "Station 7",
-      "entrances": []
+      "entrances": [
+        {
+          "id": "n204",
+          "name": null,
+          "ref": "7-1",
+          "center": [0.00952183932, 0.01034796501]
+        },
+        {
+          "id": "n203",
+          "name": null,
+          "ref": "7-2",
+          "center": [0.00959962338, 0.01042574907]
+        }
+      ]
     },
     "r16": {
       "id": "r16",

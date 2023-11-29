@@ -24,7 +24,7 @@ from subway_structure import (
     City,
     CriticalValidationError,
     find_transfers,
-    get_unused_entrances_geojson,
+    get_unused_subway_entrances_geojson,
     MODES_OVERGROUND,
     MODES_RAPID,
 )
@@ -38,26 +38,37 @@ DEFAULT_CITIES_INFO_URL = (
 Point = tuple[float, float]
 
 
-def overpass_request(
-    overground: bool, overpass_api: str, bboxes: list[list[float]]
-) -> list[dict]:
+def compose_overpass_request(
+    overground: bool, bboxes: list[list[float]]
+) -> str:
+    if not bboxes:
+        raise RuntimeError("No bboxes given for overpass request")
+
     query = "[out:json][timeout:1000];("
     modes = MODES_OVERGROUND if overground else MODES_RAPID
     for bbox in bboxes:
-        bbox_part = "({})".format(",".join(str(coord) for coord in bbox))
+        bbox_part = f"({','.join(str(coord) for coord in bbox)})"
         query += "("
-        for mode in modes:
-            query += 'rel[route="{}"]{};'.format(mode, bbox_part)
+        for mode in sorted(modes):
+            query += f'rel[route="{mode}"]{bbox_part};'
         query += ");"
         query += "rel(br)[type=route_master];"
         if not overground:
-            query += "node[railway=subway_entrance]{};".format(bbox_part)
-        query += "rel[public_transport=stop_area]{};".format(bbox_part)
+            query += f"node[railway=subway_entrance]{bbox_part};"
+            query += f"node[railway=train_station_entrance]{bbox_part};"
+        query += f"rel[public_transport=stop_area]{bbox_part};"
         query += (
             "rel(br)[type=public_transport][public_transport=stop_area_group];"
         )
     query += ");(._;>>;);out body center qt;"
     logging.debug("Query: %s", query)
+    return query
+
+
+def overpass_request(
+    overground: bool, overpass_api: str, bboxes: list[list[float]]
+) -> list[dict]:
+    query = compose_overpass_request(overground, bboxes)
     url = "{}?data={}".format(overpass_api, urllib.parse.quote(query))
     response = urllib.request.urlopen(url, timeout=1000)
     if (r_code := response.getcode()) != 200:
@@ -489,7 +500,7 @@ def main() -> None:
         write_recovery_data(options.recovery_path, recovery_data, cities)
 
     if options.entrances:
-        json.dump(get_unused_entrances_geojson(osm), options.entrances)
+        json.dump(get_unused_subway_entrances_geojson(osm), options.entrances)
 
     if options.dump:
         if os.path.isdir(options.dump):

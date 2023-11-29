@@ -1,13 +1,11 @@
-import codecs
 import csv
 from functools import partial
 from pathlib import Path
-from zipfile import ZipFile
 
 from processors._common import transit_to_dict
 from processors.gtfs import dict_to_row, GTFS_COLUMNS, transit_data_to_gtfs
-from tests.util import TestCase
 from tests.sample_data_for_outputs import metro_samples
+from tests.util import TestCase
 
 
 class TestGTFS(TestCase):
@@ -108,20 +106,19 @@ class TestGTFS(TestCase):
             )
 
             control_gtfs_data = self._readGtfs(
-                Path(__file__).resolve().parent / metro_sample["gtfs_file"]
+                Path(__file__).resolve().parent / metro_sample["gtfs_dir"]
             )
             self._compareGtfs(calculated_gtfs_data, control_gtfs_data)
 
     @staticmethod
-    def _readGtfs(filepath: str) -> dict:
+    def _readGtfs(gtfs_dir: Path) -> dict:
         gtfs_data = dict()
-        with ZipFile(filepath) as zf:
-            for gtfs_feature in GTFS_COLUMNS:
-                with zf.open(f"{gtfs_feature}.txt") as f:
-                    reader = csv.reader(codecs.iterdecode(f, "utf-8"))
-                    next(reader)  # read header
-                    rows = list(reader)
-                    gtfs_data[gtfs_feature] = rows
+        for gtfs_feature in GTFS_COLUMNS:
+            with open(gtfs_dir / f"{gtfs_feature}.txt") as f:
+                reader = csv.reader(f)
+                next(reader)  # read header
+                rows = list(reader)
+                gtfs_data[gtfs_feature] = rows
         return gtfs_data
 
     def _compareGtfs(
