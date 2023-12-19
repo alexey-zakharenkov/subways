@@ -33,7 +33,7 @@ metro_samples = [
             'Route does not have a return direction (relation 157, "02: 4-1")',
             'Route does not have a return direction (relation 158, "02: 1-3 (2)")',  # noqa: E501
             'Only one route in route_master. Please check if it needs a return route (relation 159, "C: 1-2-3-4-5-1")',  # noqa: E501
-            'Stop Station 4 (3.0, 0.0) is included into the r205 but not included into r206 (relation 206, "3: 7-6-5-3-2-1")',  # noqa: E501
+            'Stop Station 4 (3.0, 0.0) is included in the r205 but not included in r206 (relation 206, "3: 7-6-5-3-2-1")',  # noqa: E501
             'Route does not have a return direction (relation 207, "4: 4-3-2-1")',  # noqa: E501
             'Route does not have a return direction (relation 208, "4: 1-2-3-4")',  # noqa: E501
             'Route does not have a return direction (relation 209, "5: 1-2-3-5-6-7")',  # noqa: E501
@@ -66,12 +66,12 @@ metro_samples = [
         "notices": [
             'Should there be one stoparea or a transfer between Station 11 (0.1, 0.0) and Station 11(1) (0.1, 0.0003)? (relation 101, "1: 1-...-9-10-11-...-20")',  # noqa: E501
             'Should there be one stoparea or a transfer between Station 10 (0.09, 0.0) and Station 10(1) (0.09, 0.0003)? (relation 101, "1: 1-...-9-10-11-...-20")',  # noqa: E501
-            'Stop Station 10 (0.09, 0.0) is included into the r105 but not included into r106 (relation 106, "3: 20-...-12-11(1)-9-...-1")',  # noqa: E501
+            'Stop Station 10 (0.09, 0.0) is included in the r105 but not included in r106 (relation 106, "3: 20-...-12-11(1)-9-...-1")',  # noqa: E501
             'Should there be one stoparea or a transfer between Station 11 (0.1, 0.0) and Station 11(1) (0.1, 0.0003)? (relation 105, "3: 1-...-9-10-11-...-20")',  # noqa: E501
-            'Stop Station 10 (0.09, 0.0) is included into the r107 but not included into r108 (relation 108, "4: 20-...12-11(2)-9-...-1")',  # noqa: E501
+            'Stop Station 10 (0.09, 0.0) is included in the r107 but not included in r108 (relation 108, "4: 20-...12-11(2)-9-...-1")',  # noqa: E501
             'Should there be one stoparea or a transfer between Station 11 (0.1, 0.0) and Station 11(1) (0.1, 0.0003)? (relation 201, "11: 1-...-9-10-11-...-20")',  # noqa: E501
             'Should there be one stoparea or a transfer between Station 10 (0.09, 0.0) and Station 10(1) (0.09, 0.0003)? (relation 201, "11: 1-...-9-10-11-...-20")',  # noqa: E501
-            'Stop Station 10 (0.09, 0.0) is included into the r205 but not included into r206 (relation 206, "13: 20-...-12-11(1)-9-...-1")',  # noqa: E501
+            'Stop Station 10 (0.09, 0.0) is included in the r205 but not included in r206 (relation 206, "13: 20-...-12-11(1)-9-...-1")',  # noqa: E501
             'Should there be one stoparea or a transfer between Station 11 (0.1, 0.0) and Station 11(1) (0.1, 0.0003)? (relation 205, "13: 1-...-9-10-11-...-20")',  # noqa: E501
         ],
     },

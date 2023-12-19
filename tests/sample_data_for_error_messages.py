@@ -342,7 +342,7 @@ metro_samples = [
             'Only one route in route_master. Please check if it needs a return route (relation 159, "C: 1-3-5-1")',  # noqa: E501
             'Route does not have a return direction (relation 163, "04: 1-2-3")',  # noqa: E501
             'Route does not have a return direction (relation 164, "04: 2-1")',  # noqa: E501
-            'Stop Station 2 (1.0, 0.0) is included into the r203 but not included into r204 (relation 204, "2: 3-1")',  # noqa: E501
+            'Stop Station 2 (1.0, 0.0) is included in the r203 but not included in r204 (relation 204, "2: 3-1")',  # noqa: E501
             'Route does not have a return direction (relation 205, "3: 1-2-3")',  # noqa: E501
             'Route does not have a return direction (relation 206, "3: 1-2-3")',  # noqa: E501
             'Route does not have a return direction (relation 207, "4: 4-3-2-1")',  # noqa: E501

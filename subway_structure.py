@@ -1024,7 +1024,7 @@ class Route:
                 continue
 
             if Station.is_station(el, self.city.modes):
-                # A station may be not included into this route due to previous
+                # A station may be not included in this route due to previous
                 # 'stop area has multiple stations' error. No other error
                 # message is needed.
                 pass
@@ -2085,7 +2085,7 @@ class City:
             ):
                 self.notice(
                     f"Stop {st.stoparea.station.name} {st.stop} is included "
-                    f"into the {route2.id} but not included into {route1.id}",
+                    f"in the {route2.id} but not included in {route1.id}",
                     route1.element,
                 )
 
@@ -2103,7 +2103,7 @@ class City:
             ):
                 self.notice(
                     f"Stop {st.stoparea.station.name} {st.stop} is included "
-                    f"into the {route1.id} but not included into {route2.id}",
+                    f"in the {route1.id} but not included in {route2.id}",
                     route2.element,
                 )
 

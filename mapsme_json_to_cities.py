@@ -1,7 +1,15 @@
+"""
+Generate sorted list of all cities, with [bad] mark for bad cities.
+
+!!! Deprecated for use in validation cycle.
+Use "process_subways.py --dump-city-list <filename>" instead.
+"""
+
+
 import argparse
 import json
 
-from process_subways import DEFAULT_CITIES_INFO_URL, get_cities_info
+from process_subways import BAD_MARK, DEFAULT_CITIES_INFO_URL, get_cities_info
 
 
 if __name__ == "__main__":
@@ -56,7 +64,7 @@ if __name__ == "__main__":
         if ci["name"] in good_cities:
             lines.append(f"{ci['name']}, {ci['country']}")
         elif with_bad:
-            lines.append(f"{ci['name']}, {ci['country']} (Bad)")
+            lines.append(f"{ci['name']}, {ci['country']} {BAD_MARK}")
 
     for line in sorted(lines):
         print(line)

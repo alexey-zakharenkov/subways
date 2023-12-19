@@ -34,6 +34,7 @@ DEFAULT_CITIES_INFO_URL = (
     "https://docs.google.com/spreadsheets/d/"
     f"{DEFAULT_SPREADSHEET_ID}/export?format=csv"
 )
+BAD_MARK = "[bad]"
 
 Point = tuple[float, float]
 
@@ -69,7 +70,7 @@ def overpass_request(
     overground: bool, overpass_api: str, bboxes: list[list[float]]
 ) -> list[dict]:
     query = compose_overpass_request(overground, bboxes)
-    url = "{}?data={}".format(overpass_api, urllib.parse.quote(query))
+    url = f"{overpass_api}?data={urllib.parse.quote(query)}"
     response = urllib.request.urlopen(url, timeout=1000)
     if (r_code := response.getcode()) != 200:
         raise Exception(f"Failed to query Overpass API: HTTP {r_code}")
@@ -82,7 +83,7 @@ def multi_overpass(
     SLICE_SIZE = 10
     INTERREQUEST_WAIT = 5  # in seconds
     result = []
-    for i in range(0, len(bboxes) + SLICE_SIZE - 1, SLICE_SIZE):
+    for i in range(0, len(bboxes), SLICE_SIZE):
         if i > 0:
             time.sleep(INTERREQUEST_WAIT)
         bboxes_i = bboxes[i : i + SLICE_SIZE]  # noqa E203
@@ -383,6 +384,14 @@ def main() -> None:
         type=argparse.FileType("w", encoding="utf-8"),
         help="Validation JSON file name",
     )
+    parser.add_argument(
+        "--dump-city-list",
+        type=argparse.FileType("w", encoding="utf-8"),
+        help=(
+            "Dump sorted list of all city names, possibly with "
+            f"{BAD_MARK} mark"
+        ),
+    )
 
     for processor_name, processor in inspect.getmembers(
         processors, inspect.ismodule
@@ -495,6 +504,14 @@ def main() -> None:
         len(bad_city_names),
         ", ".join(sorted(bad_city_names)),
     )
+
+    if options.dump_city_list:
+        lines = sorted(
+            f"{city.name}, {city.country}"
+            f"{' ' + BAD_MARK if city.name in bad_city_names else ''}\n"
+            for city in cities
+        )
+        options.dump_city_list.writelines(lines)
 
     if options.recovery_path:
         write_recovery_data(options.recovery_path, recovery_data, cities)

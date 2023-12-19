@@ -53,6 +53,7 @@ Environment variable reference:
   - GIT_PULL: set to 1 to update the scripts
   - TMPDIR: path to temporary files
   - HTML_DIR: target path for generated HTML files
+  - DUMP_CITY_LIST: file name to save sorted list of cities, with [bad] mark for bad cities
   - SERVER: server name and path to upload HTML files (e.g. ilya@osmz.ru:/var/www/)
   - SERVER_KEY: rsa key to supply for uploading the files
   - REMOVE_HTML: set to 1 to remove \$HTML_DIR after uploading
@@ -246,7 +247,10 @@ VALIDATION="$TMPDIR/validation.json"
     ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
     ${GTFS:+--output-gtfs "$GTFS"} \
-    ${CITY:+-c "$CITY"} ${DUMP:+-d "$DUMP"} ${GEOJSON:+-j "$GEOJSON"} \
+    ${CITY:+-c "$CITY"} \
+    ${DUMP:+-d "$DUMP"} \
+    ${GEOJSON:+-j "$GEOJSON"} \
+    ${DUMP_CITY_LIST:+--dump-city-list "$DUMP_CITY_LIST"} \
     ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} \
     ${CITY_CACHE:+--cache "$CITY_CACHE"} \
     ${RECOVERY_PATH:+-r "$RECOVERY_PATH"}

@@ -79,13 +79,24 @@ if you allow the `process_subway.py` to fetch data from Overpass API. Here are t
     python3 ./validation_to_html.py validation.log html
     ```
 
+## Publishing validation reports to the Web
+
+Expose a directory with static contents via a web-server and put into it:
+- HTML files from the directory specified in the 2nd parameter of `validation_to_html.py`
+- To vitalize "Y" (YAML), "J" (GeoJSON) and "M" (Map) links beside each city name:
+   - The contents of `render` directory from the repository
+   - `cities.txt` file generated with `--dump-city-list` parameter of `process_subways.py`
+   - YAML files created due to -d option of `process_subways.py`
+   - GeoJSON files created due to -j option of `process_subways.py` 
+
+
 ## Related external resources
 
 Summary information about all metro networks that are monitored is gathered in the
 [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k).
 
 Regular updates of validation results are available at
-[this website](https://maps.mail.ru/osm/tools/subways/latest/).
+[this website](https://maps.vk.com/osm/tools/subways/latest/).
 You can find more info about this validator instance in
 [OSM Wiki](https://wiki.openstreetmap.org/wiki/Quality_assurance#subway-preprocessor).
 
