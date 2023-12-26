@@ -1,8 +1,8 @@
 from tests.sample_data_for_build_tracks import metro_samples
-from tests.util import TestCase
+from tests.util import JsonLikeComparisonMixin, TestCase
 
 
-class TestOneRouteTracks(TestCase):
+class TestOneRouteTracks(JsonLikeComparisonMixin, TestCase):
     """Test tracks extending and truncating on one-route networks"""
 
     def prepare_city_routes(self, metro_sample: dict) -> tuple:
