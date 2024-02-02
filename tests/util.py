@@ -173,7 +173,7 @@ class JsonLikeComparisonMixin:
         self: TestCaseMixin,
         seq1: Sequence,
         seq2: Sequence,
-        cmp: Callable | None,
+        cmp: Callable | None = None,
         places: int = 10,
         *,
         unordered_lists: dict[str, Callable] | None = None,

@@ -3,6 +3,7 @@ from __future__ import annotations
 import math
 import re
 from collections import Counter, defaultdict
+from collections.abc import Collection, Iterator
 from itertools import chain, islice
 
 from css_colours import normalize_colour
@@ -44,6 +45,10 @@ used_entrances = set()
 
 
 START_END_TIMES_RE = re.compile(r".*?(\d{2}):(\d{2})-(\d{2}):(\d{2}).*")
+
+IdT = str  # Type of feature ids
+TransferT = set[IdT]  # A transfer is a set of StopArea IDs
+TransfersT = Collection[TransferT]
 
 
 def get_start_end_times(opening_hours):
@@ -663,6 +668,14 @@ class Route:
         if not v:
             return None
         return osm_interval_to_seconds(v)
+
+    def stopareas(self) -> Iterator[StopArea]:
+        yielded_stopareas = set()
+        for route_stop in self:
+            stoparea = route_stop.stoparea
+            if stoparea not in yielded_stopareas:
+                yield stoparea
+                yielded_stopareas.add(stoparea)
 
     def __init__(self, relation, city, master=None):
         assert Route.is_route(
@@ -1465,6 +1478,14 @@ class RouteMaster:
             self.name = None
             self.interval = None
 
+    def stopareas(self) -> Iterator[StopArea]:
+        yielded_stopareas = set()
+        for route in self:
+            for stoparea in route.stopareas():
+                if stoparea not in yielded_stopareas:
+                    yield stoparea
+                    yielded_stopareas.add(stoparea)
+
     def add(self, route, city):
         if not self.network:
             self.network = route.network
@@ -1682,7 +1703,7 @@ class City:
         self.stop_areas = defaultdict(
             list
         )  # El_id → list of stop_area elements it belongs to
-        self.transfers = []  # List of lists of stop areas
+        self.transfers: TransfersT = []  # List of sets of stop areas
         self.station_ids = set()  # Set of stations' uid
         self.stops_and_platforms = set()  # Set of stops and platforms el_id
         self.recovery_data = None
@@ -1787,18 +1808,19 @@ class City:
                 else:
                     stop_areas.append(el)
 
-    def make_transfer(self, sag):
+    def make_transfer(self, stoparea_group: dict) -> None:
         transfer = set()
-        for m in sag["members"]:
+        for m in stoparea_group["members"]:
             k = el_id(m)
             el = self.elements.get(k)
             if not el:
-                # A sag member may validly not belong to the city while
-                # the sag does - near the city bbox boundary
+                # A stoparea_group member may validly not belong to the city
+                # while the stoparea_group does - near the city bbox boundary
                 continue
             if "tags" not in el:
                 self.warn(
-                    "An untagged object {} in a stop_area_group".format(k), sag
+                    "An untagged object {} in a stop_area_group".format(k),
+                    stoparea_group,
                 )
                 continue
             if (
@@ -1825,7 +1847,7 @@ class City:
                             k
                         )
                     )
-                stoparea.transfer = el_id(sag)
+                stoparea.transfer = el_id(stoparea_group)
         if len(transfer) > 1:
             self.transfers.append(transfer)
 
@@ -1918,19 +1940,27 @@ class City:
                 self.make_transfer(el)
 
         # Filter transfers, leaving only stations that belong to routes
-        used_stop_areas = set()
-        for rmaster in self.routes.values():
-            for route in rmaster:
-                used_stop_areas.update([s.stoparea for s in route.stops])
-        new_transfers = []
-        for transfer in self.transfers:
-            new_tr = [s for s in transfer if s in used_stop_areas]
-            if len(new_tr) > 1:
-                new_transfers.append(new_tr)
-        self.transfers = new_transfers
+        own_stopareas = set(self.stopareas())
+
+        self.transfers = [
+            inner_transfer
+            for inner_transfer in (
+                own_stopareas.intersection(transfer)
+                for transfer in self.transfers
+            )
+            if len(inner_transfer) > 1
+        ]
 
     def __iter__(self):
         return iter(self.routes.values())
+
+    def stopareas(self) -> Iterator[StopArea]:
+        yielded_stopareas = set()
+        for route_master in self:
+            for stoparea in route_master.stopareas():
+                if stoparea not in yielded_stopareas:
+                    yield stoparea
+                    yielded_stopareas.add(stoparea)
 
     @property
     def is_good(self):
@@ -2306,36 +2336,38 @@ class City:
                 route.calculate_distances()
 
 
-def find_transfers(elements, cities):
+def find_transfers(
+    elements: list[dict], cities: Collection[City]
+) -> TransfersT:
+    """As for now, two Cities may contain the same stoparea, but those
+    StopArea instances would have different python id. So we don't store
+    references to StopAreas, but only their ids. This is important at
+    inter-city interchanges.
+    """
+    stop_area_groups = [
+        el
+        for el in elements
+        if el["type"] == "relation"
+        and "members" in el
+        and el.get("tags", {}).get("public_transport") == "stop_area_group"
+    ]
+
+    stopareas_in_cities_ids = set(
+        stoparea.id
+        for city in cities
+        if city.is_good
+        for stoparea in city.stopareas()
+    )
+
     transfers = []
-    stop_area_groups = []
-    for el in elements:
-        if (
-            el["type"] == "relation"
-            and "members" in el
-            and el.get("tags", {}).get("public_transport") == "stop_area_group"
-        ):
-            stop_area_groups.append(el)
-
-    # StopArea.id uniquely identifies a StopArea. We must ensure StopArea
-    # uniqueness since one stop_area relation may result in
-    # several StopArea instances at inter-city interchanges.
-    stop_area_ids = defaultdict(set)  # el_id -> set of StopArea.id
-    stop_area_objects = dict()  # StopArea.id -> one of StopArea instances
-    for city in cities:
-        for el, st in city.stations.items():
-            stop_area_ids[el].update(sa.id for sa in st)
-            stop_area_objects.update((sa.id, sa) for sa in st)
-
-    for sag in stop_area_groups:
-        transfer = set()
-        for m in sag["members"]:
-            k = el_id(m)
-            if k not in stop_area_ids:
-                continue
-            transfer.update(
-                stop_area_objects[sa_id] for sa_id in stop_area_ids[k]
+    for stop_area_group in stop_area_groups:
+        transfer: TransferT = set(
+            member_id
+            for member_id in (
+                el_id(member) for member in stop_area_group["members"]
             )
+            if member_id in stopareas_in_cities_ids
+        )
         if len(transfer) > 1:
             transfers.append(transfer)
     return transfers

@@ -490,7 +490,7 @@ def main() -> None:
     good_cities = validate_cities(cities)
 
     logging.info("Finding transfer stations")
-    transfers = find_transfers(osm, cities)
+    transfers = find_transfers(osm, good_cities)
 
     good_city_names = set(c.name for c in good_cities)
     logging.info(

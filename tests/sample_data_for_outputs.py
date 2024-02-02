@@ -21,6 +21,7 @@ metro_samples = [
             },
         ],
         "gtfs_dir": "assets/tiny_world_gtfs",
+        "transfers": [{"r1", "r2"}, {"r3", "r4"}],
         "json_dump": """
 {
   "stopareas": {
@@ -366,5 +367,320 @@ metro_samples = [
   ]
 }
 """,
+        "mapsme_output": {
+            "stops": [
+                {
+                    "name": "Station 1",
+                    "int_name": None,
+                    "lat": 0.0,
+                    "lon": 0.0,
+                    "osm_type": "node",
+                    "osm_id": 1,
+                    "id": 8,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 1,
+                            "lon": 0.0,
+                            "lat": 0.0,
+                            "distance": 60,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 1,
+                            "lon": 0.0,
+                            "lat": 0.0,
+                            "distance": 60,
+                        }
+                    ],
+                },
+                {
+                    "name": "Station 2",
+                    "int_name": None,
+                    "lat": 0.0047037307,
+                    "lon": 0.00470373068,
+                    "osm_type": "node",
+                    "osm_id": 2,
+                    "id": 14,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 2,
+                            "lon": 0.0047209447,
+                            "lat": 0.004686516680000001,
+                            "distance": 60,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 2,
+                            "lon": 0.0047209447,
+                            "lat": 0.004686516680000001,
+                            "distance": 60,
+                        }
+                    ],
+                },
+                {
+                    "name": "Station 3",
+                    "int_name": None,
+                    "lat": 0.0097589171,
+                    "lon": 0.01012040581,
+                    "osm_type": "node",
+                    "osm_id": 3,
+                    "id": 30,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 201,
+                            "lon": 0.01007169217,
+                            "lat": 0.00967473055,
+                            "distance": 68,
+                        },
+                        {
+                            "osm_type": "node",
+                            "osm_id": 202,
+                            "lon": 0.01018702716,
+                            "lat": 0.00966936613,
+                            "distance": 69,
+                        },
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 201,
+                            "lon": 0.01007169217,
+                            "lat": 0.00967473055,
+                            "distance": 68,
+                        },
+                        {
+                            "osm_type": "node",
+                            "osm_id": 202,
+                            "lon": 0.01018702716,
+                            "lat": 0.00966936613,
+                            "distance": 69,
+                        },
+                    ],
+                },
+                {
+                    "name": "Station 4",
+                    "int_name": None,
+                    "lat": 0.01,
+                    "lon": 0.0,
+                    "osm_type": "node",
+                    "osm_id": 4,
+                    "id": 32,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 205,
+                            "lon": 0.000201163,
+                            "lat": 0.01015484596,
+                            "distance": 80,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 205,
+                            "lon": 0.000201163,
+                            "lat": 0.01015484596,
+                            "distance": 80,
+                        }
+                    ],
+                },
+                {
+                    "name": "Station 5",
+                    "int_name": None,
+                    "lat": 0.00514739839,
+                    "lon": 0.0047718624,
+                    "osm_type": "node",
+                    "osm_id": 5,
+                    "id": 22,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 5,
+                            "lon": 0.0047718624,
+                            "lat": 0.00514739839,
+                            "distance": 60,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 5,
+                            "lon": 0.0047718624,
+                            "lat": 0.00514739839,
+                            "distance": 60,
+                        }
+                    ],
+                },
+                {
+                    "name": "Station 6",
+                    "int_name": None,
+                    "lat": 0.0,
+                    "lon": 0.01,
+                    "osm_type": "node",
+                    "osm_id": 6,
+                    "id": 48,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 6,
+                            "lon": 0.01,
+                            "lat": 0.0,
+                            "distance": 60,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 6,
+                            "lon": 0.01,
+                            "lat": 0.0,
+                            "distance": 60,
+                        }
+                    ],
+                },
+                {
+                    "name": "Station 7",
+                    "int_name": None,
+                    "lat": 0.010286367745,
+                    "lon": 0.009716854315,
+                    "osm_type": "node",
+                    "osm_id": 7,
+                    "id": 38,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 203,
+                            "lon": 0.00959962338,
+                            "lat": 0.01042574907,
+                            "distance": 75,
+                        },
+                        {
+                            "osm_type": "node",
+                            "osm_id": 204,
+                            "lon": 0.00952183932,
+                            "lat": 0.01034796501,
+                            "distance": 76,
+                        },
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 203,
+                            "lon": 0.00959962338,
+                            "lat": 0.01042574907,
+                            "distance": 75,
+                        },
+                        {
+                            "osm_type": "node",
+                            "osm_id": 204,
+                            "lon": 0.00952183932,
+                            "lat": 0.01034796501,
+                            "distance": 76,
+                        },
+                    ],
+                },
+                {
+                    "name": "Station 8",
+                    "int_name": None,
+                    "lat": 0.014377764559999999,
+                    "lon": 0.012405493905,
+                    "osm_type": "node",
+                    "osm_id": 8,
+                    "id": 134,
+                    "entrances": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 8,
+                            "lon": 0.012391026016666667,
+                            "lat": 0.01436273297,
+                            "distance": 60,
+                        }
+                    ],
+                    "exits": [
+                        {
+                            "osm_type": "node",
+                            "osm_id": 8,
+                            "lon": 0.012391026016666667,
+                            "lat": 0.01436273297,
+                            "distance": 60,
+                        }
+                    ],
+                },
+            ],
+            "transfers": [(14, 22, 81), (30, 38, 106)],
+            "networks": [
+                {
+                    "network": "Intersecting 2 metro lines",
+                    "routes": [
+                        {
+                            "type": "subway",
+                            "ref": "1",
+                            "name": "Blue Line",
+                            "colour": "0000ff",
+                            "route_id": 30,
+                            "itineraries": [
+                                {
+                                    "stops": [[8, 0], [14, 67], [30, 141]],
+                                    "interval": 150,
+                                },
+                                {
+                                    "stops": [[30, 0], [14, 74], [8, 141]],
+                                    "interval": 150,
+                                },
+                            ],
+                        },
+                        {
+                            "type": "subway",
+                            "ref": "2",
+                            "name": "Red Line",
+                            "colour": "ff0000",
+                            "route_id": 28,
+                            "itineraries": [
+                                {
+                                    "stops": [[32, 0], [22, 68], [48, 142]],
+                                    "interval": 150,
+                                },
+                                {
+                                    "stops": [[48, 0], [22, 74], [32, 142]],
+                                    "interval": 150,
+                                },
+                            ],
+                        },
+                    ],
+                    "agency_id": 1,
+                },
+                {
+                    "network": "One light rail line",
+                    "routes": [
+                        {
+                            "type": "light_rail",
+                            "ref": "LR",
+                            "name": "LR Line",
+                            "colour": "ffffff",
+                            "route_id": 22,
+                            "itineraries": [
+                                {
+                                    "stops": [[38, 0], [134, 49]],
+                                    "interval": 150,
+                                },
+                                {
+                                    "stops": [[134, 0], [38, 48]],
+                                    "interval": 150,
+                                },
+                            ],
+                            "casing": "a52a2a",
+                        }
+                    ],
+                    "agency_id": 2,
+                },
+            ],
+        },
     },
 ]

@@ -4,10 +4,12 @@ import os
 from collections import defaultdict
 
 from subway_structure import (
+    City,
     DISPLACEMENT_TOLERANCE,
     distance,
     el_center,
     Station,
+    TransfersT,
 )
 from ._common import (
     DEFAULT_INTERVAL,
@@ -180,11 +182,12 @@ class MapsmeCache:
             logging.warning("Failed to save cache: %s", str(e))
 
 
-def process(cities, transfers, filename, cache_path):
+def transit_data_to_mapsme(
+    cities: list[City], transfers: TransfersT, cache_path: str | None
+) -> dict:
     """Generate all output and save to file.
     :param cities: List of City instances
     :param transfers: List of sets of StopArea.id
-    :param filename: Path to file to save the result
     :param cache_path: Path to json-file with good cities cache or None.
     """
 
@@ -362,18 +365,21 @@ def process(cities, transfers, filename, cache_path):
     pairwise_transfers = (
         {}
     )  # (stoparea1_uid, stoparea2_uid) -> time;  uid1 < uid2
-    for t_set in transfers:
-        t = list(t_set)
-        for t_first in range(len(t) - 1):
-            for t_second in range(t_first + 1, len(t)):
-                stoparea1 = t[t_first]
-                stoparea2 = t[t_second]
-                if stoparea1.id in stops and stoparea2.id in stops:
-                    uid1 = uid(stoparea1.id)
-                    uid2 = uid(stoparea2.id)
+    for stoparea_id_set in transfers:
+        stoparea_ids = list(stoparea_id_set)
+        for i_first in range(len(stoparea_ids) - 1):
+            for i_second in range(i_first + 1, len(stoparea_ids)):
+                stoparea1_id = stoparea_ids[i_first]
+                stoparea2_id = stoparea_ids[i_second]
+                if stoparea1_id in stops and stoparea2_id in stops:
+                    uid1 = uid(stoparea1_id)
+                    uid2 = uid(stoparea2_id)
                     uid1, uid2 = sorted([uid1, uid2])
                     transfer_time = TRANSFER_PENALTY + round(
-                        distance(stoparea1.center, stoparea2.center)
+                        distance(
+                            stop_areas[stoparea1_id].center,
+                            stop_areas[stoparea2_id].center,
+                        )
                         / SPEED_ON_TRANSFER
                     )
                     pairwise_transfers[(uid1, uid2)] = transfer_time
@@ -392,13 +398,29 @@ def process(cities, transfers, filename, cache_path):
         "transfers": pairwise_transfers,
         "networks": networks,
     }
+    return result
 
+
+def process(
+    cities: list[City],
+    transfers: TransfersT,
+    filename: str,
+    cache_path: str | None,
+):
+    """Generate all output and save to file.
+    :param cities: List of City instances
+    :param transfers: List of sets of StopArea.id
+    :param filename: Path to file to save the result
+    :param cache_path: Path to json-file with good cities cache or None.
+    """
     if not filename.lower().endswith("json"):
         filename = f"{filename}.json"
 
+    mapsme_transit = transit_data_to_mapsme(cities, transfers, cache_path)
+
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(
-            result,
+            mapsme_transit,
             f,
             indent=1,
             ensure_ascii=False,

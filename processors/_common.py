@@ -91,18 +91,17 @@ def transit_to_dict(
 
     # transfers
     pairwise_transfers = set()
-    for stoparea_set in transfers:
-        stoparea_list = list(stoparea_set)
-        for first_i in range(len(stoparea_list) - 1):
-            for second_i in range(first_i + 1, len(stoparea_list)):
-                stoparea1_id = stoparea_list[first_i].id
-                stoparea2_id = stoparea_list[second_i].id
+    for stoparea_id_set in transfers:
+        stoparea_ids = sorted(stoparea_id_set)
+        for first_i in range(len(stoparea_ids) - 1):
+            for second_i in range(first_i + 1, len(stoparea_ids)):
+                stoparea1_id = stoparea_ids[first_i]
+                stoparea2_id = stoparea_ids[second_i]
                 if all(
                     st_id in data["stopareas"]
                     for st_id in (stoparea1_id, stoparea2_id)
                 ):
-                    id1, id2 = sorted([stoparea1_id, stoparea2_id])
-                    pairwise_transfers.add((id1, id2))
+                    pairwise_transfers.add((stoparea1_id, stoparea2_id))
 
     data["transfers"] = pairwise_transfers
     return data
