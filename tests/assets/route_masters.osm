@@ -194,7 +194,7 @@
     <member type='node' ref='5' role='' />
     <member type='node' ref='1' role='' />
     <tag k='name' v='C: 1-3-5-1' />
-    <tag k='note' v='Circular route without backward' />
+    <tag k='note' v='Circular route without backward and without master' />
     <tag k='ref' v='C' />
     <tag k='colour' v='gray' />
     <tag k='route' v='subway' />
@@ -202,8 +202,8 @@
   </relation>
   <relation id='160' visible='true' version='1'>
     <member type='node' ref='1' role='' />
-    <member type='node' ref='3' role='' />
     <member type='node' ref='5' role='' />
+    <member type='node' ref='3' role='' />
     <member type='node' ref='1' role='' />
     <tag k='name' v='C2: 1-5-3-1' />
     <tag k='note' v='Circular route with backward' />
@@ -272,12 +272,27 @@
     <tag k='route' v='subway' />
     <tag k='type' v='route' />
   </relation>
-  <relation id='167' visible='true' version='1'>
-    <tag k='note' v='Empty route_master, so that it cannot be assigned to any city' />
-    <tag k='ref' v='06' />
+  <relation id='168' visible='true' version='1'>
+    <member type='node' ref='1' role='' />
+    <member type='node' ref='3' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='1' role='' />
     <tag k='colour' v='gray' />
-    <tag k='route_master' v='subway' />
-    <tag k='type' v='route_master' />
+    <tag k='name' v='C5: 1-3-5-1' />
+    <tag k='ref' v='C5' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='169' visible='true' version='1'>
+    <member type='node' ref='3' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='1' role='' />
+    <member type='node' ref='3' role='' />
+    <tag k='colour' v='gray' />
+    <tag k='name' v='C5: 3-5-1-3' />
+    <tag k='ref' v='C5' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
   </relation>
   <relation id='201' visible='true' version='1'>
     <member type='node' ref='21' role='' />
@@ -521,6 +536,22 @@
     <tag k='note' v='Empty route_master, but center can be calculated due to a spurious member' />
     <tag k='ref' v='07' />
     <tag k='colour' v='gray' />
+    <tag k='route_master' v='subway' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='10025' visible='true' version='1'>
+    <member type='relation' ref='168' role='' />
+    <member type='relation' ref='169' role='' />
+    <tag k='colour' v='gray' />
+    <tag k='note' v='Two cirlucar routes with the same direction. Shloud generate notice &apos;no return direction&apos;' />
+    <tag k='ref' v='C5' />
+    <tag k='route_master' v='subway' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='10026' visible='true' version='1'>
+    <tag k='colour' v='gray' />
+    <tag k='note' v='Empty route_master, so that it cannot be assigned to any city' />
+    <tag k='ref' v='06' />
     <tag k='route_master' v='subway' />
     <tag k='type' v='route_master' />
   </relation>

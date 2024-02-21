@@ -88,7 +88,7 @@ def dump_yaml(city, f):
     routes = []
     for route in city:
         stations = OrderedDict(
-            [(sa.transfer or sa.id, sa.name) for sa in route.stop_areas()]
+            [(sa.transfer or sa.id, sa.name) for sa in route.stopareas()]
         )
         rte = {
             "type": route.mode,

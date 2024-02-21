@@ -326,9 +326,9 @@ metro_samples = [
         "xml_file": "assets/route_masters.osm",
         "cities_info": [
             {
-                "num_stations": (3 + 3 + 3 + 5 + 3 + 3 + 4)
+                "num_stations": (3 + 3 + 3 + 5 + 3 + 3 + 4 + 3)
                 + (3 + 3 + 3 + 3 + 3 + 3 + 4),
-                "num_lines": 7 + 7,
+                "num_lines": 8 + 7,
                 "num_interchanges": 0 + 1,
             },
         ],
@@ -350,6 +350,8 @@ metro_samples = [
             'Route does not have a return direction (relation 209, "5: 1-2-3")',  # noqa: E501
             'Route does not have a return direction (relation 210, "5: 2-1")',  # noqa: E501
             'Only one route in route_master. Please check if it needs a return route (relation 213, "C3: 1-2-3-8-1")',  # noqa: E501
+            'Route does not have a return direction (relation 168, "C5: 1-3-5-1")',  # noqa: E501
+            'Route does not have a return direction (relation 169, "C5: 3-5-1-3")',  # noqa: E501
         ],
     },
 ]
