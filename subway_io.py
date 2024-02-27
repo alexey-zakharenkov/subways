@@ -1,15 +1,18 @@
 import json
 import logging
 from collections import OrderedDict
+from typing import Any, TextIO
+
+from subway_structure import City, OsmElementT, StopArea
 
 
-def load_xml(f):
+def load_xml(f: TextIO | str) -> list[OsmElementT]:
     try:
         from lxml import etree
     except ImportError:
         import xml.etree.ElementTree as etree
 
-    elements = []
+    elements: list[OsmElementT] = []
 
     for event, element in etree.iterparse(f):
         if element.tag in ("node", "way", "relation"):
@@ -49,7 +52,7 @@ _YAML_SPECIAL_CHARACTERS = "!&*{}[],#|>@`'\""
 _YAML_SPECIAL_SEQUENCES = ("- ", ": ", "? ")
 
 
-def _get_yaml_compatible_string(scalar):
+def _get_yaml_compatible_string(scalar: Any) -> str:
     """Enclose string in single quotes in some cases"""
     string = str(scalar)
     if string and (
@@ -62,8 +65,8 @@ def _get_yaml_compatible_string(scalar):
     return string
 
 
-def dump_yaml(city, f):
-    def write_yaml(data, f, indent=""):
+def dump_yaml(city: City, f: TextIO) -> None:
+    def write_yaml(data: dict, f: TextIO, indent: str = "") -> None:
         if isinstance(data, (set, list)):
             f.write("\n")
             for i in data:
@@ -138,10 +141,10 @@ def dump_yaml(city, f):
     write_yaml(result, f)
 
 
-def make_geojson(city, include_tracks_geometry=True):
-    transfers = set()
+def make_geojson(city: City, include_tracks_geometry: bool = True) -> dict:
+    stopareas_in_transfers: set[StopArea] = set()
     for t in city.transfers:
-        transfers.update(t)
+        stopareas_in_transfers.update(t)
     features = []
     stopareas = set()
     stops = set()
@@ -196,7 +199,7 @@ def make_geojson(city, include_tracks_geometry=True):
                     "name": stoparea.name,
                     "marker-size": "small",
                     "marker-color": "#ff2600"
-                    if stoparea in transfers
+                    if stoparea in stopareas_in_transfers
                     else "#797979",
                 },
             }
@@ -204,7 +207,7 @@ def make_geojson(city, include_tracks_geometry=True):
     return {"type": "FeatureCollection", "features": features}
 
 
-def _dumps_route_id(route_id):
+def _dumps_route_id(route_id: tuple[str | None, str | None]) -> str:
     """Argument is a route_id that depends on route colour and ref. Name can
     be taken from route_master or can be route's own, we don't take it into
     consideration. Some of route attributes can be None. The function makes
@@ -212,13 +215,13 @@ def _dumps_route_id(route_id):
     return json.dumps(route_id, ensure_ascii=False)
 
 
-def _loads_route_id(route_id_dump):
+def _loads_route_id(route_id_dump: str) -> tuple[str | None, str | None]:
     """Argument is a json-encoded identifier of a route.
     Return a tuple (colour, ref)."""
     return tuple(json.loads(route_id_dump))
 
 
-def read_recovery_data(path):
+def read_recovery_data(path: str) -> dict:
     """Recovery data is a json with data from previous transport builds.
     It helps to recover cities from some errors, e.g. by resorting
     shuffled stations in routes."""
@@ -246,11 +249,15 @@ def read_recovery_data(path):
         return data
 
 
-def write_recovery_data(path, current_data, cities):
+def write_recovery_data(
+    path: str, current_data: dict, cities: list[City]
+) -> None:
     """Updates recovery data with good cities data and writes to file."""
 
-    def make_city_recovery_data(city):
-        routes = {}
+    def make_city_recovery_data(
+        city: City,
+    ) -> dict[tuple[str | None, str | None], list[dict]]:
+        routes: dict[tuple(str | None, str | None), list[dict]] = {}
         for route in city:
             # Recovery is based primarily on route/station names/refs.
             # If route's ref/colour changes, the route won't be used.

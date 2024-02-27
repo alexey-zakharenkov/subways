@@ -2,13 +2,19 @@ import json
 import logging
 import os
 from collections import defaultdict
+from collections.abc import Callable
+from typing import Any, TypeAlias
 
 from subway_structure import (
     City,
     DISPLACEMENT_TOLERANCE,
     distance,
     el_center,
+    IdT,
+    LonLat,
+    OsmElementT,
     Station,
+    StopArea,
     TransfersT,
 )
 from ._common import (
@@ -19,14 +25,16 @@ from ._common import (
     TRANSFER_PENALTY,
 )
 
-
 OSM_TYPES = {"n": (0, "node"), "w": (2, "way"), "r": (3, "relation")}
 ENTRANCE_PENALTY = 60  # seconds
 SPEED_TO_ENTRANCE = 5 * KMPH_TO_MPS  # m/s
 SPEED_ON_LINE = 40 * KMPH_TO_MPS  # m/s
 
+# (stoparea1_uid, stoparea2_uid) -> seconds; stoparea1_uid < stoparea2_uid
+TransferTimesT: TypeAlias = dict[tuple[int, int], int]
 
-def uid(elid, typ=None):
+
+def uid(elid: IdT, typ: str | None = None) -> int:
     t = elid[0]
     osm_id = int(elid[1:])
     if not typ:
@@ -39,24 +47,24 @@ def uid(elid, typ=None):
 class DummyCache:
     """This class may be used when you need to omit all cache processing"""
 
-    def __init__(self, cache_path, cities):
+    def __init__(self, cache_path: str, cities: list[City]) -> None:
         pass
 
-    def __getattr__(self, name):
+    def __getattr__(self, name: str) -> Callable[..., None]:
         """This results in that a call to any method effectively does nothing
         and does not generate exceptions."""
 
-        def method(*args, **kwargs):
+        def method(*args, **kwargs) -> None:
             return None
 
         return method
 
 
-def if_object_is_used(method):
+def if_object_is_used(method: Callable) -> Callable:
     """Decorator to skip method execution under certain condition.
     Relies on "is_used" object property."""
 
-    def inner(self, *args, **kwargs):
+    def inner(self, *args, **kwargs) -> Any:
         if not self.is_used:
             return
         return method(self, *args, **kwargs)
@@ -65,7 +73,7 @@ def if_object_is_used(method):
 
 
 class MapsmeCache:
-    def __init__(self, cache_path, cities):
+    def __init__(self, cache_path: str, cities: list[City]) -> None:
         if not cache_path:
             # Cache is not used,
             # all actions with cache must be silently skipped
@@ -90,7 +98,7 @@ class MapsmeCache:
         self.city_dict = {c.name: c for c in cities}
         self.good_city_names = {c.name for c in cities if c.is_good}
 
-    def _is_cached_city_usable(self, city):
+    def _is_cached_city_usable(self, city: City) -> bool:
         """Check if cached stations still exist in osm data and
         not moved far away.
         """
@@ -105,8 +113,9 @@ class MapsmeCache:
             ):
                 return False
             station_coords = el_center(city_station)
-            cached_station_coords = tuple(
-                cached_stoparea[coord] for coord in ("lon", "lat")
+            cached_station_coords = (
+                cached_stoparea["lon"],
+                cached_stoparea["lat"],
             )
             displacement = distance(station_coords, cached_station_coords)
             if displacement > DISPLACEMENT_TOLERANCE:
@@ -115,7 +124,9 @@ class MapsmeCache:
         return True
 
     @if_object_is_used
-    def provide_stops_and_networks(self, stops, networks):
+    def provide_stops_and_networks(
+        self, stops: dict, networks: list[dict]
+    ) -> None:
         """Put stops and networks for bad cities into containers
         passed as arguments."""
         for city in self.city_dict.values():
@@ -128,7 +139,7 @@ class MapsmeCache:
                     self.recovered_city_names.add(city.name)
 
     @if_object_is_used
-    def provide_transfers(self, transfers):
+    def provide_transfers(self, transfers: TransferTimesT) -> None:
         """Add transfers from usable cached cities to 'transfers' dict
         passed as argument."""
         for city_name in self.recovered_city_names:
@@ -138,7 +149,7 @@ class MapsmeCache:
                     transfers[(stop1_uid, stop2_uid)] = transfer_time
 
     @if_object_is_used
-    def initialize_good_city(self, city_name, network):
+    def initialize_good_city(self, city_name: str, network: dict) -> None:
         """Create/replace one cache element with new data container.
         This should be done for each good city."""
         self.cache[city_name] = {
@@ -149,20 +160,22 @@ class MapsmeCache:
         }
 
     @if_object_is_used
-    def link_stop_with_city(self, stoparea_id, city_name):
+    def link_stop_with_city(self, stoparea_id: IdT, city_name: str) -> None:
         """Remember that some stop_area is used in a city."""
         stoparea_uid = uid(stoparea_id)
         self.stop_cities[stoparea_uid].add(city_name)
 
     @if_object_is_used
-    def add_stop(self, stoparea_id, st):
+    def add_stop(self, stoparea_id: IdT, st: dict) -> None:
         """Add stoparea to the cache of each city the stoparea is in."""
         stoparea_uid = uid(stoparea_id)
         for city_name in self.stop_cities[stoparea_uid]:
             self.cache[city_name]["stops"][stoparea_id] = st
 
     @if_object_is_used
-    def add_transfer(self, stoparea1_uid, stoparea2_uid, transfer_time):
+    def add_transfer(
+        self, stoparea1_uid: int, stoparea2_uid: int, transfer_time: int
+    ) -> None:
         """If a transfer is inside a good city, add it to the city's cache."""
         for city_name in (
             self.good_city_names
@@ -174,7 +187,7 @@ class MapsmeCache:
             )
 
     @if_object_is_used
-    def save(self):
+    def save(self) -> None:
         try:
             with open(self.cache_path, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, ensure_ascii=False)
@@ -191,7 +204,9 @@ def transit_data_to_mapsme(
     :param cache_path: Path to json-file with good cities cache or None.
     """
 
-    def find_exits_for_platform(center, nodes):
+    def find_exits_for_platform(
+        center: LonLat, nodes: list[OsmElementT]
+    ) -> list[OsmElementT]:
         exits = []
         min_distance = None
         for n in nodes:
@@ -212,8 +227,8 @@ def transit_data_to_mapsme(
 
     cache = MapsmeCache(cache_path, cities)
 
-    stop_areas = {}  # stoparea el_id -> StopArea instance
-    stops = {}  # stoparea el_id -> stop jsonified data
+    stop_areas: dict[IdT, StopArea] = {}
+    stops: dict[IdT, dict] = {}  # stoparea el_id -> stop jsonified data
     networks = []
     good_cities = [c for c in cities if c.is_good]
     platform_nodes = {}
@@ -362,9 +377,7 @@ def transit_data_to_mapsme(
         stops[stop_id] = st
         cache.add_stop(stop_id, st)
 
-    pairwise_transfers = (
-        {}
-    )  # (stoparea1_uid, stoparea2_uid) -> time;  uid1 < uid2
+    pairwise_transfers: TransferTimesT = {}
     for stoparea_id_set in transfers:
         stoparea_ids = list(stoparea_id_set)
         for i_first in range(len(stoparea_ids) - 1):
@@ -388,14 +401,14 @@ def transit_data_to_mapsme(
     cache.provide_transfers(pairwise_transfers)
     cache.save()
 
-    pairwise_transfers = [
+    pairwise_transfers_list = [
         (stop1_uid, stop2_uid, transfer_time)
         for (stop1_uid, stop2_uid), transfer_time in pairwise_transfers.items()
     ]
 
     result = {
         "stops": list(stops.values()),
-        "transfers": pairwise_transfers,
+        "transfers": pairwise_transfers_list,
         "networks": networks,
     }
     return result
@@ -406,10 +419,10 @@ def process(
     transfers: TransfersT,
     filename: str,
     cache_path: str | None,
-):
+) -> None:
     """Generate all output and save to file.
-    :param cities: List of City instances
-    :param transfers: List of sets of StopArea.id
+    :param cities: list of City instances
+    :param transfers: all collected transfers in the world
     :param filename: Path to file to save the result
     :param cache_path: Path to json-file with good cities cache or None.
     """

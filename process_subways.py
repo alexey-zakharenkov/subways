@@ -25,8 +25,10 @@ from subway_structure import (
     CriticalValidationError,
     find_transfers,
     get_unused_subway_entrances_geojson,
+    LonLat,
     MODES_OVERGROUND,
     MODES_RAPID,
+    OsmElementT,
 )
 
 DEFAULT_SPREADSHEET_ID = "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"
@@ -35,8 +37,6 @@ DEFAULT_CITIES_INFO_URL = (
     f"{DEFAULT_SPREADSHEET_ID}/export?format=csv"
 )
 BAD_MARK = "[bad]"
-
-Point = tuple[float, float]
 
 
 def compose_overpass_request(
@@ -68,7 +68,7 @@ def compose_overpass_request(
 
 def overpass_request(
     overground: bool, overpass_api: str, bboxes: list[list[float]]
-) -> list[dict]:
+) -> list[OsmElementT]:
     query = compose_overpass_request(overground, bboxes)
     url = f"{overpass_api}?data={urllib.parse.quote(query)}"
     response = urllib.request.urlopen(url, timeout=1000)
@@ -79,7 +79,7 @@ def overpass_request(
 
 def multi_overpass(
     overground: bool, overpass_api: str, bboxes: list[list[float]]
-) -> list[dict]:
+) -> list[OsmElementT]:
     SLICE_SIZE = 10
     INTERREQUEST_WAIT = 5  # in seconds
     result = []
@@ -96,8 +96,8 @@ def slugify(name: str) -> str:
 
 
 def get_way_center(
-    element: dict, node_centers: dict[int, Point]
-) -> Point | None:
+    element: OsmElementT, node_centers: dict[int, LonLat]
+) -> LonLat | None:
     """
     :param element: dict describing OSM element
     :param node_centers: osm_id => (lat, lon)
@@ -107,7 +107,7 @@ def get_way_center(
     # If elements have been queried via overpass-api with
     # 'out center;' clause then ways already have 'center' attribute
     if "center" in element:
-        return element["center"]["lat"], element["center"]["lon"]
+        return element["center"]["lon"], element["center"]["lat"]
 
     if "nodes" not in element:
         return None
@@ -131,22 +131,22 @@ def get_way_center(
         count += 1
     if count == 0:
         return None
-    element["center"] = {"lat": center[0] / count, "lon": center[1] / count}
-    return element["center"]["lat"], element["center"]["lon"]
+    element["center"] = {"lat": center[1] / count, "lon": center[0] / count}
+    return element["center"]["lon"], element["center"]["lat"]
 
 
 def get_relation_center(
-    element: dict,
-    node_centers: dict[int, Point],
-    way_centers: dict[int, Point],
-    relation_centers: dict[int, Point],
+    element: OsmElementT,
+    node_centers: dict[int, LonLat],
+    way_centers: dict[int, LonLat],
+    relation_centers: dict[int, LonLat],
     ignore_unlocalized_child_relations: bool = False,
-) -> Point | None:
+) -> LonLat | None:
     """
     :param element: dict describing OSM element
-    :param node_centers: osm_id => (lat, lon)
-    :param way_centers: osm_id => (lat, lon)
-    :param relation_centers: osm_id => (lat, lon)
+    :param node_centers: osm_id => LonLat
+    :param way_centers: osm_id => LonLat
+    :param relation_centers: osm_id => LonLat
     :param ignore_unlocalized_child_relations: if a member that is a relation
         has no center, skip it and calculate center based on member nodes,
         ways and other, "localized" (with known centers), relations
@@ -159,7 +159,7 @@ def get_relation_center(
     # of other relations (e.g., route_master, stop_area_group or
     # stop_area with only members that are multipolygons)
     if "center" in element:
-        return element["center"]["lat"], element["center"]["lon"]
+        return element["center"]["lon"], element["center"]["lat"]
 
     center = [0, 0]
     count = 0
@@ -186,25 +186,25 @@ def get_relation_center(
             count += 1
     if count == 0:
         return None
-    element["center"] = {"lat": center[0] / count, "lon": center[1] / count}
-    return element["center"]["lat"], element["center"]["lon"]
+    element["center"] = {"lat": center[1] / count, "lon": center[0] / count}
+    return element["center"]["lon"], element["center"]["lat"]
 
 
-def calculate_centers(elements: list[dict]) -> None:
+def calculate_centers(elements: list[OsmElementT]) -> None:
     """Adds 'center' key to each way/relation in elements,
     except for empty ways or relations.
     Relies on nodes-ways-relations order in the elements list.
     """
-    nodes: dict[int, Point] = {}  # id => (lat, lon)
-    ways: dict[int, Point] = {}  # id => (lat, lon)
-    relations: dict[int, Point] = {}  # id => (lat, lon)
+    nodes: dict[int, LonLat] = {}  # id => LonLat
+    ways: dict[int, LonLat] = {}  # id => approx center LonLat
+    relations: dict[int, LonLat] = {}  # id => approx center LonLat
 
-    unlocalized_relations = []  # 'unlocalized' means the center of the
-    # relation has not been calculated yet
+    unlocalized_relations: list[OsmElementT] = []  # 'unlocalized' means
+    # the center of the relation has not been calculated yet
 
     for el in elements:
         if el["type"] == "node":
-            nodes[el["id"]] = (el["lat"], el["lon"])
+            nodes[el["id"]] = (el["lon"], el["lat"])
         elif el["type"] == "way":
             if center := get_way_center(el, nodes):
                 ways[el["id"]] = center
@@ -216,7 +216,7 @@ def calculate_centers(elements: list[dict]) -> None:
 
     def iterate_relation_centers_calculation(
         ignore_unlocalized_child_relations: bool,
-    ) -> list[dict]:
+    ) -> list[OsmElementT]:
         unlocalized_relations_upd = []
         for rel in unlocalized_relations:
             if center := get_relation_center(
@@ -244,7 +244,7 @@ def calculate_centers(elements: list[dict]) -> None:
 
 
 def add_osm_elements_to_cities(
-    osm_elements: list[dict], cities: list[City]
+    osm_elements: list[OsmElementT], cities: list[City]
 ) -> None:
     for el in osm_elements:
         for c in cities:

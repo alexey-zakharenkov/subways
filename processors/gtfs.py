@@ -3,7 +3,6 @@ from functools import partial
 from io import BytesIO, StringIO
 from itertools import permutations
 from tarfile import TarFile, TarInfo
-from typing import List, Optional, Set
 from zipfile import ZipFile
 
 from ._common import (
@@ -16,7 +15,7 @@ from ._common import (
 from subway_structure import (
     City,
     distance,
-    StopArea,
+    TransfersT,
 )
 
 
@@ -133,13 +132,13 @@ GTFS_COLUMNS = {
 }
 
 
-def round_coords(coords_tuple):
+def round_coords(coords_tuple: tuple) -> tuple:
     return tuple(
         map(lambda coord: round(coord, COORDINATE_PRECISION), coords_tuple)
     )
 
 
-def transit_data_to_gtfs(data):
+def transit_data_to_gtfs(data: dict) -> dict:
     # Keys correspond GTFS file names
     gtfs_data = {key: [] for key in GTFS_COLUMNS.keys()}
 
@@ -313,14 +312,14 @@ def transit_data_to_gtfs(data):
 
 
 def process(
-    cities: List[City],
-    transfers: List[Set[StopArea]],
+    cities: list[City],
+    transfers: TransfersT,
     filename: str,
-    cache_path: str,
-):
+    cache_path: str | None,
+) -> None:
     """Generate all output and save to file.
-    :param cities: List of City instances
-    :param transfers: List of sets of StopArea.id
+    :param cities: list of City instances
+    :param transfers: all collected transfers in the world
     :param filename: Path to file to save the result
     :param cache_path: Path to json-file with good cities cache or None.
     """
@@ -344,9 +343,7 @@ def dict_to_row(dict_data: dict, record_type: str) -> list:
     ]
 
 
-def make_gtfs(
-    filename: str, gtfs_data: dict, fmt: Optional[str] = None
-) -> None:
+def make_gtfs(filename: str, gtfs_data: dict, fmt: str | None = None) -> None:
     if not fmt:
         fmt = "tar" if filename.endswith(".tar") else "zip"
 

@@ -152,7 +152,7 @@ CSS_COLOURS = {
 }
 
 
-def normalize_colour(c):
+def normalize_colour(c: str | None) -> str | None:
     if not c:
         return None
     c = c.strip().lower()

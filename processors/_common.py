@@ -1,6 +1,4 @@
-from typing import List, Set
-
-from subway_structure import City, el_center, StopArea
+from subway_structure import City, el_center, TransfersT
 
 DEFAULT_INTERVAL = 2.5 * 60  # seconds
 KMPH_TO_MPS = 1 / 3.6  # km/h to m/s conversion multiplier
@@ -8,14 +6,12 @@ SPEED_ON_TRANSFER = 3.5 * KMPH_TO_MPS  # m/s
 TRANSFER_PENALTY = 30  # seconds
 
 
-def format_colour(colour):
+def format_colour(colour: str | None) -> str | None:
     """Truncate leading # sign."""
     return colour[1:] if colour else None
 
 
-def transit_to_dict(
-    cities: List[City], transfers: List[Set[StopArea]]
-) -> dict:
+def transit_to_dict(cities: list[City], transfers: TransfersT) -> dict:
     """Get data for good cities as a dictionary."""
     data = {
         "stopareas": {},  # stoparea id => stoparea data

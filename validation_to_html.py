@@ -7,7 +7,7 @@ import json
 import os
 import re
 from collections import defaultdict
-from typing import Any, Optional
+from typing import Any
 
 from process_subways import DEFAULT_SPREADSHEET_ID
 from v2h_templates import (
@@ -22,8 +22,7 @@ from v2h_templates import (
 
 
 class CityData:
-    def __init__(self, city: Optional[str] = None) -> None:
-        self.city = city is not None
+    def __init__(self, city: dict | None = None) -> None:
         self.data = {
             "good_cities": 0,
             "total_cities": 1 if city else 0,
@@ -93,7 +92,7 @@ class CityData:
         return s
 
 
-def tmpl(s: str, data: Optional[CityData] = None, **kwargs) -> str:
+def tmpl(s: str, data: CityData | None = None, **kwargs) -> str:
     if data:
         s = data.format(s)
     if kwargs:
