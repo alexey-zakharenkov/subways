@@ -1,7 +1,7 @@
 # Subway Preprocessor
 
 Here you see a list of scripts that can be used for preprocessing all the metro
-systems in the world from OpenStreetMap. `subway_structure.py` produces
+systems in the world from OpenStreetMap. `scripts/subway_structure.py` produces
 a list of disjunct systems that can be used for routing and for displaying
 of metro maps.
 
@@ -16,14 +16,14 @@ of metro maps.
   2. If you don't specify `--xml` or `--source` option to the `process_subways.py` script
      it tries to fetch data over [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API).
      **Not suitable for the whole planet or large countries.**
-* Run `process_subways.py` with appropriate set of command line arguments
+* Run `scripts/process_subways.py` with appropriate set of command line arguments
   to build metro structures and receive a validation log.
-* Run `validation_to_html.py` on that log to create readable HTML tables.
+* Run `tools/v2h/validation_to_html.py` on that log to create readable HTML tables.
 
 
 ## Validating of all metro networks
 
-There is a `process_subways.sh` in the `scripts` directory that is suitable
+There is a `scripts/process_subways.sh` script that is suitable
 for validation of all or many metro networks. It relies on a bunch of
 environment variables and takes advantage of previous validation runs
 for effective recurring validations. See
@@ -51,17 +51,21 @@ a city's bbox has been extended.
 ## Validating of a single city
 
 A single city or a country with few metro networks can be validated much faster
-if you allow the `process_subway.py` to fetch data from Overpass API. Here are the steps:
+if you allow the `scripts/process_subway.py` to fetch data from Overpass API. Here are the steps:
 
 1. Python3 interpreter required (3.11+)
 2. Clone the repo
-    ```
+    ```bash
     git clone https://github.com/alexey-zakharenkov/subways.git subways_validator
     cd subways_validator
    ```
-3. Execute
+3. Install python dependencies
+   ```bash
+   pip install -r subways/requirements.txt
+   ```
+4. Execute
     ```bash
-    python3 ./process_subways.py -c "London" \
+    python3 scripts/process_subways.py -c "London" \
         -l validation.log -d London.yaml
     ```
     here
@@ -73,21 +77,21 @@ if you allow the `process_subway.py` to fetch data from Overpass API. Here are t
 
     `validation.log` would contain the list of errors and warnings.
     To convert it into pretty HTML format
-4. do
+5. do
     ```bash
     mkdir html
-    python3 ./validation_to_html.py validation.log html
+    python3 tools/v2h/validation_to_html.py validation.log html
     ```
 
 ## Publishing validation reports to the Web
 
 Expose a directory with static contents via a web-server and put into it:
-- HTML files from the directory specified in the 2nd parameter of `validation_to_html.py`
+- HTML files from the directory specified in the 2nd parameter of `scripts/v2h/validation_to_html.py`
 - To vitalize "Y" (YAML), "J" (GeoJSON) and "M" (Map) links beside each city name:
    - The contents of `render` directory from the repository
-   - `cities.txt` file generated with `--dump-city-list` parameter of `process_subways.py`
-   - YAML files created due to -d option of `process_subways.py`
-   - GeoJSON files created due to -j option of `process_subways.py` 
+   - `cities.txt` file generated with `--dump-city-list` parameter of `scripts/process_subways.py`
+   - YAML files created due to -d option of `scripts/process_subways.py`
+   - GeoJSON files created due to -j option of `scripts/process_subways.py` 
 
 
 ## Related external resources
@@ -103,9 +107,9 @@ You can find more info about this validator instance in
 
 ## Adding Stop Areas To OSM
 
-To quickly add `stop_area` relations for the entire city, use the `make_stop_areas.py` script
-from the `stop_area` directory. Give it a bounding box or a `.json` file download from Overpass API.
-It would produce an JOSM XML file that you should manually check in JOSM. After that
+To quickly add `stop_area` relations for the entire city, use the `tools/stop_areas/make_stop_areas.py` script.
+Give it a bounding box or a `.json` file download from Overpass API.
+It would produce a JOSM XML file that you should manually check in JOSM. After that
 just upload it.
 
 ## Author and License

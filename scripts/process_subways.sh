@@ -94,7 +94,7 @@ function check_poly() {
         if [ -n "$("$PYTHON" -c "import shapely" 2>&1)" ]; then
           "$PYTHON" -m pip install shapely==2.0.1
         fi
-        "$PYTHON" "$SUBWAYS_PATH"/make_all_metro_poly.py \
+        "$PYTHON" "$SUBWAYS_REPO_PATH"/tools/make_poly/make_all_metro_poly.py \
             ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} > "$POLY"
       fi
     fi
@@ -107,13 +107,15 @@ PYTHON=${PYTHON:-python3}
 # This will fail if there is no python
 "$PYTHON" --version > /dev/null
 
-SUBWAYS_PATH="$(dirname "$0")/.."
-if [ ! -f "$SUBWAYS_PATH/process_subways.py" ]; then
+# "readlink -f" echoes canonicalized absolute path to a file/directory
+SUBWAYS_REPO_PATH="$(readlink -f $(dirname "$0")/..)"
+
+if [ ! -f "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ]; then
   echo "Please clone the subways repo to $SUBWAYS_PATH"
   exit 2
 fi
 
-TMPDIR="${TMPDIR:-$SUBWAYS_PATH}"
+TMPDIR="${TMPDIR:-$SUBWAYS_REPO_PATH}"
 mkdir -p "$TMPDIR"
 
 # Downloading the latest version of the subways script
@@ -242,7 +244,7 @@ if [ -n "${DUMP-}" ]; then
 fi
 
 VALIDATION="$TMPDIR/validation.json"
-"$PYTHON" "$SUBWAYS_PATH/process_subways.py" ${QUIET:+-q} \
+"$PYTHON" "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ${QUIET:+-q} \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
     ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
@@ -262,13 +264,13 @@ fi
 # Preparing HTML files
 
 if [ -z "${HTML_DIR-}" ]; then
-  HTML_DIR="$SUBWAYS_PATH/html"
+  HTML_DIR="$SUBWAYS_REPO_PATH/html"
   REMOVE_HTML=1
 fi
 
 mkdir -p $HTML_DIR
 rm -f "$HTML_DIR"/*.html
-"$PYTHON" "$SUBWAYS_PATH/validation_to_html.py" \
+"$PYTHON" "$SUBWAYS_REPO_PATH/tools/v2h/validation_to_html.py" \
     ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     "$VALIDATION" "$HTML_DIR"
 
