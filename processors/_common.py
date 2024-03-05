@@ -1,4 +1,6 @@
-from subway_structure import City, el_center, TransfersT
+from structure.types import TransfersT
+from structure.osm_element import el_center
+from subway_structure import City
 
 DEFAULT_INTERVAL = 2.5 * 60  # seconds
 KMPH_TO_MPS = 1 / 3.6  # km/h to m/s conversion multiplier

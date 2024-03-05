@@ -3,7 +3,8 @@ import logging
 from collections import OrderedDict
 from typing import Any, TextIO
 
-from subway_structure import City, OsmElementT, StopArea
+from structure.types import OsmElementT
+from subway_structure import City, StopArea
 
 
 def load_xml(f: TextIO | str) -> list[OsmElementT]:

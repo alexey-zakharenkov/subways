@@ -42,13 +42,106 @@ metro_samples = [
         "cities_info": [
             {
                 "num_stations": 2,
-                "num_lines": 1,
-                "num_light_lines": 0,
-                "num_interchanges": 0,
             },
         ],
         "errors": [],
         "warnings": [],
+        "notices": [],
+    },
+    {
+        "name": "Station colour tag present/absent, correct/incorrect, on bear station / with stop_area",  # noqa E501
+        "xml": """<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='1' visible='true' version='1' lat='0.0' lon='0.0'>
+    <tag k='name' v='Station 1' />
+    <tag k='note' v='no &apos;colour&apos; tag' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='2' visible='true' version='1' lat='0.0' lon='0.01'>
+    <tag k='colour' v='red' />
+    <tag k='name' v='Station 2' />
+    <tag k='note' v='correct colour name' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='3' visible='true' version='1' lat='0.0' lon='0.02'>
+    <tag k='colour' v='#C1e' />
+    <tag k='name' v='Station 3' />
+    <tag k='note' v='correct colour 3-digit hex code' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='4' visible='true' version='1' lat='0.0' lon='0.03'>
+    <tag k='colour' v='incorrect' />
+    <tag k='name' v='Station 4' />
+    <tag k='note' v='incorrect &apos;colour&apos; tag' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='5' visible='true' version='1' lat='0.0' lon='0.04'>
+    <tag k='colour' v='#CD853F' />
+    <tag k='name' v='Station 5' />
+    <tag k='note' v='correct colour 6-digit hex code' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <node id='6' visible='true' version='1' lat='0.0' lon='0.05'>
+    <tag k='colour' v='incorrect' />
+    <tag k='name' v='Station 6' />
+    <tag k='note' v='incorrect colour; station in a stop_area' />
+    <tag k='railway' v='station' />
+    <tag k='station' v='subway' />
+  </node>
+  <relation id='1' visible='true' version='1'>
+    <member type='node' ref='1' role='' />
+    <member type='node' ref='2' role='' />
+    <member type='node' ref='3' role='' />
+    <member type='node' ref='4' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='6' role='' />
+    <tag k='name' v='Forward' />
+    <tag k='ref' v='1' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='2' visible='true' version='1'>
+    <member type='node' ref='6' role='' />
+    <member type='node' ref='5' role='' />
+    <member type='node' ref='4' role='' />
+    <member type='node' ref='3' role='' />
+    <member type='node' ref='2' role='' />
+    <member type='node' ref='1' role='' />
+    <tag k='name' v='Backward' />
+    <tag k='ref' v='1' />
+    <tag k='route' v='subway' />
+    <tag k='type' v='route' />
+  </relation>
+  <relation id='3' visible='true' version='1'>
+    <member type='relation' ref='1' role='' />
+    <member type='relation' ref='2' role='' />
+    <tag k='colour' v='red' />
+    <tag k='ref' v='1' />
+    <tag k='route_master' v='subway' />
+    <tag k='type' v='route_master' />
+  </relation>
+  <relation id='600' visible='true' version='1'>
+    <member type='node' ref='6' role='' />
+    <tag k='public_transport' v='stop_area' />
+    <tag k='type' v='public_transport' />
+  </relation>
+</osm>
+""",
+        "cities_info": [
+            {
+                "num_stations": 6,
+            },
+        ],
+        "errors": [],
+        "warnings": [
+            'Unknown colour code: incorrect (node 4, "Station 4")',
+            'Unknown colour code: incorrect (node 6, "Station 6")',
+        ],
         "notices": [],
     },
     {

@@ -13,6 +13,15 @@ import urllib.request
 from functools import partial
 
 import processors
+from structure.consts import (
+    MODES_OVERGROUND,
+    MODES_RAPID,
+)
+from structure.types import (
+    CriticalValidationError,
+    LonLat,
+    OsmElementT,
+)
 from subway_io import (
     dump_yaml,
     load_xml,
@@ -22,13 +31,8 @@ from subway_io import (
 )
 from subway_structure import (
     City,
-    CriticalValidationError,
     find_transfers,
     get_unused_subway_entrances_geojson,
-    LonLat,
-    MODES_OVERGROUND,
-    MODES_RAPID,
-    OsmElementT,
 )
 
 DEFAULT_SPREADSHEET_ID = "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"

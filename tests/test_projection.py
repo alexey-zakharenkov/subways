@@ -2,7 +2,7 @@ import collections
 import itertools
 import unittest
 
-from subway_structure import project_on_segment
+from structure.geom_utils import project_on_segment
 
 
 class TestProjection(unittest.TestCase):

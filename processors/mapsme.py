@@ -5,17 +5,14 @@ from collections import defaultdict
 from collections.abc import Callable
 from typing import Any, TypeAlias
 
+from structure.types import IdT, LonLat, OsmElementT, TransfersT
+from structure.geom_utils import distance
+from structure.osm_element import el_center
+from structure.station import Station
 from subway_structure import (
     City,
     DISPLACEMENT_TOLERANCE,
-    distance,
-    el_center,
-    IdT,
-    LonLat,
-    OsmElementT,
-    Station,
     StopArea,
-    TransfersT,
 )
 from ._common import (
     DEFAULT_INTERVAL,

@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from subway_structure import Station
+from structure.station import Station
 
 
 class TestStation(TestCase):
