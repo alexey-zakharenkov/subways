@@ -63,6 +63,22 @@ EOF
 fi
 
 
+function activate_venv_at_path() {
+  path=$1
+
+  if [ ! -d "$path/".venv ]; then
+    "${PYTHON:-python3.11}" -m venv "$path"/.venv
+  fi
+
+  source "$path"/.venv/bin/activate
+
+  if [ -f "$path"/requirements.txt ]; then
+    pip install --upgrade pip
+    pip install -r "$path"/requirements.txt
+  fi
+}
+
+
 function check_osmctools() {
   OSMCTOOLS="${OSMCTOOLS:-$HOME/osmctools}"
   if [ ! -f "$OSMCTOOLS/osmupdate" ]; then
@@ -91,38 +107,38 @@ function check_poly() {
 
       if [ -z "${POLY-}" -o ! -f "${POLY-}" ]; then
         POLY=${POLY:-$(mktemp "$TMPDIR/all-metro.XXXXXXXX.poly")}
-        if [ -n "$("$PYTHON" -c "import shapely" 2>&1)" ]; then
-          "$PYTHON" -m pip install shapely==2.0.1
-        fi
-        "$PYTHON" "$SUBWAYS_REPO_PATH"/tools/make_poly/make_all_metro_poly.py \
+        activate_venv_at_path "$SUBWAYS_REPO_PATH/tools/make_poly"
+        python "$SUBWAYS_REPO_PATH"/tools/make_poly/make_all_metro_poly.py \
             ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} > "$POLY"
+        deactivate
       fi
     fi
     POLY_CHECKED=1
   fi
 }
 
-
-PYTHON=${PYTHON:-python3}
-# This will fail if there is no python
-"$PYTHON" --version > /dev/null
-
 # "readlink -f" echoes canonicalized absolute path to a file/directory
 SUBWAYS_REPO_PATH="$(readlink -f $(dirname "$0")/..)"
 
 if [ ! -f "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ]; then
-  echo "Please clone the subways repo to $SUBWAYS_PATH"
+  echo "Please clone the subways repo to $SUBWAYS_REPO_PATH"
   exit 2
 fi
 
-TMPDIR="${TMPDIR:-$SUBWAYS_REPO_PATH}"
-mkdir -p "$TMPDIR"
+# Contains 'subways' dir and is required by the main validator python script
+# as well as by some tools
+export PYTHONPATH="$SUBWAYS_REPO_PATH"
 
 # Downloading the latest version of the subways script
 if [ -n "${GIT_PULL-}" ]; then (
-  cd "$SUBWAYS_PATH"
+  pushd "$SUBWAYS_REPO_PATH"
   git pull origin master
+  popd
 ) fi
+
+
+TMPDIR="${TMPDIR:-"$SUBWAYS_REPO_PATH"}"
+mkdir -p "$TMPDIR"
 
 if [ -z "${FILTERED_DATA-}" ]; then
   FILTERED_DATA="$TMPDIR/subways.osm"
@@ -244,7 +260,9 @@ if [ -n "${DUMP-}" ]; then
 fi
 
 VALIDATION="$TMPDIR/validation.json"
-"$PYTHON" "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ${QUIET:+-q} \
+
+activate_venv_at_path "$SUBWAYS_REPO_PATH/scripts"
+python "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ${QUIET:+-q} \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
     ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
@@ -256,6 +274,8 @@ VALIDATION="$TMPDIR/validation.json"
     ${ELEMENTS_CACHE:+-i "$ELEMENTS_CACHE"} \
     ${CITY_CACHE:+--cache "$CITY_CACHE"} \
     ${RECOVERY_PATH:+-r "$RECOVERY_PATH"}
+deactivate
+
 
 if [ -n "${NEED_TO_REMOVE_FILTERED_DATA-}" ]; then
   rm "$FILTERED_DATA"
@@ -270,9 +290,12 @@ fi
 
 mkdir -p $HTML_DIR
 rm -f "$HTML_DIR"/*.html
-"$PYTHON" "$SUBWAYS_REPO_PATH/tools/v2h/validation_to_html.py" \
+
+activate_venv_at_path "$SUBWAYS_REPO_PATH/tools/v2h"
+python "$SUBWAYS_REPO_PATH/tools/v2h/validation_to_html.py" \
     ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
     "$VALIDATION" "$HTML_DIR"
+deactivate
 
 # Uploading files to the server
 

@@ -23,17 +23,25 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.11"
-    - name: Install dependencies
+    - name: Install dependencies for linters
       run: |
         python -m pip install --upgrade pip
-        pip install flake8==6.0.0 black==23.1.0 shapely==2.0.1
-        pip install -r subways/requirements.txt
+        pip install flake8==6.0.0 black==23.1.0
     - name: Lint with flake8
       run: |
         flake8
     - name: Check with black
       run: |
         black --check --line-length 79 .
-    - name: Test with unittest
+    - name: Test subways with unittest
       run: |
-        python -m unittest discover tests
+        export PYTHONPATH=$(pwd)
+        pip freeze | xargs pip uninstall -y
+        pip install -r subways/requirements.txt
+        python -m unittest discover subways
+    - name: Test tools with unittest
+      run: |
+        export PYTHONPATH=$(pwd)
+        pip freeze | xargs pip uninstall -y
+        pip install -r tools/make_poly/requirements.txt
+        python -m unittest discover tools/make_poly

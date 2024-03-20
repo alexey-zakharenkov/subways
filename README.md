@@ -59,9 +59,11 @@ if you allow the `scripts/process_subway.py` to fetch data from Overpass API. He
     git clone https://github.com/alexey-zakharenkov/subways.git subways_validator
     cd subways_validator
    ```
-3. Install python dependencies
+3. Configure python environment, e.g.
    ```bash
-   pip install -r subways/requirements.txt
+   python3 -m venv scripts/.venv
+   source scripts/.venv/bin/activate
+   pip install scripts/requirements.txt
    ```
 4. Execute
     ```bash
