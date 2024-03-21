@@ -1,7 +1,7 @@
 # Subway Preprocessor
 
 Here you see a list of scripts that can be used for preprocessing all the metro
-systems in the world from OpenStreetMap. `scripts/subway_structure.py` produces
+systems in the world from OpenStreetMap. `subways` package produces
 a list of disjunct systems that can be used for routing and for displaying
 of metro maps.
 
