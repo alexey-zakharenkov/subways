@@ -7,8 +7,8 @@ from typing import TypeVar
 from subways.consts import MAX_DISTANCE_STOP_TO_LINE
 from subways.css_colours import normalize_colour
 from subways.geom_utils import distance, project_on_line
-from subways.osm_element import el_id
-from subways.structure.route import Route
+from subways.osm_element import el_id, get_network
+from subways.structure.route import get_route_duration, get_route_interval
 from subways.structure.stop_area import StopArea
 from subways.types import IdT, OsmElementT
 
@@ -26,7 +26,7 @@ class RouteMaster:
     def __init__(self, city: City, master: OsmElementT = None) -> None:
         self.city = city
         self.routes = []
-        self.best: Route = None
+        self.best: Route = None  # noqa: F821
         self.id: IdT = el_id(master)
         self.has_master = master is not None
         self.interval_from_master = False
@@ -46,13 +46,14 @@ class RouteMaster:
                 )
             except ValueError:
                 self.infill = None
-            self.network = Route.get_network(master)
+            self.network = get_network(master)
             self.mode = master["tags"].get(
                 "route_master", None
             )  # This tag is required, but okay
             self.name = master["tags"].get("name", None)
-            self.interval = Route.get_interval(master["tags"])
+            self.interval = get_route_interval(master["tags"])
             self.interval_from_master = self.interval is not None
+            self.duration = get_route_duration(master["tags"])
         else:
             self.ref = None
             self.colour = None
@@ -61,6 +62,7 @@ class RouteMaster:
             self.mode = None
             self.name = None
             self.interval = None
+            self.duration = None
 
     def stopareas(self) -> Iterator[StopArea]:
         yielded_stopareas = set()
@@ -70,7 +72,7 @@ class RouteMaster:
                     yield stoparea
                     yielded_stopareas.add(stoparea)
 
-    def add(self, route: Route) -> None:
+    def add(self, route: Route) -> None:  # noqa: F821
         if not self.network:
             self.network = route.network
         elif route.network and route.network != self.network:
@@ -148,10 +150,10 @@ class RouteMaster:
         ):
             self.best = route
 
-    def get_meaningful_routes(self) -> list[Route]:
+    def get_meaningful_routes(self) -> list[Route]:  # noqa: F821
         return [route for route in self if len(route) >= 2]
 
-    def find_twin_routes(self) -> dict[Route, Route]:
+    def find_twin_routes(self) -> dict[Route, Route]:  # noqa: F821
         """Two non-circular routes are twins if they have the same end
         stations and opposite directions, and the number of stations is
         the same or almost the same. We'll then find stops that are present
@@ -325,7 +327,11 @@ class RouteMaster:
                 break
         return common_subsequence
 
-    def alert_twin_routes_differ(self, route1: Route, route2: Route) -> None:
+    def alert_twin_routes_differ(
+        self,
+        route1: Route,  # noqa: F821
+        route2: Route,  # noqa: F821
+    ) -> None:
         """Arguments are that route1.id < route2.id"""
         (
             stops_missing_from_route1,
@@ -382,7 +388,10 @@ class RouteMaster:
                 )
 
     @staticmethod
-    def calculate_twin_routes_diff(route1: Route, route2: Route) -> tuple:
+    def calculate_twin_routes_diff(
+        route1: Route,  # noqa: F821
+        route2: Route,  # noqa: F821
+    ) -> tuple:
         """Wagner–Fischer algorithm for stops diff in two twin routes."""
 
         stops1 = route1.stops
@@ -450,10 +459,10 @@ class RouteMaster:
     def __len__(self) -> int:
         return len(self.routes)
 
-    def __getitem__(self, i) -> Route:
+    def __getitem__(self, i) -> Route:  # noqa: F821
         return self.routes[i]
 
-    def __iter__(self) -> Iterator[Route]:
+    def __iter__(self) -> Iterator[Route]:  # noqa: F821
         return iter(self.routes)
 
     def __repr__(self) -> str:

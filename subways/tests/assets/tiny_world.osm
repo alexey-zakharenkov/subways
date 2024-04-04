@@ -187,9 +187,10 @@
     <member type='relation' ref='9' role='' />
     <tag k='colour' v='brown' />
     <tag k='colour:infill' v='white' />
+    <tag k='duration' v='5' />
+    <tag k='name' v='LR Line' />
     <tag k='network' v='network-2' />
     <tag k='ref' v='LR' />
-    <tag k='name' v='LR Line' />
     <tag k='route_master' v='light_rail' />
     <tag k='type' v='route_master' />
   </relation>
@@ -198,6 +199,7 @@
     <member type='node' ref='5' role='' />
     <member type='node' ref='6' role='' />
     <member type='way' ref='2' role='' />
+    <tag k='duration' v='10' />
     <tag k='name' v='2 forward' />
     <tag k='ref' v='2' />
     <tag k='route' v='subway' />
@@ -208,6 +210,7 @@
     <member type='node' ref='5' role='' />
     <member type='node' ref='4' role='' />
     <member type='way' ref='2' role='' />
+    <tag k='duration:peak' v='8' />
     <tag k='name' v='2 backward' />
     <tag k='ref' v='2' />
     <tag k='route' v='subway' />
@@ -217,18 +220,18 @@
     <member type='relation' ref='13' role='' />
     <member type='relation' ref='12' role='' />
     <tag k='colour' v='red' />
+    <tag k='name' v='Red Line' />
     <tag k='network' v='network-1' />
     <tag k='ref' v='2' />
-    <tag k='name' v='Red Line' />
     <tag k='route_master' v='subway' />
     <tag k='type' v='route_master' />
   </relation>
   <relation id='15' visible='true' version='1'>
     <member type='relation' ref='8' role='' />
     <member type='relation' ref='7' role='' />
+    <tag k='name' v='Blue Line' />
     <tag k='network' v='network-1' />
     <tag k='ref' v='1' />
-    <tag k='name' v='Blue Line' />
     <tag k='route_master' v='subway' />
     <tag k='type' v='route_master' />
   </relation>

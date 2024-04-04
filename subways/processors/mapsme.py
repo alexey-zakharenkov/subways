@@ -14,6 +14,7 @@ from subways.osm_element import el_center
 from subways.structure.station import Station
 from subways.types import IdT, LonLat, OsmElementT, TransfersT
 from ._common import (
+    DEFAULT_AVE_VEHICLE_SPEED,
     DEFAULT_INTERVAL,
     format_colour,
     KMPH_TO_MPS,
@@ -29,7 +30,6 @@ if typing.TYPE_CHECKING:
 OSM_TYPES = {"n": (0, "node"), "w": (2, "way"), "r": (3, "relation")}
 ENTRANCE_PENALTY = 60  # seconds
 SPEED_TO_ENTRANCE = 5 * KMPH_TO_MPS  # m/s
-SPEED_ON_LINE = 40 * KMPH_TO_MPS  # m/s
 
 # (stoparea1_uid, stoparea2_uid) -> seconds; stoparea1_uid < stoparea2_uid
 TransferTimesT: TypeAlias = dict[tuple[int, int], int]
@@ -258,7 +258,7 @@ def transit_data_to_mapsme(
                     itin.append(
                         [
                             uid(stop.stoparea.id),
-                            round(stop.distance / SPEED_ON_LINE),
+                            round(stop.distance / DEFAULT_AVE_VEHICLE_SPEED),
                         ]
                     )
                     # Make exits from platform nodes,

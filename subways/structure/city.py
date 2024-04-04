@@ -8,7 +8,7 @@ from subways.consts import (
     DEFAULT_MODES_OVERGROUND,
     DEFAULT_MODES_RAPID,
 )
-from subways.osm_element import el_center, el_id
+from subways.osm_element import el_center, el_id, get_network
 from subways.structure.route import Route
 from subways.structure.route_master import RouteMaster
 from subways.structure.station import Station
@@ -287,11 +287,11 @@ class City:
                 if el["tags"].get("access") in ("no", "private"):
                     continue
                 route_id = el_id(el)
-                master = self.masters.get(route_id, None)
+                master_element = self.masters.get(route_id, None)
                 if self.networks:
-                    network = Route.get_network(el)
-                    if master:
-                        master_network = Route.get_network(master)
+                    network = get_network(el)
+                    if master_element:
+                        master_network = get_network(master_element)
                     else:
                         master_network = None
                     if (
@@ -300,7 +300,7 @@ class City:
                     ):
                         continue
 
-                route = self.route_class(el, self, master)
+                route = self.route_class(el, self, master_element)
                 if not route.stops:
                     self.warn("Route has no stops", el)
                     continue
@@ -308,15 +308,11 @@ class City:
                     self.warn("Route has only one stop", el)
                     continue
 
-                k = el_id(master) if master else route.ref
-                if k not in self.routes:
-                    self.routes[k] = RouteMaster(self, master)
-                self.routes[k].add(route)
-
-                # Sometimes adding a route to a newly initialized RouteMaster
-                # can fail
-                if len(self.routes[k]) == 0:
-                    del self.routes[k]
+                master_id = el_id(master_element) or route.ref
+                route_master = self.routes.setdefault(
+                    master_id, RouteMaster(self, master_element)
+                )
+                route_master.add(route)
 
             # And while we're iterating over relations, find interchanges
             if (

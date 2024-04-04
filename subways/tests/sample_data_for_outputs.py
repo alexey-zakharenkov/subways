@@ -163,6 +163,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": null,
               "stops": [
                 {
                   "stoparea_id": "n1",
@@ -197,6 +198,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": null,
               "stops": [
                 {
                   "stoparea_id": "r3",
@@ -237,6 +239,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": 600,
               "stops": [
                 {
                   "stoparea_id": "n4",
@@ -267,6 +270,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": 480,
               "stops": [
                 {
                   "stoparea_id": "n6",
@@ -313,6 +317,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": 300,
               "stops": [
                 {
                   "stoparea_id": "r4",
@@ -339,6 +344,7 @@ metro_samples = [
               "start_time": null,
               "end_time": null,
               "interval": null,
+              "duration": 300,
               "stops": [
                 {
                   "stoparea_id": "r16",

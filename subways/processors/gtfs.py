@@ -9,8 +9,10 @@ from tarfile import TarFile, TarInfo
 from zipfile import ZipFile
 
 from ._common import (
+    DEFAULT_AVE_VEHICLE_SPEED,
     DEFAULT_INTERVAL,
     format_colour,
+    KMPH_TO_MPS,
     SPEED_ON_TRANSFER,
     TRANSFER_PENALTY,
     transit_to_dict,
@@ -63,6 +65,7 @@ GTFS_COLUMNS = {
         "trip_route_type",
         "route_pattern_id",
         "bikes_allowed",
+        "average_speed",  # extension field (km/h)
     ],
     "stops": [
         "stop_id",
@@ -242,11 +245,22 @@ def transit_data_to_gtfs(data: dict) -> dict:
 
             for itinerary in route_master["itineraries"]:
                 shape_id = itinerary["id"][1:]  # truncate leading 'r'
+                average_speed = round(
+                    (
+                        DEFAULT_AVE_VEHICLE_SPEED
+                        if not itinerary["duration"]
+                        else itinerary["stops"][-1]["distance"]
+                        / itinerary["duration"]
+                    )
+                    / KMPH_TO_MPS,
+                    1,
+                )  # km/h
                 trip = {
                     "trip_id": itinerary["id"],
                     "route_id": route_master["id"],
                     "service_id": "always",
                     "shape_id": shape_id,
+                    "average_speed": average_speed,
                 }
                 gtfs_data["trips"].append(trip)
 

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 import typing
-from collections.abc import Callable, Iterator
+from collections.abc import Callable, Collection, Iterator
 from itertools import islice
 
 from subways.consts import (
@@ -18,7 +18,7 @@ from subways.geom_utils import (
     find_segment,
     project_on_line,
 )
-from subways.osm_element import el_id, el_center
+from subways.osm_element import el_id, el_center, get_network
 from subways.structure.route_stop import RouteStop
 from subways.structure.station import Station
 from subways.structure.stop_area import StopArea
@@ -33,24 +33,29 @@ ALLOWED_ANGLE_BETWEEN_STOPS = 45  # in degrees
 DISALLOWED_ANGLE_BETWEEN_STOPS = 20  # in degrees
 
 
-def get_start_end_times(
+def parse_time_range(
     opening_hours: str,
-) -> tuple[tuple[int, int], tuple[int, int]] | tuple[None, None]:
+) -> tuple[tuple[int, int], tuple[int, int]] | None:
     """Very simplified method to parse OSM opening_hours tag.
     We simply take the first HH:MM-HH:MM substring which is the most probable
     opening hours interval for the most of the weekdays.
     """
-    start_time, end_time = None, None
+    if opening_hours == "24/7":
+        return (0, 0), (24, 0)
+
     m = START_END_TIMES_RE.match(opening_hours)
-    if m:
-        ints = tuple(map(int, m.groups()))
-        start_time = (ints[0], ints[1])
-        end_time = (ints[2], ints[3])
+    if not m:
+        return None
+    ints = tuple(map(int, m.groups()))
+    if ints[1] > 59 or ints[3] > 59:
+        return None
+    start_time = (ints[0], ints[1])
+    end_time = (ints[2], ints[3])
     return start_time, end_time
 
 
 def osm_interval_to_seconds(interval_str: str) -> int | None:
-    """Convert to int an OSM value for 'interval'/'headway' tag
+    """Convert to int an OSM value for 'interval'/'headway'/'duration' tag
     which may be in these formats:
     HH:MM:SS,
     HH:MM,
@@ -71,7 +76,54 @@ def osm_interval_to_seconds(interval_str: str) -> int | None:
             return None
     except ValueError:
         return None
-    return seconds + 60 * minutes + 60 * 60 * hours
+
+    if seconds < 0 or minutes < 0 or hours < 0:
+        return None
+    if semicolon_count > 0 and (seconds >= 60 or minutes >= 60):
+        return None
+
+    interval = seconds + 60 * minutes + 60 * 60 * hours
+    if interval == 0:
+        return None
+    return interval
+
+
+def get_interval_in_seconds_from_tags(
+    tags: dict, keys: str | Collection[str]
+) -> int | None:
+    """Extract time interval value from tags for keys among "keys".
+    E.g., "interval" and "headway" means the same in OSM.
+    Examples:
+        interval=5                => 300
+        headway:peak=00:01:30     => 90
+    """
+    if isinstance(keys, str):
+        keys = (keys,)
+
+    value = None
+    for key in keys:
+        if key in tags:
+            value = tags[key]
+            break
+    if value is None:
+        for key in keys:
+            if value:
+                break
+            for tag_name in tags:
+                if tag_name.startswith(key + ":"):
+                    value = tags[tag_name]
+                    break
+    if not value:
+        return None
+    return osm_interval_to_seconds(value)
+
+
+def get_route_interval(tags: dict) -> int | None:
+    return get_interval_in_seconds_from_tags(tags, ("interval", "headway"))
+
+
+def get_route_duration(tags: dict) -> int | None:
+    return get_interval_in_seconds_from_tags(tags, "duration")
 
 
 class Route:
@@ -94,29 +146,6 @@ class Route:
         if "ref" not in el["tags"] and "name" not in el["tags"]:
             return False
         return True
-
-    @staticmethod
-    def get_network(relation: OsmElementT) -> str | None:
-        for k in ("network:metro", "network", "operator"):
-            if k in relation["tags"]:
-                return relation["tags"][k]
-        return None
-
-    @staticmethod
-    def get_interval(tags: dict) -> int | None:
-        v = None
-        for k in ("interval", "headway"):
-            if k in tags:
-                v = tags[k]
-                break
-            else:
-                for kk in tags:
-                    if kk.startswith(k + ":"):
-                        v = tags[kk]
-                        break
-        if not v:
-            return None
-        return osm_interval_to_seconds(v)
 
     def stopareas(self) -> Iterator[StopArea]:
         yielded_stopareas = set()
@@ -146,6 +175,7 @@ class Route:
         self.infill = None
         self.network = None
         self.interval = None
+        self.duration = None
         self.start_time = None
         self.end_time = None
         self.is_circular = False
@@ -319,46 +349,51 @@ class Route:
 
     def process_tags(self, master: OsmElementT) -> None:
         relation = self.element
+        tags = relation["tags"]
         master_tags = {} if not master else master["tags"]
-        if "ref" not in relation["tags"] and "ref" not in master_tags:
+        if "ref" not in tags and "ref" not in master_tags:
             self.city.notice("Missing ref on a route", relation)
-        self.ref = relation["tags"].get(
-            "ref", master_tags.get("ref", relation["tags"].get("name", None))
+        self.ref = tags.get(
+            "ref", master_tags.get("ref", tags.get("name", None))
         )
-        self.name = relation["tags"].get("name", None)
-        self.mode = relation["tags"]["route"]
+        self.name = tags.get("name", None)
+        self.mode = tags["route"]
         if (
-            "colour" not in relation["tags"]
+            "colour" not in tags
             and "colour" not in master_tags
             and self.mode != "tram"
         ):
             self.city.notice("Missing colour on a route", relation)
         try:
             self.colour = normalize_colour(
-                relation["tags"].get("colour", master_tags.get("colour", None))
+                tags.get("colour", master_tags.get("colour", None))
             )
         except ValueError as e:
             self.colour = None
             self.city.warn(str(e), relation)
         try:
             self.infill = normalize_colour(
-                relation["tags"].get(
+                tags.get(
                     "colour:infill", master_tags.get("colour:infill", None)
                 )
             )
         except ValueError as e:
             self.infill = None
             self.city.warn(str(e), relation)
-        self.network = Route.get_network(relation)
-        self.interval = Route.get_interval(
-            relation["tags"]
-        ) or Route.get_interval(master_tags)
-        self.start_time, self.end_time = get_start_end_times(
-            relation["tags"].get(
-                "opening_hours", master_tags.get("opening_hours", "")
-            )
+        self.network = get_network(relation)
+        self.interval = get_route_interval(tags) or get_route_interval(
+            master_tags
         )
-        if relation["tags"].get("public_transport:version") == "1":
+        self.duration = get_route_duration(tags) or get_route_duration(
+            master_tags
+        )
+        parsed_time_range = parse_time_range(
+            tags.get("opening_hours", master_tags.get("opening_hours", ""))
+        )
+        if parsed_time_range:
+            self.start_time, self.end_time = parsed_time_range
+
+        if tags.get("public_transport:version") == "1":
             self.city.warn(
                 "Public transport version is 1, which means the route "
                 "is an unsorted pile of objects",

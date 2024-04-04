@@ -10,6 +10,7 @@ if typing.TYPE_CHECKING:
 
 DEFAULT_INTERVAL = 2.5 * 60  # seconds
 KMPH_TO_MPS = 1 / 3.6  # km/h to m/s conversion multiplier
+DEFAULT_AVE_VEHICLE_SPEED = 40 * KMPH_TO_MPS  # m/s
 SPEED_ON_TRANSFER = 3.5 * KMPH_TO_MPS  # m/s
 TRANSFER_PENALTY = 30  # seconds
 
@@ -52,6 +53,7 @@ def transit_to_dict(cities: list[City], transfers: TransfersT) -> dict:
                     "start_time": route.start_time,
                     "end_time": route.end_time,
                     "interval": route.interval,
+                    "duration": route.duration,
                     "stops": [
                         {
                             "stoparea_id": route_stop.stoparea.id,

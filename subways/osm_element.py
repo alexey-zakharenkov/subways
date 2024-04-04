@@ -17,3 +17,10 @@ def el_center(el: OsmElementT) -> LonLat | None:
     elif "center" in el:
         return el["center"]["lon"], el["center"]["lat"]
     return None
+
+
+def get_network(relation: OsmElementT) -> str | None:
+    for k in ("network:metro", "network", "operator"):
+        if k in relation["tags"]:
+            return relation["tags"][k]
+    return None
