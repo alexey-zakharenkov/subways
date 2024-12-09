@@ -34,8 +34,7 @@ for details. Here is an example of the script usage:
 
 ```bash
 export PLANET=https://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-latest.osm.pbf
-export PLANET_METRO="$HOME/metro/planet-metro.o5m
-export OSMCTOOLS="$HOME/osmctools"
+export PLANET_METRO="$HOME/metro/planet-metro.osm.pbf
 export TMPDIR="$HOME/metro/tmp"
 export HTML_DIR="$HOME/metro/tmp_html"
 export DUMP="$HTML_DIR"
@@ -60,14 +59,15 @@ if you allow the `scripts/process_subway.py` to fetch data from Overpass API. He
     cd subways_validator
    ```
 3. Configure python environment, e.g.
-   ```bash
-   python3 -m venv scripts/.venv
-   source scripts/.venv/bin/activate
-   pip install scripts/requirements.txt
-   ```
+    ```bash
+    python3 -m venv scripts/.venv
+    source scripts/.venv/bin/activate
+    pip install -r scripts/requirements.txt
+    ```
+    (this is optional if you only process a single city though.)
 4. Execute
     ```bash
-    python3 scripts/process_subways.py -c "London" \
+    PYTHONPATH=. python3 scripts/process_subways.py -c "London" \
         -l validation.log -d London.yaml
     ```
     here

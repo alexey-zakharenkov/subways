@@ -6,13 +6,13 @@ if [ $# -gt 0 -a \( "${1-}" = "-h" -o "${1-}" = '--help' \) ]; then
 This script updates a planet or an extract, processes metro networks in it
 and produces a set of HTML files with validation results.
 
-Usage: $0 [<local/planet.{pbf,o5m} | http://mirror.osm.ru/planet.{pbf,o5m}>]
+Usage: $0 [<local/planet.osm.pbf | http://mirror.osm.ru/planet.osm.pbf>]
 
 In more detail, the script does the following:
   - If \$PLANET is a remote file, downloads it.
   - If \$BBOX variable is set, proceeds with this setting for the planet clipping. Otherwise uses \$POLY:
     unless \$POLY variable is set and the file exists, generates a *.poly file with union of bboxes of all cities having metro.
-  - Makes a *.o5m extract of the \$PLANET using the *.poly file.
+  - Makes an extract of the \$PLANET using the *.poly file.
   - Updates the extract.
   - Filters railway infrastructure from the extract.
   - Uses filtered file for validation and generates a bunch of output files.
@@ -28,8 +28,8 @@ variable is not defined or is null, otherwise they are kept.
 The \$PLANET file from remote URL is saved to a tempfile and is removed at the end.
 
 Environment variable reference:
-  - PLANET: path to a local or remote o5m or pbf source file (the entire planet or an extract)
-  - PLANET_METRO: path to a local o5m file with extract of cities having metro
+  - PLANET: path to a local or remote pbf source file (the entire planet or an extract)
+  - PLANET_METRO: path to a local pbf file with extract of cities having metro
     It's used instead of \$PLANET if exists otherwise it's created first
   - PLANET_UPDATE_SERVER: server to get replication data from. Defaults to https://planet.openstreetmap.org/replication/
   - CITIES_INFO_URL: http(s) or "file://" URL to a CSV file with reference information about rapid transit systems. A default value is hammered into python code.
@@ -48,7 +48,6 @@ Environment variable reference:
   - CITY_CACHE: json file with good cities obtained on previous validation runs
   - RECOVERY_PATH: file with some data collected at previous validation runs that
     may help to recover some simple validation errors
-  - OSMCTOOLS: path to osmconvert and osmupdate binaries
   - PYTHON: python 3 executable
   - GIT_PULL: set to 1 to update the scripts
   - TMPDIR: path to temporary files
@@ -67,7 +66,7 @@ function activate_venv_at_path() {
   path=$1
 
   if [ ! -d "$path/".venv ]; then
-    "${PYTHON:-python3.11}" -m venv "$path"/.venv
+    "${PYTHON:-python3}" -m venv "$path"/.venv
   fi
 
   source "$path"/.venv/bin/activate
@@ -79,15 +78,10 @@ function activate_venv_at_path() {
 }
 
 
-function check_osmctools() {
-  OSMCTOOLS="${OSMCTOOLS:-$HOME/osmctools}"
-  if [ ! -f "$OSMCTOOLS/osmupdate" ]; then
-    if which osmupdate > /dev/null; then
-      OSMCTOOLS="$(dirname "$(which osmupdate)")"
-    else
-      echo "Please compile osmctools to $OSMCTOOLS"
-      exit 1
-    fi
+function check_osmium() {
+  if ! which osmium > /dev/null; then
+    echo "Please install osmium-tool"
+    exit 1
   fi
 }
 
@@ -163,7 +157,7 @@ if [ -n "${NEED_FILTER-}" ]; then
   fi
 
   if [ ! -f "${PLANET_METRO-}" ]; then
-    check_osmctools
+    check_osmium
     check_poly
 
     PLANET="${PLANET:-${1-}}"
@@ -186,7 +180,7 @@ if [ -n "${NEED_FILTER-}" ]; then
     fi
 
     if [ -z "${PLANET_METRO-}" ]; then
-      PLANET_METRO=$(mktemp "$TMPDIR/planet-metro.XXXXXXXX.o5m")
+      PLANET_METRO=$(mktemp "$TMPDIR/planet-metro.XXXXXXXX.osm.pbf")
       NEED_TO_REMOVE_PLANET_METRO=1
     fi
 
@@ -195,10 +189,8 @@ if [ -n "${NEED_FILTER-}" ]; then
       exit 6
     fi
 
-    mkdir -p $TMPDIR/osmconvert_temp/
-    "$OSMCTOOLS"/osmconvert "$PLANET" \
-        -t=$TMPDIR/osmconvert_temp/temp \
-        ${BBOX:+"-b=$BBOX"} ${POLY:+"-B=$POLY"} -o="$PLANET_METRO"
+    osmium extract "$PLANET" \
+        ${BBOX:+"--bbox=$BBOX"} ${POLY:+"--polygon=$POLY"} -O -o "$PLANET_METRO"
   fi
 fi
 
@@ -210,40 +202,38 @@ fi
 
 # If there's no need to filter, then update is also unnecessary
 if [ -z "${SKIP_PLANET_UPDATE-}" -a -n "${NEED_FILTER-}" ]; then
-  check_osmctools
+  check_osmium
   check_poly
-  PLANET_UPDATE_SERVER=${PLANET_UPDATE_SERVER:-https://planet.openstreetmap.org/replication/}
+  PLANET_UPDATE_SERVER=${PLANET_UPDATE_SERVER:-https://planet.openstreetmap.org/replication/hour/}
   PLANET_METRO_ABS="$(cd "$(dirname "$PLANET_METRO")"; pwd)/$(basename "$PLANET_METRO")"
+  PLANET_METRO_ABS_NEW="$PLANET_METRO_ABS.new.osm.pbf"
   mkdir -p $TMPDIR/osmupdate_temp/
-  pushd $TMPDIR/osmupdate_temp/
-  export PATH="$PATH:$OSMCTOOLS"
-  OSMUPDATE_ERRORS=$(osmupdate --drop-author --out-o5m ${BBOX:+"-b=$BBOX"} \
-                                 ${POLY:+"-B=$POLY"} "$PLANET_METRO_ABS" \
-                                 --base-url=$PLANET_UPDATE_SERVER \
-                                 --tempfiles=$TMPDIR/osmupdate_temp/temp \
-                                 "$PLANET_METRO_ABS.new.o5m" 2>&1 || :)
+
+  activate_venv_at_path "$SUBWAYS_REPO_PATH/scripts"
+  OSMUPDATE_ERRORS=$(pyosmium-up-to-date \
+                                 "$PLANET_METRO_ABS" \
+                                 --server $PLANET_UPDATE_SERVER \
+                                 --tmpdir $TMPDIR/osmupdate_temp/temp \
+                                 -o "$PLANET_METRO_ABS_NEW" 2>&1 || :)
+  deactivate
   if [ -n "$OSMUPDATE_ERRORS" ]; then
     echo "osmupdate failed: $OSMUPDATE_ERRORS"
     exit 7
   fi
-  popd
-  mv "$PLANET_METRO_ABS.new.o5m" "$PLANET_METRO_ABS"
+
+  # Since updating adds things outside the area, trim those again.
+  osmium extract "$PLANET_METRO_ABS_NEW" \
+      ${BBOX:+"--bbox=$BBOX"} ${POLY:+"--polygon=$POLY"} -O -o "$PLANET_METRO_ABS"
+  rm -f "$PLANET_METRO_ABS_NEW"
 fi
 
 # Filtering planet-metro
 
 if [ -n "${NEED_FILTER-}" ]; then
-  check_osmctools
-  mkdir -p $TMPDIR/osmfilter_temp/
-  QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
-  QNODES="railway=station =subway_entrance =train_station_entrance station=subway =light_rail =monorail subway=yes light_rail=yes monorail=yes train=yes"
-  "$OSMCTOOLS/osmfilter" "$PLANET_METRO" \
-      --keep= \
-      --keep-relations="$QRELATIONS" \
-      --keep-nodes="$QNODES" \
-      --drop-author \
-      -t=$TMPDIR/osmfilter_temp/temp \
-      -o="$FILTERED_DATA"
+  check_osmium
+  QRELATIONS="r/route,route_master=subway,light_rail,monorail,train r/public_transport=stop_area,stop_area_group"
+  QNODES="n/railway=station,subway_entrance,train_station_entrance n/station=subway,light_rail,monorail n/subway=yes n/light_rail=yes n/monorail=yes n/train=yes"
+  osmium tags-filter "$PLANET_METRO" $QRELATIONS $QNODES -o "$FILTERED_DATA" -O
 fi
 
 if [ -n "${NEED_TO_REMOVE_PLANET_METRO-}" ]; then
