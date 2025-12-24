@@ -90,3 +90,5 @@ __all__ = [
     "prepare_cities",
     "validate_cities",
 ]
+
+__version__ = "0.0.0"

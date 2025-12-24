@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subways"
+version = "0.0.0"
+authors = [{ name = "alexey-zakharenkov", email = "a-zakh@yandex.ru" }]
+requires-python = ">=3.11"
+
+dependencies = [
+    "lxml>=4.9.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/alexey-zakharenkov/subways/"
+
+[tool.setuptools.packages.find]
+include = [
+    "subways*"
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.osm"]
+
+[tool.bumpver]
+current_version = "0.0.0"
+version_pattern = "MAJOR.MINOR.PATCH[.TAG][BUILD]"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'version = "{version}"',
+]
+"subways/__init__.py" = [
+    '__version__ = "{version}"',
+]
