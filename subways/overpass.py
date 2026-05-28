@@ -2,9 +2,9 @@ import json
 import logging
 import time
 import urllib.parse
-import urllib.request
 
 from subways.consts import MODES_OVERGROUND, MODES_RAPID
+from subways.http_utils import urlopen_or_raise
 from subways.types import OsmElementT
 
 
@@ -40,10 +40,10 @@ def overpass_request(
 ) -> list[OsmElementT]:
     query = compose_overpass_request(overground, bboxes)
     url = f"{overpass_api}?data={urllib.parse.quote(query)}"
-    response = urllib.request.urlopen(url, timeout=1000)
-    if (r_code := response.getcode()) != 200:
-        raise Exception(f"Failed to query Overpass API: HTTP {r_code}")
-    return json.load(response)["elements"]
+    with urlopen_or_raise(
+        url, timeout=1000, error_prefix="Failed to query Overpass API"
+    ) as response:
+        return json.load(response)["elements"]
 
 
 def multi_overpass(

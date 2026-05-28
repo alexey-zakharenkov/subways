@@ -156,7 +156,8 @@ class TestOverpassQuery(TestCase):
             with mock.patch(
                 "subways.overpass.urllib.request.urlopen"
             ) as urlopen_mock:
-                urlopen_mock.return_value.getcode.return_value = 200
+                ent = urlopen_mock.return_value.__enter__
+                ent.return_value.getcode.return_value = 200
 
                 overpass_request(overground, overpass_api, bboxes)
 

@@ -1,8 +1,8 @@
 import csv
 import logging
-import urllib.request
 from functools import partial
 
+from subways.http_utils import urlopen_or_raise
 from subways.structure.city import City
 from subways.types import CriticalValidationError, LonLat, OsmElementT
 
@@ -214,15 +214,11 @@ def get_cities_info(
     id_by_name: dict[str, str] = {}
 
     for cities_info_url in cities_info_urls:
-        response = urllib.request.urlopen(cities_info_url)
-        if (
-            not cities_info_url.startswith("file://")
-            and (r_code := response.status) != 200
-        ):
-            raise Exception(
-                f"Failed to download cities spreadsheet: HTTP {r_code}"
-            )
-        data = response.read().decode("utf-8")
+        with urlopen_or_raise(
+            cities_info_url,
+            error_prefix="Failed to download cities spreadsheet",
+        ) as response:
+            data = response.read().decode("utf-8")
         reader = csv.DictReader(
             data.splitlines(),
             fieldnames=(
