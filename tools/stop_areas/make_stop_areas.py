@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import codecs
 import json
 import math
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -65,13 +65,14 @@ def overpass_request(bbox):
     url = "http://overpass-api.de/api/interpreter?data={}".format(
         urllib.parse.quote(QUERY.replace("{{bbox}}", bbox))
     )
-    response = urllib.request.urlopen(url, timeout=1000)
-    if response.getcode() != 200:
+    try:
+        response = urllib.request.urlopen(url, timeout=1000)
+    except urllib.error.HTTPError as e:
         raise Exception(
-            "Failed to query Overpass API: HTTP {}".format(response.getcode())
-        )
-    reader = codecs.getreader("utf-8")
-    return json.load(reader(response))["elements"]
+            "Failed to query Overpass API: HTTP {}".format(e.code)
+        ) from e
+    with response:
+        return json.load(response)["elements"]
 
 
 def add_stop_areas(src):
