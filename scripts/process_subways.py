@@ -37,10 +37,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--cities-info-url",
-        default=DEFAULT_CITIES_INFO_URL,
+        nargs="+",
+        dest="cities_info_urls",
+        default=[DEFAULT_CITIES_INFO_URL],
         help=(
-            "URL of CSV file with reference information about rapid transit "
-            "networks. file:// protocol is also supported."
+            "One or more URLs of CSV files with reference information about "
+            "rapid transit networks. file:// protocol is also supported. "
+            "Cities from all sources are concatenated."
         ),
     )
     parser.add_argument(
@@ -131,7 +134,7 @@ def main() -> None:
         format="%(asctime)s %(levelname)-7s  %(message)s",
     )
 
-    cities = prepare_cities(options.cities_info_url, options.overground)
+    cities = prepare_cities(options.cities_info_urls, options.overground)
     if options.city:
         cities = [
             c

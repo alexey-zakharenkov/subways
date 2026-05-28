@@ -6,11 +6,11 @@ from shapely.geometry import MultiPolygon, Polygon
 from subways.validation import DEFAULT_CITIES_INFO_URL, get_cities_info
 
 
-def make_disjoint_metro_polygons(cities_info_url: str) -> None:
+def make_disjoint_metro_polygons(cities_info_urls: list[str]) -> None:
     """Make disjoint polygon from cities bboxes and write them
     in *.poly format to stdout.
     """
-    cities_info = get_cities_info(cities_info_url)
+    cities_info = get_cities_info(cities_info_urls)
 
     polygons = []
     for ci in cities_info:
@@ -44,14 +44,17 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--cities-info-url",
-        default=DEFAULT_CITIES_INFO_URL,
+        nargs="+",
+        dest="cities_info_urls",
+        default=[DEFAULT_CITIES_INFO_URL],
         help=(
-            "URL of CSV file with reference information about rapid transit "
-            "networks. file:// protocol is also supported."
+            "One or more URLs of CSV files with reference information about "
+            "rapid transit networks. file:// protocol is also supported. "
+            "Cities from all sources are concatenated."
         ),
     )
     options = parser.parse_args()
-    make_disjoint_metro_polygons(options.cities_info_url)
+    make_disjoint_metro_polygons(options.cities_info_urls)
 
 
 if __name__ == "__main__":

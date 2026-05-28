@@ -191,7 +191,7 @@ INDEX_FOOTER = f"""
 </table>
 </main>
 <footer>{produced_by}
-from <a href="{{cities_info_url}}">this reference metro statistics</a>. See
+from {{cities_info_link}}. See
 <a href="{list_of_metro_systems_url}">
 this wiki page</a> for a list of all metro systems.</footer>
 </body>

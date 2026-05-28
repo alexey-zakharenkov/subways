@@ -153,14 +153,27 @@ def main() -> None:
     parser.add_argument("target_directory", nargs="?", default=".")
     parser.add_argument(
         "--cities-info-url",
-        default=(
+        nargs="+",
+        dest="cities_info_urls",
+        default=[
             "https://docs.google.com/spreadsheets/d/"
             f"{DEFAULT_SPREADSHEET_ID}/edit?usp=sharing"
-        ),
+        ],
     )
     options = parser.parse_args()
     target_dir = options.target_directory
-    cities_info_url = options.cities_info_url
+    cities_info_urls = options.cities_info_urls
+    if len(cities_info_urls) == 1:
+        cities_info_link = (
+            f'<a href="{cities_info_urls[0]}">'
+            "this reference metro statistics</a>"
+        )
+    else:
+        sources = ", ".join(
+            f'<a href="{url}">source {i}</a>'
+            for i, url in enumerate(cities_info_urls, 1)
+        )
+        cities_info_link = f"these reference metro statistics ({sources})"
 
     with open(options.validation_log, encoding="utf-8") as f:
         data = {c["name"]: CityData(c) for c in json.load(f)}
@@ -257,7 +270,9 @@ def main() -> None:
             )
         )
 
-    index.write(tmpl(INDEX_FOOTER, date=date, cities_info_url=cities_info_url))
+    index.write(
+        tmpl(INDEX_FOOTER, date=date, cities_info_link=cities_info_link)
+    )
     index.close()
 
 

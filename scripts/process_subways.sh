@@ -32,7 +32,9 @@ Environment variable reference:
   - PLANET_METRO: path to a local o5m file with extract of cities having metro
     It's used instead of \$PLANET if exists otherwise it's created first
   - PLANET_UPDATE_SERVER: server to get replication data from. Defaults to https://planet.openstreetmap.org/replication/
-  - CITIES_INFO_URL: http(s) or "file://" URL to a CSV file with reference information about rapid transit systems. A default value is hammered into python code.
+  - CITIES_INFO_URL: one or more space-separated http(s) or "file://" URLs to CSV files with reference information about rapid transit systems.
+    Cities from all sources are concatenated; for records sharing the same id or name, the later URL wins (useful for "base + local override").
+    A default value is hammered into python code. URLs/paths must not contain spaces.
   - CITY: name of a city/country to process
   - BBOX: bounding box of an extract; x1,y1,x2,y2. Has precedence over \$POLY
   - POLY: *.poly file with [multi]polygon comprising cities with metro
@@ -73,8 +75,11 @@ function activate_venv_at_path() {
   source "$path"/.venv/bin/activate
 
   if [ -f "$path"/requirements.txt ]; then
-    pip install --upgrade pip
-    pip install -r "$path"/requirements.txt
+    # Invoke pip via "python -m" to sidestep macOS's 80-byte shebang limit:
+    # when the repo lives under a long path, pip's shebang gets truncated
+    # mid-path ("python3.11" -> "py") and direct invocation fails.
+    python -m pip install --upgrade pip
+    python -m pip install -r "$path"/requirements.txt
   fi
 }
 
@@ -109,7 +114,7 @@ function check_poly() {
         POLY=${POLY:-$(mktemp "$TMPDIR/all-metro.XXXXXXXX.poly")}
         activate_venv_at_path "$SUBWAYS_REPO_PATH/tools/make_poly"
         python "$SUBWAYS_REPO_PATH"/tools/make_poly/make_all_metro_poly.py \
-            ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} > "$POLY"
+            ${CITIES_INFO_URL:+--cities-info-url $CITIES_INFO_URL} > "$POLY"
         deactivate
       fi
     fi
@@ -264,7 +269,7 @@ VALIDATION="$TMPDIR/validation.json"
 activate_venv_at_path "$SUBWAYS_REPO_PATH/scripts"
 python "$SUBWAYS_REPO_PATH/scripts/process_subways.py" ${QUIET:+-q} \
     -x "$FILTERED_DATA" -l "$VALIDATION" \
-    ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
+    ${CITIES_INFO_URL:+--cities-info-url $CITIES_INFO_URL} \
     ${MAPSME:+--output-mapsme "$MAPSME"} \
     ${GTFS:+--output-gtfs "$GTFS"} \
     ${CITY:+-c "$CITY"} \
@@ -293,8 +298,8 @@ rm -f "$HTML_DIR"/*.html
 
 activate_venv_at_path "$SUBWAYS_REPO_PATH/tools/v2h"
 python "$SUBWAYS_REPO_PATH/tools/v2h/validation_to_html.py" \
-    ${CITIES_INFO_URL:+--cities-info-url "$CITIES_INFO_URL"} \
-    "$VALIDATION" "$HTML_DIR"
+    "$VALIDATION" "$HTML_DIR" \
+    ${CITIES_INFO_URL:+--cities-info-url $CITIES_INFO_URL}
 deactivate
 
 # Uploading files to the server

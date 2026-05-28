@@ -201,53 +201,80 @@ def validate_cities(cities: list[City]) -> list[City]:
 
 
 def get_cities_info(
-    cities_info_url: str = DEFAULT_CITIES_INFO_URL,
+    cities_info_urls: list[str] | None = None,
 ) -> list[dict]:
-    response = urllib.request.urlopen(cities_info_url)
-    if (
-        not cities_info_url.startswith("file://")
-        and (r_code := response.getcode()) != 200
-    ):
-        raise Exception(
-            f"Failed to download cities spreadsheet: HTTP {r_code}"
-        )
-    data = response.read().decode("utf-8")
-    reader = csv.DictReader(
-        data.splitlines(),
-        fieldnames=(
-            "id",
-            "name",
-            "country",
-            "continent",
-            "num_stations",
-            "num_lines",
-            "num_light_lines",
-            "num_interchanges",
-            "bbox",
-            "networks",
-        ),
-    )
+    if cities_info_urls is None:
+        cities_info_urls = [DEFAULT_CITIES_INFO_URL]
 
-    cities_info = list()
-    names = set()
-    next(reader)  # skipping the header
-    for city_info in reader:
-        if city_info["id"] and city_info["bbox"]:
-            cities_info.append(city_info)
+    # "Last wins" semantics across all sources: a later record with the same
+    # id replaces the earlier one; a later record with the same name (even
+    # under a different id) also evicts the earlier one. This lets a local
+    # CSV override entries from a base CSV.
+    cities_by_id: dict[str, dict] = {}
+    id_by_name: dict[str, str] = {}
+
+    for cities_info_url in cities_info_urls:
+        response = urllib.request.urlopen(cities_info_url)
+        if (
+            not cities_info_url.startswith("file://")
+            and (r_code := response.status) != 200
+        ):
+            raise Exception(
+                f"Failed to download cities spreadsheet: HTTP {r_code}"
+            )
+        data = response.read().decode("utf-8")
+        reader = csv.DictReader(
+            data.splitlines(),
+            fieldnames=(
+                "id",
+                "name",
+                "country",
+                "continent",
+                "num_stations",
+                "num_lines",
+                "num_light_lines",
+                "num_interchanges",
+                "bbox",
+                "networks",
+            ),
+        )
+
+        next(reader)  # skipping the header
+        for city_info in reader:
+            if not (city_info["id"] and city_info["bbox"]):
+                continue
+            city_id = city_info["id"]
             name = city_info["name"].strip()
-            if name in names:
-                logging.warning(
-                    "Duplicate city name in city list: %s",
-                    city_info,
+
+            if city_id in cities_by_id:
+                old_name = cities_by_id[city_id]["name"].strip()
+                logging.info(
+                    "Overriding city id=%s from a later source", city_id
                 )
-            names.add(name)
-    return cities_info
+                if id_by_name.get(old_name) == city_id:
+                    del id_by_name[old_name]
+
+            existing_id = id_by_name.get(name)
+            if existing_id is not None and existing_id != city_id:
+                logging.info(
+                    "Overriding city name '%s': previous id=%s replaced "
+                    "by id=%s",
+                    name,
+                    existing_id,
+                    city_id,
+                )
+                del cities_by_id[existing_id]
+
+            cities_by_id[city_id] = city_info
+            id_by_name[name] = city_id
+
+    return list(cities_by_id.values())
 
 
 def prepare_cities(
-    cities_info_url: str = DEFAULT_CITIES_INFO_URL, overground: bool = False
+    cities_info_urls: list[str] | None = None, overground: bool = False
 ) -> list[City]:
     if overground:
         raise NotImplementedError("Overground transit not implemented yet")
-    cities_info = get_cities_info(cities_info_url)
+    cities_info = get_cities_info(cities_info_urls)
     return list(map(partial(City, overground=overground), cities_info))
