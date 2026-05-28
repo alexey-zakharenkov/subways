@@ -67,7 +67,7 @@ class TestMakeAllMetroPoly(TestCase):
                 file_url = f"file://{assets_dir}/{case['csv_file']}"
                 stream = io.StringIO()
                 with contextlib.redirect_stdout(stream):
-                    make_disjoint_metro_polygons(file_url)
+                    make_disjoint_metro_polygons([file_url])
                 generated_poly = stream.getvalue()
                 expected_poly = case["expected_stdout"]
 

@@ -13,7 +13,7 @@ class TestPrepareCities(TestCase):
             / "cities_info_with_bad_values.csv"
         )
 
-        cities = prepare_cities(cities_info_url=f"file://{csv_path}")
+        cities = prepare_cities(cities_info_urls=[f"file://{csv_path}"])
 
         city_errors = {city.name: sorted(city.errors) for city in cities}
 
