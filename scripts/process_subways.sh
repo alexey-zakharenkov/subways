@@ -242,10 +242,12 @@ if [ -n "${NEED_FILTER-}" ]; then
   mkdir -p $TMPDIR/osmfilter_temp/
   QRELATIONS="route=subway =light_rail =monorail =train route_master=subway =light_rail =monorail =train public_transport=stop_area =stop_area_group"
   QNODES="railway=station =subway_entrance =train_station_entrance station=subway =light_rail =monorail subway=yes light_rail=yes monorail=yes train=yes"
+  QWAYS="railway=rail =light_rail =subway =narrow_gauge =funicular =monorail"
   "$OSMCTOOLS/osmfilter" "$PLANET_METRO" \
       --keep= \
       --keep-relations="$QRELATIONS" \
       --keep-nodes="$QNODES" \
+      --keep-ways="$QWAYS" \
       --drop-author \
       -t=$TMPDIR/osmfilter_temp/temp \
       -o="$FILTERED_DATA"
