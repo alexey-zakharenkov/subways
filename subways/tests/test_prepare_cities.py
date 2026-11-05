@@ -27,6 +27,14 @@ class TestPrepareCities(TestCase):
                 "Configuration error: wrong value for bbox: "
                 "73.2,54.9,73.6,55.1x"
             ],
+            "Perm": [
+                "Configuration error: wrong value for bbox: "
+                "56.0,57.9,561.0,58.1"
+            ],
+            "Rostov": [
+                "Configuration error: wrong value for bbox: "
+                "39.5,nan,39.9,47.4"
+            ],
             "Novosibirsk": ["Configuration error: wrong value for id: NBS"],
             "Saint Petersburg": [],
             "Samara": [
@@ -46,6 +54,8 @@ class TestPrepareCities(TestCase):
         bboxes = {city.name: city.bbox for city in cities}
         self.assertIsNone(bboxes["Kazan"])
         self.assertIsNone(bboxes["Omsk"])
+        self.assertIsNone(bboxes["Perm"])
+        self.assertIsNone(bboxes["Rostov"])
         self.assertListEqual(
             bboxes["Saint Petersburg"], [59.7509, 30.0648, 60.1292, 30.5976]
         )

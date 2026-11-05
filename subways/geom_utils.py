@@ -7,13 +7,25 @@ from subways.types import LonLat, RailT
 def parse_bbox(bbox_str: str) -> tuple[float, float, float, float] | None:
     """Parse "lon_min,lat_min,lon_max,lat_max" string.
     Return a tuple of 4 floats in the same order, or None
-    if the string is not 4 comma-separated numbers.
+    if the string is not 4 comma-separated finite numbers
+    within the valid longitude/latitude ranges.
     """
     try:
         bbox = tuple(float(x) for x in bbox_str.split(","))
     except ValueError:
         return None
-    return bbox if len(bbox) == 4 else None
+    if len(bbox) != 4:
+        return None
+    lon_min, lat_min, lon_max, lat_max = bbox
+    if not (
+        -180 <= lon_min <= 180
+        and -180 <= lon_max <= 180
+        and -90 <= lat_min <= 90
+        and -90 <= lat_max <= 90
+    ):
+        # Comparisons with nan are False, so it is rejected here too
+        return None
+    return bbox
 
 
 def distance(p1: LonLat, p2: LonLat) -> float:
