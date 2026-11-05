@@ -176,7 +176,7 @@ def main() -> None:
                 "choose a smaller set"
             )
             sys.exit(3)
-        bboxes = [c.bbox for c in cities]
+        bboxes = [c.bbox for c in cities if c.bbox]
         logging.info("Downloading data from Overpass API")
         osm = multi_overpass(options.overground, options.overpass_api, bboxes)
         calculate_centers(osm)

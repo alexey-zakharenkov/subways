@@ -1,8 +1,10 @@
 import argparse
+import sys
 
 from shapely import unary_union
 from shapely.geometry import MultiPolygon, Polygon
 
+from subways.geom_utils import parse_bbox
 from subways.validation import DEFAULT_CITIES_INFO_URL, get_cities_info
 
 
@@ -14,7 +16,13 @@ def make_disjoint_metro_polygons(cities_info_urls: list[str]) -> None:
 
     polygons = []
     for ci in cities_info:
-        bbox = tuple(map(float, ci["bbox"].split(",")))
+        bbox = parse_bbox(ci["bbox"])
+        if not bbox:
+            print(
+                f"Skipping city {ci['name']}: wrong bbox {ci['bbox']}",
+                file=sys.stderr,
+            )
+            continue
         polygon = Polygon(
             [
                 (bbox[0], bbox[1]),

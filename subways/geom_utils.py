@@ -4,6 +4,18 @@ from subways.consts import MAX_DISTANCE_STOP_TO_LINE
 from subways.types import LonLat, RailT
 
 
+def parse_bbox(bbox_str: str) -> tuple[float, float, float, float] | None:
+    """Parse "lon_min,lat_min,lon_max,lat_max" string.
+    Return a tuple of 4 floats in the same order, or None
+    if the string is not 4 comma-separated numbers.
+    """
+    try:
+        bbox = tuple(float(x) for x in bbox_str.split(","))
+    except ValueError:
+        return None
+    return bbox if len(bbox) == 4 else None
+
+
 def distance(p1: LonLat, p2: LonLat) -> float:
     if p1 is None or p2 is None:
         raise Exception(
