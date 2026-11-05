@@ -1,8 +1,11 @@
 import csv
 import logging
+from collections import defaultdict
 from functools import partial
+from math import floor
 
 from subways.http_utils import urlopen_or_raise
+from subways.osm_element import el_center
 from subways.structure.city import City
 from subways.types import CriticalValidationError, LonLat, OsmElementT
 
@@ -165,8 +168,28 @@ def calculate_centers(elements: list[OsmElementT]) -> None:
 def add_osm_elements_to_cities(
     osm_elements: list[OsmElementT], cities: list[City]
 ) -> None:
+    """Add each element to every city whose bbox contains the element center.
+
+    A 1x1 degree grid index over city bboxes is used so that each element
+    is checked only against cities whose bbox intersects the element's
+    grid cell, instead of against all cities.
+    """
+    # (lat cell, lon cell) -> cities in their original order
+    grid: dict[tuple[int, int], list[City]] = defaultdict(list)
+    for city in cities:
+        if not city.bbox:
+            continue
+        lat_min, lon_min, lat_max, lon_max = city.bbox
+        for i in range(floor(lat_min), floor(lat_max) + 1):
+            for j in range(floor(lon_min), floor(lon_max) + 1):
+                grid[(i, j)].append(city)
+
     for el in osm_elements:
-        for c in cities:
+        center = el_center(el)
+        if not center:
+            continue
+        lon, lat = center
+        for c in grid.get((floor(lat), floor(lon)), ()):
             if c.contains(el):
                 c.add(el)
 
