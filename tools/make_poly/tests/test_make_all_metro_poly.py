@@ -27,6 +27,29 @@ END
         ],
     },
     {
+        "csv_file": "cities_info_bad_bboxes.csv",
+        "expected_stdout": """all metro
+1
+  37.1667 55.3869
+  37.1667 56.0136
+  38.2626 56.0136
+  38.2626 55.3869
+  37.1667 55.3869
+END
+END
+""",
+        "expected_stderr": (
+            "Skipping city Kazan: wrong bbox 48.933,55.65,49.297\n"
+            "Skipping city Omsk: wrong bbox 73.2,54.9,73.6,55.1x\n"
+        ),
+        "shape_line_ranges": [
+            {
+                "start": 2,
+                "end": 6,
+            },
+        ],
+    },
+    {
         "csv_file": "cities_info_2cities.csv",
         "expected_stdout": """all metro
 1
@@ -66,9 +89,15 @@ class TestMakeAllMetroPoly(TestCase):
                 assets_dir = Path(__file__).resolve().parent / "assets"
                 file_url = f"file://{assets_dir}/{case['csv_file']}"
                 stream = io.StringIO()
-                with contextlib.redirect_stdout(stream):
+                err_stream = io.StringIO()
+                with contextlib.redirect_stdout(
+                    stream
+                ), contextlib.redirect_stderr(err_stream):
                     make_disjoint_metro_polygons([file_url])
                 generated_poly = stream.getvalue()
+                self.assertEqual(
+                    case.get("expected_stderr", ""), err_stream.getvalue()
+                )
                 expected_poly = case["expected_stdout"]
 
                 # Since shapely may produce multipolygon with different order

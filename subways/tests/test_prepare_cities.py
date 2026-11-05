@@ -18,7 +18,15 @@ class TestPrepareCities(TestCase):
         city_errors = {city.name: sorted(city.errors) for city in cities}
 
         expected_errors = {
+            "Kazan": [
+                "Configuration error: wrong value for bbox: "
+                "48.933,55.65,49.297"
+            ],
             "Nizhny Novgorod": [],
+            "Omsk": [
+                "Configuration error: wrong value for bbox: "
+                "73.2,54.9,73.6,55.1x"
+            ],
             "Novosibirsk": ["Configuration error: wrong value for id: NBS"],
             "Saint Petersburg": [],
             "Samara": [
@@ -34,3 +42,10 @@ class TestPrepareCities(TestCase):
         }
 
         self.assertDictEqual(city_errors, expected_errors)
+
+        bboxes = {city.name: city.bbox for city in cities}
+        self.assertIsNone(bboxes["Kazan"])
+        self.assertIsNone(bboxes["Omsk"])
+        self.assertListEqual(
+            bboxes["Saint Petersburg"], [59.7509, 30.0648, 60.1292, 30.5976]
+        )

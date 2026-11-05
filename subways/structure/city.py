@@ -8,6 +8,7 @@ from subways.consts import (
     DEFAULT_MODES_OVERGROUND,
     DEFAULT_MODES_RAPID,
 )
+from subways.geom_utils import parse_bbox
 from subways.osm_element import el_center, el_id, get_network
 from subways.structure.route import Route
 from subways.structure.route_master import RouteMaster
@@ -78,12 +79,7 @@ class City:
         else:
             self.modes = {x.strip() for x in networks[0].split(",")}
 
-        # Reversing bbox so it is (xmin, ymin, xmax, ymax)
-        bbox = city_data["bbox"].split(",")
-        if len(bbox) == 4:
-            self.bbox = [float(bbox[i]) for i in (1, 0, 3, 2)]
-        else:
-            self.bbox = None
+        self.try_fill_bbox(city_data)
 
         self.elements: dict[IdT, OsmElementT] = {}
         self.stations: dict[IdT, list[StopArea]] = defaultdict(list)
@@ -122,6 +118,22 @@ class City:
         else:
             setattr(self, attr, attr_int)
 
+    def try_fill_bbox(self, city_data: dict) -> None:
+        """Parse "lon_min,lat_min,lon_max,lat_max" string into self.bbox
+        as [lat_min, lon_min, lat_max, lon_max]. On failure, set self.bbox
+        to None and mark the city as bad by adding an error.
+        """
+        bbox_str = city_data["bbox"]
+        bbox = parse_bbox(bbox_str)
+        if bbox:
+            self.bbox = [bbox[i] for i in (1, 0, 3, 2)]
+        else:
+            print_value = bbox_str if bbox_str else "<empty>"
+            self.error(
+                f"Configuration error: wrong value for bbox: {print_value}"
+            )
+            self.bbox = None
+
     @staticmethod
     def log_message(message: str, el: OsmElementT) -> str:
         if el:
@@ -152,7 +164,7 @@ class City:
 
     def contains(self, el: OsmElementT) -> bool:
         center = el_center(el)
-        if center:
+        if center and self.bbox:
             return (
                 self.bbox[0] <= center[1] <= self.bbox[2]
                 and self.bbox[1] <= center[0] <= self.bbox[3]
