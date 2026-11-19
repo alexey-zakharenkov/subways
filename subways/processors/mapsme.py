@@ -310,6 +310,7 @@ def transit_data_to_mapsme(
                         "interval": round(
                             variant.interval or DEFAULT_INTERVAL
                         ),
+                        "tracks": variant.get_tracks_geometry(),
                     }
                 )
             network["routes"].append(routes)
