@@ -11,8 +11,9 @@ of metro maps.
 ## How To Validate
 
 * Choose transport data source:
-  1. Download or update a planet file in o5m format (using `osmconvert` and `osmupdate`).
-     Run `osmfilter` to extract a portion of data for all subways. Or
+  1. Download or update a planet file or its extract (using `osmium` and `pyosmium-up-to-date`,
+     or `osmconvert` and `osmupdate`). Run `osmium tags-filter` or `osmfilter` to extract
+     a portion of data for all subways. Or
   2. If you don't specify `--xml` or `--source` option to the `process_subways.py` script
      it tries to fetch data over [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API).
      **Not suitable for the whole planet or large countries.**
@@ -30,12 +31,30 @@ for effective recurring validations. See
 ```bash
 ./scripts/process_subways.sh --help
 ```
-for details. Here is an example of the script usage:
+for details.
+
+The script processes OSM data with [osmium-tool](https://osmcode.org/osmium-tool/)
+if it is available, otherwise it falls back to
+[osmctools](https://gitlab.com/osm-c-tools/osmctools) (`osmconvert`, `osmupdate`, `osmfilter`).
+Set `OSM_TOOLS=osmium` or `OSM_TOOLS=osmctools` to force the choice.
+Install osmium-tool with a system package manager:
+
+* Ubuntu/Debian: `sudo apt install osmium-tool`
+* macOS: `brew install osmium-tool`
+* Fedora: `sudo dnf install osmium-tool`
+* CentOS/RHEL/Rocky and other systems, or without root privileges: from
+  [conda-forge](https://anaconda.org/conda-forge/osmium-tool), e.g.
+  `micromamba create -p ~/osmium -c conda-forge osmium-tool`, then
+  `export OSMIUM=~/osmium/bin/osmium`
+
+Note that the `osmium` Python package from `scripts/requirements.txt` is pyosmium:
+it provides `pyosmium-up-to-date` used for updates, but not the `osmium` command line tool.
+
+Here is an example of the script usage:
 
 ```bash
 export PLANET=https://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-latest.osm.pbf
-export PLANET_METRO="$HOME/metro/planet-metro.o5m
-export OSMCTOOLS="$HOME/osmctools"
+export PLANET_METRO="$HOME/metro/planet-metro.osm.pbf"
 export TMPDIR="$HOME/metro/tmp"
 export HTML_DIR="$HOME/metro/tmp_html"
 export DUMP="$HTML_DIR"
@@ -44,6 +63,8 @@ scripts/process_subways.sh
 ```
 
 Set the PLANET_METRO variable to avoid the whole planet processing each time.
+With osmium-tool it should be a `*.osm.pbf` file; an existing `*.o5m` file
+can only be maintained with osmctools since osmium cannot write o5m.
 Delete the file (but not the variable) to re-generate it if a new city has been added or
 a city's bbox has been extended.
 
@@ -60,14 +81,15 @@ if you allow the `scripts/process_subway.py` to fetch data from Overpass API. He
     cd subways_validator
    ```
 3. Configure python environment, e.g.
-   ```bash
-   python3 -m venv scripts/.venv
-   source scripts/.venv/bin/activate
-   pip install scripts/requirements.txt
-   ```
+    ```bash
+    python3 -m venv scripts/.venv
+    source scripts/.venv/bin/activate
+    pip install -r scripts/requirements.txt
+    ```
+    (this is optional if you only process a single city though.)
 4. Execute
     ```bash
-    python3 scripts/process_subways.py -c "London" \
+    PYTHONPATH=. python3 scripts/process_subways.py -c "London" \
         -l validation.log -d London.yaml
     ```
     here
